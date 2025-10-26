@@ -3,6 +3,7 @@ import path from 'path';
 import Link from 'next/link';
 import { getAIStats } from '@/lib/ai-db';
 import { getAgencyStats } from '@/lib/agency-db';
+import { getUseCaseStats } from '@/lib/use-case-db';
 
 interface Product {
   id: string;
@@ -23,6 +24,7 @@ export default async function Home() {
   const products = await getProducts();
   const aiStats = getAIStats();
   const agencyStats = getAgencyStats();
+  const useCaseStats = getUseCaseStats();
 
   // Calculate general stats
   const activeProducts = products.filter((p) => p.status === 'Active').length;
@@ -52,9 +54,9 @@ export default async function Home() {
         {/* Hero Description */}
         <div className="bg-white rounded-lg border border-gov-slate-200 p-6 mb-8">
           <p className="text-gov-slate-700 text-lg leading-relaxed">
-            This dashboard provides comprehensive insights into how AI is being deployed in the federal government—both
-            through <strong>FedRAMP-authorized cloud services</strong> and <strong>internal agency implementations</strong>.
-            Explore AI/ML services, generative AI tools, LLMs, and see which agencies are leading AI adoption.
+            This dashboard provides comprehensive insights into how AI is being deployed in the federal government—through
+            <strong> FedRAMP-authorized cloud services</strong>, <strong>internal agency tools</strong>, and <strong>actual use case implementations</strong>.
+            Explore {useCaseStats.total_use_cases.toLocaleString()} AI use cases, AI/ML services, generative AI tools, and see which agencies are leading AI adoption.
           </p>
         </div>
 
@@ -125,7 +127,43 @@ export default async function Home() {
             </p>
           </Link>
 
-          {/* Card 3: Products with AI */}
+          {/* Card 3: AI Use Cases */}
+          <Link
+            href="/use-cases"
+            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+          >
+            <div className="flex items-start justify-between mb-4">
+              <h2 className="text-2xl font-bold text-gov-navy-900">AI Use Cases</h2>
+              <svg className="w-6 h-6 text-ai-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+            </div>
+            <div className="space-y-3 mb-4">
+              <div className="flex justify-between items-center">
+                <span className="text-gov-slate-600">Total Implementations</span>
+                <span className="text-3xl font-bold text-gov-navy-900">{useCaseStats.total_use_cases}</span>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                <div className="text-center p-2 bg-ai-teal-light rounded">
+                  <div className="text-xl font-bold text-ai-teal-dark">{useCaseStats.genai_count}</div>
+                  <div className="text-xs text-gov-slate-600">GenAI</div>
+                </div>
+                <div className="text-center p-2 bg-ai-blue-light rounded">
+                  <div className="text-xl font-bold text-ai-blue-dark">{useCaseStats.chatbot_count}</div>
+                  <div className="text-xs text-gov-slate-600">Chatbot</div>
+                </div>
+                <div className="text-center p-2 bg-gov-slate-200 rounded">
+                  <div className="text-xl font-bold text-gov-slate-700">{useCaseStats.classic_ml_count}</div>
+                  <div className="text-xs text-gov-slate-600">Classic ML</div>
+                </div>
+              </div>
+            </div>
+            <p className="text-sm text-gov-slate-600">
+              Across {useCaseStats.total_agencies} federal agencies
+            </p>
+          </Link>
+
+          {/* Card 4: Products with AI */}
           <Link
             href="/ai-services"
             className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
@@ -239,7 +277,7 @@ export default async function Home() {
         {/* Quick Links */}
         <div className="bg-gov-navy-50 border border-gov-navy-200 rounded-lg p-6">
           <h3 className="text-lg font-semibold text-gov-navy-900 mb-4">Quick Navigation</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <Link
               href="/ai-services"
               className="flex items-center space-x-3 p-3 bg-white rounded-md border border-gov-slate-200 hover:border-gov-navy-600 transition-colors"
@@ -267,6 +305,21 @@ export default async function Home() {
               <div>
                 <div className="font-semibold text-gov-navy-900">Agency Usage</div>
                 <div className="text-xs text-gov-slate-600">Internal AI adoption</div>
+              </div>
+            </Link>
+
+            <Link
+              href="/use-cases"
+              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-gov-slate-200 hover:border-gov-navy-600 transition-colors"
+            >
+              <div className="w-10 h-10 bg-ai-indigo-light rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-ai-indigo-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </div>
+              <div>
+                <div className="font-semibold text-gov-navy-900">Use Cases</div>
+                <div className="text-xs text-gov-slate-600">AI implementations</div>
               </div>
             </Link>
 
