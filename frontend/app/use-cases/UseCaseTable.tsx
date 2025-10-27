@@ -92,12 +92,12 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
 
     return useCases.filter(uc => {
       switch (aiTypeFilter) {
-        case 'genai': return uc.genai_flag === 1;
-        case 'llm': return uc.has_llm === 1;
-        case 'chatbot': return uc.has_chatbot === 1;
-        case 'classic_ml': return uc.has_classic_ml === 1;
-        case 'coding': return uc.has_coding_assistant === 1 || uc.has_coding_agent === 1;
-        case 'rpa': return uc.has_rpa === 1;
+        case 'genai': return uc.genai_flag;
+        case 'llm': return uc.has_llm;
+        case 'chatbot': return uc.has_chatbot;
+        case 'classic_ml': return uc.has_classic_ml;
+        case 'coding': return uc.has_coding_assistant || uc.has_coding_agent;
+        case 'rpa': return uc.has_rpa;
         default: return true;
       }
     });
@@ -253,7 +253,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
                 }`}
               >
-                GenAI ({useCases.filter(uc => uc.genai_flag === 1).length})
+                GenAI ({useCases.filter(uc => uc.genai_flag).length})
               </button>
               <button
                 onClick={() => { setAITypeFilter('llm'); handleFilterChange(); }}
@@ -263,7 +263,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
                 }`}
               >
-                LLM ({useCases.filter(uc => uc.has_llm === 1).length})
+                LLM ({useCases.filter(uc => uc.has_llm).length})
               </button>
               <button
                 onClick={() => { setAITypeFilter('chatbot'); handleFilterChange(); }}
@@ -273,7 +273,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
                 }`}
               >
-                Chatbot ({useCases.filter(uc => uc.has_chatbot === 1).length})
+                Chatbot ({useCases.filter(uc => uc.has_chatbot).length})
               </button>
               <button
                 onClick={() => { setAITypeFilter('classic_ml'); handleFilterChange(); }}
@@ -283,7 +283,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
                 }`}
               >
-                Classic ML ({useCases.filter(uc => uc.has_classic_ml === 1).length})
+                Classic ML ({useCases.filter(uc => uc.has_classic_ml).length})
               </button>
             </div>
           </div>
