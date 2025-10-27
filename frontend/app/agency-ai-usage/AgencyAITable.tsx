@@ -59,20 +59,21 @@ export default function AgencyAITable({ agencies }: { agencies: AgencyAIUsage[] 
 
   // Filter by type
   const filteredByType = useMemo(() => {
-    if (filterType === 'all') return agencies;
-    if (filterType === 'has_llm') return agencies.filter((a) => a.has_staff_llm?.includes('Yes'));
-    if (filterType === 'has_coding') return agencies.filter((a) => a.has_coding_assistant?.includes('Yes') || a.has_coding_assistant?.includes('Allowed'));
-    if (filterType === 'custom') return agencies.filter((a) => a.solution_type?.includes('Custom'));
-    if (filterType === 'commercial') return agencies.filter((a) => a.solution_type && (a.solution_type.includes('Azure') || a.solution_type.includes('AWS') || a.solution_type.includes('Commercial')));
-    return agencies;
+    const safeAgencies = agencies || [];
+    if (filterType === 'all') return safeAgencies;
+    if (filterType === 'has_llm') return safeAgencies.filter((a) => a.has_staff_llm?.includes('Yes'));
+    if (filterType === 'has_coding') return safeAgencies.filter((a) => a.has_coding_assistant?.includes('Yes') || a.has_coding_assistant?.includes('Allowed'));
+    if (filterType === 'custom') return safeAgencies.filter((a) => a.solution_type?.includes('Custom'));
+    if (filterType === 'commercial') return safeAgencies.filter((a) => a.solution_type && (a.solution_type.includes('Azure') || a.solution_type.includes('AWS') || a.solution_type.includes('Commercial')));
+    return safeAgencies;
   }, [agencies, filterType]);
 
   // Filter by search query
   const filteredAgencies = useMemo(() => {
-    if (!searchQuery) return filteredByType;
+    if (!searchQuery) return filteredByType || [];
 
     const query = searchQuery.toLowerCase();
-    return filteredByType.filter((agency) => {
+    return (filteredByType || []).filter((agency) => {
       return (
         agency.agency_name?.toLowerCase().includes(query) ||
         agency.llm_name?.toLowerCase().includes(query) ||
@@ -85,7 +86,7 @@ export default function AgencyAITable({ agencies }: { agencies: AgencyAIUsage[] 
 
   // Sort agencies
   const sortedAgencies = useMemo(() => {
-    const sorted = [...filteredAgencies];
+    const sorted = [...(filteredAgencies || [])];
 
     sorted.sort((a, b) => {
       let aValue: any = a[sortField] || '';

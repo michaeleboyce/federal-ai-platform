@@ -6,8 +6,20 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 export const dynamic = 'force-dynamic';
 
 export default async function AgencyAIUsagePage() {
-  const agencies = getAgencies('staff_llm');
-  const stats = getAgencyStats();
+  const agenciesData = await getAgencies('staff_llm');
+  const statsData = await getAgencyStats();
+
+  // Provide default values if data is undefined
+  const agencies = agenciesData || [];
+  const stats = statsData || {
+    total_agencies: 0,
+    agencies_with_llm: 0,
+    agencies_with_coding: 0,
+    agencies_custom_solution: 0,
+    agencies_commercial_solution: 0,
+    total_matches: 0,
+    high_confidence_matches: 0
+  };
 
   return (
     <div className="min-h-screen bg-gov-slate-50">

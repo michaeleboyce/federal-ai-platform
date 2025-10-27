@@ -22,9 +22,35 @@ async function getProducts() {
 
 export default async function Home() {
   const products = await getProducts();
-  const aiStats = await getAIStats();
-  const agencyStats = await getAgencyStats();
-  const useCaseStats = await getUseCaseStats();
+  const aiStatsData = await getAIStats();
+  const agencyStatsData = await getAgencyStats();
+  const useCaseStatsData = await getUseCaseStats();
+
+  // Provide default values if stats are undefined
+  const aiStats = aiStatsData || {
+    total_ai_services: 0,
+    count_ai: 0,
+    count_genai: 0,
+    count_llm: 0,
+    products_with_ai: 0,
+    providers_with_ai: 0
+  };
+
+  const agencyStats = agencyStatsData || {
+    total_agencies: 0,
+    agencies_with_llm: 0,
+    agencies_with_coding: 0,
+    high_confidence_matches: 0
+  };
+
+  const useCaseStats = useCaseStatsData || {
+    total_use_cases: 0,
+    genai_count: 0,
+    chatbot_count: 0,
+    classic_ml_count: 0,
+    unique_agencies: 0,
+    total_agencies: 0
+  };
 
   // Calculate general stats
   const activeProducts = products.filter((p) => p.status === 'Active').length;
