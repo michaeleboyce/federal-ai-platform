@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 export async function generateStaticParams() {
   // Generate static params for all use cases
-  const useCases = getUseCases();
+  const useCases = await getUseCases();
   return useCases.map((uc) => ({
     slug: uc.slug,
   }));
@@ -19,14 +19,14 @@ interface PageProps {
 
 export default async function UseCaseDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  const useCase = getUseCaseBySlug(slug);
+  const useCase = await getUseCaseBySlug(slug);
 
   if (!useCase) {
     notFound();
   }
 
   // Get related use cases from same agency
-  const relatedCases = getUseCases({ agency: useCase.agency })
+  const relatedCases = (await getUseCases({ agency: useCase.agency }))
     .filter(uc => uc.id !== useCase.id)
     .slice(0, 5);
 

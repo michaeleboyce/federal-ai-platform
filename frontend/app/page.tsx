@@ -22,9 +22,9 @@ async function getProducts() {
 
 export default async function Home() {
   const products = await getProducts();
-  const aiStats = getAIStats();
-  const agencyStats = getAgencyStats();
-  const useCaseStats = getUseCaseStats();
+  const aiStats = await getAIStats();
+  const agencyStats = await getAgencyStats();
+  const useCaseStats = await getUseCaseStats();
 
   // Calculate general stats
   const activeProducts = products.filter((p) => p.status === 'Active').length;

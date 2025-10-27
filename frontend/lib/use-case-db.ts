@@ -1,104 +1,73 @@
-import Database from 'better-sqlite3';
-import path from 'path';
+import { db } from './db/client';
+import { aiUseCases, aiUseCaseDetails, useCaseFedRampMatches } from './db/schema';
+import { eq, and, or, like, sql, desc, ilike, SQL } from 'drizzle-orm';
+import type { AIUseCase, AIUseCaseDetails } from './db/schema';
 
-// Core use case record from main table
-export interface UseCase {
-  id: number;
+// Re-export types from schema with legacy names for compatibility
+export type UseCase = AIUseCase & {
+  // Transform camelCase to snake_case for backwards compatibility
   use_case_name: string;
-  agency: string;
   agency_abbreviation: string | null;
-  bureau: string | null;
   use_case_topic_area: string | null;
   other_use_case_topic_area: string | null;
-
-  // Purpose and outputs
   intended_purpose: string | null;
-  outputs: string | null;
-
-  // Classification
   stage_of_development: string | null;
   is_rights_safety_impacting: string | null;
   domain_category: string | null;
-
-  // Dates
   date_initiated: string | null;
   date_implemented: string | null;
   date_retired: string | null;
-
-  // AI Type Flags
-  has_llm: number;
-  has_genai: number;
-  has_chatbot: number;
-  has_gp_markers: number;
-  has_coding_assistant: number;
-  has_coding_agent: number;
-  has_classic_ml: number;
-  has_rpa: number;
-  has_rules: number;
-
-  // AI Type Categories
-  general_purpose_chatbot: number;
-  domain_chatbot: number;
-  coding_assistant: number;
-  coding_agent: number;
-  genai_flag: number;
-  ai_type_classic_ml: number;
-  ai_type_rpa_rules: number;
-
-  // Providers
-  providers_detected: string; // JSON array
+  has_llm: boolean;
+  has_genai: boolean;
+  has_chatbot: boolean;
+  has_gp_markers: boolean;
+  has_coding_assistant: boolean;
+  has_coding_agent: boolean;
+  has_classic_ml: boolean;
+  has_rpa: boolean;
+  has_rules: boolean;
+  general_purpose_chatbot: boolean;
+  domain_chatbot: boolean;
+  coding_assistant: boolean;
+  coding_agent: boolean;
+  genai_flag: boolean;
+  ai_type_classic_ml: boolean;
+  ai_type_rpa_rules: boolean;
+  providers_detected: string[]; // JSONB array
   commercial_ai_product: string | null;
+  analyzed_at: Date;
+};
 
-  // Metadata
-  analyzed_at: string;
-  slug: string;
-}
-
-// Extended details record
-export interface UseCaseDetails {
+export type UseCaseDetails = AIUseCaseDetails & {
   use_case_id: number;
-
-  // Development and procurement
   development_approach: string | null;
   procurement_instrument: string | null;
-
-  // High-impact service
   supports_hisp: string | null;
   which_hisp: string | null;
   which_public_service: string | null;
   disseminates_to_public: string | null;
-
-  // Privacy and data
   involves_pii: string | null;
   privacy_assessed: string | null;
   has_data_catalog: string | null;
   agency_owned_data: string | null;
   data_documentation: string | null;
   demographic_variables: string | null;
-
-  // Code and systems
   has_custom_code: string | null;
   has_code_access: string | null;
   code_link: string | null;
   has_ato: string | null;
   system_name: string | null;
-
-  // Infrastructure
   wait_time_dev_tools: string | null;
   centralized_intake: string | null;
   has_compute_process: string | null;
   timely_communication: string | null;
   infrastructure_reuse: string | null;
-
-  // Review and testing
   internal_review: string | null;
   requested_extension: string | null;
   impact_assessment: string | null;
   operational_testing: string | null;
   key_risks: string | null;
   independent_evaluation: string | null;
-
-  // Monitoring and governance
   performance_monitoring: string | null;
   autonomous_decision: string | null;
   public_notice: string | null;
@@ -107,20 +76,14 @@ export interface UseCaseDetails {
   stakeholder_feedback: string | null;
   fallback_process: string | null;
   opt_out_mechanism: string | null;
-
-  // Information quality
   info_quality_compliance: string | null;
-
-  // Full search text
   search_text: string | null;
-}
+};
 
-// Combined use case with details
 export interface UseCaseWithDetails extends UseCase {
   details?: UseCaseDetails;
 }
 
-// FedRAMP service match
 export interface UseCaseFedRAMPMatch {
   product_id: string;
   provider_name: string;
@@ -129,7 +92,6 @@ export interface UseCaseFedRAMPMatch {
   match_reason: string | null;
 }
 
-// Statistics
 export interface UseCaseStats {
   total_use_cases: number;
   total_agencies: number;
@@ -143,14 +105,12 @@ export interface UseCaseStats {
   in_development_count: number;
 }
 
-// Domain statistics
 export interface DomainStats {
   domain_category: string;
   count: number;
   genai_count: number;
 }
 
-// Agency statistics
 export interface AgencyUseCaseStats {
   agency: string;
   total_count: number;
@@ -160,7 +120,6 @@ export interface AgencyUseCaseStats {
   classic_ml_count: number;
 }
 
-// Filter options
 export interface UseCaseFilters {
   agency?: string;
   agency_abbreviation?: string;
@@ -174,317 +133,429 @@ export interface UseCaseFilters {
   search?: string;
 }
 
-const DB_PATH = path.join(process.cwd(), '..', 'data', 'fedramp.db');
+/**
+ * Transform Drizzle result to legacy format
+ */
+function transformUseCase(result: AIUseCase): UseCase {
+  return {
+    ...result,
+    use_case_name: result.useCaseName,
+    agency_abbreviation: result.agencyAbbreviation,
+    use_case_topic_area: result.useCaseTopicArea,
+    other_use_case_topic_area: result.otherUseCaseTopicArea,
+    intended_purpose: result.intendedPurpose,
+    stage_of_development: result.stageOfDevelopment,
+    is_rights_safety_impacting: result.isRightsSafetyImpacting,
+    domain_category: result.domainCategory,
+    date_initiated: result.dateInitiated,
+    date_implemented: result.dateImplemented,
+    date_retired: result.dateRetired,
+    has_llm: result.hasLlm,
+    has_genai: result.hasGenai,
+    has_chatbot: result.hasChatbot,
+    has_gp_markers: result.hasGpMarkers,
+    has_coding_assistant: result.hasCodingAssistant,
+    has_coding_agent: result.hasCodingAgent,
+    has_classic_ml: result.hasClassicMl,
+    has_rpa: result.hasRpa,
+    has_rules: result.hasRules,
+    general_purpose_chatbot: result.generalPurposeChatbot,
+    domain_chatbot: result.domainChatbot,
+    coding_assistant: result.codingAssistant,
+    coding_agent: result.codingAgent,
+    genai_flag: result.genaiFlag,
+    ai_type_classic_ml: result.aiTypeClassicMl,
+    ai_type_rpa_rules: result.aiTypeRpaRules,
+    providers_detected: result.providersDetected as string[],
+    commercial_ai_product: result.commercialAiProduct,
+    analyzed_at: result.analyzedAt,
+  };
+}
 
 /**
  * Get all use cases with optional filtering
  */
-export function getUseCases(filters?: UseCaseFilters): UseCase[] {
-  const db = new Database(DB_PATH, { readonly: true });
-
-  let query = 'SELECT * FROM ai_use_cases WHERE 1=1';
-  const params: any[] = [];
+export async function getUseCases(filters?: UseCaseFilters): Promise<UseCase[]> {
+  const conditions: SQL[] = [];
 
   if (filters) {
     if (filters.agency) {
-      query += ' AND LOWER(agency) LIKE ?';
-      params.push(`%${filters.agency.toLowerCase()}%`);
+      conditions.push(ilike(aiUseCases.agency, `%${filters.agency}%`));
     }
 
     if (filters.agency_abbreviation) {
-      query += ' AND LOWER(agency_abbreviation) = ?';
-      params.push(filters.agency_abbreviation.toLowerCase());
+      conditions.push(eq(aiUseCases.agencyAbbreviation, filters.agency_abbreviation));
     }
 
     if (filters.bureau) {
-      query += ' AND LOWER(bureau) LIKE ?';
-      params.push(`%${filters.bureau.toLowerCase()}%`);
+      conditions.push(ilike(aiUseCases.bureau, `%${filters.bureau}%`));
     }
 
     if (filters.domain) {
-      query += ' AND domain_category = ?';
-      params.push(filters.domain);
+      conditions.push(eq(aiUseCases.domainCategory, filters.domain));
     }
 
     if (filters.stage) {
-      query += ' AND stage_of_development = ?';
-      params.push(filters.stage);
+      conditions.push(eq(aiUseCases.stageOfDevelopment, filters.stage));
     }
 
     if (filters.topic_area) {
-      query += ' AND use_case_topic_area = ?';
-      params.push(filters.topic_area);
+      conditions.push(eq(aiUseCases.useCaseTopicArea, filters.topic_area));
     }
 
     if (filters.aiType) {
       switch (filters.aiType) {
         case 'genai':
-          query += ' AND genai_flag = 1';
+          conditions.push(eq(aiUseCases.genaiFlag, true));
           break;
         case 'llm':
-          query += ' AND has_llm = 1';
+          conditions.push(eq(aiUseCases.hasLlm, true));
           break;
         case 'chatbot':
-          query += ' AND has_chatbot = 1';
+          conditions.push(eq(aiUseCases.hasChatbot, true));
           break;
         case 'classic_ml':
-          query += ' AND has_classic_ml = 1';
+          conditions.push(eq(aiUseCases.hasClassicMl, true));
           break;
         case 'coding':
-          query += ' AND (has_coding_assistant = 1 OR has_coding_agent = 1)';
+          conditions.push(
+            or(
+              eq(aiUseCases.hasCodingAssistant, true),
+              eq(aiUseCases.hasCodingAgent, true)
+            )!
+          );
           break;
         case 'rpa':
-          query += ' AND has_rpa = 1';
+          conditions.push(eq(aiUseCases.hasRpa, true));
           break;
       }
     }
 
     if (filters.provider) {
-      query += ' AND providers_detected LIKE ?';
-      params.push(`%${filters.provider}%`);
+      // For JSONB array contains check
+      conditions.push(
+        sql`${aiUseCases.providersDetected} @> ${JSON.stringify([filters.provider])}`
+      );
     }
 
     if (filters.rights_impacting !== undefined) {
       if (filters.rights_impacting) {
-        query += ' AND (is_rights_safety_impacting LIKE "%Rights%" OR is_rights_safety_impacting LIKE "%Both%")';
+        conditions.push(
+          or(
+            ilike(aiUseCases.isRightsSafetyImpacting, '%Rights%'),
+            ilike(aiUseCases.isRightsSafetyImpacting, '%Both%')
+          )!
+        );
       } else {
-        query += ' AND (is_rights_safety_impacting LIKE "%Neither%" OR is_rights_safety_impacting IS NULL)';
+        conditions.push(
+          or(
+            ilike(aiUseCases.isRightsSafetyImpacting, '%Neither%'),
+            eq(aiUseCases.isRightsSafetyImpacting, null)
+          )!
+        );
       }
     }
 
     if (filters.search) {
-      query += ` AND (
-        LOWER(use_case_name) LIKE ? OR
-        LOWER(agency) LIKE ? OR
-        LOWER(bureau) LIKE ? OR
-        LOWER(intended_purpose) LIKE ? OR
-        LOWER(outputs) LIKE ?
-      )`;
-      const searchTerm = `%${filters.search.toLowerCase()}%`;
-      params.push(searchTerm, searchTerm, searchTerm, searchTerm, searchTerm);
+      const searchTerm = `%${filters.search}%`;
+      conditions.push(
+        or(
+          ilike(aiUseCases.useCaseName, searchTerm),
+          ilike(aiUseCases.agency, searchTerm),
+          ilike(aiUseCases.bureau, searchTerm),
+          ilike(aiUseCases.intendedPurpose, searchTerm),
+          ilike(aiUseCases.outputs, searchTerm)
+        )!
+      );
     }
   }
 
-  query += ' ORDER BY agency, use_case_name';
+  const results = await db
+    .select()
+    .from(aiUseCases)
+    .where(conditions.length > 0 ? and(...conditions) : undefined)
+    .orderBy(aiUseCases.agency, aiUseCases.useCaseName);
 
-  const useCases = db.prepare(query).all(...params) as UseCase[];
-  db.close();
-
-  return useCases;
+  return results.map(transformUseCase);
 }
 
 /**
  * Get a single use case by slug with full details
  */
-export function getUseCaseBySlug(slug: string): UseCaseWithDetails | null {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function getUseCaseBySlug(slug: string): Promise<UseCaseWithDetails | null> {
+  const results = await db
+    .select()
+    .from(aiUseCases)
+    .where(eq(aiUseCases.slug, slug))
+    .limit(1);
 
-  const useCase = db.prepare('SELECT * FROM ai_use_cases WHERE slug = ?').get(slug) as UseCase | undefined;
-
-  if (!useCase) {
-    db.close();
+  if (results.length === 0) {
     return null;
   }
 
-  const details = db.prepare('SELECT * FROM ai_use_case_details WHERE use_case_id = ?').get(useCase.id) as UseCaseDetails | undefined;
+  const useCase = transformUseCase(results[0]);
 
-  db.close();
+  // Fetch details
+  const detailsResults = await db
+    .select()
+    .from(aiUseCaseDetails)
+    .where(eq(aiUseCaseDetails.useCaseId, useCase.id))
+    .limit(1);
 
-  return {
-    ...useCase,
-    details
-  };
+  if (detailsResults.length > 0) {
+    const details = detailsResults[0];
+    return {
+      ...useCase,
+      details: {
+        ...details,
+        use_case_id: details.useCaseId,
+        development_approach: details.developmentApproach,
+        procurement_instrument: details.procurementInstrument,
+        supports_hisp: details.supportsHisp,
+        which_hisp: details.whichHisp,
+        which_public_service: details.whichPublicService,
+        disseminates_to_public: details.disseminatesToPublic,
+        involves_pii: details.involvesPii,
+        privacy_assessed: details.privacyAssessed,
+        has_data_catalog: details.hasDataCatalog,
+        agency_owned_data: details.agencyOwnedData,
+        data_documentation: details.dataDocumentation,
+        demographic_variables: details.demographicVariables,
+        has_custom_code: details.hasCustomCode,
+        has_code_access: details.hasCodeAccess,
+        code_link: details.codeLink,
+        has_ato: details.hasAto,
+        system_name: details.systemName,
+        wait_time_dev_tools: details.waitTimeDevTools,
+        centralized_intake: details.centralizedIntake,
+        has_compute_process: details.hasComputeProcess,
+        timely_communication: details.timelyCommunication,
+        infrastructure_reuse: details.infrastructureReuse,
+        internal_review: details.internalReview,
+        requested_extension: details.requestedExtension,
+        impact_assessment: details.impactAssessment,
+        operational_testing: details.operationalTesting,
+        key_risks: details.keyRisks,
+        independent_evaluation: details.independentEvaluation,
+        performance_monitoring: details.performanceMonitoring,
+        autonomous_decision: details.autonomousDecision,
+        public_notice: details.publicNotice,
+        influences_decisions: details.influencesDecisions,
+        disparity_mitigation: details.disparityMitigation,
+        stakeholder_feedback: details.stakeholderFeedback,
+        fallback_process: details.fallbackProcess,
+        opt_out_mechanism: details.optOutMechanism,
+        info_quality_compliance: details.infoQualityCompliance,
+        search_text: details.searchText,
+      },
+    };
+  }
+
+  return { ...useCase };
 }
 
 /**
  * Get all use cases for a specific agency
  */
-export function getUseCasesByAgency(agencyAbbr: string): UseCase[] {
+export async function getUseCasesByAgency(agencyAbbr: string): Promise<UseCase[]> {
   return getUseCases({ agency_abbreviation: agencyAbbr });
 }
 
 /**
  * Get all use cases in a specific domain
  */
-export function getUseCasesByDomain(domain: string): UseCase[] {
+export async function getUseCasesByDomain(domain: string): Promise<UseCase[]> {
   return getUseCases({ domain });
 }
 
 /**
  * Get all use cases mentioning a specific provider
  */
-export function getUseCasesByProvider(provider: string): UseCase[] {
+export async function getUseCasesByProvider(provider: string): Promise<UseCase[]> {
   return getUseCases({ provider });
 }
 
 /**
  * Get aggregate statistics
  */
-export function getUseCaseStats(): UseCaseStats {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function getUseCaseStats(): Promise<UseCaseStats> {
+  const result = await db
+    .select({
+      total_use_cases: sql<number>`count(*)::int`,
+      total_agencies: sql<number>`count(distinct ${aiUseCases.agency})::int`,
+      genai_count: sql<number>`sum(case when ${aiUseCases.genaiFlag} then 1 else 0 end)::int`,
+      llm_count: sql<number>`sum(case when ${aiUseCases.hasLlm} then 1 else 0 end)::int`,
+      chatbot_count: sql<number>`sum(case when ${aiUseCases.hasChatbot} then 1 else 0 end)::int`,
+      classic_ml_count: sql<number>`sum(case when ${aiUseCases.hasClassicMl} then 1 else 0 end)::int`,
+      coding_assistant_count: sql<number>`sum(case when ${aiUseCases.hasCodingAssistant} or ${aiUseCases.hasCodingAgent} then 1 else 0 end)::int`,
+      rights_impacting_count: sql<number>`sum(case when ${aiUseCases.isRightsSafetyImpacting} like '%Rights%' or ${aiUseCases.isRightsSafetyImpacting} like '%Both%' then 1 else 0 end)::int`,
+      implemented_count: sql<number>`sum(case when ${aiUseCases.dateImplemented} is not null and ${aiUseCases.dateImplemented} != '' then 1 else 0 end)::int`,
+      in_development_count: sql<number>`sum(case when ${aiUseCases.stageOfDevelopment} like '%Development%' or ${aiUseCases.stageOfDevelopment} like '%Acquisition%' then 1 else 0 end)::int`,
+    })
+    .from(aiUseCases);
 
-  const stats = db.prepare(`
-    SELECT
-      COUNT(*) as total_use_cases,
-      COUNT(DISTINCT agency) as total_agencies,
-      SUM(genai_flag) as genai_count,
-      SUM(has_llm) as llm_count,
-      SUM(has_chatbot) as chatbot_count,
-      SUM(has_classic_ml) as classic_ml_count,
-      SUM(CASE WHEN has_coding_assistant = 1 OR has_coding_agent = 1 THEN 1 ELSE 0 END) as coding_assistant_count,
-      SUM(CASE WHEN is_rights_safety_impacting LIKE '%Rights%' OR is_rights_safety_impacting LIKE '%Both%' THEN 1 ELSE 0 END) as rights_impacting_count,
-      SUM(CASE WHEN date_implemented IS NOT NULL AND date_implemented != '' THEN 1 ELSE 0 END) as implemented_count,
-      SUM(CASE WHEN stage_of_development LIKE '%Development%' OR stage_of_development LIKE '%Acquisition%' THEN 1 ELSE 0 END) as in_development_count
-    FROM ai_use_cases
-  `).get() as UseCaseStats;
-
-  db.close();
-  return stats;
+  return result[0];
 }
 
 /**
  * Get domain distribution statistics
  */
-export function getDomainStats(): DomainStats[] {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function getDomainStats(): Promise<DomainStats[]> {
+  const results = await db
+    .select({
+      domain_category: aiUseCases.domainCategory,
+      count: sql<number>`count(*)::int`,
+      genai_count: sql<number>`sum(case when ${aiUseCases.genaiFlag} then 1 else 0 end)::int`,
+    })
+    .from(aiUseCases)
+    .where(and(
+      sql`${aiUseCases.domainCategory} is not null`,
+      sql`${aiUseCases.domainCategory} != ''`
+    ))
+    .groupBy(aiUseCases.domainCategory)
+    .orderBy(desc(sql`count(*)`));
 
-  const stats = db.prepare(`
-    SELECT
-      domain_category,
-      COUNT(*) as count,
-      SUM(genai_flag) as genai_count
-    FROM ai_use_cases
-    WHERE domain_category IS NOT NULL AND domain_category != ''
-    GROUP BY domain_category
-    ORDER BY count DESC
-  `).all() as DomainStats[];
-
-  db.close();
-  return stats;
+  return results.map(r => ({
+    domain_category: r.domain_category!,
+    count: r.count,
+    genai_count: r.genai_count,
+  }));
 }
 
 /**
  * Get use case statistics by agency
  */
-export function getAgencyUseCaseStats(agency?: string): AgencyUseCaseStats[] {
-  const db = new Database(DB_PATH, { readonly: true });
-
-  let query = `
-    SELECT
-      agency,
-      COUNT(*) as total_count,
-      SUM(genai_flag) as genai_count,
-      SUM(has_llm) as llm_count,
-      SUM(has_chatbot) as chatbot_count,
-      SUM(has_classic_ml) as classic_ml_count
-    FROM ai_use_cases
-  `;
+export async function getAgencyUseCaseStats(agency?: string): Promise<AgencyUseCaseStats[]> {
+  let query = db
+    .select({
+      agency: aiUseCases.agency,
+      total_count: sql<number>`count(*)::int`,
+      genai_count: sql<number>`sum(case when ${aiUseCases.genaiFlag} then 1 else 0 end)::int`,
+      llm_count: sql<number>`sum(case when ${aiUseCases.hasLlm} then 1 else 0 end)::int`,
+      chatbot_count: sql<number>`sum(case when ${aiUseCases.hasChatbot} then 1 else 0 end)::int`,
+      classic_ml_count: sql<number>`sum(case when ${aiUseCases.hasClassicMl} then 1 else 0 end)::int`,
+    })
+    .from(aiUseCases);
 
   if (agency) {
-    query += ' WHERE agency = ?';
+    query = query.where(eq(aiUseCases.agency, agency));
   }
 
-  query += ' GROUP BY agency ORDER BY total_count DESC';
+  const results = await query
+    .groupBy(aiUseCases.agency)
+    .orderBy(desc(sql`count(*)`));
 
-  const stats = agency
-    ? db.prepare(query).all(agency) as AgencyUseCaseStats[]
-    : db.prepare(query).all() as AgencyUseCaseStats[];
-
-  db.close();
-  return stats;
+  return results.map(r => ({
+    agency: r.agency,
+    total_count: r.total_count,
+    genai_count: r.genai_count,
+    llm_count: r.llm_count,
+    chatbot_count: r.chatbot_count,
+    classic_ml_count: r.classic_ml_count,
+  }));
 }
 
 /**
  * Get FedRAMP service matches for a use case
  */
-export function getUseCaseFedRAMPMatches(useCaseId: number): UseCaseFedRAMPMatch[] {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function getUseCaseFedRAMPMatches(useCaseId: number): Promise<UseCaseFedRAMPMatch[]> {
+  const results = await db
+    .select({
+      product_id: useCaseFedRampMatches.productId,
+      provider_name: useCaseFedRampMatches.providerName,
+      product_name: useCaseFedRampMatches.productName,
+      confidence: useCaseFedRampMatches.confidence,
+      match_reason: useCaseFedRampMatches.matchReason,
+    })
+    .from(useCaseFedRampMatches)
+    .where(eq(useCaseFedRampMatches.useCaseId, useCaseId))
+    .orderBy(
+      sql`case ${useCaseFedRampMatches.confidence} when 'high' then 1 when 'medium' then 2 when 'low' then 3 end`,
+      useCaseFedRampMatches.providerName
+    );
 
-  const matches = db.prepare(`
-    SELECT product_id, provider_name, product_name, confidence, match_reason
-    FROM use_case_fedramp_matches
-    WHERE use_case_id = ?
-    ORDER BY
-      CASE confidence
-        WHEN 'high' THEN 1
-        WHEN 'medium' THEN 2
-        WHEN 'low' THEN 3
-      END,
-      provider_name
-  `).all(useCaseId) as UseCaseFedRAMPMatch[];
-
-  db.close();
-  return matches;
+  return results.map(r => ({
+    product_id: r.product_id,
+    provider_name: r.provider_name,
+    product_name: r.product_name,
+    confidence: r.confidence,
+    match_reason: r.match_reason,
+  }));
 }
 
 /**
  * Get all unique values for a field (for filter dropdowns)
  */
-export function getUniqueValues(field: 'domain_category' | 'stage_of_development' | 'use_case_topic_area' | 'agency'): string[] {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function getUniqueValues(
+  field: 'domain_category' | 'stage_of_development' | 'use_case_topic_area' | 'agency'
+): Promise<string[]> {
+  const columnMap = {
+    domain_category: aiUseCases.domainCategory,
+    stage_of_development: aiUseCases.stageOfDevelopment,
+    use_case_topic_area: aiUseCases.useCaseTopicArea,
+    agency: aiUseCases.agency,
+  };
 
-  const values = db.prepare(`
-    SELECT DISTINCT ${field}
-    FROM ai_use_cases
-    WHERE ${field} IS NOT NULL AND ${field} != ''
-    ORDER BY ${field}
-  `).all() as Array<Record<string, string>>;
+  const column = columnMap[field];
 
-  db.close();
+  const results = await db
+    .selectDistinct({ value: column })
+    .from(aiUseCases)
+    .where(and(sql`${column} is not null`, sql`${column} != ''`))
+    .orderBy(column);
 
-  return values.map(v => v[field]);
+  return results.map(r => r.value!);
 }
 
 /**
  * Get recent use cases (by implementation date)
  */
-export function getRecentUseCases(limit: number = 10): UseCase[] {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function getRecentUseCases(limit: number = 10): Promise<UseCase[]> {
+  const results = await db
+    .select()
+    .from(aiUseCases)
+    .where(and(
+      sql`${aiUseCases.dateImplemented} is not null`,
+      sql`${aiUseCases.dateImplemented} != ''`
+    ))
+    .orderBy(desc(aiUseCases.dateImplemented))
+    .limit(limit);
 
-  const useCases = db.prepare(`
-    SELECT * FROM ai_use_cases
-    WHERE date_implemented IS NOT NULL AND date_implemented != ''
-    ORDER BY date_implemented DESC
-    LIMIT ?
-  `).all(limit) as UseCase[];
-
-  db.close();
-  return useCases;
+  return results.map(transformUseCase);
 }
 
 /**
  * Search use cases with full-text search
  */
-export function searchUseCases(query: string): UseCase[] {
+export async function searchUseCases(query: string): Promise<UseCase[]> {
   return getUseCases({ search: query });
 }
 
 /**
  * Get count of use cases by provider
  */
-export function getProviderUseCaseCounts(): Array<{ provider: string; count: number }> {
-  const db = new Database(DB_PATH, { readonly: true });
-
-  // Get all use cases with providers
-  const useCases = db.prepare(`
-    SELECT providers_detected
-    FROM ai_use_cases
-    WHERE providers_detected IS NOT NULL AND providers_detected != '[]'
-  `).all() as Array<{ providers_detected: string }>;
-
-  db.close();
+export async function getProviderUseCaseCounts(): Promise<Array<{ provider: string; count: number }>> {
+  const results = await db
+    .select({
+      providers_detected: aiUseCases.providersDetected,
+    })
+    .from(aiUseCases)
+    .where(
+      and(
+        sql`${aiUseCases.providersDetected} is not null`,
+        sql`jsonb_array_length(${aiUseCases.providersDetected}) > 0`
+      )
+    );
 
   // Count provider mentions
   const providerCounts: Record<string, number> = {};
 
-  useCases.forEach(uc => {
-    try {
-      const providers = JSON.parse(uc.providers_detected) as string[];
-      providers.forEach(provider => {
+  results.forEach((uc) => {
+    const providers = uc.providers_detected as unknown as string[];
+    if (Array.isArray(providers)) {
+      providers.forEach((provider) => {
         providerCounts[provider] = (providerCounts[provider] || 0) + 1;
       });
-    } catch (e) {
-      // Skip invalid JSON
     }
   });
 

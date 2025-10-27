@@ -6,14 +6,14 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 export const dynamic = 'force-dynamic';
 
 export default async function UseCasesPage() {
-  const useCases = getUseCases();
-  const stats = getUseCaseStats();
-  const domainStats = getDomainStats();
+  const useCases = await getUseCases();
+  const stats = await getUseCaseStats();
+  const domainStats = await getDomainStats();
 
   // Get unique values for filters
-  const domains = getUniqueValues('domain_category');
-  const agencies = getUniqueValues('agency');
-  const stages = getUniqueValues('stage_of_development');
+  const domains = await getUniqueValues('domain_category');
+  const agencies = await getUniqueValues('agency');
+  const stages = await getUniqueValues('stage_of_development');
 
   return (
     <div className="min-h-screen bg-gov-slate-50">
