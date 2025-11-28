@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "agency_id": 1,
+    "product_id": "FR1824057433",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft Office 365 GCC High",
+    "confidence": "medium",
+    "match_reason": "Provider match: Microsoft mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 2,
+    "agency_id": 1,
+    "product_id": "F1603087869",
+    "provider_name": "Microsoft",
+    "product_name": "Azure Government (includes Dynamics 365)",
+    "confidence": "high",
+    "match_reason": "Direct service match: 'openai' found in both agency data and product services",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 3,
+    "agency_id": 1,
+    "product_id": "MSO365MT",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "confidence": "medium",
+    "match_reason": "Provider match: Microsoft mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 4,
+    "agency_id": 2,
+    "product_id": "FR1824057433",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft Office 365 GCC High",
+    "confidence": "medium",
+    "match_reason": "Provider match: Microsoft mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 5,
+    "agency_id": 2,
+    "product_id": "F1603087869",
+    "provider_name": "Microsoft",
+    "product_name": "Azure Government (includes Dynamics 365)",
+    "confidence": "high",
+    "match_reason": "Direct service match: 'openai' found in both agency data and product services",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 6,
+    "agency_id": 2,
+    "product_id": "MSO365MT",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "confidence": "medium",
+    "match_reason": "Provider match: Microsoft mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 7,
+    "agency_id": 3,
+    "product_id": "FR1824057433",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft Office 365 GCC High",
+    "confidence": "medium",
+    "match_reason": "Provider match: Microsoft mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 8,
+    "agency_id": 3,
+    "product_id": "F1603087869",
+    "provider_name": "Microsoft",
+    "product_name": "Azure Government (includes Dynamics 365)",
+    "confidence": "high",
+    "match_reason": "Direct service match: 'openai' found in both agency data and product services",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 9,
+    "agency_id": 3,
+    "product_id": "MSO365MT",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "confidence": "medium",
+    "match_reason": "Provider match: Microsoft mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 10,
+    "agency_id": 5,
+    "product_id": "FR1824057433",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft Office 365 GCC High",
+    "confidence": "medium",
+    "match_reason": "Provider match: Microsoft mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 11,
+    "agency_id": 5,
+    "product_id": "F1603087869",
+    "provider_name": "Microsoft",
+    "product_name": "Azure Government (includes Dynamics 365)",
+    "confidence": "high",
+    "match_reason": "Direct service match: 'copilot' found in both agency data and product services",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 12,
+    "agency_id": 5,
+    "product_id": "MSO365MT",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "confidence": "high",
+    "match_reason": "Direct service match: 'copilot' found in both agency data and product services",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 13,
+    "agency_id": 5,
+    "product_id": "F1209051525",
+    "provider_name": "Microsoft",
+    "product_name": "Azure Commercial Cloud",
+    "confidence": "high",
+    "match_reason": "Direct service match: 'copilot' found in both agency data and product services",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 14,
+    "agency_id": 6,
+    "product_id": "FR1824057433",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft Office 365 GCC High",
+    "confidence": "medium",
+    "match_reason": "Provider match: Microsoft mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 15,
+    "agency_id": 6,
+    "product_id": "F1603087869",
+    "provider_name": "Microsoft",
+    "product_name": "Azure Government (includes Dynamics 365)",
+    "confidence": "high",
+    "match_reason": "Direct service match: 'openai' found in both agency data and product services",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 16,
+    "agency_id": 6,
+    "product_id": "MSO365MT",
+    "provider_name": "Microsoft",
+    "product_name": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "confidence": "medium",
+    "match_reason": "Provider match: Microsoft mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 17,
+    "agency_id": 8,
+    "product_id": "AGENCYAMAZONEW",
+    "provider_name": "Amazon",
+    "product_name": "AWS US East/West",
+    "confidence": "medium",
+    "match_reason": "Provider match: Amazon mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 18,
+    "agency_id": 8,
+    "product_id": "F1603047866",
+    "provider_name": "Amazon",
+    "product_name": "AWS GovCloud",
+    "confidence": "medium",
+    "match_reason": "Provider match: Amazon mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 19,
+    "agency_id": 31,
+    "product_id": "F1206081364",
+    "provider_name": "Google",
+    "product_name": "Google Workspace",
+    "confidence": "medium",
+    "match_reason": "Provider match: Google mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 20,
+    "agency_id": 31,
+    "product_id": "FR1805751477",
+    "provider_name": "Google",
+    "product_name": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "confidence": "medium",
+    "match_reason": "Provider match: Google mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  },
+  {
+    "id": 21,
+    "agency_id": 31,
+    "product_id": "FR2405153785",
+    "provider_name": "Google LLC",
+    "product_name": "Google Cloud VMware Engine (GCVE)",
+    "confidence": "medium",
+    "match_reason": "Provider match: Google mentioned in solution type",
+    "created_at": "2025-10-25 19:59:32"
+  }
+]

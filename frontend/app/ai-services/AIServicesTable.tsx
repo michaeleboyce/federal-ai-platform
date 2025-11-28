@@ -129,7 +129,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
   return (
     <div className="space-y-4">
       {/* Filters and Search */}
-      <div className="bg-white rounded-lg border border-gov-slate-200 p-4">
+      <div className="bg-white rounded-lg border border-charcoal-200 p-4">
         <div className="flex flex-col lg:flex-row gap-4">
           {/* AI Type Filters */}
           <div className="flex gap-2">
@@ -137,8 +137,8 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               onClick={() => handleFilterChange('all')}
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                 filterType === 'all'
-                  ? 'bg-gov-navy-700 text-white border-gov-navy-700'
-                  : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
+                  ? 'bg-charcoal-700 text-cream border-charcoal-700'
+                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
               }`}
             >
               All ({services.length})
@@ -147,8 +147,8 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               onClick={() => handleFilterChange('ai')}
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                 filterType === 'ai'
-                  ? 'bg-ai-blue text-white border-ai-blue'
-                  : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
+                  ? 'bg-ifp-purple text-white border-ifp-purple'
+                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
               }`}
             >
               AI/ML ({services.filter((s) => s.has_ai).length})
@@ -157,8 +157,8 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               onClick={() => handleFilterChange('genai')}
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                 filterType === 'genai'
-                  ? 'bg-ai-teal text-white border-ai-teal'
-                  : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
+                  ? 'bg-ifp-orange text-white border-ifp-orange'
+                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
               }`}
             >
               GenAI ({services.filter((s) => s.has_genai).length})
@@ -167,8 +167,8 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               onClick={() => handleFilterChange('llm')}
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                 filterType === 'llm'
-                  ? 'bg-ai-indigo text-white border-ai-indigo'
-                  : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
+                  ? 'bg-charcoal-600 text-white border-charcoal-600'
+                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
               }`}
             >
               LLM ({services.filter((s) => s.has_llm).length})
@@ -182,7 +182,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               placeholder="Search services..."
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
-              className="w-full px-4 py-2 border border-gov-slate-300 rounded-md focus:ring-2 focus:ring-gov-navy-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-charcoal-300 rounded-md focus:ring-2 focus:ring-ifp-purple focus:border-transparent"
             />
           </div>
 
@@ -194,7 +194,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
                 setItemsPerPage(Number(e.target.value));
                 setCurrentPage(1);
               }}
-              className="px-4 py-2 border border-gov-slate-300 rounded-md focus:ring-2 focus:ring-gov-navy-500"
+              className="px-4 py-2 border border-charcoal-300 rounded-md focus:ring-2 focus:ring-ifp-purple"
             >
               <option value={25}>25 per page</option>
               <option value={50}>50 per page</option>
@@ -203,26 +203,26 @@ export default function AIServicesTable({ services }: { services: AIService[] })
             </select>
           </div>
         </div>
-        <div className="mt-3 text-sm text-gov-slate-600">
+        <div className="mt-3 text-sm text-charcoal-500">
           Showing {paginatedServices.length} of {filteredServices.length} services
           {searchQuery && ` (filtered from ${filteredByType.length} total)`}
         </div>
       </div>
 
       {/* Table */}
-      <div className="bg-white rounded-lg border border-gov-slate-200 overflow-hidden">
+      <div className="bg-white rounded-lg border border-charcoal-200 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-gov-slate-100 border-b-2 border-gov-slate-200">
+            <thead className="bg-charcoal-100 border-b-2 border-charcoal-200">
               <tr>
                 <th
                   onClick={() => handleSort('provider_name')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Provider</span>
                     {sortField === 'provider_name' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
@@ -230,12 +230,12 @@ export default function AIServicesTable({ services }: { services: AIService[] })
                 </th>
                 <th
                   onClick={() => handleSort('product_name')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Product</span>
                     {sortField === 'product_name' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
@@ -243,31 +243,31 @@ export default function AIServicesTable({ services }: { services: AIService[] })
                 </th>
                 <th
                   onClick={() => handleSort('service_name')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Service</span>
                     {sortField === 'service_name' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
                   </div>
                 </th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
+                <th className="px-4 py-3 text-left text-sm font-semibold text-charcoal">
                   AI Type
                 </th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
+                <th className="px-4 py-3 text-left text-sm font-semibold text-charcoal">
                   Description
                 </th>
                 <th
                   onClick={() => handleSort('fedramp_status')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Status</span>
                     {sortField === 'fedramp_status' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
@@ -275,74 +275,74 @@ export default function AIServicesTable({ services }: { services: AIService[] })
                 </th>
                 <th
                   onClick={() => handleSort('impact_level')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Impact</span>
                     {sortField === 'impact_level' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
                   </div>
                 </th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
+                <th className="px-4 py-3 text-left text-sm font-semibold text-charcoal">
                   Actions
                 </th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gov-slate-200">
+            <tbody className="divide-y divide-charcoal-200">
               {paginatedServices.map((service, index) => (
                 <tr
                   key={service.id}
                   onClick={() => router.push(`/product/${service.product_id}`)}
-                  className={`cursor-pointer hover:bg-gov-slate-100 hover:border-l-4 hover:border-gov-navy-600 transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-gov-slate-50/30'}`}
+                  className={`cursor-pointer hover:bg-charcoal-50 hover:border-l-4 hover:border-ifp-purple transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-charcoal-50/30'}`}
                 >
-                  <td className="px-4 py-3 text-sm text-gov-navy-900">{service.provider_name}</td>
-                  <td className="px-4 py-3 text-sm font-medium text-gov-navy-900">
+                  <td className="px-4 py-3 text-sm text-charcoal">{service.provider_name}</td>
+                  <td className="px-4 py-3 text-sm font-medium text-charcoal">
                     <div className="max-w-xs truncate" title={service.product_name}>
                       {service.product_name}
                     </div>
                   </td>
                   <td className="px-4 py-3 text-sm">
-                    <span className="font-semibold text-gov-navy-900">
+                    <span className="font-semibold text-charcoal">
                       {service.service_name}
                     </span>
                   </td>
                   <td className="px-4 py-3 text-sm">
                     <div className="flex flex-wrap gap-1">
-                      {service.has_ai === 1 && (
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
+                      {service.has_ai && (
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ifp-purple-light text-ifp-purple-dark border border-ifp-purple">
                           AI
                         </span>
                       )}
-                      {service.has_genai === 1 && (
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-teal-light text-ai-teal-dark border border-ai-teal">
+                      {service.has_genai && (
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ifp-orange-light text-ifp-orange-dark border border-ifp-orange">
                           GenAI
                         </span>
                       )}
-                      {service.has_llm === 1 && (
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-indigo-light text-ai-indigo-dark border border-ai-indigo">
+                      {service.has_llm && (
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-charcoal-100 text-charcoal-700 border border-charcoal-400">
                           LLM
                         </span>
                       )}
                     </div>
                   </td>
-                  <td className="px-4 py-3 text-sm text-gov-slate-600">
-                    <div className="max-w-md truncate" title={service.relevant_excerpt}>
+                  <td className="px-4 py-3 text-sm text-charcoal-500">
+                    <div className="max-w-md truncate" title={service.relevant_excerpt || undefined}>
                       {service.relevant_excerpt}
                     </div>
                   </td>
-                  <td className="px-4 py-3 text-sm text-gov-slate-700">
+                  <td className="px-4 py-3 text-sm text-charcoal-600">
                     {service.fedramp_status}
                   </td>
-                  <td className="px-4 py-3 text-sm text-gov-slate-700">
+                  <td className="px-4 py-3 text-sm text-charcoal-600">
                     {service.impact_level}
                   </td>
                   <td className="px-4 py-3 text-sm">
                     <Link
                       href={`/product/${service.product_id}`}
-                      className="text-gov-navy-700 hover:text-gov-navy-900 font-medium underline"
+                      className="text-ifp-purple hover:text-ifp-purple-dark font-medium underline"
                     >
                       View Product →
                     </Link>
@@ -355,22 +355,22 @@ export default function AIServicesTable({ services }: { services: AIService[] })
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="p-4 bg-gov-slate-50 border-t border-gov-slate-200 flex items-center justify-between">
-            <div className="text-sm text-gov-slate-600">
+          <div className="p-4 bg-charcoal-50 border-t border-charcoal-200 flex items-center justify-between">
+            <div className="text-sm text-charcoal-500">
               Page {currentPage} of {totalPages}
             </div>
             <div className="flex gap-2">
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 bg-white border border-gov-slate-300 rounded-md text-sm font-medium text-gov-navy-900 hover:bg-gov-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Previous
               </button>
               <button
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 bg-white border border-gov-slate-300 rounded-md text-sm font-medium text-gov-navy-900 hover:bg-gov-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Next
               </button>

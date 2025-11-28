@@ -1,5 +1,7 @@
-import Database from 'better-sqlite3';
-import path from 'path';
+import { db } from './db/client';
+import { agencyAiUsage, agencyServiceMatches } from './db/schema';
+import { eq, or, ilike, sql } from 'drizzle-orm';
+import type { AgencyAIUsage as AgencyAIUsageType, AgencyServiceMatch as AgencyServiceMatchType } from './db/schema';
 
 export interface AgencyAIUsage {
   id: number;
@@ -16,7 +18,7 @@ export interface AgencyAIUsage {
   tool_purpose: string | null;
   notes: string | null;
   sources: string | null;
-  analyzed_at: string;
+  analyzed_at: Date;
   slug: string;
 }
 
@@ -25,7 +27,7 @@ export interface AgencyServiceMatch {
   provider_name: string;
   product_name: string;
   confidence: string;
-  match_reason: string;
+  match_reason: string | null;
 }
 
 export interface AgencyStats {
@@ -38,92 +40,162 @@ export interface AgencyStats {
   high_confidence_matches: number;
 }
 
-const DB_PATH = path.join(process.cwd(), '..', 'data', 'fedramp.db');
+function transformAgency(result: AgencyAIUsageType): AgencyAIUsage {
+  return {
+    id: result.id,
+    agency_name: result.agencyName,
+    agency_category: result.agencyCategory,
+    has_staff_llm: result.hasStaffLlm,
+    llm_name: result.llmName,
+    has_coding_assistant: result.hasCodingAssistant,
+    scope: result.scope,
+    solution_type: result.solutionType,
+    non_public_allowed: result.nonPublicAllowed,
+    other_ai_present: result.otherAiPresent,
+    tool_name: result.toolName,
+    tool_purpose: result.toolPurpose,
+    notes: result.notes,
+    sources: result.sources,
+    analyzed_at: result.analyzedAt,
+    slug: result.slug,
+  };
+}
 
-export function getAgencies(category?: 'staff_llm' | 'specialized'): AgencyAIUsage[] {
-  const db = new Database(DB_PATH, { readonly: true });
+function transformMatch(result: AgencyServiceMatchType): AgencyServiceMatch {
+  return {
+    product_id: result.productId,
+    provider_name: result.providerName,
+    product_name: result.productName,
+    confidence: result.confidence,
+    match_reason: result.matchReason,
+  };
+}
 
-  let query = 'SELECT * FROM agency_ai_usage';
+export async function getAgencies(category?: 'staff_llm' | 'specialized'): Promise<AgencyAIUsage[]> {
+  try {
+    let query = db.select().from(agencyAiUsage);
 
-  if (category) {
-    query += ' WHERE agency_category = ?';
+    if (category) {
+      query = query.where(eq(agencyAiUsage.agencyCategory, category)) as typeof query;
+    }
+
+    const results = await query.orderBy(agencyAiUsage.agencyName);
+    return results.map(transformAgency);
+  } catch (error) {
+    console.error('Error fetching agencies:', error);
+    return [];
   }
-
-  query += ' ORDER BY agency_name';
-
-  const agencies = category
-    ? db.prepare(query).all(category) as AgencyAIUsage[]
-    : db.prepare(query).all() as AgencyAIUsage[];
-
-  db.close();
-  return agencies;
 }
 
-export function getAgencyBySlug(slug: string): AgencyAIUsage | null {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function getAgencyBySlug(slug: string): Promise<AgencyAIUsage | null> {
+  try {
+    const results = await db
+      .select()
+      .from(agencyAiUsage)
+      .where(eq(agencyAiUsage.slug, slug))
+      .limit(1);
 
-  const agency = db.prepare('SELECT * FROM agency_ai_usage WHERE slug = ?').get(slug) as AgencyAIUsage | undefined;
-
-  db.close();
-  return agency || null;
+    return results.length > 0 ? transformAgency(results[0]) : null;
+  } catch (error) {
+    console.error('Error fetching agency by slug:', error);
+    return null;
+  }
 }
 
-export function getAgencyMatches(agencyId: number): AgencyServiceMatch[] {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function getAgencyMatches(agencyId: number): Promise<AgencyServiceMatch[]> {
+  try {
+    const results = await db
+      .select()
+      .from(agencyServiceMatches)
+      .where(eq(agencyServiceMatches.agencyId, agencyId))
+      .orderBy(
+        sql`case ${agencyServiceMatches.confidence} when 'high' then 1 when 'medium' then 2 when 'low' then 3 end`,
+        agencyServiceMatches.providerName
+      );
 
-  const matches = db.prepare(`
-    SELECT product_id, provider_name, product_name, confidence, match_reason
-    FROM agency_service_matches
-    WHERE agency_id = ?
-    ORDER BY
-      CASE confidence
-        WHEN 'high' THEN 1
-        WHEN 'medium' THEN 2
-        WHEN 'low' THEN 3
-      END,
-      provider_name
-  `).all(agencyId) as AgencyServiceMatch[];
-
-  db.close();
-  return matches;
+    return results.map(transformMatch);
+  } catch (error) {
+    console.error('Error fetching agency matches:', error);
+    return [];
+  }
 }
 
-export function getAgencyStats(): AgencyStats {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function getAgencyStats(): Promise<AgencyStats> {
+  try {
+    const result = await db
+      .select({
+        total_agencies: sql<number>`count(distinct ${agencyAiUsage.id})::int`,
+        agencies_with_llm: sql<number>`sum(case when ${agencyAiUsage.hasStaffLlm} like '%Yes%' then 1 else 0 end)::int`,
+        agencies_with_coding: sql<number>`sum(case when ${agencyAiUsage.hasCodingAssistant} like '%Yes%' or ${agencyAiUsage.hasCodingAssistant} like '%Allowed%' then 1 else 0 end)::int`,
+        agencies_custom_solution: sql<number>`sum(case when ${agencyAiUsage.solutionType} like '%Custom%' then 1 else 0 end)::int`,
+        agencies_commercial_solution: sql<number>`sum(case when ${agencyAiUsage.solutionType} like '%Commercial%' or ${agencyAiUsage.solutionType} like '%Azure%' or ${agencyAiUsage.solutionType} like '%AWS%' then 1 else 0 end)::int`,
+      })
+      .from(agencyAiUsage)
+      .where(eq(agencyAiUsage.agencyCategory, 'staff_llm'));
 
-  const stats = db.prepare(`
-    SELECT
-      COUNT(DISTINCT id) as total_agencies,
-      SUM(CASE WHEN has_staff_llm LIKE '%Yes%' THEN 1 ELSE 0 END) as agencies_with_llm,
-      SUM(CASE WHEN has_coding_assistant LIKE '%Yes%' OR has_coding_assistant LIKE '%Allowed%' THEN 1 ELSE 0 END) as agencies_with_coding,
-      SUM(CASE WHEN solution_type LIKE '%Custom%' THEN 1 ELSE 0 END) as agencies_custom_solution,
-      SUM(CASE WHEN solution_type LIKE '%Commercial%' OR solution_type LIKE '%Azure%' OR solution_type LIKE '%AWS%' THEN 1 ELSE 0 END) as agencies_commercial_solution,
-      (SELECT COUNT(*) FROM agency_service_matches) as total_matches,
-      (SELECT COUNT(*) FROM agency_service_matches WHERE confidence = 'high') as high_confidence_matches
-    FROM agency_ai_usage
-    WHERE agency_category = 'staff_llm'
-  `).get() as AgencyStats;
+    // Get match stats separately
+    const matchStats = await db
+      .select({
+        total_matches: sql<number>`count(*)::int`,
+      })
+      .from(agencyServiceMatches);
 
-  db.close();
-  return stats;
+    const highConfidenceMatches = await db
+      .select({
+        count: sql<number>`count(*)::int`,
+      })
+      .from(agencyServiceMatches)
+      .where(eq(agencyServiceMatches.confidence, 'high'));
+
+    return result[0] ? {
+      ...result[0],
+      total_matches: matchStats[0]?.total_matches || 0,
+      high_confidence_matches: highConfidenceMatches[0]?.count || 0,
+    } : {
+      total_agencies: 0,
+      agencies_with_llm: 0,
+      agencies_with_coding: 0,
+      agencies_custom_solution: 0,
+      agencies_commercial_solution: 0,
+      total_matches: 0,
+      high_confidence_matches: 0,
+    };
+  } catch (error) {
+    console.error('Error fetching agency stats:', error);
+    // Return empty stats if table doesn't exist or query fails
+    return {
+      total_agencies: 0,
+      agencies_with_llm: 0,
+      agencies_with_coding: 0,
+      agencies_custom_solution: 0,
+      agencies_commercial_solution: 0,
+      total_matches: 0,
+      high_confidence_matches: 0,
+    };
+  }
 }
 
-export function searchAgencies(query: string): AgencyAIUsage[] {
-  const db = new Database(DB_PATH, { readonly: true });
+export async function searchAgencies(query: string): Promise<AgencyAIUsage[]> {
+  try {
+    const searchTerm = `%${query}%`;
 
-  const searchTerm = `%${query.toLowerCase()}%`;
+    const results = await db
+      .select()
+      .from(agencyAiUsage)
+      .where(
+        or(
+          ilike(agencyAiUsage.agencyName, searchTerm),
+          ilike(agencyAiUsage.llmName, searchTerm),
+          ilike(agencyAiUsage.solutionType, searchTerm),
+          ilike(agencyAiUsage.toolName, searchTerm),
+          ilike(agencyAiUsage.notes, searchTerm)
+        )
+      )
+      .orderBy(agencyAiUsage.agencyName);
 
-  const agencies = db.prepare(`
-    SELECT * FROM agency_ai_usage
-    WHERE
-      LOWER(agency_name) LIKE ? OR
-      LOWER(llm_name) LIKE ? OR
-      LOWER(solution_type) LIKE ? OR
-      LOWER(tool_name) LIKE ? OR
-      LOWER(notes) LIKE ?
-    ORDER BY agency_name
-  `).all(searchTerm, searchTerm, searchTerm, searchTerm, searchTerm) as AgencyAIUsage[];
-
-  db.close();
-  return agencies;
+    return results.map(transformAgency);
+  } catch (error) {
+    console.error('Error searching agencies:', error);
+    return [];
+  }
 }
