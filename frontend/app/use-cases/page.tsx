@@ -1,19 +1,21 @@
 import Link from 'next/link';
 import { getUseCases, getUseCaseStats, getDomainStats, getUniqueValues } from '@/lib/use-case-db';
+import { getAllOrganizationsFlat } from '@/lib/hierarchy-db';
 import UseCaseTable from './UseCaseTable';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const dynamic = 'force-dynamic';
 
 export default async function UseCasesPage() {
-  const useCases = await getUseCases();
-  const stats = await getUseCaseStats();
-  const domainStats = await getDomainStats();
-
-  // Get unique values for filters
-  const domains = await getUniqueValues('domain_category');
-  const agencies = await getUniqueValues('agency');
-  const stages = await getUniqueValues('stage_of_development');
+  const [useCases, stats, domainStats, domains, agencies, stages, organizations] = await Promise.all([
+    getUseCases(),
+    getUseCaseStats(),
+    getDomainStats(),
+    getUniqueValues('domain_category'),
+    getUniqueValues('agency'),
+    getUniqueValues('stage_of_development'),
+    getAllOrganizationsFlat(),
+  ]);
 
   return (
     <div className="min-h-screen bg-gov-slate-50">
@@ -188,6 +190,7 @@ export default async function UseCasesPage() {
           domains={domains}
           agencies={agencies}
           stages={stages}
+          organizations={organizations}
         />
       </main>
 

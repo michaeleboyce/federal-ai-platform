@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import ProductTable from '@/components/ProductTable';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { getAllProducts, getStats } from '@/lib/db';
+import { getAllProductsWithServiceCounts } from '@/lib/db';
 
 export const dynamic = 'force-dynamic';
 
@@ -20,7 +20,7 @@ interface Product {
 }
 
 async function getProducts() {
-  const dbProducts = await getAllProducts();
+  const dbProducts = await getAllProductsWithServiceCounts();
   // Transform to match expected format
   return dbProducts.map(p => ({
     id: p.fedrampId,
@@ -30,9 +30,9 @@ async function getProducts() {
     service_offering: p.cloudServiceOffering || '',
     status: p.status || '',
     service_model: p.serviceModel ? [p.serviceModel] : [],
-    impact_level: [],
+    impact_level: p.impactLevels || [],
     service_desc: p.serviceDescription || '',
-    all_others: [],
+    all_others: p.aiServices || [],
     auth_date: p.fedrampAuthorizationDate || '',
   })) as Product[];
 }
@@ -41,7 +41,7 @@ export default async function ProductsPage() {
   const products = await getProducts();
 
   // Calculate stats
-  const activeProducts = products.filter((p) => p.status === 'Active').length;
+  const activeProducts = products.filter((p) => p.status === 'FedRAMP Authorized').length;
   const totalServices = products.reduce((acc, p) => acc + (p.all_others?.length || 0), 0);
   const uniqueProviders = new Set(products.map((p) => p.csp)).size;
 
@@ -76,7 +76,7 @@ export default async function ProductsPage() {
             </div>
             <div className="bg-white p-4 rounded-lg border-l-4 border-status-success">
               <div className="text-2xl font-bold text-gov-navy-900">{activeProducts}</div>
-              <div className="text-sm text-gov-slate-600">Active</div>
+              <div className="text-sm text-gov-slate-600">Authorized</div>
             </div>
             <div className="bg-white p-4 rounded-lg border-l-4 border-ai-teal">
               <div className="text-2xl font-bold text-gov-navy-900">{totalServices.toLocaleString()}</div>

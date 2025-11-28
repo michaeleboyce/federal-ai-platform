@@ -1,13 +1,18 @@
 import Link from 'next/link';
 import { getAgencies, getAgencyStats } from '@/lib/agency-db';
+import { getHierarchyWithAgencyUsage } from '@/lib/hierarchy-db';
 import AgencyAITable from './AgencyAITable';
+import AgencyAdoptionOverview from './AgencyAdoptionOverview';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const dynamic = 'force-dynamic';
 
 export default async function AgencyAIUsagePage() {
-  const agenciesData = await getAgencies('staff_llm');
-  const statsData = await getAgencyStats();
+  const [agenciesData, statsData, hierarchy] = await Promise.all([
+    getAgencies('staff_llm'),
+    getAgencyStats(),
+    getHierarchyWithAgencyUsage(),
+  ]);
 
   // Provide default values if data is undefined
   const agencies = agenciesData || [];
@@ -38,21 +43,21 @@ export default async function AgencyAIUsagePage() {
       </header>
 
       <main className="container mx-auto px-4 py-8">
-        {/* Statistics Dashboard */}
+        {/* Overview Statistics */}
         <div className="bg-white rounded-lg border border-gov-slate-200 p-6 mb-6">
-          <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">Agency AI Adoption Statistics</h2>
+          <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">Data Sources Summary</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <div className="bg-white p-4 rounded-lg border-l-4 border-gov-navy-600">
               <div className="text-2xl font-bold text-gov-navy-900">{stats.total_agencies}</div>
-              <div className="text-sm text-gov-slate-600">Agencies Total</div>
+              <div className="text-sm text-gov-slate-600">Data Sources</div>
             </div>
             <div className="bg-white p-4 rounded-lg border-l-4 border-ai-blue">
               <div className="text-2xl font-bold text-gov-navy-900">{stats.agencies_with_llm}</div>
-              <div className="text-sm text-gov-slate-600">With Staff LLM</div>
+              <div className="text-sm text-gov-slate-600">Report Staff LLM</div>
             </div>
             <div className="bg-white p-4 rounded-lg border-l-4 border-ai-teal">
               <div className="text-2xl font-bold text-gov-navy-900">{stats.agencies_with_coding}</div>
-              <div className="text-sm text-gov-slate-600">With Coding Assistant</div>
+              <div className="text-sm text-gov-slate-600">Report Coding Tools</div>
             </div>
             <div className="bg-white p-4 rounded-lg border-l-4 border-ai-indigo">
               <div className="text-2xl font-bold text-gov-navy-900">{stats.agencies_custom_solution}</div>
@@ -69,11 +74,11 @@ export default async function AgencyAIUsagePage() {
           </div>
         </div>
 
-        {/* Info Panel */}
+        {/* Info Panel - Clarified */}
         <div className="bg-gov-navy-50 border border-gov-navy-200 rounded-lg p-4 mb-6">
           <h3 className="text-sm font-semibold text-gov-navy-900 mb-2">About This Data</h3>
           <p className="text-sm text-gov-slate-700 mb-2">
-            This dashboard tracks how federal agencies are adopting AI technologies internally, including:
+            Each row in the table below represents a <strong>data source</strong> — a public announcement, report, or AI inventory entry from an agency about their internal AI adoption. This tracks:
           </p>
           <div className="flex flex-wrap gap-2 mt-3">
             <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
@@ -87,9 +92,12 @@ export default async function AgencyAIUsagePage() {
             </span>
           </div>
           <p className="text-xs text-gov-slate-600 mt-3">
-            Data compiled from public agency announcements, reports, and AI inventories. Last updated: {new Date().toLocaleDateString()}
+            <strong>Note:</strong> Multiple entries may exist for the same agency if there are multiple public sources. Data compiled from public agency announcements, reports, and AI inventories. Last updated: {new Date().toLocaleDateString()}
           </p>
         </div>
+
+        {/* Visual Agency Adoption Overview */}
+        <AgencyAdoptionOverview hierarchy={hierarchy} agencies={agencies} />
 
         {/* Link to FedRAMP AI Services */}
         <Link
@@ -111,7 +119,7 @@ export default async function AgencyAIUsagePage() {
         </Link>
 
         {/* Agencies Table */}
-        <AgencyAITable agencies={agencies} />
+        <AgencyAITable agencies={agencies} hierarchy={hierarchy} />
       </main>
 
       <footer className="bg-gov-navy-950 text-white py-6 mt-12 border-t-4 border-gov-navy-700">

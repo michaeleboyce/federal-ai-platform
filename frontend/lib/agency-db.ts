@@ -18,6 +18,7 @@ export interface AgencyAIUsage {
   tool_purpose: string | null;
   notes: string | null;
   sources: string | null;
+  organization_id: number | null;
   analyzed_at: Date;
   slug: string;
 }
@@ -56,6 +57,7 @@ function transformAgency(result: AgencyAIUsageType): AgencyAIUsage {
     tool_purpose: result.toolPurpose,
     notes: result.notes,
     sources: result.sources,
+    organization_id: result.organizationId,
     analyzed_at: result.analyzedAt,
     slug: result.slug,
   };

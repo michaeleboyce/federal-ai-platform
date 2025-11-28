@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useState, useMemo, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import type { UseCase } from '@/lib/use-case-db';
+import type { FederalOrganization } from '@/lib/db/schema';
+import { AgencyFilterDropdown } from '@/components/hierarchy/AgencyFilterDropdown';
 
 type SortField = 'useCaseName' | 'agency' | 'domainCategory' | 'stageOfDevelopment' | 'dateImplemented';
 type SortDirection = 'asc' | 'desc';
@@ -15,9 +17,10 @@ interface UseCaseTableProps {
   domains: string[];
   agencies: string[];
   stages: string[];
+  organizations: (FederalOrganization & { parentName: string | null })[];
 }
 
-export default function UseCaseTable({ useCases, domains, agencies, stages }: UseCaseTableProps) {
+export default function UseCaseTable({ useCases, domains, agencies, stages, organizations }: UseCaseTableProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -25,12 +28,15 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
   const [aiTypeFilter, setAITypeFilter] = useState<AITypeFilter>('all');
   const [domainFilter, setDomainFilter] = useState<string>('all');
   const [agencyFilter, setAgencyFilter] = useState<string>('all');
+  const [organizationFilter, setOrganizationFilter] = useState<number | null>(null);
+  const [includeDescendants, setIncludeDescendants] = useState(true);
   const [stageFilter, setStageFilter] = useState<string>('all');
   const [sortField, setSortField] = useState<SortField>('agency');
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   const [itemsPerPage, setItemsPerPage] = useState(50);
   const [currentPage, setCurrentPage] = useState(1);
   const [isInitialized, setIsInitialized] = useState(false);
+  const [useHierarchicalFilter, setUseHierarchicalFilter] = useState(true);
 
   // Initialize state from URL on mount
   useEffect(() => {
@@ -38,6 +44,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     const aiType = searchParams.get('aiType') as AITypeFilter || 'all';
     const domain = searchParams.get('domain') || 'all';
     const agency = searchParams.get('agency') || 'all';
+    const orgId = searchParams.get('orgId');
     const stage = searchParams.get('stage') || 'all';
     const sort = searchParams.get('sort') as SortField || 'agency';
     const dir = searchParams.get('dir') as SortDirection || 'asc';
@@ -48,6 +55,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     setAITypeFilter(aiType);
     setDomainFilter(domain);
     setAgencyFilter(agency);
+    setOrganizationFilter(orgId ? parseInt(orgId, 10) : null);
     setStageFilter(stage);
     setSortField(sort);
     setSortDirection(dir);
@@ -65,6 +73,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     if (aiTypeFilter !== 'all') params.set('aiType', aiTypeFilter);
     if (domainFilter !== 'all') params.set('domain', domainFilter);
     if (agencyFilter !== 'all') params.set('agency', agencyFilter);
+    if (organizationFilter) params.set('orgId', organizationFilter.toString());
     if (stageFilter !== 'all') params.set('stage', stageFilter);
     if (sortField !== 'agency') params.set('sort', sortField);
     if (sortDirection !== 'asc') params.set('dir', sortDirection);
@@ -75,7 +84,20 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     const newUrl = queryString ? `/use-cases?${queryString}` : '/use-cases';
 
     router.replace(newUrl, { scroll: false });
-  }, [searchQuery, aiTypeFilter, domainFilter, agencyFilter, stageFilter, sortField, sortDirection, currentPage, itemsPerPage, isInitialized, router]);
+  }, [searchQuery, aiTypeFilter, domainFilter, agencyFilter, organizationFilter, stageFilter, sortField, sortDirection, currentPage, itemsPerPage, isInitialized, router]);
+
+  // Get organization names/abbreviations for matching
+  const organizationNames = useMemo(() => {
+    const names = new Map<number, { name: string; abbrev: string | null; hierarchyPath: string | null }>();
+    organizations.forEach(org => {
+      names.set(org.id, {
+        name: org.name.toLowerCase(),
+        abbrev: org.abbreviation?.toLowerCase() || null,
+        hierarchyPath: org.hierarchyPath,
+      });
+    });
+    return names;
+  }, [organizations]);
 
   // Parse providers for display
   const parseProviders = (providersJson: string): string[] => {
@@ -109,11 +131,53 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     return filteredByAIType.filter(uc => uc.domainCategory === domainFilter);
   }, [filteredByAIType, domainFilter]);
 
-  // Filter by agency
+  // Filter by agency (supports both simple and hierarchical filtering)
   const filteredByAgency = useMemo(() => {
+    // If using hierarchical filter
+    if (useHierarchicalFilter && organizationFilter) {
+      const selectedOrg = organizations.find(o => o.id === organizationFilter);
+      if (!selectedOrg) return filteredByDomain;
+
+      return filteredByDomain.filter(uc => {
+        const agencyLower = uc.agency?.toLowerCase() || '';
+        const abbrevLower = uc.agencyAbbreviation?.toLowerCase() || '';
+
+        // Check for exact match with selected organization
+        const selectedName = selectedOrg.name.toLowerCase();
+        const selectedAbbrev = selectedOrg.abbreviation?.toLowerCase() || '';
+
+        if (agencyLower === selectedName || abbrevLower === selectedAbbrev) {
+          return true;
+        }
+
+        // If including descendants, check child organizations
+        if (includeDescendants && selectedOrg.hierarchyPath) {
+          // Find all descendant organizations
+          for (const [, orgInfo] of organizationNames) {
+            if (orgInfo.hierarchyPath?.startsWith(selectedOrg.hierarchyPath) && orgInfo.hierarchyPath !== selectedOrg.hierarchyPath) {
+              if (agencyLower === orgInfo.name || abbrevLower === orgInfo.abbrev) {
+                return true;
+              }
+            }
+          }
+        }
+
+        // Also try fuzzy matching for department names
+        if (agencyLower.includes(selectedName) || selectedName.includes(agencyLower)) {
+          return true;
+        }
+        if (selectedAbbrev && (agencyLower.includes(selectedAbbrev) || abbrevLower === selectedAbbrev)) {
+          return true;
+        }
+
+        return false;
+      });
+    }
+
+    // Simple text filter
     if (agencyFilter === 'all') return filteredByDomain;
     return filteredByDomain.filter(uc => uc.agency === agencyFilter);
-  }, [filteredByDomain, agencyFilter]);
+  }, [filteredByDomain, agencyFilter, organizationFilter, organizations, organizationNames, includeDescendants, useHierarchicalFilter]);
 
   // Filter by stage
   const filteredByStage = useMemo(() => {
@@ -305,19 +369,51 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
               </select>
             </div>
 
-            {/* Agency Filter */}
+            {/* Agency Filter - Hierarchical */}
             <div>
-              <label className="text-xs font-semibold text-gov-slate-600 mb-1 block">AGENCY</label>
-              <select
-                value={agencyFilter}
-                onChange={(e) => { setAgencyFilter(e.target.value); handleFilterChange(); }}
-                className="w-full px-3 py-2 border border-gov-slate-300 rounded-md text-sm focus:ring-2 focus:ring-gov-navy-500"
-              >
-                <option value="all">All Agencies</option>
-                {agencies.slice(0, 20).map(agency => (
-                  <option key={agency} value={agency}>{agency}</option>
-                ))}
-              </select>
+              <div className="flex items-center justify-between mb-1">
+                <label className="text-xs font-semibold text-gov-slate-600">AGENCY</label>
+                <button
+                  onClick={() => {
+                    setUseHierarchicalFilter(!useHierarchicalFilter);
+                    setOrganizationFilter(null);
+                    setAgencyFilter('all');
+                    handleFilterChange();
+                  }}
+                  className="text-[10px] text-gov-navy-600 hover:text-gov-navy-900 underline"
+                >
+                  {useHierarchicalFilter ? 'Simple filter' : 'Hierarchy filter'}
+                </button>
+              </div>
+              {useHierarchicalFilter ? (
+                <AgencyFilterDropdown
+                  organizations={organizations}
+                  selectedId={organizationFilter}
+                  onSelect={(id, inclDesc) => {
+                    setOrganizationFilter(id);
+                    setIncludeDescendants(inclDesc);
+                    setAgencyFilter('all'); // Clear simple filter
+                    handleFilterChange();
+                  }}
+                  placeholder="All Agencies"
+                  showIncludeDescendants={true}
+                />
+              ) : (
+                <select
+                  value={agencyFilter}
+                  onChange={(e) => {
+                    setAgencyFilter(e.target.value);
+                    setOrganizationFilter(null); // Clear hierarchical filter
+                    handleFilterChange();
+                  }}
+                  className="w-full px-3 py-2 border border-gov-slate-300 rounded-md text-sm focus:ring-2 focus:ring-gov-navy-500"
+                >
+                  <option value="all">All Agencies</option>
+                  {agencies.slice(0, 50).map(agency => (
+                    <option key={agency} value={agency}>{agency}</option>
+                  ))}
+                </select>
+              )}
             </div>
 
             {/* Stage Filter */}
