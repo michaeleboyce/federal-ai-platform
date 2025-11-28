@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { getUseCaseBySlug, getUseCases, getUseCaseFedRAMPMatches } from '@/lib/use-case-db';
 import { getUseCaseRelatedIncidents } from '@/lib/incident-db';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import CollapsibleIncidentMatches from '@/components/CollapsibleIncidentMatches';
 
 export const dynamic = 'force-dynamic';
 
@@ -47,42 +46,42 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
 
     if (useCase.genaiFlag) {
       badges.push(
-        <span key="genai" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-ai-teal-light text-ai-teal-dark border border-ai-teal">
+        <span key="genai" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-ifp-orange-light text-ifp-orange-dark border border-ifp-orange">
           GenAI
         </span>
       );
     }
     if (useCase.hasLlm) {
       badges.push(
-        <span key="llm" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-ai-indigo-light text-ai-indigo-dark border border-ai-indigo">
+        <span key="llm" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-charcoal-100 text-charcoal-700 border border-charcoal-400">
           LLM
         </span>
       );
     }
     if (useCase.hasChatbot) {
       badges.push(
-        <span key="chatbot" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
+        <span key="chatbot" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-ifp-purple-light text-ifp-purple-dark border border-ifp-purple">
           Chatbot
         </span>
       );
     }
     if (useCase.generalPurposeChatbot) {
       badges.push(
-        <span key="gp-chat" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
+        <span key="gp-chat" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-ifp-purple-light text-ifp-purple-dark border border-ifp-purple">
           General Purpose Chatbot
         </span>
       );
     }
     if (useCase.domainChatbot) {
       badges.push(
-        <span key="domain-chat" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
+        <span key="domain-chat" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-ifp-purple-light text-ifp-purple-dark border border-ifp-purple">
           Domain-Specific Chatbot
         </span>
       );
     }
     if (useCase.hasClassicMl) {
       badges.push(
-        <span key="ml" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gov-slate-200 text-gov-slate-700 border border-gov-slate-400">
+        <span key="ml" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-charcoal-200 text-charcoal-700 border border-charcoal-400">
           Classic ML
         </span>
       );
@@ -103,15 +102,15 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
     }
 
     return badges.length > 0 ? badges : [
-      <span key="other" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gov-slate-100 text-gov-slate-600 border border-gov-slate-300">
+      <span key="other" className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-charcoal-100 text-charcoal-600 border border-charcoal-300">
         Other AI
       </span>
     ];
   };
 
   return (
-    <div className="min-h-screen bg-gov-slate-50">
-      <header className="bg-gov-navy-900 text-white py-6 border-b-4 border-gov-navy-700">
+    <div className="min-h-screen bg-cream">
+      <header className="bg-charcoal-800 py-6 border-b-4 border-ifp-purple">
         <div className="container mx-auto px-4">
           <Breadcrumbs
             items={[
@@ -119,7 +118,7 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
               { label: useCase.useCaseName, href: undefined },
             ]}
           />
-          <h1 className="text-3xl font-bold mb-3">{useCase.useCaseName}</h1>
+          <h1 className="font-serif text-3xl font-medium text-white mb-3">{useCase.useCaseName}</h1>
           <div className="flex flex-wrap gap-2 mb-3">
             {getAITypeBadges()}
           </div>
@@ -130,7 +129,7 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
               </svg>
               <span className="font-semibold">{useCase.agency}</span>
               {useCase.agencyAbbreviation && (
-                <span className="text-gov-navy-200">({useCase.agencyAbbreviation})</span>
+                <span className="text-charcoal-300">({useCase.agencyAbbreviation})</span>
               )}
             </div>
             {useCase.bureau && (
@@ -150,22 +149,22 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-6">
             {/* Overview */}
-            <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-              <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">Overview</h2>
+            <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+              <h2 className="font-serif text-xl font-medium text-charcoal mb-4">Overview</h2>
               <div className="space-y-4">
                 <div>
-                  <div className="text-sm font-semibold text-gov-slate-600 mb-1">CLASSIFICATION</div>
+                  <div className="text-sm font-semibold text-charcoal-500 mb-1">CLASSIFICATION</div>
                   <div className="flex flex-wrap gap-3">
                     {useCase.domainCategory && (
                       <div className="text-sm">
                         <span className="font-medium">Domain:</span>{' '}
-                        <span className="px-2 py-1 bg-gov-navy-100 text-gov-navy-800 rounded">{useCase.domainCategory}</span>
+                        <span className="px-2 py-1 bg-charcoal-100 text-charcoal-700 rounded">{useCase.domainCategory}</span>
                       </div>
                     )}
                     {useCase.useCaseTopicArea && (
                       <div className="text-sm">
                         <span className="font-medium">Topic:</span>{' '}
-                        <span className="px-2 py-1 bg-gov-slate-100 text-gov-slate-700 rounded">{useCase.useCaseTopicArea}</span>
+                        <span className="px-2 py-1 bg-charcoal-100 text-charcoal-600 rounded">{useCase.useCaseTopicArea}</span>
                       </div>
                     )}
                     {useCase.stageOfDevelopment && (
@@ -179,11 +178,11 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
 
                 {useCase.isRightsSafetyImpacting && (
                   <div>
-                    <div className="text-sm font-semibold text-gov-slate-600 mb-1">IMPACT CLASSIFICATION</div>
+                    <div className="text-sm font-semibold text-charcoal-500 mb-1">IMPACT CLASSIFICATION</div>
                     <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
                       useCase.isRightsSafetyImpacting.includes('Rights') || useCase.isRightsSafetyImpacting.includes('Both')
                         ? 'bg-status-error-light text-status-error-dark border border-status-error'
-                        : 'bg-gov-slate-100 text-gov-slate-700 border border-gov-slate-300'
+                        : 'bg-charcoal-100 text-charcoal-700 border border-charcoal-300'
                     }`}>
                       {useCase.isRightsSafetyImpacting}
                     </span>
@@ -194,57 +193,57 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
 
             {/* Purpose & Benefits */}
             {useCase.intendedPurpose && (
-              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-                <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">Purpose & Expected Benefits</h2>
-                <p className="text-gov-slate-700 leading-relaxed whitespace-pre-wrap">{useCase.intendedPurpose}</p>
+              <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+                <h2 className="font-serif text-xl font-medium text-charcoal mb-4">Purpose & Expected Benefits</h2>
+                <p className="text-charcoal-600 leading-relaxed whitespace-pre-wrap">{useCase.intendedPurpose}</p>
               </div>
             )}
 
             {/* Outputs */}
             {useCase.outputs && (
-              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-                <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">AI System Outputs</h2>
-                <p className="text-gov-slate-700 leading-relaxed whitespace-pre-wrap">{useCase.outputs}</p>
+              <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+                <h2 className="font-serif text-xl font-medium text-charcoal mb-4">AI System Outputs</h2>
+                <p className="text-charcoal-600 leading-relaxed whitespace-pre-wrap">{useCase.outputs}</p>
               </div>
             )}
 
             {/* Technical Details */}
             {useCase.details && (
-              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-                <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">Technical Details</h2>
+              <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+                <h2 className="font-serif text-xl font-medium text-charcoal mb-4">Technical Details</h2>
                 <div className="space-y-4">
                   {useCase.details.developmentApproach && (
                     <div>
-                      <div className="text-sm font-semibold text-gov-slate-600 mb-1">Development Approach</div>
-                      <div className="text-gov-slate-700">{useCase.details.developmentApproach}</div>
+                      <div className="text-sm font-semibold text-charcoal-500 mb-1">Development Approach</div>
+                      <div className="text-charcoal-600">{useCase.details.developmentApproach}</div>
                     </div>
                   )}
 
                   {useCase.details.hasCustomCode && (
                     <div>
-                      <div className="text-sm font-semibold text-gov-slate-600 mb-1">Custom Code</div>
-                      <div className="text-gov-slate-700">{useCase.details.hasCustomCode}</div>
+                      <div className="text-sm font-semibold text-charcoal-500 mb-1">Custom Code</div>
+                      <div className="text-charcoal-600">{useCase.details.hasCustomCode}</div>
                     </div>
                   )}
 
                   {useCase.details.hasAto && (
                     <div>
-                      <div className="text-sm font-semibold text-gov-slate-600 mb-1">Authority to Operate (ATO)</div>
-                      <div className="text-gov-slate-700">{useCase.details.hasAto}</div>
+                      <div className="text-sm font-semibold text-charcoal-500 mb-1">Authority to Operate (ATO)</div>
+                      <div className="text-charcoal-600">{useCase.details.hasAto}</div>
                       {useCase.details.systemName && (
-                        <div className="text-sm text-gov-slate-600 mt-1">System: {useCase.details.systemName}</div>
+                        <div className="text-sm text-charcoal-500 mt-1">System: {useCase.details.systemName}</div>
                       )}
                     </div>
                   )}
 
                   {useCase.details.codeLink && (
                     <div>
-                      <div className="text-sm font-semibold text-gov-slate-600 mb-1">Open Source Code</div>
+                      <div className="text-sm font-semibold text-charcoal-500 mb-1">Open Source Code</div>
                       <a
                         href={useCase.details.codeLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gov-navy-700 hover:text-gov-navy-900 underline"
+                        className="text-ifp-purple hover:text-ifp-purple-dark underline"
                       >
                         {useCase.details.codeLink}
                       </a>
@@ -256,25 +255,25 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
 
             {/* Timeline */}
             {(useCase.dateInitiated || useCase.dateImplemented || useCase.dateRetired) && (
-              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-                <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">Timeline</h2>
+              <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+                <h2 className="font-serif text-xl font-medium text-charcoal mb-4">Timeline</h2>
                 <div className="space-y-3">
                   {useCase.dateInitiated && (
                     <div className="flex items-center gap-3">
-                      <div className="w-24 text-sm font-semibold text-gov-slate-600">Initiated</div>
-                      <div className="text-gov-slate-700">{useCase.dateInitiated}</div>
+                      <div className="w-24 text-sm font-semibold text-charcoal-500">Initiated</div>
+                      <div className="text-charcoal-600">{useCase.dateInitiated}</div>
                     </div>
                   )}
                   {useCase.dateImplemented && (
                     <div className="flex items-center gap-3">
-                      <div className="w-24 text-sm font-semibold text-gov-slate-600">Implemented</div>
-                      <div className="text-gov-slate-700">{useCase.dateImplemented}</div>
+                      <div className="w-24 text-sm font-semibold text-charcoal-500">Implemented</div>
+                      <div className="text-charcoal-600">{useCase.dateImplemented}</div>
                     </div>
                   )}
                   {useCase.dateRetired && (
                     <div className="flex items-center gap-3">
-                      <div className="w-24 text-sm font-semibold text-gov-slate-600">Retired</div>
-                      <div className="text-gov-slate-700">{useCase.dateRetired}</div>
+                      <div className="w-24 text-sm font-semibold text-charcoal-500">Retired</div>
+                      <div className="text-charcoal-600">{useCase.dateRetired}</div>
                     </div>
                   )}
                 </div>
@@ -283,25 +282,25 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
 
             {/* Privacy & Compliance */}
             {useCase.details && (useCase.details.involvesPii || useCase.details.privacyAssessed || useCase.details.impactAssessment) && (
-              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-                <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">Privacy & Compliance</h2>
+              <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+                <h2 className="font-serif text-xl font-medium text-charcoal mb-4">Privacy & Compliance</h2>
                 <div className="space-y-3">
                   {useCase.details.involvesPii && (
                     <div>
-                      <div className="text-sm font-semibold text-gov-slate-600 mb-1">Involves PII</div>
-                      <div className="text-gov-slate-700">{useCase.details.involvesPii}</div>
+                      <div className="text-sm font-semibold text-charcoal-500 mb-1">Involves PII</div>
+                      <div className="text-charcoal-600">{useCase.details.involvesPii}</div>
                     </div>
                   )}
                   {useCase.details.privacyAssessed && (
                     <div>
-                      <div className="text-sm font-semibold text-gov-slate-600 mb-1">Privacy Assessment</div>
-                      <div className="text-gov-slate-700">{useCase.details.privacyAssessed}</div>
+                      <div className="text-sm font-semibold text-charcoal-500 mb-1">Privacy Assessment</div>
+                      <div className="text-charcoal-600">{useCase.details.privacyAssessed}</div>
                     </div>
                   )}
                   {useCase.details.impactAssessment && (
                     <div>
-                      <div className="text-sm font-semibold text-gov-slate-600 mb-1">AI Impact Assessment</div>
-                      <div className="text-gov-slate-700">{useCase.details.impactAssessment}</div>
+                      <div className="text-sm font-semibold text-charcoal-500 mb-1">AI Impact Assessment</div>
+                      <div className="text-charcoal-600">{useCase.details.impactAssessment}</div>
                     </div>
                   )}
                 </div>
@@ -310,14 +309,65 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
 
             {/* Related AI Incidents */}
             {relatedIncidents.length > 0 && (
-              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-                <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">
+              <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+                <h2 className="font-serif text-xl font-medium text-charcoal mb-4">
                   Related AI Incidents ({relatedIncidents.length})
                 </h2>
-                <p className="text-gov-slate-600 mb-4 text-sm">
+                <p className="text-charcoal-500 mb-4 text-sm">
                   AI incidents that may be relevant to this use case based on semantic similarity and entity matching.
                 </p>
-                <CollapsibleIncidentMatches incidents={relatedIncidents} />
+                <div className="space-y-3">
+                  {relatedIncidents.map((incident) => (
+                    <Link
+                      key={incident.incidentId}
+                      href={`/incidents/${incident.incidentId}`}
+                      className="block p-4 bg-cream hover:bg-cream-200 rounded-lg border border-charcoal-200 transition-colors"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-medium text-charcoal text-sm line-clamp-2">
+                            {incident.title}
+                          </h3>
+                          {incident.date && (
+                            <p className="text-xs text-charcoal-400 mt-1">{incident.date}</p>
+                          )}
+                        </div>
+                        <div className="flex flex-col items-end gap-1 flex-shrink-0">
+                          {/* Match quality indicator */}
+                          <span
+                            className={`text-xs font-medium px-2 py-0.5 rounded ${
+                              incident.similarityScore >= 0.8
+                                ? 'bg-status-success-light text-status-success-dark border border-status-success'
+                                : incident.similarityScore >= 0.7
+                                ? 'bg-status-warning-light text-status-warning-dark border border-status-warning'
+                                : 'bg-charcoal-100 text-charcoal-600 border border-charcoal-300'
+                            }`}
+                          >
+                            {Math.round(incident.similarityScore * 100)}% match
+                          </span>
+                          {/* Risk indicators */}
+                          <div className="flex gap-1">
+                            {incident.hasDataLeak && (
+                              <span className="text-xs px-1.5 py-0.5 bg-red-100 text-red-700 rounded" title="Data Leak">
+                                Leak
+                              </span>
+                            )}
+                            {incident.hasCyberAttack && (
+                              <span className="text-xs px-1.5 py-0.5 bg-orange-100 text-orange-700 rounded" title="Cyber Attack">
+                                Attack
+                              </span>
+                            )}
+                            {incident.hasLlm && (
+                              <span className="text-xs px-1.5 py-0.5 bg-ifp-purple-light text-ifp-purple-dark rounded" title="LLM/Chatbot">
+                                LLM
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -326,14 +376,14 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
           <div className="space-y-6">
             {/* Providers */}
             {providers.length > 0 && (
-              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-                <h3 className="text-lg font-semibold text-gov-navy-900 mb-3">Providers Mentioned</h3>
+              <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+                <h3 className="font-serif text-lg font-medium text-charcoal mb-3">Providers Mentioned</h3>
                 <div className="flex flex-wrap gap-2">
                   {providers.map((provider) => (
                     <Link
                       key={provider}
                       href={`/ai-services?provider=${encodeURIComponent(provider)}`}
-                      className="inline-flex items-center px-3 py-1.5 bg-gov-navy-50 hover:bg-gov-navy-100 text-gov-navy-900 text-sm rounded-md border border-gov-navy-200 transition-colors"
+                      className="inline-flex items-center px-3 py-1.5 bg-cream hover:bg-cream-200 text-charcoal text-sm rounded-md border border-charcoal-200 transition-colors"
                     >
                       {provider}
                     </Link>
@@ -344,22 +394,22 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
 
             {/* FedRAMP Matches */}
             {fedRAMPMatches.length > 0 && (
-              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-                <h3 className="text-lg font-semibold text-gov-navy-900 mb-3">Linked FedRAMP Services</h3>
+              <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+                <h3 className="font-serif text-lg font-medium text-charcoal mb-3">Linked FedRAMP Services</h3>
                 <div className="space-y-2">
                   {fedRAMPMatches.map((match, idx) => (
                     <Link
                       key={idx}
                       href={`/product/${match.productId}`}
-                      className="block p-3 bg-gov-slate-50 hover:bg-gov-slate-100 rounded-md border border-gov-slate-200 transition-colors"
+                      className="block p-3 bg-cream hover:bg-cream-200 rounded-md border border-charcoal-200 transition-colors"
                     >
-                      <div className="font-medium text-gov-navy-900 text-sm">{match.productName}</div>
-                      <div className="text-xs text-gov-slate-600 mt-1">{match.providerName}</div>
-                      <div className="text-xs text-gov-slate-500 mt-1">
+                      <div className="font-medium text-charcoal text-sm">{match.productName}</div>
+                      <div className="text-xs text-charcoal-500 mt-1">{match.providerName}</div>
+                      <div className="text-xs text-charcoal-400 mt-1">
                         Confidence: <span className={`font-semibold ${
                           match.confidence === 'high' ? 'text-status-success-dark' :
                           match.confidence === 'medium' ? 'text-status-warning-dark' :
-                          'text-gov-slate-600'
+                          'text-charcoal-600'
                         }`}>{match.confidence}</span>
                       </div>
                     </Link>
@@ -370,25 +420,25 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
 
             {/* Related Use Cases */}
             {relatedCases.length > 0 && (
-              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
-                <h3 className="text-lg font-semibold text-gov-navy-900 mb-3">Other Use Cases from {useCase.agencyAbbreviation || useCase.agency}</h3>
+              <div className="bg-white rounded-lg border border-charcoal-200 p-6">
+                <h3 className="font-serif text-lg font-medium text-charcoal mb-3">Other Use Cases from {useCase.agencyAbbreviation || useCase.agency}</h3>
                 <div className="space-y-2">
                   {relatedCases.map((related) => (
                     <Link
                       key={related.id}
                       href={`/use-cases/${related.slug}`}
-                      className="block p-3 bg-gov-slate-50 hover:bg-gov-slate-100 rounded-md border border-gov-slate-200 transition-colors"
+                      className="block p-3 bg-cream hover:bg-cream-200 rounded-md border border-charcoal-200 transition-colors"
                     >
-                      <div className="font-medium text-gov-navy-900 text-sm line-clamp-2">{related.useCaseName}</div>
+                      <div className="font-medium text-charcoal text-sm line-clamp-2">{related.useCaseName}</div>
                       {related.domainCategory && (
-                        <div className="text-xs text-gov-slate-600 mt-1">{related.domainCategory}</div>
+                        <div className="text-xs text-charcoal-500 mt-1">{related.domainCategory}</div>
                       )}
                     </Link>
                   ))}
                 </div>
                 <Link
                   href={`/use-cases?agency=${encodeURIComponent(useCase.agency)}`}
-                  className="block mt-3 text-sm text-gov-navy-700 hover:text-gov-navy-900 font-medium"
+                  className="block mt-3 text-sm text-ifp-purple hover:text-ifp-purple-dark font-medium"
                 >
                   View all from this agency →
                 </Link>
@@ -396,30 +446,30 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
             )}
 
             {/* Quick Links */}
-            <div className="bg-gov-navy-50 rounded-lg border border-gov-navy-200 p-6">
-              <h3 className="text-sm font-semibold text-gov-navy-900 mb-3">QUICK LINKS</h3>
+            <div className="bg-cream-200 rounded-lg border border-charcoal-200 p-6">
+              <h3 className="text-sm font-semibold text-charcoal mb-3">QUICK LINKS</h3>
               <div className="space-y-2">
                 <Link
                   href="/use-cases"
-                  className="block text-sm text-gov-navy-700 hover:text-gov-navy-900 hover:underline"
+                  className="block text-sm text-ifp-purple hover:text-ifp-purple-dark hover:underline"
                 >
                   ← Back to All Use Cases
                 </Link>
                 <Link
                   href={`/use-cases?domain=${encodeURIComponent(useCase.domainCategory || '')}`}
-                  className="block text-sm text-gov-navy-700 hover:text-gov-navy-900 hover:underline"
+                  className="block text-sm text-ifp-purple hover:text-ifp-purple-dark hover:underline"
                 >
                   View {useCase.domainCategory} Use Cases
                 </Link>
                 <Link
                   href="/ai-services"
-                  className="block text-sm text-gov-navy-700 hover:text-gov-navy-900 hover:underline"
+                  className="block text-sm text-ifp-purple hover:text-ifp-purple-dark hover:underline"
                 >
                   View FedRAMP AI Services
                 </Link>
                 <Link
                   href="/"
-                  className="block text-sm text-gov-navy-700 hover:text-gov-navy-900 hover:underline"
+                  className="block text-sm text-ifp-purple hover:text-ifp-purple-dark hover:underline"
                 >
                   Dashboard Home
                 </Link>
@@ -429,7 +479,7 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
         </div>
       </main>
 
-      <footer className="bg-gov-navy-950 text-white py-6 mt-12 border-t-4 border-gov-navy-700">
+      <footer className="bg-charcoal-900 text-cream py-6 mt-12 border-t-4 border-ifp-purple">
         <div className="container mx-auto px-4 text-center text-sm">
           <p>
             Federal AI Use Case Inventory • Last analyzed: {new Date(useCase.analyzedAt).toLocaleDateString()}

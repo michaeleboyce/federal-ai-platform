@@ -5,26 +5,19 @@ import { useState, useMemo, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import type { UseCase } from '@/lib/use-case-db';
 
-type SortField = 'useCaseName' | 'agency' | 'domainCategory' | 'stageOfDevelopment' | 'dateImplemented' | 'incidents';
+type SortField = 'useCaseName' | 'agency' | 'domainCategory' | 'stageOfDevelopment' | 'dateImplemented';
 type SortDirection = 'asc' | 'desc';
 type AITypeFilter = 'all' | 'genai' | 'llm' | 'chatbot' | 'classic_ml' | 'coding' | 'rpa';
-type IncidentFilter = 'all' | 'high' | 'any' | 'none';
 type DomainFilter = string;
-
-interface IncidentScoreInfo {
-  maxScore: number;
-  matchCount: number;
-}
 
 interface UseCaseTableProps {
   useCases: UseCase[];
   domains: string[];
   agencies: string[];
   stages: string[];
-  incidentScores?: Record<number, IncidentScoreInfo>;
 }
 
-export default function UseCaseTable({ useCases, domains, agencies, stages, incidentScores = {} }: UseCaseTableProps) {
+export default function UseCaseTable({ useCases, domains, agencies, stages }: UseCaseTableProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -33,14 +26,11 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
   const [domainFilter, setDomainFilter] = useState<string>('all');
   const [agencyFilter, setAgencyFilter] = useState<string>('all');
   const [stageFilter, setStageFilter] = useState<string>('all');
-  const [incidentFilter, setIncidentFilter] = useState<IncidentFilter>('all');
   const [sortField, setSortField] = useState<SortField>('agency');
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   const [itemsPerPage, setItemsPerPage] = useState(50);
   const [currentPage, setCurrentPage] = useState(1);
   const [isInitialized, setIsInitialized] = useState(false);
-
-  const hasIncidentScores = Object.keys(incidentScores).length > 0;
 
   // Initialize state from URL on mount
   useEffect(() => {
@@ -49,7 +39,6 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
     const domain = searchParams.get('domain') || 'all';
     const agency = searchParams.get('agency') || 'all';
     const stage = searchParams.get('stage') || 'all';
-    const incidents = searchParams.get('incidents') as IncidentFilter || 'all';
     const sort = searchParams.get('sort') as SortField || 'agency';
     const dir = searchParams.get('dir') as SortDirection || 'asc';
     const page = parseInt(searchParams.get('page') || '1', 10);
@@ -60,7 +49,6 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
     setDomainFilter(domain);
     setAgencyFilter(agency);
     setStageFilter(stage);
-    setIncidentFilter(incidents);
     setSortField(sort);
     setSortDirection(dir);
     setCurrentPage(page);
@@ -78,7 +66,6 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
     if (domainFilter !== 'all') params.set('domain', domainFilter);
     if (agencyFilter !== 'all') params.set('agency', agencyFilter);
     if (stageFilter !== 'all') params.set('stage', stageFilter);
-    if (incidentFilter !== 'all') params.set('incidents', incidentFilter);
     if (sortField !== 'agency') params.set('sort', sortField);
     if (sortDirection !== 'asc') params.set('dir', sortDirection);
     if (currentPage !== 1) params.set('page', currentPage.toString());
@@ -88,7 +75,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
     const newUrl = queryString ? `/use-cases?${queryString}` : '/use-cases';
 
     router.replace(newUrl, { scroll: false });
-  }, [searchQuery, aiTypeFilter, domainFilter, agencyFilter, stageFilter, incidentFilter, sortField, sortDirection, currentPage, itemsPerPage, isInitialized, router]);
+  }, [searchQuery, aiTypeFilter, domainFilter, agencyFilter, stageFilter, sortField, sortDirection, currentPage, itemsPerPage, isInitialized, router]);
 
   // Parse providers for display
   const parseProviders = (providersJson: string): string[] => {
@@ -134,53 +121,26 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
     return filteredByAgency.filter(uc => uc.stageOfDevelopment === stageFilter);
   }, [filteredByAgency, stageFilter]);
 
-  // Filter by incident matches
-  const filteredByIncidents = useMemo(() => {
-    if (incidentFilter === 'all' || !hasIncidentScores) return filteredByStage;
-
-    return filteredByStage.filter((uc) => {
-      const scoreInfo = incidentScores[uc.id];
-      switch (incidentFilter) {
-        case 'high':
-          return scoreInfo && scoreInfo.maxScore >= 0.75;
-        case 'any':
-          return scoreInfo && scoreInfo.matchCount > 0;
-        case 'none':
-          return !scoreInfo || scoreInfo.matchCount === 0;
-        default:
-          return true;
-      }
-    });
-  }, [filteredByStage, incidentFilter, hasIncidentScores, incidentScores]);
-
   // Filter by search query
   const filteredUseCases = useMemo(() => {
-    if (!searchQuery) return filteredByIncidents;
+    if (!searchQuery) return filteredByStage;
 
     const query = searchQuery.toLowerCase();
-    return filteredByIncidents.filter(uc =>
+    return filteredByStage.filter(uc =>
       uc.useCaseName?.toLowerCase().includes(query) ||
       uc.agency?.toLowerCase().includes(query) ||
       uc.bureau?.toLowerCase().includes(query) ||
       uc.intendedPurpose?.toLowerCase().includes(query)
     );
-  }, [filteredByIncidents, searchQuery]);
+  }, [filteredByStage, searchQuery]);
 
   // Sort use cases
   const sortedUseCases = useMemo(() => {
     const sorted = [...filteredUseCases];
 
     sorted.sort((a, b) => {
-      let aValue: any;
-      let bValue: any;
-
-      if (sortField === 'incidents') {
-        aValue = incidentScores[a.id]?.maxScore || 0;
-        bValue = incidentScores[b.id]?.maxScore || 0;
-      } else {
-        aValue = a[sortField] || '';
-        bValue = b[sortField] || '';
-      }
+      let aValue: any = a[sortField] || '';
+      let bValue: any = b[sortField] || '';
 
       if (aValue < bValue) return sortDirection === 'asc' ? -1 : 1;
       if (aValue > bValue) return sortDirection === 'asc' ? 1 : -1;
@@ -188,7 +148,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
     });
 
     return sorted;
-  }, [filteredUseCases, sortField, sortDirection, incidentScores]);
+  }, [filteredUseCases, sortField, sortDirection]);
 
   // Pagination
   const totalPages = Math.ceil(sortedUseCases.length / itemsPerPage);
@@ -218,28 +178,28 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
 
     if (uc.genaiFlag) {
       badges.push(
-        <span key="genai" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-teal-light text-ai-teal-dark border border-ai-teal">
+        <span key="genai" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ifp-orange-light text-ifp-orange-dark border border-ifp-orange">
           GenAI
         </span>
       );
     }
     if (uc.hasLlm) {
       badges.push(
-        <span key="llm" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-indigo-light text-ai-indigo-dark border border-ai-indigo">
+        <span key="llm" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-charcoal-100 text-charcoal-700 border border-charcoal-400">
           LLM
         </span>
       );
     }
     if (uc.hasChatbot) {
       badges.push(
-        <span key="chatbot" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
+        <span key="chatbot" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ifp-purple-light text-ifp-purple-dark border border-ifp-purple">
           Chatbot
         </span>
       );
     }
     if (uc.hasClassicMl) {
       badges.push(
-        <span key="ml" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gov-slate-200 text-gov-slate-700 border border-gov-slate-400">
+        <span key="ml" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-charcoal-200 text-charcoal-700 border border-charcoal-400">
           ML
         </span>
       );
@@ -260,7 +220,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
     }
 
     return badges.length > 0 ? badges : [
-      <span key="other" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gov-slate-100 text-gov-slate-600 border border-gov-slate-300">
+      <span key="other" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-charcoal-100 text-charcoal-600 border border-charcoal-300">
         Other AI
       </span>
     ];
@@ -269,18 +229,18 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
   return (
     <div className="space-y-4">
       {/* Filters */}
-      <div className="bg-white rounded-lg border border-gov-slate-200 p-4">
+      <div className="bg-white rounded-lg border border-charcoal-200 p-4">
         <div className="flex flex-col gap-4">
           {/* AI Type Filter Buttons */}
           <div>
-            <label className="text-xs font-semibold text-gov-slate-600 mb-2 block">AI TYPE</label>
+            <label className="text-xs font-semibold text-charcoal-500 mb-2 block">AI TYPE</label>
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => { setAITypeFilter('all'); handleFilterChange(); }}
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'all'
-                    ? 'bg-gov-navy-700 text-white border-gov-navy-700'
-                    : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
+                    ? 'bg-charcoal-700 text-cream border-charcoal-700'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
                 }`}
               >
                 All ({useCases.length})
@@ -289,8 +249,8 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
                 onClick={() => { setAITypeFilter('genai'); handleFilterChange(); }}
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'genai'
-                    ? 'bg-ai-teal text-white border-ai-teal'
-                    : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
+                    ? 'bg-ifp-orange text-white border-ifp-orange'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
                 }`}
               >
                 GenAI ({useCases.filter(uc => uc.genaiFlag).length})
@@ -299,8 +259,8 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
                 onClick={() => { setAITypeFilter('llm'); handleFilterChange(); }}
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'llm'
-                    ? 'bg-ai-indigo text-white border-ai-indigo'
-                    : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
+                    ? 'bg-charcoal-600 text-white border-charcoal-600'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
                 }`}
               >
                 LLM ({useCases.filter(uc => uc.hasLlm).length})
@@ -309,8 +269,8 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
                 onClick={() => { setAITypeFilter('chatbot'); handleFilterChange(); }}
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'chatbot'
-                    ? 'bg-ai-blue text-white border-ai-blue'
-                    : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
+                    ? 'bg-ifp-purple text-white border-ifp-purple'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
                 }`}
               >
                 Chatbot ({useCases.filter(uc => uc.hasChatbot).length})
@@ -319,8 +279,8 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
                 onClick={() => { setAITypeFilter('classic_ml'); handleFilterChange(); }}
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'classic_ml'
-                    ? 'bg-gov-slate-600 text-white border-gov-slate-600'
-                    : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
+                    ? 'bg-charcoal-500 text-white border-charcoal-500'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
                 }`}
               >
                 Classic ML ({useCases.filter(uc => uc.hasClassicMl).length})
@@ -329,14 +289,14 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
           </div>
 
           {/* Dropdown Filters and Search */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
             {/* Domain Filter */}
             <div>
-              <label className="text-xs font-semibold text-gov-slate-600 mb-1 block">DOMAIN</label>
+              <label className="text-xs font-semibold text-charcoal-500 mb-1 block">DOMAIN</label>
               <select
                 value={domainFilter}
                 onChange={(e) => { setDomainFilter(e.target.value); handleFilterChange(); }}
-                className="w-full px-3 py-2 border border-gov-slate-300 rounded-md text-sm focus:ring-2 focus:ring-gov-navy-500"
+                className="w-full px-3 py-2 border border-charcoal-300 rounded-md text-sm focus:ring-2 focus:ring-ifp-purple"
               >
                 <option value="all">All Domains</option>
                 {domains.map(domain => (
@@ -347,11 +307,11 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
 
             {/* Agency Filter */}
             <div>
-              <label className="text-xs font-semibold text-gov-slate-600 mb-1 block">AGENCY</label>
+              <label className="text-xs font-semibold text-charcoal-500 mb-1 block">AGENCY</label>
               <select
                 value={agencyFilter}
                 onChange={(e) => { setAgencyFilter(e.target.value); handleFilterChange(); }}
-                className="w-full px-3 py-2 border border-gov-slate-300 rounded-md text-sm focus:ring-2 focus:ring-gov-navy-500"
+                className="w-full px-3 py-2 border border-charcoal-300 rounded-md text-sm focus:ring-2 focus:ring-ifp-purple"
               >
                 <option value="all">All Agencies</option>
                 {agencies.slice(0, 20).map(agency => (
@@ -362,11 +322,11 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
 
             {/* Stage Filter */}
             <div>
-              <label className="text-xs font-semibold text-gov-slate-600 mb-1 block">STAGE</label>
+              <label className="text-xs font-semibold text-charcoal-500 mb-1 block">STAGE</label>
               <select
                 value={stageFilter}
                 onChange={(e) => { setStageFilter(e.target.value); handleFilterChange(); }}
-                className="w-full px-3 py-2 border border-gov-slate-300 rounded-md text-sm focus:ring-2 focus:ring-gov-navy-500"
+                className="w-full px-3 py-2 border border-charcoal-300 rounded-md text-sm focus:ring-2 focus:ring-ifp-purple"
               >
                 <option value="all">All Stages</option>
                 {stages.map(stage => (
@@ -375,33 +335,16 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
               </select>
             </div>
 
-            {/* Incident Match Filter */}
-            {hasIncidentScores && (
-              <div>
-                <label className="text-xs font-semibold text-gov-slate-600 mb-1 block">INCIDENTS</label>
-                <select
-                  value={incidentFilter}
-                  onChange={(e) => { setIncidentFilter(e.target.value as IncidentFilter); handleFilterChange(); }}
-                  className="w-full px-3 py-2 border border-gov-slate-300 rounded-md text-sm focus:ring-2 focus:ring-gov-navy-500"
-                >
-                  <option value="all">All Use Cases</option>
-                  <option value="high">High Match (≥75%)</option>
-                  <option value="any">Any Match</option>
-                  <option value="none">No Matches</option>
-                </select>
-              </div>
-            )}
-
             {/* Items Per Page */}
             <div>
-              <label className="text-xs font-semibold text-gov-slate-600 mb-1 block">PER PAGE</label>
+              <label className="text-xs font-semibold text-charcoal-500 mb-1 block">PER PAGE</label>
               <select
                 value={itemsPerPage}
                 onChange={(e) => {
                   setItemsPerPage(Number(e.target.value));
                   setCurrentPage(1);
                 }}
-                className="w-full px-3 py-2 border border-gov-slate-300 rounded-md text-sm focus:ring-2 focus:ring-gov-navy-500"
+                className="w-full px-3 py-2 border border-charcoal-300 rounded-md text-sm focus:ring-2 focus:ring-ifp-purple"
               >
                 <option value={25}>25</option>
                 <option value={50}>50</option>
@@ -413,37 +356,37 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
 
           {/* Search Box */}
           <div>
-            <label className="text-xs font-semibold text-gov-slate-600 mb-1 block">SEARCH</label>
+            <label className="text-xs font-semibold text-charcoal-500 mb-1 block">SEARCH</label>
             <input
               type="text"
               placeholder="Search use cases by name, agency, bureau, or purpose..."
               value={searchQuery}
               onChange={(e) => { setSearchQuery(e.target.value); setCurrentPage(1); }}
-              className="w-full px-4 py-2 border border-gov-slate-300 rounded-md focus:ring-2 focus:ring-gov-navy-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-charcoal-300 rounded-md focus:ring-2 focus:ring-ifp-purple focus:border-transparent"
             />
           </div>
         </div>
 
-        <div className="mt-3 text-sm text-gov-slate-600">
+        <div className="mt-3 text-sm text-charcoal-500">
           Showing {paginatedUseCases.length} of {filteredUseCases.length} use cases
           {filteredUseCases.length < useCases.length && ` (filtered from ${useCases.length} total)`}
         </div>
       </div>
 
       {/* Table */}
-      <div className="bg-white rounded-lg border border-gov-slate-200 overflow-hidden">
+      <div className="bg-white rounded-lg border border-charcoal-200 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-gov-slate-100 border-b-2 border-gov-slate-200">
+            <thead className="bg-charcoal-100 border-b-2 border-charcoal-200">
               <tr>
                 <th
                   onClick={() => handleSort('useCaseName')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Use Case</span>
                     {sortField === 'useCaseName' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
@@ -451,12 +394,12 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
                 </th>
                 <th
                   onClick={() => handleSort('agency')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Agency</span>
                     {sortField === 'agency' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
@@ -464,66 +407,51 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
                 </th>
                 <th
                   onClick={() => handleSort('domainCategory')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Domain</span>
                     {sortField === 'domainCategory' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
                   </div>
                 </th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
+                <th className="px-4 py-3 text-left text-sm font-semibold text-charcoal">
                   AI Type
                 </th>
                 <th
                   onClick={() => handleSort('stageOfDevelopment')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Stage</span>
                     {sortField === 'stageOfDevelopment' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
                   </div>
                 </th>
-                {hasIncidentScores && (
-                  <th
-                    onClick={() => handleSort('incidents')}
-                    className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
-                  >
-                    <div className="flex items-center space-x-1">
-                      <span>Incidents</span>
-                      {sortField === 'incidents' && (
-                        <span className="text-gov-navy-700">
-                          {sortDirection === 'asc' ? '↑' : '↓'}
-                        </span>
-                      )}
-                    </div>
-                  </th>
-                )}
-                <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
+                <th className="px-4 py-3 text-left text-sm font-semibold text-charcoal">
                   Actions
                 </th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gov-slate-200">
+            <tbody className="divide-y divide-charcoal-200">
               {paginatedUseCases.map((uc, index) => (
                 <tr
                   key={uc.id}
                   onClick={() => router.push(`/use-cases/${uc.slug}`)}
-                  className={`cursor-pointer hover:bg-gov-slate-100 hover:border-l-4 hover:border-gov-navy-600 transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-gov-slate-50/30'}`}
+                  className={`cursor-pointer hover:bg-charcoal-50 hover:border-l-4 hover:border-ifp-purple transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-charcoal-50/30'}`}
                 >
-                  <td className="px-4 py-3 text-sm font-medium text-gov-navy-900">
+                  <td className="px-4 py-3 text-sm font-medium text-charcoal">
                     <div className="max-w-md" title={uc.useCaseName}>
                       {uc.useCaseName}
                     </div>
                     {uc.bureau && (
-                      <div className="text-xs text-gov-slate-600 mt-1">{uc.bureau}</div>
+                      <div className="text-xs text-charcoal-500 mt-1">{uc.bureau}</div>
                     )}
                   </td>
                   <td className="px-4 py-3 text-sm">
@@ -531,10 +459,10 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
                       {uc.agency}
                     </div>
                     {uc.agencyAbbreviation && (
-                      <div className="text-xs text-gov-slate-600 mt-1">{uc.agencyAbbreviation}</div>
+                      <div className="text-xs text-charcoal-500 mt-1">{uc.agencyAbbreviation}</div>
                     )}
                   </td>
-                  <td className="px-4 py-3 text-sm text-gov-slate-700">
+                  <td className="px-4 py-3 text-sm text-charcoal-600">
                     <div className="max-w-xs truncate" title={uc.domainCategory || 'N/A'}>
                       {uc.domainCategory || 'Unclassified'}
                     </div>
@@ -544,35 +472,16 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
                       {getAITypeBadges(uc)}
                     </div>
                   </td>
-                  <td className="px-4 py-3 text-sm text-gov-slate-700">
+                  <td className="px-4 py-3 text-sm text-charcoal-600">
                     <div className="max-w-xs truncate" title={uc.stageOfDevelopment || 'N/A'}>
                       {uc.stageOfDevelopment || 'N/A'}
                     </div>
                   </td>
-                  {hasIncidentScores && (
-                    <td className="px-4 py-3 text-sm">
-                      {incidentScores[uc.id] ? (
-                        <span
-                          className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                            incidentScores[uc.id].maxScore >= 0.75
-                              ? 'bg-status-error-light text-status-error-dark border border-status-error'
-                              : incidentScores[uc.id].maxScore >= 0.60
-                              ? 'bg-status-warning-light text-status-warning-dark border border-status-warning'
-                              : 'bg-gov-slate-100 text-gov-slate-600 border border-gov-slate-300'
-                          }`}
-                        >
-                          {incidentScores[uc.id].matchCount} ({Math.round(incidentScores[uc.id].maxScore * 100)}%)
-                        </span>
-                      ) : (
-                        <span className="text-gov-slate-400">—</span>
-                      )}
-                    </td>
-                  )}
                   <td className="px-4 py-3 text-sm">
                     <Link
                       href={`/use-cases/${uc.slug}`}
                       onClick={(e) => e.stopPropagation()}
-                      className="text-gov-navy-700 hover:text-gov-navy-900 font-medium underline"
+                      className="text-ifp-purple hover:text-ifp-purple-dark font-medium underline"
                     >
                       View Details →
                     </Link>
@@ -585,22 +494,22 @@ export default function UseCaseTable({ useCases, domains, agencies, stages, inci
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="p-4 bg-gov-slate-50 border-t border-gov-slate-200 flex items-center justify-between">
-            <div className="text-sm text-gov-slate-600">
+          <div className="p-4 bg-charcoal-50 border-t border-charcoal-200 flex items-center justify-between">
+            <div className="text-sm text-charcoal-500">
               Page {currentPage} of {totalPages}
             </div>
             <div className="flex gap-2">
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 bg-white border border-gov-slate-300 rounded-md text-sm font-medium text-gov-navy-900 hover:bg-gov-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Previous
               </button>
               <button
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 bg-white border border-gov-slate-300 rounded-md text-sm font-medium text-gov-navy-900 hover:bg-gov-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Next
               </button>

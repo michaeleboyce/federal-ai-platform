@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal font-sans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.625;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-charcoal;
+    font-weight: 400;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl;
+    font-weight: 400;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  .ifp-card {
+    @apply bg-white border border-charcoal-200 p-6;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .ifp-card:hover {
+    @apply border-charcoal-400 shadow-md;
+  }
+
+  .ifp-btn {
+    @apply px-4 py-2 border border-charcoal text-charcoal font-normal;
+    transition: all 0.2s ease;
+  }
+
+  .ifp-btn:hover {
+    @apply bg-charcoal text-cream;
+  }
+
+  .ifp-btn-primary {
+    @apply px-4 py-2 bg-ifp-purple text-white border border-ifp-purple;
+    transition: all 0.2s ease;
+  }
+
+  .ifp-btn-primary:hover {
+    @apply bg-ifp-purple-dark border-ifp-purple-dark;
+  }
+}

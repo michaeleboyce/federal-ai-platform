@@ -78,11 +78,11 @@ export default async function Home() {
   }).length;
 
   return (
-    <div className="min-h-screen bg-gov-slate-50">
-      <header className="bg-gov-navy-900 text-white py-8 border-b-4 border-gov-navy-700">
+    <div className="min-h-screen bg-cream">
+      <header className="bg-charcoal-800 py-10 border-b-4 border-ifp-purple">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-2">AI in Federal Government</h1>
-          <p className="text-gov-navy-100 text-lg">
+          <h1 className="font-serif text-4xl md:text-5xl font-medium text-white mb-2">AI in Federal Government</h1>
+          <p className="text-charcoal-300 text-lg">
             Tracking AI adoption across federal agencies and FedRAMP-authorized services
           </p>
         </div>
@@ -90,8 +90,8 @@ export default async function Home() {
 
       <main className="container mx-auto px-4 py-8">
         {/* Hero Description */}
-        <div className="bg-white rounded-lg border border-gov-slate-200 p-6 mb-8">
-          <p className="text-gov-slate-700 text-lg leading-relaxed">
+        <div className="bg-white rounded-lg border border-charcoal-200 p-6 mb-8">
+          <p className="text-charcoal-600 text-lg leading-relaxed">
             This dashboard provides comprehensive insights into how AI is being deployed in the federal government—through
             <strong> FedRAMP-authorized cloud services</strong>, <strong>internal agency tools</strong>, and <strong>actual use case implementations</strong>.
             Explore {useCaseStats.total_use_cases.toLocaleString()} AI use cases, AI/ML services, generative AI tools, and see which agencies are leading AI adoption.
@@ -103,32 +103,32 @@ export default async function Home() {
           {/* Card 1: FedRAMP AI Services */}
           <Link
             href="/ai-services"
-            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gov-navy-900">FedRAMP AI Services</h2>
-              <svg className="w-6 h-6 text-ai-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <h2 className="font-serif text-2xl font-medium text-charcoal">FedRAMP AI Services</h2>
+              <svg className="w-6 h-6 text-ifp-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </div>
             <div className="space-y-3 mb-4">
               <div className="flex justify-between items-center">
-                <span className="text-gov-slate-600">Total AI Services</span>
-                <span className="text-3xl font-bold text-gov-navy-900">{aiStats.total_ai_services}</span>
+                <span className="text-charcoal-500">Total AI Services</span>
+                <span className="text-3xl font-bold text-charcoal">{aiStats.total_ai_services}</span>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ifp-purple-light text-ifp-purple-dark border border-ifp-purple">
                   AI/ML: {aiStats.count_ai}
                 </span>
-                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-teal-light text-ai-teal-dark border border-ai-teal">
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ifp-orange-light text-ifp-orange-dark border border-ifp-orange">
                   GenAI: {aiStats.count_genai}
                 </span>
-                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-indigo-light text-ai-indigo-dark border border-ai-indigo">
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-charcoal-100 text-charcoal-700 border border-charcoal-400">
                   LLM: {aiStats.count_llm}
                 </span>
               </div>
             </div>
-            <p className="text-sm text-gov-slate-600">
+            <p className="text-sm text-charcoal-500">
               {aiStats.products_with_ai} products from {aiStats.providers_with_ai} providers
             </p>
           </Link>
@@ -136,31 +136,31 @@ export default async function Home() {
           {/* Card 2: Federal Agency AI Adoption */}
           <Link
             href="/agency-ai-usage"
-            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gov-navy-900">Agency AI Adoption</h2>
-              <svg className="w-6 h-6 text-ai-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <h2 className="font-serif text-2xl font-medium text-charcoal">Agency AI Adoption</h2>
+              <svg className="w-6 h-6 text-ifp-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
             <div className="space-y-3 mb-4">
               <div className="flex justify-between items-center">
-                <span className="text-gov-slate-600">Agencies Tracked</span>
-                <span className="text-3xl font-bold text-gov-navy-900">{agencyStats.total_agencies}</span>
+                <span className="text-charcoal-500">Agencies Tracked</span>
+                <span className="text-3xl font-bold text-charcoal">{agencyStats.total_agencies}</span>
               </div>
               <div className="grid grid-cols-2 gap-2">
-                <div className="text-center p-2 bg-ai-blue-light rounded">
-                  <div className="text-xl font-bold text-ai-blue-dark">{agencyStats.agencies_with_llm}</div>
-                  <div className="text-xs text-gov-slate-600">Staff LLMs</div>
+                <div className="text-center p-2 bg-ifp-purple-light rounded">
+                  <div className="text-xl font-bold text-ifp-purple-dark">{agencyStats.agencies_with_llm}</div>
+                  <div className="text-xs text-charcoal-500">Staff LLMs</div>
                 </div>
-                <div className="text-center p-2 bg-ai-teal-light rounded">
-                  <div className="text-xl font-bold text-ai-teal-dark">{agencyStats.agencies_with_coding}</div>
-                  <div className="text-xs text-gov-slate-600">Coding Tools</div>
+                <div className="text-center p-2 bg-ifp-orange-light rounded">
+                  <div className="text-xl font-bold text-ifp-orange-dark">{agencyStats.agencies_with_coding}</div>
+                  <div className="text-xs text-charcoal-500">Coding Tools</div>
                 </div>
               </div>
             </div>
-            <p className="text-sm text-gov-slate-600">
+            <p className="text-sm text-charcoal-500">
               {agencyStats.high_confidence_matches} high-confidence FedRAMP matches
             </p>
           </Link>
@@ -168,35 +168,35 @@ export default async function Home() {
           {/* Card 3: AI Use Cases */}
           <Link
             href="/use-cases"
-            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gov-navy-900">AI Use Cases</h2>
-              <svg className="w-6 h-6 text-ai-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <h2 className="font-serif text-2xl font-medium text-charcoal">AI Use Cases</h2>
+              <svg className="w-6 h-6 text-charcoal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
               </svg>
             </div>
             <div className="space-y-3 mb-4">
               <div className="flex justify-between items-center">
-                <span className="text-gov-slate-600">Total Implementations</span>
-                <span className="text-3xl font-bold text-gov-navy-900">{useCaseStats.total_use_cases}</span>
+                <span className="text-charcoal-500">Total Implementations</span>
+                <span className="text-3xl font-bold text-charcoal">{useCaseStats.total_use_cases}</span>
               </div>
               <div className="grid grid-cols-3 gap-2">
-                <div className="text-center p-2 bg-ai-teal-light rounded">
-                  <div className="text-xl font-bold text-ai-teal-dark">{useCaseStats.genai_count}</div>
-                  <div className="text-xs text-gov-slate-600">GenAI</div>
+                <div className="text-center p-2 bg-ifp-orange-light rounded">
+                  <div className="text-xl font-bold text-ifp-orange-dark">{useCaseStats.genai_count}</div>
+                  <div className="text-xs text-charcoal-500">GenAI</div>
                 </div>
-                <div className="text-center p-2 bg-ai-blue-light rounded">
-                  <div className="text-xl font-bold text-ai-blue-dark">{useCaseStats.chatbot_count}</div>
-                  <div className="text-xs text-gov-slate-600">Chatbot</div>
+                <div className="text-center p-2 bg-ifp-purple-light rounded">
+                  <div className="text-xl font-bold text-ifp-purple-dark">{useCaseStats.chatbot_count}</div>
+                  <div className="text-xs text-charcoal-500">Chatbot</div>
                 </div>
-                <div className="text-center p-2 bg-gov-slate-200 rounded">
-                  <div className="text-xl font-bold text-gov-slate-700">{useCaseStats.classic_ml_count}</div>
-                  <div className="text-xs text-gov-slate-600">Classic ML</div>
+                <div className="text-center p-2 bg-charcoal-200 rounded">
+                  <div className="text-xl font-bold text-charcoal-700">{useCaseStats.classic_ml_count}</div>
+                  <div className="text-xs text-charcoal-500">Classic ML</div>
                 </div>
               </div>
             </div>
-            <p className="text-sm text-gov-slate-600">
+            <p className="text-sm text-charcoal-500">
               Across {useCaseStats.total_agencies} federal agencies
             </p>
           </Link>
@@ -204,35 +204,35 @@ export default async function Home() {
           {/* Card 4: AI Incidents */}
           <Link
             href="/incidents"
-            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gov-navy-900">AI Incidents</h2>
+              <h2 className="font-serif text-2xl font-medium text-charcoal">AI Incidents</h2>
               <svg className="w-6 h-6 text-status-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
               </svg>
             </div>
             <div className="space-y-3 mb-4">
               <div className="flex justify-between items-center">
-                <span className="text-gov-slate-600">Documented Incidents</span>
-                <span className="text-3xl font-bold text-gov-navy-900">{incidentStats.totalIncidents.toLocaleString()}</span>
+                <span className="text-charcoal-500">Documented Incidents</span>
+                <span className="text-3xl font-bold text-charcoal">{incidentStats.totalIncidents.toLocaleString()}</span>
               </div>
               <div className="grid grid-cols-3 gap-2">
                 <div className="text-center p-2 bg-amber-50 rounded border border-amber-200">
                   <div className="text-xl font-bold text-amber-700">{incidentStats.llmIncidents}</div>
-                  <div className="text-xs text-gov-slate-600">LLM</div>
+                  <div className="text-xs text-charcoal-500">LLM</div>
                 </div>
                 <div className="text-center p-2 bg-red-50 rounded border border-red-200">
                   <div className="text-xl font-bold text-red-700">{incidentStats.dataLeakIncidents}</div>
-                  <div className="text-xs text-gov-slate-600">Data Leak</div>
+                  <div className="text-xs text-charcoal-500">Data Leak</div>
                 </div>
                 <div className="text-center p-2 bg-orange-50 rounded border border-orange-200">
                   <div className="text-xl font-bold text-orange-700">{incidentStats.cyberAttackIncidents}</div>
-                  <div className="text-xs text-gov-slate-600">Cyber</div>
+                  <div className="text-xs text-charcoal-500">Cyber</div>
                 </div>
               </div>
             </div>
-            <p className="text-sm text-gov-slate-600">
+            <p className="text-sm text-charcoal-500">
               {incidentStats.productsLinked} linked products, {incidentStats.useCasesLinked} linked use cases
             </p>
           </Link>
@@ -240,166 +240,166 @@ export default async function Home() {
           {/* Card 5: Products with AI */}
           <Link
             href="/ai-services"
-            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gov-navy-900">AI-Enabled Products</h2>
+              <h2 className="font-serif text-2xl font-medium text-charcoal">AI-Enabled Products</h2>
               <svg className="w-6 h-6 text-status-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <div className="space-y-3 mb-4">
               <div className="flex justify-between items-center">
-                <span className="text-gov-slate-600">FedRAMP Products</span>
-                <span className="text-3xl font-bold text-gov-navy-900">{aiStats.products_with_ai}</span>
+                <span className="text-charcoal-500">FedRAMP Products</span>
+                <span className="text-3xl font-bold text-charcoal">{aiStats.products_with_ai}</span>
               </div>
-              <div className="text-sm text-gov-slate-600">
+              <div className="text-sm text-charcoal-500">
                 From {aiStats.providers_with_ai} different cloud providers
               </div>
             </div>
-            <p className="text-sm text-gov-slate-600">
+            <p className="text-sm text-charcoal-500">
               Including AWS Bedrock, Azure OpenAI, Google Vertex AI, and more
             </p>
           </Link>
 
-          {/* Card 4: Recent AI Authorizations */}
+          {/* Card 6: Recent AI Authorizations */}
           <Link
             href="/ai-services?sort=auth_date&dir=desc"
-            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gov-navy-900">Recent Activity</h2>
-              <svg className="w-6 h-6 text-status-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <h2 className="font-serif text-2xl font-medium text-charcoal">Recent Activity</h2>
+              <svg className="w-6 h-6 text-ifp-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <div className="space-y-3 mb-4">
               <div className="flex justify-between items-center">
-                <span className="text-gov-slate-600">Last 90 Days</span>
-                <span className="text-3xl font-bold text-gov-navy-900">{recentAI}</span>
+                <span className="text-charcoal-500">Last 90 Days</span>
+                <span className="text-3xl font-bold text-charcoal">{recentAI}</span>
               </div>
-              <div className="text-sm text-gov-slate-600">
+              <div className="text-sm text-charcoal-500">
                 New products and services authorized
               </div>
             </div>
-            <p className="text-sm text-gov-slate-600">
+            <p className="text-sm text-charcoal-500">
               View recently authorized AI services and updates
             </p>
           </Link>
 
-          {/* Card 5: Solution Types */}
+          {/* Card 7: Solution Types */}
           <Link
             href="/agency-ai-usage"
-            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gov-navy-900">Solution Approaches</h2>
-              <svg className="w-6 h-6 text-ai-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <h2 className="font-serif text-2xl font-medium text-charcoal">Solution Approaches</h2>
+              <svg className="w-6 h-6 text-charcoal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
               </svg>
             </div>
             <div className="space-y-3 mb-4">
               <div className="grid grid-cols-2 gap-2">
-                <div className="text-center p-2 bg-ai-indigo-light rounded">
-                  <div className="text-xl font-bold text-ai-indigo-dark">{agencyStats.agencies_custom_solution}</div>
-                  <div className="text-xs text-gov-slate-600">Custom</div>
+                <div className="text-center p-2 bg-charcoal-100 rounded">
+                  <div className="text-xl font-bold text-charcoal-700">{agencyStats.agencies_custom_solution}</div>
+                  <div className="text-xs text-charcoal-500">Custom</div>
                 </div>
                 <div className="text-center p-2 bg-status-success-light rounded">
                   <div className="text-xl font-bold text-status-success-dark">{agencyStats.agencies_commercial_solution}</div>
-                  <div className="text-xs text-gov-slate-600">Commercial</div>
+                  <div className="text-xs text-charcoal-500">Commercial</div>
                 </div>
               </div>
             </div>
-            <p className="text-sm text-gov-slate-600">
+            <p className="text-sm text-charcoal-500">
               Mix of custom-built and commercial AI solutions
             </p>
           </Link>
 
-          {/* Card 6: All FedRAMP Products */}
+          {/* Card 8: All FedRAMP Products */}
           <Link
             href="/products"
-            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
           >
             <div className="flex items-start justify-between mb-4">
-              <h2 className="text-2xl font-bold text-gov-navy-900">All Products</h2>
-              <svg className="w-6 h-6 text-gov-navy-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <h2 className="font-serif text-2xl font-medium text-charcoal">All Products</h2>
+              <svg className="w-6 h-6 text-charcoal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
               </svg>
             </div>
             <div className="space-y-3 mb-4">
               <div className="flex justify-between items-center">
-                <span className="text-gov-slate-600">Total Products</span>
-                <span className="text-3xl font-bold text-gov-navy-900">{products.length}</span>
+                <span className="text-charcoal-500">Total Products</span>
+                <span className="text-3xl font-bold text-charcoal">{products.length}</span>
               </div>
               <div className="grid grid-cols-2 gap-2 text-xs">
                 <div>
-                  <span className="text-gov-slate-600">Active: </span>
+                  <span className="text-charcoal-500">Active: </span>
                   <span className="font-semibold">{activeProducts}</span>
                 </div>
                 <div>
-                  <span className="text-gov-slate-600">Providers: </span>
+                  <span className="text-charcoal-500">Providers: </span>
                   <span className="font-semibold">{uniqueProviders}</span>
                 </div>
               </div>
             </div>
-            <p className="text-sm text-gov-slate-600">
+            <p className="text-sm text-charcoal-500">
               Browse all {totalServices.toLocaleString()} FedRAMP-authorized services
             </p>
           </Link>
         </div>
 
         {/* Quick Links */}
-        <div className="bg-gov-navy-50 border border-gov-navy-200 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-gov-navy-900 mb-4">Quick Navigation</h3>
+        <div className="bg-charcoal-50 border border-charcoal-200 rounded-lg p-6">
+          <h3 className="font-serif text-lg font-medium text-charcoal mb-4">Quick Navigation</h3>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <Link
               href="/ai-services"
-              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-gov-slate-200 hover:border-gov-navy-600 transition-colors"
+              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-charcoal-200 hover:border-ifp-purple transition-colors"
             >
-              <div className="w-10 h-10 bg-ai-blue-light rounded-full flex items-center justify-center">
-                <svg className="w-5 h-5 text-ai-blue-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-10 h-10 bg-ifp-purple-light rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-ifp-purple-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
               <div>
-                <div className="font-semibold text-gov-navy-900">AI Services</div>
-                <div className="text-xs text-gov-slate-600">FedRAMP AI catalog</div>
+                <div className="font-semibold text-charcoal">AI Services</div>
+                <div className="text-xs text-charcoal-500">FedRAMP AI catalog</div>
               </div>
             </Link>
 
             <Link
               href="/agency-ai-usage"
-              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-gov-slate-200 hover:border-gov-navy-600 transition-colors"
+              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-charcoal-200 hover:border-ifp-purple transition-colors"
             >
-              <div className="w-10 h-10 bg-ai-teal-light rounded-full flex items-center justify-center">
-                <svg className="w-5 h-5 text-ai-teal-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-10 h-10 bg-ifp-orange-light rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-ifp-orange-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
               <div>
-                <div className="font-semibold text-gov-navy-900">Agency Usage</div>
-                <div className="text-xs text-gov-slate-600">Internal AI adoption</div>
+                <div className="font-semibold text-charcoal">Agency Usage</div>
+                <div className="text-xs text-charcoal-500">Internal AI adoption</div>
               </div>
             </Link>
 
             <Link
               href="/use-cases"
-              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-gov-slate-200 hover:border-gov-navy-600 transition-colors"
+              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-charcoal-200 hover:border-ifp-purple transition-colors"
             >
-              <div className="w-10 h-10 bg-ai-indigo-light rounded-full flex items-center justify-center">
-                <svg className="w-5 h-5 text-ai-indigo-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-10 h-10 bg-charcoal-100 rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-charcoal-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                 </svg>
               </div>
               <div>
-                <div className="font-semibold text-gov-navy-900">Use Cases</div>
-                <div className="text-xs text-gov-slate-600">AI implementations</div>
+                <div className="font-semibold text-charcoal">Use Cases</div>
+                <div className="text-xs text-charcoal-500">AI implementations</div>
               </div>
             </Link>
 
             <Link
               href="/incidents"
-              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-gov-slate-200 hover:border-gov-navy-600 transition-colors"
+              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-charcoal-200 hover:border-ifp-purple transition-colors"
             >
               <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
                 <svg className="w-5 h-5 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -407,36 +407,36 @@ export default async function Home() {
                 </svg>
               </div>
               <div>
-                <div className="font-semibold text-gov-navy-900">Incidents</div>
-                <div className="text-xs text-gov-slate-600">AI incident database</div>
+                <div className="font-semibold text-charcoal">Incidents</div>
+                <div className="text-xs text-charcoal-500">AI incident database</div>
               </div>
             </Link>
 
             <Link
               href="/products"
-              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-gov-slate-200 hover:border-gov-navy-600 transition-colors"
+              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-charcoal-200 hover:border-ifp-purple transition-colors"
             >
-              <div className="w-10 h-10 bg-gov-slate-200 rounded-full flex items-center justify-center">
-                <svg className="w-5 h-5 text-gov-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-10 h-10 bg-charcoal-200 rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-charcoal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
                 </svg>
               </div>
               <div>
-                <div className="font-semibold text-gov-navy-900">All Products</div>
-                <div className="text-xs text-gov-slate-600">Complete catalog</div>
+                <div className="font-semibold text-charcoal">All Products</div>
+                <div className="text-xs text-charcoal-500">Complete catalog</div>
               </div>
             </Link>
           </div>
         </div>
       </main>
 
-      <footer className="bg-gov-navy-950 text-white py-6 mt-12 border-t-4 border-gov-navy-700">
+      <footer className="bg-charcoal-900 text-cream py-8 mt-16 border-t-4 border-ifp-purple">
         <div className="container mx-auto px-4 text-center text-sm">
           <p>
             Data sources:{' '}
             <a
               href="https://marketplace.fedramp.gov/"
-              className="text-gov-navy-200 hover:text-white underline"
+              className="text-charcoal-300 hover:text-cream underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -444,7 +444,7 @@ export default async function Home() {
             </a>
             {' '}• Public agency announcements and AI inventories
           </p>
-          <p className="mt-2 text-gov-slate-400">
+          <p className="mt-2 text-charcoal-400">
             AI analysis powered by Anthropic Claude • Last updated: {new Date().toLocaleDateString()}
           </p>
         </div>

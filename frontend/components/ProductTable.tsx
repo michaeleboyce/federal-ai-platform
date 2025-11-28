@@ -18,21 +18,10 @@ interface Product {
   auth_date: string;
 }
 
-interface IncidentScoreInfo {
-  maxScore: number;
-  matchCount: number;
-}
-
-type SortField = 'csp' | 'cso' | 'status' | 'auth_date' | 'services' | 'incidents';
+type SortField = 'csp' | 'cso' | 'status' | 'auth_date' | 'services';
 type SortDirection = 'asc' | 'desc';
-type IncidentFilter = 'all' | 'high' | 'any' | 'none';
 
-interface ProductTableProps {
-  products: Product[];
-  incidentScores?: Record<string, IncidentScoreInfo>;
-}
-
-export default function ProductTable({ products, incidentScores = {} }: ProductTableProps) {
+export default function ProductTable({ products }: { products: Product[] }) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -41,10 +30,7 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   const [itemsPerPage, setItemsPerPage] = useState(50);
   const [currentPage, setCurrentPage] = useState(1);
-  const [incidentFilter, setIncidentFilter] = useState<IncidentFilter>('all');
   const [isInitialized, setIsInitialized] = useState(false);
-
-  const hasIncidentScores = Object.keys(incidentScores).length > 0;
 
   // Initialize state from URL on mount
   useEffect(() => {
@@ -53,14 +39,12 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
     const dir = searchParams.get('dir') as SortDirection || 'asc';
     const page = parseInt(searchParams.get('page') || '1', 10);
     const perPage = parseInt(searchParams.get('perPage') || '50', 10);
-    const incidents = searchParams.get('incidents') as IncidentFilter || 'all';
 
     setSearchQuery(query);
     setSortField(sort);
     setSortDirection(dir);
     setCurrentPage(page);
     setItemsPerPage(perPage);
-    setIncidentFilter(incidents);
     setIsInitialized(true);
   }, [searchParams]);
 
@@ -74,57 +58,34 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
     if (sortDirection !== 'asc') params.set('dir', sortDirection);
     if (currentPage !== 1) params.set('page', currentPage.toString());
     if (itemsPerPage !== 50) params.set('perPage', itemsPerPage.toString());
-    if (incidentFilter !== 'all') params.set('incidents', incidentFilter);
 
     const queryString = params.toString();
-    const newUrl = queryString ? `/products?${queryString}` : '/products';
+    const newUrl = queryString ? `/?${queryString}` : '/';
 
     router.replace(newUrl, { scroll: false });
-  }, [searchQuery, sortField, sortDirection, currentPage, itemsPerPage, incidentFilter, isInitialized, router]);
+  }, [searchQuery, sortField, sortDirection, currentPage, itemsPerPage, isInitialized, router]);
 
-  // Filter products based on search query and incident filter
+  // Filter products based on search query
   const filteredProducts = useMemo(() => {
-    let filtered = products;
+    if (!searchQuery) return products;
 
-    // Apply incident filter
-    if (incidentFilter !== 'all' && hasIncidentScores) {
-      filtered = filtered.filter((product) => {
-        const scoreInfo = incidentScores[product.id];
-        switch (incidentFilter) {
-          case 'high':
-            return scoreInfo && scoreInfo.maxScore >= 0.75;
-          case 'any':
-            return scoreInfo && scoreInfo.matchCount > 0;
-          case 'none':
-            return !scoreInfo || scoreInfo.matchCount === 0;
-          default:
-            return true;
-        }
-      });
-    }
+    const query = searchQuery.toLowerCase();
+    return products.filter((product) => {
+      // Search in provider, offering, description, and services
+      const matchesBasic =
+        product.csp?.toLowerCase().includes(query) ||
+        product.cso?.toLowerCase().includes(query) ||
+        product.id?.toLowerCase().includes(query) ||
+        product.service_desc?.toLowerCase().includes(query);
 
-    // Apply search filter
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      filtered = filtered.filter((product) => {
-        // Search in provider, offering, description, and services
-        const matchesBasic =
-          product.csp?.toLowerCase().includes(query) ||
-          product.cso?.toLowerCase().includes(query) ||
-          product.id?.toLowerCase().includes(query) ||
-          product.service_desc?.toLowerCase().includes(query);
+      // Search in service names
+      const matchesServices = product.all_others?.some((service) =>
+        service.toLowerCase().includes(query)
+      );
 
-        // Search in service names
-        const matchesServices = product.all_others?.some((service) =>
-          service.toLowerCase().includes(query)
-        );
-
-        return matchesBasic || matchesServices;
-      });
-    }
-
-    return filtered;
-  }, [products, searchQuery, incidentFilter, hasIncidentScores, incidentScores]);
+      return matchesBasic || matchesServices;
+    });
+  }, [products, searchQuery]);
 
   // Sort products
   const sortedProducts = useMemo(() => {
@@ -155,10 +116,6 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
           aValue = a.all_others?.length || 0;
           bValue = b.all_others?.length || 0;
           break;
-        case 'incidents':
-          aValue = incidentScores[a.id]?.maxScore || 0;
-          bValue = incidentScores[b.id]?.maxScore || 0;
-          break;
         default:
           return 0;
       }
@@ -169,7 +126,7 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
     });
 
     return sorted;
-  }, [filteredProducts, sortField, sortDirection, incidentScores]);
+  }, [filteredProducts, sortField, sortDirection]);
 
   // Pagination
   const totalPages = Math.ceil(sortedProducts.length / itemsPerPage);
@@ -197,10 +154,10 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
   return (
     <div className="space-y-4">
       {/* Search Bar */}
-      <div className="bg-white rounded-lg border border-gov-slate-200 p-4">
+      <div className="bg-white rounded-lg border border-charcoal-200 p-4">
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1">
-            <label htmlFor="search" className="block text-sm font-medium text-gov-navy-900 mb-2">
+            <label htmlFor="search" className="block text-sm font-medium text-charcoal mb-2">
               Search Products
             </label>
             <input
@@ -209,42 +166,17 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
               placeholder="Search by provider, offering, service name (e.g., 'Bedrock')..."
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
-              className="w-full px-4 py-2 border border-gov-slate-300 rounded-md focus:ring-2 focus:ring-gov-navy-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-charcoal-300 rounded-md focus:ring-2 focus:ring-ifp-purple focus:border-transparent"
             />
           </div>
-          {hasIncidentScores && (
-            <div className="flex flex-col">
-              <label htmlFor="incidentFilter" className="block text-sm font-medium text-gov-navy-900 mb-2">
-                Incident Matches
-              </label>
-              <select
-                id="incidentFilter"
-                value={incidentFilter}
-                onChange={(e) => {
-                  setIncidentFilter(e.target.value as IncidentFilter);
-                  setCurrentPage(1);
-                }}
-                className="px-4 py-2 border border-gov-slate-300 rounded-md focus:ring-2 focus:ring-gov-navy-500"
-              >
-                <option value="all">All Products</option>
-                <option value="high">High Match (≥75%)</option>
-                <option value="any">Any Match</option>
-                <option value="none">No Matches</option>
-              </select>
-            </div>
-          )}
-          <div className="flex flex-col">
-            <label htmlFor="perPage" className="block text-sm font-medium text-gov-navy-900 mb-2">
-              Per Page
-            </label>
+          <div className="flex items-end">
             <select
-              id="perPage"
               value={itemsPerPage}
               onChange={(e) => {
                 setItemsPerPage(Number(e.target.value));
                 setCurrentPage(1);
               }}
-              className="px-4 py-2 border border-gov-slate-300 rounded-md focus:ring-2 focus:ring-gov-navy-500"
+              className="px-4 py-2 border border-charcoal-300 rounded-md focus:ring-2 focus:ring-ifp-purple"
             >
               <option value={25}>25 per page</option>
               <option value={50}>50 per page</option>
@@ -253,26 +185,26 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
             </select>
           </div>
         </div>
-        <div className="mt-3 text-sm text-gov-slate-600">
+        <div className="mt-3 text-sm text-charcoal-500">
           Showing {paginatedProducts.length} of {filteredProducts.length} products
           {searchQuery && ` (filtered from ${products.length} total)`}
         </div>
       </div>
 
       {/* Table */}
-      <div className="bg-white rounded-lg border border-gov-slate-200 overflow-hidden">
+      <div className="bg-white rounded-lg border border-charcoal-200 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-gov-slate-100 border-b-2 border-gov-slate-200">
+            <thead className="bg-charcoal-100 border-b-2 border-charcoal-200">
               <tr>
                 <th
                   onClick={() => handleSort('csp')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Provider</span>
                     {sortField === 'csp' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
@@ -280,31 +212,31 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
                 </th>
                 <th
                   onClick={() => handleSort('cso')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Offering</span>
                     {sortField === 'cso' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
                   </div>
                 </th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
+                <th className="px-4 py-3 text-left text-sm font-semibold text-charcoal">
                   Service Model
                 </th>
-                <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
+                <th className="px-4 py-3 text-left text-sm font-semibold text-charcoal">
                   Impact Level
                 </th>
                 <th
                   onClick={() => handleSort('services')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Services</span>
                     {sortField === 'services' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
@@ -312,96 +244,62 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
                 </th>
                 <th
                   onClick={() => handleSort('auth_date')}
-                  className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Auth Date</span>
                     {sortField === 'auth_date' && (
-                      <span className="text-gov-navy-700">
+                      <span className="text-ifp-purple">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
                     )}
                   </div>
                 </th>
-                {hasIncidentScores && (
-                  <th
-                    onClick={() => handleSort('incidents')}
-                    className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
-                  >
-                    <div className="flex items-center space-x-1">
-                      <span>Incidents</span>
-                      {sortField === 'incidents' && (
-                        <span className="text-gov-navy-700">
-                          {sortDirection === 'asc' ? '↑' : '↓'}
-                        </span>
-                      )}
-                    </div>
-                  </th>
-                )}
-                <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
+                <th className="px-4 py-3 text-left text-sm font-semibold text-charcoal">
                   Actions
                 </th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-gov-slate-200">
+            <tbody className="divide-y divide-charcoal-200">
               {paginatedProducts.map((product, index) => (
                 <tr
                   key={product.id}
                   onClick={() => router.push(`/product/${product.id}`)}
-                  className={`cursor-pointer hover:bg-gov-slate-100 hover:border-l-4 hover:border-gov-navy-600 transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-gov-slate-50/30'}`}
+                  className={`cursor-pointer hover:bg-charcoal-50 hover:border-l-4 hover:border-ifp-purple transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-charcoal-50/30'}`}
                 >
-                  <td className="px-4 py-3 text-sm text-gov-navy-900">{product.csp}</td>
-                  <td className="px-4 py-3 text-sm font-medium text-gov-navy-900">
+                  <td className="px-4 py-3 text-sm text-charcoal">{product.csp}</td>
+                  <td className="px-4 py-3 text-sm font-medium text-charcoal">
                     <div className="max-w-xs truncate" title={product.cso}>
                       {product.cso}
                     </div>
                   </td>
-                  <td className="px-4 py-3 text-sm text-gov-slate-700">
+                  <td className="px-4 py-3 text-sm text-charcoal-600">
                     {Array.isArray(product.service_model)
                       ? product.service_model.join(', ')
                       : product.service_model}
                   </td>
-                  <td className="px-4 py-3 text-sm text-gov-slate-700">
+                  <td className="px-4 py-3 text-sm text-charcoal-600">
                     {Array.isArray(product.impact_level)
                       ? product.impact_level.join(', ')
                       : product.impact_level}
                   </td>
                   <td className="px-4 py-3 text-sm">
                     {product.all_others ? (
-                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gov-navy-100 text-gov-navy-800">
+                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-charcoal-100 text-charcoal-700">
                         {product.all_others.length} services
                       </span>
                     ) : (
-                      <span className="text-gov-slate-400">N/A</span>
+                      <span className="text-charcoal-400">N/A</span>
                     )}
                   </td>
-                  <td className="px-4 py-3 text-sm text-gov-slate-600">
+                  <td className="px-4 py-3 text-sm text-charcoal-500">
                     {product.auth_date || 'N/A'}
                   </td>
-                  {hasIncidentScores && (
-                    <td className="px-4 py-3 text-sm">
-                      {incidentScores[product.id] ? (
-                        <span
-                          className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                            incidentScores[product.id].maxScore >= 0.75
-                              ? 'bg-status-error-light text-status-error-dark border border-status-error'
-                              : incidentScores[product.id].maxScore >= 0.60
-                              ? 'bg-status-warning-light text-status-warning-dark border border-status-warning'
-                              : 'bg-gov-slate-100 text-gov-slate-600 border border-gov-slate-300'
-                          }`}
-                        >
-                          {incidentScores[product.id].matchCount} ({Math.round(incidentScores[product.id].maxScore * 100)}%)
-                        </span>
-                      ) : (
-                        <span className="text-gov-slate-400">—</span>
-                      )}
-                    </td>
-                  )}
                   <td className="px-4 py-3 text-sm">
                     <Link
                       href={`/product/${product.id}`}
                       onClick={(e) => e.stopPropagation()}
-                      className="text-gov-navy-700 hover:text-gov-navy-900 font-medium underline"
+                      className="text-ifp-purple hover:text-ifp-purple-dark font-medium underline"
                     >
                       View Details →
                     </Link>
@@ -414,22 +312,22 @@ export default function ProductTable({ products, incidentScores = {} }: ProductT
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="p-4 bg-gov-slate-50 border-t border-gov-slate-200 flex items-center justify-between">
-            <div className="text-sm text-gov-slate-600">
+          <div className="p-4 bg-charcoal-50 border-t border-charcoal-200 flex items-center justify-between">
+            <div className="text-sm text-charcoal-500">
               Page {currentPage} of {totalPages}
             </div>
             <div className="flex gap-2">
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 bg-white border border-gov-slate-300 rounded-md text-sm font-medium text-gov-navy-900 hover:bg-gov-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Previous
               </button>
               <button
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 bg-white border border-gov-slate-300 rounded-md text-sm font-medium text-gov-navy-900 hover:bg-gov-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Next
               </button>
