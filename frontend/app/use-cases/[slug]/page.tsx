@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getUseCaseBySlug, getUseCases, getUseCaseFedRAMPMatches } from '@/lib/use-case-db';
+import { getUseCaseRelatedIncidents } from '@/lib/incident-db';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import CollapsibleIncidentMatches from '@/components/CollapsibleIncidentMatches';
 
 export const dynamic = 'force-dynamic';
 
@@ -32,6 +34,9 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
 
   // Get FedRAMP matches (if any)
   const fedRAMPMatches = await getUseCaseFedRAMPMatches(useCase.id);
+
+  // Get related AI incidents using hybrid matching
+  const relatedIncidents = await getUseCaseRelatedIncidents(useCase.id, 10);
 
   // Parse providers (Drizzle auto-parses jsonb fields)
   const providers: string[] = useCase.providersDetected || [];
@@ -300,6 +305,19 @@ export default async function UseCaseDetailPage({ params }: PageProps) {
                     </div>
                   )}
                 </div>
+              </div>
+            )}
+
+            {/* Related AI Incidents */}
+            {relatedIncidents.length > 0 && (
+              <div className="bg-white rounded-lg border border-gov-slate-200 p-6">
+                <h2 className="text-xl font-semibold text-gov-navy-900 mb-4">
+                  Related AI Incidents ({relatedIncidents.length})
+                </h2>
+                <p className="text-gov-slate-600 mb-4 text-sm">
+                  AI incidents that may be relevant to this use case based on semantic similarity and entity matching.
+                </p>
+                <CollapsibleIncidentMatches incidents={relatedIncidents} />
               </div>
             )}
           </div>

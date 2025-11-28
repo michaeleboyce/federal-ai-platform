@@ -18,10 +18,21 @@ interface Product {
   auth_date: string;
 }
 
-type SortField = 'csp' | 'cso' | 'status' | 'auth_date' | 'services';
-type SortDirection = 'asc' | 'desc';
+interface IncidentScoreInfo {
+  maxScore: number;
+  matchCount: number;
+}
 
-export default function ProductTable({ products }: { products: Product[] }) {
+type SortField = 'csp' | 'cso' | 'status' | 'auth_date' | 'services' | 'incidents';
+type SortDirection = 'asc' | 'desc';
+type IncidentFilter = 'all' | 'high' | 'any' | 'none';
+
+interface ProductTableProps {
+  products: Product[];
+  incidentScores?: Record<string, IncidentScoreInfo>;
+}
+
+export default function ProductTable({ products, incidentScores = {} }: ProductTableProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -30,6 +41,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   const [itemsPerPage, setItemsPerPage] = useState(50);
   const [currentPage, setCurrentPage] = useState(1);
+  const [incidentFilter, setIncidentFilter] = useState<IncidentFilter>('all');
   const [isInitialized, setIsInitialized] = useState(false);
   const [impactLevelFilter, setImpactLevelFilter] = useState<string>('');
   const [statusFilter, setStatusFilter] = useState<string>('');
@@ -47,6 +59,8 @@ export default function ProductTable({ products }: { products: Product[] }) {
     return Array.from(statuses).sort();
   }, [products]);
 
+  const hasIncidentScores = Object.keys(incidentScores).length > 0;
+
   // Initialize state from URL on mount
   useEffect(() => {
     const query = searchParams.get('q') || '';
@@ -56,6 +70,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
     const perPage = parseInt(searchParams.get('perPage') || '50', 10);
     const impact = searchParams.get('impact') || '';
     const status = searchParams.get('status') || '';
+    const incidents = searchParams.get('incidents') as IncidentFilter || 'all';
 
     setSearchQuery(query);
     setSortField(sort);
@@ -64,6 +79,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
     setItemsPerPage(perPage);
     setImpactLevelFilter(impact);
     setStatusFilter(status);
+    setIncidentFilter(incidents);
     setIsInitialized(true);
   }, [searchParams]);
 
@@ -79,29 +95,49 @@ export default function ProductTable({ products }: { products: Product[] }) {
     if (itemsPerPage !== 50) params.set('perPage', itemsPerPage.toString());
     if (impactLevelFilter) params.set('impact', impactLevelFilter);
     if (statusFilter) params.set('status', statusFilter);
+    if (incidentFilter !== 'all') params.set('incidents', incidentFilter);
 
     const queryString = params.toString();
     const newUrl = queryString ? `/products?${queryString}` : '/products';
 
     router.replace(newUrl, { scroll: false });
-  }, [searchQuery, sortField, sortDirection, currentPage, itemsPerPage, impactLevelFilter, statusFilter, isInitialized, router]);
+  }, [searchQuery, sortField, sortDirection, currentPage, itemsPerPage, impactLevelFilter, statusFilter, incidentFilter, isInitialized, router]);
 
   // Filter products based on search query and filters
   const filteredProducts = useMemo(() => {
-    return products.filter((product) => {
-      // Impact level filter
-      if (impactLevelFilter && !product.impact_level?.includes(impactLevelFilter)) {
-        return false;
-      }
+    let filtered = products;
 
-      // Status filter
-      if (statusFilter && product.status !== statusFilter) {
-        return false;
-      }
+    // Impact level filter
+    if (impactLevelFilter) {
+      filtered = filtered.filter(p => p.impact_level?.includes(impactLevelFilter));
+    }
 
-      // Search query filter
-      if (searchQuery) {
-        const query = searchQuery.toLowerCase();
+    // Status filter
+    if (statusFilter) {
+      filtered = filtered.filter(p => p.status === statusFilter);
+    }
+
+    // Apply incident filter
+    if (incidentFilter !== 'all' && hasIncidentScores) {
+      filtered = filtered.filter((product) => {
+        const scoreInfo = incidentScores[product.id];
+        switch (incidentFilter) {
+          case 'high':
+            return scoreInfo && scoreInfo.maxScore >= 0.75;
+          case 'any':
+            return scoreInfo && scoreInfo.matchCount > 0;
+          case 'none':
+            return !scoreInfo || scoreInfo.matchCount === 0;
+          default:
+            return true;
+        }
+      });
+    }
+
+    // Search query filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter((product) => {
         const matchesBasic =
           product.csp?.toLowerCase().includes(query) ||
           product.cso?.toLowerCase().includes(query) ||
@@ -112,14 +148,12 @@ export default function ProductTable({ products }: { products: Product[] }) {
           service.toLowerCase().includes(query)
         );
 
-        if (!matchesBasic && !matchesServices) {
-          return false;
-        }
-      }
+        return matchesBasic || matchesServices;
+      });
+    }
 
-      return true;
-    });
-  }, [products, searchQuery, impactLevelFilter, statusFilter]);
+    return filtered;
+  }, [products, searchQuery, impactLevelFilter, statusFilter, incidentFilter, hasIncidentScores, incidentScores]);
 
   // Sort products
   const sortedProducts = useMemo(() => {
@@ -150,6 +184,10 @@ export default function ProductTable({ products }: { products: Product[] }) {
           aValue = a.all_others?.length || 0;
           bValue = b.all_others?.length || 0;
           break;
+        case 'incidents':
+          aValue = incidentScores[a.id]?.maxScore || 0;
+          bValue = incidentScores[b.id]?.maxScore || 0;
+          break;
         default:
           return 0;
       }
@@ -160,7 +198,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
     });
 
     return sorted;
-  }, [filteredProducts, sortField, sortDirection]);
+  }, [filteredProducts, sortField, sortDirection, incidentScores]);
 
   // Pagination
   const totalPages = Math.ceil(sortedProducts.length / itemsPerPage);
@@ -185,6 +223,8 @@ export default function ProductTable({ products }: { products: Product[] }) {
     setSearchQuery(query);
     setCurrentPage(1);
   };
+
+  const hasActiveFilters = statusFilter || impactLevelFilter || searchQuery || incidentFilter !== 'all';
 
   return (
     <div className="space-y-4">
@@ -267,14 +307,38 @@ export default function ProductTable({ products }: { products: Product[] }) {
               </select>
             </div>
 
+            {/* Incident Filter */}
+            {hasIncidentScores && (
+              <div>
+                <label htmlFor="incident-filter" className="block text-sm font-medium text-gov-navy-900 mb-1">
+                  Incidents
+                </label>
+                <select
+                  id="incident-filter"
+                  value={incidentFilter}
+                  onChange={(e) => {
+                    setIncidentFilter(e.target.value as IncidentFilter);
+                    setCurrentPage(1);
+                  }}
+                  className="px-3 py-2 border border-gov-slate-300 rounded-md focus:ring-2 focus:ring-gov-navy-500 text-sm"
+                >
+                  <option value="all">All Products</option>
+                  <option value="high">High Match (≥75%)</option>
+                  <option value="any">Any Match</option>
+                  <option value="none">No Matches</option>
+                </select>
+              </div>
+            )}
+
             {/* Clear Filters */}
-            {(statusFilter || impactLevelFilter || searchQuery) && (
+            {hasActiveFilters && (
               <div className="flex items-end">
                 <button
                   onClick={() => {
                     setStatusFilter('');
                     setImpactLevelFilter('');
                     setSearchQuery('');
+                    setIncidentFilter('all');
                     setCurrentPage(1);
                   }}
                   className="px-3 py-2 text-sm text-gov-navy-700 hover:text-gov-navy-900 hover:bg-gov-slate-100 rounded-md"
@@ -288,7 +352,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
 
         <div className="mt-3 text-sm text-gov-slate-600">
           Showing {paginatedProducts.length} of {filteredProducts.length} products
-          {(searchQuery || statusFilter || impactLevelFilter) && ` (filtered from ${products.length} total)`}
+          {hasActiveFilters && ` (filtered from ${products.length} total)`}
         </div>
       </div>
 
@@ -356,6 +420,21 @@ export default function ProductTable({ products }: { products: Product[] }) {
                     )}
                   </div>
                 </th>
+                {hasIncidentScores && (
+                  <th
+                    onClick={() => handleSort('incidents')}
+                    className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  >
+                    <div className="flex items-center space-x-1">
+                      <span>Incidents</span>
+                      {sortField === 'incidents' && (
+                        <span className="text-gov-navy-700">
+                          {sortDirection === 'asc' ? '↑' : '↓'}
+                        </span>
+                      )}
+                    </div>
+                  </th>
+                )}
                 <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
                   Actions
                 </th>
@@ -396,6 +475,25 @@ export default function ProductTable({ products }: { products: Product[] }) {
                   <td className="px-4 py-3 text-sm text-gov-slate-600">
                     {product.auth_date || 'N/A'}
                   </td>
+                  {hasIncidentScores && (
+                    <td className="px-4 py-3 text-sm">
+                      {incidentScores[product.id] ? (
+                        <span
+                          className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                            incidentScores[product.id].maxScore >= 0.75
+                              ? 'bg-status-error-light text-status-error-dark border border-status-error'
+                              : incidentScores[product.id].maxScore >= 0.60
+                              ? 'bg-status-warning-light text-status-warning-dark border border-status-warning'
+                              : 'bg-gov-slate-100 text-gov-slate-600 border border-gov-slate-300'
+                          }`}
+                        >
+                          {incidentScores[product.id].matchCount} ({Math.round(incidentScores[product.id].maxScore * 100)}%)
+                        </span>
+                      ) : (
+                        <span className="text-gov-slate-400">—</span>
+                      )}
+                    </td>
+                  )}
                   <td className="px-4 py-3 text-sm">
                     <Link
                       href={`/product/${product.id}`}

@@ -2,7 +2,10 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
+import Markdown from 'react-markdown';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import CollapsibleIncidentMatches from '@/components/CollapsibleIncidentMatches';
+import { getProductRelatedIncidents, type SemanticIncidentMatch } from '@/lib/incident-db';
 
 interface Product {
   id: string;
@@ -47,6 +50,9 @@ export default async function ProductPage({
   if (!product) {
     notFound();
   }
+
+  // Get related incidents using hybrid matching
+  const relatedIncidents = await getProductRelatedIncidents(id, 10);
 
   return (
     <div className="min-h-screen bg-gov-slate-50">
@@ -113,7 +119,9 @@ export default async function ProductPage({
         {product.service_desc && (
           <div className="bg-white rounded-lg border border-gov-slate-200 p-6 mb-6">
             <h2 className="text-2xl font-semibold text-gov-navy-900 mb-4">Service Description</h2>
-            <p className="text-gov-slate-700 leading-relaxed">{product.service_desc}</p>
+            <div className="text-gov-slate-700 leading-relaxed prose prose-slate max-w-none prose-headings:text-gov-navy-900 prose-strong:text-gov-navy-800 prose-ul:my-2 prose-li:my-0">
+              <Markdown>{product.service_desc}</Markdown>
+            </div>
           </div>
         )}
 
@@ -227,6 +235,19 @@ export default async function ProductPage({
             )}
           </div>
         </div>
+
+        {/* Related AI Incidents */}
+        {relatedIncidents.length > 0 && (
+          <div className="bg-white rounded-lg border border-gov-slate-200 p-6 mb-6">
+            <h2 className="text-2xl font-semibold text-gov-navy-900 mb-4">
+              Related AI Incidents ({relatedIncidents.length})
+            </h2>
+            <p className="text-gov-slate-600 mb-4 text-sm">
+              AI incidents that may be relevant to this service based on semantic similarity and entity matching.
+            </p>
+            <CollapsibleIncidentMatches incidents={relatedIncidents} />
+          </div>
+        )}
 
         {/* Authorization Details */}
         <div className="bg-white rounded-lg border border-gov-slate-200 p-6">

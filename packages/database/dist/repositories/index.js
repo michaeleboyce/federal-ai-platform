@@ -19,4 +19,5 @@ __exportStar(require("./ProductRepository"), exports);
 __exportStar(require("./AIServiceRepository"), exports);
 __exportStar(require("./AgencyRepository"), exports);
 __exportStar(require("./UseCaseRepository"), exports);
+__exportStar(require("./IncidentRepository"), exports);
 //# sourceMappingURL=index.js.map

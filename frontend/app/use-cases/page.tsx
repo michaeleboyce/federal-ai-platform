@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import { getUseCases, getUseCaseStats, getDomainStats, getUniqueValues } from '@/lib/use-case-db';
 import { getAllOrganizationsFlat } from '@/lib/hierarchy-db';
+import { getUseCasesWithIncidentScores } from '@/lib/incident-db';
 import UseCaseTable from './UseCaseTable';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const dynamic = 'force-dynamic';
 
 export default async function UseCasesPage() {
-  const [useCases, stats, domainStats, domains, agencies, stages, organizations] = await Promise.all([
+  const [useCases, stats, domainStats, domains, agencies, stages, organizations, incidentScoreMap] = await Promise.all([
     getUseCases(),
     getUseCaseStats(),
     getDomainStats(),
@@ -15,7 +16,14 @@ export default async function UseCasesPage() {
     getUniqueValues('agency'),
     getUniqueValues('stage_of_development'),
     getAllOrganizationsFlat(),
+    getUseCasesWithIncidentScores(),
   ]);
+
+  // Convert Map to Record for JSON serialization
+  const incidentScores: Record<number, { maxScore: number; matchCount: number }> = {};
+  for (const [key, value] of incidentScoreMap.entries()) {
+    incidentScores[key] = value;
+  }
 
   return (
     <div className="min-h-screen bg-gov-slate-50">
@@ -191,6 +199,7 @@ export default async function UseCasesPage() {
           agencies={agencies}
           stages={stages}
           organizations={organizations}
+          incidentScores={incidentScores}
         />
       </main>
 

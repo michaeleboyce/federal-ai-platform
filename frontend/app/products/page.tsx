@@ -2,6 +2,7 @@ import Link from 'next/link';
 import ProductTable from '@/components/ProductTable';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { getAllProductsWithServiceCounts } from '@/lib/db';
+import { getProductsWithIncidentScores } from '@/lib/incident-db';
 
 export const dynamic = 'force-dynamic';
 
@@ -38,7 +39,16 @@ async function getProducts() {
 }
 
 export default async function ProductsPage() {
-  const products = await getProducts();
+  const [products, incidentScoreMap] = await Promise.all([
+    getProducts(),
+    getProductsWithIncidentScores(),
+  ]);
+
+  // Convert Map to Record for JSON serialization
+  const incidentScores: Record<string, { maxScore: number; matchCount: number }> = {};
+  for (const [key, value] of incidentScoreMap.entries()) {
+    incidentScores[key] = value;
+  }
 
   // Calculate stats
   const activeProducts = products.filter((p) => p.status === 'FedRAMP Authorized').length;
@@ -97,7 +107,7 @@ export default async function ProductsPage() {
         </div>
 
         {/* Interactive Product Table */}
-        <ProductTable products={products} />
+        <ProductTable products={products} incidentScores={incidentScores} />
       </main>
 
       <footer className="bg-gov-navy-950 text-white py-6 mt-12 border-t-4 border-gov-navy-700">
