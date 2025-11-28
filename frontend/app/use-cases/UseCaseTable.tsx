@@ -5,19 +5,26 @@ import { useState, useMemo, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import type { UseCase } from '@/lib/use-case-db';
 
-type SortField = 'useCaseName' | 'agency' | 'domainCategory' | 'stageOfDevelopment' | 'dateImplemented';
+type SortField = 'useCaseName' | 'agency' | 'domainCategory' | 'stageOfDevelopment' | 'dateImplemented' | 'incidents';
 type SortDirection = 'asc' | 'desc';
 type AITypeFilter = 'all' | 'genai' | 'llm' | 'chatbot' | 'classic_ml' | 'coding' | 'rpa';
+type IncidentFilter = 'all' | 'high' | 'any' | 'none';
 type DomainFilter = string;
+
+interface IncidentScoreInfo {
+  maxScore: number;
+  matchCount: number;
+}
 
 interface UseCaseTableProps {
   useCases: UseCase[];
   domains: string[];
   agencies: string[];
   stages: string[];
+  incidentScores?: Record<number, IncidentScoreInfo>;
 }
 
-export default function UseCaseTable({ useCases, domains, agencies, stages }: UseCaseTableProps) {
+export default function UseCaseTable({ useCases, domains, agencies, stages, incidentScores = {} }: UseCaseTableProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -26,11 +33,14 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
   const [domainFilter, setDomainFilter] = useState<string>('all');
   const [agencyFilter, setAgencyFilter] = useState<string>('all');
   const [stageFilter, setStageFilter] = useState<string>('all');
+  const [incidentFilter, setIncidentFilter] = useState<IncidentFilter>('all');
   const [sortField, setSortField] = useState<SortField>('agency');
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   const [itemsPerPage, setItemsPerPage] = useState(50);
   const [currentPage, setCurrentPage] = useState(1);
   const [isInitialized, setIsInitialized] = useState(false);
+
+  const hasIncidentScores = Object.keys(incidentScores).length > 0;
 
   // Initialize state from URL on mount
   useEffect(() => {
@@ -39,6 +49,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     const domain = searchParams.get('domain') || 'all';
     const agency = searchParams.get('agency') || 'all';
     const stage = searchParams.get('stage') || 'all';
+    const incidents = searchParams.get('incidents') as IncidentFilter || 'all';
     const sort = searchParams.get('sort') as SortField || 'agency';
     const dir = searchParams.get('dir') as SortDirection || 'asc';
     const page = parseInt(searchParams.get('page') || '1', 10);
@@ -49,6 +60,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     setDomainFilter(domain);
     setAgencyFilter(agency);
     setStageFilter(stage);
+    setIncidentFilter(incidents);
     setSortField(sort);
     setSortDirection(dir);
     setCurrentPage(page);
@@ -66,6 +78,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     if (domainFilter !== 'all') params.set('domain', domainFilter);
     if (agencyFilter !== 'all') params.set('agency', agencyFilter);
     if (stageFilter !== 'all') params.set('stage', stageFilter);
+    if (incidentFilter !== 'all') params.set('incidents', incidentFilter);
     if (sortField !== 'agency') params.set('sort', sortField);
     if (sortDirection !== 'asc') params.set('dir', sortDirection);
     if (currentPage !== 1) params.set('page', currentPage.toString());
@@ -75,7 +88,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     const newUrl = queryString ? `/use-cases?${queryString}` : '/use-cases';
 
     router.replace(newUrl, { scroll: false });
-  }, [searchQuery, aiTypeFilter, domainFilter, agencyFilter, stageFilter, sortField, sortDirection, currentPage, itemsPerPage, isInitialized, router]);
+  }, [searchQuery, aiTypeFilter, domainFilter, agencyFilter, stageFilter, incidentFilter, sortField, sortDirection, currentPage, itemsPerPage, isInitialized, router]);
 
   // Parse providers for display
   const parseProviders = (providersJson: string): string[] => {
@@ -121,26 +134,53 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     return filteredByAgency.filter(uc => uc.stageOfDevelopment === stageFilter);
   }, [filteredByAgency, stageFilter]);
 
+  // Filter by incident matches
+  const filteredByIncidents = useMemo(() => {
+    if (incidentFilter === 'all' || !hasIncidentScores) return filteredByStage;
+
+    return filteredByStage.filter((uc) => {
+      const scoreInfo = incidentScores[uc.id];
+      switch (incidentFilter) {
+        case 'high':
+          return scoreInfo && scoreInfo.maxScore >= 0.75;
+        case 'any':
+          return scoreInfo && scoreInfo.matchCount > 0;
+        case 'none':
+          return !scoreInfo || scoreInfo.matchCount === 0;
+        default:
+          return true;
+      }
+    });
+  }, [filteredByStage, incidentFilter, hasIncidentScores, incidentScores]);
+
   // Filter by search query
   const filteredUseCases = useMemo(() => {
-    if (!searchQuery) return filteredByStage;
+    if (!searchQuery) return filteredByIncidents;
 
     const query = searchQuery.toLowerCase();
-    return filteredByStage.filter(uc =>
+    return filteredByIncidents.filter(uc =>
       uc.useCaseName?.toLowerCase().includes(query) ||
       uc.agency?.toLowerCase().includes(query) ||
       uc.bureau?.toLowerCase().includes(query) ||
       uc.intendedPurpose?.toLowerCase().includes(query)
     );
-  }, [filteredByStage, searchQuery]);
+  }, [filteredByIncidents, searchQuery]);
 
   // Sort use cases
   const sortedUseCases = useMemo(() => {
     const sorted = [...filteredUseCases];
 
     sorted.sort((a, b) => {
-      let aValue: any = a[sortField] || '';
-      let bValue: any = b[sortField] || '';
+      let aValue: any;
+      let bValue: any;
+
+      if (sortField === 'incidents') {
+        aValue = incidentScores[a.id]?.maxScore || 0;
+        bValue = incidentScores[b.id]?.maxScore || 0;
+      } else {
+        aValue = a[sortField] || '';
+        bValue = b[sortField] || '';
+      }
 
       if (aValue < bValue) return sortDirection === 'asc' ? -1 : 1;
       if (aValue > bValue) return sortDirection === 'asc' ? 1 : -1;
@@ -148,7 +188,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
     });
 
     return sorted;
-  }, [filteredUseCases, sortField, sortDirection]);
+  }, [filteredUseCases, sortField, sortDirection, incidentScores]);
 
   // Pagination
   const totalPages = Math.ceil(sortedUseCases.length / itemsPerPage);
@@ -289,7 +329,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
           </div>
 
           {/* Dropdown Filters and Search */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
             {/* Domain Filter */}
             <div>
               <label className="text-xs font-semibold text-gov-slate-600 mb-1 block">DOMAIN</label>
@@ -334,6 +374,23 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                 ))}
               </select>
             </div>
+
+            {/* Incident Match Filter */}
+            {hasIncidentScores && (
+              <div>
+                <label className="text-xs font-semibold text-gov-slate-600 mb-1 block">INCIDENTS</label>
+                <select
+                  value={incidentFilter}
+                  onChange={(e) => { setIncidentFilter(e.target.value as IncidentFilter); handleFilterChange(); }}
+                  className="w-full px-3 py-2 border border-gov-slate-300 rounded-md text-sm focus:ring-2 focus:ring-gov-navy-500"
+                >
+                  <option value="all">All Use Cases</option>
+                  <option value="high">High Match (≥75%)</option>
+                  <option value="any">Any Match</option>
+                  <option value="none">No Matches</option>
+                </select>
+              </div>
+            )}
 
             {/* Items Per Page */}
             <div>
@@ -434,6 +491,21 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     )}
                   </div>
                 </th>
+                {hasIncidentScores && (
+                  <th
+                    onClick={() => handleSort('incidents')}
+                    className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  >
+                    <div className="flex items-center space-x-1">
+                      <span>Incidents</span>
+                      {sortField === 'incidents' && (
+                        <span className="text-gov-navy-700">
+                          {sortDirection === 'asc' ? '↑' : '↓'}
+                        </span>
+                      )}
+                    </div>
+                  </th>
+                )}
                 <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
                   Actions
                 </th>
@@ -477,6 +549,25 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                       {uc.stageOfDevelopment || 'N/A'}
                     </div>
                   </td>
+                  {hasIncidentScores && (
+                    <td className="px-4 py-3 text-sm">
+                      {incidentScores[uc.id] ? (
+                        <span
+                          className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                            incidentScores[uc.id].maxScore >= 0.75
+                              ? 'bg-status-error-light text-status-error-dark border border-status-error'
+                              : incidentScores[uc.id].maxScore >= 0.60
+                              ? 'bg-status-warning-light text-status-warning-dark border border-status-warning'
+                              : 'bg-gov-slate-100 text-gov-slate-600 border border-gov-slate-300'
+                          }`}
+                        >
+                          {incidentScores[uc.id].matchCount} ({Math.round(incidentScores[uc.id].maxScore * 100)}%)
+                        </span>
+                      ) : (
+                        <span className="text-gov-slate-400">—</span>
+                      )}
+                    </td>
+                  )}
                   <td className="px-4 py-3 text-sm">
                     <Link
                       href={`/use-cases/${uc.slug}`}

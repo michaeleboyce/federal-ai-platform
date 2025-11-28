@@ -18,10 +18,21 @@ interface Product {
   auth_date: string;
 }
 
-type SortField = 'csp' | 'cso' | 'status' | 'auth_date' | 'services';
-type SortDirection = 'asc' | 'desc';
+interface IncidentScoreInfo {
+  maxScore: number;
+  matchCount: number;
+}
 
-export default function ProductTable({ products }: { products: Product[] }) {
+type SortField = 'csp' | 'cso' | 'status' | 'auth_date' | 'services' | 'incidents';
+type SortDirection = 'asc' | 'desc';
+type IncidentFilter = 'all' | 'high' | 'any' | 'none';
+
+interface ProductTableProps {
+  products: Product[];
+  incidentScores?: Record<string, IncidentScoreInfo>;
+}
+
+export default function ProductTable({ products, incidentScores = {} }: ProductTableProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -30,7 +41,10 @@ export default function ProductTable({ products }: { products: Product[] }) {
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   const [itemsPerPage, setItemsPerPage] = useState(50);
   const [currentPage, setCurrentPage] = useState(1);
+  const [incidentFilter, setIncidentFilter] = useState<IncidentFilter>('all');
   const [isInitialized, setIsInitialized] = useState(false);
+
+  const hasIncidentScores = Object.keys(incidentScores).length > 0;
 
   // Initialize state from URL on mount
   useEffect(() => {
@@ -39,12 +53,14 @@ export default function ProductTable({ products }: { products: Product[] }) {
     const dir = searchParams.get('dir') as SortDirection || 'asc';
     const page = parseInt(searchParams.get('page') || '1', 10);
     const perPage = parseInt(searchParams.get('perPage') || '50', 10);
+    const incidents = searchParams.get('incidents') as IncidentFilter || 'all';
 
     setSearchQuery(query);
     setSortField(sort);
     setSortDirection(dir);
     setCurrentPage(page);
     setItemsPerPage(perPage);
+    setIncidentFilter(incidents);
     setIsInitialized(true);
   }, [searchParams]);
 
@@ -58,34 +74,57 @@ export default function ProductTable({ products }: { products: Product[] }) {
     if (sortDirection !== 'asc') params.set('dir', sortDirection);
     if (currentPage !== 1) params.set('page', currentPage.toString());
     if (itemsPerPage !== 50) params.set('perPage', itemsPerPage.toString());
+    if (incidentFilter !== 'all') params.set('incidents', incidentFilter);
 
     const queryString = params.toString();
-    const newUrl = queryString ? `/?${queryString}` : '/';
+    const newUrl = queryString ? `/products?${queryString}` : '/products';
 
     router.replace(newUrl, { scroll: false });
-  }, [searchQuery, sortField, sortDirection, currentPage, itemsPerPage, isInitialized, router]);
+  }, [searchQuery, sortField, sortDirection, currentPage, itemsPerPage, incidentFilter, isInitialized, router]);
 
-  // Filter products based on search query
+  // Filter products based on search query and incident filter
   const filteredProducts = useMemo(() => {
-    if (!searchQuery) return products;
+    let filtered = products;
 
-    const query = searchQuery.toLowerCase();
-    return products.filter((product) => {
-      // Search in provider, offering, description, and services
-      const matchesBasic =
-        product.csp?.toLowerCase().includes(query) ||
-        product.cso?.toLowerCase().includes(query) ||
-        product.id?.toLowerCase().includes(query) ||
-        product.service_desc?.toLowerCase().includes(query);
+    // Apply incident filter
+    if (incidentFilter !== 'all' && hasIncidentScores) {
+      filtered = filtered.filter((product) => {
+        const scoreInfo = incidentScores[product.id];
+        switch (incidentFilter) {
+          case 'high':
+            return scoreInfo && scoreInfo.maxScore >= 0.75;
+          case 'any':
+            return scoreInfo && scoreInfo.matchCount > 0;
+          case 'none':
+            return !scoreInfo || scoreInfo.matchCount === 0;
+          default:
+            return true;
+        }
+      });
+    }
 
-      // Search in service names
-      const matchesServices = product.all_others?.some((service) =>
-        service.toLowerCase().includes(query)
-      );
+    // Apply search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter((product) => {
+        // Search in provider, offering, description, and services
+        const matchesBasic =
+          product.csp?.toLowerCase().includes(query) ||
+          product.cso?.toLowerCase().includes(query) ||
+          product.id?.toLowerCase().includes(query) ||
+          product.service_desc?.toLowerCase().includes(query);
 
-      return matchesBasic || matchesServices;
-    });
-  }, [products, searchQuery]);
+        // Search in service names
+        const matchesServices = product.all_others?.some((service) =>
+          service.toLowerCase().includes(query)
+        );
+
+        return matchesBasic || matchesServices;
+      });
+    }
+
+    return filtered;
+  }, [products, searchQuery, incidentFilter, hasIncidentScores, incidentScores]);
 
   // Sort products
   const sortedProducts = useMemo(() => {
@@ -116,6 +155,10 @@ export default function ProductTable({ products }: { products: Product[] }) {
           aValue = a.all_others?.length || 0;
           bValue = b.all_others?.length || 0;
           break;
+        case 'incidents':
+          aValue = incidentScores[a.id]?.maxScore || 0;
+          bValue = incidentScores[b.id]?.maxScore || 0;
+          break;
         default:
           return 0;
       }
@@ -126,7 +169,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
     });
 
     return sorted;
-  }, [filteredProducts, sortField, sortDirection]);
+  }, [filteredProducts, sortField, sortDirection, incidentScores]);
 
   // Pagination
   const totalPages = Math.ceil(sortedProducts.length / itemsPerPage);
@@ -169,8 +212,33 @@ export default function ProductTable({ products }: { products: Product[] }) {
               className="w-full px-4 py-2 border border-gov-slate-300 rounded-md focus:ring-2 focus:ring-gov-navy-500 focus:border-transparent"
             />
           </div>
-          <div className="flex items-end">
+          {hasIncidentScores && (
+            <div className="flex flex-col">
+              <label htmlFor="incidentFilter" className="block text-sm font-medium text-gov-navy-900 mb-2">
+                Incident Matches
+              </label>
+              <select
+                id="incidentFilter"
+                value={incidentFilter}
+                onChange={(e) => {
+                  setIncidentFilter(e.target.value as IncidentFilter);
+                  setCurrentPage(1);
+                }}
+                className="px-4 py-2 border border-gov-slate-300 rounded-md focus:ring-2 focus:ring-gov-navy-500"
+              >
+                <option value="all">All Products</option>
+                <option value="high">High Match (≥75%)</option>
+                <option value="any">Any Match</option>
+                <option value="none">No Matches</option>
+              </select>
+            </div>
+          )}
+          <div className="flex flex-col">
+            <label htmlFor="perPage" className="block text-sm font-medium text-gov-navy-900 mb-2">
+              Per Page
+            </label>
             <select
+              id="perPage"
               value={itemsPerPage}
               onChange={(e) => {
                 setItemsPerPage(Number(e.target.value));
@@ -255,6 +323,21 @@ export default function ProductTable({ products }: { products: Product[] }) {
                     )}
                   </div>
                 </th>
+                {hasIncidentScores && (
+                  <th
+                    onClick={() => handleSort('incidents')}
+                    className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
+                  >
+                    <div className="flex items-center space-x-1">
+                      <span>Incidents</span>
+                      {sortField === 'incidents' && (
+                        <span className="text-gov-navy-700">
+                          {sortDirection === 'asc' ? '↑' : '↓'}
+                        </span>
+                      )}
+                    </div>
+                  </th>
+                )}
                 <th className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900">
                   Actions
                 </th>
@@ -295,6 +378,25 @@ export default function ProductTable({ products }: { products: Product[] }) {
                   <td className="px-4 py-3 text-sm text-gov-slate-600">
                     {product.auth_date || 'N/A'}
                   </td>
+                  {hasIncidentScores && (
+                    <td className="px-4 py-3 text-sm">
+                      {incidentScores[product.id] ? (
+                        <span
+                          className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                            incidentScores[product.id].maxScore >= 0.75
+                              ? 'bg-status-error-light text-status-error-dark border border-status-error'
+                              : incidentScores[product.id].maxScore >= 0.60
+                              ? 'bg-status-warning-light text-status-warning-dark border border-status-warning'
+                              : 'bg-gov-slate-100 text-gov-slate-600 border border-gov-slate-300'
+                          }`}
+                        >
+                          {incidentScores[product.id].matchCount} ({Math.round(incidentScores[product.id].maxScore * 100)}%)
+                        </span>
+                      ) : (
+                        <span className="text-gov-slate-400">—</span>
+                      )}
+                    </td>
+                  )}
                   <td className="px-4 py-3 text-sm">
                     <Link
                       href={`/product/${product.id}`}

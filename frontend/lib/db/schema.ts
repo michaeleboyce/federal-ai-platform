@@ -316,3 +316,192 @@ export type NewAgencyAIUsage = typeof agencyAiUsage.$inferInsert;
 
 export type AgencyServiceMatch = typeof agencyServiceMatches.$inferSelect;
 export type NewAgencyServiceMatch = typeof agencyServiceMatches.$inferInsert;
+
+// ========================================
+// AI INCIDENT TABLES
+// ========================================
+
+/**
+ * AI Incidents table
+ * Tracks AI-related incidents from the AI Incident Database
+ */
+export const incidents = pgTable(
+  'incidents',
+  {
+    id: serial('id').primaryKey(),
+    incidentId: integer('incident_id').notNull().unique(),
+    title: text('title').notNull(),
+    description: text('description'),
+    date: text('date'),
+    deployers: jsonb('deployers').$type<string[]>(),
+    developers: jsonb('developers').$type<string[]>(),
+    harmedParties: jsonb('harmed_parties').$type<string[]>(),
+    reportCount: integer('report_count').default(0),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+  },
+  (table) => [
+    index('idx_incidents_incident_id').on(table.incidentId),
+    index('idx_incidents_date').on(table.date),
+  ]
+);
+
+/**
+ * Entities involved in incidents
+ */
+export const entities = pgTable(
+  'entities',
+  {
+    id: serial('id').primaryKey(),
+    entityId: text('entity_id').notNull().unique(),
+    name: text('name').notNull(),
+  },
+  (table) => [
+    uniqueIndex('idx_entities_entity_id').on(table.entityId),
+  ]
+);
+
+/**
+ * Junction table for incident-entity relationships
+ */
+export const incidentEntities = pgTable(
+  'incident_entities',
+  {
+    id: serial('id').primaryKey(),
+    incidentId: integer('incident_id').notNull(),
+    entityId: text('entity_id').notNull(),
+    role: text('role').notNull(), // 'deployer', 'developer', 'harmed'
+  },
+  (table) => [
+    index('idx_incident_entities_incident').on(table.incidentId),
+    index('idx_incident_entities_entity').on(table.entityId),
+  ]
+);
+
+/**
+ * Security data for incidents
+ */
+export const incidentSecurity = pgTable(
+  'incident_security',
+  {
+    id: serial('id').primaryKey(),
+    incidentId: integer('incident_id').notNull().unique(),
+    securityDataLeakPresence: text('security_data_leak_presence'),
+    securityDataLeakModes: jsonb('security_data_leak_modes').$type<string[]>(),
+    securityDataTypes: jsonb('security_data_types').$type<string[]>(),
+    securityEnvironmentType: text('security_environment_type'),
+    securityExpectationLevel: text('security_expectation_level'),
+    regulatedContextFlag: boolean('regulated_context_flag'),
+    regulatoryRegimes: jsonb('regulatory_regimes').$type<string[]>(),
+    cyberAttackFlag: text('cyber_attack_flag'),
+    attackerIntent: jsonb('attacker_intent').$type<string[]>(),
+    aiAttackType: jsonb('ai_attack_type').$type<string[]>(),
+    majorProductFlag: text('major_product_flag'),
+    deploymentStatus: text('deployment_status'),
+    userBaseSizeBucket: text('user_base_size_bucket'),
+    recordsExposedBucket: text('records_exposed_bucket'),
+    leakDuration: text('leak_duration'),
+    downstreamConsequences: jsonb('downstream_consequences').$type<string[]>(),
+    evidenceTypes: jsonb('evidence_types').$type<string[]>(),
+    securityLabelConfidence: text('security_label_confidence'),
+    llmOrChatbotInvolved: boolean('llm_or_chatbot_involved'),
+    llmConnectorTooling: jsonb('llm_connector_tooling').$type<string[]>(),
+    llmDataSourceOfLeak: jsonb('llm_data_source_of_leak').$type<string[]>(),
+  },
+  (table) => [
+    index('idx_incident_security_incident').on(table.incidentId),
+    index('idx_incident_security_llm').on(table.llmOrChatbotInvolved),
+  ]
+);
+
+/**
+ * Cross-domain matches: incidents to products
+ */
+export const incidentProductMatches = pgTable(
+  'incident_product_matches',
+  {
+    id: serial('id').primaryKey(),
+    incidentId: integer('incident_id').notNull(),
+    productFedrampId: text('product_fedramp_id').notNull(),
+    matchType: text('match_type').notNull(),
+    confidence: text('confidence').notNull(),
+    matchReason: text('match_reason'),
+    matchedEntity: text('matched_entity'),
+    similarityScore: integer('similarity_score'),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+  },
+  (table) => [
+    index('idx_incident_product_incident').on(table.incidentId),
+    index('idx_incident_product_product').on(table.productFedrampId),
+  ]
+);
+
+/**
+ * Cross-domain matches: incidents to use cases
+ */
+export const incidentUseCaseMatches = pgTable(
+  'incident_use_case_matches',
+  {
+    id: serial('id').primaryKey(),
+    incidentId: integer('incident_id').notNull(),
+    useCaseId: integer('use_case_id').notNull(),
+    matchType: text('match_type').notNull(),
+    confidence: text('confidence').notNull(),
+    matchReason: text('match_reason'),
+    matchedEntity: text('matched_entity'),
+    similarityScore: integer('similarity_score'),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+  },
+  (table) => [
+    index('idx_incident_use_case_incident').on(table.incidentId),
+    index('idx_incident_use_case_use_case').on(table.useCaseId),
+  ]
+);
+
+// Incident type exports
+export type Incident = typeof incidents.$inferSelect;
+export type NewIncident = typeof incidents.$inferInsert;
+
+export type Entity = typeof entities.$inferSelect;
+export type NewEntity = typeof entities.$inferInsert;
+
+export type IncidentEntity = typeof incidentEntities.$inferSelect;
+export type NewIncidentEntity = typeof incidentEntities.$inferInsert;
+
+export type IncidentSecurity = typeof incidentSecurity.$inferSelect;
+export type NewIncidentSecurity = typeof incidentSecurity.$inferInsert;
+
+export type IncidentProductMatch = typeof incidentProductMatches.$inferSelect;
+export type NewIncidentProductMatch = typeof incidentProductMatches.$inferInsert;
+
+export type IncidentUseCaseMatch = typeof incidentUseCaseMatches.$inferSelect;
+export type NewIncidentUseCaseMatch = typeof incidentUseCaseMatches.$inferInsert;
+
+// ========================================
+// SEMANTIC MATCHING TABLES
+// ========================================
+
+/**
+ * Semantic matches table
+ * Pre-computed similarity matches using vector embeddings
+ */
+export const semanticMatches = pgTable(
+  'semantic_matches',
+  {
+    id: serial('id').primaryKey(),
+    sourceType: text('source_type').notNull(), // 'incident', 'use_case', 'product'
+    sourceId: text('source_id').notNull(),
+    targetType: text('target_type').notNull(), // 'incident', 'use_case', 'product'
+    targetId: text('target_id').notNull(),
+    similarityScore: integer('similarity_score').notNull(), // Stored as real in DB but integer here for drizzle
+    matchRank: integer('match_rank'),
+    createdAt: timestamp('created_at').defaultNow().notNull(),
+  },
+  (table) => [
+    index('idx_semantic_matches_source').on(table.sourceType, table.sourceId),
+    index('idx_semantic_matches_target').on(table.targetType, table.targetId),
+    index('idx_semantic_matches_score').on(table.similarityScore),
+  ]
+);
+
+export type SemanticMatch = typeof semanticMatches.$inferSelect;
+export type NewSemanticMatch = typeof semanticMatches.$inferInsert;

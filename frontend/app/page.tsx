@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { getAIStats } from '@/lib/ai-db';
 import { getAgencyStats } from '@/lib/agency-db';
 import { getUseCaseStats } from '@/lib/use-case-db';
+import { getIncidentStats } from '@/lib/incident-db';
 
 interface Product {
   id: string;
@@ -25,6 +26,7 @@ export default async function Home() {
   const aiStatsData = await getAIStats();
   const agencyStatsData = await getAgencyStats();
   const useCaseStatsData = await getUseCaseStats();
+  const incidentStatsData = await getIncidentStats();
 
   // Provide default values if stats are undefined
   const aiStats = aiStatsData || {
@@ -50,6 +52,16 @@ export default async function Home() {
     classic_ml_count: 0,
     unique_agencies: 0,
     total_agencies: 0
+  };
+
+  const incidentStats = incidentStatsData || {
+    totalIncidents: 0,
+    llmIncidents: 0,
+    dataLeakIncidents: 0,
+    cyberAttackIncidents: 0,
+    totalEntities: 0,
+    productsLinked: 0,
+    useCasesLinked: 0
   };
 
   // Calculate general stats
@@ -189,7 +201,43 @@ export default async function Home() {
             </p>
           </Link>
 
-          {/* Card 4: Products with AI */}
+          {/* Card 4: AI Incidents */}
+          <Link
+            href="/incidents"
+            className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
+          >
+            <div className="flex items-start justify-between mb-4">
+              <h2 className="text-2xl font-bold text-gov-navy-900">AI Incidents</h2>
+              <svg className="w-6 h-6 text-status-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <div className="space-y-3 mb-4">
+              <div className="flex justify-between items-center">
+                <span className="text-gov-slate-600">Documented Incidents</span>
+                <span className="text-3xl font-bold text-gov-navy-900">{incidentStats.totalIncidents.toLocaleString()}</span>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                <div className="text-center p-2 bg-amber-50 rounded border border-amber-200">
+                  <div className="text-xl font-bold text-amber-700">{incidentStats.llmIncidents}</div>
+                  <div className="text-xs text-gov-slate-600">LLM</div>
+                </div>
+                <div className="text-center p-2 bg-red-50 rounded border border-red-200">
+                  <div className="text-xl font-bold text-red-700">{incidentStats.dataLeakIncidents}</div>
+                  <div className="text-xs text-gov-slate-600">Data Leak</div>
+                </div>
+                <div className="text-center p-2 bg-orange-50 rounded border border-orange-200">
+                  <div className="text-xl font-bold text-orange-700">{incidentStats.cyberAttackIncidents}</div>
+                  <div className="text-xs text-gov-slate-600">Cyber</div>
+                </div>
+              </div>
+            </div>
+            <p className="text-sm text-gov-slate-600">
+              {incidentStats.productsLinked} linked products, {incidentStats.useCasesLinked} linked use cases
+            </p>
+          </Link>
+
+          {/* Card 5: Products with AI */}
           <Link
             href="/ai-services"
             className="bg-white border-2 border-gov-slate-200 rounded-lg p-6 hover:border-gov-navy-700 hover:shadow-lg transition-all cursor-pointer"
@@ -303,7 +351,7 @@ export default async function Home() {
         {/* Quick Links */}
         <div className="bg-gov-navy-50 border border-gov-navy-200 rounded-lg p-6">
           <h3 className="text-lg font-semibold text-gov-navy-900 mb-4">Quick Navigation</h3>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <Link
               href="/ai-services"
               className="flex items-center space-x-3 p-3 bg-white rounded-md border border-gov-slate-200 hover:border-gov-navy-600 transition-colors"
@@ -346,6 +394,21 @@ export default async function Home() {
               <div>
                 <div className="font-semibold text-gov-navy-900">Use Cases</div>
                 <div className="text-xs text-gov-slate-600">AI implementations</div>
+              </div>
+            </Link>
+
+            <Link
+              href="/incidents"
+              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-gov-slate-200 hover:border-gov-navy-600 transition-colors"
+            >
+              <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <div>
+                <div className="font-semibold text-gov-navy-900">Incidents</div>
+                <div className="text-xs text-gov-slate-600">AI incident database</div>
               </div>
             </Link>
 

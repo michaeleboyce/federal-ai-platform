@@ -1,19 +1,27 @@
 import Link from 'next/link';
 import { getUseCases, getUseCaseStats, getDomainStats, getUniqueValues } from '@/lib/use-case-db';
+import { getUseCasesWithIncidentScores } from '@/lib/incident-db';
 import UseCaseTable from './UseCaseTable';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const dynamic = 'force-dynamic';
 
 export default async function UseCasesPage() {
-  const useCases = await getUseCases();
-  const stats = await getUseCaseStats();
-  const domainStats = await getDomainStats();
+  const [useCases, stats, domainStats, domains, agencies, stages, incidentScoreMap] = await Promise.all([
+    getUseCases(),
+    getUseCaseStats(),
+    getDomainStats(),
+    getUniqueValues('domain_category'),
+    getUniqueValues('agency'),
+    getUniqueValues('stage_of_development'),
+    getUseCasesWithIncidentScores(),
+  ]);
 
-  // Get unique values for filters
-  const domains = await getUniqueValues('domain_category');
-  const agencies = await getUniqueValues('agency');
-  const stages = await getUniqueValues('stage_of_development');
+  // Convert Map to Record for JSON serialization
+  const incidentScores: Record<number, { maxScore: number; matchCount: number }> = {};
+  for (const [key, value] of incidentScoreMap.entries()) {
+    incidentScores[key] = value;
+  }
 
   return (
     <div className="min-h-screen bg-gov-slate-50">
@@ -188,6 +196,7 @@ export default async function UseCasesPage() {
           domains={domains}
           agencies={agencies}
           stages={stages}
+          incidentScores={incidentScores}
         />
       </main>
 
