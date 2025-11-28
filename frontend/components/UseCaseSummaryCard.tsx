@@ -10,28 +10,28 @@ export default function UseCaseSummaryCard({ useCase }: UseCaseSummaryCardProps)
   const getAITypeBadges = () => {
     const badges = [];
 
-    if (useCase.genai_flag) {
+    if (useCase.genaiFlag) {
       badges.push(
         <span key="genai" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-teal-light text-ai-teal-dark border border-ai-teal">
           GenAI
         </span>
       );
     }
-    if (useCase.has_llm) {
+    if (useCase.hasLlm) {
       badges.push(
         <span key="llm" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-indigo-light text-ai-indigo-dark border border-ai-indigo">
           LLM
         </span>
       );
     }
-    if (useCase.has_chatbot) {
+    if (useCase.hasChatbot) {
       badges.push(
         <span key="chatbot" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
           Chatbot
         </span>
       );
     }
-    if (useCase.has_classic_ml) {
+    if (useCase.hasClassicMl) {
       badges.push(
         <span key="ml" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gov-slate-200 text-gov-slate-700 border border-gov-slate-400">
           ML
@@ -61,7 +61,7 @@ export default function UseCaseSummaryCard({ useCase }: UseCaseSummaryCardProps)
       {/* Header */}
       <div className="flex items-start justify-between mb-3">
         <h3 className="font-semibold text-gov-navy-900 text-sm line-clamp-2 flex-1">
-          {useCase.use_case_name}
+          {useCase.useCaseName}
         </h3>
         <svg
           className="w-5 h-5 text-gov-navy-600 flex-shrink-0 ml-2"
@@ -80,14 +80,14 @@ export default function UseCaseSummaryCard({ useCase }: UseCaseSummaryCardProps)
 
       {/* Domain & Stage */}
       <div className="flex flex-wrap gap-2 mb-3">
-        {useCase.domain_category && (
+        {useCase.domainCategory && (
           <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gov-navy-100 text-gov-navy-800">
-            {useCase.domain_category}
+            {useCase.domainCategory}
           </span>
         )}
-        {useCase.stage_of_development && (
+        {useCase.stageOfDevelopment && (
           <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gov-slate-100 text-gov-slate-700">
-            {useCase.stage_of_development}
+            {useCase.stageOfDevelopment}
           </span>
         )}
       </div>
@@ -98,16 +98,16 @@ export default function UseCaseSummaryCard({ useCase }: UseCaseSummaryCardProps)
       </div>
 
       {/* Purpose (truncated) */}
-      {useCase.intended_purpose && (
+      {useCase.intendedPurpose && (
         <p className="text-xs text-gov-slate-600 leading-relaxed">
-          {truncatePurpose(useCase.intended_purpose)}
+          {truncatePurpose(useCase.intendedPurpose)}
         </p>
       )}
 
       {/* Implementation Date */}
-      {useCase.date_implemented && (
+      {useCase.dateImplemented && (
         <div className="mt-3 text-xs text-gov-slate-500">
-          Implemented: {useCase.date_implemented}
+          Implemented: {useCase.dateImplemented}
         </div>
       )}
     </Link>

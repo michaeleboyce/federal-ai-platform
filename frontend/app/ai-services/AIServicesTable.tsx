@@ -311,17 +311,17 @@ export default function AIServicesTable({ services }: { services: AIService[] })
                   </td>
                   <td className="px-4 py-3 text-sm">
                     <div className="flex flex-wrap gap-1">
-                      {service.has_ai === 1 && (
+                      {service.has_ai && (
                         <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
                           AI
                         </span>
                       )}
-                      {service.has_genai === 1 && (
+                      {service.has_genai && (
                         <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-teal-light text-ai-teal-dark border border-ai-teal">
                           GenAI
                         </span>
                       )}
-                      {service.has_llm === 1 && (
+                      {service.has_llm && (
                         <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-indigo-light text-ai-indigo-dark border border-ai-indigo">
                           LLM
                         </span>
@@ -329,7 +329,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
                     </div>
                   </td>
                   <td className="px-4 py-3 text-sm text-gov-slate-600">
-                    <div className="max-w-md truncate" title={service.relevant_excerpt}>
+                    <div className="max-w-md truncate" title={service.relevant_excerpt || undefined}>
                       {service.relevant_excerpt}
                     </div>
                   </td>

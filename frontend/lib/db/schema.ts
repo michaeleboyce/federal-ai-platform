@@ -194,7 +194,7 @@ export const aiServiceAnalysis = pgTable(
   'ai_service_analysis',
   {
     id: serial('id').primaryKey(),
-    productId: varchar('product_id', { length: 255 }).notNull().unique(),
+    productId: varchar('product_id', { length: 255 }).notNull(),
     productName: text('product_name').notNull(),
     providerName: text('provider_name').notNull(),
     serviceName: text('service_name').notNull(),

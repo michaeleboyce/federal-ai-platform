@@ -5,7 +5,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import type { UseCase } from '@/lib/use-case-db';
 
-type SortField = 'use_case_name' | 'agency' | 'domain_category' | 'stage_of_development' | 'date_implemented';
+type SortField = 'useCaseName' | 'agency' | 'domainCategory' | 'stageOfDevelopment' | 'dateImplemented';
 type SortDirection = 'asc' | 'desc';
 type AITypeFilter = 'all' | 'genai' | 'llm' | 'chatbot' | 'classic_ml' | 'coding' | 'rpa';
 type DomainFilter = string;
@@ -92,12 +92,12 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
 
     return useCases.filter(uc => {
       switch (aiTypeFilter) {
-        case 'genai': return uc.genai_flag;
-        case 'llm': return uc.has_llm;
-        case 'chatbot': return uc.has_chatbot;
-        case 'classic_ml': return uc.has_classic_ml;
-        case 'coding': return uc.has_coding_assistant || uc.has_coding_agent;
-        case 'rpa': return uc.has_rpa;
+        case 'genai': return uc.genaiFlag;
+        case 'llm': return uc.hasLlm;
+        case 'chatbot': return uc.hasChatbot;
+        case 'classic_ml': return uc.hasClassicMl;
+        case 'coding': return uc.hasCodingAssistant || uc.hasCodingAgent;
+        case 'rpa': return uc.hasRpa;
         default: return true;
       }
     });
@@ -106,7 +106,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
   // Filter by domain
   const filteredByDomain = useMemo(() => {
     if (domainFilter === 'all') return filteredByAIType;
-    return filteredByAIType.filter(uc => uc.domain_category === domainFilter);
+    return filteredByAIType.filter(uc => uc.domainCategory === domainFilter);
   }, [filteredByAIType, domainFilter]);
 
   // Filter by agency
@@ -118,7 +118,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
   // Filter by stage
   const filteredByStage = useMemo(() => {
     if (stageFilter === 'all') return filteredByAgency;
-    return filteredByAgency.filter(uc => uc.stage_of_development === stageFilter);
+    return filteredByAgency.filter(uc => uc.stageOfDevelopment === stageFilter);
   }, [filteredByAgency, stageFilter]);
 
   // Filter by search query
@@ -127,10 +127,10 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
 
     const query = searchQuery.toLowerCase();
     return filteredByStage.filter(uc =>
-      uc.use_case_name?.toLowerCase().includes(query) ||
+      uc.useCaseName?.toLowerCase().includes(query) ||
       uc.agency?.toLowerCase().includes(query) ||
       uc.bureau?.toLowerCase().includes(query) ||
-      uc.intended_purpose?.toLowerCase().includes(query)
+      uc.intendedPurpose?.toLowerCase().includes(query)
     );
   }, [filteredByStage, searchQuery]);
 
@@ -176,42 +176,42 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
   const getAITypeBadges = (uc: UseCase) => {
     const badges = [];
 
-    if (uc.genai_flag) {
+    if (uc.genaiFlag) {
       badges.push(
         <span key="genai" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-teal-light text-ai-teal-dark border border-ai-teal">
           GenAI
         </span>
       );
     }
-    if (uc.has_llm) {
+    if (uc.hasLlm) {
       badges.push(
         <span key="llm" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-indigo-light text-ai-indigo-dark border border-ai-indigo">
           LLM
         </span>
       );
     }
-    if (uc.has_chatbot) {
+    if (uc.hasChatbot) {
       badges.push(
         <span key="chatbot" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-ai-blue-light text-ai-blue-dark border border-ai-blue">
           Chatbot
         </span>
       );
     }
-    if (uc.has_classic_ml) {
+    if (uc.hasClassicMl) {
       badges.push(
         <span key="ml" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gov-slate-200 text-gov-slate-700 border border-gov-slate-400">
           ML
         </span>
       );
     }
-    if (uc.has_coding_assistant || uc.has_coding_agent) {
+    if (uc.hasCodingAssistant || uc.hasCodingAgent) {
       badges.push(
         <span key="coding" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-status-success-light text-status-success-dark border border-status-success">
           Coding
         </span>
       );
     }
-    if (uc.has_rpa) {
+    if (uc.hasRpa) {
       badges.push(
         <span key="rpa" className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-status-warning-light text-status-warning-dark border border-status-warning">
           RPA
@@ -253,7 +253,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
                 }`}
               >
-                GenAI ({useCases.filter(uc => uc.genai_flag).length})
+                GenAI ({useCases.filter(uc => uc.genaiFlag).length})
               </button>
               <button
                 onClick={() => { setAITypeFilter('llm'); handleFilterChange(); }}
@@ -263,7 +263,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
                 }`}
               >
-                LLM ({useCases.filter(uc => uc.has_llm).length})
+                LLM ({useCases.filter(uc => uc.hasLlm).length})
               </button>
               <button
                 onClick={() => { setAITypeFilter('chatbot'); handleFilterChange(); }}
@@ -273,7 +273,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
                 }`}
               >
-                Chatbot ({useCases.filter(uc => uc.has_chatbot).length})
+                Chatbot ({useCases.filter(uc => uc.hasChatbot).length})
               </button>
               <button
                 onClick={() => { setAITypeFilter('classic_ml'); handleFilterChange(); }}
@@ -283,7 +283,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     : 'bg-white text-gov-navy-900 border-gov-slate-300 hover:bg-gov-slate-50'
                 }`}
               >
-                Classic ML ({useCases.filter(uc => uc.has_classic_ml).length})
+                Classic ML ({useCases.filter(uc => uc.hasClassicMl).length})
               </button>
             </div>
           </div>
@@ -380,12 +380,12 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
             <thead className="bg-gov-slate-100 border-b-2 border-gov-slate-200">
               <tr>
                 <th
-                  onClick={() => handleSort('use_case_name')}
+                  onClick={() => handleSort('useCaseName')}
                   className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Use Case</span>
-                    {sortField === 'use_case_name' && (
+                    {sortField === 'useCaseName' && (
                       <span className="text-gov-navy-700">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
@@ -406,12 +406,12 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                   </div>
                 </th>
                 <th
-                  onClick={() => handleSort('domain_category')}
+                  onClick={() => handleSort('domainCategory')}
                   className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Domain</span>
-                    {sortField === 'domain_category' && (
+                    {sortField === 'domainCategory' && (
                       <span className="text-gov-navy-700">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
@@ -422,12 +422,12 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                   AI Type
                 </th>
                 <th
-                  onClick={() => handleSort('stage_of_development')}
+                  onClick={() => handleSort('stageOfDevelopment')}
                   className="px-4 py-3 text-left text-sm font-semibold text-gov-navy-900 cursor-pointer hover:bg-gov-slate-200 transition-colors"
                 >
                   <div className="flex items-center space-x-1">
                     <span>Stage</span>
-                    {sortField === 'stage_of_development' && (
+                    {sortField === 'stageOfDevelopment' && (
                       <span className="text-gov-navy-700">
                         {sortDirection === 'asc' ? '↑' : '↓'}
                       </span>
@@ -447,8 +447,8 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                   className={`cursor-pointer hover:bg-gov-slate-100 hover:border-l-4 hover:border-gov-navy-600 transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-gov-slate-50/30'}`}
                 >
                   <td className="px-4 py-3 text-sm font-medium text-gov-navy-900">
-                    <div className="max-w-md" title={uc.use_case_name}>
-                      {uc.use_case_name}
+                    <div className="max-w-md" title={uc.useCaseName}>
+                      {uc.useCaseName}
                     </div>
                     {uc.bureau && (
                       <div className="text-xs text-gov-slate-600 mt-1">{uc.bureau}</div>
@@ -458,13 +458,13 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     <div className="max-w-xs truncate" title={uc.agency}>
                       {uc.agency}
                     </div>
-                    {uc.agency_abbreviation && (
-                      <div className="text-xs text-gov-slate-600 mt-1">{uc.agency_abbreviation}</div>
+                    {uc.agencyAbbreviation && (
+                      <div className="text-xs text-gov-slate-600 mt-1">{uc.agencyAbbreviation}</div>
                     )}
                   </td>
                   <td className="px-4 py-3 text-sm text-gov-slate-700">
-                    <div className="max-w-xs truncate" title={uc.domain_category || 'N/A'}>
-                      {uc.domain_category || 'Unclassified'}
+                    <div className="max-w-xs truncate" title={uc.domainCategory || 'N/A'}>
+                      {uc.domainCategory || 'Unclassified'}
                     </div>
                   </td>
                   <td className="px-4 py-3 text-sm">
@@ -473,8 +473,8 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                     </div>
                   </td>
                   <td className="px-4 py-3 text-sm text-gov-slate-700">
-                    <div className="max-w-xs truncate" title={uc.stage_of_development || 'N/A'}>
-                      {uc.stage_of_development || 'N/A'}
+                    <div className="max-w-xs truncate" title={uc.stageOfDevelopment || 'N/A'}>
+                      {uc.stageOfDevelopment || 'N/A'}
                     </div>
                   </td>
                   <td className="px-4 py-3 text-sm">

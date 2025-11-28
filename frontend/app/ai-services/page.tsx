@@ -7,8 +7,8 @@ export const dynamic = 'force-dynamic';
 
 export default async function AIServicesPage() {
   try {
-    const services = getAIServices();
-    const stats = getAIStats();
+    const services = await getAIServices();
+    const stats = await getAIStats();
 
     return (
       <div className="min-h-screen bg-gov-slate-50">

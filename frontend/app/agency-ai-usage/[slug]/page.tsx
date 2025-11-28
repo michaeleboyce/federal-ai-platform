@@ -9,13 +9,13 @@ export default async function AgencyDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const agency = getAgencyBySlug(slug);
+  const agency = await getAgencyBySlug(slug);
 
   if (!agency) {
     notFound();
   }
 
-  const matches = getAgencyMatches(agency.id);
+  const matches = await getAgencyMatches(agency.id);
 
   return (
     <div className="min-h-screen bg-gov-slate-50">

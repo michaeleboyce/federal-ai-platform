@@ -1,95 +1,22 @@
 import { db } from './db/client';
 import { aiUseCases, aiUseCaseDetails, useCaseFedRampMatches } from './db/schema';
-import { eq, and, or, like, sql, desc, ilike, SQL } from 'drizzle-orm';
+import { eq, and, or, like, sql, desc, ilike, isNull, SQL } from 'drizzle-orm';
 import type { AIUseCase, AIUseCaseDetails } from './db/schema';
 
-// Re-export types from schema with legacy names for compatibility
-export type UseCase = AIUseCase & {
-  // Transform camelCase to snake_case for backwards compatibility
-  use_case_name: string;
-  agency_abbreviation: string | null;
-  use_case_topic_area: string | null;
-  other_use_case_topic_area: string | null;
-  intended_purpose: string | null;
-  stage_of_development: string | null;
-  is_rights_safety_impacting: string | null;
-  domain_category: string | null;
-  date_initiated: string | null;
-  date_implemented: string | null;
-  date_retired: string | null;
-  has_llm: boolean;
-  has_genai: boolean;
-  has_chatbot: boolean;
-  has_gp_markers: boolean;
-  has_coding_assistant: boolean;
-  has_coding_agent: boolean;
-  has_classic_ml: boolean;
-  has_rpa: boolean;
-  has_rules: boolean;
-  general_purpose_chatbot: boolean;
-  domain_chatbot: boolean;
-  coding_assistant: boolean;
-  coding_agent: boolean;
-  genai_flag: boolean;
-  ai_type_classic_ml: boolean;
-  ai_type_rpa_rules: boolean;
-  providers_detected: string[]; // JSONB array
-  commercial_ai_product: string | null;
-  analyzed_at: Date;
-};
-
-export type UseCaseDetails = AIUseCaseDetails & {
-  use_case_id: number;
-  development_approach: string | null;
-  procurement_instrument: string | null;
-  supports_hisp: string | null;
-  which_hisp: string | null;
-  which_public_service: string | null;
-  disseminates_to_public: string | null;
-  involves_pii: string | null;
-  privacy_assessed: string | null;
-  has_data_catalog: string | null;
-  agency_owned_data: string | null;
-  data_documentation: string | null;
-  demographic_variables: string | null;
-  has_custom_code: string | null;
-  has_code_access: string | null;
-  code_link: string | null;
-  has_ato: string | null;
-  system_name: string | null;
-  wait_time_dev_tools: string | null;
-  centralized_intake: string | null;
-  has_compute_process: string | null;
-  timely_communication: string | null;
-  infrastructure_reuse: string | null;
-  internal_review: string | null;
-  requested_extension: string | null;
-  impact_assessment: string | null;
-  operational_testing: string | null;
-  key_risks: string | null;
-  independent_evaluation: string | null;
-  performance_monitoring: string | null;
-  autonomous_decision: string | null;
-  public_notice: string | null;
-  influences_decisions: string | null;
-  disparity_mitigation: string | null;
-  stakeholder_feedback: string | null;
-  fallback_process: string | null;
-  opt_out_mechanism: string | null;
-  info_quality_compliance: string | null;
-  search_text: string | null;
-};
+// Export types from schema directly (camelCase)
+export type UseCase = AIUseCase;
+export type UseCaseDetails = AIUseCaseDetails;
 
 export interface UseCaseWithDetails extends UseCase {
   details?: UseCaseDetails;
 }
 
 export interface UseCaseFedRAMPMatch {
-  product_id: string;
-  provider_name: string;
-  product_name: string;
+  productId: string;
+  providerName: string;
+  productName: string;
   confidence: 'high' | 'medium' | 'low';
-  match_reason: string | null;
+  matchReason: string | null;
 }
 
 export interface UseCaseStats {
@@ -133,44 +60,6 @@ export interface UseCaseFilters {
   search?: string;
 }
 
-/**
- * Transform Drizzle result to legacy format
- */
-function transformUseCase(result: AIUseCase): UseCase {
-  return {
-    ...result,
-    use_case_name: result.useCaseName,
-    agency_abbreviation: result.agencyAbbreviation,
-    use_case_topic_area: result.useCaseTopicArea,
-    other_use_case_topic_area: result.otherUseCaseTopicArea,
-    intended_purpose: result.intendedPurpose,
-    stage_of_development: result.stageOfDevelopment,
-    is_rights_safety_impacting: result.isRightsSafetyImpacting,
-    domain_category: result.domainCategory,
-    date_initiated: result.dateInitiated,
-    date_implemented: result.dateImplemented,
-    date_retired: result.dateRetired,
-    has_llm: result.hasLlm,
-    has_genai: result.hasGenai,
-    has_chatbot: result.hasChatbot,
-    has_gp_markers: result.hasGpMarkers,
-    has_coding_assistant: result.hasCodingAssistant,
-    has_coding_agent: result.hasCodingAgent,
-    has_classic_ml: result.hasClassicMl,
-    has_rpa: result.hasRpa,
-    has_rules: result.hasRules,
-    general_purpose_chatbot: result.generalPurposeChatbot,
-    domain_chatbot: result.domainChatbot,
-    coding_assistant: result.codingAssistant,
-    coding_agent: result.codingAgent,
-    genai_flag: result.genaiFlag,
-    ai_type_classic_ml: result.aiTypeClassicMl,
-    ai_type_rpa_rules: result.aiTypeRpaRules,
-    providers_detected: result.providersDetected as string[],
-    commercial_ai_product: result.commercialAiProduct,
-    analyzed_at: result.analyzedAt,
-  };
-}
 
 /**
  * Get all use cases with optional filtering
@@ -250,7 +139,7 @@ export async function getUseCases(filters?: UseCaseFilters): Promise<UseCase[]> 
         conditions.push(
           or(
             ilike(aiUseCases.isRightsSafetyImpacting, '%Neither%'),
-            eq(aiUseCases.isRightsSafetyImpacting, null)
+            isNull(aiUseCases.isRightsSafetyImpacting)
           )!
         );
       }
@@ -276,7 +165,7 @@ export async function getUseCases(filters?: UseCaseFilters): Promise<UseCase[]> 
     .where(conditions.length > 0 ? and(...conditions) : undefined)
     .orderBy(aiUseCases.agency, aiUseCases.useCaseName);
 
-  return results.map(transformUseCase);
+  return results;
 }
 
 /**
@@ -293,7 +182,7 @@ export async function getUseCaseBySlug(slug: string): Promise<UseCaseWithDetails
     return null;
   }
 
-  const useCase = transformUseCase(results[0]);
+  const useCase = results[0];
 
   // Fetch details
   const detailsResults = await db
@@ -303,55 +192,13 @@ export async function getUseCaseBySlug(slug: string): Promise<UseCaseWithDetails
     .limit(1);
 
   if (detailsResults.length > 0) {
-    const details = detailsResults[0];
     return {
       ...useCase,
-      details: {
-        ...details,
-        use_case_id: details.useCaseId,
-        development_approach: details.developmentApproach,
-        procurement_instrument: details.procurementInstrument,
-        supports_hisp: details.supportsHisp,
-        which_hisp: details.whichHisp,
-        which_public_service: details.whichPublicService,
-        disseminates_to_public: details.disseminatesToPublic,
-        involves_pii: details.involvesPii,
-        privacy_assessed: details.privacyAssessed,
-        has_data_catalog: details.hasDataCatalog,
-        agency_owned_data: details.agencyOwnedData,
-        data_documentation: details.dataDocumentation,
-        demographic_variables: details.demographicVariables,
-        has_custom_code: details.hasCustomCode,
-        has_code_access: details.hasCodeAccess,
-        code_link: details.codeLink,
-        has_ato: details.hasAto,
-        system_name: details.systemName,
-        wait_time_dev_tools: details.waitTimeDevTools,
-        centralized_intake: details.centralizedIntake,
-        has_compute_process: details.hasComputeProcess,
-        timely_communication: details.timelyCommunication,
-        infrastructure_reuse: details.infrastructureReuse,
-        internal_review: details.internalReview,
-        requested_extension: details.requestedExtension,
-        impact_assessment: details.impactAssessment,
-        operational_testing: details.operationalTesting,
-        key_risks: details.keyRisks,
-        independent_evaluation: details.independentEvaluation,
-        performance_monitoring: details.performanceMonitoring,
-        autonomous_decision: details.autonomousDecision,
-        public_notice: details.publicNotice,
-        influences_decisions: details.influencesDecisions,
-        disparity_mitigation: details.disparityMitigation,
-        stakeholder_feedback: details.stakeholderFeedback,
-        fallback_process: details.fallbackProcess,
-        opt_out_mechanism: details.optOutMechanism,
-        info_quality_compliance: details.infoQualityCompliance,
-        search_text: details.searchText,
-      },
+      details: detailsResults[0],
     };
   }
 
-  return { ...useCase };
+  return useCase;
 }
 
 /**
@@ -426,7 +273,7 @@ export async function getDomainStats(): Promise<DomainStats[]> {
  * Get use case statistics by agency
  */
 export async function getAgencyUseCaseStats(agency?: string): Promise<AgencyUseCaseStats[]> {
-  let query = db
+  const baseQuery = db
     .select({
       agency: aiUseCases.agency,
       total_count: sql<number>`count(*)::int`,
@@ -437,11 +284,10 @@ export async function getAgencyUseCaseStats(agency?: string): Promise<AgencyUseC
     })
     .from(aiUseCases);
 
-  if (agency) {
-    query = query.where(eq(aiUseCases.agency, agency));
-  }
-
-  const results = await query
+  const results = await (agency
+    ? baseQuery.where(eq(aiUseCases.agency, agency))
+    : baseQuery
+  )
     .groupBy(aiUseCases.agency)
     .orderBy(desc(sql`count(*)`));
 
@@ -461,11 +307,11 @@ export async function getAgencyUseCaseStats(agency?: string): Promise<AgencyUseC
 export async function getUseCaseFedRAMPMatches(useCaseId: number): Promise<UseCaseFedRAMPMatch[]> {
   const results = await db
     .select({
-      product_id: useCaseFedRampMatches.productId,
-      provider_name: useCaseFedRampMatches.providerName,
-      product_name: useCaseFedRampMatches.productName,
+      productId: useCaseFedRampMatches.productId,
+      providerName: useCaseFedRampMatches.providerName,
+      productName: useCaseFedRampMatches.productName,
       confidence: useCaseFedRampMatches.confidence,
-      match_reason: useCaseFedRampMatches.matchReason,
+      matchReason: useCaseFedRampMatches.matchReason,
     })
     .from(useCaseFedRampMatches)
     .where(eq(useCaseFedRampMatches.useCaseId, useCaseId))
@@ -474,13 +320,7 @@ export async function getUseCaseFedRAMPMatches(useCaseId: number): Promise<UseCa
       useCaseFedRampMatches.providerName
     );
 
-  return results.map(r => ({
-    product_id: r.product_id,
-    provider_name: r.provider_name,
-    product_name: r.product_name,
-    confidence: r.confidence,
-    match_reason: r.match_reason,
-  }));
+  return results;
 }
 
 /**
@@ -521,7 +361,7 @@ export async function getRecentUseCases(limit: number = 10): Promise<UseCase[]> 
     .orderBy(desc(aiUseCases.dateImplemented))
     .limit(limit);
 
-  return results.map(transformUseCase);
+  return results;
 }
 
 /**

@@ -13,9 +13,9 @@ dotenv.config({ path: '.env.local' });
 
 import Database from 'better-sqlite3';
 import { db } from '../lib/db/client';
-import { aiUseCases, aiUseCaseDetails } from '../lib/db/schema';
+import { aiUseCases, aiUseCaseDetails, agencyAiUsage, aiServiceAnalysis, agencyServiceMatches } from '../lib/db/schema';
 
-const SQLITE_DB_PATH = path.join(process.cwd(), '..', 'data', 'fedramp.db');
+const SQLITE_DB_PATH = path.join(process.cwd(), '..', '..', 'fedramp', 'data', 'fedramp.db');
 
 interface SQLiteUseCase {
   id: number;
@@ -97,6 +97,53 @@ interface SQLiteUseCaseDetails {
   search_text: string | null;
 }
 
+interface SQLiteAgencyAiUsage {
+  id: number;
+  agency_name: string;
+  agency_category: string;
+  has_staff_llm: string | null;
+  llm_name: string | null;
+  has_coding_assistant: string | null;
+  scope: string | null;
+  solution_type: string | null;
+  non_public_allowed: string | null;
+  other_ai_present: string | null;
+  tool_name: string | null;
+  tool_purpose: string | null;
+  notes: string | null;
+  sources: string | null;
+  analyzed_at: string;
+  slug: string;
+}
+
+interface SQLiteAiServiceAnalysis {
+  id: number;
+  product_id: string;
+  product_name: string | null;
+  provider_name: string | null;
+  service_name: string | null;
+  has_ai: number;
+  has_genai: number;
+  has_llm: number;
+  relevant_excerpt: string | null;
+  fedramp_status: string | null;
+  impact_level: string | null;
+  agencies: string | null;
+  auth_date: string | null;
+  analyzed_at: string;
+}
+
+interface SQLiteAgencyServiceMatch {
+  id: number;
+  agency_id: number;
+  product_id: string;
+  provider_name: string;
+  product_name: string;
+  confidence: string;
+  match_reason: string | null;
+  created_at: string;
+}
+
 /**
  * Convert SQLite integer boolean to JavaScript boolean
  */
@@ -122,6 +169,13 @@ function parseProviders(value: string | null): string[] {
  */
 async function migrateUseCases(sqlite: Database.Database): Promise<number> {
   console.log('\n📦 Migrating ai_use_cases table...');
+
+  // Check if already migrated
+  const existing = await db.select().from(aiUseCases);
+  if (existing.length > 0) {
+    console.log(`   ⚠️  Table already has ${existing.length} records, skipping migration`);
+    return existing.length;
+  }
 
   const rows = sqlite.prepare('SELECT * FROM ai_use_cases ORDER BY id').all() as SQLiteUseCase[];
   console.log(`   Found ${rows.length} records in SQLite`);
@@ -186,6 +240,13 @@ async function migrateUseCases(sqlite: Database.Database): Promise<number> {
  */
 async function migrateUseCaseDetails(sqlite: Database.Database): Promise<number> {
   console.log('\n📦 Migrating ai_use_case_details table...');
+
+  // Check if already migrated
+  const existing = await db.select().from(aiUseCaseDetails);
+  if (existing.length > 0) {
+    console.log(`   ⚠️  Table already has ${existing.length} records, skipping migration`);
+    return existing.length;
+  }
 
   const rows = sqlite.prepare('SELECT * FROM ai_use_case_details ORDER BY use_case_id').all() as SQLiteUseCaseDetails[];
   console.log(`   Found ${rows.length} records in SQLite`);
@@ -256,6 +317,183 @@ async function migrateUseCaseDetails(sqlite: Database.Database): Promise<number>
 }
 
 /**
+ * Migrate agency_ai_usage table
+ */
+async function migrateAgencyAiUsage(sqlite: Database.Database): Promise<number> {
+  console.log('\n📦 Migrating agency_ai_usage table...');
+
+  // Check if already migrated
+  const existing = await db.select().from(agencyAiUsage);
+  if (existing.length > 0) {
+    console.log(`   ⚠️  Table already has ${existing.length} records, skipping migration`);
+    return existing.length;
+  }
+
+  const rows = sqlite.prepare('SELECT * FROM agency_ai_usage ORDER BY id').all() as SQLiteAgencyAiUsage[];
+  console.log(`   Found ${rows.length} records in SQLite`);
+
+  if (rows.length === 0) {
+    console.log('   ⚠️  No records to migrate');
+    return 0;
+  }
+
+  let migrated = 0;
+  const batchSize = 100;
+
+  for (let i = 0; i < rows.length; i += batchSize) {
+    const batch = rows.slice(i, i + batchSize);
+
+    const values = batch.map((row) => ({
+      agencyName: row.agency_name,
+      agencyCategory: row.agency_category,
+      hasStaffLlm: row.has_staff_llm,
+      llmName: row.llm_name,
+      hasCodingAssistant: row.has_coding_assistant,
+      scope: row.scope,
+      solutionType: row.solution_type,
+      nonPublicAllowed: row.non_public_allowed,
+      otherAiPresent: row.other_ai_present,
+      toolName: row.tool_name,
+      toolPurpose: row.tool_purpose,
+      notes: row.notes,
+      sources: row.sources,
+      analyzedAt: new Date(row.analyzed_at),
+      slug: row.slug,
+    }));
+
+    await db.insert(agencyAiUsage).values(values);
+    migrated += batch.length;
+    console.log(`   Migrated ${migrated}/${rows.length} records...`);
+  }
+
+  console.log(`   ✅ Successfully migrated ${migrated} records`);
+  return migrated;
+}
+
+/**
+ * Migrate ai_service_analysis table
+ */
+async function migrateAiServiceAnalysis(sqlite: Database.Database): Promise<number> {
+  console.log('\n📦 Migrating ai_service_analysis table...');
+
+  // Check if already migrated
+  const existing = await db.select().from(aiServiceAnalysis);
+  if (existing.length > 0) {
+    console.log(`   ⚠️  Table already has ${existing.length} records, skipping migration`);
+    return existing.length;
+  }
+
+  const rows = sqlite.prepare('SELECT * FROM ai_service_analysis ORDER BY id').all() as SQLiteAiServiceAnalysis[];
+  console.log(`   Found ${rows.length} records in SQLite`);
+
+  if (rows.length === 0) {
+    console.log('   ⚠️  No records to migrate');
+    return 0;
+  }
+
+  let migrated = 0;
+  const batchSize = 100;
+
+  for (let i = 0; i < rows.length; i += batchSize) {
+    const batch = rows.slice(i, i + batchSize);
+
+    const values = batch.map((row) => ({
+      productId: row.product_id,
+      productName: row.product_name || '',
+      providerName: row.provider_name || '',
+      serviceName: row.service_name || '',
+      hasAi: convertBoolean(row.has_ai),
+      hasGenai: convertBoolean(row.has_genai),
+      hasLlm: convertBoolean(row.has_llm),
+      relevantExcerpt: row.relevant_excerpt,
+      fedrampStatus: row.fedramp_status,
+      impactLevel: row.impact_level,
+      agencies: row.agencies,
+      authDate: row.auth_date,
+      analyzedAt: new Date(row.analyzed_at),
+    }));
+
+    await db.insert(aiServiceAnalysis).values(values);
+    migrated += batch.length;
+
+    if (migrated % 100 === 0 || migrated === rows.length) {
+      console.log(`   Migrated ${migrated}/${rows.length} records...`);
+    }
+  }
+
+  console.log(`   ✅ Successfully migrated ${migrated} records`);
+  return migrated;
+}
+
+/**
+ * Migrate agency_service_matches table
+ */
+async function migrateAgencyServiceMatches(sqlite: Database.Database): Promise<number> {
+  console.log('\n📦 Migrating agency_service_matches table...');
+
+  // Check if already migrated
+  const existing = await db.select().from(agencyServiceMatches);
+  if (existing.length > 0) {
+    console.log(`   ⚠️  Table already has ${existing.length} records, skipping migration`);
+    return existing.length;
+  }
+
+  const rows = sqlite.prepare('SELECT * FROM agency_service_matches ORDER BY id').all() as SQLiteAgencyServiceMatch[];
+  console.log(`   Found ${rows.length} records in SQLite`);
+
+  if (rows.length === 0) {
+    console.log('   ⚠️  No records to migrate');
+    return 0;
+  }
+
+  // Get all migrated agencies from Neon to map SQLite IDs to Neon IDs
+  const neonAgencies = await db.select().from(agencyAiUsage);
+  console.log(`   Found ${neonAgencies.length} agencies in Neon for ID mapping`);
+
+  let migrated = 0;
+  let skipped = 0;
+  const batchSize = 100;
+
+  for (let i = 0; i < rows.length; i += batchSize) {
+    const batch = rows.slice(i, i + batchSize);
+
+    const values = batch
+      .map((row) => {
+        // Find the Neon agency ID by matching the SQLite row's agency_id
+        // Since we're migrating in order, agency_id should correspond to the Neon record
+        const neonAgency = neonAgencies[row.agency_id - 1]; // SQLite IDs are 1-indexed
+
+        if (!neonAgency) {
+          console.log(`   ⚠️  Skipping match: agency_id ${row.agency_id} not found in Neon`);
+          skipped++;
+          return null;
+        }
+
+        return {
+          agencyId: neonAgency.id,
+          productId: row.product_id,
+          providerName: row.provider_name,
+          productName: row.product_name,
+          confidence: row.confidence as 'high' | 'medium' | 'low',
+          matchReason: row.match_reason,
+          createdAt: new Date(row.created_at),
+        };
+      })
+      .filter((v): v is NonNullable<typeof v> => v !== null);
+
+    if (values.length > 0) {
+      await db.insert(agencyServiceMatches).values(values);
+      migrated += values.length;
+    }
+
+    console.log(`   Migrated ${migrated}/${rows.length} records (${skipped} skipped)...`);
+  }
+
+  console.log(`   ✅ Successfully migrated ${migrated} records (${skipped} skipped)`);
+  return migrated;
+}
+
+/**
  * Verify migration
  */
 async function verifyMigration(sqlite: Database.Database): Promise<boolean> {
@@ -279,6 +517,39 @@ async function verifyMigration(sqlite: Database.Database): Promise<boolean> {
 
   console.log(`   ai_use_case_details: SQLite=${sqliteDetailsCount.count}, Neon=${neonDetailsCount}`);
   if (sqliteDetailsCount.count !== neonDetailsCount) {
+    console.log('   ❌ Record count mismatch!');
+    return false;
+  }
+
+  // Check agency_ai_usage count
+  const sqliteAgencyCount = sqlite.prepare('SELECT COUNT(*) as count FROM agency_ai_usage').get() as { count: number };
+  const neonAgencyResult = await db.select().from(agencyAiUsage);
+  const neonAgencyCount = neonAgencyResult.length;
+
+  console.log(`   agency_ai_usage: SQLite=${sqliteAgencyCount.count}, Neon=${neonAgencyCount}`);
+  if (sqliteAgencyCount.count !== neonAgencyCount) {
+    console.log('   ❌ Record count mismatch!');
+    return false;
+  }
+
+  // Check ai_service_analysis count
+  const sqliteServiceCount = sqlite.prepare('SELECT COUNT(*) as count FROM ai_service_analysis').get() as { count: number };
+  const neonServiceResult = await db.select().from(aiServiceAnalysis);
+  const neonServiceCount = neonServiceResult.length;
+
+  console.log(`   ai_service_analysis: SQLite=${sqliteServiceCount.count}, Neon=${neonServiceCount}`);
+  if (sqliteServiceCount.count !== neonServiceCount) {
+    console.log('   ❌ Record count mismatch!');
+    return false;
+  }
+
+  // Check agency_service_matches count
+  const sqliteMatchCount = sqlite.prepare('SELECT COUNT(*) as count FROM agency_service_matches').get() as { count: number };
+  const neonMatchResult = await db.select().from(agencyServiceMatches);
+  const neonMatchCount = neonMatchResult.length;
+
+  console.log(`   agency_service_matches: SQLite=${sqliteMatchCount.count}, Neon=${neonMatchCount}`);
+  if (sqliteMatchCount.count !== neonMatchCount) {
     console.log('   ❌ Record count mismatch!');
     return false;
   }
@@ -314,6 +585,9 @@ async function main() {
     // Migrate tables
     const useCasesCount = await migrateUseCases(sqlite);
     const detailsCount = await migrateUseCaseDetails(sqlite);
+    const agencyCount = await migrateAgencyAiUsage(sqlite);
+    const serviceCount = await migrateAiServiceAnalysis(sqlite);
+    const matchCount = await migrateAgencyServiceMatches(sqlite);
 
     // Verify migration
     const verified = await verifyMigration(sqlite);
@@ -323,6 +597,9 @@ async function main() {
       console.log('✅ Migration completed successfully!');
       console.log(`   • Migrated ${useCasesCount} use cases`);
       console.log(`   • Migrated ${detailsCount} detail records`);
+      console.log(`   • Migrated ${agencyCount} agency AI usage records`);
+      console.log(`   • Migrated ${serviceCount} AI service analysis records`);
+      console.log(`   • Migrated ${matchCount} agency-service matches`);
       console.log('='.repeat(80));
       process.exit(0);
     } else {

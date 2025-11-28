@@ -1,8 +1,9 @@
-import fs from 'fs';
-import path from 'path';
 import Link from 'next/link';
 import ProductTable from '@/components/ProductTable';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { getAllProducts, getStats } from '@/lib/db';
+
+export const dynamic = 'force-dynamic';
 
 interface Product {
   id: string;
@@ -19,9 +20,21 @@ interface Product {
 }
 
 async function getProducts() {
-  const jsonPath = path.join(process.cwd(), '..', 'data', 'fedramp_products.json');
-  const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-  return data.data.Products as Product[];
+  const dbProducts = await getAllProducts();
+  // Transform to match expected format
+  return dbProducts.map(p => ({
+    id: p.fedrampId,
+    name: p.cloudServiceOffering || '',
+    csp: p.cloudServiceProvider || '',
+    cso: p.cloudServiceOffering || '',
+    service_offering: p.cloudServiceOffering || '',
+    status: p.status || '',
+    service_model: p.serviceModel ? [p.serviceModel] : [],
+    impact_level: [],
+    service_desc: p.serviceDescription || '',
+    all_others: [],
+    auth_date: p.fedrampAuthorizationDate || '',
+  })) as Product[];
 }
 
 export default async function ProductsPage() {

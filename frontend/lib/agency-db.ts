@@ -147,11 +147,11 @@ export async function getAgencyStats(): Promise<AgencyStats> {
       .from(agencyServiceMatches)
       .where(eq(agencyServiceMatches.confidence, 'high'));
 
-    return {
+    return result[0] ? {
       ...result[0],
       total_matches: matchStats[0]?.total_matches || 0,
       high_confidence_matches: highConfidenceMatches[0]?.count || 0,
-    } || {
+    } : {
       total_agencies: 0,
       agencies_with_llm: 0,
       agencies_with_coding: 0,
