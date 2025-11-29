@@ -108,6 +108,28 @@ export async function getProfileById(id: number): Promise<AgencyProfileWithTools
   return { ...profile, tools };
 }
 
+/**
+ * Get a single profile by organization ID (links to federal_organizations)
+ */
+export async function getProfileByOrganizationId(organizationId: number): Promise<AgencyProfileWithTools | null> {
+  const profiles = await db
+    .select()
+    .from(agencyAiProfiles)
+    .where(eq(agencyAiProfiles.organizationId, organizationId))
+    .limit(1);
+
+  if (profiles.length === 0) return null;
+
+  const profile = profiles[0];
+  const tools = await db
+    .select()
+    .from(agencyAiTools)
+    .where(eq(agencyAiTools.agencyProfileId, profile.id))
+    .orderBy(asc(agencyAiTools.productName));
+
+  return { ...profile, tools };
+}
+
 // ========================================
 // PROFILES WITH TOOLS
 // ========================================
@@ -454,4 +476,189 @@ async function updateProfileSummary(profileId: number): Promise<void> {
       updatedAt: new Date(),
     })
     .where(eq(agencyAiProfiles.id, profileId));
+}
+
+// ========================================
+// FEDERAL ORGANIZATIONS WITH PROFILE STATUS
+// ========================================
+
+export interface FederalOrgWithProfileStatus {
+  id: number;
+  name: string;
+  shortName: string | null;
+  abbreviation: string | null;
+  slug: string;
+  parentId: number | null;
+  level: 'department' | 'independent' | 'sub_agency' | 'office' | 'component';
+  depth: number;
+  isCfoActAgency: boolean;
+  isCabinetDepartment: boolean;
+  isActive: boolean;
+  // Profile info
+  hasProfile: boolean;
+  profileId: number | null;
+  toolCount: number;
+  hasStaffChatbot: boolean;
+  hasCodingAssistant: boolean;
+  hasDocumentAutomation: boolean;
+  // Tools (if profile exists)
+  tools: AgencyAiTool[];
+}
+
+/**
+ * Get all federal organizations with their profile status
+ * Used in admin panel to show all agencies and whether they have AI use cases
+ */
+export async function getAllFederalOrgsWithProfileStatus(): Promise<FederalOrgWithProfileStatus[]> {
+  // Get all active federal organizations
+  const orgs = await db
+    .select()
+    .from(federalOrganizations)
+    .where(eq(federalOrganizations.isActive, true))
+    .orderBy(asc(federalOrganizations.depth), asc(federalOrganizations.name));
+
+  // Get all profiles with their tools
+  const profiles = await getProfilesWithTools();
+
+  // Create maps for lookup - by organizationId, slug, and abbreviation
+  const profileByOrgId = new Map<number, AgencyProfileWithTools>();
+  const profileBySlug = new Map<string, AgencyProfileWithTools>();
+  const profileByAbbreviation = new Map<string, AgencyProfileWithTools>();
+
+  for (const profile of profiles) {
+    if (profile.organizationId) {
+      profileByOrgId.set(profile.organizationId, profile);
+    }
+    if (profile.slug) {
+      profileBySlug.set(profile.slug.toLowerCase(), profile);
+    }
+    if (profile.abbreviation) {
+      profileByAbbreviation.set(profile.abbreviation.toLowerCase(), profile);
+    }
+  }
+
+  // Combine orgs with profile status - try matching by orgId, then slug, then abbreviation
+  return orgs.map(org => {
+    let profile = profileByOrgId.get(org.id);
+
+    // If no match by organizationId, try matching by slug
+    if (!profile && org.slug) {
+      profile = profileBySlug.get(org.slug.toLowerCase());
+    }
+
+    // If still no match, try matching by abbreviation
+    if (!profile && org.abbreviation) {
+      profile = profileByAbbreviation.get(org.abbreviation.toLowerCase());
+    }
+
+    return {
+      id: org.id,
+      name: org.name,
+      shortName: org.shortName,
+      abbreviation: org.abbreviation,
+      slug: org.slug,
+      parentId: org.parentId,
+      level: org.level,
+      depth: org.depth,
+      isCfoActAgency: org.isCfoActAgency,
+      isCabinetDepartment: org.isCabinetDepartment,
+      isActive: org.isActive,
+      hasProfile: !!profile,
+      profileId: profile?.id ?? null,
+      toolCount: profile?.toolCount ?? 0,
+      hasStaffChatbot: profile?.hasStaffChatbot ?? false,
+      hasCodingAssistant: profile?.hasCodingAssistant ?? false,
+      hasDocumentAutomation: profile?.hasDocumentAutomation ?? false,
+      tools: profile?.tools ?? [],
+    };
+  });
+}
+
+/**
+ * Get a single federal organization by ID
+ */
+export async function getFederalOrgById(id: number) {
+  const orgs = await db
+    .select()
+    .from(federalOrganizations)
+    .where(eq(federalOrganizations.id, id))
+    .limit(1);
+
+  return orgs[0] ?? null;
+}
+
+/**
+ * Get parent organization for a given org
+ */
+export async function getParentOrg(parentId: number) {
+  const orgs = await db
+    .select()
+    .from(federalOrganizations)
+    .where(eq(federalOrganizations.id, parentId))
+    .limit(1);
+
+  return orgs[0] ?? null;
+}
+
+/**
+ * Create a profile from a federal organization
+ * Links the new profile to the federal org via organizationId
+ */
+export async function createProfileFromOrg(orgId: number): Promise<AgencyAiProfile> {
+  // Get the org
+  const org = await getFederalOrgById(orgId);
+  if (!org) {
+    throw new Error(`Federal organization with ID ${orgId} not found`);
+  }
+
+  // Get parent org for department level info
+  let departmentLevelName: string | null = null;
+  let parentAbbreviation: string | null = null;
+
+  if (org.parentId) {
+    const parentOrg = await getParentOrg(org.parentId);
+    if (parentOrg) {
+      // If parent is a department, use its name
+      if (parentOrg.level === 'department' || parentOrg.level === 'independent') {
+        departmentLevelName = parentOrg.name;
+        parentAbbreviation = parentOrg.abbreviation;
+      } else {
+        // Climb up the tree to find the department
+        let currentParent = parentOrg;
+        while (currentParent.parentId) {
+          const grandParent = await getParentOrg(currentParent.parentId);
+          if (!grandParent) break;
+          if (grandParent.level === 'department' || grandParent.level === 'independent') {
+            departmentLevelName = grandParent.name;
+            parentAbbreviation = grandParent.abbreviation;
+            break;
+          }
+          currentParent = grandParent;
+        }
+      }
+    }
+  } else if (org.level === 'department' || org.level === 'independent') {
+    // This org IS a department/independent agency
+    departmentLevelName = org.name;
+  }
+
+  // Create the profile
+  const result = await db
+    .insert(agencyAiProfiles)
+    .values({
+      agencyName: org.name,
+      abbreviation: org.abbreviation || null,
+      slug: org.slug,
+      organizationId: org.id,
+      departmentLevelName,
+      parentAbbreviation,
+      deploymentStatus: 'no_public_internal_assistant',
+      hasStaffChatbot: false,
+      hasCodingAssistant: false,
+      hasDocumentAutomation: false,
+      toolCount: 0,
+    })
+    .returning();
+
+  return result[0];
 }

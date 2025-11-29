@@ -5,10 +5,7 @@ import {
   Building2,
   Building,
   Globe,
-  ChevronRight,
   ExternalLink,
-  Users,
-  FileText,
 } from 'lucide-react';
 import {
   getOrganizationBySlug,
@@ -17,9 +14,13 @@ import {
   getParent,
   getDescendants,
 } from '@/lib/hierarchy-db';
+import { getOrganizationAIAuthorizations } from '@/lib/product-authorizations-db';
+import { getUseCasesByOrganization } from '@/lib/use-case-db';
+import { getProfileByOrganizationId } from '@/lib/agency-tools-db';
+import { getIncidentsByAgencyName } from '@/lib/incident-db';
 import { HierarchyBreadcrumbs } from '@/components/hierarchy/HierarchyBreadcrumbs';
-import Breadcrumbs from '@/components/Breadcrumbs';
-import type { FederalOrganization, OrgLevel } from '@/lib/db/schema';
+import AgencyTabs from './AgencyTabs';
+import type { OrgLevel } from '@/lib/db/schema';
 
 // Icon mapping for organization levels
 const levelIcons: Record<OrgLevel, typeof Building2> = {
@@ -71,11 +72,15 @@ export default async function AgencyDetailPage({
   }
 
   // Fetch related data in parallel
-  const [breadcrumbs, children, parent, descendants] = await Promise.all([
+  const [breadcrumbs, children, parent, descendants, aiServices, useCases, agencyTools, incidents] = await Promise.all([
     getOrganizationBreadcrumbs(org.id),
     getChildren(org.id),
     getParent(org.id),
     getDescendants(org.id),
+    getOrganizationAIAuthorizations(org.id),
+    getUseCasesByOrganization(org.id),
+    getProfileByOrganizationId(org.id),
+    getIncidentsByAgencyName(org.name, org.abbreviation),
   ]);
 
   const Icon = levelIcons[org.level as OrgLevel] || Building;
@@ -86,22 +91,13 @@ export default async function AgencyDetailPage({
       {/* Header */}
       <header className="bg-charcoal-800 py-6 border-b-4 border-ifp-purple">
         <div className="container mx-auto px-4">
-          <Breadcrumbs
-            items={[
-              { label: 'Agencies', href: '/agencies' },
-              { label: org.abbreviation || org.name, href: undefined },
-            ]}
-          />
-
           {/* Hierarchy Breadcrumbs */}
-          <div className="mt-3">
-            <HierarchyBreadcrumbs
-              breadcrumbs={breadcrumbs}
-              showHome={true}
-              homeHref="/agencies"
-              homeLabel="All Agencies"
-            />
-          </div>
+          <HierarchyBreadcrumbs
+            breadcrumbs={breadcrumbs}
+            showHome={true}
+            homeHref="/agencies"
+            homeLabel="All Agencies"
+          />
 
           {/* Agency Header */}
           <div className="mt-4 flex items-start gap-4">
@@ -227,29 +223,6 @@ export default async function AgencyDetailPage({
               </dl>
             </div>
 
-            {/* Quick Links */}
-            <div className="bg-white rounded-lg border border-charcoal-200 p-4">
-              <h2 className="font-serif font-medium text-charcoal mb-4">Related Data</h2>
-              <div className="space-y-2">
-                <Link
-                  href={`/use-cases?agency=${encodeURIComponent(org.name)}`}
-                  className="flex items-center gap-2 p-2 -mx-2 rounded hover:bg-cream text-sm"
-                >
-                  <FileText className="w-4 h-4 text-charcoal-400" />
-                  <span className="text-charcoal-600">View AI Use Cases</span>
-                  <ChevronRight className="w-4 h-4 text-charcoal-300 ml-auto" />
-                </Link>
-                <Link
-                  href={`/agency-ai-usage`}
-                  className="flex items-center gap-2 p-2 -mx-2 rounded hover:bg-cream text-sm"
-                >
-                  <Users className="w-4 h-4 text-charcoal-400" />
-                  <span className="text-charcoal-600">Agency AI Adoption</span>
-                  <ChevronRight className="w-4 h-4 text-charcoal-300 ml-auto" />
-                </Link>
-              </div>
-            </div>
-
             {/* Statistics */}
             {descendants.length > 0 && (
               <div className="bg-white rounded-lg border border-charcoal-200 p-4">
@@ -276,66 +249,17 @@ export default async function AgencyDetailPage({
             )}
           </div>
 
-          {/* Right Column - Children */}
+          {/* Right Column - Tabbed Content */}
           <div className="lg:col-span-2">
-            {children.length > 0 ? (
-              <div className="bg-white rounded-lg border border-charcoal-200 overflow-hidden">
-                <div className="px-4 py-3 border-b border-charcoal-100 bg-cream">
-                  <h2 className="font-serif font-medium text-charcoal">
-                    Sub-Organizations ({children.length})
-                  </h2>
-                  <p className="text-xs text-charcoal-500 mt-1">
-                    Direct sub-agencies, bureaus, and offices under{' '}
-                    {org.abbreviation || org.name}
-                  </p>
-                </div>
-                <div className="divide-y divide-charcoal-100">
-                  {children.map((child) => {
-                    const ChildIcon = levelIcons[child.level as OrgLevel] || Building;
-                    return (
-                      <Link
-                        key={child.id}
-                        href={`/agencies/${child.slug}`}
-                        className="flex items-center gap-4 p-4 hover:bg-cream transition-colors"
-                      >
-                        <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-charcoal-100 flex items-center justify-center">
-                          <ChildIcon className="w-5 h-5 text-charcoal-500" />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2">
-                            {child.abbreviation && (
-                              <span className="font-semibold text-charcoal">
-                                {child.abbreviation}
-                              </span>
-                            )}
-                            <span className="text-charcoal-600 truncate">
-                              {child.name}
-                            </span>
-                          </div>
-                          {child.description && (
-                            <p className="text-sm text-charcoal-500 truncate mt-0.5">
-                              {child.description}
-                            </p>
-                          )}
-                        </div>
-                        <ChevronRight className="w-5 h-5 text-charcoal-300 flex-shrink-0" />
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            ) : (
-              <div className="bg-white rounded-lg border border-charcoal-200 p-8 text-center">
-                <Building className="w-12 h-12 text-charcoal-300 mx-auto" />
-                <h3 className="mt-4 text-lg font-serif font-medium text-charcoal">
-                  No Sub-Organizations
-                </h3>
-                <p className="mt-2 text-charcoal-500">
-                  {org.abbreviation || org.name} does not have any direct
-                  sub-organizations in our database.
-                </p>
-              </div>
-            )}
+            <AgencyTabs
+              aiTools={agencyTools}
+              aiServices={aiServices}
+              useCases={useCases}
+              incidents={incidents}
+              children={children}
+              orgName={org.name}
+              orgAbbreviation={org.abbreviation}
+            />
           </div>
         </div>
       </div>

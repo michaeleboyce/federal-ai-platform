@@ -382,6 +382,34 @@ export async function searchIncidents(query: string): Promise<Incident[]> {
   return getIncidents({ search: query });
 }
 
+/**
+ * Get incidents where an agency appears in deployers
+ * Searches both exact match and partial match in the JSONB array
+ */
+export async function getIncidentsByAgencyName(agencyName: string, abbreviation?: string | null): Promise<Incident[]> {
+  // Build conditions for searching deployers JSONB array
+  const conditions = [
+    // Text search in deployers array (case-insensitive)
+    sql`EXISTS (SELECT 1 FROM jsonb_array_elements_text(${incidents.deployers}) elem WHERE elem ILIKE ${`%${agencyName}%`})`,
+  ];
+
+  // Also search for abbreviation if provided
+  if (abbreviation) {
+    conditions.push(
+      sql`EXISTS (SELECT 1 FROM jsonb_array_elements_text(${incidents.deployers}) elem WHERE elem ILIKE ${`%${abbreviation}%`})`
+    );
+  }
+
+  const results = await db
+    .select()
+    .from(incidents)
+    .where(or(...conditions)!)
+    .orderBy(desc(incidents.date), desc(incidents.incidentId))
+    .limit(50);
+
+  return results;
+}
+
 // ========================================
 // HYBRID SEMANTIC MATCHING FUNCTIONS
 // ========================================

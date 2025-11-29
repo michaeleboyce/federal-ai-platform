@@ -58,6 +58,7 @@ export interface UseCaseFilters {
   topic_area?: string;
   rights_impacting?: boolean;
   search?: string;
+  organizationId?: number;
 }
 
 
@@ -157,6 +158,10 @@ export async function getUseCases(filters?: UseCaseFilters): Promise<UseCase[]> 
         )!
       );
     }
+
+    if (filters.organizationId !== undefined) {
+      conditions.push(eq(aiUseCases.organizationId, filters.organizationId));
+    }
   }
 
   const results = await db
@@ -213,6 +218,13 @@ export async function getUseCasesByAgency(agencyAbbr: string): Promise<UseCase[]
  */
 export async function getUseCasesByDomain(domain: string): Promise<UseCase[]> {
   return getUseCases({ domain });
+}
+
+/**
+ * Get all use cases for a specific organization by ID
+ */
+export async function getUseCasesByOrganization(organizationId: number): Promise<UseCase[]> {
+  return getUseCases({ organizationId });
 }
 
 /**
