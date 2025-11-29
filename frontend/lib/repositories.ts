@@ -1,6 +1,6 @@
 // Frontend repository exports
 // Import repositories from the database package
-import { ProductRepository, AIServiceRepository, AgencyRepository, UseCaseRepository } from '../../packages/database/src/repositories';
+import { ProductRepository, AIServiceRepository, AgencyRepository, UseCaseRepository } from '@federal-ai-platform/database/repositories';
 
 // Export singletons for use in API routes and server components
 export const productRepo = new ProductRepository();

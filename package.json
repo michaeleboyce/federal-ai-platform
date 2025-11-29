@@ -1,0 +1,11 @@
+{
+  "name": "federal-ai-platform-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter federal-ai-platform dev",
+    "build": "pnpm --filter federal-ai-platform build",
+    "start": "pnpm --filter federal-ai-platform start",
+    "lint": "pnpm --filter federal-ai-platform lint"
+  }
+}

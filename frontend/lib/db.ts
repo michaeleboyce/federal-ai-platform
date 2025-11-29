@@ -3,7 +3,7 @@
  * Replaces the old SQLite implementation
  */
 import { productRepo, aiServiceRepo, agencyRepo } from './repositories';
-import type { ProductRecord } from '../../packages/database/src/schema/products';
+import type { ProductRecord } from '@federal-ai-platform/database/schema/products';
 
 // Re-export the type from our schema (matches old Product interface structure)
 export type Product = ProductRecord;

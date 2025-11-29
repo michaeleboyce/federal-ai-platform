@@ -2,8 +2,13 @@
   "name": "@federal-ai-platform/database",
   "version": "0.1.0",
   "description": "Database layer with Drizzle ORM for Federal AI Platform",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./repositories": "./src/repositories/index.ts",
+    "./schema/*": "./src/schema/*.ts"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",

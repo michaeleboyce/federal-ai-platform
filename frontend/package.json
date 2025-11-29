@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@federal-ai-platform/database": "workspace:*",
     "@neondatabase/serverless": "^1.0.2",
     "csv-parse": "^6.1.0",
     "dotenv": "^17.2.3",
