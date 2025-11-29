@@ -111,6 +111,47 @@ class ProductRepository {
     async executePreparedProductsByProvider(provider) {
         return await this.preparedProductsByProvider.execute({ provider });
     }
+    // Get all products with AI service counts
+    async getAllWithServiceCounts() {
+        const result = await db_connection_1.db.execute((0, drizzle_orm_1.sql) `
+      SELECT
+        p.*,
+        COALESCE(COUNT(DISTINCT a.id), 0)::int as ai_service_count,
+        COALESCE(
+          ARRAY_AGG(DISTINCT a.service_name) FILTER (WHERE a.service_name IS NOT NULL),
+          ARRAY[]::text[]
+        ) as ai_services
+      FROM products p
+      LEFT JOIN ai_service_analysis a ON p.fedramp_id = a.product_id
+      GROUP BY p.id
+      ORDER BY p.cloud_service_provider ASC
+    `);
+        return result.rows.map((row) => ({
+            id: row.id,
+            fedrampId: row.fedramp_id,
+            cloudServiceProvider: row.cloud_service_provider,
+            cloudServiceOffering: row.cloud_service_offering,
+            serviceDescription: row.service_description,
+            businessCategories: row.business_categories,
+            serviceModel: row.service_model,
+            status: row.status,
+            independentAssessor: row.independent_assessor,
+            authorizations: row.authorizations,
+            reuse: row.reuse,
+            parentAgency: row.parent_agency,
+            subAgency: row.sub_agency,
+            atoIssuanceDate: row.ato_issuance_date,
+            fedrampAuthorizationDate: row.fedramp_authorization_date,
+            annualAssessmentDate: row.annual_assessment_date,
+            atoExpirationDate: row.ato_expiration_date,
+            htmlScraped: row.html_scraped,
+            htmlPath: row.html_path,
+            createdAt: new Date(row.created_at),
+            updatedAt: new Date(row.updated_at),
+            aiServiceCount: row.ai_service_count,
+            aiServices: row.ai_services || [],
+        }));
+    }
 }
 exports.ProductRepository = ProductRepository;
 //# sourceMappingURL=ProductRepository.js.map

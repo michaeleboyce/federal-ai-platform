@@ -16,6 +16,59 @@ export async function getAllProducts(): Promise<Product[]> {
 }
 
 /**
+ * Get all products with AI service counts
+ */
+export async function getAllProductsWithServiceCounts() {
+  const { db } = await import('./db/client');
+  const { sql } = await import('drizzle-orm');
+
+  const result = await db.execute(sql`
+    SELECT
+      p.*,
+      COALESCE(COUNT(DISTINCT a.id), 0)::int as ai_service_count,
+      COALESCE(
+        ARRAY_AGG(DISTINCT a.service_name) FILTER (WHERE a.service_name IS NOT NULL),
+        ARRAY[]::text[]
+      ) as ai_services,
+      COALESCE(
+        ARRAY_AGG(DISTINCT a.impact_level) FILTER (WHERE a.impact_level IS NOT NULL),
+        ARRAY[]::text[]
+      ) as impact_levels
+    FROM products p
+    LEFT JOIN ai_service_analysis a ON p.fedramp_id = a.product_id
+    GROUP BY p.id
+    ORDER BY p.cloud_service_provider ASC
+  `);
+
+  return result.rows.map((row: Record<string, unknown>) => ({
+    id: row.id as number,
+    fedrampId: row.fedramp_id as string,
+    cloudServiceProvider: row.cloud_service_provider as string | null,
+    cloudServiceOffering: row.cloud_service_offering as string | null,
+    serviceDescription: row.service_description as string | null,
+    businessCategories: row.business_categories as string | null,
+    serviceModel: row.service_model as string | null,
+    status: row.status as string | null,
+    independentAssessor: row.independent_assessor as string | null,
+    authorizations: row.authorizations as string | null,
+    reuse: row.reuse as string | null,
+    parentAgency: row.parent_agency as string | null,
+    subAgency: row.sub_agency as string | null,
+    atoIssuanceDate: row.ato_issuance_date as string | null,
+    fedrampAuthorizationDate: row.fedramp_authorization_date as string | null,
+    annualAssessmentDate: row.annual_assessment_date as string | null,
+    atoExpirationDate: row.ato_expiration_date as string | null,
+    htmlScraped: row.html_scraped as boolean,
+    htmlPath: row.html_path as string | null,
+    createdAt: new Date(row.created_at as string),
+    updatedAt: new Date(row.updated_at as string),
+    aiServiceCount: row.ai_service_count as number,
+    aiServices: (row.ai_services as string[]) || [],
+    impactLevels: (row.impact_levels as string[]) || [],
+  }));
+}
+
+/**
  * Get a single product by FedRAMP ID
  */
 export async function getProduct(fedrampId: string): Promise<Product | undefined> {

@@ -16,5 +16,9 @@ export declare class ProductRepository {
     upsert(productData: NewProductRecord): Promise<ProductRecord>;
     private preparedProductsByProvider;
     executePreparedProductsByProvider(provider: string): Promise<ProductRecord[]>;
+    getAllWithServiceCounts(): Promise<(ProductRecord & {
+        aiServiceCount: number;
+        aiServices: string[];
+    })[]>;
 }
 //# sourceMappingURL=ProductRepository.d.ts.map

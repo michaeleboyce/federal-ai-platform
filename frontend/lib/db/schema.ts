@@ -18,6 +18,69 @@ import {
 
 export const confidenceEnum = pgEnum('confidence', ['high', 'medium', 'low']);
 
+export const orgLevelEnum = pgEnum('org_level', [
+  'department',    // Cabinet department (e.g., Department of Defense)
+  'independent',   // Independent agency (e.g., EPA, NASA)
+  'sub_agency',    // Sub-agency/bureau (e.g., FBI under DOJ)
+  'office',        // Office/division
+  'component',     // Lower-level unit
+]);
+
+// ========================================
+// FEDERAL ORGANIZATIONS HIERARCHY
+// ========================================
+
+/**
+ * Federal Organizations Hierarchy Table
+ * Self-referential table for storing the federal agency hierarchy
+ * Based on SAM.gov Federal Hierarchy structure
+ */
+export const federalOrganizations = pgTable(
+  'federal_organizations',
+  {
+    id: serial('id').primaryKey(),
+
+    // Core identifiers
+    name: text('name').notNull(),
+    shortName: varchar('short_name', { length: 100 }),
+    abbreviation: varchar('abbreviation', { length: 20 }),
+    slug: text('slug').unique().notNull(),
+
+    // Hierarchy (self-referential - parentId references this table's id)
+    parentId: integer('parent_id'),
+    level: orgLevelEnum('level').notNull(),
+    hierarchyPath: text('hierarchy_path'), // Materialized path: "/1/5/23/"
+    depth: integer('depth').notNull().default(0),
+
+    // SAM.gov / GSA identifiers
+    samOrgId: varchar('sam_org_id', { length: 50 }),
+    cgacCode: varchar('cgac_code', { length: 10 }),
+    agencyCode: varchar('agency_code', { length: 20 }),
+
+    // Classification
+    isCfoActAgency: boolean('is_cfo_act_agency').notNull().default(false),
+    isCabinetDepartment: boolean('is_cabinet_department').notNull().default(false),
+
+    // Display settings
+    isActive: boolean('is_active').notNull().default(true),
+    displayOrder: integer('display_order').default(0),
+
+    // Metadata
+    description: text('description'),
+    website: text('website'),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    index('idx_fed_org_parent').on(table.parentId),
+    index('idx_fed_org_level').on(table.level),
+    index('idx_fed_org_abbreviation').on(table.abbreviation),
+    index('idx_fed_org_hierarchy_path').on(table.hierarchyPath),
+    index('idx_fed_org_cfo_act').on(table.isCfoActAgency),
+    uniqueIndex('idx_fed_org_slug').on(table.slug),
+  ]
+);
+
 // ========================================
 // AI USE CASES TABLES
 // ========================================
@@ -77,6 +140,10 @@ export const aiUseCases = pgTable(
     // Commercial AI products used
     commercialAiProduct: text('commercial_ai_product'),
 
+    // Federal Organization Hierarchy Links
+    organizationId: integer('organization_id'),
+    bureauOrganizationId: integer('bureau_organization_id'),
+
     // Metadata
     analyzedAt: timestamp('analyzed_at').defaultNow().notNull(),
     slug: text('slug').unique().notNull(),
@@ -87,6 +154,8 @@ export const aiUseCases = pgTable(
     index('idx_use_case_stage').on(table.stageOfDevelopment),
     index('idx_use_case_genai').on(table.genaiFlag),
     index('idx_use_case_llm').on(table.hasLlm),
+    index('idx_use_case_org').on(table.organizationId),
+    index('idx_use_case_bureau_org').on(table.bureauOrganizationId),
     uniqueIndex('idx_use_case_slug').on(table.slug),
   ]
 );
@@ -259,6 +328,9 @@ export const agencyAiUsage = pgTable(
     notes: text('notes'),
     sources: text('sources'),
 
+    // Federal Organization Hierarchy Link
+    organizationId: integer('organization_id'),
+
     // Metadata
     analyzedAt: timestamp('analyzed_at').defaultNow().notNull(),
     slug: text('slug').unique().notNull(),
@@ -266,6 +338,7 @@ export const agencyAiUsage = pgTable(
   (table) => [
     index('idx_agency_name').on(table.agencyName),
     index('idx_agency_category').on(table.agencyCategory),
+    index('idx_agency_org').on(table.organizationId),
     uniqueIndex('idx_agency_slug').on(table.slug),
   ]
 );
@@ -298,6 +371,9 @@ export const agencyServiceMatches = pgTable(
 // ========================================
 // TYPE EXPORTS
 // ========================================
+
+export type FederalOrganization = typeof federalOrganizations.$inferSelect;
+export type NewFederalOrganization = typeof federalOrganizations.$inferInsert;
 
 export type AIUseCase = typeof aiUseCases.$inferSelect;
 export type NewAIUseCase = typeof aiUseCases.$inferInsert;
@@ -505,3 +581,21 @@ export const semanticMatches = pgTable(
 
 export type SemanticMatch = typeof semanticMatches.$inferSelect;
 export type NewSemanticMatch = typeof semanticMatches.$inferInsert;
+
+// ========================================
+// HIERARCHY HELPER TYPES
+// ========================================
+
+export type OrgLevel = 'department' | 'independent' | 'sub_agency' | 'office' | 'component';
+
+export interface FederalOrganizationWithChildren extends FederalOrganization {
+  children: FederalOrganizationWithChildren[];
+}
+
+export interface HierarchyBreadcrumb {
+  id: number;
+  name: string;
+  abbreviation: string | null;
+  slug: string;
+  level: OrgLevel;
+}
