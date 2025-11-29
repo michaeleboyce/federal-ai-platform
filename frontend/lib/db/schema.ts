@@ -671,6 +671,50 @@ export type IncidentUseCaseMatch = typeof incidentUseCaseMatches.$inferSelect;
 export type NewIncidentUseCaseMatch = typeof incidentUseCaseMatches.$inferInsert;
 
 // ========================================
+// PRODUCT AUTHORIZATIONS TABLE
+// ========================================
+
+/**
+ * Product Authorizations
+ * Links FedRAMP products to authorizing agencies
+ * One row per (product, agency) authorization relationship
+ */
+export const productAuthorizations = pgTable(
+  'product_authorizations',
+  {
+    id: serial('id').primaryKey(),
+
+    // Link to products table (FedRAMP ID)
+    fedrampId: text('fedramp_id').notNull(),
+
+    // Link to federal_organizations (nullable if no match found)
+    organizationId: integer('organization_id').references(() => federalOrganizations.id),
+
+    // Original CSV values (preserved for reference)
+    parentAgencyName: text('parent_agency_name').notNull(),
+    subAgencyName: text('sub_agency_name'),
+
+    // Authorization details
+    atoIssuanceDate: text('ato_issuance_date'),
+    atoExpirationDate: text('ato_expiration_date'),
+
+    // Metadata
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    // Prevent duplicate authorizations
+    uniqueIndex('product_auth_unique_idx').on(table.fedrampId, table.parentAgencyName, table.subAgencyName),
+    // Fast lookups by product
+    index('product_auth_fedramp_idx').on(table.fedrampId),
+    // Fast lookups by organization
+    index('product_auth_org_idx').on(table.organizationId),
+  ]
+);
+
+export type ProductAuthorization = typeof productAuthorizations.$inferSelect;
+export type NewProductAuthorization = typeof productAuthorizations.$inferInsert;
+
+// ========================================
 // SEMANTIC MATCHING TABLES
 // ========================================
 
