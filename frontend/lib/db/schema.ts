@@ -394,6 +394,124 @@ export type AgencyServiceMatch = typeof agencyServiceMatches.$inferSelect;
 export type NewAgencyServiceMatch = typeof agencyServiceMatches.$inferInsert;
 
 // ========================================
+// AGENCY AI PROFILES & TOOLS (NEW)
+// ========================================
+
+/**
+ * Enums for agency AI tool types and deployment status
+ */
+export const productTypeEnum = pgEnum('product_type', [
+  'staff_chatbot',
+  'coding_assistant',
+  'document_automation',
+  'none_identified',
+]);
+
+export const deploymentStatusEnum = pgEnum('deployment_status', [
+  'all_staff',
+  'pilot_or_limited',
+  'no_public_internal_assistant',
+]);
+
+/**
+ * Agency AI Profiles - One row per agency
+ * Links to federal_organizations for hierarchy support
+ */
+export const agencyAiProfiles = pgTable(
+  'agency_ai_profiles',
+  {
+    id: serial('id').primaryKey(),
+
+    // Agency identification
+    agencyName: text('agency_name').notNull(),
+    abbreviation: varchar('abbreviation', { length: 20 }),
+    slug: text('slug').unique().notNull(),
+
+    // Hierarchy link
+    organizationId: integer('organization_id'),
+    departmentLevelName: text('department_level_name'),
+    parentAbbreviation: varchar('parent_abbreviation', { length: 20 }),
+
+    // Overall deployment status
+    deploymentStatus: deploymentStatusEnum('deployment_status').default('no_public_internal_assistant'),
+
+    // Summary flags (derived from tools for fast queries)
+    hasStaffChatbot: boolean('has_staff_chatbot').notNull().default(false),
+    hasCodingAssistant: boolean('has_coding_assistant').notNull().default(false),
+    hasDocumentAutomation: boolean('has_document_automation').notNull().default(false),
+    toolCount: integer('tool_count').notNull().default(0),
+
+    // Metadata
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    index('idx_agency_profile_org').on(table.organizationId),
+    index('idx_agency_profile_dept').on(table.departmentLevelName),
+    index('idx_agency_profile_parent').on(table.parentAbbreviation),
+    index('idx_agency_profile_chatbot').on(table.hasStaffChatbot),
+    index('idx_agency_profile_coding').on(table.hasCodingAssistant),
+    uniqueIndex('idx_agency_profile_slug').on(table.slug),
+  ]
+);
+
+/**
+ * Agency AI Tools - One row per tool
+ * Multiple tools can belong to one agency profile
+ */
+export const agencyAiTools = pgTable(
+  'agency_ai_tools',
+  {
+    id: serial('id').primaryKey(),
+
+    // Link to agency profile
+    agencyProfileId: integer('agency_profile_id')
+      .notNull()
+      .references(() => agencyAiProfiles.id, { onDelete: 'cascade' }),
+
+    // Tool identification
+    productName: text('product_name').notNull(),
+    productType: productTypeEnum('product_type').notNull(),
+    slug: text('slug').unique().notNull(),
+
+    // Deployment details
+    availableToAllStaff: text('available_to_all_staff'), // yes/no/subset
+    isPilotOrLimited: boolean('is_pilot_or_limited').default(false),
+
+    // Coding assistant flag (yes/no/partial)
+    codingAssistantFlag: varchar('coding_assistant_flag', { length: 20 }),
+
+    // Data sensitivity
+    internalOrSensitiveData: text('internal_or_sensitive_data'),
+
+    // Citation/source information
+    citationChicago: text('citation_chicago'),
+    citationAccessedDate: text('citation_accessed_date'),
+    citationUrl: text('citation_url'),
+
+    // Metadata
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    index('idx_agency_tool_profile').on(table.agencyProfileId),
+    index('idx_agency_tool_type').on(table.productType),
+    index('idx_agency_tool_availability').on(table.availableToAllStaff),
+    uniqueIndex('idx_agency_tool_slug').on(table.slug),
+  ]
+);
+
+// Type exports for new tables
+export type AgencyAiProfile = typeof agencyAiProfiles.$inferSelect;
+export type NewAgencyAiProfile = typeof agencyAiProfiles.$inferInsert;
+
+export type AgencyAiTool = typeof agencyAiTools.$inferSelect;
+export type NewAgencyAiTool = typeof agencyAiTools.$inferInsert;
+
+export type ProductType = 'staff_chatbot' | 'coding_assistant' | 'document_automation' | 'none_identified';
+export type DeploymentStatus = 'all_staff' | 'pilot_or_limited' | 'no_public_internal_assistant';
+
+// ========================================
 // AI INCIDENT TABLES
 // ========================================
 
