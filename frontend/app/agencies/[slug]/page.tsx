@@ -82,15 +82,14 @@ export default async function AgencyDetailPage({
   const levelLabel = levelLabels[org.level as OrgLevel] || 'Organization';
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-cream">
       {/* Header */}
-      <div className="bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <header className="bg-charcoal-800 py-6 border-b-4 border-ifp-purple">
+        <div className="container mx-auto px-4">
           <Breadcrumbs
             items={[
-              { label: 'Federal AI Platform', href: '/' },
               { label: 'Agencies', href: '/agencies' },
-              { label: org.abbreviation || org.name },
+              { label: org.abbreviation || org.name, href: undefined },
             ]}
           />
 
@@ -105,40 +104,40 @@ export default async function AgencyDetailPage({
           </div>
 
           {/* Agency Header */}
-          <div className="mt-6 flex items-start gap-4">
+          <div className="mt-4 flex items-start gap-4">
             <div
               className={`
                 flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center
                 ${
                   org.level === 'department'
-                    ? 'bg-ai-indigo-light'
+                    ? 'bg-ifp-purple-light'
                     : org.level === 'independent'
-                    ? 'bg-ai-blue-light'
-                    : 'bg-slate-100'
+                    ? 'bg-ifp-orange-light'
+                    : 'bg-charcoal-600'
                 }
               `}
             >
               <Icon
                 className={`w-6 h-6 ${
                   org.level === 'department'
-                    ? 'text-ai-indigo'
+                    ? 'text-ifp-purple-dark'
                     : org.level === 'independent'
-                    ? 'text-ai-blue'
-                    : 'text-slate-500'
+                    ? 'text-ifp-orange-dark'
+                    : 'text-charcoal-300'
                 }`}
               />
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3">
                 {org.abbreviation && (
-                  <span className="text-2xl font-bold text-slate-900">
+                  <span className="text-2xl font-serif font-medium text-white">
                     {org.abbreviation}
                   </span>
                 )}
-                <span className="text-lg text-slate-600">{org.name}</span>
+                <span className="text-lg text-charcoal-300">{org.name}</span>
               </div>
-              <div className="mt-1 flex items-center gap-3">
-                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-600">
+              <div className="mt-2 flex items-center gap-3">
+                <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-charcoal-600 text-charcoal-200">
                   {levelLabel}
                 </span>
                 {org.isCfoActAgency && (
@@ -147,33 +146,33 @@ export default async function AgencyDetailPage({
                   </span>
                 )}
                 {org.isCabinetDepartment && (
-                  <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-ai-indigo-light text-ai-indigo border border-ai-indigo">
+                  <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-ifp-purple-light text-ifp-purple-dark border border-ifp-purple">
                     Cabinet Department
                   </span>
                 )}
               </div>
               {org.description && (
-                <p className="mt-3 text-slate-600">{org.description}</p>
+                <p className="mt-3 text-charcoal-300">{org.description}</p>
               )}
             </div>
           </div>
         </div>
-      </div>
+      </header>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left Column - Info */}
           <div className="lg:col-span-1 space-y-6">
             {/* Organization Details */}
-            <div className="bg-white rounded-lg border border-slate-200 p-4">
-              <h2 className="font-semibold text-slate-900 mb-4">
+            <div className="bg-white rounded-lg border border-charcoal-200 p-4">
+              <h2 className="font-serif font-medium text-charcoal mb-4">
                 Organization Details
               </h2>
               <dl className="space-y-3">
                 {org.website && (
                   <div>
-                    <dt className="text-xs text-slate-500 uppercase tracking-wide">
+                    <dt className="text-xs text-charcoal-500 uppercase tracking-wide">
                       Website
                     </dt>
                     <dd className="mt-0.5">
@@ -181,7 +180,7 @@ export default async function AgencyDetailPage({
                         href={org.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-ai-blue hover:text-ai-blue-dark text-sm"
+                        className="flex items-center gap-1 text-ifp-purple hover:text-ifp-purple-dark text-sm"
                       >
                         <Globe className="w-4 h-4" />
                         {org.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
@@ -192,13 +191,13 @@ export default async function AgencyDetailPage({
                 )}
                 {parent && (
                   <div>
-                    <dt className="text-xs text-slate-500 uppercase tracking-wide">
+                    <dt className="text-xs text-charcoal-500 uppercase tracking-wide">
                       Parent Organization
                     </dt>
                     <dd className="mt-0.5">
                       <Link
                         href={`/agencies/${parent.slug}`}
-                        className="text-ai-blue hover:text-ai-blue-dark text-sm"
+                        className="text-ifp-purple hover:text-ifp-purple-dark text-sm"
                       >
                         {parent.abbreviation || parent.name}
                       </Link>
@@ -207,20 +206,20 @@ export default async function AgencyDetailPage({
                 )}
                 {org.cgacCode && (
                   <div>
-                    <dt className="text-xs text-slate-500 uppercase tracking-wide">
+                    <dt className="text-xs text-charcoal-500 uppercase tracking-wide">
                       CGAC Code
                     </dt>
-                    <dd className="mt-0.5 text-sm text-slate-900 font-mono">
+                    <dd className="mt-0.5 text-sm text-charcoal font-mono">
                       {org.cgacCode}
                     </dd>
                   </div>
                 )}
                 {org.agencyCode && (
                   <div>
-                    <dt className="text-xs text-slate-500 uppercase tracking-wide">
+                    <dt className="text-xs text-charcoal-500 uppercase tracking-wide">
                       Agency Code
                     </dt>
-                    <dd className="mt-0.5 text-sm text-slate-900 font-mono">
+                    <dd className="mt-0.5 text-sm text-charcoal font-mono">
                       {org.agencyCode}
                     </dd>
                   </div>
@@ -229,46 +228,46 @@ export default async function AgencyDetailPage({
             </div>
 
             {/* Quick Links */}
-            <div className="bg-white rounded-lg border border-slate-200 p-4">
-              <h2 className="font-semibold text-slate-900 mb-4">Related Data</h2>
+            <div className="bg-white rounded-lg border border-charcoal-200 p-4">
+              <h2 className="font-serif font-medium text-charcoal mb-4">Related Data</h2>
               <div className="space-y-2">
                 <Link
                   href={`/use-cases?agency=${encodeURIComponent(org.name)}`}
-                  className="flex items-center gap-2 p-2 -mx-2 rounded hover:bg-slate-50 text-sm"
+                  className="flex items-center gap-2 p-2 -mx-2 rounded hover:bg-cream text-sm"
                 >
-                  <FileText className="w-4 h-4 text-slate-400" />
-                  <span className="text-slate-700">View AI Use Cases</span>
-                  <ChevronRight className="w-4 h-4 text-slate-300 ml-auto" />
+                  <FileText className="w-4 h-4 text-charcoal-400" />
+                  <span className="text-charcoal-600">View AI Use Cases</span>
+                  <ChevronRight className="w-4 h-4 text-charcoal-300 ml-auto" />
                 </Link>
                 <Link
                   href={`/agency-ai-usage`}
-                  className="flex items-center gap-2 p-2 -mx-2 rounded hover:bg-slate-50 text-sm"
+                  className="flex items-center gap-2 p-2 -mx-2 rounded hover:bg-cream text-sm"
                 >
-                  <Users className="w-4 h-4 text-slate-400" />
-                  <span className="text-slate-700">Agency AI Adoption</span>
-                  <ChevronRight className="w-4 h-4 text-slate-300 ml-auto" />
+                  <Users className="w-4 h-4 text-charcoal-400" />
+                  <span className="text-charcoal-600">Agency AI Adoption</span>
+                  <ChevronRight className="w-4 h-4 text-charcoal-300 ml-auto" />
                 </Link>
               </div>
             </div>
 
             {/* Statistics */}
             {descendants.length > 0 && (
-              <div className="bg-white rounded-lg border border-slate-200 p-4">
-                <h2 className="font-semibold text-slate-900 mb-4">Statistics</h2>
+              <div className="bg-white rounded-lg border border-charcoal-200 p-4">
+                <h2 className="font-serif font-medium text-charcoal mb-4">Statistics</h2>
                 <dl className="grid grid-cols-2 gap-4">
                   <div>
-                    <dt className="text-xs text-slate-500 uppercase tracking-wide">
+                    <dt className="text-xs text-charcoal-500 uppercase tracking-wide">
                       Direct Sub-Orgs
                     </dt>
-                    <dd className="mt-0.5 text-2xl font-bold text-slate-900">
+                    <dd className="mt-0.5 text-2xl font-bold text-charcoal">
                       {children.length}
                     </dd>
                   </div>
                   <div>
-                    <dt className="text-xs text-slate-500 uppercase tracking-wide">
+                    <dt className="text-xs text-charcoal-500 uppercase tracking-wide">
                       Total Descendants
                     </dt>
-                    <dd className="mt-0.5 text-2xl font-bold text-slate-900">
+                    <dd className="mt-0.5 text-2xl font-bold text-charcoal">
                       {descendants.length}
                     </dd>
                   </div>
@@ -280,58 +279,58 @@ export default async function AgencyDetailPage({
           {/* Right Column - Children */}
           <div className="lg:col-span-2">
             {children.length > 0 ? (
-              <div className="bg-white rounded-lg border border-slate-200 overflow-hidden">
-                <div className="px-4 py-3 border-b border-slate-100 bg-slate-50">
-                  <h2 className="font-semibold text-slate-900">
+              <div className="bg-white rounded-lg border border-charcoal-200 overflow-hidden">
+                <div className="px-4 py-3 border-b border-charcoal-100 bg-cream">
+                  <h2 className="font-serif font-medium text-charcoal">
                     Sub-Organizations ({children.length})
                   </h2>
-                  <p className="text-xs text-slate-500 mt-1">
+                  <p className="text-xs text-charcoal-500 mt-1">
                     Direct sub-agencies, bureaus, and offices under{' '}
                     {org.abbreviation || org.name}
                   </p>
                 </div>
-                <div className="divide-y divide-slate-100">
+                <div className="divide-y divide-charcoal-100">
                   {children.map((child) => {
                     const ChildIcon = levelIcons[child.level as OrgLevel] || Building;
                     return (
                       <Link
                         key={child.id}
                         href={`/agencies/${child.slug}`}
-                        className="flex items-center gap-4 p-4 hover:bg-slate-50 transition-colors"
+                        className="flex items-center gap-4 p-4 hover:bg-cream transition-colors"
                       >
-                        <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center">
-                          <ChildIcon className="w-5 h-5 text-slate-500" />
+                        <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-charcoal-100 flex items-center justify-center">
+                          <ChildIcon className="w-5 h-5 text-charcoal-500" />
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2">
                             {child.abbreviation && (
-                              <span className="font-semibold text-slate-900">
+                              <span className="font-semibold text-charcoal">
                                 {child.abbreviation}
                               </span>
                             )}
-                            <span className="text-slate-600 truncate">
+                            <span className="text-charcoal-600 truncate">
                               {child.name}
                             </span>
                           </div>
                           {child.description && (
-                            <p className="text-sm text-slate-500 truncate mt-0.5">
+                            <p className="text-sm text-charcoal-500 truncate mt-0.5">
                               {child.description}
                             </p>
                           )}
                         </div>
-                        <ChevronRight className="w-5 h-5 text-slate-300 flex-shrink-0" />
+                        <ChevronRight className="w-5 h-5 text-charcoal-300 flex-shrink-0" />
                       </Link>
                     );
                   })}
                 </div>
               </div>
             ) : (
-              <div className="bg-white rounded-lg border border-slate-200 p-8 text-center">
-                <Building className="w-12 h-12 text-slate-300 mx-auto" />
-                <h3 className="mt-4 text-lg font-medium text-slate-900">
+              <div className="bg-white rounded-lg border border-charcoal-200 p-8 text-center">
+                <Building className="w-12 h-12 text-charcoal-300 mx-auto" />
+                <h3 className="mt-4 text-lg font-serif font-medium text-charcoal">
                   No Sub-Organizations
                 </h3>
-                <p className="mt-2 text-slate-500">
+                <p className="mt-2 text-charcoal-500">
                   {org.abbreviation || org.name} does not have any direct
                   sub-organizations in our database.
                 </p>

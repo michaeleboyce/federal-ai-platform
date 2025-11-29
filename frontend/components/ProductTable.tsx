@@ -60,7 +60,9 @@ export default function ProductTable({ products }: { products: Product[] }) {
     if (itemsPerPage !== 50) params.set('perPage', itemsPerPage.toString());
 
     const queryString = params.toString();
-    const newUrl = queryString ? `/?${queryString}` : '/';
+    // Preserve current pathname instead of hardcoding to '/'
+    const currentPath = window.location.pathname;
+    const newUrl = queryString ? `${currentPath}?${queryString}` : currentPath;
 
     router.replace(newUrl, { scroll: false });
   }, [searchQuery, sortField, sortDirection, currentPage, itemsPerPage, isInitialized, router]);
@@ -195,7 +197,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
       <div className="bg-white rounded-lg border border-charcoal-200 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-charcoal-100 border-b-2 border-charcoal-200">
+            <thead className="bg-cream-200 border-b-2 border-charcoal-200">
               <tr>
                 <th
                   onClick={() => handleSort('csp')}
@@ -265,7 +267,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
                 <tr
                   key={product.id}
                   onClick={() => router.push(`/product/${product.id}`)}
-                  className={`cursor-pointer hover:bg-charcoal-50 hover:border-l-4 hover:border-ifp-purple transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-charcoal-50/30'}`}
+                  className={`cursor-pointer hover:bg-cream hover:border-l-4 hover:border-ifp-purple transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-cream/30'}`}
                 >
                   <td className="px-4 py-3 text-sm text-charcoal">{product.csp}</td>
                   <td className="px-4 py-3 text-sm font-medium text-charcoal">
@@ -320,14 +322,14 @@ export default function ProductTable({ products }: { products: Product[] }) {
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-cream disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Previous
               </button>
               <button
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-cream disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Next
               </button>

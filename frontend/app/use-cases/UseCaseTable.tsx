@@ -240,7 +240,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'all'
                     ? 'bg-charcoal-700 text-cream border-charcoal-700'
-                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-cream'
                 }`}
               >
                 All ({useCases.length})
@@ -250,7 +250,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'genai'
                     ? 'bg-ifp-orange text-white border-ifp-orange'
-                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-cream'
                 }`}
               >
                 GenAI ({useCases.filter(uc => uc.genaiFlag).length})
@@ -260,7 +260,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'llm'
                     ? 'bg-charcoal-600 text-white border-charcoal-600'
-                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-cream'
                 }`}
               >
                 LLM ({useCases.filter(uc => uc.hasLlm).length})
@@ -270,7 +270,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'chatbot'
                     ? 'bg-ifp-purple text-white border-ifp-purple'
-                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-cream'
                 }`}
               >
                 Chatbot ({useCases.filter(uc => uc.hasChatbot).length})
@@ -280,7 +280,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                 className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                   aiTypeFilter === 'classic_ml'
                     ? 'bg-charcoal-500 text-white border-charcoal-500'
-                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
+                    : 'bg-white text-charcoal border-charcoal-300 hover:bg-cream'
                 }`}
               >
                 Classic ML ({useCases.filter(uc => uc.hasClassicMl).length})
@@ -377,7 +377,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
       <div className="bg-white rounded-lg border border-charcoal-200 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-charcoal-100 border-b-2 border-charcoal-200">
+            <thead className="bg-cream-200 border-b-2 border-charcoal-200">
               <tr>
                 <th
                   onClick={() => handleSort('useCaseName')}
@@ -444,7 +444,7 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
                 <tr
                   key={uc.id}
                   onClick={() => router.push(`/use-cases/${uc.slug}`)}
-                  className={`cursor-pointer hover:bg-charcoal-50 hover:border-l-4 hover:border-ifp-purple transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-charcoal-50/30'}`}
+                  className={`cursor-pointer hover:bg-cream hover:border-l-4 hover:border-ifp-purple transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-cream/30'}`}
                 >
                   <td className="px-4 py-3 text-sm font-medium text-charcoal">
                     <div className="max-w-md" title={uc.useCaseName}>
@@ -502,14 +502,14 @@ export default function UseCaseTable({ useCases, domains, agencies, stages }: Us
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-cream disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Previous
               </button>
               <button
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-cream disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Next
               </button>

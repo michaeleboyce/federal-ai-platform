@@ -5,6 +5,7 @@ import { getAIStats } from '@/lib/ai-db';
 import { getAgencyStats } from '@/lib/agency-db';
 import { getUseCaseStats } from '@/lib/use-case-db';
 import { getIncidentStats } from '@/lib/incident-db';
+import { getHierarchyStats } from '@/lib/hierarchy-db';
 
 interface Product {
   id: string;
@@ -27,6 +28,7 @@ export default async function Home() {
   const agencyStatsData = await getAgencyStats();
   const useCaseStatsData = await getUseCaseStats();
   const incidentStatsData = await getIncidentStats();
+  const hierarchyStatsData = await getHierarchyStats();
 
   // Provide default values if stats are undefined
   const aiStats = aiStatsData || {
@@ -62,6 +64,16 @@ export default async function Home() {
     totalEntities: 0,
     productsLinked: 0,
     useCasesLinked: 0
+  };
+
+  const hierarchyStats = hierarchyStatsData || {
+    totalOrganizations: 0,
+    cfoActAgencies: 0,
+    cabinetDepartments: 0,
+    independentAgencies: 0,
+    subAgencies: 0,
+    offices: 0,
+    maxDepth: 0
   };
 
   // Calculate general stats
@@ -315,7 +327,39 @@ export default async function Home() {
             </p>
           </Link>
 
-          {/* Card 8: All FedRAMP Products */}
+          {/* Card 8: Agency Hierarchy */}
+          <Link
+            href="/agencies"
+            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
+          >
+            <div className="flex items-start justify-between mb-4">
+              <h2 className="font-serif text-2xl font-medium text-charcoal">Agency Hierarchy</h2>
+              <svg className="w-6 h-6 text-ifp-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+              </svg>
+            </div>
+            <div className="space-y-3 mb-4">
+              <div className="flex justify-between items-center">
+                <span className="text-charcoal-500">Organizations</span>
+                <span className="text-3xl font-bold text-charcoal">{hierarchyStats.totalOrganizations}</span>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="text-center p-2 bg-ifp-purple-light rounded">
+                  <div className="text-xl font-bold text-ifp-purple-dark">{hierarchyStats.cfoActAgencies}</div>
+                  <div className="text-xs text-charcoal-500">CFO Act</div>
+                </div>
+                <div className="text-center p-2 bg-charcoal-200 rounded">
+                  <div className="text-xl font-bold text-charcoal-700">{hierarchyStats.subAgencies}</div>
+                  <div className="text-xs text-charcoal-500">Sub-agencies</div>
+                </div>
+              </div>
+            </div>
+            <p className="text-sm text-charcoal-500">
+              Explore the federal government organizational structure
+            </p>
+          </Link>
+
+          {/* Card 9: All FedRAMP Products */}
           <Link
             href="/products"
             className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
@@ -351,7 +395,7 @@ export default async function Home() {
         {/* Quick Links */}
         <div className="bg-charcoal-50 border border-charcoal-200 rounded-lg p-6">
           <h3 className="font-serif text-lg font-medium text-charcoal mb-4">Quick Navigation</h3>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
             <Link
               href="/ai-services"
               className="flex items-center space-x-3 p-3 bg-white rounded-md border border-charcoal-200 hover:border-ifp-purple transition-colors"
@@ -409,6 +453,21 @@ export default async function Home() {
               <div>
                 <div className="font-semibold text-charcoal">Incidents</div>
                 <div className="text-xs text-charcoal-500">AI incident database</div>
+              </div>
+            </Link>
+
+            <Link
+              href="/agencies"
+              className="flex items-center space-x-3 p-3 bg-white rounded-md border border-charcoal-200 hover:border-ifp-purple transition-colors"
+            >
+              <div className="w-10 h-10 bg-ifp-purple-light rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-ifp-purple-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                </svg>
+              </div>
+              <div>
+                <div className="font-semibold text-charcoal">Agencies</div>
+                <div className="text-xs text-charcoal-500">Org hierarchy</div>
               </div>
             </Link>
 

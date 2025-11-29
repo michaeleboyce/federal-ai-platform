@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
   title: "Federal AI Platform",
@@ -21,7 +22,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased bg-cream text-charcoal font-sans">{children}</body>
+      <body className="antialiased bg-cream text-charcoal font-sans">
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }

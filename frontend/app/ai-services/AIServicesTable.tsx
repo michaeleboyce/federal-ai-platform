@@ -138,7 +138,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                 filterType === 'all'
                   ? 'bg-charcoal-700 text-cream border-charcoal-700'
-                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
+                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-cream'
               }`}
             >
               All ({services.length})
@@ -148,7 +148,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                 filterType === 'ai'
                   ? 'bg-ifp-purple text-white border-ifp-purple'
-                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
+                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-cream'
               }`}
             >
               AI/ML ({services.filter((s) => s.has_ai).length})
@@ -158,7 +158,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                 filterType === 'genai'
                   ? 'bg-ifp-orange text-white border-ifp-orange'
-                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
+                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-cream'
               }`}
             >
               GenAI ({services.filter((s) => s.has_genai).length})
@@ -168,7 +168,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors border ${
                 filterType === 'llm'
                   ? 'bg-charcoal-600 text-white border-charcoal-600'
-                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-charcoal-50'
+                  : 'bg-white text-charcoal border-charcoal-300 hover:bg-cream'
               }`}
             >
               LLM ({services.filter((s) => s.has_llm).length})
@@ -213,7 +213,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
       <div className="bg-white rounded-lg border border-charcoal-200 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
-            <thead className="bg-charcoal-100 border-b-2 border-charcoal-200">
+            <thead className="bg-cream-200 border-b-2 border-charcoal-200">
               <tr>
                 <th
                   onClick={() => handleSort('provider_name')}
@@ -296,7 +296,7 @@ export default function AIServicesTable({ services }: { services: AIService[] })
                 <tr
                   key={service.id}
                   onClick={() => router.push(`/product/${service.product_id}`)}
-                  className={`cursor-pointer hover:bg-charcoal-50 hover:border-l-4 hover:border-ifp-purple transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-charcoal-50/30'}`}
+                  className={`cursor-pointer hover:bg-cream hover:border-l-4 hover:border-ifp-purple transition-all ${index % 2 === 0 ? 'bg-white' : 'bg-cream/30'}`}
                 >
                   <td className="px-4 py-3 text-sm text-charcoal">{service.provider_name}</td>
                   <td className="px-4 py-3 text-sm font-medium text-charcoal">
@@ -363,14 +363,14 @@ export default function AIServicesTable({ services }: { services: AIService[] })
               <button
                 onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-cream disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Previous
               </button>
               <button
                 onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
-                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-charcoal-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-white border border-charcoal-300 rounded-md text-sm font-medium text-charcoal hover:bg-cream disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Next
               </button>

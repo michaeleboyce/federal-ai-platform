@@ -1,13 +1,18 @@
 import Link from 'next/link';
 import { getAgencies, getAgencyStats } from '@/lib/agency-db';
+import { getHierarchyWithAgencyUsage } from '@/lib/hierarchy-db';
 import AgencyAITable from './AgencyAITable';
+import AgencyAdoptionOverview from './AgencyAdoptionOverview';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const dynamic = 'force-dynamic';
 
 export default async function AgencyAIUsagePage() {
-  const agenciesData = await getAgencies('staff_llm');
-  const statsData = await getAgencyStats();
+  const [agenciesData, statsData, hierarchy] = await Promise.all([
+    getAgencies('staff_llm'),
+    getAgencyStats(),
+    getHierarchyWithAgencyUsage(),
+  ]);
 
   // Provide default values if data is undefined
   const agencies = agenciesData || [];
@@ -110,8 +115,11 @@ export default async function AgencyAIUsagePage() {
           </div>
         </Link>
 
+        {/* Agency Adoption Overview by Hierarchy */}
+        <AgencyAdoptionOverview hierarchy={hierarchy} agencies={agencies} />
+
         {/* Agencies Table */}
-        <AgencyAITable agencies={agencies} />
+        <AgencyAITable agencies={agencies} hierarchy={hierarchy} />
       </main>
 
       <footer className="bg-charcoal-900 text-cream py-6 mt-12 border-t-4 border-ifp-purple">
