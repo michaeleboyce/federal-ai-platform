@@ -31,12 +31,12 @@ export function HierarchyBreadcrumbs({
           <li className="flex items-center">
             <Link
               href={homeHref}
-              className="flex items-center gap-1 text-slate-500 hover:text-ai-blue transition-colors"
+              className="flex items-center gap-1 text-charcoal-300 hover:text-cream transition-colors"
             >
               <Home className="w-4 h-4" />
               <span>{homeLabel}</span>
             </Link>
-            <ChevronRight className="w-4 h-4 text-slate-300 mx-1" />
+            <ChevronRight className="w-4 h-4 text-charcoal-400 mx-1" />
           </li>
         )}
 
@@ -47,11 +47,11 @@ export function HierarchyBreadcrumbs({
           return (
             <li key={crumb.id} className="flex items-center">
               {isLast ? (
-                <span className="font-medium text-slate-900">
+                <span className="font-medium text-cream">
                   {crumb.abbreviation ? (
                     <>
                       <span className="font-semibold">{crumb.abbreviation}</span>
-                      <span className="text-slate-500 mx-1">-</span>
+                      <span className="text-charcoal-400 mx-1">-</span>
                       {crumb.name}
                     </>
                   ) : (
@@ -62,11 +62,11 @@ export function HierarchyBreadcrumbs({
                 <>
                   <Link
                     href={`/agencies/${crumb.slug}`}
-                    className="text-slate-500 hover:text-ai-blue transition-colors"
+                    className="text-charcoal-300 hover:text-cream transition-colors"
                   >
                     {crumb.abbreviation || crumb.name}
                   </Link>
-                  <ChevronRight className="w-4 h-4 text-slate-300 mx-1" />
+                  <ChevronRight className="w-4 h-4 text-charcoal-400 mx-1" />
                 </>
               )}
             </li>
