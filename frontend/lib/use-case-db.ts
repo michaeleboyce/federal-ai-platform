@@ -221,10 +221,37 @@ export async function getUseCasesByDomain(domain: string): Promise<UseCase[]> {
 }
 
 /**
- * Get all use cases for a specific organization by ID
+ * Get all use cases for a specific organization by ID, name, or abbreviation.
+ * Uses a fallback strategy:
+ * 1. Match by organizationId FK (for properly linked records)
+ * 2. Match by agency name (case-insensitive partial match)
+ * 3. Match by agencyAbbreviation (exact match)
  */
-export async function getUseCasesByOrganization(organizationId: number): Promise<UseCase[]> {
-  return getUseCases({ organizationId });
+export async function getUseCasesByOrganization(
+  organizationId: number,
+  orgName: string,
+  orgAbbreviation?: string | null
+): Promise<UseCase[]> {
+  const conditions: SQL[] = [];
+
+  // Try organizationId FK match
+  conditions.push(eq(aiUseCases.organizationId, organizationId));
+
+  // Fallback: match by agency name (case-insensitive)
+  conditions.push(ilike(aiUseCases.agency, `%${orgName}%`));
+
+  // Fallback: match by abbreviation
+  if (orgAbbreviation) {
+    conditions.push(eq(aiUseCases.agencyAbbreviation, orgAbbreviation));
+  }
+
+  const results = await db
+    .select()
+    .from(aiUseCases)
+    .where(or(...conditions))
+    .orderBy(aiUseCases.useCaseName);
+
+  return results;
 }
 
 /**

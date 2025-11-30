@@ -78,7 +78,7 @@ export default async function AgencyDetailPage({
     getParent(org.id),
     getDescendants(org.id),
     getOrganizationAIAuthorizations(org.id),
-    getUseCasesByOrganization(org.id),
+    getUseCasesByOrganization(org.id, org.name, org.abbreviation),
     getProfileByOrganizationId(org.id),
     getIncidentsByAgencyName(org.name, org.abbreviation),
   ]);
