@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 
@@ -25,6 +27,8 @@ export default function RootLayout({
       <body className="antialiased bg-cream text-charcoal font-sans">
         <Navigation />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
