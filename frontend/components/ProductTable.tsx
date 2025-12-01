@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 interface Product {
@@ -16,9 +16,13 @@ interface Product {
   service_desc: string;
   all_others: string[];
   auth_date: string;
+  authorization_count: number;
+  hasAi: boolean;
+  hasGenai: boolean;
+  hasLlm: boolean;
 }
 
-type SortField = 'csp' | 'cso' | 'status' | 'auth_date' | 'services';
+type SortField = 'csp' | 'cso' | 'status' | 'auth_date' | 'services' | 'agencies';
 type SortDirection = 'asc' | 'desc';
 
 export default function ProductTable({ products }: { products: Product[] }) {
@@ -31,6 +35,88 @@ export default function ProductTable({ products }: { products: Product[] }) {
   const [itemsPerPage, setItemsPerPage] = useState(50);
   const [currentPage, setCurrentPage] = useState(1);
   const [isInitialized, setIsInitialized] = useState(false);
+  const [exportOpen, setExportOpen] = useState(false);
+  const exportRef = useRef<HTMLDivElement>(null);
+
+  // Close export dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (exportRef.current && !exportRef.current.contains(event.target as Node)) {
+        setExportOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Export function
+  function downloadFile(content: string, filename: string) {
+    // UTF-8 BOM for Excel compatibility
+    const BOM = '\uFEFF';
+    const blob = new Blob([BOM + content], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  function exportProducts(filter: 'all' | 'ai' | 'llm') {
+    const today = new Date().toISOString().split('T')[0];
+    let exportData = products;
+    let filename = `fedramp-products-all-${today}.csv`;
+
+    if (filter === 'ai') {
+      exportData = products.filter(p => p.hasAi);
+      filename = `fedramp-products-ai-ml-${today}.csv`;
+    } else if (filter === 'llm') {
+      exportData = products.filter(p => p.hasLlm);
+      filename = `fedramp-products-llm-${today}.csv`;
+    }
+
+    const headers = [
+      'FedRAMP ID',
+      'Provider',
+      'Offering',
+      'Status',
+      'Service Model',
+      'Impact Level',
+      'Services',
+      'Agencies',
+      'Auth Date',
+      'Has AI',
+      'Has GenAI',
+      'Has LLM',
+    ];
+
+    const rows = exportData.map(p => [
+      p.id,
+      p.csp,
+      p.cso,
+      p.status,
+      Array.isArray(p.service_model) ? p.service_model.join('; ') : p.service_model || '',
+      Array.isArray(p.impact_level) ? p.impact_level.join('; ') : p.impact_level || '',
+      Array.isArray(p.all_others) ? p.all_others.join('; ') : '',
+      p.authorization_count?.toString() || '0',
+      p.auth_date || '',
+      p.hasAi ? 'Yes' : 'No',
+      p.hasGenai ? 'Yes' : 'No',
+      p.hasLlm ? 'Yes' : 'No',
+    ]);
+
+    const csvContent = [
+      headers.join(','),
+      ...rows.map(row => row.map(cell => `"${(cell || '').replace(/"/g, '""')}"`).join(',')),
+    ].join('\n');
+
+    downloadFile(csvContent, filename);
+    setExportOpen(false);
+  }
+
+  // Calculate AI counts for display
+  const aiCount = products.filter(p => p.hasAi).length;
+  const llmCount = products.filter(p => p.hasLlm).length;
 
   // Initialize state from URL on mount
   useEffect(() => {
@@ -118,6 +204,10 @@ export default function ProductTable({ products }: { products: Product[] }) {
           aValue = a.all_others?.length || 0;
           bValue = b.all_others?.length || 0;
           break;
+        case 'agencies':
+          aValue = a.authorization_count || 0;
+          bValue = b.authorization_count || 0;
+          break;
         default:
           return 0;
       }
@@ -171,7 +261,7 @@ export default function ProductTable({ products }: { products: Product[] }) {
               className="w-full px-4 py-2 border border-charcoal-300 rounded-md focus:ring-2 focus:ring-ifp-purple focus:border-transparent"
             />
           </div>
-          <div className="flex items-end">
+          <div className="flex items-end gap-2">
             <select
               value={itemsPerPage}
               onChange={(e) => {
@@ -185,6 +275,47 @@ export default function ProductTable({ products }: { products: Product[] }) {
               <option value={100}>100 per page</option>
               <option value={999999}>All</option>
             </select>
+
+            {/* Export Dropdown */}
+            <div className="relative" ref={exportRef}>
+              <button
+                onClick={() => setExportOpen(!exportOpen)}
+                className="px-4 py-2 bg-ifp-purple text-white rounded-md hover:bg-ifp-purple-dark transition-colors flex items-center gap-2"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Export
+                <svg className={`w-4 h-4 transition-transform ${exportOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {exportOpen && (
+                <div className="absolute right-0 mt-2 w-56 bg-white border border-charcoal-200 rounded-lg shadow-lg z-50">
+                  <button
+                    onClick={() => exportProducts('all')}
+                    className="w-full px-4 py-3 text-left hover:bg-cream transition-colors border-b border-charcoal-100"
+                  >
+                    <div className="font-medium text-charcoal">All Products</div>
+                    <div className="text-xs text-charcoal-500">{products.length} products</div>
+                  </button>
+                  <button
+                    onClick={() => exportProducts('ai')}
+                    className="w-full px-4 py-3 text-left hover:bg-cream transition-colors border-b border-charcoal-100"
+                  >
+                    <div className="font-medium text-charcoal">AI/ML Products</div>
+                    <div className="text-xs text-charcoal-500">{aiCount} products with AI capabilities</div>
+                  </button>
+                  <button
+                    onClick={() => exportProducts('llm')}
+                    className="w-full px-4 py-3 text-left hover:bg-cream transition-colors rounded-b-lg"
+                  >
+                    <div className="font-medium text-charcoal">LLM Products</div>
+                    <div className="text-xs text-charcoal-500">{llmCount} products with LLM capabilities</div>
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         <div className="mt-3 text-sm text-charcoal-500">
@@ -245,6 +376,19 @@ export default function ProductTable({ products }: { products: Product[] }) {
                   </div>
                 </th>
                 <th
+                  onClick={() => handleSort('agencies')}
+                  className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
+                >
+                  <div className="flex items-center space-x-1">
+                    <span>Agencies</span>
+                    {sortField === 'agencies' && (
+                      <span className="text-ifp-purple">
+                        {sortDirection === 'asc' ? '↑' : '↓'}
+                      </span>
+                    )}
+                  </div>
+                </th>
+                <th
                   onClick={() => handleSort('auth_date')}
                   className="px-4 py-3 text-left text-sm font-semibold text-charcoal cursor-pointer hover:bg-charcoal-200 transition-colors"
                 >
@@ -292,6 +436,15 @@ export default function ProductTable({ products }: { products: Product[] }) {
                       </span>
                     ) : (
                       <span className="text-charcoal-400">N/A</span>
+                    )}
+                  </td>
+                  <td className="px-4 py-3 text-sm">
+                    {product.authorization_count > 0 ? (
+                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-ifp-purple-light text-ifp-purple-dark">
+                        {product.authorization_count} agencies
+                      </span>
+                    ) : (
+                      <span className="text-charcoal-400">0</span>
                     )}
                   </td>
                   <td className="px-4 py-3 text-sm text-charcoal-500">

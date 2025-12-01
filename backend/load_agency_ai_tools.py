@@ -14,9 +14,10 @@ from psycopg2.extras import execute_values
 import pandas as pd
 from typing import Optional
 
-# Database connection
-DATABASE_URL = os.environ.get('DATABASE_URL',
-    'postgresql://neondb_owner:npg_cs0yhB2pztYU@ep-frosty-art-ah7kkpfj-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require')
+# Database connection - must be set via environment variable
+DATABASE_URL = os.environ.get('DATABASE_URL')
+if not DATABASE_URL:
+    raise ValueError("DATABASE_URL environment variable is required")
 
 # Excel file path
 EXCEL_FILE = '/Users/michaelboyce/Documents/Jobs/IFP/all-generative-ai-chatbots.xlsx'

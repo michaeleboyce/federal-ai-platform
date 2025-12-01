@@ -29,6 +29,11 @@ export interface ToolStats {
   noneIdentified: number;
   agenciesWithTools: number;
   agenciesWithoutTools: number;
+  // Solution type stats
+  customBuilt: number;
+  commercial: number;
+  hybrid: number;
+  internalDataAllowed: number;
 }
 
 export interface DepartmentAggregation {
@@ -195,6 +200,11 @@ export async function getToolStats(): Promise<ToolStats> {
       codingAssistant: sql<number>`sum(case when ${agencyAiTools.productType} = 'coding_assistant' then 1 else 0 end)::int`.as('coding_assistant'),
       documentAutomation: sql<number>`sum(case when ${agencyAiTools.productType} = 'document_automation' then 1 else 0 end)::int`.as('document_automation'),
       noneIdentified: sql<number>`sum(case when ${agencyAiTools.productType} = 'none_identified' then 1 else 0 end)::int`.as('none_identified'),
+      // Solution type stats
+      customBuilt: sql<number>`sum(case when ${agencyAiTools.solutionType} = 'custom' then 1 else 0 end)::int`.as('custom_built'),
+      commercial: sql<number>`sum(case when ${agencyAiTools.solutionType} = 'commercial' then 1 else 0 end)::int`.as('commercial'),
+      hybrid: sql<number>`sum(case when ${agencyAiTools.solutionType} = 'hybrid' then 1 else 0 end)::int`.as('hybrid'),
+      internalDataAllowed: sql<number>`sum(case when lower(${agencyAiTools.internalOrSensitiveData}) = 'yes' then 1 else 0 end)::int`.as('internal_data_allowed'),
     })
     .from(agencyAiTools);
 
@@ -213,6 +223,11 @@ export async function getToolStats(): Promise<ToolStats> {
     noneIdentified: statsResult[0]?.noneIdentified || 0,
     agenciesWithTools: agencyStats[0]?.agenciesWithTools || 0,
     agenciesWithoutTools: agencyStats[0]?.agenciesWithoutTools || 0,
+    // Solution type stats
+    customBuilt: statsResult[0]?.customBuilt || 0,
+    commercial: statsResult[0]?.commercial || 0,
+    hybrid: statsResult[0]?.hybrid || 0,
+    internalDataAllowed: statsResult[0]?.internalDataAllowed || 0,
   };
 }
 

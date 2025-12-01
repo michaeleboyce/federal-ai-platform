@@ -122,11 +122,7 @@ Each repository provides comprehensive CRUD operations:
 **Provider:** Neon PostgreSQL
 **Driver:** `@neondatabase/serverless` (HTTP)
 **ORM:** Drizzle ORM v0.36.4
-**Configuration:** `frontend/.env.local`
-
-```typescript
-DATABASE_URL="postgresql://neondb_owner:...@ep-frosty-art-ah7kkpfj-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-```
+**Configuration:** Set DATABASE_URL in `frontend/.env.local`
 
 ---
 

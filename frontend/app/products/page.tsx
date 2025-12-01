@@ -17,6 +17,10 @@ interface Product {
   service_desc: string;
   all_others: string[];
   auth_date: string;
+  authorization_count: number;
+  hasAi: boolean;
+  hasGenai: boolean;
+  hasLlm: boolean;
 }
 
 async function getProducts() {
@@ -34,6 +38,10 @@ async function getProducts() {
     service_desc: p.serviceDescription || '',
     all_others: p.aiServices || [],
     auth_date: p.fedrampAuthorizationDate || '',
+    authorization_count: p.authorizationCount || 0,
+    hasAi: p.hasAi || false,
+    hasGenai: p.hasGenai || false,
+    hasLlm: p.hasLlm || false,
   })) as Product[];
 }
 

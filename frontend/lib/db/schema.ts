@@ -268,13 +268,27 @@ export const aiServiceAnalysis = pgTable(
     providerName: text('provider_name').notNull(),
     serviceName: text('service_name').notNull(),
 
-    // AI classification flags
+    // AI classification flags (original, now editable)
     hasAi: boolean('has_ai').default(false).notNull(),
     hasGenai: boolean('has_genai').default(false).notNull(),
     hasLlm: boolean('has_llm').default(false).notNull(),
 
     // Analysis results
     relevantExcerpt: text('relevant_excerpt'),
+
+    // Expanded AI capability flags
+    hasChatbot: boolean('has_chatbot').default(false).notNull(),
+    hasCodingAssistant: boolean('has_coding_assistant').default(false).notNull(),
+    hasImageGeneration: boolean('has_image_generation').default(false).notNull(),
+    hasDocumentAnalysis: boolean('has_document_analysis').default(false).notNull(),
+    hasSpeechToText: boolean('has_speech_to_text').default(false).notNull(),
+    hasTranslation: boolean('has_translation').default(false).notNull(),
+    hasAiSearch: boolean('has_ai_search').default(false).notNull(),
+
+    // Admin metadata
+    adminNotes: text('admin_notes'),
+    customDescription: text('custom_description'),
+    reviewedAt: timestamp('reviewed_at', { withTimezone: true }),
 
     // FedRAMP metadata
     fedrampStatus: text('fedramp_status'),
@@ -413,6 +427,13 @@ export const deploymentStatusEnum = pgEnum('deployment_status', [
   'no_public_internal_assistant',
 ]);
 
+export const solutionTypeEnum = pgEnum('solution_type', [
+  'custom',
+  'commercial',
+  'hybrid',
+  'unknown',
+]);
+
 /**
  * Agency AI Profiles - One row per agency
  * Links to federal_organizations for hierarchy support
@@ -484,6 +505,9 @@ export const agencyAiTools = pgTable(
     // Data sensitivity
     internalOrSensitiveData: text('internal_or_sensitive_data'),
 
+    // Solution type (custom-built vs commercial)
+    solutionType: solutionTypeEnum('solution_type').default('unknown'),
+
     // Citation/source information
     citationChicago: text('citation_chicago'),
     citationAccessedDate: text('citation_accessed_date'),
@@ -510,6 +534,7 @@ export type NewAgencyAiTool = typeof agencyAiTools.$inferInsert;
 
 export type ProductType = 'staff_chatbot' | 'coding_assistant' | 'document_automation' | 'none_identified';
 export type DeploymentStatus = 'all_staff' | 'pilot_or_limited' | 'no_public_internal_assistant';
+export type SolutionType = 'custom' | 'commercial' | 'hybrid' | 'unknown';
 
 // ========================================
 // AI INCIDENT TABLES

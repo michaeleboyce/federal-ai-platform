@@ -3,7 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import ProductAuthorizations from '@/components/ProductAuthorizations';
 import { getProductRelatedIncidents, type SemanticIncidentMatch } from '@/lib/incident-db';
+import {
+  getProductAuthorizationsGrouped,
+  getProductAuthorizationCount,
+} from '@/lib/product-authorizations-db';
 
 interface Product {
   id: string;
@@ -51,6 +56,12 @@ export default async function ProductPage({
 
   // Get related incidents using hybrid matching
   const relatedIncidents = await getProductRelatedIncidents(id, 10);
+
+  // Get product authorizations (which agencies authorized this product)
+  const [authorizationsGrouped, authorizationCount] = await Promise.all([
+    getProductAuthorizationsGrouped(id),
+    getProductAuthorizationCount(id),
+  ]);
 
   return (
     <div className="min-h-screen bg-cream">
@@ -120,6 +131,12 @@ export default async function ProductPage({
             <p className="text-charcoal-600 leading-relaxed">{product.service_desc}</p>
           </div>
         )}
+
+        {/* Agency Authorizations */}
+        <ProductAuthorizations
+          authorizations={authorizationsGrouped}
+          totalCount={authorizationCount}
+        />
 
         {/* All Services - This is the key section showing Amazon Bedrock etc. */}
         {product.all_others && product.all_others.length > 0 && (

@@ -190,11 +190,7 @@ data/
 
 **Provider:** Neon PostgreSQL
 **Location:** `.env.local` (frontend) and root `.env.local`
-**Connection String:** Already configured
-
-```bash
-DATABASE_URL="postgresql://neondb_owner:...@ep-frosty-art-ah7kkpfj-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-```
+**Connection String:** Set via DATABASE_URL environment variable
 
 ---
 

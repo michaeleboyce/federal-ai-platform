@@ -167,7 +167,6 @@ export default function ToolsHierarchyView({ profiles, stats }: ToolsHierarchyVi
       'Parent Abbreviation',
       'Tool Name',
       'Tool Type',
-      'Solution Type',
       'Available to All Staff',
       'Is Pilot',
       'Internal Data Allowed',
@@ -194,7 +193,6 @@ export default function ToolsHierarchyView({ profiles, stats }: ToolsHierarchyVi
           '',
           '',
           '',
-          '',
         ]);
       } else {
         for (const tool of profile.tools) {
@@ -203,11 +201,6 @@ export default function ToolsHierarchyView({ profiles, stats }: ToolsHierarchyVi
             : tool.productType === 'document_automation' ? 'Document Automation'
             : 'None Identified';
 
-          const solutionLabel = tool.solutionType === 'custom' ? 'Custom Built'
-            : tool.solutionType === 'commercial' ? 'Commercial'
-            : tool.solutionType === 'hybrid' ? 'Hybrid'
-            : '';
-
           rows.push([
             profile.agencyName || '',
             profile.abbreviation || '',
@@ -215,7 +208,6 @@ export default function ToolsHierarchyView({ profiles, stats }: ToolsHierarchyVi
             profile.parentAbbreviation || '',
             tool.productName || '',
             typeLabel,
-            solutionLabel,
             tool.availableToAllStaff === 'yes' ? 'Yes'
               : tool.availableToAllStaff === 'subset' ? 'Subset'
               : tool.availableToAllStaff === 'no' ? 'No' : '',

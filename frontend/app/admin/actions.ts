@@ -16,8 +16,11 @@ import {
   createTool,
   updateTool,
   deleteTool,
+  getAllFederalOrgsWithProfileStatus,
+  createProfileFromOrg,
   type AgencyProfileWithTools,
   type ToolStats,
+  type FederalOrgWithProfileStatus,
 } from '@/lib/agency-tools-db';
 import type { ProductType } from '@/lib/db/schema';
 
@@ -218,5 +221,37 @@ export async function deleteToolAction(
   } catch (error) {
     console.error('Error deleting tool:', error);
     return { success: false, error: 'Failed to delete tool' };
+  }
+}
+
+// ========================================
+// FEDERAL ORGANIZATIONS ACTIONS
+// ========================================
+
+export async function getAllFederalOrgsAction(): Promise<FederalOrgWithProfileStatus[]> {
+  const isAuth = await checkAdminSession();
+  if (!isAuth) {
+    throw new Error('Unauthorized');
+  }
+  return await getAllFederalOrgsWithProfileStatus();
+}
+
+export async function createProfileFromOrgAction(
+  orgId: number
+): Promise<{ success: boolean; profileId?: number; error?: string }> {
+  const isAuth = await checkAdminSession();
+  if (!isAuth) {
+    return { success: false, error: 'Unauthorized' };
+  }
+
+  try {
+    const profile = await createProfileFromOrg(orgId);
+    revalidatePath('/admin');
+    revalidatePath('/agency-ai-usage');
+    return { success: true, profileId: profile.id };
+  } catch (error) {
+    console.error('Error creating profile from org:', error);
+    const message = error instanceof Error ? error.message : 'Failed to create profile';
+    return { success: false, error: message };
   }
 }

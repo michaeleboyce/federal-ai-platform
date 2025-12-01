@@ -1,5 +1,5 @@
 import { checkAdminSession } from '@/lib/admin-auth';
-import { getProfilesWithTools, getToolStats } from '@/lib/agency-tools-db';
+import { getProfilesWithTools, getToolStats, getAllFederalOrgsWithProfileStatus } from '@/lib/agency-tools-db';
 import AdminLoginForm from './AdminLoginForm';
 import AdminPanel from './AdminPanel';
 
@@ -12,10 +12,17 @@ export default async function AdminPage() {
     return <AdminLoginForm />;
   }
 
-  const [profiles, stats] = await Promise.all([
+  const [profiles, stats, federalOrgs] = await Promise.all([
     getProfilesWithTools(),
     getToolStats(),
+    getAllFederalOrgsWithProfileStatus(),
   ]);
 
-  return <AdminPanel initialProfiles={profiles} initialStats={stats} />;
+  return (
+    <AdminPanel
+      initialProfiles={profiles}
+      initialStats={stats}
+      initialFederalOrgs={federalOrgs}
+    />
+  );
 }

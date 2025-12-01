@@ -33,10 +33,19 @@ export async function getAllProductsWithServiceCounts() {
       COALESCE(
         ARRAY_AGG(DISTINCT a.impact_level) FILTER (WHERE a.impact_level IS NOT NULL),
         ARRAY[]::text[]
-      ) as impact_levels
+      ) as impact_levels,
+      COALESCE(pa_counts.auth_count, 0)::int as authorization_count,
+      COALESCE(BOOL_OR(a.has_ai), false) as has_ai,
+      COALESCE(BOOL_OR(a.has_genai), false) as has_genai,
+      COALESCE(BOOL_OR(a.has_llm), false) as has_llm
     FROM products p
     LEFT JOIN ai_service_analysis a ON p.fedramp_id = a.product_id
-    GROUP BY p.id
+    LEFT JOIN (
+      SELECT fedramp_id, COUNT(*)::int as auth_count
+      FROM product_authorizations
+      GROUP BY fedramp_id
+    ) pa_counts ON p.fedramp_id = pa_counts.fedramp_id
+    GROUP BY p.id, pa_counts.auth_count
     ORDER BY p.cloud_service_provider ASC
   `);
 
@@ -65,6 +74,10 @@ export async function getAllProductsWithServiceCounts() {
     aiServiceCount: row.ai_service_count as number,
     aiServices: (row.ai_services as string[]) || [],
     impactLevels: (row.impact_levels as string[]) || [],
+    authorizationCount: row.authorization_count as number,
+    hasAi: row.has_ai as boolean,
+    hasGenai: row.has_genai as boolean,
+    hasLlm: row.has_llm as boolean,
   }));
 }
 
