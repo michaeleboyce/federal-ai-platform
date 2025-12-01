@@ -36,7 +36,7 @@ export default async function AgencyAIUsagePage() {
           <h2 className="font-serif text-xl font-medium text-charcoal mb-4">
             AI Adoption Statistics
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-4">
             <div className="bg-white p-4 rounded-lg border-l-4 border-charcoal-600">
               <div className="text-2xl font-semibold text-charcoal">{profiles.length}</div>
               <div className="text-sm text-charcoal-500">Agencies Tracked</div>
@@ -66,6 +66,7 @@ export default async function AgencyAIUsagePage() {
               <div className="text-sm text-charcoal-500">Total Tools</div>
             </div>
           </div>
+
         </div>
 
         {/* Info Panel */}

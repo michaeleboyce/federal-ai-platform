@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { ChevronDown, ChevronRight, ExternalLink, List, Network, ChevronsUpDown } from 'lucide-react';
+import { ChevronDown, ChevronRight, ExternalLink, List, Network, ChevronsUpDown, Download } from 'lucide-react';
 import type { AgencyProfileWithTools, ToolStats } from '@/lib/agency-tools-db';
 import type { ProductType, AgencyAiTool } from '@/lib/db/schema';
 import ToolsFilterBar from './ToolsFilterBar';
@@ -39,6 +39,335 @@ export default function ToolsHierarchyView({ profiles, stats }: ToolsHierarchyVi
   const [expandedDepts, setExpandedDepts] = useState<Set<string>>(new Set(initialExpanded));
   const [expandedAgencies, setExpandedAgencies] = useState<Set<number>>(new Set());
   const [viewMode, setViewMode] = useState<ViewMode>(initialView);
+  const [exportMenuOpen, setExportMenuOpen] = useState(false);
+  const exportMenuRef = useRef<HTMLDivElement>(null);
+
+  // Close export menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (exportMenuRef.current && !exportMenuRef.current.contains(event.target as Node)) {
+        setExportMenuOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Helper function to download file
+  function downloadFile(content: string, filename: string) {
+    // Add BOM for Excel to recognize UTF-8 encoding
+    const BOM = '\uFEFF';
+    const blob = new Blob([BOM + content], { type: 'text/csv;charset=utf-8' });
+
+    // Create a temporary anchor element
+    const link = document.createElement('a');
+    link.style.display = 'none';
+
+    // Use the File API for better filename support
+    const file = new File([blob], filename, { type: 'text/csv;charset=utf-8' });
+    link.href = URL.createObjectURL(file);
+    link.setAttribute('download', filename);
+
+    document.body.appendChild(link);
+    link.click();
+
+    // Cleanup
+    setTimeout(() => {
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+    }, 100);
+  }
+
+  // Export Summary: One row per agency with aggregated tool info
+  function exportSummary() {
+    const headers = [
+      'Agency Name',
+      'Abbreviation',
+      'Parent Agency',
+      'Parent Abbreviation',
+      'Has Chatbot',
+      'Chatbot All Staff',
+      'Chatbot Pilot',
+      'Chatbot Source',
+      'Chatbot Source URL',
+      'Has Coding Assistant',
+      'Coding All Staff',
+      'Coding Pilot',
+      'Coding Source',
+      'Coding Source URL',
+    ];
+
+    const rows = profiles.map(profile => {
+      const chatbots = profile.tools.filter(t => t.productType === 'staff_chatbot');
+      const codingTools = profile.tools.filter(t => t.productType === 'coding_assistant');
+
+      const hasChatbot = chatbots.length > 0;
+      const hasCoding = codingTools.length > 0;
+
+      // For chatbot fields
+      const chatbotAllStaff = chatbots.length > 0
+        ? (chatbots.some(t => t.availableToAllStaff === 'yes') ? 'Yes' :
+           chatbots.some(t => t.availableToAllStaff === 'subset') ? 'Subset' : 'No')
+        : '';
+      const chatbotPilot = chatbots.some(t => t.isPilotOrLimited) ? 'Yes' : (hasChatbot ? 'No' : '');
+      const chatbotSource = chatbots.length > 0 ? (chatbots[0].citationChicago || '') : '';
+      const chatbotUrl = chatbots.length > 0 ? (chatbots[0].citationUrl || '') : '';
+
+      // For coding assistant fields
+      const codingAllStaff = codingTools.length > 0
+        ? (codingTools.some(t => t.availableToAllStaff === 'yes') ? 'Yes' :
+           codingTools.some(t => t.availableToAllStaff === 'subset') ? 'Subset' : 'No')
+        : '';
+      const codingPilot = codingTools.some(t => t.isPilotOrLimited) ? 'Yes' : (hasCoding ? 'No' : '');
+      const codingSource = codingTools.length > 0 ? (codingTools[0].citationChicago || '') : '';
+      const codingUrl = codingTools.length > 0 ? (codingTools[0].citationUrl || '') : '';
+
+      return [
+        profile.agencyName || '',
+        profile.abbreviation || '',
+        profile.departmentLevelName || '',
+        profile.parentAbbreviation || '',
+        hasChatbot ? 'Yes' : 'No',
+        chatbotAllStaff,
+        chatbotPilot,
+        chatbotSource,
+        chatbotUrl,
+        hasCoding ? 'Yes' : 'No',
+        codingAllStaff,
+        codingPilot,
+        codingSource,
+        codingUrl,
+      ];
+    });
+
+    // Build CSV content
+    const escapeCell = (cell: string) => {
+      if (cell.includes(',') || cell.includes('\n') || cell.includes('"')) {
+        return `"${cell.replace(/"/g, '""')}"`;
+      }
+      return cell;
+    };
+
+    const csvContent = [
+      headers.join(','),
+      ...rows.map(row => row.map(escapeCell).join(',')),
+    ].join('\n');
+
+    const today = new Date().toISOString().split('T')[0];
+    downloadFile(csvContent, `Agency-AI-Adoption-Summary-${today}.csv`);
+    setExportMenuOpen(false);
+  }
+
+  // Export Detailed: One row per tool
+  function exportDetailed() {
+    const headers = [
+      'Agency Name',
+      'Abbreviation',
+      'Parent Agency',
+      'Parent Abbreviation',
+      'Tool Name',
+      'Tool Type',
+      'Solution Type',
+      'Available to All Staff',
+      'Is Pilot',
+      'Internal Data Allowed',
+      'Source Citation',
+      'Source URL',
+      'Accessed Date',
+    ];
+
+    const rows: string[][] = [];
+
+    for (const profile of profiles) {
+      if (profile.tools.length === 0) {
+        // Include agencies with no tools
+        rows.push([
+          profile.agencyName || '',
+          profile.abbreviation || '',
+          profile.departmentLevelName || '',
+          profile.parentAbbreviation || '',
+          '',
+          'None Identified',
+          '',
+          '',
+          '',
+          '',
+          '',
+          '',
+          '',
+        ]);
+      } else {
+        for (const tool of profile.tools) {
+          const typeLabel = tool.productType === 'staff_chatbot' ? 'Chatbot'
+            : tool.productType === 'coding_assistant' ? 'Coding Assistant'
+            : tool.productType === 'document_automation' ? 'Document Automation'
+            : 'None Identified';
+
+          const solutionLabel = tool.solutionType === 'custom' ? 'Custom Built'
+            : tool.solutionType === 'commercial' ? 'Commercial'
+            : tool.solutionType === 'hybrid' ? 'Hybrid'
+            : '';
+
+          rows.push([
+            profile.agencyName || '',
+            profile.abbreviation || '',
+            profile.departmentLevelName || '',
+            profile.parentAbbreviation || '',
+            tool.productName || '',
+            typeLabel,
+            solutionLabel,
+            tool.availableToAllStaff === 'yes' ? 'Yes'
+              : tool.availableToAllStaff === 'subset' ? 'Subset'
+              : tool.availableToAllStaff === 'no' ? 'No' : '',
+            tool.isPilotOrLimited ? 'Yes' : 'No',
+            tool.internalOrSensitiveData || '',
+            tool.citationChicago || '',
+            tool.citationUrl || '',
+            tool.citationAccessedDate || '',
+          ]);
+        }
+      }
+    }
+
+    // Build CSV content
+    const escapeCell = (cell: string) => {
+      if (cell.includes(',') || cell.includes('\n') || cell.includes('"')) {
+        return `"${cell.replace(/"/g, '""')}"`;
+      }
+      return cell;
+    };
+
+    const csvContent = [
+      headers.join(','),
+      ...rows.map(row => row.map(escapeCell).join(',')),
+    ].join('\n');
+
+    const today = new Date().toISOString().split('T')[0];
+    downloadFile(csvContent, `Agency-AI-Adoption-Detailed-${today}.csv`);
+    setExportMenuOpen(false);
+  }
+
+  // Export Hierarchical: Organized by parent department with sub-agencies indented
+  function exportHierarchical() {
+    const headers = [
+      'Department/Agency',
+      'Sub-Agency',
+      'Abbreviation',
+      'Chatbot Status',
+      'Chatbot Tool',
+      'Chatbot Source URL',
+      'Coding Assistant Status',
+      'Coding Tool',
+      'Coding Source URL',
+    ];
+
+    // Helper to determine tool status: Agency-Wide, Partial Rollout, Pilot, or empty
+    const getToolStatus = (tools: AgencyAiTool[]) => {
+      if (tools.length === 0) return '';
+
+      // Check for pilot first
+      const hasPilot = tools.some(t => t.isPilotOrLimited);
+      const hasAgencyWide = tools.some(t => t.availableToAllStaff === 'yes');
+      const hasPartial = tools.some(t => t.availableToAllStaff === 'subset');
+
+      if (hasPilot && !hasAgencyWide && !hasPartial) {
+        return 'Pilot';
+      } else if (hasAgencyWide) {
+        return 'Agency-Wide';
+      } else if (hasPartial) {
+        return 'Partial Rollout';
+      } else if (hasPilot) {
+        return 'Pilot';
+      }
+      return 'Yes'; // Has tool but status unclear
+    };
+
+    // Group profiles by their root department
+    const deptMap = new Map<string, AgencyProfileWithTools[]>();
+
+    for (const profile of profiles) {
+      const deptName = profile.departmentLevelName || profile.agencyName || 'Other';
+      const existing = deptMap.get(deptName) || [];
+      existing.push(profile);
+      deptMap.set(deptName, existing);
+    }
+
+    // Sort departments by name
+    const sortedDepts = Array.from(deptMap.entries()).sort((a, b) => a[0].localeCompare(b[0]));
+
+    const rows: string[][] = [];
+
+    for (const [deptName, deptProfiles] of sortedDepts) {
+      // Find the department-level profile (no parent) and sub-agencies (have parent)
+      const deptProfile = deptProfiles.find(p => !p.parentAbbreviation &&
+        (p.departmentLevelName === deptName || p.agencyName === deptName));
+      const subAgencies = deptProfiles.filter(p => p.parentAbbreviation);
+      const standaloneAgencies = deptProfiles.filter(p => !p.parentAbbreviation && p !== deptProfile);
+
+      // Helper to build tool data columns (compressed)
+      const buildToolColumns = (profile: AgencyProfileWithTools) => {
+        const chatbots = profile.tools.filter(t => t.productType === 'staff_chatbot');
+        const codingTools = profile.tools.filter(t => t.productType === 'coding_assistant');
+
+        return [
+          getToolStatus(chatbots),
+          chatbots.length > 0 ? (chatbots[0].productName || '') : '',
+          chatbots.length > 0 ? (chatbots[0].citationUrl || '') : '',
+          getToolStatus(codingTools),
+          codingTools.length > 0 ? (codingTools[0].productName || '') : '',
+          codingTools.length > 0 ? (codingTools[0].citationUrl || '') : '',
+        ];
+      };
+
+      // Add department row first
+      if (deptProfile) {
+        rows.push([
+          deptName,
+          '', // Sub-agency column empty for department
+          deptProfile.abbreviation || '',
+          ...buildToolColumns(deptProfile),
+        ]);
+      } else {
+        // Department header row without its own profile
+        rows.push([
+          deptName,
+          '',
+          '',
+          '', '', '', '', '', '', // Empty tool columns
+        ]);
+      }
+
+      // Add sub-agencies (indented - agency column blank, sub-agency filled)
+      const allSubAgencies = [...standaloneAgencies, ...subAgencies];
+      allSubAgencies.sort((a, b) => (a.agencyName || '').localeCompare(b.agencyName || ''));
+
+      for (const subAgency of allSubAgencies) {
+        rows.push([
+          '', // Department column empty for sub-agencies
+          subAgency.agencyName || '',
+          subAgency.abbreviation || '',
+          ...buildToolColumns(subAgency),
+        ]);
+      }
+    }
+
+    // Build CSV content
+    const escapeCell = (cell: string) => {
+      if (cell.includes(',') || cell.includes('\n') || cell.includes('"')) {
+        return `"${cell.replace(/"/g, '""')}"`;
+      }
+      return cell;
+    };
+
+    const csvContent = [
+      headers.join(','),
+      ...rows.map(row => row.map(escapeCell).join(',')),
+    ].join('\n');
+
+    const today = new Date().toISOString().split('T')[0];
+    downloadFile(csvContent, `Agency-AI-Adoption-Hierarchical-${today}.csv`);
+    setExportMenuOpen(false);
+  }
 
   // Filter profiles based on selected type
   const filteredProfiles = useMemo(() => {
@@ -264,6 +593,46 @@ export default function ToolsHierarchyView({ profiles, stats }: ToolsHierarchyVi
                 : (allAgenciesExpanded ? 'Collapse All' : 'Expand All')
               }
             </button>
+
+            {/* Export Dropdown */}
+            <div className="relative" ref={exportMenuRef}>
+              <button
+                onClick={() => setExportMenuOpen(!exportMenuOpen)}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded text-sm font-medium bg-ifp-purple text-white hover:bg-ifp-purple-dark transition-colors"
+                title="Export data to Excel"
+              >
+                <Download className="w-4 h-4" />
+                Export
+                <ChevronDown className={`w-4 h-4 transition-transform ${exportMenuOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {exportMenuOpen && (
+                <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-charcoal-200 z-50">
+                  <div className="py-1">
+                    <button
+                      onClick={exportSummary}
+                      className="w-full text-left px-4 py-2 text-sm text-charcoal hover:bg-cream transition-colors"
+                    >
+                      <div className="font-medium">Summary Export</div>
+                      <div className="text-xs text-charcoal-500">One row per agency</div>
+                    </button>
+                    <button
+                      onClick={exportDetailed}
+                      className="w-full text-left px-4 py-2 text-sm text-charcoal hover:bg-cream transition-colors"
+                    >
+                      <div className="font-medium">Detailed Export</div>
+                      <div className="text-xs text-charcoal-500">One row per tool</div>
+                    </button>
+                    <button
+                      onClick={exportHierarchical}
+                      className="w-full text-left px-4 py-2 text-sm text-charcoal hover:bg-cream transition-colors"
+                    >
+                      <div className="font-medium">Hierarchical Export</div>
+                      <div className="text-xs text-charcoal-500">By department with sub-agencies</div>
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         <ToolsFilterBar
@@ -513,6 +882,20 @@ function ToolRow({ tool, indent = false }: { tool: AgencyAiTool; indent?: boolea
           </span>
         )}
 
+        {tool.availableToAllStaff === 'subset' && (
+          <span className="px-2 py-0.5 text-xs bg-blue-100 text-blue-700 rounded-full">
+            Partial Rollout
+          </span>
+        )}
+
+        <SolutionTypeBadge type={tool.solutionType} />
+
+        {tool.internalOrSensitiveData && tool.internalOrSensitiveData.toLowerCase() === 'yes' && (
+          <span className="px-2 py-0.5 text-xs bg-red-100 text-red-700 rounded-full" title="Can be used with internal/sensitive data">
+            Internal Data OK
+          </span>
+        )}
+
         {tool.citationUrl && (
           <button
             onClick={() => setShowCitation(!showCitation)}
@@ -564,6 +947,24 @@ function ProductTypeBadge({ type }: { type: ProductType }) {
   };
 
   const { label, bg, text } = config[type] || config.none_identified;
+
+  return (
+    <span className={`px-2 py-0.5 text-xs ${bg} ${text} rounded-full font-medium`}>
+      {label}
+    </span>
+  );
+}
+
+function SolutionTypeBadge({ type }: { type: string | null | undefined }) {
+  if (!type || type === 'unknown') return null;
+
+  const config: Record<string, { label: string; bg: string; text: string }> = {
+    custom: { label: 'Custom Built', bg: 'bg-indigo-100', text: 'text-indigo-700' },
+    commercial: { label: 'Commercial', bg: 'bg-teal-100', text: 'text-teal-700' },
+    hybrid: { label: 'Hybrid', bg: 'bg-amber-100', text: 'text-amber-700' },
+  };
+
+  const { label, bg, text } = config[type] || { label: type, bg: 'bg-charcoal-100', text: 'text-charcoal-500' };
 
   return (
     <span className={`px-2 py-0.5 text-xs ${bg} ${text} rounded-full font-medium`}>

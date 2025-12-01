@@ -1,11 +1,10 @@
-import fs from 'fs';
-import path from 'path';
 import Link from 'next/link';
 import { getAIStats } from '@/lib/ai-db';
 import { getAgencyStats } from '@/lib/agency-db';
 import { getUseCaseStats } from '@/lib/use-case-db';
 import { getIncidentStats } from '@/lib/incident-db';
 import { getHierarchyStats } from '@/lib/hierarchy-db';
+import { getAllProductsWithServiceCounts } from '@/lib/db';
 
 interface Product {
   id: string;
@@ -17,9 +16,15 @@ interface Product {
 }
 
 async function getProducts() {
-  const jsonPath = path.join(process.cwd(), '..', 'data', 'fedramp_products.json');
-  const data = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-  return data.data.Products as Product[];
+  const dbProducts = await getAllProductsWithServiceCounts();
+  return dbProducts.map(p => ({
+    id: p.fedrampId,
+    csp: p.cloudServiceProvider || '',
+    cso: p.cloudServiceOffering || '',
+    status: p.status || '',
+    all_others: p.aiServices || [],
+    auth_date: p.fedrampAuthorizationDate || '',
+  })) as Product[];
 }
 
 export default async function Home() {
@@ -44,6 +49,8 @@ export default async function Home() {
     total_agencies: 0,
     agencies_with_llm: 0,
     agencies_with_coding: 0,
+    agencies_custom_solution: 0,
+    agencies_commercial_solution: 0,
     high_confidence_matches: 0
   };
 
@@ -77,7 +84,7 @@ export default async function Home() {
   };
 
   // Calculate general stats
-  const activeProducts = products.filter((p) => p.status === 'Active').length;
+  const activeProducts = products.filter((p) => p.status === 'FedRAMP Authorized').length;
   const totalServices = products.reduce((acc, p) => acc + (p.all_others?.length || 0), 0);
   const uniqueProviders = new Set(products.map((p) => p.csp)).size;
 
@@ -299,35 +306,7 @@ export default async function Home() {
             </p>
           </Link>
 
-          {/* Card 7: Solution Types */}
-          <Link
-            href="/agency-ai-usage"
-            className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
-          >
-            <div className="flex items-start justify-between mb-4">
-              <h2 className="font-serif text-2xl font-medium text-charcoal">Solution Approaches</h2>
-              <svg className="w-6 h-6 text-charcoal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
-              </svg>
-            </div>
-            <div className="space-y-3 mb-4">
-              <div className="grid grid-cols-2 gap-2">
-                <div className="text-center p-2 bg-charcoal-100 rounded">
-                  <div className="text-xl font-bold text-charcoal-700">{agencyStats.agencies_custom_solution}</div>
-                  <div className="text-xs text-charcoal-500">Custom</div>
-                </div>
-                <div className="text-center p-2 bg-status-success-light rounded">
-                  <div className="text-xl font-bold text-status-success-dark">{agencyStats.agencies_commercial_solution}</div>
-                  <div className="text-xs text-charcoal-500">Commercial</div>
-                </div>
-              </div>
-            </div>
-            <p className="text-sm text-charcoal-500">
-              Mix of custom-built and commercial AI solutions
-            </p>
-          </Link>
-
-          {/* Card 8: Agency Hierarchy */}
+          {/* Card 7: Agency Hierarchy */}
           <Link
             href="/agencies"
             className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
@@ -359,7 +338,7 @@ export default async function Home() {
             </p>
           </Link>
 
-          {/* Card 9: All FedRAMP Products */}
+          {/* Card 8: All FedRAMP Products */}
           <Link
             href="/products"
             className="bg-white border border-charcoal-200 rounded-lg p-6 hover:border-ifp-purple hover:shadow-md transition-all cursor-pointer"
