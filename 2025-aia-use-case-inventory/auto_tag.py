@@ -11,12 +11,56 @@ from difflib import SequenceMatcher
 from db import get_connection
 
 # Keywords for various categorizations
+#
+# LLM_KEYWORDS is the broad match set used elsewhere in the module for
+# `is_generative_ai` heuristics. The LLM-inference function uses a *narrowed*
+# set below so that generic words like "assistant" don't flip non-LLM rows
+# (e.g. a classical-ML "scheduling assistant") into the LLM bucket.
 LLM_KEYWORDS = [
     "copilot", "chatgpt", "claude", "gemini", "gpt-4", "gpt4", "llm",
     "large language model", "chatbot", "generative ai", "genai",
     "conversational ai", "assistant", "bard", "anthropic", "openai",
     "azure openai", "bedrock", "amazon q"
 ]
+
+# Narrowed keyword set used ONLY by infer_llm_flag's blank-classification
+# fallback. These are strong positive signals for generative LLM access.
+# Deliberately excludes "assistant" (too generic), "bedrock" (Textract is on
+# Bedrock too), "azure openai" (handled via product table).
+LLM_FALLBACK_KEYWORDS = [
+    "copilot", "chatgpt", "claude", "gemini", "gpt-4", "gpt4", "gpt-3",
+    "gpt-5", "llm", "large language model", "chatbot", "generative ai",
+    "genai", "bard", "anthropic", "openai", "amazon q", "draft ",
+    "summarize", "summarization",
+]
+
+# Name/problem keywords that indicate a *non-LLM* task (extraction / routing /
+# classical NLP / forecasting / transcription). When ai_classification is
+# blank we treat these as strong negative signals.
+EXTRACTION_ROUTING_BLACKLIST = [
+    "extraction", "extract ", "routing", "sentiment",
+    "topic model", "topic modeling", "anomaly detection",
+    "forecasting", "forecast ", "transcription", "transcribe",
+    "classification of", "classifier ", "ocr", "image recognition",
+    "object detection", "face recognition", "speech recognition",
+]
+
+# Regex patterns against ai_classification source field.
+_CLASSICAL_RE = re.compile(
+    r"classical|predictive|computer vision|traditional ml|statistical",
+    re.IGNORECASE,
+)
+_GENERATIVE_RE = re.compile(
+    r"generative|large language|^\s*llm\b|\bllm\s",
+    re.IGNORECASE,
+)
+# Named-LLM override: if source classification says "classical" but the row
+# literally names a frontier LLM, treat as LLM.
+_NAMED_LLM_RE = re.compile(
+    r"chatgpt|copilot|\bllm\b|gpt-\d|gemini|\bclaude\b|anthropic|openai|"
+    r"amazon q\b|azure openai|microsoft 365 copilot",
+    re.IGNORECASE,
+)
 
 CODING_KEYWORDS = [
     "github copilot", "codewhisperer", "claude code", "coding assist",
@@ -195,6 +239,62 @@ def _g(row, key, default=""):
     return v if v else default
 
 
+def infer_llm_flag(row, product_id, products_dict):
+    """Decide whether this row should be tagged ``is_general_llm_access=1``.
+
+    Pure function — takes only the row dict plus the products context so the
+    test suite can exercise it without a DB.
+
+    Precedence (see Agent B plan §B.2):
+      1. ai_classification regex-matches classical/predictive/CV/traditional ML
+         -> 0, UNLESS the row is clearly a named-LLM product deployment
+         (vendor product_type='general_llm', or name/problem names a frontier
+         model). The override keeps a mis-classified source row from being
+         dropped.
+      2. ai_classification regex-matches generative/large language/llm -> 1.
+      3. ai_classification blank/unknown -> fallback in order:
+         3a. product_id resolves to products.product_type='general_llm' -> 1.
+         3b. Name+problem text hits EXTRACTION_ROUTING_BLACKLIST -> 0.
+         3c. Name+problem text hits LLM_FALLBACK_KEYWORDS -> 1.
+         3d. Otherwise -> 0.
+    """
+    ai_class = normalize(_g(row, "ai_classification"))
+    name_prob = normalize(
+        _g(row, "use_case_name") + " " + _g(row, "problem_statement")
+    )
+    vendor = normalize(_g(row, "vendor_name"))
+
+    prod = products_dict.get(product_id, {}) if product_id else {}
+    product_is_general_llm = prod.get("product_type") == "general_llm"
+
+    # Rule 1: strong non-LLM source signal.
+    if ai_class and _CLASSICAL_RE.search(ai_class):
+        # Override: named LLM product wins over a misclassified source field.
+        if product_is_general_llm:
+            return 1
+        if _NAMED_LLM_RE.search(name_prob) or _NAMED_LLM_RE.search(vendor):
+            return 1
+        return 0
+
+    # Rule 2: strong LLM source signal.
+    if ai_class and _GENERATIVE_RE.search(ai_class):
+        return 1
+
+    # Rule 3: fallback when source classification is blank/unknown.
+    # 3a: product is a general_llm.
+    if product_is_general_llm:
+        return 1
+    # 3b: extraction / routing / classical-NLP negative signal.
+    if any(kw in name_prob for kw in EXTRACTION_ROUTING_BLACKLIST):
+        return 0
+    # 3c: narrowed LLM keyword list.
+    haystack = name_prob + " " + vendor
+    if any(kw in haystack for kw in LLM_FALLBACK_KEYWORDS):
+        return 1
+    # 3d: default negative.
+    return 0
+
+
 def infer_ai_sophistication(row, product_id, products_dict):
     """Classify sophistication level."""
     ai_class = normalize(_g(row, "ai_classification"))
@@ -360,7 +460,18 @@ def tag_use_case(row, agency_abbr, aliases_dict, templates, products_dict, is_co
     else:
         scope, scope_detail = infer_scope(row, row.get("bureau_component", ""), agency_abbr)
 
-    is_llm = 1 if ai_soph in ("general_llm", "coding_assistant", "agentic") else 0
+    # is_general_llm_access is computed by the dedicated inference function so
+    # the precedence rules (source ai_classification as strong signal, product
+    # fallback for blank classification, extraction/routing blacklist) stay
+    # testable in isolation. See Agent B plan §B.2. Consolidated rows piggy-
+    # back on ai_sophistication since they lack an ai_classification column.
+    if is_consolidated:
+        is_llm = 1 if ai_soph in ("general_llm", "coding_assistant", "agentic") else 0
+    else:
+        is_llm = infer_llm_flag(row, product_id, products_dict)
+        # Coding assistants and agentic are still LLM-tier tools.
+        if not is_llm and ai_soph in ("coding_assistant", "agentic"):
+            is_llm = 1
     is_coding = 1 if ai_soph == "coding_assistant" or keyword_any(search_text, CODING_KEYWORDS) else 0
     is_genai = 1 if prod.get("is_generative_ai") or keyword_any(search_text, LLM_KEYWORDS + AGENTIC_KEYWORDS) else 0
     is_frontier = 1 if prod.get("canonical_name") in FRONTIER_LLMS else 0
