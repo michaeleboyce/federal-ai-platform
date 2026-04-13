@@ -1,0 +1,37 @@
+{
+  "snapshot_date": "2026-04-12",
+  "notes": "Baseline counts captured before remediation pipeline. All counts taken via sqlite3 directly against data/federal_ai_inventory_2025.db.",
+  "use_cases_total": 3616,
+  "consolidated_use_cases_total": 192,
+  "use_case_id_null": 2567,
+  "use_case_id_recoverable_from_raw_json": 2007,
+  "llm_false_positives_confirmed": 88,
+  "llm_false_positives_breakdown": {
+    "classical_ml": 63,
+    "computer_vision": 25
+  },
+  "llm_tagged_with_blank_classification": 102,
+  "custom_system_with_vendor_name": 750,
+  "custom_system_by_agency_top10": {
+    "HHS": 122,
+    "Treasury": 117,
+    "DOJ": 115,
+    "DOE": 107,
+    "DHS": 85,
+    "USDA": 33,
+    "State": 22,
+    "DOL": 21,
+    "DOI": 15,
+    "SSA": 13
+  },
+  "enterprise_wide_consolidated": 111,
+  "enterprise_wide_agency_uses_split": {
+    "Y": 75,
+    "N": 29,
+    "NULL": 7
+  },
+  "rag_pipeline_tagged": 279,
+  "agentic_workflow_tagged": 164,
+  "architecture_unknown": 2183,
+  "product_id_null_on_use_cases": 3143
+}
