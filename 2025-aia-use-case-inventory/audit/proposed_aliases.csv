@@ -1,1 +1,163 @@
 product_id,proposed_alias,source_use_case_id,llm_reasoning
+847,FLIR 280 HD,Teledyne FLIR,FLIR 280 HD,high,"Names FLIR 280 HD, a Teledyne FLIR thermal imaging camera not in canonical list."
+848,Acoustic Signature AI for Gunshot Detection,Invariant Corporation,Invariant Corporation  Acoustic Signature AI for Gunshot Detection,high,Names Invariant Corporation's Acoustic Signature AI for gunshot detection.
+849,Clearview AI,Clearview AI,Clearview AI Traveler Verification System,high,Names Clearview AI facial recognition.
+850,ThruWave NII 3D Imaging Tool,ThruWave,ThruWave  Non-Intrusive Inspection (NII) 3D Imaging Tool,high,Names ThruWave millimeter wave 3D imaging tool.
+851,Ideation ReadyAI,Ideation,Ideation ReadyAI,high,Names Ideation ReadyAI chatbot platform.
+852,LIGER Generative AI Toolkit,"LMI Consulting, LLC","LMI Consulting, LLC  LIGER Generative AI Toolkit",high,Names LMI Consulting's LIGER Generative AI Toolkit.
+853,Babel Street Babel,Babel Street,Babel Street Babel Street Babel,high,Names Babel Street's Babel platform.
+854,ThruVision TAC 16,ThruVision,ThruVision TAC 16 Passive Body Scanner,high,Names ThruVision TAC 16 passive body scanner.
+924,Illumio,Illumio,Illumio,high,"Names CrowdStrike and Splunk explicitly; Illumio, AttackIQ, Cofense, Polarity not in canonical list."
+931,Okta Adaptive MFA,Okta,Okta,high,Names Okta AdaptiveMFA with integrations to CrowdStrike and Microsoft Defender.
+1116,Lookout,Lookout,Lookout,high,"Names CrowdStrike, Zscaler, Splunk, Palo Alto Networks; Lookout and Cisco Secure Network Analytics not canonical."
+1473,ServiceNow IT Operations Management (ITOM) Predictive AIOps,ServiceNow,ServiceNow IT Operations Management (ITOM) Predictive AIOps,medium,ServiceNow ITOM Predictive AIOps; closest canonical match is ServiceNow Now Assist.
+1475,Tenable,Tenable,Tenable,medium,"ServiceNow Vulnerability Response with Tenable; ServiceNow product, Tenable not in canonical list."
+857,NEC NeoFace,NEC,NEC,high,NEC facial recognition vendor; Traveler Verification Service is internal CBP system. NEC not canonical.
+858,NEC NeoFace,NEC,NEC,high,NEC facial recognition vendor; TVS internal CBP system. NEC not in canonical list.
+859,NEC NeoFace,NEC,NEC (algorithm only),high,NEC algorithm for facial recognition in TVS; NEC not in canonical list.
+860,NEC NeoFace,NEC,NEC,high,NEC facial recognition for TVS vetting; NEC not canonical.
+861,NexisXplore,LexisNexis,NexisXplore,high,NexisXplore open source/social media analysis tool; not in canonical list.
+862,TRM Labs,TRM Labs,TRM Labs,high,TRM Labs cryptocurrency analysis tool; not in canonical list.
+863,Traffic Jam,Marinus Analytics,Marinus Analytics Traffic Jam,high,Marinus Analytics Traffic Jam; not in canonical list.
+864,iProov,iProov,IProov,high,iProov liveness detection used by CBP Link; not in canonical list.
+865,Rekor,Rekor,Rekor,high,Rekor license plate recognition for TECS Mod; not in canonical list.
+866,NEC NeoFace,NEC,NEC,high,NEC facial comparison for Mobile Fortify; NEC not canonical.
+868,NEC NeoFace,NEC,NEC (Nippon Electric Company),high,NEC (Nippon Electric Company) facial recognition for TVS; not canonical.
+873,AIS Resume Screening,AIS,AIS,high,AIS resume screening tool; not in canonical list.
+874,NEC NeoFace,NEC,NEC,high,NEC facial recognition third-party vendor for Mobile Fortify; NEC not canonical.
+875,Motorola License Plate Recognition,Motorola,Motorola,high,Motorola license plate capture and analysis; not in canonical list.
+877,Low-Pfa Screening Algorithm,Leidos / Rohde & Schwarz,"Leidos, Rohde & Schwarz  Low Probability of False Alarm (Low-Pfa) Algorithm",high,Leidos/Rohde & Schwarz Low-Pfa screening algorithm; not in canonical list.
+878,Credential Authentication Technology (CAT-2/AutoCAT),IDEMIA Identity & Security USA,"IDEMIA Identity, Security USA LLC STIP/CAT Credential Authentication Technology with Camera System (CAT-2) and AutoCAT",high,IDEMIA STIP/CAT credential authentication; not in canonical list.
+879,CBP Traveler Verification Service (TVS),NEC,"CBP TVS, NEC Algorithm CBP TVS PreCheck Touchless Identity Solution",high,NEC TVS PreCheck identity solution; not in canonical list.
+880,Text Analytics Sentence Similarity Model,Inadev,Inadev Text Analytics Text Analytics Data Science Sentence Similarity Model,high,Inadev custom text analytics model; not in canonical list.
+881,ARGOS (Automated Real-Time Global Organization Specialist),IBM,IBM ARGOS (Automated Real-Time Global Organization Specialist),high,IBM ARGOS sentiment analysis tool; not in canonical list.
+882,Verification Information System (VIS),IBM,IBM Verification Information System,high,IBM Verification Information System; not in canonical list.
+883,Customer Profile Management System / IDENT Facial Recognition,Pluribus Digital,Pluribus Digital Customer Profile Management System I-765 - USCIS Facial Recognition through IDENT,high,Pluribus Digital Customer Profile Management/IDENT facial recognition; not in canonical list.
+884,Person Centric Identity Services (PCIS),MetroIBR,MetroIBR Person Centric Identity Services,high,MetroIBR Person Centric Identity Services; not in canonical list.
+885,Automated Biometric Identification System (IDENT/OBIM),NEC,NEC Automated Biometric Identification System (IDENT),high,NEC IDENT/OBIM biometric system; not in canonical list.
+886,Advanced Trade Analytics Platform (ATAP),Elder Research / DevTech / Guidehouse,"Elder Research Inc, DevTech Systems Inc., Guidehouse ATAP The Advanced Trade Analytics Platform (ATAP)",high,Elder Research/DevTech/Guidehouse ATAP; not in canonical list.
+887,Dataminr,Dataminr,Dataminr Dataminr Public Information Compilation for Travel Threat Analysis,high,Dataminr OSINT platform; not in canonical list.
+888,Airship Outpost / TECS Cloud,Airship,Airship TECS CLOUD Airship Outpost for Conveyance Identification,high,Airship TECS Cloud / Outpost; not in canonical list.
+889,Skydio X2D,Skydio,Skydio and Xtender Skydio X2D,high,Skydio X2D drone; not in canonical list.
+890,Altana Atlas,Altana,Altana  Entity Resolution,high,Altana entity resolution platform; not in canonical list.
+891,Traveler Verification Service (TVS),NEC,NEC Traveler Verification Service,high,NEC Traveler Verification Service; not in canonical list.
+892,PDRI Exam Proctor Support,PDRI,PDRI  Customs Broker License Exam - Proctor Support,high,PDRI proctor support; not in canonical list.
+893,Autonomous Surveillance Tower,Anduril,Anduril Autonomous Surveillance Towers,high,Anduril Autonomous Surveillance Towers; not in canonical list.
+894,Matroid I4 Viewer,Matroid,Matroid I4 Viewer,high,Matroid I4 Viewer; not in canonical list.
+895,JHU APL Vessel Detection System,Johns Hopkins APL,JHU APL  Vessel Detection,high,JHU APL custom vessel detection; not in canonical list.
+896,Traveler Verification Service (TVS),NEC,NEC Traveler Verification Service,high,NEC Traveler Verification Service; not in canonical list.
+897,KESTREL,Maxar,Maxar KESTREL Aircraft Landing Location Predictor (KESTREL),high,Maxar KESTREL platform; not in canonical list.
+898,Automated Targeting System (ATS),ManTech,ManTech Automated Targeting System (ATS),high,ManTech Automated Targeting System (ATS); not in canonical list.
+899,Automated Targeting System (ATS),ManTech,ManTech Automated Targeting System (ATS),high,ManTech ATS Trade Entity Risk Model; same ATS product proposal.
+900,Repository for Analytics in a Virtualized Environment (RAVEn),Sandia National Laboratories,Sandia National Laboratories Repository for Analytics in a Virtualized Environment,high,Sandia RAVEn analytics environment; not in canonical list.
+901,RAVEn Translation and Transcription,Booz Allen Hamilton,"Booz Allen Repository for Analytics in a Virtualized Environment, Translation and Transcription",high,Booz Allen RAVEn translation/transcription; not in canonical list.
+902,CaseGuard,CaseGuard,Case Guard  AI-Assisted Audio/Video Redaction,high,CaseGuard redaction tool; not in canonical list.
+904,Altana Atlas,Altana,Altana  Entity Resolution for Global Trade Data,high,Altana platform for global trade; not in canonical list.
+905,TRM Labs Blockchain Analysis Platform,TRM Labs,TRM Labs  Blockchain Analysis,high,TRM Labs blockchain analysis platform; not in canonical list.
+906,Palantir Federal Cloud Service,Palantir,Palantir Palantir Federal Cloud Service,high,Palantir Federal Cloud Service; not in canonical list.
+907,SmartLINK (ISAP IV),BI Incorporated,BI ISAP IV (SmartLink) IATSS Biometric Check-in for ATD-ISAP (SmartLINK),high,BI ISAP IV / SmartLINK biometric check-in; not in canonical list.
+908,Vetting Identities for an Enterprise Workforce (VIEW/CVAS),CANDA Solutions,CANDA Solutions Vetting Identities for an Enterprise Workforce,high,CANDA Solutions VIEW/CVAS UEBA tool; not in canonical list.
+909,Biometrics Enrollment Tool (BET),Pluribus Digital,Pluribus Digital Biometrics Enrollment Tool,high,Pluribus Digital Biometrics Enrollment Tool; not in canonical list.
+910,Electronic Immigration System (ELIS),SAIC / DV United,SAIC and DV United ELIS,high,SAIC/DV United ELIS system; not in canonical list.
+911,Electronic Immigration System (ELIS),SAIC / DV United,SAIC and DV United ELIS,high,SAIC/DV United ELIS card photo validation; same ELIS product.
+912,Lasso Security,Lasso Security,Lasso ESS AI Security and Monitoring,high,Lasso Security ESS for AI security; not in canonical list.
+913,Gurucul UEBA,Gurucul,Gurucul ESS User Entity and Behavior Analytics (UEBA),high,Gurucul UEBA platform; not in canonical list.
+914,Person Centric Identity Services (PCIS),MetroIBR,MetroIBR Person Centric Identity Services,high,MetroIBR PCIS information compilation check; same PCIS product.
+915,Salesforce Einstein,Salesforce,Salesforce Einstein C2RMT,high,Salesforce Einstein C2RMT chatbot; not in canonical list.
+916,Medallia,Medallia,Medallia MASS,high,Medallia MASS experience analytics; not in canonical list.
+917,Starlo Position Description Tool,Starlo / Deloitte,Starlo and Deloitte  Position Description Generation and Evaluation,high,Starlo + Deloitte custom PD generation; not in canonical list.
+919,Recorded Future,Recorded Future,Recorded Future  Cyber Threat Analysis (Recorded Future),high,Recorded Future threat intelligence platform; not in canonical list.
+921,Trusted Automated eXchange of Indicator Information (TAXII) Server,Nightwing Intelligence Solutions,"Nightwing Intelligence Solutions, LLC. Trusted Automated eXchange of Indicator Information server",high,Nightwing TAXII server for PII detection; not in canonical list.
+923,UiPath Enterprise RPA,UiPath,UiPath; Microsoft; Apryse; Personable Inc. Enterprise Robotic Process Automation,high,UiPath/Apryse/Personable IDP; UiPath not canonical.
+925,Palantir Case Management & Analytics (CMA),Palantir,Palantir Case Management & Analytics (CMA),high,Palantir Case Management & Analytics (CMA); not in canonical list.
+926,Cellebrite Media Classifier,Cellebrite,Cellebrite  Media Classifier for Computer and Digital Storage Evidence,high,Cellebrite digital media classifier; not in canonical list.
+927,Palantir Case Management & Analytics (CMA),Palantir,Palantir Case Management & Analytics (CMA),high,Palantir CMA AI developer tools; same Palantir CMA proposal.
+928,Penlink,Penlink,Penlink,high,Penlink and Fivecast are OSINT tools; neither in canonical. Proposing Penlink as primary.
+929,RAVEn (Repository for Analytics in a Virtualized Environment),Booz Allen,Booz Allen Repository for Analytics in a Virtualized Environment,medium,Booz Allen Repository for Analytics in a Virtualized Environment (RAVEn) is custom; no canonical match.
+930,Microsoft Dynamics 365,Microsoft,Microsoft Dynamics Online,high,Microsoft Dynamics Online named; not in canonical list.
+932,Dataminr First Alert,Dataminr,First Alert/Dataminr,high,First Alert/Dataminr named; not in canonical.
+933,idiCORE,LexisNexis Risk Solutions,idiCORE,high,idiCORE named; not in canonical list.
+934,Sprinklr,Sprinklr,Sprinklr,high,Sprinklr named as vendor; not in canonical list.
+935,LexisNexis Risk Solutions,LexisNexis,REX DBA Lexis Nexis,medium,LexisNexis identity verification; closest canonical match is Lexis+ AI though may be different product.
+936,SITE Intelligence Group,SITE,SITE Group Subscription Services,high,SITE Group Subscription Services named; not in canonical.
+937,ELIS Evidence Classifier Service,SAIC / DV United,SAIC and DV United ELIS,medium,SAIC/DV United ELIS custom-built service; no canonical match.
+938,Hyperscience,Hyperscience,Hyperscience - IDP software,high,Hyperscience IDP software named; not in canonical list.
+941,Amped Software,Amped Software,Amped,high,Amped (Amped Software for image forensics) named; not in canonical.
+943,Vectra AI,Vectra Networks,Vectra Networks,high,Vectra Networks named; not in canonical list.
+944,PassiveLogic,PassiveLogic,PassiveLogic,high,PassiveLogic named; not in canonical list.
+951,Boston Dynamics Spot,Boston Dynamics,Boston Dynamics,high,Boston Dynamics Spot robot named; not in canonical list.
+952,Microsoft Power Platform,Microsoft,Microsoft Power Platform,high,Microsoft Power Platform / Power Apps / Power Automate named; not in canonical list.
+953,Skillsoft Percipio CAISY,Skillsoft,SKILLSOFT PERCIPIO/CAISY,high,Skillsoft Percipio/CAISY named; not in canonical.
+954,EnerGPT,DOE / Accenture Federal Services,EnerGPT,medium,EnerGPT is custom DOE tool; no canonical match.
+955,AWS Lex,Amazon,Lex Natural Language Interface,high,AWS Lex named; not in canonical list.
+956,Scopus AI,Elsevier,Scopus AI,high,Scopus AI named; not in canonical list.
+957,EnerGPT,DOE / Accenture Federal Services,EnerGPT,high,EnerGPT custom DOE tool on Google Cloud Platform; no canonical product match.
+962,Yurts AI,Legion (formerly Yurts),Legion (Previously Yurts),high,Yurts AI (now Legion) named; not in canonical list.
+966,Boston Dynamics Spot,Boston Dynamics,Boston Dynamics Spot Robotics,high,Boston Dynamics Spot robotics named; not in canonical list.
+967,Palantir,Palantir,Palantir Decision and Analytics Platform (DNA-P),high,Palantir Decision and Analytics Platform named; not in canonical list.
+968,Microsoft Bing,Microsoft,Microsoft Bing Service,high,Microsoft Bing (with AI) named; not in canonical list.
+969,Articulate 360 AI Assistant,Articulate,Ariculate 360 AI Assistant,high,Articulate 360 AI Assistant named; not in canonical list.
+970,Microsoft Azure Quantum Elements,Microsoft,Microsoft Azure Quantum Elements,high,Microsoft Azure Quantum Elements named; not in canonical list.
+972,Visual Studio Enterprise,Microsoft,Visual Studio Enterprise,high,Visual Studio Enterprise named; not in canonical list.
+974,Microsoft OneNote,Microsoft,Microsoft OneNote,high,Microsoft OneNote named; not in canonical list.
+976,C3 AI,C3.ai,C3.AI,high,C3.AI named; not in canonical list.
+978,Microsoft AI Builder,Microsoft,AI Builder Document Scraping,high,Microsoft AI Builder named; not in canonical list.
+979,Microsoft Azure Authoring Tools,Microsoft,Microsoft Azure Authoring Tools,high,Microsoft Azure Authoring Tools named; not in canonical list.
+983,Apple Intelligence,Apple,Apple Intelligence,high,Apple Intelligence is a commercial product not in canonical list.
+984,Microsoft ScreenSketch,Microsoft,Microsoft ScreenSketch,high,"Microsoft ScreenSketch screenshot tool, not a distinct canonical AI product."
+987,Microsoft Project,Microsoft,Microsoft Project,high,"Microsoft Project management tool, not a canonical AI product."
+988,HeyGen,HeyGen,HeyGen,high,"HeyGen AI avatar video platform, not in canonical list."
+990,CrewAI,CrewAI,CrewAI,high,CrewAI agent orchestration platform not in canonical list.
+991,Google Chrome Generative AI,Google,Google Chrome Generative AI,high,"Google Chrome Generative AI feature, not a canonical distinct product."
+992,Google Cloud Platform,Google,Google Cloud Platform,medium,PWS Builder is custom app built on Google Cloud Platform; GCP not in canonical list.
+994,Tabnine,Tabnine,Tabnine AI Pair Programmer,high,Tabnine AI pair programmer not in canonical list.
+995,Elastic Stack (ELK),Elastic,Elastic Stack Technology (ELK),high,"Elastic Stack (ELK) search tool, not in canonical list."
+998,Google Cloud Platform,Google,Google Cloud Platform,high,EnerGPT Canvas is custom DOE app on Google Cloud Platform.
+1001,Raytheon Multimedia Monitoring System (M3S),Raytheon BBN Technologies,Raytheon Multimedia Monitoring System (M3S),high,Raytheon Multimedia Monitoring System (M3S) not in canonical list.
+1002,Google Agentspace,Google,Google Agentspace / NotebookLM,high,Google Agentspace and NotebookLM not in canonical list.
+1003,SpyglassGPT,Microsoft,SpyglassGPT Chat Assistant,high,"SpyglassGPT is custom Microsoft-hosted chat assistant, not canonical."
+1005,OpenText Axcelerate,OpenText,OpenText Axcelerate AI and natural-language powered search,high,OpenText Axcelerate AI search platform not in canonical list.
+1007,Grok,xAI,xAI Grok Pilot,high,xAI Grok LLM not in canonical list.
+1008,Microsoft Search in Bing,Microsoft,Microsoft Search in Bing,high,Microsoft Search in Bing not in canonical list.
+1014,Visual Studio,Microsoft,Visual Studio Community,high,"Visual Studio Community IDE, not a canonical AI product."
+1015,Microsoft OneDrive,Microsoft,Microsoft OneDrive,high,"Microsoft OneDrive file storage, not a canonical AI product."
+1016,QuantomVision,QuantomVision,QuantomVision,medium,QuantomVision uses OpenAI; OpenAI API canonical id 93 matches vendor Open AI.
+1017,Tesseract OCR,Open Source,Tesseract,medium,Tesseract OCR used for georeferencing; not in canonical list.
+1018,Microsoft Discovery,Microsoft,Microsoft Discovery,high,Microsoft Discovery R&D product not in canonical list.
+1019,Microsoft 365,Microsoft,Microsoft 365,high,Microsoft 365 productivity suite not matching any canonical product directly (M365 Copilot distinct).
+1021,PEST,Open Source,PEST,high,"PEST is groundwater modeling software, generic capability."
+1024,OpenText Decisiv,OpenText,OpenText Decisiv,high,"OpenText Decisiv records management tool, not in canonical list."
+1026,Microsoft OneDrive,Microsoft,Microsoft OneDrive MUI,high,"Microsoft OneDrive MUI (multilingual UI), not canonical AI product."
+1027,LISA Chatbot,AWS,LISA Chatbot Pilot,medium,LISA Chatbot custom AWS-based pilot; no canonical AWS LLM product named.
+1031,Microsoft AI Builder,Microsoft,Microsoft AI Builder,high,Microsoft AI Builder not in canonical list; propose new product.
+1032,LexisNexis,LexisNexis,LexisNexis,high,"LexisNexis legal search, not Lexis+ AI specifically; propose LexisNexis search product."
+1033,Microsoft 365 Apps for Enterprise,Microsoft,Microsoft 365 Apps for Enterprise,high,Microsoft 365 Apps for Enterprise (Office suite) distinct from Copilot; propose new product.
+1034,Tabnine,Tabnine,Tabnine,high,Tabnine coding assistant named; not in canonical list.
+1036,Microsoft Outlook,Microsoft,Microsoft Outlook MUI,high,"Microsoft Outlook MUI - email client, not in canonical list."
+1039,Microsoft Edge,Microsoft,Microsoft Edge,high,Microsoft Edge browser; not in canonical list.
+1041,SQL Server Management Studio,Microsoft,SQL Server Management Studio,high,SQL Server Management Studio named; propose new product.
+1042,Microsoft Exchange Server,Microsoft,Microsoft Exchange Server,high,Microsoft Exchange Server named; propose new product.
+1044,Microsoft Skype,Microsoft,Microsoft Skype App,high,Microsoft Skype App named; propose new product.
+1046,Palantir Decision and Analytics Platform (DNA-P),Palantir,Palantir Decision and Analytics Platform (DNA-P),high,Palantir DNA-P platform named; not in canonical list.
+1047,Chatlab,Unknown,Chatlab,medium,'Chatlab' named but vendor unclear; propose with unknown vendor.
+1049,Microsoft OneNote,Microsoft,Microsoft OneNote MUI,high,Microsoft OneNote MUI named; propose new product.
+1051,Microsoft PowerPoint,Microsoft,Microsoft PowerPoint MUI,high,Microsoft PowerPoint MUI named; propose new product.
+1053,Salesforce Einstein,Salesforce,Salesforce,high,Salesforce platform named; not in canonical list.
+1054,Microsoft Power BI,Microsoft,Microsoft Power BI Desktop,high,Microsoft Power BI Desktop named; propose new product.
+1055,Microsoft Azure PowerShell,Microsoft,Microsoft Azure PowerShell,high,Microsoft Azure PowerShell named; propose new product.
+1056,IBM Watson,IBM,IBM Watson,high,IBM Watson named; not in canonical list.
+1059,VoiceAtlas,Navteca,VoiceAtlas no-code chatbot framework,high,VoiceAtlas by Navteca named; not in canonical list.
+1060,Google Cloud Vision,Google,Google Cloud Vision,high,Google Cloud Vision named; not in canonical list.
+1061,Google Vertex AI,Google,Google Vertex AI Document workbench,high,Google Vertex AI Document workbench named; not in canonical list.
+1066,Everlaw AI Assistant,"Everlaw, Inc.",Everlaw AI Assistant for Responsive Review,high,Everlaw AI Assistant named; not in canonical list.
+1067,Ultralytics YOLO,Ultralytics,Ultralytics,high,Ultralytics (YOLO) AI framework named; not in canonical list.
+1069,USGS Flow Photo Explorer,Walker Environmental Research LLC,USGS Flow Photo Explorer,high,USGS Flow Photo Explorer by Walker Environmental; propose new product.
+1070,Upstream Tech HydroForecast,Upstream Tech,Piloting Machine Learning Inflow Forecasts Across Reclamation,high,Upstream Tech ML inflow forecasts; propose new product.
+1071,DocketScope,"The Regulatory Group, Inc.",DocketScope,high,DocketScope by The Regulatory Group named; propose new product.
+1072,Quantaero Marine Wildlife AI,Quantaero,AI for Offshore Energy: Innovative Technology Streamlines Marine Wildlife Surveys,high,Quantaero marine wildlife AI; propose new product.
+1073,Microsoft Purview eDiscovery,Microsoft,Microsoft eDiscovery Attorney-Client Privilege Detection,high,Microsoft eDiscovery (Purview) named; not in canonical list.
+1074,Azure AI Vision / Document Intelligence,Microsoft,Azure Computer Vision and Document Intelligence Read,high,Azure Computer Vision and Document Intelligence Read named; propose new product.
+1076,Adobe Creative Cloud Suite,Adobe,Adobe Suite Applications,high,Adobe Suite Applications named; Photoshop (119) and Firefly (118) in canonical but 'Adobe Suite' is broader.
+1077,ARC Travel Intelligence Program,Airlines Reporting Corporation,Airlines Travel Intelligence Program,high,Airlines Reporting Corporation Travel Intelligence Program named; propose new product.
+1078,Airship AI Platform,Airship AI Holdings Inc.,Unmanned Aerial Systems (UAS),high,Airship AI video management platform named; propose new product.
+1079,Alation Data Catalog,Alation,Alation Data Catalog,high,Alation Data Catalog named; propose new product.
