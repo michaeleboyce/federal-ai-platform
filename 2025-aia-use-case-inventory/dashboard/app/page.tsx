@@ -12,6 +12,7 @@ import { MaturityTierCard } from "@/components/maturity-tier-card";
 import { TopProductsChart } from "@/components/charts/top-products-chart";
 import { AgencyTypeChart } from "@/components/charts/agency-type-chart";
 import { Section, Figure, MonoChip } from "@/components/editorial";
+import { buildUseCasesUrl } from "@/lib/urls";
 
 export default function HomePage() {
   const stats = getGlobalStats();
@@ -38,6 +39,30 @@ export default function HomePage() {
     .filter((a) => (a.maturity?.has_coding_assistants ?? 0) === 0)
     .map((a) => ({ id: a.id, abbr: a.abbreviation, name: a.name }))
     .sort((a, b) => a.abbr.localeCompare(b.abbr));
+
+  // Aggregate rollups across agency maturity rows.
+  const reportingAgencies = maturity.length;
+  const totalEntries = stats.total_use_cases + stats.total_consolidated;
+  const agenciesWithEnterpriseLLM = maturity.filter(
+    (a) => (a.maturity?.has_enterprise_llm ?? 0) === 1,
+  ).length;
+  const agenciesWithCoding = maturity.filter(
+    (a) => (a.maturity?.has_coding_assistants ?? 0) === 1,
+  ).length;
+  const agenciesWithAgentic = maturity.filter(
+    (a) => (a.maturity?.has_agentic_ai ?? 0) === 1,
+  ).length;
+  const agenciesWithCustom = maturity.filter(
+    (a) => (a.maturity?.has_custom_ai ?? 0) === 1,
+  ).length;
+  const agenticEntries = maturity.reduce(
+    (acc, row) => acc + (row.maturity?.agentic_ai_count ?? 0),
+    0,
+  );
+  const genAIEntries = stats.total_genai_entries;
+
+  const pct = (n: number, d: number): string =>
+    d === 0 ? "—" : `${Math.round((n / d) * 100)}%`;
 
   const topProductsData = topProducts.map((p) => ({
     id: p.id,
@@ -78,8 +103,19 @@ export default function HomePage() {
                   Aggregate
                 </div>
                 <div className="text-foreground">
-                  {formatNumber(stats.total_use_cases)} uc ·{" "}
-                  {formatNumber(stats.total_consolidated)} cons
+                  <Link
+                    href={buildUseCasesUrl({})}
+                    className="transition-colors hover:text-[var(--stamp)]"
+                  >
+                    {formatNumber(stats.total_use_cases)} uc
+                  </Link>{" "}
+                  ·{" "}
+                  <Link
+                    href={buildUseCasesUrl({})}
+                    className="transition-colors hover:text-[var(--stamp)]"
+                  >
+                    {formatNumber(stats.total_consolidated)} cons
+                  </Link>
                 </div>
               </div>
               <div>
@@ -87,8 +123,13 @@ export default function HomePage() {
                   Coverage
                 </div>
                 <div className="text-foreground">
-                  {stats.total_agencies_with_data}/{stats.total_agencies}{" "}
-                  agencies
+                  <Link
+                    href="/agencies"
+                    className="transition-colors hover:text-[var(--stamp)]"
+                  >
+                    {stats.total_agencies_with_data}/{stats.total_agencies}{" "}
+                    agencies
+                  </Link>
                 </div>
               </div>
               <div>
@@ -96,8 +137,19 @@ export default function HomePage() {
                   Catalogue
                 </div>
                 <div className="text-foreground">
-                  {stats.total_products} products · {stats.total_templates}{" "}
-                  templates
+                  <Link
+                    href="/products"
+                    className="transition-colors hover:text-[var(--stamp)]"
+                  >
+                    {stats.total_products} products
+                  </Link>{" "}
+                  ·{" "}
+                  <Link
+                    href="/templates"
+                    className="transition-colors hover:text-[var(--stamp)]"
+                  >
+                    {stats.total_templates} templates
+                  </Link>
                 </div>
               </div>
             </div>
@@ -147,25 +199,45 @@ export default function HomePage() {
                   <div className="flex items-baseline justify-between gap-3 border-b border-dotted border-border pb-1.5">
                     <dt className="text-muted-foreground">Use cases</dt>
                     <dd className="tabular-nums text-foreground">
-                      {formatNumber(stats.total_use_cases)}
+                      <Link
+                        href={buildUseCasesUrl({})}
+                        className="transition-colors hover:text-[var(--stamp)]"
+                      >
+                        {formatNumber(stats.total_use_cases)}
+                      </Link>
                     </dd>
                   </div>
                   <div className="flex items-baseline justify-between gap-3 border-b border-dotted border-border pb-1.5">
                     <dt className="text-muted-foreground">Agencies</dt>
                     <dd className="tabular-nums text-foreground">
-                      {stats.total_agencies_with_data}
+                      <Link
+                        href="/agencies"
+                        className="transition-colors hover:text-[var(--stamp)]"
+                      >
+                        {stats.total_agencies_with_data}
+                      </Link>
                     </dd>
                   </div>
                   <div className="flex items-baseline justify-between gap-3 border-b border-dotted border-border pb-1.5">
                     <dt className="text-muted-foreground">Products</dt>
                     <dd className="tabular-nums text-foreground">
-                      {distinctProducts}
+                      <Link
+                        href="/products"
+                        className="transition-colors hover:text-[var(--stamp)]"
+                      >
+                        {distinctProducts}
+                      </Link>
                     </dd>
                   </div>
                   <div className="flex items-baseline justify-between gap-3">
                     <dt className="text-muted-foreground">Coding entries</dt>
                     <dd className="tabular-nums text-foreground">
-                      {formatNumber(codingEntries)}
+                      <Link
+                        href={buildUseCasesUrl({ isCodingTool: true })}
+                        className="transition-colors hover:text-[var(--stamp)]"
+                      >
+                        {formatNumber(codingEntries)}
+                      </Link>
                     </dd>
                   </div>
                 </dl>
@@ -176,9 +248,122 @@ export default function HomePage() {
       </header>
 
       {/* ------------------------------------------------------------ */}
-      {/* § I — MATURITY LEDGER                                         */}
+      {/* § I — AT A GLANCE                                             */}
       {/* ------------------------------------------------------------ */}
-      <Section number="I" title="The ledger" lede="How agencies sort.">
+      <Section
+        number="I"
+        title="At a glance"
+        lede={`What ${reportingAgencies} reporting agencies collectively say about their AI.`}
+      >
+        <div className="space-y-10">
+          <div>
+            <div className="mb-3 eyebrow">
+              Entry mix · of {formatNumber(totalEntries)} reported AI uses (individual + consolidated)
+            </div>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-5 md:grid-cols-4">
+              <StatGlance
+                label="Coding assistants"
+                count={stats.total_coding_entries}
+                pct={pct(stats.total_coding_entries, totalEntries)}
+                href={buildUseCasesUrl({ isCodingTool: true })}
+                accent="verified"
+              />
+              <StatGlance
+                label="Generative AI"
+                count={genAIEntries}
+                pct={pct(genAIEntries, totalEntries)}
+                href={buildUseCasesUrl({ isGenAI: true })}
+                accent="stamp"
+              />
+              <StatGlance
+                label="Agentic AI"
+                count={agenticEntries}
+                pct={pct(agenticEntries, totalEntries)}
+                href={buildUseCasesUrl({ aiSophistications: ["agentic"] })}
+              />
+              <StatGlance
+                label="High-impact"
+                count={undefined}
+                pct={undefined}
+                sublabel="see filter"
+                href={buildUseCasesUrl({ highImpactDesignations: ["high_impact"] })}
+              />
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-3 eyebrow">
+              Stage mix · of {formatNumber(stats.total_use_cases)} individual use cases
+            </div>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-5 md:grid-cols-4">
+              <StatGlance
+                label="Pre-deployment"
+                count={stats.stage_bucket_counts.pre_deployment}
+                pct={pct(stats.stage_bucket_counts.pre_deployment, stats.total_use_cases)}
+                href={buildUseCasesUrl({ stageBuckets: ["pre_deployment"] })}
+              />
+              <StatGlance
+                label="Pilot"
+                count={stats.stage_bucket_counts.pilot}
+                pct={pct(stats.stage_bucket_counts.pilot, stats.total_use_cases)}
+                href={buildUseCasesUrl({ stageBuckets: ["pilot"] })}
+              />
+              <StatGlance
+                label="Deployed"
+                count={stats.stage_bucket_counts.deployed}
+                pct={pct(stats.stage_bucket_counts.deployed, stats.total_use_cases)}
+                href={buildUseCasesUrl({ stageBuckets: ["deployed"] })}
+                accent="verified"
+              />
+              <StatGlance
+                label="Retired"
+                count={stats.stage_bucket_counts.retired}
+                pct={pct(stats.stage_bucket_counts.retired, stats.total_use_cases)}
+                href={buildUseCasesUrl({ stageBuckets: ["retired"] })}
+              />
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-3 eyebrow">
+              Agency coverage · of {reportingAgencies} reporting
+            </div>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-5 md:grid-cols-4">
+              <StatGlance
+                label="With enterprise LLM"
+                count={agenciesWithEnterpriseLLM}
+                pct={pct(agenciesWithEnterpriseLLM, reportingAgencies)}
+                href={buildUseCasesUrl({ isGeneralLLMAccess: true })}
+                accent="stamp"
+              />
+              <StatGlance
+                label="With coding assistants"
+                count={agenciesWithCoding}
+                pct={pct(agenciesWithCoding, reportingAgencies)}
+                href={buildUseCasesUrl({ isCodingTool: true })}
+                accent="verified"
+              />
+              <StatGlance
+                label="With agentic AI"
+                count={agenciesWithAgentic}
+                pct={pct(agenciesWithAgentic, reportingAgencies)}
+                href={buildUseCasesUrl({ aiSophistications: ["agentic"] })}
+              />
+              <StatGlance
+                label="With custom AI"
+                count={agenciesWithCustom}
+                pct={pct(agenciesWithCustom, reportingAgencies)}
+                href={buildUseCasesUrl({ entryTypes: ["custom_system"] })}
+              />
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* ------------------------------------------------------------ */}
+      {/* § II — MATURITY LEDGER                                        */}
+      {/* ------------------------------------------------------------ */}
+      <Section number="II" title="The ledger" lede="How agencies sort.">
         <MaturityTierCard tiers={tiers} />
       </Section>
 
@@ -186,7 +371,7 @@ export default function HomePage() {
       {/* § II — ADOPTION                                               */}
       {/* ------------------------------------------------------------ */}
       <Section
-        number="II"
+        number="III"
         title="What they run"
         lede="The ten most widely deployed AI products, weighted by agencies reporting them."
       >
@@ -219,7 +404,7 @@ export default function HomePage() {
       {/* § III — GAPS                                                  */}
       {/* ------------------------------------------------------------ */}
       <Section
-        number="III"
+        number="IV"
         title="What is missing"
         lede="The absences tell a story the presences do not."
       >
@@ -227,14 +412,36 @@ export default function HomePage() {
           <GapList
             kicker="A"
             title="Agencies without an enterprise LLM"
-            note={`${missingEnterpriseLLM.length} of ${maturity.length} reporting agencies do not list department- or enterprise-wide access to a general-purpose language model.`}
+            note={
+              <>
+                <Link
+                  href={buildUseCasesUrl({ isGeneralLLMAccess: false })}
+                  className="font-medium text-foreground transition-colors hover:text-[var(--stamp)]"
+                >
+                  {missingEnterpriseLLM.length} of {maturity.length}
+                </Link>{" "}
+                reporting agencies do not list department- or enterprise-wide
+                access to a general-purpose language model.
+              </>
+            }
             items={missingEnterpriseLLM}
             tone="stamp"
           />
           <GapList
             kicker="B"
             title="Agencies without coding assistants"
-            note={`${missingCoding.length} of ${maturity.length} reporting agencies have no recorded deployment of GitHub Copilot, Claude Code, CodeWhisperer, or any coding tool.`}
+            note={
+              <>
+                <Link
+                  href={buildUseCasesUrl({ isCodingTool: false })}
+                  className="font-medium text-foreground transition-colors hover:text-[var(--stamp)]"
+                >
+                  {missingCoding.length} of {maturity.length}
+                </Link>{" "}
+                reporting agencies have no recorded deployment of GitHub
+                Copilot, Claude Code, CodeWhisperer, or any coding tool.
+              </>
+            }
             items={missingCoding}
             tone="ink"
           />
@@ -245,7 +452,7 @@ export default function HomePage() {
       {/* § IV — LAST-MODIFIED                                          */}
       {/* ------------------------------------------------------------ */}
       <Section
-        number="IV"
+        number="V"
         title="Most recent filings"
         lede="Five agencies whose inventories have moved most recently."
       >
@@ -295,7 +502,7 @@ function GapList({
 }: {
   kicker: string;
   title: string;
-  note: string;
+  note: React.ReactNode;
   items: Array<{ id: number; abbr: string; name: string }>;
   tone: "stamp" | "ink";
 }) {
@@ -332,5 +539,53 @@ function GapList({
         )}
       </ul>
     </div>
+  );
+}
+
+const ACCENT_COLOR: Record<string, string> = {
+  stamp: "text-[var(--stamp)]",
+  verified: "text-[var(--verified)]",
+  default: "text-foreground",
+};
+
+function StatGlance({
+  label,
+  count,
+  pct,
+  sublabel,
+  href,
+  accent = "default",
+}: {
+  label: string;
+  count: number | undefined;
+  pct: string | undefined;
+  sublabel?: string;
+  href: string;
+  accent?: keyof typeof ACCENT_COLOR;
+}) {
+  return (
+    <Link
+      href={href}
+      className="group flex min-w-0 flex-col gap-1 border-t-2 border-foreground pt-2 transition-colors"
+    >
+      <div className="eyebrow truncate">{label}</div>
+      <div className="flex items-baseline gap-2">
+        <span
+          className={`font-display text-[2.4rem] italic leading-[0.95] tracking-[-0.02em] tabular-nums transition-colors group-hover:text-[var(--stamp)] ${ACCENT_COLOR[accent]}`}
+        >
+          {pct ?? "—"}
+        </span>
+        {count != null && (
+          <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">
+            {formatNumber(count)}
+          </span>
+        )}
+      </div>
+      {sublabel ? (
+        <div className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-muted-foreground">
+          {sublabel}
+        </div>
+      ) : null}
+    </Link>
   );
 }

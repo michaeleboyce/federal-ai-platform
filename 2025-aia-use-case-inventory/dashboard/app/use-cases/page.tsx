@@ -66,6 +66,17 @@ function buildFilters(sp: Search): UseCaseFilterInput & { page: number } {
     .filter((n) => Number.isFinite(n));
   if (productIds.length > 0) filters.productIds = productIds;
 
+  const templateIds = parseCsv(sp.template_ids)
+    .map((id) => Number.parseInt(id, 10))
+    .filter((n) => Number.isFinite(n));
+  if (templateIds.length > 0) filters.templateIds = templateIds;
+
+  const bureaus = parseCsv(sp.bureau);
+  if (bureaus.length > 0) filters.bureaus = bureaus;
+
+  const maturityTiers = parseCsv(sp.tier);
+  if (maturityTiers.length > 0) filters.maturityTiers = maturityTiers;
+
   const entryTypes = parseCsv(sp.entry_type);
   if (entryTypes.length > 0) filters.entryTypes = entryTypes;
 
@@ -84,9 +95,14 @@ function buildFilters(sp: Search): UseCaseFilterInput & { page: number } {
   const highImpact = parseCsv(sp.high_impact);
   if (highImpact.length > 0) filters.highImpactDesignations = highImpact;
 
+  const stageBuckets = parseCsv(sp.stage_bucket);
+  if (stageBuckets.length > 0) filters.stageBuckets = stageBuckets;
+
   if (first(sp.coding_tool) === "1") filters.isCodingTool = true;
+  if (first(sp.coding_tool) === "0") filters.isCodingTool = false;
   if (first(sp.general_llm_access) === "1") filters.isGeneralLLMAccess = true;
   if (first(sp.genai) === "1") filters.isGenAI = true;
+  if (first(sp.genai) === "0") filters.isGenAI = false;
   if (first(sp.public_facing) === "1") filters.isPublicFacing = true;
   if (first(sp.has_ato) === "1") filters.hasATOorFedRAMP = true;
   if (first(sp.risk_docs) === "1") filters.hasMeaningfulRiskDocs = true;

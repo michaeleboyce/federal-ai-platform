@@ -254,6 +254,10 @@ export interface GlobalStats {
   total_templates: number;
   total_coding_entries: number;
   total_genai_entries: number;
+  /** OMB M-25-21 stage buckets (canonical use_cases only; consolidated
+   *  rows have no stage_of_development column). Keys: pre_deployment,
+   *  pilot, deployed, retired, unknown. */
+  stage_bucket_counts: Record<string, number>;
 }
 
 export interface BreakdownRow {
@@ -317,8 +321,25 @@ export interface UseCaseFilterInput {
   useTypes?: string[];
   highImpactDesignations?: string[]; // tags.high_impact_designation
   productIds?: number[];
+  templateIds?: number[];
+  bureaus?: string[];
+  maturityTiers?: string[]; // agency_ai_maturity.maturity_tier
+  // Normalized OMB M-25-21 stage buckets: 'pre_deployment' | 'pilot' |
+  // 'deployed' | 'retired' | 'unknown'. Bucketing is done via SQL CASE
+  // against LOWER(uc.stage_of_development) because the raw column has 30+
+  // formatting variants. Multiple values = OR.
+  stageBuckets?: string[];
   isGeneralLLMAccess?: boolean;
   isPublicFacing?: boolean;
   hasATOorFedRAMP?: boolean;
   hasMeaningfulRiskDocs?: boolean;
 }
+
+/** Normalized stage-of-development bucket keys. Matches the SQL CASE
+ *  statement in `stageBucketSql` in lib/db.ts. */
+export type StageBucket =
+  | "pre_deployment"
+  | "pilot"
+  | "deployed"
+  | "retired"
+  | "unknown";

@@ -18,6 +18,7 @@
  */
 
 import Database from "better-sqlite3";
+import fs from "node:fs";
 import path from "node:path";
 import type {
   Agency,
@@ -47,12 +48,19 @@ import type {
 // Connection singleton
 // -----------------------------------------------------------------------------
 
-const DB_PATH = path.join(
-  process.cwd(),
-  "..",
-  "data",
-  "federal_ai_inventory_2025.db",
-);
+// Prefer an in-project copy of the DB so the file travels with the Next.js
+// bundle on Vercel (where `process.cwd()` is the function root, not the repo
+// root). Fall back to the parent-directory layout used during local ETL
+// iteration where the dashboard lives next to the data/ folder.
+const DB_PATH = (() => {
+  const inProject = path.join(process.cwd(), "data", "federal_ai_inventory_2025.db");
+  const parent = path.join(process.cwd(), "..", "data", "federal_ai_inventory_2025.db");
+  if (fs.existsSync(inProject)) return inProject;
+  if (fs.existsSync(parent)) return parent;
+  // Final fallback: let better-sqlite3 raise the familiar "not found" error
+  // against the in-project path so messages point at the right place.
+  return inProject;
+})();
 
 // Cache the handle across hot-reloads in dev. Node's module cache already
 // gives us per-process caching in production.
@@ -208,6 +216,22 @@ export function getGlobalStats(): GlobalStats {
       .get() as { c: number }
   ).c;
 
+  // Stage-bucket counts over canonical use_cases only. Consolidated rows
+  // have no stage_of_development column so they're excluded from this mix.
+  const stageRows = db
+    .prepare<[], { bucket: string; c: number }>(
+      `SELECT ${STAGE_BUCKET_SQL} AS bucket, COUNT(*) AS c FROM use_cases uc GROUP BY bucket`,
+    )
+    .all();
+  const stage_bucket_counts: Record<string, number> = {
+    pre_deployment: 0,
+    pilot: 0,
+    deployed: 0,
+    retired: 0,
+    unknown: 0,
+  };
+  for (const r of stageRows) stage_bucket_counts[r.bucket] = r.c;
+
   return {
     total_use_cases,
     total_consolidated,
@@ -217,12 +241,37 @@ export function getGlobalStats(): GlobalStats {
     total_templates,
     total_coding_entries,
     total_genai_entries,
+    stage_bucket_counts,
   };
 }
 
 // -----------------------------------------------------------------------------
 // Use cases
 // -----------------------------------------------------------------------------
+
+/**
+ * Normalize the 30+ free-text variants of `use_cases.stage_of_development`
+ * into the 4 canonical OMB M-25-21 buckets. Usage:
+ *   SELECT ${STAGE_BUCKET_SQL} AS stage_bucket FROM use_cases ...
+ * Returns one of: 'pre_deployment' | 'pilot' | 'deployed' | 'retired' | 'unknown'.
+ */
+export const STAGE_BUCKET_SQL = `
+  CASE
+    WHEN uc.stage_of_development IS NULL OR TRIM(uc.stage_of_development) = ''
+      THEN 'unknown'
+    WHEN LOWER(uc.stage_of_development) LIKE '%retired%'
+      THEN 'retired'
+    WHEN LOWER(uc.stage_of_development) LIKE '%pilot%'
+      THEN 'pilot'
+    WHEN LOWER(uc.stage_of_development) LIKE '%deployed%'
+      THEN 'deployed'
+    WHEN LOWER(uc.stage_of_development) LIKE '%pre-deployment%'
+      OR LOWER(uc.stage_of_development) LIKE '%pre deployment%'
+      OR LOWER(uc.stage_of_development) LIKE '%development or acquisition%'
+      THEN 'pre_deployment'
+    ELSE 'unknown'
+  END
+`;
 
 const USE_CASE_SELECT = `
   SELECT uc.*,
@@ -310,6 +359,14 @@ export function getUseCasesFiltered(
     where.push("uc.stage_of_development = ?");
     params.push(filters.stage);
   }
+  if (filters.stageBuckets && filters.stageBuckets.length > 0) {
+    // Normalized OMB M-25-21 buckets. Raw column has 30+ formatting variants
+    // (e.g. "a) Pre-deployment – The use case is in a development...",
+    // "Pre-deployment", "a) Pre-deployment - ..."). Bucket via substring match.
+    const bucketExprs = filters.stageBuckets.map(() => `${STAGE_BUCKET_SQL} = ?`);
+    where.push(`(${bucketExprs.join(" OR ")})`);
+    for (const b of filters.stageBuckets) params.push(b);
+  }
   if (filters.aiClassification) {
     where.push("uc.ai_classification = ?");
     params.push(filters.aiClassification);
@@ -356,6 +413,25 @@ export function getUseCasesFiltered(
       `uc.product_id IN (${filters.productIds.map(() => "?").join(",")})`,
     );
     params.push(...filters.productIds);
+  }
+  if (filters.templateIds && filters.templateIds.length > 0) {
+    where.push(
+      `uc.template_id IN (${filters.templateIds.map(() => "?").join(",")})`,
+    );
+    params.push(...filters.templateIds);
+  }
+  if (filters.bureaus && filters.bureaus.length > 0) {
+    where.push(
+      `uc.bureau_component IN (${filters.bureaus.map(() => "?").join(",")})`,
+    );
+    params.push(...filters.bureaus);
+  }
+  if (filters.maturityTiers && filters.maturityTiers.length > 0) {
+    // Maturity tier lives on agency_ai_maturity; filter by joining via agency_id.
+    where.push(
+      `uc.agency_id IN (SELECT agency_id FROM agency_ai_maturity WHERE maturity_tier IN (${filters.maturityTiers.map(() => "?").join(",")}))`,
+    );
+    params.push(...filters.maturityTiers);
   }
 
   const joinTags =
@@ -1235,6 +1311,7 @@ export function getAnalyticsInsights(): {
   cfo_act_total: number;
   cfo_act_with_enterprise_llm: number;
   github_copilot_agencies: number;
+  top_product_id: number | null;
   top_product_name: string | null;
   top_product_agencies: number;
   zero_coding_agencies: number;
@@ -1278,9 +1355,10 @@ export function getAnalyticsInsights(): {
   const topProductRow = db
     .prepare<
       [],
-      { canonical_name: string; agency_count: number }
+      { id: number; canonical_name: string; agency_count: number }
     >(`
-      SELECT p.canonical_name,
+      SELECT p.id,
+             p.canonical_name,
              COUNT(DISTINCT uc.agency_id) AS agency_count
         FROM products p
         JOIN use_cases uc ON uc.product_id = p.id
@@ -1327,6 +1405,7 @@ export function getAnalyticsInsights(): {
     cfo_act_total,
     cfo_act_with_enterprise_llm,
     github_copilot_agencies,
+    top_product_id: topProductRow?.id ?? null,
     top_product_name: topProductRow?.canonical_name ?? null,
     top_product_agencies: topProductRow?.agency_count ?? 0,
     zero_coding_agencies,
@@ -1590,12 +1669,23 @@ export function getProductOptions(): Array<{
   id: number;
   canonical_name: string;
   vendor: string | null;
+  use_case_count: number;
 }> {
   return getDb()
-    .prepare<[], { id: number; canonical_name: string; vendor: string | null }>(
-      `SELECT id, canonical_name, vendor
-         FROM products
-        ORDER BY canonical_name COLLATE NOCASE ASC`,
+    .prepare<
+      [],
+      { id: number; canonical_name: string; vendor: string | null; use_case_count: number }
+    >(
+      `SELECT p.id,
+              p.canonical_name,
+              p.vendor,
+              (
+                SELECT COUNT(*) FROM use_cases uc WHERE uc.product_id = p.id
+              ) + (
+                SELECT COUNT(*) FROM consolidated_use_cases c WHERE c.product_id = p.id
+              ) AS use_case_count
+         FROM products p
+        ORDER BY use_case_count DESC, p.canonical_name COLLATE NOCASE ASC`,
     )
     .all();
 }

@@ -1,0 +1,87 @@
+queue_id,proposed_name,vendor,alias_text,confidence,reasoning
+1691,Invariant Acoustic Signature AI,Invariant Corporation,Invariant Corporation Acoustic Signature AI for Gunshot Detection,high,Names Invariant Corporation acoustic gunshot detection; not in canonical list. Proposing new product.
+1703,IDEMIA Credential Authentication Technology (CAT-2),IDEMIA Identity & Security USA,Credential Authentication Technology with Camera System (CAT-2) and AutoCAT,high,IDEMIA CAT-2/AutoCAT is a TSA-specific credential authentication system; proposing new product.
+1705,IBM ARGOS,IBM,IBM ARGOS (Automated Real-Time Global Organization Specialist),medium,IBM ARGOS uses sentiment analysis; closest canonical match is IBM Watson.
+1719,BI SmartLINK,BI Incorporated (GEO Group),BI ISAP IV (SmartLink),high,BI SmartLINK is ICE ATD-ISAP product by BI Incorporated; proposing new canonical product.
+1730,Polarity,Polarity,Polarity Xploitation Platform,high,"Explicitly lists Illumio, Splunk, Crowdstrike; AttackIQ/Cofense/Polarity not in canonical list."
+1744,EnerGPT,DOE,EnerGPT,low,EnerGPT is DOE-internal tool for technical standards; not a commercial product.
+1763,Elastic Stack,Elastic,Elastic Stack Technology (ELK),high,Elastic Stack/ELK is commercial but not in canonical list.
+1768,Raytheon Multimedia Monitoring System (M3S),Raytheon BBN Technologies,Raytheon Multimedia Monitoring System (M3S),high,Raytheon BBN M3S is commercial product but not in canonical list.
+1805,Ultralytics YOLO,Ultralytics,Ultralytics,high,Ultralytics (YOLO) is an open-source ML framework vendor; no canonical product match. Could propose new.
+1809,ARC Travel Intelligence Program,Airlines Reporting Corporation,Airlines Travel Intelligence Program,high,"ARC Travel Intelligence Program is a specialized ARC product, not in canonical list."
+1810,Axon FUSUS,Axon,Axon FUSUS (via HIDTA partners),high,Axon FUSUS is a specific Axon product not in canonical list.
+1811,Azure Data Factory,Microsoft,Azure Data Factory,high,"Azure Data Factory is Microsoft data integration tool, not in canonical list."
+1812,Azure Storage,Microsoft,Azure Zen 2 Storage,medium,"Azure Zen 2 Storage appears to be Azure storage subscription reference, specific product unclear."
+1813,Bloomberg Government,Bloomberg Industry Group,Bloomberg Government (BGOV),high,Bloomberg Government (BGOV) is a specific Bloomberg product not in canonical list.
+1814,CargoNet,Verisk Analytics,CargoNet,high,CargoNet is Verisk product not in canonical list.
+1815,Cell Hawk,LeadsOnline,Cell Hawk (via HIDTA partners),high,Cell Hawk is LeadsOnline product not in canonical list.
+1816,Dun & Bradstreet Business Establishments Data,Dun & Bradstreet,Dun & Bradstreet Business Establishments Data,high,Dun & Bradstreet Business Establishments Data is D&B product not in canonical list.
+1817,Axon Evidence.com,Axon,Axon Evidence.com,high,Axon Evidence.com is Axon product not in canonical list.
+1820,First Two,FirstTwo,First Two,high,First Two is FirstTwo product not in canonical list.
+1821,Mark43 Public Safety Records,Mark43,Mark43 Public Safety Records,high,Mark43 Public Safety Records is Mark43 product not in canonical list.
+1822,ISO ClaimSearch,Verisk / National Insurance Crime Bureau,National Insurance Crime Bureau ISO ClaimSearch,high,NICB ISO ClaimSearch is specialized Verisk/NICB product not in canonical list.
+1824,ShotSpotter,SoundThinking,ShotSpotter (via access to external state/local systems),high,ShotSpotter is SoundThinking product not in canonical list.
+1826,Spokeo,Spokeo,Spokeo,high,Spokeo is a people-search product not in canonical list.
+1827,Thomson Reuters CLEAR,Thomson Reuters,Thomson Reuters CLEAR,high,"Thomson Reuters CLEAR is investigative search product, distinct from Westlaw AI (102)."
+1828,TransUnion TLOxp,TransUnion,TransUnion TLOxp Online Investigative Services,high,TransUnion TLOxp is TransUnion investigative product not in canonical list.
+1829,Veritone Redact,Veritone,Veritone Redact,high,Veritone Redact is Veritone product not in canonical list.
+1830,Whooster,Whooster,Whooster,high,Whooster is Whooster investigative data product not in canonical list.
+1831,Flock Safety LPR,Flock Safety,Commercial LPR (via HIDTA partners),high,Flock Safety commercial LPR not in canonical list.
+1832,ELSAG License Plate Reader,Leonardo,ELSAG/Leonardo (via HIDTA partners),high,ELSAG/Leonardo license plate reader not in canonical list.
+1833,Veritone Illuminate,Veritone,Veritone Illuminate,high,Veritone Illuminate is Veritone product not in canonical list.
+1834,BMC Helix ITSM,BMC,BMC Helix ITSM,high,BMC Helix ITSM is BMC product not in canonical list.
+1835,Thomson Reuters CLEAR License Plate Recognition,Thomson Reuters,Thomson Reuters CLEAR - License Plate Recognition,high,Thomson Reuters CLEAR LPR is a CLEAR module distinct from canonical Westlaw AI.
+1836,Veritone aiWARE,Veritone,Veritone,high,Veritone (aiWARE) platform not in canonical list.
+1839,Cloudflare Turnstile,Cloudflare,Cloudflare Turnstile,high,Cloudflare Turnstile is Cloudflare bot-mitigation product not in canonical list.
+1840,Dragon,Nuance Communications,Dragon,high,Dragon is Nuance speech-to-text product not in canonical list.
+1842,BriefCatch,Lawcatch LLC,BriefCatch,high,BriefCatch is Lawcatch legal writing tool not in canonical list.
+1844,Relativity,Relativity,Relativity,high,"Compound entry lists CloudNine, Everlaw, Relativity, Nuix; none match canonical IDs directly (Everlaw AI Assistant 211 is distinct product)."
+1845,Magnet Axiom,Magnet Forensics,Magnet Axiom,medium,"Compound lists Cellebrite (matches Cellebrite Media Classifier 153), plus Magnet Axiom and Griffeye not in canonical."
+1846,SimplyFile,TechHit,SimplyFile,high,SimplyFile is TechHit Outlook add-in not in canonical list.
+1847,Critical Mention,Critical Mention,Critical Mention,high,Critical Mention is media monitoring product not in canonical list.
+1848,Axon Evidence.com,Axon,Evidence.com,high,Evidence.com is Axon product not in canonical list (same as queue 1817).
+1855,ASCVD Risk Estimator,American College of Cardiology,ASCVD (Atherosclerotic Cardiovascular Disease) Risk Estimator,high,"ACC ASCVD Risk Estimator is a medical calculator, not in canonical list"
+1856,BD Pyxis,BD,BD Pyxis Automated Medication Dispensing Cabinet,high,BD Pyxis medication dispensing cabinet not in canonical list
+1860,Descript,Descript,Descript,high,Descript commercial product not in canonical list
+1861,Google Translate,Google,Google Translate,high,Google Translate not in canonical list
+1862,Quantum Choice,Plexis Healthcare Systems,Quantum Choice from Plexis,high,Quantum Choice from Plexis not in canonical list
+1866,Pearson Assessments,Pearson,Pearson Assessments Psychological Test Interpretation,high,Pearson Assessments psychological test interpretation not in canonical list
+1867,reCAPTCHA,Google,reCAPTCHA,high,Google reCAPTCHA not in canonical list
+1868,TruNarc,Smiths Detection,"TruNarc, Smith Detection",high,TruNarc by Smiths Detection not in canonical list
+1869,Trunet Systems,Advanced Technologies Group,Trunet Systems,high,Trunet Systems by Advanced Technologies Group not in canonical list
+1870,Truview,Advanced Technologies Group,Truview,high,Truview by Advanced Technologies Group not in canonical list
+1871,UpToDate,Wolters Kluwer,UpToDate,high,UpToDate clinical reference tool not in canonical list
+1872,Exiger DDIQ,Exiger,Exiger Supply Chain Risk Management - DDIQ Research Engine,high,Exiger DDIQ supply chain tool not in canonical list
+1873,Exiger DDIQ,Exiger,Exiger Supply Chain Risk Management - DDIQ Due Diligence Analytics,high,"Exiger DDIQ Due Diligence Analytics, same family as 1872"
+1874,Dragon,Nuance Communications,Dragon,high,Nuance Dragon speech recognition not in canonical list
+1875,Informatica CLAIRE,Informatica,Informatica - CLAIRE,high,Informatica CLAIRE not in canonical list
+1876,Nlets Nationwide License Plate Reader Pointer Index,Nlets,Nlets Nationwide License Plate Reader Pointer Index,high,"Nlets LPR Pointer Index is Nlets/law enforcement system, not Thomson Reuters Westlaw"
+1877,Axon Evidence,Axon,Axon,high,Axon Evidence/body-worn video platform not in canonical list
+1878,Hootsuite,Hootsuite,Hootsuite,high,Hootsuite social media management not in canonical list
+1879,Veritone Digital Media Hub,Veritone,Veritone Digital Media Hub,high,Veritone Digital Media Hub not in canonical list
+1881,PACER,Administrative Office of the U.S. Courts,Pacer Search,low,Pacer Search (court records); vendor Techsmith seems incorrect; not in canonical list
+1882,AWS Translate,Amazon,AWS Translate,high,AWS Translate not in canonical list
+1883,JAWS,Freedom Scientific,JAWS (Text-to-Speech Assistant for Accessibility),high,JAWS screen reader by Freedom Scientific not in canonical list
+1884,OnCue,"OnCue Technology, LLC",Trial Presentation Software,high,OnCue trial presentation software not in canonical list
+1885,Axon Evidence,Axon,Axon Video Retention Solution (VRS) - object recognition and redaction,high,Axon Evidence VRS object recognition/redaction not in canonical list
+1886,Axon Evidence,Axon,Axon Video Retention Solution (VRS) - Transcription,high,"Axon Evidence VRS transcription, same platform family"
+1888,Rank One Computing Biometrics,Rank One Computing,JPATS Mobile App (Biometrics),high,Rank One Computing biometrics not in canonical list
+1889,Aware Biometric Services Platform,"Aware, Inc.",Aware,high,Aware biometrics platform not in canonical list
+1890,Thomson Reuters CLEAR,Thomson Reuters,Thomson Reuters CLEAR,high,Thomson Reuters CLEAR not in canonical list
+1892,Veritone aiWARE,Veritone,Veritone,high,Veritone platform not in canonical list
+1893,Litera Best Authority,Litera,Table of Contents / Table of Authorities Word plugin,high,Litera TOA Word plugin not in canonical list
+1894,Systran Translate Server,Systran,Systran Translate Server,high,Systran Translate Server not in canonical list
+1896,ProLaw,Thomson Reuters,ProLaw,high,Thomson Reuters ProLaw not in canonical list
+1900,NetDocuments,NetDocuments,NetDocuments,high,NetDocuments not in canonical list
+1901,FOIAXpress,OPEXUS,FOIA Xpress,high,FOIA Xpress suite not in canonical list; multi-vendor FOIA tool
+1904,Conduit AI,Conductor,Conduit AI,high,Conductor Conduit AI not in canonical list
+1905,CoHost AI,Buzzsprout,CoHost AI,high,Buzzsprout CoHost AI not in canonical list
+1907,CoCounsel,Thomson Reuters,Cocounsel AI,high,Thomson Reuters CoCounsel not in canonical list
+1908,Camtasia,TechSmith,Camtasia,high,TechSmith Camtasia not in canonical list
+1909,Tableau,Salesforce,Tableau,high,"Tableau and PowerBI named; Power BI matches canonical, Tableau missing"
+1910,TLOxp,TransUnion Risk and Alternative Data Solutions,TransUnion Risk and Alternative Data Solutions,high,TransUnion TLOxp/background search tool not in canonical list
+1911,Azure AI Foundry,Microsoft,Azure AI Foundry Platform,high,Azure AI Foundry platform not in canonical list
+1913,Audiate,TechSmith,Audiate,high,TechSmith Audiate not in canonical list
+1916,VAO Ally,Virtual Acquisition Office,VAO Ally,high,VAO Ally acquisition tool not in canonical list
+1918,Microsoft HoloLens,Microsoft,Hololens,high,Microsoft HoloLens/CLIRIO training not in canonical list
+1923,AWS Comprehend,Amazon,Amazon PII Redaction,medium,AWS PII redaction likely AWS Comprehend; not in canonical list
