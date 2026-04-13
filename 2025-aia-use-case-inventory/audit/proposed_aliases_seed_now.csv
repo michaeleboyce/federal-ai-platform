@@ -1,0 +1,100 @@
+queue_id,canonical_product_id,proposed_alias,source_vendor,source_label,llm_confidence,llm_reasoning,review_disposition
+847,,FLIR 280 HD,Teledyne FLIR,FLIR 280 HD,high,"Names FLIR 280 HD, a Teledyne FLIR thermal imaging camera not in canonical list.",seed_now
+849,,Clearview AI,Clearview AI,Clearview AI Traveler Verification System,high,Names Clearview AI facial recognition.,seed_now
+850,,ThruWave NII 3D Imaging Tool,ThruWave,ThruWave  Non-Intrusive Inspection (NII) 3D Imaging Tool,high,Names ThruWave millimeter wave 3D imaging tool.,seed_now
+851,,Ideation ReadyAI,Ideation,Ideation ReadyAI,high,Names Ideation ReadyAI chatbot platform.,seed_now
+852,,LIGER Generative AI Toolkit,"LMI Consulting, LLC","LMI Consulting, LLC  LIGER Generative AI Toolkit",high,Names LMI Consulting's LIGER Generative AI Toolkit.,seed_now
+853,,Babel Street Babel,Babel Street,Babel Street Babel Street Babel,high,Names Babel Street's Babel platform.,seed_now
+854,,ThruVision TAC 16,ThruVision,ThruVision TAC 16 Passive Body Scanner,high,Names ThruVision TAC 16 passive body scanner.,seed_now
+861,,NexisXplore,LexisNexis,NexisXplore,high,NexisXplore open source/social media analysis tool; not in canonical list.,seed_now
+863,,Traffic Jam,Marinus Analytics,Marinus Analytics Traffic Jam,high,Marinus Analytics Traffic Jam; not in canonical list.,seed_now
+864,,iProov,iProov,IProov,high,iProov liveness detection used by CBP Link; not in canonical list.,seed_now
+865,,Rekor,Rekor,Rekor,high,Rekor license plate recognition for TECS Mod; not in canonical list.,seed_now
+868,,NEC NeoFace,NEC,NEC (Nippon Electric Company),high,NEC (Nippon Electric Company) facial recognition for TVS; not canonical.,seed_now
+875,,Motorola License Plate Recognition,Motorola,Motorola,high,Motorola license plate capture and analysis; not in canonical list.,seed_now
+889,,Skydio X2D,Skydio,Skydio and Xtender Skydio X2D,high,Skydio X2D drone; not in canonical list.,seed_now
+893,,Autonomous Surveillance Tower,Anduril,Anduril Autonomous Surveillance Towers,high,Anduril Autonomous Surveillance Towers; not in canonical list.,seed_now
+894,,Matroid I4 Viewer,Matroid,Matroid I4 Viewer,high,Matroid I4 Viewer; not in canonical list.,seed_now
+897,,KESTREL,Maxar,Maxar KESTREL Aircraft Landing Location Predictor (KESTREL),high,Maxar KESTREL platform; not in canonical list.,seed_now
+902,,CaseGuard,CaseGuard,Case Guard  AI-Assisted Audio/Video Redaction,high,CaseGuard redaction tool; not in canonical list.,seed_now
+904,,Altana Atlas,Altana,Altana  Entity Resolution for Global Trade Data,high,Altana platform for global trade; not in canonical list.,seed_now
+905,,TRM Labs Blockchain Analysis Platform,TRM Labs,TRM Labs  Blockchain Analysis,high,TRM Labs blockchain analysis platform; not in canonical list.,seed_now
+906,,Palantir Federal Cloud Service,Palantir,Palantir Palantir Federal Cloud Service,high,Palantir Federal Cloud Service; not in canonical list.,seed_now
+912,,Lasso Security,Lasso Security,Lasso ESS AI Security and Monitoring,high,Lasso Security ESS for AI security; not in canonical list.,seed_now
+913,,Gurucul UEBA,Gurucul,Gurucul ESS User Entity and Behavior Analytics (UEBA),high,Gurucul UEBA platform; not in canonical list.,seed_now
+915,,Salesforce Einstein,Salesforce,Salesforce Einstein C2RMT,high,Salesforce Einstein C2RMT chatbot; not in canonical list.,seed_now
+916,,Medallia,Medallia,Medallia MASS,high,Medallia MASS experience analytics; not in canonical list.,seed_now
+919,,Recorded Future,Recorded Future,Recorded Future  Cyber Threat Analysis (Recorded Future),high,Recorded Future threat intelligence platform; not in canonical list.,seed_now
+923,,UiPath Enterprise RPA,UiPath,UiPath; Microsoft; Apryse; Personable Inc. Enterprise Robotic Process Automation,high,UiPath/Apryse/Personable IDP; UiPath not canonical.,seed_now
+924,,Illumio,Illumio,Illumio,high,"Names CrowdStrike and Splunk explicitly; Illumio, AttackIQ, Cofense, Polarity not in canonical list.",seed_now
+925,,Palantir Case Management & Analytics (CMA),Palantir,Palantir Case Management & Analytics (CMA),high,Palantir Case Management & Analytics (CMA); not in canonical list.,seed_now
+926,,Cellebrite Media Classifier,Cellebrite,Cellebrite  Media Classifier for Computer and Digital Storage Evidence,high,Cellebrite digital media classifier; not in canonical list.,seed_now
+928,,Penlink,Penlink,Penlink,high,Penlink and Fivecast are OSINT tools; neither in canonical. Proposing Penlink as primary.,seed_now
+930,,Microsoft Dynamics 365,Microsoft,Microsoft Dynamics Online,high,Microsoft Dynamics Online named; not in canonical list.,seed_now
+931,,Okta Adaptive MFA,Okta,Okta,high,Names Okta AdaptiveMFA with integrations to CrowdStrike and Microsoft Defender.,seed_now
+932,,Dataminr First Alert,Dataminr,First Alert/Dataminr,high,First Alert/Dataminr named; not in canonical.,seed_now
+933,,idiCORE,LexisNexis Risk Solutions,idiCORE,high,idiCORE named; not in canonical list.,seed_now
+934,,Sprinklr,Sprinklr,Sprinklr,high,Sprinklr named as vendor; not in canonical list.,seed_now
+935,,LexisNexis Risk Solutions,LexisNexis,REX DBA Lexis Nexis,medium,LexisNexis identity verification; closest canonical match is Lexis+ AI though may be different product.,seed_now
+936,,SITE Intelligence Group,SITE,SITE Group Subscription Services,high,SITE Group Subscription Services named; not in canonical.,seed_now
+938,,Hyperscience,Hyperscience,Hyperscience - IDP software,high,Hyperscience IDP software named; not in canonical list.,seed_now
+941,,Amped Software,Amped Software,Amped,high,Amped (Amped Software for image forensics) named; not in canonical.,seed_now
+943,,Vectra AI,Vectra Networks,Vectra Networks,high,Vectra Networks named; not in canonical list.,seed_now
+944,,PassiveLogic,PassiveLogic,PassiveLogic,high,PassiveLogic named; not in canonical list.,seed_now
+952,,Microsoft Power Platform,Microsoft,Microsoft Power Platform,high,Microsoft Power Platform / Power Apps / Power Automate named; not in canonical list.,seed_now
+953,,Skillsoft Percipio CAISY,Skillsoft,SKILLSOFT PERCIPIO/CAISY,high,Skillsoft Percipio/CAISY named; not in canonical.,seed_now
+955,,AWS Lex,Amazon,Lex Natural Language Interface,high,AWS Lex named; not in canonical list.,seed_now
+956,,Scopus AI,Elsevier,Scopus AI,high,Scopus AI named; not in canonical list.,seed_now
+962,,Yurts AI,Legion (formerly Yurts),Legion (Previously Yurts),high,Yurts AI (now Legion) named; not in canonical list.,seed_now
+966,,Boston Dynamics Spot,Boston Dynamics,Boston Dynamics Spot Robotics,high,Boston Dynamics Spot robotics named; not in canonical list.,seed_now
+969,,Articulate 360 AI Assistant,Articulate,Ariculate 360 AI Assistant,high,Articulate 360 AI Assistant named; not in canonical list.,seed_now
+970,,Microsoft Azure Quantum Elements,Microsoft,Microsoft Azure Quantum Elements,high,Microsoft Azure Quantum Elements named; not in canonical list.,seed_now
+972,,Visual Studio Enterprise,Microsoft,Visual Studio Enterprise,high,Visual Studio Enterprise named; not in canonical list. [verified separate SKU: VS Community free vs VS Enterprise paid; no collapse],seed_now
+974,,Microsoft OneNote,Microsoft,Microsoft OneNote,high,Microsoft OneNote named; not in canonical list.,seed_now
+976,,C3 AI,C3.ai,C3.AI,high,C3.AI named; not in canonical list.,seed_now
+979,,Microsoft Azure Authoring Tools,Microsoft,Microsoft Azure Authoring Tools,high,Microsoft Azure Authoring Tools named; not in canonical list.,seed_now
+983,,Apple Intelligence,Apple,Apple Intelligence,high,Apple Intelligence is a commercial product not in canonical list.,seed_now
+984,,Microsoft ScreenSketch,Microsoft,Microsoft ScreenSketch,high,"Microsoft ScreenSketch screenshot tool, not a distinct canonical AI product.",seed_now
+987,,Microsoft Project,Microsoft,Microsoft Project,high,"Microsoft Project management tool, not a canonical AI product.",seed_now
+988,,HeyGen,HeyGen,HeyGen,high,"HeyGen AI avatar video platform, not in canonical list.",seed_now
+990,,CrewAI,CrewAI,CrewAI,high,CrewAI agent orchestration platform not in canonical list.,seed_now
+991,,Google Chrome Generative AI,Google,Google Chrome Generative AI,high,"Google Chrome Generative AI feature, not a canonical distinct product.",seed_now
+994,,Tabnine,Tabnine,Tabnine AI Pair Programmer,high,Tabnine AI pair programmer not in canonical list.,seed_now
+998,,Google Cloud Platform,Google,Google Cloud Platform,high,EnerGPT Canvas is custom DOE app on Google Cloud Platform.,seed_now
+1002,,Google Agentspace,Google,Google Agentspace / NotebookLM,high,Google Agentspace and NotebookLM not in canonical list.,seed_now
+1005,,OpenText Axcelerate,OpenText,OpenText Axcelerate AI and natural-language powered search,high,OpenText Axcelerate AI search platform not in canonical list.,seed_now
+1007,,Grok,xAI,xAI Grok Pilot,high,xAI Grok LLM not in canonical list.,seed_now
+1008,,Microsoft Search in Bing,Microsoft,Microsoft Search in Bing,high,Microsoft Search in Bing not in canonical list.,seed_now
+1014,,Visual Studio,Microsoft,Visual Studio Community,high,"Visual Studio Community IDE, not a canonical AI product. [verified separate SKU: VS Community free vs VS Enterprise paid; no collapse]",seed_now
+1015,,Microsoft OneDrive,Microsoft,Microsoft OneDrive,high,"Microsoft OneDrive file storage, not a canonical AI product.",seed_now
+1018,,Microsoft Discovery,Microsoft,Microsoft Discovery,high,Microsoft Discovery R&D product not in canonical list.,seed_now
+1019,,Microsoft 365,Microsoft,Microsoft 365,high,Microsoft 365 productivity suite not matching any canonical product directly (M365 Copilot distinct).,seed_now
+1024,,OpenText Decisiv,OpenText,OpenText Decisiv,high,"OpenText Decisiv records management tool, not in canonical list.",seed_now
+1031,,Microsoft AI Builder,Microsoft,Microsoft AI Builder,high,Microsoft AI Builder not in canonical list; propose new product.,seed_now
+1032,,LexisNexis,LexisNexis,LexisNexis,high,"LexisNexis legal search, not Lexis+ AI specifically; propose LexisNexis search product.",seed_now
+1033,,Microsoft 365 Apps for Enterprise,Microsoft,Microsoft 365 Apps for Enterprise,high,Microsoft 365 Apps for Enterprise (Office suite) distinct from Copilot; propose new product.,seed_now
+1036,,Microsoft Outlook,Microsoft,Microsoft Outlook MUI,high,"Microsoft Outlook MUI - email client, not in canonical list.",seed_now
+1039,,Microsoft Edge,Microsoft,Microsoft Edge,high,Microsoft Edge browser; not in canonical list.,seed_now
+1041,,SQL Server Management Studio,Microsoft,SQL Server Management Studio,high,SQL Server Management Studio named; propose new product.,seed_now
+1042,,Microsoft Exchange Server,Microsoft,Microsoft Exchange Server,high,Microsoft Exchange Server named; propose new product.,seed_now
+1044,,Microsoft Skype,Microsoft,Microsoft Skype App,high,Microsoft Skype App named; propose new product.,seed_now
+1046,,Palantir Decision and Analytics Platform (DNA-P),Palantir,Palantir Decision and Analytics Platform (DNA-P),high,Palantir DNA-P platform named; not in canonical list.,seed_now
+1051,,Microsoft PowerPoint,Microsoft,Microsoft PowerPoint MUI,high,Microsoft PowerPoint MUI named; propose new product.,seed_now
+1054,,Microsoft Power BI,Microsoft,Microsoft Power BI Desktop,high,Microsoft Power BI Desktop named; propose new product.,seed_now
+1055,,Microsoft Azure PowerShell,Microsoft,Microsoft Azure PowerShell,high,Microsoft Azure PowerShell named; propose new product.,seed_now
+1056,,IBM Watson,IBM,IBM Watson,high,IBM Watson named; not in canonical list.,seed_now
+1059,,VoiceAtlas,Navteca,VoiceAtlas no-code chatbot framework,high,VoiceAtlas by Navteca named; not in canonical list.,seed_now
+1060,,Google Cloud Vision,Google,Google Cloud Vision,high,Google Cloud Vision named; not in canonical list.,seed_now
+1061,,Google Vertex AI,Google,Google Vertex AI Document workbench,high,Google Vertex AI Document workbench named; not in canonical list.,seed_now
+1066,,Everlaw AI Assistant,"Everlaw, Inc.",Everlaw AI Assistant for Responsive Review,high,Everlaw AI Assistant named; not in canonical list.,seed_now
+1070,,Upstream Tech HydroForecast,Upstream Tech,Piloting Machine Learning Inflow Forecasts Across Reclamation,high,Upstream Tech ML inflow forecasts; propose new product.,seed_now
+1071,,DocketScope,"The Regulatory Group, Inc.",DocketScope,high,DocketScope by The Regulatory Group named; propose new product.,seed_now
+1072,,Quantaero Marine Wildlife AI,Quantaero,AI for Offshore Energy: Innovative Technology Streamlines Marine Wildlife Surveys,high,Quantaero marine wildlife AI; propose new product.,seed_now
+1073,,Microsoft Purview eDiscovery,Microsoft,Microsoft eDiscovery Attorney-Client Privilege Detection,high,Microsoft eDiscovery (Purview) named; not in canonical list.,seed_now
+1074,,Azure AI Vision / Document Intelligence,Microsoft,Azure Computer Vision and Document Intelligence Read,high,Azure Computer Vision and Document Intelligence Read named; propose new product.,seed_now
+1076,,Adobe Creative Cloud Suite,Adobe,Adobe Suite Applications,high,Adobe Suite Applications named; Photoshop (119) and Firefly (118) in canonical but 'Adobe Suite' is broader.,seed_now
+1078,,Airship AI Platform,Airship AI Holdings Inc.,Unmanned Aerial Systems (UAS),high,Airship AI video management platform named; propose new product.,seed_now
+1079,,Alation Data Catalog,Alation,Alation Data Catalog,high,Alation Data Catalog named; propose new product.,seed_now
+1116,,Lookout,Lookout,Lookout,high,"Names CrowdStrike, Zscaler, Splunk, Palo Alto Networks; Lookout and Cisco Secure Network Analytics not canonical.",seed_now
+1473,,ServiceNow IT Operations Management (ITOM) Predictive AIOps,ServiceNow,ServiceNow IT Operations Management (ITOM) Predictive AIOps,medium,ServiceNow ITOM Predictive AIOps; closest canonical match is ServiceNow Now Assist.,seed_now
+1475,,Tenable,Tenable,Tenable,medium,"ServiceNow Vulnerability Response with Tenable; ServiceNow product, Tenable not in canonical list.",seed_now

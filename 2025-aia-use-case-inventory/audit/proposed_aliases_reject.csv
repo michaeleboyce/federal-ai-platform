@@ -1,0 +1,6 @@
+queue_id,canonical_product_id,proposed_alias,source_vendor,source_label,llm_confidence,llm_reasoning,review_disposition
+967,,Palantir,Palantir,Palantir Decision and Analytics Platform (DNA-P),high,"Reject applies to the BARE 'Palantir' alias only, to prevent collapsing distinct product lines (CMA, Federal Cloud Service, DNA-P, etc.). Specific Palantir sub-products (queue_ids 906, 925, 1046) remain in seed_now as their own canonical rows.",reject
+995,,Elastic Stack (ELK),Elastic,Elastic Stack Technology (ELK),high,"Elastic Stack (ELK) search tool, not in canonical list. [moved to reject: Elastic Stack (ELK) is generic logging/search infrastructure, not an AI product]",reject
+1017,,Tesseract OCR,Open Source,Tesseract,medium,"Tesseract OCR used for georeferencing; not in canonical list. [moved to reject: Tesseract OCR is open-source, not a commercial AI product]",reject
+1021,,PEST,Open Source,PEST,high,"PEST is groundwater modeling software, generic capability. [moved to reject: PEST is groundwater modeling software, not an AI product]",reject
+1067,,Ultralytics YOLO,Ultralytics,Ultralytics,high,"Ultralytics (YOLO) AI framework named; not in canonical list. [moved to reject: Ultralytics YOLO is an open-source computer vision library, not a commercial product alias]",reject
