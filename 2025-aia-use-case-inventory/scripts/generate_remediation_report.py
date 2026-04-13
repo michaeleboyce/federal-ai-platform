@@ -143,13 +143,19 @@ def collect_snapshot(snapshot_date: str) -> Dict[str, Any]:
                    OR raw_json LIKE '%"ID"%')
             """,
         )
+        # Canonical LLM false-positive definition: is_general_llm_access=1
+        # AND source ai_classification names a non-LLM category
+        # (Classical/Predictive ML or Computer Vision). Matches the pre-remediation
+        # baseline count of 88; do not change this predicate without updating
+        # audit/baselines/2026-04-12-pre-remediation.json.
         snap["llm_false_positives_confirmed"] = _scalar(
             conn,
             """
             SELECT COUNT(*) FROM use_cases u
             JOIN use_case_tags t ON t.use_case_id = u.id
-            WHERE t.ai_sophistication = 'general_llm'
-              AND (u.ai_classification LIKE '%Classical/Predictive Machine Learning%'
+            WHERE t.is_general_llm_access = 1
+              AND (u.ai_classification LIKE '%Classical%'
+                   OR u.ai_classification LIKE '%Predictive%'
                    OR u.ai_classification LIKE '%Computer Vision%')
             """,
         )
@@ -158,8 +164,9 @@ def collect_snapshot(snapshot_date: str) -> Dict[str, Any]:
             """
             SELECT COUNT(*) FROM use_cases u
             JOIN use_case_tags t ON t.use_case_id = u.id
-            WHERE t.ai_sophistication = 'general_llm'
-              AND u.ai_classification LIKE '%Classical/Predictive Machine Learning%'
+            WHERE t.is_general_llm_access = 1
+              AND (u.ai_classification LIKE '%Classical%'
+                   OR u.ai_classification LIKE '%Predictive%')
             """,
         )
         cv = _scalar(
@@ -167,7 +174,7 @@ def collect_snapshot(snapshot_date: str) -> Dict[str, Any]:
             """
             SELECT COUNT(*) FROM use_cases u
             JOIN use_case_tags t ON t.use_case_id = u.id
-            WHERE t.ai_sophistication = 'general_llm'
+            WHERE t.is_general_llm_access = 1
               AND u.ai_classification LIKE '%Computer Vision%'
             """,
         )
@@ -196,22 +203,23 @@ def collect_snapshot(snapshot_date: str) -> Dict[str, Any]:
               AND TRIM(u.vendor_name) <> ''
             """,
         )
-        # Per-agency top10 for custom_system_with_vendor
+        # Per-agency top10 for custom_system_with_vendor. Keyed by abbreviation
+        # (HHS, DOJ, ...) to match the pre-remediation baseline schema.
         rows = conn.execute(
             """
-            SELECT a.name, COUNT(*) AS n
+            SELECT a.abbreviation, COUNT(*) AS n
             FROM use_cases u
             JOIN use_case_tags t ON t.use_case_id = u.id
             JOIN agencies a ON a.id = u.agency_id
             WHERE t.entry_type = 'custom_system'
               AND u.vendor_name IS NOT NULL
               AND TRIM(u.vendor_name) <> ''
-            GROUP BY a.name
+            GROUP BY a.abbreviation
             ORDER BY n DESC
             LIMIT 10
             """
         ).fetchall()
-        snap["custom_system_by_agency_top10"] = {name: n for name, n in rows}
+        snap["custom_system_by_agency_top10"] = {abbr: n for abbr, n in rows}
 
         snap["enterprise_wide_consolidated"] = _scalar(
             conn,
