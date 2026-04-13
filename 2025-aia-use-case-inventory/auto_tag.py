@@ -130,40 +130,62 @@ def keyword_any(text, keywords):
 
 
 def infer_entry_type(row, product_id, template_id, is_consolidated, products_dict):
-    """Determine what this entry represents."""
+    """Determine what this entry represents.
+
+    Precedence (Phase 2 Agent C — plan §C.2):
+      1. Consolidated rows -> generic_use_pattern.
+      2. Template match with no tool-ish noun in the name -> generic_use_pattern.
+      3. development_type starts with "a)" (purchased) OR vendor populated
+         with blank development_type -> product_deployment
+         (product_feature if the matched product has a parent).
+      4. development_type contains "in-house" AND vendor blank -> custom_system.
+      5. Any mix of in-house + (vendor OR product) -> bespoke_application.
+      6. Default: product_deployment if vendor populated, else custom_system.
+    """
     if is_consolidated:
         # Consolidated format is inherently about generic use patterns
         return "generic_use_pattern"
 
     name = normalize(row.get("use_case_name", ""))
-    problem = normalize(row.get("problem_statement", ""))
     development = normalize(row.get("development_type", ""))
     vendor = normalize(row.get("vendor_name", ""))
 
-    # If it matches a template verbatim-ish, it's a generic use pattern
-    if template_id and not any(c in name for c in ["tool", "system", "assistant", "platform"]):
-        return "generic_use_pattern"
-
-    # If developed in-house only (no vendor) -> custom_system
-    if development and "in-house" in development and not vendor:
-        return "custom_system"
-
-    if "developed in" in development and "vendor" not in development:
-        return "custom_system"
-
-    # If product matched + in-house mods -> bespoke_application
-    if product_id and ("in-house" in development or "both" in development):
-        return "bespoke_application"
-
-    # If product matched and is a standalone deployment -> product_deployment
-    if product_id:
-        prod = products_dict.get(product_id, {})
-        # GitHub Copilot, Claude Code are features
-        if prod.get("parent_product_id") is not None:
-            return "product_feature"
+    def _product_deployment_label():
+        if product_id:
+            prod = products_dict.get(product_id, {}) if products_dict else {}
+            if prod.get("parent_product_id") is not None:
+                return "product_feature"
         return "product_deployment"
 
-    # Default to custom_system if no product identified
+    # 2. Template match without a tool-ish noun in the name -> generic pattern
+    if template_id and not any(
+        c in name for c in ["tool", "system", "assistant", "platform"]
+    ):
+        return "generic_use_pattern"
+
+    purchased = development.startswith("a)") or "purchased from a vendor" in development
+    in_house = "in-house" in development or development.startswith("b)")
+    both = "both" in development or development.startswith("c)")
+
+    # 3. Purchased from a vendor OR vendor populated with blank development_type
+    if purchased or (vendor and not development):
+        return _product_deployment_label()
+
+    # 4. Strictly in-house with no vendor -> custom_system
+    if in_house and not both and not vendor:
+        return "custom_system"
+
+    # 5. Any mix of in-house + vendor/product -> bespoke_application
+    if (in_house or both) and (vendor or product_id):
+        return "bespoke_application"
+
+    # 5b. Product matched but no explicit development signal -> product_deployment
+    if product_id and not in_house and not both:
+        return _product_deployment_label()
+
+    # 6. Safe default: product_deployment if vendor populated, else custom_system
+    if vendor:
+        return _product_deployment_label()
     return "custom_system"
 
 
