@@ -116,6 +116,25 @@ def normalize(s):
     return str(s).lower().strip()
 
 
+_TEMPLATE_WHITESPACE_RE = re.compile(r"\s+")
+_TEMPLATE_TRAILING_PUNCT_RE = re.compile(r"[.,;:\s]+$")
+
+
+def normalize_template_text(s):
+    """Aggressive normalization for template matching.
+
+    Agencies file Appendix B with minor cosmetic drift (stray newlines,
+    dropped trailing periods, "AI powered" vs. "AI-powered"). This
+    normalization strips all that so exact-string template matches survive.
+    """
+    if s is None:
+        return ""
+    out = _TEMPLATE_WHITESPACE_RE.sub(" ", str(s)).strip()
+    out = out.replace("AI powered", "AI-powered")
+    out = _TEMPLATE_TRAILING_PUNCT_RE.sub("", out)
+    return out.lower()
+
+
 def load_product_aliases(conn):
     """Build a dict of lowered alias -> product_id."""
     d = {}
@@ -125,9 +144,18 @@ def load_product_aliases(conn):
 
 
 def load_templates(conn):
-    """Build list of (template_id, lowered_text, capability_category)."""
-    return [(r["id"], normalize(r["template_text"]), r["capability_category"])
-            for r in conn.execute("SELECT id, template_text, capability_category FROM use_case_templates")]
+    """Build list of (template_id, normalized_text, capability_category).
+
+    Uses `normalize_template_text` so cosmetic drift in agency filings
+    (stray newlines, dropped periods, hyphenation) still yields an exact
+    normalized-string match at tag time.
+    """
+    return [
+        (r["id"], normalize_template_text(r["template_text"]), r["capability_category"])
+        for r in conn.execute(
+            "SELECT id, template_text, capability_category FROM use_case_templates"
+        )
+    ]
 
 
 def load_products(conn):
@@ -152,14 +180,26 @@ def match_product(text, aliases_dict, products_dict):
 
 
 def match_template(text, templates):
-    """Fuzzy match against OMB templates. Returns template_id or None."""
+    """Match against OMB templates. Returns template_id or None.
+
+    Tries exact match on normalized text first (fast path, covers cosmetic
+    drift like trailing punctuation), then falls back to SequenceMatcher at
+    the 0.75 threshold for genuinely paraphrased filings.
+    """
     if not text:
         return None
-    text_lower = normalize(text)
+    norm = normalize_template_text(text)
+
+    # Fast path: exact normalized match.
+    for (tid, ttext, _cat) in templates:
+        if norm == ttext:
+            return tid
+
+    # Fallback: fuzzy.
     best_id = None
     best_score = 0.0
     for (tid, ttext, _cat) in templates:
-        score = SequenceMatcher(None, text_lower, ttext).ratio()
+        score = SequenceMatcher(None, norm, ttext).ratio()
         if score > best_score:
             best_score = score
             best_id = tid

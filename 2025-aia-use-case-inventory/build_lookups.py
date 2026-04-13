@@ -5,12 +5,23 @@ from db import get_connection
 # (canonical_name, vendor, product_type, is_genai, is_frontier_llm, parent, description, aliases)
 PRODUCTS = [
     # Microsoft Copilot family
+    # Agent D (plan §D.2): bare "Copilot" alias removed — it was matching
+    # GitHub Copilot, Copilot for Security, Copilot Studio, Salesforce Copilot,
+    # etc. Aliases here are specific to the M365 SKU.
     ("Microsoft 365 Copilot", "Microsoft", "general_llm", 1, 1, None,
      "Microsoft's enterprise LLM assistant integrated with Office apps",
-     ["CoPilot", "Copilot", "M365 Copilot", "Microsoft M365 Copilot", "Microsoft M365 Copilot AI",
-      "Microsoft Copilot", "Microsoft Copilot Enterprise", "Microsoft 365 Copilot",
-      "Copilot Enterprise", "M365 CoPilot", "Microsoft Copilot for M365",
-      "Microsoft 365 CoPilot", "Microsoft Co-Pilot", "M365 copilot"]),
+     ["M365 Copilot", "Microsoft M365 Copilot", "Microsoft M365 Copilot AI",
+      "Microsoft Copilot for M365", "Microsoft 365 Copilot",
+      "Copilot for Microsoft 365", "M365 CoPilot",
+      "Microsoft 365 CoPilot", "M365 copilot", "Copilot Enterprise",
+      "Microsoft Copilot Enterprise"]),
+    ("Microsoft Copilot for Security", "Microsoft", "security_tool", 1, 0, None,
+     "Microsoft's GenAI-assisted security operations copilot",
+     ["Copilot for Security", "Microsoft Copilot for Security",
+      "Security Copilot", "Microsoft Security Copilot"]),
+    ("Microsoft Copilot Studio", "Microsoft", "agent_platform", 1, 0, None,
+     "Low-code platform for building custom copilots and agents",
+     ["Copilot Studio", "Microsoft Copilot Studio", "Power Virtual Agents"]),
     ("GitHub Copilot", "Microsoft", "coding_assistant", 1, 0, "Microsoft 365 Copilot",
      "AI pair programmer for code generation",
      ["GitHub CoPilot", "GitHub Copilot", "Github Copilot", "GitHub copilot", "GH Copilot"]),
@@ -127,6 +138,20 @@ PRODUCTS = [
     ("Adobe Firefly", "Adobe", "computer_vision", 1, 0, None,
      "Image generation",
      ["Adobe Firefly", "Firefly"]),
+    ("Adobe Photoshop", "Adobe", "computer_vision", 1, 0, None,
+     "Image editing with generative fill and other AI features",
+     ["Adobe Photoshop", "Photoshop"]),
+
+    # Agent D (plan §D.3): four missing products evidenced in data.
+    ("AWS Textract", "Amazon", "computer_vision", 0, 0, None,
+     "Amazon's document text-extraction / OCR service",
+     ["AWS Textract", "Amazon Textract", "Textract"]),
+    ("Airtable AI", "Airtable", "productivity", 1, 0, None,
+     "Airtable's embedded AI (OpenAI-backed) for low-code databases",
+     ["Airtable AI", "Airtable's AI", "Airtable"]),
+    ("WellSaid Labs", "WellSaid Labs", "nlp_specific", 1, 0, None,
+     "Synthetic voice / text-to-speech platform",
+     ["WellSaid Labs", "Wellsaid Labs", "WellSaid", "Wellsaid"]),
 
     # Catch-all categories
     ("Custom In-House AI", "In-House", "custom", 1, 0, None,
@@ -177,6 +202,13 @@ TEMPLATES = [
      "media_editing", "writing"),
     ("Identifying and cataloging items in a storage room using AI-driven image recognition.",
      "storage_cataloging", "operations"),
+    # ---- Agency-specific extensions beyond OMB Appendix B (is_omb_standard=0).
+    # Kept here so a fresh DB rebuild preserves them; downstream queries should
+    # filter on `is_omb_standard` when presenting the canonical 20-item list.
+    ("Using AI-enabled augmented reality to train inspectors to visually assess unsafe environments from a safe location, significantly reducing training time, costs, and staffing needs while maintaining inspection effectiveness.",
+     "ar_inspector_training", "training", 0),
+    ("Answering federal regulatory and agency policy questions related to acquisition using a generative AI tool.",
+     "regulatory_qa", "knowledge", 0),
 ]
 
 
@@ -229,10 +261,17 @@ def seed_templates():
     conn = get_connection()
     try:
         conn.execute("DELETE FROM use_case_templates")
-        for (text, short, category) in TEMPLATES:
+        for row in TEMPLATES:
+            # Row is (text, short, category) for OMB-standard templates or
+            # (text, short, category, is_omb_standard) for agency extensions.
+            if len(row) == 4:
+                text, short, category, is_std = row
+            else:
+                text, short, category = row
+                is_std = 1
             conn.execute(
-                "INSERT INTO use_case_templates (template_text, short_name, capability_category, is_omb_standard) VALUES (?, ?, ?, 1)",
-                (text, short, category),
+                "INSERT INTO use_case_templates (template_text, short_name, capability_category, is_omb_standard) VALUES (?, ?, ?, ?)",
+                (text, short, category, is_std),
             )
         conn.commit()
         print(f"Seeded {len(TEMPLATES)} use case templates")
