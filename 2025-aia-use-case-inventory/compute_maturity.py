@@ -116,13 +116,24 @@ def compute_maturity():
             """, (aid,)).fetchone()[0]
             pct_with_risk_docs = (risk_docs_count / total_uc * 100) if total_uc else 0
 
-            # Year-over-year growth
+            # Year-over-year growth — compare like-with-like against the
+            # 2024 OMB baseline, which is individual-format only (the
+            # consolidated / Appendix B checkbox format is new in 2025).
+            # Including total_cons in the numerator produces phantom growth
+            # for agencies that switched entirely to the consolidated format
+            # (PBGC, EAC, USTDA all showed +400-900% with zero individual
+            # use cases). Suppress YoY entirely when the agency filed no
+            # individual rows in 2025 — they didn't shrink by 100%, they
+            # changed filing formats, and either a negative or an inflated
+            # positive number would mislead readers.
             omb_2024 = OMB_2024_COUNTS.get(abbr, 0)
-            current_total = total_uc + total_cons
-            if omb_2024 > 0:
-                yoy = ((current_total - omb_2024) / omb_2024) * 100
+            if omb_2024 > 0 and total_uc > 0:
+                yoy = ((total_uc - omb_2024) / omb_2024) * 100
             else:
                 yoy = None
+
+            # Overall presence (used only for maturity tier; NOT for YoY).
+            current_total = total_uc + total_cons
 
             # Maturity tier
             if has_enterprise_llm and has_coding and has_agentic and current_total > 50:
