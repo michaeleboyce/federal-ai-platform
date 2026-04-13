@@ -74,8 +74,11 @@ def test_stage_of_development_null_rate_not_pathological(conn):
 def test_architecture_unknown_share_under_loose_ceiling(conn):
     """architecture_type='unknown' share of use_case_tags rows for canonical use_cases.
 
-    Audit narrative: 2113/3616 (58.5%). Baseline JSON: 2183. Phase 2 may tighten
-    by populating architecture more accurately; for now ceiling 75%.
+    Pre-remediation: 2113/3616 (58.5%). Phase 2 Agent E intentionally moved
+    ~443 weak name-only inferences (rag_pipeline, agentic_workflow) to
+    'unknown' per plan §E.2; post-remediation expected ~77%. The dashboard
+    shows a callout explaining the shift. Ceiling 0.85 catches a genuine
+    column-blanking regression without false-alarming on the intentional shift.
     """
     total = conn.execute(
         "SELECT COUNT(*) FROM use_case_tags WHERE use_case_id IS NOT NULL"
@@ -85,9 +88,9 @@ def test_architecture_unknown_share_under_loose_ceiling(conn):
         "AND architecture_type = 'unknown'"
     ).fetchone()[0]
     share = unknown / total if total else 0.0
-    assert share <= 0.75, (
+    assert share <= 0.85, (
         f"use_case_tags.architecture_type='unknown' share = {share:.3f} "
-        f"({unknown}/{total}, baseline ~0.585); ceiling 0.75"
+        f"({unknown}/{total}, post-remediation expected ~0.77); ceiling 0.85"
     )
 
 

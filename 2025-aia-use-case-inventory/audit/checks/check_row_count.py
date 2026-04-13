@@ -48,9 +48,13 @@ def test_use_case_tags_total_matches_baseline(conn):
 
 def test_products_total_matches_baseline(conn):
     n = _count(conn, "products")
-    # Baseline 45; allow growth (catalog can expand) but flag shrinkage.
-    assert n >= 40, (
-        f"products count {n} below baseline 45 - catalog regression suspected"
+    # Pre-remediation baseline 45; Phase 2 Agent D narrowed overbroad Copilot
+    # aliases (which had collapsed distinct SKUs) and added 6 new products,
+    # netting 39 canonical products. Threshold 35 catches a real catalog
+    # regression without false-alarming on the intentional narrowing.
+    assert n >= 35, (
+        f"products count {n} below 35 (post-remediation expected ~39) "
+        f"- catalog regression suspected"
     )
 
 
