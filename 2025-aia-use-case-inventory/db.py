@@ -282,8 +282,40 @@ CREATE INDEX IF NOT EXISTS idx_column_mappings_agency ON column_mappings(agency_
 """
 
 
+def _column_exists(conn, table: str, column: str) -> bool:
+    """Return True if `column` is defined on `table`."""
+    rows = conn.execute(f"PRAGMA table_info({table})").fetchall()
+    return any(r[1] == column for r in rows)
+
+
+def apply_migrations(conn=None) -> None:
+    """Apply additive schema migrations idempotently.
+
+    Currently:
+      * use_cases.id_provenance — TEXT, nullable, no default.
+        Values: 'source' | 'backfilled_from_raw_json' | 'source_missing'.
+        Distinguishes IDs that came from the source spreadsheet from those
+        recovered post-hoc and from those genuinely missing in the source.
+    """
+    own = False
+    if conn is None:
+        conn = get_connection()
+        own = True
+    try:
+        if not _column_exists(conn, "use_cases", "id_provenance"):
+            conn.execute("ALTER TABLE use_cases ADD COLUMN id_provenance TEXT")
+            conn.execute(
+                "CREATE INDEX IF NOT EXISTS idx_use_cases_id_provenance "
+                "ON use_cases(id_provenance)"
+            )
+            conn.commit()
+    finally:
+        if own:
+            conn.close()
+
+
 def init_schema():
-    """Create all tables and indexes."""
+    """Create all tables and indexes, then apply additive migrations."""
     conn = get_connection()
     try:
         conn.executescript(SCHEMA_SQL)
@@ -291,6 +323,7 @@ def init_schema():
         print(f"Schema initialized at {DB_PATH}")
     finally:
         conn.close()
+    apply_migrations()
 
 
 def drop_all():

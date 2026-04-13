@@ -146,24 +146,80 @@ def normalize_header(h: str) -> str:
     return " ".join(str(h).replace("\n", " ").replace("\u2013", "-").replace("\u0092", "'").replace("\u0096", "-").split()).strip().lower()
 
 
+# Pre-computed normalized lookup tables. Built once at import time so per-header
+# matching is O(1) on the exact-match paths instead of repeatedly normalizing
+# every override/canonical key for each header.
+_NORMALIZED_OVERRIDES: dict[str, str | None] = {}
+_NORMALIZED_CANONICAL: dict[str, str] = {}
+
+
+def _build_normalized_lookups() -> None:
+    """Populate the normalized lookup dicts from EXPLICIT_OVERRIDES and CANONICAL_TO_DB."""
+    _NORMALIZED_OVERRIDES.clear()
+    _NORMALIZED_CANONICAL.clear()
+    for k, v in EXPLICIT_OVERRIDES.items():
+        nk = normalize_header(k)
+        if nk and nk not in _NORMALIZED_OVERRIDES:
+            _NORMALIZED_OVERRIDES[nk] = v
+    for k, v in CANONICAL_TO_DB.items():
+        nk = normalize_header(k)
+        if nk and nk not in _NORMALIZED_CANONICAL:
+            _NORMALIZED_CANONICAL[nk] = v
+
+
 def fuzzy_match_canonical(header: str, threshold: float = 0.7) -> str | None:
-    """Find the best canonical column match for a header."""
+    """Find the best canonical column match for a header.
+
+    Normalization (strip whitespace, collapse newlines/repeated spaces, lowercase)
+    is applied to BOTH the input header and the override/canonical key sets BEFORE
+    matching. This is required so that header variants such as
+    ``"Use Case ID\\n\\n[Agency Abbrev.] - [#]"`` (which several agencies use)
+    still resolve to the canonical ``use_case_id`` column. Doing the override
+    lookup against the raw, un-normalized header was silently dropping ~2,000
+    use_case_id values during ingest.
+
+    Match order:
+      1. Normalized exact match against EXPLICIT_OVERRIDES.
+      2. Normalized exact match against CANONICAL_TO_DB.
+      3. Prefix match: header begins with an override/canonical key followed by
+         whitespace (handles "Use Case ID [Agency Abbrev.] - [#]" style suffixes).
+      4. Fuzzy SequenceMatcher ratio against canonical names (>= threshold).
+    """
     if not header:
         return None
 
-    # Try explicit overrides first (exact match)
-    if header in EXPLICIT_OVERRIDES:
-        return EXPLICIT_OVERRIDES[header]
+    if not _NORMALIZED_OVERRIDES:
+        _build_normalized_lookups()
 
-    # Normalize and try to match canonical
     normalized = normalize_header(header)
     if not normalized:
         return None
 
+    # 1. Normalized exact match in EXPLICIT_OVERRIDES.
+    if normalized in _NORMALIZED_OVERRIDES:
+        return _NORMALIZED_OVERRIDES[normalized]
+
+    # 2. Normalized exact match in CANONICAL_TO_DB.
+    if normalized in _NORMALIZED_CANONICAL:
+        return _NORMALIZED_CANONICAL[normalized]
+
+    # 3. Prefix-match, longest key first so "use case id" beats "use case".
+    #    Catches "use case id [agency abbrev.] - [#]" and friends where the
+    #    agency tacks an annotation on the end of the canonical name.
+    prefix_candidates = sorted(
+        list(_NORMALIZED_OVERRIDES.items()) + list(_NORMALIZED_CANONICAL.items()),
+        key=lambda kv: len(kv[0]),
+        reverse=True,
+    )
+    for nk, db_col in prefix_candidates:
+        if nk and normalized.startswith(nk + " "):
+            return db_col
+
+    # 4. Fall back to fuzzy ratio against canonical names.
     best_score = 0.0
     best_match = None
-    for canonical, db_col in CANONICAL_TO_DB.items():
-        score = SequenceMatcher(None, normalized, normalize_header(canonical)).ratio()
+    for nk, db_col in _NORMALIZED_CANONICAL.items():
+        score = SequenceMatcher(None, normalized, nk).ratio()
         if score > best_score:
             best_score = score
             best_match = db_col
@@ -171,6 +227,12 @@ def fuzzy_match_canonical(header: str, threshold: float = 0.7) -> str | None:
     if best_score >= threshold:
         return best_match
     return None
+
+
+# Public alias used by tests and external callers.
+def map_header_to_canonical(header: str) -> str | None:
+    """Map a raw header string to its canonical DB column, or None."""
+    return fuzzy_match_canonical(header)
 
 
 def is_consolidated_format(headers: list[str]) -> bool:

@@ -518,6 +518,12 @@ export function getConsolidatedForAgency(
 // -----------------------------------------------------------------------------
 
 /** All products joined with derived use-case and agency counts. */
+/**
+ * All products with per-product usage counts. Counts span both
+ * `use_cases` and `consolidated_use_cases` because products are linked from
+ * both tables; restricting to `use_cases` alone undercounts the widely-used
+ * Appendix-B / COTS products (e.g. Microsoft 365 Copilot, GitHub Copilot).
+ */
 export function getAllProducts(): ProductWithCounts[] {
   const stmt = getDb().prepare<[], ProductWithCounts>(`
     SELECT p.*,
@@ -528,8 +534,13 @@ export function getAllProducts(): ProductWithCounts[] {
         SELECT product_id,
                COUNT(*) AS use_case_count,
                COUNT(DISTINCT agency_id) AS agency_count
-          FROM use_cases
-         WHERE product_id IS NOT NULL
+          FROM (
+            SELECT product_id, agency_id FROM use_cases
+              WHERE product_id IS NOT NULL
+            UNION ALL
+            SELECT product_id, agency_id FROM consolidated_use_cases
+              WHERE product_id IS NOT NULL
+          )
          GROUP BY product_id
       ) uc_counts ON uc_counts.product_id = p.id
      ORDER BY use_case_count DESC, p.canonical_name COLLATE NOCASE ASC
@@ -552,23 +563,35 @@ export function getProductById(id: number): ProductDetail | null {
     .all(id)
     .map((r) => r.alias_text);
 
+  // Union use_cases + consolidated_use_cases so the product page shows every
+  // agency that linked to this product, not just those that filed an
+  // individual-format row for it.
   const agencies = db
-    .prepare<[number], { id: number; name: string; abbreviation: string; count: number }>(`
-      SELECT a.id, a.name, a.abbreviation, COUNT(*) AS count
-        FROM use_cases uc
-        JOIN agencies a ON a.id = uc.agency_id
-       WHERE uc.product_id = ?
+    .prepare<[number, number], { id: number; name: string; abbreviation: string; count: number }>(`
+      SELECT a.id, a.name, a.abbreviation, SUM(n) AS count
+        FROM (
+          SELECT agency_id, COUNT(*) AS n FROM use_cases
+            WHERE product_id = ? GROUP BY agency_id
+          UNION ALL
+          SELECT agency_id, COUNT(*) AS n FROM consolidated_use_cases
+            WHERE product_id = ? GROUP BY agency_id
+        ) sub
+        JOIN agencies a ON a.id = sub.agency_id
        GROUP BY a.id
        ORDER BY count DESC, a.name COLLATE NOCASE ASC
     `)
-    .all(id);
+    .all(id, id);
 
   const use_case_count = (
     db
-      .prepare<[number], { c: number }>(
-        `SELECT COUNT(*) AS c FROM use_cases WHERE product_id = ?`,
+      .prepare<[number, number], { c: number }>(
+        `SELECT
+           (SELECT COUNT(*) FROM use_cases WHERE product_id = ?)
+           +
+           (SELECT COUNT(*) FROM consolidated_use_cases WHERE product_id = ?)
+           AS c`,
       )
-      .get(id) ?? { c: 0 }
+      .get(id, id) ?? { c: 0 }
   ).c;
 
   return { ...product, aliases, agencies, use_case_count };
@@ -587,6 +610,8 @@ export function getTopProducts(n = 10): ProductWithCounts[] {
 // -----------------------------------------------------------------------------
 
 export function getAllTemplates(): TemplateWithCounts[] {
+  // Templates are referenced from both use_cases and consolidated_use_cases;
+  // count across both so the list view matches reality.
   const stmt = getDb().prepare<[], TemplateWithCounts>(`
     SELECT t.*,
            COALESCE(counts.use_case_count, 0) AS use_case_count,
@@ -596,8 +621,13 @@ export function getAllTemplates(): TemplateWithCounts[] {
         SELECT template_id,
                COUNT(*) AS use_case_count,
                COUNT(DISTINCT agency_id) AS agency_count
-          FROM use_cases
-         WHERE template_id IS NOT NULL
+          FROM (
+            SELECT template_id, agency_id FROM use_cases
+              WHERE template_id IS NOT NULL
+            UNION ALL
+            SELECT template_id, agency_id FROM consolidated_use_cases
+              WHERE template_id IS NOT NULL
+          )
          GROUP BY template_id
       ) counts ON counts.template_id = t.id
      ORDER BY use_case_count DESC, t.short_name COLLATE NOCASE ASC
@@ -614,34 +644,53 @@ export function getTemplateById(id: number): TemplateDetail | null {
     .get(id);
   if (!template) return null;
 
+  // Templates can be referenced from either `use_cases` or
+  // `consolidated_use_cases` (the Appendix B COTS table is the common case).
+  // Both must be unioned so the stats on the template detail page reflect
+  // actual usage — otherwise template_id references that only exist on the
+  // consolidated side are silently dropped.
   const agencies = db
-    .prepare<[number], { id: number; name: string; abbreviation: string; count: number }>(`
-      SELECT a.id, a.name, a.abbreviation, COUNT(*) AS count
-        FROM use_cases uc
-        JOIN agencies a ON a.id = uc.agency_id
-       WHERE uc.template_id = ?
+    .prepare<[number, number], { id: number; name: string; abbreviation: string; count: number }>(`
+      SELECT a.id, a.name, a.abbreviation, SUM(n) AS count
+        FROM (
+          SELECT agency_id, COUNT(*) AS n FROM use_cases
+            WHERE template_id = ? GROUP BY agency_id
+          UNION ALL
+          SELECT agency_id, COUNT(*) AS n FROM consolidated_use_cases
+            WHERE template_id = ? GROUP BY agency_id
+        ) sub
+        JOIN agencies a ON a.id = sub.agency_id
        GROUP BY a.id
        ORDER BY count DESC, a.name COLLATE NOCASE ASC
     `)
-    .all(id);
+    .all(id, id);
 
   const products = db
-    .prepare<[number], { id: number; canonical_name: string; vendor: string | null; count: number }>(`
-      SELECT p.id, p.canonical_name, p.vendor, COUNT(*) AS count
-        FROM use_cases uc
-        JOIN products p ON p.id = uc.product_id
-       WHERE uc.template_id = ?
+    .prepare<[number, number], { id: number; canonical_name: string; vendor: string | null; count: number }>(`
+      SELECT p.id, p.canonical_name, p.vendor, SUM(n) AS count
+        FROM (
+          SELECT product_id, COUNT(*) AS n FROM use_cases
+            WHERE template_id = ? AND product_id IS NOT NULL GROUP BY product_id
+          UNION ALL
+          SELECT product_id, COUNT(*) AS n FROM consolidated_use_cases
+            WHERE template_id = ? AND product_id IS NOT NULL GROUP BY product_id
+        ) sub
+        JOIN products p ON p.id = sub.product_id
        GROUP BY p.id
        ORDER BY count DESC, p.canonical_name COLLATE NOCASE ASC
     `)
-    .all(id);
+    .all(id, id);
 
   const use_case_count = (
     db
-      .prepare<[number], { c: number }>(
-        `SELECT COUNT(*) AS c FROM use_cases WHERE template_id = ?`,
+      .prepare<[number, number], { c: number }>(
+        `SELECT
+           (SELECT COUNT(*) FROM use_cases WHERE template_id = ?)
+           +
+           (SELECT COUNT(*) FROM consolidated_use_cases WHERE template_id = ?)
+           AS c`,
       )
-      .get(id) ?? { c: 0 }
+      .get(id, id) ?? { c: 0 }
   ).c;
 
   return { ...template, agencies, products, use_case_count };
@@ -664,47 +713,70 @@ export function getBureauBreakdown(agencyId: number): BureauBreakdown[] {
   return stmt.all(agencyId);
 }
 
+/*
+ * The per-agency breakdown helpers below union use_case_tags rows from BOTH
+ * source tables (individual and consolidated) so the donuts on the agency
+ * detail page reflect every entry the agency filed — not just the individual
+ * ones. `use_case_tags` carries either `use_case_id` OR
+ * `consolidated_use_case_id`, never both, so the CHECK constraint on the
+ * table guarantees a clean union.
+ */
 export function getEntryTypeBreakdown(agencyId: number): BreakdownRow[] {
-  const stmt = getDb().prepare<[number], BreakdownRow>(`
-    SELECT COALESCE(tag.entry_type, 'unknown') AS label,
-           COUNT(*) AS count
-      FROM use_cases uc
-      LEFT JOIN use_case_tags tag ON tag.use_case_id = uc.id
-     WHERE uc.agency_id = ?
-     GROUP BY tag.entry_type
+  const stmt = getDb().prepare<[number, number], BreakdownRow>(`
+    SELECT COALESCE(entry_type, 'unknown') AS label, COUNT(*) AS count
+      FROM (
+        SELECT t.entry_type FROM use_case_tags t
+          JOIN use_cases uc ON uc.id = t.use_case_id
+         WHERE uc.agency_id = ?
+        UNION ALL
+        SELECT t.entry_type FROM use_case_tags t
+          JOIN consolidated_use_cases c ON c.id = t.consolidated_use_case_id
+         WHERE c.agency_id = ?
+      )
+     GROUP BY entry_type
      ORDER BY count DESC
   `);
-  return stmt.all(agencyId);
+  return stmt.all(agencyId, agencyId);
 }
 
 export function getAISophisticationBreakdown(
   agencyId: number,
 ): BreakdownRow[] {
-  const stmt = getDb().prepare<[number], BreakdownRow>(`
-    SELECT COALESCE(tag.ai_sophistication, 'unknown') AS label,
-           COUNT(*) AS count
-      FROM use_cases uc
-      LEFT JOIN use_case_tags tag ON tag.use_case_id = uc.id
-     WHERE uc.agency_id = ?
-     GROUP BY tag.ai_sophistication
+  const stmt = getDb().prepare<[number, number], BreakdownRow>(`
+    SELECT COALESCE(ai_sophistication, 'unknown') AS label, COUNT(*) AS count
+      FROM (
+        SELECT t.ai_sophistication FROM use_case_tags t
+          JOIN use_cases uc ON uc.id = t.use_case_id
+         WHERE uc.agency_id = ?
+        UNION ALL
+        SELECT t.ai_sophistication FROM use_case_tags t
+          JOIN consolidated_use_cases c ON c.id = t.consolidated_use_case_id
+         WHERE c.agency_id = ?
+      )
+     GROUP BY ai_sophistication
      ORDER BY count DESC
   `);
-  return stmt.all(agencyId);
+  return stmt.all(agencyId, agencyId);
 }
 
 export function getDeploymentScopeBreakdown(
   agencyId: number,
 ): BreakdownRow[] {
-  const stmt = getDb().prepare<[number], BreakdownRow>(`
-    SELECT COALESCE(tag.deployment_scope, 'unknown') AS label,
-           COUNT(*) AS count
-      FROM use_cases uc
-      LEFT JOIN use_case_tags tag ON tag.use_case_id = uc.id
-     WHERE uc.agency_id = ?
-     GROUP BY tag.deployment_scope
+  const stmt = getDb().prepare<[number, number], BreakdownRow>(`
+    SELECT COALESCE(deployment_scope, 'unknown') AS label, COUNT(*) AS count
+      FROM (
+        SELECT t.deployment_scope FROM use_case_tags t
+          JOIN use_cases uc ON uc.id = t.use_case_id
+         WHERE uc.agency_id = ?
+        UNION ALL
+        SELECT t.deployment_scope FROM use_case_tags t
+          JOIN consolidated_use_cases c ON c.id = t.consolidated_use_case_id
+         WHERE c.agency_id = ?
+      )
+     GROUP BY deployment_scope
      ORDER BY count DESC
   `);
-  return stmt.all(agencyId);
+  return stmt.all(agencyId, agencyId);
 }
 
 export function getProductsForAgency(
@@ -716,17 +788,22 @@ export function getProductsForAgency(
   use_case_count: number;
 }> {
   const stmt = getDb().prepare<
-    [number],
+    [number, number],
     { id: number; canonical_name: string; vendor: string | null; use_case_count: number }
   >(`
-    SELECT p.id, p.canonical_name, p.vendor, COUNT(*) AS use_case_count
-      FROM use_cases uc
-      JOIN products p ON p.id = uc.product_id
-     WHERE uc.agency_id = ?
+    SELECT p.id, p.canonical_name, p.vendor, SUM(n) AS use_case_count
+      FROM (
+        SELECT product_id, COUNT(*) AS n FROM use_cases
+          WHERE agency_id = ? AND product_id IS NOT NULL GROUP BY product_id
+        UNION ALL
+        SELECT product_id, COUNT(*) AS n FROM consolidated_use_cases
+          WHERE agency_id = ? AND product_id IS NOT NULL GROUP BY product_id
+      ) sub
+      JOIN products p ON p.id = sub.product_id
      GROUP BY p.id
      ORDER BY use_case_count DESC, p.canonical_name COLLATE NOCASE ASC
   `);
-  return stmt.all(agencyId);
+  return stmt.all(agencyId, agencyId);
 }
 
 // -----------------------------------------------------------------------------
@@ -754,10 +831,16 @@ export function getVendorMarketShare(): VendorShareRow[] {
   const stmt = getDb().prepare<[], VendorShareRow>(`
     SELECT p.vendor AS vendor,
            COUNT(DISTINCT p.id) AS product_count,
-           COUNT(uc.id) AS use_case_count,
-           COUNT(DISTINCT uc.agency_id) AS agency_count
+           COUNT(sub.product_id) AS use_case_count,
+           COUNT(DISTINCT sub.agency_id) AS agency_count
       FROM products p
-      LEFT JOIN use_cases uc ON uc.product_id = p.id
+      LEFT JOIN (
+        SELECT product_id, agency_id FROM use_cases
+          WHERE product_id IS NOT NULL
+        UNION ALL
+        SELECT product_id, agency_id FROM consolidated_use_cases
+          WHERE product_id IS NOT NULL
+      ) sub ON sub.product_id = p.id
      WHERE p.vendor IS NOT NULL AND p.vendor <> ''
      GROUP BY p.vendor
      ORDER BY use_case_count DESC, agency_count DESC
@@ -773,9 +856,15 @@ export function getProductAgencyHeatmap(): HeatmapCell[] {
            a.id AS agency_id,
            a.abbreviation AS agency_abbreviation,
            COUNT(*) AS count
-      FROM use_cases uc
-      JOIN products p ON p.id = uc.product_id
-      JOIN agencies a ON a.id = uc.agency_id
+      FROM (
+        SELECT product_id, agency_id FROM use_cases
+          WHERE product_id IS NOT NULL
+        UNION ALL
+        SELECT product_id, agency_id FROM consolidated_use_cases
+          WHERE product_id IS NOT NULL
+      ) sub
+      JOIN products p ON p.id = sub.product_id
+      JOIN agencies a ON a.id = sub.agency_id
      GROUP BY p.id, a.id
      ORDER BY count DESC
   `);
@@ -932,11 +1021,17 @@ export function getProductAgencyMatrix(
 } {
   const db = getDb();
 
+  // Heatmap must span both inventory tables — Copilot-style products that only
+  // surface in the consolidated filings were being dropped otherwise.
   const products = db
     .prepare<[number], { id: number; canonical_name: string; vendor: string | null; total: number }>(`
-      SELECT p.id, p.canonical_name, p.vendor, COUNT(uc.id) AS total
+      SELECT p.id, p.canonical_name, p.vendor, COUNT(sub.product_id) AS total
         FROM products p
-        JOIN use_cases uc ON uc.product_id = p.id
+        JOIN (
+          SELECT product_id FROM use_cases WHERE product_id IS NOT NULL
+          UNION ALL
+          SELECT product_id FROM consolidated_use_cases WHERE product_id IS NOT NULL
+        ) sub ON sub.product_id = p.id
        GROUP BY p.id
        ORDER BY total DESC, p.canonical_name COLLATE NOCASE ASC
        LIMIT ?
@@ -945,9 +1040,13 @@ export function getProductAgencyMatrix(
 
   const agencies = db
     .prepare<[number], { id: number; name: string; abbreviation: string; total: number }>(`
-      SELECT a.id, a.name, a.abbreviation, COUNT(uc.id) AS total
+      SELECT a.id, a.name, a.abbreviation, COUNT(sub.agency_id) AS total
         FROM agencies a
-        JOIN use_cases uc ON uc.agency_id = a.id
+        JOIN (
+          SELECT agency_id FROM use_cases
+          UNION ALL
+          SELECT agency_id FROM consolidated_use_cases
+        ) sub ON sub.agency_id = a.id
        WHERE a.status IN ('FOUND_2025','FOUND_2024_ONLY')
        GROUP BY a.id
        ORDER BY total DESC, a.name COLLATE NOCASE ASC
@@ -967,7 +1066,11 @@ export function getProductAgencyMatrix(
   const cells = db
     .prepare<number[], { product_id: number; agency_id: number; count: number }>(`
       SELECT product_id, agency_id, COUNT(*) AS count
-        FROM use_cases
+        FROM (
+          SELECT product_id, agency_id FROM use_cases WHERE product_id IS NOT NULL
+          UNION ALL
+          SELECT product_id, agency_id FROM consolidated_use_cases WHERE product_id IS NOT NULL
+        )
        WHERE product_id IN (${pPh})
          AND agency_id IN (${aPh})
        GROUP BY product_id, agency_id
@@ -977,13 +1080,12 @@ export function getProductAgencyMatrix(
   return { products, agencies, cells };
 }
 
-/** Distribution of tag.architecture_type across all use cases. */
+/** Distribution of tag.architecture_type across all entries (individual + consolidated). */
 export function getArchitectureDistribution(): BreakdownRow[] {
   const stmt = getDb().prepare<[], BreakdownRow>(`
     SELECT COALESCE(architecture_type, 'unknown') AS label,
            COUNT(*) AS count
       FROM use_case_tags
-     WHERE use_case_id IS NOT NULL
      GROUP BY architecture_type
      ORDER BY count DESC
   `);
@@ -992,7 +1094,9 @@ export function getArchitectureDistribution(): BreakdownRow[] {
 
 /**
  * Vendor share restricted to general-LLM entries — i.e. the "which chatbot do
- * agency staff actually have access to" slice.
+ * agency staff actually have access to" slice. Counts across both individual
+ * and consolidated tag rows since most agency-wide LLM access is reported
+ * on the consolidated side.
  */
 export function getLLMVendorShare(): BreakdownRow[] {
   const stmt = getDb().prepare<[], BreakdownRow>(`
