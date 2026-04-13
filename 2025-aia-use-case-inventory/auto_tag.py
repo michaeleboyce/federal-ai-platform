@@ -167,16 +167,23 @@ def load_products(conn):
 
 
 def match_product(text, aliases_dict, products_dict):
-    """Try to match a product from vendor/description text. Returns product_id or None."""
+    """Try to match a product from vendor/description text. Returns product_id or None.
+
+    Agent D (plan §D): uses the same word-boundary-aware extractor that
+    populates ``use_case_products`` so the single FK and the join table stay
+    consistent. Returns the first (highest-confidence / longest-alias) match.
+    The old substring-only matcher produced false positives like "Custom" ->
+    Custom In-House AI hitting inside the word "Customs".
+    """
     if not text:
         return None
-    text_lower = normalize(text)
-    # Try longest aliases first for better matching
-    sorted_aliases = sorted(aliases_dict.keys(), key=len, reverse=True)
-    for alias in sorted_aliases:
-        if alias and alias in text_lower:
-            return aliases_dict[alias]
-    return None
+    # Local import to avoid a circular reference at module load time
+    # (scripts.populate_use_case_products imports auto_tag).
+    from scripts.populate_use_case_products import extract_products
+    matches = extract_products(text, aliases_dict)
+    if not matches:
+        return None
+    return matches[0]["product_name"]  # value is product_id from DB aliases
 
 
 def match_template(text, templates):
@@ -702,10 +709,16 @@ def tag_use_case(row, agency_abbr, aliases_dict, templates, products_dict, is_co
 
 
 def run():
+    # Import locally so the test suite can still exercise the tag-inference
+    # functions without a DB round-trip (the populate script imports auto_tag).
+    from scripts.populate_use_case_products import extract_products
+
     conn = get_connection()
     try:
-        # Clear existing tags
+        # Clear existing tags + the Agent D join table so this run is a clean
+        # rebuild (idempotent).
         conn.execute("DELETE FROM use_case_tags")
+        conn.execute("DELETE FROM use_case_products")
         conn.commit()
 
         aliases_dict = load_product_aliases(conn)
@@ -733,6 +746,27 @@ def run():
                 f"INSERT INTO use_case_tags ({','.join(cols)}) VALUES ({placeholders})",
                 values,
             )
+            # Agent D (plan §D.4): populate use_case_products with ALL matches
+            # evidenced by the combined vendor/system/name/problem text. The
+            # single-FK use_cases.product_id still gets the first (highest-
+            # confidence) match for back-compat with existing dashboard code.
+            ucp_text = " ".join(
+                (row_dict.get(k) or "")
+                for k in ("vendor_name", "system_name", "use_case_name",
+                          "problem_statement")
+            )
+            for m in extract_products(ucp_text, aliases_dict):
+                pid = m["product_name"]  # product_id (values from DB aliases)
+                evidence = m.get("evidence") or m.get("alias") or ""
+                confidence = "strong" if len(evidence) >= 5 else "inferred"
+                conn.execute(
+                    """
+                    INSERT OR IGNORE INTO use_case_products
+                        (use_case_id, product_id, evidence_text, confidence)
+                    VALUES (?, ?, ?, ?)
+                    """,
+                    (r["id"], pid, evidence, confidence),
+                )
             # Update source table with product_id and template_id
             conn.execute(
                 "UPDATE use_cases SET product_id = ?, template_id = ? WHERE id = ?",

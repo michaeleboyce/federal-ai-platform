@@ -296,6 +296,11 @@ def apply_migrations(conn=None) -> None:
         Values: 'source' | 'backfilled_from_raw_json' | 'source_missing'.
         Distinguishes IDs that came from the source spreadsheet from those
         recovered post-hoc and from those genuinely missing in the source.
+      * use_case_products — many-to-many join table (Phase 2 Agent D).
+        Multi-product evidence per use case; keeps use_cases.product_id
+        for back-compat (highest-confidence single match).
+      * review_queue_products — surface rows that need LLM review for
+        product resolution (compound strings + unmatched vendor text).
     """
     own = False
     if conn is None:
@@ -309,6 +314,51 @@ def apply_migrations(conn=None) -> None:
                 "ON use_cases(id_provenance)"
             )
             conn.commit()
+
+        # use_case_products join table (Agent D)
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS use_case_products (
+                use_case_id INTEGER NOT NULL REFERENCES use_cases(id),
+                product_id INTEGER NOT NULL REFERENCES products(id),
+                evidence_text TEXT,
+                confidence TEXT CHECK(confidence IN ('strong', 'inferred')),
+                PRIMARY KEY (use_case_id, product_id)
+            )
+            """
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_ucp_use_case "
+            "ON use_case_products(use_case_id)"
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_ucp_product "
+            "ON use_case_products(product_id)"
+        )
+
+        # review_queue_products for coordinator LLM review pass
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS review_queue_products (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                use_case_id INTEGER REFERENCES use_cases(id),
+                consolidated_use_case_id INTEGER REFERENCES consolidated_use_cases(id),
+                source_text TEXT,
+                heuristic_product_ids TEXT,  -- JSON array of product IDs resolved heuristically
+                reason TEXT,                  -- 'compound_string' | 'unmatched_vendor_text'
+                llm_reviewed INTEGER DEFAULT 0,
+                llm_proposed_product_ids TEXT,
+                llm_confidence TEXT,
+                llm_reasoning TEXT,
+                created_at TEXT DEFAULT (datetime('now'))
+            )
+            """
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_rqp_use_case "
+            "ON review_queue_products(use_case_id)"
+        )
+        conn.commit()
     finally:
         if own:
             conn.close()

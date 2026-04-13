@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import {
   getUseCaseOrConsolidatedBySlug,
   getProductById,
+  getProductsForUseCase,
   getTemplateById,
   getAgencyByAbbr,
   getRelatedByAgency,
@@ -77,6 +78,11 @@ function IndividualDetail({ data }: { data: UseCaseWithTags }) {
   const agency = data.agency_abbreviation
     ? getAgencyByAbbr(data.agency_abbreviation)
     : null;
+  // Agent D (plan §D.6): render all products linked via use_case_products,
+  // not just the single use_cases.product_id. The legacy ``product`` value
+  // remains the primary linkage for the section header; ``linkedProducts``
+  // covers multi-product cases (e.g. "AWS (Textract + Bedrock)").
+  const linkedProducts = getProductsForUseCase(data.id);
   const product =
     data.product_id != null ? getProductById(data.product_id) : null;
   const template =
@@ -350,36 +356,63 @@ function IndividualDetail({ data }: { data: UseCaseWithTags }) {
         <TagDefinitionList tags={tags} />
       </Section>
 
-      {product && (
+      {(product || linkedProducts.length > 0) && (
         <Section
           number="VIII"
-          title="Linked product"
-          lede="The commercial product (or in-house system) this entry deploys."
+          title={
+            linkedProducts.length > 1 ? "Linked products" : "Linked product"
+          }
+          lede={
+            linkedProducts.length > 1
+              ? "Every canonical product evidenced by this entry's vendor, system, name, or problem-statement text."
+              : "The commercial product (or in-house system) this entry deploys."
+          }
         >
-          <Link
-            href={`/products/${product.id}`}
-            className="group flex items-start justify-between gap-3 border-t-2 border-foreground pt-4 hover:text-[var(--stamp)]"
-          >
-            <div>
-              <p className="font-display italic text-[1.4rem] leading-tight tracking-[-0.01em] text-foreground group-hover:text-[var(--stamp)]">
-                {product.canonical_name}
-              </p>
-              {product.vendor && (
-                <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
-                  {product.vendor}
-                </p>
-              )}
-              {product.description && (
-                <p className="mt-2 line-clamp-3 max-w-[62ch] text-[13px] leading-snug text-muted-foreground">
-                  {product.description}
-                </p>
-              )}
-            </div>
-            <ExternalLink
-              className="size-4 shrink-0 text-muted-foreground"
-              aria-hidden
-            />
-          </Link>
+          <ul className="flex flex-col divide-y divide-border border-t-2 border-foreground">
+            {(linkedProducts.length > 0
+              ? linkedProducts
+              : product
+                ? [
+                    {
+                      id: product.id,
+                      canonical_name: product.canonical_name,
+                      vendor: product.vendor,
+                      description: product.description,
+                      evidence_text: null,
+                      confidence: null,
+                    },
+                  ]
+                : []
+            ).map((p) => (
+              <li key={p.id} className="py-4 first:pt-4">
+                <Link
+                  href={`/products/${p.id}`}
+                  className="group flex items-start justify-between gap-3 hover:text-[var(--stamp)]"
+                >
+                  <div>
+                    <p className="font-display italic text-[1.4rem] leading-tight tracking-[-0.01em] text-foreground group-hover:text-[var(--stamp)]">
+                      {p.canonical_name}
+                    </p>
+                    {p.vendor && (
+                      <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] text-muted-foreground">
+                        {p.vendor}
+                        {p.confidence ? ` · ${p.confidence} evidence` : ""}
+                      </p>
+                    )}
+                    {p.description && (
+                      <p className="mt-2 line-clamp-3 max-w-[62ch] text-[13px] leading-snug text-muted-foreground">
+                        {p.description}
+                      </p>
+                    )}
+                  </div>
+                  <ExternalLink
+                    className="size-4 shrink-0 text-muted-foreground"
+                    aria-hidden
+                  />
+                </Link>
+              </li>
+            ))}
+          </ul>
         </Section>
       )}
 

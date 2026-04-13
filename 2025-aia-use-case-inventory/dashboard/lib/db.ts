@@ -605,6 +605,33 @@ export function getTopProducts(n = 10): ProductWithCounts[] {
     .slice(0, n);
 }
 
+/**
+ * Every canonical product linked to the given use case via the
+ * ``use_case_products`` join table (Phase 2 Agent D). Sorted strongest-
+ * evidence first so callers can pick the first element as the primary
+ * product if they only need one. Returns an empty array if no linkage exists.
+ */
+export function getProductsForUseCase(
+  useCaseId: number,
+): Array<Product & { evidence_text: string | null; confidence: string | null }> {
+  const db = getDb();
+  const stmt = db.prepare<
+    [number],
+    Product & { evidence_text: string | null; confidence: string | null }
+  >(`
+    SELECT p.*,
+           ucp.evidence_text AS evidence_text,
+           ucp.confidence    AS confidence
+      FROM use_case_products ucp
+      JOIN products p ON p.id = ucp.product_id
+     WHERE ucp.use_case_id = ?
+     ORDER BY
+       CASE ucp.confidence WHEN 'strong' THEN 0 ELSE 1 END,
+       p.canonical_name COLLATE NOCASE ASC
+  `);
+  return stmt.all(useCaseId);
+}
+
 // -----------------------------------------------------------------------------
 // Templates
 // -----------------------------------------------------------------------------
