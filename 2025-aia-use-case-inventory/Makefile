@@ -1,4 +1,4 @@
-.PHONY: check fix dashboard all clean
+.PHONY: check fix retag-scope dashboard all clean
 
 check:
 	pytest tests/ audit/checks/ -v
@@ -9,6 +9,15 @@ fix:
 	python build_lookups.py
 	python auto_tag.py
 	python compute_maturity.py
+
+retag-scope:
+	python scripts/retag_scope_architecture.py
+
+populate-review-queue-scope:
+	python scripts/populate_review_queue_scope.py
+
+adjudicate-review-queue-scope:
+	python scripts/review_queue_scope_adjudicate.py
 
 dashboard:
 	cd dashboard && npm run build

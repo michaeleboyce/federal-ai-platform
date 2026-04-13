@@ -321,58 +321,167 @@ def infer_ai_sophistication(row, product_id, products_dict):
     return "classical_ml"  # default
 
 
-def infer_architecture(row, product_id, products_dict):
-    """Classify architecture type."""
+# Phrases that indicate an explicit agency-wide / department-wide deployment.
+# These are the ONLY description signals that should promote a row to
+# enterprise_wide (beyond the authoritative consolidated `agency_uses = 'Y'`).
+ENTERPRISE_WIDE_PHRASES = [
+    "agency-wide", "agency wide",
+    "department-wide", "department wide",
+    "enterprise-wide", "enterprise wide",
+    "all employees", "all staff",
+    "organization-wide", "organization wide",
+    "government-wide",
+]
+
+# Phrases in training_data_description that constitute explicit RAG evidence.
+# Plan §E.2: require product-type OR explicit phrase.
+RAG_PHRASES = [
+    "vector database", "vector db", "vector store",
+    "embedding", "embeddings",
+    "retrieval-augmented", "retrieval augmented",
+]
+
+# Phrases that constitute explicit agentic-workflow evidence.
+AGENTIC_PHRASES = [
+    "agentic workflow", "multi-step agent", "multi step agent",
+    "tool use", "tool-use", "tool calling", "tool-calling",
+    "autonomous agent",
+]
+
+
+def infer_architecture(row, products_dict=None, product_id=None):
+    """Classify architecture type with evidence-gated RAG/agentic inference.
+
+    Plan §E.2 — rag_pipeline / agentic_workflow now require EITHER:
+      * A matched product whose ``product_type`` is ``rag_platform`` /
+        ``agent_platform``, OR
+      * An explicit phrase in ``training_data_description`` (vector db,
+        embedding, retrieval-augmented for RAG; agentic/tool-use phrasing
+        for agentic).
+
+    Name-only keyword matches are dropped — they produced 443 false positives
+    (279 rag_pipeline + 164 agentic_workflow) on this dataset.
+
+    Returns ``(architecture_type, has_model_training)``.
+    """
     train_desc = normalize(row.get("training_data_description", ""))
-    custom_code = normalize(row.get("has_custom_code", ""))
-    problem = normalize(row.get("problem_statement", "") + " " + row.get("use_case_name", ""))
+    problem = normalize(
+        (row.get("problem_statement", "") or "")
+        + " "
+        + (row.get("use_case_name", "") or "")
+    )
     dev = normalize(row.get("development_type", ""))
 
-    if keyword_any(train_desc + " " + problem, TRAINING_KEYWORDS):
+    # Fine-tuning remains explicit by nature — TRAINING_KEYWORDS are strong
+    # phrases ("fine-tune", "trained on our", etc.) in training_data_description.
+    if keyword_any(train_desc, TRAINING_KEYWORDS):
         return "fine_tuned", 1
-    if keyword_any(problem + " " + train_desc, RAG_KEYWORDS):
+
+    # Product-type evidence for RAG / agent platforms.
+    product_type = ""
+    if product_id and products_dict:
+        product_type = (products_dict.get(product_id, {}) or {}).get(
+            "product_type", ""
+        ) or ""
+        product_type = product_type.lower()
+
+    if product_type == "rag_platform":
         return "rag_pipeline", 0
-    if keyword_any(problem, AGENTIC_KEYWORDS):
+    if product_type == "agent_platform":
         return "agentic_workflow", 0
+
+    # Explicit phrase evidence in training_data_description.
+    if any(phrase in train_desc for phrase in RAG_PHRASES):
+        return "rag_pipeline", 0
+    if any(phrase in train_desc for phrase in AGENTIC_PHRASES) or any(
+        phrase in problem for phrase in AGENTIC_PHRASES
+    ):
+        return "agentic_workflow", 0
+
+    # Custom-trained: in-house development with substantive training desc.
     if "in-house" in dev and train_desc and len(train_desc) > 50:
         return "custom_trained", 1
+
+    # Fallback: if a product matched, call it inference_only; else unknown
+    # (preserves uncertainty — plan §E Section 5 intent).
     if product_id:
         return "inference_only", 0
     return "unknown", 0
 
 
-def infer_scope(row, bureau, agency_abbr, licenses_users=None):
-    """Classify deployment scope."""
+def infer_scope(row, is_consolidated=False, bureau=None, agency_abbr=None):
+    """Classify deployment scope with evidence-gated enterprise_wide inference.
+
+    Plan §E.1 — for consolidated rows, default to ``'unknown'``. Only promote
+    to ``enterprise_wide`` when:
+      * ``agency_uses == 'Y'`` (the authoritative consolidated source flag), OR
+      * Description / name contains an explicit agency-wide phrase.
+
+    The ``estimated_licenses_users`` substring block is DROPPED entirely —
+    that field is self-reported free text and cannot support the plan's
+    "strong user-count evidence" criterion.
+
+    For non-consolidated rows, require explicit bureau/agency wording; if no
+    bureau info is available, return ``'unknown'`` (never default to
+    ``enterprise_wide``).
+
+    Returns a tuple ``(scope, scope_detail)`` when ``bureau`` or
+    ``agency_abbr`` are supplied (production call sites in ``tag_use_case``).
+    When called with only ``is_consolidated`` (unit tests per plan §E.4),
+    returns just the scope string.
+    """
+    # Description text for phrase scanning — consolidated rows use
+    # ``ai_use_case``; canonical rows use ``problem_statement``; tests use
+    # ``description``. Scan all of them.
+    description = normalize(
+        (row.get("description", "") or "")
+        + " "
+        + (row.get("ai_use_case", "") or "")
+        + " "
+        + (row.get("problem_statement", "") or "")
+        + " "
+        + (row.get("use_case_name", "") or "")
+    )
+
+    if is_consolidated:
+        agency_uses = (row.get("agency_uses") or "").strip().upper()
+        if agency_uses == "Y":
+            scope, detail = "enterprise_wide", None
+        elif any(phrase in description for phrase in ENTERPRISE_WIDE_PHRASES):
+            scope, detail = "enterprise_wide", None
+        else:
+            scope, detail = "unknown", None
+        if bureau is None and agency_abbr is None:
+            return scope
+        return scope, detail
+
+    # Non-consolidated rows: require explicit evidence to promote.
     b = normalize(bureau)
-    # For consolidated entries, rely on license count
-    if licenses_users:
-        lc = normalize(licenses_users)
-        if "10000" in lc or "100000" in lc or "1001-" in lc or "5001-" in lc:
-            return "enterprise_wide", None
-        if "1-100" in lc or "101-1000" in lc:
-            return "bureau", None
+    a = normalize(agency_abbr)
 
-    if not b:
-        return "unknown", None
+    if any(phrase in description for phrase in ENTERPRISE_WIDE_PHRASES):
+        scope, detail = "enterprise_wide", None
+    elif not b:
+        scope, detail = "unknown", None
+    elif a and (a in b or b == a):
+        scope, detail = "enterprise_wide", None
+    elif "enterprise" in b or "agency-wide" in b or "department-wide" in b:
+        scope, detail = "enterprise_wide", None
+    else:
+        known_bureaus = [
+            "cdc", "cms", "fda", "nih", "cbp", "ice", "tsa", "fema",
+            "uscis", "fbi", "dea", "atf", "irs", "fsa", "bop",
+        ]
+        if any(kb in b for kb in known_bureaus):
+            scope, detail = "bureau", bureau
+        elif "office" in b or "division" in b:
+            scope, detail = "office", bureau
+        else:
+            scope, detail = "bureau", bureau
 
-    # If bureau matches agency name, it's enterprise-wide
-    if normalize(agency_abbr) in b or b == normalize(agency_abbr).lower():
-        return "enterprise_wide", None
-
-    if "enterprise" in b or "agency-wide" in b or "department-wide" in b:
-        return "enterprise_wide", None
-
-    # Known large bureaus like CDC within HHS
-    known_bureaus = ["cdc", "cms", "fda", "nih", "cbp", "ice", "tsa", "fema",
-                     "uscis", "fbi", "dea", "atf", "irs", "fsa", "bop"]
-    if any(kb in b for kb in known_bureaus):
-        return "bureau", bureau
-
-    # If has "office" in name, likely an office scope
-    if "office" in b or "division" in b:
-        return "office", bureau
-
-    return "bureau", bureau
+    if bureau is None and agency_abbr is None:
+        return scope
+    return scope, detail
 
 
 def infer_use_type(row):
@@ -451,14 +560,19 @@ def tag_use_case(row, agency_abbr, aliases_dict, templates, products_dict, is_co
 
     prod = products_dict.get(product_id, {}) if product_id else {}
     ai_soph = infer_ai_sophistication(row, product_id, products_dict)
-    arch, has_train = infer_architecture(row, product_id, products_dict)
+    arch, has_train = infer_architecture(row, products_dict, product_id)
 
     if is_consolidated:
         scope, scope_detail = infer_scope(
-            row, "", agency_abbr, licenses_users=row.get("estimated_licenses_users")
+            row, is_consolidated=True, bureau="", agency_abbr=agency_abbr
         )
     else:
-        scope, scope_detail = infer_scope(row, row.get("bureau_component", ""), agency_abbr)
+        scope, scope_detail = infer_scope(
+            row,
+            is_consolidated=False,
+            bureau=row.get("bureau_component", ""),
+            agency_abbr=agency_abbr,
+        )
 
     # is_general_llm_access is computed by the dedicated inference function so
     # the precedence rules (source ai_classification as strong signal, product

@@ -6,18 +6,18 @@ Baseline: audit/baselines/2026-04-12-pre-remediation.json
   - enterprise_wide_agency_uses_split: {Y: 75, N: 29, NULL: 7}
     -> N + NULL = 36
 
-THIS IS A BASELINE-LOOSE SCAFFOLD.
-
-Phase 2 Agent E owns this check and will tighten the threshold from <=40
-down to <=5 once enterprise_wide tagging is restricted to rows with
-explicit agency-wide wording or supporting user/license signal.
+Tightened by Agent E (plan §E.5) after ``infer_scope()`` was rewritten to
+require ``agency_uses='Y'`` OR explicit agency-wide phrasing for consolidated
+rows. The 36 demotion candidates are now tagged 'unknown'; the residual
+ceiling of 5 catches unexpected regressions from the new phrase list.
 """
 
 
-def test_enterprise_wide_consolidated_with_no_agency_use_under_loose_ceiling(conn):
-    """consolidated rows tagged enterprise_wide but agency_uses != Y.
+def test_enterprise_wide_requires_evidence(conn):
+    """consolidated rows tagged enterprise_wide but agency_uses != Y,
+    and no explicit agency-wide wording in the description.
 
-    Baseline 36 (N=29 + NULL=7). Phase 2 target: <=5.
+    Baseline 36. Post-Agent-E target: <=5.
     """
     n = conn.execute(
         """
@@ -26,12 +26,17 @@ def test_enterprise_wide_consolidated_with_no_agency_use_under_loose_ceiling(con
         JOIN consolidated_use_cases c ON c.id = t.consolidated_use_case_id
         WHERE t.deployment_scope = 'enterprise_wide'
           AND (c.agency_uses IS NULL OR c.agency_uses = 'N')
+          AND LOWER(COALESCE(c.ai_use_case, '')) NOT LIKE '%agency-wide%'
+          AND LOWER(COALESCE(c.ai_use_case, '')) NOT LIKE '%agency wide%'
+          AND LOWER(COALESCE(c.ai_use_case, '')) NOT LIKE '%department-wide%'
+          AND LOWER(COALESCE(c.ai_use_case, '')) NOT LIKE '%enterprise-wide%'
+          AND LOWER(COALESCE(c.ai_use_case, '')) NOT LIKE '%all employees%'
+          AND LOWER(COALESCE(c.ai_use_case, '')) NOT LIKE '%all staff%'
+          AND LOWER(COALESCE(c.commercial_product, '')) NOT LIKE '%agency-wide%'
         """
     ).fetchone()[0]
-    assert n <= 40, (
-        f"enterprise_wide consolidated rows with agency_uses IN (N, NULL) = {n} "
-        f"(baseline 36); ceiling 40 - scope tagging regression suspected. "
-        f"Phase 2 Agent E will tighten this to <=5."
+    assert n <= 5, (
+        f"Regressed: {n} unjustified enterprise_wide tags (baseline 36, target <=5)"
     )
 
 

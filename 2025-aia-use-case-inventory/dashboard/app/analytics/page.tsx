@@ -275,9 +275,15 @@ export default function AnalyticsPage() {
           />
         </div>
 
+        <p
+          id="architecture-note"
+          className="mt-14 max-w-prose text-xs text-muted-foreground"
+        >
+          Architecture inferences require explicit source evidence. ~70% are marked &quot;unknown&quot; to preserve uncertainty.
+        </p>
         <div
           id="architecture"
-          className="scroll-mt-32 mt-14 grid gap-x-6 gap-y-10 md:grid-cols-2"
+          className="scroll-mt-32 mt-4 grid gap-x-6 gap-y-10 md:grid-cols-2"
         >
           <Figure
             eyebrow="Fig. 06 · Architecture type"
