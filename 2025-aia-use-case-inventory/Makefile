@@ -8,6 +8,12 @@ fix:
 	python load_inventories.py
 	python build_lookups.py
 	python auto_tag.py
+	# Belt-and-suspenders: re-apply the narrow infer_llm_flag rule via the
+	# authoritative retag script so that even if a future auto_tag change
+	# re-broadens is_general_llm_access (see auto_tag.py §is_llm for the
+	# Agent B design notes), the final DB state stays within the plan's
+	# intent. See scripts/retag_llm.py.
+	python scripts/retag_llm.py
 	python compute_maturity.py
 
 retag-scope:

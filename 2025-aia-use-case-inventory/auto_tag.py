@@ -624,15 +624,25 @@ def tag_use_case(row, agency_abbr, aliases_dict, templates, products_dict, is_co
     # is_general_llm_access is computed by the dedicated inference function so
     # the precedence rules (source ai_classification as strong signal, product
     # fallback for blank classification, extraction/routing blacklist) stay
-    # testable in isolation. See Agent B plan §B.2. Consolidated rows piggy-
-    # back on ai_sophistication since they lack an ai_classification column.
+    # testable in isolation. See Agent B plan §B.2.
+    #
+    # IMPORTANT: Agent B deliberately narrowed is_general_llm_access so that
+    # "coding assistant" and "agentic" ai_sophistication tiers do NOT auto-
+    # promote a row to is_llm=1 for non-consolidated rows. That broader rule
+    # reintroduces ~70 canonical false positives (Classical / Predictive /
+    # Computer Vision rows getting flagged as LLM). The source of truth for
+    # this flag is `infer_llm_flag()`; `scripts/retag_llm.py` applies the same
+    # function to every row. Do NOT add a fallback here that bumps
+    # coding_assistant/agentic to is_llm=1 without also updating
+    # infer_llm_flag, retag_llm.py, and the tests in tests/test_llm_tagging.py.
+    #
+    # Consolidated rows piggy-back on ai_sophistication since they lack an
+    # ai_classification column; the broader tiers are acceptable there because
+    # consolidated rows are already agency roll-ups, not per-system data.
     if is_consolidated:
         is_llm = 1 if ai_soph in ("general_llm", "coding_assistant", "agentic") else 0
     else:
         is_llm = infer_llm_flag(row, product_id, products_dict)
-        # Coding assistants and agentic are still LLM-tier tools.
-        if not is_llm and ai_soph in ("coding_assistant", "agentic"):
-            is_llm = 1
     is_coding = 1 if ai_soph == "coding_assistant" or keyword_any(search_text, CODING_KEYWORDS) else 0
     is_genai = 1 if prod.get("is_generative_ai") or keyword_any(search_text, LLM_KEYWORDS + AGENTIC_KEYWORDS) else 0
     is_frontier = 1 if prod.get("canonical_name") in FRONTIER_LLMS else 0
