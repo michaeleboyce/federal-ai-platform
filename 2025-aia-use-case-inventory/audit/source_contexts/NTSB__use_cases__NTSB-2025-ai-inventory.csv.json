@@ -1,0 +1,257 @@
+{
+  "table_name": "use_cases",
+  "source_file": "NTSB-2025-ai-inventory.csv",
+  "agency_abbr": "NTSB",
+  "agency_name": "National Transportation Safety Board",
+  "row_count": 4,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/NTSB-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 4,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 0,
+    "headers": [
+      "Use Case ID",
+      "Use Case Name",
+      "Bureau/Component",
+      "Email Address",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency\u2019s mission and/or the general public?",
+      "Describe the AI system\u2019s outputs.",
+      "Date when AI use case became operational or the pilot\u2019s start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case\u2019s associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code."
+    ],
+    "raw_row_count": 4,
+    "non_empty_row_count": 4,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "system_name": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "ai_classification": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "problem_statement": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "training_data_description": {
+      "non_empty_count": 3,
+      "non_empty_pct": 0.75
+    },
+    "has_custom_code": {
+      "non_empty_count": 3,
+      "non_empty_pct": 0.75
+    }
+  },
+  "tag_summary": {
+    "source_rows": 4,
+    "tagged_rows": 4,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 4
+      },
+      "product_capability": {
+        "<blank>": 4
+      },
+      "ai_sophistication": {
+        "nlp_specific": 2,
+        "classical_ml": 1,
+        "general_llm": 1
+      },
+      "deployment_scope": {
+        "enterprise_wide": 4
+      },
+      "architecture_type": {
+        "inference_only": 2,
+        "rag_pipeline": 1,
+        "unknown": 1
+      },
+      "use_type": {
+        "administrative": 3,
+        "mission_critical": 1
+      },
+      "deployment_environment": {
+        "unknown": 4
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 4
+      },
+      "is_coding_tool": {
+        "0": 4
+      },
+      "is_cots_commercial": {
+        "0": 2,
+        "1": 2
+      },
+      "is_generative_ai": {
+        "0": 3,
+        "1": 1
+      },
+      "is_frontier_model": {
+        "0": 4
+      },
+      "is_enterprise_wide": {
+        "1": 4
+      },
+      "has_model_training": {
+        "0": 4
+      },
+      "is_microsoft_copilot": {
+        "0": 4
+      },
+      "is_openai": {
+        "0": 4
+      },
+      "is_anthropic": {
+        "0": 4
+      },
+      "is_google": {
+        "0": 4
+      },
+      "is_github_copilot": {
+        "0": 4
+      },
+      "is_aws_ai": {
+        "0": 4
+      },
+      "is_public_facing": {
+        "0": 4
+      },
+      "has_meaningful_risk_docs": {
+        "0": 4
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 4
+    },
+    "top_templates": {
+      "<blank>": 4
+    },
+    "sample_rows": [
+      {
+        "id": 10105,
+        "name": "Voice to text transcription"
+      },
+      {
+        "id": 10106,
+        "name": "Semantic Similarity Text Search"
+      },
+      {
+        "id": 10107,
+        "name": "Dataminr"
+      },
+      {
+        "id": 10108,
+        "name": "FOIAXpress AI assistant"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 10105,
+      "name": "Voice to text transcription",
+      "vendor_name": "Air Force Research Lab",
+      "system_name": "N/A",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10106,
+      "name": "Semantic Similarity Text Search",
+      "vendor_name": "Azure AI",
+      "system_name": "N/A",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10107,
+      "name": "Dataminr",
+      "vendor_name": "Dataminer",
+      "system_name": "N/A",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Other",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "inference_only",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10108,
+      "name": "FOIAXpress AI assistant",
+      "vendor_name": "OPEXUS",
+      "system_name": "N/A",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

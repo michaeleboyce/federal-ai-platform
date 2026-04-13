@@ -1,0 +1,220 @@
+{
+  "table_name": "use_cases",
+  "source_file": "NSF-2025-ai-inventory.csv",
+  "agency_abbr": "NSF",
+  "agency_name": "National Science Foundation",
+  "row_count": 23,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/NSF-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 23,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 1,
+    "headers": [
+      "Use Case ID",
+      "Use Case Name",
+      "Agency",
+      "Bureau / Department",
+      "Summary of Use Case",
+      "Stage of System Development Life Cycle",
+      "Date Implemented"
+    ],
+    "raw_row_count": 25,
+    "non_empty_row_count": 23,
+    "blank_row_count": 2
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 23,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 23,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "system_name": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "ai_classification": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "problem_statement": {
+      "non_empty_count": 23,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "training_data_description": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "has_custom_code": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    }
+  },
+  "tag_summary": {
+    "source_rows": 23,
+    "tagged_rows": 23,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "product_deployment": 11,
+        "custom_system": 10,
+        "bespoke_application": 2
+      },
+      "product_capability": {
+        "<blank>": 23
+      },
+      "ai_sophistication": {
+        "general_llm": 13,
+        "nlp_specific": 7,
+        "computer_vision": 2,
+        "coding_assistant": 1
+      },
+      "deployment_scope": {
+        "bureau": 21,
+        "pilot": 2
+      },
+      "architecture_type": {
+        "inference_only": 15,
+        "rag_pipeline": 4,
+        "unknown": 4
+      },
+      "use_type": {
+        "administrative": 16,
+        "cybersecurity": 4,
+        "mission_critical": 2,
+        "it_operations": 1
+      },
+      "deployment_environment": {
+        "unknown": 23
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 14,
+        "1": 9
+      },
+      "is_coding_tool": {
+        "0": 22,
+        "1": 1
+      },
+      "is_cots_commercial": {
+        "1": 13,
+        "0": 10
+      },
+      "is_generative_ai": {
+        "1": 14,
+        "0": 9
+      },
+      "is_frontier_model": {
+        "0": 20,
+        "1": 3
+      },
+      "is_enterprise_wide": {
+        "0": 23
+      },
+      "has_model_training": {
+        "0": 22,
+        "1": 1
+      },
+      "is_microsoft_copilot": {
+        "0": 21,
+        "1": 2
+      },
+      "is_openai": {
+        "0": 22,
+        "1": 1
+      },
+      "is_anthropic": {
+        "0": 23
+      },
+      "is_google": {
+        "0": 23
+      },
+      "is_github_copilot": {
+        "0": 23
+      },
+      "is_aws_ai": {
+        "0": 20,
+        "1": 3
+      },
+      "is_public_facing": {
+        "0": 23
+      },
+      "has_meaningful_risk_docs": {
+        "0": 23
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 10,
+      "Airtable AI": 3,
+      "Microsoft 365 Copilot": 2,
+      "ServiceNow Now Assist": 2,
+      "AWS Bedrock": 1,
+      "AWS Textract": 1,
+      "Adobe Photoshop": 1,
+      "Amazon CodeWhisperer": 1,
+      "ChatGPT": 1,
+      "Wellsaid Labs": 1
+    },
+    "top_templates": {
+      "<blank>": 23
+    },
+    "sample_rows": [
+      {
+        "id": 10082,
+        "name": "ServiceNow GenAI \"Now Assist\""
+      },
+      {
+        "id": 10083,
+        "name": "Budget Area Topic Classification Tool"
+      },
+      {
+        "id": 10084,
+        "name": "AI voice over"
+      },
+      {
+        "id": 10085,
+        "name": "Adobe Photoshop"
+      },
+      {
+        "id": 10086,
+        "name": "Resubmit Checker"
+      },
+      {
+        "id": 10087,
+        "name": "AWS Assisted Software Development (DIS AI Assisted Development)"
+      },
+      {
+        "id": 10088,
+        "name": "Mine Potential Reviewer's areas of expertise"
+      },
+      {
+        "id": 10089,
+        "name": "Use AI to populate reviewer \"areas of expertise\" and state of potential Regional Engines submitters (members of organizations)"
+      },
+      {
+        "id": 10090,
+        "name": "Enhancing TIP Awards: Efficient Tagging for the 10 Key Technology Areas (KTA)"
+      },
+      {
+        "id": 10091,
+        "name": "Data Access Alternatives: Artificial Intelligence Supported Interfaces"
+      }
+    ]
+  },
+  "suspect_rows": []
+}

@@ -1,0 +1,412 @@
+{
+  "table_name": "use_cases",
+  "source_file": "SBA-2025-ai-inventory.xlsx",
+  "agency_abbr": "SBA",
+  "agency_name": "Small Business Administration",
+  "row_count": 34,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/SBA-2025-ai-inventory.xlsx",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 34,
+  "raw_file": {
+    "source_kind": "xlsx",
+    "source_detail": "All Use Cases",
+    "header_row_index": 1,
+    "headers": [
+      "Use Case ID\n\n[Agency Abbrev.] - [#]",
+      "Use Case Name",
+      "Bureau/Component",
+      "Email Address",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency\u2019s mission and/or the general public?",
+      "Describe the AI system\u2019s outputs.",
+      "Date when AI use case became operational or the pilot\u2019s start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case\u2019s associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code.",
+      "Has pre-deployment testing been conducted for this AI  use case? \n\n\n\n\nPractice: Complete AI Impact Assessment",
+      "Has an AI impact assessment been completed for this AI use case? \n\n\n\nPractice: Complete AI Impact Assessment",
+      "What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    \n\n\n\nSubpractice: Complete AI  Impact Assessment",
+      "Has as independent review  of the AI use case been  conducted?    \n\n\n\n\nSub practice Complete AI  Impact Assessment",
+      "Is there a process to conduct\nongoing monitoring to\nidentify any adverse impacts\nto the performance and\nsecurity of the AI functionality, as well as to privacy, civil rights, and civil liberties?\n\nPractice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts",
+      "Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?\n\n\nPractice: Ensure Adequate Human Training and Assessment",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?\n\n\n\n\n\nPractice: Provide Additional Human Oversight, Intervention, and Accountability",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system\u2019s  outcome?\n\n\nPractice: Offer Consistent Remedies or Appeals",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?\n\n\n\n\nPractice: Consult and Incorporate Feedback from End Users and the Public"
+    ],
+    "raw_row_count": 34,
+    "non_empty_row_count": 34,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 34,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 34,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 34,
+      "non_empty_pct": 1.0
+    },
+    "system_name": {
+      "non_empty_count": 34,
+      "non_empty_pct": 1.0
+    },
+    "ai_classification": {
+      "non_empty_count": 34,
+      "non_empty_pct": 1.0
+    },
+    "problem_statement": {
+      "non_empty_count": 34,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 34,
+      "non_empty_pct": 1.0
+    },
+    "training_data_description": {
+      "non_empty_count": 34,
+      "non_empty_pct": 1.0
+    },
+    "has_custom_code": {
+      "non_empty_count": 34,
+      "non_empty_pct": 1.0
+    }
+  },
+  "tag_summary": {
+    "source_rows": 34,
+    "tagged_rows": 34,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "product_deployment": 21,
+        "custom_system": 9,
+        "bespoke_application": 4
+      },
+      "product_capability": {
+        "<blank>": 34
+      },
+      "ai_sophistication": {
+        "general_llm": 27,
+        "classical_ml": 3,
+        "coding_assistant": 3,
+        "agentic": 1
+      },
+      "deployment_scope": {
+        "bureau": 34
+      },
+      "architecture_type": {
+        "inference_only": 22,
+        "rag_pipeline": 5,
+        "agentic_workflow": 3,
+        "custom_trained": 2,
+        "unknown": 2
+      },
+      "use_type": {
+        "administrative": 17,
+        "cybersecurity": 7,
+        "it_operations": 4,
+        "mission_critical": 4,
+        "research": 2
+      },
+      "deployment_environment": {
+        "unknown": 34
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "1": 25,
+        "0": 9
+      },
+      "is_coding_tool": {
+        "0": 31,
+        "1": 3
+      },
+      "is_cots_commercial": {
+        "1": 28,
+        "0": 6
+      },
+      "is_generative_ai": {
+        "1": 31,
+        "0": 3
+      },
+      "is_frontier_model": {
+        "0": 23,
+        "1": 11
+      },
+      "is_enterprise_wide": {
+        "0": 34
+      },
+      "has_model_training": {
+        "0": 27,
+        "1": 7
+      },
+      "is_microsoft_copilot": {
+        "0": 30,
+        "1": 4
+      },
+      "is_openai": {
+        "0": 32,
+        "1": 2
+      },
+      "is_anthropic": {
+        "0": 34
+      },
+      "is_google": {
+        "0": 31,
+        "1": 3
+      },
+      "is_github_copilot": {
+        "0": 33,
+        "1": 1
+      },
+      "is_aws_ai": {
+        "0": 31,
+        "1": 3
+      },
+      "is_public_facing": {
+        "0": 34
+      },
+      "has_meaningful_risk_docs": {
+        "1": 34
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "Custom In-House AI": 7,
+      "<blank>": 6,
+      "ServiceNow Now Assist": 6,
+      "Gemini": 3,
+      "Microsoft 365 Copilot": 3,
+      "Amazon Q": 2,
+      "ChatGPT": 2,
+      "Microsoft Teams": 2,
+      "AWS Bedrock": 1,
+      "GitHub Copilot": 1
+    },
+    "top_templates": {
+      "<blank>": 34
+    },
+    "sample_rows": [
+      {
+        "id": 10114,
+        "name": "Meeting Minutes Summary Tool"
+      },
+      {
+        "id": 10115,
+        "name": "Business Development"
+      },
+      {
+        "id": 10116,
+        "name": "Audit Green Book Classification"
+      },
+      {
+        "id": 10117,
+        "name": "Internal OFO Chatbot Recommender"
+      },
+      {
+        "id": 10118,
+        "name": "ODRR Comm - Talking Point Generation"
+      },
+      {
+        "id": 10119,
+        "name": "7(a) Purchases ML Model"
+      },
+      {
+        "id": 10120,
+        "name": "Amazon Q in Connect"
+      },
+      {
+        "id": 10121,
+        "name": "Customer Response"
+      },
+      {
+        "id": 10122,
+        "name": "Chatbots for internal research"
+      },
+      {
+        "id": 10123,
+        "name": "Office of Field Operations AI  -  Chat GTP, Bing CoPilot, or Google Gemini"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 10116,
+      "name": "Audit Green Book Classification",
+      "vendor_name": "In-house development",
+      "system_name": "Audit Green Book Classification",
+      "development_type": "Developed in-house",
+      "ai_classification": "Machine Learning (Classification/Prediction)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Custom In-House AI",
+      "tool_vendor": "In-House",
+      "linked_product": "Custom In-House AI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 10117,
+      "name": "Internal OFO Chatbot Recommender",
+      "vendor_name": "In-house development",
+      "system_name": "Internal OFO Chatbot Recommender",
+      "development_type": "Developed in-house",
+      "ai_classification": "Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Custom In-House AI",
+      "tool_vendor": "In-House",
+      "linked_product": "Custom In-House AI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 10119,
+      "name": "7(a) Purchases ML Model",
+      "vendor_name": "In-house development",
+      "system_name": "GPTS, E-Tran, FMS",
+      "development_type": "Developed in-house",
+      "ai_classification": "Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Custom In-House AI",
+      "tool_vendor": "In-House",
+      "linked_product": "Custom In-House AI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 10122,
+      "name": "Chatbots for internal research",
+      "vendor_name": "To be determined",
+      "system_name": "Chatbots for internal research",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10128,
+      "name": "GovCon Match",
+      "vendor_name": "Internally created",
+      "system_name": "Certify.sba.gov",
+      "development_type": "Developed in-house",
+      "ai_classification": "Machine Learning (Classification/Prediction)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10129,
+      "name": "Business Plan Creation",
+      "vendor_name": "https://startup.utah.gov/business-plan/",
+      "system_name": "Business Plan Creation",
+      "development_type": "Developed in-house",
+      "ai_classification": "AI-Enabled Application",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10132,
+      "name": "General AI Use Case across the SBA for web and desktop",
+      "vendor_name": "Perplexity AI, Inc.",
+      "system_name": "Perplexity AI Platform",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10136,
+      "name": "Office of Advocacy AI System-Prompt Suite",
+      "vendor_name": "In-house with commercial LLM APIs",
+      "system_name": "Office of Advocacy LLM System",
+      "development_type": "Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Custom In-House AI",
+      "tool_vendor": "In-House",
+      "linked_product": "Custom In-House AI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 10139,
+      "name": "Data Analysis and Visualization AI",
+      "vendor_name": "Salesforce, Inc. (Tableau)",
+      "system_name": "Tableau Cloud with Tableau Agent",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10147,
+      "name": "AI-Powered Search and Recovery",
+      "vendor_name": "Cohesity, Inc.",
+      "system_name": "Cohesity Data Cloud (FedRAMP Moderate Authorized)",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

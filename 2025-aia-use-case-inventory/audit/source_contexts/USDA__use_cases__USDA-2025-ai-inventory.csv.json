@@ -1,0 +1,645 @@
+{
+  "table_name": "use_cases",
+  "source_file": "USDA-2025-ai-inventory.csv",
+  "agency_abbr": "USDA",
+  "agency_name": "Department of Agriculture",
+  "row_count": 162,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/USDA-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 162,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "latin-1",
+    "header_row_index": 0,
+    "headers": [
+      "Use Case ID",
+      "Use Case Name",
+      "Bureau/Component",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency's mission and/or the general public?",
+      "Describe the AI system's outputs.",
+      "Date when AI use case became operational or the pilot's start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be publicly disclosed as an open government data asset, provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case involve personally identifiable information (PII) that is maintained by the agency?",
+      "If publicly available, provide the link to the AI use case's associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic variables does the AI use case explicitly use as model features?",
+      "Does this project include custom-developed code?",
+      "If the code is open source, provide the link for the publicly available source code.",
+      "Has pre-deployment testing been conducted for this AI use case?",
+      "Has an AI impact assessment been completed for this AI use case?",
+      "What are the potential impacts of using the AI for this particular use case and how were they identified?",
+      "Has an independent review of the AI use case been conducted?",
+      "Is there a process to conduct ongoing monitoring to identify any adverse impacts to the performance and security of the AI functionality, as well as to privacy, civil rights, and civil liberties?",
+      "Has the agency established sufficient and periodic training for operators of the AI to interpret and act on its output and managed associated risks?",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or contest the AI system's outcome?",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?"
+    ],
+    "raw_row_count": 162,
+    "non_empty_row_count": 162,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 162,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 162,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 38,
+      "non_empty_pct": 0.2346
+    },
+    "system_name": {
+      "non_empty_count": 31,
+      "non_empty_pct": 0.1914
+    },
+    "ai_classification": {
+      "non_empty_count": 143,
+      "non_empty_pct": 0.8827
+    },
+    "problem_statement": {
+      "non_empty_count": 143,
+      "non_empty_pct": 0.8827
+    },
+    "development_type": {
+      "non_empty_count": 93,
+      "non_empty_pct": 0.5741
+    },
+    "training_data_description": {
+      "non_empty_count": 92,
+      "non_empty_pct": 0.5679
+    },
+    "has_custom_code": {
+      "non_empty_count": 93,
+      "non_empty_pct": 0.5741
+    }
+  },
+  "tag_summary": {
+    "source_rows": 162,
+    "tagged_rows": 162,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 154,
+        "bespoke_application": 6,
+        "product_deployment": 2
+      },
+      "product_capability": {
+        "<blank>": 162
+      },
+      "ai_sophistication": {
+        "classical_ml": 90,
+        "general_llm": 33,
+        "computer_vision": 23,
+        "nlp_specific": 12,
+        "agentic": 4
+      },
+      "deployment_scope": {
+        "bureau": 162
+      },
+      "architecture_type": {
+        "unknown": 73,
+        "custom_trained": 64,
+        "rag_pipeline": 11,
+        "inference_only": 10,
+        "fine_tuned": 3,
+        "agentic_workflow": 1
+      },
+      "use_type": {
+        "administrative": 105,
+        "it_operations": 27,
+        "mission_critical": 20,
+        "cybersecurity": 5,
+        "research": 5
+      },
+      "deployment_environment": {
+        "unknown": 162
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 125,
+        "1": 37
+      },
+      "is_coding_tool": {
+        "0": 162
+      },
+      "is_cots_commercial": {
+        "0": 141,
+        "1": 21
+      },
+      "is_generative_ai": {
+        "0": 125,
+        "1": 37
+      },
+      "is_frontier_model": {
+        "0": 161,
+        "1": 1
+      },
+      "is_enterprise_wide": {
+        "0": 162
+      },
+      "has_model_training": {
+        "0": 90,
+        "1": 72
+      },
+      "is_microsoft_copilot": {
+        "0": 160,
+        "1": 2
+      },
+      "is_openai": {
+        "0": 162
+      },
+      "is_anthropic": {
+        "0": 162
+      },
+      "is_google": {
+        "0": 158,
+        "1": 4
+      },
+      "is_github_copilot": {
+        "0": 162
+      },
+      "is_aws_ai": {
+        "0": 161,
+        "1": 1
+      },
+      "is_public_facing": {
+        "0": 162
+      },
+      "has_meaningful_risk_docs": {
+        "0": 161,
+        "1": 1
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 154,
+      "Esri ArcGIS AI": 4,
+      "Custom In-House AI": 2,
+      "Microsoft 365 Copilot": 1,
+      "Microsoft Teams": 1
+    },
+    "top_templates": {
+      "<blank>": 162
+    },
+    "sample_rows": [
+      {
+        "id": 10489,
+        "name": "Repair Spend"
+      },
+      {
+        "id": 10490,
+        "name": "ARS Project Mapping"
+      },
+      {
+        "id": 10491,
+        "name": "NAL Automated Indexing"
+      },
+      {
+        "id": 10492,
+        "name": "Predictive Modeling of Invasive Pest Species"
+      },
+      {
+        "id": 10493,
+        "name": "Democratizing Data"
+      },
+      {
+        "id": 10494,
+        "name": "LCAT - Land Change Analysis Technique"
+      },
+      {
+        "id": 10495,
+        "name": "Retailer Receipt Analysis"
+      },
+      {
+        "id": 10496,
+        "name": "Ecosystem Management Decision Support System (EMDS)"
+      },
+      {
+        "id": 10497,
+        "name": "Cross-Laminated Timber (CLT) Knowledge Database"
+      },
+      {
+        "id": 10498,
+        "name": "Raster Tools"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 10489,
+      "name": "Repair Spend",
+      "vendor_name": "Accenture",
+      "system_name": "Enterprise Data Analytics Platform & Toolset (EDAPT, Impala, Tableau)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "fine_tuned",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10491,
+      "name": "NAL Automated Indexing",
+      "vendor_name": "Expert AI (Cogito)",
+      "system_name": "ARSAzure",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10493,
+      "name": "Democratizing Data",
+      "vendor_name": "Coleridge Institute",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10501,
+      "name": "Forest Health Detection Monitoring",
+      "vendor_name": "RedCastle Resources",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10505,
+      "name": "Video Surveillance System",
+      "vendor_name": "GlobalComm",
+      "system_name": "Video Surveillance System",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10516,
+      "name": "Nutrition Education & Local Access Dashboard",
+      "vendor_name": "Accenture",
+      "system_name": "Tableau",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10522,
+      "name": "Rangeland Analysis Platform",
+      "vendor_name": "Google Cloud, University of Montana, New Mexico State University",
+      "system_name": "Rangeland Analysis Platform",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10528,
+      "name": "FSA FLP Chatbot",
+      "vendor_name": "Amazon Web Services",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10541,
+      "name": "Equine Operations and Populations Dataset for the U.S.",
+      "vendor_name": "Colorado State University",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10544,
+      "name": "NASSportal Intranet Agent",
+      "vendor_name": "Microsoft",
+      "system_name": "O365",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10546,
+      "name": "Incident Invoice Document Understanding",
+      "vendor_name": "UI Path",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10560,
+      "name": "Wildlife Deterrent System",
+      "vendor_name": "Chiral Software",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10563,
+      "name": "AI for regional forest mapping and monitoring",
+      "vendor_name": "Oregon State University",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10564,
+      "name": "IOL Focus Group and Survey Sensemaking",
+      "vendor_name": "Google",
+      "system_name": "Google NotebookLM, Google Earth Engine",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10565,
+      "name": "Esri ArcGIS Pro Deep Learning Modules",
+      "vendor_name": "",
+      "system_name": "FS ACE",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Esri ArcGIS AI",
+      "tool_vendor": "Esri",
+      "linked_product": "Esri ArcGIS AI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 10570,
+      "name": "ProcureSight",
+      "vendor_name": "ProcureSight",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10579,
+      "name": "ARGUS AI Supply Chain Interference",
+      "vendor_name": "ACCRETE AI Government",
+      "system_name": "ARGUS",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10580,
+      "name": "GovChat",
+      "vendor_name": "Microsoft",
+      "system_name": "ARS AzureGov",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10590,
+      "name": "Vegetation Specifications Suite (VegSpec)",
+      "vendor_name": "Precision Sustainable Agriculture Group, North Carolina State University",
+      "system_name": "Vegetation Specification Suite (VegSpec)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10591,
+      "name": "NETS automated waterway design",
+      "vendor_name": "Spatial Front Incorporated",
+      "system_name": "NRCS Engineering Tools Suite (NETS)",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10594,
+      "name": "Annual Soil Refresh Data Staging Server Automation",
+      "vendor_name": "UIPath Studio",
+      "system_name": "UIPath Studio",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10610,
+      "name": "Automated Road Mapping",
+      "vendor_name": "RedCastle Resources",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "fine_tuned",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10612,
+      "name": "Turbo plan",
+      "vendor_name": "Wildfire.org",
+      "system_name": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10613,
+      "name": "Forest Plan review and planning support",
+      "vendor_name": "Google",
+      "system_name": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10614,
+      "name": "TreeSearch",
+      "vendor_name": "Google",
+      "system_name": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

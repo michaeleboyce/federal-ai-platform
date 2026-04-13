@@ -1,0 +1,658 @@
+{
+  "table_name": "use_cases",
+  "source_file": "DOE-2025-ai-inventory.xlsx",
+  "agency_abbr": "DOE",
+  "agency_name": "Department of Energy",
+  "row_count": 340,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/DOE-2025-ai-inventory.xlsx",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 340,
+  "raw_file": {
+    "source_kind": "xlsx",
+    "source_detail": "FINAL",
+    "header_row_index": 1,
+    "headers": [
+      "Use Case ID\n\n[Agency Abbrev.] - [#]",
+      "Use Case Name",
+      "Bureau/Component",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency\u2019s mission and/or the general public?",
+      "Describe the AI system\u2019s outputs.",
+      "Date when AI use case became operational or the pilot\u2019s start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case\u2019s associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code.",
+      "Has pre-deployment testing been conducted for this AI  use case? \n\n\n\n\nPractice: Complete AI Impact Assessment",
+      "Has an AI impact assessment been completed for this AI use case? \n\n\n\nPractice: Complete AI Impact Assessment",
+      "What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    \n\n\n\nSubpractice: Complete AI  Impact Assessment",
+      "Has as independent review  of the AI use case been  conducted?    \n\n\n\n\nSub practice Complete AI  Impact Assessment",
+      "Is there a process to conduct\nongoing monitoring to\nidentify any adverse impacts\nto the performance and\nsecurity of the AI functionality, as well as to privacy, civil rights, and civil liberties?\n\nPractice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts",
+      "Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?\n\n\nPractice: Ensure Adequate Human Training and Assessment",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?\n\n\n\n\n\nPractice: Provide Additional Human Oversight, Intervention, and Accountability",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system\u2019s  outcome?\n\n\nPractice: Offer Consistent Remedies or Appeals",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?\n\n\n\n\nPractice: Consult and Incorporate Feedback from End Users and the Public"
+    ],
+    "raw_row_count": 340,
+    "non_empty_row_count": 340,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 340,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 340,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 160,
+      "non_empty_pct": 0.4706
+    },
+    "system_name": {
+      "non_empty_count": 197,
+      "non_empty_pct": 0.5794
+    },
+    "ai_classification": {
+      "non_empty_count": 325,
+      "non_empty_pct": 0.9559
+    },
+    "problem_statement": {
+      "non_empty_count": 325,
+      "non_empty_pct": 0.9559
+    },
+    "development_type": {
+      "non_empty_count": 224,
+      "non_empty_pct": 0.6588
+    },
+    "training_data_description": {
+      "non_empty_count": 236,
+      "non_empty_pct": 0.6941
+    },
+    "has_custom_code": {
+      "non_empty_count": 232,
+      "non_empty_pct": 0.6824
+    }
+  },
+  "tag_summary": {
+    "source_rows": 340,
+    "tagged_rows": 340,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 277,
+        "product_deployment": 46,
+        "bespoke_application": 17
+      },
+      "product_capability": {
+        "<blank>": 340
+      },
+      "ai_sophistication": {
+        "general_llm": 155,
+        "classical_ml": 126,
+        "agentic": 27,
+        "nlp_specific": 13,
+        "computer_vision": 12,
+        "coding_assistant": 7
+      },
+      "deployment_scope": {
+        "bureau": 312,
+        "enterprise_wide": 28
+      },
+      "architecture_type": {
+        "unknown": 211,
+        "inference_only": 86,
+        "agentic_workflow": 20,
+        "rag_pipeline": 18,
+        "custom_trained": 4,
+        "fine_tuned": 1
+      },
+      "use_type": {
+        "administrative": 212,
+        "it_operations": 98,
+        "cybersecurity": 15,
+        "research": 8,
+        "mission_critical": 7
+      },
+      "deployment_environment": {
+        "unknown": 340
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "1": 184,
+        "0": 156
+      },
+      "is_coding_tool": {
+        "0": 333,
+        "1": 7
+      },
+      "is_cots_commercial": {
+        "0": 224,
+        "1": 116
+      },
+      "is_generative_ai": {
+        "1": 189,
+        "0": 151
+      },
+      "is_frontier_model": {
+        "0": 302,
+        "1": 38
+      },
+      "is_enterprise_wide": {
+        "0": 312,
+        "1": 28
+      },
+      "has_model_training": {
+        "0": 294,
+        "1": 46
+      },
+      "is_microsoft_copilot": {
+        "0": 321,
+        "1": 19
+      },
+      "is_openai": {
+        "0": 328,
+        "1": 12
+      },
+      "is_anthropic": {
+        "0": 337,
+        "1": 3
+      },
+      "is_google": {
+        "0": 339,
+        "1": 1
+      },
+      "is_github_copilot": {
+        "0": 337,
+        "1": 3
+      },
+      "is_aws_ai": {
+        "0": 339,
+        "1": 1
+      },
+      "is_public_facing": {
+        "0": 340
+      },
+      "has_meaningful_risk_docs": {
+        "0": 256,
+        "1": 84
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 276,
+      "Microsoft 365 Copilot": 16,
+      "ServiceNow Now Assist": 12,
+      "OpenAI API": 9,
+      "Azure OpenAI": 5,
+      "Custom In-House AI": 5,
+      "ChatGPT": 3,
+      "Claude": 3,
+      "GitHub Copilot": 3,
+      "Microsoft Teams": 2
+    },
+    "top_templates": {
+      "<blank>": 340
+    },
+    "sample_rows": [
+      {
+        "id": 7866,
+        "name": "AI for Operations Center"
+      },
+      {
+        "id": 7867,
+        "name": "Natural Language Processing"
+      },
+      {
+        "id": 7868,
+        "name": "DOE AI Data Infrastructure System"
+      },
+      {
+        "id": 7869,
+        "name": "Creation of polymer datasets and inverse design of polymers with targeted backbones having \nHigh CO2 permeability and high CO2/N2 selectivity."
+      },
+      {
+        "id": 7870,
+        "name": "To use AI to calibrate the simulation model by matching simulation data with production history data."
+      },
+      {
+        "id": 7871,
+        "name": "Data discovery, processing, and generation using machine learning for a range of CCS data and information"
+      },
+      {
+        "id": 7872,
+        "name": "Machine Learning for geophysical data inversion"
+      },
+      {
+        "id": 7873,
+        "name": "To help automate data discovery and preparations to support a range of CS models, tools, and products"
+      },
+      {
+        "id": 7874,
+        "name": "ORNL: Foundational AI Research"
+      },
+      {
+        "id": 7875,
+        "name": "ORNL: AI for Materials Science"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 7885,
+      "name": "Network Security and Analysis",
+      "vendor_name": "Vectra",
+      "system_name": "Networks Enclave",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7887,
+      "name": "Adaptive Cyber-Physical Resilience for Building Control Systems",
+      "vendor_name": "PassiveLogic",
+      "system_name": "R&D User",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Reinforcement Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7889,
+      "name": "APT Analytics",
+      "vendor_name": "Microsoft",
+      "system_name": "R&D User",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7890,
+      "name": "AI used for predictive modeling and real time control of traffic systems",
+      "vendor_name": "Microsoft",
+      "system_name": "R&D User",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Reinforcement Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7892,
+      "name": "Scalable, Efficient and Accelerated Causal Reasoning Operators, Graphs and Spikes for Earth and Embedded Systems (SEA-CROGS)",
+      "vendor_name": "Microsoft",
+      "system_name": "R&D User",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7896,
+      "name": "Use of developed ML techniques to parse opensource text-based information.",
+      "vendor_name": "Microsoft",
+      "system_name": "R&D User",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7897,
+      "name": "AI techniques for identification of suitable delivery parking spaces in an urban scenario",
+      "vendor_name": "Cisco",
+      "system_name": "R&D User",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7907,
+      "name": "NLCOO AI for Lessons Learned tool",
+      "vendor_name": "No Vendor Involved",
+      "system_name": "Authorization to Operate Amazon Web Service Federal Risk and Authorization Management Program Infrastructure as a Service Cloud Service Provider, Amazon Web Service Information System Security Plan, SD-006-CP-002/L2",
+      "development_type": "Developed in house",
+      "ai_classification": "Natural Language Processing",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7908,
+      "name": "Spot for automated sensing, inspection, and capture",
+      "vendor_name": "Boston Dynamics",
+      "system_name": "R&D User",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7909,
+      "name": "Microsoft Power Platform capability that provides AI to automate processes in Power Apps and Power Automate",
+      "vendor_name": "Microsoft",
+      "system_name": "R&D User",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "agentic_workflow",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7910,
+      "name": "CAISY",
+      "vendor_name": "SKILLSOFT",
+      "system_name": "PERCIPIO/CAISY",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Reinforcement Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7913,
+      "name": "DOE Technical Standards",
+      "vendor_name": "EnerGPT",
+      "system_name": "N/A",
+      "development_type": "Developed in house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7915,
+      "name": "Text To Speech Audio Generation",
+      "vendor_name": "Wellsaid",
+      "system_name": "N/A - System is used only for GREEN DATA, no OUO or CUI is allowed and does not require a System Security Plan to be named",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7916,
+      "name": "Lex Natural Language Interface",
+      "vendor_name": "Microsoft",
+      "system_name": "NREL Stratus System, NREL Azure System",
+      "development_type": "Developed in house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7918,
+      "name": "Scopus AI",
+      "vendor_name": "Not available",
+      "system_name": "",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Other",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7919,
+      "name": "EnerGPT",
+      "vendor_name": "Accenture Federal Services, Google",
+      "system_name": "OCIO Google Cloud Platform",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7920,
+      "name": "MAPPRITE",
+      "vendor_name": "Special Technologies Laboratory (STL)",
+      "system_name": "Provisional Authorization to Operate (P-ATO) for the Methodology for Analyzing and Prioritizing Policy Requirements and Integrating Them for Effectiveness (MAPPRITE)",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7932,
+      "name": "AI for Intelligent Automation",
+      "vendor_name": "Not available",
+      "system_name": "CS-SSP-123,Cybersecurity System Security Plan for Azure Platform",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7940,
+      "name": "PDF Analyzer",
+      "vendor_name": "Accenture Federal Services, Google",
+      "system_name": "OCIO Google Cloud Platform",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7948,
+      "name": "First Alert DataMinr AI",
+      "vendor_name": "Dataminr",
+      "system_name": "ArcGIS Online (AGO)",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Natural Language Processing",
+      "entry_type": "product_deployment",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "inference_only",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "Esri ArcGIS AI",
+      "tool_vendor": "Esri",
+      "linked_product": "Esri ArcGIS AI",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 7949,
+      "name": "Yurts AI search function",
+      "vendor_name": "Legion (Previously Yurts)",
+      "system_name": "",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7952,
+      "name": "LANL AI Portal",
+      "vendor_name": "Amazon Web Services (hosting provider)",
+      "system_name": "Authorization to Operate Amazon Web Service Federal Risk and Authorization Management Program Infrastructure as a Service Cloud Service Provider, Amazon Web Service Information System Security Plan, SD-006-CP-002/L2",
+      "development_type": "Developed in house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7953,
+      "name": "SmartPD Creator",
+      "vendor_name": "Accenture Federal Services, Google",
+      "system_name": "OCIO Google Cloud Platform",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7959,
+      "name": "Boston Dynamics Spot Robotics",
+      "vendor_name": "Boston Dynamics",
+      "system_name": "Stand alone command and control network",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7960,
+      "name": "DNA-P Use Cases Leaverging Artificial Intellegence  (Pilot)",
+      "vendor_name": "Palantir",
+      "system_name": "Decision and Analytics Platform (DNA-P)",
+      "development_type": "Developed in house",
+      "ai_classification": "Other",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

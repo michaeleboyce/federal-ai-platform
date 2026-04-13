@@ -1,0 +1,652 @@
+{
+  "table_name": "use_cases",
+  "source_file": "HHS-2025-ai-inventory.csv",
+  "agency_abbr": "HHS",
+  "agency_name": "Department of Health and Human Services",
+  "row_count": 447,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/HHS-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 447,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "latin-1",
+    "header_row_index": 0,
+    "headers": [
+      "Use Case Name",
+      "Bureau/Component",
+      "Email Address",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency's mission and/or the general public?",
+      "Describe the AI system's outputs.",
+      "Date when AI use case became operational or the pilot's start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case's associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code.",
+      "Has pre-deployment testing been conducted for this AI  use case? \n\n\n\n\nPractice: Complete AI Impact Assessment",
+      "Has an AI impact assessment been completed for this AI use case? \n\n\n\nPractice: Complete AI Impact Assessment",
+      "What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    \n\n\n\nSubpractice: Complete AI  Impact Assessment",
+      "Has as independent review  of the AI use case been  conducted?    \n\n\n\n\nSub practice Complete AI  Impact Assessment",
+      "Is there a process to conduct\nongoing monitoring to\nidentify any adverse impacts\nto the performance and\nsecurity of the AI functionality, as well as to privacy, civil rights, and civil liberties?\n\nPractice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts",
+      "Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?\n\n\nPractice: Ensure Adequate Human Training and Assessment",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?\n\n\n\n\n\nPractice: Provide Additional Human Oversight, Intervention, and Accountability",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system's  outcome?\n\n\nPractice: Offer Consistent Remedies or Appeals",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?\n\n\n\n\nPractice: Consult and Incorporate Feedback from End Users and the Public"
+    ],
+    "raw_row_count": 447,
+    "non_empty_row_count": 447,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 447,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 447,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 165,
+      "non_empty_pct": 0.3691
+    },
+    "system_name": {
+      "non_empty_count": 178,
+      "non_empty_pct": 0.3982
+    },
+    "ai_classification": {
+      "non_empty_count": 398,
+      "non_empty_pct": 0.8904
+    },
+    "problem_statement": {
+      "non_empty_count": 398,
+      "non_empty_pct": 0.8904
+    },
+    "development_type": {
+      "non_empty_count": 255,
+      "non_empty_pct": 0.5705
+    },
+    "training_data_description": {
+      "non_empty_count": 255,
+      "non_empty_pct": 0.5705
+    },
+    "has_custom_code": {
+      "non_empty_count": 255,
+      "non_empty_pct": 0.5705
+    }
+  },
+  "tag_summary": {
+    "source_rows": 447,
+    "tagged_rows": 447,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 387,
+        "bespoke_application": 44,
+        "product_deployment": 16
+      },
+      "product_capability": {
+        "<blank>": 447
+      },
+      "ai_sophistication": {
+        "general_llm": 177,
+        "classical_ml": 117,
+        "nlp_specific": 79,
+        "agentic": 50,
+        "computer_vision": 19,
+        "coding_assistant": 5
+      },
+      "deployment_scope": {
+        "bureau": 447
+      },
+      "architecture_type": {
+        "unknown": 255,
+        "custom_trained": 78,
+        "rag_pipeline": 43,
+        "inference_only": 34,
+        "agentic_workflow": 29,
+        "fine_tuned": 8
+      },
+      "use_type": {
+        "administrative": 256,
+        "it_operations": 102,
+        "mission_critical": 60,
+        "research": 23,
+        "cybersecurity": 6
+      },
+      "deployment_environment": {
+        "unknown": 447
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 228,
+        "1": 219
+      },
+      "is_coding_tool": {
+        "0": 442,
+        "1": 5
+      },
+      "is_cots_commercial": {
+        "0": 339,
+        "1": 108
+      },
+      "is_generative_ai": {
+        "1": 232,
+        "0": 215
+      },
+      "is_frontier_model": {
+        "0": 432,
+        "1": 15
+      },
+      "is_enterprise_wide": {
+        "0": 447
+      },
+      "has_model_training": {
+        "0": 361,
+        "1": 86
+      },
+      "is_microsoft_copilot": {
+        "0": 444,
+        "1": 3
+      },
+      "is_openai": {
+        "0": 429,
+        "1": 18
+      },
+      "is_anthropic": {
+        "0": 447
+      },
+      "is_google": {
+        "0": 447
+      },
+      "is_github_copilot": {
+        "0": 446,
+        "1": 1
+      },
+      "is_aws_ai": {
+        "0": 447
+      },
+      "is_public_facing": {
+        "0": 447
+      },
+      "has_meaningful_risk_docs": {
+        "0": 447
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 385,
+      "Custom In-House AI": 21,
+      "Microsoft Teams": 14,
+      "Azure OpenAI": 11,
+      "OpenAI API": 4,
+      "ServiceNow Now Assist": 4,
+      "ChatGPT": 3,
+      "Microsoft 365 Copilot": 2,
+      "Databricks": 1,
+      "GitHub Copilot": 1
+    },
+    "top_templates": {
+      "<blank>": 447
+    },
+    "sample_rows": [
+      {
+        "id": 9174,
+        "name": "Design Your Facility"
+      },
+      {
+        "id": 9175,
+        "name": "Discover Financial Business Intelligence System (FBIS) Report Analysis (Sub-CAN Line Items)"
+      },
+      {
+        "id": 9176,
+        "name": "Grant Spend Health Analysis"
+      },
+      {
+        "id": 9177,
+        "name": "Structuring and Validating Completeness of Case Data Information"
+      },
+      {
+        "id": 9178,
+        "name": "Structuring Notice of Concern Data"
+      },
+      {
+        "id": 9179,
+        "name": "Unaccompanied Children Program Policy & Procedure Research Tool"
+      },
+      {
+        "id": 9180,
+        "name": "Unaccompanied Children Process Model Digital Twins"
+      },
+      {
+        "id": 9181,
+        "name": "Analyzing Public Comments on Proposed Rule"
+      },
+      {
+        "id": 9182,
+        "name": "Outreach List Segmentation"
+      },
+      {
+        "id": 9183,
+        "name": "Ask HR Policy"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 9175,
+      "name": "Discover Financial Business Intelligence System (FBIS) Report Analysis (Sub-CAN Line Items)",
+      "vendor_name": "Palantir",
+      "system_name": "ACF Discover",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9178,
+      "name": "Structuring Notice of Concern Data",
+      "vendor_name": "Palantir",
+      "system_name": "ACF Horizon",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9179,
+      "name": "Unaccompanied Children Program Policy & Procedure Research Tool",
+      "vendor_name": "MIT Lincoln Labs",
+      "system_name": "ACF Horizon",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9183,
+      "name": "Ask HR Policy",
+      "vendor_name": "Palantir",
+      "system_name": "ACF Discover",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9184,
+      "name": "Child Welfare Information Automated Inquiry System\n\n(Note: previously named \"Child Welfare Information Gateway OneReach Application\")",
+      "vendor_name": "Amazon Connect (current)\n\nOneReach (previous, deprecated)",
+      "system_name": "Child Welfare Information Automated Inquiry System",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9185,
+      "name": "Collective Bargaining Compass",
+      "vendor_name": "Palantir",
+      "system_name": "ACF Discover",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9186,
+      "name": "Discover User Assistant",
+      "vendor_name": "Palantir",
+      "system_name": "ACF Discover",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9188,
+      "name": "Qualitative Analysis",
+      "vendor_name": "Lumivero, Qualtrics,  Credal, Ask Sage",
+      "system_name": "NVivo, Qualtrics, Credal, Ask Sage (decommissioned)",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9194,
+      "name": "Builder Buddy",
+      "vendor_name": "Credal",
+      "system_name": "ACF Credal",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "agentic_workflow",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9195,
+      "name": "Document Review for Alignment with Executive Orders: Position Descriptions",
+      "vendor_name": "Palantir",
+      "system_name": "ACF Upstream",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9196,
+      "name": "Document Review for Alignment with Executive Orders: Grant Materials",
+      "vendor_name": "Palantir, Credal",
+      "system_name": "ACF Upstream, ACF Credal",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9197,
+      "name": "Grant management support: structuring information in applications",
+      "vendor_name": "Palantir, Credal",
+      "system_name": "ACF Upstream, ACF Credal",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9200,
+      "name": "AHRQ Search",
+      "vendor_name": "RIVA Solutions",
+      "system_name": "ahrq.gov",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9208,
+      "name": "emPOWER AI",
+      "vendor_name": "Communications Training & Analysis Corporation (CTAC)",
+      "system_name": "HHS emPOWER Map (emPOWER)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9210,
+      "name": "AIP Cyber Incident Ingestion",
+      "vendor_name": "Palantir",
+      "system_name": "Tiberius",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9212,
+      "name": "PRISM Ally",
+      "vendor_name": "Unison",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9223,
+      "name": "Identify infrastructure supports for physical activity (e.g. sidewalks) in satellite and roadway images",
+      "vendor_name": "N/A",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9225,
+      "name": "LaserAI",
+      "vendor_name": "LaserAI",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9226,
+      "name": "NewsScape",
+      "vendor_name": "Palantir Technologies",
+      "system_name": "1 CDC Data Platform (1CDP)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9228,
+      "name": "RAPID Analysis of Policy and Program Documents (RAPID)",
+      "vendor_name": "N/A",
+      "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9230,
+      "name": "Sidekick Comms bot Offering User-friendly Tips (SCOUT)",
+      "vendor_name": "N/A",
+      "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9233,
+      "name": "Short-term Forecasting of Severe Outcomes for Seasonal and Epidemic Pathogens",
+      "vendor_name": "N/A",
+      "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9246,
+      "name": "School LLM initial abstract review process",
+      "vendor_name": "N/A",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9249,
+      "name": "EDAV Azure DataFactory - Pipeline failure Analysis",
+      "vendor_name": "N/A",
+      "system_name": "EDAV (Enterprise Data, Analytics, and Visualization Platform)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9250,
+      "name": "1CDP (SEDRIC) AIP for Advanced Foodborne Outbreak Investigation (AI Summarization and Receipt Reading)",
+      "vendor_name": "Palantir Technologies",
+      "system_name": "1 CDC Data Platform (1CDP)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

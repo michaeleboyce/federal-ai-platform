@@ -1,0 +1,589 @@
+{
+  "table_name": "use_cases",
+  "source_file": "State-2025-ai-inventory.csv",
+  "agency_abbr": "State",
+  "agency_name": "Department of State",
+  "row_count": 60,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/State-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 60,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "latin-1",
+    "header_row_index": 1,
+    "headers": [
+      "Use Case ID\n\n[Agency Abbrev.] - [#]",
+      "Use Case Name",
+      "Bureau/Component",
+      "Email Address",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency's mission and/or the general public?",
+      "Describe the AI system's outputs.",
+      "Date when AI use case became operational or the pilot's start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case's associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code.",
+      "Has pre-deployment testing been conducted for this AI  use case? \n\nPractice: Complete AI Impact Assessment",
+      "Has an AI impact assessment been completed for this AI use case? \n\nPractice: Complete AI Impact Assessment",
+      "What are the potential  impacts of using the AI for this particular use case and  how were they identified?    \n\nSubpractice: Complete AI  Impact Assessment",
+      "Has as independent review  of the AI use case been  conducted?    \n\nSub practice Complete AI  Impact Assessment",
+      "Is there a process to conduct\nongoing monitoring to\nidentify any adverse impacts\nto the performance and\nsecurity of the AI functionality, as well as to privacy, civil rights, and civil liberties?\n\nPractice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts",
+      "Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?\n\nPractice: Ensure Adequate Human Training and Assessment",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?\n\nPractice: Provide Additional Human Oversight, Intervention, and Accountability",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system's  outcome?\n\nPractice: Offer Consistent Remedies or Appeals",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?\n\nPractice: Consult and Incorporate Feedback from End Users and the Public"
+    ],
+    "raw_row_count": 60,
+    "non_empty_row_count": 60,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 60,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 60,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 27,
+      "non_empty_pct": 0.45
+    },
+    "system_name": {
+      "non_empty_count": 27,
+      "non_empty_pct": 0.45
+    },
+    "ai_classification": {
+      "non_empty_count": 36,
+      "non_empty_pct": 0.6
+    },
+    "problem_statement": {
+      "non_empty_count": 36,
+      "non_empty_pct": 0.6
+    },
+    "development_type": {
+      "non_empty_count": 27,
+      "non_empty_pct": 0.45
+    },
+    "training_data_description": {
+      "non_empty_count": 27,
+      "non_empty_pct": 0.45
+    },
+    "has_custom_code": {
+      "non_empty_count": 27,
+      "non_empty_pct": 0.45
+    }
+  },
+  "tag_summary": {
+    "source_rows": 60,
+    "tagged_rows": 60,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 53,
+        "bespoke_application": 4,
+        "product_deployment": 3
+      },
+      "product_capability": {
+        "<blank>": 60
+      },
+      "ai_sophistication": {
+        "classical_ml": 27,
+        "general_llm": 16,
+        "nlp_specific": 11,
+        "agentic": 2,
+        "coding_assistant": 2,
+        "computer_vision": 2
+      },
+      "deployment_scope": {
+        "bureau": 57,
+        "enterprise_wide": 2,
+        "department": 1
+      },
+      "architecture_type": {
+        "unknown": 36,
+        "rag_pipeline": 10,
+        "custom_trained": 5,
+        "inference_only": 4,
+        "fine_tuned": 3,
+        "agentic_workflow": 2
+      },
+      "use_type": {
+        "administrative": 41,
+        "mission_critical": 9,
+        "it_operations": 6,
+        "cybersecurity": 2,
+        "research": 2
+      },
+      "deployment_environment": {
+        "unknown": 60
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 42,
+        "1": 18
+      },
+      "is_coding_tool": {
+        "0": 58,
+        "1": 2
+      },
+      "is_cots_commercial": {
+        "0": 51,
+        "1": 9
+      },
+      "is_generative_ai": {
+        "0": 40,
+        "1": 20
+      },
+      "is_frontier_model": {
+        "0": 58,
+        "1": 2
+      },
+      "is_enterprise_wide": {
+        "0": 58,
+        "1": 2
+      },
+      "has_model_training": {
+        "0": 49,
+        "1": 11
+      },
+      "is_microsoft_copilot": {
+        "0": 60
+      },
+      "is_openai": {
+        "0": 58,
+        "1": 2
+      },
+      "is_anthropic": {
+        "0": 60
+      },
+      "is_google": {
+        "0": 60
+      },
+      "is_github_copilot": {
+        "0": 60
+      },
+      "is_aws_ai": {
+        "0": 60
+      },
+      "is_public_facing": {
+        "0": 59,
+        "1": 1
+      },
+      "has_meaningful_risk_docs": {
+        "0": 58,
+        "1": 2
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 53,
+      "Databricks": 2,
+      "Azure AI Translator": 1,
+      "ChatGPT": 1,
+      "RWS Trados": 1,
+      "RegScale": 1,
+      "StateChat": 1
+    },
+    "top_templates": {
+      "<blank>": 60
+    },
+    "sample_rows": [
+      {
+        "id": 10241,
+        "name": "AI Input in Translation"
+      },
+      {
+        "id": 10242,
+        "name": "FOIA Web ML Document Indexer"
+      },
+      {
+        "id": 10243,
+        "name": "AI-Augmented Declassification Review"
+      },
+      {
+        "id": 10244,
+        "name": "BudgetChat AI Tool"
+      },
+      {
+        "id": 10245,
+        "name": "Evaluating Customer Feedback and Sentiments with AI"
+      },
+      {
+        "id": 10246,
+        "name": "Consular Affairs FaceVACS"
+      },
+      {
+        "id": 10247,
+        "name": "Travel.State.Gov (TSG) Enhanced Search and Chatbot"
+      },
+      {
+        "id": 10248,
+        "name": "Travel.state.gov (TSG) Content Refinement with AI Text Editor"
+      },
+      {
+        "id": 10249,
+        "name": "Predictive Analytics Platform"
+      },
+      {
+        "id": 10250,
+        "name": "Innovation and Transformation Measurement and Prediction"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 10243,
+      "name": "AI-Augmented Declassification Review",
+      "vendor_name": "Deloitte",
+      "system_name": "N/A",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10244,
+      "name": "BudgetChat AI Tool",
+      "vendor_name": "N/A",
+      "system_name": "DOS-O365; Data.State-SBU",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10245,
+      "name": "Evaluating Customer Feedback and Sentiments with AI",
+      "vendor_name": "N/A",
+      "system_name": "PA",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10252,
+      "name": "Within Grade Increase Data Extraction Automation",
+      "vendor_name": "GCP",
+      "system_name": "N/A",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10253,
+      "name": "DS-5528 Promissory Note Automation",
+      "vendor_name": "Google",
+      "system_name": "N/A",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10260,
+      "name": "AI Accelerator",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 10261,
+      "name": "AI Research Engine (AIRE)",
+      "vendor_name": "Deloitte",
+      "system_name": "Data.State-SBU",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10265,
+      "name": "StateChat",
+      "vendor_name": "Palantir, OpenAI",
+      "system_name": "CfA PFCS",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "product_deployment",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "StateChat",
+      "tool_vendor": "State Dept (OpenAI via Palantir)",
+      "linked_product": "StateChat",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 10267,
+      "name": "Natural Language Processing (NLP) for Foreign Assistance Appropriations Analysis",
+      "vendor_name": "Guidehouse",
+      "system_name": "FACTS Info",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10269,
+      "name": "FA.gov PII Picker",
+      "vendor_name": "Guidehouse",
+      "system_name": "N/A",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "fine_tuned",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10270,
+      "name": "Integrated Country Strategy (ICS) Turbo",
+      "vendor_name": "Guidehouse",
+      "system_name": "N/A",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10271,
+      "name": "FA.gov RedactAid",
+      "vendor_name": "Guidehouse",
+      "system_name": "N/A",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10272,
+      "name": "Automatic Detection of Authentic Material",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10273,
+      "name": "Office of the Historian (OH) Historical Analysis for Negotiations",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10277,
+      "name": "Digital Media Analytics Platform",
+      "vendor_name": "N/A",
+      "system_name": "NorthStar",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10279,
+      "name": "Rosie Chat Bot",
+      "vendor_name": "N/A",
+      "system_name": "DOS-O365",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10280,
+      "name": "Utility Invoices Data Extraction",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10291,
+      "name": "WHA/EX Information Management",
+      "vendor_name": "Microsoft",
+      "system_name": "DOS-O365",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10296,
+      "name": "NIV Adjudication Review Recommendation Engine (ARRE)",
+      "vendor_name": "Guidehouse",
+      "system_name": "N/A",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10298,
+      "name": "AI Programmatic Insights",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10300,
+      "name": "Live Consular AI Language Augmentation (LCALA) - OCS/ACS Pilot",
+      "vendor_name": "Microsoft",
+      "system_name": "N/A",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "fine_tuned",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

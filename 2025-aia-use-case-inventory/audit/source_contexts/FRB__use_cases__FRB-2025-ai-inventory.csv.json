@@ -1,0 +1,257 @@
+{
+  "table_name": "use_cases",
+  "source_file": "FRB-2025-ai-inventory.csv",
+  "agency_abbr": "FRB",
+  "agency_name": "Federal Reserve Board",
+  "row_count": 38,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/FRB-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 38,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 0,
+    "headers": [
+      "Use Case ID",
+      "Use Case Name",
+      "Agency",
+      "Bureau/Component",
+      "Email Address",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Provide a justification for why the use case is determined to be not high impact.",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency\u2019s mission and/or the general public?",
+      "Describe the AI system's outputs.",
+      "Date when AI use case became operational or the pilot\u2019s start date.",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to train, fine-tune, and/or evaluate performance of the model(s) used in this use case.",
+      "If the data is required to be publicly disclosed as an open government data asset, provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case involve personally identifiable information (PII) that is maintained by the agency?",
+      "If publicly available, provide the link to the AI use case\u2019s associated Privacy Impact Assessment (PIA), if any.",
+      "Which, if any, demographic variables does the AI use case explicitly use as model features?",
+      "Does this project include custom-developed code?",
+      "If the code is open source, provide the link for the publicly available source code."
+    ],
+    "raw_row_count": 40,
+    "non_empty_row_count": 38,
+    "blank_row_count": 2
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 38,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 38,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 2,
+      "non_empty_pct": 0.0526
+    },
+    "system_name": {
+      "non_empty_count": 23,
+      "non_empty_pct": 0.6053
+    },
+    "ai_classification": {
+      "non_empty_count": 38,
+      "non_empty_pct": 1.0
+    },
+    "problem_statement": {
+      "non_empty_count": 38,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 23,
+      "non_empty_pct": 0.6053
+    },
+    "training_data_description": {
+      "non_empty_count": 23,
+      "non_empty_pct": 0.6053
+    },
+    "has_custom_code": {
+      "non_empty_count": 23,
+      "non_empty_pct": 0.6053
+    }
+  },
+  "tag_summary": {
+    "source_rows": 38,
+    "tagged_rows": 38,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 38
+      },
+      "product_capability": {
+        "<blank>": 38
+      },
+      "ai_sophistication": {
+        "nlp_specific": 19,
+        "classical_ml": 15,
+        "computer_vision": 2,
+        "general_llm": 2
+      },
+      "deployment_scope": {
+        "bureau": 38
+      },
+      "architecture_type": {
+        "unknown": 31,
+        "inference_only": 4,
+        "custom_trained": 2,
+        "rag_pipeline": 1
+      },
+      "use_type": {
+        "administrative": 27,
+        "it_operations": 6,
+        "cybersecurity": 2,
+        "mission_critical": 2,
+        "research": 1
+      },
+      "deployment_environment": {
+        "unknown": 38
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 37,
+        "1": 1
+      },
+      "is_coding_tool": {
+        "0": 38
+      },
+      "is_cots_commercial": {
+        "0": 36,
+        "1": 2
+      },
+      "is_generative_ai": {
+        "0": 36,
+        "1": 2
+      },
+      "is_frontier_model": {
+        "0": 38
+      },
+      "is_enterprise_wide": {
+        "0": 38
+      },
+      "has_model_training": {
+        "0": 36,
+        "1": 2
+      },
+      "is_microsoft_copilot": {
+        "0": 38
+      },
+      "is_openai": {
+        "0": 38
+      },
+      "is_anthropic": {
+        "0": 38
+      },
+      "is_google": {
+        "0": 38
+      },
+      "is_github_copilot": {
+        "0": 38
+      },
+      "is_aws_ai": {
+        "0": 38
+      },
+      "is_public_facing": {
+        "0": 38
+      },
+      "has_meaningful_risk_docs": {
+        "0": 38
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 38
+    },
+    "top_templates": {
+      "<blank>": 38
+    },
+    "sample_rows": [
+      {
+        "id": 9055,
+        "name": "Economic Trend Modeling"
+      },
+      {
+        "id": 9056,
+        "name": "PDF Optical Character Recognition (Text)"
+      },
+      {
+        "id": 9057,
+        "name": "PDF Optical Character Recognition (Images)"
+      },
+      {
+        "id": 9058,
+        "name": "Stock Market Analysis"
+      },
+      {
+        "id": 9059,
+        "name": "Commercial Real Estate Index"
+      },
+      {
+        "id": 9060,
+        "name": "Variable Optimization"
+      },
+      {
+        "id": 9061,
+        "name": "Credit Fragment Analysis"
+      },
+      {
+        "id": 9062,
+        "name": "Proposals and Public Comments"
+      },
+      {
+        "id": 9063,
+        "name": "Manufacturer Sentiment Analysis"
+      },
+      {
+        "id": 9064,
+        "name": "Supply Chain Estimations"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 9065,
+      "name": "Body Worn Cameras Data Management System",
+      "vendor_name": "Third Party Vendor",
+      "system_name": "Body Worn Camera Data Management System",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9090,
+      "name": "Virtual Benefits Assistant",
+      "vendor_name": "Benefits Manager",
+      "system_name": "Benefits Manager",
+      "development_type": "Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

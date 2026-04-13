@@ -1,0 +1,196 @@
+{
+  "table_name": "consolidated_use_cases",
+  "source_file": "USITC-2025-ai-inventory.csv",
+  "agency_abbr": "USITC",
+  "agency_name": "U.S. International Trade Commission",
+  "row_count": 11,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/USITC-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 11,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 0,
+    "headers": [
+      "AI Use Case",
+      "Agency Use (Y/N)?",
+      "Name of Commercial Product or Service Used",
+      "Estimated # of Licenses/Users"
+    ],
+    "raw_row_count": 11,
+    "non_empty_row_count": 11,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "ai_use_case": {
+      "non_empty_count": 11,
+      "non_empty_pct": 1.0
+    },
+    "commercial_product": {
+      "non_empty_count": 11,
+      "non_empty_pct": 1.0
+    },
+    "commercial_examples": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "agency_uses": {
+      "non_empty_count": 11,
+      "non_empty_pct": 1.0
+    },
+    "estimated_licenses_users": {
+      "non_empty_count": 11,
+      "non_empty_pct": 1.0
+    }
+  },
+  "tag_summary": {
+    "source_rows": 11,
+    "tagged_rows": 11,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "generic_use_pattern": 11
+      },
+      "product_capability": {
+        "writing": 4,
+        "search": 2,
+        "coding": 1,
+        "data_viz": 1,
+        "email": 1,
+        "meetings": 1,
+        "travel": 1
+      },
+      "ai_sophistication": {
+        "general_llm": 8,
+        "classical_ml": 2,
+        "coding_assistant": 1
+      },
+      "deployment_scope": {
+        "enterprise_wide": 11
+      },
+      "architecture_type": {
+        "inference_only": 11
+      },
+      "use_type": {
+        "administrative": 11
+      },
+      "deployment_environment": {
+        "unknown": 11
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "1": 9,
+        "0": 2
+      },
+      "is_coding_tool": {
+        "0": 10,
+        "1": 1
+      },
+      "is_cots_commercial": {
+        "1": 11
+      },
+      "is_generative_ai": {
+        "1": 9,
+        "0": 2
+      },
+      "is_frontier_model": {
+        "1": 9,
+        "0": 2
+      },
+      "is_enterprise_wide": {
+        "1": 11
+      },
+      "has_model_training": {
+        "0": 11
+      },
+      "is_microsoft_copilot": {
+        "1": 9,
+        "0": 2
+      },
+      "is_openai": {
+        "0": 11
+      },
+      "is_anthropic": {
+        "0": 11
+      },
+      "is_google": {
+        "0": 11
+      },
+      "is_github_copilot": {
+        "0": 11
+      },
+      "is_aws_ai": {
+        "0": 11
+      },
+      "is_public_facing": {
+        "0": 11
+      },
+      "has_meaningful_risk_docs": {
+        "0": 11
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "Microsoft 365 Copilot": 9,
+      "Meltwater": 1,
+      "SAP Concur": 1
+    },
+    "top_templates": {
+      "code_generation": 1,
+      "data_visualization": 1,
+      "document_drafting": 1,
+      "document_summarization": 1,
+      "email_triage": 1,
+      "knowledge_search": 1,
+      "meeting_transcription": 1,
+      "news_curation": 1,
+      "travel_booking": 1,
+      "word_processor_ai": 1
+    },
+    "sample_rows": [
+      {
+        "id": 546,
+        "name": "Transcribing, summarizing, or other efforts that improve the accessibility of a virtual meeting or interview using AI."
+      },
+      {
+        "id": 547,
+        "name": "Prioritizing and categorizing incoming emails using AI."
+      },
+      {
+        "id": 548,
+        "name": "Generating first drafts of documents, briefing, or communication materials using AI."
+      },
+      {
+        "id": 549,
+        "name": "Improving the quality of written communications using AI tools."
+      },
+      {
+        "id": 550,
+        "name": "Summarizing the key points of a lengthy report using AI."
+      },
+      {
+        "id": 551,
+        "name": "Creating visual representations of data sets for reports or presentations using AI."
+      },
+      {
+        "id": 552,
+        "name": "Using AI-assisted tools in word processors"
+      },
+      {
+        "id": 553,
+        "name": "Generating code using AI."
+      },
+      {
+        "id": 554,
+        "name": "Searching for agency information using a knowledge retrieval system."
+      },
+      {
+        "id": 555,
+        "name": "Curating news articles and updates based on user preferences using AI."
+      }
+    ]
+  },
+  "suspect_rows": []
+}

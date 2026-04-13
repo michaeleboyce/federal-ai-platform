@@ -1,0 +1,41 @@
+﻿2024 Agency AI Reporting per OMB 2025 Guidance - AI Use Case Inventory Form Reportout ,,
+Section 1: Contact Information,,
+Agency,Use Case Name,Summary of AI Use Case
+Environmental Protection Agency,Agency Records Management System (ARMS),"Purpose: to improve accuracy of Records schedule prediction
+expected benefit: reduce administrative burden on EPA staff "
+Environmental Protection Agency,Clean Air Act (CAA) Predictive Analytics,"Risk scoring of Majors and Synthetic Minor Facilities to support CAA inspections
+"
+Environmental Protection Agency,Clean Water Act (CWA)Predictive Analytics,"Identify high risk National Pollution Discharge Elimination System (NPDES) facilities that don't submit Discharge Monitoring Reports (DMRs)
+"
+Environmental Protection Agency,Data Management and Analytics Platform (DMAP) Operations and Governance AI Use Cases,"Improve data quality, operational efficiency, and improved use of data to support mission outcomes"
+Environmental Protection Agency,Emission monitoring program knowledge management system search and summary,"Provide a chatbot to respond to EPA monitoring system analyst questions about the emission monitoring programs, including historical regulatory changes and the reasons for those changes. "
+Environmental Protection Agency,Extracting references from technical documents,"In response to OMB interest—which we agree with—in giving researchers more visibility when we cite their work, National Center for Environmental Economics (NCEE) is investigating various methods to document citations in economic analysis and other regulatory documents. We have explored using GovChat to extract references from regulatory documents. 
+"
+Environmental Protection Agency,Generative AI for Study Evaluation and Document Chat,Reduce the time required to complete study evaluation and make it easier to find/recall information found in documents.
+Environmental Protection Agency,GovChat,The purpose of this application is to provide a generative AI chatbot tool to EPA staff. It is materialized as a web site user interface which users interact with on their web browser when on the EPA network.
+Environmental Protection Agency,Identification of lead service lines in drinking water distribution systems using bioindicators/biomarkers,Explore the potential of predictive tools to identify lead service lines (LSLs). Alternative approach using bioindicators/biomarkers obtained from high-resolution microbiome profiles to identify LSLs without excavation.
+Environmental Protection Agency,Intelligent Superfund Search & Chatbot capabilities,"The intended purpose of this AI use case is to modernize and enhance the EPA's Superfund Enterprise Management System (SEMS) document search and processing system through intelligent automation. Key expected benefits include:
+
+1. Dramatic improvement in operational efficiency by reducing search time from months/weeks to minutes
+2. Enhanced accuracy in document retrieval and information extraction
+3. Better user experience through intuitive natural language search capabilities
+4. Cost reduction through automated document processing
+5. Improved compliance and quality control in environmental site management
+6. Increased ability to process and derive insights from millions of technical documents
+7. Better decision support for EPA staff managing contaminated sites
+"
+Environmental Protection Agency,Living Literature Review: Semi-automated Literature Screening,Reduce the time required to screen literature for inclusion for chemical assessments and related research activities.
+Environmental Protection Agency,Machine learning-assisted literature screening,"The purpose is to help scientists in screening references by using machine learning to rank references by title and abstract based on relevance as determined from a set of ""on topic"" and ""off topic"" references. The benefits are that scientists will more efficiently identify relevant references for consideration in the development of scientific assessments. "
+Environmental Protection Agency,Natural Gas STAR Videos ,"This is a commercial product that is not reflected in the list in the previous column. The purpose of using this AI tool was to simply create realistic audio narration files, without having to go through the lengthy and more expensive process of hiring a voice actor to read our scripts. The tool turns text into speech.
+
+"
+Environmental Protection Agency,RCRA Predictive Analytics,"Risk scoring of Large Quantity Generators (LQGs) to support RCRA inspections
+"
+Environmental Protection Agency,Streamflow Duration Assessment Modeling,"Streams exhibit a diverse range of hydrologic regimes, and the hydrologic regime strongly influences the physical, chemical, and biological characteristics of active stream channels and their adjacent riparian areas. One important aspect of the hydrologic regime is streamflow duration—the length of time that a stream sustains flowing surface water. Determining streamflow duration class can help support a variety of regulatory and non-regulatory water resource management decisions. This random forest modeling supports prediction of the appropriate streamflow duration classification across a range of geographies. Full information is available at: https://www.epa.gov/streamflow-duration-assessment/random-forest-modeling"
+Environmental Protection Agency,Transitioning historical help desk knowledge to new help desk software ,The program has 20 years of help requests and responses in a customized open source help desk tool. We are mapping out a transition to Jira Service Desk but are not able to easily import 20 years of knowledge and answers to common questions. The project team plans to use generative AI to categorize questions and summarize responses. These outputs would serve as the knowledge base for the new help desk. 
+Environmental Protection Agency,Use of AI tools within the Agency’s instance of ServiceNow,"ServiceNow is used as the Agency’s primary service desk management system for resolving incidents, problems, change controls, knowledge management, inventory of systems and software including the central Configuration Management Datbase (CMDB).  Employees and IT professionals rely on this platform to obtain service, submit incidents, obtain reports and trends, and plan workloads and priorities to solve problems.  Our proposed use of AI tools is limited in scope the Agency’s existing security boundary, data and ATO.  The expected benefits are reduced numbers of service tickets and calls which will have a direct cost reduction.  Help desk and IT professionals throughout the agency will be able to leverage the vast trove of knowledge articles, asset inventory and history of hundreds of thousands of service tickets to find answers to challenging (and common) IT issues facing our workforce."
+Environmental Protection Agency,Use of Microsoft CoPilot within the M365 Purview Security Suite,"Purview is one of the Agency’s tools to protect our Microsoft cloud data and endpoint devices.  Several potential use cases are possible with the addition of CoPilot into the product which is anticipated in upcoming releases within our GCC tenant.  Our proposed use of AI tools is limited in scope the Agency’s existing security boundary, data and Authority to Operate (ATO).
+
+The expected benefits are faster answers to common questions about the nature of EPA's security and IT infrastructure environment.  We will be able to more effectively leverage the voluminous amount of data currently collected by Purview, Microsoft Security Center, and Defender agents to make decision in a more expedited fashion.  We will be able to act on results more quickly to help reduce security vulnerabilities and weaknesses.
+
+"

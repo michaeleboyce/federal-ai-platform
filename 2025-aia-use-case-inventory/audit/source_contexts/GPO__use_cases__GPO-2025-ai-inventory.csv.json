@@ -1,0 +1,196 @@
+{
+  "table_name": "use_cases",
+  "source_file": "GPO-2025-ai-inventory.csv",
+  "agency_abbr": "GPO",
+  "agency_name": "Government Publishing Office",
+  "row_count": 10,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/GPO-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 10,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 0,
+    "headers": [
+      "ID",
+      "AI Use Case Name",
+      "Summary of Use Case",
+      "Stage of Development",
+      "AI Technique"
+    ],
+    "raw_row_count": 10,
+    "non_empty_row_count": 10,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 10,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "vendor_name": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "system_name": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "ai_classification": {
+      "non_empty_count": 10,
+      "non_empty_pct": 1.0
+    },
+    "problem_statement": {
+      "non_empty_count": 10,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "training_data_description": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "has_custom_code": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    }
+  },
+  "tag_summary": {
+    "source_rows": 10,
+    "tagged_rows": 10,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 8,
+        "product_feature": 2
+      },
+      "product_capability": {
+        "<blank>": 10
+      },
+      "ai_sophistication": {
+        "classical_ml": 5,
+        "nlp_specific": 3,
+        "general_llm": 2
+      },
+      "deployment_scope": {
+        "enterprise_wide": 10
+      },
+      "architecture_type": {
+        "inference_only": 10
+      },
+      "use_type": {
+        "administrative": 7,
+        "cybersecurity": 2,
+        "mission_critical": 1
+      },
+      "deployment_environment": {
+        "unknown": 10
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 8,
+        "1": 2
+      },
+      "is_coding_tool": {
+        "0": 10
+      },
+      "is_cots_commercial": {
+        "0": 10
+      },
+      "is_generative_ai": {
+        "0": 8,
+        "1": 2
+      },
+      "is_frontier_model": {
+        "0": 10
+      },
+      "is_enterprise_wide": {
+        "1": 10
+      },
+      "has_model_training": {
+        "0": 10
+      },
+      "is_microsoft_copilot": {
+        "0": 10
+      },
+      "is_openai": {
+        "0": 10
+      },
+      "is_anthropic": {
+        "0": 10
+      },
+      "is_google": {
+        "0": 10
+      },
+      "is_github_copilot": {
+        "0": 10
+      },
+      "is_aws_ai": {
+        "0": 10
+      },
+      "is_public_facing": {
+        "0": 10
+      },
+      "has_meaningful_risk_docs": {
+        "0": 10
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 10
+    },
+    "top_templates": {
+      "<blank>": 10
+    },
+    "sample_rows": [
+      {
+        "id": 9115,
+        "name": "Audio Transcription"
+      },
+      {
+        "id": 9116,
+        "name": "Threat Detection"
+      },
+      {
+        "id": 9117,
+        "name": "Threat Detection (Cloud-based)"
+      },
+      {
+        "id": 9118,
+        "name": "Spelling grammar and plagiarism check"
+      },
+      {
+        "id": 9119,
+        "name": "Internet Browser"
+      },
+      {
+        "id": 9120,
+        "name": "Machine Learning (IT Ops)"
+      },
+      {
+        "id": 9121,
+        "name": "Cognitive Services search engine (GPO Intranet site)"
+      },
+      {
+        "id": 9122,
+        "name": "DevOps"
+      },
+      {
+        "id": 9123,
+        "name": "PII Scanning"
+      },
+      {
+        "id": 9124,
+        "name": "Document Summarization and Text to Podcast Conversion"
+      }
+    ]
+  },
+  "suspect_rows": []
+}

@@ -1,0 +1,165 @@
+{
+  "table_name": "use_cases",
+  "source_file": "NMB-2025-ai-inventory.csv",
+  "agency_abbr": "NMB",
+  "agency_name": "National Mediation Board",
+  "row_count": 4,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/NMB-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 4,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 0,
+    "headers": [
+      "Use Case ID",
+      "Use Case Name",
+      "AI Tool",
+      "Intended Purpose",
+      "Expected Benefits"
+    ],
+    "raw_row_count": 4,
+    "non_empty_row_count": 4,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "vendor_name": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "system_name": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "ai_classification": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "problem_statement": {
+      "non_empty_count": 4,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "training_data_description": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "has_custom_code": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    }
+  },
+  "tag_summary": {
+    "source_rows": 4,
+    "tagged_rows": 4,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "product_deployment": 4
+      },
+      "product_capability": {
+        "<blank>": 4
+      },
+      "ai_sophistication": {
+        "general_llm": 4
+      },
+      "deployment_scope": {
+        "enterprise_wide": 4
+      },
+      "architecture_type": {
+        "inference_only": 4
+      },
+      "use_type": {
+        "administrative": 4
+      },
+      "deployment_environment": {
+        "unknown": 4
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "1": 4
+      },
+      "is_coding_tool": {
+        "0": 4
+      },
+      "is_cots_commercial": {
+        "1": 4
+      },
+      "is_generative_ai": {
+        "1": 4
+      },
+      "is_frontier_model": {
+        "1": 4
+      },
+      "is_enterprise_wide": {
+        "1": 4
+      },
+      "has_model_training": {
+        "0": 4
+      },
+      "is_microsoft_copilot": {
+        "0": 4
+      },
+      "is_openai": {
+        "0": 4
+      },
+      "is_anthropic": {
+        "0": 4
+      },
+      "is_google": {
+        "1": 4
+      },
+      "is_github_copilot": {
+        "0": 4
+      },
+      "is_aws_ai": {
+        "0": 4
+      },
+      "is_public_facing": {
+        "0": 4
+      },
+      "has_meaningful_risk_docs": {
+        "0": 4
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "Gemini": 4
+    },
+    "top_templates": {
+      "<blank>": 4
+    },
+    "sample_rows": [
+      {
+        "id": 10074,
+        "name": "Document Summarization"
+      },
+      {
+        "id": 10075,
+        "name": "Meeting Transcript Analysis"
+      },
+      {
+        "id": 10076,
+        "name": "Automated Document Creation"
+      },
+      {
+        "id": 10077,
+        "name": "AI-Powered Proofreading and Editing"
+      }
+    ]
+  },
+  "suspect_rows": []
+}

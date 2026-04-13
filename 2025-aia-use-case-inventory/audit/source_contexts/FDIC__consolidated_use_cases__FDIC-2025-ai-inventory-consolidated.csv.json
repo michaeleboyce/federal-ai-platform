@@ -1,0 +1,290 @@
+{
+  "table_name": "consolidated_use_cases",
+  "source_file": "FDIC-2025-ai-inventory-consolidated.csv",
+  "agency_abbr": "FDIC",
+  "agency_name": "Federal Deposit Insurance Corporation",
+  "row_count": 20,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/FDIC-2025-ai-inventory-consolidated.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 20,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 0,
+    "headers": [
+      "AI Use Case",
+      "Commercial Examples",
+      "Agency Use (Y/N)?",
+      "Name of Commercial Product or Service Used",
+      "Estimated # of Licenses/Users"
+    ],
+    "raw_row_count": 20,
+    "non_empty_row_count": 20,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "ai_use_case": {
+      "non_empty_count": 20,
+      "non_empty_pct": 1.0
+    },
+    "commercial_product": {
+      "non_empty_count": 12,
+      "non_empty_pct": 0.6
+    },
+    "commercial_examples": {
+      "non_empty_count": 20,
+      "non_empty_pct": 1.0
+    },
+    "agency_uses": {
+      "non_empty_count": 20,
+      "non_empty_pct": 1.0
+    },
+    "estimated_licenses_users": {
+      "non_empty_count": 12,
+      "non_empty_pct": 0.6
+    }
+  },
+  "tag_summary": {
+    "source_rows": 20,
+    "tagged_rows": 20,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "generic_use_pattern": 20
+      },
+      "product_capability": {
+        "drafting": 2,
+        "biometric": 1,
+        "coding": 1,
+        "cybersecurity": 1,
+        "email": 1,
+        "help_desk": 1,
+        "image_editing": 1,
+        "image_recognition": 1,
+        "meetings": 1,
+        "navigation": 1,
+        "news_curation": 1,
+        "scheduling": 1,
+        "search": 1,
+        "social_media": 1,
+        "summarization": 1,
+        "time_management": 1,
+        "travel": 1,
+        "visualization": 1,
+        "writing_quality": 1
+      },
+      "ai_sophistication": {
+        "classical_ml": 11,
+        "general_llm": 5,
+        "computer_vision": 3,
+        "coding_assistant": 1
+      },
+      "deployment_scope": {
+        "enterprise_wide": 10,
+        "unknown": 7,
+        "bureau": 3
+      },
+      "architecture_type": {
+        "unknown": 10,
+        "inference_only": 9,
+        "rag_pipeline": 1
+      },
+      "use_type": {
+        "administrative": 19,
+        "cybersecurity": 1
+      },
+      "deployment_environment": {
+        "unknown": 20
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 16,
+        "1": 4
+      },
+      "is_coding_tool": {
+        "0": 19,
+        "1": 1
+      },
+      "is_cots_commercial": {
+        "1": 20
+      },
+      "is_generative_ai": {
+        "0": 13,
+        "1": 7
+      },
+      "is_frontier_model": {
+        "0": 16,
+        "1": 4
+      },
+      "is_enterprise_wide": {
+        "0": 10,
+        "1": 10
+      },
+      "has_model_training": {
+        "0": 20
+      },
+      "is_microsoft_copilot": {
+        "0": 17,
+        "1": 3
+      },
+      "is_openai": {
+        "0": 17,
+        "1": 3
+      },
+      "is_anthropic": {
+        "0": 20
+      },
+      "is_google": {
+        "0": 20
+      },
+      "is_github_copilot": {
+        "0": 19,
+        "1": 1
+      },
+      "is_aws_ai": {
+        "0": 20
+      },
+      "is_public_facing": {
+        "0": 20
+      },
+      "has_meaningful_risk_docs": {
+        "0": 20
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 9,
+      "ChatGPT": 3,
+      "Adobe Firefly": 1,
+      "GitHub Copilot": 1,
+      "Grammarly": 1,
+      "Microsoft 365 Copilot": 1,
+      "Microsoft Defender": 1,
+      "Microsoft Teams": 1,
+      "Reclaim.AI": 1,
+      "SAP Concur": 1
+    },
+    "top_templates": {
+      "<blank>": 6,
+      "code_generation": 1,
+      "data_visualization": 1,
+      "document_drafting": 1,
+      "document_summarization": 1,
+      "email_triage": 1,
+      "help_desk": 1,
+      "knowledge_search": 1,
+      "meeting_transcription": 1,
+      "news_curation": 1
+    },
+    "sample_rows": [
+      {
+        "id": 459,
+        "name": "Scheduling internal-to-government meetings or appointments or setting reminders using AI."
+      },
+      {
+        "id": 460,
+        "name": "Logging and analyzing time spent on tasks using AI-powered time management tools."
+      },
+      {
+        "id": 461,
+        "name": "Transcribing, summarizing, or other efforts that improve the accessibility of a virtual meeting or interview using AI."
+      },
+      {
+        "id": 462,
+        "name": "Prioritizing and categorizing incoming emails using AI."
+      },
+      {
+        "id": 463,
+        "name": "Editing images, videos, or other public affairs materials using AI."
+      },
+      {
+        "id": 464,
+        "name": "Scheduling and managing social media posts using AI."
+      },
+      {
+        "id": 465,
+        "name": "Generating first drafts of documents, briefing, or communication materials using AI."
+      },
+      {
+        "id": 466,
+        "name": "Improving the quality of written communications using AI tools."
+      },
+      {
+        "id": 467,
+        "name": "Summarizing the key points of a lengthy report using AI."
+      },
+      {
+        "id": 468,
+        "name": "Creating visual representations of data sets for reports or presentations using AI."
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 464,
+      "name": "Scheduling and managing social media posts using AI.",
+      "vendor_name": "Sprout Social",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "",
+      "entry_type": "generic_use_pattern",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "commercial_product_no_link"
+    },
+    {
+      "id": 468,
+      "name": "Creating visual representations of data sets for reports or presentations using AI.",
+      "vendor_name": "Microsoft Power BI, Tableau",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "",
+      "entry_type": "generic_use_pattern",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "commercial_product_no_link"
+    },
+    {
+      "id": 476,
+      "name": "Planning travel routes using AI-driven map applications.",
+      "vendor_name": "Google Maps, Apple Maps",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "",
+      "entry_type": "generic_use_pattern",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "commercial_product_no_link"
+    },
+    {
+      "id": 478,
+      "name": "Unlocking smartphones or other devices without the need for passwords or PINs using AI-based facial recognition technology.",
+      "vendor_name": "Apple iPhone, Apple iPad",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "",
+      "entry_type": "generic_use_pattern",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "commercial_product_no_link"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "table_name": "use_cases",
+  "source_file": "CFTC-2025-ai-inventory.csv",
+  "agency_abbr": "CFTC",
+  "agency_name": "Commodity Futures Trading Commission",
+  "row_count": 3,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/CFTC-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 3,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 0,
+    "headers": [
+      "Use Case ID",
+      "Use Case Name",
+      "Bureau",
+      "What is the intended purpose and expected benefits of the AI?",
+      "Stage of Development"
+    ],
+    "raw_row_count": 3,
+    "non_empty_row_count": 3,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 3,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 3,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "system_name": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "ai_classification": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "problem_statement": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "development_type": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "training_data_description": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "has_custom_code": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    }
+  },
+  "tag_summary": {
+    "source_rows": 3,
+    "tagged_rows": 3,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 3
+      },
+      "product_capability": {
+        "<blank>": 3
+      },
+      "ai_sophistication": {
+        "classical_ml": 3
+      },
+      "deployment_scope": {
+        "bureau": 3
+      },
+      "architecture_type": {
+        "unknown": 3
+      },
+      "use_type": {
+        "administrative": 2,
+        "cybersecurity": 1
+      },
+      "deployment_environment": {
+        "unknown": 3
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 3
+      },
+      "is_coding_tool": {
+        "0": 3
+      },
+      "is_cots_commercial": {
+        "0": 3
+      },
+      "is_generative_ai": {
+        "0": 3
+      },
+      "is_frontier_model": {
+        "0": 3
+      },
+      "is_enterprise_wide": {
+        "0": 3
+      },
+      "has_model_training": {
+        "0": 3
+      },
+      "is_microsoft_copilot": {
+        "0": 3
+      },
+      "is_openai": {
+        "0": 3
+      },
+      "is_anthropic": {
+        "0": 3
+      },
+      "is_google": {
+        "0": 3
+      },
+      "is_github_copilot": {
+        "0": 3
+      },
+      "is_aws_ai": {
+        "0": 3
+      },
+      "is_public_facing": {
+        "0": 3
+      },
+      "has_meaningful_risk_docs": {
+        "0": 3
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 3
+    },
+    "top_templates": {
+      "<blank>": 3
+    },
+    "sample_rows": [
+      {
+        "id": 7402,
+        "name": "Anomaly Detection for Data Quality"
+      },
+      {
+        "id": 7403,
+        "name": "Stress Testing Scenarios with Deep Learning"
+      },
+      {
+        "id": 7404,
+        "name": "MPD Entity Risk Modeling"
+      }
+    ]
+  },
+  "suspect_rows": []
+}

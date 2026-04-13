@@ -1,0 +1,17 @@
+agency,schema_type,total_columns,canonical_matched,canonical_missing_count,extra_count,compliance_pct,missing_columns,extra_columns
+DHS,section-based,43,33,1,0,97.1,Should this AI use case be withheld from public reporting?,
+Treasury,section-based,34,34,0,0,100.0,,
+VA,title-row,14,3,31,11,8.8,Bureau/Component; Email Address; Should this AI use case be withheld from public reporting?; Stage of Development; Is the AI use case high-impact? ... (+26 more),VA Admin or Staff Office; Development Stage; High-Impact Status; Problem to be Solved; Expected Benefits ... (+6 more)
+NASA,section-based,34,34,0,0,100.0,,
+NSF,title-row,7,2,32,5,5.9,Bureau/Component; Email Address; Should this AI use case be withheld from public reporting?; Stage of Development; Is the AI use case high-impact? ... (+27 more),Agency; Bureau / Department; Summary of Use Case; Stage of System Development Life Cycle; Date Implemented
+NRC,section-based,41,34,0,0,100.0,,
+OPM,simple,7,1,33,6,2.9,Use Case ID; Use Case Name; Bureau/Component; Email Address; Should this AI use case be withheld from public reporting? ... (+28 more),Tool/Application Name; Description; Sponsoring Office; Deployment Phase; First Production Use ... (+1 more)
+SSA,section-based,33,33,1,0,97.1,Email Address,
+NARA,section-based,44,34,0,0,100.0,,
+FHFA,section-based,34,34,0,0,100.0,,
+SEC,section-based,44,34,0,0,100.0,,
+NCUA,section-based,44,34,0,0,100.0,,
+CFTC,simple,5,3,31,2,8.8,Bureau/Component; Email Address; Should this AI use case be withheld from public reporting?; Is the AI use case high-impact?; Justification ... (+26 more),Bureau; What is the intended purpose and expected benefits of the AI?
+FDIC,section-based,39,25,9,0,73.5,"Has pre-deployment testing been conducted for this AI use case?; Has an AI impact assessment been completed for this AI use case?; What are the potential impacts of using the AI for this particular use case and how were they identified?; Has as independent review of the AI use case been conducted?; Is there a process to conduct ongoing monitoring to identify any adverse impacts to the performance and security of the AI functionality, as well as to privacy, civil rights, and civil liberties? ... (+4 more)",
+USDA,simple,32,32,2,0,94.1,Email Address; Should this AI use case be withheld from public reporting?,
+DOJ,simple,12,6,28,6,17.6,Bureau/Component; Should this AI use case be withheld from public reporting?; Is the AI use case high-impact?; Justification; AI Classification ... (+23 more),Agency; Bureau/Component/Division/Branch; Contact Name; Is the AI use case found in Appendix B’s list of general commercial AI products and services?; What is the intended purpose and expected benefits of the AI? ... (+1 more)

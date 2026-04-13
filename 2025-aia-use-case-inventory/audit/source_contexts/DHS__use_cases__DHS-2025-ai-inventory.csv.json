@@ -1,0 +1,666 @@
+{
+  "table_name": "use_cases",
+  "source_file": "DHS-2025-ai-inventory.csv",
+  "agency_abbr": "DHS",
+  "agency_name": "Department of Homeland Security",
+  "row_count": 238,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/DHS-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 238,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 1,
+    "headers": [
+      "Use Case ID\n\n[Agency Abbrev.] - [#]",
+      "Use Case Name",
+      "Bureau/Component",
+      "Email Address",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency\u2019s mission and/or the general public?",
+      "Describe the AI system\u2019s outputs.",
+      "Date when AI use case became operational or the pilot\u2019s start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case\u2019s associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code.",
+      "Has pre-deployment testing been conducted for this AI  use case? \n\n\n\n\nPractice: Complete AI Impact Assessment",
+      "Has an AI impact assessment been completed for this AI use case? \n\n\n\nPractice: Complete AI Impact Assessment",
+      "What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    \n\n\n\nSubpractice: Complete AI  Impact Assessment",
+      "Has as independent review  of the AI use case been  conducted?    \n\n\n\n\nSub practice Complete AI  Impact Assessment",
+      "Is there a process to conduct\nongoing monitoring to\nidentify any adverse impacts\nto the performance and\nsecurity of the AI functionality, as well as to privacy, civil rights, and civil liberties?\n\nPractice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts",
+      "Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?\n\n\nPractice: Ensure Adequate Human Training and Assessment",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?\n\n\n\n\n\nPractice: Provide Additional Human Oversight, Intervention, and Accountability",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system\u2019s  outcome?\n\n\nPractice: Offer Consistent Remedies or Appeals",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?\n\n\n\n\nPractice: Consult and Incorporate Feedback from End Users and the Public",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "raw_row_count": 241,
+    "non_empty_row_count": 239,
+    "blank_row_count": 2
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 238,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 238,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 97,
+      "non_empty_pct": 0.4076
+    },
+    "system_name": {
+      "non_empty_count": 81,
+      "non_empty_pct": 0.3403
+    },
+    "ai_classification": {
+      "non_empty_count": 205,
+      "non_empty_pct": 0.8613
+    },
+    "problem_statement": {
+      "non_empty_count": 205,
+      "non_empty_pct": 0.8613
+    },
+    "development_type": {
+      "non_empty_count": 118,
+      "non_empty_pct": 0.4958
+    },
+    "training_data_description": {
+      "non_empty_count": 117,
+      "non_empty_pct": 0.4916
+    },
+    "has_custom_code": {
+      "non_empty_count": 118,
+      "non_empty_pct": 0.4958
+    }
+  },
+  "tag_summary": {
+    "source_rows": 238,
+    "tagged_rows": 238,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 210,
+        "product_deployment": 15,
+        "bespoke_application": 13
+      },
+      "product_capability": {
+        "<blank>": 238
+      },
+      "ai_sophistication": {
+        "classical_ml": 79,
+        "general_llm": 67,
+        "computer_vision": 43,
+        "nlp_specific": 25,
+        "agentic": 17,
+        "coding_assistant": 7
+      },
+      "deployment_scope": {
+        "bureau": 233,
+        "enterprise_wide": 5
+      },
+      "architecture_type": {
+        "unknown": 138,
+        "custom_trained": 48,
+        "agentic_workflow": 16,
+        "inference_only": 16,
+        "rag_pipeline": 11,
+        "fine_tuned": 9
+      },
+      "use_type": {
+        "administrative": 135,
+        "cybersecurity": 48,
+        "mission_critical": 36,
+        "it_operations": 17,
+        "research": 2
+      },
+      "deployment_environment": {
+        "unknown": 235,
+        "azure_gov": 3
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 152,
+        "1": 86
+      },
+      "is_coding_tool": {
+        "0": 231,
+        "1": 7
+      },
+      "is_cots_commercial": {
+        "0": 171,
+        "1": 67
+      },
+      "is_generative_ai": {
+        "0": 147,
+        "1": 91
+      },
+      "is_frontier_model": {
+        "0": 231,
+        "1": 7
+      },
+      "is_enterprise_wide": {
+        "0": 233,
+        "1": 5
+      },
+      "has_model_training": {
+        "0": 178,
+        "1": 60
+      },
+      "is_microsoft_copilot": {
+        "0": 238
+      },
+      "is_openai": {
+        "0": 232,
+        "1": 6
+      },
+      "is_anthropic": {
+        "0": 236,
+        "1": 2
+      },
+      "is_google": {
+        "0": 237,
+        "1": 1
+      },
+      "is_github_copilot": {
+        "0": 238
+      },
+      "is_aws_ai": {
+        "0": 238
+      },
+      "is_public_facing": {
+        "0": 238
+      },
+      "has_meaningful_risk_docs": {
+        "0": 199,
+        "1": 39
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 210,
+      "Custom In-House AI": 11,
+      "Azure OpenAI": 3,
+      "Microsoft Teams": 3,
+      "OpenAI API": 3,
+      "Claude": 2,
+      "Crowdstrike Falcon": 1,
+      "Databricks": 1,
+      "Gemini": 1,
+      "Microsoft Defender": 1
+    },
+    "top_templates": {
+      "<blank>": 238
+    },
+    "sample_rows": [
+      {
+        "id": 7405,
+        "name": "Smartphone Information Forensics Triage"
+      },
+      {
+        "id": 7406,
+        "name": "Advanced Analytics for X-ray Images (AAXI)"
+      },
+      {
+        "id": 7407,
+        "name": "Advance RPM Maintenance Operating Reporter (ARMOR)"
+      },
+      {
+        "id": 7408,
+        "name": "AI Resume & ATS App"
+      },
+      {
+        "id": 7409,
+        "name": "Real-Time Language Translation Services"
+      },
+      {
+        "id": 7410,
+        "name": "Automated Target Recognition (ATR) Developments for Standard Screening"
+      },
+      {
+        "id": 7411,
+        "name": "Accessible Property Screening (APS) Checkpoint CT Prohibited Items (PI) Detection"
+      },
+      {
+        "id": 7412,
+        "name": "Walk-Through Metal Detector (WTMD) Alternative Automated Target Recognition (ATR) Developments"
+      },
+      {
+        "id": 7413,
+        "name": "Synthetic data for improved Automated Threat Recognition (ATR) in checkpoint screening"
+      },
+      {
+        "id": 7414,
+        "name": "Electronic Evidence/Video Recording Transcription and Summarization Tool"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 7492,
+      "name": "FLIR 280 HD",
+      "vendor_name": "FLIR",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7493,
+      "name": "Acoustic Signature AI for Gunshot Detection",
+      "vendor_name": "Invariant Corporation",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "agentic_workflow",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7494,
+      "name": "Facial Recognition for National Security and Transnational Criminal Organizations",
+      "vendor_name": "Clearview AI",
+      "system_name": "Traveler Verification System",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7495,
+      "name": "Non-Intrusive Inspection (NII) 3D Imaging Tool",
+      "vendor_name": "ThruWave",
+      "system_name": "",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7496,
+      "name": "Hazard Mitigation Assistance Chatbot",
+      "vendor_name": "Ideation",
+      "system_name": "ReadyAI",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7497,
+      "name": "Technical Resource for Mitigation Programs",
+      "vendor_name": "",
+      "system_name": "The HMA Mitigation Agent code executes within the Mosaic-authorized Databricks workspace and inherits all security controls documented in Mosaic\u2019s ATO. No separate ATO has been issued for the AI component at this time.",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "fine_tuned",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Databricks",
+      "tool_vendor": "Databricks",
+      "linked_product": "Databricks",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 7499,
+      "name": "LIGER Generative AI Toolkit",
+      "vendor_name": "LMI Consulting, LLC",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "coding_assistant",
+      "architecture_type": "fine_tuned",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7500,
+      "name": "Babel",
+      "vendor_name": "Babel Street",
+      "system_name": "Babel Street",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7501,
+      "name": "Passive Body Scanner",
+      "vendor_name": "ThruVision TAC 16",
+      "system_name": "Passive Body Scanner",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7502,
+      "name": "CBP Translate",
+      "vendor_name": "Aneesh Technologies, 24X7, Ellumen Inc., Deloitte, NiyamIT",
+      "system_name": "CBP Translate",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "agentic_workflow",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7506,
+      "name": "Supervised Traveler Identity Verification Services (Officer Initiated)",
+      "vendor_name": "CBP procured mobile devices (Apple, Samsung) commercial off the shelf cameras (Logitech)",
+      "system_name": "Traveler Verification Service",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7507,
+      "name": "Semi-Supervised Traveler Identity Verification Services (Traveler Initiated)",
+      "vendor_name": "NEC",
+      "system_name": "Traveler Verification Service",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7508,
+      "name": "3rd Party Traveler Identity Verification Services",
+      "vendor_name": "NEC",
+      "system_name": "Traveler Verification Service",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7509,
+      "name": "Traveler Self-Service Mobile Identity Verification",
+      "vendor_name": "NEC (algorithm only)",
+      "system_name": "Traveler Verification Service",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7510,
+      "name": "Traveler Identity Verification Services (Vetting)",
+      "vendor_name": "NEC",
+      "system_name": "Traveler Verification Service",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7511,
+      "name": "Open Source and Social Media Analysis",
+      "vendor_name": "NexisXplore",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7512,
+      "name": "Cryptocurrency Analysis",
+      "vendor_name": "TRM Labs",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7513,
+      "name": "Traffic Jam",
+      "vendor_name": "Marinus Analytics",
+      "system_name": "Traffic Jam",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "fine_tuned",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7514,
+      "name": "CBP Link",
+      "vendor_name": "IProov",
+      "system_name": "Traveler Verification Service",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7515,
+      "name": "Land Border Integration",
+      "vendor_name": "Rekor",
+      "system_name": "TECS Mod",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7516,
+      "name": "Mobile Fortify",
+      "vendor_name": "NEC",
+      "system_name": "TVSI, ATS-C",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7517,
+      "name": "ERNIE",
+      "vendor_name": "Countering Weapons of Mass Destruction, Department of Homeand Security",
+      "system_name": "Automated Radiological Data Integration System - Cloud (ARDIS-C)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7518,
+      "name": "Unified Processing/Mobile Intake",
+      "vendor_name": "NEC (Nippon Electric Company)",
+      "system_name": "Traveler Verification Service",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7520,
+      "name": "Consular Consolidated Database (CCD) Facial Recognition (FR) On Demand Report (VISA Only)",
+      "vendor_name": "Department of State",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 7522,
+      "name": "Facial Recognition for Locating Vulnerable Populations",
+      "vendor_name": "Law Enforcement Sensitive (LES)",
+      "system_name": "Law Enforcement Sensitive (LES)",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

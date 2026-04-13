@@ -1,0 +1,522 @@
+{
+  "table_name": "use_cases",
+  "source_file": "SSA-2025-ai-inventory.csv",
+  "agency_abbr": "SSA",
+  "agency_name": "Social Security Administration",
+  "row_count": 33,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/SSA-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 33,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "latin-1",
+    "header_row_index": 1,
+    "headers": [
+      "Use Case ID\n\n[Agency Abbrev.] - [#]",
+      "Use Case Name",
+      "Bureau/Component",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency's mission and/or the general public?",
+      "Describe the AI system's outputs.",
+      "Date when AI use case became operational or the pilot's start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case's associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code.",
+      "Has pre-deployment testing been conducted for this AI  use case? \n\n\n\n\nPractice: Complete AI Impact Assessment",
+      "Has an AI impact assessment been completed for this AI use case? \n\n\n\nPractice: Complete AI Impact Assessment",
+      "What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    \n\n\n\nSubpractice: Complete AI  Impact Assessment",
+      "Has as independent review  of the AI use case been  conducted?    \n\n\n\n\nSub practice Complete AI  Impact Assessment",
+      "Is there a process to conduct\nongoing monitoring to\nidentify any adverse impacts\nto the performance and\nsecurity of the AI functionality, as well as to privacy, civil rights, and civil liberties?\n\nPractice: Conduct Ongoing Monitoring for Performance and P",
+      "Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?\n\n\nPractice: Ensure Adequate Human Training and Assessment",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?\n\n\n\n\n\nPractice: Provide Additional Human Oversight, Intervention, and Accountability",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system's  outcome?\n\n\nPractice: Offer Consistent Remedies or Appeals",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?\n\n\n\n\nPractice: Consult and Incorporate Feedback from End Users and the Public"
+    ],
+    "raw_row_count": 33,
+    "non_empty_row_count": 33,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 33,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 33,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 23,
+      "non_empty_pct": 0.697
+    },
+    "system_name": {
+      "non_empty_count": 29,
+      "non_empty_pct": 0.8788
+    },
+    "ai_classification": {
+      "non_empty_count": 33,
+      "non_empty_pct": 1.0
+    },
+    "problem_statement": {
+      "non_empty_count": 33,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 33,
+      "non_empty_pct": 1.0
+    },
+    "training_data_description": {
+      "non_empty_count": 32,
+      "non_empty_pct": 0.9697
+    },
+    "has_custom_code": {
+      "non_empty_count": 32,
+      "non_empty_pct": 0.9697
+    }
+  },
+  "tag_summary": {
+    "source_rows": 33,
+    "tagged_rows": 33,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 23,
+        "bespoke_application": 5,
+        "product_deployment": 5
+      },
+      "product_capability": {
+        "<blank>": 33
+      },
+      "ai_sophistication": {
+        "general_llm": 15,
+        "classical_ml": 9,
+        "computer_vision": 4,
+        "coding_assistant": 3,
+        "agentic": 1,
+        "nlp_specific": 1
+      },
+      "deployment_scope": {
+        "bureau": 30,
+        "enterprise_wide": 3
+      },
+      "architecture_type": {
+        "inference_only": 11,
+        "unknown": 10,
+        "custom_trained": 6,
+        "rag_pipeline": 5,
+        "agentic_workflow": 1
+      },
+      "use_type": {
+        "it_operations": 21,
+        "administrative": 5,
+        "cybersecurity": 3,
+        "mission_critical": 3,
+        "research": 1
+      },
+      "deployment_environment": {
+        "unknown": 33
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 20,
+        "1": 13
+      },
+      "is_coding_tool": {
+        "0": 30,
+        "1": 3
+      },
+      "is_cots_commercial": {
+        "1": 22,
+        "0": 11
+      },
+      "is_generative_ai": {
+        "1": 20,
+        "0": 13
+      },
+      "is_frontier_model": {
+        "0": 27,
+        "1": 6
+      },
+      "is_enterprise_wide": {
+        "0": 30,
+        "1": 3
+      },
+      "has_model_training": {
+        "0": 22,
+        "1": 11
+      },
+      "is_microsoft_copilot": {
+        "0": 32,
+        "1": 1
+      },
+      "is_openai": {
+        "0": 28,
+        "1": 5
+      },
+      "is_anthropic": {
+        "0": 33
+      },
+      "is_google": {
+        "0": 33
+      },
+      "is_github_copilot": {
+        "0": 33
+      },
+      "is_aws_ai": {
+        "0": 33
+      },
+      "is_public_facing": {
+        "0": 32,
+        "1": 1
+      },
+      "has_meaningful_risk_docs": {
+        "0": 23,
+        "1": 10
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 21,
+      "OpenAI API": 5,
+      "Custom In-House AI": 4,
+      "Adobe Firefly": 1,
+      "Microsoft 365 Copilot": 1,
+      "ServiceNow Now Assist": 1
+    },
+    "top_templates": {
+      "<blank>": 33
+    },
+    "sample_rows": [
+      {
+        "id": 10208,
+        "name": "Insight"
+      },
+      {
+        "id": 10209,
+        "name": "Intelligent Medical Language Analysis Generation (IMAGEN)"
+      },
+      {
+        "id": 10210,
+        "name": "Duplicate Identification Process"
+      },
+      {
+        "id": 10211,
+        "name": "Handwriting Recognition of Forms; Intelligent Document Processing Platform - Forms Classification and Data Extraction"
+      },
+      {
+        "id": 10212,
+        "name": "Modernized Development Worksheet (MDW)"
+      },
+      {
+        "id": 10213,
+        "name": "Pre-Effectuation Review (PER) / Targeted Denial Review (TDR) Models"
+      },
+      {
+        "id": 10214,
+        "name": "Continuing Disability Review Model"
+      },
+      {
+        "id": 10215,
+        "name": "Social Security Income (SSI) Redetermination Model"
+      },
+      {
+        "id": 10216,
+        "name": "Proactive Triage and Analysis of Hearings (PATH)"
+      },
+      {
+        "id": 10217,
+        "name": "Quick Disability Determinations Model"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 10210,
+      "name": "Duplicate Identification Process",
+      "vendor_name": "Hyperscience",
+      "system_name": "DIP",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10212,
+      "name": "Modernized Development Worksheet (MDW)",
+      "vendor_name": "",
+      "system_name": "MDW using Natural Language Processing (NLP)",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Custom In-House AI",
+      "tool_vendor": "In-House",
+      "linked_product": "Custom In-House AI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 10217,
+      "name": "Quick Disability Determinations Model",
+      "vendor_name": "IBM",
+      "system_name": "eDIB (electronic disability)",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10218,
+      "name": "Mobile Wage Reporting",
+      "vendor_name": "AWS",
+      "system_name": "Supplemental Security Income Record Maintenance System (SSIRMS)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10219,
+      "name": "SSA 800# Public Question & Answer Bot and OIG Hotline recording of fraud, waste and abuse.",
+      "vendor_name": "AWS",
+      "system_name": "Enterprise Contact Center",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10221,
+      "name": "PolicyNet Plain Language Search Engine",
+      "vendor_name": "",
+      "system_name": "21st Century PolicyNet",
+      "development_type": "b) Developed in-house",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Custom In-House AI",
+      "tool_vendor": "In-House",
+      "linked_product": "Custom In-House AI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 10222,
+      "name": "Speech to Text Video Transcription",
+      "vendor_name": "Microsoft",
+      "system_name": "Hearing Recording and Transcription",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10225,
+      "name": "Therapy Chatbot - Text-Based Mental Health Support for SSA Employees",
+      "vendor_name": "Espyr/Acentra",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10226,
+      "name": "Agency Support Companion (ASC) chatbot",
+      "vendor_name": "Microsoft / OpenAI",
+      "system_name": "Agency Support Companion",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "OpenAI API",
+      "tool_vendor": "OpenAI",
+      "linked_product": "OpenAI API",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 10227,
+      "name": "Data Governance Product (DGP) -  Data cataloging and predictive analysis of data assets.",
+      "vendor_name": "Informatica",
+      "system_name": "Enterprise Data Catalog",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10228,
+      "name": "Intelligent generation of modernized code.",
+      "vendor_name": "AveriSource",
+      "system_name": "AveriSource Platform",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "coding_assistant",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10230,
+      "name": "Application Observability Support",
+      "vendor_name": "Dynatrace",
+      "system_name": "ACI",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10231,
+      "name": "Coding Assistance",
+      "vendor_name": "Windsurf",
+      "system_name": "Windsurf",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "coding_assistant",
+      "architecture_type": "agentic_workflow",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10232,
+      "name": "Mainframe code modernization assistant",
+      "vendor_name": "IBM WatsonX Code Assistant\nBroadcom Code for Z",
+      "system_name": "",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "coding_assistant",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10233,
+      "name": "Training Interaction Simulator",
+      "vendor_name": "Skillsoft/Percipio",
+      "system_name": "Percipio",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10235,
+      "name": "Digital Identity Verification Services",
+      "vendor_name": "ID.me",
+      "system_name": "Digital Identity",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Computer Vision",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10238,
+      "name": "General Use Chatbot",
+      "vendor_name": "Microsoft - M365 Copilot Chat",
+      "system_name": "Microsoft",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "product_deployment",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "Microsoft 365 Copilot",
+      "tool_vendor": "Microsoft",
+      "linked_product": "Microsoft 365 Copilot",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    }
+  ]
+}

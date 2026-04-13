@@ -1,0 +1,335 @@
+{
+  "table_name": "use_cases",
+  "source_file": "HUD-2025-ai-inventory.xlsx",
+  "agency_abbr": "HUD",
+  "agency_name": "Department of Housing and Urban Development",
+  "row_count": 11,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/HUD-2025-ai-inventory.xlsx",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 11,
+  "raw_file": {
+    "source_kind": "xlsx",
+    "source_detail": "All Use Cases",
+    "header_row_index": 1,
+    "headers": [
+      "Use Case ID\n\n[Agency Abbrev.] - [#]",
+      "Use Case Name",
+      "Bureau/Component",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency\u2019s mission and/or the general public?",
+      "Describe the AI system\u2019s outputs.",
+      "Date when AI use case became operational or the pilot\u2019s start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case\u2019s associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code.",
+      "Has pre-deployment testing been conducted for this AI  use case? \n\n\n\n\nPractice: Complete AI Impact Assessment",
+      "Has an AI impact assessment been completed for this AI use case? \n\n\n\nPractice: Complete AI Impact Assessment",
+      "What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    \n\n\n\nSubpractice: Complete AI  Impact Assessment",
+      "Has as independent review  of the AI use case been  conducted?    \n\n\n\n\nSub practice Complete AI  Impact Assessment",
+      "Is there a process to conduct\nongoing monitoring to\nidentify any adverse impacts\nto the performance and\nsecurity of the AI functionality, as well as to privacy, civil rights, and civil liberties?\n\nPractice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts",
+      "Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?\n\n\nPractice: Ensure Adequate Human Training and Assessment",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?\n\n\n\n\n\nPractice: Provide Additional Human Oversight, Intervention, and Accountability",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system\u2019s  outcome?\n\n\nPractice: Offer Consistent Remedies or Appeals",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?\n\n\n\n\nPractice: Consult and Incorporate Feedback from End Users and the Public"
+    ],
+    "raw_row_count": 11,
+    "non_empty_row_count": 11,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 11,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 11,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 7,
+      "non_empty_pct": 0.6364
+    },
+    "system_name": {
+      "non_empty_count": 7,
+      "non_empty_pct": 0.6364
+    },
+    "ai_classification": {
+      "non_empty_count": 9,
+      "non_empty_pct": 0.8182
+    },
+    "problem_statement": {
+      "non_empty_count": 9,
+      "non_empty_pct": 0.8182
+    },
+    "development_type": {
+      "non_empty_count": 7,
+      "non_empty_pct": 0.6364
+    },
+    "training_data_description": {
+      "non_empty_count": 7,
+      "non_empty_pct": 0.6364
+    },
+    "has_custom_code": {
+      "non_empty_count": 7,
+      "non_empty_pct": 0.6364
+    }
+  },
+  "tag_summary": {
+    "source_rows": 11,
+    "tagged_rows": 11,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 9,
+        "product_deployment": 2
+      },
+      "product_capability": {
+        "<blank>": 11
+      },
+      "ai_sophistication": {
+        "general_llm": 5,
+        "nlp_specific": 3,
+        "classical_ml": 2,
+        "computer_vision": 1
+      },
+      "deployment_scope": {
+        "bureau": 10,
+        "enterprise_wide": 1
+      },
+      "architecture_type": {
+        "inference_only": 4,
+        "unknown": 3,
+        "fine_tuned": 2,
+        "custom_trained": 1,
+        "rag_pipeline": 1
+      },
+      "use_type": {
+        "administrative": 7,
+        "mission_critical": 3,
+        "cybersecurity": 1
+      },
+      "deployment_environment": {
+        "unknown": 11
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 7,
+        "1": 4
+      },
+      "is_coding_tool": {
+        "0": 11
+      },
+      "is_cots_commercial": {
+        "0": 7,
+        "1": 4
+      },
+      "is_generative_ai": {
+        "0": 6,
+        "1": 5
+      },
+      "is_frontier_model": {
+        "0": 10,
+        "1": 1
+      },
+      "is_enterprise_wide": {
+        "0": 10,
+        "1": 1
+      },
+      "has_model_training": {
+        "0": 7,
+        "1": 4
+      },
+      "is_microsoft_copilot": {
+        "0": 10,
+        "1": 1
+      },
+      "is_openai": {
+        "0": 11
+      },
+      "is_anthropic": {
+        "0": 11
+      },
+      "is_google": {
+        "0": 11
+      },
+      "is_github_copilot": {
+        "0": 11
+      },
+      "is_aws_ai": {
+        "0": 11
+      },
+      "is_public_facing": {
+        "0": 10,
+        "1": 1
+      },
+      "has_meaningful_risk_docs": {
+        "0": 11
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 9,
+      "Custom In-House AI": 1,
+      "Microsoft 365 Copilot": 1
+    },
+    "top_templates": {
+      "<blank>": 11
+    },
+    "sample_rows": [
+      {
+        "id": 9621,
+        "name": "Counterparty Risk Anomaly Detection"
+      },
+      {
+        "id": 9622,
+        "name": "Subledger Data Quality Machine Learning"
+      },
+      {
+        "id": 9623,
+        "name": "Automated Draft Narrative Reports\n\nPreviously \"Automating Draft Counterparty Credit Narrative Reports\"; have since expanded to general enterprise use."
+      },
+      {
+        "id": 9624,
+        "name": "Voice of the Customer"
+      },
+      {
+        "id": 9625,
+        "name": "Quantitative Text Analysis"
+      },
+      {
+        "id": 9626,
+        "name": "Translation of Digital Media"
+      },
+      {
+        "id": 9627,
+        "name": "Microsoft Copilot"
+      },
+      {
+        "id": 9628,
+        "name": "Amazon Textract for automatic signature identification"
+      },
+      {
+        "id": 9629,
+        "name": "Email Assistant"
+      },
+      {
+        "id": 9630,
+        "name": "CAISY - Workforce Training Conversation Simulator"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 9621,
+      "name": "Counterparty Risk Anomaly Detection",
+      "vendor_name": "Deloitte Consulting, LLC",
+      "system_name": "Ginnie Mae Reporting and Feedback System (RFS)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "fine_tuned",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9622,
+      "name": "Subledger Data Quality Machine Learning",
+      "vendor_name": "Ernst & Young",
+      "system_name": "Ginnie Mae Financial Accounting System",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "fine_tuned",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9623,
+      "name": "Automated Draft Narrative Reports\n\nPreviously \"Automating Draft Counterparty Credit Narrative Reports\"; have since expanded to general enterprise use.",
+      "vendor_name": "Deloitte Consulting, LLC",
+      "system_name": "Ginnie Mae Reporting and Feedback System (RFS)",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9627,
+      "name": "Microsoft Copilot",
+      "vendor_name": "Microsoft",
+      "system_name": "Microsoft Copilot",
+      "development_type": "a) Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "product_deployment",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "Microsoft 365 Copilot",
+      "tool_vendor": "Microsoft",
+      "linked_product": "Microsoft 365 Copilot",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 9628,
+      "name": "Amazon Textract for automatic signature identification",
+      "vendor_name": "Microsoft / SalesForce",
+      "system_name": "SalesForce / Azure",
+      "development_type": "a) Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "computer_vision",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9630,
+      "name": "CAISY - Workforce Training Conversation Simulator",
+      "vendor_name": "Skillsoft Percipio",
+      "system_name": "Skillsoft",
+      "development_type": "a) Purchased from a vendor",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

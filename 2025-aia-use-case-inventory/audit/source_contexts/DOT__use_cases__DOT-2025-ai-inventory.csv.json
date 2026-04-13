@@ -1,0 +1,525 @@
+{
+  "table_name": "use_cases",
+  "source_file": "DOT-2025-ai-inventory.csv",
+  "agency_abbr": "DOT",
+  "agency_name": "Department of Transportation",
+  "row_count": 70,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/DOT-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 70,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 0,
+    "headers": [
+      "Use Case Identifier",
+      "Use Case Name",
+      "Agency",
+      "Bureau",
+      "Email Address",
+      "Public Reporting Indicator",
+      "Development Stage",
+      "High Impact Indicator",
+      "High Impact Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "Problem Description",
+      "Benefit Description",
+      "Output Description",
+      "Operation Date",
+      "Contractor Indicator",
+      "Vendor Name",
+      "ATO Indicator",
+      "System Name",
+      "Training Data Description",
+      "Enterprise Data Inventory URL",
+      "PII Indicator",
+      "PIA URL",
+      "Demographic Variable Description",
+      "Custom Code Indicator",
+      "Open Source Code URL",
+      "Predeployment Testing Indicator",
+      "AI Impact Assessment Indicator",
+      "Potential Impact Description",
+      "Independent Review Indicator",
+      "Ongoing Monitoring Indicator",
+      "Operator Training Indicator",
+      "Fail Safe Indicator",
+      "Appeal Process Indicator",
+      "End User Feedback Description"
+    ],
+    "raw_row_count": 70,
+    "non_empty_row_count": 70,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 70,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 70,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 3,
+      "non_empty_pct": 0.0429
+    },
+    "system_name": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "ai_classification": {
+      "non_empty_count": 70,
+      "non_empty_pct": 1.0
+    },
+    "problem_statement": {
+      "non_empty_count": 70,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 42,
+      "non_empty_pct": 0.6
+    },
+    "training_data_description": {
+      "non_empty_count": 31,
+      "non_empty_pct": 0.4429
+    },
+    "has_custom_code": {
+      "non_empty_count": 67,
+      "non_empty_pct": 0.9571
+    }
+  },
+  "tag_summary": {
+    "source_rows": 70,
+    "tagged_rows": 70,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 57,
+        "bespoke_application": 8,
+        "product_deployment": 5
+      },
+      "product_capability": {
+        "<blank>": 70
+      },
+      "ai_sophistication": {
+        "classical_ml": 35,
+        "general_llm": 25,
+        "computer_vision": 4,
+        "agentic": 3,
+        "nlp_specific": 2,
+        "coding_assistant": 1
+      },
+      "deployment_scope": {
+        "bureau": 62,
+        "enterprise_wide": 8
+      },
+      "architecture_type": {
+        "unknown": 41,
+        "rag_pipeline": 11,
+        "inference_only": 9,
+        "custom_trained": 8,
+        "fine_tuned": 1
+      },
+      "use_type": {
+        "administrative": 57,
+        "mission_critical": 6,
+        "it_operations": 4,
+        "research": 2,
+        "cybersecurity": 1
+      },
+      "deployment_environment": {
+        "unknown": 70
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 44,
+        "1": 26
+      },
+      "is_coding_tool": {
+        "0": 69,
+        "1": 1
+      },
+      "is_cots_commercial": {
+        "0": 61,
+        "1": 9
+      },
+      "is_generative_ai": {
+        "0": 41,
+        "1": 29
+      },
+      "is_frontier_model": {
+        "0": 67,
+        "1": 3
+      },
+      "is_enterprise_wide": {
+        "0": 62,
+        "1": 8
+      },
+      "has_model_training": {
+        "0": 61,
+        "1": 9
+      },
+      "is_microsoft_copilot": {
+        "0": 68,
+        "1": 2
+      },
+      "is_openai": {
+        "0": 61,
+        "1": 9
+      },
+      "is_anthropic": {
+        "0": 69,
+        "1": 1
+      },
+      "is_google": {
+        "0": 67,
+        "1": 3
+      },
+      "is_github_copilot": {
+        "0": 70
+      },
+      "is_aws_ai": {
+        "0": 70
+      },
+      "is_public_facing": {
+        "0": 69,
+        "1": 1
+      },
+      "has_meaningful_risk_docs": {
+        "0": 70
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 56,
+      "Azure OpenAI": 8,
+      "Gemini": 2,
+      "Microsoft 365 Copilot": 2,
+      "Custom In-House AI": 1,
+      "GSA USAi": 1
+    },
+    "top_templates": {
+      "<blank>": 70
+    },
+    "sample_rows": [
+      {
+        "id": 8807,
+        "name": "USDOT Compliance Plan for OMB Memorandum M-24-10 (September 2024)"
+      },
+      {
+        "id": 8808,
+        "name": "Advanced Research and Testing (ART) Network"
+      },
+      {
+        "id": 8809,
+        "name": "AI Operations Laboratory (OPSLAB)"
+      },
+      {
+        "id": 8810,
+        "name": "Transportation AI-enabled Network (TrAIN)"
+      },
+      {
+        "id": 8811,
+        "name": "AI Support and Collaboration Center (AISCC)"
+      },
+      {
+        "id": 8812,
+        "name": "Enterprise Personal Productivity Assistant Capability"
+      },
+      {
+        "id": 8813,
+        "name": "Enterprise \"Ask Dottie\" ChatBot Capability"
+      },
+      {
+        "id": 8814,
+        "name": "Certified Professional Controller (CPC) On-Board Success Evaluator"
+      },
+      {
+        "id": 8815,
+        "name": "Automated Delay detection using voice processing"
+      },
+      {
+        "id": 8816,
+        "name": "Technical Operations Predictive Maintenance"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 8807,
+      "name": "USDOT Compliance Plan for OMB Memorandum M-24-10 (September 2024)",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "No contract/external resources used in development.",
+      "ai_classification": "Other",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 8808,
+      "name": "Advanced Research and Testing (ART) Network",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "No contract/external resources used in development.",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 8809,
+      "name": "AI Operations Laboratory (OPSLAB)",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 8810,
+      "name": "Transportation AI-enabled Network (TrAIN)",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 8811,
+      "name": "AI Support and Collaboration Center (AISCC)",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "Other",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 8812,
+      "name": "Enterprise Personal Productivity Assistant Capability",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "No contract/external resources used in development.",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 8813,
+      "name": "Enterprise \"Ask Dottie\" ChatBot Capability",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 8847,
+      "name": "DOT Generative AI (GenAI) Policy",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "enterprise_wide",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "enterprise_scope_with_bureau"
+    },
+    {
+      "id": 8850,
+      "name": "Tech Ops LLM Document Search",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "Developed with a combination of in-house and contract/external resources.",
+      "ai_classification": "Other",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "Azure OpenAI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 8851,
+      "name": "Human Resources Policy Manual (HRPM) LLM Document Search",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "Developed with a combination of in-house and contract/external resources.",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "Azure OpenAI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 8852,
+      "name": "Financials LLM Document Search",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "No contract/external resources used in development.",
+      "ai_classification": "Generative AI",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "Azure OpenAI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 8853,
+      "name": "Civil Aviation Registry Electronic Services (CARES) LLM Document Search",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "Developed with a combination of in-house and contract/external resources.",
+      "ai_classification": "Generative AI",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "Azure OpenAI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 8854,
+      "name": "Financial Policy LLM Document Search",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "No contract/external resources used in development.",
+      "ai_classification": "Generative AI",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "Azure OpenAI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 8855,
+      "name": "Spectrum Assignment & Engineering Team LLM Document Search",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "Developed with a combination of in-house and contract/external resources.",
+      "ai_classification": "Generative AI",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Custom In-House AI",
+      "tool_vendor": "In-House",
+      "linked_product": "Azure OpenAI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 8856,
+      "name": "National Program Office LLM Document Search",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "No contract/external resources used in development.",
+      "ai_classification": "Generative AI",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "Azure OpenAI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 8857,
+      "name": "FAA Orders and associated supplemental change notices LLM Document Search",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "No contract/external resources used in development.",
+      "ai_classification": "Generative AI",
+      "entry_type": "bespoke_application",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "rag_pipeline",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "Azure OpenAI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 8871,
+      "name": "AI Freedom of Information Act (FOIA) Request Classification",
+      "vendor_name": "",
+      "system_name": "",
+      "development_type": "Developed with a combination of in-house and contract/external resources.",
+      "ai_classification": "Other",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Custom In-House AI",
+      "tool_vendor": "In-House",
+      "linked_product": "Custom In-House AI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    }
+  ]
+}

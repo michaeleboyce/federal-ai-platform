@@ -1,0 +1,426 @@
+{
+  "table_name": "use_cases",
+  "source_file": "FTC-2025-ai-inventory.csv",
+  "agency_abbr": "FTC",
+  "agency_name": "Federal Trade Commission",
+  "row_count": 16,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/FTC-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 16,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "latin-1",
+    "header_row_index": 0,
+    "headers": [
+      "Use Case ID",
+      "Use Case Name",
+      "Bureau/Component",
+      "Email Address",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for the agency's mission and/or the general public?",
+      "Describe the AI system's outputs.",
+      "Date when AI use case became operational or the pilot's start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case's associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code.",
+      "Has pre-deployment testing been conducted for this AI  use case? \n\n\n\n\nPractice: Complete AI Impact Assessment",
+      "Has an AI impact assessment been completed for this AI use case? \n\n\n\nPractice: Complete AI Impact Assessment",
+      "What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    \n\n\n\nSubpractice: Complete AI  Impact Assessment",
+      "Has as independent review  of the AI use case been  conducted?    \n\n\n\n\nSub practice Complete AI  Impact Assessment",
+      "Is there a process to conduct\nongoing monitoring to\nidentify any adverse impacts\nto the performance and\nsecurity of the AI functionality, as well as to privacy, civil rights, and civil liberties?\n\nPractice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts",
+      "Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?\n\n\nPractice: Ensure Adequate Human Training and Assessment",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?\n\n\n\n\n\nPractice: Provide Additional Human Oversight, Intervention, and Accountability",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system's  outcome?\n\n\nPractice: Offer Consistent Remedies or Appeals",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?\n\n\n\n\nPractice: Consult and Incorporate Feedback from End Users and the Public",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "raw_row_count": 17,
+    "non_empty_row_count": 16,
+    "blank_row_count": 1
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 16,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 16,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 16,
+      "non_empty_pct": 1.0
+    },
+    "system_name": {
+      "non_empty_count": 16,
+      "non_empty_pct": 1.0
+    },
+    "ai_classification": {
+      "non_empty_count": 16,
+      "non_empty_pct": 1.0
+    },
+    "problem_statement": {
+      "non_empty_count": 16,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 16,
+      "non_empty_pct": 1.0
+    },
+    "training_data_description": {
+      "non_empty_count": 16,
+      "non_empty_pct": 1.0
+    },
+    "has_custom_code": {
+      "non_empty_count": 16,
+      "non_empty_pct": 1.0
+    }
+  },
+  "tag_summary": {
+    "source_rows": 16,
+    "tagged_rows": 16,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 11,
+        "bespoke_application": 3,
+        "product_deployment": 2
+      },
+      "product_capability": {
+        "<blank>": 16
+      },
+      "ai_sophistication": {
+        "general_llm": 6,
+        "classical_ml": 4,
+        "nlp_specific": 4,
+        "coding_assistant": 2
+      },
+      "deployment_scope": {
+        "bureau": 16
+      },
+      "architecture_type": {
+        "inference_only": 11,
+        "custom_trained": 3,
+        "unknown": 2
+      },
+      "use_type": {
+        "administrative": 12,
+        "mission_critical": 3,
+        "it_operations": 1
+      },
+      "deployment_environment": {
+        "unknown": 16
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 8,
+        "1": 8
+      },
+      "is_coding_tool": {
+        "0": 14,
+        "1": 2
+      },
+      "is_cots_commercial": {
+        "1": 9,
+        "0": 7
+      },
+      "is_generative_ai": {
+        "0": 8,
+        "1": 8
+      },
+      "is_frontier_model": {
+        "0": 15,
+        "1": 1
+      },
+      "is_enterprise_wide": {
+        "0": 16
+      },
+      "has_model_training": {
+        "0": 16
+      },
+      "is_microsoft_copilot": {
+        "0": 15,
+        "1": 1
+      },
+      "is_openai": {
+        "0": 16
+      },
+      "is_anthropic": {
+        "0": 16
+      },
+      "is_google": {
+        "0": 16
+      },
+      "is_github_copilot": {
+        "0": 16
+      },
+      "is_aws_ai": {
+        "0": 14,
+        "1": 2
+      },
+      "is_public_facing": {
+        "0": 16
+      },
+      "has_meaningful_risk_docs": {
+        "0": 16
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 11,
+      "AWS Bedrock": 1,
+      "Azure OpenAI": 1,
+      "Custom In-House AI": 1,
+      "Databricks": 1,
+      "Microsoft 365 Copilot": 1
+    },
+    "top_templates": {
+      "<blank>": 16
+    },
+    "sample_rows": [
+      {
+        "id": 9099,
+        "name": "Automatic PSC Classification"
+      },
+      {
+        "id": 9100,
+        "name": "Group Duplicate Complaints"
+      },
+      {
+        "id": 9101,
+        "name": "Chatbot"
+      },
+      {
+        "id": 9102,
+        "name": "Word Cloud"
+      },
+      {
+        "id": 9103,
+        "name": "Graph Analytics"
+      },
+      {
+        "id": 9104,
+        "name": "Analytic Sandbox"
+      },
+      {
+        "id": 9105,
+        "name": "Developer Productivity"
+      },
+      {
+        "id": 9106,
+        "name": "Relativity Active Learning"
+      },
+      {
+        "id": 9107,
+        "name": "Relativity Integrated Veritone"
+      },
+      {
+        "id": 9108,
+        "name": "Microsoft 365 Copilot"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 9099,
+      "name": "Automatic PSC Classification",
+      "vendor_name": "Leidos",
+      "system_name": "Sentinel Network Services",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9100,
+      "name": "Group Duplicate Complaints",
+      "vendor_name": "Leidos",
+      "system_name": "Sentinel Network Services",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9101,
+      "name": "Chatbot",
+      "vendor_name": "Leidos",
+      "system_name": "Sentinel Network Services",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9102,
+      "name": "Word Cloud",
+      "vendor_name": "Leidos",
+      "system_name": "Sentinel Network Services",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9103,
+      "name": "Graph Analytics",
+      "vendor_name": "Leidos",
+      "system_name": "Sentinel Network Services",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Other",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9104,
+      "name": "Analytic Sandbox",
+      "vendor_name": "Leidos",
+      "system_name": "Sentinel Network Services",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Other",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9105,
+      "name": "Developer Productivity",
+      "vendor_name": "Leidos",
+      "system_name": "Sentinel Network Services",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "coding_assistant",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9106,
+      "name": "Relativity Active Learning",
+      "vendor_name": "Cloud Discovery Source (CDS) Relativity",
+      "system_name": "Federal Cloud Discovery Source",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9107,
+      "name": "Relativity Integrated Veritone",
+      "vendor_name": "Cloud Discovery Source (CDS) Relativity",
+      "system_name": "Federal Cloud Discovery Source",
+      "development_type": "a)\u00a0Purchased from a vendor",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "nlp_specific",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 9113,
+      "name": "Azure ML",
+      "vendor_name": "Microsoft",
+      "system_name": "Sentinel Network Services",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "classical_ml",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "llm_flag_vs_sophistication"
+    },
+    {
+      "id": 9114,
+      "name": "DNC IVR Audio File Transcription",
+      "vendor_name": "Microsoft",
+      "system_name": "Sentinel Network Services",
+      "development_type": "c) Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "inference_only",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

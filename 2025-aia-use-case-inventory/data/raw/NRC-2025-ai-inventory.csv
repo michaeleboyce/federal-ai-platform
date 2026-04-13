@@ -1,0 +1,60 @@
+"SECTION 1: Use Case Identifiers
+Complete this Section for the following Use Cases: Retired,  Pre-deployment, Pilot, and Deployed",,,,,,,,"SECTION 2: Use Case Summary
+Complete this Section for the following Use Cases: Pre-deployment, Pilot, and Deployed",,,,,"SECTION 3: Documentation
+Complete this Section for the following Use Cases: Pilot, and Deployed
+
+",,,,,"SECTION 4: Data & Code
+Complete this Section for the following Use Cases: Pilot, and Deployed",,,,,,,"
+SECTION 5: Risk Management 
+Complete this Section for the following Use Case: Deployed and if ""HIGH-IMPACT"" from SECTION 1
+
+",,,,,,,,,,,,,,,
+"Use Case ID
+
+[Agency Abbrev.] – [#] ",Use Case Name,Bureau/Component,Email Address,Should this AI use case be withheld from public reporting?,Stage of Development,Is the AI use case high-impact?,Justification,Use Case Topic Area,AI Classification,What problem is the AI intended to solve?,What are the expected benefits and positive outcomes from the AI for an agency’s mission and/or the general public?,Describe the AI system’s outputs.,Date when AI use case became operational or the pilot’s start date,Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?,Vendor(s) Name,Does this AI use case have an associated Authorization to Operate (ATO)?,System(s) Name,"Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.","If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?,"If publicly available, provide  the link to the AI use case’s associated Privacy Impact Assessment (PIA).","Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",Does this project include  custom-developed code?,"If the code is open source, provide the link for the  publicly available source  code.","Has pre-deployment testing been conducted for this AI  use case? 
+
+
+
+
+Practice: Complete AI Impact Assessment","Has an AI impact assessment been completed for this AI use case? 
+
+
+
+Practice: Complete AI Impact Assessment","What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    
+
+
+
+Subpractice: Complete AI  Impact Assessment","Has as independent review  of the AI use case been  conducted?    
+
+
+
+
+Sub practice Complete AI  Impact Assessment","Is there a process to conduct
+ongoing monitoring to
+identify any adverse impacts
+to the performance and
+security of the AI functionality, as well as to privacy, civil rights, and civil liberties?
+
+Practice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts","Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?
+
+
+Practice: Ensure Adequate Human Training and Assessment","Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?
+
+
+
+
+
+Practice: Provide Additional Human Oversight, Intervention, and Accountability","Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system’s  outcome?
+
+
+Practice: Offer Consistent Remedies or Appeals","What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?
+
+
+
+
+Practice: Consult and Incorporate Feedback from End Users and the Public",,,,,,,
+NRC-0001,Text Retrieval and Generation for NRC Staff Support,NRC,CAIO@nrc.gov,a) No,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,c) Not high-impact,,Energy & the Environment,Generative AI,"NRC staff are required to discover, retrieve, and analyze information from internally-managed and externally-provided documents.  These documents can be lengthy as well as dense with content and often require cross-reference against multiple policies, standards, guidelines, and procedures. The process of discovery, retrieval, analysis, and cross-reference is time consuming and often represents the most significant bottleneck in carrying out agency activities and in making agency decisions.","This use case enhances the NRC’s efficiency and consistency in licensing, oversight, and other regulatory activities. It enables more efficient capture and use of institutional knowledge to mitigate against the risks associated with staff attrition. The NRC expects this use case to improve the timeliness of its risk- and policy-informed decisions, supporting its mission to enable the safe and secure use and deployment of civilian nuclear energy technologies and radioactive materials.","The output is semi-structured content (e.g., text and tables) responsive to the NRC staff's queries.",08/01/2025 00:00:00,c) Developed with both contracting and in-house resources,TekSynap,Yes,SimplifAI,"Where appropriate, prior NRC records are used in concert with subject matter expert review to evaluate the performance of the model's outputs.",, No,,None of the above,Yes,,,,,,,,,,,,,,,,,
+NRC-0002,Support routine administrative tasks and enhancing communications,NRC,CAIO@nrc.gov,a) No,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,c) Not high-impact,,Energy & the Environment,Generative AI,"These AI use cases address inefficiencies in administrative workflows, such as scheduling, document drafting, and information retrieval. They help automate repetitive tasks, improve accuracy and accessibility of communications, streamline data analysis and reporting, prioritize service requests, and enhance cybersecurity. By reducing manual workload and error rates, they enable staff to focus on higher-value activities and improve overall productivity.","AI improves agency efficiency, accuracy, and responsiveness by automating repetitive tasks, enhancing communication, and streamlining data analysis. These benefits free staff for higher-value work, accelerate decision-making, improve service delivery, and increase transparency, ultimately supporting the agency’s mission and strengthening public trust.","Structured content (e.g., text, tables, and images) responsive to the NRC staff's queries.",06/01/2025 00:00:00,a) Purchased from a vendor,Microsoft,Yes,"Microsoft 365 Copilot, Microsoft Copilot Chat",,,Yes,,None of the above, No,,,,,,,,,,,,,,,,,
+NRC-0003,"Unified, secure access to multiple advanced AI language models",NRC,CAIO@nrc.gov,a) No,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,,Energy & the Environment,Generative AI,"The NRC faces challenges accessing, integrating, and securely managing multiple advanced AI models from different providers. This creates inefficiencies, increases costs, and complicates compliance with federal security standards. The service addresses these problems by providing a single, secure platform for accessing, evaluating, and managing leading AI models, streamlining adoption while ensuring compliance and operational efficiency.","The service enables NRC staff to securely access top AI models, improving research, analysis, and decision-making efficiency. This accelerates regulatory reviews, enhances data-driven insights, reduces costs, and strengthens NRC’s ability to protect public health and safety through more effective oversight and communication with stakeholders.","The system outputs include natural language responses, document summaries, data analyses, and semantic embeddings generated by leading AI models.",01/01/2026 00:00:00,a) Purchased from a vendor,GSA, No,USAi,,, No,,None of the above, No,,,,,,,,,,,,,,,,,
+NRC-0004,Testing industry leading generative AI foundational large language models ,NRC,CAIO@nrc.gov,a) No,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,,Energy & the Environment,Generative AI,"The AI is intended to address gaps in organizational understanding of how generative AI can support knowledge work. The sprint helps identify potential benefits, limitations, and risks of AI tools, enabling informed decisions on future use, governance, and policy before any deployment.","Improved staff understanding of generative AI capabilities and limitations; increased efficiency in drafting, summarizing, and organizing non-sensitive information; identification of appropriate use cases and risks; and informed development of policies, guidance, and governance for potential future AI use.","The AI system produces draft text, summaries, outlines, and alternative wording for non-sensitive content, as well as explanatory responses to user prompts. Outputs are advisory and informational only and require human review; they are not authoritative, binding, or used for regulatory or safety decisions.",12/01/2025 00:00:00,a) Purchased from a vendor,"OpenAI, Google", No,"OpenAI ChatGPT Enterprise, Google Gemini for Government",,, No,,None of the above, No,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

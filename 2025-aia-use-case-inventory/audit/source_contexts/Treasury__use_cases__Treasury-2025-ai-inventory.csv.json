@@ -1,0 +1,644 @@
+{
+  "table_name": "use_cases",
+  "source_file": "Treasury-2025-ai-inventory.csv",
+  "agency_abbr": "Treasury",
+  "agency_name": "Department of the Treasury",
+  "row_count": 129,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/Treasury-2025-ai-inventory.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 129,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 1,
+    "headers": [
+      "Use Case ID",
+      "Use Case Name",
+      "Bureau/Component",
+      "Email Address",
+      "Should this AI use case be withheld from public reporting?",
+      "Stage of Development",
+      "Is the AI use case high-impact?",
+      "Justification",
+      "Use Case Topic Area",
+      "AI Classification",
+      "What problem is the AI intended to solve?",
+      "What are the expected benefits and positive outcomes from the AI for an agency\u2019s mission and/or the general public?",
+      "Describe the AI system\u2019s outputs.",
+      "Date when AI use case became operational or the pilot\u2019s start date",
+      "Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?",
+      "Vendor(s) Name",
+      "Does this AI use case have an associated Authorization to Operate (ATO)?",
+      "System(s) Name",
+      "Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.",
+      "If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",
+      "Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?",
+      "If publicly available, provide  the link to the AI use case\u2019s associated Privacy Impact Assessment (PIA).",
+      "Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",
+      "Does this project include  custom-developed code?",
+      "If the code is open source, provide the link for the  publicly available source  code.",
+      "Has pre-deployment testing been conducted for this AI  use case?",
+      "Has an AI impact assessment been completed for this AI use case?",
+      "What are the potential  impacts of using the AI for  this particular use case and  how were they identified?",
+      "Has as independent review  of the AI use case been  conducted?",
+      "Is there a process to conduct ongoing monitoring to identify any adverse impacts to the performance and security of the AI functionality, as well as to privacy, civil rights, and civil liberties?",
+      "Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?",
+      "Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?",
+      "Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system\u2019s  outcome?",
+      "What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?"
+    ],
+    "raw_row_count": 129,
+    "non_empty_row_count": 129,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "use_case_name": {
+      "non_empty_count": 129,
+      "non_empty_pct": 1.0
+    },
+    "bureau_component": {
+      "non_empty_count": 129,
+      "non_empty_pct": 1.0
+    },
+    "vendor_name": {
+      "non_empty_count": 129,
+      "non_empty_pct": 1.0
+    },
+    "system_name": {
+      "non_empty_count": 129,
+      "non_empty_pct": 1.0
+    },
+    "ai_classification": {
+      "non_empty_count": 129,
+      "non_empty_pct": 1.0
+    },
+    "problem_statement": {
+      "non_empty_count": 129,
+      "non_empty_pct": 1.0
+    },
+    "development_type": {
+      "non_empty_count": 129,
+      "non_empty_pct": 1.0
+    },
+    "training_data_description": {
+      "non_empty_count": 129,
+      "non_empty_pct": 1.0
+    },
+    "has_custom_code": {
+      "non_empty_count": 129,
+      "non_empty_pct": 1.0
+    }
+  },
+  "tag_summary": {
+    "source_rows": 129,
+    "tagged_rows": 129,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "custom_system": 117,
+        "bespoke_application": 6,
+        "product_deployment": 6
+      },
+      "product_capability": {
+        "<blank>": 129
+      },
+      "ai_sophistication": {
+        "general_llm": 74,
+        "agentic": 13,
+        "classical_ml": 12,
+        "nlp_specific": 9,
+        "predictive_analytics": 9,
+        "coding_assistant": 8,
+        "computer_vision": 4
+      },
+      "deployment_scope": {
+        "bureau": 129
+      },
+      "architecture_type": {
+        "unknown": 80,
+        "rag_pipeline": 15,
+        "custom_trained": 9,
+        "inference_only": 9,
+        "agentic_workflow": 8,
+        "fine_tuned": 8
+      },
+      "use_type": {
+        "it_operations": 58,
+        "administrative": 50,
+        "mission_critical": 12,
+        "research": 7,
+        "cybersecurity": 2
+      },
+      "deployment_environment": {
+        "unknown": 129
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "1": 94,
+        "0": 35
+      },
+      "is_coding_tool": {
+        "0": 121,
+        "1": 8
+      },
+      "is_cots_commercial": {
+        "0": 105,
+        "1": 24
+      },
+      "is_generative_ai": {
+        "1": 95,
+        "0": 34
+      },
+      "is_frontier_model": {
+        "0": 129
+      },
+      "is_enterprise_wide": {
+        "0": 129
+      },
+      "has_model_training": {
+        "0": 111,
+        "1": 18
+      },
+      "is_microsoft_copilot": {
+        "0": 129
+      },
+      "is_openai": {
+        "0": 129
+      },
+      "is_anthropic": {
+        "0": 129
+      },
+      "is_google": {
+        "0": 129
+      },
+      "is_github_copilot": {
+        "0": 129
+      },
+      "is_aws_ai": {
+        "0": 129
+      },
+      "is_public_facing": {
+        "0": 129
+      },
+      "has_meaningful_risk_docs": {
+        "0": 127,
+        "1": 2
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 115,
+      "Custom In-House AI": 9,
+      "Microsoft Teams": 5
+    },
+    "top_templates": {
+      "<blank>": 129
+    },
+    "sample_rows": [
+      {
+        "id": 10360,
+        "name": "OCC.Chat"
+      },
+      {
+        "id": 10361,
+        "name": "OCC.InfoAssist"
+      },
+      {
+        "id": 10362,
+        "name": "Rulemaking Comment Analytics"
+      },
+      {
+        "id": 10363,
+        "name": "OCC Guidance Summarization"
+      },
+      {
+        "id": 10364,
+        "name": "Employee Task Organization"
+      },
+      {
+        "id": 10365,
+        "name": "Regulation Summarization"
+      },
+      {
+        "id": 10366,
+        "name": "Regulation Statutory and Common Name Indexing"
+      },
+      {
+        "id": 10367,
+        "name": "Newsletter Content Support"
+      },
+      {
+        "id": 10368,
+        "name": "Meeting Minute Summarization"
+      },
+      {
+        "id": 10369,
+        "name": "Visualization Alt-Text Generation"
+      }
+    ]
+  },
+  "suspect_rows": [
+    {
+      "id": 10360,
+      "name": "OCC.Chat",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10361,
+      "name": "OCC.InfoAssist",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10362,
+      "name": "Rulemaking Comment Analytics",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10363,
+      "name": "OCC Guidance Summarization",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10365,
+      "name": "Regulation Summarization",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10366,
+      "name": "Regulation Statutory and Common Name Indexing",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10367,
+      "name": "Newsletter Content Support",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10368,
+      "name": "Meeting Minute Summarization",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10369,
+      "name": "Visualization Alt-Text Generation",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10370,
+      "name": "Handbook Highlights",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10372,
+      "name": "Reporting Requirement Analysis",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10373,
+      "name": "Software Code Generation",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "Developed in-house",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "coding_assistant",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10375,
+      "name": "Policy Development Editorial Assistant",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "agentic_workflow",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10376,
+      "name": "Regulatory Rule Analysis",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10377,
+      "name": "Public Information Analysis",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10378,
+      "name": "Narrative Summary and Thematic Analysis",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10380,
+      "name": "AI Use Case Review and Evaluation Workflow",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "Developed in-house",
+      "ai_classification": "Agentic AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "agentic",
+      "architecture_type": "agentic_workflow",
+      "deployment_scope": "bureau",
+      "tool_product_name": "Custom In-House AI",
+      "tool_vendor": "In-House",
+      "linked_product": "Custom In-House AI",
+      "suspect_reason": "linked_product_not_marked_cots"
+    },
+    {
+      "id": 10381,
+      "name": "Framework Analysis",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10382,
+      "name": "Survey Analysis",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10383,
+      "name": "Research Suitability",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10384,
+      "name": "OCC.DocChat",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10385,
+      "name": "Resource Assignment Optimization",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Generative AI",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10386,
+      "name": "AskBEP AI ChatBot",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Natural Language Processing (NLP)",
+      "entry_type": "custom_system",
+      "ai_sophistication": "general_llm",
+      "architecture_type": "custom_trained",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10387,
+      "name": "Sub-Asset Maintenance Model",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "Developed with both contracting and in-house resources",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "predictive_analytics",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    },
+    {
+      "id": 10388,
+      "name": "Ink and Paper Consumption Forecast (IPCF)",
+      "vendor_name": "N/A",
+      "system_name": "N/A",
+      "development_type": "N/A",
+      "ai_classification": "Classical/Predictive Machine Learning",
+      "entry_type": "custom_system",
+      "ai_sophistication": "predictive_analytics",
+      "architecture_type": "unknown",
+      "deployment_scope": "bureau",
+      "tool_product_name": "",
+      "tool_vendor": "",
+      "linked_product": "",
+      "suspect_reason": "vendor_present_no_product"
+    }
+  ]
+}

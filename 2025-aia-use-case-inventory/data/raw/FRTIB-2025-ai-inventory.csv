@@ -1,0 +1,50 @@
+﻿"Use Case ID
+
+[Agency Abbrev.] – [#] ",Use Case Name,Bureau/Component,Stage of Development,Is the AI use case high-impact?,Justification,Use Case Topic Area,AI Classification,What problem is the AI intended to solve?,What are the expected benefits and positive outcomes from the AI for an agency’s mission and/or the general public?,Describe the AI system’s outputs.,Date when AI use case became operational or the pilot’s start date,Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?,Vendor(s) Name,Does this AI use case have an associated Authorization to Operate (ATO)?,System(s) Name,"Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.","If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?,"If publicly available, provide  the link to the AI use case’s associated Privacy Impact Assessment (PIA).","Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",Does this project include  custom-developed code?,"If the code is open source, provide the link for the  publicly available source  code.","Has pre-deployment testing been conducted for this AI  use case? 
+
+
+
+
+Practice: Complete AI Impact Assessment","Has an AI impact assessment been completed for this AI use case? 
+
+
+
+Practice: Complete AI Impact Assessment","What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    
+
+
+
+Subpractice: Complete AI  Impact Assessment","Has as independent review  of the AI use case been  conducted?    
+
+
+
+
+Sub practice Complete AI  Impact Assessment","Is there a process to conduct
+ongoing monitoring to
+identify any adverse impacts
+to the performance and
+security of the AI functionality, as well as to privacy, civil rights, and civil liberties?
+
+Practice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts","Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?
+
+
+Practice: Ensure Adequate Human Training and Assessment","Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?
+
+
+
+
+
+Practice: Provide Additional Human Oversight, Intervention, and Accountability","Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system’s  outcome?
+
+
+Practice: Offer Consistent Remedies or Appeals","What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?
+
+
+
+
+Practice: Consult and Incorporate Feedback from End Users and the Public"
+FRTIB-001,AVA,Agency Wide,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,No,,Service Delivery,Generative AI,Assist with participant questions,Help participants answering questions about the TSP,Answers questions about the TSP that participants may have,10/1/2023 0:00,a) Purchased from a vendor,Accenture Federal Services (AFS),Yes,Converge,This is a subscription service from a third-party vendor and confidential business information of this nature is not available.,N/A, No,,None,Yes,closed source,,,,,,,,,
+FRTIB-002,Fraud Detection Platform,Agency Wide,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,No,,Service Delivery,Classical/Predictive Machine Learning,Fraud Detection,Detect potential fraud and abuse,Flag potential fraud activity,10/1/2023 0:00,a) Purchased from a vendor,Accenture Federal Services (AFS),Yes,Converge,This is a subscription service from a third-party vendor and confidential business information of this nature is not available.,N/A,Yes,https://www.tsp.gov/,None, No,"COTS, closed source",,,,,,,,,
+FRTIB-003,Contact Center AI,Agency Wide,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,No,,Service Delivery,Generative AI,Assist participant Service Representative interaction with plan participants,"Help with knowledgebase search, transcription and scripts","Transcriptions, knowledge articles",10/1/2023 0:00,a) Purchased from a vendor,Accenture Federal Services (AFS),Yes,Converge,This is a subscription service from a third-party vendor and confidential business information of this nature is not available.,N/A,Yes,https://www.tsp.gov/,None,Yes,closed source,,,,,,,,,
+FRTIB-004,Microsoft CoPilot,Agency Wide,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,No,,Information Technology,Generative AI,Provide GenAI assistance on agency business activities,Increase agency efficiency,General agency operation business,7/1/2025 0:00,a) Purchased from a vendor,Microsoft,Yes,Microsoft M365,This is a subscription service from a third-party vendor and confidential business information of this nature is not available.,N/A, No,,None, No,"COTS, closed source",,,,,,,,,
+FRTIB-005,Sumtotal Chatbot,Agency Wide,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,No,,Human Resources,Generative AI,Provde trainings and simulations for difficult conversations,Staff training efficencies,Conversations that are real life like for challanging topics,10/1/2023 0:00,a) Purchased from a vendor,SumTotal,Yes,Awareness and Training Tools,This is a subscription service from a third-party vendor and confidential business information of this nature is not available.,N/A, No,,None, No,"COTS, closed source",,,,,,,,,
+FRTIB-006,Adobe Firefly,Agency Wide,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,No,,Information Technology,Generative AI,Generate images and videos for training,Generate videos and images for participant educations,"Images, inforgraphics and videos",11/1/2025 0:00,a) Purchased from a vendor,Adobe,Yes,Adobe Creative Cloud,This is a subscription service from a third-party vendor and confidential business information of this nature is not available.,N/A, No,,None, No,"COTS, closed source",,,,,,,,,

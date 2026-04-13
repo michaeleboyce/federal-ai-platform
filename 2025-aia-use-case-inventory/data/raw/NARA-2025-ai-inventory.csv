@@ -1,0 +1,131 @@
+"SECTION 1: Use Case Identifiers
+Complete this Section for the following Use Cases: Retired,  Pre-deployment, Pilot, and Deployed",,,,,,,,"SECTION 2: Use Case Summary
+Complete this Section for the following Use Cases: Pre-deployment, Pilot, and Deployed",,,,,"SECTION 3: Documentation
+Complete this Section for the following Use Cases: Pilot, and Deployed
+
+",,,,,"SECTION 4: Data & Code
+Complete this Section for the following Use Cases: Pilot, and Deployed",,,,,,,"
+SECTION 5: Risk Management 
+Complete this Section for the following Use Case: Deployed and if ""HIGH-IMPACT"" from SECTION 1
+
+",,,,,,,,,,,,,,,,,,
+"Use Case ID
+
+[Agency Abbrev.] – [#] ",Use Case Name,Bureau/Component,Email Address,Should this AI use case be withheld from public reporting?,Stage of Development,Is the AI use case high-impact?,Justification,Use Case Topic Area,AI Classification,What problem is the AI intended to solve?,What are the expected benefits and positive outcomes from the AI for an agency’s mission and/or the general public?,Describe the AI system’s outputs.,Date when AI use case became operational or the pilot’s start date,Was the system involved in this use case purchased from a vendor or developed under contract(s) or in-house?,Vendor(s) Name,Does this AI use case have an associated Authorization to Operate (ATO)?,System(s) Name,"Describe any data used to  train, fine-tune, and/or  evaluate performance of the  model(s) used in this use  case.","If the data is required to be  publicly disclosed as an  open government data asset,  provide a link to the entry on the Federal Data Catalog.",Does this AI use case  involve personally  identifiable information (PII)  that is maintained by the  agency?,"If publicly available, provide  the link to the AI use case’s associated Privacy Impact Assessment (PIA).","Which, if any, demographic  variables does the AI use  case explicitly use as model  features?",Does this project include  custom-developed code?,"If the code is open source, provide the link for the  publicly available source  code.","Has pre-deployment testing been conducted for this AI  use case? 
+
+
+
+
+Practice: Complete AI Impact Assessment","Has an AI impact assessment been completed for this AI use case? 
+
+
+
+Practice: Complete AI Impact Assessment","What are the potential  impacts of using the AI for  this particular use case and  how were they identified?    
+
+
+
+Subpractice: Complete AI  Impact Assessment","Has as independent review  of the AI use case been  conducted?    
+
+
+
+
+Sub practice Complete AI  Impact Assessment","Is there a process to conduct
+ongoing monitoring to
+identify any adverse impacts
+to the performance and
+security of the AI functionality, as well as to privacy, civil rights, and civil liberties?
+
+Practice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts","Has the agency established sufficient and periodic  training for operators of the  AI to interpret and act on the  its output and managed associated risks?
+
+
+Practice: Ensure Adequate Human Training and Assessment","Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?
+
+
+
+
+
+Practice: Provide Additional Human Oversight, Intervention, and Accountability","Is there an established appeal process in the event that an impacted individual would like to appeal or  contest the AI system’s  outcome?
+
+
+Practice: Offer Consistent Remedies or Appeals","What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?
+
+
+
+
+Practice: Consult and Incorporate Feedback from End Users and the Public",,,,,,,,,,
+NARA - 0001,Generative AI Solutions for Workplace Productivity (aka Gemini),National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,b) Yes – agency has determined that there’s a risk to disclosure such as a harm to an interest protected by a FOIA exemption,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,c) Not high-impact,N/A,Other,Generative AI,"The AI is intended to improve employee productivity by providing smarter tools for employees to summarize, draft, and navigate operational records.","NARA is exploring how Generative AI tools can help employees work more efficiently and creatively. These AI tools can automate tasks, enhance communication and collaboration, and improve decision-making.
+
+
+","This AI solution will help with draft emails and documents, create images, analyze data, take meeting notes, and manage workflows.
+",2025-09-01 00:00:00,a) Purchased from a vendor,Google,Yes,Google Workspace / Google Gemini,"Agency is strictly using its internal data for the purpose of prototype work. The data is internally available G-suite (Google Drive, Chat, Meeting, Gmail etc.).
+",N/A,Yes,N/A,None of the above, No,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0002,A1 Museum AI Project,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,c) Not high-impact,N/A,Other,Generative AI,The AI is intended to solve the problem of limited document discoverability and intensive manual labor by using automated tagging to personalize the visitor experience and make millions of digital records instantly accessible.,"NARA will use AI generated tags and topics to recommend and make records available to visitors from a pool of approximately 2 million digital records, freeing up staff time and enhancing and personalizing the user experience for A1 museum visitors.",This AI use provides enhanced visitor access to NARA records through an easy-to-use interface that identifies NARA records based on visitor responses to a chatbot conversation.,2025-10-01 00:00:00,c) Developed with both contracting and in-house resources,Cortina,Yes,Exhibit Personalization System (EPS),"The data is publicly available at 
+catalog.archives.gov",https://catalog.data.gov/dataset/archival-descriptions-from-the-national-archives-catalog, No,https://www.archives.gov/files/privacy/privacy-impact-assessments/NAC%20PIA%20final%202017.pdf,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0003,NARA@WORK Kendra Search,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,b) Yes – agency has determined that there’s a risk to disclosure such as a harm to an interest protected by a FOIA exemption,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,c) Not high-impact,N/A,Other,Natural Language Processing (NLP),"The AI is intended to solve the problem of inefficient employee information discovery by replacing outdated keyword search with a natural language system that provides instant, context-aware answers from disparate agency resources.","NARA is implementing an AI-driven contextual information retrieval tool (e.g., Amazon Kendra) to modernize search functionality on the NARA@Work internal site. This will enable staff to use Natural Language Processing (NLP) to query a wide range of agency information (Work Life, Benefits, Policies, etc.) and receive ""Suggested Answers.""
+
+","This AI-powered tool will drive significant productivity gains across the agency by enabling staff to find critical information faster and more efficiently. By utilizing contextual retrieval and ""Suggested Answers,"" the system ensures higher quality and more accurate results compared to traditional search methods.",2025-09-01 00:00:00,b) Developed in-house,N/A,Yes,NARA@Work,The data is internally (Intranet) available at internal site work.nara.gov,N/A, No,N/A,None of the above, No,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0004,Amelia Earhart AI Search,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,c) Not high-impact,N/A,Other,Natural Language Processing (NLP),The AI is intended to solve the manual search limitations when processing massive historical datasets by using Natural Language Processing to accurately locate and declassify specific records required for public release,"The intended purpose of this AI Proof of Concept (POC) is to efficiently retrieve and prepare for release all government records related to Amelia Earhart and her final trip, following the Presidential directive of September 26, 2025.
+The expected benefit is to leverage Natural Language Processing (NLP) search capabilities to overcome the limitations of traditional search methods, enabling the National Archives to effectively and accurately locate the necessary results from vast holdings and fulfill its legal mandate to make these specific historical records accessible to the American public.","This AI system's outputs will go beyond traditional keyword retrieval to identify, connect, and surface all relevant Amelia Earhart records, including contextual details about her final trip, thus providing researchers with better search results and showing connections between disparate records, making the overall research process easier and more insightful.",2025-12-01 00:00:00,b) Developed in-house,N/A,Yes,Archives.gov,The data is publicly available at Archives.gov,N/A, No,https://www.archives.gov/files/privacy/privacy-impact-assessments/NAC%20PIA%20final%202017.pdf,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0005,AI Pilot Project to Screen and Flag for Personally Identifiable Information (PII) in Digitized Archival Records,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,b) Yes – agency has determined that there’s a risk to disclosure such as a harm to an interest protected by a FOIA exemption,b)  Pilot – The use case has been deployed in a limited test or pilot capacity.,c) Not high-impact,N/A,Other,Generative AI,The AI is intended to solve the problem of manual processing bottlenecks and privacy risks by automating the identification and redaction of sensitive personal information within massive digitized collections to ensure safe and rapid public access.,"NARA is using AI to automatically find and remove sensitive personal information from its digitized historical records. This will make the process faster, more accurate, and better protect privacy while allowing for greater public access to these records. The AI will also help NARA manage its vast collection and adapt to future privacy needs.
+
+","This AI use case will produce redacted records, a prioritized list for redaction, and a tool for staff to redact unpublished records.
+
+",2024-07-01 00:00:00,b) Developed in-house,N/A, No,N/A,"Agency is strictly using its data to test the pre-trained model for the purpose of prototype work. The data is publicly available at catalog.archives.gov.
+",N/A, No,N/A,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0006,AI based Semantic Search for National Archives Catalog (aka ArchiAI),National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,b)  Pilot – The use case has been deployed in a limited test or pilot capacity.,c) Not high-impact,N/A,Other,Natural Language Processing (NLP),"The AI is intended to solve the problem of ""unsophisticated"" keyword-based search limitations by implementing semantic search that understands user intent and historical context, allowing researchers to find relevant records even when they don't match exact search terms.","NARA is using AI to create a smarter search engine for its online catalog. This new search understands the meaning behind your search, not just the keywords, and can even find hidden connections between documents. This will make research faster, easier, and more insightful.
+
+
+","This AI search tool will provide better search results and show connections between records, making research easier and more insightful.
+",2024-09-01 00:00:00,b) Developed in-house,N/A,Yes,Catalog,"Agency is strictly using its data to test the pre-trained model for the purpose of prototype work. The data is publicly available at catalog.archives.gov.
+",N/A, No,N/A,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0007,Auto-fill of Descriptive Metadata for Archival Descriptions,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,N/A,Other,Generative AI,"The AI is intended to solve the problem of the ""descriptive gap"" created by labor-intensive manual cataloging by automatically generating metadata and summaries from document content, allowing NARA to process massive backlogs and make millions of records instantly searchable for the public.","NARA is using AI to automatically create descriptions (metadata) for its digital archives. This will save archivists time, make records easier to find, and help the public better understand the information in the National Archives Catalog.
+
+","This AI use case will create more complete and informative descriptions for records, making them easier to find in the National Archives Catalog.
+
+",2024-09-01 00:00:00,b) Developed in-house,N/A, No,N/A,"The data is publicly available at 
+catalog.archives.gov",https://catalog.data.gov/dataset/archival-descriptions-from-the-national-archives-catalog, No,https://www.archives.gov/files/privacy/privacy-impact-assessments/NAC%20PIA%20final%202017.pdf,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0008,"Topic Summarizer and Entity Extraction using AI
+",National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,N/A,Other,Generative AI,"The AI is intended to solve the problem of unsearchable digital collections caused by massive descriptive backlogs, automating the creation of metadata for billions of digital objects to ensure they are immediately discoverable and understandable for the public without years of manual archival processing.","NARA plans to use AI to automatically create descriptions for its digital objects. This will free up archivists' time and make it easier for people to find and understand the digital materials in NARA's system.
+
+
+
+
+","This AI use case will output enriched metadata making NARA's digital assets more accessible and easier to manage.
+
+
+
+",2026-08-01 00:00:00,b) Developed in-house,N/A, No,N/A,N/A,N/A, No,N/A,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0009,Create an AI based knowledge articles user interface for working with CRG documents,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,b) Yes – agency has determined that there’s a risk to disclosure such as a harm to an interest protected by a FOIA exemption,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,N/A,Other,Natural Language Processing (NLP),"The AI is intended to improve the case processing by providing staff with an automated retrieval tool that navigates the complex Case Reference Guide to deliver instant, accurate answers for veteran and personnel record requests.","NARA is developing an AI-powered tool to help its National Personnel Records Center (NPRC) staff quickly find information in their Case Reference Guide (CRG). This will improve the speed and accuracy of their work, leading to better customer service and less time spent training new employees.
+
+
+
+","This AI tool will give NPRC staff a user-friendly way to quickly find information in the CRG knowledge base.
+
+",2024-10-01 00:00:00,b) Developed in-house,N/A, No,N/A,"Agency is strictly using its internal data for the purpose of prototype work. The data is internally available at https://spdr.nara.gov/
+",N/A, No,N/A,None of the above, No,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0010,EOP 42 Search PoC using AI Based Semantic Search,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,N/A,Other,Natural Language Processing (NLP),The AI is intended to solve the problem of inefficient information retrieval within Presidential email archives by testing whether AI-driven semantic search can understand context and intent more effectively than traditional keyword matching to improve record accessibility.,"The purpose of this Proof of Concept (POC) is to evaluate whether AI-driven semantic search provides a demonstrable improvement over the current keyword-based search experience for accessing EOP 42 digital records, including email archives.
+","The AI system's output will be significantly improved search results that are contextually relevant (semantic), effectively bypassing the limitations of simple keyword matching within EOP 42 digital records, thereby offering a demonstrable improvement in the search experience for users accessing materials, including complex email archives.",2026-12-01 00:00:00,c) Developed with both contracting and in-house resources,Skylight,Yes,EOP 42,N/A,N/A,Yes,N/A,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0011,Freedom of Information Act (FOIA) Discovery AI Pilot,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,N/A,Other,Natural Language Processing (NLP),"The AI is intended to solve the problem of larger FOIA backlogs and manual review bottlenecks by automating the discovery of relevant records and the redaction of sensitive data, ensuring responses are both rapid and compliant with privacy laws.","NARA is piloting the use of AI to improve its responses to Freedom of Information Act requests. This includes AI tools for finding relevant records and automatically redacting sensitive information, which will make the process faster, more accurate, and compliant with privacy laws.","This AI use case will output relevant records matching FOIA requests and redacted versions of those records with sensitive information removed.
+",2026-12-01 00:00:00,b) Developed in-house,N/A, No,N/A,NARA will train this AI use case based on previous FOIA requests that were released to public,N/A, No,N/A,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0012,Archives.gov AI search,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,N/A,Other,Natural Language Processing (NLP),"The AI is intended to solve the problem of ""unstructured data challenges"" in a vast, complex catalog by replacing traditional literal-match search with semantic technology that understands researcher intent, connects disparate records, and surfaces relevant results that would otherwise remain hidden behind inconsistent terminology.","NARA is using AI to create a smarter search engine for its online Archives.gov public site. This new search understands the meaning behind your search, not just the keywords, and can even find hidden connections between documents. This will make research faster, easier, and more insightful.
+
+
+","This AI search tool will provide better search results and show connections between records, making research easier and more insightful.
+",2026-08-01 00:00:00,b) Developed in-house,N/A,Yes,Archives.gov,The data is publicly available at Archives.gov,https://catalog.data.gov/dataset/archives-gov, No,N/A,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0013,Develop a Natural Language Based Chat Interface (like ChatGPT) to Interact With the Archival Documents,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,N/A,Other,Generative AI,The AI is intended to solve the problem of high barriers to entry for historical research by replacing complex database queries with a natural language interface that allows users of all skill levels to discover records and gain insights through simple conversation.,"NARA plans to develop an AI-powered chat interface, similar to ChatGPT, that will allow users to easily explore its digital archives by asking questions in everyday language. This will make historical documents more accessible and engaging, leading to more efficient research and a deeper understanding of history.
+
+
+
+
+
+","This AI will create a chat interface that lets users easily get information from NARA's archives by having a conversation with it.
+",2027-09-01 00:00:00,b) Developed in-house,N/A, No,N/A,N/A,N/A, No,N/A,None of the above,Yes,N/A,,,,,,,,,,,,,,,,,,,
+NARA - 0014,Automated Data Discovery and Classification Pilot,National Archives & Records Administration (NARA),Akhtar.Zaman@nara.gov,a) No,a) Pre-deployment – The use case is in a development or acquisition status.,c) Not high-impact,N/A,Other,Generative AI,"The AI is intended to solve the problem of inefficient manual data governance and risk assessment by testing automated data classification techniques to organize unstructured datasets, accelerate information discovery, and more accurately identify potential security or privacy vulnerabilities.","NARA plans to test how well AI can automatically organize and categorize its data. This pilot project will help NARA understand its data better, find information faster, improve efficiency, and manage risks more effectively.
+
+
+
+
+","This AI pilot will categorize data, improve search, and potentially train AI to identify new document types.
+
+
+",2027-09-01 00:00:00,b) Developed in-house,N/A, No,N/A,N/A,N/A, No,N/A,None of the above, No,N/A,,,,,,,,,,,,,,,,,,,

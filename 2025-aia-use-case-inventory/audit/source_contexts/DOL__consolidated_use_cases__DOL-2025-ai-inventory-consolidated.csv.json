@@ -1,0 +1,200 @@
+{
+  "table_name": "consolidated_use_cases",
+  "source_file": "DOL-2025-ai-inventory-consolidated.csv",
+  "agency_abbr": "DOL",
+  "agency_name": "Department of Labor",
+  "row_count": 14,
+  "file_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/raw/DOL-2025-ai-inventory-consolidated.csv",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "db_row_count": 14,
+  "raw_file": {
+    "source_kind": "csv",
+    "source_detail": "utf-8-sig",
+    "header_row_index": 0,
+    "headers": [
+      "Commercial Examples",
+      "AI Use Case"
+    ],
+    "raw_row_count": 14,
+    "non_empty_row_count": 14,
+    "blank_row_count": 0
+  },
+  "field_completeness": {
+    "ai_use_case": {
+      "non_empty_count": 14,
+      "non_empty_pct": 1.0
+    },
+    "commercial_product": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "commercial_examples": {
+      "non_empty_count": 14,
+      "non_empty_pct": 1.0
+    },
+    "agency_uses": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    },
+    "estimated_licenses_users": {
+      "non_empty_count": 0,
+      "non_empty_pct": 0.0
+    }
+  },
+  "tag_summary": {
+    "source_rows": 14,
+    "tagged_rows": 14,
+    "untagged_rows": 0,
+    "tag_distributions": {
+      "entry_type": {
+        "generic_use_pattern": 14
+      },
+      "product_capability": {
+        "<blank>": 5,
+        "writing": 3,
+        "search": 2,
+        "coding": 1,
+        "it_operations": 1,
+        "meetings": 1,
+        "productivity": 1
+      },
+      "ai_sophistication": {
+        "classical_ml": 8,
+        "general_llm": 5,
+        "coding_assistant": 1
+      },
+      "deployment_scope": {
+        "unknown": 14
+      },
+      "architecture_type": {
+        "inference_only": 7,
+        "unknown": 7
+      },
+      "use_type": {
+        "administrative": 14
+      },
+      "deployment_environment": {
+        "unknown": 14
+      }
+    },
+    "bool_distributions": {
+      "is_general_llm_access": {
+        "0": 9,
+        "1": 5
+      },
+      "is_coding_tool": {
+        "0": 13,
+        "1": 1
+      },
+      "is_cots_commercial": {
+        "1": 14
+      },
+      "is_generative_ai": {
+        "0": 8,
+        "1": 6
+      },
+      "is_frontier_model": {
+        "0": 10,
+        "1": 4
+      },
+      "is_enterprise_wide": {
+        "0": 14
+      },
+      "has_model_training": {
+        "0": 14
+      },
+      "is_microsoft_copilot": {
+        "0": 12,
+        "1": 2
+      },
+      "is_openai": {
+        "0": 11,
+        "1": 3
+      },
+      "is_anthropic": {
+        "0": 14
+      },
+      "is_google": {
+        "0": 14
+      },
+      "is_github_copilot": {
+        "0": 13,
+        "1": 1
+      },
+      "is_aws_ai": {
+        "0": 14
+      },
+      "is_public_facing": {
+        "0": 14
+      },
+      "has_meaningful_risk_docs": {
+        "0": 14
+      }
+    }
+  },
+  "label_summary": {
+    "top_products": {
+      "<blank>": 7,
+      "ChatGPT": 3,
+      "GitHub Copilot": 1,
+      "Microsoft 365 Copilot": 1,
+      "Microsoft Defender": 1,
+      "Reclaim.AI": 1
+    },
+    "top_templates": {
+      "<blank>": 5,
+      "code_generation": 1,
+      "document_drafting": 1,
+      "document_summarization": 1,
+      "help_desk": 1,
+      "knowledge_search": 1,
+      "news_curation": 1,
+      "scheduling": 1,
+      "time_management": 1,
+      "word_processor_ai": 1
+    },
+    "sample_rows": [
+      {
+        "id": 405,
+        "name": "Scheduling internal-to-government meetings or appointments or setting reminders using AI."
+      },
+      {
+        "id": 406,
+        "name": "Logging and analyzing time spent on tasks using AI-powered time management tools."
+      },
+      {
+        "id": 407,
+        "name": "Scheduling and managing social media posts using AI."
+      },
+      {
+        "id": 408,
+        "name": "Generating first drafts of documents, briefing, or communication materials using AI."
+      },
+      {
+        "id": 409,
+        "name": "Summarizing the key points of a lengthy report using AI."
+      },
+      {
+        "id": 410,
+        "name": "Using AI-assisted tools in word processors."
+      },
+      {
+        "id": 411,
+        "name": "Generating code using AI."
+      },
+      {
+        "id": 412,
+        "name": "Searching for agency information using a knowledge retrieval system."
+      },
+      {
+        "id": 413,
+        "name": "Managing or implementing security controls for information systems (e.g., cybersecurity) using AI."
+      },
+      {
+        "id": 414,
+        "name": "Managing and prioritizing internal service or help desk tickets using AI."
+      }
+    ]
+  },
+  "suspect_rows": []
+}
