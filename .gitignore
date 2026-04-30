@@ -33,3 +33,9 @@ out/
 # Logs
 *.log
 npm-debug.log*
+
+# Agent / scratch
+.playwright-mcp/
+
+# Sibling projects with their own repos
+2025-fedramp/
