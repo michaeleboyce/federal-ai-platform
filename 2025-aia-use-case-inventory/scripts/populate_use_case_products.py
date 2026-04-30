@@ -146,11 +146,38 @@ def _use_case_search_text(row: dict[str, Any]) -> str:
     )
 
 
+def _consolidated_search_text(row: dict[str, Any]) -> str:
+    """Text to scan for consolidated rows. IMPORTANT: `commercial_examples`
+    is NOT included. That column is the OMB template's boilerplate
+    "example products of this type" list (the identical strings "Calendly,
+    Reclaim.AI", "ChatGPT, Gemini", "Otter.ai, Evernote, Fireflies" repeat
+    verbatim across dozens of rows) — it's not evidence the agency uses
+    those tools. Matching on it produced a 57% false-positive rate on an
+    agent audit. Only `commercial_product` (what the agency declared) and
+    `agency_uses` / `ai_use_case` (narrative context) are safe.
+    """
+    return " ".join(
+        (row.get(k) or "")
+        for k in (
+            "commercial_product",
+            "ai_use_case",
+            "agency_uses",
+        )
+    )
+
+
+def _consolidated_primary_text(row: dict[str, Any]) -> str:
+    """Only the agency-declared product field. Used to gate primary-FK
+    seeding so we never auto-seed from narrative context."""
+    return row.get("commercial_product") or ""
+
+
 def populate() -> dict[str, int]:
     conn = get_connection()
     try:
         # Clean slate (idempotent re-run).
         conn.execute("DELETE FROM use_case_products")
+        conn.execute("DELETE FROM consolidated_use_case_products")
         conn.execute("DELETE FROM review_queue_products")
         conn.commit()
 
@@ -225,16 +252,85 @@ def populate() -> dict[str, int]:
                     )
                     queued += 1
 
+        # ------------------------------------------------------------
+        # Consolidated pass: populate consolidated_use_case_products and
+        # seed the single FK when the row has exactly one strong match and
+        # no existing product_id. Don't overwrite existing FKs.
+        # ------------------------------------------------------------
+        crows = conn.execute("SELECT * FROM consolidated_use_cases").fetchall()
+        c_zero = c_one = c_many = 0
+        c_seeded = 0
+
+        for r in crows:
+            row = dict(r)
+            text = _consolidated_search_text(row)
+            matches = extract_products(text, aliases)
+
+            if not matches:
+                c_zero += 1
+                continue
+
+            inserted = []
+            for m in matches:
+                pid = m["product_name"]
+                evidence = m.get("evidence") or m.get("alias") or ""
+                confidence = "strong" if len(evidence) >= 5 else "inferred"
+                conn.execute(
+                    """
+                    INSERT OR IGNORE INTO consolidated_use_case_products
+                        (consolidated_use_case_id, product_id, evidence_text, confidence)
+                    VALUES (?, ?, ?, ?)
+                    """,
+                    (row["id"], pid, evidence, confidence),
+                )
+                inserted.append((pid, confidence))
+
+            if len(matches) == 1:
+                c_one += 1
+            else:
+                c_many += 1
+
+            # Seed primary FK only if (a) previously NULL and (b) the
+            # `commercial_product` field alone produces exactly one match.
+            # Earlier versions of this block used `inserted` from the broader
+            # multi-column text, which silently pulled template-suggested
+            # example products into the primary FK (see audit set C).
+            if row.get("product_id") is None:
+                primary_text = _consolidated_primary_text(row)
+                primary_matches = extract_products(primary_text, aliases) if primary_text else []
+                strong_pids = [
+                    m["product_name"]
+                    for m in primary_matches
+                    if len((m.get("evidence") or m.get("alias") or "")) >= 5
+                ]
+                if len(set(strong_pids)) == 1:
+                    conn.execute(
+                        "UPDATE consolidated_use_cases SET product_id = ? WHERE id = ?",
+                        (strong_pids[0], row["id"]),
+                    )
+                    c_seeded += 1
+
         conn.commit()
 
         stats = {
-            "rows_with_zero_products": zero,
-            "rows_with_one_product": one,
-            "rows_with_two_or_more_products": many,
-            "total_use_case_products": conn.execute(
-                "SELECT COUNT(*) FROM use_case_products"
-            ).fetchone()[0],
-            "queued_for_llm_review": queued,
+            "individual": {
+                "rows_with_zero_products": zero,
+                "rows_with_one_product": one,
+                "rows_with_two_or_more_products": many,
+                "total_use_case_products": conn.execute(
+                    "SELECT COUNT(*) FROM use_case_products"
+                ).fetchone()[0],
+                "queued_for_llm_review": queued,
+            },
+            "consolidated": {
+                "rows_with_zero_products": c_zero,
+                "rows_with_one_product": c_one,
+                "rows_with_two_or_more_products": c_many,
+                "total_consolidated_use_case_products": conn.execute(
+                    "SELECT COUNT(*) FROM consolidated_use_case_products"
+                ).fetchone()[0],
+                "primary_fk_seeded_from_null": c_seeded,
+            },
         }
         print(json.dumps(stats, indent=2))
 
