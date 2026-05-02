@@ -8,7 +8,7 @@ from pathlib import Path
 
 import openpyxl
 
-from db import get_connection
+from db import apply_migrations, get_connection
 from column_maps import (
     CONSOLIDATED_COLUMNS,
     is_consolidated_format,
@@ -296,7 +296,18 @@ def load_file(filepath: Path, conn) -> dict:
 def main():
     conn = get_connection()
     try:
+        apply_migrations(conn)
         # Clear existing data
+        conn.execute("DELETE FROM use_case_external_evidence")
+        conn.execute("DELETE FROM review_queue_products")
+        conn.execute("DELETE FROM review_queue_llm")
+        conn.execute("DELETE FROM review_queue_scope")
+        conn.execute("DELETE FROM review_queue_entry_type")
+        conn.execute("DELETE FROM use_case_products")
+        conn.execute("DELETE FROM consolidated_use_case_products")
+        conn.execute("DELETE FROM use_case_tags")
+        conn.execute("DELETE FROM agency_ai_maturity")
+        conn.execute("DELETE FROM org_ai_maturity")
         conn.execute("DELETE FROM column_mappings")
         conn.execute("DELETE FROM use_cases")
         conn.execute("DELETE FROM consolidated_use_cases")

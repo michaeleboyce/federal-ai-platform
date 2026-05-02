@@ -91,6 +91,31 @@ def main() -> int:
         )
         conn.commit()
 
+        # If the source file itself repeats an ID within an agency, keep the
+        # first row and mark the later rows unresolved so the DB does not
+        # expose duplicate "source" IDs as if they were reliable identifiers.
+        duplicate_source_collisions = 0
+        source_groups: dict[tuple[int, str], list[int]] = defaultdict(list)
+        for r in conn.execute(
+            "SELECT id, agency_id, use_case_id FROM use_cases "
+            "WHERE use_case_id IS NOT NULL AND use_case_id != '' "
+            "ORDER BY agency_id, use_case_id, id"
+        ):
+            source_groups[(r["agency_id"], r["use_case_id"])].append(r["id"])
+        for ids in source_groups.values():
+            for row_id in ids[1:]:
+                conn.execute(
+                    """
+                    UPDATE use_cases
+                       SET use_case_id = NULL,
+                           id_provenance = 'source_missing'
+                     WHERE id = ?
+                    """,
+                    (row_id,),
+                )
+                duplicate_source_collisions += 1
+        conn.commit()
+
         # Build the existing (agency_id, use_case_id) set so we can guard
         # collisions while we backfill.
         taken: set[tuple[int, str]] = set()
@@ -175,7 +200,8 @@ def main() -> int:
         print(
             f"backfilled={backfilled} "
             f"source_missing_no_value={source_missing_no_value} "
-            f"source_missing_collision={source_missing_collision}"
+            f"source_missing_collision={source_missing_collision} "
+            f"duplicate_source_collision={duplicate_source_collisions}"
         )
         if collision_log:
             print(f"COLLISIONS ({len(collision_log)}):")

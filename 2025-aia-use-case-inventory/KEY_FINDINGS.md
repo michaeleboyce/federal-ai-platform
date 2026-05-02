@@ -2,60 +2,57 @@
 
 Generated from the SQLite database: `data/federal_ai_inventory_2025.db`
 
-Total: **3,616 individual + 192 consolidated = 3,808 use case entries** across 44 agencies.
+Total: **3,617 individual + 192 consolidated = 3,809 use case entries** across 44 agencies.
 
 ## Maturity Tier Distribution
 
 | Tier | Count | Agencies |
 |------|-------|----------|
-| **Leading** (enterprise LLM + coding + agentic + >50 UC) | 8 | VA, DOE, DOJ, DOI, DHS, DOT, State, TVA |
-| **Progressing** (enterprise LLM + >20 UC) | 5 | ED, FDIC, GSA, SSA, HUD |
-| **Early** (any GenAI + >5 UC) | 25 | HHS, NASA, Treasury, DOC, USDA, DOL, SEC, SBA, etc. |
-| **Minimal** (<5 UC or no GenAI) | 6 | OPM, NRC, NTSB, NMB, NCUA, CFTC |
+| **Leading** (enterprise LLM + coding + agentic + >50 UC) | 7 | DHS, DOC, DOE, ED, FDIC, HHS, VA |
+| **Progressing** (enterprise LLM + >20 UC) | 1 | GSA |
+| **Early** (any GenAI + >5 UC) | 29 | CSOSA, DOI, DOJ, DOL, DOT, EAC, EPA, FCC, FERC, FHFA, FRB, FRTIB, FTC, HUD, NARA, NASA, NLRB, NSF, OSC, PBGC, SBA, SEC, SSA, State, TVA, Treasury, USDA, USITC, USTDA |
+| **Minimal** (<5 UC or no GenAI) | 7 | CFTC, GPO, NCUA, NMB, NRC, NTSB, OPM |
 
 ## Enterprise LLM Access
 
-### Agencies WITH enterprise LLM access (13)
-VA, DOE, DOJ, DOI, DHS, ED, DOT, State, GSA, SSA, HUD, OPM, NRC
+### Agencies WITH enterprise LLM access (15)
+CSOSA, DHS, DOC, DOE, EAC, ED, FCC, FDIC, FERC, GSA, HHS, NARA, NRC, USITC, VA
 
-### CFO Act agencies WITHOUT enterprise LLM access in their inventory (8)
-**HHS, NASA, DOC, USDA, Treasury, DOL, SBA, EPA, NSF**
+### CFO Act agencies WITHOUT enterprise LLM access in their inventory (14)
+**USDA, HUD, DOI, DOJ, DOL, State, DOT, Treasury, EPA, NASA, NSF, OPM, SBA, SSA**
 
 ⚠️ Notable: **HHS does not show enterprise LLM access** in its 2025 inventory despite the 2023 CDC ChatGPT deployment referenced in the draft piece (1.2M chats, 41K hours saved). This may represent an inventory reporting gap rather than actual absence.
 
 ## Coding Assistant Deployment
 
-**29 agencies deployed coding assistants** (at least 1 entry):
+**15 agencies deployed coding assistants** (at least 1 entry):
 
 | Agency | Count | Top Tool |
 |--------|-------|----------|
 | ED | 13 | M365 Copilot + GSA USAi |
-| DOC | 12 | GitHub Copilot + Gemini Code Assist + Amazon Q Dev |
-| Treasury | 8 | Multiple bureau-level deployments |
-| DOE | 7 | GitHub Copilot at PNNL/SLAC/WAPA + Tabnine |
-| DHS | 7 | Bespoke Azure OpenAI wrappers (CBP CodeGen, FEMA Code Assist GPT) |
-| HHS | 5 | Scattered; CMS OC GitHub Copilot POC |
-| NASA | 4 | Pilot studies |
-| DOJ, SBA, SSA | 3 each | |
-| State, SEC, FTC, FCC, DOI | 2 each | |
-| 14 other agencies | 1 each | Usually M365 Copilot "generate code" template |
+| DHS | 5 | Bespoke Azure OpenAI wrappers (CBP CodeGen, FEMA Code Assist GPT) |
+| DOE | 5 | GitHub Copilot at PNNL/SLAC/WAPA + Tabnine |
+| DOC | 4 | GitHub Copilot + Gemini Code Assist + Amazon Q Dev |
+| HHS | 2 | Scattered; CMS OC GitHub Copilot POC |
+| NASA, SBA, Treasury | 2 each | |
+| DOL, FDIC, NLRB, NSF, SSA, TVA, VA | 1 each | |
 
-**Zero coding assistants**: USDA, FRB, FHFA, EPA, NARA, GPO, FERC, FRTIB, OPM, NRC, NTSB, NMB, NCUA, CFTC
+**Zero coding assistants**: USDA, HUD, DOI, DOJ, State, DOT, EPA, GSA, NRC, OPM, NARA, FHFA, FRB, SEC, NCUA, FTC, FCC, CFTC, USITC, PBGC, FERC, NTSB, USTDA, EAC, GPO, FRTIB, OSC, CSOSA, NMB
 
 ## Top Products Deployed Government-Wide (by agency count)
 
 | Product | Vendor | Agencies Using |
 |---------|--------|----------------|
-| **Microsoft 365 Copilot** | Microsoft | 18 |
-| ServiceNow Now Assist | ServiceNow | 12 |
-| ChatGPT | OpenAI | 11 |
-| Azure OpenAI | Microsoft | 11 |
-| Microsoft Teams | Microsoft | 9 |
-| Gemini | Google | 8 |
-| **GitHub Copilot** | Microsoft | 8 |
+| **Microsoft Teams** | Microsoft | 16 |
+| ServiceNow Now Assist | ServiceNow | 15 |
+| ChatGPT | OpenAI | 14 |
+| OpenAI API | OpenAI | 12 |
+| Gemini | Google | 11 |
+| Custom In-House AI | In-House | 10 |
+| Salesforce Einstein | Salesforce | 8 |
+| Amazon Q | Amazon | 7 |
+| Crowdstrike Falcon | Crowdstrike | 7 |
 | Databricks | Databricks | 7 |
-| Microsoft Defender | Microsoft | 7 |
-| Esri ArcGIS AI | Esri | 6 |
 
 ## Year-over-Year Growth (2024 → 2025)
 
@@ -96,12 +93,13 @@ VA, DOE, DOJ, DOI, DHS, ED, DOT, State, GSA, SSA, HUD, OPM, NRC
 
 Tables:
 - `agencies` (60 agencies tracked, 44 with data)
-- `use_cases` (3,616 individual, M-25-21 canonical schema)
+- `use_cases` (3,617 individual, M-25-21 canonical schema)
 - `consolidated_use_cases` (192 Appendix B/COTS entries)
-- `products` (36 canonical products)
-- `product_aliases` (~120 observed name variants)
-- `use_case_templates` (20 OMB standard templates)
-- `use_case_tags` (3,808 rows of analytical metadata)
+- `products` (217 canonical products)
+- `product_aliases` (367 observed name variants)
+- `use_case_products` + `consolidated_use_case_products` (726 authoritative product attribution edges)
+- `use_case_templates` (22 OMB/Appendix-style templates)
+- `use_case_tags` (3,809 rows of analytical metadata)
 - `agency_ai_maturity` (44 agency scores)
 - `column_mappings` (documents per-agency schema mappings)
 
@@ -119,5 +117,5 @@ JOIN agencies a ON a.id = m.agency_id
 WHERE m.coding_tool_count = 0 AND m.total_use_cases > 0;
 
 -- Total distinct products deployed across all agencies (deduped)
-SELECT COUNT(DISTINCT product_id) FROM use_cases WHERE product_id IS NOT NULL;
+SELECT COUNT(DISTINCT product_id) FROM entry_product_edges;
 ```

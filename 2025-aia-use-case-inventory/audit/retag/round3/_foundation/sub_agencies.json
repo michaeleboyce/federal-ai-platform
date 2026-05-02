@@ -1,0 +1,5587 @@
+[
+  {
+    "slug": "dhs-cbp",
+    "name": "U.S. Customs and Border Protection",
+    "abbreviation": "CBP",
+    "level": "sub_agency",
+    "parent_agency": "DHS",
+    "subtree_use_cases": 83,
+    "subtree_llm_count": 19,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Facial Recognition for National Security and Transnational Criminal Organizations",
+        "system_name": "Traveler Verification System",
+        "vendor_name": "Clearview AI"
+      },
+      {
+        "name": "Babel",
+        "system_name": "Babel Street",
+        "vendor_name": "Babel Street"
+      },
+      {
+        "name": "Passive Body Scanner",
+        "system_name": "Passive Body Scanner",
+        "vendor_name": "ThruVision TAC 16"
+      },
+      {
+        "name": "CBP Translate",
+        "system_name": "CBP Translate",
+        "vendor_name": "Aneesh Technologies, 24X7, Ellumen Inc., Deloitte, NiyamIT"
+      },
+      {
+        "name": "Passenger Security Assessment Model",
+        "system_name": "Automated Targeting System (ATS)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Cargo Security Assessment Model",
+        "system_name": "Automated Targeting System (ATS)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Illicit Trade",
+        "system_name": "Automated Targeting System (ATS)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Supervised Traveler Identity Verification Services (Officer Initiated)",
+        "system_name": "Traveler Verification Service",
+        "vendor_name": "CBP procured mobile devices (Apple, Samsung) commercial off the shelf cameras (Logitech)"
+      }
+    ],
+    "named_tools": [
+      "Custom In-House AI",
+      "ServiceNow Now Assist",
+      "Gemini",
+      "Microsoft Teams",
+      "Claude"
+    ]
+  },
+  {
+    "slug": "dhs-ice",
+    "name": "U.S. Immigration and Customs Enforcement",
+    "abbreviation": "ICE",
+    "level": "sub_agency",
+    "parent_agency": "DHS",
+    "subtree_use_cases": 51,
+    "subtree_llm_count": 17,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Facial Recognition for Locating Vulnerable Populations",
+        "system_name": "Law Enforcement Sensitive (LES)",
+        "vendor_name": "Law Enforcement Sensitive (LES)"
+      },
+      {
+        "name": "Facial Recognition for National Security Investigations",
+        "system_name": "Law Enforcement Sensitive (LES)",
+        "vendor_name": "Law Enforcement Sensitive (LES)"
+      },
+      {
+        "name": "Facial Recognition for Investigations of Transnational Criminal Organizations",
+        "system_name": "Law Enforcement Sensitive (LES)",
+        "vendor_name": "Law Enforcement Sensitive (LES)"
+      },
+      {
+        "name": "Mobile Fortify",
+        "system_name": "TVSI, ATS-C",
+        "vendor_name": "NEC is the third\u2011party vendor CBP uses. ICE accesses these capabilities through CBP and does not contract directly with NEC."
+      },
+      {
+        "name": "Facial Recognition for Investigations of Child Sexual Exploitation and Abuse",
+        "system_name": "Law Enforcement Sensitive (LES)",
+        "vendor_name": "Law Enforcement Sensitive (LES)"
+      },
+      {
+        "name": "Investigative Prioritization Aggregator",
+        "system_name": "Repository for Analytics in a Virtualized Environment",
+        "vendor_name": "Sandia National Laboratories"
+      },
+      {
+        "name": "Translation and Transcription for Investigative Data",
+        "system_name": "Repository for Analytics in a Virtualized Environment,",
+        "vendor_name": "Booz Allen"
+      },
+      {
+        "name": "Enhanced Lead Identification and Targeting",
+        "system_name": "Palantir Federal Cloud Service",
+        "vendor_name": "Palantir"
+      }
+    ],
+    "named_tools": [
+      "Crowdstrike Falcon"
+    ]
+  },
+  {
+    "slug": "dhs-tsa",
+    "name": "Transportation Security Administration",
+    "abbreviation": "TSA",
+    "level": "sub_agency",
+    "parent_agency": "DHS",
+    "subtree_use_cases": 26,
+    "subtree_llm_count": 8,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Credential Authentication Technology with Camera System (CAT-2) and AutoCAT (CAT-2 in an e-gate form factor)",
+        "system_name": "STIP/CAT",
+        "vendor_name": "IDEMIA Identity, Security USA LLC"
+      },
+      {
+        "name": "PreCheck Touchless Identity Solution",
+        "system_name": "CBP TVS",
+        "vendor_name": "CBP TVS, NEC Algorithm"
+      },
+      {
+        "name": "Airport Throughput Predictive Model",
+        "system_name": "Secure Flight",
+        "vendor_name": ""
+      },
+      {
+        "name": "Automated Target Recognition (ATR) Developments for Standard Screening",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Accessible Property Screening (APS) Checkpoint CT Prohibited Items (PI) Detection",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Walk-Through Metal Detector (WTMD) Alternative Automated Target Recognition (ATR) Developments",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Synthetic data for improved Automated Threat Recognition (ATR) in checkpoint screening",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Electronic Evidence/Video Recording Transcription and Summarization Tool",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Microsoft Teams"
+    ]
+  },
+  {
+    "slug": "dhs-uscis",
+    "name": "U.S. Citizenship and Immigration Services",
+    "abbreviation": "USCIS",
+    "level": "sub_agency",
+    "parent_agency": "DHS",
+    "subtree_use_cases": 24,
+    "subtree_llm_count": 5,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Text Analytics Data Science Sentence Similarity Model",
+        "system_name": "Text Analytics",
+        "vendor_name": "Inadev"
+      },
+      {
+        "name": "Automated Realtime Global Organization Specialist (ARGOS) for Company Registration Submissions to E-Verify",
+        "system_name": "ARGOS (Automated Real-Time Global Organization Specialist)",
+        "vendor_name": "IBM"
+      },
+      {
+        "name": "Verification Match Model",
+        "system_name": "Verification Information System",
+        "vendor_name": "IBM"
+      },
+      {
+        "name": "I-765 - USCIS Facial Recognition through IDENT (1:1 Face Recognition/Validation)",
+        "system_name": "Customer Profile Management System",
+        "vendor_name": "Pluribus Digital"
+      },
+      {
+        "name": "Person-Centric Identity Services Deduplication Model",
+        "system_name": "Person Centric Identity Services",
+        "vendor_name": "MetroIBR"
+      },
+      {
+        "name": "Biometrics Enrollment Tool (BET) Fingerprint Quality Check",
+        "system_name": "Biometrics Enrollment Tool",
+        "vendor_name": "Pluribus Digital"
+      },
+      {
+        "name": "Automated Name and Date of Birth (DOB) Harvesting Service",
+        "system_name": "ELIS",
+        "vendor_name": "SAIC and DV United"
+      },
+      {
+        "name": "ELIS Card Photo Validation Service",
+        "system_name": "ELIS",
+        "vendor_name": "SAIC and DV United"
+      }
+    ],
+    "named_tools": [
+      "Claude"
+    ]
+  },
+  {
+    "slug": "dhs-fema",
+    "name": "Federal Emergency Management Agency",
+    "abbreviation": "FEMA",
+    "level": "sub_agency",
+    "parent_agency": "DHS",
+    "subtree_use_cases": 22,
+    "subtree_llm_count": 11,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Hazard Mitigation Assistance Chatbot",
+        "system_name": "ReadyAI",
+        "vendor_name": "Ideation"
+      },
+      {
+        "name": "Technical Resource for Mitigation Programs",
+        "system_name": "The HMA Mitigation Agent code executes within the Mosaic-authorized Databricks workspace and inherits all security controls documented in Mosaic\u2019s ATO. No separate ATO has been issued for the AI component at this time.",
+        "vendor_name": ""
+      },
+      {
+        "name": "OCFO Response Augmentation Suite",
+        "system_name": "FEMA OCFO GPT",
+        "vendor_name": "Microsoft (OpenAI Azure Commercial Cloud offerings)"
+      },
+      {
+        "name": "OCFO Code Assist GPT",
+        "system_name": "ReadyAI",
+        "vendor_name": "Microsoft (OpenAI part of Azure Commercial Cloud offerings)"
+      },
+      {
+        "name": "Executive Summary GPT",
+        "system_name": "ReadyAI",
+        "vendor_name": "Microsoft (Azure Commercial OpenAI Cloud Offerings)"
+      },
+      {
+        "name": "AI Resume & ATS App",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Spend Plan Analysis GPT",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Administrative & Productivity Support for IRC Resource Library",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Microsoft Teams",
+      "Databricks",
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "dhs-mgmt",
+    "name": "Management Directorate",
+    "abbreviation": "MGMT",
+    "level": "office",
+    "parent_agency": "DHS",
+    "subtree_use_cases": 10,
+    "subtree_llm_count": 4,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "User and Entity Behavior Analytics (UEBA)",
+        "system_name": "Vetting Identities for an Enterprise Workforce",
+        "vendor_name": "CANDA Solutions"
+      },
+      {
+        "name": "DHS-Chat",
+        "system_name": "DHSChat",
+        "vendor_name": ""
+      },
+      {
+        "name": "ESEC Inquiry (STORM) Summarization",
+        "system_name": "Dynamics Online As a Service; BIaaS",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "AdaptiveMFA",
+        "system_name": "The DHS Next Generation Authentication as a Service (DHSAuthPortal) System",
+        "vendor_name": "Okta"
+      },
+      {
+        "name": "JES and Appropriations Insight",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "CFO Navigator",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "DHS Asset Assessment Tool",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Spending Analysis and Budget Execution Risk (SABER) Model",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Microsoft Defender"
+    ]
+  },
+  {
+    "slug": "dhs-cisa",
+    "name": "Cybersecurity and Infrastructure Security Agency",
+    "abbreviation": "CISA",
+    "level": "sub_agency",
+    "parent_agency": "DHS",
+    "subtree_use_cases": 7,
+    "subtree_llm_count": 2,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Critical Infrastructure Network Anomaly Detection",
+        "system_name": "CISA Technical Engagement Network",
+        "vendor_name": ""
+      },
+      {
+        "name": "Automated Detection of Personally Identifiable Information (PII) in Cybersecurity Data",
+        "system_name": "Trusted Automated eXchange of Indicator Information server",
+        "vendor_name": "Nightwing Intelligence Solutions, LLC. Procurement Instrument ID affiliated with this use case: 70QS0124C00000002"
+      },
+      {
+        "name": "Malware Reverse Engineering",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Draft Tailored Summaries of Media Materials for Different Publication Channels",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "CISAChat",
+        "system_name": "",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Security Operation Center (SOC) Network Anomaly Detection",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Confidence Scoring for Cybersecurity Threat Indicators",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doc-noaa",
+    "name": "National Oceanic and Atmospheric Administration",
+    "abbreviation": "NOAA",
+    "level": "sub_agency",
+    "parent_agency": "DOC",
+    "subtree_use_cases": 157,
+    "subtree_llm_count": 16,
+    "subtree_coding_count": 3,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Community-based Messaging with LLM",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "NWS Mutual Aid Coordination",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Draft Fronts for Surface Analysis",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Enhance LSR (Local Storm Report) Creation",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "NWS Public Safety Language Translation",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Scientific Code Development Assistance",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Evaluate AI Models for Probabilistic Hurricane Predictions",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Evaluate AI for Forecasting Fronts",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Gemini",
+      "GitHub Copilot",
+      "Amazon Q"
+    ]
+  },
+  {
+    "slug": "doc-census",
+    "name": "U.S. Census Bureau",
+    "abbreviation": "Census",
+    "level": "sub_agency",
+    "parent_agency": "DOC",
+    "subtree_use_cases": 17,
+    "subtree_llm_count": 1,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Real Time Classification for the Economic Census",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Automated Change Detection",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "School staff information extraction from web page text",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Census Bureau Demographic Frame Person-Place Model",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Race and Ethnicity Autocoding",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Information extraction for web scraped data for Group Quarters frame enhancement",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Current Population Survey (CPS) Name Screening Tool",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Linkage and Matching Program (LaMP)",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doc-uspto",
+    "name": "U.S. Patent and Trademark Office",
+    "abbreviation": "USPTO",
+    "level": "sub_agency",
+    "parent_agency": "DOC",
+    "subtree_use_cases": 15,
+    "subtree_llm_count": 2,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Prior Art Search: AI Retrieval for Patent Search (PSAI) (Similarity Search)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Pre-Exam Application: CPC Classification",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "TM Word and Image Search Tool (TWIST)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Prior Art Search: Patent Image Search",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Virtual Assistant (Public)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Pre-Exam Application: Front End Document Code Quality Control",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Pre-Exam Application: Skill Group Matching",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "GenAI platform and applications for general productivity",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Claude",
+      "ServiceNow Now Assist"
+    ]
+  },
+  {
+    "slug": "doc-ita",
+    "name": "International Trade Administration",
+    "abbreviation": "ITA",
+    "level": "sub_agency",
+    "parent_agency": "DOC",
+    "subtree_use_cases": 9,
+    "subtree_llm_count": 5,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Global Business Navigator Chatbot",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Generative AI Tools Pilot - Global Markets",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Generative AI Tools Pilot - Enterprise & Solutions Architecture",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "ChatGPT Enterprise",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Google AgentSpace",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Amazon Web Services NLP, Classification, Text Mining",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Google Public Sector NLP, Classification, Text Mining",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Google Colab and VertexAI",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "ChatGPT",
+      "Claude"
+    ]
+  },
+  {
+    "slug": "doc-ntia",
+    "name": "National Telecommunications and Information Administration",
+    "abbreviation": "NTIA",
+    "level": "sub_agency",
+    "parent_agency": "DOC",
+    "subtree_use_cases": 8,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "WAWENETS",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Streamline Spectrum Activities",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Spectrum Visualizations",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Use of Lexis. Other searches for legal research",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Grants Program Administration - Inquiry management Chatbot Pilot",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Grants Program Administration - BEAD Monitoring Plan Agent Pilot",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Grants Program Administration - Tiered Environmental Assessment AI Pilot",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "NTIA Grants Portal (NGP) - AI Summarization, Analytics, and Automations",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doc-nist",
+    "name": "National Institute of Standards and Technology",
+    "abbreviation": "NIST",
+    "level": "sub_agency",
+    "parent_agency": "DOC",
+    "subtree_use_cases": 7,
+    "subtree_llm_count": 5,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Science Data Portal Autosuggest Search",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Grammarly",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "LLM support for NIST research (Azure)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Library Market Research GenAI Tools Pilot",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Google Gemini",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "LLM support for NIST research (NIST HPC)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "LLM support for NIST research (Google Vertex)",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Grammarly",
+      "Gemini"
+    ]
+  },
+  {
+    "slug": "doe-lanl",
+    "name": "Los Alamos National Laboratory",
+    "abbreviation": "LANL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 43,
+    "subtree_llm_count": 37,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "ServiceNow Predictive Intelligence",
+        "system_name": "ServiceNow ATO",
+        "vendor_name": "ServiceNow (SAAS hosting provider)"
+      },
+      {
+        "name": "NLCOO AI for Lessons Learned tool",
+        "system_name": "Authorization to Operate Amazon Web Service Federal Risk and Authorization Management Program Infrastructure as a Service Cloud Service Provider, Amazon Web Service Information System Security Plan, SD-006-CP-002/L2",
+        "vendor_name": "No Vendor Involved"
+      },
+      {
+        "name": "ServiceNow Virtual Agent",
+        "system_name": "ServiceNow ATO",
+        "vendor_name": "ServiceNow"
+      },
+      {
+        "name": "LANL AI Portal",
+        "system_name": "Authorization to Operate Amazon Web Service Federal Risk and Authorization Management Program Infrastructure as a Service Cloud Service Provider, Amazon Web Service Information System Security Plan, SD-006-CP-002/L2",
+        "vendor_name": "Amazon Web Services (hosting provider)"
+      },
+      {
+        "name": "ChatGPT Enterprise",
+        "system_name": "ChatGPT Enterprise",
+        "vendor_name": "OpenAI (SAAS hosting provider)"
+      },
+      {
+        "name": "Microsoft Bing Service",
+        "system_name": "GSS",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Ariculate 360 AI Assistant",
+        "system_name": "GSS",
+        "vendor_name": "Articulate"
+      },
+      {
+        "name": "Visual Studio Enterprise",
+        "system_name": "GSS",
+        "vendor_name": "Microsoft"
+      }
+    ],
+    "named_tools": [
+      "ServiceNow Now Assist",
+      "ChatGPT",
+      "Microsoft 365 Copilot",
+      "Microsoft Teams"
+    ]
+  },
+  {
+    "slug": "doe-pnnl",
+    "name": "Pacific Northwest National Laboratory",
+    "abbreviation": "PNNL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 40,
+    "subtree_llm_count": 23,
+    "subtree_coding_count": 2,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Advancing Market-Ready Building Energy Management by Cost-Effective Differentiable Predictive Control",
+        "system_name": "R&D User",
+        "vendor_name": ""
+      },
+      {
+        "name": "Adaptive Cyber-Physical Resilience for Building Control Systems",
+        "system_name": "R&D User",
+        "vendor_name": "PassiveLogic"
+      },
+      {
+        "name": "Elucidating Genetic and Environmental Risk Factors for Antipsychotic-induced Metabolic Adverse Effects Using AI",
+        "system_name": "R&D User",
+        "vendor_name": ""
+      },
+      {
+        "name": "APT Analytics",
+        "system_name": "R&D User",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "AI used for predictive modeling and real time control of traffic systems",
+        "system_name": "R&D User",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Laboratory Automation",
+        "system_name": "R&D User",
+        "vendor_name": ""
+      },
+      {
+        "name": "Scalable, Efficient and Accelerated Causal Reasoning Operators, Graphs and Spikes for Earth and Embedded Systems (SEA-CROGS)",
+        "system_name": "R&D User",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Physics-Informed Learning Machines for Multiscale and Multiphysics Problems (PhILMs)",
+        "system_name": "R&D User",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Microsoft 365 Copilot",
+      "Databricks",
+      "Microsoft Copilot for Security",
+      "GitHub Copilot",
+      "OpenAI API",
+      "Claude",
+      "Microsoft Copilot Studio"
+    ]
+  },
+  {
+    "slug": "doe-inl",
+    "name": "Idaho National Laboratory",
+    "abbreviation": "INL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 39,
+    "subtree_llm_count": 18,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AI for Intelligent Automation",
+        "system_name": "CS-SSP-123,Cybersecurity System Security Plan for Azure Platform",
+        "vendor_name": "Not available"
+      },
+      {
+        "name": "INL AI Virtual Assitant (AiVA)",
+        "system_name": "CS-SSP-123,Cybersecurity System Security Plan for Azure Platform",
+        "vendor_name": ""
+      },
+      {
+        "name": "ACORN (Autonomous Operation for Reactor Technologies)",
+        "system_name": "Not available",
+        "vendor_name": "Open source development"
+      },
+      {
+        "name": "Custom GenAI for eVinci Microreactor Engineering (MauroGPT)",
+        "system_name": "aaportal.inl.gov/maurogpt2/ (internal)",
+        "vendor_name": "Open source development with INL Advanced Analystics Center of Excellence"
+      },
+      {
+        "name": "VIPER (Visualizaiton for Predictive Maintenance Recommendation)",
+        "system_name": "api.hpc.inl.gov",
+        "vendor_name": "Open Source development"
+      },
+      {
+        "name": "EDMS Admin",
+        "system_name": "EDMS",
+        "vendor_name": "Not available"
+      },
+      {
+        "name": "Project Optimus - Prime Contract",
+        "system_name": "optimus.hpc.inl.gov",
+        "vendor_name": "Not available"
+      },
+      {
+        "name": "Custom GenAI for Advanced Reactor Development (LotusAI)",
+        "system_name": "aaportal.inl.gov/lotusai/ (internal)",
+        "vendor_name": "Open source development"
+      }
+    ],
+    "named_tools": [
+      "Custom In-House AI",
+      "ServiceNow Now Assist",
+      "ChatGPT",
+      "Claude",
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "doe-bnl",
+    "name": "Brookhaven National Laboratory",
+    "abbreviation": "BNL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 34,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Advanced Peer to Peer Transactive Energy Platform with Predictive Optimization",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Nanoparticle growth kinetics and mechanism",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Center for Mesoscale Transport Properties",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Develop a Machine Learning Framework for Optimal Computational Campaigns for Complex Uncertain Systems",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AI/ML in High Energy Physics Research",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "SMMM",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "A Digital Twin for In-silico Spatiotemporally-resolved Experiments",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Machine learning for accelerated understanding of dynamic catalysis",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doe-srs",
+    "name": "Savannah River Site",
+    "abbreviation": "SRS",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 27,
+    "subtree_llm_count": 14,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 13,
+    "subtree_env_count": 0,
+    "maturity_tier": "progressing",
+    "sample_use_cases": [
+      {
+        "name": "Ask CAS",
+        "system_name": "Azure GOV",
+        "vendor_name": ""
+      },
+      {
+        "name": "Poseidon",
+        "system_name": "Azure GOV",
+        "vendor_name": ""
+      },
+      {
+        "name": "Ask Alan",
+        "system_name": "Azure GOV",
+        "vendor_name": ""
+      },
+      {
+        "name": "DIRECTIVES",
+        "system_name": "Azure GOV",
+        "vendor_name": ""
+      },
+      {
+        "name": "FindMATID",
+        "system_name": "Azure GOV",
+        "vendor_name": ""
+      },
+      {
+        "name": "Ask IT",
+        "system_name": "Azure GOV",
+        "vendor_name": ""
+      },
+      {
+        "name": "ChatSRS",
+        "system_name": "Azure GOV",
+        "vendor_name": ""
+      },
+      {
+        "name": "UNSPSC Codes",
+        "system_name": "Azure GOV",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doe-ornl",
+    "name": "Oak Ridge National Laboratory",
+    "abbreviation": "ORNL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 25,
+    "subtree_llm_count": 16,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Copilot Studio",
+        "system_name": "Cloud Enclave",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "ServiceNow AI Search",
+        "system_name": "Cloud Enclave",
+        "vendor_name": ""
+      },
+      {
+        "name": "Copilot for Microsoft 365",
+        "system_name": "Cloud Enclave",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "AI for High Risk Property",
+        "system_name": "Cloud Enclave",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI for Isotopes (Pellet) Inspection",
+        "system_name": "Cloud Enclave",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Assistant Phase 2 Simple Chat",
+        "system_name": "N/A",
+        "vendor_name": ""
+      },
+      {
+        "name": "ORNL: Foundational AI Research",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "ORNL: AI for Materials Science",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Microsoft Copilot Studio",
+      "ServiceNow Now Assist",
+      "Microsoft 365 Copilot"
+    ]
+  },
+  {
+    "slug": "doe-fnal",
+    "name": "Fermi National Accelerator Laboratory",
+    "abbreviation": "FNAL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 17,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "MI8 Collimators Surogate Model",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Unleashing AI Transformer Models on FPGAs for Accelerating LHC and Particle Physics",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Machine Learning for Linac Improved Performance",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Denoising",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Next-Generation Beam Cooling and Control with Optical Stochastic Cooling",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "In-storage computing for multi-messenger astronomy in neutrino experiments and cosmological surveys",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "high level synthesis for machine learning (previously hls4ml)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Streamining intelligent detectors for sPHENIX/EIC",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Custom In-House AI"
+    ]
+  },
+  {
+    "slug": "doe-netl",
+    "name": "National Energy Technology Laboratory",
+    "abbreviation": "NETL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 15,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Natural Language Processing",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "DOE AI Data Infrastructure System",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Creation of polymer datasets and inverse design of polymers with targeted backbones having \nHigh CO2 permeability and high CO2/N2 selectivity.",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "To use AI to calibrate the simulation model by matching simulation data with production history data.",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Data discovery, processing, and generation using machine learning for a range of CCS data and information",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Machine Learning for geophysical data inversion",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "To help automate data discovery and preparations to support a range of CS models, tools, and products",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "IDAES-PSE",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doe-em",
+    "name": "Office of Environmental Management",
+    "abbreviation": "EM",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 11,
+    "subtree_llm_count": 10,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Hanford Search",
+        "system_name": "Microsoft Azure OpenAI",
+        "vendor_name": ""
+      },
+      {
+        "name": "Hanford Popfon Search",
+        "system_name": "Microsoft Azure OpenAI",
+        "vendor_name": ""
+      },
+      {
+        "name": "Hanford Ai Liaison (HAL) 1.1",
+        "system_name": "Hnaford Accreditation Boundary (HAB)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Hanford  Service Ticket Lookup",
+        "system_name": "Microsoft Azure OpenAI",
+        "vendor_name": ""
+      },
+      {
+        "name": "Hanford Procedure Search",
+        "system_name": "Microsoft Azure OpenAI",
+        "vendor_name": ""
+      },
+      {
+        "name": "Microsoft Co-Pilot",
+        "system_name": "Hanford Accreditation Boundary (HAB)",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "GitHub Co-Pilot",
+        "system_name": "Hanford Accreditation Boundary (HAB)",
+        "vendor_name": "GitHub"
+      },
+      {
+        "name": "Invoice Scanning System",
+        "system_name": "Hanford Accreditation Boundary (HAB)",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Azure OpenAI"
+    ]
+  },
+  {
+    "slug": "doe-llnl",
+    "name": "Lawrence Livermore National Laboratory",
+    "abbreviation": "LLNL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 9,
+    "subtree_llm_count": 8,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Bernie-AI: Infrastructure Planning Support POC",
+        "system_name": "Multiple",
+        "vendor_name": ""
+      },
+      {
+        "name": "OpenAI ChatGPT Pilot",
+        "system_name": "OpenAI",
+        "vendor_name": "OpenAI"
+      },
+      {
+        "name": "NIF Shot Analytics & Predictive Maintenance Support Pilot",
+        "system_name": "C3.AI",
+        "vendor_name": "C3"
+      },
+      {
+        "name": "xAI Grok Pilot",
+        "system_name": "Grok",
+        "vendor_name": "xAI"
+      },
+      {
+        "name": "LivChat",
+        "system_name": "Azure OpenAI API",
+        "vendor_name": ""
+      },
+      {
+        "name": "LISA Chatbot Pilot",
+        "system_name": "Multiple",
+        "vendor_name": "AWS"
+      },
+      {
+        "name": "Microsoft Copilot Pilot",
+        "system_name": "Copilot",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Amazon Q Chatbot Pilot",
+        "system_name": "Multiple",
+        "vendor_name": "AWS"
+      }
+    ],
+    "named_tools": [
+      "ChatGPT",
+      "Azure OpenAI",
+      "Amazon Q",
+      "Claude"
+    ]
+  },
+  {
+    "slug": "doe-nr",
+    "name": "Naval Reactors",
+    "abbreviation": "NR",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 8,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "ServiceNow Virtual Agent Natural Language Understanding",
+        "system_name": "NR-NNL-CUI-ITN-PrimeNet_HA",
+        "vendor_name": "ServiceNow"
+      },
+      {
+        "name": "AI Builder Document Scraping",
+        "system_name": "NR-NNL-CUI-ITN-PrimeNet_HA",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "SpyglassGPT Chat Assistant",
+        "system_name": "NR-NNL-CUI-ITN-PrimeNet_HA",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Azure Document Intelligence",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Azure AI Search",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Copilot Studio",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Agentic AI for cybersecurity change request reviews",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Microsoft 365 Copilot",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "ServiceNow Now Assist",
+      "Microsoft Copilot Studio",
+      "Microsoft 365 Copilot"
+    ]
+  },
+  {
+    "slug": "doe-ee",
+    "name": "Office of Energy Efficiency and Renewable Energy",
+    "abbreviation": "EE",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 8,
+    "subtree_llm_count": 2,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AI and natural-language powered search",
+        "system_name": "OpenText Axcelerate",
+        "vendor_name": "OpenText"
+      },
+      {
+        "name": "OpenText for Records Management (File share auto-classification)",
+        "system_name": "OpenText Decisiv",
+        "vendor_name": "OpenText"
+      },
+      {
+        "name": "NLP Data Analytics for Program and Portfolio Insights",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "OpenText for Records Management (Email Auto-Classification)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Enhancing the circularity: Cost effective battery de-energization, disassembly, and pre-processing (CEBDDP)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AI Support Agent Chatbot",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Expanding Consumer Participation in Consumer Electronics Recycling Programs Utilizing Targeted Marketing Campaigns",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "FY19 Lab Call \u2013 Livewire Data Sharing Platform",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doe-slac",
+    "name": "SLAC National Accelerator Laboratory",
+    "abbreviation": "SLAC",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 7,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Machine Learning components within CrowdStrike",
+        "system_name": "CrowdStrike Falcon",
+        "vendor_name": "CrowdStrike"
+      },
+      {
+        "name": "GitHub Copilot",
+        "system_name": "GitHub Enterprise",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "O365 Copilot",
+        "system_name": "O365",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI for system design optimization (e.g., detector, accelerator)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Machine Learning components within Splunk Enterprise Security",
+        "system_name": "",
+        "vendor_name": "Splunk"
+      },
+      {
+        "name": "Yurts AI search function",
+        "system_name": "",
+        "vendor_name": "Legion (Previously Yurts)"
+      },
+      {
+        "name": "ServiceNow Predictive Intelligence",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Splunk",
+      "Crowdstrike Falcon",
+      "ServiceNow Now Assist",
+      "GitHub Copilot"
+    ]
+  },
+  {
+    "slug": "doe-nrel",
+    "name": "National Renewable Energy Laboratory",
+    "abbreviation": "NREL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 7,
+    "subtree_llm_count": 7,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Lex Natural Language Interface",
+        "system_name": "NREL Stratus System, NREL Azure System",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "AskOEDI",
+        "system_name": "NREL Stratus AWS Compute Environment and NREL Azure System",
+        "vendor_name": "AWS, Azure, OpenAI"
+      },
+      {
+        "name": "LLM EV",
+        "system_name": "NREL Stratus AWS Compute Environment, NREL Azure System",
+        "vendor_name": "Azure, OpenAI"
+      },
+      {
+        "name": "AskPRIMR",
+        "system_name": "NREL Stratus System, NREL Azure System",
+        "vendor_name": "AWS, Azure, OpenAI"
+      },
+      {
+        "name": "Energy Wizard",
+        "system_name": "NREL Stratus AWS Compute Environment, NREL Azure System, and NREL Google Cloud Platform",
+        "vendor_name": "AWS, Azure, OpenAI"
+      },
+      {
+        "name": "AskGDR",
+        "system_name": "NREL Stratus AWS Compute Environment",
+        "vendor_name": "AWS, Azure, OpenAI"
+      },
+      {
+        "name": "WETO SA",
+        "system_name": "NREL Azure System, NREL Stratus System",
+        "vendor_name": "Azure, OpenAI"
+      }
+    ],
+    "named_tools": [
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "doe-anl",
+    "name": "Argonne National Laboratory",
+    "abbreviation": "ANL",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 5,
+    "subtree_llm_count": 1,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "AI for Operations Center",
+        "system_name": "ANL-General Computing - Moderate Enclave",
+        "vendor_name": ""
+      },
+      {
+        "name": "WCD-AI",
+        "system_name": "Argonne National Laboratory Information Technology Infrastructure",
+        "vendor_name": ""
+      },
+      {
+        "name": "OPQ-AI",
+        "system_name": "Argonne National Laboratory Information Technology Infrastructure",
+        "vendor_name": ""
+      },
+      {
+        "name": "Argo",
+        "system_name": "Argonne National Laboratory Information Technology Infrastructure",
+        "vendor_name": ""
+      },
+      {
+        "name": "pComply-AI-High Risk",
+        "system_name": "pComply-AI-High Risk",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doe-lm",
+    "name": "Office of Legacy Management",
+    "abbreviation": "LM",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 5,
+    "subtree_llm_count": 1,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "Drone Imagery Analysis",
+        "system_name": "LMGSS",
+        "vendor_name": "TBD"
+      },
+      {
+        "name": "Soil Moisture Modeling",
+        "system_name": "LMGSS",
+        "vendor_name": "University of Montana"
+      },
+      {
+        "name": "Georeference Figures",
+        "system_name": "LMGSS",
+        "vendor_name": "Tesseract"
+      },
+      {
+        "name": "Groundwater Modeling",
+        "system_name": "LMGSS",
+        "vendor_name": "PEST"
+      },
+      {
+        "name": "Scripting",
+        "system_name": "LMGSS",
+        "vendor_name": "Google Gemini"
+      }
+    ],
+    "named_tools": [
+      "Gemini"
+    ]
+  },
+  {
+    "slug": "doe-nnsa",
+    "name": "National Nuclear Security Administration",
+    "abbreviation": "NNSA",
+    "level": "sub_agency",
+    "parent_agency": "DOE",
+    "subtree_use_cases": 5,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "First Alert DataMinr AI",
+        "system_name": "ArcGIS Online (AGO)",
+        "vendor_name": "Dataminr"
+      },
+      {
+        "name": "DNA-P Use Cases Leaverging Artificial Intellegence  (Pilot)",
+        "system_name": "Decision and Analytics Platform (DNA-P)",
+        "vendor_name": "Palantir"
+      },
+      {
+        "name": "DNA-P Use Cases Leaverging Artificial Intellegence (Deployed)",
+        "system_name": "Decision and Analytics Platform (DNA-P)",
+        "vendor_name": "Palantir"
+      },
+      {
+        "name": "NA-CI Salesforce",
+        "system_name": "NA-CI Salesforce",
+        "vendor_name": "Salesforce"
+      },
+      {
+        "name": "DNA-P Use Cases Leaverging Artificial Intellegence (Pre-Development)",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Esri ArcGIS AI"
+    ]
+  },
+  {
+    "slug": "doi-usgs",
+    "name": "U.S. Geological Survey",
+    "abbreviation": "USGS",
+    "level": "sub_agency",
+    "parent_agency": "DOI",
+    "subtree_use_cases": 187,
+    "subtree_llm_count": 12,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Remote Sensing Coastal Change - Shoreline Change",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "VoiceAtlas no-code chatbot framework",
+        "system_name": "",
+        "vendor_name": "Navteca"
+      },
+      {
+        "name": "Automated Walrus Haulout Monitoring [2024 INV#WO0000000110052]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "ChatGPT to write Python scripts for ArcGIS Pro Maps to be CVD-Friendly [2024 INV#WO0000000107402]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Machine Learning approach to predict the composition of seafloor massive sulfide deposits [2024 INV#WO0000000108420]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Harmful Algal Bloom prediction and detection system for Williams Fork Reservoir [2024 INV#WO0000000184339]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Google Cloud Vision [2024 INV#WO0000000154445]",
+        "system_name": "",
+        "vendor_name": "Google"
+      },
+      {
+        "name": "Google Vertex AI Document workbench [2024 INV#WO0000000154393]",
+        "system_name": "",
+        "vendor_name": "Google"
+      }
+    ],
+    "named_tools": [
+      "ChatGPT",
+      "Esri ArcGIS AI",
+      "Amazon Q",
+      "Custom In-House AI"
+    ]
+  },
+  {
+    "slug": "doi-fws",
+    "name": "U.S. Fish and Wildlife Service",
+    "abbreviation": "FWS",
+    "level": "sub_agency",
+    "parent_agency": "DOI",
+    "subtree_use_cases": 11,
+    "subtree_llm_count": 2,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Development of a computer vision model to monitor for early detection of habitat loss across the landscape. [2024 INV#DOI-65]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Summarization of documents and output to ECOSphere species workflow [2024 INV#DOI-63]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "DocketScope",
+        "system_name": "",
+        "vendor_name": "The Regulatory Group, Inc."
+      },
+      {
+        "name": "AI for Offshore Energy: Innovative Technology Streamlines Marine Wildlife Surveys [2024 INV#DOI-66]",
+        "system_name": "",
+        "vendor_name": "Quantaero"
+      },
+      {
+        "name": "AI-Powered Wildlife Monitoring on National Wildlife Refuges",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Implementation of Artificial Intelligence to Estimate Population Size of a Migratory Bird from Aerial Thermal Imagery [2024 INV#DOI-67]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Atlas.ti (Qualitative Data Analysis Software)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doi-bor",
+    "name": "Bureau of Reclamation",
+    "abbreviation": "BOR",
+    "level": "sub_agency",
+    "parent_agency": "DOI",
+    "subtree_use_cases": 8,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "Aveva Predictive Analytics (APA)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Using Machine Learning to Automate Crack Mapping and Structural Health Monitoring",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Seasonal Water Supply Forecasting: Pyforecast [2024 INV#DOI-69]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Piloting Machine Learning Inflow Forecasts Across Reclamation [2024 INV#DOI-58]",
+        "system_name": "",
+        "vendor_name": "Upstream Tech"
+      },
+      {
+        "name": "Machine Learning Refines Quagga Habitat Suitability [2024 INV#DOI-74 (NEW)]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Machine Learning Applied to Geotechnical Engineering: Statistical Methods Applied to Seismic Analysis [2024 INV#DOI-71 (NEW)]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Machine Learning for Chemical Savings at Reverse Osmosis Plants [2024 INV#DOI-73 (NEW)]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Improved Processing and Analysis of Test and Operating Data from Rotating Machines [2024 INV#DOI-62]",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doi-blm",
+    "name": "Bureau of Land Management",
+    "abbreviation": "BLM",
+    "level": "sub_agency",
+    "parent_agency": "DOI",
+    "subtree_use_cases": 7,
+    "subtree_llm_count": 4,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "General Land Office Records  Modernization",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Trapline for Fire",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "RUDD AI Development of a Small Language Model for Land Use Planning Decisions Consolidation",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Assessment Inventory and Monitoring (AIM) Chatbot",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "NEPA Document Generation",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "GraphRAG Comment Analysis and Management Solution",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "User guides/training provided in chat form",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doi-onrr",
+    "name": "Office of Natural Resources Revenue",
+    "abbreviation": "ONRR",
+    "level": "sub_agency",
+    "parent_agency": "DOI",
+    "subtree_use_cases": 6,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "Data Extraction Using MS Power Automate AI Functionality [2024 INV#WO0000000110500]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Liable Party Research [2024 INV#WO0000000110496]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Image Generation and Audio Video Editing [2024 Inv#WO0000000110551]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Machine Learning Model Optimization[2024 INV#WO0000000110563]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Video Creation and Editing[2024 Inv#WO0000000110494]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "ONRR Video Hosting Platform [OVHP][2024 Inv#WO0000000110488]",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doi-bsee",
+    "name": "Bureau of Safety and Environmental Enforcement",
+    "abbreviation": "BSEE",
+    "level": "sub_agency",
+    "parent_agency": "DOI",
+    "subtree_use_cases": 6,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "ROV Smart Touch Subsea Pipeline Inspections",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Well Risk Assessment [2024 Inv# WO0000000108776]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Sustained Casing Pressure Identification [2024 Inv# WO0000000108777]",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Level 1 Survey Report Corrosion Level Classification",
+        "system_name": "",
+        "vendor_name": "NASA"
+      },
+      {
+        "name": "Well Activity Report Classification",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Autonomous Drone Inspections",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doj-fbi",
+    "name": "Federal Bureau of Investigation",
+    "abbreviation": "FBI",
+    "level": "sub_agency",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 50,
+    "subtree_llm_count": 13,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Object Classification Tool - Field Office Security Camera",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "AI Model Provider"
+      },
+      {
+        "name": "Data Synthesis, Sentiment, Filtering, and Location Linking",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Facial Recognition Technology",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "OCR and Translation",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "License Plate Reader 1",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "AI Service Provider"
+      },
+      {
+        "name": "Enterprise Telecommunications Information System",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Facial Recognition Technology and Data Mapping Tools",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Human Language Extraction and Translation Technology",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "AI Service Provider"
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doj-dea",
+    "name": "Drug Enforcement Administration",
+    "abbreviation": "DEA",
+    "level": "sub_agency",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 43,
+    "subtree_llm_count": 18,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "DEA Drug Signature Program Models",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "LPR: DEA DEASIL Program",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "LPR: State Partner",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "LPR: Federal Partner",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "LPR: Commercial Solution",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Friction Ridge Print Comparisons",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Supply Chain Analytics",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Data & Analytics: Database Tools",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "doj-atf",
+    "name": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+    "abbreviation": "ATF",
+    "level": "sub_agency",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 34,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Adobe Suite Applications",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Adobe"
+      },
+      {
+        "name": "Airlines Travel Intelligence Program",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Airlines Reporting Corporation"
+      },
+      {
+        "name": "Unmanned Aerial Systems (UAS)",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Airship AI Holdings Inc."
+      },
+      {
+        "name": "Alation Data Catalog",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Leidos"
+      },
+      {
+        "name": "Axon FUSUS (via HIDTA partners)",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Axon"
+      },
+      {
+        "name": "Azure Data Factory",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Azure Zen 2 Storage",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Bloomberg Government",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Bloomberg Industry Group"
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doj-fbop",
+    "name": "Federal Bureau of Prisons",
+    "abbreviation": "FBOP",
+    "level": "sub_agency",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 32,
+    "subtree_llm_count": 5,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "ASCVD (Atherosclerotic Cardiovascular Disease) Risk Estimator",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "American College of Cardiology"
+      },
+      {
+        "name": "Automated Medication Dispensing Cabinet",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "BD Pyxis"
+      },
+      {
+        "name": "Automated Staffing Tool",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "BRAVO Classification",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "SAS"
+      },
+      {
+        "name": "Building Automation Systems",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Community Treatment Pipeline Screening",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "SAS"
+      },
+      {
+        "name": "Descript",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Descript"
+      },
+      {
+        "name": "Google Translate",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Google"
+      }
+    ],
+    "named_tools": [
+      "WellSaid Labs",
+      "Adobe Photoshop"
+    ]
+  },
+  {
+    "slug": "doj-usms",
+    "name": "U.S. Marshals Service",
+    "abbreviation": "USMS",
+    "level": "sub_agency",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 19,
+    "subtree_llm_count": 7,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Axon Video Retention Solution (VRS) - object recognition and redaction",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Axon Enterprise, Inc."
+      },
+      {
+        "name": "Facial Recognition Technology",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Clearview AI"
+      },
+      {
+        "name": "JMIS: JARS",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "JMIS: Route Optimizer",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Unmanned Aerial Systems (UAS)",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Skydio"
+      },
+      {
+        "name": "Video Transcription Tool",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Axon Video Retention Solution (VRS) - Transcription",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Axon Enterprise, Inc."
+      },
+      {
+        "name": "Open Source Investigative Tool",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Vendor proprietary"
+      }
+    ],
+    "named_tools": [
+      "AWS Textract"
+    ]
+  },
+  {
+    "slug": "doj-civ",
+    "name": "Civil Division",
+    "abbreviation": "CIV",
+    "level": "office",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 17,
+    "subtree_llm_count": 4,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Salesforce",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Enabling eDiscovery Platform AI",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Claims Program Predictive Fraud Analytics",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AI-powered Legal Research",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AI-generated Content Detector",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AI-Enabled Workflow Automation",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AI-enabled Legal Argument Harmonization",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AI-enabled Compliance Verification",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doj-jmd",
+    "name": "Justice Management Division",
+    "abbreviation": "JMD",
+    "level": "office",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 17,
+    "subtree_llm_count": 11,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Exiger Supply Chain Risk Management - DDIQ Research Engine",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Exiger"
+      },
+      {
+        "name": "Exiger Supply Chain Risk Management - DDIQ Due Diligence Analytics",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Exiger"
+      },
+      {
+        "name": "Savan Group Intelligent Records Consolidation Tool",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Salesforce",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Enhanced Proactive Financial Analysis Techniques for Fusion Desktop",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "FinCEN Data Summarization",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Generation of Graphs and Charts",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Generation of Large Test Data Sets",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doj-tax",
+    "name": "Tax Division",
+    "abbreviation": "TAX",
+    "level": "office",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 14,
+    "subtree_llm_count": 4,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AWS Transcribe",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Amazon Web Services"
+      },
+      {
+        "name": "AWS Translate",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Amazon Web Services"
+      },
+      {
+        "name": "JAWS (Text-to-Speech Assistant for Accessibility)",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Freedom Scientific Inc."
+      },
+      {
+        "name": "Trial Presentation Software",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "OnCue Technology, LLC"
+      },
+      {
+        "name": "Deposition Transcript Management",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "LexisNexis"
+      },
+      {
+        "name": "Table of Contents / Table of Authorities Word plugin",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Levit & James, acquired by Litera"
+      },
+      {
+        "name": "System Performance Monitoring",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Stream Processing & Analytics",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "AWS Transcribe"
+    ]
+  },
+  {
+    "slug": "doj-jmd-ocdetf",
+    "name": "Organized Crime Drug Enforcement Task Forces",
+    "abbreviation": "OCDETF",
+    "level": "office",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 10,
+    "subtree_llm_count": 6,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Enhanced Proactive Financial Analysis Techniques for Fusion Desktop",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "FinCEN Data Summarization",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Generation of Graphs and Charts",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Generation of Large Test Data Sets",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Machine Learning for Decision Support for Fusion Desktop",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Machine Learning for Decision Support for DOJ MIS",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Narrative Analysis for Fusion Desktop",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Narrative Analysis for DOJ MIS",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "doj-atr",
+    "name": "Antitrust Division",
+    "abbreviation": "ATR",
+    "level": "office",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 10,
+    "subtree_llm_count": 7,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Veritone Illuminate",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Veritone"
+      },
+      {
+        "name": "Databricks (Forecasting, predictive analytics, data/statistical analysis)",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Databricks"
+      },
+      {
+        "name": "Knowledge retrieval and synthesis (Azure OpenAI Services)",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "ATR Generative Artificial Intelligence Test",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "https://www.harvey.ai/ ,\thttps://openai.com/ ,\thttps://www.perplexity.ai/"
+      },
+      {
+        "name": "ATR Expert/Consulting with Bates White",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": "Bates White, using Microsoft Azure"
+      },
+      {
+        "name": "SAS (Forecasting, predictive analytics, data/statistical analysis)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "R (Forecasting, predictive analytics, data/statistical analysis)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Stata (Forecasting, predictive analytics, data/statistical analysis)",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Databricks",
+      "Azure OpenAI",
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "doj-ojp",
+    "name": "Office of Justice Programs",
+    "abbreviation": "OJP",
+    "level": "sub_agency",
+    "parent_agency": "DOJ",
+    "subtree_use_cases": 6,
+    "subtree_llm_count": 1,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "Prisoner Assessment Tool Targeting Estimated Risk and Needs (PATTERN)",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Offense Text Auto-Coder (OTAC) - Automated offense coder from offense charge text strings used for the BJS National Pretrial Reporting Program",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "Rapid Offense Text Autocoder (ROTA) - Automated offense coder from offense charge text strings used for the BJS Criminal Cases in State Courts",
+        "system_name": "Redacted for cybersecurity purposes.",
+        "vendor_name": ""
+      },
+      {
+        "name": "MACO Project: Law Enforcement CAD Data Autocoder",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Research Abstract Screening for CrimeSolutions",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AI Sandbox for exploration and education on AI",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "dol-bls",
+    "name": "Bureau of Labor Statistics",
+    "abbreviation": "BLS",
+    "level": "sub_agency",
+    "parent_agency": "DOL",
+    "subtree_use_cases": 13,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "OEWS Occupation Autocoder",
+        "system_name": "BLS Internal system",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Scanner Data Product Classification",
+        "system_name": "BLS Internal \nsystem",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Expenditure Classification \nAutocoder",
+        "system_name": "BLS Internal\nSystem",
+        "vendor_name": "1605TA-21-F-00064"
+      },
+      {
+        "name": "Computer-Assisted Coding: \nSOII Autocoder",
+        "system_name": "BLS Internal\nSystem",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "CFOI Record Matching",
+        "system_name": "BLS Internal\nSystem",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "CPS OTC Prediction",
+        "system_name": "BLS Internal\nSystem",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Sample Refinement: Frame API",
+        "system_name": "BLS Internal\nSystem",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "CE Interview Item Code Estimation",
+        "system_name": "BLS Internal\nSystem",
+        "vendor_name": "N/A"
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "dol-eta",
+    "name": "Employment and Training Administration",
+    "abbreviation": "ETA",
+    "level": "sub_agency",
+    "parent_agency": "DOL",
+    "subtree_use_cases": 6,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "ETA Grants Monitoring Tool through Doc Explorer",
+        "system_name": "Azure Open AI and AWS",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Website Chatbot Assistant",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Automatic Data Processing Workflow with Form Recognizer (9130/9178 Reconciliation Project)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Occupation Code Suggestion For Job Duties Data",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Notice of Deficiency (NOD) Text Generation using Generative AI model",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Initial Determinations for incoming applications",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "dol-osha",
+    "name": "Occupational Safety and Health Administration",
+    "abbreviation": "OSHA",
+    "level": "sub_agency",
+    "parent_agency": "DOL",
+    "subtree_use_cases": 5,
+    "subtree_llm_count": 1,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "Hololens",
+        "system_name": "Hololens",
+        "vendor_name": "BGC/CLIRIO"
+      },
+      {
+        "name": "PII Redaction",
+        "system_name": "PII Redaction",
+        "vendor_name": "Amazon"
+      },
+      {
+        "name": "Determine Occupation Codes from Text (NIOCCS)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Case Recording summarization",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "OIICS Coding",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "dot-faa",
+    "name": "Federal Aviation Administration",
+    "abbreviation": "FAA",
+    "level": "sub_agency",
+    "parent_agency": "DOT",
+    "subtree_use_cases": 42,
+    "subtree_llm_count": 15,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Certified Professional Controller (CPC) On-Board Success Evaluator",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Automated Delay detection using voice processing",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Technical Operations Predictive Maintenance",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Airborne Safety Metric (ASM)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Surface Safety Metric (SSM)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Surface Report Classifiier (SCM/Auto-Class)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Pilot-Controller Voice to Text Transcription",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Detection of Unmanned Aircraft Systems (UAS) Encounter",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "dot-caio",
+    "name": "Office of the Chief Artificial Intelligence Officer",
+    "abbreviation": "CAIO",
+    "level": "office",
+    "parent_agency": "DOT",
+    "subtree_use_cases": 15,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "USDOT Compliance Plan for OMB Memorandum M-24-10 (September 2024)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Advanced Research and Testing (ART) Network",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Operations Laboratory (OPSLAB)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Transportation AI-enabled Network (TrAIN)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Support and Collaboration Center (AISCC)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Enterprise Personal Productivity Assistant Capability",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Enterprise \"Ask Dottie\" ChatBot Capability",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Enterprise Knowledge Graph and Advanced AI Data Structures Collaboration Group",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "ed-fsa",
+    "name": "Federal Student Aid",
+    "abbreviation": "FSA",
+    "level": "sub_agency",
+    "parent_agency": "ED",
+    "subtree_use_cases": 9,
+    "subtree_llm_count": 8,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 8,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Aidan Chat-bot",
+        "system_name": "DCC",
+        "vendor_name": "Accenture"
+      },
+      {
+        "name": "Customer Service Support",
+        "system_name": "ENT_Tech",
+        "vendor_name": "iCatalyst Inc"
+      },
+      {
+        "name": "Comment Categorization",
+        "system_name": "ENT_Tech",
+        "vendor_name": "iCatalyst Inc"
+      },
+      {
+        "name": "Azure AI Internal General Q&A",
+        "system_name": "ENT_Tech",
+        "vendor_name": "iCatalyst Inc"
+      },
+      {
+        "name": "Generative AI and Foundation Model Integration",
+        "system_name": "EDMAPS",
+        "vendor_name": "Amazon Web Services"
+      },
+      {
+        "name": "Generative AI - Code Generation",
+        "system_name": "",
+        "vendor_name": "OpenAI & Google Distributed Cloud"
+      },
+      {
+        "name": "Generative AI - Idea Suggestion",
+        "system_name": "",
+        "vendor_name": "OpenAI & Google Distributed Cloud"
+      },
+      {
+        "name": "Generative AI - Information Summarization",
+        "system_name": "",
+        "vendor_name": "OpenAI & Google Distributed Cloud"
+      }
+    ],
+    "named_tools": [
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "epa-ofa",
+    "name": "Office of the Administrator",
+    "abbreviation": "OFA",
+    "level": "office",
+    "parent_agency": "EPA",
+    "subtree_use_cases": 10,
+    "subtree_llm_count": 2,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AI Assistants in Esri Tools",
+        "system_name": "GeoPlatform",
+        "vendor_name": "ESRI"
+      },
+      {
+        "name": "Microsoft Power Automate (custom document processing model)",
+        "system_name": "Microsoft  Office 365",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Helpdesk chat assistant for common data system tasks",
+        "system_name": "ServiceNow",
+        "vendor_name": "ServiceNow"
+      },
+      {
+        "name": "Agency Records Management System",
+        "system_name": "Agency Records Management System (ARMS)",
+        "vendor_name": "Savan Group"
+      },
+      {
+        "name": "SF182 Form and Policy Assistant",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "RelativityOne Gov aiR",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Rules",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Semantic search of qualitative data",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Esri ArcGIS AI",
+      "Custom In-House AI",
+      "ServiceNow Now Assist"
+    ]
+  },
+  {
+    "slug": "fdic-drr",
+    "name": "Division of Resolutions and Receiverships",
+    "abbreviation": "DRR",
+    "level": "office",
+    "parent_agency": "FDIC",
+    "subtree_use_cases": 11,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Trust Document Entity Extraction",
+        "system_name": "Resolution and Receivership Management Portal (RRMP)",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "Background Check Web Application",
+        "system_name": "CLEAR",
+        "vendor_name": "CLEAR"
+      },
+      {
+        "name": "Analytics on Loan Data",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Analytics on Securities Data",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Business Data Extraction from Loan Files",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Data Extraction from Security Prospectus",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Initial Deposit File Analysis",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Owned Real Estate (ORE) Property Appraisal",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "fhfa-ocio",
+    "name": "Office of the Chief Information Officer",
+    "abbreviation": "OCIO",
+    "level": "office",
+    "parent_agency": "FHFA",
+    "subtree_use_cases": 10,
+    "subtree_llm_count": 2,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Security and network monitoring using Cisco Identify Services engine",
+        "system_name": "GSS",
+        "vendor_name": "Cisco"
+      },
+      {
+        "name": "Virtual Desktop using Citrix",
+        "system_name": "GSS",
+        "vendor_name": "Citrix"
+      },
+      {
+        "name": "Analytics, Indexing, and Anomaly Detection for Data Management on SQL Server",
+        "system_name": "GSS",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Workflow automation and predictive analytics using ServiceNow",
+        "system_name": "ServiceNow",
+        "vendor_name": "ServiceNow"
+      },
+      {
+        "name": "Security and Compliance in file sharing and collaboration using Kiteworks",
+        "system_name": "Kiteworks",
+        "vendor_name": "Kiteworks"
+      },
+      {
+        "name": "Network monitoring, anomaly detection through Whats Up Gold and Flowmon integration",
+        "system_name": "GSS",
+        "vendor_name": "Flowmon"
+      },
+      {
+        "name": "Analytics,, Search, Queries and LLM integration for data management on Oracle",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Python modules to support AI/ML",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "ServiceNow Now Assist"
+    ]
+  },
+  {
+    "slug": "frb-s-r",
+    "name": "Division of Supervision and Regulation",
+    "abbreviation": "S&R",
+    "level": "office",
+    "parent_agency": "FRB",
+    "subtree_use_cases": 21,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "Commercial Real Estate Index",
+        "system_name": "General Support System",
+        "vendor_name": ""
+      },
+      {
+        "name": "Variable Optimization",
+        "system_name": "General Support System",
+        "vendor_name": ""
+      },
+      {
+        "name": "Anomaly Detection",
+        "system_name": "General Support System",
+        "vendor_name": ""
+      },
+      {
+        "name": "Regulatory Data Analysis",
+        "system_name": "General Support System",
+        "vendor_name": ""
+      },
+      {
+        "name": "Decision Tree for Deposits Data",
+        "system_name": "General Support System",
+        "vendor_name": ""
+      },
+      {
+        "name": "Novel Activities Call Report Classification",
+        "system_name": "General Support System",
+        "vendor_name": ""
+      },
+      {
+        "name": "Financial News Processing",
+        "system_name": "General Support System",
+        "vendor_name": ""
+      },
+      {
+        "name": "Document Summarization Statistics",
+        "system_name": "General Support System",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "ftc-bcp",
+    "name": "Bureau of Consumer Protection",
+    "abbreviation": "BCP",
+    "level": "sub_agency",
+    "parent_agency": "FTC",
+    "subtree_use_cases": 12,
+    "subtree_llm_count": 6,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Automatic PSC Classification",
+        "system_name": "Sentinel Network Services",
+        "vendor_name": "Leidos"
+      },
+      {
+        "name": "Group Duplicate Complaints",
+        "system_name": "Sentinel Network Services",
+        "vendor_name": "Leidos"
+      },
+      {
+        "name": "Chatbot",
+        "system_name": "Sentinel Network Services",
+        "vendor_name": "Leidos"
+      },
+      {
+        "name": "Word Cloud",
+        "system_name": "Sentinel Network Services",
+        "vendor_name": "Leidos"
+      },
+      {
+        "name": "Graph Analytics",
+        "system_name": "Sentinel Network Services",
+        "vendor_name": "Leidos"
+      },
+      {
+        "name": "Analytic Sandbox",
+        "system_name": "Sentinel Network Services",
+        "vendor_name": "Leidos"
+      },
+      {
+        "name": "Developer Productivity",
+        "system_name": "Sentinel Network Services",
+        "vendor_name": "Leidos"
+      },
+      {
+        "name": "CRC Call Summarization",
+        "system_name": "Sentinel Network Services",
+        "vendor_name": "Microsoft"
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "hhs-nih",
+    "name": "National Institutes of Health",
+    "abbreviation": "NIH",
+    "level": "sub_agency",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 124,
+    "subtree_llm_count": 48,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 48,
+    "subtree_env_count": 0,
+    "maturity_tier": "leading",
+    "sample_use_cases": [
+      {
+        "name": "Assisted Referral Tool (ART)",
+        "system_name": "Assisted Referral Tool (ART)",
+        "vendor_name": ""
+      },
+      {
+        "name": "CSR Public Chatbot (CPC)",
+        "system_name": "CSR Public Chatbot (CPC)",
+        "vendor_name": ""
+      },
+      {
+        "name": "DAIT AIDS-Related Research Solution",
+        "system_name": "DAIT AIDS-Related Research Solution",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "Detecting Overlapping Science (DOS)",
+        "system_name": "Detecting Overlapping Science (DOS)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Detection of Implementation Science focus within incoming grant applications",
+        "system_name": "Dimensions for NIH",
+        "vendor_name": "Digital Science"
+      },
+      {
+        "name": "Federal IT Acquisition Reform Act (FITARA) Tool",
+        "system_name": "FITARA",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "Internal Referral Module (IRM)",
+        "system_name": "eRA",
+        "vendor_name": "Leidos and Highrise"
+      },
+      {
+        "name": "NanCI: Connecting Scientists",
+        "system_name": "NanCI Connecting Scientists Mobile App",
+        "vendor_name": "Google; Barnacle"
+      }
+    ],
+    "named_tools": [
+      "ChatGPT",
+      "Custom In-House AI",
+      "Splunk",
+      "OpenAI API",
+      "Azure OpenAI"
+    ]
+  },
+  {
+    "slug": "hhs-cdc",
+    "name": "Centers for Disease Control and Prevention",
+    "abbreviation": "CDC",
+    "level": "sub_agency",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 103,
+    "subtree_llm_count": 38,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 38,
+    "subtree_env_count": 0,
+    "maturity_tier": "progressing",
+    "sample_use_cases": [
+      {
+        "name": "Automated Analysis of Injury Control Research Center (ICRC) Annual Progress Reports (APRs) using Large Language Models",
+        "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+        "vendor_name": ""
+      },
+      {
+        "name": "DHP Virtual Assistant",
+        "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Reviewing Global Influenza Vaccine Literature",
+        "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+        "vendor_name": ""
+      },
+      {
+        "name": "NewsScape",
+        "system_name": "1 CDC Data Platform (1CDP)",
+        "vendor_name": "Palantir Technologies"
+      },
+      {
+        "name": "RAPID Analysis of Policy and Program Documents (RAPID)",
+        "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Sidekick Comms bot Offering User-friendly Tips (SCOUT)",
+        "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Use of Natural Language Processing for Topic Modeling to Automate Review of Public Comments to Notice of Proposed Rulemaking",
+        "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Short-term Forecasting of Severe Outcomes for Seasonal and Epidemic Pathogens",
+        "system_name": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+        "vendor_name": "N/A"
+      }
+    ],
+    "named_tools": [
+      "Azure OpenAI",
+      "Databricks",
+      "Custom In-House AI",
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "hhs-cms",
+    "name": "Centers for Medicare and Medicaid Services",
+    "abbreviation": "CMS",
+    "level": "sub_agency",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 75,
+    "subtree_llm_count": 34,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 34,
+    "subtree_env_count": 0,
+    "maturity_tier": "leading",
+    "sample_use_cases": [
+      {
+        "name": "Feedback Analysis Solution (FAS)",
+        "system_name": "CDRAP",
+        "vendor_name": ""
+      },
+      {
+        "name": "CCSQ ServiceNow AI Search",
+        "system_name": "Quality Service Center (QSC)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Complaint Analysis",
+        "system_name": "CMS AI Workspace",
+        "vendor_name": ""
+      },
+      {
+        "name": "CMS Labor Analysis Wizard (CLAW)",
+        "system_name": "CEDAR",
+        "vendor_name": "Skyward Solutions"
+      },
+      {
+        "name": "CCSQ Now Assist for CSM",
+        "system_name": "Quality Service Center (QSC)",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Workspace",
+        "system_name": "CEDAR",
+        "vendor_name": "Skyward Solutions"
+      },
+      {
+        "name": "Citation Analysis and Survey Assistant (CASA - Nursing Home Survey CMS 2567)",
+        "system_name": "CDRAP",
+        "vendor_name": ""
+      },
+      {
+        "name": "Independent Dispute Resolution (IDR) Eligibility Rules Engine",
+        "system_name": "CCIIO Customer Relations Management System",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "ServiceNow Now Assist",
+      "Microsoft Teams",
+      "GitHub Copilot",
+      "Custom In-House AI",
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "hhs-fda",
+    "name": "Food and Drug Administration",
+    "abbreviation": "FDA",
+    "level": "sub_agency",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 65,
+    "subtree_llm_count": 21,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 21,
+    "subtree_env_count": 0,
+    "maturity_tier": "progressing",
+    "sample_use_cases": [
+      {
+        "name": "Renamed: 356H Machine Learning (ML) Facility Supply Chain Role Classification\nPreviously: 356H ML Facility Supply Chain Role Classification",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "Renamed: Risk-based FAR Review & Decision Support\nPreviously: Field Alert Reports (FAR) Prioritization Model",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "In-house (CDER staff) and contractor teams"
+      },
+      {
+        "name": "Analytics-Driven Supplement Evaluation (ASE)",
+        "system_name": "Other/CDEROne",
+        "vendor_name": "In-house (CDER staff)"
+      },
+      {
+        "name": "Renamed: FAR-based Facility Signal Detection Tool\nPreviously: Post-market Surveillance Reports Signal Detection and Cluster Analysis.",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "In-house (CDER staff)"
+      },
+      {
+        "name": "MedWatch Dashboard",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "In-house (CDER staff)"
+      },
+      {
+        "name": "Quality Surveillance Dashboard (QSD)",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "In-house (CDER staff)"
+      },
+      {
+        "name": "Annual Report CMC",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "Renamed: Application References\nPreviously: Application-DMF Reference",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "Deloitte"
+      }
+    ],
+    "named_tools": [
+      "Custom In-House AI",
+      "Microsoft Teams",
+      "ServiceNow Now Assist"
+    ]
+  },
+  {
+    "slug": "hhs-fda-cder",
+    "name": "Center for Drug Evaluation and Research",
+    "abbreviation": "CDER",
+    "level": "office",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 40,
+    "subtree_llm_count": 14,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 14,
+    "subtree_env_count": 0,
+    "maturity_tier": "progressing",
+    "sample_use_cases": [
+      {
+        "name": "Renamed: 356H Machine Learning (ML) Facility Supply Chain Role Classification\nPreviously: 356H ML Facility Supply Chain Role Classification",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "Renamed: Risk-based FAR Review & Decision Support\nPreviously: Field Alert Reports (FAR) Prioritization Model",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "In-house (CDER staff) and contractor teams"
+      },
+      {
+        "name": "Analytics-Driven Supplement Evaluation (ASE)",
+        "system_name": "Other/CDEROne",
+        "vendor_name": "In-house (CDER staff)"
+      },
+      {
+        "name": "Renamed: FAR-based Facility Signal Detection Tool\nPreviously: Post-market Surveillance Reports Signal Detection and Cluster Analysis.",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "In-house (CDER staff)"
+      },
+      {
+        "name": "MedWatch Dashboard",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "In-house (CDER staff)"
+      },
+      {
+        "name": "Quality Surveillance Dashboard (QSD)",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "In-house (CDER staff)"
+      },
+      {
+        "name": "Annual Report CMC",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "Renamed: Application References\nPreviously: Application-DMF Reference",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "Deloitte"
+      }
+    ],
+    "named_tools": [
+      "Custom In-House AI",
+      "Microsoft Teams"
+    ]
+  },
+  {
+    "slug": "hhs-acf",
+    "name": "Administration for Children and Families",
+    "abbreviation": "ACF",
+    "level": "sub_agency",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 27,
+    "subtree_llm_count": 10,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 10,
+    "subtree_env_count": 0,
+    "maturity_tier": "progressing",
+    "sample_use_cases": [
+      {
+        "name": "Discover Financial Business Intelligence System (FBIS) Report Analysis (Sub-CAN Line Items)",
+        "system_name": "ACF Discover",
+        "vendor_name": "Palantir"
+      },
+      {
+        "name": "Structuring and Validating Completeness of Case Data Information",
+        "system_name": "ACF Horizon",
+        "vendor_name": "Palantir"
+      },
+      {
+        "name": "Structuring Notice of Concern Data",
+        "system_name": "ACF Horizon",
+        "vendor_name": "Palantir"
+      },
+      {
+        "name": "Unaccompanied Children Program Policy & Procedure Research Tool",
+        "system_name": "ACF Horizon",
+        "vendor_name": "MIT Lincoln Labs"
+      },
+      {
+        "name": "Ask HR Policy",
+        "system_name": "ACF Discover",
+        "vendor_name": "Palantir"
+      },
+      {
+        "name": "Child Welfare Information Automated Inquiry System\n\n(Note: previously named \"Child Welfare Information Gateway OneReach Application\")",
+        "system_name": "Child Welfare Information Automated Inquiry System",
+        "vendor_name": "Amazon Connect (current)\n\nOneReach (previous, deprecated)"
+      },
+      {
+        "name": "Collective Bargaining Compass",
+        "system_name": "ACF Discover",
+        "vendor_name": "Palantir"
+      },
+      {
+        "name": "Discover User Assistant",
+        "system_name": "ACF Discover",
+        "vendor_name": "Palantir"
+      }
+    ],
+    "named_tools": [
+      "Microsoft Teams"
+    ]
+  },
+  {
+    "slug": "hhs-cms-cciio",
+    "name": "Center for Consumer Information and Insurance Oversight",
+    "abbreviation": "CCIIO",
+    "level": "office",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 20,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 3,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Independent Dispute Resolution (IDR) Eligibility Rules Engine",
+        "system_name": "CCIIO Customer Relations Management System",
+        "vendor_name": ""
+      },
+      {
+        "name": "MFT UI Chatbot",
+        "system_name": "Data Services Hub",
+        "vendor_name": ""
+      },
+      {
+        "name": "Enhanced Direct Enrollment Outlier Detection",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "IT System Utilization Optimization",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Risk Adjustment Outlier Analysis",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Agent/Broker Fraud Analysis (ABCQI)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Help Desk Responses",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Chatbot within Hub",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "hhs-cms-oit",
+    "name": "Office of Information Technology",
+    "abbreviation": "OIT",
+    "level": "office",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 19,
+    "subtree_llm_count": 8,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 8,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AI Workspace",
+        "system_name": "CEDAR",
+        "vendor_name": "Skyward Solutions"
+      },
+      {
+        "name": "CMS Chat",
+        "system_name": "CEDAR",
+        "vendor_name": "Skyward IT Solutions"
+      },
+      {
+        "name": "RFI Comment Analysis POC",
+        "system_name": "CEDAR",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Agent Orchestrator POC",
+        "system_name": "CEDAR",
+        "vendor_name": "Noblis"
+      },
+      {
+        "name": "PubMed Literature Review MCP Server",
+        "system_name": "CEDAR",
+        "vendor_name": "Skyward IT Solutions"
+      },
+      {
+        "name": "SAM.gov RFI Comment Analysis POC",
+        "system_name": "CEDAR",
+        "vendor_name": ""
+      },
+      {
+        "name": "Integrated Data Repository (IDR) Customer Analytic Environment (CAE)",
+        "system_name": "Integrated Data Repository (IDR) Cloud",
+        "vendor_name": "GDIT"
+      },
+      {
+        "name": "IDR Support Bot",
+        "system_name": "Integrated Data Repository (IDR) Cloud",
+        "vendor_name": "GDIT"
+      }
+    ],
+    "named_tools": [
+      "Microsoft Teams",
+      "Custom In-House AI",
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "hhs-hrsa",
+    "name": "Health Resources and Services Administration",
+    "abbreviation": "HRSA",
+    "level": "sub_agency",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 18,
+    "subtree_llm_count": 14,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 14,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AI Audit Resolution Assistant (AIARA)",
+        "system_name": "IRMS - UiPath Automation Cloud Public Sector",
+        "vendor_name": "Mindpetal"
+      },
+      {
+        "name": "Knowledge Navigator",
+        "system_name": "BMISS",
+        "vendor_name": "Publicis Sapient"
+      },
+      {
+        "name": "PRF Program Chatbot",
+        "system_name": "PRB",
+        "vendor_name": "GDIT Inc"
+      },
+      {
+        "name": "Medical records summarization",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "NOFO Compliance Assistant",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Scholar Match",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Scholarship Insight",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Site Application Analysis",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "hhs-cms-oc",
+    "name": "Office of Communications",
+    "abbreviation": "OC",
+    "level": "office",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 12,
+    "subtree_llm_count": 12,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 12,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AI in Slack",
+        "system_name": "Enterprise Web Support Tools",
+        "vendor_name": ""
+      },
+      {
+        "name": "Medicare AI Customer Insights",
+        "system_name": "Public Website Shared Services",
+        "vendor_name": "commonFont and AWS"
+      },
+      {
+        "name": "Medicare AI Drug Search",
+        "system_name": "Medicare Authenticated eXperience",
+        "vendor_name": "Oddball and AWS"
+      },
+      {
+        "name": "Smart Solution for Docket Management (SSDM)",
+        "system_name": "AWS",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "Elsa GenAI Chat Tool",
+        "system_name": "CDEROne Analytics: FISMA-high environment",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "AI Code Assistance \u0096 WETG GitHub CoPilot Proof-of-Concept",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Search in Google Vertex (discovery)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI in Figma Make",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "GitHub Copilot"
+    ]
+  },
+  {
+    "slug": "hhs-ahrq",
+    "name": "Agency for Healthcare Research and Quality",
+    "abbreviation": "AHRQ",
+    "level": "sub_agency",
+    "parent_agency": "HHS",
+    "subtree_use_cases": 8,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 3,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AHRQ Search",
+        "system_name": "ahrq.gov",
+        "vendor_name": "RIVA Solutions"
+      },
+      {
+        "name": "Chatbot",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Chatbot",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Enhancing Diversity in Peer Review - Pilot",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "NLQuery- As Data or Pulse",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Quality and Safety Review System AI-enabled automated abstraction",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI DevOps - Improving Development and CI/CD Operations",
+        "system_name": "",
+        "vendor_name": "Pingwind"
+      },
+      {
+        "name": "USPSTF Public Forms Data AI Integration",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Microsoft Teams"
+    ]
+  },
+  {
+    "slug": "nasa-gsfc",
+    "name": "Goddard Space Flight Center",
+    "abbreviation": "GSFC",
+    "level": "sub_agency",
+    "parent_agency": "NASA",
+    "subtree_use_cases": 227,
+    "subtree_llm_count": 17,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "ChatGSFC",
+        "system_name": "MCP",
+        "vendor_name": "Element 84"
+      },
+      {
+        "name": "Near-real-time aerosol retrievals from OMPS Limb Profiler measurements",
+        "system_name": "Atmospheric Chemistry Processing System (ACPS)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Retrieving stratospheric water vapor from OMPS Limb Profiler measurements",
+        "system_name": "Atmospheric Chemistry Processing System (ACPS)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Retrieving stratospheric NO2 profiles from OMPS Limb Profiler measurements",
+        "system_name": "NASA Center for Climate Simulation\u2019s Prism GPU cluster",
+        "vendor_name": ""
+      },
+      {
+        "name": "Application of ML to Detection of Anomalies in Spacecraft Health and Status Data",
+        "system_name": "NA - local machine",
+        "vendor_name": ""
+      },
+      {
+        "name": "Quantification of Uncertainty Analysis Toolkit (QUAnT)",
+        "system_name": "MATLAB",
+        "vendor_name": ""
+      },
+      {
+        "name": "GLOBE Program - Image processing",
+        "system_name": "AWS",
+        "vendor_name": "Mitchell Vantage Systems (MVS), subcontracted to Astrion"
+      },
+      {
+        "name": "Cloud Account Allocation Plan (CAAP) Cost Analytics Support",
+        "system_name": "Earthdata Cloud",
+        "vendor_name": "Raytheon"
+      }
+    ],
+    "named_tools": [
+      "Claude",
+      "Custom In-House AI",
+      "ChatGPT",
+      "Microsoft Teams"
+    ]
+  },
+  {
+    "slug": "nasa-msfc",
+    "name": "Marshall Space Flight Center",
+    "abbreviation": "MSFC",
+    "level": "sub_agency",
+    "parent_agency": "NASA",
+    "subtree_use_cases": 44,
+    "subtree_llm_count": 5,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "GCMD Keyword Recommender (GKR)",
+        "system_name": "MMT (Metadata Management Tool)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Instantaneous Clarity of Ambient eNvironment Capability (ICAN-C)",
+        "system_name": "NA - local machine",
+        "vendor_name": ""
+      },
+      {
+        "name": "Data analysis and pattern recognition",
+        "system_name": "ChatGSFC",
+        "vendor_name": ""
+      },
+      {
+        "name": "Dirty Vacuum rated 6-Axis Robotic Arm Toolpathing",
+        "system_name": "ChatGSFC",
+        "vendor_name": ""
+      },
+      {
+        "name": "Airplane detection",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Automated Dust detection in satellite imagery",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Deep Learning-based Hurricane Intensity Estimator",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Marine debris detection using deep learning and high resolution satellite images",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Custom In-House AI"
+    ]
+  },
+  {
+    "slug": "nasa-jpl",
+    "name": "Jet Propulsion Laboratory",
+    "abbreviation": "JPL",
+    "level": "sub_agency",
+    "parent_agency": "NASA",
+    "subtree_use_cases": 43,
+    "subtree_llm_count": 7,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AEGIS: Autonomous Exploration for Gathering Increased Science",
+        "system_name": "Mars2020 Rover",
+        "vendor_name": ""
+      },
+      {
+        "name": "ASPEN Mission Planner",
+        "system_name": "Multiple approved space-based systems",
+        "vendor_name": ""
+      },
+      {
+        "name": "CLASP Coverage Planning & Scheduling",
+        "system_name": "Deployed on multiple remote sensing spacecraft",
+        "vendor_name": ""
+      },
+      {
+        "name": "Enhanced AutoNav for Perseverance Rover on Mars",
+        "system_name": "Mars2020 Rover",
+        "vendor_name": ""
+      },
+      {
+        "name": "Mars2020 Rover (Perseverance)",
+        "system_name": "Mars2020 Rover",
+        "vendor_name": ""
+      },
+      {
+        "name": "MLNav (Machine Learning Navigation)",
+        "system_name": "Mars2020 Rover",
+        "vendor_name": ""
+      },
+      {
+        "name": "Perseverance Rover on Mars - Terrain Relative Navigation",
+        "system_name": "Mars2020 Rover",
+        "vendor_name": ""
+      },
+      {
+        "name": "SPOC (Soil Property and Object Classification)",
+        "system_name": "Multiple approved space-based systems",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "nasa-larc",
+    "name": "Langley Research Center",
+    "abbreviation": "LaRC",
+    "level": "sub_agency",
+    "parent_agency": "NASA",
+    "subtree_use_cases": 38,
+    "subtree_llm_count": 2,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "NASA OCIO STI Concept Tagging Service",
+        "system_name": "STI",
+        "vendor_name": ""
+      },
+      {
+        "name": "Autonomous WAiting Room Evaluation (AWARE)",
+        "system_name": "LaRC BPO Private Server",
+        "vendor_name": ""
+      },
+      {
+        "name": "Adaptive Neural Network Molecular Dynamics",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Aerosol and Cloud Identification in SAGE III/ISS Aerosol Extinction Profiles",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AMP: An Automated Metadata Pipeline",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Application of High-Dimensional Fuzzy K-mean Cluster Analysis to CALIOP (Cloud-Aerosol Lidar with Orthogonal Polarization) / CALIPSO (Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observatory) Version 4.1 Feature Classifications",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "CERES FluxByCldTyp Data Product Narrowband-to-Broadband Algorithm Improvement Through Deep Neural Network (DNN)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Cloud Detection Neural Network",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "nasa-arc",
+    "name": "Ames Research Center",
+    "abbreviation": "ARC",
+    "level": "sub_agency",
+    "parent_agency": "NASA",
+    "subtree_use_cases": 34,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "NextGen Advanced Methods: ATCSCC Webinar Speech2Text and Analysis",
+        "system_name": "ATCSCC",
+        "vendor_name": "NLP"
+      },
+      {
+        "name": "NextGen Data Analytics: Letters of Agreement",
+        "system_name": "Operated in an approved enclave",
+        "vendor_name": "FAA"
+      },
+      {
+        "name": "Anomaly Detection and Precursor Identification in UAV flight data",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Autoresolver/Tailored Arrival Manager",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Deep Learning for Flood Mapping (DELTA)",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Distributed Spacecraft Autonomy",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "ExoMiner discovery of ExoPlanets via data from the Kepler and TESS space telescopes",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Explainable and robust deep semi-supervised model for multi-class anomaly detection in flight data",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "ChatGPT"
+    ]
+  },
+  {
+    "slug": "nasa-jsc",
+    "name": "Johnson Space Center",
+    "abbreviation": "JSC",
+    "level": "sub_agency",
+    "parent_agency": "NASA",
+    "subtree_use_cases": 13,
+    "subtree_llm_count": 4,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "AI Digital Assistants (HRP) [was \"Doc in a Box\" for Earth Independent Medical Operations (EIMO)]",
+        "system_name": "MCP GCP",
+        "vendor_name": ""
+      },
+      {
+        "name": "Data Fracking (HRP)",
+        "system_name": "MCP GCP, Azure OpenAI",
+        "vendor_name": ""
+      },
+      {
+        "name": "Classification of features in Crew Earth Observations imagery",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Cloud masks from Crew Earth Observations imagery",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Comment Analytics Dashboard",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Crew Earth Observations automated georeferencing/geolocation",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Machine Learning for RFID (Radio Frequency Identification) tag localization to support logistics",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Noise suppression in Human Spaceflight audio systems",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Azure OpenAI",
+      "Gemini"
+    ]
+  },
+  {
+    "slug": "nasa-grc",
+    "name": "Glenn Research Center",
+    "abbreviation": "GRC",
+    "level": "sub_agency",
+    "parent_agency": "NASA",
+    "subtree_use_cases": 7,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Pre-trained microscopy image neural network encoders",
+        "system_name": "NEST (WCS) SSP",
+        "vendor_name": ""
+      },
+      {
+        "name": "Design Optimization of Turbomachinery Rotor Blades using Neural Network Surrogate Models",
+        "system_name": "NEST (WCS) SSP",
+        "vendor_name": ""
+      },
+      {
+        "name": "Aero-Engines AI - a machine-learning app for aircraft engine system-performance prediction",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Graph Neural Networks for Airfoil Performance Prediction",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Inverse Design of Materials",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "MADI - Strategic Foresight and Knowledge Management infrastructure for ARMD/TACP/CAS",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Surrogate Models for Efficient Multiscale Modeling of Composite Materials",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Custom In-House AI"
+    ]
+  },
+  {
+    "slug": "sba-ocio",
+    "name": "Office of the Chief Information Officer",
+    "abbreviation": "OCIO",
+    "level": "office",
+    "parent_agency": "SBA",
+    "subtree_use_cases": 17,
+    "subtree_llm_count": 13,
+    "subtree_coding_count": 2,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Amazon Q in Connect",
+        "system_name": "Veterans Certification - Contact Center application",
+        "vendor_name": "https://aws.amazon.com/connect/q/"
+      },
+      {
+        "name": "Generative AI for SBA.gov product training",
+        "system_name": "Salesforce",
+        "vendor_name": "https://openai.com/chatgpt/"
+      },
+      {
+        "name": "GovCon Match",
+        "system_name": "Certify.sba.gov",
+        "vendor_name": "Internally created"
+      },
+      {
+        "name": "Employee Center AI Search",
+        "system_name": "ServiceNow",
+        "vendor_name": "AI Search  https://www.servicenow.com/docs/bundle/washingtondc-platform-administration/page/administer/ai-search/concept/overview-ais.html"
+      },
+      {
+        "name": "Security Team Productivity Enhancement",
+        "system_name": "Every Microsoft product",
+        "vendor_name": "MS Security Copilot"
+      },
+      {
+        "name": "General AI Use Case across the SBA for web and desktop",
+        "system_name": "Perplexity AI Platform",
+        "vendor_name": "Perplexity AI, Inc."
+      },
+      {
+        "name": "Secure IL5 AI",
+        "system_name": "Ask Sage Platform",
+        "vendor_name": "Ask Sage, Inc."
+      },
+      {
+        "name": "Employee Work Prioritization AI Agent",
+        "system_name": "Google Gemini",
+        "vendor_name": "Google LLC"
+      }
+    ],
+    "named_tools": [
+      "Amazon Q",
+      "ChatGPT",
+      "ServiceNow Now Assist",
+      "Microsoft Copilot for Security",
+      "Microsoft Teams",
+      "Gemini",
+      "GitHub Copilot",
+      "AWS Bedrock"
+    ]
+  },
+  {
+    "slug": "sec-oit",
+    "name": "Office of Information Technology",
+    "abbreviation": "OIT",
+    "level": "office",
+    "parent_agency": "SEC",
+    "subtree_use_cases": 12,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Augmenting cyber threat alerts on the ACES platform with ACES's specific information.",
+        "system_name": "ACES",
+        "vendor_name": ""
+      },
+      {
+        "name": "Agentic Knowledge Base of Amazon Web Services Cloud Environment for the Securities and Exchange Commission (ACES)",
+        "system_name": "ACES",
+        "vendor_name": ""
+      },
+      {
+        "name": "Comment Letter Review and Analysis",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Mobile Phone Artificial Intelligence Features",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "EDGAR Filing Certification Review Solution",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Evaluating Cybersecurity Alerts",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "EDGAR Filing Audit Report Solution",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "EDGAR Filing Signature Review Solution",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "sec-exams",
+    "name": "Division of Examinations",
+    "abbreviation": "EXAMS",
+    "level": "office",
+    "parent_agency": "SEC",
+    "subtree_use_cases": 12,
+    "subtree_llm_count": 4,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Name Matching",
+        "system_name": "NEAT",
+        "vendor_name": "Aretec Inc"
+      },
+      {
+        "name": "Parsing of Plain Language Descriptions to Machine-Readable Notations",
+        "system_name": "NEAT",
+        "vendor_name": "Aretec Inc"
+      },
+      {
+        "name": "Using Natural Language Processing Techniques to Search and Analyze Certain Filings",
+        "system_name": "EDP",
+        "vendor_name": "Aretec"
+      },
+      {
+        "name": "Using Machine Learning/Artificial Intelligence Techniques to Predict Entities With Certain Risk Characteristics",
+        "system_name": "EDP",
+        "vendor_name": "IBM"
+      },
+      {
+        "name": "Identification of Potentially Manipulative Activity in Certain Accounts",
+        "system_name": "NEAT",
+        "vendor_name": "Aretec Inc"
+      },
+      {
+        "name": "Identification of Potentially Manipulative Trading Activity in Registrant Data",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Testing of Various AI Algorithms and Models",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Note-Taking Assistant",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "sec-ocdo",
+    "name": "Office of the Chief Data Officer",
+    "abbreviation": "OCDO",
+    "level": "office",
+    "parent_agency": "SEC",
+    "subtree_use_cases": 11,
+    "subtree_llm_count": 5,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Developed Parsing Logic for Filings",
+        "system_name": "AI Filing Parser",
+        "vendor_name": ""
+      },
+      {
+        "name": "Semantic Layer Natural Language Query",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI Chart Generation",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Identifying Citations of SEC Publications to Measure Market Impact",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Analyzing EDGAR Search Trends to Understand Public Interest in Filings",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Analyzing Form ADV Data to Identify Trends Among Investment Advisers",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI-enabled information collection and curation",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI-enabled information dissemination",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Westlaw AI"
+    ]
+  },
+  {
+    "slug": "ssa-ocio",
+    "name": "Office of the Chief Information Officer",
+    "abbreviation": "OCIO",
+    "level": "office",
+    "parent_agency": "SSA",
+    "subtree_use_cases": 20,
+    "subtree_llm_count": 9,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Insight",
+        "system_name": "Insight",
+        "vendor_name": ""
+      },
+      {
+        "name": "Intelligent Medical Language Analysis Generation (IMAGEN)",
+        "system_name": "IMAGEN",
+        "vendor_name": ""
+      },
+      {
+        "name": "Duplicate Identification Process",
+        "system_name": "DIP",
+        "vendor_name": "Hyperscience"
+      },
+      {
+        "name": "Handwriting Recognition of Forms; Intelligent Document Processing Platform - Forms Classification and Data Extraction",
+        "system_name": "Form Data Extraction",
+        "vendor_name": "Hyperscience"
+      },
+      {
+        "name": "Mobile Wage Reporting",
+        "system_name": "Supplemental Security Income Record Maintenance System (SSIRMS)",
+        "vendor_name": "AWS"
+      },
+      {
+        "name": "SSA 800# Public Question & Answer Bot and OIG Hotline recording of fraud, waste and abuse.",
+        "system_name": "Enterprise Contact Center",
+        "vendor_name": "AWS"
+      },
+      {
+        "name": "PolicyNet Plain Language Search Engine",
+        "system_name": "21st Century PolicyNet",
+        "vendor_name": ""
+      },
+      {
+        "name": "Speech to Text Video Transcription",
+        "system_name": "Hearing Recording and Transcription",
+        "vendor_name": "Microsoft"
+      }
+    ],
+    "named_tools": [
+      "OpenAI API",
+      "ServiceNow Now Assist",
+      "Microsoft 365 Copilot"
+    ]
+  },
+  {
+    "slug": "state-ca",
+    "name": "Bureau of Consular Affairs",
+    "abbreviation": "CA",
+    "level": "sub_agency",
+    "parent_agency": "State",
+    "subtree_use_cases": 13,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Evaluating Customer Feedback and Sentiments with AI",
+        "system_name": "PA",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "NIV Adjudication Review Recommendation Engine (ARRE)",
+        "system_name": "N/A",
+        "vendor_name": "Guidehouse"
+      },
+      {
+        "name": "AI Programmatic Insights",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Live Consular AI Language Augmentation (LCALA) - OCS/ACS Pilot",
+        "system_name": "N/A",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "Consular Affairs FaceVACS",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Travel.State.Gov (TSG) Enhanced Search and Chatbot",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Travel.state.gov (TSG) Content Refinement with AI Text Editor",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Predictive Analytics Platform",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Microsoft Teams"
+    ]
+  },
+  {
+    "slug": "state-dt",
+    "name": "Bureau of Diplomatic Technology",
+    "abbreviation": "DT",
+    "level": "office",
+    "parent_agency": "State",
+    "subtree_use_cases": 12,
+    "subtree_llm_count": 6,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Data.State Analytics and AI Funhouse",
+        "system_name": "Data.State-SBU; DOS-O365",
+        "vendor_name": "Microsoft, Databricks, ZenPoint"
+      },
+      {
+        "name": "AI Research Engine (AIRE)",
+        "system_name": "Data.State-SBU",
+        "vendor_name": "Deloitte"
+      },
+      {
+        "name": "PFCS Proving Ground",
+        "system_name": "CfA PFCS",
+        "vendor_name": "Palantir"
+      },
+      {
+        "name": "StateChat",
+        "system_name": "CfA PFCS",
+        "vendor_name": "Palantir, OpenAI"
+      },
+      {
+        "name": "Electronic Health Record AI Enhancements",
+        "system_name": "MED-PLTR",
+        "vendor_name": "Palantir"
+      },
+      {
+        "name": "TIP Report Research Translation",
+        "system_name": "AzureAI Translator",
+        "vendor_name": "Deloitte, AzureAI"
+      },
+      {
+        "name": "FOIA 360 AI Matching Tool",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Property and Procurement Analytics",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Databricks",
+      "OpenAI API"
+    ]
+  },
+  {
+    "slug": "state-fsi",
+    "name": "Foreign Service Institute",
+    "abbreviation": "FSI",
+    "level": "sub_agency",
+    "parent_agency": "State",
+    "subtree_use_cases": 6,
+    "subtree_llm_count": 2,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "Automatic Detection of Authentic Material",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Office of the Historian (OH) Historical Analysis for Negotiations",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "FSI Enterprise Operations - Gaming and Simulations",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Enhancing Training Effectiveness in FSILearn Using AI",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "FSI Continuous Learning Solutions",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Creating Persistent Virtual Reality Personas for Dynamic Training",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "tva-it",
+    "name": "Information Technology",
+    "abbreviation": "IT",
+    "level": "office",
+    "parent_agency": "TVA",
+    "subtree_use_cases": 19,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Advanced Network Anomaly Detection",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Perimeter Defense",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AI-Enhanced Search",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Copilot",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Github Copilot",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Data Services Business Context Definition",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Cisco ML",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Datum",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "GitHub Copilot",
+      "Amazon Q",
+      "AWS Transcribe"
+    ]
+  },
+  {
+    "slug": "tva-po",
+    "name": "Power Operations",
+    "abbreviation": "PO",
+    "level": "office",
+    "parent_agency": "TVA",
+    "subtree_use_cases": 14,
+    "subtree_llm_count": 0,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "Vegetation Management",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "GET",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "GMET",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Prism Models for MDM",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Network Anomaly Detection",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "ESRI GIS AI",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "SEEQ AI",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "GET Enhancement",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Esri ArcGIS AI"
+    ]
+  },
+  {
+    "slug": "treasury-irs",
+    "name": "Internal Revenue Service",
+    "abbreviation": "IRS",
+    "level": "sub_agency",
+    "parent_agency": "Treasury",
+    "subtree_use_cases": 61,
+    "subtree_llm_count": 37,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "SBSE - Payments Topics Chatbot",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Joint Committee on Taxation Review Research Aide",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Local GenAI Pilot",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Internal Revenue Manual Research Aid (IRMA)",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Answering Employee Questions with Natural Language Processing in IRWorks",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Form 990N Machine Learning Model",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Volunteer Income Tax Assistance (VITA) Generative AI Chatbot Proof of Concept",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Ask-CFO Research Aide",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      }
+    ],
+    "named_tools": [
+      "Custom In-House AI",
+      "Microsoft Teams"
+    ]
+  },
+  {
+    "slug": "treasury-occ",
+    "name": "Office of the Comptroller of the Currency",
+    "abbreviation": "OCC",
+    "level": "sub_agency",
+    "parent_agency": "Treasury",
+    "subtree_use_cases": 26,
+    "subtree_llm_count": 25,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "OCC.Chat",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "OCC.InfoAssist",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Rulemaking Comment Analytics",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "OCC Guidance Summarization",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Employee Task Organization",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Regulation Summarization",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Regulation Statutory and Common Name Indexing",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Newsletter Content Support",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      }
+    ],
+    "named_tools": [
+      "Microsoft Teams",
+      "Custom In-House AI"
+    ]
+  },
+  {
+    "slug": "treasury-bfs",
+    "name": "Bureau of the Fiscal Service",
+    "abbreviation": "BFS",
+    "level": "sub_agency",
+    "parent_agency": "Treasury",
+    "subtree_use_cases": 23,
+    "subtree_llm_count": 19,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "eDiscovery Software",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Large Language Model (LLM) Chatbot for Proof of Concept",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Large Language Model (LLM) Coding for Proof of Concept",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "USAspending Natural Language Search Initiative",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "GenAI Productivity Tool Pilot",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "FRB AI Code Translation POC",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "CoCounsel tool used in the legal office",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Knowledge Retrieval Chatbot POC",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "treasury-ofr",
+    "name": "Office of Financial Research",
+    "abbreviation": "OFR",
+    "level": "sub_agency",
+    "parent_agency": "Treasury",
+    "subtree_use_cases": 7,
+    "subtree_llm_count": 2,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "ChatOFR AI Chatbot",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Programmatic Access to LLMs via API",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "NCCBR Data Validation Pilot",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Automated Document Processing",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Advanced Anomaly & Changepoint Detection",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Procurement Intelligence",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Operational Support Bots",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      }
+    ],
+    "named_tools": [
+      "Custom In-House AI"
+    ]
+  },
+  {
+    "slug": "treasury-bep",
+    "name": "Bureau of Engraving and Printing",
+    "abbreviation": "BEP",
+    "level": "sub_agency",
+    "parent_agency": "Treasury",
+    "subtree_use_cases": 5,
+    "subtree_llm_count": 1,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "AskBEP AI ChatBot",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Sub-Asset Maintenance Model",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Ink and Paper Consumption Forecast (IPCF)",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "Inventory Replenishment Forecast",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      },
+      {
+        "name": "IDV Model",
+        "system_name": "N/A",
+        "vendor_name": "N/A"
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "usda-nre",
+    "name": "Natural Resources and Environment",
+    "abbreviation": "NRE",
+    "level": "sub_agency",
+    "parent_agency": "USDA",
+    "subtree_use_cases": 76,
+    "subtree_llm_count": 12,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Ecosystem Management Decision Support System (EMDS)",
+        "system_name": "Ecosystem Management Decision Support System",
+        "vendor_name": "Mountain View Business Group Services"
+      },
+      {
+        "name": "The Big Data, Mapping, and Analytics Platform (BIGMAP) Project",
+        "system_name": "Esri FS GeoPlatform (Esri Blanket Purchase Agreement)",
+        "vendor_name": "Esri"
+      },
+      {
+        "name": "Predictive flood modeling",
+        "system_name": "CULVERT",
+        "vendor_name": ""
+      },
+      {
+        "name": "IOL Focus Group and Survey Sensemaking",
+        "system_name": "Google NotebookLM, Google Earth Engine",
+        "vendor_name": "Google"
+      },
+      {
+        "name": "Esri ArcGIS Pro Deep Learning Modules",
+        "system_name": "FS ACE",
+        "vendor_name": ""
+      },
+      {
+        "name": "Policy Analysis",
+        "system_name": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+        "vendor_name": ""
+      },
+      {
+        "name": "Turbo plan",
+        "system_name": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+        "vendor_name": "Wildfire.org"
+      },
+      {
+        "name": "Forest Plan review and planning support",
+        "system_name": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+        "vendor_name": "Google"
+      }
+    ],
+    "named_tools": [
+      "Esri ArcGIS AI",
+      "Microsoft Teams"
+    ]
+  },
+  {
+    "slug": "usda-ree",
+    "name": "Research, Education, and Economics",
+    "abbreviation": "REE",
+    "level": "sub_agency",
+    "parent_agency": "USDA",
+    "subtree_use_cases": 22,
+    "subtree_llm_count": 5,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Repair Spend",
+        "system_name": "Enterprise Data Analytics Platform & Toolset (EDAPT, Impala, Tableau)",
+        "vendor_name": "Accenture"
+      },
+      {
+        "name": "NAL Automated Indexing",
+        "system_name": "ARSAzure",
+        "vendor_name": "Expert AI (Cogito)"
+      },
+      {
+        "name": "Cropland Data Layer",
+        "system_name": "Geo-enabled Earth Computing System (GEECS)",
+        "vendor_name": ""
+      },
+      {
+        "name": "List Frame Deadwood Identification",
+        "system_name": "Research, Education, and Economics (REE) - National Agricultural Statistics Service (NASS) - Citrix Environment",
+        "vendor_name": ""
+      },
+      {
+        "name": "Census of Agriculture Propensity Scores via Machne Learning",
+        "system_name": "NASS REE CIPSEA Citrix Env",
+        "vendor_name": ""
+      },
+      {
+        "name": "NASSportal Intranet Agent",
+        "system_name": "O365",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "GovChat",
+        "system_name": "ARS AzureGov",
+        "vendor_name": "Microsoft"
+      },
+      {
+        "name": "ARS Project Mapping",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": [
+      "Microsoft Copilot Studio"
+    ]
+  },
+  {
+    "slug": "usda-fpac",
+    "name": "Farm Production and Conservation",
+    "abbreviation": "FPAC",
+    "level": "sub_agency",
+    "parent_agency": "USDA",
+    "subtree_use_cases": 20,
+    "subtree_llm_count": 3,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Dam Inspection Report Document Processing",
+        "system_name": "AI Builder",
+        "vendor_name": ""
+      },
+      {
+        "name": "Vegetation Specifications Suite (VegSpec)",
+        "system_name": "Vegetation Specification Suite (VegSpec)",
+        "vendor_name": "Precision Sustainable Agriculture Group, North Carolina State University"
+      },
+      {
+        "name": "NETS automated waterway design",
+        "system_name": "NRCS Engineering Tools Suite (NETS)",
+        "vendor_name": "Spatial Front Incorporated"
+      },
+      {
+        "name": "Digital Soil Mapping",
+        "system_name": "The R Project for Statistical Computing; Arc Soil Inference Engine; System for Automatic Geoscientific Analyses; Google Earth Engine; Google Compute Platform",
+        "vendor_name": ""
+      },
+      {
+        "name": "Annual Soil Refresh Data Staging Server Automation",
+        "system_name": "UIPath Studio",
+        "vendor_name": "UIPath Studio"
+      },
+      {
+        "name": "LCAT - Land Change Analysis Technique",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Operational Water Supply Forecasting for Western US Rivers",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Conservation Effects Assessment Project",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "usda-mrp",
+    "name": "Marketing and Regulatory Programs",
+    "abbreviation": "MRP",
+    "level": "sub_agency",
+    "parent_agency": "USDA",
+    "subtree_use_cases": 16,
+    "subtree_llm_count": 1,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "minimal",
+    "sample_use_cases": [
+      {
+        "name": "Predictive Modeling of Invasive Pest Species",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Standardization of Cut Flower Business Names for Message Set Data",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Approximate String Matching (aka fuzzy matching) to Standardize Data",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Automated PDF Document Processing and Information Extraction",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "IRIS",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "US Poultry and Operations Dataset",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Equine Operations and Populations Dataset for the U.S.",
+        "system_name": "",
+        "vendor_name": "Colorado State University"
+      },
+      {
+        "name": "Zen AI Image Analysis",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "usda-foodsafety",
+    "name": "Food Safety",
+    "abbreviation": "FoodSafety",
+    "level": "sub_agency",
+    "parent_agency": "USDA",
+    "subtree_use_cases": 13,
+    "subtree_llm_count": 8,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Multilingual Translation of Recalls and Public Health Alerts",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Genomic Analyses of Pathogen Subtypes",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Foodborne Illness Source Attribution",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "HR Chatbot",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AR-Enabled Mobile App for Policy and Regulation Review",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "LLM-Powered Drafting Assistant for NRs and MOIs",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "Chatbot for Meat and Poultry Hotline & OPACE Efficiency",
+        "system_name": "",
+        "vendor_name": ""
+      },
+      {
+        "name": "AI-Enhanced Qlik Reporting for FSIS Data",
+        "system_name": "",
+        "vendor_name": ""
+      }
+    ],
+    "named_tools": []
+  },
+  {
+    "slug": "va-vha",
+    "name": "Veterans Health Administration",
+    "abbreviation": "VHA",
+    "level": "sub_agency",
+    "parent_agency": "VA",
+    "subtree_use_cases": 253,
+    "subtree_llm_count": 32,
+    "subtree_coding_count": 1,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Roche Digital Pathology",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Pangaea",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Cogitativo",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Pharmacy AI Managed Inventory System (PHAIMIS)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Silverberry Surgery Planning AI",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Teledermatology Clinical Outcome Classification",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Summarize Progress Notes",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Parable 3D Wound Care Management System",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Microsoft Teams",
+      "Databricks",
+      "ChatGPT",
+      "Custom In-House AI"
+    ]
+  },
+  {
+    "slug": "va-oit",
+    "name": "Office of Information & Technology",
+    "abbreviation": "OIT",
+    "level": "office",
+    "parent_agency": "VA",
+    "subtree_use_cases": 57,
+    "subtree_llm_count": 21,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "VA VoiceBot for Call Center Modernization",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Forescout: AI Behavioral Anomaly Detection w/ Automated Enforcement",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "VA AI Assist",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Service Period Validator (SPV) POC",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Claims Processing Automation Quality Auditor POC",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "CSOC AI Analyst Accelerator (Andesite AI)",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Exam Verification Agent",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Benefits Contention Classification Model",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": [
+      "Microsoft Teams",
+      "ServiceNow Now Assist",
+      "OpenAI API",
+      "Custom In-House AI"
+    ]
+  },
+  {
+    "slug": "va-vba",
+    "name": "Veterans Benefits Administration",
+    "abbreviation": "VBA",
+    "level": "sub_agency",
+    "parent_agency": "VA",
+    "subtree_use_cases": 27,
+    "subtree_llm_count": 11,
+    "subtree_coding_count": 0,
+    "subtree_enterprise_llm_count": 0,
+    "subtree_env_count": 0,
+    "maturity_tier": "early",
+    "sample_use_cases": [
+      {
+        "name": "Automated Ratings Summarization",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Smart Pension Automation",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Predictive Claims Processing Capability POC",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "AICES",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Smart Ratings Recommendation",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Smart Claim Check",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Loan Guaranty Lender\u2019s Handbook Chatbot",
+        "system_name": null,
+        "vendor_name": null
+      },
+      {
+        "name": "Education Call Center (ECC) Next Gen POC",
+        "system_name": null,
+        "vendor_name": null
+      }
+    ],
+    "named_tools": []
+  }
+]

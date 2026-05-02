@@ -219,6 +219,8 @@ def seed_products():
         conn.execute("UPDATE use_cases SET product_id = NULL")
         conn.execute("UPDATE consolidated_use_cases SET product_id = NULL")
         conn.execute("DELETE FROM use_case_products")
+        conn.execute("DELETE FROM consolidated_use_case_products")
+        conn.execute("DELETE FROM fedramp_product_links")
         conn.execute("DELETE FROM product_aliases")
         conn.execute("DELETE FROM products")
 

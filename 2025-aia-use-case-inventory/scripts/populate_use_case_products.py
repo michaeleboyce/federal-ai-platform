@@ -31,6 +31,16 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from db import get_connection  # noqa: E402
+from product_resolution import (  # noqa: E402
+    confidence_for_evidence,
+    consolidated_search_text,
+    extract_products as shared_extract_products,
+    load_product_aliases,
+    load_products,
+    looks_compound,
+    sync_primary_product_cache,
+    use_case_search_text,
+)
 
 
 # Punctuation we treat as hard separators when collecting matches. Matches
@@ -48,102 +58,26 @@ def _normalize(s: Any) -> str:
 
 
 def extract_products(text: str | None, aliases_dict: dict[str, Any]) -> list[dict[str, Any]]:
-    """Return every canonical product evidenced by ``text``.
-
-    ``aliases_dict`` is a dict of ``lowered_alias -> value`` where ``value`` is
-    whatever the caller wants back (canonical_name for tests, product_id for
-    production). The return shape is ``[{"product_name": <value>, "alias":
-    <matched alias>, "evidence": <text span>}]``.
-
-    Longest-alias-first ordering: "microsoft 365 copilot" beats "m365 copilot"
-    which beats the bare alias list. Each canonical is returned at most once
-    even if multiple aliases for it appear in the text.
-    """
-    if not text:
-        return []
-
-    haystack = _normalize(text)
-
-    # Split on compound separators, keeping original haystack for span matching
-    # so multi-word aliases still resolve. We use the unified haystack for
-    # matching and the split pieces only to handle the edge case where two
-    # different products share an alias substring (rare but covered by
-    # ordering-by-length).
-    sorted_aliases = sorted(aliases_dict.keys(), key=len, reverse=True)
-
-    results: dict[Any, dict[str, Any]] = {}
-    # Walk haystack, consuming spans as we match them so "AWS Textract" doesn't
-    # both match "AWS Textract" AND the bare "AWS" alias (if one existed).
-    remaining = haystack
-    for alias in sorted_aliases:
-        if not alias:
-            continue
-        # Word-boundary-ish check: the alias must appear as a whole token, not
-        # inside another word. Cheaper than compiling regex per alias: we
-        # require the char before/after to be non-alphanumeric.
-        start = 0
-        while True:
-            idx = remaining.find(alias, start)
-            if idx < 0:
-                break
-            before_ok = idx == 0 or not remaining[idx - 1].isalnum()
-            end = idx + len(alias)
-            after_ok = end == len(remaining) or not remaining[end].isalnum()
-            if before_ok and after_ok:
-                canon = aliases_dict[alias]
-                if canon not in results:
-                    results[canon] = {
-                        "product_name": canon,
-                        "alias": alias,
-                        "evidence": text[idx : idx + len(alias)]
-                        if len(text) == len(haystack)
-                        else alias,
-                    }
-                # Blank out the matched span so shorter aliases can't
-                # re-match the same text region.
-                remaining = remaining[:idx] + (" " * len(alias)) + remaining[end:]
-                start = end
-            else:
-                start = idx + 1
-
-    return list(results.values())
+    """Compatibility wrapper around product_resolution.extract_products."""
+    return shared_extract_products(text, aliases_dict)
 
 
 def _looks_compound(text: str) -> bool:
     """Rough check: does the text contain a compound separator?"""
-    if not text:
-        return False
-    return bool(re.search(r"\+|\band\b|,|;|/|\(", text, flags=re.IGNORECASE))
+    return looks_compound(text)
 
 
 def _load_aliases_by_product_id(conn) -> dict[str, int]:
-    d: dict[str, int] = {}
-    for row in conn.execute("SELECT alias_text, product_id FROM product_aliases"):
-        d.setdefault(_normalize(row["alias_text"]), row["product_id"])
-    return d
+    return load_product_aliases(conn)
 
 
 def _load_products(conn) -> dict[int, dict[str, Any]]:
-    d: dict[int, dict[str, Any]] = {}
-    for r in conn.execute(
-        "SELECT id, canonical_name, vendor, product_type, "
-        "is_generative_ai, parent_product_id FROM products"
-    ):
-        d[r["id"]] = dict(r)
-    return d
+    return load_products(conn)
 
 
 def _use_case_search_text(row: dict[str, Any]) -> str:
     """The text we scan for product aliases. Matches the auto_tag.py fields."""
-    return " ".join(
-        (row.get(k) or "")
-        for k in (
-            "vendor_name",
-            "system_name",
-            "use_case_name",
-            "problem_statement",
-        )
-    )
+    return use_case_search_text(row)
 
 
 def _consolidated_search_text(row: dict[str, Any]) -> str:
@@ -156,20 +90,13 @@ def _consolidated_search_text(row: dict[str, Any]) -> str:
     agent audit. Only `commercial_product` (what the agency declared) and
     `agency_uses` / `ai_use_case` (narrative context) are safe.
     """
-    return " ".join(
-        (row.get(k) or "")
-        for k in (
-            "commercial_product",
-            "ai_use_case",
-            "agency_uses",
-        )
-    )
+    return consolidated_search_text(row)
 
 
 def _consolidated_primary_text(row: dict[str, Any]) -> str:
     """Only the agency-declared product field. Used to gate primary-FK
     seeding so we never auto-seed from narrative context."""
-    return row.get("commercial_product") or ""
+    return consolidated_primary_text(row)
 
 
 def populate() -> dict[str, int]:
@@ -218,7 +145,7 @@ def populate() -> dict[str, int]:
                 pid = m["product_name"]  # Already product_id (from DB aliases)
                 pname = (products.get(pid, {}) or {}).get("canonical_name", "")
                 evidence = m.get("evidence") or m.get("alias") or ""
-                confidence = "strong" if len(evidence) >= 5 else "inferred"
+                confidence = confidence_for_evidence(evidence)
                 conn.execute(
                     """
                     INSERT OR IGNORE INTO use_case_products
@@ -253,13 +180,11 @@ def populate() -> dict[str, int]:
                     queued += 1
 
         # ------------------------------------------------------------
-        # Consolidated pass: populate consolidated_use_case_products and
-        # seed the single FK when the row has exactly one strong match and
-        # no existing product_id. Don't overwrite existing FKs.
+        # Consolidated pass: populate consolidated_use_case_products. The
+        # compatibility product_id cache is derived from these edges below.
         # ------------------------------------------------------------
         crows = conn.execute("SELECT * FROM consolidated_use_cases").fetchall()
         c_zero = c_one = c_many = 0
-        c_seeded = 0
 
         for r in crows:
             row = dict(r)
@@ -270,11 +195,10 @@ def populate() -> dict[str, int]:
                 c_zero += 1
                 continue
 
-            inserted = []
             for m in matches:
                 pid = m["product_name"]
                 evidence = m.get("evidence") or m.get("alias") or ""
-                confidence = "strong" if len(evidence) >= 5 else "inferred"
+                confidence = confidence_for_evidence(evidence)
                 conn.execute(
                     """
                     INSERT OR IGNORE INTO consolidated_use_case_products
@@ -283,33 +207,12 @@ def populate() -> dict[str, int]:
                     """,
                     (row["id"], pid, evidence, confidence),
                 )
-                inserted.append((pid, confidence))
-
             if len(matches) == 1:
                 c_one += 1
             else:
                 c_many += 1
 
-            # Seed primary FK only if (a) previously NULL and (b) the
-            # `commercial_product` field alone produces exactly one match.
-            # Earlier versions of this block used `inserted` from the broader
-            # multi-column text, which silently pulled template-suggested
-            # example products into the primary FK (see audit set C).
-            if row.get("product_id") is None:
-                primary_text = _consolidated_primary_text(row)
-                primary_matches = extract_products(primary_text, aliases) if primary_text else []
-                strong_pids = [
-                    m["product_name"]
-                    for m in primary_matches
-                    if len((m.get("evidence") or m.get("alias") or "")) >= 5
-                ]
-                if len(set(strong_pids)) == 1:
-                    conn.execute(
-                        "UPDATE consolidated_use_cases SET product_id = ? WHERE id = ?",
-                        (strong_pids[0], row["id"]),
-                    )
-                    c_seeded += 1
-
+        cache_sync = sync_primary_product_cache(conn)
         conn.commit()
 
         stats = {
@@ -329,8 +232,8 @@ def populate() -> dict[str, int]:
                 "total_consolidated_use_case_products": conn.execute(
                     "SELECT COUNT(*) FROM consolidated_use_case_products"
                 ).fetchone()[0],
-                "primary_fk_seeded_from_null": c_seeded,
             },
+            "primary_product_cache": cache_sync,
         }
         print(json.dumps(stats, indent=2))
 

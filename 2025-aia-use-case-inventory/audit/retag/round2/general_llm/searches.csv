@@ -1,0 +1,2 @@
+use_case_id,query,top_url,found_useful,conclusion
+7847,"""DOC Chat"" Department of Commerce AI assistant inventory",https://www.commerce.gov/data/ai_inventory,1,"No specific public detail on DOC Chat as named product, but the row in DB has scope=department and name ""DOC Chat"". Treating as department-wide LLM chatbot — overturn to 1 with medium confidence."

@@ -1,0 +1,86 @@
+canonical_name,vendor,product_type,occurrences,sample_use_case_ids,already_proposed_earlier
+EDAV (CDC),CDC,data_analytics,13,9228|9230|9233|9234|9247,no
+Thomson Reuters CLEAR,Thomson Reuters,data_analytics,5,8478|8494|8641|9024|9029,yes
+Veritone,Veritone,media_analysis,5,8480|8495|8620|8645|9107,no
+iCatalyst RPA,iCatalyst Inc,rpa,5,8878|8882|8883|8884|8885,no
+ATLAS (Forest Service),USDA Forest Service,data_analytics,5,10612|10613|10614|10615|10621,no
+Skyward CEDAR/CLAW,Skyward IT Solutions,agent_platform,4,9331|9333|9345|9373,no
+Lexical Intelligence,"Lexical Intelligence, LLC",nlp,4,9512|9535|9542|9548,no
+Microsoft Azure Platform,Microsoft,cloud_platform,3,7932|8114|8497,no
+Informatica,Informatica,data_catalog,3,8610|10227|10451,no
+USAi (GSA),GSA,general_llm,3,8876|8887|10080,no
+Chainalysis,Chainalysis,blockchain_analytics,3,9025|9027|10205,no
+Microsoft Sentinel,Microsoft,security_tool,3,9109|9113|9114,no
+Credal,Credal,agent_platform,3,9194|9196|9197,no
+Aretec NEAT,Aretec Inc,data_analytics,3,10162|10163|10169,no
+Dataminr First Alert,Dataminr,social_listening,2,7539|10107,yes
+Relativity,Relativity,ediscovery,2,8530|9106,yes
+Google Translate,Google,translation,2,8571|9457,yes
+Exiger DDIQ,Exiger,supply_chain,2,8592|8593,yes
+VAO Ally,GSA,agent_platform,2,8754|9044,yes
+Ask Sage,Ask Sage Inc.,general_llm,2,9188|10134,no
+Precise MLaaS,Precise Software,ml_platform,2,9454|9455,no
+AlphaFold,Google DeepMind,scientific_ml,2,9534|9555,no
+Grants.gov AI Tools,HHS,data_analytics,2,9607|9608,no
+AWS Kendra,Amazon,search,2,9620|9634,no
+Perplexity,Perplexity AI,general_llm,2,10121|10132,no
+RedCastle Forest Health,RedCastle Resources,computer_vision,2,10501|10610,no
+Invariant Acoustic Signature AI,Invariant Corporation,audio_analysis,1,7493,yes
+TRM Labs Blockchain Analysis Platform,TRM Labs,blockchain_analytics,1,7512,yes
+IDEMIA CAT-2/AutoCAT,IDEMIA,biometrics,1,7530,no
+IBM ARGOS,IBM,nlp,1,7533,yes
+BI SmartLINK,BI Incorporated,biometrics,1,7560,yes
+SpyglassGPT,Unknown,general_llm,1,8040,no
+Tesseract OCR,Open Source,document_ai,1,8096,no
+PEST (Parameter Estimation),Open Source,scientific_ml,1,8110,no
+Ultralytics YOLO,Ultralytics,computer_vision,1,8322,yes
+Whooster,Whooster,data_analytics,1,8481,yes
+Veritone Illuminate,Veritone,media_analysis,1,8485,yes
+BMC Helix ITSM,BMC,itsm,1,8493,yes
+SimplyFile,TechHit,productivity,1,8538,yes
+UpToDate,Wolters Kluwer,clinical_decision_support,1,8588,yes
+Systran Translate,Systran,translation,1,8651,no
+Azure AI Foundry,Microsoft,general_llm,1,8726,yes
+Azure Speech,Microsoft,transcription,1,8768,no
+Microsoft HoloLens,Microsoft,computer_vision,1,8772,yes
+Azure AI Document Intelligence,Microsoft,document_ai,1,8776,no
+Llama,Meta,general_llm,1,9014,no
+KnowBe4 PhishER,KnowBe4,security_tool,1,9041,no
+Citrix,Citrix,virtualization,1,9049,no
+Kiteworks,Kiteworks,security_tool,1,9052,no
+Flowmon,Progress Flowmon,security_tool,1,9053,no
+Commonlook Online,Commonlook,document_ai,1,9054,no
+SumTotal,SumTotal,training,1,9097,no
+OneReach.ai,OneReach.ai,agent_platform,1,9184,no
+Pingwind AI DevOps,Pingwind,devops,1,9206,no
+Palantir AIP,Palantir,general_llm,1,9316,no
+Emerald Innovations,Emerald Innovations,scientific_ml,1,9417,no
+FOIA REDACTION (FRED),Unknown,document_ai,1,9429,no
+IBM CoreDF,IBM,document_ai,1,9432,no
+PLATES/FoodTrak,Trigent Solutions,document_ai,1,9445,no
+Appian AI,Appian,agent_platform,1,9446,no
+Digital Science Dimensions,Digital Science,data_analytics,1,9492,no
+NanCI,NIH,agent_platform,1,9503,no
+H2O GPTe,H2O.ai,general_llm,1,9504,no
+Leica Aivia,Leica,computer_vision,1,9533,no
+cryoDRGN,Open Source,scientific_ml,1,9536,no
+crYOLO,Open Source,scientific_ml,1,9537,no
+CryoSPARC,Structura Biotechnology,scientific_ml,1,9538,no
+Pangolin Lineage,COG-UK,scientific_ml,1,9546,no
+Shabash Merops,Shabash,nlp,1,9575,no
+AWS Rekognition,Amazon,computer_vision,1,10039,no
+FOIAXpress AI,OPEXUS,document_ai,1,10108,no
+Cohesity,Cohesity,security_tool,1,10147,no
+Flashpoint,Flashpoint,social_listening,1,10202,no
+AveriSource,AveriSource,code_modernization,1,10228,no
+Dynatrace,Dynatrace,security_tool,1,10230,no
+Windsurf,Codeium,coding_assistant,1,10231,no
+ID.me,ID.me,identity_verification,1,10235,no
+Expert.ai Cogito,expert.ai,nlp,1,10491,no
+Democratizing Data,Coleridge Institute,data_analytics,1,10493,no
+GlobalComm Video Surveillance,GlobalComm,computer_vision,1,10505,no
+Google NotebookLM,Google,general_llm,1,10564,no
+ProcureSight,ProcureSight,data_analytics,1,10570,no
+ACCRETE ARGUS,ACCRETE AI Government,supply_chain,1,10579,no
+VegSpec,USDA NRCS,scientific_ml,1,10590,no
+GAIA AI,GAIA AI,computer_vision,1,10625,no

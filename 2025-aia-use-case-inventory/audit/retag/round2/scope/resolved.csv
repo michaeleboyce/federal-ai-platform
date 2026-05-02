@@ -1,0 +1,167 @@
+queue_id,use_case_id,consolidated_use_case_id,question_type,current_tag,final_tag,decision,confidence,search_attempted,search_query,evidence_quote,notes
+582,7456,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,"[use_case_name] Semantic Search, Summarization, and Data/Spatial Visualization for NCR Watch COP/Dashboard [problem_statement] The speed of i",Explicit RAG evidence in narrative; was 'unknown'.
+583,7421,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+584,7499,,architecture,fine_tuned,fine_tuned,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+585,7432,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+587,7490,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+588,7423,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+589,7459,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+590,7424,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,[use_case_name] Semantic Search and Summarization for Investigative Data [problem_statement] This use case intends to solve the problem of searc,Explicit RAG evidence in narrative; was 'unknown'.
+591,7470,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+592,7502,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+593,7526,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+594,7739,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+595,7665,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+596,7737,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+597,7790,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+598,8064,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+599,8062,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+600,8045,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+601,8091,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+602,8088,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+603,7911,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+604,8202,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+605,8092,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+606,8105,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,utilizing Azure OpenAI and HPC LLM's. Intending to utilize RAG model for DOE Tech Transfer specific information. [ai_classification] Other [topic_area] Informatio,Explicit RAG evidence in narrative; was 'unknown'.
+607,8097,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+608,7932,,architecture,custom_trained,rag_pipeline,apply_proposed,high,no,,ill assist workers in completing processes and activities.  RAG (mini RAG preferred) is the method that will be used for integration with the AI solution. [ai_clas,Explicit RAG evidence in narrative; was 'custom_trained'.
+610,8178,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,[use_case_name] AccessAI [problem_statement] GenAI-RAG on corporate content [expected_benefits] Productivity Tool [system_outputs] Text [system_name] Azur,Explicit RAG evidence in narrative; was 'unknown'.
+611,8157,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+612,7930,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,"at Bot for IT User Services [problem_statement] Interactive RAG chat bot model trained on existing, updated and new IT resource documentation in the user space. Pl",Explicit RAG evidence in narrative; was 'unknown'.
+613,8156,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,[use_case_name] Ask HR [problem_statement] GenAI-RAG on HR content [expected_benefits] Productivity Tool [system_outputs] Text [system_name] Azure GOV [,Explicit RAG evidence in narrative; was 'unknown'.
+614,8262,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+615,8233,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,data. We want to apply modern AI/ML approaches such as RAG (Retrieval-Augmented Generation) to gain insights from that unstructured data. [expected_benefits] gain insights from that unstruct,Explicit RAG evidence in narrative; was 'unknown'.
+616,8355,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+617,8387,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+618,8344,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+619,8311,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+620,8388,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+621,8357,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+622,8407,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,"uiring AIM team support. To streamline access, we propose a Retrieval-Augmented Generation (RAG) chatbot that uses AI to summarize documents and tools via metadata and embedded PDFs, enablin",Explicit RAG evidence in narrative; was 'unknown'.
+623,8518,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+624,8517,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+625,8762,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+626,8672,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+627,8710,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+628,8525,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+629,8522,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+630,8739,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,al arguments across circuits. This initiative will deploy a retrieval-augmented generation (RAG) tool trained on DOJ filings and administrative records to accelerate drafting and ensure cons,Explicit RAG evidence in narrative; was 'unknown'.
+631,8686,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+632,8777,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+634,8852,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+635,8851,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+636,8815,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+637,8850,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+638,8875,,architecture,inference_only,rag_pipeline,apply_proposed,high,no,,atement] DOT employees need an environment to upload custum Retrieval-Augmented Generation (RAG). [expected_benefits] NotebookLM allows employees to upload documents that create a private RA,Explicit RAG evidence in narrative; was 'inference_only'.
+639,8942,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+640,8973,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+642,9038,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+643,9051,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+644,9089,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+645,9172,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,"d to Pricing Policy to internal stakeholders. By training a RAG-based internal chatbot on a dedicated corpus of knowledge, the system aims to streamline the proces",Explicit RAG evidence in narrative; was 'unknown'.
+646,9153,,architecture,unknown,agentic_workflow,apply_proposed,high,no,,"[use_case_name] FAS Vision Agentforce [problem_statement] The AI, specifically the ""FAS Vision Agentforce"" system, is intended to solve s",Explicit agentic evidence; was 'unknown'.
+647,9127,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+648,9155,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+649,9160,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+650,9304,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+651,9612,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+652,9478,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+653,9603,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+654,9328,,architecture,unknown,rag_pipeline,apply_other,high,no,,ies through: 1. Access to Internal Knowledge base Including retrieval augmented generation (RAG) 2. Personalized FAQs & contextual generation 3. Interaction with Live Agent 4. Chat & Talk Fe,Explicit RAG evidence in narrative; was 'unknown'.
+655,9457,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+656,9413,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+657,9574,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+658,9370,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+659,9187,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+660,9508,,architecture,fine_tuned,fine_tuned,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+661,9199,,architecture,custom_trained,rag_pipeline,apply_proposed,high,no,,"sioned), Microsoft Copilot Chat [training_data_description] RAG implementation using commercially-available LLMs and received capability statements [ai_classificat",Explicit RAG evidence in narrative; was 'custom_trained'.
+662,9234,,architecture,custom_trained,rag_pipeline,apply_proposed,high,no,,"t information, and this tool enables fast access powered by Retrieval Augmented Generation (RAG). [expected_benefits] Staff have increased access to relevant information and documents throug",Explicit RAG evidence in narrative; was 'custom_trained'.
+663,9188,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,"edal, Ask Sage (decommissioned) [training_data_description] RAG implementation using commercially-available LLMs and user-provided narrative data [ai_classificatio",Explicit RAG evidence in narrative; was 'unknown'.
+664,9175,,architecture,custom_trained,rag_pipeline,apply_proposed,high,no,,lan. [system_name] ACF Discover [training_data_description] RAG implementation using commercially-available LLMs and data from FBIS [ai_classification] Agentic AI,Explicit RAG evidence in narrative; was 'custom_trained'.
+665,9342,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+666,9332,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+667,9444,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+668,9323,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+669,9197,,architecture,custom_trained,rag_pipeline,apply_proposed,high,no,,"_name] ACF Upstream, ACF Credal [training_data_description] RAG implementation using commercially-available LLMs and user-provided grant applications [ai_classific",Explicit RAG evidence in narrative; was 'custom_trained'.
+670,9453,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+671,9185,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,ent. [system_name] ACF Discover [training_data_description] RAG implementation using commercially-available LLMs and the latest HHS/NTEU collective bargaining agre,Explicit RAG evidence in narrative; was 'unknown'.
+672,9213,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+673,9198,,architecture,custom_trained,rag_pipeline,apply_proposed,high,no,,"sioned), Microsoft Copilot Chat [training_data_description] RAG implementation using commercially-available LLMs and user-provided context on acquisition needs [ai",Explicit RAG evidence in narrative; was 'custom_trained'.
+674,9225,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+675,9474,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+676,9193,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+677,9195,,architecture,custom_trained,rag_pipeline,apply_proposed,high,no,,ion. [system_name] ACF Upstream [training_data_description] RAG implementation using commercially-available LLMs and user-provided position descriptions [ai_classi,Explicit RAG evidence in narrative; was 'custom_trained'.
+678,9640,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+679,10066,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+680,9901,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+681,9934,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+682,9883,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+683,9708,,architecture,unknown,agentic_workflow,apply_proposed,high,no,,"Mars [problem_statement] AutoNav on the Perseverance Rover autonomously plans a safe path based on stereo navigation camera images, based on multiple technologies including a t",Explicit agentic evidence; was 'unknown'.
+684,10012,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+685,10055,,architecture,unknown,agentic_workflow,apply_proposed,high,no,,"autonomous control logic adaptation in robotics/aerospace [expected_benefits] This use case addresses the limitations of traditional, fixed-logic cont",Explicit agentic evidence; was 'unknown'.
+686,9779,,architecture,unknown,agentic_workflow,apply_proposed,high,no,,"oject is implementing an algorithm called ""SafeMAP"" or Safe Multi-Agent Planner. SafeMAP is used in distributed multi-rover or multi-uav system to plan the actions of a gr",Explicit agentic evidence; was 'unknown'.
+687,9833,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+688,9980,,architecture,unknown,agentic_workflow,apply_proposed,high,no,,"autonomously tag identify an area of geological interest to the mission, Using data from a LiDAR scan, the robot can plan a path to reach the area. That",Explicit agentic evidence; was 'unknown'.
+689,10025,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+690,9798,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+691,9802,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,me] OCFO President Budget Request RAG [problem_statement] A retrieval augmented generation tool that can answer questions based on president's budget requests [expected_benefits] A retrieval,Explicit RAG evidence in narrative; was 'unknown'.
+692,9995,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+693,9877,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+694,10053,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,M-Newton Documentation. The model is then integrated into a retrieval-augmented generation (RAG) pipeline to ensure that responses are grounded in mission documentation. This reduces model h,Explicit RAG evidence in narrative; was 'unknown'.
+695,10057,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+696,10058,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+697,10049,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,"delivers a NASA IV&V AI Assistant powered by LibreChat with Retrieval-Augmented Generation (RAG) to provide a secure, conversational interface for NASA IV&V engineers. The Assistant enables",Explicit RAG evidence in narrative; was 'unknown'.
+698,9957,,architecture,unknown,agentic_workflow,apply_proposed,high,no,,"a static planner. [expected_benefits] Compared to existing multi-agent control systems, ReCAP requires no training data, before or during operations, and does not require",Explicit agentic evidence; was 'unknown'.
+699,9673,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+700,9829,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+701,9841,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+702,10023,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+703,9704,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+704,9984,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+705,9815,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+706,9997,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+707,9767,,architecture,unknown,agentic_workflow,apply_proposed,high,no,,"Autonomous Systems (NPAS) [problem_statement] The NASA Platform for Autonomous Systems (NPAS) enables implementation of ""thinking"" systems, and in par",Explicit agentic evidence; was 'unknown'.
+708,10079,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+709,10087,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+710,10084,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+711,10135,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+712,10136,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+713,10122,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+714,10191,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+716,10199,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+717,10161,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+718,10237,,architecture,inference_only,rag_pipeline,apply_proposed,high,no,,"a was used to train the model, however the HR Chatbot has a RAG level of HR documents which grounds the HR Chatbot responses in HR data only. [ai_classification] G",Explicit RAG evidence in narrative; was 'inference_only'.
+719,10288,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+720,10241,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+721,10483,,architecture,custom_trained,custom_trained,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+722,10420,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,) Research Aide is a generative AI (GenAI) system that uses Retrieval Augmented Generation (RAG) search to answer questions on JCTR policies and procedures that are provided in natural langu,Explicit RAG evidence in narrative; was 'unknown'.
+723,10400,,architecture,agentic_workflow,agentic_workflow,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+724,10464,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+725,10481,,architecture,fine_tuned,fine_tuned,keep_current,high,no,,"rocurement data. For Treasury enterprise use, the model was fine-tuned and validated on labeled internal acquisition documents, solicitation records, and agency correspon",Confirmed fine_tuned.
+727,10475,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+729,10447,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+730,10407,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+732,10426,,architecture,unknown,rag_pipeline,apply_proposed,high,no,,ernal Revenue Manual Research Aid (IRMA) use cases. It is a Retrieval Augmented Generation (RAG) search on a number of Chief Financial Officer (CFO) specific documents. In addition to the ex,Explicit RAG evidence in narrative; was 'unknown'.
+733,10584,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+734,10642,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+735,10701,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+736,10835,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+737,10725,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+738,10775,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+739,10857,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+740,10718,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+741,10810,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+742,10760,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+743,10926,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+744,10700,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+745,10736,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+746,10820,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+747,10733,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+748,10656,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+749,10750,,architecture,inference_only,inference_only,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+750,10717,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+752,10673,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+753,10737,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+754,10768,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+755,10833,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.
+756,10840,,architecture,unknown,unknown,keep_current,low,no,,,No explicit RAG/agentic/fine-tune evidence; keeping current value per humility rule.

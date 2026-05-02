@@ -1,0 +1,20 @@
+agency,bureau_component,query,top_url,found_useful,conclusion
+HHS,HHS/ASTP,"""ASTP"" HHS ""Assistant Secretary for Technology Policy"" ONC site:hhs.gov",https://www.hhs.gov/about/agencies/astp/index.html,yes,Confirmed ASTP is the renamed ONC and is HHS's data/AI/tech policy sub-agency. Add as sub_agency under HHS with ONC alias.
+SBA,Advocacy: Office of Advocacy,"SBA ""Office of Advocacy"" SBA.gov independent",https://advocacy.sba.gov/home/about/,yes,Confirmed Office of Advocacy is statutorily independent within SBA and led by Senate-confirmed Chief Counsel. sub_agency level appropriate.
+HHS,HHS/OCIO,Prior knowledge + seed pattern,https://www.hhs.gov/about/agencies/asa/ocio/index.html,n/a,Department-level OCIO under HHS (sits within ASA). Confident without further searching; matches OCIO pattern in other departments.
+HHS,HHS/OCR,Prior knowledge,https://www.hhs.gov/ocr/index.html,n/a,HHS Office for Civil Rights — well-known HIPAA/civil-rights enforcer. Distinct from ED OCR.
+HUD,Ginnie Mae,Prior knowledge,https://www.ginniemae.gov/about_us/who_we_are/Pages/our_history.aspx,n/a,Government National Mortgage Association — wholly-owned govt corp within HUD. sub_agency.
+HUD,Office of Housing,Prior knowledge,https://www.hud.gov/program_offices/housing,n/a,HUD's largest program office; runs FHA. sub_agency.
+HUD,Office of the Chief Financial Officer (OCFO),Prior knowledge,https://www.hud.gov/program_offices/cfo,n/a,Standard CFO office; office level.
+HUD,Office of Public Affairs (OPA),Prior knowledge,https://www.hud.gov/about/leadership,n/a,Standard public affairs office; office level.
+HUD,Office of the Chief Human Capital Officer,Prior knowledge,https://www.hud.gov/program_offices/administration/hudclips/handbooks,n/a,Standard CHCO office; office level.
+SBA,OCFO: Office of the Chief Financial Officer,Prior knowledge + SBA org page,https://www.sba.gov/about-sba/organization,n/a,Standard SBA CFO office; office level.
+SBA,OCPL: Office of Communications & Public Liaison,Prior knowledge,https://www.sba.gov/about-sba/organization,n/a,Standard SBA communications office; office level.
+SSA,"Chief Information Officer, Disability Information Systems",Prior knowledge of SSA org,https://www.ssa.gov/org/,n/a,SSA OCIO sub-organization. Add as office under SSA/OCIO.
+SSA,"Chief Information Officer, Digital Customer Solutions",Prior knowledge of SSA org,https://www.ssa.gov/org/,n/a,SSA OCIO sub-organization. office under SSA/OCIO.
+SSA,"Chief Information Officer, System Operations and Hardware Engineering",Prior knowledge of SSA org,https://www.ssa.gov/org/,n/a,SSA OCIO sub-organization. office under SSA/OCIO.
+SSA,Human Resources,Prior knowledge,https://www.ssa.gov/org/,n/a,Refers to SSA Office of Human Resources (OHR). Office level.
+SSA,"Law and Policy, Disability Policy",Prior knowledge,https://www.ssa.gov/org/,n/a,SSA Office of Disability Policy under the Law and Policy / ORDP grouping. Office level.
+Treasury,United States Mint (USM),Prior knowledge,https://www.usmint.gov/about,n/a,Existing seed entry 'Mint' under Treasury — alias_existing.
+Treasury,General Counsel,Prior knowledge,https://home.treasury.gov/about/general-information/offices-and-bureaus/general-counsel,n/a,Treasury Office of the General Counsel; office level.
+VA,Office of the Deputy Secretary of VA,Prior knowledge,https://www.va.gov/opa/bios/depsec.asp,n/a,Existing seed entry 'Office of the Deputy Secretary' (ODS) under VA — alias_existing.

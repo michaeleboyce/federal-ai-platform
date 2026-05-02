@@ -1,0 +1,3 @@
+use_case_id,query,top_url,found_useful,conclusion
+8955,EPA Esri ArcGIS AI assistant coding,N/A (consulted prior knowledge of Esri product),no,"Esri ArcGIS AI Assistants are GIS-domain analysis aids embedded in ArcGIS; they suggest tools and produce analysis outputs and small Python snippets but the primary purpose is GIS analysis not software development. Demote per new rule."
+10283,Databricks AI mobile billing State Department,N/A (consulted Databricks Genie/AI Assistant context),no,"Databricks AI/Genie is a SQL+notebook NL-to-data assistant; in this State Dept use case the narrative is mobile-plan billing analysis with a 'data usage report' as output rather than code. Demote per new rule."

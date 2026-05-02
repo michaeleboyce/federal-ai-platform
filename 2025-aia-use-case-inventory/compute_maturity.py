@@ -62,14 +62,23 @@ def compute_maturity():
             agentic_count = stats["agentic"] or 0
             custom_count = stats["custom_sys"] or 0
 
-            # Distinct products deployed (dedup by product_id, only non-null)
+            # Distinct products deployed. Product edges are authoritative;
+            # product_id columns are only a compatibility cache.
             distinct_products = conn.execute("""
-                SELECT COUNT(DISTINCT product_id) FROM (
-                    SELECT product_id FROM use_cases WHERE agency_id = ? AND product_id IS NOT NULL
-                    UNION
-                    SELECT product_id FROM consolidated_use_cases WHERE agency_id = ? AND product_id IS NOT NULL
-                )
-            """, (aid, aid)).fetchone()[0]
+                SELECT COUNT(DISTINCT product_id)
+                  FROM entry_product_edges
+                 WHERE agency_id = ?
+            """, (aid,)).fetchone()[0]
+
+            org = conn.execute(
+                """
+                SELECT id FROM federal_organizations
+                 WHERE legacy_agency_id = ? AND parent_id IS NULL
+                 LIMIT 1
+                """,
+                (aid,),
+            ).fetchone()
+            organization_id = org["id"] if org else None
 
             # Binary capability flags (agency has at least one entry of each type)
             has_enterprise_llm = conn.execute("""
@@ -149,16 +158,16 @@ def compute_maturity():
 
             conn.execute("""
                 INSERT INTO agency_ai_maturity (
-                    agency_id, total_use_cases, total_consolidated_entries,
+                    agency_id, organization_id, total_use_cases, total_consolidated_entries,
                     distinct_products_deployed,
                     generative_ai_count, coding_tool_count, general_llm_count,
                     classical_ml_count, agentic_ai_count, custom_system_count,
                     has_enterprise_llm, has_coding_assistants, has_agentic_ai, has_custom_ai,
                     pct_deployed, pct_high_impact, pct_with_risk_docs,
                     year_over_year_growth, maturity_tier
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, (
-                aid, total_uc, total_cons, distinct_products,
+                aid, organization_id, total_uc, total_cons, distinct_products,
                 genai_count, coding_count, general_llm_count,
                 classical_count, agentic_count, custom_count,
                 int(has_enterprise_llm), int(has_coding), int(has_agentic), int(has_custom),

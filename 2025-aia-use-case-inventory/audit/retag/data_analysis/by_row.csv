@@ -1,0 +1,88 @@
+use_case_id,agency,use_case_name,platform_named,vendor,deployment_environment,confidence,evidence_url,evidence_quote,notes
+7497,DHS,Technical Resource for Mitigation Programs (FEMA HMA),Databricks (Mosaic),N/A,aws_govcloud_or_azure_gov,High,db_row_7497,"The HMA Mitigation Agent code executes within the Mosaic-authorized Databricks workspace and inherits all security controls documented in Mosaic's ATO.",FEMA's enterprise data fabric ('Mosaic') runs on Databricks; ATO covers grants/CUI workloads
+7559,DHS,Enhanced Lead Identification and Targeting,Palantir Federal Cloud Service,Palantir,fedramp_high_il5,High,db_row_7559,system_name = 'Palantir Federal Cloud Service' / vendor 'Palantir',ICE component
+7589,DHS,AI-Enhanced ICE Tip Processing,Palantir Foundry / Gotham,Palantir,fedramp_high_il5,High,db_row_7589,system_name 'Case Management & Analytics (CMA)' built on Palantir,ICE
+7591,DHS,AI-Powered Developer Tools,Palantir AIP,Palantir,fedramp_high_il5,High,db_row_7591,Palantir CMA,ICE
+7607,DHS,PDF Intake (PDFI) for myUSCIS,AWS Bedrock,Amazon Web Services,aws_govcloud,High,db_row_7607,"The GenAI powered library utilizes Amazon Bedrock – Anthropic Claude 3.7 Sonnet V1 Foundation Model",USCIS
+7627,DHS,Report Analysis and Archive System (RAAS),Custom analytic platform,N/A,unknown,Low,db_row_7627,system_name 'RAAS' (CWMD report analysis & archive),Likely on AWS but not confirmed in row
+7538,DHS,Advanced Trade Analytics Platform (ATAP),Custom analytic platform (ATAP),"Elder Research, DevTech, Guidehouse",unknown,Medium,db_row_7538,system_name 'ATAP',CBP trade analytics; vendor mix suggests cloud-hosted
+7912,DOE,Databricks AI for Cloud Data Warehouse,Databricks,Databricks,unknown,High,db_row_7912,vendor='Databricks' / system='Databricks AI for Cloud Data Warehouse',PNNL Pacific Northwest National Lab
+7960,DOE,DNA-P (NNSA Decision and Analytics Platform) - Pilot,Palantir Foundry,Palantir,fedramp_high_il5,High,db_row_7960,vendor='Palantir' / system='Decision and Analytics Platform (DNA-P)',NNSA HQ enterprise platform
+8180,DOE,DNA-P - Deployed,Palantir Foundry,Palantir,fedramp_high_il5,High,db_row_8180,Same as above (production),NNSA
+7952,DOE,LANL AI Portal,AWS (FedRAMP),Amazon Web Services,aws_govcloud,High,db_row_7952,system_name references AWS FedRAMP IaaS ATO,Los Alamos National Lab
+8124,DOE,LISA Chatbot Pilot,AWS,AWS,aws_govcloud,Medium,db_row_8124,vendor 'AWS' / LLNL,Lawrence Livermore
+8154,DOE,HPC OpenAI-Compatible API,On-prem HPC,Open Source,on_prem,High,db_row_8154,system_name 'api.hpc.inl.gov' (Idaho National Lab),INL HPC + OpenAI-compatible API
+8164,DOE,Collaborative Machine learning platform for Scientific Discovery,Custom HPC ML platform,N/A,on_prem,Medium,db_row_8164,Brookhaven National Lab,
+8169,DOE,Solid-State Electrochemical Interfaces using HPC + ML Tools,On-prem HPC,N/A,on_prem,Medium,db_row_8169,BNL HPC use,
+7916,DOE,Lex Natural Language Interface,Azure + on-prem HPC,Microsoft,on_prem_plus_azure,Medium,db_row_7916,system_name 'NREL Stratus System / NREL Azure System',NREL
+8205,DOE,Carbon ore data platform (NETL),Custom data platform,N/A,unknown,Low,db_row_8205,NETL,
+8474,DOJ,Palantir (via state LE system access),Palantir,Palantir,fedramp_high_il5,Medium,db_row_8474,vendor 'Palantir',Limited scope
+8490,DOJ,Databricks (Forecasting / predictive),Databricks,Databricks,unknown,High,db_row_8490,vendor='Databricks'; ATR economic modeling,Antitrust Division
+8521,DOJ,Intelligence Data Platform (DEA),PenLink PLX (commercial intel platform),PenLink,unknown,Medium,db_row_8521,DEA intelligence data platform,Surveillance/case-mgmt vs. analyst SQL
+8610,DOJ,Informatica CLAIRE,Informatica,Informatica,unknown,Medium,db_row_8610,OIG; data-quality AI,
+8673,DOJ,Palantir,Palantir,Palantir,fedramp_high_il5,Medium,db_row_8673,vendor 'Palantir' (redacted component),
+8684,DOJ,Knowledge retrieval and synthesis (Azure OpenAI Services),Azure OpenAI,Microsoft,azure_gov,Medium,db_row_8684,vendor=Microsoft Azure OpenAI,
+8702,DOJ,Enabling eDiscovery Platform AI,eDiscovery platform,N/A,unknown,Low,db_row_8702,Civil Division,
+8726,DOJ,Azure AI Foundry Platform,Azure AI Foundry,Microsoft,azure_gov,High,db_row_8726,system='Azure AI Foundry',
+8642,DOJ,USTP AI Assistant,Azure AI Foundry,Microsoft,azure_gov,Medium,db_row_8642,'foundry' token (likely Azure AI Foundry),USTP component
+8231,DOI,Google Vertex AI Document workbench,Google Vertex AI,Google,gcp_assured_workloads,High,db_row_8231,vendor='Google' / use case explicit Vertex AI,
+8232,DOI,USGS Azure OpenAI ChatGPT,Azure OpenAI,"OpenAI, Microsoft",azure_gov,High,db_row_8232,system_name = 'Azure OpenAI',USGS
+8837,DOT,PANDA Data Science Lab (FHWA Turner-Fairbank),Databricks,Databricks,unknown,High,db_row_8837,"Promote usage of AI/ML tools on Databricks platform",Confirmed by FHWA pub: Databricks-based PANDA
+8865,DOT,Identification of Similar COS Events,Palantir Foundry,Palantir,fedramp_high_il5,Medium,db_row_8865,palantir+foundry tokens,FAA
+8886,ED,Generative AI and Foundation Model Integration,AWS Bedrock,Amazon Web Services,aws_govcloud,High,db_row_8886,system='EDMAPS' / vendor=AWS / 'multi-vendor suite of AI tools & models',Federal Student Aid
+8956,EPA,Preparation of Brownfields Success Stories,Azure OpenAI,Microsoft,azure_gov,Medium,db_row_8956,vendor='Azure OpenAI' system='AI-Work',
+8963,EPA,Summarize and draft response to comments,Azure OpenAI,Microsoft,azure_gov,Medium,db_row_8963,Same AI-Work platform,
+9040,FHFA,Neural Networks for FHFA Modeling Analytics Platform (FMAP),Custom analytics platform (FMAP),N/A,unknown,Medium,db_row_9040,system='FMAP',Internal modeling platform; specifics unclear
+9099-9114,FTC,Consumer Sentinel Network analytics suite,Sentinel Network Services + Azure Databricks + Azure ML,"Microsoft, Leidos",azure_gov,High,db_rows_9099_to_9114,"system='Sentinel Network Services'; row 9110 Azure Databricks; row 9113 Azure ML; row 9104 Analytic Sandbox","FTC's consumer-protection analytics environment; clear analyst-accessible platform"
+9150,GSA,Elastic ML Threat Detection,AWS SageMaker,Amazon Web Services,aws_govcloud,High,db_row_9150,"utilizing Elastic Machine Learning and Amazon SageMaker",GSA OCIO security analytics
+9131,GSA,Content Management Analysis System Pilot,Custom platform,N/A,unknown,Low,db_row_9131,no platform detail in row,
+9175-9197,HHS,ACF Discover/Horizon/Upstream/Cares (Palantir),Palantir Foundry,Palantir,fedramp_high_il5,High,db_rows_9175_to_9197,"Multiple ACF systems on Palantir (Discover/Horizon/Upstream/Cares); 'Credal' AI gateway alongside",HHS Administration for Children & Families
+9210,HHS,AIP Cyber Incident Ingestion (Tiberius),Palantir AIP,Palantir,fedramp_high_il5,Medium,db_row_9210,vendor='Palantir' system='Tiberius',ASPR-adjacent
+9226,HHS,NewsScape (1CDP),Palantir AIP / 1CDP,Palantir,fedramp_high_il5,High,db_row_9226,1CDP platform powers CDC NewsScape,CDC enterprise data platform
+9250,HHS,1CDP SEDRIC AIP for Foodborne Outbreak Investigation,Palantir AIP / 1CDP,Palantir,fedramp_high_il5,High,db_row_9250,Same 1CDP,CDC
+9316,HHS,AIP Assist (1CDP),Palantir AIP,Palantir,fedramp_high_il5,High,db_row_9316,1CDP,CDC
+9317,HHS,CFA Model Studio (1CDP),Palantir Foundry/AIP,Palantir,fedramp_high_il5,High,db_row_9317,"users can develop their models locally, containerize them and deploy them using CFA Model Studio in the platform",CDC — clearest analyst BYO-model environment in entire inventory
+9217-9300,HHS,EDAV (Enterprise Data Analytics & Visualization),"Azure (Synapse, OpenAI, DataFactory) + Databricks Genie",Microsoft + Databricks,azure_gov,High,db_rows_9217_to_9300+,"system='EDAV (Enterprise Data Analytics and Visualization Platform)' across 25+ CDC use cases; row 9299 explicitly 'Databricks Genie'",CDC enterprise analytics platform — Azure-based with embedded Databricks
+9299,HHS,Databricks Genie for Routine Immunization,Databricks (within EDAV),Databricks,azure_gov,High,db_row_9299,"By using a Large Language Model (LLM) based approach… plain language query capability that generates code",Confirmed Databricks within EDAV
+9386,HHS,IDR Customer Analytic Environment,Snowflake (in IDR Cloud),GDIT,aws_govcloud,High,db_row_9386,system='Integrated Data Repository (IDR) Cloud',CMS Medicare data warehouse — public CMS docs confirm Snowflake
+9387,HHS,IDR Support Bot,Snowflake / IDR Cloud,GDIT,aws_govcloud,High,db_row_9387,Same as 9386,CMS
+9504,HHS,NBS Virtual Assistant,H2O.ai (H2O.GPTe),H2O.ai,unknown,Medium,db_row_9504,vendor 'H2O.GPTe' / NIH Business System,NIH ML platform claim
+9530,HHS,NIH Grants Virtual Assistant,Google Cloud / Vertex,Google,gcp_assured_workloads,Medium,db_row_9530,vendor='Google',NIH
+9563,HHS,Writing code using AI (NIH IDAP),Palantir Foundry,Palantir,fedramp_high_il5,High,db_row_9563,"system='NIH Integrated Data Analysis Platform' / vendor='Palantir Technologies deployed application within Foundry'",NIH IDAP confirmed Foundry-based
+9577,HHS,AWS Exscribo,AWS Transcribe + Bedrock,"Deloitte, AWS",aws_govcloud,High,db_row_9577,vendor='Deloitte, AWS',NIH transcription with retraining
+9505,HHS,NCI-DOE MOSSAIC,DOE Lab HPC (Oak Ridge),Oak Ridge National Lab,on_prem,High,db_row_9505,vendor='Oak Ridge National Lab',NCI uses ORNL Summit/Frontier-class HPC
+9465,HHS,PRF Program Chatbot (HRSA),AWS Bedrock,GDIT,aws_govcloud,Medium,db_row_9465,bedrock token,HRSA
+9471,HHS,HRSA Data Warehouse ChatBot,HRSA Data Warehouse,N/A,unknown,Low,db_row_9471,enterprise warehouse + chatbot,
+9446,HHS,DICE (FDA),Custom platform (DICE),"Trigent, Digitrix",unknown,Medium,db_row_9446,FDA Human Foods Program data platform,
+10037,NASA,Hydrology Copilot,Palantir Foundry + Azure Synapse,Palantir+Microsoft,unknown,Medium,db_row_10037,foundry+synapse tokens,
+9656-9658,NASA,Airport Surface Models,MLflow (NAS),N/A,unknown,Medium,db_rows_9656_9658,'mlflow' token in narrative,Ames Research Center
+9684,NASA,MERRAMax Automated feature selection,On-prem HPC (NCCS Discover),N/A,on_prem,Medium,db_row_9684,GSFC; MERRA-2 needs HPC,
+9810,NASA,Foundation model for Weather and Climate (Prithvi),HECC + IBM partnership,IBM,on_prem,High,db_row_9810,"NASA-IBM Foundation Model Experiments project on HECC (per public NASA HECC pubs)",Athena/Aitken/Pleiades
+9997,NASA,Stratospheric NO2 retrievals,NCCS Prism GPU cluster,N/A,on_prem,High,db_row_9997,system='NASA Center for Climate Simulation's Prism GPU cluster',NASA NCCS HPC
+10087,NSF,AWS Assisted Software Development,AWS Bedrock + Q,Amazon Web Services,aws_govcloud,Medium,db_row_10087,"AWS CodeWhisperer, Amazon Q and Bedrock",
+10097,NSF,NSF AI-Ready RPPR Data,AWS SageMaker + Bedrock + Neptune + Comprehend,Amazon Web Services,aws_govcloud,High,db_row_10097,"Request approval to use AWS Bedrock, AWS SageMaker, AWS Neptune & AWS Comprehend",NSF OCIO building real analyst environment
+10146,SBA,Multi-Agent Orchestration,AWS Bedrock (FedRAMP),Amazon Web Services,aws_govcloud,High,db_row_10146,system='Amazon Bedrock (FedRAMP Authorized)',
+10184,SEC,Semantic Layer Natural Language Query,Custom semantic layer,N/A,unknown,Medium,db_row_10184,DERA / OCDO,SEC has data science teams but no named platform in row
+10227,SSA,Data Governance Product (DGP),Informatica EDC,Informatica,unknown,Medium,db_row_10227,vendor='Informatica',Cataloging w/ predictive analysis
+10249,State,Predictive Analytics Platform,Palantir or custom,N/A,unknown,Low,db_row_10249,Consular Affairs platform,
+10257,State,Data.State Analytics and AI Funhouse,Databricks + Microsoft + ZenPoint,"Microsoft, Databricks, ZenPoint",azure_gov,High,db_row_10257,"vendor='Microsoft, Databricks, ZenPoint' / system='Data.State-SBU; DOS-O365'","SBU-classified analytic sandbox for State data scientists — cleanest analyst platform in the whole inventory"
+10262,State,PFCS Proving Ground (CfA),Palantir Federal Cloud Service,Palantir,fedramp_high_il5,High,db_row_10262,vendor='Palantir' system='CfA PFCS','Center for Analytics' AIP environment
+10265,State,StateChat,Palantir AIP + OpenAI,Palantir+OpenAI,fedramp_high_il5,High,db_row_10265,"vendor='Palantir, OpenAI' system='CfA PFCS'",
+10277,State,Digital Media Analytics Platform (NorthStar),Custom (NorthStar),N/A,unknown,Medium,db_row_10277,system='NorthStar',GPA component
+10283,State,Databricks Code Assistant,Databricks,Databricks,unknown,Medium,db_row_10283,explicit databricks token,
+10278,State,EHR AI Enhancements,Palantir,Palantir,fedramp_high_il5,Medium,db_row_10278,vendor='Palantir' system='MED-PLTR',MED component
+10361,Treasury,OCC.InfoAssist,Custom RAG (OCC docs),N/A,unknown,Low,db_row_10361,Q&A chatbot only — NOT an analytic platform,Despite the name
+10391,Treasury,GenAI for Data Platform Operations,Custom platform ops (TCSC),N/A,unknown,Low,db_row_10391,Treasury Common Services Center,
+10437,Treasury,Tax Disclosure Text Clustering,IRS Compliance Data Warehouse (CDW),N/A,on_prem_plus_aws,High,db_row_10437,"extraction of text from Form 8275-R… from CDW",IRS RAAS uses CDW; Palantir contract reported (2026)
+10453,Treasury,Line-Item Consolidation for Form 1120,IRS CDW,N/A,on_prem_plus_aws,High,db_row_10453,IRS LB&I research project on CDW,
+10470,Treasury,TP360 IRM Research Companion,Custom RAG,N/A,unknown,Low,db_row_10470,IRS knowledge management tool,
+10489,USDA,Repair Spend (EDAPT),EDAPT (Impala+Tableau),Accenture,unknown,Medium,db_row_10489,system='Enterprise Data Analytics Platform & Toolset (EDAPT, Impala, Tableau)',USDA Ag-research enterprise data platform
+10530,USDA,IRIS,IRIS (Marketing & Regulatory Programs),N/A,unknown,Low,db_row_10530,IRIS = USDA app; not the same as DOI's,
+10554,USDA,BIGMAP,Esri ArcGIS + GeoPlatform,Esri,unknown,Medium,db_row_10554,system='Esri FS GeoPlatform',Geospatial analytics platform
+10660,VA,CSOC AI Analyst Accelerator (Andesite AI),AWS Bedrock,Andesite AI,aws_govcloud,Medium,db_row_10660,bedrock token,VA cyber SOC analyst tool
+10723,VA,Electronic Mammogram Reporting,Databricks,N/A,unknown,Medium,db_row_10723,databricks token,VHA
+10841,VA,eCaremanager (Philips) using CDW,VA Corporate Data Warehouse + VINCI,Philips,on_prem,High,db_row_10841,"inputs from VISTA and… from the CDW",VHA TeleCritical Care; CDW/VINCI confirmed in public VA docs
+10909,VA,VEO Retention/Trust Models,VA CDW + CX Insights,N/A,on_prem,Medium,db_row_10909,'inputs are CDW VISTA data',
+9110,FTC,Azure Databricks Assistance,Azure Databricks,Microsoft,azure_gov,High,db_row_9110,explicit azure databricks,FTC Sentinel
+9113,FTC,Azure ML,Azure Machine Learning,Microsoft,azure_gov,High,db_row_9113,explicit azure ml,FTC Sentinel
+8127,DOE,Scripting (Google Gemini),Google,Google,unknown,Low,db_row_8127,DOE Office of Legacy Management,

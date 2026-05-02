@@ -34,11 +34,22 @@ def load_agencies():
 
                 conn.execute(
                     """
-                    INSERT OR REPLACE INTO agencies (
+                    INSERT INTO agencies (
                         name, abbreviation, agency_type, inventory_page_url,
                         csv_download_url, inventory_year, status, schema_compliance,
                         notes, last_modified, date_accessed
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(abbreviation) DO UPDATE SET
+                        name = excluded.name,
+                        agency_type = excluded.agency_type,
+                        inventory_page_url = excluded.inventory_page_url,
+                        csv_download_url = excluded.csv_download_url,
+                        inventory_year = excluded.inventory_year,
+                        status = excluded.status,
+                        schema_compliance = excluded.schema_compliance,
+                        notes = excluded.notes,
+                        last_modified = excluded.last_modified,
+                        date_accessed = excluded.date_accessed
                     """,
                     (
                         row["agency_name"].strip(),

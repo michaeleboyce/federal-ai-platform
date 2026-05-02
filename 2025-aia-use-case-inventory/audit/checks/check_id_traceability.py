@@ -10,8 +10,9 @@ After remediation:
     'source_missing'} on every row.
   * No row may have NULL use_case_id AND NULL id_provenance — that combination
     means the backfill script never touched the row.
-  * The vast majority (>=95%) of recoverable IDs are stamped
-    'backfilled_from_raw_json'.
+  * The vast majority of recoverable IDs are stamped either 'source' or
+    'backfilled_from_raw_json'. Newer loaders can capture IDs directly, so the
+    exact mix is allowed to change.
   * Every populated use_case_id is unique within its agency.
 """
 
@@ -21,15 +22,16 @@ def _scalar(conn, sql):
 
 
 def test_use_case_id_coverage(conn):
-    """At least 95% of the ~2,007 recoverable IDs were backfilled."""
+    """At least 95% of the original recoverable IDs are populated and stamped."""
     baseline = 2007  # recoverable from raw_json per pre-remediation audit
-    backfilled = _scalar(
+    populated = _scalar(
         conn,
         "SELECT COUNT(*) FROM use_cases "
-        "WHERE id_provenance = 'backfilled_from_raw_json'",
+        "WHERE use_case_id IS NOT NULL AND use_case_id != '' "
+        "AND id_provenance IN ('source', 'backfilled_from_raw_json')",
     )
-    assert backfilled >= int(baseline * 0.95), (
-        f"Expected >= 95% of {baseline} IDs backfilled, got {backfilled}"
+    assert populated >= int(baseline * 0.95), (
+        f"Expected >= 95% of {baseline} recoverable IDs populated, got {populated}"
     )
 
 

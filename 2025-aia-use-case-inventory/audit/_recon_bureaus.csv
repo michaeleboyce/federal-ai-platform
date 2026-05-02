@@ -1,0 +1,388 @@
+agency,bureau,count
+CFTC,MPD,1
+CFTC,DOD,1
+CFTC,DCR,1
+DHS,CBP,83
+DHS,ICE,51
+DHS,TSA,26
+DHS,USCIS,24
+DHS,FEMA,22
+DHS,MGMT,10
+DHS,CISA,7
+DHS,OHS,4
+DHS,DHS,4
+DHS,USSS,3
+DHS,USCG,3
+DHS,CWMD,1
+DOC,NOAA,157
+DOC,Census,17
+DOC,USPTO,15
+DOC,ITA,9
+DOC,NTIA,8
+DOC,NIST,7
+DOC,OS,6
+DOC,FirstNet,2
+DOC,BEA,2
+DOE,PNNL - Pacific Northwest National Laboratory (SC43 OIM),40
+DOE,NE INL - NE Idaho National Laboratory (NE),39
+DOE,BNL - Brookhaven National Laboratory (SC43 OIM),34
+DOE,EMLA - EM Los Alamos Field Site (EM),31
+DOE,ORNL - Oak Ridge National Laboratory (SC43 OIM),25
+DOE,SRS - ESB - Savannah River Site - Enterprise System Boundary (SRFO),21
+DOE,FNAL - Fermi National Accelerator (SC43 OIM),17
+DOE,NETL - National Energy Technology Laboratory (FECM),15
+DOE,LANL - Los Alamos National Lab (LAFO),12
+DOE,RL - Hanford - Richland Operations Office - Hanford (EM),10
+DOE,LLNL - Lawrence Livermore National Laboratory (LFO),9
+DOE,NR HQ - Naval Reactors (NR),8
+DOE,EE HQ - EE Headquarters (EE),8
+DOE,SLAC - SLAC National Accelerator Laboratory (SC43 OIM),7
+DOE,NREL - National Renewable Energy Laboratory (EE),7
+DOE,SRS - SRNL - Savannah River Site - Savannah River National Laboratory (EM),6
+DOE,IM-50 - Architecture Engineering Technology and Innovation (IM),6
+DOE,NA-IM (Enterprise) - Office of the Associate Administrator for Information Management and Chief Information Officer (HQ-Enterprise) (NNSA HQ),5
+DOE,LM HQ - Office of Legacy Management (LM),5
+DOE,ANL - Argonne National Laboratory (SC43 OIM),5
+DOE,Y-12 - Consolidated Nuclear Security Y-12 (YFO),4
+DOE,Pantex - PanTeXas Deterrence Pantex (PFO),4
+DOE,PPPL - Princeton Plasma Physics Laboratory (SC43 OIM),4
+DOE,KCNSC - Kansas City National Security Campus (KCFO),4
+DOE,WAPA - Western Area Power Administration (PMA),3
+DOE,IM-60 - IM Enterprise Operations and Shared Services (IM),2
+DOE,EHSS HQ - Office of Environment Health Safety and Security (EHSS),2
+DOE,SWPA - Southwestern Power Administration (PMA),1
+DOE,SEPA - Southeastern Power Administration (PMA),1
+DOE,PM HQ -  Office of Project Management (PM),1
+DOE,PA HQ -  Office of Public Affairs (PA),1
+DOE,OREM - ORCC - Oak Ridge EM - Oak Ridge Cleanup Contract (EM),1
+DOE,HC HQ -  Office of the Chief Human Capital Officer (HC),1
+DOE,GDO HQ - Grid Deployment Office (GDO),1
+DOI,USGS,187
+DOI,FWS,10
+DOI,SOL,8
+DOI,BOR,8
+DOI,BLM,7
+DOI,ONRR,6
+DOI,BSEE,6
+DOI,OS,3
+DOI,OCIO,2
+DOI,NPS,2
+DOI,BTFA,2
+DOI,ASIA,2
+DOI,OIG,1
+DOI,IBC,1
+DOI,BIA,1
+DOJ,Department of Justice / FBI,50
+DOJ,Department of Justice / DEA,43
+DOJ,Department of Justice / ATF,34
+DOJ,Department of Justice / FBOP,32
+DOJ,Department of Justice / USMS,19
+DOJ,Department of Justice / CIV,17
+DOJ,Department of Justice / TAX,14
+DOJ,Department of Justice / JMD / OCDETF,10
+DOJ,Department of Justice / Department Wide,10
+DOJ,Department of Justice / ATR,10
+DOJ,Department of Justice / OIG,9
+DOJ,Department of Justice / EOUSA,8
+DOJ,Department of Justice / EOIR,8
+DOJ,Department of Justice / Department wide,8
+DOJ,Department of Justice / CRT,7
+DOJ,Department of Justice / OJP,6
+DOJ,Department of Justice / JMD,6
+DOJ,Department of Justice / PARDON,4
+DOJ,Department of Justice / ENRD,4
+DOJ,Department of Justice / CRM,4
+DOJ,Department of Justice / USNCB,3
+DOJ,Department of Justice / PAO,3
+DOJ,Department of Justice / USTP,1
+DOJ,Department of Justice / PRAO,1
+DOJ,Department of Justice / OPR,1
+DOJ,Department of Justice / JMD / NSD,1
+DOJ,Department of Justice / COPS,1
+DOL,BLS,13
+DOL,OSHA,5
+DOL,OCIO,5
+DOL,ETA,5
+DOL,OWCP,3
+DOL,EBSA,3
+DOL,OWCP||VETS||WHD,1
+DOL,OTAA,1
+DOL,ODEP,1
+DOL,MSHA,1
+DOL,EBSA || OHR,1
+DOL,CEO-ILAB,1
+DOL,CEO - WB,1
+DOT,FAA AJO,22
+DOT,FAA AVS,9
+DOT,OST,4
+DOT,NHTSA,3
+DOT,FRA,3
+DOT,FAA ANG,3
+DOT,FAA AGC,3
+DOT,FAA AFN,3
+DOT,CAIO,3
+DOT,FHWA,2
+DOT,"CAIO, NETT",2
+DOT,"CAIO, HASS, Volpe",2
+DOT,"OIE, CAIO, OST-R, OCIO",1
+DOT,FHWA Turner-Fairbank,1
+DOT,FAA APL,1
+DOT,FAA AHR,1
+DOT,"CAIO, Volpe, OST-R",1
+DOT,"CAIO, OST-R, OCIO",1
+DOT,"CAIO, OST-P, OCIO, OST-R",1
+DOT,"CAIO, OST-M, OCIO, OIE",1
+DOT,"CAIO, OST-M, FHWA, OCIO",1
+DOT,"CAIO, OCIO, OST-P, OST-M, NETT",1
+DOT,"CAIO, FAA, OST-R, Volpe, OCIO",1
+ED,Agency Wide,15
+ED,Federal Student Aid,9
+ED,Office of the Chief Information Officer,6
+ED,Office of Special Education and Rehabilitee Services,6
+ED,Office of Postsecondary Education,6
+ED,Office of Finance and Operations,5
+ED,Office of the General Counsel,4
+ED,Office of the Chief Data Officer,4
+ED,Office of the Under Secretary,3
+ED,Office of the Deputy Secretary,3
+ED,Office of Elementary and Secondary Education,3
+ED,Institute of Education Sciences,3
+ED,"Office of Career, Technical, and Adult Education",2
+ED,Office for Civil Rights,2
+ED,Grants Management Policy Division,2
+ED,"Office of Migrant Education, Office of Elementary and Secondary Education",1
+ED,Office of Educational Technology,1
+ED,Office of Communications and Outreach,1
+ED,Contracts & Acquisitions Management,1
+EPA,OFA,9
+EPA,OECA,7
+EPA,OAR,7
+EPA,Region 8,2
+EPA,Region 1,1
+EPA,OW,1
+EPA,OCSPP,1
+EPA,AO,1
+FDIC,Division of Resolutions and Receiverships,11
+FDIC,Division of Finance,9
+FDIC,Division of Depositor and Consumer Protection,6
+FDIC,Division of Risk Management Supervision,5
+FDIC,Corporate University,5
+FDIC,Division of Administration,4
+FDIC,Chief Information Officer Organization,3
+FDIC,Office of Legislative Affairs,1
+FDIC,Office of Inspector General,1
+FDIC,"Office of Communications, Division of Complex Institution Supervision & Resolution, Legal Division, Division of Risk Management Supervision",1
+FDIC,Legal Division and Office of Inspector General,1
+FDIC,Legal Division,1
+FDIC,Division of Insurance and Research,1
+FDIC,Division of Administration and Office of Inspector General,1
+FERC,FERC,6
+FHFA,OCIO,10
+FHFA,OGC,2
+FHFA,OCOO,1
+FHFA,OCFO,1
+FHFA,DHMG,1
+FHFA,DBR,1
+FRB,Division of Supervision and Regulation,21
+FRB,Division of Research and Statistics,5
+FRB,Division of Information Technology,4
+FRB,Division of Monetary Affairs,3
+FRB,Office of the Secretary,1
+FRB,Office of the Inspector General,1
+FRB,Division of Management,1
+FRB,Division of Financial Stability,1
+FRB,Division of Consumer and Community Affairs,1
+FRTIB,Agency Wide,6
+FTC,BCP/DCRO,12
+FTC,BC/BCP/OGC,2
+FTC,OCIO,1
+FTC,BE/BC/OCIO,1
+HHS,HHS/NIH,124
+HHS,HHS/CDC,103
+HHS,HHS/FDA/CDER,40
+HHS,HHS/ACF,26
+HHS,HHS/CMS/CCIIO,20
+HHS,HHS/CMS/OIT,19
+HHS,HHS/HRSA,18
+HHS,HHS/CMS/OC,10
+HHS,HHS/CMS/CCSQ,7
+HHS,HHS/FDA/HFP,6
+HHS,HHS/ASFR/OG,6
+HHS,HHS/FDA/OII,5
+HHS,HHS/CMS/OFM,5
+HHS,HHS/AHRQ/CQuIPS,5
+HHS,HHS/SAMHSA,4
+HHS,HHS/FDA/OCS,4
+HHS,HHS/FDA/CBER,4
+HHS,HHS/FDA/ODT,3
+HHS,HHS/FDA/CDRH,3
+HHS,HHS/DAB/OS,3
+HHS,HHS/CMS/OHI,3
+HHS,HHS/CMS/CM,3
+HHS,HHS/ASPR/CP,3
+HHS,HHS/OS/ASFR,2
+HHS,HHS/OCR,2
+HHS,HHS/OCIO,2
+HHS,HHS/FDA/OC,2
+HHS,HHS/CMS/OPOLE,2
+HHS,HHS/CMS/CMCS,2
+HHS,HHS/ASTP,2
+HHS,HHS/OASH/OIDP,1
+HHS,HHS/CMS/OAGM,1
+HHS,HHS/CMS/EPRO,1
+HHS,HHS/ASPR/ODAIA,1
+HHS,HHS/ASFR/OA,1
+HHS,HHS/AHRQ/OEREP,1
+HHS,HHS/AHRQ/CFACT,1
+HHS,HHS/AHRQ/CEPI,1
+HHS,HHS/ACF/OA,1
+HUD,Office of Housing,3
+HUD,Ginnie Mae,3
+HUD,Office of the Chief Financial Officer (OCFO),2
+HUD,Office of the Chief Information Officer,1
+HUD,Office of the Chief Human Capital Officer,1
+HUD,Office of Public Affairs (OPA),1
+NARA,National Archives & Records Administration (NARA),14
+NASA,GSFC: Goddard Space Flight Center,227
+NASA,MSFC: Marshall Space Flight Center,44
+NASA,JPL: Jet Propulsion Laboratory,43
+NASA,LaRC: Langley Research Center,38
+NASA,ARC: Ames Research Center,34
+NASA,JSC: Johnson Space Center,13
+NASA,HQ: Headquarters,9
+NASA,GRC: Glenn Research Center,7
+NASA,OSMA: Office of the Chief Safety & Mission Assurance,3
+NASA,WS: White Sands Test Facility,2
+NASA,SSC: Stennis Space Center,2
+NASA,OPS: Office of Protective Services,1
+NASA,GISS: Goddard Institute for Space Studies,1
+NASA,AFRC: Armstrong Flight Research Center,1
+NCUA,N/A,3
+NRC,NRC,4
+NSF,OIA,4
+NSF,TIP-ITE-ENGINES,3
+NSF,OLPA,3
+NSF,OCIO,3
+NSF,ENG/CBET,2
+NSF,BIO/IOS,2
+NSF,TIP & OCIO,1
+NSF,SBE/NCSES,1
+NSF,OIA/EAC,1
+NSF,OGC,1
+NSF,EDU/DRL,1
+NSF,CISE/OAD,1
+NTSB,NTSB,4
+OPM,OCIO,4
+OPM,Human Resources,1
+SBA,OCIO: Office of the Chief Information Officer,17
+SBA,OFO: Office of Field Operations,9
+SBA,OCPL: Office of Communications & Public Liaison,2
+SBA,OCFO: Office of the Chief Financial Officer,2
+SBA,Advocacy: Office of Advocacy,2
+SBA,ODRR: Office of Disaster Recovery And Resilience,1
+SBA,OCA: Office of Capital Access,1
+SEC,Office of Information Technology (OIT),10
+SEC,Division of Examinations (EXAMS),10
+SEC,Office of the Chief Data Officer (OCDO),5
+SEC,Division of Enforcement (ENF),5
+SEC,"Office of the Chief Data Officer (OCDO), Office of Information Technology (OIT), Office of the Advocate for Small Business Capital Formation (OASB)",3
+SEC,Division of Investment Management (IM),3
+SEC,"Office of Information Technology (OIT), Office of the Chief Data Officer (OCDO), Office of the Advocate for Small Business Capital Formation (OASB)",2
+SEC,EDGAR Business Office (EBO),2
+SEC,"Division of Enforcement (ENF), Division of Examinations (EXAMS), Office of the Chief Data Officer (OCDO), Office of the General Counsel (OGC)",2
+SEC,"Division of Enforcement (ENF), Division of Examinations (EXAMS)",2
+SEC,"Division of Enforcement (ENF), Division of Economic and Risk Assessment (DERA)",2
+SEC,"Division of Economic and Risk Assessment (DERA), Office of the Chief Data Officer (OCDO)",2
+SEC,Division of Corporate Finance (CF),2
+SEC,Strategic Hub for Innocation and Financial Technology (FinHub),1
+SEC,Office of the Secretary (OS),1
+SEC,Office of the Chief Operating Officer (OCOO),1
+SEC,Office of Human Resources (OHR),1
+SEC,"Division of Trading and Markets (TM), Office of the Chief Data Officer (OCDO), Division of Economic and Risk Assessment (DERA), Division of Investment Management (IM), Division of Corporation Finance (CF)",1
+SEC,"Division of Investment Management (IM), Disclosure Review and Accounting Office (DRAO)",1
+SEC,"Division of Examinations (EXAMS), Division of Enforcement (ENF)",1
+SEC,"Division of Examinations (EXAMS), Division of Economic and Risk Assessment (DERA), Office of the Chief Data Officer (OCDO)",1
+SEC,Division of Enforcement (ENF); Division of Economic and Risk Analysis (DERA),1
+SEC,Division of Corporation Finance (CF),1
+SSA,Chief Information Officer,12
+SSA,"Chief Information Officer, Analytics and Improvements",8
+SSA,Human Resources,4
+SSA,"Chief Information Officer, Disability Information Systems",4
+SSA,"Chief Information Officer, Digital Customer Solutions",3
+SSA,"Law and Policy, Disability Policy",1
+SSA,"Chief Information Officer, System Operations and Hardware Engineering",1
+State,CA,13
+State,DT,12
+State,NFATC,6
+State,MGT,5
+State,F/FAO,5
+State,CSO,3
+State,CGFS,3
+State,WHA,2
+State,GPA,2
+State,DS,2
+State,A/SKS,2
+State,R/GEC,1
+State,PM,1
+State,ECA,1
+State,BP,1
+State,A/PRI,1
+TVA,Information Technology,16
+TVA,Commercial Energy Solutions,8
+TVA,Enterprise Analytics & Innovation,4
+TVA,Generation Projects & Fleet Services,3
+TVA,Transmission,2
+TVA,Supply Chain,2
+TVA,Nuclear,2
+TVA,Network,2
+TVA,Innovation & Research,2
+TVA,Generation Projects & Fleet Strategy,2
+TVA,Generation,2
+TVA,Enterprise Planning,2
+TVA,Workforce Development,1
+TVA,Transmission System Support,1
+TVA,Safety & Shared Services,1
+TVA,Riverfleet Management Services,1
+TVA,River Management,1
+TVA,Right of Way,1
+TVA,Office of General Counsel,1
+TVA,Monitoring Diagnostics Management,1
+TVA,IT Operations,1
+TVA,GIS,1
+TVA,External Communications,1
+TVA,Economic Development,1
+Treasury,Internal Revenue Service (IRS),61
+Treasury,Office of the Comptroller of the Currency (OCC),26
+Treasury,Bureau of the Fiscal Service (BFS),23
+Treasury,Office of Financial Research (OFR),7
+Treasury,Bureau of Engraving and Printing (BEP),5
+Treasury,Technology Common Services Center (TCSC),3
+Treasury,United States Mint (USM),2
+Treasury,Terrorism and Financial Intelligence (TFI),1
+Treasury,General Counsel,1
+USDA,Natural Resources and Environment,76
+USDA,"Research, Education and Economics",22
+USDA,Farm Production and Conservation,20
+USDA,Marketing and Regulatory Programs,16
+USDA,Food Safety,13
+USDA,Office of the Chief Information Officer,9
+USDA,"Food, Nutrition, and Consumer Services",2
+USDA,"Research, Education and Economics; Farm Production and Conservation",1
+USDA,"Office of Safety, Security, and Protection",1
+USDA,Office Of Homeland Security,1
+USDA,Departmental Administration,1
+VA,VHA: Veterans Health Administration,253
+VA,OIT: Office of Information & Technology,57
+VA,VBA: Veterans Benefits Administration,27
+VA,"OALC: Office of Acquisitions Logistics, and Construction",6
+VA,"OSP: Office of Operations, Security, and Preparedness",5
+VA,OEHRM: Office of Electronic Health Record Modernization,5
+VA,VEO: Veterans Experience Office,4
+VA,OM: Office of Management,3
+VA,Office of the Executive Secretary,1
+VA,Office of the Deputy Secretary of VA,1
+VA,OSVA: Office of the Secretary,1
+VA,OGC: Office of General Counsel,1
+VA,OAWP: Office of Accountability and Whistleblower Protection,1
+VA,NCA: National Cemetery Administration,1
+VA,HRA: Human Resources Administration,1

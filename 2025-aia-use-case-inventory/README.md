@@ -12,7 +12,7 @@ A normalized, tagged, and queryable dataset of what U.S. federal agencies report
 ├── dashboard/                            Next.js 16 app — editorial data-journalism view
 ├── scripts/                              Python helpers (schema comparison, etc.)
 ├── reference/                            Draft article + source material
-├── agency-inventory-tracker.csv          Master tracker — 61 agencies
+├── agency-inventory-tracker.csv          Master tracker — 60 agencies
 ├── db.py                                 SQLite schema + connection
 ├── load_agencies.py                      Step 2 — tracker → agencies table
 ├── column_maps.py                        Step 3 — per-agency fuzzy column mapping
@@ -30,12 +30,7 @@ A normalized, tagged, and queryable dataset of what U.S. federal agencies report
 
 ```bash
 # Seed schema + lookup tables
-python3 db.py               # creates data/federal_ai_inventory_2025.db
-python3 load_agencies.py    # 60 agency rows
-python3 load_inventories.py # ~3,808 use cases
-python3 build_lookups.py    # 45 products, 136 aliases, 20 templates
-python3 auto_tag.py         # first-pass analytical tags
-python3 compute_maturity.py # agency-level maturity scores
+make fix                    # rebuild schema, data, tags, product edges, maturity, and audit/db_snapshot.md
 ```
 
 Per-agency refinement and cross-reference review were performed by sub-agents; see `AGENT_TAGGING_GUIDE.md` for the rubric and `KEY_FINDINGS.md` for results.
@@ -52,10 +47,13 @@ Reads directly from `../data/federal_ai_inventory_2025.db` via `better-sqlite3` 
 
 ## Headline numbers (2025 cycle)
 
-- **3,808** use case entries — 3,616 individual + 192 consolidated
+- **3,809** use case entries — 3,617 individual + 192 consolidated
 - **44** agencies with published data (60 tracked total)
-- **45** canonical AI products cross-referenced with 136 observed aliases
-- **20** OMB Appendix B standard templates
-- **8** agencies classified "leading" on AI maturity
-- **13** of 22 CFO Act agencies show enterprise-wide LLM access in their inventory
-- **29** agencies report any coding assistant deployment
+- **217** canonical AI products cross-referenced with 367 observed aliases
+- **726** product attribution edges across 637 inventory entries
+- **22** OMB/Appendix-style standard templates
+- **7** agencies classified "leading" on AI maturity
+- **15** agencies show enterprise-wide LLM access in their inventory
+- **15** agencies report any coding assistant deployment
+
+Volatile count blocks are generated from the database in `audit/db_snapshot.md`.

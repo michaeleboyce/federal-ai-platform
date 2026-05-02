@@ -13,11 +13,10 @@ alias coverage is expanded and over-broad canonical buckets are split
 
 
 def test_product_deployment_rows_have_product_link(conn):
-    """product_deployment / product_feature entries should have linkage in
-    ``use_case_products`` (Agent D's join table) OR ``use_cases.product_id``.
+    """product_deployment / product_feature entries should have an edge link.
 
-    Agent D's heuristic pass resolves every row whose vendor text contains a
-    canonical alias. The remaining orphans have vendor text like bare
+    The product edge tables are the source of truth; product_id is a derived
+    compatibility cache. The remaining orphans have vendor text like bare
     "Microsoft", "Google", "N/A", or consulting-firm names ("Leidos", "SAIC")
     that don't evidence a specific AI product — those are queued in
     ``review_queue_products`` for the coordinator's LLM review pass.
@@ -36,12 +35,9 @@ def test_product_deployment_rows_have_product_link(conn):
         WHERE t.entry_type IN ('product_deployment', 'product_feature')
           AND t.use_case_id IS NOT NULL
           AND NOT EXISTS (
-            SELECT 1 FROM use_case_products ucp
-            WHERE ucp.use_case_id = t.use_case_id
-          )
-          AND NOT EXISTS (
-            SELECT 1 FROM use_cases u
-            WHERE u.id = t.use_case_id AND u.product_id IS NOT NULL
+            SELECT 1 FROM entry_product_edges epe
+            WHERE epe.entry_kind = 'use_case'
+              AND epe.entry_id = t.use_case_id
           )
         """
     ).fetchone()[0]
@@ -52,7 +48,7 @@ def test_product_deployment_rows_have_product_link(conn):
 
 
 def test_cots_named_rows_mostly_resolve_to_products(conn):
-    """Rows that name a COTS product should mostly resolve to products.product_id.
+    """Rows that name a COTS product should mostly resolve to product edges.
 
     Audit narrative: cots_product_name has 639 populated rows, 58 unmatched
     (9.1%). Current strict match: 61 unresolved. Phase 2 target: <=15.
@@ -61,11 +57,20 @@ def test_cots_named_rows_mostly_resolve_to_products(conn):
         """
         SELECT COUNT(*)
         FROM use_case_tags t
-        LEFT JOIN use_cases u ON u.id = t.use_case_id
-        LEFT JOIN consolidated_use_cases c ON c.id = t.consolidated_use_case_id
         WHERE t.cots_product_name IS NOT NULL
           AND TRIM(t.cots_product_name) <> ''
-          AND COALESCE(u.product_id, c.product_id) IS NULL
+          AND NOT EXISTS (
+            SELECT 1 FROM entry_product_edges epe
+            WHERE (
+              t.use_case_id IS NOT NULL
+              AND epe.entry_kind = 'use_case'
+              AND epe.entry_id = t.use_case_id
+            ) OR (
+              t.consolidated_use_case_id IS NOT NULL
+              AND epe.entry_kind = 'consolidated'
+              AND epe.entry_id = t.consolidated_use_case_id
+            )
+          )
         """
     ).fetchone()[0]
     assert n <= 100, (
@@ -75,7 +80,7 @@ def test_cots_named_rows_mostly_resolve_to_products(conn):
 
 
 def test_tool_named_rows_mostly_resolve_to_products(conn):
-    """Rows that name a tool/product should mostly resolve to products.product_id.
+    """Rows that name a tool/product should mostly resolve to product edges.
 
     Audit narrative: tool_product_name has 592 populated rows, 24 unmatched
     (4.1%). Current strict match: 35 unresolved. Phase 2 target: <=10.
@@ -84,11 +89,20 @@ def test_tool_named_rows_mostly_resolve_to_products(conn):
         """
         SELECT COUNT(*)
         FROM use_case_tags t
-        LEFT JOIN use_cases u ON u.id = t.use_case_id
-        LEFT JOIN consolidated_use_cases c ON c.id = t.consolidated_use_case_id
         WHERE t.tool_product_name IS NOT NULL
           AND TRIM(t.tool_product_name) <> ''
-          AND COALESCE(u.product_id, c.product_id) IS NULL
+          AND NOT EXISTS (
+            SELECT 1 FROM entry_product_edges epe
+            WHERE (
+              t.use_case_id IS NOT NULL
+              AND epe.entry_kind = 'use_case'
+              AND epe.entry_id = t.use_case_id
+            ) OR (
+              t.consolidated_use_case_id IS NOT NULL
+              AND epe.entry_kind = 'consolidated'
+              AND epe.entry_id = t.consolidated_use_case_id
+            )
+          )
         """
     ).fetchone()[0]
     assert n <= 80, (

@@ -378,6 +378,22 @@ CREATE TABLE IF NOT EXISTS fedramp_product_links (
 CREATE INDEX IF NOT EXISTS idx_fpl_inv ON fedramp_product_links(inventory_product_id);
 CREATE INDEX IF NOT EXISTS idx_fpl_fr  ON fedramp_product_links(fedramp_id);
 
+-- Structured research provenance for fedramp_product_links rows.
+CREATE TABLE IF NOT EXISTS fedramp_link_evidence (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    link_id INTEGER NOT NULL REFERENCES fedramp_product_links(id) ON DELETE CASCADE,
+    source_type TEXT NOT NULL,         -- 'vendor_announcement' | 'platform_doc' | 'press_release' | 'gov_announcement' | 'compliance_page' | 'analyst_note'
+    source_url TEXT NOT NULL,
+    source_title TEXT NOT NULL,
+    publisher TEXT,                    -- e.g., 'Anthropic', 'Microsoft Tech Community', 'AWS Public Sector Blog', 'GSA'
+    publication_date TEXT,             -- ISO date string when known
+    excerpt TEXT,                      -- short quote justifying the link (<=400 chars)
+    accessed_at TEXT NOT NULL DEFAULT (date('now')),
+    created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_fle_link ON fedramp_link_evidence(link_id);
+CREATE INDEX IF NOT EXISTS idx_fle_source_type ON fedramp_link_evidence(source_type);
+
 CREATE TABLE IF NOT EXISTS fedramp_agency_links (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     inventory_agency_id INTEGER NOT NULL REFERENCES agencies(id),
@@ -447,6 +463,7 @@ def drop_all():
             "schema_migrations",
             "fedramp_link_queue",
             "fedramp_agency_links",
+            "fedramp_link_evidence",
             "fedramp_product_links",
             "fedramp_snapshot",
             "fedramp_assessors",

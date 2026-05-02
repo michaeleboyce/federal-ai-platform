@@ -9,6 +9,13 @@ import re
 from difflib import SequenceMatcher
 
 from db import get_connection
+from product_resolution import (
+    consolidated_search_text,
+    extract_products,
+    load_product_aliases as load_shared_product_aliases,
+    load_products as load_shared_products,
+    use_case_search_text,
+)
 
 # Keywords for various categorizations
 #
@@ -137,10 +144,7 @@ def normalize_template_text(s):
 
 def load_product_aliases(conn):
     """Build a dict of lowered alias -> product_id."""
-    d = {}
-    for row in conn.execute("SELECT alias_text, product_id FROM product_aliases"):
-        d[normalize(row["alias_text"])] = row["product_id"]
-    return d
+    return load_shared_product_aliases(conn)
 
 
 def load_templates(conn):
@@ -160,10 +164,7 @@ def load_templates(conn):
 
 def load_products(conn):
     """Build dict of product_id -> {name, vendor, type, is_genai, is_frontier}."""
-    d = {}
-    for r in conn.execute("SELECT id, canonical_name, vendor, product_type, is_generative_ai, is_frontier_llm FROM products"):
-        d[r["id"]] = dict(r)
-    return d
+    return load_shared_products(conn)
 
 
 def match_product(text, aliases_dict, products_dict):
@@ -177,9 +178,6 @@ def match_product(text, aliases_dict, products_dict):
     """
     if not text:
         return None
-    # Local import to avoid a circular reference at module load time
-    # (scripts.populate_use_case_products imports auto_tag).
-    from scripts.populate_use_case_products import extract_products
     matches = extract_products(text, aliases_dict)
     if not matches:
         return None
@@ -585,19 +583,10 @@ def vendor_flags(product_id, products_dict):
 def tag_use_case(row, agency_abbr, aliases_dict, templates, products_dict, is_consolidated=False):
     """Generate all tags for a single row. Returns dict of tag values."""
     if is_consolidated:
-        search_text = " ".join([
-            row.get("ai_use_case", "") or "",
-            row.get("commercial_product", "") or "",
-            row.get("commercial_examples", "") or "",
-        ])
+        search_text = consolidated_search_text(row)
         name_prob = (row.get("ai_use_case", "") or "")
     else:
-        search_text = " ".join([
-            row.get("use_case_name", "") or "",
-            row.get("vendor_name", "") or "",
-            row.get("system_name", "") or "",
-            row.get("problem_statement", "") or "",
-        ])
+        search_text = use_case_search_text(row)
         name_prob = (row.get("use_case_name", "") or "") + " " + (row.get("problem_statement", "") or "")
 
     product_id = match_product(search_text, aliases_dict, products_dict)
@@ -719,10 +708,6 @@ def tag_use_case(row, agency_abbr, aliases_dict, templates, products_dict, is_co
 
 
 def run():
-    # Import locally so the test suite can still exercise the tag-inference
-    # functions without a DB round-trip (the populate script imports auto_tag).
-    from scripts.populate_use_case_products import extract_products
-
     conn = get_connection()
     try:
         # Clear existing tags + the Agent D join table so this run is a clean
@@ -760,11 +745,7 @@ def run():
             # evidenced by the combined vendor/system/name/problem text. The
             # single-FK use_cases.product_id still gets the first (highest-
             # confidence) match for back-compat with existing dashboard code.
-            ucp_text = " ".join(
-                (row_dict.get(k) or "")
-                for k in ("vendor_name", "system_name", "use_case_name",
-                          "problem_statement")
-            )
+            ucp_text = use_case_search_text(row_dict)
             for m in extract_products(ucp_text, aliases_dict):
                 pid = m["product_name"]  # product_id (values from DB aliases)
                 evidence = m.get("evidence") or m.get("alias") or ""
