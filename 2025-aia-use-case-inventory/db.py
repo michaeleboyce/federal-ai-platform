@@ -279,6 +279,136 @@ CREATE TABLE IF NOT EXISTS column_mappings (
 );
 
 CREATE INDEX IF NOT EXISTS idx_column_mappings_agency ON column_mappings(agency_abbreviation);
+
+-- ---------------------------------------------------------------------------
+-- FedRAMP marketplace mirror (populated by load_fedramp.py)
+-- ---------------------------------------------------------------------------
+-- Verbatim mirrors of the schema in 2025-fedramp/data/fedramp_marketplace.db.
+-- The dashboard reads both inventory and FedRAMP data from this single DB —
+-- no ATTACH, no second connection. Do not modify these tables by hand; they
+-- are TRUNCATE-and-reload on every `make fedramp` run.
+
+CREATE TABLE IF NOT EXISTS fedramp_products (
+    fedramp_id TEXT PRIMARY KEY,
+    csp TEXT NOT NULL,
+    csp_slug TEXT NOT NULL,
+    cso TEXT NOT NULL,
+    status TEXT NOT NULL,
+    authorization_count INTEGER,
+    reuse_count INTEGER,
+    ready_date TEXT, ready_status TEXT,
+    ip_jab_date TEXT, ip_jab_status TEXT,
+    ip_prog_date TEXT, ip_prog_status TEXT,
+    ip_prog_date2 TEXT,
+    ip_agency_date TEXT, ip_agency_status TEXT,
+    ip_pmo_date TEXT, ip_pmo_status TEXT,
+    auth_date TEXT, auth_type TEXT,
+    partnering_agency TEXT,
+    annual_assessment_date TEXT,
+    independent_assessor TEXT,
+    assessor_id INTEGER,
+    deployment_model TEXT,
+    impact_level TEXT,
+    impact_level_number INTEGER,
+    service_desc TEXT,
+    fedramp_msg TEXT,
+    sales_email TEXT, security_email TEXT,
+    website TEXT, uei TEXT,
+    small_business INTEGER,
+    logo TEXT,
+    filter_classes TEXT, auth_category TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_fp_csp ON fedramp_products(csp_slug);
+CREATE INDEX IF NOT EXISTS idx_fp_status ON fedramp_products(status);
+CREATE INDEX IF NOT EXISTS idx_fp_impact ON fedramp_products(impact_level);
+CREATE INDEX IF NOT EXISTS idx_fp_assessor ON fedramp_products(assessor_id);
+
+CREATE TABLE IF NOT EXISTS fedramp_authorizations (
+    id INTEGER PRIMARY KEY,
+    fedramp_id TEXT NOT NULL,
+    agency_id INTEGER,
+    sub_agency TEXT,
+    ato_type TEXT,
+    ato_issuance_date TEXT,
+    fedramp_authorization_date TEXT,
+    ato_expiration_date TEXT,
+    annual_assessment_date TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_fa_product ON fedramp_authorizations(fedramp_id);
+CREATE INDEX IF NOT EXISTS idx_fa_agency  ON fedramp_authorizations(agency_id);
+CREATE INDEX IF NOT EXISTS idx_fa_date    ON fedramp_authorizations(ato_issuance_date);
+
+CREATE TABLE IF NOT EXISTS fedramp_agencies (
+    id INTEGER PRIMARY KEY,
+    parent_agency TEXT NOT NULL UNIQUE,
+    parent_slug TEXT NOT NULL UNIQUE
+);
+CREATE INDEX IF NOT EXISTS idx_fag_slug ON fedramp_agencies(parent_slug);
+
+CREATE TABLE IF NOT EXISTS fedramp_assessors (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL UNIQUE,
+    slug TEXT NOT NULL UNIQUE
+);
+CREATE INDEX IF NOT EXISTS idx_fas_slug ON fedramp_assessors(slug);
+
+CREATE TABLE IF NOT EXISTS fedramp_snapshot (
+    id INTEGER PRIMARY KEY CHECK (id = 1),
+    snapshot_date TEXT,
+    product_count INTEGER,
+    ato_event_count INTEGER,
+    agency_count INTEGER,
+    csp_count INTEGER,
+    assessor_count INTEGER,
+    built_at TEXT
+);
+
+-- Cross-reference link tables (populated by link_fedramp.py).
+CREATE TABLE IF NOT EXISTS fedramp_product_links (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    inventory_product_id INTEGER NOT NULL REFERENCES products(id),
+    fedramp_id TEXT NOT NULL,
+    confidence TEXT NOT NULL CHECK (confidence IN ('strong', 'weak', 'manual')),
+    source TEXT NOT NULL,  -- 'alias_match' | 'manual_csv' | 'llm'
+    score REAL,
+    notes TEXT,
+    created_at TEXT DEFAULT (datetime('now')),
+    UNIQUE(inventory_product_id, fedramp_id, source)
+);
+CREATE INDEX IF NOT EXISTS idx_fpl_inv ON fedramp_product_links(inventory_product_id);
+CREATE INDEX IF NOT EXISTS idx_fpl_fr  ON fedramp_product_links(fedramp_id);
+
+CREATE TABLE IF NOT EXISTS fedramp_agency_links (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    inventory_agency_id INTEGER NOT NULL REFERENCES agencies(id),
+    fedramp_agency_id INTEGER NOT NULL,
+    confidence TEXT NOT NULL CHECK (confidence IN ('strong', 'weak', 'manual')),
+    source TEXT NOT NULL,
+    score REAL,
+    notes TEXT,
+    created_at TEXT DEFAULT (datetime('now')),
+    UNIQUE(inventory_agency_id, fedramp_agency_id, source)
+);
+CREATE INDEX IF NOT EXISTS idx_fal_inv ON fedramp_agency_links(inventory_agency_id);
+CREATE INDEX IF NOT EXISTS idx_fal_fr  ON fedramp_agency_links(fedramp_agency_id);
+
+CREATE TABLE IF NOT EXISTS fedramp_link_queue (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    link_kind TEXT NOT NULL CHECK (link_kind IN ('product', 'agency')),
+    inventory_id INTEGER NOT NULL,
+    source_text TEXT,
+    candidate_fedramp_ids TEXT,   -- JSON array of fedramp ids/scores
+    reason TEXT NOT NULL,         -- 'multi_candidate' | 'no_alias' | 'ambiguous'
+    status TEXT NOT NULL DEFAULT 'pending',  -- 'pending' | 'resolved' | 'rejected'
+    decision_notes TEXT,
+    llm_proposed_fedramp_ids TEXT,
+    llm_reasoning TEXT,
+    created_at TEXT DEFAULT (datetime('now')),
+    updated_at TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_flq_status ON fedramp_link_queue(status);
+CREATE INDEX IF NOT EXISTS idx_flq_kind   ON fedramp_link_queue(link_kind);
+CREATE INDEX IF NOT EXISTS idx_flq_inv    ON fedramp_link_queue(inventory_id);
 """
 
 
@@ -289,79 +419,10 @@ def _column_exists(conn, table: str, column: str) -> bool:
 
 
 def apply_migrations(conn=None) -> None:
-    """Apply additive schema migrations idempotently.
+    """Apply ordered additive migrations idempotently."""
+    from scripts.run_migrations import apply_migrations as run_ordered_migrations
 
-    Currently:
-      * use_cases.id_provenance — TEXT, nullable, no default.
-        Values: 'source' | 'backfilled_from_raw_json' | 'source_missing'.
-        Distinguishes IDs that came from the source spreadsheet from those
-        recovered post-hoc and from those genuinely missing in the source.
-      * use_case_products — many-to-many join table (Phase 2 Agent D).
-        Multi-product evidence per use case; keeps use_cases.product_id
-        for back-compat (highest-confidence single match).
-      * review_queue_products — surface rows that need LLM review for
-        product resolution (compound strings + unmatched vendor text).
-    """
-    own = False
-    if conn is None:
-        conn = get_connection()
-        own = True
-    try:
-        if not _column_exists(conn, "use_cases", "id_provenance"):
-            conn.execute("ALTER TABLE use_cases ADD COLUMN id_provenance TEXT")
-            conn.execute(
-                "CREATE INDEX IF NOT EXISTS idx_use_cases_id_provenance "
-                "ON use_cases(id_provenance)"
-            )
-            conn.commit()
-
-        # use_case_products join table (Agent D)
-        conn.execute(
-            """
-            CREATE TABLE IF NOT EXISTS use_case_products (
-                use_case_id INTEGER NOT NULL REFERENCES use_cases(id),
-                product_id INTEGER NOT NULL REFERENCES products(id),
-                evidence_text TEXT,
-                confidence TEXT CHECK(confidence IN ('strong', 'inferred')),
-                PRIMARY KEY (use_case_id, product_id)
-            )
-            """
-        )
-        conn.execute(
-            "CREATE INDEX IF NOT EXISTS idx_ucp_use_case "
-            "ON use_case_products(use_case_id)"
-        )
-        conn.execute(
-            "CREATE INDEX IF NOT EXISTS idx_ucp_product "
-            "ON use_case_products(product_id)"
-        )
-
-        # review_queue_products for coordinator LLM review pass
-        conn.execute(
-            """
-            CREATE TABLE IF NOT EXISTS review_queue_products (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                use_case_id INTEGER REFERENCES use_cases(id),
-                consolidated_use_case_id INTEGER REFERENCES consolidated_use_cases(id),
-                source_text TEXT,
-                heuristic_product_ids TEXT,  -- JSON array of product IDs resolved heuristically
-                reason TEXT,                  -- 'compound_string' | 'unmatched_vendor_text'
-                llm_reviewed INTEGER DEFAULT 0,
-                llm_proposed_product_ids TEXT,
-                llm_confidence TEXT,
-                llm_reasoning TEXT,
-                created_at TEXT DEFAULT (datetime('now'))
-            )
-            """
-        )
-        conn.execute(
-            "CREATE INDEX IF NOT EXISTS idx_rqp_use_case "
-            "ON review_queue_products(use_case_id)"
-        )
-        conn.commit()
-    finally:
-        if own:
-            conn.close()
+    run_ordered_migrations(conn)
 
 
 def init_schema():
@@ -380,7 +441,27 @@ def drop_all():
     """Drop all tables. Use with caution."""
     conn = get_connection()
     try:
+        for v in ["agency_rollups", "entry_product_edges", "inventory_entries"]:
+            conn.execute(f"DROP VIEW IF EXISTS {v}")
         tables = [
+            "schema_migrations",
+            "fedramp_link_queue",
+            "fedramp_agency_links",
+            "fedramp_product_links",
+            "fedramp_snapshot",
+            "fedramp_assessors",
+            "fedramp_agencies",
+            "fedramp_authorizations",
+            "fedramp_products",
+            "org_ai_maturity",
+            "federal_organizations",
+            "use_case_external_evidence",
+            "review_queue_entry_type",
+            "review_queue_scope",
+            "review_queue_llm",
+            "review_queue_products",
+            "consolidated_use_case_products",
+            "use_case_products",
             "use_case_tags",
             "agency_ai_maturity",
             "use_cases",
