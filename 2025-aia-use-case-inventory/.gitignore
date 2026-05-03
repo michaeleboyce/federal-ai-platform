@@ -76,6 +76,11 @@ yarn-error.log*
 # ------------------------------------------------------------------
 # Agent / scratch output
 # ------------------------------------------------------------------
-.claude/
+# Ignore everything under .claude/ EXCEPT the skills/ subtree, which is
+# project knowledge worth tracking. Negate-patterns in .gitignore only
+# work if the parent directory is not itself ignored — so we ignore the
+# children individually rather than the whole dir.
+.claude/*
+!.claude/skills/
 /tmp/
 audit/.review2/
