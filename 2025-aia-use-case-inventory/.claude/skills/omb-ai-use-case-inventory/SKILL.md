@@ -91,14 +91,18 @@ When OMB consolidates agency filings into the public inventory:
 
 ## Where this maps in our codebase
 
+As of migration `m002_rename_to_omb_canonical.py` (April 2026), 15 DB columns
+were renamed to match their OMB canonical names. Most rows below are now
+identity mappings; the remaining divergences are intentional and flagged.
+
 | OMB column | DB column (`use_cases` table) | Source script |
 |---|---|---|
-| `id` | `use_case_id` | `load_inventories.py` |
+| `id` | `use_case_id` *(intentional divergence — would conflict with primary key `id`; not renamed)* | `load_inventories.py` |
 | `use_case_name` | `use_case_name` | same |
-| `agency_bureau` | `bureau_component` | same |
+| `agency_bureau` | `bureau_component` *(intentional divergence — heavily referenced; deferred)* | same |
 | `contact_email` | `email_address` | same |
-| `is_withheld` | `withheld_from_public` | same |
-| `development_stage` | `stage_of_development` | same |
+| `is_withheld` | `is_withheld` | same |
+| `development_stage` | `stage_of_development` *(intentional divergence — 49 refs across dashboard CASE-statement normalization + audit docs; deferred)* | same |
 | `is_high_impact` | `is_high_impact` | same |
 | `HI_justification` | `justification` | same |
 | `topic_area` | `topic_area` | same |
@@ -107,28 +111,52 @@ When OMB consolidates agency filings into the public inventory:
 | `benefits` | `expected_benefits` | same |
 | `system_outputs` | `system_outputs` | same |
 | `operational_date` | `operational_date` | same |
-| `contracting_usage` | `development_type` | same |
+| `contracting_usage` | `development_type` *(intentional divergence — 66 refs; deferred)* | same |
 | `vendor_name` | `vendor_name` | same |
-| `have_ato` | `has_ato` | same |
-| `system_name_ato` | `system_name` | same |
-| `data_description` | `training_data_description` | same |
-| `link_to_data` | `federal_data_catalog_link` | same |
-| `has_pii` | `involves_pii` | same |
-| `pia_url` | `pia_link` | same |
-| `demographic_features` | `demographic_variables` | same |
+| `have_ato` | `has_ato` *(intentional divergence — 33 refs incl. dashboard ATO availability matrix; deferred)* | same |
+| `system_name_ato` | `system_name` *(intentional divergence — 82 refs; deferred due to large audit-doc surface area)* | same |
+| `data_description` | `training_data_description` *(intentional divergence — 37 refs incl. test fixtures; deferred)* | same |
+| `link_to_data` | `link_to_data` | same |
+| `has_pii` | `has_pii` | same |
+| `pia_url` | `pia_url` | same |
+| `demographic_features` | `demographic_features` | same |
 | `has_custom_code` | `has_custom_code` | same |
-| `code_url` | `open_source_link` | same |
-| `hi_testing_conducted` | `pre_deployment_testing` | same |
-| `hi_assessment_completed` | `impact_assessment` | same |
-| `hi_potential_impacts` | `potential_impacts` | same |
-| `hi_independent_review` | `independent_review` | same |
-| `hi_ongoing_monitoring` | `ongoing_monitoring` | same |
-| `hi_training_established` | `operator_training` | same |
-| `hi_failsafe_presence` | `has_fail_safe` | same |
-| `hi_appeal_process` | `appeal_process` | same |
-| `hi_public_consultation` | `end_user_feedback` | same |
+| `code_url` | `code_url` | same |
+| `hi_testing_conducted` | `hi_testing_conducted` | same |
+| `hi_assessment_completed` | `hi_assessment_completed` | same |
+| `hi_potential_impacts` | `hi_potential_impacts` | same |
+| `hi_independent_review` | `hi_independent_review` | same |
+| `hi_ongoing_monitoring` | `hi_ongoing_monitoring` | same |
+| `hi_training_established` | `hi_training_established` | same |
+| `hi_failsafe_presence` | `hi_failsafe_presence` | same |
+| `hi_appeal_process` | `hi_appeal_process` | same |
+| `hi_public_consultation` | `hi_public_consultation` | same |
 
 The DB also adds derived columns not in the source: `agency_id` (FK to `agencies`), `slug`, `id_provenance`, `organization_id`, `bureau_organization_id`, `product_id`, `template_id`, `raw_json` (the original row preserved for audit).
+
+## Dashboard OMB-vs-IFP labeling
+
+The dashboard distinguishes **OMB-filed fields** (data agencies submitted under
+M-25-21) from **IFP-derived fields** (analytical tags, evidence backfills,
+product hierarchy, computed maturity rollups). Every `Section` rendered by
+the dashboard is labeled with a chip indicating the provenance of what the
+reader is about to see.
+
+The chip vocabulary is defined on the `Section` component in
+`dashboard/components/editorial.tsx` (which also exports the `SourceLegend`
+component used in page footers and at the top of the home page). The
+`source` prop accepts these four values:
+
+| `source` value | Chip text shown to readers | Meaning |
+|---|---|---|
+| `"omb"` | `OMB` | Section displays only OMB-filed fields |
+| `"derived"` | `IFP` | Section displays only IFP-added fields (tags, evidence, products, hierarchy) |
+| `"omb-derived"` | `OMB → IFP` | Counts/rollups whose inputs are OMB but whose computation is IFP |
+| `"mixed"` | `OMB + IFP` | Section displays both kinds (use sparingly; prefer per-Row labeling) |
+
+When writing or editing dashboard pages, every `Section` MUST receive a
+`source` prop. If a section truly straddles, prefer labeling individual rows
+over reaching for `"mixed"` at the section level.
 
 ## Reference files
 

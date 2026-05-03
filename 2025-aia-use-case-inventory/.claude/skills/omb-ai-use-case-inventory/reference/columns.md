@@ -27,7 +27,7 @@ For each column: original Excel header (verbatim — including embedded line bre
 - **Data type:** structured_text
 - **Required:** Yes
 - **Meaning:** Unique identifier for the AI use case. Should remain stable year-over-year if the use case persists. Agencies are permitted to omit this column from public-facing inventories.
-- **DB column:** `use_cases.use_case_id`
+- **DB column:** `use_cases.use_case_id` — Intentional divergence — kept the legacy DB name because renaming to `id` would conflict with the table's primary key.
 
 ### 4. `use_case_name`
 - **Excel header:** `Use Case Name`
@@ -40,7 +40,7 @@ For each column: original Excel header (verbatim — including embedded line bre
 - **Data type:** free_text
 - **Required:** Yes
 - **Meaning:** Specific organization(s) within the agency responsible for the AI use case. **The most variable column in practice** — see SKILL.md "Where the messy data hides" for parsing patterns by agency.
-- **DB column:** `use_cases.bureau_component`
+- **DB column:** `use_cases.bureau_component` — Intentional divergence — kept the legacy DB name due to call-site density.
 
 ### 6. `contact_email`
 - **Excel header:** `Email Address`
@@ -63,7 +63,7 @@ For each column: original Excel header (verbatim — including embedded line bre
   - `c) Yes – disclosure is prohibited by law`
   - `d) Other`
 - **Shorthand:** `No` / `Yes - Disclosure Risk` / `Yes - Prohibited by Law` / `Other`
-- **DB column:** `use_cases.withheld_from_public`
+- **DB column:** `use_cases.is_withheld`
 
 ### 8. `development_stage`
 - **Excel header:** `Stage of Development`
@@ -75,7 +75,7 @@ For each column: original Excel header (verbatim — including embedded line bre
   - `c) Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.`
   - `d) Retired – The use case was reported in the agency's prior year's inventory, but its development and/or use has since been discontinued.`
 - **Shorthand:** `Pre-deployment` / `Pilot` / `Deployed` / `Retired`
-- **DB column:** `use_cases.stage_of_development`
+- **DB column:** `use_cases.stage_of_development` — Intentional divergence — kept the legacy DB name due to call-site density (49 refs across dashboard CASE-statement normalization + audit docs).
 
 ### 9. `is_high_impact`
 - **Excel header:** `Is the AI use case high-impact?`
@@ -161,7 +161,7 @@ For each column: original Excel header (verbatim — including embedded line bre
   - `b) Developed in-house`
   - `c) Developed with both contracting and in-house resources`
 - **Shorthand:** `Vendor Purchased` / `In-house Development` / `Contracting and In House`
-- **DB column:** `use_cases.development_type`
+- **DB column:** `use_cases.development_type` — Intentional divergence — kept the legacy DB name due to call-site density (66 refs).
 
 ### 18. `vendor_name`
 - **Excel header:** `Vendor(s) Name`
@@ -176,26 +176,26 @@ For each column: original Excel header (verbatim — including embedded line bre
 - **Required:** Yes for pilot / deployed
 - **Valid selections:** `Yes` / `No`
 - **Common aliases:** `true`/`false`, `Use vendor's ATO or FedRAMP authorization`, `In-progress - ATO process underway` (treat as `Yes`)
-- **DB column:** `use_cases.has_ato`
+- **DB column:** `use_cases.has_ato` — Intentional divergence — kept the legacy DB name due to call-site density (33 refs incl. dashboard ATO availability matrix).
 
 ### 20. `system_name_ato`
 - **Excel header:** `System(s) Name`
 - **Data type:** free_text
 - **Required:** Conditional — yes when `have_ato == "Yes"` AND deployment stage is pilot or deployed
-- **DB column:** `use_cases.system_name`
+- **DB column:** `use_cases.system_name` — Intentional divergence — kept the legacy DB name due to call-site density (82 refs, large audit-doc surface area).
 
 ### 21. `data_description`
 - **Excel header:** `Describe any data used to train, fine-tune, and/or evaluate performance of the model(s) used in this use case.`
 - **Data type:** free_text
 - **Required:** Yes for pilot / deployed
 - **Meaning:** Datasets used (research / public / external / agency-internal), plus vendor-supplied descriptive info where applicable.
-- **DB column:** `use_cases.training_data_description`
+- **DB column:** `use_cases.training_data_description` — Intentional divergence — kept the legacy DB name due to call-site density (37 refs incl. test fixtures).
 
 ### 22. `link_to_data`
 - **Excel header:** `If the data is required to be publicly disclosed as an open government data asset, provide a link to the entry on the Federal Data Catalog.`
 - **Data type:** free_text
 - **Required:** No
-- **DB column:** `use_cases.federal_data_catalog_link`
+- **DB column:** `use_cases.link_to_data`
 
 ### 23. `has_pii`
 - **Excel header:** `Does this AI use case involve personally identifiable information (PII) that is maintained by the agency?`
@@ -204,13 +204,13 @@ For each column: original Excel header (verbatim — including embedded line bre
 - **Valid selections:** `Yes` / `No`
 - **Common aliases:** `b) Yes`, `a) No`, lowercased variants, agency-narrative substitutions like `Yes - Customer contact and account information` (treat as `Yes`)
 - **Reference:** PII as defined in OMB Circular A-130
-- **DB column:** `use_cases.involves_pii`
+- **DB column:** `use_cases.has_pii`
 
 ### 24. `pia_url`
 - **Excel header:** `If publicly available, provide the link to the AI use case's associated Privacy Impact Assessment (PIA).`
 - **Data type:** free_text
 - **Required:** No
-- **DB column:** `use_cases.pia_link`
+- **DB column:** `use_cases.pia_url`
 
 ### 25. `demographic_features`
 - **Excel header:** `Which, if any, demographic variables does the AI use case explicitly use as model features?`
@@ -230,7 +230,7 @@ For each column: original Excel header (verbatim — including embedded line bre
   - `k) None of the above`
   - `l) Other`
 - **Storage:** stringified Python list (e.g., `['a) Race/Ethnicity', 'c) Age']`)
-- **DB column:** `use_cases.demographic_variables`
+- **DB column:** `use_cases.demographic_features`
 
 ### 26. `has_custom_code`
 - **Excel header:** `Does this project include custom-developed code?`
@@ -244,7 +244,7 @@ For each column: original Excel header (verbatim — including embedded line bre
 - **Excel header:** `If the code is open source, provide the link for the publicly available source code.`
 - **Data type:** free_text
 - **Required:** No
-- **DB column:** `use_cases.open_source_link`
+- **DB column:** `use_cases.code_url`
 
 ---
 
@@ -258,20 +258,20 @@ All 9 only required for **`is_high_impact == "a) High-impact"` AND `development_
 - **Reference:** §4(b)(i)
 - **Valid selections:** `a) Yes` / `b) In-progress` / `c) Agency CAIO has waived this minimum practice and reported such waiver to OMB`
 - **Shorthand:** `Yes` / `In-progress` / `CAIO Waived`
-- **DB column:** `use_cases.pre_deployment_testing`
+- **DB column:** `use_cases.hi_testing_conducted`
 
 ### 29. `hi_assessment_completed`
 - **Excel header:** `Has an AI impact assessment been completed for this AI use case?` (Practice: Complete AI Impact Assessment)
 - **Data type:** multiple_choice
 - **Reference:** §4(b)(ii)
 - **Same valid selections as above.**
-- **DB column:** `use_cases.impact_assessment`
+- **DB column:** `use_cases.hi_assessment_completed`
 
 ### 30. `hi_potential_impacts`
 - **Excel header:** `What are the potential impacts of using the AI for this particular use case and how were they identified?` (Subpractice: Complete AI Impact Assessment)
 - **Data type:** free_text
 - **Meaning:** Reasonably foreseeable impacts, including impacts on privacy, civil rights, civil liberties of the public.
-- **DB column:** `use_cases.potential_impacts`
+- **DB column:** `use_cases.hi_potential_impacts`
 
 ### 31. `hi_independent_review`
 - **Excel header:** `Has as independent review of the AI use case been conducted?` (Subpractice: Complete AI Impact Assessment)
@@ -283,7 +283,7 @@ All 9 only required for **`is_high_impact == "a) High-impact"` AND `development_
   - `d) In-progress`
   - `e) Agency CAIO has waived this minimum practice and reported such waiver to OMB`
 - **Shorthand:** `Internal Independent Review` / `Oversight Board Review` / `CAIO Review` / `In-progress` / `CAIO Waived`
-- **DB column:** `use_cases.independent_review`
+- **DB column:** `use_cases.hi_independent_review`
 
 ### 32. `hi_ongoing_monitoring`
 - **Excel header:** `Is there a process to conduct ongoing monitoring to identify any adverse impacts to the performance and security of the AI functionality, as well as to privacy, civil rights, and civil liberties?` (Practice: Conduct Ongoing Monitoring for Performance and Potential Adverse Impacts)
@@ -294,7 +294,7 @@ All 9 only required for **`is_high_impact == "a) High-impact"` AND `development_
   - `b) Development of monitoring protocols is in-progess` (sic, OMB typo preserved)
   - `c) Agency CAIO has waived this minimum practice and reported such waiver to OMB`
 - **Shorthand:** `Yes - Monitoring Established` / `In-progress` / `CAIO Waived`
-- **DB column:** `use_cases.ongoing_monitoring`
+- **DB column:** `use_cases.hi_ongoing_monitoring`
 
 ### 33. `hi_training_established`
 - **Excel header:** `Has the agency established sufficient and periodic training for operators of the AI to interpret and act on its output and managed associated risks?` (Practice: Ensure Adequate Human Training and Assessment)
@@ -305,7 +305,7 @@ All 9 only required for **`is_high_impact == "a) High-impact"` AND `development_
   - `b) Establishment of sufficient and periodic training is in-progress`
   - `c) Agency CAIO has waived this minimum practice and reported such waiver to OMB`
 - **Shorthand:** `Training Established` / `Training In-progress` / `CAIO Waived`
-- **DB column:** `use_cases.operator_training`
+- **DB column:** `use_cases.hi_training_established`
 
 ### 34. `hi_failsafe_presence`
 - **Excel header:** `Does this AI use case have an appropriate fail-safe that minimizes the risk of significant harm?` (Practice: Provide Additional Human Oversight, Intervention, and Accountability)
@@ -313,7 +313,7 @@ All 9 only required for **`is_high_impact == "a) High-impact"` AND `development_
 - **Reference:** §4(b)(v)
 - **Valid selections:** `a) Yes` / `b) Not applicable` / `c) In-progress` / `d) Agency CAIO has waived this minimum practice and reported such waiver to OMB`
 - **Shorthand:** `Yes` / `Not Applicable` / `In-progress` / `CAIO Waived`
-- **DB column:** `use_cases.has_fail_safe`
+- **DB column:** `use_cases.hi_failsafe_presence`
 
 ### 35. `hi_appeal_process`
 - **Excel header:** `Is there an established appeal process in the event that an impacted individual would like to appeal or contest the AI system's outcome?` (Practice: Offer Consistent Remedies or Appeals)
@@ -326,7 +326,7 @@ All 9 only required for **`is_high_impact == "a) High-impact"` AND `development_
   - `d) Law, operational limitations, or governmentwide guidance precludes an opportunity for an individual to appeal`
   - `e) Agency CAIO has waived this minimum practice and reported such waiver to OMB`
 - **Shorthand:** `Appeal Process Established` / `Not Applicable` / `Appeal Process In-progress` / `Appeal Precluded by Law` / `CAIO Waived`
-- **DB column:** `use_cases.appeal_process`
+- **DB column:** `use_cases.hi_appeal_process`
 
 ### 36. `hi_public_consultation`
 - **Excel header:** `What steps has the agency taken to consult and incorporate feedback from end users of this AI use case and the public?` (Practice: Consult and Incorporate Feedback from End Users and the Public)
@@ -341,4 +341,4 @@ All 9 only required for **`is_high_impact == "a) High-impact"` AND `development_
   - `f) Agency CAIO has waived this minimum practice and reported such waiver to OMB`
 - **Shorthand:** `Usability Testing` / `Public Feedback Solicitations` / `Public Hearings` / `Other` / `In-progress` / `CAIO Waived`
 - **Storage:** stringified Python list
-- **DB column:** `use_cases.end_user_feedback`
+- **DB column:** `use_cases.hi_public_consultation`

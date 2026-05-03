@@ -40,11 +40,11 @@ def test_has_ato_null_rate_not_pathological(conn):
     )
 
 
-def test_involves_pii_null_rate_not_pathological(conn):
-    """involves_pii baseline ~54% null."""
-    rate = _null_rate(conn, "use_cases", "involves_pii")
+def test_has_pii_null_rate_not_pathological(conn):
+    """has_pii baseline ~54% null."""
+    rate = _null_rate(conn, "use_cases", "has_pii")
     assert rate <= 0.75, (
-        f"use_cases.involves_pii null rate = {rate:.3f} "
+        f"use_cases.has_pii null rate = {rate:.3f} "
         f"(baseline ~0.54); ceiling 0.75 - column may have been blanked"
     )
 

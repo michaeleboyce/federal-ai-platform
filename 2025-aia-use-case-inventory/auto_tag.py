@@ -550,9 +550,9 @@ def infer_use_type(row):
 def has_risk_docs(row):
     """Check if Section 5 is meaningfully filled."""
     fields = [
-        "pre_deployment_testing", "impact_assessment", "potential_impacts",
-        "independent_review", "ongoing_monitoring", "operator_training",
-        "has_fail_safe", "appeal_process", "end_user_feedback"
+        "hi_testing_conducted", "hi_assessment_completed", "hi_potential_impacts",
+        "hi_independent_review", "hi_ongoing_monitoring", "hi_training_established",
+        "hi_failsafe_presence", "hi_appeal_process", "hi_public_consultation"
     ]
     filled = 0
     for f in fields:

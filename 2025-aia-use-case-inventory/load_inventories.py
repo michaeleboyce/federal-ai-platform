@@ -241,15 +241,15 @@ def load_file(filepath: Path, conn) -> dict:
             # Build the full INSERT dynamically
             cols = [
                 "use_case_id", "use_case_name", "bureau_component", "email_address",
-                "withheld_from_public", "stage_of_development", "is_high_impact", "justification",
+                "is_withheld", "stage_of_development", "is_high_impact", "justification",
                 "topic_area", "ai_classification", "problem_statement", "expected_benefits",
                 "system_outputs", "operational_date", "development_type", "vendor_name",
                 "has_ato", "system_name", "training_data_description",
-                "federal_data_catalog_link", "involves_pii", "pia_link", "demographic_variables",
-                "has_custom_code", "open_source_link",
-                "pre_deployment_testing", "impact_assessment", "potential_impacts",
-                "independent_review", "ongoing_monitoring", "operator_training",
-                "has_fail_safe", "appeal_process", "end_user_feedback",
+                "link_to_data", "has_pii", "pia_url", "demographic_features",
+                "has_custom_code", "code_url",
+                "hi_testing_conducted", "hi_assessment_completed", "hi_potential_impacts",
+                "hi_independent_review", "hi_ongoing_monitoring", "hi_training_established",
+                "hi_failsafe_presence", "hi_appeal_process", "hi_public_consultation",
             ]
             placeholders = ",".join(["?"] * (3 + len(cols) + 1))
             values = [agency_id, filename, slug] + [db_values.get(c) for c in cols] + [json.dumps(raw, ensure_ascii=False)]
