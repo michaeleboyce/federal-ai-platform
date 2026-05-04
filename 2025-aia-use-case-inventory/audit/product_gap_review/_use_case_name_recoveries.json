@@ -1,0 +1,20 @@
+[
+  {
+    "comment": "Recovery map for 15 product-gap-review recommendations whose recorded use_case_id went stale after make-fix re-keyed the AUTOINCREMENT IDs. Names were extracted from the dashboard repo's DB at commits 8725e34 (14 rows) and 5ca23e4 (1 row, BTSSS) — those commits' DB tree corresponds to the state when the gap-review agents authored the recommendations. The (agency_abbr, use_case_name) pair is verified unique in the current DB, so a tier-3 resolver fallback can match exactly. apply_product_gap_review.py reads this file at startup."
+  },
+  {"stale_uc_id": 29151, "agency_abbr": "DHS",  "use_case_name": "Spend Plan Analysis GPT"},
+  {"stale_uc_id": 29630, "agency_abbr": "DOE",  "use_case_name": "Hanford Search"},
+  {"stale_uc_id": 29632, "agency_abbr": "DOE",  "use_case_name": "Hanford Popfon Search"},
+  {"stale_uc_id": 29642, "agency_abbr": "DOE",  "use_case_name": "Hanford  Service Ticket Lookup"},
+  {"stale_uc_id": 29645, "agency_abbr": "DOE",  "use_case_name": "Hanford Procedure Search"},
+  {"stale_uc_id": 29764, "agency_abbr": "DOE",  "use_case_name": "LivChat"},
+  {"stale_uc_id": 30658, "agency_abbr": "EPA",  "use_case_name": "Preparation of Brownfields Success Stories"},
+  {"stale_uc_id": 30665, "agency_abbr": "EPA",  "use_case_name": "Summarize and draft response to comments"},
+  {"stale_uc_id": 30964, "agency_abbr": "HHS",  "use_case_name": "GenAIMeta: Generative AI CDC Metadata Query Application"},
+  {"stale_uc_id": 31301, "agency_abbr": "HHS",  "use_case_name": "Section 508 Azure OpenAI Chatbot"},
+  {"stale_uc_id": 31302, "agency_abbr": "HHS",  "use_case_name": "Enhancing the RCDC with Generative AI"},
+  {"stale_uc_id": 31499, "agency_abbr": "NASA", "use_case_name": "Data Fracking (HRP)"},
+  {"stale_uc_id": 31812, "agency_abbr": "OPM",  "use_case_name": "OpenAI ChatGPT"},
+  {"stale_uc_id": 32634, "agency_abbr": "VA",   "use_case_name": "Deep-Learning approaches to develop candidate lists of terms for use in text searches"},
+  {"stale_uc_id": 46828, "agency_abbr": "VA",   "use_case_name": "BTSSS 3542 Review"}
+]
