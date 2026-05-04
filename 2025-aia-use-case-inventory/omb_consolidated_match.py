@@ -108,25 +108,62 @@ DRIFT_FIELDS_DEFAULT = (
 
 
 _LETTER_PREFIX_RE = re.compile(r"^\s*[a-z]\)\s*", flags=re.IGNORECASE)
-_PUNCT_DRIFT_RE = re.compile(r"[,;:.]+")
+_PUNCT_DRIFT_RE = re.compile(r"[,;.]+")  # NB: colons handled separately as long-form divider
+# Long-form divider: OMB canonical text often uses "ShortForm – Long form"
+# (em dash) or "ShortForm: Long description". Our DB sometimes stores the
+# long form WITHOUT a divider (just `\n` or extra whitespace). Splitting at
+# either divider AND taking the first phrase normalizes the OMB long-form
+# to match the DB short-form.
+_LONG_FORM_DIVIDER_RE = re.compile(r"\s*[–—:]\s+|\s*\n+\s*")
+# Parenthetical clarifications like "(NLP)", "(Azure)" — agencies add these
+# but OMB's canonical short forms don't. Strip during drift comparison only.
+_PAREN_RE = re.compile(r"\s*\([^)]*\)")
 
 
 def _canonicalize_field(s: str | None) -> str | None:
     """Canonicalize a field value for drift comparison.
 
-    Applies the same normalizations OMB applies during consolidation:
-      - curly → straight quotes
+    Normalizes the same axes OMB applies during consolidation, plus several
+    DB-specific quirks discovered during the 2025 load:
+      - curly → straight quotes; strip apostrophes entirely (DB strips them
+        in some passes; OMB keeps them — yields 'agencys' ≡ 'agency's')
+      - em/en dash → space (DB uses ASCII; OMB uses U+2013 em dash)
+      - hyphen → space ('high-impact' ≡ 'high impact')
       - strip leading "a) " / "b) " enum-letter prefix
+      - take prefix before " – ", " — ", ": ", or newline (OMB long-form
+        canonical text starts with the short form followed by a divider)
       - lowercase + collapse whitespace
-      - strip ,;:. punctuation (catches the "high-impact, but" vs
-        "high-impact but" comma drift seen in the 2025 OMB file)
+      - strip ,;. punctuation (catches "high-impact, but" ≡ "high-impact but")
     """
     if s is None:
         return None
+    # cp1252-byte mojibake fix: many DB rows were ingested from latin-1 /
+    # cp1252 source files and the punctuation bytes got stored as their
+    # raw single-byte values rather than UTF-8 code points. Map the common
+    # ones back to their intended Unicode equivalents BEFORE other
+    # normalization.
+    s = (
+        s.replace("\x91", "'").replace("\x92", "'")  # smart single quotes
+         .replace("\x93", '"').replace("\x94", '"')  # smart double quotes
+         .replace("\x96", "–").replace("\x97", "—")  # en/em dash
+    )
     s = s.replace("’", "'").replace("‘", "'")
+    s = s.replace("'", "")
+    s = s.replace(" & ", " and ")
+    s = _PAREN_RE.sub("", s)
     s = _LETTER_PREFIX_RE.sub("", s).strip().lower()
+    # Split BEFORE replacing em dash with space — the dividers must still
+    # be present to fire. Take prefix before the first long-form divider
+    # (en/em dash with spaces, ": " with following space, or newline).
+    # This collapses OMB's "deployed – the use case is being actively..."
+    # down to "deployed" so it matches DB's bare "deployed".
+    parts = _LONG_FORM_DIVIDER_RE.split(s, maxsplit=1)
+    s = parts[0] if parts else s
+    # Now the residual em/en dashes (if any in middle of short form) are
+    # treated as spaces.
+    s = s.replace("–", " ").replace("—", " ")
     s = _PUNCT_DRIFT_RE.sub("", s)
-    s = s.replace("-", " ")  # 'high-impact' ≡ 'high impact', 'pre-deployment' ≡ 'pre deployment'
+    s = s.replace("-", " ")
     s = _WHITESPACE_RE.sub(" ", s).strip()
     return s
 
