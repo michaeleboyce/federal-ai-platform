@@ -7,6 +7,10 @@ fix:
 	python3 db.py
 	python3 load_agencies.py
 	python3 load_inventories.py
+	# OMB consolidated individually-reported AI use case file — mirror rows,
+	# match against DB, populate omb_match_audit. Schema-only DB additions
+	# come from migrations/m004; this is the data load. Idempotent.
+	python3 load_omb_consolidated.py
 	python3 scripts/backfill_use_case_id.py
 	python3 build_lookups.py
 	python3 auto_tag.py
@@ -40,7 +44,21 @@ fix:
 	python3 scripts/backfill_bureau_orgs.py
 	python3 compute_maturity.py
 	python3 scripts/compute_org_maturity.py
+	# Linkage recovery: build_lookups.py wipes products and re-issues IDs each
+	# run, which orphans (and SQLite drops) any prior fedramp_product_links and
+	# parent_product_id edges. These scripts re-apply that state from the
+	# canonical CSVs/decisions. All resolve products by canonical_name so they
+	# survive the re-keying. Order matters: merge → rekey queue → hierarchy →
+	# promote queue → hand-link CSV. Each is idempotent.
+	python3 scripts/merge_duplicate_products.py --apply
+	python3 scripts/rekey_fedramp_link_queue.py --apply
+	python3 scripts/apply_product_hierarchy_edges.py --apply
+	python3 scripts/promote_resolved_link_queue.py --apply
+	python3 scripts/apply_fedramp_link_decisions.py --apply
 	python3 scripts/generate_db_snapshot.py
+	# OMB-vs-IFP discrepancy report (audit/omb_consolidated_diff_2025.md).
+	# Read by humans; complements the live /discrepancies dashboard page.
+	python3 scripts/audit_omb_consolidated_diff.py
 
 retag-scope:
 	python3 scripts/retag_scope_architecture.py
