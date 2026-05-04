@@ -15,6 +15,7 @@ from column_maps import (
     map_canonical_headers,
     map_consolidated_headers,
 )
+from data.federal_hierarchy_seed import ORG_TREE
 
 DATA_DIR = Path(__file__).parent / "data" / "raw"
 ENCODINGS = ["utf-8-sig", "utf-8", "latin-1", "cp1252"]
@@ -23,6 +24,64 @@ ENCODINGS = ["utf-8-sig", "utf-8", "latin-1", "cp1252"]
 AGENCY_FROM_FILENAME = {
     # Regular files: "{ABBR}-2025-ai-inventory.csv/xlsx"
 }
+
+
+def _norm_agency_name(s: str | None) -> str:
+    return re.sub(r"\s+", " ", (s or "").strip().lower())
+
+
+def _build_agency_name_index() -> dict[str, str]:
+    """Walk the seed tree (incl. descendants) and build name → abbreviation.
+
+    Used to resolve free-text agency names from multi-agency inventory files
+    (e.g. the 2025 OMB consolidated COTS file's `Agency` column). Single source
+    of truth: edits go in `data/federal_hierarchy_seed.py`.
+
+    Top-level orgs win on collision: if a sub-org and a top-level org share an
+    alias, the top-level abbreviation is preserved. (We populate top-level
+    last; their writes overwrite earlier sub-org writes.)
+    """
+    index: dict[str, str] = {}
+
+    def _walk_descendants(nodes: list[dict]) -> None:
+        for n in nodes:
+            abbr = n.get("abbreviation")
+            if abbr:
+                if name := n.get("name"):
+                    index[_norm_agency_name(name)] = abbr
+                for alias in n.get("aliases") or []:
+                    index[_norm_agency_name(alias)] = abbr
+            children = n.get("children") or []
+            if children:
+                _walk_descendants(children)
+
+    # Pass 1: descendants (sub-orgs) — only those with their own abbreviation.
+    for node in ORG_TREE:
+        children = node.get("children") or []
+        if children:
+            _walk_descendants(children)
+
+    # Pass 2: top-level orgs (override any sub-org collisions).
+    for node in ORG_TREE:
+        abbr = node.get("abbreviation")
+        if not abbr:
+            continue
+        if name := node.get("name"):
+            index[_norm_agency_name(name)] = abbr
+        for alias in node.get("aliases") or []:
+            index[_norm_agency_name(alias)] = abbr
+    return index
+
+
+_AGENCY_NAME_INDEX: dict[str, str] | None = None
+
+
+def resolve_agency_abbr_from_name(name: str | None) -> str | None:
+    """Look up an agency abbreviation from a free-text agency name."""
+    global _AGENCY_NAME_INDEX
+    if _AGENCY_NAME_INDEX is None:
+        _AGENCY_NAME_INDEX = _build_agency_name_index()
+    return _AGENCY_NAME_INDEX.get(_norm_agency_name(name))
 
 
 def infer_agency_abbr(filename: str) -> str | None:
@@ -40,10 +99,16 @@ def is_consolidated_filename(filename: str) -> bool:
     return "consolidated" in filename.lower()
 
 
-def slugify(agency_abbr: str, name: str, idx: int) -> str:
-    """Generate a unique slug."""
-    base = re.sub(r"[^a-z0-9]+", "-", (name or f"use-case-{idx}").lower()).strip("-")[:80]
-    return f"{agency_abbr.lower()}-{base}-{idx}"
+def slugify(agency_abbr: str, name: str, idx: int | None = None) -> str:
+    """Generate a deterministic slug.
+
+    Idempotent: derived only from (agency_abbr, name). The optional `idx` is
+    appended only when the caller needs a fallback for empty/duplicate names.
+    """
+    base = re.sub(r"[^a-z0-9]+", "-", (name or "").lower()).strip("-")[:80]
+    if not base:
+        base = f"use-case-{idx if idx is not None else 0}"
+    return f"{agency_abbr.lower()}-{base}"
 
 
 def read_csv_rows(filepath: Path) -> tuple[list[list], str]:
@@ -131,21 +196,23 @@ def clean_header(h) -> str:
     return s
 
 
+def _lookup_agency_id(conn, abbr: str | None) -> int | None:
+    if not abbr:
+        return None
+    row = conn.execute(
+        "SELECT id FROM agencies WHERE abbreviation = ?", (abbr,)
+    ).fetchone()
+    if not row:
+        row = conn.execute(
+            "SELECT id FROM agencies WHERE LOWER(abbreviation) = LOWER(?)", (abbr,)
+        ).fetchone()
+    return row["id"] if row else None
+
+
 def load_file(filepath: Path, conn) -> dict:
     """Load a single agency file. Returns stats dict."""
     filename = filepath.name
-    agency_abbr = infer_agency_abbr(filename)
-    if not agency_abbr:
-        return {"file": filename, "skipped": "no agency abbr"}
-
-    # Look up agency_id
-    row = conn.execute("SELECT id FROM agencies WHERE abbreviation = ?", (agency_abbr,)).fetchone()
-    if not row:
-        # Try case-insensitive
-        row = conn.execute("SELECT id FROM agencies WHERE LOWER(abbreviation) = LOWER(?)", (agency_abbr,)).fetchone()
-    if not row:
-        return {"file": filename, "skipped": f"unknown agency {agency_abbr}"}
-    agency_id = row["id"]
+    file_agency_abbr = infer_agency_abbr(filename)
 
     # Read file
     if filepath.suffix == ".csv":
@@ -176,8 +243,26 @@ def load_file(filepath: Path, conn) -> dict:
         mapping = map_canonical_headers(headers)
         target_table = "use_cases"
 
+    # Multi-agency mode: an "Agency" column was mapped, so each row carries
+    # its own agency. Used by the 2025 OMB consolidated COTS aggregate file.
+    multi_agency = consolidated and ("agency_name" in mapping.values())
+    source_format = (
+        "cots_aggregate_2025" if multi_agency
+        else ("consolidated_per_agency" if consolidated else "canonical_m2521")
+    )
+
+    file_agency_id = None
+    if not multi_agency:
+        # Single-agency mode (original behavior): resolve agency from filename.
+        if not file_agency_abbr:
+            return {"file": filename, "skipped": "no agency abbr"}
+        file_agency_id = _lookup_agency_id(conn, file_agency_abbr)
+        if not file_agency_id:
+            return {"file": filename, "skipped": f"unknown agency {file_agency_abbr}"}
+
     inserted = 0
     skipped = 0
+    skipped_unknown_agency: dict[str, int] = {}
     for idx, data_row in enumerate(data_rows):
         # Build dict of DB columns -> values
         db_values = {}
@@ -204,29 +289,48 @@ def load_file(filepath: Path, conn) -> dict:
             skipped += 1
             continue
 
-        # Generate slug
-        slug_name = primary_key
-        slug = slugify(agency_abbr, slug_name, idx)
+        # Resolve per-row agency in multi-agency mode; otherwise reuse file-level.
+        if multi_agency:
+            row_agency_name = (db_values.get("agency_name") or "").strip()
+            row_agency_abbr = resolve_agency_abbr_from_name(row_agency_name)
+            row_agency_id = _lookup_agency_id(conn, row_agency_abbr)
+            if not row_agency_id:
+                skipped_unknown_agency[row_agency_name or "(blank)"] = (
+                    skipped_unknown_agency.get(row_agency_name or "(blank)", 0) + 1
+                )
+                skipped += 1
+                continue
+        else:
+            row_agency_abbr = file_agency_abbr
+            row_agency_id = file_agency_id
 
-        # Ensure slug is unique
-        existing = conn.execute(f"SELECT id FROM {target_table} WHERE slug = ?", (slug,)).fetchone()
-        n = 1
-        while existing:
-            slug = slugify(agency_abbr, slug_name, idx) + f"-{n}"
-            existing = conn.execute(f"SELECT id FROM {target_table} WHERE slug = ?", (slug,)).fetchone()
-            n += 1
+        # Slug is deterministic on (agency, primary_key). If two rows produce
+        # the same slug (e.g. duplicate use-case names within one file) the
+        # second one gets a numeric tail. Across files we rely on the UNIQUE
+        # constraint + INSERT OR IGNORE to avoid double-loading the same row.
+        slug = slugify(row_agency_abbr, primary_key)
+        existing = conn.execute(
+            f"SELECT id FROM {target_table} WHERE slug = ?", (slug,)
+        ).fetchone()
+        if existing:
+            # Same (agency, primary_key) is already loaded from another file.
+            # Skip — the COTS aggregate is canonical for these 45 agencies'
+            # consolidated rows; per-agency files (if any) are superseded.
+            skipped += 1
+            continue
 
         if consolidated:
-            conn.execute(
+            cur = conn.execute(
                 """
-                INSERT INTO consolidated_use_cases (
+                INSERT OR IGNORE INTO consolidated_use_cases (
                     agency_id, source_file, slug,
                     ai_use_case, commercial_product, commercial_examples,
-                    agency_uses, estimated_licenses_users, raw_json
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    agency_uses, estimated_licenses_users, raw_json,
+                    source_format
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
-                    agency_id,
+                    row_agency_id,
                     filename,
                     slug,
                     db_values.get("ai_use_case"),
@@ -235,8 +339,12 @@ def load_file(filepath: Path, conn) -> dict:
                     db_values.get("agency_uses"),
                     db_values.get("estimated_licenses_users"),
                     json.dumps(raw, ensure_ascii=False),
+                    source_format,
                 ),
             )
+            if cur.rowcount == 0:
+                skipped += 1
+                continue
         else:
             # Build the full INSERT dynamically
             cols = [
@@ -252,7 +360,7 @@ def load_file(filepath: Path, conn) -> dict:
                 "hi_failsafe_presence", "hi_appeal_process", "hi_public_consultation",
             ]
             placeholders = ",".join(["?"] * (3 + len(cols) + 1))
-            values = [agency_id, filename, slug] + [db_values.get(c) for c in cols] + [json.dumps(raw, ensure_ascii=False)]
+            values = [row_agency_id, filename, slug] + [db_values.get(c) for c in cols] + [json.dumps(raw, ensure_ascii=False)]
             conn.execute(
                 f"""
                 INSERT INTO use_cases (
@@ -269,21 +377,24 @@ def load_file(filepath: Path, conn) -> dict:
         # Also record column mappings
         # (only do this once per file - done after loop)
 
-    # Record column mappings for this file
+    # Record column mappings for this file. For multi-agency files we record
+    # under a synthetic abbreviation so the row stays distinct from per-agency
+    # mappings that other files may produce.
+    mappings_abbr = file_agency_abbr or "MULTI"
     for col_idx, hdr in enumerate(headers):
         if not hdr:
             continue
         canonical = mapping.get(col_idx)
         conn.execute(
             "INSERT INTO column_mappings (agency_abbreviation, source_column_name, canonical_column_name, notes) VALUES (?, ?, ?, ?)",
-            (agency_abbr, hdr, canonical, f"{'consolidated' if consolidated else 'canonical'} format"),
+            (mappings_abbr, hdr, canonical, f"{source_format} format"),
         )
 
     conn.commit()
-    return {
+    result: dict = {
         "file": filename,
-        "agency": agency_abbr,
-        "format": "consolidated" if consolidated else "canonical",
+        "agency": file_agency_abbr or "MULTI",
+        "format": source_format,
         "encoding": encoding_info,
         "header_row": header_idx,
         "inserted": inserted,
@@ -291,6 +402,9 @@ def load_file(filepath: Path, conn) -> dict:
         "headers_total": len(headers),
         "headers_mapped": len(mapping),
     }
+    if skipped_unknown_agency:
+        result["skipped_unknown_agencies"] = skipped_unknown_agency
+    return result
 
 
 def main():
@@ -324,6 +438,22 @@ def main():
             "NASA-2025-ai-inventory.xlsx",  # CSV has same data
             "NSF-2025-ai-inventory.xlsx",  # CSV has same data
             "VA-2025-ai-inventory.xlsx",  # CSV has same data
+            # Per-agency consolidated/Appendix-B files — superseded by the
+            # 2025 OMB consolidated COTS aggregate (cots-2025-ai-inventory-
+            # consolidated.xlsx) which carries the canonical 20-template grid
+            # for all 45 small/CFO-Act agencies. Loading both would duplicate
+            # rows under different source_file values.
+            "CSOSA-2025-ai-inventory.csv",
+            "DOL-2025-ai-inventory-consolidated.csv",
+            "EAC-2025-ai-inventory.xlsx",
+            "FCC-2025-ai-inventory.xlsx",
+            "FDIC-2025-ai-inventory-consolidated.csv",
+            "HUD-2025-ai-inventory-consolidated.xlsx",
+            "NLRB-2025-ai-inventory.csv",
+            "OSC-2025-ai-inventory.xlsx",
+            "PBGC-2025-ai-inventory.csv",
+            "USITC-2025-ai-inventory.csv",
+            "USTDA-2025-ai-inventory.xlsx",
         }
 
         results = []

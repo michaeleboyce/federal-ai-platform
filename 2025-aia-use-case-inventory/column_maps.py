@@ -128,7 +128,11 @@ EXPLICIT_OVERRIDES = {
     "Use Case": "use_case_name",
 }
 
-# Columns indicating this is a consolidated/Appendix B format (COTS)
+# Columns indicating this is a consolidated/Appendix B format (COTS).
+# Two known variants exist: the original 6-column form (with "Commercial Examples")
+# and the 2025 OMB aggregate form (5 columns, no "Commercial Examples", with an
+# "Agency" column instead so a single file can carry many agencies). Detection
+# below is normalized + N>=2 marker columns, so either variant matches.
 CONSOLIDATED_COLUMNS = {
     "AI Use Case",
     "Commercial Examples",
@@ -236,28 +240,43 @@ def map_header_to_canonical(header: str) -> str | None:
 
 
 def is_consolidated_format(headers: list[str]) -> bool:
-    """Detect if a file is in consolidated/Appendix B COTS format."""
-    header_set = {str(h).strip() for h in headers if h}
-    # If 2+ consolidated columns match, treat as consolidated
-    matches = sum(1 for col in CONSOLIDATED_COLUMNS if col in header_set)
+    """Detect if a file is in consolidated/Appendix B COTS format.
+
+    Match against normalized headers so curly-quote / `?` / whitespace variants
+    don't silently drop. N >= 2 marker columns is sufficient.
+    """
+    normalized = {normalize_header(h) for h in headers if h}
+    canonical_normalized = {normalize_header(c) for c in CONSOLIDATED_COLUMNS}
+    matches = len(normalized & canonical_normalized)
     return matches >= 2
+
+
+# Normalized-header → consolidated DB column. Routing through normalize_header
+# at lookup time means we tolerate `?` vs no-`?`, double spaces, curly quotes,
+# and the en-dash/em-dash variants OMB occasionally publishes.
+_CONSOLIDATED_HEADER_MAP = {
+    normalize_header("AI Use Case"): "ai_use_case",
+    normalize_header("Commercial Examples"): "commercial_examples",
+    normalize_header("Agency Use (Y/N)?"): "agency_uses",
+    normalize_header("Agency Use(Y/N)?"): "agency_uses",
+    normalize_header("Agency Use (Y/N)"): "agency_uses",
+    normalize_header("Name of Commercial Product or Service Used"): "commercial_product",
+    normalize_header("Estimated # of Licenses/Users"): "estimated_licenses_users",
+    # 2025 aggregate form: a single file with many agencies; agency is a column.
+    normalize_header("Agency"): "agency_name",
+}
 
 
 def map_consolidated_headers(headers: list[str]) -> dict[int, str]:
     """Map column indices to consolidated_use_cases DB columns."""
     mapping = {}
     for i, h in enumerate(headers):
-        hs = str(h).strip() if h else ""
-        if hs == "AI Use Case":
-            mapping[i] = "ai_use_case"
-        elif hs == "Commercial Examples":
-            mapping[i] = "commercial_examples"
-        elif hs in ("Agency Use (Y/N)?", "Agency Use(Y/N)?"):
-            mapping[i] = "agency_uses"
-        elif hs == "Name of Commercial Product or Service Used":
-            mapping[i] = "commercial_product"
-        elif hs == "Estimated # of Licenses/Users":
-            mapping[i] = "estimated_licenses_users"
+        if not h:
+            continue
+        nk = normalize_header(str(h))
+        db_col = _CONSOLIDATED_HEADER_MAP.get(nk)
+        if db_col:
+            mapping[i] = db_col
     return mapping
 
 

@@ -38,6 +38,33 @@ def load_products(conn) -> dict[int, dict[str, Any]]:
     return products
 
 
+# Strings that agencies enter as a product but that aren't products. Treat as
+# non-evidence and skip extraction so we don't surface them as compound strings
+# or queue them as unmatched-vendor noise.
+NON_PRODUCT_PLACEHOLDERS = frozenset(
+    {
+        "various",
+        "n/a",
+        "na",
+        "none",
+        "tbd",
+        "tbd.",
+        "unknown",
+        "webapps",
+        "response",
+        "external- chatbots",
+        "external chatbots",
+        "internal gov cloud- chatbots",
+        "internal gov cloud chatbots",
+    }
+)
+
+
+def is_non_product_placeholder(text: str | None) -> bool:
+    """True if `text` (after normalize) is a placeholder, not a product name."""
+    return normalize(text) in NON_PRODUCT_PLACEHOLDERS
+
+
 def extract_products(
     text: str | None,
     aliases_dict: dict[str, Any],
@@ -48,6 +75,8 @@ def extract_products(
     in production and can be a canonical name in tests.
     """
     if not text:
+        return []
+    if is_non_product_placeholder(text):
         return []
 
     haystack = normalize(text)

@@ -1423,6 +1423,7 @@ ORG_TREE: list[dict] = [
         'level': 'department',
         'is_cfo_act_agency': True,
         'is_cabinet_department': True,
+        'aliases': ['Department of Treasury', 'Treasury Department', 'US Treasury'],
         'children': [
             {
                 'name': 'Internal Revenue Service',
@@ -1489,7 +1490,23 @@ ORG_TREE: list[dict] = [
         'level': 'department',
         'is_cfo_act_agency': True,
         'is_cabinet_department': True,
+        'aliases': [
+            'Department of Veteran Affairs',
+            'Veterans Affairs',
+            'VA Department',
+        ],
         'children': [
+            {
+                'name': 'VA Office of Inspector General',
+                'abbreviation': 'VA-OIG',
+                'level': 'office',
+                'aliases': [
+                    'Department of Veteran Affairs-OIG',
+                    'Department of Veterans Affairs-OIG',
+                    'VA OIG',
+                    'Office of Inspector General',
+                ],
+            },
             {
                 'name': 'Veterans Health Administration',
                 'abbreviation': 'VHA',
@@ -2152,7 +2169,7 @@ ORG_TREE: list[dict] = [
         'name': 'Federal Reserve Board',
         'abbreviation': 'FRB',
         'level': 'independent',
-        'aliases': ['Federal Reserve System'],
+        'aliases': ['Federal Reserve System', 'Federal Reserve Board of Governors', 'Board of Governors of the Federal Reserve System'],
         'children': [
             {
                 'name': 'Division of Supervision and Regulation',
@@ -2480,6 +2497,7 @@ ORG_TREE: list[dict] = [
         'name': 'Export-Import Bank',
         'abbreviation': 'EXIM',
         'level': 'independent',
+        'aliases': ['Export-Import Bank of the U.S.', 'Export-Import Bank of the United States'],
     },
     {
         'name': 'Federal Labor Relations Authority',
@@ -2535,6 +2553,7 @@ ORG_TREE: list[dict] = [
         'name': 'Office of Special Counsel',
         'abbreviation': 'OSC',
         'level': 'independent',
+        'aliases': ['United States Office of Special Counsel', 'U.S. Office of Special Counsel'],
     },
     {
         'name': 'Peace Corps',
@@ -2566,6 +2585,7 @@ ORG_TREE: list[dict] = [
         'name': 'Election Assistance Commission',
         'abbreviation': 'EAC',
         'level': 'independent',
+        'aliases': ['United States Election Assistance Commission', 'U.S. Election Assistance Commission'],
     },
     {
         'name': 'Federal Retirement Thrift Investment Board',
@@ -2586,10 +2606,57 @@ ORG_TREE: list[dict] = [
         'name': 'U.S. International Trade Commission',
         'abbreviation': 'USITC',
         'level': 'independent',
+        'aliases': ['United States International Trade Commission'],
     },
     {
         'name': 'U.S. Trade and Development Agency',
         'abbreviation': 'USTDA',
+        'level': 'independent',
+        'aliases': ['United States Trade and Development Agency'],
+    },
+    {
+        'name': 'AbilityOne Commission',
+        'abbreviation': 'AbilityOne',
+        'level': 'independent',
+        'aliases': [
+            'Committee for Purchase From People Who Are Blind or Significantly Disabled',
+            'U.S. AbilityOne Commission',
+        ],
+    },
+    {
+        'name': 'Farm Credit Administration',
+        'abbreviation': 'FCA',
+        'level': 'independent',
+    },
+    {
+        'name': 'Udall Foundation',
+        'abbreviation': 'Udall',
+        'level': 'independent',
+        'aliases': [
+            'Morris K. Udall and Stewart L. Udall Foundation',
+            'Morris K. Udall Foundation',
+            'Morris K. and Stewart L. Udall Foundation',
+        ],
+    },
+    {
+        'name': 'National Endowment for the Arts',
+        'abbreviation': 'NEA',
+        'level': 'independent',
+        'aliases': ['National Endowment of the Arts'],
+    },
+    {
+        'name': 'National Indian Gaming Commission',
+        'abbreviation': 'NIGC',
+        'level': 'independent',
+    },
+    {
+        'name': 'Occupational Safety and Health Review Commission',
+        'abbreviation': 'OSHRC',
+        'level': 'independent',
+    },
+    {
+        'name': 'Surface Transportation Board',
+        'abbreviation': 'STB',
         'level': 'independent',
     },
 ]
