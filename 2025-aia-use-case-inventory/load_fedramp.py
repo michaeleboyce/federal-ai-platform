@@ -4,16 +4,21 @@ Reads from `2025-fedramp/data/fedramp_marketplace.db` (read-only) and writes
 mirrors into the inventory DB so the dashboard can query both datasets through
 a single SQLite connection — no ATTACH, no second handle.
 
-Six mirrored tables (verbatim mirrors of the source schema):
+Eight mirrored tables (verbatim mirrors of the source schema):
   - fedramp_products            (642 rows expected)
   - fedramp_authorizations      (3,320 rows expected)
   - fedramp_agencies            (91 rows)
   - fedramp_assessors           (33 rows)
   - fedramp_snapshot            (single row)
-  - fedramp_leveraged_systems   (~1,762 rows; (fedramp_id, system_name) edges
+  - fedramp_leveraged_systems   (~1,770 rows; (fedramp_id, system_name) edges
                                  representing FedRAMP-side supply-chain
                                  dependencies — a CSO that "leverages" another
                                  authorized CSO under it)
+  - fedramp_business_functions  (~2,356 rows; (fedramp_id, function) — what
+                                 mission categories each CSO supports;
+                                 multi-valued)
+  - fedramp_service_models      (~708 rows; (fedramp_id, model) — SaaS/PaaS/
+                                 IaaS classification; multi-valued)
 
 Idempotent: TRUNCATE + bulk INSERT each run. Source DB is never modified.
 
@@ -121,6 +126,20 @@ CREATE TABLE IF NOT EXISTS fedramp_leveraged_systems (
 );
 CREATE INDEX IF NOT EXISTS idx_fls_fedramp_id ON fedramp_leveraged_systems(fedramp_id);
 CREATE INDEX IF NOT EXISTS idx_fls_system_name ON fedramp_leveraged_systems(system_name);
+
+CREATE TABLE IF NOT EXISTS fedramp_business_functions (
+    fedramp_id TEXT NOT NULL,
+    function   TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_fbf_fedramp_id ON fedramp_business_functions(fedramp_id);
+CREATE INDEX IF NOT EXISTS idx_fbf_function   ON fedramp_business_functions(function);
+
+CREATE TABLE IF NOT EXISTS fedramp_service_models (
+    fedramp_id TEXT NOT NULL,
+    model      TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_fsm_fedramp_id ON fedramp_service_models(fedramp_id);
+CREATE INDEX IF NOT EXISTS idx_fsm_model      ON fedramp_service_models(model);
 """
 
 
@@ -178,6 +197,8 @@ def load_fedramp(*, dry_run: bool = False) -> None:
             ("assessors", "fedramp_assessors"),
             ("snapshot", "fedramp_snapshot"),
             ("product_leveraged_systems", "fedramp_leveraged_systems"),
+            ("product_business_functions", "fedramp_business_functions"),
+            ("product_service_models",     "fedramp_service_models"),
         ]
         counts: dict[str, int] = {}
         for src_t, dst_t in moves:

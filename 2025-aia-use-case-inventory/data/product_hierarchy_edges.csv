@@ -34,3 +34,8 @@ add,NexisXplore,LexisNexis,high,Nexis-branded product
 add,Veritone Illuminate,Veritone,high,Illuminate is a Veritone product on aiWARE
 remove,GitHub Copilot,Microsoft 365 Copilot,n/a,Different SKUs/platforms/licensing; Microsoft-owned siblings not parent-child
 remove,NotebookLM,Gemini,n/a,Uses Gemini as model is not the same as is a sub-SKU of Gemini
+add,Microsoft Defender,Microsoft 365,medium,Defender for M365 / Defender for Endpoint inherit FedRAMP via M365 GCC parent (per queue narrative)
+add,Microsoft Copilot for Security,Microsoft 365,medium,Copilot for Security inherits via M365 GCC parent authorization (per queue narrative)
+add,Microsoft Search in Bing,Microsoft 365,medium,M365 Search surface; inherits via M365 GCC parent authorization
+add,Microsoft Purview,Microsoft 365,medium,Purview is the M365 governance suite; inherits via M365 GCC parent
+
