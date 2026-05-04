@@ -93,12 +93,81 @@ UPDATE use_case_tags
 
 Net: total general_llm entries 1201 → 1198.
 
-## Still murky / follow-ups
+## Narrative-extraction pass
 
+Family-B follow-up. Scanned all 446 remaining "Vendor unspecified"
+general-LLM rows (post-Slice B + post-DOJ-retag) for explicit vendor
+or product mentions in `problem_statement`, `expected_benefits`, and
+`system_outputs`. Conservative extraction: only attribute when the
+narrative names the underlying tool ("powered by Azure OpenAI",
+"Using Vertex AI"), NOT when it merely analogizes
+("ChatGPT-like interface", "such as GPT or BERT", "such as Meta
+Llama").
+
+Backup: `data/federal_ai_inventory_2025.db.backup-pre-narrative-extract`.
+Script: `scripts/recover_visibility_gap_narrative.py` (idempotent;
+re-running with --apply changes 0 rows).
+
+### Recoveries (7 rows)
+
+Agencies covered: DHS (2), DOT (2), HHS (1), NASA (1), TVA (1).
+
+Confidence:
+- 4 High: 57602 (Vertex AI/GCP), 57614 (Azure OpenAI Services /
+  FEMA Grants ChatBot), 59690 (Azure OpenAI / HHS portfolio
+  analysis), 60148 (LibreChat / NASA IV&V Assistant).
+- 3 Medium-High: 58999, 59011 (DOT "Copilot" rows mirroring Slice
+  B's MS Copilot family attributions), 60427 (TVA bare "Copilot").
+
+Sample evidence quotes:
+- 57602: *"Using Vertex AI and other GCP services, the system
+  identifies and categorizes content..."* (RedactAI FOIA).
+- 57614: *"The AI system, powered by Azure OpenAI Services,
+  generates outputs..."* (FEMA Grants Manager ChatBot).
+- 59690: *"automates the process of analyzing text...using a
+  custom prompt and an Azure OpenAI models"* (HHS grant
+  summarizing).
+- 60148: *"NASA IV&V AI Assistant powered by LibreChat with
+  Retrieval-Augmented Generation"*.
+
+### Patterns observed
+
+- **DHS = Vertex AI + Azure OpenAI shop.** FEMA cites Azure OpenAI
+  Services explicitly; another DHS bureau (RedactAI) cites Vertex
+  AI on GCP. The remaining 35 DHS unspec rows are Family C
+  (umbrella platform-license requests under DHS commercial-GenAI
+  authorization — already documented in this file).
+- **DOT "Copilot" pattern.** Two FAA/DOT entries name a product
+  literally called "Copilot" in the title and reuse Microsoft
+  Copilot Studio terminology ("library of actions, pre-programmed
+  capabilities") in the narrative. Treated like Slice B's CT/Meta
+  Pilot Copilot attributions.
+- **TVA = Microsoft Copilot.** Single bare "Copilot" entry with
+  generic productivity benefits; matches TVA's public M365
+  enterprise rollout. Medium-High by analogy.
+- **Speculation rejected.** 59892 NASA REQAL ("such as GPT or
+  BERT"), 60194 NSF topic-id ("such as Meta Llama"), 60202 NSF
+  Open access LLM (multi-vendor BERT/Gemma/Llama/Mistral/Nemotron
+  request) all skipped — narrative is exploratory, not committal.
+
+Net effect: visibility gap dropped **446 → 439** general-LLM
+entries without a recoverable vendor (-7, -1.6%). Smaller than the
+Slice B title pass (-55) because most narratives in this remaining
+pool are genuinely Family C — agencies haven't picked a vendor yet.
+
+### Still murky / follow-ups
+
+- **Treasury (63 unspec).** Largest non-VA bucket. Spot reads show
+  Treasury entries are narrative-light (often a paragraph of
+  business motivation with no platform name). 60561 EST GPT is the
+  flagship example — the "GPT" is the project name, not an OpenAI
+  attribution. Likely Family C across the board, but worth a
+  dedicated targeted read if the Treasury bucket starts mattering
+  for a story.
 - **VA GPT vendor**: VA does not publicly disclose what model VA GPT
   runs on. Public M-25-21 plan only says "internal generative AI
   chat tool." Worth a direct inquiry to VA AI program contacts.
-- **Family B rows** (~30+ across all agencies): narratives mention
-  vendors but extraction needs an LLM micro-agent pass. Worth a
-  future slice — same pattern as the auto_tag.py heuristics, just
-  with broader pattern matching and per-row review.
+- **Multi-vendor LLM-access requests** (60202 NSF, 57788/89/90
+  DHS): the narrative names a basket of allowed vendors rather
+  than one. Schema can't represent "any of {A,B,C}". Document in
+  findings only.
