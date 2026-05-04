@@ -21,6 +21,11 @@ fix:
 	python3 scripts/apply_expanded_product_catalog.py
 	python3 scripts/populate_use_case_products.py
 	python3 scripts/cleanup_products_taxonomy.py
+	# IFP product-category assignments from the curated audit proposal.
+	# Runs AFTER cleanup so it can replace the cleanup step's NULL→
+	# 'unclassified' backfill with concrete category labels (e.g.
+	# physical_security, developer_tool, threat_intel). Idempotent.
+	python3 scripts/apply_product_recategorization.py
 	# Federal organizations hierarchy — schema, seed, backfill, sub-agency
 	# maturity. Each script is idempotent.
 	python3 scripts/run_migrations.py
