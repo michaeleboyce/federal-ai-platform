@@ -78,6 +78,21 @@ Per-row rationales live in the script itself.
 Net effect: **visibility gap dropped 431 → 376** general-LLM entries
 without a recoverable vendor (-55, -13%).
 
+## Follow-up DB updates (post-Slice B)
+
+**DOJ retag (applied)**: use_cases 58641 (R), 58642 (Stata),
+58643 (Matlab) were misclassified as `general_llm`. Statistical
+packages, not generative AI. Updated:
+
+```sql
+UPDATE use_case_tags
+   SET ai_sophistication = 'classical_ml',
+       is_general_llm_access = 0
+ WHERE use_case_id IN (58641, 58642, 58643);
+```
+
+Net: total general_llm entries 1201 → 1198.
+
 ## Still murky / follow-ups
 
 - **VA GPT vendor**: VA does not publicly disclose what model VA GPT
@@ -87,6 +102,3 @@ without a recoverable vendor (-55, -13%).
   vendors but extraction needs an LLM micro-agent pass. Worth a
   future slice — same pattern as the auto_tag.py heuristics, just
   with broader pattern matching and per-row review.
-- **DOJ R/Stata/Matlab tagging**: should be re-tagged out of
-  `general_llm` entirely — they're statistical packages, not
-  generative AI. Flagged here; not touched in this pass.
