@@ -1,0 +1,36 @@
+action,child_canonical_name,parent_canonical_name,confidence,reasoning
+add,Azure OpenAI,Microsoft Azure Platform,high,Azure service billed through Azure
+add,Azure AI Foundry,Microsoft Azure Platform,high,Azure service
+add,Azure AI Document Intelligence,Microsoft Azure Platform,high,Azure service
+add,Azure Speech,Microsoft Azure Platform,high,Azure service
+add,Microsoft Azure Authoring Tools,Microsoft Azure Platform,high,Azure service
+add,Microsoft Azure PowerShell,Microsoft Azure Platform,high,Azure service
+add,Microsoft Azure Quantum Elements,Microsoft Azure Platform,high,Azure service
+add,Microsoft 365 Copilot,Microsoft 365,high,Copilot is licensed on top of M365
+add,Microsoft Teams,Microsoft 365,high,Bundled in M365
+add,Microsoft Outlook,Microsoft 365,high,Bundled in M365
+add,Microsoft OneDrive,Microsoft 365,high,Bundled in M365
+add,Microsoft OneNote,Microsoft 365,high,Bundled in M365
+add,Microsoft PowerPoint,Microsoft 365,high,Bundled in M365
+add,Microsoft Project,Microsoft 365,medium,Some M365 plans bundle Project
+add,Microsoft Exchange Server,Microsoft 365,medium,Server SKU separate; M365 includes Exchange Online
+add,Microsoft 365 Apps for Enterprise,Microsoft 365,high,Apps for Enterprise is the desktop-apps SKU within M365
+add,Microsoft Copilot Studio,Microsoft Power Platform,high,Copilot Studio = rebranded Power Virtual Agents
+add,Microsoft AI Builder,Microsoft Power Platform,high,Power Platform component
+add,Microsoft Power BI,Microsoft Power Platform,high,Power Platform component
+add,Microsoft Purview eDiscovery,Microsoft Purview,high,Sub-product of Purview
+add,Visual Studio Enterprise,Visual Studio,high,Tier of Visual Studio
+add,Google Vertex AI,Google Cloud Platform,high,GCP service
+add,Google Cloud Vision,Google Cloud Platform,high,GCP service
+add,Google Agentspace,Google Vertex AI,medium,Agentspace is built on Vertex
+add,Amazon CodeWhisperer,Amazon Q,high,CodeWhisperer was rebranded as Amazon Q Developer in 2024
+add,Palantir AIP,Palantir Federal Cloud Service,medium,AIP runs on Foundry/FedCloud in federal context
+add,IBM ARGOS,IBM Watson,medium,NLP product in Watson family
+add,IBM CoreDF,IBM Watson,medium,Document AI in Watson family
+add,Adobe Photoshop,Adobe Creative Cloud Suite,high,Photoshop is the core CC app
+add,Adobe Firefly,Adobe Creative Cloud Suite,medium,Ships inside CC apps; also standalone API
+add,Lexis+ AI,LexisNexis,high,Lexis+ AI is the LexisNexis AI legal research product
+add,NexisXplore,LexisNexis,high,Nexis-branded product
+add,Veritone Illuminate,Veritone,high,Illuminate is a Veritone product on aiWARE
+remove,GitHub Copilot,Microsoft 365 Copilot,n/a,Different SKUs/platforms/licensing; Microsoft-owned siblings not parent-child
+remove,NotebookLM,Gemini,n/a,Uses Gemini as model is not the same as is a sub-SKU of Gemini

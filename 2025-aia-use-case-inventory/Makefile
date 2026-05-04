@@ -56,6 +56,13 @@ adjudicate-review-queue-scope:
 fedramp:
 	python3 load_fedramp.py
 	python3 link_fedramp.py --apply
+	# Promote resolved fedramp_link_queue decisions into fedramp_product_links.
+	# Picks up rows that link_fedramp.py left as 'multi_candidate' or 'no_alias'
+	# and were later marked status='resolved' with a parseable fedramp_id
+	# (regex FR\d+/F1\d+ or accept_N candidate index). source='link_queue' so
+	# the rows survive subsequent link_fedramp.py rebuilds (which only clear
+	# source='alias_match').
+	python3 scripts/promote_resolved_link_queue.py --apply
 
 dashboard:
 	cd dashboard && npm run build

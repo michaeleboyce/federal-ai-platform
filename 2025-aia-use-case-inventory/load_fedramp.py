@@ -4,12 +4,16 @@ Reads from `2025-fedramp/data/fedramp_marketplace.db` (read-only) and writes
 mirrors into the inventory DB so the dashboard can query both datasets through
 a single SQLite connection — no ATTACH, no second handle.
 
-Five mirrored tables (verbatim mirrors of the source schema):
-  - fedramp_products         (642 rows expected)
-  - fedramp_authorizations   (3,320 rows expected)
-  - fedramp_agencies         (91 rows)
-  - fedramp_assessors        (33 rows)
-  - fedramp_snapshot         (single row)
+Six mirrored tables (verbatim mirrors of the source schema):
+  - fedramp_products            (642 rows expected)
+  - fedramp_authorizations      (3,320 rows expected)
+  - fedramp_agencies            (91 rows)
+  - fedramp_assessors           (33 rows)
+  - fedramp_snapshot            (single row)
+  - fedramp_leveraged_systems   (~1,762 rows; (fedramp_id, system_name) edges
+                                 representing FedRAMP-side supply-chain
+                                 dependencies — a CSO that "leverages" another
+                                 authorized CSO under it)
 
 Idempotent: TRUNCATE + bulk INSERT each run. Source DB is never modified.
 
@@ -110,6 +114,13 @@ CREATE TABLE IF NOT EXISTS fedramp_snapshot (
     assessor_count INTEGER,
     built_at TEXT
 );
+
+CREATE TABLE IF NOT EXISTS fedramp_leveraged_systems (
+    fedramp_id  TEXT NOT NULL,
+    system_name TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_fls_fedramp_id ON fedramp_leveraged_systems(fedramp_id);
+CREATE INDEX IF NOT EXISTS idx_fls_system_name ON fedramp_leveraged_systems(system_name);
 """
 
 
@@ -166,6 +177,7 @@ def load_fedramp(*, dry_run: bool = False) -> None:
             ("agencies", "fedramp_agencies"),
             ("assessors", "fedramp_assessors"),
             ("snapshot", "fedramp_snapshot"),
+            ("product_leveraged_systems", "fedramp_leveraged_systems"),
         ]
         counts: dict[str, int] = {}
         for src_t, dst_t in moves:

@@ -1,0 +1,53 @@
+canonical_name,fedramp_id,confidence,source,notes
+# Phase 6 — Parent product links (each propagates to children via the dashboard's 5-hop inheritance CTE)
+Microsoft Azure Platform,F1603087869,manual,manual_csv,Maps to Azure Government parent authorization (High). Children inherit: Azure OpenAI, Azure AI Foundry, Azure AI Document Intelligence, Azure Speech, Microsoft Azure Authoring Tools, Microsoft Azure PowerShell, Microsoft Azure Quantum Elements.
+Microsoft Power Platform,MSO365MT,manual,manual_csv,Power Platform GCC inherits FedRAMP via M365 GCC parent authorization (per queue narrative q70). Children: Copilot Studio, AI Builder, Power BI.
+Adobe Creative Cloud Suite,FR1820435960,manual,manual_csv,Adobe Creative Cloud for Enterprise (Li-SaaS). Children: Photoshop, Firefly.
+Google Cloud Platform,FR1805751477,manual,manual_csv,Google Services (GCP) High. Children: Vertex AI (and Agentspace via Vertex), Cloud Vision.
+Google Workspace,F1206081364,manual,manual_csv,Google Workspace High. NotebookLM and Chrome Generative AI are Workspace-adjacent per queue narratives.
+IBM Watson,F1211011660,manual,manual_csv,IBM Cloud for Government (High); IBM Watson services run here per queue narratives. Children: ARGOS, CoreDF.
+Veritone,FR1804557312,manual,manual_csv,Veritone iDEMS for Government (Moderate). Child: Illuminate.
+# Phase 6 — Standalone product links resolving inheritance narratives
+Splunk,FR2314156865,manual,manual_csv,Splunk Cloud Platform for FedRAMP High (per queue q21 manual decision).
+Snowflake Cortex,FR2308159208,manual,manual_csv,Snowflake Data Cloud on AWS GovCloud (High); Cortex is a Snowflake-native AI feature.
+UiPath Enterprise RPA,FR2132958724,manual,manual_csv,UiPath Automation Cloud Public Sector (Moderate).
+Articulate 360 AI Assistant,FR2317139564,manual,manual_csv,Articulate 360 (Li-SaaS); AI Assistant is a feature.
+Cellebrite Media Classifier,FR2421035110,manual,manual_csv,Cellebrite Government Cloud (In Process High); Media Classifier is a feature.
+KnowBe4 PhishER,FR2201340492,manual,manual_csv,KnowBe4 Platform (Moderate); PhishER is part of it.
+BMC Helix ITSM,F1510057481,manual,manual_csv,BMC Helix (Moderate).
+Skillsoft Percipio CAISY,FR2118043605,manual,manual_csv,Skillsoft Percipio (Moderate); CAISY is the AI conversation simulator.
+Everlaw AI Assistant,FR1916055736,manual,manual_csv,Everlaw Platform (Moderate); AI Assistant is a feature.
+Appian AI,FR2318051429,manual,manual_csv,Appian Government Cloud - High (preferred over Moderate per high-assurance policy).
+H2O GPTe,FR2521554684,manual,manual_csv,H2O.AI (High); GPTe is part of H2O.AI offerings.
+Alation Data Catalog,FR2411862686,manual,manual_csv,Alation Cloud Service (FedRAMP Ready Moderate).
+OpenText Axcelerate,FR2203732438,manual,manual_csv,OpenText Cloud for Government (Moderate); Axcelerate runs on OpenText cloud.
+OpenText Decisiv,FR2203732438,manual,manual_csv,OpenText Cloud for Government (Moderate); Decisiv runs on OpenText cloud.
+Microsoft Sentinel,F1603087869,manual,manual_csv,Azure-resident SIEM; inherits FedRAMP from Azure Government parent.
+Microsoft Dynamics 365,F1603087869,manual,manual_csv,Azure Government CSO description: 'Azure Government (includes Dynamics 365)'.
+# Phase 7 — Wrong-rejected (audit report 02): products with unambiguous matches that the queue marked no_alias.
+ChatGPT,FR2533155773,manual,manual_csv,OpenAI ChatGPT Enterprise and API Platform (Moderate).
+OpenAI API,FR2533155773,manual,manual_csv,Same OpenAI authorization covers ChatGPT Enterprise and the API Platform.
+Gemini,FR2604952026,manual,manual_csv,Gemini for Government (Low).
+GitHub Copilot,FR1812058188,manual,manual_csv,GitHub Enterprise Cloud (Li-SaaS); Li-SaaS may not satisfy Moderate/High agency requirements.
+Altana Atlas,FR2413241182,manual,manual_csv,Altana Product Network (High).
+Exiger DDIQ,FR2122140784,manual,manual_csv,Exiger Federal Cloud / EFC (Moderate).
+# Phase 7 — Never queued (audit report 02): commercial products added after the original queue build.
+Grok,FR2618542150,manual,manual_csv,xAI Grok for Government (Agency Authorization In Process High).
+Slack,FR2230252267,manual,manual_csv,GovSlack (High) preferred over commercial Slack (Moderate FR1823447014).
+Zoom,FR1825941347A,manual,manual_csv,Zoom for Government (Moderate).
+ServiceNow Now Assist,F1305072116,manual,manual_csv,ServiceNow Government Community Cloud (High).
+ServiceNow IT Operations Management (ITOM) Predictive AIOps,F1305072116,manual,manual_csv,ServiceNow Government Community Cloud (High).
+Salesforce Einstein,FR2003061248,manual,manual_csv,Salesforce Government Cloud Plus (High).
+Crowdstrike Falcon,FR1807853629A,manual,manual_csv,CrowdStrike Falcon Platform for Government (High).
+Wiz,FR2308034636A,manual,manual_csv,Wiz for U.S. Government (High).
+Asana,FR2527132001,manual,manual_csv,Asana (Agency Authorization In Process Moderate).
+Perplexity,FR2604643715,manual,manual_csv,Perplexity Enterprise and API Platform (Low).
+# Phase 8 — Re-tier additions: High-impact SKU added alongside the Moderate already linked from Phase 3.
+# Both rows kept because some agencies authorize against Moderate; High is the preferred default.
+Zscaler,FR1720454205,manual,manual_csv,Zscaler ZIA-Government Moderate baseline (the queue's narrative pick).
+Zscaler,FR2227062482,manual,manual_csv,Zscaler ZIA-Government High variant added per audit re-tier; preferred default.
+Palo Alto Networks,FR2317253567,manual,manual_csv,Palo Alto Networks GCS-HIGH added per audit re-tier; alongside Moderate FR1913470600 already linked.
+Citrix,FR1819254092A,manual,manual_csv,Citrix for Government - High added per audit re-tier; alongside Moderate FR1819254092 already linked.
+Microsoft 365,FR1824057433,manual,manual_csv,Microsoft 365 Government Community Cloud-High added per audit re-tier; alongside Moderate MSO365MT already linked.
+Palantir Federal Cloud Service,FR2434554673,manual,manual_csv,Palantir Federal Cloud Service - High added per audit re-tier; alongside Moderate FR1912671248 already linked.
+
