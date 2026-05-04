@@ -220,6 +220,18 @@ def main() -> int:
                             rec.get("rationale", "")[:200],
                         )
                         stats[result] += 1
+                        # If the alias resolved to an existing product, ALSO
+                        # insert the source row's use_case_products edge —
+                        # an "add_alias" decision is implicitly a "link" once
+                        # the canonical exists. Without this, the alias gets
+                        # added but the source row stays unattributed.
+                        if result in ("aliased", "alias_exists"):
+                            pid = _resolve_product_id(conn, canonical)
+                            if pid is not None:
+                                edge_result = _insert_edge(
+                                    conn, qrow, pid, rec.get("evidence_quote") or canonical
+                                )
+                                stats[edge_result] += 1
 
                     elif decision == "agency_internal_system":
                         stats["agency_internal_system"] += 1
