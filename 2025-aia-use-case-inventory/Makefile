@@ -21,6 +21,13 @@ fix:
 	python3 scripts/apply_expanded_product_catalog.py
 	python3 scripts/populate_use_case_products.py
 	python3 scripts/cleanup_products_taxonomy.py
+	# Apply curated product attributions from the 3-agent product-gap
+	# review (audit/product_gap_review/{noisy,llms,other}/recommendations.json).
+	# Adds 22 use_case_products edges that the heuristic populate step
+	# misses (mostly Azure OpenAI cases mis-attributed to OpenAI API in
+	# narrative fields). Idempotent. Without this in the pipeline, the
+	# manual links from commit 4bfbf5a get wiped on every rebuild.
+	python3 scripts/apply_product_gap_review.py
 	# IFP product-category assignments from the curated audit proposal.
 	# Runs AFTER cleanup so it can replace the cleanup step's NULL→
 	# 'unclassified' backfill with concrete category labels (e.g.
