@@ -15,6 +15,7 @@ from column_maps import (
     map_canonical_headers,
     map_consolidated_headers,
 )
+from auto_tag import normalize_topic_area
 from data.federal_hierarchy_seed import ORG_TREE
 
 DATA_DIR = Path(__file__).parent / "data" / "raw"
@@ -346,6 +347,11 @@ def load_file(filepath: Path, conn) -> dict:
                 skipped += 1
                 continue
         else:
+            # Normalize topic_area at ingest (em-dash -> hyphen, whitespace
+            # collapse, case-only dedupe, blank -> NULL). See
+            # `audit/cleanup_pass/topic_area_normalization_log.md`.
+            if "topic_area" in db_values:
+                db_values["topic_area"] = normalize_topic_area(db_values["topic_area"])
             # Build the full INSERT dynamically
             cols = [
                 "use_case_id", "use_case_name", "bureau_component", "email_address",

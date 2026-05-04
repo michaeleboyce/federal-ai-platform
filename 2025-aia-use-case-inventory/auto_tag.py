@@ -123,6 +123,46 @@ def normalize(s):
     return str(s).lower().strip()
 
 
+# Map of case-folded variant -> canonical (titlecased) value.
+# Only contains values where multiple casings exist in the source data;
+# we deliberately avoid widening this beyond verified case-only duplicates.
+_TOPIC_AREA_CASE_CANONICAL = {
+    "administrative functions": "Administrative Functions",
+}
+
+
+def normalize_topic_area(raw):
+    """Normalize a `topic_area` value at ingest time.
+
+    Rules (deliberately conservative — see
+    `audit/cleanup_pass/topic_area_normalization_log.md`):
+      * `None` / blank-after-trim -> `None`
+      * Em-dash (U+2013) -> ASCII hyphen
+      * Collapse runs of whitespace to a single space; trim outer whitespace
+      * Case-only duplicates collapse to the titlecased canonical
+        (e.g. "Administrative functions" -> "Administrative Functions")
+      * Genuinely distinct values (e.g. "Cybersecurity" vs.
+        "Cybersecurity Operations") are NOT merged.
+
+    Idempotent: `f(f(x)) == f(x)` for all inputs.
+    """
+    if raw is None:
+        return None
+    s = str(raw)
+    # Em-dash (and en-dash variant) -> hyphen, before whitespace collapse so
+    # surrounding spacing normalizes uniformly.
+    s = s.replace("–", "-").replace("—", "-")
+    # Collapse internal whitespace runs (incl. NBSP) to a single ASCII space,
+    # then trim outer whitespace.
+    s = re.sub(r"\s+", " ", s).strip()
+    if not s:
+        return None
+    canonical = _TOPIC_AREA_CASE_CANONICAL.get(s.lower())
+    if canonical is not None:
+        return canonical
+    return s
+
+
 _TEMPLATE_WHITESPACE_RE = re.compile(r"\s+")
 _TEMPLATE_TRAILING_PUNCT_RE = re.compile(r"[.,;:\s]+$")
 
