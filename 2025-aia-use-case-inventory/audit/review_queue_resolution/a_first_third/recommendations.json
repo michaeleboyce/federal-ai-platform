@@ -1,0 +1,1298 @@
+[
+  {
+    "id": 13756,
+    "decision": "false_positive",
+    "rationale": "Generic problem statement about API security testing; no commercial AI product named. Heuristic over-matched 'Microsoft Teams' from absent context."
+  },
+  {
+    "id": 13757,
+    "decision": "false_positive",
+    "rationale": "Description references ServiceNow helpdesk tickets but ServiceNow Now Assist is already in heuristic. No additional products named."
+  },
+  {
+    "id": 13758,
+    "decision": "link",
+    "canonical_name": "Invariant Acoustic Signature AI",
+    "evidence_quote": "Invariant Corporation Acoustic Signature AI for Gunshot Detection",
+    "confidence": "high",
+    "rationale": "Vendor 'Invariant Corporation' and product 'Acoustic Signature AI' match catalog entry exactly."
+  },
+  {
+    "id": 13759,
+    "decision": "agency_internal_system",
+    "evidence_quote": "CBP Translate Assist officers and agents with immediate interpretation needs",
+    "rationale": "CBP Translate is a CBP-built translation system; vendor list shows contractors building it, not commercial product."
+  },
+  {
+    "id": 13760,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Traveler Verification Service Supervised Traveler Identity Verification Services",
+    "rationale": "Traveler Verification Service is CBP's biometric system; vendor names commodity hardware (Apple, Samsung, Logitech), not AI vendors."
+  },
+  {
+    "id": 13761,
+    "decision": "link",
+    "canonical_name": "TRM Labs Blockchain Analysis Platform",
+    "evidence_quote": "TRM Labs Cryptocurrency Analysis",
+    "confidence": "high",
+    "rationale": "Vendor TRM Labs maps to TRM Labs Blockchain Analysis Platform in catalog."
+  },
+  {
+    "id": 13762,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Automated Radiological Data Integration System - Cloud (ARDIS-C) ERNIE",
+    "rationale": "ERNIE/ARDIS-C is a DHS Countering WMD internal system, not commercial product."
+  },
+  {
+    "id": 13763,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Consular Consolidated Database (CCD) Facial Recognition",
+    "rationale": "CCD is a Department of State internal database; facial recognition is an internal capability, not a named commercial product."
+  },
+  {
+    "id": 13764,
+    "decision": "false_positive",
+    "rationale": "Vendor field is 'Law Enforcement Sensitive (LES)' — agency declined to name product."
+  },
+  {
+    "id": 13765,
+    "decision": "false_positive",
+    "rationale": "Vendor field is 'Law Enforcement Sensitive (LES)' — agency declined to name product."
+  },
+  {
+    "id": 13766,
+    "decision": "false_positive",
+    "rationale": "Vendor field is 'Law Enforcement Sensitive (LES)' — agency declined to name product."
+  },
+  {
+    "id": 13767,
+    "decision": "false_positive",
+    "rationale": "'AIS' is a contractor, not a recognizable commercial AI product."
+  },
+  {
+    "id": 13768,
+    "decision": "false_positive",
+    "rationale": "Vendor field is 'Law Enforcement Sensitive (LES)' — agency declined to name product."
+  },
+  {
+    "id": 13769,
+    "decision": "false_positive",
+    "rationale": "Leidos and Rohde & Schwarz are integrators; no specific AI product named."
+  },
+  {
+    "id": 13770,
+    "decision": "link",
+    "canonical_name": "IDEMIA CAT-2/AutoCAT",
+    "evidence_quote": "IDEMIA Identity, Security USA LLC STIP/CAT Credential Authentication Technology with Camera System (CAT-2) and AutoCAT",
+    "confidence": "high",
+    "rationale": "Direct match to IDEMIA CAT-2/AutoCAT in catalog."
+  },
+  {
+    "id": 13771,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Text Analytics Data Science Sentence Similarity Model",
+    "rationale": "USCIS-internal Text Analytics ML model built by contractor Inadev; not a commercial product."
+  },
+  {
+    "id": 13772,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Verification Information System Verification Match Model",
+    "rationale": "USCIS Verification Information System custom ML model; IBM is integrator, no specific commercial AI product."
+  },
+  {
+    "id": 13773,
+    "decision": "agency_internal_system",
+    "evidence_quote": "I-765 - USCIS Facial Recognition through IDENT",
+    "rationale": "DHS IDENT/CPMS internal facial recognition; Pluribus Digital is integrator."
+  },
+  {
+    "id": 13774,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Person Centric Identity Services Person-Centric Identity Services Deduplication Model",
+    "rationale": "USCIS PCIS internal deduplication ML model; MetroIBR is contractor."
+  },
+  {
+    "id": 13775,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Advanced Trade Analytics Platform (ATAP)",
+    "rationale": "CBP-built ATAP system; contractors listed are integrators."
+  },
+  {
+    "id": 13776,
+    "decision": "link",
+    "canonical_name": "Dataminr First Alert",
+    "evidence_quote": "Dataminr Public Information Compilation for Travel Threat Analysis (Dataminr)",
+    "confidence": "high",
+    "rationale": "Dataminr vendor maps to Dataminr First Alert in catalog."
+  },
+  {
+    "id": 13777,
+    "decision": "link",
+    "canonical_name": "Airship AI Platform",
+    "evidence_quote": "Airship TECS CLOUD Airship Outpost for Conveyance Identification",
+    "confidence": "high",
+    "rationale": "Airship vendor maps to Airship AI Platform; the use case is built on Airship's product."
+  },
+  {
+    "id": 13778,
+    "decision": "false_positive",
+    "rationale": "PDRI is a contractor (testing services), not a recognized commercial AI vendor."
+  },
+  {
+    "id": 13779,
+    "decision": "agency_internal_system",
+    "evidence_quote": "JHU APL Vessel Detection",
+    "rationale": "JHU APL is a federally funded research lab partner, not a commercial product; system is custom-built."
+  },
+  {
+    "id": 13780,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Automated Targeting System (ATS) Passport Anomaly Model",
+    "rationale": "CBP ATS is a federal targeting system with internally-built ML models; ManTech is integrator."
+  },
+  {
+    "id": 13781,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Automated Targeting System (ATS) Trade Entity Risk Model",
+    "rationale": "CBP ATS is a federal targeting system with internally-built ML models; ManTech is integrator."
+  },
+  {
+    "id": 13782,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Repository for Analytics in a Virtualized Environment Investigative Prioritization Aggregator",
+    "rationale": "ICE HSI custom system (RAVEn); Sandia is FFRDC builder, not commercial product."
+  },
+  {
+    "id": 13783,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Repository for Analytics in a Virtualized Environment, Translation and Transcription",
+    "rationale": "ICE HSI RAVEn-internal capability; Booz Allen is integrator."
+  },
+  {
+    "id": 13784,
+    "decision": "false_positive",
+    "rationale": "Vendor field is 'Law Enforcement Sensitive (LES)' — agency declined to name product."
+  },
+  {
+    "id": 13785,
+    "decision": "link",
+    "canonical_name": "BI SmartLINK",
+    "evidence_quote": "BI ISAP IV (SmartLink) IATSS Biometric Check-in for ATD-ISAP (SmartLINK)",
+    "confidence": "high",
+    "rationale": "Vendor BI (BI Incorporated) and SmartLINK product match catalog entry exactly."
+  },
+  {
+    "id": 13786,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Vetting Identities for an Enterprise Workforce User and Entity Behavior Analytics (UEBA)",
+    "rationale": "DHS VIEW custom system; CANDA is integrator."
+  },
+  {
+    "id": 13787,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Biometrics Enrollment Tool (BET) Fingerprint Quality Check",
+    "rationale": "USCIS BET internal tool; Pluribus Digital is integrator."
+  },
+  {
+    "id": 13788,
+    "decision": "agency_internal_system",
+    "evidence_quote": "ELIS Automated Name and Date of Birth (DOB) Harvesting Service",
+    "rationale": "USCIS ELIS internal microservice; SAIC and DV United are integrators."
+  },
+  {
+    "id": 13789,
+    "decision": "agency_internal_system",
+    "evidence_quote": "ELIS ELIS Card Photo Validation Service",
+    "rationale": "USCIS ELIS internal validation service; SAIC and DV United are integrators."
+  },
+  {
+    "id": 13790,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Person Centric Identity Services Person-Centric Identity Services Information Compilation Check",
+    "rationale": "USCIS PCIS internal model; MetroIBR is contractor."
+  },
+  {
+    "id": 13791,
+    "decision": "false_positive",
+    "rationale": "Starlo and Deloitte are integrators; no specific commercial AI product named."
+  },
+  {
+    "id": 13792,
+    "decision": "link",
+    "canonical_name": "Llama",
+    "evidence_quote": "Meta, OpenAI, Google, Anthropic GenAI for Document Summarization",
+    "confidence": "medium",
+    "rationale": "Compound vendor list 'Meta, OpenAI, Google, Anthropic'; Meta = Llama (not in heuristic)."
+  },
+  {
+    "id": 13792,
+    "decision": "link",
+    "canonical_name": "Gemini",
+    "evidence_quote": "Meta, OpenAI, Google, Anthropic",
+    "confidence": "medium",
+    "rationale": "Google in compound list = Gemini (not in heuristic)."
+  },
+  {
+    "id": 13793,
+    "decision": "agency_internal_system",
+    "evidence_quote": "CISAChat Currently, retrieving and synthesizing content",
+    "rationale": "CISA-built internal chatbot; Microsoft is platform provider, not specific product named."
+  },
+  {
+    "id": 13794,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Trusted Automated eXchange of Indicator Information server Automated Detection of Personally Identifiable Information",
+    "rationale": "CISA TAXII server with custom NLP; Nightwing is contractor, not commercial product."
+  },
+  {
+    "id": 13795,
+    "decision": "link",
+    "canonical_name": "Azure OpenAI",
+    "evidence_quote": "Microsoft (OpenAI part of Azure Commercial Cloud offerings) ReadyAI OCFO Code Assist GPT",
+    "confidence": "high",
+    "rationale": "Vendor explicitly says 'OpenAI part of Azure Commercial Cloud' which is Azure OpenAI; not in heuristic."
+  },
+  {
+    "id": 13795,
+    "decision": "link",
+    "canonical_name": "Ideation ReadyAI",
+    "evidence_quote": "ReadyAI OCFO Code Assist GPT",
+    "confidence": "high",
+    "rationale": "ReadyAI matches Ideation ReadyAI in catalog (FEMA's GenAI platform)."
+  },
+  {
+    "id": 13796,
+    "decision": "add_alias",
+    "canonical_name": "Cofense PhishMe",
+    "alias_text": "Cofense",
+    "rationale": "Cofense is a phishing defense vendor named explicitly; not in catalog."
+  },
+  {
+    "id": 13796,
+    "decision": "add_alias",
+    "canonical_name": "AttackIQ",
+    "alias_text": "AttackIQ",
+    "rationale": "AttackIQ is a breach-and-attack-simulation platform named in vendor list; not in catalog."
+  },
+  {
+    "id": 13797,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Repository for Analytics in a Virtualized Environment Normalization Services",
+    "rationale": "ICE HSI RAVEn internal data normalization; Booz Allen is integrator."
+  },
+  {
+    "id": 13798,
+    "decision": "false_positive",
+    "rationale": "Heuristic already linked Okta Adaptive MFA correctly. The other heuristic matches (Defender, Crowdstrike) are false-positive substring matches; no additional products named in source."
+  },
+  {
+    "id": 13799,
+    "decision": "agency_internal_system",
+    "evidence_quote": "ELIS ELIS Evidence Classifier Service",
+    "rationale": "USCIS ELIS internal classifier; SAIC and DV United are integrators."
+  },
+  {
+    "id": 13800,
+    "decision": "false_positive",
+    "rationale": "Heuristic already captured Claude and AWS Bedrock correctly; no additional products named."
+  },
+  {
+    "id": 13801,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Global AI Interview Simulator for Officer Training",
+    "rationale": "USCIS RAIO custom training simulator built by integrators (Steampunk, CVP, AOI); not a commercial product."
+  },
+  {
+    "id": 13802,
+    "decision": "agency_internal_system",
+    "evidence_quote": "SCOUT LLM helps staff create content, simplify complex topics",
+    "rationale": "DOC's SCOUT is an internal LLM wrapper. Heuristic already captured Claude and OpenAI for the underlying models."
+  },
+  {
+    "id": 13802,
+    "decision": "link",
+    "canonical_name": "Llama",
+    "evidence_quote": "OpenAI, Anthropic, Meta, among others",
+    "confidence": "medium",
+    "rationale": "SCOUT exposes Meta models (Llama); not in heuristic."
+  },
+  {
+    "id": 13803,
+    "decision": "unclear",
+    "rationale": "Vendor 'Microsoft' is generic; APT Analytics is a custom DOE R&D analysis tool. Could be Azure/Microsoft 365 Copilot but no specific product named."
+  },
+  {
+    "id": 13804,
+    "decision": "unclear",
+    "rationale": "Vendor 'Microsoft' is generic; predictive modeling is custom R&D. No specific commercial product named."
+  },
+  {
+    "id": 13805,
+    "decision": "unclear",
+    "rationale": "Vendor 'Microsoft' is generic; SEA-CROGS is a DOE R&D project. No specific commercial product named."
+  },
+  {
+    "id": 13806,
+    "decision": "unclear",
+    "rationale": "Vendor 'Microsoft' is generic; custom ML for text parsing. No specific commercial product named."
+  },
+  {
+    "id": 13807,
+    "decision": "false_positive",
+    "rationale": "Cisco named as vendor for a custom AI parking-detection R&D project; no specific Cisco AI product named."
+  },
+  {
+    "id": 13808,
+    "decision": "agency_internal_system",
+    "evidence_quote": "NLCOO AI for Lessons Learned tool",
+    "rationale": "DOE NNSA internal Lessons Learned tool; 'No Vendor Involved' explicitly stated."
+  },
+  {
+    "id": 13809,
+    "decision": "add_alias",
+    "canonical_name": "EnerGPT",
+    "alias_text": "EnerGPT",
+    "rationale": "EnerGPT appears to be a DOE-targeted GenAI product; not in catalog. Likely worth tracking."
+  },
+  {
+    "id": 13810,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Methodology for Analyzing and Prioritizing Policy Requirements and Integrating Them for Effectiveness (MAPPRITE)",
+    "rationale": "DOE Special Technologies Lab custom system; not commercial."
+  },
+  {
+    "id": 13811,
+    "decision": "false_positive",
+    "rationale": "'Not available' vendor; only 'Azure Platform' mentioned via SSP. Too vague to attribute."
+  },
+  {
+    "id": 13812,
+    "decision": "false_positive",
+    "rationale": "Heuristic already correctly captured GitHub Copilot and OpenAI API."
+  },
+  {
+    "id": 13813,
+    "decision": "link",
+    "canonical_name": "AWS Bedrock",
+    "evidence_quote": "AWS, Azure, OpenAI",
+    "confidence": "medium",
+    "rationale": "AWS named as platform; not in heuristic. Likely AWS Bedrock for the LLM compute layer."
+  },
+  {
+    "id": 13813,
+    "decision": "link",
+    "canonical_name": "Azure OpenAI",
+    "evidence_quote": "AWS, Azure, OpenAI",
+    "confidence": "medium",
+    "rationale": "Azure + OpenAI in vendor list = Azure OpenAI; not in heuristic."
+  },
+  {
+    "id": 13814,
+    "decision": "agency_internal_system",
+    "evidence_quote": "LANL AI Portal Democratized access to open-source/open-weights Large Language Models",
+    "rationale": "Los Alamos internal LLM portal hosted on AWS; AWS is hosting only."
+  },
+  {
+    "id": 13815,
+    "decision": "false_positive",
+    "rationale": "Heuristic already captured ChatGPT and OpenAI API; system_name is just 'ChatGPT Enterprise'."
+  },
+  {
+    "id": 13816,
+    "decision": "link",
+    "canonical_name": "Microsoft Search in Bing",
+    "evidence_quote": "Microsoft Bing Service",
+    "confidence": "high",
+    "rationale": "Microsoft Bing Service maps to Microsoft Search in Bing in catalog."
+  },
+  {
+    "id": 13817,
+    "decision": "link",
+    "canonical_name": "Microsoft 365 Copilot",
+    "evidence_quote": "Microsoft Co-Pilot Better analytics of data in our microsoft applications",
+    "confidence": "high",
+    "rationale": "Microsoft Co-Pilot for analytics in Microsoft apps = Microsoft 365 Copilot."
+  },
+  {
+    "id": 13818,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'. No product to attribute."
+  },
+  {
+    "id": 13819,
+    "decision": "agency_internal_system",
+    "evidence_quote": "ACORN (Autonomous Operation for Reactor Technologies)",
+    "rationale": "DOE open-source-developed reactor autonomy AI; not a commercial product."
+  },
+  {
+    "id": 13820,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Merlin - KCNSC Generative AI with RAG",
+    "rationale": "Kansas City NSC internal RAG system stitched from open-source components (vLLM, OpenShift, GPT-OSS, OpenWebUI). Not a commercial product."
+  },
+  {
+    "id": 13821,
+    "decision": "false_positive",
+    "rationale": "Vendor 'TBD'; no product named."
+  },
+  {
+    "id": 13822,
+    "decision": "agency_internal_system",
+    "evidence_quote": "VIPER (Visualizaiton for Predictive Maintenance Recommendation)",
+    "rationale": "INL HPC custom open-source-developed tool; not commercial."
+  },
+  {
+    "id": 13823,
+    "decision": "false_positive",
+    "rationale": "University of Montana academic partner; soil moisture custom ML model. No commercial product."
+  },
+  {
+    "id": 13824,
+    "decision": "false_positive",
+    "rationale": "Microsoft Visual C++ runtime is a development library, not an AI product."
+  },
+  {
+    "id": 13825,
+    "decision": "false_positive",
+    "rationale": "'SRNS - OT In House Staff' indicates Savannah River NS in-house build; no commercial product."
+  },
+  {
+    "id": 13826,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; no product named."
+  },
+  {
+    "id": 13827,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'This deals with international safeguars approaches' provides no product info."
+  },
+  {
+    "id": 13828,
+    "decision": "add_alias",
+    "canonical_name": "Elastic Stack",
+    "alias_text": "Elastic Stack Technology (ELK)",
+    "rationale": "Elastic Stack (ELK) is a widely-used commercial search/analytics product not in catalog."
+  },
+  {
+    "id": 13829,
+    "decision": "link",
+    "canonical_name": "GitHub Copilot",
+    "evidence_quote": "GitHub Hanford Accreditation Boundary (HAB) GitHub Co-Pilot",
+    "confidence": "high",
+    "rationale": "GitHub Co-Pilot = GitHub Copilot."
+  },
+  {
+    "id": 13830,
+    "decision": "false_positive",
+    "rationale": "EDMS Admin is a generic capability description; no product named."
+  },
+  {
+    "id": 13831,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'."
+  },
+  {
+    "id": 13832,
+    "decision": "add_alias",
+    "canonical_name": "Raytheon BBN M3S",
+    "alias_text": "Raytheon Multimedia Monitoring System (M3S)",
+    "rationale": "Raytheon BBN's M3S is a commercial multimedia monitoring product; not in catalog."
+  },
+  {
+    "id": 13833,
+    "decision": "false_positive",
+    "rationale": "Microsoft Visual C++ Redistributable is a runtime library, not an AI product."
+  },
+  {
+    "id": 13834,
+    "decision": "false_positive",
+    "rationale": "'SRNS - OT In House Staff' indicates Savannah River NS in-house build; no commercial product named."
+  },
+  {
+    "id": 13835,
+    "decision": "false_positive",
+    "rationale": "Microsoft MSPaint is not an AI product."
+  },
+  {
+    "id": 13836,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; no product named."
+  },
+  {
+    "id": 13837,
+    "decision": "false_positive",
+    "rationale": "'SRNS - OT In House Staff' indicates Savannah River NS in-house build; no commercial product named."
+  },
+  {
+    "id": 13838,
+    "decision": "unclear",
+    "rationale": "QuantomVision is unfamiliar; vendor 'Open AI' could mean OpenAI (ChatGPT) or generic open AI. Could not determine if commercial product."
+  },
+  {
+    "id": 13839,
+    "decision": "link",
+    "canonical_name": "Tesseract OCR",
+    "evidence_quote": "Tesseract LMGSS Georeference Figures",
+    "confidence": "high",
+    "rationale": "Tesseract = Tesseract OCR in catalog."
+  },
+  {
+    "id": 13840,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'."
+  },
+  {
+    "id": 13841,
+    "decision": "link",
+    "canonical_name": "PEST (Parameter Estimation)",
+    "evidence_quote": "PEST LMGSS Groundwater Modeling",
+    "confidence": "high",
+    "rationale": "PEST groundwater modeling = PEST (Parameter Estimation) in catalog."
+  },
+  {
+    "id": 13842,
+    "decision": "agency_internal_system",
+    "evidence_quote": "MOOSE-LLM Tools like MOOSE for multiphysics modeling",
+    "rationale": "INL MOOSE multiphysics framework + LLM wrapper; open-source academic, not commercial product."
+  },
+  {
+    "id": 13843,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'."
+  },
+  {
+    "id": 13844,
+    "decision": "false_positive",
+    "rationale": "Microsoft Visual C++ Minimum Runtime is a runtime library, not an AI product."
+  },
+  {
+    "id": 13845,
+    "decision": "agency_internal_system",
+    "evidence_quote": "LISA Chatbot Pilot Quick access to specific mission data sets",
+    "rationale": "LISA chatbot is custom; AWS is hosting platform only."
+  },
+  {
+    "id": 13846,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'."
+  },
+  {
+    "id": 13847,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'."
+  },
+  {
+    "id": 13848,
+    "decision": "false_positive",
+    "rationale": "Vendor field is a date timestamp '1899-12-31 11:59:00' — data quality error, no product info."
+  },
+  {
+    "id": 13849,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GenAI for Classified Subject Area Categorization",
+    "rationale": "INL Advanced Analytics Center of Excellence open-source build; not commercial product."
+  },
+  {
+    "id": 13850,
+    "decision": "false_positive",
+    "rationale": "Heuristic already correctly captured Microsoft 365 Copilot and Microsoft 365."
+  },
+  {
+    "id": 13851,
+    "decision": "false_positive",
+    "rationale": "'SRNS - OT In House Staff' indicates Savannah River NS in-house build; no commercial product named."
+  },
+  {
+    "id": 13852,
+    "decision": "false_positive",
+    "rationale": "Python is a programming language, not an AI product. Description names ALTEMIS as the system, which is custom DOE."
+  },
+  {
+    "id": 13853,
+    "decision": "false_positive",
+    "rationale": "'SRNS - OT In House Staff' in-house build; no commercial product named."
+  },
+  {
+    "id": 13854,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'. Chatlab is name of agency tool, not commercial product."
+  },
+  {
+    "id": 13855,
+    "decision": "link",
+    "canonical_name": "Microsoft 365 Copilot",
+    "evidence_quote": "Microsoft GSS CoPilot Communication suggestions",
+    "confidence": "high",
+    "rationale": "Microsoft CoPilot for communication suggestions = Microsoft 365 Copilot."
+  },
+  {
+    "id": 13856,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'."
+  },
+  {
+    "id": 13857,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'."
+  },
+  {
+    "id": 13858,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Not available'; description 'Not available'."
+  },
+  {
+    "id": 13859,
+    "decision": "agency_internal_system",
+    "evidence_quote": "NASA Level 1 Survey Report Corrosion Level Classification",
+    "rationale": "BSEE/NASA-developed corrosion classification model; not commercial product."
+  },
+  {
+    "id": 13860,
+    "decision": "link",
+    "canonical_name": "Azure OpenAI",
+    "evidence_quote": "OpenAI, Microsoft USGS Azure OpenAI ChatGPT",
+    "confidence": "high",
+    "rationale": "Use case name is 'USGS Azure OpenAI ChatGPT' explicitly. Heuristic missed Azure OpenAI."
+  },
+  {
+    "id": 13861,
+    "decision": "false_positive",
+    "rationale": "Heuristic correctly captured ChatGPT and OpenAI API."
+  },
+  {
+    "id": 13862,
+    "decision": "link",
+    "canonical_name": "Google Cloud Platform",
+    "evidence_quote": "Google Machine Learning Image Classification of Wetlands and Soil moisture",
+    "confidence": "medium",
+    "rationale": "Google as ML platform vendor for image classification — likely Google Cloud Platform/Earth Engine."
+  },
+  {
+    "id": 13863,
+    "decision": "false_positive",
+    "rationale": "Vendor 'unkown' (typo); no product named."
+  },
+  {
+    "id": 13864,
+    "decision": "link",
+    "canonical_name": "Ultralytics YOLO",
+    "evidence_quote": "Ultralytics AI to survey boat traffic",
+    "confidence": "high",
+    "rationale": "Ultralytics vendor maps to Ultralytics YOLO in catalog (their flagship product)."
+  },
+  {
+    "id": 13865,
+    "decision": "false_positive",
+    "rationale": "Open Geospatial Consortium is a standards body, not a commercial AI vendor."
+  },
+  {
+    "id": 13866,
+    "decision": "agency_internal_system",
+    "evidence_quote": "USGS Flow Photo Explorer (FPE)",
+    "rationale": "USGS-developed Flow Photo Explorer; Walker Environmental Research is research partner, not commercial product."
+  },
+  {
+    "id": 13867,
+    "decision": "link",
+    "canonical_name": "GitHub Copilot",
+    "evidence_quote": "Integration of AI, specifically CoPilot for GitHub",
+    "confidence": "high",
+    "rationale": "Description names 'CoPilot for GitHub' = GitHub Copilot."
+  },
+  {
+    "id": 13868,
+    "decision": "add_alias",
+    "canonical_name": "ARC Travel Intelligence",
+    "alias_text": "Airlines Reporting Corporation Travel Intelligence Program",
+    "rationale": "ARC's Travel Intelligence Program is a commercial product used by DOJ; not in catalog."
+  },
+  {
+    "id": 13869,
+    "decision": "add_alias",
+    "canonical_name": "Axon Fusus",
+    "alias_text": "Axon FUSUS",
+    "rationale": "Axon FUSUS is a commercial real-time crime center platform; not in catalog."
+  },
+  {
+    "id": 13870,
+    "decision": "add_alias",
+    "canonical_name": "Azure Data Factory",
+    "alias_text": "Azure Data Factory",
+    "rationale": "Microsoft Azure Data Factory with embedded AI features (anomaly detection, data quality); not in catalog."
+  },
+  {
+    "id": 13871,
+    "decision": "false_positive",
+    "rationale": "Azure storage subscription with embedded indexing; not a distinct AI product. Could fall under Microsoft Azure Platform but description states 'we do not use these features directly'."
+  },
+  {
+    "id": 13872,
+    "decision": "add_alias",
+    "canonical_name": "Bloomberg Government",
+    "alias_text": "Bloomberg Government (BGOV)",
+    "rationale": "Bloomberg Government policy/regulatory analytics product; not in catalog."
+  },
+  {
+    "id": 13873,
+    "decision": "add_alias",
+    "canonical_name": "CargoNet",
+    "alias_text": "CargoNet",
+    "rationale": "Verisk's CargoNet cargo theft analytics product; not in catalog."
+  },
+  {
+    "id": 13874,
+    "decision": "add_alias",
+    "canonical_name": "Cell Hawk",
+    "alias_text": "Cell Hawk",
+    "rationale": "LeadsOnline Cell Hawk call detail record analytics tool; not in catalog."
+  },
+  {
+    "id": 13875,
+    "decision": "add_alias",
+    "canonical_name": "Dun & Bradstreet",
+    "alias_text": "Dun & Bradstreet Business Establishments Data",
+    "rationale": "D&B business data product with AI-driven anomaly detection; not in catalog."
+  },
+  {
+    "id": 13876,
+    "decision": "add_alias",
+    "canonical_name": "Axon Evidence",
+    "alias_text": "Axon Evidence.com",
+    "rationale": "Axon Evidence (evidence.com) digital evidence management with AI redaction; not in catalog."
+  },
+  {
+    "id": 13877,
+    "decision": "add_alias",
+    "canonical_name": "Federal Docket Management System",
+    "alias_text": "Federal Docket Management System",
+    "rationale": "GSA-managed FDMS rulemaking comments system with text analytics; cross-agency commercial-style platform, not in catalog."
+  },
+  {
+    "id": 13878,
+    "decision": "agency_internal_system",
+    "evidence_quote": "FINDER Redacted for cybersecurity purposes. FINDER",
+    "rationale": "FINDER is ATF's internal violent crime/firearms trafficking analytics system. Vendor field 'FINDER' is self-referential."
+  },
+  {
+    "id": 13879,
+    "decision": "add_alias",
+    "canonical_name": "FirstTwo",
+    "alias_text": "FirstTwo / First Two",
+    "rationale": "FirstTwo geospatial OSINT product; not in catalog."
+  },
+  {
+    "id": 13880,
+    "decision": "add_alias",
+    "canonical_name": "Mark43",
+    "alias_text": "Mark43 Public Safety Records",
+    "rationale": "Mark43 records management with AI; not in catalog."
+  },
+  {
+    "id": 13881,
+    "decision": "add_alias",
+    "canonical_name": "ISO ClaimSearch",
+    "alias_text": "National Insurance Crime Bureau ISO ClaimSearch",
+    "rationale": "Verisk ISO ClaimSearch insurance fraud analytics; not in catalog."
+  },
+  {
+    "id": 13882,
+    "decision": "add_alias",
+    "canonical_name": "ShotSpotter",
+    "alias_text": "ShotSpotter",
+    "rationale": "SoundThinking's ShotSpotter gunshot detection product; not in catalog."
+  },
+  {
+    "id": 13883,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Southwest Border Transaction Record Analysis Center (SWBTRAC)",
+    "rationale": "DOJ multi-agency analytics center; Western Union is data source. Not a commercial product."
+  },
+  {
+    "id": 13884,
+    "decision": "add_alias",
+    "canonical_name": "Spokeo",
+    "alias_text": "Spokeo",
+    "rationale": "Spokeo people-search OSINT product; not in catalog."
+  },
+  {
+    "id": 13885,
+    "decision": "add_alias",
+    "canonical_name": "TLOxp",
+    "alias_text": "TransUnion TLOxp",
+    "rationale": "TransUnion TLOxp investigative search product; not in catalog."
+  },
+  {
+    "id": 13886,
+    "decision": "add_alias",
+    "canonical_name": "Flock Safety",
+    "alias_text": "Flock Safety",
+    "rationale": "Flock Safety LPR camera system; not in catalog."
+  },
+  {
+    "id": 13887,
+    "decision": "add_alias",
+    "canonical_name": "ELSAG ALPR",
+    "alias_text": "ELSAG/Leonardo",
+    "rationale": "Leonardo ELSAG license plate reader system; not in catalog."
+  },
+  {
+    "id": 13888,
+    "decision": "false_positive",
+    "rationale": "Heuristic already correctly captured Veritone Illuminate and Veritone."
+  },
+  {
+    "id": 13889,
+    "decision": "false_positive",
+    "rationale": "AWS for network routing; no specific AI product. cloud.gov is GSA platform layer, not AI."
+  },
+  {
+    "id": 13890,
+    "decision": "link",
+    "canonical_name": "Microsoft Azure Platform",
+    "evidence_quote": "Microsoft Azure Platform/Tools - Network Routing",
+    "confidence": "medium",
+    "rationale": "Generic Azure platform features used for network routing decisions."
+  },
+  {
+    "id": 13891,
+    "decision": "add_alias",
+    "canonical_name": "Cloudflare Turnstile",
+    "alias_text": "Cloudflare Turnstile",
+    "rationale": "Cloudflare's bot detection product; not in catalog."
+  },
+  {
+    "id": 13892,
+    "decision": "add_alias",
+    "canonical_name": "Nuance Dragon",
+    "alias_text": "Dragon",
+    "rationale": "Nuance Dragon speech-to-text product; not in catalog."
+  },
+  {
+    "id": 13893,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Generative AI R&D Sandbox The purpose of this use case is to create a R&D environment",
+    "rationale": "DEA-built sandbox; NVIDIA is hardware/software platform supplier, not specific AI product."
+  },
+  {
+    "id": 13894,
+    "decision": "add_alias",
+    "canonical_name": "BriefCatch",
+    "alias_text": "BriefCatch",
+    "rationale": "Lawcatch BriefCatch legal-writing AI product; not in catalog."
+  },
+  {
+    "id": 13895,
+    "decision": "add_alias",
+    "canonical_name": "Cisco Secure Network Analytics",
+    "alias_text": "Cisco Secure Network Analytics",
+    "rationale": "Cisco's Stealthwatch/Secure Network Analytics not in catalog. Other vendors (Crowdstrike, Zscaler, Splunk, Lookout, Palo Alto) already in heuristic."
+  },
+  {
+    "id": 13896,
+    "decision": "link",
+    "canonical_name": "Magnet Forensics",
+    "evidence_quote": "Cellebrite, Magnet Axiom and Griffeye",
+    "confidence": "high",
+    "rationale": "Magnet Axiom = Magnet Forensics (their flagship product) in catalog."
+  },
+  {
+    "id": 13896,
+    "decision": "link",
+    "canonical_name": "Cellebrite Media Classifier",
+    "evidence_quote": "Cellebrite, Magnet Axiom and Griffeye",
+    "confidence": "medium",
+    "rationale": "Cellebrite digital forensics; Cellebrite Media Classifier is the AI catalog entry."
+  },
+  {
+    "id": 13896,
+    "decision": "add_alias",
+    "canonical_name": "Griffeye Analyze",
+    "alias_text": "Griffeye",
+    "rationale": "Griffeye Analyze CSAM forensic tool; not in catalog."
+  },
+  {
+    "id": 13897,
+    "decision": "add_alias",
+    "canonical_name": "Critical Mention",
+    "alias_text": "Critical Mention",
+    "rationale": "Critical Mention media monitoring product; not in catalog."
+  },
+  {
+    "id": 13898,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Model Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13899,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Service Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13900,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Service Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13901,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Service Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13902,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Service Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13903,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Service Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13904,
+    "decision": "agency_internal_system",
+    "evidence_quote": "ASCVD (Atherosclerotic Cardiovascular Disease) Risk Estimator",
+    "rationale": "ACC ASCVD risk estimator is a clinical calculator; not a distinct commercial AI product, but professional society tool."
+  },
+  {
+    "id": 13905,
+    "decision": "add_alias",
+    "canonical_name": "BD Pyxis MedStation",
+    "alias_text": "BD Pyxis",
+    "rationale": "BD Pyxis automated medication dispensing; not in catalog."
+  },
+  {
+    "id": 13906,
+    "decision": "unclear",
+    "rationale": "Vendor 'Microsoft' generic; 'Automated Staffing Tool' could be Power Platform or Microsoft 365. Unclear which specific product."
+  },
+  {
+    "id": 13907,
+    "decision": "add_alias",
+    "canonical_name": "SAS Analytics",
+    "alias_text": "SAS",
+    "rationale": "SAS statistical analytics platform; not in catalog and used for multiple FBOP classification models."
+  },
+  {
+    "id": 13908,
+    "decision": "false_positive",
+    "rationale": "SAS already proposed as alias in 13907; this is duplicate vendor reference for FBOP-developed tool."
+  },
+  {
+    "id": 13909,
+    "decision": "add_alias",
+    "canonical_name": "Descript",
+    "alias_text": "Descript",
+    "rationale": "Descript audio/video editing AI product; not in catalog."
+  },
+  {
+    "id": 13910,
+    "decision": "add_alias",
+    "canonical_name": "Plexis Quantum Choice",
+    "alias_text": "Quantum Choice from Plexis",
+    "rationale": "Plexis Quantum Choice claims adjudication product; not in catalog."
+  },
+  {
+    "id": 13911,
+    "decision": "false_positive",
+    "rationale": "SAS again; FBOP-developed model. Already proposed as alias."
+  },
+  {
+    "id": 13912,
+    "decision": "false_positive",
+    "rationale": "SAS again; FBOP-developed model. Already proposed as alias."
+  },
+  {
+    "id": 13913,
+    "decision": "link",
+    "canonical_name": "Microsoft Azure Platform",
+    "evidence_quote": "Azure Pathfinder To assist FBOP employees with career pathways",
+    "confidence": "medium",
+    "rationale": "Vendor 'Azure' = Microsoft Azure Platform in catalog."
+  },
+  {
+    "id": 13914,
+    "decision": "add_alias",
+    "canonical_name": "Pearson Q-interactive",
+    "alias_text": "Pearson Assessments",
+    "rationale": "Pearson Assessments psychological test interpretation; not in catalog."
+  },
+  {
+    "id": 13915,
+    "decision": "add_alias",
+    "canonical_name": "reCAPTCHA",
+    "alias_text": "reCAPTCHA",
+    "rationale": "Google reCAPTCHA bot detection; not in catalog."
+  },
+  {
+    "id": 13916,
+    "decision": "add_alias",
+    "canonical_name": "Smiths Detection TruNarc",
+    "alias_text": "TruNarc, Smiths Detection",
+    "rationale": "Smiths Detection TruNarc narcotics analyzer; not in catalog."
+  },
+  {
+    "id": 13917,
+    "decision": "add_alias",
+    "canonical_name": "Trunet Biometrics",
+    "alias_text": "Trunet Systems",
+    "rationale": "Advanced Technologies Group Trunet biometric system; not in catalog."
+  },
+  {
+    "id": 13918,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Truview Analysis of data held within the TRU, visiting, case management",
+    "rationale": "FBOP-internal Truview tool built by Advanced Technologies Group integrator."
+  },
+  {
+    "id": 13919,
+    "decision": "link",
+    "canonical_name": "Exiger DDIQ",
+    "evidence_quote": "Exiger Supply Chain Risk Management - DDIQ Research Engine",
+    "confidence": "high",
+    "rationale": "Exiger DDIQ matches catalog entry exactly."
+  },
+  {
+    "id": 13920,
+    "decision": "link",
+    "canonical_name": "Exiger DDIQ",
+    "evidence_quote": "Exiger Supply Chain Risk Management - DDIQ Due Diligence Analytics",
+    "confidence": "high",
+    "rationale": "Exiger DDIQ matches catalog entry exactly."
+  },
+  {
+    "id": 13921,
+    "decision": "add_alias",
+    "canonical_name": "Nlets LPR Pointer Index",
+    "alias_text": "Nlets Nationwide License Plate Reader Pointer Index",
+    "rationale": "Nlets-operated nationwide LPR pointer index; not in catalog. Thomson Reuters listed but this is Nlets product."
+  },
+  {
+    "id": 13922,
+    "decision": "add_alias",
+    "canonical_name": "Axon Body Camera",
+    "alias_text": "Axon",
+    "rationale": "Axon body-worn camera platform; description says no AI used here, but vendor named. May overlap with Axon Evidence."
+  },
+  {
+    "id": 13923,
+    "decision": "add_alias",
+    "canonical_name": "Hootsuite",
+    "alias_text": "Hootsuite",
+    "rationale": "Hootsuite social media management with AI; not in catalog."
+  },
+  {
+    "id": 13924,
+    "decision": "link",
+    "canonical_name": "LexisNexis",
+    "evidence_quote": "Lexis Nexis (People Search)",
+    "confidence": "high",
+    "rationale": "Lexis Nexis = LexisNexis in catalog."
+  },
+  {
+    "id": 13925,
+    "decision": "false_positive",
+    "rationale": "Pacer Search is the federal courts' PACER docket access; Techsmith is mistaken vendor (Techsmith makes screen capture tools). No AI product."
+  },
+  {
+    "id": 13926,
+    "decision": "add_alias",
+    "canonical_name": "AWS Translate",
+    "alias_text": "AWS Translate",
+    "rationale": "Amazon AWS Translate machine translation service; not in catalog (AWS Transcribe is, but not Translate)."
+  },
+  {
+    "id": 13927,
+    "decision": "add_alias",
+    "canonical_name": "JAWS Screen Reader",
+    "alias_text": "JAWS",
+    "rationale": "Freedom Scientific JAWS screen reader with AI features; not in catalog."
+  },
+  {
+    "id": 13928,
+    "decision": "add_alias",
+    "canonical_name": "OnCue Trial Presentation",
+    "alias_text": "OnCue Technology",
+    "rationale": "OnCue Technology trial presentation software; not in catalog."
+  },
+  {
+    "id": 13929,
+    "decision": "add_alias",
+    "canonical_name": "Axon Evidence",
+    "alias_text": "Axon Video Retention Solution (VRS)",
+    "rationale": "Axon Evidence Redaction (VRS) — same product family as Axon Evidence.com proposed earlier."
+  },
+  {
+    "id": 13930,
+    "decision": "add_alias",
+    "canonical_name": "Axon Evidence",
+    "alias_text": "Axon Video Retention Solution (VRS)",
+    "rationale": "Axon Evidence Digital Evidence Management transcription — same product family."
+  },
+  {
+    "id": 13931,
+    "decision": "false_positive",
+    "rationale": "Vendor 'Vendor proprietary' — agency declined to name product."
+  },
+  {
+    "id": 13932,
+    "decision": "add_alias",
+    "canonical_name": "Rank One Computing",
+    "alias_text": "Rank One Computing",
+    "rationale": "Rank One Computing biometric face recognition; not in catalog."
+  },
+  {
+    "id": 13933,
+    "decision": "add_alias",
+    "canonical_name": "Aware Biometrics",
+    "alias_text": "Aware",
+    "rationale": "Aware Inc biometric platform; not in catalog."
+  },
+  {
+    "id": 13934,
+    "decision": "unclear",
+    "rationale": "Amazon for transcription/translation/summarization in GCC High — could be AWS Transcribe + AWS Translate + Bedrock. Too vague to attribute single product."
+  },
+  {
+    "id": 13935,
+    "decision": "add_alias",
+    "canonical_name": "Litera TOA Builder",
+    "alias_text": "Levit & James Word plugin",
+    "rationale": "Litera (formerly Levit & James) Word plugin; not in catalog."
+  },
+  {
+    "id": 13936,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Service Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13937,
+    "decision": "add_alias",
+    "canonical_name": "ProLaw",
+    "alias_text": "ProLaw",
+    "rationale": "Thomson Reuters ProLaw legal practice management with search AI; not in catalog."
+  },
+  {
+    "id": 13938,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Model Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13939,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Model Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13940,
+    "decision": "add_alias",
+    "canonical_name": "NetDocuments",
+    "alias_text": "NetDocuments",
+    "rationale": "NetDocuments document management with predictive filing AI; not in catalog."
+  },
+  {
+    "id": 13941,
+    "decision": "link",
+    "canonical_name": "FOIAXpress AI",
+    "evidence_quote": "FOIA Xpress, Forum One, Adobe, and Polydelta",
+    "confidence": "high",
+    "rationale": "FOIA Xpress = FOIAXpress AI in catalog."
+  },
+  {
+    "id": 13942,
+    "decision": "link",
+    "canonical_name": "Azure AI Document Intelligence",
+    "evidence_quote": "Microsoft Extracting Data from Receipts",
+    "confidence": "medium",
+    "rationale": "Microsoft for receipt data extraction = likely Azure AI Document Intelligence (formerly Form Recognizer)."
+  },
+  {
+    "id": 13943,
+    "decision": "false_positive",
+    "rationale": "Vendor 'AI Service Provider' is a placeholder; no specific product named."
+  },
+  {
+    "id": 13944,
+    "decision": "add_alias",
+    "canonical_name": "Conductor Conduit AI",
+    "alias_text": "Conduit AI",
+    "rationale": "Conductor's Conduit AI platform for document review; not in catalog."
+  },
+  {
+    "id": 13945,
+    "decision": "add_alias",
+    "canonical_name": "Buzzsprout CoHost AI",
+    "alias_text": "CoHost AI",
+    "rationale": "Buzzsprout's CoHost AI podcast assistant; not in catalog."
+  },
+  {
+    "id": 13946,
+    "decision": "link",
+    "canonical_name": "GitHub Copilot",
+    "evidence_quote": "GitHub, Microsoft Code Development More efficient writing and maintenance of code",
+    "confidence": "high",
+    "rationale": "GitHub + Microsoft for code development = GitHub Copilot."
+  },
+  {
+    "id": 13947,
+    "decision": "add_alias",
+    "canonical_name": "CoCounsel",
+    "alias_text": "Cocounsel AI",
+    "rationale": "Thomson Reuters CoCounsel legal AI; not in catalog."
+  },
+  {
+    "id": 13948,
+    "decision": "link",
+    "canonical_name": "LexisNexis Risk Solutions",
+    "evidence_quote": "TransUnion Risk and Alternative Data Solutions",
+    "confidence": "low",
+    "rationale": "Closest catalog match; alternatively TransUnion-specific product. May warrant add_alias."
+  },
+  {
+    "id": 13949,
+    "decision": "agency_internal_system",
+    "evidence_quote": "MIT Lincoln Laboratory Audio and Written Transcription and Translation",
+    "rationale": "MIT Lincoln Lab is FFRDC research partner; system is custom-built."
+  },
+  {
+    "id": 13950,
+    "decision": "add_alias",
+    "canonical_name": "Techsmith Audiate",
+    "alias_text": "Audiate",
+    "rationale": "Techsmith Audiate text-to-speech tool; not in catalog."
+  },
+  {
+    "id": 13951,
+    "decision": "add_alias",
+    "canonical_name": "Harvey",
+    "alias_text": "harvey.ai",
+    "rationale": "Harvey AI legal LLM; not in catalog. Heuristic captured Perplexity and OpenAI API."
+  },
+  {
+    "id": 13952,
+    "decision": "false_positive",
+    "rationale": "Bates White is consulting firm; Microsoft Azure is platform. No specific AI product named."
+  },
+  {
+    "id": 13953,
+    "decision": "link",
+    "canonical_name": "Adobe Creative Cloud Suite",
+    "evidence_quote": "Adobe Adobe Premiere Seamless editing of videos",
+    "confidence": "high",
+    "rationale": "Adobe Premiere is part of Adobe Creative Cloud Suite (which is in catalog)."
+  },
+  {
+    "id": 13954,
+    "decision": "link",
+    "canonical_name": "Azure Speech",
+    "evidence_quote": "Azure PIID: NNG15SD60B Azure Audio Transcription",
+    "confidence": "high",
+    "rationale": "Azure used for audio transcription = Azure Speech in catalog."
+  },
+  {
+    "id": 13955,
+    "decision": "link",
+    "canonical_name": "Microsoft HoloLens",
+    "evidence_quote": "BGC/CLIRIO Hololens Hololens AI used to train Inspectors",
+    "confidence": "high",
+    "rationale": "Microsoft HoloLens in catalog matches; CLIRIO is the AR training app builder."
+  }
+]

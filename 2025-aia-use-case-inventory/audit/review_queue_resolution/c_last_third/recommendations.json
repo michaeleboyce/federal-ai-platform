@@ -1,0 +1,1244 @@
+[
+  {
+    "id": 14156,
+    "decision": "link",
+    "canonical_name": "Microsoft 365 Copilot",
+    "evidence_quote": "AI for Small Business Development w/Copilot, Gemini or ChatGPT",
+    "confidence": "high",
+    "rationale": "Source explicitly names Copilot alongside Gemini and ChatGPT (already linked); add Copilot edge."
+  },
+  {
+    "id": 14157,
+    "decision": "false_positive",
+    "rationale": "Heuristic already linked ChatGPT and OpenAI API; no additional product to add."
+  },
+  {
+    "id": 14158,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Internally created Certify.sba.gov GovCon Match",
+    "rationale": "Vendor text 'Internally created' and SBA-specific Certify.sba.gov system; agency-built, not commercial."
+  },
+  {
+    "id": 14159,
+    "decision": "false_positive",
+    "rationale": "Vendor text is just a URL to a Utah state startup business plan template; not a commercial AI product."
+  },
+  {
+    "id": 14160,
+    "decision": "false_positive",
+    "rationale": "Heuristic already linked Ask Sage. Microsoft Teams was a false-positive substring match (no Teams mention in source)."
+  },
+  {
+    "id": 14161,
+    "decision": "link",
+    "canonical_name": "Salesforce Einstein",
+    "evidence_quote": "Salesforce Service Cloud with Einstein",
+    "confidence": "high",
+    "rationale": "Heuristic already linked Salesforce Einstein; Microsoft Teams is false-positive. No new edge needed but Einstein is the correct product."
+  },
+  {
+    "id": 14162,
+    "decision": "false_positive",
+    "rationale": "Heuristic already linked ServiceNow ITOM Predictive AIOps and ServiceNow Now Assist; Teams was incidental."
+  },
+  {
+    "id": 14163,
+    "decision": "false_positive",
+    "rationale": "Heuristic already linked Salesforce Einstein and Tableau; this is essentially Tableau Agent (Salesforce Einstein for Tableau) — covered."
+  },
+  {
+    "id": 14164,
+    "decision": "false_positive",
+    "rationale": "Heuristic already covers ServiceNow Now Assist and Tenable. Qualys/Rapid7 mentioned as data sources but not the AI product."
+  },
+  {
+    "id": 14165,
+    "decision": "false_positive",
+    "rationale": "Heuristic already linked ServiceNow Now Assist and Tenable; Teams not actually present in vendor."
+  },
+  {
+    "id": 14166,
+    "decision": "link",
+    "canonical_name": "Skillsoft Percipio CAISY",
+    "evidence_quote": "SkillSoft  Training Conversation Tool",
+    "confidence": "medium",
+    "rationale": "SEC training conversation tool from SkillSoft matches Skillsoft Percipio CAISY (a training conversation simulator)."
+  },
+  {
+    "id": 14167,
+    "decision": "link",
+    "canonical_name": "Aretec NEAT",
+    "evidence_quote": "Aretec Inc NEAT Name Matching",
+    "confidence": "high",
+    "rationale": "Vendor Aretec Inc + system NEAT directly matches catalog product Aretec NEAT."
+  },
+  {
+    "id": 14168,
+    "decision": "link",
+    "canonical_name": "Aretec NEAT",
+    "evidence_quote": "Aretec Inc NEAT Parsing of Plain Language",
+    "confidence": "high",
+    "rationale": "Aretec Inc + NEAT system; matches catalog product Aretec NEAT."
+  },
+  {
+    "id": 14169,
+    "decision": "add_alias",
+    "canonical_name": "Aretec EDP",
+    "alias_text": "Aretec EDP",
+    "evidence_quote": "Aretec EDP Using Natural Language Processing Techniques",
+    "confidence": "medium",
+    "rationale": "EDP is a separate Aretec system distinct from NEAT; appears multiple times in SEC inventory and warrants a new canonical entry."
+  },
+  {
+    "id": 14170,
+    "decision": "add_alias",
+    "canonical_name": "Aretec EDP",
+    "alias_text": "EDP",
+    "evidence_quote": "IBM EDP Using Machine Learning/Artificial Intelligence",
+    "confidence": "medium",
+    "rationale": "Same SEC EDP system; vendor IBM here may indicate underlying ML provider but EDP is the system."
+  },
+  {
+    "id": 14171,
+    "decision": "link",
+    "canonical_name": "Aretec NEAT",
+    "evidence_quote": "Aretec Inc NEAT Identification of Potentially Manipulative",
+    "confidence": "high",
+    "rationale": "Aretec Inc + NEAT system."
+  },
+  {
+    "id": 14172,
+    "decision": "add_alias",
+    "canonical_name": "Aretec SEARCH",
+    "alias_text": "SEARCH",
+    "evidence_quote": "Aretec SEARCH Optical Character Recognition",
+    "confidence": "medium",
+    "rationale": "SEC's Aretec-built SEARCH platform appears repeatedly; not in catalog."
+  },
+  {
+    "id": 14173,
+    "decision": "add_alias",
+    "canonical_name": "Aretec SEARCH",
+    "alias_text": "SEARCH",
+    "evidence_quote": "Aretec SEARCH Single Event Insider Trading Analysis",
+    "confidence": "medium",
+    "rationale": "Same SEC Aretec SEARCH platform."
+  },
+  {
+    "id": 14174,
+    "decision": "add_alias",
+    "canonical_name": "Aretec SEARCH",
+    "alias_text": "SEARCH",
+    "evidence_quote": "Aretec, Elder Research SEARCH Using AI Large Language Model",
+    "confidence": "medium",
+    "rationale": "SEC SEARCH platform with Elder Research as additional integrator."
+  },
+  {
+    "id": 14175,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GDIT  Extracting data from FOIA request forms",
+    "rationale": "GDIT is the contractor; extraction is into SEC's SharePoint+eDiscovery workflow. No specific commercial AI product named."
+  },
+  {
+    "id": 14176,
+    "decision": "add_alias",
+    "canonical_name": "Lexis+ Protege",
+    "alias_text": "Lexis Protege",
+    "evidence_quote": "RELX  Lexis Protege",
+    "confidence": "high",
+    "rationale": "LexisNexis Protege is a distinct LexisNexis AI assistant for legal research; not currently in catalog as separate entry."
+  },
+  {
+    "id": 14177,
+    "decision": "add_alias",
+    "canonical_name": "Aretec SEARCH",
+    "alias_text": "SEARCH",
+    "evidence_quote": "Elder Research SEARCH Using AI to answer questions",
+    "confidence": "medium",
+    "rationale": "Same SEC SEARCH platform."
+  },
+  {
+    "id": 14178,
+    "decision": "add_alias",
+    "canonical_name": "Aretec SEARCH",
+    "alias_text": "SEARCH",
+    "evidence_quote": "Elder Research SEARCH Creating AI generated images",
+    "confidence": "medium",
+    "rationale": "Same SEC SEARCH platform."
+  },
+  {
+    "id": 14179,
+    "decision": "link",
+    "canonical_name": "Lexis+ AI",
+    "evidence_quote": "RELX (Lexis)  Legal Research (Lexis+)",
+    "confidence": "high",
+    "rationale": "RELX is LexisNexis parent; Lexis+ legal research is the catalog product Lexis+ AI."
+  },
+  {
+    "id": 14180,
+    "decision": "agency_internal_system",
+    "evidence_quote": "IBM eDIB (electronic disability) Quick Disability Determinations",
+    "rationale": "SSA's eDIB (electronic disability) is an internal SSA system; IBM is the integrator/vendor. The QDD model itself is custom-built."
+  },
+  {
+    "id": 14181,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AWS Supplemental Security Income Record Maintenance System (SSIRMS)",
+    "rationale": "SSIRMS is SSA's internal system. AWS provides the cloud; no specific AI product named (likely AWS Textract but not stated)."
+  },
+  {
+    "id": 14182,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AWS Enterprise Contact Center SSA 800# Public Question",
+    "rationale": "Enterprise Contact Center is SSA's chatbot system. AWS is the cloud platform. No specific commercial AI product named (likely AWS Lex but not stated)."
+  },
+  {
+    "id": 14183,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft Hearing Recording and Transcription Speech to Text",
+    "rationale": "SSA Hearing Recording and Transcription is internal; Microsoft is vendor but no specific product named (likely Azure Speech but not stated)."
+  },
+  {
+    "id": 14184,
+    "decision": "false_positive",
+    "rationale": "Espyr/Acentra is a contractor providing therapy chatbot to SSA employees; not a recognizable commercial AI product."
+  },
+  {
+    "id": 14185,
+    "decision": "add_alias",
+    "canonical_name": "IBM watsonx Code Assistant",
+    "alias_text": "IBM WatsonX Code Assistant",
+    "evidence_quote": "IBM WatsonX Code Assistant",
+    "confidence": "high",
+    "rationale": "IBM watsonx Code Assistant for Z is a known product; not in catalog."
+  },
+  {
+    "id": 14185,
+    "decision": "add_alias",
+    "canonical_name": "Broadcom Code for Z",
+    "alias_text": "Broadcom Code for Z",
+    "evidence_quote": "Broadcom Code for Z  Mainframe code modernization",
+    "confidence": "high",
+    "rationale": "Broadcom Code for Z is a commercial mainframe modernization tool; not in catalog."
+  },
+  {
+    "id": 14186,
+    "decision": "link",
+    "canonical_name": "Skillsoft Percipio CAISY",
+    "evidence_quote": "Skillsoft/Percipio Percipio Training Interaction Simulator",
+    "confidence": "high",
+    "rationale": "SSA training simulator from Skillsoft Percipio matches catalog Skillsoft Percipio CAISY."
+  },
+  {
+    "id": 14187,
+    "decision": "add_alias",
+    "canonical_name": "RWS Trados",
+    "alias_text": "RWS Trados",
+    "evidence_quote": "RWS Trados AI Input in Translation",
+    "confidence": "high",
+    "rationale": "Trados is a major commercial translation/CAT tool; not in catalog."
+  },
+  {
+    "id": 14188,
+    "decision": "false_positive",
+    "rationale": "Deloitte is a contractor; no specific AI product named for declassification review."
+  },
+  {
+    "id": 14189,
+    "decision": "agency_internal_system",
+    "evidence_quote": "DOS-O365; Data.State-SBU BudgetChat AI Tool",
+    "rationale": "BudgetChat is a State Department-built tool on internal SBU data; no commercial AI product named."
+  },
+  {
+    "id": 14190,
+    "decision": "agency_internal_system",
+    "evidence_quote": "PA Evaluating Customer Feedback and Sentiments with AI",
+    "rationale": "State PA system; no specific commercial AI product named."
+  },
+  {
+    "id": 14191,
+    "decision": "link",
+    "canonical_name": "Google Cloud Platform",
+    "evidence_quote": "GCP N/A Within Grade Increase Data Extraction Automation",
+    "confidence": "medium",
+    "rationale": "GCP = Google Cloud Platform."
+  },
+  {
+    "id": 14192,
+    "decision": "link",
+    "canonical_name": "Google Cloud Platform",
+    "evidence_quote": "Google N/A DS-5528 Promissory Note Automation",
+    "confidence": "medium",
+    "rationale": "State Dept document automation on Google Cloud (Document AI implied)."
+  },
+  {
+    "id": 14193,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte Data.State-SBU AI Research Engine (AIRE)",
+    "rationale": "AIRE is a State Dept-built research engine on Data.State; Deloitte is integrator."
+  },
+  {
+    "id": 14194,
+    "decision": "false_positive",
+    "rationale": "Heuristic already linked Palantir AIP and OpenAI API; no additional product."
+  },
+  {
+    "id": 14195,
+    "decision": "false_positive",
+    "rationale": "Guidehouse is contractor; FACTS Info is internal State system; no commercial AI product named."
+  },
+  {
+    "id": 14196,
+    "decision": "false_positive",
+    "rationale": "Guidehouse is contractor; no AI product named."
+  },
+  {
+    "id": 14197,
+    "decision": "false_positive",
+    "rationale": "Guidehouse is contractor; no AI product named."
+  },
+  {
+    "id": 14198,
+    "decision": "false_positive",
+    "rationale": "Guidehouse is contractor; no AI product named."
+  },
+  {
+    "id": 14199,
+    "decision": "false_positive",
+    "rationale": "Vendor and system both N/A; no information to attribute."
+  },
+  {
+    "id": 14200,
+    "decision": "false_positive",
+    "rationale": "Vendor and system both N/A."
+  },
+  {
+    "id": 14201,
+    "decision": "agency_internal_system",
+    "evidence_quote": "N/A NorthStar Digital Media Analytics Platform",
+    "rationale": "NorthStar is a State Dept GEC media analytics platform; uses open-source NMT; no commercial AI product named."
+  },
+  {
+    "id": 14202,
+    "decision": "agency_internal_system",
+    "evidence_quote": "DOS-O365 Rosie Chat Bot",
+    "rationale": "Rosie is a State Department HR chatbot built on DOS-O365; agency-internal."
+  },
+  {
+    "id": 14203,
+    "decision": "false_positive",
+    "rationale": "All N/A; no attribution possible."
+  },
+  {
+    "id": 14204,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft DOS-O365 Walter:  Generative AI Support Bot",
+    "rationale": "Walter is a State Dept-built bot on DOS-O365 (Microsoft 365). Likely Copilot-based but not explicitly stated."
+  },
+  {
+    "id": 14205,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft DOS-O365 WHA/EX Information Management",
+    "rationale": "Internal State Dept knowledge management on DOS-O365; no specific commercial product named."
+  },
+  {
+    "id": 14206,
+    "decision": "link",
+    "canonical_name": "Azure OpenAI",
+    "evidence_quote": "Deloitte, AzureAI AzureAI Translator TIP Report",
+    "confidence": "medium",
+    "rationale": "AzureAI Translator likely refers to Azure AI Translator (part of Azure AI services). Closest catalog match Azure OpenAI / Azure Speech; Azure AI Translator not explicitly in catalog so map to Azure family."
+  },
+  {
+    "id": 14207,
+    "decision": "false_positive",
+    "rationale": "Heuristic already linked LexisNexis and ChatGPT."
+  },
+  {
+    "id": 14208,
+    "decision": "false_positive",
+    "rationale": "Guidehouse contractor; no AI product named."
+  },
+  {
+    "id": 14209,
+    "decision": "false_positive",
+    "rationale": "All N/A; no attribution possible."
+  },
+  {
+    "id": 14210,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft N/A Live Consular AI Language Augmentation",
+    "rationale": "LCALA is a State Dept-built tool; Microsoft is platform vendor but no specific product named."
+  },
+  {
+    "id": 14211,
+    "decision": "agency_internal_system",
+    "evidence_quote": "OCC.Chat GenAI chatbot",
+    "rationale": "OCC.Chat is a Treasury OCC-built GenAI chatbot; vendor N/A indicates internal."
+  },
+  {
+    "id": 14212,
+    "decision": "agency_internal_system",
+    "evidence_quote": "OCC.InfoAssist GenAI chatbot",
+    "rationale": "OCC.InfoAssist is OCC-built; agency-internal."
+  },
+  {
+    "id": 14213,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Rulemaking Comment Analytics",
+    "rationale": "OCC use case with all N/A; agency-internal tool, no vendor info."
+  },
+  {
+    "id": 14214,
+    "decision": "agency_internal_system",
+    "evidence_quote": "OCC Guidance Summarization",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14215,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Regulation Summarization",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14216,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Regulation Statutory and Common Name Indexing",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14217,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Newsletter Content Support",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14218,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Meeting Minute Summarization",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14219,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Visualization Alt-Text Generation",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14220,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Handbook Highlights",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14221,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Reporting Requirement Analysis",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14222,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Software Code Generation",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14223,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Policy Development Editorial Assistant",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14224,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Regulatory Rule Analysis",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14225,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Public Information Analysis",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14226,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Narrative Summary and Thematic Analysis",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14227,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Framework Analysis",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14228,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Survey Analysis",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14229,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Research Suitability",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14230,
+    "decision": "agency_internal_system",
+    "evidence_quote": "OCC.DocChat",
+    "rationale": "OCC-built doc chat tool; agency-internal."
+  },
+  {
+    "id": 14231,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Resource Assignment Optimization",
+    "rationale": "OCC use case; vendor N/A."
+  },
+  {
+    "id": 14232,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AskBEP AI ChatBot",
+    "rationale": "Treasury BEP (Bureau of Engraving and Printing) chatbot; agency-internal."
+  },
+  {
+    "id": 14233,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Sub-Asset Maintenance Model",
+    "rationale": "BEP predictive maintenance model; agency-internal, vendor N/A."
+  },
+  {
+    "id": 14234,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Ink and Paper Consumption Forecast (IPCF)",
+    "rationale": "BEP-built forecast model; agency-internal."
+  },
+  {
+    "id": 14235,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Inventory Replenishment Forecast",
+    "rationale": "BEP-built model; agency-internal."
+  },
+  {
+    "id": 14236,
+    "decision": "agency_internal_system",
+    "evidence_quote": "IDV Model",
+    "rationale": "BEP-built inventory model; agency-internal."
+  },
+  {
+    "id": 14237,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GenAI for Data Platform Operations",
+    "rationale": "Treasury internal GenAI platform; vendor N/A."
+  },
+  {
+    "id": 14238,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AI-Enabled Automated Visual Inspection for Mint",
+    "rationale": "US Mint internal QA system; vendor N/A."
+  },
+  {
+    "id": 14239,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AI-Driven Predictive Maintenance for Mint Manufacturing",
+    "rationale": "US Mint internal maintenance system; vendor N/A."
+  },
+  {
+    "id": 14240,
+    "decision": "false_positive",
+    "rationale": "Treasury 'eDiscovery Software' generic; no vendor or product name."
+  },
+  {
+    "id": 14241,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Large Language Model (LLM) Chatbot for Proof of Concept",
+    "rationale": "Treasury POC; vendor N/A."
+  },
+  {
+    "id": 14242,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Large Language Model (LLM) Coding for Proof of Concept",
+    "rationale": "Treasury POC; vendor N/A."
+  },
+  {
+    "id": 14243,
+    "decision": "agency_internal_system",
+    "evidence_quote": "USAspending Natural Language Search Initiative",
+    "rationale": "Treasury Fiscal Service initiative; vendor N/A."
+  },
+  {
+    "id": 14244,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GenAI Productivity Tool Pilot",
+    "rationale": "Treasury internal pilot; vendor N/A."
+  },
+  {
+    "id": 14245,
+    "decision": "agency_internal_system",
+    "evidence_quote": "FRB AI Code Translation POC",
+    "rationale": "Treasury Fiscal Service / Federal Reserve POC; vendor N/A."
+  },
+  {
+    "id": 14246,
+    "decision": "add_alias",
+    "canonical_name": "Thomson Reuters CoCounsel",
+    "alias_text": "CoCounsel",
+    "evidence_quote": "CoCounsel tool used in the legal office",
+    "confidence": "high",
+    "rationale": "CoCounsel is Thomson Reuters' legal AI assistant; widely used in legal offices; not in catalog."
+  },
+  {
+    "id": 14247,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Knowledge Retrieval Chatbot POC",
+    "rationale": "Treasury POC; vendor N/A."
+  },
+  {
+    "id": 14248,
+    "decision": "false_positive",
+    "rationale": "'Open source Python library and models for NLP' is generic; no specific product."
+  },
+  {
+    "id": 14249,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AI-assisted Procurement POC",
+    "rationale": "Treasury POC; vendor N/A."
+  },
+  {
+    "id": 14250,
+    "decision": "agency_internal_system",
+    "evidence_quote": "FORMS AI",
+    "rationale": "Treasury internal tool; vendor N/A."
+  },
+  {
+    "id": 14251,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Pilot a suite of Fiscal Service Gen AI solutions",
+    "rationale": "Treasury Fiscal Service pilot; vendor N/A."
+  },
+  {
+    "id": 14252,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Application to AI services integration POC",
+    "rationale": "Treasury POC; vendor N/A."
+  },
+  {
+    "id": 14253,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AI Application and Agent Management POC",
+    "rationale": "Treasury POC; vendor N/A."
+  },
+  {
+    "id": 14254,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Research / Discovery on GenAI Product for IT",
+    "rationale": "Treasury research; vendor N/A."
+  },
+  {
+    "id": 14255,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Research / Discovery on GenAI Product for HR",
+    "rationale": "Treasury research; vendor N/A."
+  },
+  {
+    "id": 14256,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Local LLMs Evaluation",
+    "rationale": "Treasury research; vendor N/A."
+  },
+  {
+    "id": 14257,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GenAI Productivity Tool with Web Grounding Pilot",
+    "rationale": "Treasury pilot; vendor N/A."
+  },
+  {
+    "id": 14258,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Establish localized Large Language Model (LLM)",
+    "rationale": "Treasury research; vendor N/A."
+  },
+  {
+    "id": 14259,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Regulatory Reform Tool",
+    "rationale": "Treasury internal tool; vendor N/A."
+  },
+  {
+    "id": 14260,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Public Chatbot",
+    "rationale": "Treasury chatbot; vendor N/A."
+  },
+  {
+    "id": 14261,
+    "decision": "agency_internal_system",
+    "evidence_quote": "SBSE - Payments Topics Chatbot",
+    "rationale": "IRS SBSE-built chatbot; agency-internal."
+  },
+  {
+    "id": 14262,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Joint Committee on Taxation Review Research Aide",
+    "rationale": "IRS-built JCTR Research Aide using Certara platform via API; agency-internal system."
+  },
+  {
+    "id": 14263,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Local GenAI Pilot",
+    "rationale": "IRS pilot; vendor N/A."
+  },
+  {
+    "id": 14264,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Answering Employee Questions with Natural Language Processing in IRWorks",
+    "rationale": "IRS IRWorks platform NLP feature; agency-internal."
+  },
+  {
+    "id": 14265,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Form 990N Machine Learning Model",
+    "rationale": "IRS-built ML model for tax-exempt org compliance; agency-internal."
+  },
+  {
+    "id": 14266,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Volunteer Income Tax Assistance (VITA) Generative AI Chatbot Proof of Concept",
+    "rationale": "IRS VITA POC; vendor N/A."
+  },
+  {
+    "id": 14267,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Ask-CFO Research Aide",
+    "rationale": "IRS-built research aide extension; agency-internal."
+  },
+  {
+    "id": 14268,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Sandbox for Large Language Model Research",
+    "rationale": "IRS Criminal Investigation sandbox; agency-internal."
+  },
+  {
+    "id": 14269,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Digital Forensics Chatbot for IRS Employees",
+    "rationale": "IRS internal chatbot; vendor N/A."
+  },
+  {
+    "id": 14270,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Generative AI for Form 1040X: Support Tool for Amended Returns",
+    "rationale": "IRS-built STAR tool; agency-internal."
+  },
+  {
+    "id": 14271,
+    "decision": "agency_internal_system",
+    "evidence_quote": "DATA Act Bot for Procurement Data Matching",
+    "rationale": "Treasury procurement bot; agency-internal."
+  },
+  {
+    "id": 14272,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Taxpayer Services Chatbot",
+    "rationale": "IRS Taxpayer Services chatbot; agency-internal."
+  },
+  {
+    "id": 14273,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Machine Translation",
+    "rationale": "IRS-evaluated COTS translation tool; vendor not named."
+  },
+  {
+    "id": 14274,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Employee Resource Center (ERC) Chatbot",
+    "rationale": "IRS ERC chatbot; agency-internal."
+  },
+  {
+    "id": 14275,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Winnie Chatbot for Employee IT FAQs",
+    "rationale": "IRS-built Winnie chatbot; agency-internal."
+  },
+  {
+    "id": 14276,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Synthetic Data Engine",
+    "rationale": "IRS-built synthetic data tool; agency-internal."
+  },
+  {
+    "id": 14277,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AI Contract Document Toolbox",
+    "rationale": "Treasury procurement toolbox; agency-internal."
+  },
+  {
+    "id": 14278,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Tax Disclosure Text Clustering",
+    "rationale": "IRS text clustering project on Compliance Data Warehouse; agency-internal."
+  },
+  {
+    "id": 14279,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Employee Retention Credit Text Clustering",
+    "rationale": "IRS-built clustering algorithm; agency-internal."
+  },
+  {
+    "id": 14280,
+    "decision": "agency_internal_system",
+    "evidence_quote": "The Office of Safeguards needs an AI assistant",
+    "rationale": "IRS Office of Safeguards proposed assistant; agency-internal, no vendor."
+  },
+  {
+    "id": 14281,
+    "decision": "agency_internal_system",
+    "evidence_quote": "IRS IaaP Accelerator",
+    "rationale": "IRS Infrastructure-as-a-Product accelerator; agency-internal."
+  },
+  {
+    "id": 14282,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Qualitative Text Classification for Analysis",
+    "rationale": "IRS SB/SE Research internal LLM tool; agency-internal."
+  },
+  {
+    "id": 14283,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AFCS tool assists the team with working a higher volume of form conversion",
+    "rationale": "IRS AFCS internal forms-conversion tool; agency-internal."
+  },
+  {
+    "id": 14284,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Zero Paper AI Routing for Digitalization",
+    "rationale": "IRS Zero-Paper Initiative routing system; agency-internal."
+  },
+  {
+    "id": 14285,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Modular Code Assistant (Explain & Refactor Small Methods)",
+    "rationale": "IRS internal code assistant for test automation; agency-internal."
+  },
+  {
+    "id": 14286,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Digitalization AI Agent",
+    "rationale": "IRS digitalization agent; agency-internal."
+  },
+  {
+    "id": 14287,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Integrated Financial Management Information System (IFMIS)",
+    "rationale": "Treasury IFMIS internal system; agency-internal."
+  },
+  {
+    "id": 14288,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Integrated Data Retrieval System Modernization",
+    "rationale": "IRS IDRS modernization; agency-internal."
+  },
+  {
+    "id": 14289,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Treasury Readability",
+    "rationale": "IRS-built model; agency-internal."
+  },
+  {
+    "id": 14290,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Modernization Accelerator - Legacy Applications Chatbot & Code Conversion",
+    "rationale": "IRS modernization tool; vendor N/A."
+  },
+  {
+    "id": 14291,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Modernization Accelerator",
+    "rationale": "IRS modernization tool; vendor N/A."
+  },
+  {
+    "id": 14292,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Resume Scanner",
+    "rationale": "IRS resume scanner; vendor N/A."
+  },
+  {
+    "id": 14293,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Line-Item Consolidation for Form 1120",
+    "rationale": "IRS LB&I internal model; agency-internal."
+  },
+  {
+    "id": 14294,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Taxpayer 90",
+    "rationale": "IRS internal project; vendor N/A."
+  },
+  {
+    "id": 14295,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Ticket Management Generative AI Pilot",
+    "rationale": "IRS IT Service Desk pilot; vendor N/A."
+  },
+  {
+    "id": 14296,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GenAI for Low Code Platform",
+    "rationale": "IRS HCO-WPA internal pilot; vendor N/A."
+  },
+  {
+    "id": 14297,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Statistical Information Services Customer Correspondence Analytics",
+    "rationale": "IRS SOI internal analysis; vendor N/A."
+  },
+  {
+    "id": 14298,
+    "decision": "agency_internal_system",
+    "evidence_quote": "1040X AI Transcription",
+    "rationale": "IRS transcription project; vendor N/A."
+  },
+  {
+    "id": 14299,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Accounts Management “Balance Due” Call Transcript Classification",
+    "rationale": "IRS internal classification model; vendor N/A."
+  },
+  {
+    "id": 14300,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Identity Verification",
+    "rationale": "IRS identity-verification project; vendor N/A. (May use ID.me but not stated.)"
+  },
+  {
+    "id": 14301,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Robotic Process Automation for Form 941-X Extraction",
+    "rationale": "IRS RPA project; vendor N/A."
+  },
+  {
+    "id": 14302,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Procurement Data Transparency, Reporting, & Decision Tracking",
+    "rationale": "Treasury internal procurement analytics; vendor N/A."
+  },
+  {
+    "id": 14303,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Legislative Analysis Tool",
+    "rationale": "Treasury internal tool; vendor N/A."
+  },
+  {
+    "id": 14304,
+    "decision": "agency_internal_system",
+    "evidence_quote": "F1023 Hybrid NLP and ML Pipeline",
+    "rationale": "IRS internal ML pipeline; vendor N/A."
+  },
+  {
+    "id": 14305,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Integrate Word Processor AI for Digitalization",
+    "rationale": "IRS Digitalization Enablement Platform; agency-internal."
+  },
+  {
+    "id": 14306,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AI Voiceover Generation for eLearning Development",
+    "rationale": "IRS internal eLearning voiceover use case; vendor N/A."
+  },
+  {
+    "id": 14307,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Enterprise Systems Testing Generative Pre-Trained Transformer (EST",
+    "rationale": "IRS EST GPT internal tool; agency-internal."
+  },
+  {
+    "id": 14308,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Using Text Summarization for Open-Ended Survey Responses",
+    "rationale": "IRS internal project; vendor N/A."
+  },
+  {
+    "id": 14309,
+    "decision": "agency_internal_system",
+    "evidence_quote": "A6020(b) Combined Annual Wage Reporting Automation",
+    "rationale": "IRS internal automation; vendor N/A."
+  },
+  {
+    "id": 14310,
+    "decision": "agency_internal_system",
+    "evidence_quote": "TP360 IRM Research Companion",
+    "rationale": "IRS TP360 IRM Research Companion; agency-internal."
+  },
+  {
+    "id": 14311,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Procurement Research",
+    "rationale": "IRS procurement research; vendor N/A."
+  },
+  {
+    "id": 14312,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AI-Augmented Software Modernization and Insight",
+    "rationale": "IRS internal modernization effort; vendor N/A."
+  },
+  {
+    "id": 14313,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Resume Ranking Engine",
+    "rationale": "IRS internal HR tool; vendor N/A."
+  },
+  {
+    "id": 14314,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Form 4546 IDR Question-Answering Automation",
+    "rationale": "IRS LB&I internal LLM use case; vendor N/A."
+  },
+  {
+    "id": 14315,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Vendor Risk Analytics",
+    "rationale": "IRS vendor-risk research; vendor N/A."
+  },
+  {
+    "id": 14316,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AI for Schema Development - Online Adaptive Forms",
+    "rationale": "IRS internal forms development; vendor N/A."
+  },
+  {
+    "id": 14317,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Using AI to analyze Taxpayer Burden Survey",
+    "rationale": "IRS internal analysis; vendor N/A."
+  },
+  {
+    "id": 14318,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GenAI Productivity Tool",
+    "rationale": "Treasury internal productivity pilot; vendor N/A."
+  },
+  {
+    "id": 14319,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GenAI Procurement Tool",
+    "rationale": "Treasury internal procurement pilot; vendor N/A."
+  },
+  {
+    "id": 14320,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Programmatic Access to LLMs via API",
+    "rationale": "Treasury OFR/OCC research endpoint; vendor N/A."
+  },
+  {
+    "id": 14321,
+    "decision": "agency_internal_system",
+    "evidence_quote": "NCCBR Data Validation Pilot",
+    "rationale": "Treasury internal pilot; vendor N/A."
+  },
+  {
+    "id": 14322,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Automated Document Processing",
+    "rationale": "Treasury internal doc processing; vendor N/A."
+  },
+  {
+    "id": 14323,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Advanced Anomaly & Changepoint Detection",
+    "rationale": "Treasury OFR-style internal analytics; vendor N/A."
+  },
+  {
+    "id": 14324,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Procurement Intelligence",
+    "rationale": "Treasury internal procurement analytics; vendor N/A."
+  },
+  {
+    "id": 14325,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Operational Support Bots",
+    "rationale": "Treasury internal IT bots; vendor N/A."
+  },
+  {
+    "id": 14326,
+    "decision": "link",
+    "canonical_name": "Expert.ai Cogito",
+    "evidence_quote": "Expert AI (Cogito) ARSAzure NAL Automated Indexing",
+    "confidence": "high",
+    "rationale": "Expert AI (Cogito) directly matches catalog Expert.ai Cogito."
+  },
+  {
+    "id": 14327,
+    "decision": "link",
+    "canonical_name": "RedCastle Forest Health",
+    "evidence_quote": "RedCastle Resources  Forest Health Detection Monitoring",
+    "confidence": "high",
+    "rationale": "RedCastle Resources + forest health = catalog RedCastle Forest Health."
+  },
+  {
+    "id": 14328,
+    "decision": "add_alias",
+    "canonical_name": "Rangeland Analysis Platform",
+    "alias_text": "Rangeland Analysis Platform",
+    "evidence_quote": "Rangeland Analysis Platform",
+    "confidence": "high",
+    "rationale": "Public RAP tool from University of Montana on Google Cloud; widely cited; not in catalog."
+  },
+  {
+    "id": 14329,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Amazon Web Services  FSA FLP Chatbot",
+    "rationale": "USDA FSA Farm Loan Program chatbot; AWS is cloud, no specific AI product named."
+  },
+  {
+    "id": 14330,
+    "decision": "false_positive",
+    "rationale": "Colorado State University is a research partner; no commercial AI product named."
+  },
+  {
+    "id": 14331,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft O365 NASSportal Intranet Agent",
+    "rationale": "USDA NASS-built intranet agent on M365; likely Copilot but not explicitly named."
+  },
+  {
+    "id": 14332,
+    "decision": "link",
+    "canonical_name": "UiPath Enterprise RPA",
+    "evidence_quote": "UI Path  Incident Invoice Document Understanding",
+    "confidence": "high",
+    "rationale": "UI Path = UiPath; matches UiPath Enterprise RPA in catalog (Document Understanding is a UiPath product)."
+  },
+  {
+    "id": 14333,
+    "decision": "false_positive",
+    "rationale": "Chiral Software is a contractor providing custom wildlife deterrent system; no recognizable commercial AI product."
+  },
+  {
+    "id": 14334,
+    "decision": "false_positive",
+    "rationale": "Oregon State University is research partner; no commercial AI product named."
+  },
+  {
+    "id": 14335,
+    "decision": "link",
+    "canonical_name": "ACCRETE ARGUS",
+    "evidence_quote": "ACCRETE AI Government ARGUS ARGUS AI Supply Chain",
+    "confidence": "high",
+    "rationale": "Direct match to catalog ACCRETE ARGUS."
+  },
+  {
+    "id": 14336,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft ARS AzureGov GovChat",
+    "rationale": "USDA ARS GovChat is internal; built on Azure Gov; no specific commercial AI product named (likely Azure OpenAI)."
+  },
+  {
+    "id": 14337,
+    "decision": "false_positive",
+    "rationale": "Spatial Front Inc is a contractor; NETS is USDA NRCS internal engineering tool. Agency-internal in nature but vendor is contractor."
+  },
+  {
+    "id": 14338,
+    "decision": "link",
+    "canonical_name": "UiPath Enterprise RPA",
+    "evidence_quote": "UIPath Studio UIPath Studio Annual Soil Refresh",
+    "confidence": "high",
+    "rationale": "UIPath Studio is the UiPath developer IDE; maps to UiPath Enterprise RPA in catalog."
+  },
+  {
+    "id": 14339,
+    "decision": "link",
+    "canonical_name": "RedCastle Forest Health",
+    "evidence_quote": "RedCastle Resources  Automated Road Mapping",
+    "confidence": "medium",
+    "rationale": "USDA Forest Service + RedCastle Resources; maps to catalog RedCastle Forest Health (same vendor's Forest Service offering)."
+  },
+  {
+    "id": 14340,
+    "decision": "link",
+    "canonical_name": "ATLAS (Forest Service)",
+    "evidence_quote": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+    "confidence": "high",
+    "rationale": "ATLAS system matches catalog ATLAS (Forest Service)."
+  },
+  {
+    "id": 14341,
+    "decision": "link",
+    "canonical_name": "ATLAS (Forest Service)",
+    "evidence_quote": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+    "confidence": "high",
+    "rationale": "ATLAS system."
+  },
+  {
+    "id": 14342,
+    "decision": "link",
+    "canonical_name": "ATLAS (Forest Service)",
+    "evidence_quote": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+    "confidence": "high",
+    "rationale": "ATLAS system."
+  },
+  {
+    "id": 14343,
+    "decision": "link",
+    "canonical_name": "ATLAS (Forest Service)",
+    "evidence_quote": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+    "confidence": "high",
+    "rationale": "ATLAS system."
+  },
+  {
+    "id": 14344,
+    "decision": "false_positive",
+    "rationale": "Oregon State University research partner; no commercial AI product."
+  },
+  {
+    "id": 14345,
+    "decision": "false_positive",
+    "rationale": "University of Washington research partner; no commercial AI product."
+  },
+  {
+    "id": 14346,
+    "decision": "link",
+    "canonical_name": "ATLAS (Forest Service)",
+    "evidence_quote": "Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS)",
+    "confidence": "high",
+    "rationale": "ATLAS system referenced."
+  },
+  {
+    "id": 14347,
+    "decision": "false_positive",
+    "rationale": "American Museum of Natural History research partner; no commercial AI product."
+  },
+  {
+    "id": 14348,
+    "decision": "false_positive",
+    "rationale": "University of Washington research partner; no commercial AI product."
+  },
+  {
+    "id": 14349,
+    "decision": "false_positive",
+    "rationale": "Booz Allen Hamilton is integrator/contractor for Recreation.gov; no specific commercial AI product named."
+  },
+  {
+    "id": 14350,
+    "decision": "false_positive",
+    "rationale": "George Mason University research partner; no commercial AI product."
+  },
+  {
+    "id": 14351,
+    "decision": "false_positive",
+    "rationale": "Steampunk is contractor providing IT helpdesk chatbot to USDA; no recognizable commercial AI product."
+  },
+  {
+    "id": 14352,
+    "decision": "false_positive",
+    "rationale": "Heuristic already linked Databricks, ChatGPT, OpenAI API; no additional product to add."
+  },
+  {
+    "id": 14353,
+    "decision": "false_positive",
+    "rationale": "Heuristic ChatGPT/Gemini matches are likely false-positive substring matches in CAPS-5 use case; the description references generic 'voice recognition, 3-D technology, and AI' for a training simulator. No clear commercial product. Marking false_positive on the row but heuristic links may need review."
+  }
+]

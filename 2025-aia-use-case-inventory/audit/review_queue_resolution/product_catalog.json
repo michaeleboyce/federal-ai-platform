@@ -1,0 +1,1442 @@
+[
+  {
+    "id": 4092,
+    "canonical_name": "ACCRETE ARGUS",
+    "vendor": "ACCRETE AI Government",
+    "product_type": "supply_chain"
+  },
+  {
+    "id": 4017,
+    "canonical_name": "ATLAS (Forest Service)",
+    "vendor": "USDA Forest Service",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 3965,
+    "canonical_name": "AWS Bedrock",
+    "vendor": "Amazon",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4035,
+    "canonical_name": "AWS Kendra",
+    "vendor": "Amazon",
+    "product_type": "search"
+  },
+  {
+    "id": 4117,
+    "canonical_name": "AWS Lex",
+    "vendor": "Amazon",
+    "product_type": "nlp"
+  },
+  {
+    "id": 4079,
+    "canonical_name": "AWS Rekognition",
+    "vendor": "Amazon",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 3984,
+    "canonical_name": "AWS Textract",
+    "vendor": "Amazon",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 3964,
+    "canonical_name": "AWS Transcribe",
+    "vendor": "Amazon",
+    "product_type": "nlp_specific"
+  },
+  {
+    "id": 4096,
+    "canonical_name": "Adobe Creative Cloud Suite",
+    "vendor": "Adobe",
+    "product_type": "productivity"
+  },
+  {
+    "id": 3982,
+    "canonical_name": "Adobe Firefly",
+    "vendor": "Adobe",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 3983,
+    "canonical_name": "Adobe Photoshop",
+    "vendor": "Adobe",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4099,
+    "canonical_name": "Airship AI Platform",
+    "vendor": "Airship AI Holdings Inc.",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 3985,
+    "canonical_name": "Airtable AI",
+    "vendor": "Airtable",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4101,
+    "canonical_name": "Alation Data Catalog",
+    "vendor": "Alation",
+    "product_type": "data_catalog"
+  },
+  {
+    "id": 4033,
+    "canonical_name": "AlphaFold",
+    "vendor": "Google DeepMind",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 4103,
+    "canonical_name": "Altana Atlas",
+    "vendor": "Altana",
+    "product_type": "supply_chain"
+  },
+  {
+    "id": 4001,
+    "canonical_name": "Alteryx",
+    "vendor": "Alteryx",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 3963,
+    "canonical_name": "Amazon CodeWhisperer",
+    "vendor": "Amazon",
+    "product_type": "coding_assistant"
+  },
+  {
+    "id": 3962,
+    "canonical_name": "Amazon Q",
+    "vendor": "Amazon",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4106,
+    "canonical_name": "Amped Software",
+    "vendor": "Amped Software",
+    "product_type": "forensics"
+  },
+  {
+    "id": 4069,
+    "canonical_name": "Appian AI",
+    "vendor": "Appian",
+    "product_type": "agent_platform"
+  },
+  {
+    "id": 4008,
+    "canonical_name": "Apple Face ID",
+    "vendor": "Apple",
+    "product_type": "consumer_feature"
+  },
+  {
+    "id": 4108,
+    "canonical_name": "Apple Intelligence",
+    "vendor": "Apple",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4009,
+    "canonical_name": "Apple Maps",
+    "vendor": "Apple",
+    "product_type": "consumer_feature"
+  },
+  {
+    "id": 4026,
+    "canonical_name": "Aretec NEAT",
+    "vendor": "Aretec Inc",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4110,
+    "canonical_name": "Articulate 360 AI Assistant",
+    "vendor": "Articulate",
+    "product_type": "training"
+  },
+  {
+    "id": 3996,
+    "canonical_name": "Asana",
+    "vendor": "Asana",
+    "product_type": "productivity"
+  },
+  {
+    "id": 3989,
+    "canonical_name": "Ask Sage",
+    "vendor": "Ask Sage Inc.",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4113,
+    "canonical_name": "Autonomous Surveillance Tower",
+    "vendor": "Anduril",
+    "product_type": "physical_security"
+  },
+  {
+    "id": 4083,
+    "canonical_name": "AveriSource",
+    "vendor": "AveriSource",
+    "product_type": "code_modernization"
+  },
+  {
+    "id": 4055,
+    "canonical_name": "Azure AI Document Intelligence",
+    "vendor": "Microsoft",
+    "product_type": "document_ai"
+  },
+  {
+    "id": 4052,
+    "canonical_name": "Azure AI Foundry",
+    "vendor": "Microsoft",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 3953,
+    "canonical_name": "Azure OpenAI",
+    "vendor": "Microsoft",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4053,
+    "canonical_name": "Azure Speech",
+    "vendor": "Microsoft",
+    "product_type": "transcription"
+  },
+  {
+    "id": 4041,
+    "canonical_name": "BI SmartLINK",
+    "vendor": "BI Incorporated",
+    "product_type": "biometrics"
+  },
+  {
+    "id": 4048,
+    "canonical_name": "BMC Helix ITSM",
+    "vendor": "BMC",
+    "product_type": "itsm"
+  },
+  {
+    "id": 4126,
+    "canonical_name": "Babel Street Babel",
+    "vendor": "Babel Street",
+    "product_type": "threat_intel"
+  },
+  {
+    "id": 4000,
+    "canonical_name": "BioRender",
+    "vendor": "BioRender",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4129,
+    "canonical_name": "Boston Dynamics Spot",
+    "vendor": "Boston Dynamics",
+    "product_type": "physical_security"
+  },
+  {
+    "id": 4130,
+    "canonical_name": "C3 AI",
+    "vendor": "C3.ai",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 3971,
+    "canonical_name": "Calendly",
+    "vendor": "Calendly",
+    "product_type": "productivity"
+  },
+  {
+    "id": 3993,
+    "canonical_name": "Canva",
+    "vendor": "Canva",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4132,
+    "canonical_name": "CaseGuard",
+    "vendor": "CaseGuard",
+    "product_type": "forensics"
+  },
+  {
+    "id": 4133,
+    "canonical_name": "Cellebrite Media Classifier",
+    "vendor": "Cellebrite",
+    "product_type": "forensics"
+  },
+  {
+    "id": 4023,
+    "canonical_name": "Chainalysis",
+    "vendor": "Chainalysis",
+    "product_type": "blockchain_analytics"
+  },
+  {
+    "id": 3954,
+    "canonical_name": "ChatGPT",
+    "vendor": "OpenAI",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4058,
+    "canonical_name": "Citrix",
+    "vendor": "Citrix",
+    "product_type": "virtualization"
+  },
+  {
+    "id": 3956,
+    "canonical_name": "Claude",
+    "vendor": "Anthropic",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 3957,
+    "canonical_name": "Claude Code",
+    "vendor": "Anthropic",
+    "product_type": "coding_assistant"
+  },
+  {
+    "id": 4139,
+    "canonical_name": "Clearview AI",
+    "vendor": "Clearview AI",
+    "product_type": "biometrics"
+  },
+  {
+    "id": 4081,
+    "canonical_name": "Cohesity",
+    "vendor": "Cohesity",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4061,
+    "canonical_name": "Commonlook Online",
+    "vendor": "Commonlook",
+    "product_type": "document_ai"
+  },
+  {
+    "id": 4025,
+    "canonical_name": "Credal",
+    "vendor": "Credal",
+    "product_type": "agent_platform"
+  },
+  {
+    "id": 4143,
+    "canonical_name": "CrewAI",
+    "vendor": "CrewAI",
+    "product_type": "agent_platform"
+  },
+  {
+    "id": 3975,
+    "canonical_name": "Crowdstrike Falcon",
+    "vendor": "Crowdstrike",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4076,
+    "canonical_name": "CryoSPARC",
+    "vendor": "Structura Biotechnology",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 3990,
+    "canonical_name": "Cursor",
+    "vendor": "Anysphere",
+    "product_type": "coding_assistant"
+  },
+  {
+    "id": 4012,
+    "canonical_name": "Custom In-House AI",
+    "vendor": "In-House",
+    "product_type": "custom"
+  },
+  {
+    "id": 3987,
+    "canonical_name": "DALL-E",
+    "vendor": "OpenAI",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 3979,
+    "canonical_name": "Databricks",
+    "vendor": "Databricks",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 4027,
+    "canonical_name": "Dataminr First Alert",
+    "vendor": "Dataminr",
+    "product_type": "social_listening"
+  },
+  {
+    "id": 4088,
+    "canonical_name": "Democratizing Data",
+    "vendor": "Coleridge Institute",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4070,
+    "canonical_name": "Digital Science Dimensions",
+    "vendor": "Digital Science",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4153,
+    "canonical_name": "DocketScope",
+    "vendor": "The Regulatory Group, Inc.",
+    "product_type": "document_ai"
+  },
+  {
+    "id": 4084,
+    "canonical_name": "Dynatrace",
+    "vendor": "Dynatrace",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4013,
+    "canonical_name": "EDAV (CDC)",
+    "vendor": "CDC",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4065,
+    "canonical_name": "Emerald Innovations",
+    "vendor": "Emerald Innovations",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 3981,
+    "canonical_name": "Esri ArcGIS AI",
+    "vendor": "Esri",
+    "product_type": "nlp_specific"
+  },
+  {
+    "id": 4158,
+    "canonical_name": "Everlaw AI Assistant",
+    "vendor": "Everlaw, Inc.",
+    "product_type": "ediscovery"
+  },
+  {
+    "id": 4030,
+    "canonical_name": "Exiger DDIQ",
+    "vendor": "Exiger",
+    "product_type": "supply_chain"
+  },
+  {
+    "id": 4087,
+    "canonical_name": "Expert.ai Cogito",
+    "vendor": "expert.ai",
+    "product_type": "nlp"
+  },
+  {
+    "id": 4162,
+    "canonical_name": "FLIR 280 HD",
+    "vendor": "Teledyne FLIR",
+    "product_type": "physical_security"
+  },
+  {
+    "id": 4080,
+    "canonical_name": "FOIAXpress AI",
+    "vendor": "OPEXUS",
+    "product_type": "document_ai"
+  },
+  {
+    "id": 3995,
+    "canonical_name": "FS Pro",
+    "vendor": "FS Pro",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4082,
+    "canonical_name": "Flashpoint",
+    "vendor": "Flashpoint",
+    "product_type": "social_listening"
+  },
+  {
+    "id": 4060,
+    "canonical_name": "Flowmon",
+    "vendor": "Progress Flowmon",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4094,
+    "canonical_name": "GAIA AI",
+    "vendor": "GAIA AI",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 3958,
+    "canonical_name": "Gemini",
+    "vendor": "Google",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 3950,
+    "canonical_name": "GitHub Copilot",
+    "vendor": "Microsoft",
+    "product_type": "coding_assistant"
+  },
+  {
+    "id": 4089,
+    "canonical_name": "GlobalComm Video Surveillance",
+    "vendor": "GlobalComm",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4170,
+    "canonical_name": "Google Agentspace",
+    "vendor": "Google",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4171,
+    "canonical_name": "Google Chrome Generative AI",
+    "vendor": "Google",
+    "product_type": "consumer_feature"
+  },
+  {
+    "id": 4172,
+    "canonical_name": "Google Cloud Platform",
+    "vendor": "Google",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4173,
+    "canonical_name": "Google Cloud Vision",
+    "vendor": "Google",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 3960,
+    "canonical_name": "Google Lens",
+    "vendor": "Google",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4010,
+    "canonical_name": "Google Maps",
+    "vendor": "Google",
+    "product_type": "consumer_feature"
+  },
+  {
+    "id": 4011,
+    "canonical_name": "Google Pixel",
+    "vendor": "Google",
+    "product_type": "consumer_feature"
+  },
+  {
+    "id": 4029,
+    "canonical_name": "Google Translate",
+    "vendor": "Google",
+    "product_type": "translation"
+  },
+  {
+    "id": 4176,
+    "canonical_name": "Google Vertex AI",
+    "vendor": "Google",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 3961,
+    "canonical_name": "Google Workspace",
+    "vendor": "Google",
+    "product_type": "productivity"
+  },
+  {
+    "id": 3969,
+    "canonical_name": "Grammarly",
+    "vendor": "Grammarly",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4180,
+    "canonical_name": "Grok",
+    "vendor": "xAI",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4181,
+    "canonical_name": "Gurucul UEBA",
+    "vendor": "Gurucul",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4072,
+    "canonical_name": "H2O GPTe",
+    "vendor": "H2O.ai",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4183,
+    "canonical_name": "HeyGen",
+    "vendor": "HeyGen",
+    "product_type": "media_analysis"
+  },
+  {
+    "id": 4184,
+    "canonical_name": "Hyperscience",
+    "vendor": "Hyperscience",
+    "product_type": "document_ai"
+  },
+  {
+    "id": 4040,
+    "canonical_name": "IBM ARGOS",
+    "vendor": "IBM",
+    "product_type": "nlp"
+  },
+  {
+    "id": 4067,
+    "canonical_name": "IBM CoreDF",
+    "vendor": "IBM",
+    "product_type": "document_ai"
+  },
+  {
+    "id": 4187,
+    "canonical_name": "IBM Watson",
+    "vendor": "IBM",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 4086,
+    "canonical_name": "ID.me",
+    "vendor": "ID.me",
+    "product_type": "identity_verification"
+  },
+  {
+    "id": 4039,
+    "canonical_name": "IDEMIA CAT-2/AutoCAT",
+    "vendor": "IDEMIA",
+    "product_type": "biometrics"
+  },
+  {
+    "id": 4190,
+    "canonical_name": "Ideation ReadyAI",
+    "vendor": "Ideation",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4193,
+    "canonical_name": "Illumio",
+    "vendor": "Illumio",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4021,
+    "canonical_name": "Informatica",
+    "vendor": "Informatica",
+    "product_type": "data_catalog"
+  },
+  {
+    "id": 4037,
+    "canonical_name": "Invariant Acoustic Signature AI",
+    "vendor": "Invariant Corporation",
+    "product_type": "audio_analysis"
+  },
+  {
+    "id": 4197,
+    "canonical_name": "KESTREL",
+    "vendor": "Maxar",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4059,
+    "canonical_name": "Kiteworks",
+    "vendor": "Kiteworks",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4057,
+    "canonical_name": "KnowBe4 PhishER",
+    "vendor": "KnowBe4",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4206,
+    "canonical_name": "LIGER Generative AI Toolkit",
+    "vendor": "LMI Consulting, LLC",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4200,
+    "canonical_name": "Lasso Security",
+    "vendor": "Lasso Security",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4073,
+    "canonical_name": "Leica Aivia",
+    "vendor": "Leica",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4019,
+    "canonical_name": "Lexical Intelligence",
+    "vendor": "Lexical Intelligence, LLC",
+    "product_type": "nlp"
+  },
+  {
+    "id": 3967,
+    "canonical_name": "Lexis+ AI",
+    "vendor": "LexisNexis",
+    "product_type": "legal_research"
+  },
+  {
+    "id": 4204,
+    "canonical_name": "LexisNexis",
+    "vendor": "LexisNexis",
+    "product_type": "investigative_data"
+  },
+  {
+    "id": 4205,
+    "canonical_name": "LexisNexis Risk Solutions",
+    "vendor": "LexisNexis",
+    "product_type": "investigative_data"
+  },
+  {
+    "id": 4056,
+    "canonical_name": "Llama",
+    "vendor": "Meta",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4208,
+    "canonical_name": "Lookout",
+    "vendor": "Lookout",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4007,
+    "canonical_name": "Magnet Forensics",
+    "vendor": "Magnet Forensics",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4209,
+    "canonical_name": "Matroid I4 Viewer",
+    "vendor": "Matroid",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4210,
+    "canonical_name": "Medallia",
+    "vendor": "Medallia",
+    "product_type": "social_listening"
+  },
+  {
+    "id": 3974,
+    "canonical_name": "Meltwater",
+    "vendor": "Meltwater",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4212,
+    "canonical_name": "Microsoft 365",
+    "vendor": "Microsoft",
+    "product_type": "coding_assistant"
+  },
+  {
+    "id": 4213,
+    "canonical_name": "Microsoft 365 Apps for Enterprise",
+    "vendor": "Microsoft",
+    "product_type": "coding_assistant"
+  },
+  {
+    "id": 3946,
+    "canonical_name": "Microsoft 365 Copilot",
+    "vendor": "Microsoft",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 3947,
+    "canonical_name": "Microsoft 365 Copilot Chat",
+    "vendor": "Microsoft",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4215,
+    "canonical_name": "Microsoft AI Builder",
+    "vendor": "Microsoft",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 4216,
+    "canonical_name": "Microsoft Azure Authoring Tools",
+    "vendor": "Microsoft",
+    "product_type": "developer_tool"
+  },
+  {
+    "id": 4020,
+    "canonical_name": "Microsoft Azure Platform",
+    "vendor": "Microsoft",
+    "product_type": "cloud_platform"
+  },
+  {
+    "id": 4218,
+    "canonical_name": "Microsoft Azure PowerShell",
+    "vendor": "Microsoft",
+    "product_type": "developer_tool"
+  },
+  {
+    "id": 4219,
+    "canonical_name": "Microsoft Azure Quantum Elements",
+    "vendor": "Microsoft",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 3949,
+    "canonical_name": "Microsoft Copilot Studio",
+    "vendor": "Microsoft",
+    "product_type": "agent_platform"
+  },
+  {
+    "id": 3948,
+    "canonical_name": "Microsoft Copilot for Security",
+    "vendor": "Microsoft",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 3952,
+    "canonical_name": "Microsoft Defender",
+    "vendor": "Microsoft",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4223,
+    "canonical_name": "Microsoft Discovery",
+    "vendor": "Microsoft",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 4224,
+    "canonical_name": "Microsoft Dynamics 365",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4225,
+    "canonical_name": "Microsoft Edge",
+    "vendor": "Microsoft",
+    "product_type": "consumer_feature"
+  },
+  {
+    "id": 4226,
+    "canonical_name": "Microsoft Exchange Server",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4054,
+    "canonical_name": "Microsoft HoloLens",
+    "vendor": "Microsoft",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4228,
+    "canonical_name": "Microsoft OneDrive",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4229,
+    "canonical_name": "Microsoft OneNote",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4230,
+    "canonical_name": "Microsoft Outlook",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4231,
+    "canonical_name": "Microsoft Power BI",
+    "vendor": "Microsoft",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4232,
+    "canonical_name": "Microsoft Power Platform",
+    "vendor": "Microsoft",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 4233,
+    "canonical_name": "Microsoft PowerPoint",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4234,
+    "canonical_name": "Microsoft Project",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4004,
+    "canonical_name": "Microsoft Purview",
+    "vendor": "Microsoft",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4235,
+    "canonical_name": "Microsoft Purview eDiscovery",
+    "vendor": "Microsoft",
+    "product_type": "ediscovery"
+  },
+  {
+    "id": 4236,
+    "canonical_name": "Microsoft ScreenSketch",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4237,
+    "canonical_name": "Microsoft Search in Bing",
+    "vendor": "Microsoft",
+    "product_type": "search"
+  },
+  {
+    "id": 4024,
+    "canonical_name": "Microsoft Sentinel",
+    "vendor": "Microsoft",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4239,
+    "canonical_name": "Microsoft Skype",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 3951,
+    "canonical_name": "Microsoft Teams",
+    "vendor": "Microsoft",
+    "product_type": "productivity"
+  },
+  {
+    "id": 3997,
+    "canonical_name": "Monday.com",
+    "vendor": "monday.com",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4241,
+    "canonical_name": "Motorola License Plate Recognition",
+    "vendor": "Motorola",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4243,
+    "canonical_name": "NEC NeoFace",
+    "vendor": "NEC",
+    "product_type": "biometrics"
+  },
+  {
+    "id": 4244,
+    "canonical_name": "NexisXplore",
+    "vendor": "LexisNexis",
+    "product_type": "investigative_data"
+  },
+  {
+    "id": 3959,
+    "canonical_name": "NotebookLM",
+    "vendor": "Google",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4245,
+    "canonical_name": "Okta Adaptive MFA",
+    "vendor": "Okta",
+    "product_type": "identity_verification"
+  },
+  {
+    "id": 4063,
+    "canonical_name": "OneReach.ai",
+    "vendor": "OneReach.ai",
+    "product_type": "agent_platform"
+  },
+  {
+    "id": 3955,
+    "canonical_name": "OpenAI API",
+    "vendor": "OpenAI",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4248,
+    "canonical_name": "OpenText Axcelerate",
+    "vendor": "OpenText",
+    "product_type": "ediscovery"
+  },
+  {
+    "id": 4249,
+    "canonical_name": "OpenText Decisiv",
+    "vendor": "OpenText",
+    "product_type": "search"
+  },
+  {
+    "id": 3970,
+    "canonical_name": "Otter.ai",
+    "vendor": "Otter",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4044,
+    "canonical_name": "PEST (Parameter Estimation)",
+    "vendor": "Open Source",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 4068,
+    "canonical_name": "PLATES/FoodTrak",
+    "vendor": "Trigent Solutions",
+    "product_type": "document_ai"
+  },
+  {
+    "id": 4003,
+    "canonical_name": "Palantir AIP",
+    "vendor": "Palantir",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4252,
+    "canonical_name": "Palantir Case Management & Analytics (CMA)",
+    "vendor": "Palantir",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4253,
+    "canonical_name": "Palantir Decision and Analytics Platform (DNA-P)",
+    "vendor": "Palantir",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4254,
+    "canonical_name": "Palantir Federal Cloud Service",
+    "vendor": "Palantir",
+    "product_type": "cloud_platform"
+  },
+  {
+    "id": 3978,
+    "canonical_name": "Palo Alto Networks",
+    "vendor": "Palo Alto Networks",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4077,
+    "canonical_name": "Pangolin Lineage",
+    "vendor": "COG-UK",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 4257,
+    "canonical_name": "PassiveLogic",
+    "vendor": "PassiveLogic",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 4258,
+    "canonical_name": "Penlink",
+    "vendor": "Penlink",
+    "product_type": "threat_intel"
+  },
+  {
+    "id": 3988,
+    "canonical_name": "Perplexity",
+    "vendor": "Perplexity AI",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4064,
+    "canonical_name": "Pingwind AI DevOps",
+    "vendor": "Pingwind",
+    "product_type": "devops"
+  },
+  {
+    "id": 3991,
+    "canonical_name": "Poolside",
+    "vendor": "Poolside",
+    "product_type": "coding_assistant"
+  },
+  {
+    "id": 4032,
+    "canonical_name": "Precise MLaaS",
+    "vendor": "Precise Software",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 4091,
+    "canonical_name": "ProcureSight",
+    "vendor": "ProcureSight",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4265,
+    "canonical_name": "Quantaero Marine Wildlife AI",
+    "vendor": "Quantaero",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 3972,
+    "canonical_name": "Reclaim.AI",
+    "vendor": "Reclaim",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4267,
+    "canonical_name": "Recorded Future",
+    "vendor": "Recorded Future",
+    "product_type": "threat_intel"
+  },
+  {
+    "id": 4036,
+    "canonical_name": "RedCastle Forest Health",
+    "vendor": "RedCastle Resources",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4269,
+    "canonical_name": "Rekor",
+    "vendor": "Rekor",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4028,
+    "canonical_name": "Relativity",
+    "vendor": "Relativity",
+    "product_type": "ediscovery"
+  },
+  {
+    "id": 3973,
+    "canonical_name": "SAP Concur",
+    "vendor": "SAP",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4278,
+    "canonical_name": "SITE Intelligence Group",
+    "vendor": "SITE",
+    "product_type": "threat_intel"
+  },
+  {
+    "id": 4286,
+    "canonical_name": "SQL Server Management Studio",
+    "vendor": "Microsoft",
+    "product_type": "developer_tool"
+  },
+  {
+    "id": 4271,
+    "canonical_name": "Salesforce Einstein",
+    "vendor": "Salesforce",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 4273,
+    "canonical_name": "Scopus AI",
+    "vendor": "Elsevier",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 4005,
+    "canonical_name": "SentinelOne",
+    "vendor": "SentinelOne",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4274,
+    "canonical_name": "ServiceNow IT Operations Management (ITOM) Predictive AIOps",
+    "vendor": "ServiceNow",
+    "product_type": "itsm"
+  },
+  {
+    "id": 3968,
+    "canonical_name": "ServiceNow Now Assist",
+    "vendor": "ServiceNow",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4078,
+    "canonical_name": "Shabash Merops",
+    "vendor": "Shabash",
+    "product_type": "nlp"
+  },
+  {
+    "id": 4049,
+    "canonical_name": "SimplyFile",
+    "vendor": "TechHit",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4279,
+    "canonical_name": "Skillsoft Percipio CAISY",
+    "vendor": "Skillsoft",
+    "product_type": "training"
+  },
+  {
+    "id": 4280,
+    "canonical_name": "Skydio X2D",
+    "vendor": "Skydio",
+    "product_type": "physical_security"
+  },
+  {
+    "id": 4018,
+    "canonical_name": "Skyward CEDAR/CLAW",
+    "vendor": "Skyward IT Solutions",
+    "product_type": "agent_platform"
+  },
+  {
+    "id": 3998,
+    "canonical_name": "Slack",
+    "vendor": "Salesforce",
+    "product_type": "productivity"
+  },
+  {
+    "id": 3980,
+    "canonical_name": "Snowflake Cortex",
+    "vendor": "Snowflake",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 3976,
+    "canonical_name": "Splunk",
+    "vendor": "Splunk",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4284,
+    "canonical_name": "Sprinklr",
+    "vendor": "Sprinklr",
+    "product_type": "social_listening"
+  },
+  {
+    "id": 3994,
+    "canonical_name": "Sprout Social",
+    "vendor": "Sprout Social",
+    "product_type": "productivity"
+  },
+  {
+    "id": 4042,
+    "canonical_name": "SpyglassGPT",
+    "vendor": "Unknown",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4062,
+    "canonical_name": "SumTotal",
+    "vendor": "SumTotal",
+    "product_type": "training"
+  },
+  {
+    "id": 3992,
+    "canonical_name": "Synthesia",
+    "vendor": "Synthesia",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4051,
+    "canonical_name": "Systran Translate",
+    "vendor": "Systran",
+    "product_type": "translation"
+  },
+  {
+    "id": 4038,
+    "canonical_name": "TRM Labs Blockchain Analysis Platform",
+    "vendor": "TRM Labs",
+    "product_type": "blockchain_analytics"
+  },
+  {
+    "id": 4002,
+    "canonical_name": "Tableau",
+    "vendor": "Salesforce",
+    "product_type": "ml_platform"
+  },
+  {
+    "id": 4289,
+    "canonical_name": "Tabnine",
+    "vendor": "Tabnine",
+    "product_type": "coding_assistant"
+  },
+  {
+    "id": 4290,
+    "canonical_name": "Tenable",
+    "vendor": "Tenable",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4043,
+    "canonical_name": "Tesseract OCR",
+    "vendor": "Open Source",
+    "product_type": "document_ai"
+  },
+  {
+    "id": 4014,
+    "canonical_name": "Thomson Reuters CLEAR",
+    "vendor": "Thomson Reuters",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4293,
+    "canonical_name": "ThruVision TAC 16",
+    "vendor": "ThruVision",
+    "product_type": "physical_security"
+  },
+  {
+    "id": 4294,
+    "canonical_name": "ThruWave NII 3D Imaging Tool",
+    "vendor": "ThruWave",
+    "product_type": "physical_security"
+  },
+  {
+    "id": 4295,
+    "canonical_name": "Traffic Jam",
+    "vendor": "Marinus Analytics",
+    "product_type": "investigative_data"
+  },
+  {
+    "id": 4022,
+    "canonical_name": "USAi (GSA)",
+    "vendor": "GSA",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 4297,
+    "canonical_name": "UiPath Enterprise RPA",
+    "vendor": "UiPath",
+    "product_type": "rpa"
+  },
+  {
+    "id": 4045,
+    "canonical_name": "Ultralytics YOLO",
+    "vendor": "Ultralytics",
+    "product_type": "computer_vision"
+  },
+  {
+    "id": 4050,
+    "canonical_name": "UpToDate",
+    "vendor": "Wolters Kluwer",
+    "product_type": "clinical_decision_support"
+  },
+  {
+    "id": 4299,
+    "canonical_name": "Upstream Tech HydroForecast",
+    "vendor": "Upstream Tech",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 4031,
+    "canonical_name": "VAO Ally",
+    "vendor": "GSA",
+    "product_type": "agent_platform"
+  },
+  {
+    "id": 4303,
+    "canonical_name": "Vectra AI",
+    "vendor": "Vectra Networks",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4015,
+    "canonical_name": "Veritone",
+    "vendor": "Veritone",
+    "product_type": "media_analysis"
+  },
+  {
+    "id": 4047,
+    "canonical_name": "Veritone Illuminate",
+    "vendor": "Veritone",
+    "product_type": "media_analysis"
+  },
+  {
+    "id": 4307,
+    "canonical_name": "Visual Studio",
+    "vendor": "Microsoft",
+    "product_type": "developer_tool"
+  },
+  {
+    "id": 4308,
+    "canonical_name": "Visual Studio Enterprise",
+    "vendor": "Microsoft",
+    "product_type": "developer_tool"
+  },
+  {
+    "id": 4309,
+    "canonical_name": "VoiceAtlas",
+    "vendor": "Navteca",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 3986,
+    "canonical_name": "WellSaid Labs",
+    "vendor": "WellSaid Labs",
+    "product_type": "nlp_specific"
+  },
+  {
+    "id": 3966,
+    "canonical_name": "Westlaw AI",
+    "vendor": "Thomson Reuters",
+    "product_type": "legal_research"
+  },
+  {
+    "id": 4046,
+    "canonical_name": "Whooster",
+    "vendor": "Whooster",
+    "product_type": "data_analytics"
+  },
+  {
+    "id": 4085,
+    "canonical_name": "Windsurf",
+    "vendor": "Codeium",
+    "product_type": "coding_assistant"
+  },
+  {
+    "id": 4006,
+    "canonical_name": "Wiz",
+    "vendor": "Wiz",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4314,
+    "canonical_name": "Yurts AI",
+    "vendor": "Legion (formerly Yurts)",
+    "product_type": "general_llm"
+  },
+  {
+    "id": 3999,
+    "canonical_name": "Zoom",
+    "vendor": "Zoom",
+    "product_type": "productivity"
+  },
+  {
+    "id": 3977,
+    "canonical_name": "Zscaler",
+    "vendor": "Zscaler",
+    "product_type": "security_tool"
+  },
+  {
+    "id": 4075,
+    "canonical_name": "crYOLO",
+    "vendor": "Open Source",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 4074,
+    "canonical_name": "cryoDRGN",
+    "vendor": "Open Source",
+    "product_type": "scientific_ml"
+  },
+  {
+    "id": 4016,
+    "canonical_name": "iCatalyst RPA",
+    "vendor": "iCatalyst Inc",
+    "product_type": "rpa"
+  },
+  {
+    "id": 4196,
+    "canonical_name": "iProov",
+    "vendor": "iProov",
+    "product_type": "biometrics"
+  },
+  {
+    "id": 4192,
+    "canonical_name": "idiCORE",
+    "vendor": "LexisNexis Risk Solutions",
+    "product_type": "investigative_data"
+  }
+]

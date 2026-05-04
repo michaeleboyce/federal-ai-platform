@@ -1,0 +1,1374 @@
+[
+  {
+    "id": 13956,
+    "decision": "link",
+    "canonical_name": "Azure OpenAI",
+    "evidence_quote": "Azure Automatic Document Processing",
+    "confidence": "medium",
+    "rationale": "System name is 'Azure'; vendor lists Azure PIID. DOL Automatic Document Processing uses Azure (likely Azure AI/OpenAI services for doc processing)."
+  },
+  {
+    "id": 13957,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal system OEWS Occupation Autocoder",
+    "rationale": "BLS-built classifier (logistic regression on job titles). No commercial product."
+  },
+  {
+    "id": 13958,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal \nsystem Scanner Data Product Classification",
+    "rationale": "BLS-built ML classifier for ELI codes. No commercial product."
+  },
+  {
+    "id": 13959,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem Expenditure Classification",
+    "rationale": "BLS-built autocoder. No commercial product named."
+  },
+  {
+    "id": 13960,
+    "decision": "link",
+    "canonical_name": "Custom In-House AI",
+    "evidence_quote": "Using Amazon Web Services Personal Identifying Information scrubber",
+    "confidence": "medium",
+    "rationale": "Uses AWS PII scrubber and custom NER model; agency-built solution leveraging AWS services."
+  },
+  {
+    "id": 13961,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AWS Workforce Recruitment Program (WRP) Website Chatbot",
+    "rationale": "DOL-built chatbot deployed on AWS; specific commercial product not named beyond AWS infrastructure."
+  },
+  {
+    "id": 13962,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Worker PLUS Microsimulation Program",
+    "rationale": "DOL/contractor-built microsimulation model, not a commercial AI product."
+  },
+  {
+    "id": 13963,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem Computer-Assisted Coding: \nSOII Autocoder",
+    "rationale": "BLS-built autocoder for SOII surveys."
+  },
+  {
+    "id": 13964,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem CFOI Record Matching",
+    "rationale": "BLS-built record matching program."
+  },
+  {
+    "id": 13965,
+    "decision": "link",
+    "canonical_name": "Azure OpenAI",
+    "evidence_quote": "Azure PIID: NNG15SD60B AUNTEE BOT Note Taking Bot",
+    "confidence": "medium",
+    "rationale": "AUNTEE BOT note-taker uses Azure (Azure OpenAI for transcript summarization)."
+  },
+  {
+    "id": 13966,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem CPS OTC Prediction",
+    "rationale": "BLS-built prediction model."
+  },
+  {
+    "id": 13967,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem Sample Refinement: Frame API",
+    "rationale": "BLS-built sample refinement system."
+  },
+  {
+    "id": 13968,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem CE Interview Item Code Estimation",
+    "rationale": "BLS-built classification recommender."
+  },
+  {
+    "id": 13969,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem CE Interview Imputations",
+    "rationale": "BLS-built imputation model."
+  },
+  {
+    "id": 13970,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem QCEW NAICS Autocoder",
+    "rationale": "BLS-built NAICS autocoder."
+  },
+  {
+    "id": 13971,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem Comment Actionability\nLikelihood Score",
+    "rationale": "BLS-built comment scoring model."
+  },
+  {
+    "id": 13972,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem Computer-Assisted Review:\nORS Autocoder",
+    "rationale": "BLS-built autocoder."
+  },
+  {
+    "id": 13973,
+    "decision": "agency_internal_system",
+    "evidence_quote": "BLS Internal\nSystem PPI Price Tolerance Prediction",
+    "rationale": "BLS-built prediction model."
+  },
+  {
+    "id": 13974,
+    "decision": "agency_internal_system",
+    "evidence_quote": "MSHA AI Head Gear AI Headset Inspection",
+    "rationale": "MSHA-built voice-controlled inspection headset (contractor ResolveSoft built the integration); no off-the-shelf commercial AI product named."
+  },
+  {
+    "id": 13975,
+    "decision": "agency_internal_system",
+    "evidence_quote": "DAISI ( DOL AI Search Insights)",
+    "rationale": "DOL-built AI search assistant (DAISI)."
+  },
+  {
+    "id": 13976,
+    "decision": "link",
+    "canonical_name": "Azure OpenAI",
+    "evidence_quote": "Azure Open AI and AWS ETA Grants Monitoring Tool",
+    "confidence": "high",
+    "rationale": "System is built on Azure OpenAI (and AWS)."
+  },
+  {
+    "id": 13977,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Accenture DCC Aidan Chat-bot",
+    "rationale": "ED-built/contractor-built chatbot; Accenture is contractor not AI vendor."
+  },
+  {
+    "id": 13978,
+    "decision": "link",
+    "canonical_name": "iCatalyst RPA",
+    "evidence_quote": "iCatalyst Inc ENT_Tech IPAC RPA Bot",
+    "confidence": "high",
+    "rationale": "iCatalyst Inc is the RPA vendor; product is iCatalyst RPA."
+  },
+  {
+    "id": 13979,
+    "decision": "link",
+    "canonical_name": "Skillsoft Percipio CAISY",
+    "evidence_quote": "Skillsoft EDSPO CAISY - Artificial Intelligence System Skillsoft Percipio Assessment",
+    "confidence": "high",
+    "rationale": "Explicit Skillsoft Percipio CAISY system."
+  },
+  {
+    "id": 13980,
+    "decision": "link",
+    "canonical_name": "iCatalyst RPA",
+    "evidence_quote": "iCatalyst Inc ENT_Tech Legislation Comment Categorization",
+    "confidence": "high",
+    "rationale": "iCatalyst Inc is the RPA/AI vendor."
+  },
+  {
+    "id": 13981,
+    "decision": "link",
+    "canonical_name": "iCatalyst RPA",
+    "evidence_quote": "iCatalyst Inc ENT_Tech Customer Service Support",
+    "confidence": "high",
+    "rationale": "iCatalyst Inc vendor."
+  },
+  {
+    "id": 13982,
+    "decision": "link",
+    "canonical_name": "iCatalyst RPA",
+    "evidence_quote": "iCatalyst Inc ENT_Tech Comment Categorization",
+    "confidence": "high",
+    "rationale": "iCatalyst Inc vendor."
+  },
+  {
+    "id": 13983,
+    "decision": "link",
+    "canonical_name": "Azure OpenAI",
+    "evidence_quote": "Azure AI Internal General Q&A",
+    "confidence": "high",
+    "rationale": "Use case explicitly named 'Azure AI Internal General Q&A'."
+  },
+  {
+    "id": 13984,
+    "decision": "link",
+    "canonical_name": "AWS Bedrock",
+    "evidence_quote": "Amazon Web Services EDMAPS Generative AI and Foundation Model Integration",
+    "confidence": "medium",
+    "rationale": "ED system providing access to multi-vendor AI models on AWS; most likely Bedrock."
+  },
+  {
+    "id": 13985,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Savan Group Agency Records Management System (ARMS)",
+    "rationale": "Savan Group is a contractor; ARMS is EPA's records management system."
+  },
+  {
+    "id": 13986,
+    "decision": "agency_internal_system",
+    "evidence_quote": "University of Chicago Energy and Environment Lab",
+    "rationale": "Custom risk model built by U Chicago E&E Lab for EPA RCRA inspections."
+  },
+  {
+    "id": 13987,
+    "decision": "add_alias",
+    "canonical_name": "PDRI Automatically-Scored Writing Assessment",
+    "alias_text": "Personnel Decisions Research Institutes, LLC (PDRI)",
+    "evidence_quote": "Personnel Decisions Research Institutes, LLC (PDRI)",
+    "confidence": "medium",
+    "rationale": "PDRI's commercial AWA product, not in catalog."
+  },
+  {
+    "id": 13988,
+    "decision": "link",
+    "canonical_name": "Thomson Reuters CLEAR",
+    "evidence_quote": "CLEAR CLEAR Criminal Background Investigation",
+    "confidence": "high",
+    "rationale": "CLEAR is Thomson Reuters' investigative data product."
+  },
+  {
+    "id": 13989,
+    "decision": "false_positive",
+    "evidence_quote": "Equifax, Trans Union",
+    "rationale": "Equifax and Trans Union are credit bureaus, not AI products. Background checks use their data feeds, not AI specifically."
+  },
+  {
+    "id": 13990,
+    "decision": "link",
+    "canonical_name": "Thomson Reuters CLEAR",
+    "evidence_quote": "CLEAR CLEAR Background Check Web Application",
+    "confidence": "high",
+    "rationale": "CLEAR product."
+  },
+  {
+    "id": 13991,
+    "decision": "link",
+    "canonical_name": "Thomson Reuters CLEAR",
+    "evidence_quote": "CLEAR  Location and Evaluation of Individuals",
+    "confidence": "high",
+    "rationale": "CLEAR product."
+  },
+  {
+    "id": 13992,
+    "decision": "link",
+    "canonical_name": "Thomson Reuters CLEAR",
+    "evidence_quote": "CLEAR  Background Check Tool for Fraud Investigations",
+    "confidence": "high",
+    "rationale": "CLEAR product."
+  },
+  {
+    "id": 13993,
+    "decision": "unclear",
+    "evidence_quote": "Adobe, Auto Split, Microsoft, Scan Writer, Social Discovery",
+    "rationale": "Mix of vendors and tools; 'Adobe' too vague (likely Acrobat), 'Microsoft' too vague, 'Auto Split'/'Scan Writer'/'Social Discovery' are specialized forensics tools without clear catalog match. Skip rather than guess."
+  },
+  {
+    "id": 13994,
+    "decision": "link",
+    "canonical_name": "Microsoft Azure Platform",
+    "evidence_quote": "Zvolvant (Small Business) Microsoft Azure Commercial",
+    "confidence": "high",
+    "rationale": "System is Microsoft Azure Commercial; Zvolvant is the contractor."
+  },
+  {
+    "id": 13995,
+    "decision": "false_positive",
+    "evidence_quote": "Zvolvant (Small Business) N/A",
+    "rationale": "Vendor is just a contractor name; system is N/A. No commercial AI product mentioned."
+  },
+  {
+    "id": 13996,
+    "decision": "false_positive",
+    "evidence_quote": "Zvolvant (Small Business) N/A",
+    "rationale": "Contractor only; no commercial AI product named."
+  },
+  {
+    "id": 13997,
+    "decision": "false_positive",
+    "evidence_quote": "Zvolvant (Small Business) N/A",
+    "rationale": "Contractor only; no commercial AI product named."
+  },
+  {
+    "id": 13998,
+    "decision": "link",
+    "canonical_name": "Microsoft Azure Platform",
+    "evidence_quote": "Zvolvant (Small Business) Microsoft Azure Commercial",
+    "confidence": "high",
+    "rationale": "System is on Microsoft Azure Commercial."
+  },
+  {
+    "id": 13999,
+    "decision": "link",
+    "canonical_name": "Westlaw AI",
+    "evidence_quote": "Thomson Reuters N/A AI Enabled Assistant Legal Research",
+    "confidence": "medium",
+    "rationale": "Thomson Reuters' AI legal research product is Westlaw AI/CoCounsel."
+  },
+  {
+    "id": 14000,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Neural Networks for FHFA Modeling Analytics Platform (FMAP)",
+    "rationale": "FHFA-built modeling platform."
+  },
+  {
+    "id": 14001,
+    "decision": "add_alias",
+    "canonical_name": "Cisco Identity Services Engine",
+    "alias_text": "Cisco Identify Services engine",
+    "evidence_quote": "Cisco GSS Security and network monitoring using Cisco Identify Services engine",
+    "confidence": "high",
+    "rationale": "Cisco ISE is a real commercial security product, not currently in catalog."
+  },
+  {
+    "id": 14002,
+    "decision": "link",
+    "canonical_name": "SQL Server Management Studio",
+    "evidence_quote": "Microsoft GSS Analytics, Indexing, and Anomaly Detection for Data Management on SQL Server",
+    "confidence": "medium",
+    "rationale": "Use case is on SQL Server (Microsoft's managed analytics features)."
+  },
+  {
+    "id": 14003,
+    "decision": "false_positive",
+    "evidence_quote": "Third Party Vendor Body Worn Camera Data Management System",
+    "rationale": "Vendor is literally 'Third Party Vendor' - agency declined to name it."
+  },
+  {
+    "id": 14004,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Benefits Manager Benefits Manager Virtual Benefits Assistant",
+    "rationale": "FRB-built virtual assistant within Benefits Manager system."
+  },
+  {
+    "id": 14005,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Accenture Federal Services (AFS) Converge AVA",
+    "rationale": "FRTIB Converge platform with Accenture as contractor; AVA is internal participant assistant."
+  },
+  {
+    "id": 14006,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Accenture Federal Services (AFS) Converge Fraud Detection Platform",
+    "rationale": "FRTIB Converge fraud detection; contractor-built."
+  },
+  {
+    "id": 14007,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Accenture Federal Services (AFS) Converge Contact Center AI",
+    "rationale": "Internal Converge contact center AI built by Accenture."
+  },
+  {
+    "id": 14008,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Leidos Sentinel Network Services Automatic PSC Classification",
+    "rationale": "FTC Sentinel Network Services - internal system; Leidos is contractor."
+  },
+  {
+    "id": 14009,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Leidos Sentinel Network Services Group Duplicate Complaints",
+    "rationale": "FTC Sentinel Network Services internal; Leidos contractor."
+  },
+  {
+    "id": 14010,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Leidos Sentinel Network Services Chatbot",
+    "rationale": "FTC Sentinel Network Services internal; Leidos contractor."
+  },
+  {
+    "id": 14011,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Leidos Sentinel Network Services Word Cloud",
+    "rationale": "Internal FTC Sentinel."
+  },
+  {
+    "id": 14012,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Leidos Sentinel Network Services Graph Analytics",
+    "rationale": "Internal FTC Sentinel."
+  },
+  {
+    "id": 14013,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Leidos Sentinel Network Services Analytic Sandbox",
+    "rationale": "Internal FTC Sentinel sandbox."
+  },
+  {
+    "id": 14014,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Leidos Sentinel Network Services Developer Productivity",
+    "rationale": "Internal FTC Sentinel."
+  },
+  {
+    "id": 14015,
+    "decision": "false_positive",
+    "evidence_quote": "Cloud Discovery Source (CDS) Relativity Federal Cloud Discovery",
+    "rationale": "Heuristic already linked Relativity and Veritone (the right products). No additional product to add."
+  },
+  {
+    "id": 14016,
+    "decision": "false_positive",
+    "evidence_quote": "Microsoft Sentinel Network Services Azure Databricks",
+    "rationale": "Heuristic already linked Microsoft Sentinel and Databricks. Note: 'Sentinel Network Services' here is FTC's internal system, not Microsoft Sentinel - but Azure Databricks is the actual product. Heuristic match for Databricks is correct."
+  },
+  {
+    "id": 14017,
+    "decision": "link",
+    "canonical_name": "AWS Lex",
+    "evidence_quote": "Amazon Sentinel Network Services IVR Automated Voice Assistant",
+    "confidence": "medium",
+    "rationale": "FTC IVR voice assistant on Amazon - most likely AWS Lex/Connect."
+  },
+  {
+    "id": 14018,
+    "decision": "link",
+    "canonical_name": "AWS Textract",
+    "evidence_quote": "Amazon Sentinel Network Services GenAI Mail Scan",
+    "confidence": "medium",
+    "rationale": "Mail scan / handwriting OCR on AWS - likely Textract."
+  },
+  {
+    "id": 14019,
+    "decision": "false_positive",
+    "evidence_quote": "Slack AI",
+    "rationale": "Heuristic already linked Slack and Microsoft Teams. No additional needed."
+  },
+  {
+    "id": 14020,
+    "decision": "agency_internal_system",
+    "evidence_quote": "MIT Lincoln Labs ACF Horizon Unaccompanied Children Program",
+    "rationale": "MIT Lincoln Labs custom-built tool for HHS/ACF; ACF Horizon is internal."
+  },
+  {
+    "id": 14021,
+    "decision": "add_alias",
+    "canonical_name": "Amazon Connect",
+    "alias_text": "Amazon Connect",
+    "evidence_quote": "Amazon Connect (current)",
+    "confidence": "high",
+    "rationale": "Amazon Connect (cloud contact center with AI) not in catalog. OneReach.ai is already in catalog (deprecated tool)."
+  },
+  {
+    "id": 14022,
+    "decision": "add_alias",
+    "canonical_name": "Lumivero NVivo",
+    "alias_text": "Lumivero, NVivo",
+    "evidence_quote": "Lumivero, Qualtrics,  Credal, Ask Sage NVivo, Qualtrics",
+    "confidence": "medium",
+    "rationale": "NVivo (Lumivero) qualitative analysis tool not in catalog."
+  },
+  {
+    "id": 14022,
+    "decision": "add_alias",
+    "canonical_name": "Qualtrics",
+    "alias_text": "Qualtrics",
+    "evidence_quote": "Qualtrics",
+    "confidence": "high",
+    "rationale": "Qualtrics survey analytics not in catalog."
+  },
+  {
+    "id": 14023,
+    "decision": "false_positive",
+    "evidence_quote": "Palantir, Credal ACF Upstream, ACF Credal",
+    "rationale": "Heuristic already linked Palantir AIP and Credal."
+  },
+  {
+    "id": 14024,
+    "decision": "false_positive",
+    "evidence_quote": "Palantir, Credal ACF Upstream, ACF Credal",
+    "rationale": "Heuristic already linked Palantir AIP and Credal."
+  },
+  {
+    "id": 14025,
+    "decision": "false_positive",
+    "evidence_quote": "Credal, Ask Sage, Microsoft ACF Credal",
+    "rationale": "Heuristic linked Microsoft 365 Copilot Chat, Ask Sage, Credal, Microsoft Teams."
+  },
+  {
+    "id": 14026,
+    "decision": "false_positive",
+    "evidence_quote": "Credal, Ask Sage, Microsoft ACF Credal",
+    "rationale": "Heuristic linked all relevant products."
+  },
+  {
+    "id": 14027,
+    "decision": "agency_internal_system",
+    "evidence_quote": "RIVA Solutions ahrq.gov AHRQ Search",
+    "rationale": "AHRQ.gov internal search system; RIVA Solutions is contractor."
+  },
+  {
+    "id": 14028,
+    "decision": "add_alias",
+    "canonical_name": "Amazon Alexa",
+    "alias_text": "Amazon Alexa Skill",
+    "evidence_quote": "emPOWER AI, an  Amazon Alexa Skill",
+    "confidence": "high",
+    "rationale": "Amazon Alexa is the platform; not currently in catalog."
+  },
+  {
+    "id": 14029,
+    "decision": "add_alias",
+    "canonical_name": "Unison PRISM",
+    "alias_text": "Unison",
+    "evidence_quote": "Unison  PRISM Ally",
+    "confidence": "medium",
+    "rationale": "Unison's PRISM (procurement) AI product, not in catalog."
+  },
+  {
+    "id": 14030,
+    "decision": "false_positive",
+    "evidence_quote": "N/A",
+    "rationale": "Vendor is N/A; no product named."
+  },
+  {
+    "id": 14031,
+    "decision": "false_positive",
+    "evidence_quote": "Immunization Information Systems",
+    "rationale": "Heuristic linked Azure OpenAI and EDAV (CDC) - the two relevant products from name 'IDAB EDAV Azure OpenAI'."
+  },
+  {
+    "id": 14032,
+    "decision": "add_alias",
+    "canonical_name": "LaserAI",
+    "alias_text": "LaserAI",
+    "evidence_quote": "LaserAI  LaserAI",
+    "confidence": "high",
+    "rationale": "LaserAI is a commercial systematic review automation product, not in catalog."
+  },
+  {
+    "id": 14033,
+    "decision": "false_positive",
+    "evidence_quote": "School LLM initial abstract review process",
+    "rationale": "Vendor N/A; no specific product named, generic 'LLM'."
+  },
+  {
+    "id": 14034,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft NCIRD SmartFind ChatBots",
+    "rationale": "CDC NCIRD SmartFind chatbot on Microsoft platform; agency-built."
+  },
+  {
+    "id": 14035,
+    "decision": "agency_internal_system",
+    "evidence_quote": "DDT DPRP Portal Risk Assessment Module",
+    "rationale": "CDC-built risk assessment module."
+  },
+  {
+    "id": 14036,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Consolidated Statistical Platform Sequential Coverage Algorithm",
+    "rationale": "CDC NCHS internal statistical algorithm."
+  },
+  {
+    "id": 14037,
+    "decision": "false_positive",
+    "evidence_quote": "EDAV (Enterprise Data Analytics and Visualization Platform) GenAIMeta",
+    "rationale": "Heuristic already linked EDAV (CDC) and Azure OpenAI."
+  },
+  {
+    "id": 14038,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft Automating the distribution of CDC-State Department cables",
+    "rationale": "CDC-built automation; Microsoft is platform vendor only with no specific product named."
+  },
+  {
+    "id": 14039,
+    "decision": "false_positive",
+    "evidence_quote": "N/A",
+    "rationale": "No vendor or product named."
+  },
+  {
+    "id": 14040,
+    "decision": "link",
+    "canonical_name": "Databricks",
+    "evidence_quote": "Using Databricks Genie for Routine Immunization Data Insights",
+    "confidence": "high",
+    "rationale": "Use case explicitly uses Databricks Genie. Heuristic linked EDAV and Databricks already."
+  },
+  {
+    "id": 14041,
+    "decision": "false_positive",
+    "evidence_quote": "EDAV (Enterprise Data Analytics and Visualization Platform)",
+    "rationale": "Heuristic linked EDAV (CDC) and Custom In-House AI."
+  },
+  {
+    "id": 14042,
+    "decision": "link",
+    "canonical_name": "UiPath Enterprise RPA",
+    "evidence_quote": "UIPath UIPath OFR Robotics and Process Automation",
+    "confidence": "high",
+    "rationale": "UiPath is the explicit product."
+  },
+  {
+    "id": 14043,
+    "decision": "false_positive",
+    "evidence_quote": "In-house (CDER staff) and contractor teams",
+    "rationale": "Heuristic linked Custom In-House AI and Microsoft Teams."
+  },
+  {
+    "id": 14044,
+    "decision": "agency_internal_system",
+    "evidence_quote": "L&M Policy Research, LLC  AI-assisted comment triaging",
+    "rationale": "Custom CMS comment triage tool built by L&M Policy Research."
+  },
+  {
+    "id": 14045,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Skyward Solutions CEDAR CMS Labor Analysis Wizard",
+    "rationale": "CMS CEDAR-hosted custom labor analysis tool by Skyward."
+  },
+  {
+    "id": 14046,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Skyward Solutions CEDAR AI Workspace",
+    "rationale": "CMS CEDAR-hosted dev environment."
+  },
+  {
+    "id": 14047,
+    "decision": "link",
+    "canonical_name": "Skyward CEDAR/CLAW",
+    "evidence_quote": "Skyward IT Solutions CEDAR CMS Chat",
+    "confidence": "high",
+    "rationale": "Skyward IT Solutions / CEDAR matches Skyward CEDAR/CLAW catalog product."
+  },
+  {
+    "id": 14048,
+    "decision": "agency_internal_system",
+    "evidence_quote": "commonFont and AWS Public Website Shared Services Medicare AI Customer Insights",
+    "rationale": "CMS-built customer insights tool on AWS; commonFont is contractor."
+  },
+  {
+    "id": 14049,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Oddball and AWS Medicare Authenticated eXperience",
+    "rationale": "CMS Medicare-built drug search; Oddball is contractor."
+  },
+  {
+    "id": 14050,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Noblis CEDAR AI Agent Orchestrator POC",
+    "rationale": "CMS CEDAR-hosted POC; Noblis is contractor."
+  },
+  {
+    "id": 14051,
+    "decision": "false_positive",
+    "evidence_quote": "Data Services Hub",
+    "rationale": "Heuristic linked Slack and Zoom (mentioned in source text). MFT chatbot itself is internal."
+  },
+  {
+    "id": 14052,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GDIT Integrated Data Repository (IDR) Cloud",
+    "rationale": "CMS IDR/CAE; GDIT is contractor."
+  },
+  {
+    "id": 14053,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GDIT Integrated Data Repository (IDR) Cloud IDR Support Bot",
+    "rationale": "CMS IDR Support Bot; GDIT contractor."
+  },
+  {
+    "id": 14054,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Peraton, Inc. Medicare Enrollment & Premium Billing Systems",
+    "rationale": "CMS MEPBS-hosted ELMO chatbot; Peraton is contractor."
+  },
+  {
+    "id": 14055,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte CDEROne Analytics: FISMA-high environment",
+    "rationale": "FDA CDEROne-hosted ML model; Deloitte is contractor."
+  },
+  {
+    "id": 14056,
+    "decision": "false_positive",
+    "evidence_quote": "In-house (CDER staff) and contractor teams CDEROne Analytics",
+    "rationale": "Heuristic linked Custom In-House AI and Microsoft Teams."
+  },
+  {
+    "id": 14057,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte CDEROne Analytics: FISMA-high environment Annual Report CMC",
+    "rationale": "FDA CDEROne tool; Deloitte contractor."
+  },
+  {
+    "id": 14058,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte CDEROne Analytics",
+    "rationale": "FDA CDEROne tool; Deloitte contractor."
+  },
+  {
+    "id": 14059,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte CDEROne Analytics",
+    "rationale": "FDA CDEROne tool."
+  },
+  {
+    "id": 14060,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte CDEROne Analytics",
+    "rationale": "FDA CDEROne tool."
+  },
+  {
+    "id": 14061,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte CDEROne Analytics",
+    "rationale": "FDA CDEROne tool."
+  },
+  {
+    "id": 14062,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte CDEROne Analytics",
+    "rationale": "FDA CDEROne tool."
+  },
+  {
+    "id": 14063,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte CDEROne Analytics",
+    "rationale": "FDA CDEROne tool."
+  },
+  {
+    "id": 14064,
+    "decision": "agency_internal_system",
+    "evidence_quote": "SAIC HIVE HIVE AI Pilot",
+    "rationale": "FDA HIVE platform; SAIC contractor."
+  },
+  {
+    "id": 14065,
+    "decision": "agency_internal_system",
+    "evidence_quote": "NCTR CDER Pubs CDER Publications",
+    "rationale": "FDA CDER Pubs internal system; NCTR is FDA's National Center for Toxicological Research."
+  },
+  {
+    "id": 14066,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte Data Services Automation",
+    "rationale": "FDA Data Services Automation; Deloitte contractor."
+  },
+  {
+    "id": 14067,
+    "decision": "agency_internal_system",
+    "evidence_quote": "ThinkTrends FAERS Data Extraction",
+    "rationale": "FDA FAERS-related custom OCR tool; ThinkTrends is contractor."
+  },
+  {
+    "id": 14068,
+    "decision": "false_positive",
+    "evidence_quote": "Sentinel Use case package 1",
+    "rationale": "Heuristic linked Custom In-House AI and Microsoft Teams. FDA Sentinel is its own initiative not the Microsoft product."
+  },
+  {
+    "id": 14069,
+    "decision": "false_positive",
+    "evidence_quote": "Contractor teams Elsa FOIA REDACTION (FRED) TOOL",
+    "rationale": "Heuristic linked #4066 (Elsa) and Microsoft Teams already."
+  },
+  {
+    "id": 14070,
+    "decision": "false_positive",
+    "evidence_quote": "In-house (CDER staff) and contractor teams",
+    "rationale": "Heuristic linked Custom In-House AI and Microsoft Teams."
+  },
+  {
+    "id": 14071,
+    "decision": "link",
+    "canonical_name": "PLATES/FoodTrak",
+    "evidence_quote": "Trigent Solutions Inc, Digitrix LLC PLATES, FoodTrak",
+    "confidence": "high",
+    "rationale": "Explicit catalog match for PLATES/FoodTrak."
+  },
+  {
+    "id": 14072,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Trigent Solutions Inc, Digitrix LLC  Data Ingestion and Content Explorer",
+    "rationale": "FDA HFP-built DICE tool; contractors."
+  },
+  {
+    "id": 14073,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte AWS Smart Solution for Docket Management",
+    "rationale": "FDA SSDM custom tool on AWS; Deloitte contractor."
+  },
+  {
+    "id": 14074,
+    "decision": "add_alias",
+    "canonical_name": "Elsa (FDA)",
+    "alias_text": "Elsa GenAI Chat Tool",
+    "evidence_quote": "Deloitte CDEROne Analytics: FISMA-high environment Elsa GenAI Chat Tool",
+    "confidence": "high",
+    "rationale": "FDA's Elsa GenAI tool - widely reported FDA AI assistant. Worth a canonical entry."
+  },
+  {
+    "id": 14075,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Precise Software Solutions, Inc. evaluation prediction ml",
+    "rationale": "FDA OIO-built evaluation prediction ML tool; Precise Software is contractor."
+  },
+  {
+    "id": 14076,
+    "decision": "add_alias",
+    "canonical_name": "Milestone XProtect",
+    "alias_text": "Milestone",
+    "evidence_quote": "Milestone Digital Acquisition Report System",
+    "confidence": "medium",
+    "rationale": "Milestone Systems' XProtect VMS with AI analytics, not in catalog."
+  },
+  {
+    "id": 14077,
+    "decision": "link",
+    "canonical_name": "UiPath Enterprise RPA",
+    "evidence_quote": "Mindpetal IRMS - UiPath Automation Cloud Public Sector",
+    "confidence": "high",
+    "rationale": "Explicit UiPath Automation Cloud."
+  },
+  {
+    "id": 14078,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Publicis Sapient BMISS Knowledge Navigator",
+    "rationale": "HRSA BMISS-hosted Knowledge Navigator POC; Publicis Sapient is contractor."
+  },
+  {
+    "id": 14079,
+    "decision": "agency_internal_system",
+    "evidence_quote": "GDIT Inc PRB PRF Program Chatbot",
+    "rationale": "HRSA PRB-hosted chatbot; GDIT contractor."
+  },
+  {
+    "id": 14080,
+    "decision": "agency_internal_system",
+    "evidence_quote": "ClinicalTrials.gov Protocol Registration",
+    "rationale": "NIH ClinicalTrials.gov internal review assistant."
+  },
+  {
+    "id": 14081,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte DAIT AIDS-Related Research Solution",
+    "rationale": "NIAID DAIT custom solution by Deloitte."
+  },
+  {
+    "id": 14082,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte FITARA Federal IT Acquisition Reform Act",
+    "rationale": "NIH FITARA Tool custom-built by Deloitte."
+  },
+  {
+    "id": 14083,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Leidos and Highrise eRA Internal Referral Module",
+    "rationale": "NIH eRA Internal Referral Module; Leidos/Highrise contractors."
+  },
+  {
+    "id": 14084,
+    "decision": "link",
+    "canonical_name": "H2O GPTe",
+    "evidence_quote": "H2O.GPTe NIH Business System Cloud (NBSC)",
+    "confidence": "high",
+    "rationale": "Explicit H2O GPTe (catalog product H2O GPTe)."
+  },
+  {
+    "id": 14085,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Oak Ridge National Lab; maintenance -- Information Management Services",
+    "rationale": "NCI-DOE collaboration MOSSAIC: ORNL-built deep-learning models on SEER data. Custom research project."
+  },
+  {
+    "id": 14086,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft  NIAMS AI Chatbot Pilot",
+    "rationale": "NIAMS internal pilot; Microsoft is platform vendor only without specific product named."
+  },
+  {
+    "id": 14087,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte SRDMS NLP COI KP/KI Module",
+    "rationale": "NIAID SRDMS-hosted NLP COI module; Deloitte contractor."
+  },
+  {
+    "id": 14088,
+    "decision": "agency_internal_system",
+    "evidence_quote": "NIAID TB Portals TB Case Browser Image Text Detection",
+    "rationale": "NIAID TB Portals OCR; contractors."
+  },
+  {
+    "id": 14089,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Google NIH Grants Virtual Assistant",
+    "rationale": "NIH Grants Virtual Assistant - custom NIH tool on Google Cloud (vendor only Google with no specific product named)."
+  },
+  {
+    "id": 14090,
+    "decision": "link",
+    "canonical_name": "Leica Aivia",
+    "evidence_quote": "Leica  Aivia Provides machine-learning-based object classification",
+    "confidence": "high",
+    "rationale": "Direct catalog match for Leica Aivia."
+  },
+  {
+    "id": 14091,
+    "decision": "link",
+    "canonical_name": "cryoDRGN",
+    "evidence_quote": "Open Source  cryoDGRN Prediction of protein flexibility",
+    "confidence": "high",
+    "rationale": "cryoDGRN/cryoDRGN match (likely typo in source); catalog entry exists."
+  },
+  {
+    "id": 14092,
+    "decision": "add_alias",
+    "canonical_name": "DeepEMhancer",
+    "alias_text": "DeepEMhancer",
+    "evidence_quote": "Open Source  DeepEMhancer",
+    "confidence": "high",
+    "rationale": "Open-source CryoEM enhancement tool, not in catalog."
+  },
+  {
+    "id": 14093,
+    "decision": "add_alias",
+    "canonical_name": "Fiji ImageJ",
+    "alias_text": "FIJI",
+    "evidence_quote": "Open Source  FIJI",
+    "confidence": "high",
+    "rationale": "Fiji is the open-source ImageJ distribution for microscopy ML; not in catalog."
+  },
+  {
+    "id": 14094,
+    "decision": "add_alias",
+    "canonical_name": "Imaris",
+    "alias_text": "Imaris",
+    "evidence_quote": "Andor  Imaris",
+    "confidence": "high",
+    "rationale": "Imaris (Oxford Instruments/Andor) microscopy AI software, not in catalog."
+  },
+  {
+    "id": 14095,
+    "decision": "add_alias",
+    "canonical_name": "ModelAngelo",
+    "alias_text": "ModelAngelo",
+    "evidence_quote": "Open Source  ModelAngelo",
+    "confidence": "high",
+    "rationale": "Open-source CryoEM model-building tool, not in catalog."
+  },
+  {
+    "id": 14096,
+    "decision": "add_alias",
+    "canonical_name": "Ptolemy",
+    "alias_text": "Ptolemy",
+    "evidence_quote": "Open Source  Ptolemy",
+    "confidence": "medium",
+    "rationale": "Open-source CryoEM screening tool, not in catalog."
+  },
+  {
+    "id": 14097,
+    "decision": "false_positive",
+    "evidence_quote": "N/A  Research Area Tracking Tool",
+    "rationale": "No vendor or product."
+  },
+  {
+    "id": 14098,
+    "decision": "agency_internal_system",
+    "evidence_quote": "NIAID TB Portals TB DEPOT",
+    "rationale": "NIAID TB Portals internal system."
+  },
+  {
+    "id": 14099,
+    "decision": "agency_internal_system",
+    "evidence_quote": "NIAID TB Portals TB Portals Outlier Detection Lambda",
+    "rationale": "NIAID TB Portals AWS Lambda custom outlier detection."
+  },
+  {
+    "id": 14100,
+    "decision": "add_alias",
+    "canonical_name": "Topaz (CryoEM)",
+    "alias_text": "Topaz",
+    "evidence_quote": "Open Source  Topaz Automated screening of CryoEM specimens",
+    "confidence": "high",
+    "rationale": "Topaz CryoEM picker, not in catalog."
+  },
+  {
+    "id": 14101,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Technatomy Axle  MirBot",
+    "rationale": "NIH MirBot custom tool; Technatomy Axle is contractor."
+  },
+  {
+    "id": 14102,
+    "decision": "link",
+    "canonical_name": "Shabash Merops",
+    "evidence_quote": "Shabash  Merops Automate and expedite copyediting",
+    "confidence": "high",
+    "rationale": "Direct catalog match for Shabash Merops."
+  },
+  {
+    "id": 14103,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte SCORS Coding Assistance Tool",
+    "rationale": "NIAID OSPIDA RPAB custom CAT tool; Deloitte contractor."
+  },
+  {
+    "id": 14104,
+    "decision": "link",
+    "canonical_name": "AWS Transcribe",
+    "evidence_quote": "Deloitte, AWS  AWS Exscribo",
+    "confidence": "high",
+    "rationale": "AWS Exscribo is built on AWS Transcribe (with custom vocab for biomedical terms)."
+  },
+  {
+    "id": 14105,
+    "decision": "false_positive",
+    "evidence_quote": "N/A  Grant award process efficiency",
+    "rationale": "No vendor or product."
+  },
+  {
+    "id": 14106,
+    "decision": "link",
+    "canonical_name": "Microsoft Azure Platform",
+    "evidence_quote": "Microsoft Azure, Westat Microsoft Azure",
+    "confidence": "high",
+    "rationale": "Explicit Microsoft Azure platform; Westat is research contractor."
+  },
+  {
+    "id": 14107,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Microsoft  Enhancing the RCDC with Generative AI",
+    "rationale": "NIH RCDC-internal pilot; Microsoft is platform vendor only without specific product."
+  },
+  {
+    "id": 14108,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Infer Solutions  NIH Travel Policy AI Chatbot",
+    "rationale": "NIH custom travel chatbot; Infer Solutions contractor."
+  },
+  {
+    "id": 14109,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Tyler Technologies HealthData.gov AI Harvest Service",
+    "rationale": "HealthData.gov custom harvest service; Tyler Technologies contractor."
+  },
+  {
+    "id": 14110,
+    "decision": "agency_internal_system",
+    "evidence_quote": "MicroHealth Grants.gov Cloud Similar Opportunities (KNN)",
+    "rationale": "Grants.gov custom KNN model; MicroHealth contractor."
+  },
+  {
+    "id": 14111,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Business Performance Systems Grants.gov Cloud Applicant Help",
+    "rationale": "Grants.gov chatbot; BPS contractor."
+  },
+  {
+    "id": 14112,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Internal Federal Shared Service (GrantSolutions)",
+    "rationale": "GrantSolutions is HHS shared service; Text Analyzer Tool is custom internal."
+  },
+  {
+    "id": 14113,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Internal Federal Shared Service (GrantSolutions)",
+    "rationale": "GrantSolutions internal AI Writing Assistant."
+  },
+  {
+    "id": 14114,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Internal Federal Shared Service (GrantSolutions)",
+    "rationale": "GrantSolutions internal Risk Tool."
+  },
+  {
+    "id": 14115,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Internal Federal Shared Service (GrantSolutions)",
+    "rationale": "GrantSolutions internal continuation approval tool."
+  },
+  {
+    "id": 14116,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Internal Federal Shared Service (GrantSolutions)",
+    "rationale": "GrantSolutions internal helpdesk agent."
+  },
+  {
+    "id": 14117,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Internal Federal Shared Service (GrantSolutions)",
+    "rationale": "GrantSolutions internal continuation review tool."
+  },
+  {
+    "id": 14118,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte Consulting, LLC Ginnie Mae Reporting and Feedback System",
+    "rationale": "Ginnie Mae RFS custom anomaly detection; Deloitte contractor."
+  },
+  {
+    "id": 14119,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Ernst & Young Ginnie Mae Financial Accounting System",
+    "rationale": "Ginnie Mae custom ML; EY contractor."
+  },
+  {
+    "id": 14120,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Deloitte Consulting, LLC Ginnie Mae Reporting and Feedback System",
+    "rationale": "Ginnie Mae custom NLG narratives; Deloitte contractor."
+  },
+  {
+    "id": 14121,
+    "decision": "false_positive",
+    "evidence_quote": "Microsoft / SalesForce SalesForce / Azure Amazon Textract",
+    "rationale": "Heuristic linked AWS Textract and Salesforce Einstein."
+  },
+  {
+    "id": 14122,
+    "decision": "link",
+    "canonical_name": "Skillsoft Percipio CAISY",
+    "evidence_quote": "Skillsoft Percipio Skillsoft CAISY - Workforce Training",
+    "confidence": "high",
+    "rationale": "Direct catalog match for Skillsoft Percipio CAISY."
+  },
+  {
+    "id": 14123,
+    "decision": "false_positive",
+    "evidence_quote": "Google Workspace / Google Gemini",
+    "rationale": "Heuristic linked Google Workspace and Gemini."
+  },
+  {
+    "id": 14124,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Cortina Exhibit Personalization System (EPS)",
+    "rationale": "NARA's custom Exhibit Personalization System; Cortina is contractor."
+  },
+  {
+    "id": 14125,
+    "decision": "link",
+    "canonical_name": "AWS Kendra",
+    "evidence_quote": "NARA@Work NARA@WORK Kendra Search",
+    "confidence": "high",
+    "rationale": "Use case explicitly named Kendra Search - AWS Kendra."
+  },
+  {
+    "id": 14126,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Archives.gov Amelia Earhart AI Search",
+    "rationale": "NARA Archives.gov custom NLP search; no commercial product named."
+  },
+  {
+    "id": 14127,
+    "decision": "agency_internal_system",
+    "evidence_quote": "AI Pilot Project to Screen and Flag for Personally Identifiable Information",
+    "rationale": "NARA internal PII pilot; no vendor named."
+  },
+  {
+    "id": 14128,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Catalog AI based Semantic Search for National Archives Catalog",
+    "rationale": "NARA Catalog ArchiAI internal."
+  },
+  {
+    "id": 14129,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Auto-fill of Descriptive Metadata for Archival Descriptions",
+    "rationale": "NARA internal metadata pilot."
+  },
+  {
+    "id": 14130,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Topic Summarizer and Entity Extraction using AI",
+    "rationale": "NARA internal pilot."
+  },
+  {
+    "id": 14131,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Create an AI based knowledge articles user interface for working with CRG",
+    "rationale": "NARA internal CRG pilot."
+  },
+  {
+    "id": 14132,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Skylight EOP 42 EOP 42 Search PoC",
+    "rationale": "NARA EOP 42 internal search pilot; Skylight is contractor."
+  },
+  {
+    "id": 14133,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Freedom of Information Act (FOIA) Discovery AI Pilot",
+    "rationale": "NARA internal FOIA pilot."
+  },
+  {
+    "id": 14134,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Archives.gov Archives.gov AI search",
+    "rationale": "NARA Archives.gov internal."
+  },
+  {
+    "id": 14135,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Automated Data Discovery and Classification Pilot",
+    "rationale": "NARA internal data classification pilot."
+  },
+  {
+    "id": 14136,
+    "decision": "agency_internal_system",
+    "evidence_quote": "NLP ATCSCC NextGen Advanced Methods",
+    "rationale": "FAA NextGen ATCSCC research; vendor 'NLP' is a category not vendor."
+  },
+  {
+    "id": 14137,
+    "decision": "agency_internal_system",
+    "evidence_quote": "FAA Operated in an approved enclave NextGen Data Analytics",
+    "rationale": "FAA-built NextGen analytics."
+  },
+  {
+    "id": 14138,
+    "decision": "add_alias",
+    "canonical_name": "Genetec Security Center",
+    "alias_text": "Genetec",
+    "evidence_quote": "Milestone, Genetec, Verkada, Lenel",
+    "confidence": "medium",
+    "rationale": "Genetec Security Center video analytics; not in catalog."
+  },
+  {
+    "id": 14138,
+    "decision": "add_alias",
+    "canonical_name": "Verkada",
+    "alias_text": "Verkada",
+    "evidence_quote": "Milestone, Genetec, Verkada, Lenel",
+    "confidence": "high",
+    "rationale": "Verkada cloud video AI; not in catalog."
+  },
+  {
+    "id": 14138,
+    "decision": "add_alias",
+    "canonical_name": "Lenel OnGuard",
+    "alias_text": "Lenel",
+    "evidence_quote": "Milestone, Genetec, Verkada, Lenel",
+    "confidence": "medium",
+    "rationale": "Lenel access control; not in catalog."
+  },
+  {
+    "id": 14139,
+    "decision": "link",
+    "canonical_name": "AWS Rekognition",
+    "evidence_quote": "Amazon Rekognition SAAS (software as a service) tool",
+    "confidence": "high",
+    "rationale": "Explicit AWS Rekognition (catalog name 'AWS Rekognition')."
+  },
+  {
+    "id": 14140,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Raytheon Earthdata Cloud Cloud Account Allocation Plan",
+    "rationale": "NASA Earthdata Cloud custom ML; Raytheon contractor."
+  },
+  {
+    "id": 14141,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Machine Learning Data Validation",
+    "rationale": "NCUA internal Call Report ML; no vendor."
+  },
+  {
+    "id": 14142,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Supervisory Stress Testing",
+    "rationale": "NCUA internal model."
+  },
+  {
+    "id": 14143,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Risk Indicator Model",
+    "rationale": "NCUA internal risk model."
+  },
+  {
+    "id": 14144,
+    "decision": "add_alias",
+    "canonical_name": "TekSynap SimplifAI",
+    "alias_text": "TekSynap SimplifAI",
+    "evidence_quote": "TekSynap SimplifAI Text Retrieval and Generation",
+    "confidence": "medium",
+    "rationale": "TekSynap's SimplifAI commercial GenAI platform, not in catalog."
+  },
+  {
+    "id": 14145,
+    "decision": "false_positive",
+    "evidence_quote": "Microsoft Microsoft 365 Copilot, Microsoft Copilot Chat",
+    "rationale": "Heuristic linked Microsoft 365 Copilot Chat and Microsoft 365 Copilot."
+  },
+  {
+    "id": 14146,
+    "decision": "false_positive",
+    "evidence_quote": "OpenAI ChatGPT Enterprise, Google Gemini for Government",
+    "rationale": "Heuristic linked ChatGPT, Gemini, OpenAI API."
+  },
+  {
+    "id": 14147,
+    "decision": "false_positive",
+    "evidence_quote": "AWS CodeWhisperer, Amazon Q and Bedrock",
+    "rationale": "Heuristic linked Amazon CodeWhisperer, Amazon Q, AWS Bedrock - all three correctly identified."
+  },
+  {
+    "id": 14148,
+    "decision": "false_positive",
+    "evidence_quote": "TIP MS Copilot Pilot",
+    "rationale": "Heuristic linked Microsoft 365 Copilot and Microsoft 365."
+  },
+  {
+    "id": 14149,
+    "decision": "agency_internal_system",
+    "evidence_quote": "Air Force Research Lab N/A Voice to text transcription",
+    "rationale": "AFRL-built voice-to-text capability for NTSB; no commercial product."
+  },
+  {
+    "id": 14150,
+    "decision": "link",
+    "canonical_name": "Azure AI Document Intelligence",
+    "evidence_quote": "Azure AI N/A Semantic Similarity Text Search",
+    "confidence": "low",
+    "rationale": "Vendor 'Azure AI' generic; closest catalog product is Azure AI services. Best link is to Azure OpenAI."
+  },
+  {
+    "id": 14151,
+    "decision": "link",
+    "canonical_name": "Dataminr First Alert",
+    "evidence_quote": "Dataminer N/A Dataminr Timely awareness",
+    "confidence": "high",
+    "rationale": "Dataminr is the explicit product (typo 'Dataminer' in vendor field)."
+  },
+  {
+    "id": 14152,
+    "decision": "link",
+    "canonical_name": "Microsoft 365 Copilot",
+    "evidence_quote": "Microsoft Bing CoPilot and ChatGPT4",
+    "confidence": "medium",
+    "rationale": "Mentions Microsoft Bing CoPilot (now Copilot) and ChatGPT-4. Linking to Microsoft 365 Copilot."
+  },
+  {
+    "id": 14152,
+    "decision": "link",
+    "canonical_name": "ChatGPT",
+    "evidence_quote": "Microsoft Bing CoPilot and ChatGPT4",
+    "confidence": "high",
+    "rationale": "Explicit ChatGPT4 reference."
+  },
+  {
+    "id": 14153,
+    "decision": "false_positive",
+    "evidence_quote": "To be determined",
+    "rationale": "Vendor explicitly TBD; no product named."
+  },
+  {
+    "id": 14154,
+    "decision": "link",
+    "canonical_name": "ChatGPT",
+    "evidence_quote": "Chat GPT, Gemini, Canva BDO AI",
+    "confidence": "high",
+    "rationale": "Explicit Chat GPT mention. Heuristic already linked Gemini and Canva."
+  },
+  {
+    "id": 14154,
+    "decision": "link",
+    "canonical_name": "Microsoft 365 Copilot",
+    "evidence_quote": "Bing CoPilot",
+    "confidence": "medium",
+    "rationale": "Bing CoPilot reference in entry name."
+  },
+  {
+    "id": 14155,
+    "decision": "false_positive",
+    "evidence_quote": "https://openai.com/chatgpt/ Salesforce",
+    "rationale": "Heuristic linked Salesforce Einstein, ChatGPT, OpenAI API."
+  }
+]
