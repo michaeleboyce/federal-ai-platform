@@ -108,14 +108,26 @@ DRIFT_FIELDS_DEFAULT = (
 
 
 _LETTER_PREFIX_RE = re.compile(r"^\s*[a-z]\)\s*", flags=re.IGNORECASE)
+_PUNCT_DRIFT_RE = re.compile(r"[,;:.]+")
 
 
 def _canonicalize_field(s: str | None) -> str | None:
+    """Canonicalize a field value for drift comparison.
+
+    Applies the same normalizations OMB applies during consolidation:
+      - curly → straight quotes
+      - strip leading "a) " / "b) " enum-letter prefix
+      - lowercase + collapse whitespace
+      - strip ,;:. punctuation (catches the "high-impact, but" vs
+        "high-impact but" comma drift seen in the 2025 OMB file)
+    """
     if s is None:
         return None
     s = s.replace("’", "'").replace("‘", "'")
     s = _LETTER_PREFIX_RE.sub("", s).strip().lower()
-    s = _WHITESPACE_RE.sub(" ", s)
+    s = _PUNCT_DRIFT_RE.sub("", s)
+    s = s.replace("-", " ")  # 'high-impact' ≡ 'high impact', 'pre-deployment' ≡ 'pre deployment'
+    s = _WHITESPACE_RE.sub(" ", s).strip()
     return s
 
 

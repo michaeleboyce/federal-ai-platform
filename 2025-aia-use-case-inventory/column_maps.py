@@ -290,3 +290,83 @@ def map_canonical_headers(headers: list[str]) -> dict[int, str]:
         if db_col:
             mapping[i] = db_col
     return mapping
+
+
+# 2025 OMB consolidated INDIVIDUALLY-REPORTED inventory.
+#
+# Source: data/raw/2025_individually_reported_AI_use_cases.xlsx
+# Sheet: 'Consolidated Inventory' — header row 2, data starts row 3.
+# 36 columns total = 34 OMB schema columns + 2 OMB-added agency columns
+# (Agency Abbreviation, Agency Name) at the front.
+#
+# Position-locked: the file's two `Does this AI use case ...` headers (PII
+# and ATO) collide on prefix match alone, so we trust column ORDINAL over
+# header substring. If OMB ever reorders columns we fail loudly via the
+# verification check (see map_omb_consolidated_headers below).
+OMB_CONSOLIDATED_COLUMNS = [
+    ("agency abbreviation",                   "agency_abbreviation"),
+    ("agency name",                           "agency_name"),
+    ("use case id",                           "use_case_id_omb"),
+    ("use case name",                         "use_case_name"),
+    ("bureau/component",                      "bureau_component"),
+    ("email address",                         "email_address"),
+    ("should this ai use case be withheld",   "is_withheld"),
+    ("stage of development",                  "stage_of_development"),
+    ("is the ai use case high-impact",        "is_high_impact"),
+    ("justification",                         "hi_justification"),
+    ("use case topic area",                   "topic_area"),
+    ("ai classification",                     "ai_classification"),
+    ("what problem is the ai intended to solve", "problem_statement"),
+    ("what are the expected benefits",        "expected_benefits"),
+    ("describe the ai system",                "system_outputs"),
+    ("date when ai use case became operational", "operational_date"),
+    ("was the system involved in this use case purchased", "contracting_usage"),
+    ("vendor(s) name",                        "vendor_name"),
+    ("does this ai use case have an associated authorization to operate", "have_ato"),
+    ("system(s) name",                        "system_name_ato"),
+    ("describe any data used to",             "training_data_description"),
+    ("if the data is required to be",         "link_to_data"),
+    ("does this ai use case",                 "has_pii"),
+    ("if publicly available, provide",        "pia_url"),
+    ("which, if any, demographic",            "demographic_features"),
+    ("does this project include",             "has_custom_code"),
+    ("if the code is open source",            "code_url"),
+    ("has pre-deployment testing",            "hi_testing_conducted"),
+    ("has an ai impact assessment",           "hi_assessment_completed"),
+    ("what are the potential",                "hi_potential_impacts"),
+    ("has as independent review",             "hi_independent_review"),
+    ("is there a process to conduct",         "hi_ongoing_monitoring"),
+    ("has the agency established sufficient and periodic", "hi_training_established"),
+    ("does this ai use case have an appropriate fail-safe", "hi_failsafe_presence"),
+    ("is there an established appeal process", "hi_appeal_process"),
+    ("what steps has the agency taken to consult", "hi_public_consultation"),
+]
+assert len(OMB_CONSOLIDATED_COLUMNS) == 36, "OMB_CONSOLIDATED_COLUMNS must be exactly 36"
+
+
+def map_omb_consolidated_headers(headers: list[str | None]) -> list[str | None]:
+    """Position-locked header map for the OMB consolidated XLSX.
+
+    Returns a list of canonical keys aligned with the input headers by
+    INDEX. Header text is checked for sanity (the documented prefix must
+    appear) but the canonical key comes from position. This guards against
+    OMB silently reordering columns: if the 1st header doesn't contain
+    'agency abbreviation', the 4th doesn't contain 'use case name', etc.,
+    the function raises ValueError.
+    """
+    if len(headers) < len(OMB_CONSOLIDATED_COLUMNS):
+        raise ValueError(
+            f"OMB consolidated file has {len(headers)} columns; "
+            f"expected at least {len(OMB_CONSOLIDATED_COLUMNS)}"
+        )
+    out: list[str | None] = [None] * len(headers)
+    for i, (expected_prefix, canonical) in enumerate(OMB_CONSOLIDATED_COLUMNS):
+        h = headers[i]
+        h_norm = " ".join(str(h or "").lower().split())
+        if expected_prefix not in h_norm:
+            raise ValueError(
+                f"OMB consolidated header position {i} expected prefix "
+                f"{expected_prefix!r} in header; got {h_norm[:80]!r}"
+            )
+        out[i] = canonical
+    return out
