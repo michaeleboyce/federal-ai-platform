@@ -1,0 +1,1985 @@
+[
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": null,
+    "use_case_agency": null,
+    "decision": "tighten_alias",
+    "evidence_quote": "All 149 gap rows for this product are noise from overly-greedy aliases (none mention the actual product).",
+    "proposed_alias_replacement": "NEC NeoFace, NEC (Nippon Electric Company), NEC (algorithm only), NEC Algorithm, NeoFace",
+    "notes": "Drop bare 'NEC' alias; require 'NEC NeoFace' OR 'NEC (Nippon Electric)' OR 'NEC (algorithm only)' OR 'NEC algorithm' OR 'NEC ' followed by capitalized product name. Keep 'NeoFace' standalone (5 chars, distinctive)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39825,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connectivity': ...g timely access to interpreters in offline or low-connectivity environments, making it difficult to communicate with individuals who speak little or no English du...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39842,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...n‑source searches missing relevant identifiers or connections in large volumes of online information. || The platform’s AI capabilities reduce the time and effor...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39849,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessity': ...ams on sound API security strategies. || With the necessity of leveraging application programing interfaces (APIs) for applications across the enterprise, this...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39855,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connection': ...review contact messages submitted to the Business Connection (BC) and Technical Reference Model (TRM) teams. By evaluating these messages, the AI will determine...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39859,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connection': ...ed Search Ability with AI || || || The Business Connection (BC ) and Technical Reference Model (TRM) teams have identified areas in which business automation...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39867,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...ategies used in the event. High-level reviews are necessary for FEMA Program Areas (IA, PA, etc.) on potential funding gaps and cost share support. Synthesizin...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39870,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...lts in simple steps or actions taking longer than necessary as requests get lost in email or other forms of communication. There is also no audit trail or logg...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39871,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...s of relationships between entities, highlighting connections to fraudulent actors._x000D_ • Document Analysis Reports: Summaries of inconsistencies, deceptive l...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39898,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...reased the number of field data collection events necessary to characterize system performance. Currently, TSA does not have a solution to gather operational d...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39921,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...ersonnel, who may conduct additional screening if necessary....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39959,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...identity of exam takers to confirm they meet the necessary requirements. || Integrity reports, identity confirmation, proctoring complicance feedback, and tes...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39969,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...urces are allocated efficiently and only used for necessary translations and transcriptions. || The Translation and Transcription Service leverages neural mach...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39971,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...orts. The data analysis and extraction techniques connect related information across data holdings and generate metadata to help analysts review and search r...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39973,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...alysis platform, investigators can uncover hidden connections across blockchain networks, detect illicit activities, and significantly reduce the time required f...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39977,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...e minimizing the number of fingerprint recaptures necessary. The output is a Numerical Fingerprint Quality score, which is compared against fingerprint quality...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 39995,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...or reject the detection, redacting information if necessary. Privacy experts monitor the system and provide feedback. The system learns from this feedback, ens...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40008,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...errors, detect intentional misidentification, and connect related information across multiple datasets, ultimately reducing the time and resources required f...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40015,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...lysts to quickly determine interrelationships and connections, facilitating faster and more accurate investigations. || Significantly enhances efficiency by savi...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40019,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'anecdotal': ...makers to make decisions based on qualitative and anecdotal information, resulting in less-than-optimal allocation of limited marine inspection resources. || T...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40283,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connectivity': ...on capture and storage user experience || Improve connectivity and create adaptive user interface || User interface/data...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40348,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...nreability, weakness, malware inforamtion to find connections to well analyzed cyber threat including attack patterns, known exploited, spast mitigations and det...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40361,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'interconnected': ...rmation on Marine Renewable Energy (PRIMRE) is an interconnected system of knowledge hubs that provide access to data, information, and other resources for the mari...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40516,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connecting': ....0 || Hanford Accreditation Boundary (HAB) || || connecting business data streams to AI for increased analysis and work efficiency || cost savings, increased e...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40527,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...components, records of previous fault causes (to connect to data-symptoms) and stored beam current. || BNL will work alongside SLAC, to implement ML algorit...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40599,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...enterprise conversational AI agents that securely connect to data and workflows. || Enables secure, scalable automation of enterprise workflows. || Produce h...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40714,
+    "use_case_agency": "DOI",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...curity for the nation and healthy aquatic habitat necessary to maintain safe water resources || The supervised machine learning output will include a statistic...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40732,
+    "use_case_agency": "DOI",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...t model outputs vegetation classification that is necessary for identifying avalanche return periods....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40795,
+    "use_case_agency": "DOI",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Necedah': ...upports the management of oak-pine barrens on the Necedah National Wildlife Refuge, Wisconsin. Necedah NWR staff conduct habitat management actions (prescrib...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40839,
+    "use_case_agency": "DOI",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessitating': ...ncreasing quantity of qualitative data collected, necessitating the need for specialized software geared towards qualitative data analyses. || The software increas...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40859,
+    "use_case_agency": "DOI",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'unnecessarily': ...this doubles the page count, making manual review unnecessarily time-consuming and resource-intensive. Automating blank page detection with Non-Generative AI (e.g....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40869,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...AI features produce alerts, reveal clusters, and connect events to show underlying trends....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40878,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...dites the identification of relevant subjects and connections. This advanced approach reduces manual searching, enhances accuracy in linking data points, and str...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40890,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...es the speed and accuracy of identifying relevant connections, ensures more targeted follow-up, and optimizes the allocation of investigative resources. || The e...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40903,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...to identify location history for license plates, connect addresses and individuals of interest to a vehicle's location and obtain images of a vehicle. CRM u...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40916,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...print analysis to identify individuals who may be connected to evidence, needs to be able to compare friction ridge prints to other prints within the boundarie...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40926,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...preserving the context, control, and credibility necessary to make their intelligence actionable. These tools must also support the rapid processing of raw, p...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40927,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...preserving the context, control, and credibility necessary to make their intelligence actionable. These tools must also support the rapid processing of raw, p...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40930,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...acility, and other authorized communications with necessary English translation will filter massive audio files to relevant data for review. || Expedites inves...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40964,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...poses. || || Helps uncover valuable insights and connections in the text of criminal justice and law enforcement related information in the system. || The benef...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 40976,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessitating': ...screening those with no SENTRY or BEMR indicators necessitating potential treatment needs. || Checkmarks for potential types of treatment needs found in SENTRY or...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41007,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...usion Desktop database. This will reduce the time necessary during data entry and review and will provide guidance on emerging threat areas which HSTF NCC may...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41008,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...on open investigations. This will reduce the time necessary during data entry and review for forms and will provide guidance on emerging threat areas which HST...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41013,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...data. It will also automate the data curation and connect data across OIG from disparate sources. It will also track data movement from system views to colu...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41096,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...print analysis to identify individuals who may be connected to evidence, needs to be able to compare friction ridge prints to other prints within the boundarie...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41133,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...g progress and foreign-language evidence creating bottlenecks. This initiative uses Natural Language Processing for triage and automate translation to accelerate...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41156,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connect': ...and bulk copies for organizations / events); 2. Connect users with best content fit; 3. Allow users to request DEA participation in community events; 4....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41232,
+    "use_case_agency": "DOT",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...safety issue may exist through the integration of connected vehicle data, speed and Individual Vehicle Record data, historical cr || || Maps and Reports...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41237,
+    "use_case_agency": "DOT",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...Research and Techno || || Provides DOT with the necessary administrative infrastructure for coordinating Executive Order and other federal guidance and manda...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41309,
+    "use_case_agency": "EPA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connect': ...Streamflow Duration Assessment Modeling || Posit Connect (DMAP) || || Improved streamflow classification || Because streamflow duration classes is unknown...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41331,
+    "use_case_agency": "EPA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...ees by identifying facilities most likely to lack necessary industrial stormwater permits, which are then reviewed by humans. Testing at the state level has sh...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41386,
+    "use_case_agency": "FDIC",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...enhance this process by decreasing both the time necessary to compile an initial review, as well as allowing for more focus to be placed on the fundamental im...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41391,
+    "use_case_agency": "FERC",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Interconnection': ...Support Interconnection Request Responses Use Case || N/A || Zvolvant (Small Business) || The AI solution will be designed...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41399,
+    "use_case_agency": "FHFA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...subscription. VAO Ally reduces the amount of time necessary to research acquisition-related policy/guidance questions and scenarios by parsing through multiple...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41419,
+    "use_case_agency": "FRB",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...economic performance || To estimate supply chain bottlenecks || Time series measuring supply chain bottleneck sentiment data...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41458,
+    "use_case_agency": "FTC",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...ork Services || Leidos || Assist with identifying connections between complaints as consumers may file same type of complaints against a company but with differe...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41515,
+    "use_case_agency": "GSA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connection': ...RPA Cloud Connection || || || The AI is intended to modernize the Process Optimization and Automation (PO&A) architect...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41518,
+    "use_case_agency": "GSA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...ain a more nuanced view of customer sentiment and connect text feedback to key survey metrics and operational data for more thorough insights, moving beyond...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41519,
+    "use_case_agency": "GSA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...ening process to flag solicitations that may lack necessary compliance language, which would otherwise require extensive manual review by agencies. || ||...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41527,
+    "use_case_agency": "GSA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...nsure that personnel have immediate access to the necessary guidance for their duties, thereby reducing potential inconsistencies and improving operational eff...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41539,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connect': ...re Information Automated Inquiry System || Amazon Connect (current) OneReach (previous, deprecated) || How can Child Welfare Information Hotline callers get...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41560,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...cting bugs, security vulnerabilities, performance bottlenecks, and deviations from coding standards. || Integrating AI into DevOps pipeline can boost efficiency,...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41610,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...operly starting, going inactive, or not achieving necessary goals for continued participation in CDCs Diabetes Prevention Recognition Program. || The RAM modu...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41616,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...quality and completeness of those fields creates bottlenecks for data discovery, governance and downstream analytics. The aim is to leverage EDAVs Azure OpenAI...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41637,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': .... This efficiency allows us to quickly create the necessary variables and establish the relationships between them. The synthetic data produced through this pr...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41656,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connection': ...tion and guidance Download options for AI outputs Connection of evidence to CAR items Classification of non-conformances Support for Excel and email file upload...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41665,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...| High throughput processing of unstructured data necessary for mandated reporting. || Usage of programs to automate identification, extraction, and re-structu...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41668,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...ublishing topics have changed over time and, when connected to media attention and citation data, allows communication teams, leadership, and scientists intere...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41689,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...AI) models to identify the presence or absence of necessary data points within documentation. AI tool searches documentation to identify and store necessary d...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41740,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...R) Cloud || GDIT || Provides an AI/ML environment connected to the IDR that enables CAE customers to focus on their AI use cases and business outcomes, without...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41760,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...ging materials and understand how these materials connect to drug applications, but this information is currently difficult to locate across numerous documen...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41784,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'disconnected': ...den of manually searching through vast amounts of disconnected sponsor-submitted and FDA-generated documents by integrating three components: AI-powered prompt en...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41791,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...to-end regulatory review acceleration by creating bottlenecks, increasing processing times, and reducing overall efficiency in the review workflow. || This proce...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41803,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...nd validation of analytical worksheets can create bottlenecks in regulatory processes, introduces potential human error, and limits scalability of quality assura...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41805,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...s, and evidence-based regulatory science research necessary for informed policy development. || Identification of commodity consumption patterns and trends sup...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41812,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...formation, presence of a vehicle type), sent via connected systems.- - Visual summaries: Video Synopsis® clips that compress hours of activity into short, lay...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41814,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...es better resource allocation, reduces processing bottlenecks, and supports faster clearance times for compliant shipments while maintaining robust oversight. Th...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41857,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connecting': ...NanCI: Connecting Scientists || NanCI Connecting Scientists Mobile App || Google; Barnacle || NanCI phone/web applica...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41919,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...to the correct recipient(s) with the information necessary to process the request....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41954,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...secure access to OpenAIs ChatGPT model, which is connected to search indexes pre-loaded with relevant datasets. These datasets include internal agency-provide...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41989,
+    "use_case_agency": "NARA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...Archives to effectively and accurately locate the necessary results from vast holdings and fulfill its legal mandate to make these specific historical records...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41990,
+    "use_case_agency": "NARA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...ntended to solve the problem of manual processing bottlenecks and privacy risks by automating the identification and redaction of sensitive personal information...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41991,
+    "use_case_agency": "NARA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ..., not just the keywords, and can even find hidden connections between documents. This will make research faster, easier, and more insightful. || This AI search t...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41996,
+    "use_case_agency": "NARA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...problem of larger FOIA backlogs and manual review bottlenecks by automating the discovery of relevant records and the redaction of sensitive data, ensuring respo...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 41997,
+    "use_case_agency": "NARA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connects': ...ic technology that understands researcher intent, connects disparate records, and surfaces relevant results that would otherwise remain hidden behind inconsis...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42014,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...affic control facility and specify the procedures necessary for safe operation in the sector. LOA outline agreements establishing procedures and responsibiliti...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42024,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottleneck': ...here a slow, restricted, or intermittent downlink bottleneck inhibits the generation of large training datasets on the ground. With novel complex sensors genera...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42061,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...ence. || We aim to develop the onboard technology necessary to allow the instruments to autonomously identify critical areas of interest (e.g. plumes, thermal...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42128,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...ches including per-band outlier detections, fully-connected neural networks and Siamese Networks trained with triplet and contrastive loss. The detections are...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42304,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...s critical data pipeline, STMD is enabling a more connected, data-driven infrastructure that not only supports its own mission but also delivers agency-wide be...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42311,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...g/scheduling module includes the actions of other connected agents, so that any agent may form a plan sequence involving actions from multiple agents – this is...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42332,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'reconnection': ...the spatiotemporal variation of the magnetopause reconnection line and its global dayside reconnection rate; cusp motions and the evolution of cusp ion energy di...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42336,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...that uses two 3D U-Nets stacked (W-Net) with skip connections that output a 3D segmentation mask with asteroid detections. We will introduce the NN model and pre...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42355,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...jor; a considerable amount of human time would be necessary to fix the problems; in some cases the AI output would have to be replaced by the human....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42357,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Reconnection': ...Specifying Properties Of Dayside Magnetopause Reconnection From A Machine-Learning Model For The Earth'S Cusps || || || Implementation of models of the magn...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42358,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...taining context between sessions Integration: API connections to reference management software and institutional databases Security: ITAR/EAR compliant informati...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42371,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connection': ...ch gap identification reports, cross-disciplinary connection recommendations, interactive 3D knowledge graph visualizations, whitespace analysis summaries, tech...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42398,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...he order of 10^10 as compared to host star) it is necessary to create and maintain high-contrast zones in the science camera. This imposes stringent constraint...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42403,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...vide end-users with efficient access to relevant, necessary knowledge to complete analysis activities and generalized inference capabilities. More advanced ite...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42413,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connector': ...olith manipulation, structural assembly, or power connector mating). || Allow a robotic arm(s) on the lunar surface (or inside a habitat/lander bay) to autonom...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42415,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessarily': ...using optical evaluation on specimens that do not necessarily have a textbook approach to evaluation. By feeding into the knowledge base and creating an agent Ch...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42432,
+    "use_case_agency": "NRC",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottleneck': ...nsuming and often represents the most significant bottleneck in carrying out agency activities and in making agency decisions. || This use case enhances the NRC...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42449,
+    "use_case_agency": "NSF",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...will make edits to the LLM-generated summaries as necessary and note any clusters that are candidates for merging with other clusters into a single topic. The...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42474,
+    "use_case_agency": "SBA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connect': ...Amazon Q in Connect || Veterans Certification - Contact Center application || https://aws.amazon.com/connect/q/ || Staf...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42648,
+    "use_case_agency": "State",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...resources available to create multimedia, conduct necessary research, and develop required curriculum. || Cost savings due to increased efficiency and decrease...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42680,
+    "use_case_agency": "TVA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...e visibility into network communications, assets, connections, and protocols. ||...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42681,
+    "use_case_agency": "TVA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...Westlaw || || || || Reduces the time necessary to perform legal research and provides a tool to check for accuracy in legal writing. ||...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42709,
+    "use_case_agency": "TVA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connect': ...Amazon Connect || || || || Improved customer support for helpdesk ||...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42717,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...ng that work is distributed effectively, reducing bottlenecks, and enabling staff to focus on higher-value activities. Ultimately, the public benefits from more...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42719,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connections': ...ull statutory names. Manually searching for these connections across regulatory materials is repetitive and time-consuming. The AI is intended to simplify this p...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42743,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...verall and enable OSCM to proactively receive the necessary funding....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42759,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...services infrastructures) || Identify a method to connect COTS product to AI service. The proposed initiative aims to develop an enterprise API endpoint for...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42769,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...onal efficiency and reduced cost by providing the necessary information to agents to quickly fins answer to JCTR questions reducing the time and effort needed...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42770,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...increases risk of system failures and operational bottlenecks. Resource optimization, efficiency, and sustainable solutions required to modernize critical IRS op...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42771,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...onal efficiency and reduced cost by providing the necessary information to taxpayer-facing customer service agents to quickly answer taxpayers' questions. This...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42789,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...delivery: Cloud adoption is blocked by governance bottlenecks (NIST, FedRAMP, IRS 1075). Compliance evidence is manual and audit-heavy. Developers struggle with...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42792,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...nt, removing delays from manual handling; Reduced bottlenecks: Files are less likely to get stuck in queues or misrouted, which speeds up workflows and improves...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42795,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...ct deliverables, risk, and the various trade-offs necessary for leadership to make the most informed choice. Improved communications and workflow to expedite...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42816,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...ghts, which in turn minimizes user wait times and bottlenecks. EST GPT accelerates onboarding by shortening the learning curve, ensuring new staff quickly become...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42828,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...ency by mapping processes and helping identifying bottlenecks along the way. The library of the business process map will be a good companion to IRM, Document 62...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42869,
+    "use_case_agency": "USDA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...e bacteria based on patterns in their genes, then connect this information with available health data to evaluate foodborne illness risk to public health. ||...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 42995,
+    "use_case_agency": "USDA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...SV files containing extracted comment information necessary for analysts to address issues and recommendations...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43004,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...ies and seamlessly escalate to human agents, when necessary, ensuring context and identity are retained. The initiative is focused on integrating VoiceBot acro...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43009,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connect': ...team to transform and accelerate investigations, connect data silos, and decrease time to response. Hosted in VAEC AWS, Andesite AI will connect via API to...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43010,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessity': ...ime-intensive process of determining medical exam necessity for disability claims for increase by deploying multiple specialized AI agents. The agents autonomo...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43011,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...judication process more efficient by reducing the necessary time for VA rating representatives to choose the appropriate disability questionnaire for the the g...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43022,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'unnecessary': ...Reduce the backlog and processing times, minimize unnecessary in-person exams, and address workflow inefficiencies. 2. Reduce the burden of travel on veterans an...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43038,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'unnecessary': ...specificity with reduced variability. || Reduces unnecessary treatments (existing BI-RADS 3's can be accurately and safely downgraded) and provides probability...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43041,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...scope of an employee's complaint and provide the necessary resource and information....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43047,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'unnecessary': ...ng and prioritizing alerts, this tool will reduce unnecessary notifications and help clinicians focus on what matters most, enhancing care for Veterans. || - Red...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43053,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...eterans and providers. The AI platform brings the necessary data together, highlights key issues, and streamlines next steps so staff can work faster and focus...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43057,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connection': ...teran Rehabilitation Services || || || Make the connection of veterans to rehabilitation services streamlined and more efficient. Gather information over mult...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43058,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'unnecessary': ...vider conversation during an exam - it eliminates unnecessary parts of the exam conversation and provides a written report for the provider to edit and copy into...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43072,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottleneck': ...n from diverse and unstructured sources remains a bottleneck for healthcare providers and agencies. For example, providers may need to re-enter the same patient...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43074,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'bottlenecks': ...I-driven process mining and analytics that reveal bottlenecks or compliance issues in our processes. Not pursuing this effort means continuing to operate with sl...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43076,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...reports and generate real-time notifications for necessary actions. Additionally, performance dashboards will provide transparent metrics on closeout progress...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43090,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connection': ...Ingestion of TRM and VASI || || || Lack of connection between the Technical Reference Model (TRM) and instances of the technology in use in the TRM. || E...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43107,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connects': ...nal support tool for VBA Public Contact staff. It connects approved policy and procedural content from SharePoint to a searchable question and answer bot. Sta...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43117,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...in Veterans with prostate cancer and provide the necessary information to engage in quality improvement efforts. The work will follow the framework NOP develo...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43130,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'unnecessary': ...hat the patient submit another image. This causes unnecessary delays in patients receiving care regarding their dermatological conditions. If the image is low q...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43134,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connect': ...VA Health Connect (VAHC) Customer Relationship Management (CRM) - contact quality analysis || || || There are very...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43150,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connection': ...Audit Service Connection Designations Associated with Prescriptions || || || Reduce waste or fraud. The model predicts the...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43164,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Connect': ...ck earlier this year when the contract with Adobe Connect was severed unexpectedly by the new administration. Implementing Office Hours using Microsoft Teams...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43173,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connects': ...automatically documented. The device physically connects to existing endoscopes, video processors, and display monitors, but does not connect to the VA netw...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43196,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...from PET gives clinicians the visual information necessary to define the severity and the extent of the disease....",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43206,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Gynecological': ...ic (Adult), Cephalic (Neonatal), Fetal/Obstetric, Gynecological, Intraoperative (Vascular), Intraoperative (Cardiac), intra-luminal, intra-cardiac echo, Musculoske...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43235,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'connected': ...doscopic Ultrasound (EUS) transducer GF-UCT180 is connected, Aplio i800 Model TUS-AI800/E3 provides image information for the diagnosis of the upper gastrointe...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43243,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Gynecology': ...ric, Neonatal Cephalic, Small Parts ,Obstetrics & Gynecology (OB/GYN) (useful for visualization of the ovaries, follicles, uterus and other pelvic structures),...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43248,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'Gynecological': ...g, Procedural Guidance, Urology, Fetal/Obstetric, Gynecological, Musculoskeletal (conventional), Musculoskeletal (superficial) and Ophthalmic. || Accelerates ultra...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2763,
+    "canonical_name": "NEC NeoFace",
+    "use_case_id": 43253,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Substring 'nec' inside 'necessary': ...rdinate with VA Administrations to review and, as necessary, remediate URLs for accessibility compliance. In the absence of the AI system both the 508 Office...",
+    "notes": "False positive from bare 'NEC' alias matching as substring (alias <4 chars bypasses word boundary)."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": null,
+    "use_case_agency": null,
+    "decision": "tighten_alias",
+    "evidence_quote": "All 41 gap rows for this product are noise from overly-greedy aliases (none mention the actual product).",
+    "proposed_alias_replacement": "Microsoft Teams, MS Teams, Microsoft Teams Premium, Teams Premium, Copilot for Teams",
+    "notes": "Drop bare 'Teams' alias (matches collaborative 'teams' constantly). Keep only 'Microsoft Teams', 'MS Teams', 'Microsoft Teams Premium', and 'Teams Premium'. Even those should require additional disambiguation: a real link needs the use case to deploy Teams Premium intelligent recap / Copilot for Teams as the AI tool, not merely integrate with Teams as a notification surface."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 39850,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...eal their presence and tactics, allowing security teams to detect, analyze, and respond to threats in real time. This proactive approach not only reduces t...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 39867,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...e funding. These out-puts will be used by the IRC teams to inform planning discussions, prevent benefit duplication, and guide technical assistance to stat...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 39904,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...n half by handling repetitive tasks so compliance teams can focus on strategy and still make final decisions. It will speed up documentation and assessment...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 39976,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...or, job role, and access level, allowing security teams to prioritize investigations. Automated Alerts & Reporting: Generate automated alerts for high-risk...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 40355,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...knowledge retrieval. || PDF Analyzer will enable teams across the DOE to upload large PDFs and ask questions and generate content related to those PDFs. |...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 40423,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...effort will provide a tool to the safety analysis teams which will enable them to automate creating the risk models resulting in significant reduction in t...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 40431,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...oding workflow through AI tools customized to our teams. || Expediated quality software for Test Engineering...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 40864,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...s compliance and builds trust in data, empowering teams to make reliable, data-driven decisions. || The Alation Data Catalog AI system primarily produces o...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41101,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...nabled workflows available to Division litigating teams for privilege review, case strategy and prioritized document review. || Prioritizations, Classifica...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41143,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "'Teams' as collaborative noun: ...d oversight risks. (2) Integrates with Microsoft Teams, Outlook, OneNote, and other knowledge management systems....",
+    "notes": "Word-boundary 'Microsoft Teams' present, but used as an integration target / meeting platform, not as the deployed AI tool."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41293,
+    "use_case_agency": "ED",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...ids representing the Team Values created by OSERS teams. || Textual answers to general purpose questions...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41326,
+    "use_case_agency": "EPA",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...y sender group and theme for review by rulemaking teams....",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41463,
+    "use_case_agency": "FTC",
+    "decision": "false_positive",
+    "evidence_quote": "'Teams' as collaborative noun: ...and project plans in Word, Excel, PowerPoint and Teams; Draft emails, chats and documents; Receive Outlook Coaching tips and suggestions on clarity, senti...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41562,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...ion-making on evacuation assistance resources and teams. || emPOWER AI gives the user publicly available data from the HHS emPOWER Map on the number of ele...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41580,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...s that this AI output could help support. Various teams across the CDC have expressed interest in being able to quickly get the right news content, with su...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41668,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...attention and citation data, allows communication teams, leadership, and scientists interested in assessing the impact of their programs publications. Th...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41687,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...access to AI tooling including LLMs, enabling CMS teams to conduct early-stage AI exploration and experimentation that can lead to innovative solutions ||...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41705,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...y, operational efficiency is enhanced by enabling teams to accomplish more with existing resources. Continuity is ensured by reducing knowledge loss when e...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41728,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: .... || The RFI Comment Analysis POC will enable CMS teams to systematically evaluate vendor responses using AI-powered analysis, improving the efficiency of...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 41736,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...updates for external users and tools for internal teams to generate reports and visualize key metrics. || Real-Time File Status includes Detailed Processin...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42060,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...hemeris toolkit. || CLASP allows mission planning teams to start with a baseline mission concept and simulate the mission's science return using models of...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42126,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...ration for CAS. || As CAS's Mapping and Synthesis teams work to identify transformational, wicked problems and potential solutions, MADI aims to supplement...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42303,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...ssociating with their organization—while internal teams gain more trustworthy data for programmatic planning, performance tracking, and cross-agency collab...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42371,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...oximately 1,200 FTE hours annually for ten-person teams. Cost-effective operations at $500-600/month with $0.05 per conversation variable costs. Accelerate...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42383,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...development, lowers costs and risks, and empowers teams to explore breakthrough mission concepts. By automating routine engineering tasks, Text-to-Spaceshi...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42499,
+    "use_case_agency": "SBA",
+    "decision": "false_positive",
+    "evidence_quote": "'Teams' as collaborative noun: ...sing Amazon Bedrock with foundation models. Agent Teams coordinate specialized agents for: (1) Code Refactoring — analyzes legacy ColdFusion/COBOL code and...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42615,
+    "use_case_agency": "State",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...of AI solutions. || The ability for personnel and teams to experiment with developing innovative AI solutions to address mission delivery or back office pr...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42630,
+    "use_case_agency": "State",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...of foreign language news and online posts to help teams identify and understand trends in a more efficient manner....",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42688,
+    "use_case_agency": "TVA",
+    "decision": "false_positive",
+    "evidence_quote": "'Teams' as collaborative noun: ...|| || Datum is a virtual knowledge employee for Teams. The system can search data and provide analysis. ||...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42720,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...stent, well-structured newsletter drafts, helping teams communicate more regularly and effectively. This supports the agency’s mission by improving interna...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42728,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...These serve as decision-support tools for policy teams, who maintain full responsibility for validating and approving all final documents....",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42731,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...lly working through the full report. || By giving teams faster access to the key concerns and trends, the AI supports more informed supervisory planning an...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42734,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...k through large volumes of material. || By giving teams a faster understanding of the issues and concerns raised in comment letters, the AI supports more i...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42752,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...odernized applications. These advantages position teams to better leverage modern technologies and align with the strategic goals of agility and innovation...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42804,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...ime savings when conducting warm handoffs between teams, while reducing the mean time to restore incidents. Additionally, the effort should ensure high-qua...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42816,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...ance on Subject Matter Experts (SMEs), empowering teams to independently discover and apply insights, which in turn minimizes user wait times and bottlenec...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 42830,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...and contract management for Treasury acquisition teams by automating bid review, data analysis, and documentation. It helps staff make faster, data-driven...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 43092,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...y-person dependency and improve continuity across teams. Higher code quality – AI-augmented unit tests and standardized patterns will strengthen maintaina...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 43129,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...g hybrid logic (trends plus probability), helping teams act before outbreaks escalate. 2. Standardized Reporting: Uniform, clean reports help facilities m...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 43164,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "'Teams' as collaborative noun: ...ration. Implementing Office Hours using Microsoft Teams as an alternative has had several obstacles, including a substantial decrease in questions SCOs are...",
+    "notes": "Word-boundary 'Microsoft Teams' present, but used as an integration target / meeting platform, not as the deployed AI tool."
+  },
+  {
+    "product_id": 2471,
+    "canonical_name": "Microsoft Teams",
+    "use_case_id": 43262,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "'teams' as collaborative noun: ...at can positively impact customer experience with teams. || The AI system assigns a number to customer comments between 0 and 1 with 1 being very positive...",
+    "notes": "False positive from bare 'Teams' alias matching the common English noun."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": null,
+    "use_case_agency": null,
+    "decision": "tighten_alias",
+    "evidence_quote": "All 27 gap rows for this product are noise from overly-greedy aliases (none mention the actual product).",
+    "proposed_alias_replacement": "Custom In-House AI, developed in-house, built in-house, in-house developed, in-house built",
+    "notes": "Drop bare 'Custom' and 'In-house'/'In-House' aliases — they match adjective uses ('custom reports', 'in-house tooling') everywhere. The Custom In-House AI canonical is meant for use cases whose AI is bespoke agency-built code. Detection should rely on dedicated phrases: 'developed in-house', 'built in-house', 'in-house developed', 'in-house built', 'agency-developed', 'in-house (CDER staff)', and the literal canonical 'Custom In-House AI'. Better still, populate this product from rows where vendor_name in ('In-house','In-House','N/A') AND no other commercial product matched."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 39876,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...language responses to user questions, based on a custom Knowledge Base of DRM documentation artifacts, supported by the natural language capabilities of th...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 39897,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...llection processes related to cases, and creating custom reports from various materials during the case managers interview process, producing a centralized...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 39915,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...nsitive information and return responses based on custom document collections offers advantages through the ability to securely handle Controlled Unclassifi...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 40017,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...f a person, vehicular, or dwelling report that is custom based on analysts inputs and selections. These reports are used by TSA to assist in the verificatio...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 40546,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...pment by enabling business users to easily create custom AI models and automation solutions without extensive coding. It integrates with the Microsoft Power...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 40739,
+    "use_case_agency": "DOI",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...ll unmanned aerial systems (sUAS or drones) and custom computer algorithms to automatically detect and monitor the health of coconut trees and other speci...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 40820,
+    "use_case_agency": "DOI",
+    "decision": "false_positive",
+    "evidence_quote": "'in-house' as generic adjective: ...ion reservoir operators, allowing them to produce in-house forecasts between forecasts issued by other agencies and to explore forecast sensitivity to differe...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 40844,
+    "use_case_agency": "DOI",
+    "decision": "false_positive",
+    "evidence_quote": "'in-house' as generic adjective: ...ill use this tool sometimes, we primarily use our in-house built tool. || Grouped requests into clusters based on TF-IDF weighted vocabulary. Documents with d...",
+    "notes": "Word-boundary phrase present but text describes incidental in-house tooling, not the canonical 'Custom In-House AI' bucket."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 40857,
+    "use_case_agency": "DOI",
+    "decision": "false_positive",
+    "evidence_quote": "'customized' as generic adjective: ...expand the use of this tool to see if it can be customized to reference data sets maintained by DRIS to automate the creation of these maps in a predefined te...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41154,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...I outputs: AI assisted review, automated tagging, custom extractions, agreement summaries and chatbot for user help....",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41270,
+    "use_case_agency": "DOT",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...Operating Administration (Mode) format; Generate custom visuals and slide outlines directly inside presentation. ||...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41580,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'customized' as generic adjective: .... medical supply chain updates). The tool can be customized based on specific program office needs, and can be deployed independently of one another so that on...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41640,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...top sources, demographics and audience insights, custom segments and thematic analysis, reports and dashboards....",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41682,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...Agent 4. Chat & Talk Feature 5. Ability to query custom data source for File or Case status || Help support team in day-to-day communication with external...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41844,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...along with other grant application metadata in a custom module....",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41848,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...The output data from the tool is displayed via a custom module....",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41873,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...es and metadata in a table that are displayed via custom module within the SRDMS application....",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41899,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...g rather than the laborious process of creating a custom training set from scratch. These models also allow us to reduce the number of applications that hu...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41931,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...bo application is specifically built to allow for custom vocabularies, editing of meeting transcriptions, and model retraining, making it well-suited to han...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 41945,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...ext from a few to many hundreds of grants using a custom prompt and an Azure OpenAI models || It dynamically identifies columns containing text for analysis...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 42018,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...include recipes and approaches for new materials custom-tailored to applications with an 4x speedup for the overall materials discovery / design lifecycle,...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 42336,
+    "use_case_agency": "NASA",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...find moving objects in TESS FFIs.We constructed a custom training set using 64x64x64 cubes of pixel flux time series and truth masks with the tracks of know...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 42592,
+    "use_case_agency": "SSA",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...t for SSA training products || Quickly generating custom audio and visual content for training products. || Audio files, video files, and image files...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 42759,
+    "use_case_agency": "Treasury",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...for AI services, enabling seamless integration of custom applications and Commercial-Off-The-Shelf (COTS) products. || Use of an locally controlled LLM for...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 42931,
+    "use_case_agency": "USDA",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...ote guidance from experienced veterinarians. || A custom mobile application for inspection personnel....",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 42935,
+    "use_case_agency": "USDA",
+    "decision": "false_positive",
+    "evidence_quote": "'custom' as generic adjective: ...ta feedback loop for continuous improvement. || A custom mobile application for general public that outputs text notifications/information....",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  },
+  {
+    "product_id": 2532,
+    "canonical_name": "Custom In-House AI",
+    "use_case_id": 43133,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "'customized' as generic adjective: ...ises, affirmations, or therapeutic coloring pages—customized for staff or Veterans—without logging in, downloading an app, or navigating a complex system. It s...",
+    "notes": "False positive from greedy 'Custom' / 'In-house' aliases."
+  }
+]

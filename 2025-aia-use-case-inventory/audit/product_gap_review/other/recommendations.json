@@ -1,0 +1,310 @@
+[
+  {
+    "product_id": 3102,
+    "old_audit_product_id": 1401,
+    "canonical_name": "Microsoft 365",
+    "use_case_id": 43870,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Microsoft 365 Copilot (Productivity Suite) ... Using Microsoft 365 Copilot, PNNL aims to produce enhanced document quality...",
+    "notes": "This UC is about Microsoft 365 Copilot (already linked to product 2836), not the M365 base bundle. The 'Microsoft 365' alias on the M365-bundle product is greedy — every M365 Copilot mention triggers it."
+  },
+  {
+    "product_id": 3102,
+    "old_audit_product_id": 1401,
+    "canonical_name": "Microsoft 365",
+    "use_case_id": 43886,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Copilot for Microsoft 365 ... Smart documentation Creation ... Efficient Meeting Management",
+    "notes": "Already correctly linked to Microsoft 365 Copilot (2836). M365 base bundle should not also be linked."
+  },
+  {
+    "product_id": 3102,
+    "old_audit_product_id": 1401,
+    "canonical_name": "Microsoft 365",
+    "use_case_id": 44097,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Microsoft 365 Apps for Enterprise ... AI was automatically integrated into the product without an identified benefit",
+    "notes": "Already correctly linked to product 3103 (Microsoft 365 Apps for Enterprise), which is the right SKU. The Office-bundle entry (3102) should not double-link."
+  },
+  {
+    "product_id": 3102,
+    "old_audit_product_id": 1401,
+    "canonical_name": "Microsoft 365",
+    "use_case_id": 45012,
+    "use_case_agency": "FTC",
+    "decision": "false_positive",
+    "evidence_quote": "Microsoft 365 Copilot ... Write, edit and summarize documents and project plans in Word, Excel, PowerPoint and Teams",
+    "notes": "Already correctly linked to Microsoft 365 Copilot (2836). Not a base-M365 deployment."
+  },
+  {
+    "product_id": 3102,
+    "old_audit_product_id": 1401,
+    "canonical_name": "Microsoft 365",
+    "use_case_id": 45982,
+    "use_case_agency": "NRC",
+    "decision": "tighten_alias",
+    "evidence_quote": "system_name: Microsoft 365 Copilot, Microsoft Copilot Chat",
+    "proposed_alias_replacement": "Drop the standalone 'Microsoft 365' alias from product 3102 entirely (or restrict to 'Microsoft 365' AND NOT 'copilot'). Every M365 Copilot mention is producing a phantom M365-bundle gap.",
+    "notes": "Already correctly linked to M365 Copilot 2836 + M365 Copilot Chat 2837. The product 3102 'Microsoft 365' bundle has only one alias — its canonical name — which is identical to the substring inside 'Microsoft 365 Copilot'. The whole gap (5 of 5) on this product is this alias collision. The bundle product itself probably should not have any text-search alias and should only be populated via explicit catalog matches against the system_name field."
+  },
+
+  {
+    "product_id": 2856,
+    "old_audit_product_id": 1177,
+    "canonical_name": "Westlaw AI",
+    "use_case_id": 44680,
+    "use_case_agency": "DOJ",
+    "decision": "unclear",
+    "evidence_quote": "AI-powered Legal Research ... DOJ attorneys spend significant time manually researching case law ... This initiative deploys an AI-powered legal research platform that synthesizes case law",
+    "notes": "Narrative is generic ('AI-powered legal research platform') and never names Westlaw, Lexis, or any vendor. Could be Westlaw AI / Lexis+ AI / a custom build. Currently unlinked. Flag for human — DOJ likely uses Westlaw but the narrative doesn't justify the link."
+  },
+  {
+    "product_id": 2856,
+    "old_audit_product_id": 1177,
+    "canonical_name": "Westlaw AI",
+    "use_case_id": 44901,
+    "use_case_agency": "FDIC",
+    "decision": "link",
+    "evidence_quote": "Thomson Reuters plans to deliver generative AI capabilities in Westlaw ... Commercially available legal research tools (Westlaw, Lexis Plus, and Bloomberg Law)",
+    "notes": "Explicitly names Westlaw and Thomson Reuters as the GenAI vendor. Currently unlinked. Should also be linked to Lexis+ AI and Bloomberg Law if those products exist in the catalog."
+  },
+
+  {
+    "product_id": 2858,
+    "old_audit_product_id": 1179,
+    "canonical_name": "ServiceNow Now Assist",
+    "use_case_id": 43408,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "AI will be used to drive automation via integration with ServiceNow, automatically classifying products...",
+    "notes": "ServiceNow is the system of record being integrated against, not the AI tool. The AI is described separately (unspecified) and feeds classifications into ServiceNow. Currently linked only to MS Teams (also probably wrong). Not a Now Assist deployment."
+  },
+  {
+    "product_id": 2858,
+    "old_audit_product_id": 1179,
+    "canonical_name": "ServiceNow Now Assist",
+    "use_case_id": 45471,
+    "use_case_agency": "HHS",
+    "decision": "false_positive",
+    "evidence_quote": "The AI agent provides responses to IT service desk tickets that staff can copy & paste into ServiceNow fields",
+    "notes": "Help-desk AI generates ticket responses pasted INTO ServiceNow. The AI is unspecified (not Now Assist). ServiceNow appears as the destination CRM, not as the deployed AI."
+  },
+
+  {
+    "product_id": 2869,
+    "old_audit_product_id": 1190,
+    "canonical_name": "Databricks",
+    "use_case_id": 43454,
+    "use_case_agency": "DHS",
+    "decision": "link",
+    "evidence_quote": "A graph which categorizes the data into different sentiments using databricks dashboard",
+    "notes": "USCIS sentiment analysis explicitly built on Databricks. Currently unlinked."
+  },
+  {
+    "product_id": 2869,
+    "old_audit_product_id": 1190,
+    "canonical_name": "Databricks",
+    "use_case_id": 44782,
+    "use_case_agency": "DOT",
+    "decision": "link",
+    "evidence_quote": "Promote usage of AI/ML tools on Databricks platform and implement research use cases",
+    "notes": "PANDA data science lab at Turner-Fairbank built on Databricks platform. Currently unlinked."
+  },
+
+  {
+    "product_id": 3122,
+    "old_audit_product_id": 1421,
+    "canonical_name": "Microsoft Power Platform",
+    "use_case_id": 44095,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Microsoft AI Builder ... It integrates with the Microsoft Power Platform",
+    "notes": "Use case is already correctly linked to Microsoft AI Builder (3105). Power Platform is named only as the integration host. Could optionally also link to Power Platform parent, but the AI tool deployed is AI Builder."
+  },
+  {
+    "product_id": 3122,
+    "old_audit_product_id": 1421,
+    "canonical_name": "Microsoft Power Platform",
+    "use_case_id": 46828,
+    "use_case_agency": "VA",
+    "decision": "link",
+    "evidence_quote": "Power Automate AI model ... Microsoft Power Platform AI modeling",
+    "notes": "BTSSS 3542 Review explicitly built with Power Automate AI Builder on Power Platform. Currently unlinked. If a 'Power Automate' product exists separately, link there too; otherwise the Power Platform parent is the right home."
+  },
+
+  {
+    "product_id": 3161,
+    "old_audit_product_id": 1460,
+    "canonical_name": "Salesforce Einstein",
+    "use_case_id": 44687,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Builds on existing Salesforce migration initiatives and settlement databases",
+    "notes": "Salesforce mentioned only as the host CRM the AI builds upon; the AI itself is described as a natural-language query layer over structured + unstructured data, not Einstein. Currently unlinked — keep it that way."
+  },
+  {
+    "product_id": 3161,
+    "old_audit_product_id": 1460,
+    "canonical_name": "Salesforce Einstein",
+    "use_case_id": 46645,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Seamless testing of Customer Relationship Management (CRM) applications developed in Salesforce ... Successful integration of VAGPT and automated generation of test cases",
+    "notes": "AI here is VA GPT (a custom Azure OpenAI deployment) and Provar Manager test generation. Salesforce is the system under test, not the AI. Einstein is not deployed."
+  },
+
+  {
+    "product_id": 3197,
+    "old_audit_product_id": 1496,
+    "canonical_name": "Visual Studio",
+    "use_case_id": 43935,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "Visual Studio Enterprise ... AI was automatically integrated into the product without an identified benefit",
+    "notes": "Already correctly linked to product 3198 (Visual Studio Enterprise), which is a separate catalog entry. The base 'Visual Studio' (3197) should not also link. Consider whether 3197/3198 should be merged or whether 3197 should become the parent."
+  },
+  {
+    "product_id": 3197,
+    "old_audit_product_id": 1496,
+    "canonical_name": "Visual Studio",
+    "use_case_id": 46640,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "Ansible LightSpeed can also be a plugin for Visual Studio Code where it can generate YAML code",
+    "notes": "AI tool is Ansible Lightspeed; VS Code is mentioned only as one of several editor hosts the plugin can run inside. Not a Visual Studio AI deployment. (Note also that Visual Studio Code is a different product from Visual Studio Enterprise — neither is the AI here.)"
+  },
+
+  {
+    "product_id": 2839,
+    "old_audit_product_id": 1162,
+    "canonical_name": "Microsoft Copilot Studio",
+    "use_case_id": 43988,
+    "use_case_agency": "DOE",
+    "decision": "false_positive",
+    "evidence_quote": "M365 Copilot ... Contextual responses, action results, agentic orchestration for Copilot Studio, apply templates",
+    "notes": "Already correctly linked to Microsoft 365 Copilot (2836). The narrative mentions Copilot Studio only as a downstream orchestration target ('agentic orchestration for Copilot Studio'), not as the deployed AI. Don't double-link."
+  },
+
+  {
+    "product_id": 2866,
+    "old_audit_product_id": 1187,
+    "canonical_name": "Splunk",
+    "use_case_id": 46558,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "The inputs of the model will include security event data from Splunk and Microsoft Sentinel used by CSOC analysts",
+    "notes": "AI tool is Andesite AI (with AWS Bedrock + Claude Sonnet). Splunk is named only as a data source feeding events into Andesite. Splunk's own ML Toolkit / GenAI is not what's being deployed."
+  },
+
+  {
+    "product_id": 2871,
+    "old_audit_product_id": 1192,
+    "canonical_name": "Esri ArcGIS AI",
+    "use_case_id": 43421,
+    "use_case_agency": "DHS",
+    "decision": "false_positive",
+    "evidence_quote": "display incident reporting and associated contextual information, such as the physical location on an ArcGIS map",
+    "notes": "ArcGIS appears as the basemap on which the dashboard renders incident locations, not as the AI tool. The AI is GenAI summarization of scraped open-source data. Esri ArcGIS AI is not deployed."
+  },
+
+  {
+    "product_id": 2873,
+    "old_audit_product_id": 1194,
+    "canonical_name": "Adobe Photoshop",
+    "use_case_id": 44410,
+    "use_case_agency": "DOJ",
+    "decision": "link",
+    "evidence_quote": "AI capabilities in applications like Photoshop and Acrobat enhance productivity by automating routine tasks such as image editing, optical character recognition (OCR)",
+    "notes": "ATF use case explicitly names Photoshop's AI as one of the deployed Adobe Suite AI capabilities. Currently linked only to Adobe Creative Cloud Suite (2986); should additionally link to Photoshop. (Acrobat AI should also link if a separate product exists.)"
+  },
+
+  {
+    "product_id": 2914,
+    "old_audit_product_id": 1210,
+    "canonical_name": "Microsoft Sentinel",
+    "use_case_id": 46558,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "security event data from Splunk and Microsoft Sentinel used by CSOC analysts",
+    "notes": "Same as Splunk above — Sentinel is the SIEM that feeds events into Andesite AI; Sentinel's own AI features are not what's deployed here."
+  },
+
+  {
+    "product_id": 2918,
+    "old_audit_product_id": 1214,
+    "canonical_name": "Relativity",
+    "use_case_id": 44694,
+    "use_case_agency": "DOJ",
+    "decision": "false_positive",
+    "evidence_quote": "Builds on DOJ medical record review systems and HHS/VA data integration, along with Relativity/CORA settlement, damages, and entitlement",
+    "notes": "Relativity is named as a downstream system whose data the AI consumes. The AI itself is described as a custom evidence/claim consolidator (summaries, duplicate detection, settlement predictions); it is not Relativity's own aiR/Relativity-AI features. Could be borderline if DOJ is using Relativity's AI tier — flag as false_positive but human reviewer may want to double-check with DOJ if they're on aiR."
+  },
+
+  {
+    "product_id": 2969,
+    "old_audit_product_id": 1268,
+    "canonical_name": "AWS Rekognition",
+    "use_case_id": 45426,
+    "use_case_agency": "HHS",
+    "decision": "link",
+    "evidence_quote": "User uploads a DICOM image, which is converted and passed to the AWS Rekognition service. Output is a JSON block with predictions on the location of text within an image",
+    "notes": "NIAID TB Portals explicitly deploys AWS Rekognition for OCR text-detection on DICOM images. Currently unlinked."
+  },
+
+  {
+    "product_id": 3074,
+    "old_audit_product_id": 1373,
+    "canonical_name": "Hyperscience",
+    "use_case_id": 46706,
+    "use_case_agency": "VA",
+    "decision": "link",
+    "evidence_quote": "The Hyperscience platform (optical character recognition (OCR), natural language processing (NLP), and machine learning (ML)) extracts document data",
+    "notes": "VA NCA Automated Claims Processing explicitly built on Hyperscience platform. Currently unlinked."
+  },
+
+  {
+    "product_id": 3105,
+    "old_audit_product_id": 1404,
+    "canonical_name": "Microsoft AI Builder",
+    "use_case_id": 45174,
+    "use_case_agency": "HHS",
+    "decision": "link",
+    "evidence_quote": "The 889 Document Processor is an Optical Character Recognition (OCR) model built using Microsoft AI Builder",
+    "notes": "PDF info extraction for 889 Forms explicitly built using Microsoft AI Builder OCR. Currently unlinked. Should also be linked to Power Automate / Power Platform parent (workflow trigger uses Power Automate Flow)."
+  },
+
+  {
+    "product_id": 3121,
+    "old_audit_product_id": 1420,
+    "canonical_name": "Microsoft Power BI",
+    "use_case_id": 46713,
+    "use_case_agency": "VA",
+    "decision": "false_positive",
+    "evidence_quote": "The system outputs data to a Microsoft Power BI report",
+    "notes": "Power BI is the dashboard destination for the FAQ GenAI's output, not the AI tool. The AI is generative (suggested answers based on prior FAQ docs). Power BI itself has Copilot/AI features but the narrative doesn't suggest those are deployed."
+  },
+  {
+    "product_id": 3121,
+    "old_audit_product_id": 1420,
+    "canonical_name": "Microsoft Power BI",
+    "use_case_id": 46893,
+    "use_case_agency": "VA",
+    "decision": "unclear",
+    "evidence_quote": "(narrative empty — problem/benefits/outputs all blank)",
+    "notes": "Companion VA NTT Schools NLP FAQ Dashboard UC has zero narrative content. Cannot judge from text. Likely the same situation as 46713 (Power BI as dashboard). Flag for human."
+  },
+
+  {
+    "product_id": 3169,
+    "old_audit_product_id": 1468,
+    "canonical_name": "Skillsoft Percipio CAISY",
+    "use_case_id": 45533,
+    "use_case_agency": "HUD",
+    "decision": "link",
+    "evidence_quote": "CAISY is designed to solve the challenge of helping employees practice and improve difficult workplace conversations ... vendor: Skillsoft Percipio",
+    "notes": "Use case IS the canonical CAISY deployment at HUD. Vendor literally is 'Skillsoft Percipio', system_name 'Skillsoft'. Currently entirely unlinked. Why this isn't already linked is suspicious — populate_use_case_products may be skipping on the 'CAISY' alias not matching due to the product_aliases entry being 'SKILLSOFT PERCIPIO/CAISY' (with slash) which isn't a substring of the use case name 'CAISY - Workforce Training Conversation Simulator'. Recommend also adding 'CAISY' as a standalone alias on product 3169."
+  }
+]
