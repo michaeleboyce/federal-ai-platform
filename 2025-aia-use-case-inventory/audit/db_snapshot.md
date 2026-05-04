@@ -9,13 +9,13 @@ Generated from `data/federal_ai_inventory_2025.db`.
 - individual_entries: 3549
 - consolidated_entries: 900
 - inventory_entries: 4449
-- canonical_products: 242
-- commercial_products: 237
+- canonical_products: 316
+- commercial_products: 311
 - agency_internal_products: 5
-- product_edges: 1296
-- linked_entries: 987
-- distinct_linked_products: 213
-- pending_product_reviews: 598
+- product_edges: 1567
+- linked_entries: 1201
+- distinct_linked_products: 289
+- pending_product_reviews: 527
 - templates: 22
 - maturity_rows: 55
 

@@ -602,6 +602,13 @@ def seed_products():
 def seed_templates():
     conn = get_connection()
     try:
+        # use_cases.template_id and consolidated_use_cases.template_id reference
+        # use_case_templates(id) — null them out so the destructive reseed below
+        # doesn't trip an FK constraint. The post-seed populate step
+        # (scripts/populate_use_case_products.py + auto_tag.py) re-resolves
+        # template_id by template_text match.
+        conn.execute("UPDATE use_cases SET template_id = NULL")
+        conn.execute("UPDATE consolidated_use_cases SET template_id = NULL")
         conn.execute("DELETE FROM use_case_templates")
         for row in TEMPLATES:
             # Row is (text, short, category) for OMB-standard templates or

@@ -417,7 +417,11 @@ def main():
     conn = get_connection()
     try:
         apply_migrations(conn)
-        # Clear existing data
+        # Clear existing data. Order matters under FK constraints — every
+        # table that REFERENCES use_cases(id) or consolidated_use_cases(id)
+        # must be cleared first. The m004 migration added two such tables
+        # (omb_match_audit FK→use_cases; omb_consolidated_rows is FK-free
+        # but is rebuilt from the OMB XLSX so we clear it for consistency).
         conn.execute("DELETE FROM use_case_external_evidence")
         conn.execute("DELETE FROM review_queue_products")
         conn.execute("DELETE FROM review_queue_llm")
@@ -429,6 +433,10 @@ def main():
         conn.execute("DELETE FROM agency_ai_maturity")
         conn.execute("DELETE FROM org_ai_maturity")
         conn.execute("DELETE FROM column_mappings")
+        # m004 OMB consolidated provenance — clear before use_cases since
+        # omb_match_audit has FK→use_cases(id).
+        conn.execute("DELETE FROM omb_match_audit")
+        conn.execute("DELETE FROM omb_consolidated_rows")
         conn.execute("DELETE FROM use_cases")
         conn.execute("DELETE FROM consolidated_use_cases")
         conn.commit()
