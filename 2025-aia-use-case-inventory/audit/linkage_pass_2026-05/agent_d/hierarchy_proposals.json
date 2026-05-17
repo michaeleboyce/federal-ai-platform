@@ -1,0 +1,51 @@
+[
+  {
+    "decision": "add_hierarchy_edge",
+    "child_canonical_name": "Azure Data Factory",
+    "proposed_parent_canonical_name": "Microsoft Azure Platform",
+    "confidence": "high",
+    "reasoning": "Azure Data Factory is a first-party Azure data-integration service, billed and provisioned through Microsoft Azure. Same pattern as Azure OpenAI, Azure AI Foundry, Azure Speech, and Azure AI Document Intelligence which are already parented under Microsoft Azure Platform."
+  },
+  {
+    "decision": "add_hierarchy_edge",
+    "child_canonical_name": "Microsoft Sentinel",
+    "proposed_parent_canonical_name": "Microsoft Azure Platform",
+    "confidence": "high",
+    "reasoning": "Microsoft Sentinel is an Azure-native cloud SIEM/SOAR service provisioned in an Azure subscription. Fits the same Azure-service pattern as the existing Azure-* children."
+  },
+  {
+    "decision": "add_hierarchy_edge",
+    "child_canonical_name": "Palantir Case Management & Analytics (CMA)",
+    "proposed_parent_canonical_name": "Palantir Federal Cloud Service",
+    "confidence": "medium",
+    "reasoning": "Palantir CMA is a federal Palantir offering that runs on Foundry inside Palantir's Federal Cloud Service authorization boundary, mirroring the existing Palantir AIP -> Palantir Federal Cloud Service edge."
+  },
+  {
+    "decision": "add_hierarchy_edge",
+    "child_canonical_name": "Palantir Decision and Analytics Platform (DNA-P)",
+    "proposed_parent_canonical_name": "Palantir Federal Cloud Service",
+    "confidence": "medium",
+    "reasoning": "Palantir DNA-P is delivered on Palantir Foundry within the Federal Cloud Service environment for federal customers; same inheritance pattern as Palantir AIP and CMA."
+  },
+  {
+    "decision": "add_hierarchy_edge",
+    "child_canonical_name": "LexisNexis Risk Solutions",
+    "proposed_parent_canonical_name": "LexisNexis",
+    "confidence": "medium",
+    "reasoning": "LexisNexis Risk Solutions is the RELX/LexisNexis Risk division of LexisNexis; consistent with the existing NexisXplore -> LexisNexis edge for grouping LexisNexis-branded products."
+  },
+  {
+    "decision": "add_hierarchy_edge",
+    "child_canonical_name": "idiCORE",
+    "proposed_parent_canonical_name": "LexisNexis Risk Solutions",
+    "confidence": "high",
+    "reasoning": "idiCORE is the flagship investigative-data product of LexisNexis Risk Solutions (vendor field on the catalog row is literally 'LexisNexis Risk Solutions'); clear sub-SKU of the parent vendor row."
+  },
+  {
+    "decision": "add_hierarchy_edge",
+    "child_canonical_name": "IBM watsonx Code Assistant",
+    "proposed_parent_canonical_name": "IBM Watson",
+    "confidence": "medium",
+    "reasoning": "watsonx is IBM's rebrand/refresh of the Watson AI family; watsonx Code Assistant is a Watson-family coding product. Consistent with existing IBM ARGOS -> IBM Watson and IBM CoreDF -> IBM Watson edges."
+  }
+]

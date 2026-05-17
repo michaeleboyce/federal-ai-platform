@@ -39,3 +39,41 @@ add,Microsoft Copilot for Security,Microsoft 365,medium,Copilot for Security inh
 add,Microsoft Search in Bing,Microsoft 365,medium,M365 Search surface; inherits via M365 GCC parent authorization
 add,Microsoft Purview,Microsoft 365,medium,Purview is the M365 governance suite; inherits via M365 GCC parent
 
+add,Azure Data Factory,Microsoft Azure Platform,high,"Azure Data Factory is a first-party Azure data-integration service, billed and provisioned through Microsoft Azure. Same pattern as Azure OpenAI, Azure AI Foundry, Azure Speech, and Azure AI Document Intelligence which are already parented under Microsoft Azure Platform."
+add,Microsoft Sentinel,Microsoft Azure Platform,high,Microsoft Sentinel is an Azure-native cloud SIEM/SOAR service provisioned in an Azure subscription. Fits the same Azure-service pattern as the existing Azure-* children.
+add,Palantir Case Management & Analytics (CMA),Palantir Federal Cloud Service,medium,"Palantir CMA is a federal Palantir offering that runs on Foundry inside Palantir's Federal Cloud Service authorization boundary, mirroring the existing Palantir AIP -> Palantir Federal Cloud Service edge."
+add,Palantir Decision and Analytics Platform (DNA-P),Palantir Federal Cloud Service,medium,Palantir DNA-P is delivered on Palantir Foundry within the Federal Cloud Service environment for federal customers; same inheritance pattern as Palantir AIP and CMA.
+add,LexisNexis Risk Solutions,LexisNexis,medium,LexisNexis Risk Solutions is the RELX/LexisNexis Risk division of LexisNexis; consistent with the existing NexisXplore -> LexisNexis edge for grouping LexisNexis-branded products.
+add,idiCORE,LexisNexis Risk Solutions,high,idiCORE is the flagship investigative-data product of LexisNexis Risk Solutions (vendor field on the catalog row is literally 'LexisNexis Risk Solutions'); clear sub-SKU of the parent vendor row.
+add,IBM watsonx Code Assistant,IBM Watson,medium,watsonx is IBM's rebrand/refresh of the Watson AI family; watsonx Code Assistant is a Watson-family coding product. Consistent with existing IBM ARGOS -> IBM Watson and IBM CoreDF -> IBM Watson edges.
+add,ELIS Name and DOB Harvesting Service,ELIS,medium,derived from add_product by agent_a: USCIS ELIS-resident service; SAIC/DV United integrators.
+add,Adobe Premiere Pro,Adobe Creative Cloud Suite,high,derived from add_product by agent_a: Adobe Premiere Pro is a named child product under Adobe Creative Cloud Suite. Add as new product with parent.
+add,Microsoft SQL Server Intelligent Query Processing,Microsoft Azure Platform,medium,derived from add_product by agent_a: Microsoft SQL Server IQP/Anomaly features. Distinct from Azure Platform.
+add,FTC Sentinel PSC Classification,FTC Sentinel Network Services,medium,derived from add_product by agent_a: FTC Sentinel platform module; Leidos prime integrator.
+add,FTC Sentinel Chatbot,FTC Sentinel Network Services,medium,derived from add_product by agent_a: FTC Sentinel platform module; Leidos prime integrator.
+add,FTC Sentinel Graph Analytics,FTC Sentinel Network Services,medium,derived from add_product by agent_a: FTC Sentinel platform module; Leidos prime integrator.
+add,FTC Sentinel Analytic Sandbox,FTC Sentinel Network Services,medium,derived from add_product by agent_a: FTC Sentinel platform module; Leidos prime integrator.
+add,FTC Sentinel Developer Productivity,FTC Sentinel Network Services,medium,derived from add_product by agent_a: FTC Sentinel platform module; Leidos prime integrator.
+add,CMS AI Agent Orchestrator,Skyward CEDAR/CLAW,medium,derived from add_product by agent_a: CMS PoC with Noblis. Named tool.
+add,CMS IDR Support Bot,CMS Integrated Data Repository Customer Analytic Environment,medium,derived from add_product by agent_a: CMS IDR support chatbot.
+add,FDA 356H ML Facility Supply Chain Role Classification,FDA CDEROne Analytics,medium,derived from add_product by agent_a: FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.
+add,FDA Annual Report CMC Extraction,FDA CDEROne Analytics,medium,derived from add_product by agent_a: FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.
+add,FDA Application-DMF Reference Extraction,FDA CDEROne Analytics,medium,derived from add_product by agent_a: FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.
+add,FDA DMF Facilities Extraction,FDA CDEROne Analytics,medium,derived from add_product by agent_a: FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.
+add,FDA Module 3 Facilities Extraction,FDA CDEROne Analytics,medium,derived from add_product by agent_a: FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.
+add,FDA Packaging Materials and Suppliers Extraction,FDA CDEROne Analytics,medium,derived from add_product by agent_a: FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.
+add,FDA Real World Data/Evidence Identification,FDA CDEROne Analytics,medium,derived from add_product by agent_a: FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.
+add,FDA Regulatory Starting Materials Extraction,FDA CDEROne Analytics,medium,derived from add_product by agent_a: FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.
+add,NIAID TB Portals Outlier Detection,NIAID TB Portals (TB DEPOT),medium,derived from add_product by agent_a: NIAID TB Portals image-quality module.
+add,Grants.gov Similar Opportunities,Grants.gov AI Tools,medium,derived from add_product by agent_a: MicroHealth-built Grants.gov recommender.
+add,Grants.gov Applicant Help Chatbot,Grants.gov AI Tools,medium,derived from add_product by agent_a: Grants.gov public help chatbot.
+add,GrantSolutions Text Analyzer Tool,GrantSolutions,high,derived from add_product by agent_a: GrantSolutions federal shared-service modules.
+add,GrantSolutions AI Writing Assistant,GrantSolutions,high,derived from add_product by agent_a: GrantSolutions federal shared-service modules.
+add,GrantSolutions Recipient Risk Tool,GrantSolutions,high,derived from add_product by agent_a: GrantSolutions federal shared-service modules.
+add,GrantSolutions Non-Competing Continuation Approval Tool,GrantSolutions,high,derived from add_product by agent_a: GrantSolutions federal shared-service modules.
+add,GrantSolutions Helpdesk Agent,GrantSolutions,high,derived from add_product by agent_a: GrantSolutions federal shared-service modules.
+add,GrantSolutions Non-Competing Continuation Review Tool,GrantSolutions,high,derived from add_product by agent_a: GrantSolutions federal shared-service modules.
+add,Azure AI Translator,Microsoft Azure Platform,high,derived from add_product by agent_a: Azure Translator service.
+add,Adobe Sensei,Adobe Creative Cloud Suite,high,derived from add_product by agent_b: Adobe Sensei is Adobe's real AI/ML brand embedded across its Creative Cloud products.
+add,Azure Synapse Analytics,Microsoft Azure Platform,high,derived from add_product by agent_b: Azure Synapse is a real Microsoft analytics service.
+add,Google Calendar,Google Workspace,high,derived from add_product by agent_b: Google Calendar (with AI meeting transcription/summary features) referenced for DOT.

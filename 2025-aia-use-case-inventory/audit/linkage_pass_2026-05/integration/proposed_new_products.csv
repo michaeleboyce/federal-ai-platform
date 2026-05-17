@@ -1,0 +1,224 @@
+canonical_name,vendor,product_type,is_generative_ai,proposed_parent_canonical_name,linking_use_case_ids,linking_consolidated_ids,confidence,reasoning,_agent
+CBP Translate,U.S. Customs and Border Protection,translation,0,,64761,,medium,"DHS CBP-built translation system. development_type=contracting+in-house; vendor list is integrators, not AI product vendor. Treat as custom government product.",agent_a
+Traveler Verification Service,U.S. Customs and Border Protection,biometrics,0,,64765,,high,"DHS CBP TVS — federal-built facial biometric matching. Vendor field lists hardware vendors (Apple, Samsung, Logitech), which are not the AI product.",agent_a
+ERNIE Radiological Detection,DHS Countering Weapons of Mass Destruction,computer_vision,0,,64776,,medium,DHS CWMD-built. Specific named federal system (ARDIS-C). Not COTS.,agent_a
+Consular Consolidated Database Facial Recognition,U.S. Department of State,biometrics,0,,64779,,medium,DoS-owned Consular Consolidated Database FR service consumed by DHS. Distinct gov product.,agent_a
+AIS Resume Screening Tool,AIS,document_ai,0,,64784,,low,Vendor 'AIS' is the company; development_type contracting+in-house; specific tool. Limited public info — flag low confidence on vendor canonicalization.,agent_a
+Rohde & Schwarz QPS Walk-Through Scanner,Rohde & Schwarz,computer_vision,0,,64787,,medium,TSA Advanced Imaging Technology — Rohde & Schwarz QPS is the COTS scanner. Leidos is integrator.,agent_a
+USCIS Text Analytics,U.S. Citizenship and Immigration Services,nlp,0,,64790,,medium,USCIS-built text analytics platform; Inadev is integrator. Federal product.,agent_a
+USCIS Verification Match Model,U.S. Citizenship and Immigration Services,nlp,0,,64792,,medium,USCIS-built; IBM is contracting integrator. Discrete federal product.,agent_a
+USCIS Customer Profile Management System Facial Recognition,U.S. Citizenship and Immigration Services,biometrics,0,,64793,,medium,USCIS-built; Pluribus is integrator. Federal product. IDENT is downstream.,agent_a
+Person-Centric Identity Services Deduplication Model,U.S. Citizenship and Immigration Services,nlp,0,,64794,,medium,USCIS-built; MetroIBR is integrator.,agent_a
+Advanced Trade Analytics Platform,U.S. Customs and Border Protection,data_analytics,0,,64796,,medium,CBP-built; Elder Research/DevTech/Guidehouse are integrators.,agent_a
+PDRI Remote Proctor,PDRI (Pearson),computer_vision,0,,64802,,low,PDRI is a Pearson subsidiary providing assessment services. Specific remote-proctor product.,agent_a
+ATS Passport Anomaly Model,U.S. Customs and Border Protection,nlp,0,,64808,,medium,Custom CBP/ATS-built; ManTech integrator. Federal product.,agent_a
+ATS Trade Entity Risk Model,U.S. Customs and Border Protection,data_analytics,0,,64810,,medium,Custom CBP/ATS-built; ManTech integrator.,agent_a
+RAVEn Investigative Prioritization Aggregator,U.S. Homeland Security Investigations,data_analytics,0,,64811,,medium,HSI's RAVEn platform; Sandia builds models for HSI. Federal-owned.,agent_a
+RAVEn Translation and Transcription Service,U.S. Homeland Security Investigations,translation,0,,64812,,medium,HSI/RAVEn capability; Booz Allen integrator.,agent_a
+CANDA UEBA,CANDA Solutions,security_tool,0,,64819,,medium,CANDA Solutions provides the COTS UEBA tool deployed for DHS VIEW.,agent_a
+Biometrics Enrollment Tool,U.S. Citizenship and Immigration Services,biometrics,0,,64820,,medium,USCIS-built BET; Pluribus integrator. Distinct from IDENT/IDEMIA.,agent_a
+ELIS Name and DOB Harvesting Service,U.S. Citizenship and Immigration Services,nlp,0,ELIS,64821,,medium,USCIS ELIS-resident service; SAIC/DV United integrators.,agent_a
+ELIS Card Photo Validation Service,U.S. Citizenship and Immigration Services,computer_vision,0,,64822,,medium,USCIS ELIS service.,agent_a
+ClassifAI,DHS / Starlo,document_ai,1,,64828,,medium,Specific named generative-AI HR tool (ClassifAI) built by Starlo+Deloitte for DHS.,agent_a
+CISAChat,DHS CISA,general_llm,1,,64837,,medium,CISA-built RAG chatbot; Microsoft is cloud vendor. Distinct named federal product.,agent_a
+Nightwing PII Detection,Nightwing Intelligence Solutions,nlp,0,,64838,,low,Nightwing contractor-built NLP tool for CISA TAXII server.,agent_a
+RAVEn Normalization Services,U.S. Homeland Security Investigations,data_analytics,0,,64851,,medium,HSI/RAVEn capability; Booz Allen integrator.,agent_a
+ELIS Evidence Classifier Service,U.S. Citizenship and Immigration Services,document_ai,0,,64863,,medium,USCIS ELIS service.,agent_a
+RAIO AI Interview Simulator,"USCIS Refugee, Asylum, and International Operations",training,1,,64866,,medium,USCIS RAIO-built training simulator; Steampunk/CVP/AOI integrators.,agent_a
+APT Analytics,DOE,scientific_ml,0,,65147,,low,"DOE R&D custom; vendor 'Microsoft' is cloud host, not AI vendor.",agent_a
+DOE Traffic Predictive Control,DOE,scientific_ml,0,,65148,,low,DOE research project; vendor 'Microsoft' is cloud host.,agent_a
+SEA-CROGS,DOE,scientific_ml,0,,65150,,medium,DOE research project name.,agent_a
+DOE ML for Disadvantaged Community Identification,DOE,nlp,0,,65154,,low,DOE research project; Microsoft is cloud host.,agent_a
+DOE EV Delivery Parking Identification,DOE / Cisco,scientific_ml,0,,65155,,low,DOE research with Cisco as research partner.,agent_a
+NLCOO Lessons Learned AI,DOE NETL,search,0,,65165,,low,DOE-built; no vendor; AWS hosting.,agent_a
+MAPPRITE,DOE Special Technologies Laboratory,general_llm,1,,65178,,medium,Named DOE STL-built generative AI policy mining tool.,agent_a
+INL Intelligent Automation,DOE Idaho National Lab,general_llm,1,,65190,,low,INL custom genAI automation on Azure.,agent_a
+LANL AI Portal,DOE Los Alamos National Lab,general_llm,1,,65210,,high,LANL-built LLM portal; AWS hosting.,agent_a
+Merlin,DOE Kansas City National Security Campus,general_llm,1,,65239,,high,Named KCNSC-built RAG genAI on open-source stack.,agent_a
+DOE Soil Moisture Modeling,University of Montana,scientific_ml,0,,65253,,low,"Research partnership; not commercial product, but discrete named research tool.",agent_a
+SRNS Computer Vision Defect Detection,Savannah River Nuclear Solutions,computer_vision,0,,65263,,low,In-house SRNS computer-vision QC. Federal site contractor build.,agent_a
+SRNS AI Tailored Learning,Savannah River Nuclear Solutions,training,1,,65316,,medium,SRNS in-house genAI training tool.,agent_a
+SRNS AI Drafting Assistant,Savannah River Nuclear Solutions,general_llm,1,,65332,,medium,SRNS in-house genAI drafting tool.,agent_a
+LISA Chatbot,DOE / AWS,general_llm,1,,65379,,medium,Specific named DOE chatbot pilot on AWS.,agent_a
+COREII,DOE Idaho National Lab,general_llm,1,,65397,,medium,Named INL OT-cyber genAI. Vendor field is a date string (likely a CSV corruption); use case+system suffice.,agent_a
+INL Classified Subject Area GenAI,DOE Idaho National Lab,general_llm,1,,65398,,low,INL in-house genAI classifier.,agent_a
+SRNS AI Form and Questionnaire Assistant,Savannah River Nuclear Solutions,general_llm,1,,65412,,medium,SRNS in-house genAI.,agent_a
+SRNS Operational Efficiency ML,Savannah River Nuclear Solutions,data_analytics,0,,65430,,medium,SRNS in-house ML.,agent_a
+BSEE Corrosion Classifier,Bureau of Safety and Environmental Enforcement,computer_vision,0,,65467,,medium,BSEE-built; NASA technical partner. Federal product.,agent_a
+Google Earth Engine Wetlands Classifier,Google,scientific_ml,0,,65534,,low,DOI USGS use of Google ML; specific tool likely Google Earth Engine. Low confidence on canonical.,agent_a
+USGS Flow Photo Explorer,USGS / Walker Environmental Research,scientific_ml,0,,65604,,high,"USGS named tool, built by Walker Environmental Research.",agent_a
+Federal Docket Management System,GSA,document_ai,0,,65718,,medium,GSA-run FDMS / Regulations.gov text-analytics features. Federal product.,agent_a
+FINDER (ATF),DOJ ATF,data_analytics,0,,65719,,low,ATF named system; vendor field repeats system name (custom build).,agent_a
+SWBTRAC,DOJ,data_analytics,0,,65728,,medium,DOJ-run SWBTRAC; Western Union is data provider. Federal product.,agent_a
+DEA GenAI R&D Sandbox,DEA / NVIDIA,general_llm,1,,65775,,medium,DEA NVIDIA-powered sandbox; custom federal build.,agent_a
+ASCVD Risk Estimator,American College of Cardiology,clinical_decision_support,0,,65813,,high,Public ACC clinical risk calculator used by FBOP.,agent_a
+FBOP Automated Staffing Tool,DOJ FBOP,data_analytics,0,,65815,,low,FBOP-built; Microsoft is cloud/AI host. Custom federal tool.,agent_a
+FBOP Pathfinder,DOJ FBOP,training,0,,65826,,low,FBOP-built on Azure.,agent_a
+Truview,Advanced Technologies Group,data_analytics,0,,65835,,medium,Vendor ATG provides Truview correctional analytics platform.,agent_a
+Axon,Axon Enterprise,media_analysis,1,,65858,,high,"Axon Body camera + Axon AI/Justice platform. Vendor-named, COTS.",agent_a
+JAWS Screen Reader,Freedom Scientific,productivity,1,,65872,,high,JAWS is a real COTS accessibility product (now with AI image description).,agent_a
+DOJ Receipt Extraction Tool,DOJ / Microsoft,document_ai,0,,65940,,low,DOJ-built on Microsoft (likely Azure Document Intelligence). Custom.,agent_a
+TransUnion TLOxp,TransUnion,data_analytics,0,,65965,,medium,TransUnion's investigative search product (TLOxp) used for background checks.,agent_a
+MIT Lincoln Lab Speech Translation,MIT Lincoln Laboratory,translation,0,,65970,,medium,MIT LL research-grade NMT/ASR system used by DOJ.,agent_a
+Bates White Economic Consulting AI,Bates White,data_analytics,1,,65973,,low,Bates White-built economic-analysis AI on Azure for DOJ ATR.,agent_a
+Adobe Premiere Pro,Adobe,media_analysis,1,Adobe Creative Cloud Suite,65992,,high,Adobe Premiere Pro is a named child product under Adobe Creative Cloud Suite. Add as new product with parent.,agent_a
+BLS Expenditure Classification Autocoder,Bureau of Labor Statistics,data_analytics,0,,66023,,medium,"BLS-built; vendor field is a contract PIID, not a vendor name. Custom federal.",agent_a
+Worker PLUS,Department of Labor,data_analytics,0,,66028,,medium,DOL-built open-source policy simulator; vendor field is contract PIID.,agent_a
+DOL Auntee Bot,Department of Labor,productivity,1,,66032,,low,DOL-built genAI meeting notes bot on Azure.,agent_a
+MSHA AI Headset,ResolveSoft,computer_vision,0,,66042,,medium,ResolveSoft-provided AI headset for MSHA mine inspectors.,agent_a
+FSA Aidan Chatbot,U.S. Department of Education / Accenture,general_llm,0,,66116,,high,"FSA's Aidan; Accenture integrator. Federal product, very high traffic.",agent_a
+EPA Agency Records Management System,EPA,document_ai,0,,66172,,medium,EPA-built ARMS; Savan Group integrator.,agent_a
+EPA RCRA PA,EPA,data_analytics,0,,66177,,medium,EPA-built risk model; University of Chicago Energy & Environment Lab research partner.,agent_a
+Equifax Background Screening,Equifax,data_analytics,0,,66219,,medium,Equifax+TransUnion credit/background screening. Add Equifax primary; TransUnion already proposed elsewhere.,agent_a
+FERC Zvolvant Comment Analysis,Zvolvant,nlp,0,,66231,,medium,Zvolvant SBA-vendor genAI comment analyzer for FERC.,agent_a
+FERC Zvolvant Inspection AI,Zvolvant,computer_vision,0,,66232,,medium,Zvolvant FERC inspection AI.,agent_a
+FERC Zvolvant Market Surveillance,Zvolvant,data_analytics,0,,66233,,medium,Zvolvant FERC market surveillance AI.,agent_a
+FERC Zvolvant Interconnection Assistant,Zvolvant,nlp,1,,66234,,medium,Zvolvant FERC interconnection backlog AI.,agent_a
+FERC Zvolvant Permitting Assistant,Zvolvant,nlp,1,,66235,,medium,Zvolvant FERC permitting genAI.,agent_a
+Microsoft SQL Server Intelligent Query Processing,Microsoft,data_analytics,0,Microsoft Azure Platform,66248,,medium,Microsoft SQL Server IQP/Anomaly features. Distinct from Azure Platform.,agent_a
+Benefits Manager Virtual Assistant,Benefits Manager,general_llm,1,,66288,,low,Vendor and system both 'Benefits Manager'. Likely the benefits-admin SaaS Benefits Manager.,agent_a
+FRTIB AVA,FRTIB / Accenture Federal Services,general_llm,1,,66291,,medium,FRTIB participant assistant on Accenture Converge platform.,agent_a
+FRTIB Fraud Detection,FRTIB / Accenture Federal Services,data_analytics,0,,66292,,medium,FRTIB fraud detection on Accenture Converge.,agent_a
+FRTIB Contact Center AI,FRTIB / Accenture Federal Services,general_llm,1,,66293,,medium,FRTIB contact center AI on Accenture Converge.,agent_a
+FTC Sentinel PSC Classification,FTC / Leidos,data_analytics,0,FTC Sentinel Network Services,66297,,medium,FTC Sentinel platform module; Leidos prime integrator.,agent_a
+FTC Sentinel Chatbot,FTC / Leidos,general_llm,0,FTC Sentinel Network Services,66299,,medium,FTC Sentinel platform module; Leidos prime integrator.,agent_a
+FTC Sentinel Graph Analytics,FTC / Leidos,data_analytics,0,FTC Sentinel Network Services,66301,,medium,FTC Sentinel platform module; Leidos prime integrator.,agent_a
+FTC Sentinel Analytic Sandbox,FTC / Leidos,data_analytics,0,FTC Sentinel Network Services,66302,,medium,FTC Sentinel platform module; Leidos prime integrator.,agent_a
+FTC Sentinel Developer Productivity,FTC / Leidos,coding_assistant,1,FTC Sentinel Network Services,66303,,medium,FTC Sentinel platform module; Leidos prime integrator.,agent_a
+FTC GenAI Mail Scan,FTC / Amazon,document_ai,1,,66310,,medium,FTC handwritten-mail processor on AWS (likely Textract+Bedrock).,agent_a
+ORR Unaccompanied Children Policy Research Tool,HHS Office of Refugee Resettlement,general_llm,1,,66377,,medium,ACF/ORR-built; MIT Lincoln Labs research partner.,agent_a
+L&M Policy Research Comment Triaging,"L&M Policy Research, LLC",nlp,0,,66515,,low,Vendor L&M Policy Research-built triage tool.,agent_a
+CMS Medicare AI Customer Insights,CMS / commonFont,data_analytics,1,,66558,,low,CMS-commonFont AWS-hosted customer insights tool.,agent_a
+CMS AI Agent Orchestrator,CMS / Noblis,agent_platform,1,Skyward CEDAR/CLAW,66565,,medium,CMS PoC with Noblis. Named tool.,agent_a
+CMS Integrated Data Repository Customer Analytic Environment,CMS / GDIT,ml_platform,0,,66583,,medium,CMS IDR/CAE ML platform.,agent_a
+CMS IDR Support Bot,CMS / GDIT,general_llm,1,CMS Integrated Data Repository Customer Analytic Environment,66584,,medium,CMS IDR support chatbot.,agent_a
+CMS ELMO Chatbot,CMS / Peraton,general_llm,1,,66585,,medium,Peraton-built CMS chatbot.,agent_a
+FDA 356H ML Facility Supply Chain Role Classification,FDA / Deloitte,document_ai,0,FDA CDEROne Analytics,66591,,medium,FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.,agent_a
+FDA Annual Report CMC Extraction,FDA / Deloitte,document_ai,1,FDA CDEROne Analytics,66597,,medium,FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.,agent_a
+FDA Application-DMF Reference Extraction,FDA / Deloitte,document_ai,0,FDA CDEROne Analytics,66598,,medium,FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.,agent_a
+FDA DMF Facilities Extraction,FDA / Deloitte,document_ai,0,FDA CDEROne Analytics,66599,,medium,FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.,agent_a
+FDA Module 3 Facilities Extraction,FDA / Deloitte,document_ai,1,FDA CDEROne Analytics,66602,,medium,FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.,agent_a
+FDA Packaging Materials and Suppliers Extraction,FDA / Deloitte,document_ai,1,FDA CDEROne Analytics,66603,,medium,FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.,agent_a
+FDA Real World Data/Evidence Identification,FDA / Deloitte,document_ai,1,FDA CDEROne Analytics,66605,,medium,FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.,agent_a
+FDA Regulatory Starting Materials Extraction,FDA / Deloitte,document_ai,1,FDA CDEROne Analytics,66606,,medium,FDA CDEROne extraction pipeline; Deloitte integrator. Distinct named module.,agent_a
+FDA HIVE AI Pilot,FDA / SAIC,general_llm,1,,66609,,medium,FDA HIVE genAI for IND review.,agent_a
+FDA CDER Pubs,FDA,nlp,0,,66611,,medium,FDA-built; NCTR research arm.,agent_a
+FDA Safety Reports Categorization Bot,FDA / Deloitte,document_ai,0,,66616,,medium,FDA safety reports automation.,agent_a
+FDA IND Safety Reports OCR,FDA / ThinkTrends,document_ai,0,,66617,,medium,FDA FAERS OCR pipeline.,agent_a
+FDA Smart Solution for Docket Management,FDA / Deloitte,nlp,1,,66644,,medium,FDA docket comment-management genAI.,agent_a
+HRSA AI Audit Resolution Assistant,HRSA / Mindpetal,agent_platform,1,,66658,,medium,HRSA-built; Mindpetal integrator; UiPath underlying.,agent_a
+HRSA Knowledge Navigator,HRSA / Publicis Sapient,general_llm,1,,66659,,medium,HRSA-built genAI for loan repayment programs.,agent_a
+HRSA PRF Program Chatbot,HRSA / GDIT,general_llm,1,,66662,,medium,HRSA-built genAI; GDIT integrator.,agent_a
+NIAID DAIT AIDS Research Prioritization,NIAID / Deloitte,data_analytics,0,,66687,,medium,NIAID-built; Deloitte integrator.,agent_a
+HHS FITARA Tool,HHS / Deloitte,document_ai,0,,66691,,medium,HHS contracting tool.,agent_a
+NIH eRA Internal Referral Module,NIH / Leidos,nlp,0,,66694,,medium,NIH-built; Leidos+Highrise integrators.,agent_a
+NCI MOSSAIC SEER NLP,NCI / Oak Ridge National Lab,nlp,0,,66702,,high,"NCI-DOE collaboration; ORNL builds the NLP pipeline; APIs (OncoID, OncoIE, OncoMetsID).",agent_a
+NIAMS GenAI Chatbot,NIH NIAMS,general_llm,1,,66704,,medium,NIAMS-built Azure OpenAI chatbot.,agent_a
+NIH SRDMS NLP COI Module,NIH / Deloitte,nlp,0,,66716,,medium,NIH-built; Deloitte integrator.,agent_a
+NIH Grants Virtual Assistant,NIH / Google,general_llm,0,,66727,,medium,NIH-built; Google as platform.,agent_a
+NIAID TB Portals (TB DEPOT),NIAID,data_analytics,0,,66749,,medium,NIAID research portal; multi-vendor integrators.,agent_a
+NIAID TB Portals Outlier Detection,NIAID,computer_vision,0,NIAID TB Portals (TB DEPOT),66750,,medium,NIAID TB Portals image-quality module.,agent_a
+MirBot,NIH / Technatomy Axle,nlp,0,,66757,,medium,Technatomy/Axle-built NIH grant-review NLP tool.,agent_a
+NIAID OSPIDA Scientific Coding Assistance Tool,NIAID / Deloitte,nlp,0,,66773,,medium,NIAID grant-coding NLP tool.,agent_a
+NIH Prevention Research NLP,NIH / Westat,nlp,1,,66793,,low,NIH-built; Westat partner; Azure platform.,agent_a
+NIH Travel Policy AI Chatbot,NIH / Infer Solutions,general_llm,1,,66798,,medium,NIH-built; Infer Solutions integrator.,agent_a
+HealthData.gov AI Harvest Service,HHS / Tyler Technologies,data_analytics,1,,66802,,medium,Tyler-built metadata-normalization service for HealthData.gov.,agent_a
+Grants.gov Similar Opportunities,HHS / MicroHealth,data_analytics,0,Grants.gov AI Tools,66804,,medium,MicroHealth-built Grants.gov recommender.,agent_a
+Grants.gov Applicant Help Chatbot,HHS / Business Performance Systems,general_llm,0,Grants.gov AI Tools,66805,,medium,Grants.gov public help chatbot.,agent_a
+GrantSolutions Text Analyzer Tool,GrantSolutions (HHS Shared Service),nlp,0,GrantSolutions,66806,,high,GrantSolutions federal shared-service modules.,agent_a
+GrantSolutions AI Writing Assistant,GrantSolutions (HHS Shared Service),general_llm,1,GrantSolutions,66807,,high,GrantSolutions federal shared-service modules.,agent_a
+GrantSolutions Recipient Risk Tool,GrantSolutions (HHS Shared Service),data_analytics,0,GrantSolutions,66808,,high,GrantSolutions federal shared-service modules.,agent_a
+GrantSolutions Non-Competing Continuation Approval Tool,GrantSolutions (HHS Shared Service),data_analytics,0,GrantSolutions,66809,,high,GrantSolutions federal shared-service modules.,agent_a
+GrantSolutions Helpdesk Agent,GrantSolutions (HHS Shared Service),general_llm,1,GrantSolutions,66810,,high,GrantSolutions federal shared-service modules.,agent_a
+GrantSolutions Non-Competing Continuation Review Tool,GrantSolutions (HHS Shared Service),general_llm,1,GrantSolutions,66811,,high,GrantSolutions federal shared-service modules.,agent_a
+Ginnie Mae Counterparty Risk Anomaly Detection,Ginnie Mae / Deloitte,data_analytics,0,,66818,,medium,Ginnie Mae custom; Deloitte integrator.,agent_a
+Ginnie Mae Subledger Data Quality ML,Ginnie Mae / Ernst & Young,data_analytics,0,,66819,,medium,Ginnie Mae financial accounting anomaly detection.,agent_a
+Ginnie Mae Automated Draft Narrative Reports,Ginnie Mae / Deloitte,nlp,0,,66820,,medium,Ginnie Mae NLG report drafter.,agent_a
+NARA A1 Museum AI,NARA / Cortina,computer_vision,1,,66830,,medium,Cortina-built museum AI for NARA A1.,agent_a
+FAA NextGen LOA/SOP Analytics,FAA,nlp,0,,66857,,low,FAA NextGen custom analytics.,agent_a
+NASA CAAP Cost Analytics,NASA / Raytheon,data_analytics,0,,67237,,low,NASA Earthdata Cloud cost prediction.,agent_a
+AFRL Voice Recorder Transcription,Air Force Research Laboratory,transcription,0,,67302,,low,AFRL-developed transcription for NTSB.,agent_a
+SBA GovCon Match,SBA,data_analytics,0,,67325,,medium,SBA-built internal tool.,agent_a
+SEC FOIA Form Extraction,SEC / GDIT,document_ai,1,,67374,,low,SEC custom; GDIT integrator.,agent_a
+SSA Quick Disability Determinations Model,SSA / IBM,clinical_decision_support,0,,67413,,high,SSA-built; IBM integrator. Long-standing program (>20 yrs).,agent_a
+Espyr Therapy Chatbot,Espyr,clinical_decision_support,1,,67421,,medium,Espyr (Acentra Health subsidiary) employee mental-health chatbot.,agent_a
+State Department Declassification Review AI,State Department / Deloitte,document_ai,0,,67439,,medium,State-built; Deloitte integrator.,agent_a
+State Department AI Research Engine (AIRE),State Department / Deloitte,general_llm,1,,67457,,medium,State Department genAI research engine.,agent_a
+State FACTS Info Foreign Assistance NLP,State Department / Guidehouse,nlp,0,,67463,,medium,State-built; Guidehouse integrator.,agent_a
+FA.gov PII Picker,State Department / Guidehouse,nlp,0,,67465,,medium,State Department FA.gov PII tool.,agent_a
+State Integrated Country Strategy Turbo,State Department / Guidehouse,nlp,0,,67466,,medium,State Department ICS analytics.,agent_a
+FA.gov RedactAid,State Department / Guidehouse,document_ai,0,,67467,,medium,State Department FA.gov redaction tool.,agent_a
+State Department Walter Support Bot,State Department / Microsoft,general_llm,1,,67481,,medium,State-built genAI on M365; named tool.,agent_a
+State Department WHA/EX Information Management,State Department / Microsoft,general_llm,1,,67487,,low,State-built knowledge management on M365.,agent_a
+Azure AI Translator,Microsoft,translation,1,Microsoft Azure Platform,67490,,high,Azure Translator service.,agent_a
+State NIV Adjudication Review Recommendation Engine,State Department / Guidehouse,data_analytics,0,,67492,,medium,State Department consular AI.,agent_a
+State LCALA Consular Language Augmentation,State Department / Microsoft,translation,1,,67496,,medium,State Department consular interpretation AI on Microsoft stack.,agent_a
+USDA FSA FLP Chatbot,USDA / AWS,general_llm,1,,67720,,medium,USDA Farm Service Agency Loan Program chatbot on AWS.,agent_a
+USDA Equine Operations Dataset,USDA / Colorado State University,scientific_ml,0,,67733,,low,USDA-CSU partnership; specific named dataset/model.,agent_a
+USDA NASSportal Intranet Agent,USDA NASS / Microsoft,agent_platform,1,,67736,,medium,NASS-built agent on Microsoft 365.,agent_a
+Chiral Wildlife Deterrent System,Chiral Software,computer_vision,0,,67752,,medium,Chiral-built wildlife computer vision.,agent_a
+USDA Oregon State Forest Mapping,USDA Forest Service / Oregon State University,scientific_ml,0,,67755,,low,USDA-OSU research collaboration.,agent_a
+USDA ARS GovChat,USDA ARS / Microsoft,general_llm,1,,67772,,medium,USDA ARS-built genAI assistant on AzureGov.,agent_a
+USDA NRCS NETS Automated Waterway Design,USDA NRCS / Spatial Front,scientific_ml,1,,67783,,medium,NRCS-built engineering design AI.,agent_a
+Wildfire.org Turbo Plan,Wildfire.org,general_llm,1,,67804,,medium,Wildfire.org Turbo Plan NEPA accelerator (Element84/AI4ER).,agent_a
+USDA Forest Plan Review AI,USDA Forest Service / Google,general_llm,1,,67805,,low,USFS-built Google-platform genAI.,agent_a
+USDA TreeSearch AI,USDA Forest Service / Google,search,1,,67806,,low,USFS-built TreeSearch search AI.,agent_a
+USDA Forest Service Infosec Chatbot,USDA Forest Service / Google,general_llm,1,,67807,,low,USFS-built genAI on Google cloud.,agent_a
+USDA Bugnet,USDA Forest Service / Oregon State University,computer_vision,0,,67808,,medium,USFS-OSU forest pest mapper.,agent_a
+USDA Recreation Site Chatbot,USDA Forest Service / University of Washington,general_llm,0,,67809,,low,USFS-UW research collaboration.,agent_a
+USDA Forest Health ML Survey,USDA Forest Service / Kikaha Solutions,scientific_ml,0,,67813,,medium,USFS-built; Kikaha integrator.,agent_a
+USDA Marbled Murrelet Habitat Mapping,USDA Forest Service / American Museum of Natural History,scientific_ml,0,,67822,,low,USFS-AMNH research partnership.,agent_a
+Washington Forest Inventory Maps,USDA Forest Service / University of Washington,scientific_ml,0,,67823,,low,USFS-UW research collaboration.,agent_a
+USDA Recreation One Stop AI,USDA Forest Service / Booz Allen,general_llm,1,,67830,,medium,Recreation.gov AI features.,agent_a
+USDA VegScape/CropCASMA,USDA NASS / George Mason University,scientific_ml,0,,67837,,medium,NASS-GMU partnership; specific named tool.,agent_a
+USDA AgCloud Helpdesk Chatbot,USDA / Steampunk,general_llm,1,,67842,,medium,USDA-built genAI helpdesk chatbot on AgCloud.,agent_a
+Google Colab,Google,developer_tool,0,,64929,,high,Title names Google Colab (hosted notebook IDE) as a tool. Not currently in catalog.,agent_b
+Adobe Sensei,Adobe,general_llm,1,Adobe Creative Cloud Suite,65066,,high,Adobe Sensei is Adobe's real AI/ML brand embedded across its Creative Cloud products.,agent_b
+OpenText Records Management,OpenText,document_ai,0,,65256,,medium,OpenText offers a Records Management module distinct from Axcelerate; title-stamped use case.,agent_b
+Bloomberg Law AI,Bloomberg,legal_research,1,,65963,,high,DOJ use case names Bloomberg for AI legal research; this is Bloomberg Law AI (not Bloomberg Government).,agent_b
+Amazon SageMaker,Amazon,ml_platform,0,,66348,,high,Amazon SageMaker is the canonical AWS ML platform; named explicitly here. Not currently in catalog.,agent_b
+Google Coral TPU,Google,developer_tool,0,,66864,,high,Google Coral is a real AI accelerator hardware product line by Google. Title-stamped use case.,agent_b
+Google Earth Engine,Google,data_analytics,0,,67785,,high,Google Earth Engine is the canonical Google geospatial analytics platform; named in system_name.,agent_b
+Elsevier ClinicalKey AI,Elsevier,clinical_decision_support,1,,68152,,high,Elsevier ClinicalKey is a real clinical knowledge product with AI features; not currently in catalog.,agent_b
+Litera Compare,Litera,document_ai,0,,,9839,high,Litera Compare is a real Litera document-comparison product distinct from Litera TOA Builder.,agent_b
+Konica Minolta Dispatcher Paragon,Konica Minolta,productivity,0,,,9852,medium,Dispatcher Paragon is a real Konica Minolta print/output management product.,agent_b
+TVEyes Media Monitoring,TVEyes,media_analysis,0,,,9853,high,"TVEyes is a real broadcast-media monitoring product. ""TV eyes"" is the misspelling.",agent_b
+Doble Test Assistant,Doble Engineering,document_ai,1,,,9857,high,Doble Test Assistant is Doble Engineering's AI assistant for electric power testing.,agent_b
+DRUID AI,DRUID AI,agent_platform,1,,,9884,high,DRUID AI is a real conversational AI agent platform vendor.,agent_b
+Supportbench,Supportbench,itsm,1,,9984,9884,high,Supportbench is a real customer-service ITSM with AI features.,agent_b
+ManageEngine ServiceDesk Plus,ManageEngine,itsm,1,,9984,9884,high,ServiceDesk Plus is ManageEngine's real ITSM product (Zia AI).,agent_b
+Apple News,Apple,consumer_feature,0,,,9885,high,Apple News is Apple's curated news app with AI personalization.,agent_b
+MediaViz AI,MediaViz,media_analysis,1,,9985,9885,medium,MediaViz AI is a real media-monitoring AI product.,agent_b
+Google News Brief,Google,consumer_feature,1,,"9985,10225,10365",9885,medium,Google News Brief is Google's AI-summarized news feature.,agent_b
+Azure Synapse Analytics,Microsoft,data_analytics,0,Microsoft Azure Platform,,9898,high,Azure Synapse is a real Microsoft analytics service.,agent_b
+Google Calendar,Google,productivity,0,Google Workspace,,9991,high,Google Calendar (with AI meeting transcription/summary features) referenced for DOT.,agent_b
+Genesys Cloud CX,Genesys,itsm,1,,,10044,high,Genesys Cloud CX is a real contact-center platform with AI features.,agent_b
+VA GPT,VA,general_llm,1,,,10061,high,VA GPT is VA's internal LLM platform; named explicitly.,agent_b
+Microsoft Viva,Microsoft,productivity,1,,10430,10070,high,Microsoft Viva (Insights) is a real Microsoft employee-experience product with AI features.,agent_b
+CWTSatoTravel,CWTSatoTravel,productivity,0,,,10167,medium,CWTSatoTravel is the named government travel-management platform.,agent_b
+Vyond,Vyond,media_analysis,1,,,10213,high,Vyond is an AI-powered video creation platform.,agent_b
+Mural,Mural,productivity,1,,,10318,high,Mural is a real visual-collaboration platform with AI features.,agent_b
+OpenAI Codex,OpenAI,coding_assistant,1,,,10480,high,"In code-generation bucket, ""Codex"" = OpenAI Codex.",agent_b
+Zendesk AI,Zendesk,itsm,1,,,10484,high,Zendesk AI features power helpdesk ticket prioritization.,agent_b
+HackerOne AI,HackerOne,security_tool,1,,,10523,high,HackerOne has in-platform AI features for vulnerability disclosure.,agent_b
+NetApp ARP/AI,NetApp,security_tool,0,,,10523,high,NetApp ARP/AI is NetApp's Autonomous Ransomware Protection with AI.,agent_b
+Ex Libris Alma/Primo,Ex Libris (Clarivate),search,1,,65085,,low,Use case name is literally 'Alma/Primo' — the Ex Libris library services platform (Alma) and discovery layer (Primo) which have added AI features. No narrative; review needed.,agent_c
+Lectora AI,ELB Learning,training,1,,66484,,medium,"Lectora is the well-known eLearning authoring tool from ELB Learning; their 'Lectora AI Toolkit' adds GenAI features. Title-stamped, no narrative.",agent_c
+LibreChat,LibreChat (Open Source),general_llm,1,,67246,,high,NASA IV&V AI Assistant explicitly powered by LibreChat (open-source ChatGPT-clone UI) with RAG. Real deployed product; not in catalog.,agent_c
+Cognitec FaceVACS,Cognitec Systems,biometrics,0,,67442,,high,FaceVACS is Cognitec's well-known face-recognition product; State Dept Consular Affairs uses it for passport photo quality checks. Real COTS product not in catalog.,agent_c
+NaturalReader,NaturalReader,nlp_specific,1,,67519,,high,NaturalReader is a commercial text-to-speech product (use_case_name 'Natural Reader'). Real COTS not in catalog.,agent_c
+Planmeca Romexis,Planmeca,clinical_decision_support,0,,67913,,high,"Planmeca Romexis is well-known dental imaging software with AI features (segmentation, implant planning). Real COTS not in catalog.",agent_c
+RedSeal,RedSeal,security_tool,0,,67932,,high,RedSeal is a known cyber-risk attack-surface analytics product. Real COTS not in catalog.,agent_c
+Cortechs NeuroQuant,Cortechs.ai,clinical_decision_support,0,,68053,,high,Cortechs.ai NeuroQuant — FDA-cleared MRI brain segmentation/quantification. Real COTS not in catalog. dev_type='Purchased from a vendor'.,agent_c
+Siemens MAGNETOM,Siemens Healthineers,clinical_decision_support,0,,68054,,high,Siemens Healthineers MAGNETOM family — MRI scanners with embedded AI denoising/reconstruction. Real COTS not in catalog. dev_type='Purchased from a vendor'.,agent_c
+Hologic 3D Quorum,Hologic,clinical_decision_support,0,,68055,,high,Hologic 3DQuorum is FDA-cleared AI for digital breast tomosynthesis (Genius AI). Real COTS not in catalog. dev_type='Purchased from a vendor'.,agent_c
+Verathon BladderScan Prime PLUS,Verathon,clinical_decision_support,0,,68114,,high,Verathon BladderScan — handheld ultrasound bladder-volume device with neural-net measurement. Real COTS not in catalog. dev_type='Purchased from a vendor'.,agent_c
+Canon Aquilion ONE AiCE,Canon Medical Systems,clinical_decision_support,0,,68171,,high,"Canon Medical Aquilion ONE CT scanner with AiCE (Advanced intelligent Clear-IQ Engine) deep-learning reconstruction. Real COTS, title-stamped only.",agent_c
+FDA CDEROne Analytics,FDA Center for Drug Evaluation and Research,data_analytics,0,,,,high,Umbrella parent for FDA CDEROne sub-modules; added by fixup to satisfy parent references from agent_a.,fixup_validity
+GrantSolutions,Department of Health and Human Services,custom,0,,,,high,Umbrella parent for federal-shared-service grants modules.,fixup_validity
+FTC Sentinel Network Services,Federal Trade Commission,investigative_data,0,,,,high,Umbrella parent for FTC Sentinel Network sub-modules (consumer fraud reporting).,fixup_validity
+Grants.gov AI Tools,Grants.gov,search,0,,,,medium,Umbrella parent for Grants.gov AI sub-tools.,fixup_validity
+ELIS,U.S. Citizenship and Immigration Services,custom,0,,,,high,Umbrella parent for USCIS Electronic Immigration System modules.,fixup_validity
+Amazon Comprehend,Amazon,nlp,0,,66024,,high,AWS Comprehend NLP service used for PII scrubbing; added in fixup so the agent's link row resolves.,fixup_validity
+NanCI,National Institutes of Health,search,0,,66700,,high,NIH NanCI ('Connecting Scientists') discovery tool; federal-built product.,fixup_validity
+VegSpec,U.S. Department of Agriculture,custom,0,,67782,,high,USDA Vegetation Specifications Suite; federal-built.,fixup_validity

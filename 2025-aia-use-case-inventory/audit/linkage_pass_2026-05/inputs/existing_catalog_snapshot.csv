@@ -1,0 +1,317 @@
+product_id,canonical_name,vendor,product_type,is_generative_ai,is_frontier_llm,parent_canonical_name,aliases,edge_count
+5203,ACCRETE ARGUS,ACCRETE AI Government,supply_chain,0,0,,ACCRETE ARGUS,0
+5207,Adobe Creative Cloud Suite,Adobe,productivity,1,0,,Adobe Creative Cloud Suite|Adobe Suite Applications,1
+5017,Adobe Firefly,Adobe,computer_vision,1,0,Adobe Creative Cloud Suite,Adobe Firefly|Firefly,7
+5018,Adobe Photoshop,Adobe,computer_vision,1,0,Adobe Creative Cloud Suite,Adobe Photoshop|Photoshop,5
+5119,Trunet Biometrics,Advanced Technologies Group,biometrics,0,0,,Trunet|Trunet Systems|Trunet Biometrics,1
+5047,ARC Travel Intelligence,Airlines Reporting Corporation,investigative_data,0,0,,Airlines Reporting Corporation Travel Intelligence Program|ARC Travel Intelligence Program|ARC TIP,1
+5210,Airship AI Platform,Airship AI Holdings Inc.,computer_vision,0,0,,Unmanned Aerial Systems (UAS)|Airship AI Platform,2
+5020,Airtable AI,Airtable,productivity,1,0,,Airtable AI|Airtable's AI|Airtable,2
+5212,Alation Data Catalog,Alation,data_catalog,0,0,,Alation Data Catalog,1
+5214,Altana Atlas,Altana,supply_chain,0,0,,Altana Atlas|Altana  Entity Resolution for Global Trade Data|Altana  Entity Resolution,2
+5036,Alteryx,Alteryx,ml_platform,1,0,,Alteryx,3
+5049,Amazon Alexa,Amazon,nlp,0,0,,Amazon Alexa|Alexa|Amazon Alexa Skill|Alexa Skill,1
+4998,Amazon CodeWhisperer,Amazon,coding_assistant,1,0,Amazon Q,CodeWhisperer|Amazon CodeWhisperer|AWS CodeWhisperer,1
+4997,Amazon Q,Amazon,general_llm,1,1,,AWS Q|Amazon Q|Q Developer|Q Business,12
+5000,AWS Bedrock,Amazon,general_llm,1,1,,Bedrock|AWS Bedrock|Amazon Bedrock,13
+5146,AWS Kendra,Amazon,search,0,0,,AWS Kendra,1
+5228,AWS Lex,Amazon,nlp,0,0,,AWS Lex|Lex Natural Language Interface,1
+5190,AWS Rekognition,Amazon,computer_vision,0,0,,AWS Rekognition,2
+5019,AWS Textract,Amazon,computer_vision,0,0,,AWS Textract|Amazon Textract|Textract,3
+4999,AWS Transcribe,Amazon,nlp_specific,0,0,,AWS Transcribe|Amazon Transcribe,2
+5050,Amazon Connect,Amazon Web Services,nlp,1,0,,Amazon Connect|AWS Connect,3
+5048,AWS Translate,Amazon Web Services,translation,1,0,,AWS Translate|Amazon Translate,1
+5217,Amped Software,Amped Software,forensics,0,0,,Amped|Amped Software,2
+5224,Autonomous Surveillance Tower,Anduril,physical_security,0,0,,Autonomous Surveillance Tower|Anduril Autonomous Surveillance Towers,1
+4991,Claude,Anthropic,general_llm,1,1,,Claude|Anthropic|Anthropic Claude|Claude.ai|Claude 3|Claude 3.5|Claude Sonnet|Claude Opus,36
+4992,Claude Code,Anthropic,coding_assistant,1,0,Claude,Claude Code,1
+5025,Cursor,Anysphere,coding_assistant,1,0,,Cursor|Cursor AI,0
+5180,Appian AI,Appian,agent_platform,0,0,,Appian AI,0
+5043,Apple Face ID,Apple,consumer_feature,0,0,,Apple iPhone|Apple Iphone|iPhone Face ID|Face ID,22
+5219,Apple Intelligence,Apple,general_llm,1,0,,Apple Intelligence,1
+5044,Apple Maps,Apple,consumer_feature,0,0,,Apple Maps,16
+5051,Aretec EDP,Aretec,data_analytics,0,0,,Aretec EDP|EDP|SEC EDP|Enterprise Data Platform (Aretec),2
+5052,Aretec SEARCH,Aretec,search,0,0,,Aretec SEARCH|SEARCH|SEC SEARCH,146
+5137,Aretec NEAT,Aretec Inc,data_analytics,0,0,,Aretec NEAT,0
+5221,Articulate 360 AI Assistant,Articulate,training,0,0,,Articulate 360 AI Assistant|Ariculate 360 AI Assistant,1
+5031,Asana,Asana,productivity,1,0,,Asana|Asana Intelligence,2
+5024,Ask Sage,Ask Sage Inc.,general_llm,0,0,,AskSage|Ask Sage|ask-sage,7
+5053,AttackIQ,AttackIQ,security_tool,0,0,,AttackIQ,1
+5194,AveriSource,AveriSource,code_modernization,0,0,,AveriSource,1
+5054,Aware Biometrics,Aware,biometrics,0,0,,Aware|Aware Biometrics|Aware Inc,13
+5055,Axon Evidence,Axon,forensics,1,0,,Axon Evidence|Axon Evidence.com|Evidence.com|Axon Video Retention Solution (VRS)|Axon VRS|Axon Evidence Redaction|Axon Evidence Digital Evidence Management,5
+5056,Axon FUSUS,Axon,physical_security,0,0,Axon Evidence,Axon FUSUS|FUSUS,1
+5237,Babel Street Babel,Babel Street,threat_intel,0,0,,Babel Street Babel Street Babel|Babel Street Babel,1
+5058,BD Pyxis MedStation,Becton Dickinson,clinical_decision_support,0,0,,BD Pyxis|BD Pyxis MedStation|Pyxis MedStation,1
+5152,BI SmartLINK,BI Incorporated,biometrics,0,0,,BI SmartLINK,0
+5035,BioRender,BioRender,productivity,1,0,,BioRender|Biorender,2
+5059,Bloomberg Government,Bloomberg,investigative_data,0,0,,Bloomberg Government|BGOV|Bloomberg Government (BGOV),2
+5159,BMC Helix ITSM,BMC,itsm,0,0,,BMC Helix ITSM,1
+5240,Boston Dynamics Spot,Boston Dynamics,physical_security,0,0,,Boston Dynamics Spot Robotics|Boston Dynamics|Boston Dynamics Spot,2
+5060,BriefCatch,BriefCatch,legal_research,1,0,,BriefCatch|Lawcatch BriefCatch,1
+5061,Broadcom Code for Z,Broadcom,code_modernization,1,0,,Broadcom Code for Z|Code for Z,1
+5062,Buzzsprout CoHost AI,Buzzsprout,media_analysis,1,0,,CoHost AI|Buzzsprout CoHost|Buzzsprout CoHost AI,1
+5241,C3 AI,C3.ai,ml_platform,0,0,,C3.AI|C3 AI,1
+5006,Calendly,Calendly,productivity,0,0,,Calendly,1
+5028,Canva,Canva,productivity,1,0,,Canva|Canva Magic Studio,2
+5243,CaseGuard,CaseGuard,forensics,0,0,,CaseGuard|Case Guard  AI-Assisted Audio/Video Redaction,1
+5124,EDAV (CDC),CDC,data_analytics,0,0,,"EDAV (CDC)|Enterprise Data Analytics and Visualization Platform|EDAV|Enterprise Data, Analytics, and Visualization Platform",32
+5244,Cellebrite Media Classifier,Cellebrite,forensics,0,0,,Cellebrite Media Classifier|Cellebrite  Media Classifier for Computer and Digital Storage Evidence,1
+5134,Chainalysis,Chainalysis,blockchain_analytics,0,0,,Chainalysis,3
+5065,Cisco Identity Services Engine,Cisco,security_tool,0,0,,Cisco Identity Services Engine|Cisco ISE|Cisco Identify Services engine|ISE,1
+5066,Cisco Secure Network Analytics,Cisco,security_tool,0,0,,Cisco Secure Network Analytics|Stealthwatch|Cisco Stealthwatch,1
+5169,Citrix,Citrix,virtualization,0,0,,Citrix,3
+5250,Clearview AI,Clearview AI,biometrics,0,0,,Clearview AI Traveler Verification System|Clearview AI,1
+5067,Cloudflare Turnstile,Cloudflare,security_tool,0,0,,Cloudflare Turnstile|Turnstile,1
+5196,Windsurf,Codeium,coding_assistant,0,0,,Windsurf,2
+5069,Cofense PhishMe,Cofense,security_tool,0,0,,Cofense|Cofense PhishMe|PhishMe,1
+5188,Pangolin Lineage,COG-UK,scientific_ml,0,0,,Pangolin Lineage,1
+5192,Cohesity,Cohesity,security_tool,0,0,,Cohesity,1
+5199,Democratizing Data,Coleridge Institute,data_analytics,0,0,,Democratizing Data,1
+5172,Commonlook Online,Commonlook,document_ai,0,0,,Commonlook Online,1
+5070,Conductor Conduit AI,Conductor,document_ai,1,0,,Conduit AI|Conductor Conduit AI,1
+5136,Credal,Credal,agent_platform,0,0,,Credal,10
+5254,CrewAI,CrewAI,agent_platform,0,0,,CrewAI,1
+5071,Critical Mention,Critical Mention,media_analysis,0,0,,Critical Mention,1
+5010,Crowdstrike Falcon,Crowdstrike,security_tool,0,0,,Crowdstrike|Crowdstrike Falcon|Falcon,15
+5014,Databricks,Databricks,ml_platform,1,0,,Databricks,14
+5138,Dataminr First Alert,Dataminr,social_listening,0,0,,Dataminr First Alert|First Alert/Dataminr,1
+5073,Descript,Descript,media_analysis,1,0,,Descript,1
+5181,Digital Science Dimensions,Digital Science,data_analytics,0,0,,Digital Science Dimensions,1
+5074,Dun & Bradstreet,Dun & Bradstreet,investigative_data,0,0,,Dun & Bradstreet|D&B|Dun & Bradstreet Business Establishments Data,1
+5195,Dynatrace,Dynatrace,security_tool,0,0,,Dynatrace,2
+5076,Elastic Stack,Elastic,search,0,0,,Elastic Stack|Elastic Stack Technology (ELK)|ELK|ELK Stack|Elasticsearch,2
+5384,Scopus AI,Elsevier,scientific_ml,0,0,,Scopus AI,1
+5176,Emerald Innovations,Emerald Innovations,scientific_ml,0,0,,Emerald Innovations,1
+5016,Esri ArcGIS AI,Esri,nlp_specific,0,0,,ArcGIS|ESRI GIS AI|Esri|Esri ArcGIS|Esri ArcGIS AI,13
+5269,Everlaw AI Assistant,"Everlaw, Inc.",ediscovery,0,0,,Everlaw AI Assistant|Everlaw AI Assistant for Responsive Review,1
+5141,Exiger DDIQ,Exiger,supply_chain,0,0,,Exiger DDIQ,0
+5198,Expert.ai Cogito,expert.ai,nlp,0,0,,Expert.ai Cogito,0
+5077,Elsa (FDA),"FDA (internal, vendor-supported)",general_llm,1,0,,Elsa|Elsa GenAI Chat Tool|FDA Elsa,5
+5080,FirstTwo,FirstTwo,investigative_data,0,0,,FirstTwo|First Two|FirstTwo / First Two,1
+5193,Flashpoint,Flashpoint,social_listening,0,0,,Flashpoint,3
+5081,Flock Safety,Flock Safety,computer_vision,0,0,,Flock Safety|Flock|Flock LPR,1
+5030,FS Pro,FS Pro,productivity,1,0,,FS Pro|FSPro,3
+5205,GAIA AI,GAIA AI,computer_vision,0,0,,GAIA AI,1
+5082,Genetec Security Center,Genetec,physical_security,0,0,,Genetec|Genetec Security Center,1
+5200,GlobalComm Video Surveillance,GlobalComm,computer_vision,0,0,,GlobalComm Video Surveillance,1
+4993,Gemini,Google,general_llm,1,1,,Gemini|Google Gemini|Bard|Gemini Pro|Gemini 1.5|Gemini 2|Gemini for Google Workspace|Gemini for Workspace|Gemini Code Assist|Gemini Advanced,52
+5281,Google Agentspace,Google,general_llm,1,0,Google Vertex AI,Google Agentspace|Google Agentspace / NotebookLM,2
+5282,Google Chrome Generative AI,Google,consumer_feature,1,0,,Google Chrome Generative AI,1
+5283,Google Cloud Platform,Google,general_llm,1,0,,Google Cloud Platform,9
+5284,Google Cloud Vision,Google,computer_vision,0,0,Google Cloud Platform,Google Cloud Vision,1
+4995,Google Lens,Google,computer_vision,1,0,,Google Lens,2
+5045,Google Maps,Google,consumer_feature,0,0,,Google Maps,14
+5046,Google Pixel,Google,consumer_feature,0,0,,Google Pixel,2
+5140,Google Translate,Google,translation,0,0,,Google Translate,2
+5287,Google Vertex AI,Google,general_llm,1,0,Google Cloud Platform,Google Vertex AI|Google Vertex AI Document workbench,1
+4996,Google Workspace,Google,productivity,0,0,,Google Workspace|GSuite,1
+4994,NotebookLM,Google,general_llm,1,0,,NotebookLM|Notebook LM|Google NotebookLM,6
+5122,reCAPTCHA,Google,security_tool,0,0,,reCAPTCHA|Google reCAPTCHA,1
+5144,AlphaFold,Google DeepMind,scientific_ml,0,0,,AlphaFold,2
+5004,Grammarly,Grammarly,productivity,0,0,,Grammarly|Grammarly Business,16
+5083,Griffeye Analyze,Griffeye,forensics,0,0,,Griffeye|Griffeye Analyze,1
+5133,USAi (GSA),GSA,general_llm,0,0,,USAi (GSA)|GSA USAi|USAi.gov|USAi,6
+5142,VAO Ally,GSA,agent_platform,0,0,,VAO Ally,3
+5292,Gurucul UEBA,Gurucul,security_tool,0,0,,Gurucul UEBA|Gurucul ESS User Entity and Behavior Analytics (UEBA),1
+5183,H2O GPTe,H2O.ai,general_llm,0,0,,H2O GPTe,0
+5084,Harvey,Harvey,legal_research,1,0,,Harvey|harvey.ai|Harvey AI,1
+5294,HeyGen,HeyGen,media_analysis,1,0,,HeyGen,3
+5085,Hootsuite,Hootsuite,social_listening,1,0,,Hootsuite,2
+5295,Hyperscience,Hyperscience,document_ai,0,0,,Hyperscience - IDP software|Hyperscience,4
+5151,IBM ARGOS,IBM,nlp,0,0,IBM Watson,IBM ARGOS,1
+5178,IBM CoreDF,IBM,document_ai,0,0,IBM Watson,IBM CoreDF,1
+5298,IBM Watson,IBM,ml_platform,0,0,,IBM Watson,1
+5086,IBM watsonx Code Assistant,IBM,coding_assistant,1,0,,IBM watsonx Code Assistant|IBM WatsonX Code Assistant|watsonx Code Assistant|watsonx Code Assistant for Z,1
+5127,iCatalyst RPA,iCatalyst Inc,rpa,0,0,,iCatalyst RPA,0
+5197,ID.me,ID.me,identity_verification,0,0,,ID.me,1
+5301,Ideation ReadyAI,Ideation,general_llm,1,0,,Ideation ReadyAI,1
+5150,IDEMIA CAT-2/AutoCAT,IDEMIA,biometrics,0,0,,IDEMIA CAT-2/AutoCAT,0
+5304,Illumio,Illumio,security_tool,0,0,,Illumio,1
+5123,Custom In-House AI,In-House,custom,1,0,,In-house|Custom|Developed in-house|In-House|Custom In-House AI,38
+5132,Informatica,Informatica,data_catalog,0,0,,Informatica,3
+5148,Invariant Acoustic Signature AI,Invariant Corporation,audio_analysis,0,0,,Invariant Acoustic Signature AI,0
+5307,iProov,iProov,biometrics,0,0,,IProov|iProov,1
+5170,Kiteworks,Kiteworks,security_tool,0,0,,Kiteworks,1
+5168,KnowBe4 PhishER,KnowBe4,security_tool,0,0,,KnowBe4 PhishER,1
+5089,LaserAI,LaserAI,document_ai,1,0,,LaserAI|Laser AI,1
+5311,Lasso Security,Lasso Security,security_tool,0,0,,Lasso Security|Lasso ESS AI Security and Monitoring,1
+5064,Cell Hawk,LeadsOnline,investigative_data,0,0,,Cell Hawk|CellHawk|LeadsOnline Cell Hawk,1
+5425,Yurts AI,Legion (formerly Yurts),general_llm,0,0,,Legion (Previously Yurts)|Yurts AI,1
+5184,Leica Aivia,Leica,computer_vision,0,0,,Leica Aivia,0
+5090,Lenel OnGuard,LenelS2 (Honeywell),physical_security,0,0,,Lenel|Lenel OnGuard|OnGuard,1
+5075,ELSAG ALPR,Leonardo,computer_vision,0,0,,ELSAG|ELSAG/Leonardo|ELSAG ALPR|Leonardo ELSAG,1
+5130,Lexical Intelligence,"Lexical Intelligence, LLC",nlp,0,0,,Lexical Intelligence,4
+5002,Lexis+ AI,LexisNexis,legal_research,1,0,LexisNexis,Lexis+ AI|LexisNexis AI|Lexis Advance,0
+5091,Lexis+ Protege,LexisNexis,legal_research,1,0,Lexis+ AI,Lexis Protege|Lexis+ Protege|Protege,1
+5315,LexisNexis,LexisNexis,investigative_data,0,0,,LexisNexis,7
+5316,LexisNexis Risk Solutions,LexisNexis,investigative_data,0,0,,LexisNexis Risk Solutions|REX DBA Lexis Nexis,1
+5355,NexisXplore,LexisNexis,investigative_data,0,0,LexisNexis,NexisXplore,1
+5303,idiCORE,LexisNexis Risk Solutions,investigative_data,0,0,,idiCORE,1
+5092,Litera TOA Builder,Litera,legal_research,0,0,,Litera TOA Builder|Levit & James Word plugin|Levit & James|TOA Builder,1
+5317,LIGER Generative AI Toolkit,"LMI Consulting, LLC",general_llm,1,0,,"LIGER Generative AI Toolkit|LMI Consulting, LLC  LIGER Generative AI Toolkit",1
+5319,Lookout,Lookout,security_tool,0,0,,Lookout,2
+5093,Lumivero NVivo,Lumivero,data_analytics,1,0,,"NVivo|Lumivero NVivo|Lumivero, NVivo",1
+5042,Magnet Forensics,Magnet Forensics,security_tool,1,0,,Magnet Forensics|Magnet Copilot,2
+5406,Traffic Jam,Marinus Analytics,investigative_data,0,0,,Traffic Jam|Marinus Analytics Traffic Jam,1
+5094,Mark43,Mark43,investigative_data,1,0,,Mark43|Mark43 Public Safety Records|Mark43 RMS,1
+5320,Matroid I4 Viewer,Matroid,computer_vision,0,0,,Matroid I4 Viewer,1
+5308,KESTREL,Maxar,data_analytics,0,0,,Maxar KESTREL Aircraft Landing Location Predictor (KESTREL)|KESTREL,1
+5321,Medallia,Medallia,social_listening,1,0,,Medallia|Medallia MASS,5
+5009,Meltwater,Meltwater,productivity,0,0,,Meltwater,6
+5167,Llama,Meta,general_llm,0,0,,Llama,5
+5166,Azure AI Document Intelligence,Microsoft,document_ai,0,0,Microsoft Azure Platform,Azure AI Document Intelligence|Azure AI Vision / Document Intelligence|Azure Computer Vision and Document Intelligence Read,1
+5163,Azure AI Foundry,Microsoft,general_llm,0,0,Microsoft Azure Platform,Azure AI Foundry,3
+5057,Azure Data Factory,Microsoft,data_analytics,0,0,,Azure Data Factory|ADF,1
+4988,Azure OpenAI,Microsoft,general_llm,1,1,Microsoft Azure Platform,Azure OpenAI|Azure OpenAI Service|OpenAI on Azure,28
+5164,Azure Speech,Microsoft,transcription,0,0,Microsoft Azure Platform,Azure Speech,1
+4985,GitHub Copilot,Microsoft,coding_assistant,1,0,,GitHub CoPilot|GitHub Copilot|Github Copilot|GitHub copilot|GH Copilot,24
+5323,Microsoft 365,Microsoft,coding_assistant,1,0,,,6
+5324,Microsoft 365 Apps for Enterprise,Microsoft,coding_assistant,1,0,Microsoft 365,Microsoft 365 Apps for Enterprise,1
+4981,Microsoft 365 Copilot,Microsoft,general_llm,1,1,Microsoft 365,M365 Copilot|Microsoft M365 Copilot|Microsoft M365 Copilot AI|Microsoft Copilot for M365|Microsoft 365 Copilot|Copilot for Microsoft 365|M365 CoPilot|Microsoft 365 CoPilot|M365 copilot|Copilot Enterprise|Microsoft Copilot Enterprise|Microsoft Copilot|Microsoft CoPilot|Microsoft365 Copilot|Copilot for MS 365|Microsoft Copilot 365|MS Copilot|MS 365 Copilot|Microsoft 365 Copilot GCC|Microsoft Copilot GCC|Microsoft 365 apps,195
+4982,Microsoft 365 Copilot Chat,Microsoft,general_llm,1,1,Microsoft 365 Copilot,M365 Copilot Chat|Microsoft Copilot Chat|Microsoft 365 Copilot Chat|Copilot Chat,15
+5326,Microsoft AI Builder,Microsoft,ml_platform,0,0,Microsoft Power Platform,AI Builder Document Scraping|Microsoft AI Builder,4
+5327,Microsoft Azure Authoring Tools,Microsoft,developer_tool,0,0,Microsoft Azure Platform,Microsoft Azure Authoring Tools,1
+5131,Microsoft Azure Platform,Microsoft,cloud_platform,0,0,,Microsoft Azure Platform,0
+5329,Microsoft Azure PowerShell,Microsoft,developer_tool,0,0,Microsoft Azure Platform,Microsoft Azure PowerShell,1
+5330,Microsoft Azure Quantum Elements,Microsoft,scientific_ml,0,0,Microsoft Azure Platform,Microsoft Azure Quantum Elements,1
+4983,Microsoft Copilot for Security,Microsoft,security_tool,1,0,Microsoft 365,Copilot for Security|Microsoft Copilot for Security|Security Copilot|Microsoft Security Copilot,3
+4984,Microsoft Copilot Studio,Microsoft,agent_platform,1,0,Microsoft Power Platform,Copilot Studio|Microsoft Copilot Studio|Power Virtual Agents,6
+4987,Microsoft Defender,Microsoft,security_tool,0,0,Microsoft 365,Microsoft Defender|MS Defender|Defender,16
+5334,Microsoft Discovery,Microsoft,scientific_ml,0,0,,Microsoft Discovery,1
+5335,Microsoft Dynamics 365,Microsoft,productivity,0,0,,Microsoft Dynamics Online|Microsoft Dynamics 365,1
+5336,Microsoft Edge,Microsoft,consumer_feature,0,0,,Microsoft Edge,1
+5337,Microsoft Exchange Server,Microsoft,productivity,0,0,Microsoft 365,Microsoft Exchange Server,1
+5165,Microsoft HoloLens,Microsoft,computer_vision,0,0,,Microsoft HoloLens,0
+5339,Microsoft OneDrive,Microsoft,productivity,0,0,Microsoft 365,Microsoft OneDrive MUI|Microsoft OneDrive,2
+5340,Microsoft OneNote,Microsoft,productivity,0,0,Microsoft 365,Microsoft OneNote MUI|Microsoft OneNote,2
+5341,Microsoft Outlook,Microsoft,productivity,0,0,Microsoft 365,Microsoft Outlook MUI|Microsoft Outlook,3
+5342,Microsoft Power BI,Microsoft,data_analytics,0,0,Microsoft Power Platform,Microsoft Power BI Desktop|Microsoft Power BI,4
+5343,Microsoft Power Platform,Microsoft,ml_platform,0,0,,Microsoft Power Platform,4
+5344,Microsoft PowerPoint,Microsoft,productivity,0,0,Microsoft 365,Microsoft PowerPoint MUI|Microsoft PowerPoint,1
+5345,Microsoft Project,Microsoft,productivity,0,0,Microsoft 365,Microsoft Project,1
+5039,Microsoft Purview,Microsoft,security_tool,0,0,Microsoft 365,Microsoft Purview|Purview,4
+5346,Microsoft Purview eDiscovery,Microsoft,ediscovery,0,0,Microsoft Purview,Microsoft eDiscovery Attorney-Client Privilege Detection|Microsoft Purview eDiscovery,1
+5347,Microsoft ScreenSketch,Microsoft,productivity,0,0,,Microsoft ScreenSketch,1
+5348,Microsoft Search in Bing,Microsoft,search,0,0,Microsoft 365,Microsoft Search in Bing,1
+5135,Microsoft Sentinel,Microsoft,security_tool,0,0,,Microsoft Sentinel,4
+5350,Microsoft Skype,Microsoft,productivity,0,0,,Microsoft Skype App|Microsoft Skype,1
+4986,Microsoft Teams,Microsoft,productivity,0,0,Microsoft 365,Teams|Microsoft Teams|MS Teams|Microsoft Teams Premium,68
+5397,SQL Server Management Studio,Microsoft,developer_tool,0,0,,SQL Server Management Studio,1
+5418,Visual Studio,Microsoft,developer_tool,0,0,,Visual Studio|Visual Studio Community,3
+5419,Visual Studio Enterprise,Microsoft,developer_tool,0,0,Visual Studio,Visual Studio Enterprise,1
+5095,Milestone XProtect,Milestone Systems,physical_security,0,0,,Milestone|Milestone XProtect|XProtect,3
+5032,Monday.com,monday.com,productivity,1,0,,Monday.com|monday.com|Monday AI,1
+5352,Motorola License Plate Recognition,Motorola,computer_vision,0,0,,Motorola License Plate Recognition|Motorola,2
+5420,VoiceAtlas,Navteca,general_llm,0,0,,VoiceAtlas|VoiceAtlas no-code chatbot framework,1
+5354,NEC NeoFace,NEC,biometrics,0,0,,NEC|NEC NeoFace|NEC (algorithm only)|NEC (Nippon Electric Company),10
+5097,NetDocuments,NetDocuments,document_ai,1,0,,NetDocuments,1
+5098,Nlets LPR Pointer Index,Nlets,investigative_data,0,0,,Nlets Nationwide License Plate Reader Pointer Index|Nlets LPR Pointer Index|Nlets LPR,1
+5099,Nuance Dragon,Nuance (Microsoft),transcription,0,0,,Dragon|Nuance Dragon|Dragon NaturallySpeaking|Dragon Professional,3
+5356,Okta Adaptive MFA,Okta,identity_verification,0,0,,Okta Adaptive MFA|Okta,1
+5100,OnCue Trial Presentation,OnCue Technology,legal_research,0,0,,OnCue|OnCue Technology|OnCue Trial Presentation,1
+5174,OneReach.ai,OneReach.ai,agent_platform,0,0,,OneReach.ai,0
+5185,cryoDRGN,Open Source,scientific_ml,0,0,,cryoDRGN,0
+5186,crYOLO,Open Source,scientific_ml,0,0,,crYOLO,1
+5155,PEST (Parameter Estimation),Open Source,scientific_ml,0,0,,PEST (Parameter Estimation),0
+5105,Ptolemy,Open source,scientific_ml,0,0,,Ptolemy,1
+5154,Tesseract OCR,Open Source,document_ai,0,0,,Tesseract OCR,0
+5118,Topaz CryoEM,Open source,scientific_ml,0,0,,Topaz|Topaz CryoEM|Topaz Picker,2
+5072,DeepEMhancer,Open source (CSIC),scientific_ml,0,0,,DeepEMhancer,1
+5096,ModelAngelo,Open source (MRC LMB),scientific_ml,0,0,,ModelAngelo|Model Angelo,1
+5079,Fiji ImageJ,Open source (NIH ImageJ / Fiji community),scientific_ml,0,0,,FIJI|Fiji|Fiji ImageJ|ImageJ,1
+4989,ChatGPT,OpenAI,general_llm,1,1,,ChatGPT|GPT-4|GPT-4o|OpenAI ChatGPT|ChatGPT Enterprise|ChatGPT Plus,70
+5022,DALL-E,OpenAI,computer_vision,1,0,ChatGPT,DALL-E|DALLE|DALL E|Dall-E,1
+4990,OpenAI API,OpenAI,general_llm,1,1,,OpenAI API,53
+5359,OpenText Axcelerate,OpenText,ediscovery,0,0,,OpenText Axcelerate AI and natural-language powered search|OpenText Axcelerate,1
+5360,OpenText Decisiv,OpenText,search,0,0,,OpenText Decisiv,1
+5191,FOIAXpress AI,OPEXUS,document_ai,0,0,,FOIAXpress AI,1
+5005,Otter.ai,Otter,productivity,1,0,,Otter|Otter.ai,2
+5088,Imaris,Oxford Instruments,scientific_ml,0,0,,Imaris|Oxford Instruments Imaris,1
+5038,Palantir AIP,Palantir,general_llm,0,0,Palantir Federal Cloud Service,Palantir|Palantir AIP|AIP,25
+5363,Palantir Case Management & Analytics (CMA),Palantir,data_analytics,0,0,,Palantir Case Management & Analytics (CMA),2
+5364,Palantir Decision and Analytics Platform (DNA-P),Palantir,data_analytics,0,0,,Palantir Decision and Analytics Platform (DNA-P),2
+5365,Palantir Federal Cloud Service,Palantir,cloud_platform,0,0,,Palantir Palantir Federal Cloud Service|Palantir Federal Cloud Service,1
+5013,Palo Alto Networks,Palo Alto Networks,security_tool,0,0,,Palo Alto|Palo Alto Networks,5
+5368,PassiveLogic,PassiveLogic,scientific_ml,0,0,,PassiveLogic,1
+5101,PDRI Automatically-Scored Writing Assessment,PDRI,nlp_specific,0,0,,"PDRI AWA|Personnel Decisions Research Institutes, LLC (PDRI)|PDRI Automatically-Scored Writing Assessment",1
+5102,Pearson Q-interactive,Pearson,clinical_decision_support,0,0,,Pearson Assessments|Pearson Q-interactive|Q-interactive,1
+5369,Penlink,Penlink,threat_intel,0,0,,Penlink,3
+5023,Perplexity,Perplexity AI,general_llm,0,0,,Perplexity|Perplexity AI|Perplexity.ai,24
+5175,Pingwind AI DevOps,Pingwind,devops,0,0,,Pingwind AI DevOps,0
+5103,Plexis Quantum Choice,Plexis,data_analytics,0,0,,Quantum Choice from Plexis|Plexis Quantum Choice|Quantum Choice,1
+5026,Poolside,Poolside,coding_assistant,1,0,,Poolside|poolside.ai,2
+5143,Precise MLaaS,Precise Software,ml_platform,0,0,,Precise MLaaS,2
+5202,ProcureSight,ProcureSight,data_analytics,0,0,,ProcureSight,1
+5171,Flowmon,Progress Flowmon,security_tool,0,0,,Flowmon,1
+5106,Qualtrics,Qualtrics,data_analytics,1,0,,Qualtrics|Qualtrics XM,3
+5376,Quantaero Marine Wildlife AI,Quantaero,computer_vision,0,0,,Quantaero Marine Wildlife AI|AI for Offshore Energy: Innovative Technology Streamlines Marine Wildlife Surveys,1
+5109,Rank One Computing,Rank One Computing,biometrics,0,0,,Rank One Computing|Rank One|ROC,1
+5110,Raytheon BBN M3S,Raytheon BBN,media_analysis,0,0,,Raytheon Multimedia Monitoring System (M3S)|M3S|Raytheon BBN M3S,1
+5007,Reclaim.AI,Reclaim,productivity,1,0,,Reclaim.AI|Reclaim,1
+5378,Recorded Future,Recorded Future,threat_intel,0,0,,Recorded Future  Cyber Threat Analysis (Recorded Future)|Recorded Future,1
+5147,RedCastle Forest Health,RedCastle Resources,computer_vision,0,0,,RedCastle Forest Health,0
+5380,Rekor,Rekor,computer_vision,0,0,,Rekor,1
+5139,Relativity,Relativity,ediscovery,0,0,,Relativity,8
+5107,RWS Trados,RWS,translation,1,0,,RWS Trados|Trados|SDL Trados,1
+5382,Salesforce Einstein,Salesforce,ml_platform,0,0,,Salesforce|Salesforce Einstein C2RMT|Salesforce Einstein,15
+5033,Slack,Salesforce,productivity,1,0,,Slack|Slack AI,4
+5037,Tableau,Salesforce,ml_platform,1,0,,Tableau|Tableau Pulse|Tableau GPT|Tableau Enterprise Visualization,9
+5008,SAP Concur,SAP,productivity,0,0,,SAP Concur|Concur,7
+5111,SAS Analytics,SAS,data_analytics,0,0,,SAS|SAS Analytics|SAS Viya|SAS Enterprise Miner,8
+5040,SentinelOne,SentinelOne,security_tool,0,0,,SentinelOne|Sentinel One,2
+5385,ServiceNow IT Operations Management (ITOM) Predictive AIOps,ServiceNow,itsm,0,0,,ServiceNow IT Operations Management (ITOM) Predictive AIOps,1
+5003,ServiceNow Now Assist,ServiceNow,productivity,1,0,,ServiceNow|ServiceNow (Now Assist)|Now Assist|ServiceNow Now Assist,46
+5189,Shabash Merops,Shabash,nlp,0,0,,Shabash Merops,0
+5389,SITE Intelligence Group,SITE,threat_intel,0,0,,SITE Intelligence Group|SITE Group Subscription Services,1
+5390,Skillsoft Percipio CAISY,Skillsoft,training,0,0,,SKILLSOFT PERCIPIO/CAISY|Skillsoft Percipio CAISY,2
+5391,Skydio X2D,Skydio,physical_security,0,0,,Skydio and Xtender Skydio X2D|Skydio X2D,1
+5129,Skyward CEDAR/CLAW,Skyward IT Solutions,agent_platform,0,0,,Skyward CEDAR/CLAW,0
+5113,Smiths Detection TruNarc,Smiths Detection,forensics,0,0,,"TruNarc|Smiths Detection TruNarc|TruNarc, Smiths Detection",1
+5015,Snowflake Cortex,Snowflake,ml_platform,1,0,,Snowflake Cortex|Snowflake AI,0
+5112,ShotSpotter,SoundThinking,audio_analysis,0,0,,ShotSpotter|SoundThinking ShotSpotter,1
+5011,Splunk,Splunk,security_tool,0,0,,Splunk,11
+5114,Spokeo,Spokeo,investigative_data,0,0,,Spokeo,1
+5395,Sprinklr,Sprinklr,social_listening,0,0,,Sprinklr,2
+5029,Sprout Social,Sprout Social,productivity,1,0,,Sprout Social|SproutSocial,6
+5187,CryoSPARC,Structura Biotechnology,scientific_ml,0,0,,CryoSPARC,1
+5173,SumTotal,SumTotal,training,0,0,,SumTotal,1
+5027,Synthesia,Synthesia,computer_vision,1,0,,Synthesia,2
+5162,Systran Translate,Systran,translation,0,0,,Systran Translate,2
+5400,Tabnine,Tabnine,coding_assistant,0,0,,Tabnine|Tabnine AI Pair Programmer,2
+5160,SimplyFile,TechHit,productivity,0,0,,SimplyFile,1
+5116,Techsmith Audiate,TechSmith,media_analysis,1,0,,Audiate|Techsmith Audiate|TechSmith Audiate,2
+5117,TekSynap SimplifAI,TekSynap,general_llm,1,0,,TekSynap SimplifAI|SimplifAI,1
+5273,FLIR 280 HD,Teledyne FLIR,physical_security,0,0,,FLIR 280 HD,1
+5401,Tenable,Tenable,security_tool,0,0,,Tenable,3
+5264,DocketScope,"The Regulatory Group, Inc.",document_ai,0,0,,DocketScope,3
+5068,CoCounsel,Thomson Reuters,legal_research,1,0,,CoCounsel|Cocounsel AI|Thomson Reuters CoCounsel|Casetext CoCounsel,2
+5104,ProLaw,Thomson Reuters,legal_research,0,0,,ProLaw|Thomson Reuters ProLaw,1
+5125,Thomson Reuters CLEAR,Thomson Reuters,data_analytics,0,0,,Thomson Reuters CLEAR,2
+5001,Westlaw AI,Thomson Reuters,legal_research,1,0,,Westlaw|Thomson Reuters/Westlaw Drafting Assistant|Westlaw AI|Westlaw Precision|Thomson Reuters Westlaw,14
+5404,ThruVision TAC 16,ThruVision,physical_security,0,0,,ThruVision TAC 16 Passive Body Scanner|ThruVision TAC 16,1
+5405,ThruWave NII 3D Imaging Tool,ThruWave,physical_security,0,0,,ThruWave  Non-Intrusive Inspection (NII) 3D Imaging Tool|ThruWave NII 3D Imaging Tool,1
+5115,TLOxp,TransUnion,investigative_data,0,0,,TLOxp|TLO|TransUnion TLOxp,1
+5179,PLATES/FoodTrak,Trigent Solutions,document_ai,0,0,,PLATES/FoodTrak,0
+5149,TRM Labs Blockchain Analysis Platform,TRM Labs,blockchain_analytics,0,0,,TRM Labs Blockchain Analysis Platform|TRM Labs  Blockchain Analysis,1
+5408,UiPath Enterprise RPA,UiPath,rpa,0,0,,UiPath; Microsoft; Apryse; Personable Inc. Enterprise Robotic Process Automation|UiPath Enterprise RPA,1
+5156,Ultralytics YOLO,Ultralytics,computer_vision,0,0,,Ultralytics YOLO,0
+5120,Unison PRISM,Unison,supply_chain,0,0,,Unison|Unison PRISM|PRISM,5
+5108,Rangeland Analysis Platform,University of Montana / NRCS,scientific_ml,0,0,,Rangeland Analysis Platform|RAP,2
+5153,SpyglassGPT,Unknown,general_llm,0,0,,SpyglassGPT,1
+5078,EnerGPT,Unknown / DOE-targeted vendor,general_llm,1,0,,EnerGPT,3
+5410,Upstream Tech HydroForecast,Upstream Tech,scientific_ml,0,0,,Upstream Tech HydroForecast|Piloting Machine Learning Inflow Forecasts Across Reclamation,1
+5128,ATLAS (Forest Service),USDA Forest Service,data_analytics,0,0,,ATLAS (Forest Service),0
+5414,Vectra AI,Vectra Networks,security_tool,0,0,,Vectra Networks|Vectra AI,2
+5063,CargoNet,Verisk,investigative_data,0,0,,CargoNet|Verisk CargoNet,1
+5087,ISO ClaimSearch,Verisk,investigative_data,0,0,,ISO ClaimSearch|National Insurance Crime Bureau ISO ClaimSearch|NICB ISO ClaimSearch,1
+5126,Veritone,Veritone,media_analysis,0,0,,Veritone,5
+5158,Veritone Illuminate,Veritone,media_analysis,0,0,Veritone,Veritone Illuminate,1
+5121,Verkada,Verkada,physical_security,0,0,,Verkada,2
+5021,WellSaid Labs,WellSaid Labs,nlp_specific,1,0,,WellSaid Labs|Wellsaid Labs|WellSaid|Wellsaid,2
+5157,Whooster,Whooster,data_analytics,0,0,,Whooster,1
+5041,Wiz,Wiz,security_tool,0,0,,Wiz,2
+5161,UpToDate,Wolters Kluwer,clinical_decision_support,0,0,,UpToDate,1
+5291,Grok,xAI,general_llm,1,0,,Grok|xAI Grok Pilot,2
+5034,Zoom,Zoom,productivity,1,0,,Zoom|Zoom AI|Zoom AI Companion,4
+5012,Zscaler,Zscaler,security_tool,0,0,,Zscaler,2

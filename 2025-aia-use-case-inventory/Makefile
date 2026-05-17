@@ -32,6 +32,13 @@ fix:
 	# narrative fields). Idempotent. Without this in the pipeline, the
 	# manual links from commit 4bfbf5a get wiped on every rebuild.
 	python3 scripts/apply_product_gap_review.py
+	# May 2026 4-agent linkage pass (audit/linkage_pass_2026-05/integration/).
+	# Adds ~220 catalog rows, ~38 hierarchy edges, ~7 aliases, and ~220 hand-
+	# curated use_case→product links from the multi-agent labeling pass.
+	# All inputs are CSV-staged and resolved by canonical_name so this survives
+	# the build_lookups.py re-key. Idempotent. See
+	# audit/linkage_pass_2026-05/CHARTER.md for context.
+	python3 scripts/apply_linkage_pass_2026_05.py --apply
 	# IFP product-category assignments from the curated audit proposal.
 	# Runs AFTER cleanup so it can replace the cleanup step's NULL→
 	# 'unclassified' backfill with concrete category labels (e.g.
@@ -44,6 +51,11 @@ fix:
 	python3 scripts/backfill_bureau_orgs.py
 	python3 compute_maturity.py
 	python3 scripts/compute_org_maturity.py
+	# IFP-facing Federal AI Readiness Scorecard — 5-dimension weighted
+	# rubric, per agency. Reads agency_ai_maturity + use_cases + tags +
+	# fedramp_product_links; writes agency_readiness. Constants mirror
+	# dashboard/lib/readiness-rubric.ts. Idempotent.
+	python3 scripts/compute_agency_readiness.py
 	# Linkage recovery: build_lookups.py wipes products and re-issues IDs each
 	# run, which orphans (and SQLite drops) any prior fedramp_product_links and
 	# parent_product_id edges. These scripts re-apply that state from the
