@@ -178,3 +178,123 @@ def detect_drift(
             if db_v or omb_v:
                 out[f] = {"db": db_v, "omb": omb_v}
     return out
+
+
+# ──────────────────────────────────────────────────────────────────────────
+# Consolidation-upstream detection (Phase-5 forensic upgrade).
+#
+# Goal: when OMB intentionally rolls up agency-specific rows into a generic
+# category aggregator at the same agency, surface that as a separate
+# `consolidated_upstream` status rather than the catch-all `db_only`. This
+# is purely a re-classification of already-unmatched DB rows — no rows are
+# added or removed.
+# ──────────────────────────────────────────────────────────────────────────
+
+_STEM_STOPWORDS = frozenset(
+    {
+        "ai", "the", "a", "an", "and", "or", "of", "for", "to", "in", "on",
+        "with", "by", "at", "as", "is", "use", "using", "case", "tool",
+        "generative", "gen", "ms", "department", "agency",
+    }
+)
+
+_AGGREGATOR_PREFIX_RE = re.compile(
+    r"^\s*(generative\s+ai|ai)\s*[\-—–:]\s*"
+    r"(idea|text|code|content|chat|assistant|search|summary|"
+    r"summarization|automation|information|image|design|capability|"
+    r"data|translation|generation|classification|analysis)",
+    flags=re.IGNORECASE,
+)
+_AGGREGATOR_HINT_RE = re.compile(r"(generative\s+ai|ai\s*[\-—–])", flags=re.IGNORECASE)
+
+
+def _strip_punct(s: str) -> str:
+    s = s.lower()
+    s = re.sub(r"[^a-z0-9\s]+", " ", s)
+    return _WHITESPACE_RE.sub(" ", s).strip()
+
+
+def consolidation_stem_tokens(name: str | None, *, max_tokens: int = 3) -> list[str]:
+    """Extract up to `max_tokens` significant stem tokens from a name.
+
+    Drops stopwords ("the", "for", "ai", "generative", …) so legitimate
+    product/topic stems surface ("copilot", "azure", "veritone",
+    "summarization").
+
+      "Microsoft Copilot for Education" → ["microsoft", "copilot", "education"]
+      "MS Copilot - Summarization"      → ["copilot", "summarization"]
+      "Azure AI Document Intelligence"  → ["azure", "document", "intelligence"]
+    """
+    if not name:
+        return []
+    s = _strip_punct(name)
+    toks = [t for t in s.split(" ") if t and t not in _STEM_STOPWORDS]
+    return toks[:max_tokens]
+
+
+def is_omb_aggregator_name(name: str | None) -> bool:
+    """True if a name looks like an OMB-side generic category aggregator.
+
+    Two signals:
+      1. Matches the precise generic-prefix pattern
+         ("Generative AI - <topic>" / "AI - <topic>").
+      2. Is short (<35 chars) AND mentions "Generative AI" / "AI -".
+    """
+    if not name:
+        return False
+    if _AGGREGATOR_PREFIX_RE.match(name):
+        return True
+    if len(name) < 35 and _AGGREGATOR_HINT_RE.search(name):
+        return True
+    return False
+
+
+def detect_consolidated_upstream(
+    unmatched_db_rows: Iterable[dict],
+    omb_aggregator_candidates: Iterable[dict],
+    *,
+    min_cluster_size: int = 3,
+) -> dict[int, int]:
+    """Return {db_id: aggregator_omb_id} for rows judged consolidated upstream.
+
+    Parameters
+    ----------
+    unmatched_db_rows : iterable of dicts with `db_id` and `use_case_name`.
+        Pre-filtered to a single agency.
+    omb_aggregator_candidates : iterable of dicts with `id` and
+        `use_case_name`. Pre-filtered to the same agency.
+    min_cluster_size : minimum number of unmatched DB rows sharing a stem
+        token before the cluster is promoted.
+
+    Procedure:
+      1. For each unmatched DB row, extract stem tokens.
+      2. Build inverted index token → {db_ids}.
+      3. Check there's at least one aggregator name in the OMB pool.
+      4. If no aggregator exists, return {} (no promotion).
+      5. For every token whose row count ≥ min_cluster_size, mark every
+         row in the bucket as consolidated upstream, pointing each at the
+         lowest-id aggregator (stable; OMB's source_row order).
+    """
+    unmatched = [d for d in unmatched_db_rows if d.get("use_case_name")]
+    aggregators = [
+        a
+        for a in omb_aggregator_candidates
+        if is_omb_aggregator_name(a.get("use_case_name"))
+    ]
+    if not aggregators or len(unmatched) < min_cluster_size:
+        return {}
+
+    aggregator_id = min(int(a["id"]) for a in aggregators)
+
+    token_to_db_ids: dict[str, set[int]] = {}
+    for d in unmatched:
+        toks = consolidation_stem_tokens(d["use_case_name"])
+        for t in toks:
+            token_to_db_ids.setdefault(t, set()).add(int(d["db_id"]))
+
+    clustered: set[int] = set()
+    for _tok, ids in token_to_db_ids.items():
+        if len(ids) >= min_cluster_size:
+            clustered.update(ids)
+
+    return {db_id: aggregator_id for db_id in clustered}

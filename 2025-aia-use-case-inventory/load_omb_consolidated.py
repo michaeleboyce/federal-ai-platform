@@ -30,6 +30,8 @@ from column_maps import OMB_CONSOLIDATED_COLUMNS, map_omb_consolidated_headers
 from omb_consolidated_match import (
     DRIFT_FIELDS_DEFAULT,
     classify_match,
+    consolidation_stem_tokens,
+    detect_consolidated_upstream,
     detect_drift,
     name_match_score,
     normalize_agency,
@@ -208,6 +210,7 @@ def _record_audit(
     status: str,
     drift: dict,
     prior: dict,
+    consolidated_into_omb_id: int | None = None,
 ) -> None:
     key = (agency, name)
     prior_row = prior.get(key)
@@ -221,13 +224,15 @@ def _record_audit(
         INSERT INTO omb_match_audit(
             ingest_run_at, omb_row_id, use_case_id_db, agency_abbreviation,
             use_case_name, match_method, match_score, match_status,
-            drift_fields_json, first_seen, last_seen, resolved_at, resolution_note
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            drift_fields_json, first_seen, last_seen, resolved_at, resolution_note,
+            consolidated_into_omb_id
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             run_at, omb_id, db_id, agency, name, method, score, status,
             json.dumps(drift, ensure_ascii=False, default=str),
             first_seen, run_at, resolved_at, resolution_note,
+            consolidated_into_omb_id,
         ),
     )
 
@@ -349,15 +354,60 @@ def load(conn: sqlite3.Connection, path: Path | str = DEFAULT_FILE) -> None:
                 "none", None, "omb_only", {}, prior_audit,
             )
 
-    # 6. db_only sweep.
+    # 6. db_only sweep — with a second-pass consolidation detector.
+    #
+    # The plain `db_only` status (an unmatched DB row) under-explains a
+    # common pattern where OMB intentionally rolled up agency-specific
+    # rows ("MS Copilot - Summarization") into generic category rows
+    # ("Generative AI - Information Summarization"). When ≥3 unmatched
+    # DB rows in the same agency share a normalized stem token AND that
+    # agency has at least one plausible OMB aggregator (a short, generic
+    # "Generative AI - X" / "AI - X" row), we reclassify the cluster as
+    # `consolidated_upstream` and persist the aggregator's omb_row_id.
+    unmatched_by_agency: dict[str | None, list[dict]] = {}
     for (agency, _bureau, _name), db_rows in db_index.items():
         for d in db_rows:
             if d["db_id"] in matched_db_ids:
                 continue
-            _record_audit(
-                conn, run_at, None, d["db_id"], agency, d["use_case_name"],
-                "none", None, "db_only", {}, prior_audit,
+            unmatched_by_agency.setdefault(agency, []).append(d)
+
+    # Build per-agency aggregator candidate pools from omb_row_pairs.
+    aggregators_by_agency: dict[str | None, list[dict]] = {}
+    for omb_id, vals in omb_row_pairs:
+        omb = _omb_row_dict(vals)
+        agency = normalize_agency(omb["agency_abbreviation"])
+        aggregators_by_agency.setdefault(agency, []).append(
+            {"id": omb_id, "use_case_name": omb["use_case_name"]}
+        )
+
+    consolidated_db_ids: set[int] = set()
+    consolidated_targets: dict[int, int] = {}
+    for agency, dbs in unmatched_by_agency.items():
+        consolidated_targets.update(
+            detect_consolidated_upstream(
+                [
+                    {"db_id": d["db_id"], "use_case_name": d["use_case_name"]}
+                    for d in dbs
+                ],
+                aggregators_by_agency.get(agency, []),
             )
+        )
+    consolidated_db_ids.update(consolidated_targets.keys())
+
+    for agency, dbs in unmatched_by_agency.items():
+        for d in dbs:
+            if d["db_id"] in consolidated_db_ids:
+                _record_audit(
+                    conn, run_at, None, d["db_id"], agency, d["use_case_name"],
+                    "consolidation_heuristic", None, "consolidated_upstream",
+                    {}, prior_audit,
+                    consolidated_into_omb_id=consolidated_targets[d["db_id"]],
+                )
+            else:
+                _record_audit(
+                    conn, run_at, None, d["db_id"], agency, d["use_case_name"],
+                    "none", None, "db_only", {}, prior_audit,
+                )
 
     conn.commit()
 

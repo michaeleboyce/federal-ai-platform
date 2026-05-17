@@ -4,6 +4,7 @@ import sqlite3
 from pathlib import Path
 
 from migrations import m004_omb_consolidated_provenance as m004
+from migrations import m005_consolidation_pattern as m005
 import load_omb_consolidated as loader
 
 FIXTURE = Path(__file__).parent / "fixtures" / "omb_consolidated_sample.xlsx"
@@ -41,6 +42,7 @@ def _seed_db():
         """
     )
     m004.apply(conn)
+    m005.apply(conn)
 
     # Seed agencies the fixture references.
     for abbr, name in [
