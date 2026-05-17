@@ -1,0 +1,56 @@
+product_id,canonical_name,vendor,product_type,is_generative_ai,is_frontier_llm,aliases,edge_count
+7651,Adobe Creative Cloud Suite,Adobe,productivity,1,0,Adobe Creative Cloud Suite|Adobe Suite Applications|adobe premiere,1
+7493,Amazon Alexa,Amazon,nlp,0,0,Amazon Alexa|Alexa|Amazon Alexa Skill|Alexa Skill,1
+8090,Amazon Comprehend,Amazon,nlp,0,0,Amazon Comprehend,1
+7441,Amazon Q,Amazon,general_llm,1,1,AWS Q|Amazon Q|Q Developer|Q Business,12
+8048,Amazon SageMaker,Amazon,ml_platform,0,0,Amazon SageMaker,2
+7444,AWS Bedrock,Amazon,general_llm,1,1,Bedrock|AWS Bedrock|Amazon Bedrock,13
+7590,AWS Kendra,Amazon,search,0,0,AWS Kendra,1
+7672,AWS Lex,Amazon,nlp,0,0,Lex Natural Language Interface|AWS Lex,1
+7634,AWS Rekognition,Amazon,computer_vision,0,0,AWS Rekognition,2
+7463,AWS Textract,Amazon,computer_vision,0,0,AWS Textract|Amazon Textract|Textract,3
+7443,AWS Transcribe,Amazon,nlp_specific,0,0,AWS Transcribe|Amazon Transcribe,2
+7494,Amazon Connect,Amazon Web Services,nlp,1,0,Amazon Connect|AWS Connect,3
+7492,AWS Translate,Amazon Web Services,translation,1,0,AWS Translate|Amazon Translate,1
+7509,Cisco Identity Services Engine,Cisco,security_tool,0,0,Cisco Identity Services Engine|Cisco ISE|Cisco Identify Services engine|ISE,1
+7510,Cisco Secure Network Analytics,Cisco,security_tool,0,0,Cisco Secure Network Analytics|Stealthwatch|Cisco Stealthwatch,1
+7437,Gemini,Google,general_llm,1,1,Gemini|Google Gemini|Bard|Gemini Pro|Gemini 1.5|Gemini 2|Gemini for Google Workspace|Gemini for Workspace|Gemini Code Assist|Gemini Advanced,52
+7726,Google Chrome Generative AI,Google,consumer_feature,1,0,Google Chrome Generative AI,1
+7727,Google Cloud Platform,Google,general_llm,1,0,Google Cloud Platform,9
+8044,Google Colab,Google,developer_tool,0,0,Google Colab,2
+8049,Google Coral TPU,Google,developer_tool,0,0,Google Coral TPU,2
+8050,Google Earth Engine,Google,data_analytics,0,0,Google Earth Engine,3
+7917,Google Earth Engine Wetlands Classifier,Google,scientific_ml,0,0,Google Earth Engine Wetlands Classifier,1
+7439,Google Lens,Google,computer_vision,1,0,Google Lens,2
+7489,Google Maps,Google,consumer_feature,0,0,Google Maps,14
+8061,Google News Brief,Google,consumer_feature,1,0,Google News Brief,8
+7490,Google Pixel,Google,consumer_feature,0,0,Google Pixel,2
+7584,Google Translate,Google,translation,0,0,Google Translate,2
+7440,Google Workspace,Google,productivity,0,0,Google Workspace|GSuite,1
+7438,NotebookLM,Google,general_llm,1,0,NotebookLM|Notebook LM|Google NotebookLM,6
+7566,reCAPTCHA,Google,security_tool,0,0,reCAPTCHA|Google reCAPTCHA,1
+7742,IBM Watson,IBM,ml_platform,0,0,IBM Watson,1
+7759,LexisNexis,LexisNexis,investigative_data,0,0,LexisNexis|law360,7
+7429,GitHub Copilot,Microsoft,coding_assistant,1,0,GitHub CoPilot|GitHub Copilot|Github Copilot|GitHub copilot|GH Copilot,24
+7767,Microsoft 365,Microsoft,coding_assistant,1,0,,6
+7575,Microsoft Azure Platform,Microsoft,cloud_platform,0,0,Microsoft Azure Platform,0
+7778,Microsoft Discovery,Microsoft,scientific_ml,0,0,Microsoft Discovery,1
+7779,Microsoft Dynamics 365,Microsoft,productivity,0,0,Microsoft Dynamics Online|Microsoft Dynamics 365,1
+7780,Microsoft Edge,Microsoft,consumer_feature,0,0,Microsoft Edge,1
+7609,Microsoft HoloLens,Microsoft,computer_vision,0,0,Microsoft HoloLens,0
+7787,Microsoft Power Platform,Microsoft,ml_platform,0,0,Microsoft Power Platform|microsoft power apps|microsoft power automate,4
+7791,Microsoft ScreenSketch,Microsoft,productivity,0,0,Microsoft ScreenSketch,1
+7794,Microsoft Skype,Microsoft,productivity,0,0,Microsoft Skype|Microsoft Skype App,1
+8066,Microsoft Viva,Microsoft,productivity,1,0,Microsoft Viva,3
+7841,SQL Server Management Studio,Microsoft,developer_tool,0,0,SQL Server Management Studio,1
+7862,Visual Studio,Microsoft,developer_tool,0,0,Visual Studio Community|Visual Studio,3
+7809,Palantir Federal Cloud Service,Palantir,cloud_platform,0,0,Palantir Palantir Federal Cloud Service|Palantir Federal Cloud Service,1
+7826,Salesforce Einstein,Salesforce,ml_platform,0,0,Salesforce|Salesforce Einstein|Salesforce Einstein C2RMT,15
+7477,Slack,Salesforce,productivity,1,0,Slack|Slack AI,4
+7481,Tableau,Salesforce,ml_platform,1,0,Tableau|Tableau Pulse|Tableau GPT|Tableau Enterprise Visualization,9
+7829,ServiceNow IT Operations Management (ITOM) Predictive AIOps,ServiceNow,itsm,0,0,ServiceNow IT Operations Management (ITOM) Predictive AIOps,1
+7447,ServiceNow Now Assist,ServiceNow,productivity,1,0,ServiceNow|ServiceNow (Now Assist)|Now Assist|ServiceNow Now Assist,46
+7512,CoCounsel,Thomson Reuters,legal_research,1,0,CoCounsel|Cocounsel AI|Thomson Reuters CoCounsel|Casetext CoCounsel,2
+7548,ProLaw,Thomson Reuters,legal_research,0,0,ProLaw|Thomson Reuters ProLaw,1
+7569,Thomson Reuters CLEAR,Thomson Reuters,data_analytics,0,0,Thomson Reuters CLEAR,2
+7445,Westlaw AI,Thomson Reuters,legal_research,1,0,Westlaw|Thomson Reuters/Westlaw Drafting Assistant|Westlaw AI|Westlaw Precision|Thomson Reuters Westlaw,14

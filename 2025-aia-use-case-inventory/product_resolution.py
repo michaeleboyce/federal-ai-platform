@@ -113,7 +113,14 @@ def extract_products(
 
 
 def use_case_search_text(row: dict[str, Any]) -> str:
-    """Fields that evidence a product for individual inventory rows."""
+    """Fields that evidence a product for individual inventory rows.
+
+    `expected_benefits` is included because some agencies (notably VA)
+    name the AI product only in their benefits prose ("Implementing
+    AI Builder will tangibly improve …"), with vendor/system/name
+    fields blank. Adding this field is monotonic — boundary-checked
+    alias matching means more text only catches more *real* mentions.
+    """
     return " ".join(
         (row.get(k) or "")
         for k in (
@@ -121,6 +128,7 @@ def use_case_search_text(row: dict[str, Any]) -> str:
             "system_name",
             "use_case_name",
             "problem_statement",
+            "expected_benefits",
         )
     )
 

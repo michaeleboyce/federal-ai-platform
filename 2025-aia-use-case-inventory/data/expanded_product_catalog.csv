@@ -440,3 +440,110 @@ GrantSolutions,Department of Health and Human Services,custom,0,0,,,seeded by li
 FTC Sentinel Network Services,Federal Trade Commission,investigative_data,0,0,,,seeded by linkage_pass_2026-05 (fixup_validity),FTC Sentinel Network Services
 ELIS,U.S. Citizenship and Immigration Services,custom,0,0,,,seeded by linkage_pass_2026-05 (fixup_validity),ELIS
 Amazon Comprehend,Amazon,nlp,0,0,,,seeded by linkage_pass_2026-05 (fixup_validity),Amazon Comprehend
+VA Clinical AI Agent,U.S. Department of Veterans Affairs,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),VA Clinical AI Agent
+VA VoiceBot,U.S. Department of Veterans Affairs,nlp_specific,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),VA VoiceBot
+VA AI Assist,U.S. Department of Veterans Affairs,nlp,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),VA AI Assist
+Roche Digital Pathology,Roche,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Roche Digital Pathology
+Cogitativo,Cogitativo,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Cogitativo
+Parable 3D Wound Care,Parable Health,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Parable 3D Wound Care
+Koios DS Breast,Koios Medical,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Koios DS Breast
+Lambient AI Scribe,Lambient,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Lambient AI Scribe
+Ephesoft Transact,Ephesoft,document_ai,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Ephesoft Transact
+Mindray TE X Ultrasound,Mindray,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Mindray TE X Ultrasound
+Freed AI Medical Scribe,Freed,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Freed AI Medical Scribe
+Nuance PowerScribe One,Nuance (Microsoft),transcription,1,0,Nuance Dragon,,seeded by linkage_pass_2026-05 (ws1_va),Nuance PowerScribe One
+VA E2 HelpBot,U.S. Department of Veterans Affairs,nlp,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),VA E2 HelpBot
+Pyramid Analytics,Pyramid Analytics,data_analytics,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Pyramid Analytics
+BillieGPT,U.S. Department of Veterans Affairs,nlp,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),BillieGPT
+Pingoo.AI,Pingoo.AI,nlp,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Pingoo.AI
+Glassbeam Clinsights,Glassbeam,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Glassbeam Clinsights
+Abridge Ambient Scribe,Abridge,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Abridge Ambient Scribe
+Knowtex Ambient Scribe,Knowtex,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Knowtex Ambient Scribe
+Agfa DR 800 MUSICA,Agfa HealthCare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Agfa DR 800 MUSICA
+Beckman Coulter DxH 800,Beckman Coulter,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Beckman Coulter DxH 800
+GE Healthcare Xeleris V,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Xeleris V
+GE Healthcare SIGNA Artist (AIR Recon DL),GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare SIGNA Artist (AIR Recon DL)
+Medtronic GI Genius,Medtronic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Medtronic GI Genius
+GE Healthcare TrueFidelity CT,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare TrueFidelity CT
+Aidoc BriefCase,Aidoc,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Aidoc BriefCase
+iCAD ProFound AI,iCAD,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),iCAD ProFound AI
+Circle CVI42,Circle Cardiovascular Imaging,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Circle CVI42
+Siemens SOMATOM go.,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens SOMATOM go.
+Solventum 360 Encompass,Solventum (3M Health Information Systems),document_ai,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Solventum 360 Encompass
+GE Healthcare Vivid iq,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Vivid iq
+GE Healthcare EchoPAC,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare EchoPAC
+Riverain ClearRead CT,Riverain Technologies,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Riverain ClearRead CT
+ScreenPoint Transpara,ScreenPoint Medical,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),ScreenPoint Transpara
+Canon Alphenix Angio Workstation,Canon Medical Systems,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Canon Alphenix Angio Workstation
+Philips eCareManager,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips eCareManager
+GE Healthcare Voluson Expert,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Voluson Expert
+Medtronic CareLink,Medtronic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Medtronic CareLink
+GE Healthcare Critical Care Suite,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Critical Care Suite
+Philips Vereos PET/CT,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips Vereos PET/CT
+GE Healthcare Venue Fit,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Venue Fit
+Sonic Incytes Velacur,Sonic Incytes,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Sonic Incytes Velacur
+Siemens syngo,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens syngo
+RapidAI,RapidAI,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),RapidAI
+Brainlab Elements Spine,Brainlab,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Brainlab Elements Spine
+RaySearch RayStation,RaySearch Laboratories,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),RaySearch RayStation
+Philips QLAB,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips QLAB
+Boston Scientific Preventice BodyGuardian,Boston Scientific (Preventice),clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Boston Scientific Preventice BodyGuardian
+Philips EPIQ/Affiniti Ultrasound,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips EPIQ/Affiniti Ultrasound
+Persyst EEG,Persyst Development,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Persyst EEG
+Abbott OPTIS Imaging,Abbott,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Abbott OPTIS Imaging
+Medtronic O-arm O2,Medtronic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Medtronic O-arm O2
+TeraRecon iNtuition,TeraRecon (ConcertAI),clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),TeraRecon iNtuition
+CathWorks FFRangio,CathWorks,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),CathWorks FFRangio
+GE Healthcare FastStroke CT Perfusion 4D,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare FastStroke CT Perfusion 4D
+GE Healthcare Discovery MI,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Discovery MI
+Hologic Genius AI Detection,Hologic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Hologic Genius AI Detection
+MaxQ AI CT CoPilot,MaxQ AI,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),MaxQ AI CT CoPilot
+Brainlab Cranial Navigation,Brainlab,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Brainlab Cranial Navigation
+CellaVision DM1200,CellaVision,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),CellaVision DM1200
+Biosense Webster CARTO 3,Biosense Webster (Johnson & Johnson),clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Biosense Webster CARTO 3
+Canon Cartesion Prime PET/CT,Canon Medical Systems,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Canon Cartesion Prime PET/CT
+Brainlab Elements,Brainlab,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Brainlab Elements
+Bio-Rad BioPlex 2200,Bio-Rad Laboratories,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Bio-Rad BioPlex 2200
+Siemens Biograph PET/CT,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens Biograph PET/CT
+Radformation AutoContour,Radformation,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Radformation AutoContour
+Canon Aplio Ultrasound,Canon Medical Systems,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Canon Aplio Ultrasound
+Brainlab Cirq Alignment,Brainlab,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Brainlab Cirq Alignment
+Edwards Acumen Hypotension Prediction Index,Edwards Lifesciences,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Edwards Acumen Hypotension Prediction Index
+Carestream CS 9600,Carestream Dental,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Carestream CS 9600
+Siemens ACUSON Sequoia,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens ACUSON Sequoia
+Philips Smart Collimation Thorax,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips Smart Collimation Thorax
+ARANZ Silhouette Wound Imaging,ARANZ Medical,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),ARANZ Silhouette Wound Imaging
+Butterfly iQ Ultrasound,Butterfly Network,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Butterfly iQ Ultrasound
+CareView Patient Safety System,CareView Communications,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),CareView Patient Safety System
+GE Healthcare Omni Legend PET/CT,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Omni Legend PET/CT
+Volpara Imaging,Volpara Health,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Volpara Imaging
+GE Healthcare LOGIQ Ultrasound,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare LOGIQ Ultrasound
+ReflexAI,ReflexAI,training,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),ReflexAI
+Medtronic LINQ II,Medtronic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Medtronic LINQ II
+GE Healthcare Vivid E Ultrasound,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Vivid E Ultrasound
+Avicenna.AI CINA,Avicenna.AI,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Avicenna.AI CINA
+Zeiss CLARUS,Carl Zeiss Meditec,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Zeiss CLARUS
+AgileMD eCART,AgileMD,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),AgileMD eCART
+Podimetrics SmartMat,Podimetrics,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Podimetrics SmartMat
+Whiterabbit.ai WRDensity,Whiterabbit.ai,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Whiterabbit.ai WRDensity
+Welldoc BlueStar,Welldoc,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Welldoc BlueStar
+EarlySense WAVE Clinical Platform,EarlySense,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),EarlySense WAVE Clinical Platform
+VUNO Med-DeepBrain,VUNO,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),VUNO Med-DeepBrain
+Volta Medical AF-Xplorer,Volta Medical,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Volta Medical AF-Xplorer
+Biotronik Home Monitoring,Biotronik,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Biotronik Home Monitoring
+GE Healthcare AMX Portable X-ray,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare AMX Portable X-ray
+Lantheus aPROMISE,Lantheus,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Lantheus aPROMISE
+Dentsply Sirona CEREC,Dentsply Sirona,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Dentsply Sirona CEREC
+Lyssn,Lyssn,audio_analysis,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Lyssn
+CareCentra,CareCentra,clinical_decision_support,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),CareCentra
+iRhythm Zio ECG,iRhythm Technologies,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),iRhythm Zio ECG
+Siemens YSIO Max,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens YSIO Max
+Amazon Web Services,Amazon,cloud_platform,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Amazon Web Services
+Thomson Reuters,Thomson Reuters,legal_research,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Thomson Reuters
+Adobe,Adobe,productivity,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Adobe
+ServiceNow,ServiceNow,itsm,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),ServiceNow
+Cisco,Cisco,security_tool,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Cisco
+Salesforce,Salesforce,productivity,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Salesforce
+Microsoft,Microsoft,productivity,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Microsoft
+Google,Google,productivity,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Google
+Amazon,Amazon,consumer_feature,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Amazon

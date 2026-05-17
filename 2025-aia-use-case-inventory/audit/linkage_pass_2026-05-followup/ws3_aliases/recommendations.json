@@ -1,0 +1,263 @@
+[
+  {
+    "decision": "add_alias",
+    "product_id": 7767,
+    "canonical_name": "Microsoft 365",
+    "proposed_alias": "Microsoft 365",
+    "evidence_quote": "Microsoft 365 | GSS | Microsoft",
+    "confidence": "high",
+    "reasoning": "Product 7767 has zero aliases, including no alias for its own canonical name. Longest-alias-first ordering in product_resolution.extract_products means the existing 'Microsoft 365 Copilot' / 'Microsoft 365 apps' / etc. aliases on neighboring products will absorb those longer strings first, leaving bare 'Microsoft 365' to match only the rare standalone mention (e.g. row with vendor=Microsoft, system=GSS, use_case_name='Microsoft 365'). Distinctive, 13 chars, not a common English word."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 7786,
+    "canonical_name": "Microsoft Power BI",
+    "proposed_alias": "Power BI",
+    "evidence_quote": "Microsoft Power BI Desktop",
+    "confidence": "high",
+    "reasoning": "'Power BI' is 8 chars, distinctive (no other Power BI sub-product in catalog), not common English. Word-boundary check protects against false matches. No alias_text collision."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 7607,
+    "canonical_name": "Azure AI Foundry",
+    "proposed_alias": "AI Foundry",
+    "evidence_quote": "Azure AI Foundry Platform",
+    "confidence": "medium",
+    "reasoning": "'AI Foundry' is 10 chars, distinctive. Palantir 'Foundry' is not in catalog as 'AI Foundry'; only Azure AI Foundry uses this exact phrase. Bare 'Foundry' would be unsafe (Palantir Foundry collision), but 'AI Foundry' is specific."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 8062,
+    "canonical_name": "Azure Synapse Analytics",
+    "proposed_alias": "Synapse Analytics",
+    "evidence_quote": "Azure Synapse Analytics",
+    "confidence": "high",
+    "reasoning": "'Synapse Analytics' is 17 chars, highly distinctive, no collision. Bare 'Synapse' alone would be too generic (neural synapse contexts), but 'Synapse Analytics' is unambiguous."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 7841,
+    "canonical_name": "SQL Server Management Studio",
+    "proposed_alias": "SSMS",
+    "evidence_quote": "SQL Server Management Studio",
+    "confidence": "medium",
+    "reasoning": "'SSMS' is the standard industry abbreviation for SQL Server Management Studio, 4 chars (meets minimum), all-caps acronym not common English. No catalog collision. Word-boundary check protects against random substring matches."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 7774,
+    "canonical_name": "Microsoft Azure Quantum Elements",
+    "proposed_alias": "Azure Quantum Elements",
+    "evidence_quote": "Microsoft Azure Quantum Elements",
+    "confidence": "high",
+    "reasoning": "'Azure Quantum Elements' is 22 chars, highly distinctive, no collision. Captures the common shorthand without the 'Microsoft' prefix."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 7783,
+    "canonical_name": "Microsoft OneDrive",
+    "proposed_alias": "OneDrive",
+    "evidence_quote": "Microsoft OneDrive",
+    "confidence": "high",
+    "reasoning": "'OneDrive' is 8 chars, single-word distinctive product name. Not a common English word. No collisions in catalog. Word-boundary check protects."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 7784,
+    "canonical_name": "Microsoft OneNote",
+    "proposed_alias": "OneNote",
+    "evidence_quote": "Microsoft OneNote",
+    "confidence": "high",
+    "reasoning": "'OneNote' is 7 chars, single-word distinctive product name. Not common English. No collisions."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 7788,
+    "canonical_name": "Microsoft PowerPoint",
+    "proposed_alias": "PowerPoint",
+    "evidence_quote": "Microsoft PowerPoint",
+    "confidence": "high",
+    "reasoning": "'PowerPoint' is 10 chars, distinctive trademark term. Not common English. No collisions."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 7781,
+    "canonical_name": "Microsoft Exchange Server",
+    "proposed_alias": "Exchange Server",
+    "evidence_quote": "Microsoft Exchange Server",
+    "confidence": "high",
+    "reasoning": "'Exchange Server' is 15 chars, distinctive. Bare 'Exchange' alone would be unsafe (currency exchange, knowledge exchange), but the 'Server' qualifier makes it specific."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 7794,
+    "canonical_name": "Microsoft Skype",
+    "proposed_alias": "Skype",
+    "evidence_quote": "Microsoft Skype App",
+    "confidence": "high",
+    "reasoning": "'Skype' is 5 chars, distinctive trademark, not a common English word, no collisions."
+  },
+  {
+    "decision": "add_alias",
+    "product_id": 8066,
+    "canonical_name": "Microsoft Viva",
+    "proposed_alias": "Viva",
+    "evidence_quote": "Microsoft Viva",
+    "confidence": "medium",
+    "reasoning": "'Viva' is 4 chars (meets minimum), distinctive Microsoft trademark. Tested against use_cases narrative: 'survival', 'arrival', 'estival' all contain 'viva' but the word-boundary check in product_resolution.extract_products (lines 95-97) rejects them. Zero standalone 'Viva' false-positive contexts found."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7770,
+    "canonical_name": "Microsoft AI Builder",
+    "proposed_alias": "AI Builder",
+    "evidence_quote": "AI Builder Document Scraping",
+    "reasoning": "Per charter guidance: 'AI Builder' is too generic — federal narratives describe many in-house tools as 'AI builders'. Keep only the existing 'Microsoft AI Builder' alias."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7579,
+    "canonical_name": "Microsoft Sentinel",
+    "proposed_alias": "Sentinel",
+    "evidence_quote": "Microsoft Sentinel",
+    "reasoning": "'Sentinel' alone collides hard: ESA Sentinel satellites appear in NOAA/USGS use cases ('Supervised learning for phycocyanin estimation from Sentinel'), and FTC has a 'Sentinel Network Services' system with 6+ use cases. Keep only 'Microsoft Sentinel'."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7780,
+    "canonical_name": "Microsoft Edge",
+    "proposed_alias": "Edge",
+    "evidence_quote": "Microsoft Edge",
+    "reasoning": "'Edge' alone collides heavily with 'edge AI', 'edge computing', 'Secure Access Service Edge (SASE)', 'Real-time Edge AI for Distributed Systems'. 190 narrative mentions of 'edge' — almost none refer to the browser. Unsafe."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7785,
+    "canonical_name": "Microsoft Outlook",
+    "proposed_alias": "Outlook",
+    "evidence_quote": "Microsoft Outlook",
+    "reasoning": "'Outlook' alone collides with NOAA/USGS 'hurricane outlooks', 'drought outlooks', 'ENSO outlooks'. These are forecast products, not the email client. Keep only 'Microsoft Outlook'."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7778,
+    "canonical_name": "Microsoft Discovery",
+    "proposed_alias": "Discovery",
+    "evidence_quote": "Microsoft Discovery",
+    "reasoning": "'Discovery' is one of the most overloaded words in federal AI narratives — 'scientific discovery', 'data discovery', 'drug discovery', 'discovery phase'. 85+ mentions, almost none are the Microsoft product. Keep only 'Microsoft Discovery'."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7789,
+    "canonical_name": "Microsoft Project",
+    "proposed_alias": "Project",
+    "evidence_quote": "Microsoft Project",
+    "reasoning": "'Project' is a common English word and appears 263 times in narratives almost always as the generic noun. Unsafe."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7779,
+    "canonical_name": "Microsoft Dynamics 365",
+    "proposed_alias": "Dynamics",
+    "evidence_quote": "Microsoft Dynamics 365",
+    "reasoning": "'Dynamics' alone collides with 'Boston Dynamics', 'wetland dynamics', 'molecular dynamics', 'electrodynamics'. The longer 'Dynamics 365' would be safe but no unlinked narrative uses that exact bigram — existing 'Microsoft Dynamics 365' / 'Microsoft Dynamics Online' aliases already cover the corpus."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7792,
+    "canonical_name": "Microsoft Search in Bing",
+    "proposed_alias": "Bing",
+    "evidence_quote": "Microsoft Bing Service",
+    "reasoning": "'Bing' is 4 chars and would only word-boundary-match standalone occurrences. Risk: 'Microsoft Bing Service' could be a separate (non-AI-search) product. Conservative: skip bare 'Bing'. Add 'Microsoft Bing' instead.",
+    "notes": "Consider 'Microsoft Bing' as a follow-up alias."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7607,
+    "canonical_name": "Azure AI Foundry",
+    "proposed_alias": "Foundry",
+    "evidence_quote": "NIH Integrated Data Analysis Platform / Palantir Foundry",
+    "reasoning": "Bare 'Foundry' alone collides with Palantir Foundry (NIH IDAP and other federal Palantir deployments). Use 'AI Foundry' instead (see add_alias above)."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 8062,
+    "canonical_name": "Azure Synapse Analytics",
+    "proposed_alias": "Synapse",
+    "evidence_quote": "Azure Synapse Analytics",
+    "reasoning": "Bare 'Synapse' alone is too generic (neural synapse research contexts). Use 'Synapse Analytics' instead (see add_alias above)."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7781,
+    "canonical_name": "Microsoft Exchange Server",
+    "proposed_alias": "Exchange",
+    "evidence_quote": "Microsoft Exchange Server",
+    "reasoning": "Bare 'Exchange' alone is too generic ('information exchange', 'data exchange', 'health information exchange'). Use 'Exchange Server' instead."
+  },
+  {
+    "decision": "unclear",
+    "product_id": 7768,
+    "canonical_name": "Microsoft 365 Apps for Enterprise",
+    "proposed_alias": "Microsoft 365 Apps",
+    "evidence_quote": "Microsoft 365 Apps for Enterprise",
+    "reasoning": "Microsoft 365 Copilot already has alias 'Microsoft 365 apps' (case-insensitive collision). Adding 'Microsoft 365 Apps' here would conflict. Leave alone or migrate that alias to product 7768 — needs human review."
+  },
+  {
+    "decision": "unclear",
+    "product_id": 7501,
+    "canonical_name": "Azure Data Factory",
+    "proposed_alias": "Data Factory",
+    "evidence_quote": "Azure Data Factory",
+    "reasoning": "'Data Factory' is plausibly distinctive (12 chars, niche), but 'data factory' as a noun phrase appears in some MLOps narratives describing pipelines. ADF alias already exists. Marginal — skip unless reviewer disagrees."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7771,
+    "canonical_name": "Microsoft Azure Authoring Tools",
+    "proposed_alias": "Azure Authoring Tools",
+    "evidence_quote": "Microsoft Azure Authoring Tools",
+    "reasoning": "Stripping 'Microsoft' would only match the same string. Existing alias suffices."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7773,
+    "canonical_name": "Microsoft Azure PowerShell",
+    "proposed_alias": "Azure PowerShell",
+    "evidence_quote": "Microsoft Azure PowerShell",
+    "reasoning": "Stripping 'Microsoft' adds no real coverage. 'PowerShell' alone too generic (broad DevOps tool not necessarily Azure-tied). Existing alias suffices."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7790,
+    "canonical_name": "Microsoft Purview eDiscovery",
+    "proposed_alias": "eDiscovery",
+    "evidence_quote": "Microsoft Purview eDiscovery",
+    "reasoning": "'eDiscovery' alone is a generic legal-tech category; many federal agencies run eDiscovery without Purview. Unsafe."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7791,
+    "canonical_name": "Microsoft ScreenSketch",
+    "proposed_alias": "ScreenSketch",
+    "evidence_quote": "Microsoft ScreenSketch",
+    "reasoning": "Distinctive single-word string and would be safe, but only 1 unlinked narrative mention exists and it already matches via the existing 'Microsoft ScreenSketch' alias. No measurable coverage gain."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7862,
+    "canonical_name": "Visual Studio",
+    "proposed_alias": "VS",
+    "evidence_quote": "Visual Studio",
+    "reasoning": "'VS' is only 2 chars (fails the ≥4 char rule) and is overloaded ('versus', 'VS Code' which is a different product). Visual Studio already has 'Visual Studio' and 'Visual Studio Community' aliases — sufficient."
+  },
+  {
+    "decision": "false_positive",
+    "product_id": 7863,
+    "canonical_name": "Visual Studio Enterprise",
+    "proposed_alias": "VS Enterprise",
+    "evidence_quote": "Visual Studio Enterprise",
+    "reasoning": "'VS Enterprise' is not a recognized shorthand and 'Enterprise' alone is highly generic. Existing alias covers all observed mentions."
+  }
+]

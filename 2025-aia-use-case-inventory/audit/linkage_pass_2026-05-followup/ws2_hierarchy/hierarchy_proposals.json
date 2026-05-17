@@ -1,0 +1,154 @@
+[
+  {
+    "decision": "add_product",
+    "proposed_canonical_name": "Amazon Web Services",
+    "vendor": "Amazon",
+    "product_type": "cloud_platform",
+    "is_generative_ai": 0,
+    "proposed_parent_canonical_name": null,
+    "confidence": "high",
+    "reasoning": "Umbrella parent for the 12 first-party AWS/Amazon AI services currently orphaned in the catalog (Amazon Q, AWS Bedrock, AWS Kendra, AWS Lex, AWS Rekognition, AWS Textract, AWS Transcribe, AWS Translate, Amazon Comprehend, Amazon SageMaker, Amazon Connect, Amazon Alexa). Two existing catalog rows (Amazon Connect, AWS Translate) already use vendor='Amazon Web Services' but no AWS row exists to parent them. Reviewer C flagged this as top-priority gap."
+  },
+  {
+    "decision": "add_product",
+    "proposed_canonical_name": "Thomson Reuters",
+    "vendor": "Thomson Reuters",
+    "product_type": "legal_research",
+    "is_generative_ai": 0,
+    "proposed_parent_canonical_name": null,
+    "confidence": "high",
+    "reasoning": "Umbrella parent for 4 orphaned Thomson Reuters products (Westlaw AI, CoCounsel, ProLaw, Thomson Reuters CLEAR). Reviewer C flagged this gap. Matches the LexisNexis umbrella pattern already in catalog."
+  },
+  {
+    "decision": "add_product",
+    "proposed_canonical_name": "Adobe",
+    "vendor": "Adobe",
+    "product_type": "productivity",
+    "is_generative_ai": 0,
+    "proposed_parent_canonical_name": null,
+    "confidence": "medium",
+    "reasoning": "Umbrella parent for Adobe Creative Cloud Suite and any future Adobe products (Sensei, Firefly, Photoshop, Premiere). Currently Adobe CC Suite is the de-facto parent for Adobe sub-products via the prior pass, but there is no top-level Adobe vendor row."
+  },
+  {
+    "decision": "add_product",
+    "proposed_canonical_name": "ServiceNow",
+    "vendor": "ServiceNow",
+    "product_type": "itsm",
+    "is_generative_ai": 0,
+    "proposed_parent_canonical_name": null,
+    "confidence": "high",
+    "reasoning": "Umbrella parent for ServiceNow Now Assist and ServiceNow ITOM Predictive AIOps. Reviewer C flagged this gap. ServiceNow Now Assist has 46 edges in the corpus so consolidating under a vendor umbrella improves the dashboard's vendor-family rollups."
+  },
+  {
+    "decision": "add_product",
+    "proposed_canonical_name": "Cisco",
+    "vendor": "Cisco",
+    "product_type": "security_tool",
+    "is_generative_ai": 0,
+    "proposed_parent_canonical_name": null,
+    "confidence": "high",
+    "reasoning": "Umbrella parent for Cisco Identity Services Engine and Cisco Secure Network Analytics, both currently orphaned. Matches the per-vendor umbrella pattern."
+  },
+  {
+    "decision": "add_product",
+    "proposed_canonical_name": "Salesforce",
+    "vendor": "Salesforce",
+    "product_type": "productivity",
+    "is_generative_ai": 0,
+    "proposed_parent_canonical_name": null,
+    "confidence": "high",
+    "reasoning": "Umbrella parent for Salesforce Einstein, Slack, and Tableau (all currently parent-less with vendor='Salesforce'). Salesforce acquired Slack (2021) and Tableau (2019); they share Salesforce's vendor identity in the catalog."
+  },
+  {
+    "decision": "add_product",
+    "proposed_canonical_name": "Microsoft",
+    "vendor": "Microsoft",
+    "product_type": "productivity",
+    "is_generative_ai": 0,
+    "proposed_parent_canonical_name": null,
+    "confidence": "high",
+    "reasoning": "Top-level Microsoft umbrella for the 13 orphaned top-level Microsoft products (Microsoft 365, Microsoft Azure Platform, Microsoft Power Platform, Microsoft Dynamics 365, GitHub Copilot, Microsoft Edge, Microsoft Discovery, Microsoft HoloLens, Microsoft ScreenSketch, Microsoft Skype, Microsoft Viva, SQL Server Management Studio, Visual Studio). Existing chains like Azure OpenAI -> Microsoft Azure Platform stay at depth 3 after parenting Azure Platform to Microsoft -- still well under the depth-5 CTE cap."
+  },
+  {
+    "decision": "add_product",
+    "proposed_canonical_name": "Google",
+    "vendor": "Google",
+    "product_type": "productivity",
+    "is_generative_ai": 0,
+    "proposed_parent_canonical_name": null,
+    "confidence": "high",
+    "reasoning": "Top-level Google umbrella for 13 orphaned Google products (Gemini, NotebookLM, Google Workspace, Google Cloud Platform, Google Translate, Google Maps, Google Lens, Google Pixel, Google Chrome Generative AI, Google Colab, Google Coral TPU, Google Earth Engine, Google News Brief, reCAPTCHA). Reviewer C flagged Google Workspace/Maps/Translate as needing an umbrella."
+  },
+  {
+    "decision": "add_product",
+    "proposed_canonical_name": "Amazon",
+    "vendor": "Amazon",
+    "product_type": "consumer_feature",
+    "is_generative_ai": 0,
+    "proposed_parent_canonical_name": null,
+    "confidence": "medium",
+    "reasoning": "Top-level Amazon umbrella for Amazon-the-company (parent of Amazon Web Services and Amazon Alexa). Alexa is a consumer Amazon product, not strictly AWS. Keeps a clean vendor hierarchy: Amazon -> AWS -> AWS-services and Amazon -> Alexa."
+  },
+
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Amazon Web Services", "proposed_parent_canonical_name": "Amazon", "confidence": "high", "reasoning": "AWS is Amazon's cloud division." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Amazon Alexa", "proposed_parent_canonical_name": "Amazon", "confidence": "high", "reasoning": "Alexa is an Amazon consumer product (devices/voice), distinct from AWS." },
+
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Amazon Q", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Amazon Q is a first-party AWS service (Q Developer, Q Business)." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "AWS Bedrock", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Bedrock is the AWS generative-AI foundation-model service." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "AWS Kendra", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Kendra is a first-party AWS enterprise-search service." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "AWS Lex", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Lex is the AWS conversational-bot service." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "AWS Rekognition", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Rekognition is the AWS computer-vision service." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "AWS Textract", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Textract is the AWS document-OCR service." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "AWS Transcribe", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Transcribe is the AWS speech-to-text service." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "AWS Translate", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Translate is the AWS neural machine-translation service. Catalog row already has vendor='Amazon Web Services'." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Amazon Comprehend", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Comprehend is the AWS NLP service." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Amazon SageMaker", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "SageMaker is the AWS ML training/serving platform." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Amazon Connect", "proposed_parent_canonical_name": "Amazon Web Services", "confidence": "high", "reasoning": "Amazon Connect is the AWS contact-center service. Catalog row already has vendor='Amazon Web Services'." },
+
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Westlaw AI", "proposed_parent_canonical_name": "Thomson Reuters", "confidence": "high", "reasoning": "Westlaw is Thomson Reuters' flagship legal-research product." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "CoCounsel", "proposed_parent_canonical_name": "Thomson Reuters", "confidence": "high", "reasoning": "CoCounsel (acquired from Casetext) is a Thomson Reuters legal-AI product." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "ProLaw", "proposed_parent_canonical_name": "Thomson Reuters", "confidence": "high", "reasoning": "ProLaw is a Thomson Reuters legal practice management product." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Thomson Reuters CLEAR", "proposed_parent_canonical_name": "Thomson Reuters", "confidence": "high", "reasoning": "CLEAR is Thomson Reuters' investigative-data product." },
+
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Adobe Creative Cloud Suite", "proposed_parent_canonical_name": "Adobe", "confidence": "high", "reasoning": "CC Suite is Adobe's flagship product family." },
+
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "ServiceNow Now Assist", "proposed_parent_canonical_name": "ServiceNow", "confidence": "high", "reasoning": "Now Assist is the ServiceNow generative-AI feature family." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "ServiceNow IT Operations Management (ITOM) Predictive AIOps", "proposed_parent_canonical_name": "ServiceNow", "confidence": "high", "reasoning": "ITOM Predictive AIOps is a ServiceNow product module." },
+
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Cisco Identity Services Engine", "proposed_parent_canonical_name": "Cisco", "confidence": "high", "reasoning": "Cisco ISE is Cisco's network access-control product." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Cisco Secure Network Analytics", "proposed_parent_canonical_name": "Cisco", "confidence": "high", "reasoning": "Cisco Secure Network Analytics (Stealthwatch) is a Cisco security product." },
+
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Salesforce Einstein", "proposed_parent_canonical_name": "Salesforce", "confidence": "high", "reasoning": "Einstein is Salesforce's native AI/ML platform." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Slack", "proposed_parent_canonical_name": "Salesforce", "confidence": "high", "reasoning": "Salesforce acquired Slack in 2021; catalog row already lists vendor='Salesforce'." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Tableau", "proposed_parent_canonical_name": "Salesforce", "confidence": "high", "reasoning": "Salesforce acquired Tableau in 2019; catalog row already lists vendor='Salesforce'." },
+
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft 365", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "M365 is a Microsoft productivity-suite SKU. Adding this edge makes existing M365-children (Teams, Outlook, etc.) sit at depth 3 -- well under the depth-5 cap." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft Azure Platform", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "Azure is Microsoft's cloud platform. Existing Azure-* children move to depth 3." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft Power Platform", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "Power Platform is a Microsoft low-code SKU family." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft Dynamics 365", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "Dynamics 365 is Microsoft's CRM/ERP suite." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "GitHub Copilot", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "GitHub is Microsoft-owned; Copilot is a Microsoft product. Prior pass explicitly removed the GitHub Copilot -> M365 Copilot edge as sibling SKUs, so Microsoft (not M365) is the correct parent." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft Edge", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "Edge is the Microsoft browser; charter notes Edge is NOT part of M365 (separately licensed), so parent at Microsoft level." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft Discovery", "proposed_parent_canonical_name": "Microsoft", "confidence": "medium", "reasoning": "Microsoft Discovery is a Microsoft research/scientific-AI offering; no narrower parent available." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft HoloLens", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "HoloLens is a Microsoft AR hardware product." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft ScreenSketch", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "ScreenSketch (Snip & Sketch) is a Microsoft Windows utility." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft Skype", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "Skype is a Microsoft-owned communications product." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Microsoft Viva", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "Viva is a Microsoft employee-experience platform. Note: Viva ties into M365 but is sold as a separate Microsoft SKU family; parenting at Microsoft level is safer." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "SQL Server Management Studio", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "SSMS is a Microsoft developer tool (SQL Server admin GUI)." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Visual Studio", "proposed_parent_canonical_name": "Microsoft", "confidence": "high", "reasoning": "Visual Studio is a Microsoft IDE." },
+
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Gemini", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Gemini is Google's flagship LLM family." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "NotebookLM", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "NotebookLM is a Google product. Prior pass removed the NotebookLM -> Gemini edge (model-use not sub-SKU), so parent at Google level." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Workspace", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Google Workspace (formerly G Suite) is Google's productivity SKU." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Cloud Platform", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "GCP is Google's public-cloud platform. Existing Vertex AI / Cloud Vision children move to depth 3." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Translate", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Google Translate is a Google consumer/API translation product." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Maps", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Google Maps is Google's mapping product." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Lens", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Google Lens is Google's image-search/AR product." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Pixel", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Pixel is Google's phone hardware line." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Chrome Generative AI", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Chrome is a Google product; generative-AI features ship inside it." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Colab", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Colab is Google's hosted Jupyter environment." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Coral TPU", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Coral TPU is Google's edge-AI hardware line." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Earth Engine", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "Earth Engine is Google's geospatial-analysis platform." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google Earth Engine Wetlands Classifier", "proposed_parent_canonical_name": "Google Earth Engine", "confidence": "high", "reasoning": "Wetlands Classifier is a model running on Google Earth Engine. Two-hop chain (-> Google) stays at depth 3." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "Google News Brief", "proposed_parent_canonical_name": "Google", "confidence": "medium", "reasoning": "Google News Brief is a Google consumer-AI feature in the Google News surface." },
+  { "decision": "add_hierarchy_edge", "child_canonical_name": "reCAPTCHA", "proposed_parent_canonical_name": "Google", "confidence": "high", "reasoning": "reCAPTCHA is a Google security/anti-bot product." }
+]

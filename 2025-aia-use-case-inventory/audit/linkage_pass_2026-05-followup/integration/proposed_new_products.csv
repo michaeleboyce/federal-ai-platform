@@ -1,0 +1,108 @@
+canonical_name,vendor,product_type,is_generative_ai,proposed_parent_canonical_name,linking_use_case_ids,linking_consolidated_ids,confidence,reasoning,_agent
+VA Clinical AI Agent,U.S. Department of Veterans Affairs,transcription,1,,78492,,high,VA-internal generative-AI ambient agent that drafts clinical notes from clinician-patient conversations. agency_internal_platform.,ws1_va
+VA VoiceBot,U.S. Department of Veterans Affairs,nlp_specific,0,,78494,,medium,VA-built call-center self-service NLU voicebot. agency_internal_platform.,ws1_va
+VA AI Assist,U.S. Department of Veterans Affairs,nlp,1,,78496,,medium,VA-internal AI-powered clinical-record search/summarization tool. agency_internal_platform.,ws1_va
+Roche Digital Pathology,Roche,clinical_decision_support,0,,78514,,high,Roche's commercial digital pathology platform; VA uses it for tumor identification on slides.,ws1_va
+Cogitativo,Cogitativo,clinical_decision_support,0,,78516,,medium,Cogitativo is a real commercial healthcare-AI vendor; title-stamped product likely their predictive analytics platform.,ws1_va
+Parable 3D Wound Care,Parable Health,clinical_decision_support,0,,78521,,high,Parable Health commercial 3D computer-vision wound-care platform.,ws1_va
+Koios DS Breast,Koios Medical,clinical_decision_support,0,,78528,,high,Koios Medical's FDA-cleared Decision Support tool for breast ultrasound lesion classification.,ws1_va
+Lambient AI Scribe,Lambient,transcription,1,,78534,,high,Lambient is an ambient AI medical scribe product deployed at VA per narrative.,ws1_va
+Ephesoft Transact,Ephesoft,document_ai,0,,78538,,high,Ephesoft Transact intelligent document capture used for VA fax automation; well-known commercial doc-AI product.,ws1_va
+Mindray TE X Ultrasound,Mindray,clinical_decision_support,0,,78544,,high,Mindray diagnostic ultrasound family with automated measurement AI.,ws1_va
+Freed AI Medical Scribe,Freed,transcription,1,,78548,,high,Freed (getfreed.ai) ambient AI medical scribe product.,ws1_va
+Nuance PowerScribe One,Nuance (Microsoft),transcription,1,Nuance Dragon,78556,,high,Nuance PowerScribe One is a well-known radiology reporting product with AI assist.,ws1_va
+VA E2 HelpBot,U.S. Department of Veterans Affairs,nlp,1,,78569,,medium,VA-internal GPT-4-powered help bot for E2 travel system. agency_internal_platform.,ws1_va
+Pyramid Analytics,Pyramid Analytics,data_analytics,1,,78584,,high,"Pyramid Analytics is a real commercial BI platform with generative-AI features, deployed enterprise-wide at VA.",ws1_va
+BillieGPT,U.S. Department of Veterans Affairs,nlp,1,,78587,,medium,VA-internal generative-AI chatbot for school certifying officials. agency_internal_platform.,ws1_va
+Pingoo.AI,Pingoo.AI,nlp,1,,78600,,medium,Pingoo.AI is a real patient-education generative-AI vendor (RAG-based) used at VA.,ws1_va
+Glassbeam Clinsights,Glassbeam,data_analytics,0,,78608,,high,Glassbeam Clinsights is a real commercial medical-device-data analytics product.,ws1_va
+Abridge Ambient Scribe,Abridge,transcription,1,,78626,,high,Abridge ambient AI medical scribe; VA dev_type=Purchased from a vendor. Title-stamped product name.,ws1_va
+Knowtex Ambient Scribe,Knowtex,transcription,1,,78627,,high,Knowtex commercial ambient AI medical scribe; dev_type=Purchased from a vendor.,ws1_va
+Agfa DR 800 MUSICA,Agfa HealthCare,clinical_decision_support,0,,78659,,high,Agfa DR 800 X-ray system with MUSICA AI image processing.,ws1_va
+Beckman Coulter DxH 800,Beckman Coulter,clinical_decision_support,0,,78660,,high,Beckman Coulter DxH 800 hematology analyzer with automated cell-classification ML.,ws1_va
+GE Healthcare Xeleris V,GE Healthcare,clinical_decision_support,0,,78661,,high,GE Healthcare Xeleris V nuclear medicine processing platform with AI organ segmentation.,ws1_va
+GE Healthcare SIGNA Artist (AIR Recon DL),GE Healthcare,clinical_decision_support,0,,78662,,high,GE SIGNA Artist MRI system with AIR Recon DL deep-learning reconstruction.,ws1_va
+Medtronic GI Genius,Medtronic,clinical_decision_support,0,,78663,,high,Medtronic GI Genius CADe polyp-detection device for colonoscopy.,ws1_va
+GE Healthcare TrueFidelity CT,GE Healthcare,clinical_decision_support,0,,78664,,high,GE Healthcare TrueFidelity deep-learning image reconstruction for CT.,ws1_va
+Aidoc BriefCase,Aidoc,clinical_decision_support,0,,78665,,high,Aidoc BriefCase AI radiology triage suite; well-known commercial product.,ws1_va
+iCAD ProFound AI,iCAD,clinical_decision_support,0,,78666,,high,iCAD ProFound AI for breast tomosynthesis mammography.,ws1_va
+Circle CVI42,Circle Cardiovascular Imaging,clinical_decision_support,0,,"78667,78817",,high,Circle Cardiovascular Imaging cvi42 cardiac MRI/CT analysis platform.,ws1_va
+Siemens SOMATOM go.,Siemens Healthineers,clinical_decision_support,0,,78671,,high,Siemens SOMATOM go. CT scanner family with AI-assisted imaging.,ws1_va
+Solventum 360 Encompass,Solventum (3M Health Information Systems),document_ai,0,,78672,,high,Solventum (formerly 3M) 360 Encompass computer-assisted medical coding platform.,ws1_va
+GE Healthcare Vivid iq,GE Healthcare,clinical_decision_support,0,,78673,,high,GE Vivid iq portable cardiovascular ultrasound with AI.,ws1_va
+GE Healthcare EchoPAC,GE Healthcare,clinical_decision_support,0,,78674,,high,GE EchoPAC ultrasound analysis platform for echocardiograms.,ws1_va
+Riverain ClearRead CT,Riverain Technologies,clinical_decision_support,0,,78676,,high,Riverain ClearRead CT lung nodule detection CAD product.,ws1_va
+ScreenPoint Transpara,ScreenPoint Medical,clinical_decision_support,0,,78677,,high,ScreenPoint Transpara mammography AI for breast cancer detection.,ws1_va
+Canon Alphenix Angio Workstation,Canon Medical Systems,clinical_decision_support,0,,78678,,high,Canon Alphenix angiography workstation with image-stabilization AI.,ws1_va
+Philips eCareManager,Philips,clinical_decision_support,0,,78680,,high,Philips eCareManager tele-ICU clinical decision-support platform.,ws1_va
+GE Healthcare Voluson Expert,GE Healthcare,clinical_decision_support,0,,78681,,high,GE Voluson Expert OB/GYN ultrasound family with AI image acquisition.,ws1_va
+Medtronic CareLink,Medtronic,clinical_decision_support,0,,78682,,high,Medtronic CareLink remote cardiac monitoring with AI false-positive filtering.,ws1_va
+GE Healthcare Critical Care Suite,GE Healthcare,clinical_decision_support,0,,78683,,high,GE Critical Care Suite AI pneumothorax-detection on chest X-rays.,ws1_va
+Philips Vereos PET/CT,Philips,clinical_decision_support,0,,78686,,high,Philips Vereos PET/CT system.,ws1_va
+GE Healthcare Venue Fit,GE Healthcare,clinical_decision_support,0,,78688,,high,GE Venue Fit portable ultrasound with cNerve AI for nerve-block guidance.,ws1_va
+Sonic Incytes Velacur,Sonic Incytes,clinical_decision_support,0,,78689,,medium,Sonic Incytes Velacur portable liver ultrasound elastography device.,ws1_va
+Siemens syngo,Siemens Healthineers,clinical_decision_support,0,,78690,,high,Siemens syngo medical imaging viewing and post-processing platform.,ws1_va
+RapidAI,RapidAI,clinical_decision_support,0,,78691,,high,RapidAI stroke imaging analysis platform.,ws1_va
+Brainlab Elements Spine,Brainlab,clinical_decision_support,0,,78692,,high,Brainlab Elements Spine Planning surgical planning software.,ws1_va
+RaySearch RayStation,RaySearch Laboratories,clinical_decision_support,0,,78693,,high,RaySearch RayStation radiation oncology treatment-planning system.,ws1_va
+Philips QLAB,Philips,clinical_decision_support,0,,78694,,high,Philips QLAB advanced ultrasound quantification.,ws1_va
+Boston Scientific Preventice BodyGuardian,Boston Scientific (Preventice),clinical_decision_support,0,,78695,,high,Preventice BodyGuardian remote cardiac monitoring (Boston Scientific).,ws1_va
+Philips EPIQ/Affiniti Ultrasound,Philips,clinical_decision_support,0,,78696,,high,Philips EPIQ/Affiniti diagnostic ultrasound systems with R-trigger AI.,ws1_va
+Persyst EEG,Persyst Development,clinical_decision_support,0,,78697,,high,Persyst EEG analysis software with automated seizure detection.,ws1_va
+Abbott OPTIS Imaging,Abbott,clinical_decision_support,0,,78698,,high,Abbott OPTIS OCT coronary imaging system.,ws1_va
+Medtronic O-arm O2,Medtronic,clinical_decision_support,0,,78699,,high,Medtronic O-arm O2 intraoperative imaging system.,ws1_va
+TeraRecon iNtuition,TeraRecon (ConcertAI),clinical_decision_support,0,,78703,,high,TeraRecon iNtuition advanced visualization platform. Covers 78703 + 78825 TeraRecon.,ws1_va
+CathWorks FFRangio,CathWorks,clinical_decision_support,0,,78705,,high,CathWorks FFRangio non-invasive FFR coronary analysis from angiograms.,ws1_va
+GE Healthcare FastStroke CT Perfusion 4D,GE Healthcare,clinical_decision_support,0,,78707,,high,GE FastStroke / CT Perfusion 4D stroke imaging package.,ws1_va
+GE Healthcare Discovery MI,GE Healthcare,clinical_decision_support,0,,78708,,high,GE Discovery MI PET/CT system.,ws1_va
+Hologic Genius AI Detection,Hologic,clinical_decision_support,0,,78709,,high,Hologic Genius AI Detection for digital breast tomosynthesis.,ws1_va
+MaxQ AI CT CoPilot,MaxQ AI,clinical_decision_support,0,,78710,,medium,CT CoPilot brain CT analysis (MaxQ AI / similar).,ws1_va
+Brainlab Cranial Navigation,Brainlab,clinical_decision_support,0,,78711,,high,Brainlab Cranial Navigation surgical-navigation suite.,ws1_va
+CellaVision DM1200,CellaVision,clinical_decision_support,0,,78712,,high,CellaVision automated blood-cell image analysis.,ws1_va
+Biosense Webster CARTO 3,Biosense Webster (Johnson & Johnson),clinical_decision_support,0,,78714,,high,Biosense Webster CARTO 3 cardiac electrophysiology mapping system.,ws1_va
+Canon Cartesion Prime PET/CT,Canon Medical Systems,clinical_decision_support,0,,78716,,high,Canon Cartesion Prime PET/CT scanner.,ws1_va
+Brainlab Elements,Brainlab,clinical_decision_support,0,,78720,,high,"Brainlab Elements image-processing suite (image fusion, contouring, fibertracking).",ws1_va
+Bio-Rad BioPlex 2200,Bio-Rad Laboratories,clinical_decision_support,0,,78721,,high,Bio-Rad BioPlex 2200 ANA Screen MDSS for antibody pattern recognition.,ws1_va
+Siemens Biograph PET/CT,Siemens Healthineers,clinical_decision_support,0,,78723,,high,Siemens Biograph PET/CT family.,ws1_va
+Radformation AutoContour,Radformation,clinical_decision_support,0,,78724,,medium,Radformation AutoContour radiation-therapy auto-segmentation.,ws1_va
+Canon Aplio Ultrasound,Canon Medical Systems,clinical_decision_support,0,,78725,,high,Canon Aplio i-series diagnostic ultrasound with automated measurement AI.,ws1_va
+Brainlab Cirq Alignment,Brainlab,clinical_decision_support,0,,78726,,high,Brainlab Cirq cranial alignment surgical-robotics planning software.,ws1_va
+Edwards Acumen Hypotension Prediction Index,Edwards Lifesciences,clinical_decision_support,0,,78727,,high,Edwards Acumen HPI hypotension-prediction algorithm.,ws1_va
+Carestream CS 9600,Carestream Dental,clinical_decision_support,0,,78729,,high,Carestream CS 9600 dental imaging system.,ws1_va
+Siemens ACUSON Sequoia,Siemens Healthineers,clinical_decision_support,0,,78733,,high,Siemens ACUSON Sequoia ultrasound platform.,ws1_va
+Philips Smart Collimation Thorax,Philips,clinical_decision_support,0,,78734,,medium,Philips 7300 C X-ray with AI Smart Collimation Thorax.,ws1_va
+ARANZ Silhouette Wound Imaging,ARANZ Medical,clinical_decision_support,0,,78735,,high,ARANZ Silhouette wound imaging and ML wound-boundary detection.,ws1_va
+Butterfly iQ Ultrasound,Butterfly Network,clinical_decision_support,0,,78738,,high,Butterfly Network iQ3 handheld ultrasound with AI auto-B-line.,ws1_va
+CareView Patient Safety System,CareView Communications,computer_vision,0,,78739,,high,CareView Patient Safety System fall-risk monitoring with computer vision.,ws1_va
+GE Healthcare Omni Legend PET/CT,GE Healthcare,clinical_decision_support,0,,78740,,high,GE Omni Legend PET/CT.,ws1_va
+Volpara Imaging,Volpara Health,clinical_decision_support,0,,78755,,high,Volpara Health breast density volumetric assessment.,ws1_va
+GE Healthcare LOGIQ Ultrasound,GE Healthcare,clinical_decision_support,0,,78758,,high,GE LOGIQ E10 ultrasound with AI assistant.,ws1_va
+ReflexAI,ReflexAI,training,1,,78759,,medium,ReflexAI crisis-responder training simulator (real commercial vendor).,ws1_va
+Medtronic LINQ II,Medtronic,clinical_decision_support,0,,78763,,high,Medtronic LINQ II insertable cardiac monitor with auto arrhythmia detection.,ws1_va
+GE Healthcare Vivid E Ultrasound,GE Healthcare,clinical_decision_support,0,,78766,,high,GE Vivid E80/E90/E95 cardiac ultrasound family.,ws1_va
+Avicenna.AI CINA,Avicenna.AI,clinical_decision_support,0,,78767,,high,Avicenna.AI CINA radiology triage (ICH + LVO). Covers 78767 + 78801 Avicenna LVO.,ws1_va
+Zeiss CLARUS,Carl Zeiss Meditec,clinical_decision_support,0,,78768,,medium,Zeiss CLARUS retinal imaging system with deep-learning processing.,ws1_va
+AgileMD eCART,AgileMD,clinical_decision_support,0,,78790,,high,AgileMD eCART real-time clinical deterioration prediction.,ws1_va
+Podimetrics SmartMat,Podimetrics,clinical_decision_support,0,,78794,,medium,Podimetrics SmartMat AI foot-temperature monitoring for diabetic ulcer prevention; well-known VA-deployed product.,ws1_va
+Whiterabbit.ai WRDensity,Whiterabbit.ai,clinical_decision_support,0,,78804,,high,Whiterabbit.ai WRDensity breast-density classification AI.,ws1_va
+Welldoc BlueStar,Welldoc,clinical_decision_support,0,,78806,,high,Welldoc BlueStar AI-driven diabetes management.,ws1_va
+EarlySense WAVE Clinical Platform,EarlySense,clinical_decision_support,0,,78807,,medium,EarlySense WAVE patient-monitoring platform with deterioration prediction.,ws1_va
+VUNO Med-DeepBrain,VUNO,clinical_decision_support,0,,78809,,high,VUNO Med-DeepBrain MRI brain-atrophy quantification.,ws1_va
+Volta Medical AF-Xplorer,Volta Medical,clinical_decision_support,0,,78810,,high,Volta Medical AF-Xplorer AI for atrial fibrillation ablation guidance.,ws1_va
+Biotronik Home Monitoring,Biotronik,clinical_decision_support,0,,78811,,high,Biotronik Home Monitoring remote cardiac-device monitoring.,ws1_va
+GE Healthcare AMX Portable X-ray,GE Healthcare,clinical_decision_support,0,,78821,,medium,GE AMX portable X-ray with embedded AI (Critical Care Suite).,ws1_va
+Lantheus aPROMISE,Lantheus,clinical_decision_support,0,,78823,,high,Lantheus/EXINI aPROMISE AI prostate PSMA-PET analysis.,ws1_va
+Dentsply Sirona CEREC,Dentsply Sirona,clinical_decision_support,0,,78824,,high,Dentsply Sirona CEREC dental CAD/CAM with AI.,ws1_va
+Lyssn,Lyssn,audio_analysis,0,,78845,,high,Lyssn AI for mental-health session quality analysis.,ws1_va
+CareCentra,CareCentra,clinical_decision_support,1,,78855,,medium,CareCentra personalized AI health-coach platform.,ws1_va
+iRhythm Zio ECG,iRhythm Technologies,clinical_decision_support,0,,78670,,high,iRhythm Zio ECG patch and AI arrhythmia analysis service.,ws1_va
+Siemens YSIO Max,Siemens Healthineers,clinical_decision_support,0,,78669,,high,Siemens YSIO Max digital X-ray with AI-assisted features. Covers 78669 + 78802 Ysio Max.,ws1_va
+Amazon Web Services,Amazon,cloud_platform,0,,,,high,"Umbrella parent for the 12 first-party AWS/Amazon AI services currently orphaned in the catalog (Amazon Q, AWS Bedrock, AWS Kendra, AWS Lex, AWS Rekognition, AWS Textract, AWS Transcribe, AWS Translate, Amazon Comprehend, Amazon SageMaker, Amazon Connect, Amazon Alexa). Two existing catalog rows (Amazon Connect, AWS Translate) already use vendor='Amazon Web Services' but no AWS row exists to paren",ws2_hierarchy
+Thomson Reuters,Thomson Reuters,legal_research,0,,,,high,"Umbrella parent for 4 orphaned Thomson Reuters products (Westlaw AI, CoCounsel, ProLaw, Thomson Reuters CLEAR). Reviewer C flagged this gap. Matches the LexisNexis umbrella pattern already in catalog.",ws2_hierarchy
+Adobe,Adobe,productivity,0,,,,medium,"Umbrella parent for Adobe Creative Cloud Suite and any future Adobe products (Sensei, Firefly, Photoshop, Premiere). Currently Adobe CC Suite is the de-facto parent for Adobe sub-products via the prior pass, but there is no top-level Adobe vendor row.",ws2_hierarchy
+ServiceNow,ServiceNow,itsm,0,,,,high,Umbrella parent for ServiceNow Now Assist and ServiceNow ITOM Predictive AIOps. Reviewer C flagged this gap. ServiceNow Now Assist has 46 edges in the corpus so consolidating under a vendor umbrella improves the dashboard's vendor-family rollups.,ws2_hierarchy
+Cisco,Cisco,security_tool,0,,,,high,"Umbrella parent for Cisco Identity Services Engine and Cisco Secure Network Analytics, both currently orphaned. Matches the per-vendor umbrella pattern.",ws2_hierarchy
+Salesforce,Salesforce,productivity,0,,,,high,"Umbrella parent for Salesforce Einstein, Slack, and Tableau (all currently parent-less with vendor='Salesforce'). Salesforce acquired Slack (2021) and Tableau (2019); they share Salesforce's vendor identity in the catalog.",ws2_hierarchy
+Microsoft,Microsoft,productivity,0,,,,high,"Top-level Microsoft umbrella for the 13 orphaned top-level Microsoft products (Microsoft 365, Microsoft Azure Platform, Microsoft Power Platform, Microsoft Dynamics 365, GitHub Copilot, Microsoft Edge, Microsoft Discovery, Microsoft HoloLens, Microsoft ScreenSketch, Microsoft Skype, Microsoft Viva, SQL Server Management Studio, Visual Studio). Existing chains like Azure OpenAI -> Microsoft Azure P",ws2_hierarchy
+Google,Google,productivity,0,,,,high,"Top-level Google umbrella for 13 orphaned Google products (Gemini, NotebookLM, Google Workspace, Google Cloud Platform, Google Translate, Google Maps, Google Lens, Google Pixel, Google Chrome Generative AI, Google Colab, Google Coral TPU, Google Earth Engine, Google News Brief, reCAPTCHA). Reviewer C flagged Google Workspace/Maps/Translate as needing an umbrella.",ws2_hierarchy
+Amazon,Amazon,consumer_feature,0,,,,medium,"Top-level Amazon umbrella for Amazon-the-company (parent of Amazon Web Services and Amazon Alexa). Alexa is a consumer Amazon product, not strictly AWS. Keeps a clean vendor hierarchy: Amazon -> AWS -> AWS-services and Amazon -> Alexa.",ws2_hierarchy

@@ -39,6 +39,13 @@ fix:
 	# the build_lookups.py re-key. Idempotent. See
 	# audit/linkage_pass_2026-05/CHARTER.md for context.
 	python3 scripts/apply_linkage_pass_2026_05.py --apply
+	# Follow-up sprint (audit/linkage_pass_2026-05-followup/): VA medical-imaging
+	# dark sweep (~108 new products), broader catalog hierarchy gaps (+54 edges
+	# incl. AWS / Google / Microsoft / Thomson Reuters umbrella adds), and
+	# alias coverage audit (12 bare-name aliases on parent products that were
+	# under-aliased — Microsoft 365 had zero aliases before this pass). Same
+	# CSV-staged apply pattern, parameterized via --pass-dir. Idempotent.
+	python3 scripts/apply_linkage_pass_2026_05.py --pass-dir audit/linkage_pass_2026-05-followup --apply
 	# IFP product-category assignments from the curated audit proposal.
 	# Runs AFTER cleanup so it can replace the cleanup step's NULL→
 	# 'unclassified' backfill with concrete category labels (e.g.

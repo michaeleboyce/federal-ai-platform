@@ -72,15 +72,39 @@ def _mentions_catalog_vendor(
     return max(hits, key=len)
 
 
+def _has_word_boundary_match(haystack: str, alias: str) -> bool:
+    """Same boundary semantics as production linker
+    (`product_resolution.extract_products`). Returns True iff `alias`
+    appears as a whole token in `haystack`."""
+    if not haystack or not alias:
+        return False
+    idx = 0
+    while True:
+        pos = haystack.find(alias, idx)
+        if pos < 0:
+            return False
+        before_ok = pos == 0 or not haystack[pos - 1].isalnum()
+        end = pos + len(alias)
+        after_ok = end == len(haystack) or not haystack[end].isalnum()
+        if before_ok and after_ok:
+            return True
+        idx = pos + 1
+
+
 def _candidate_products(
     conn: sqlite3.Connection,
     text_fields: list[str | None],
     limit: int = 5,
 ) -> str:
-    """Longest-substring match the text against `product_aliases.alias_text`
+    """Longest-token-match the text against `product_aliases.alias_text`
     and return up to `limit` candidate canonical_names as a `|`-joined
-    string. Mirrors what populate_use_case_products.py does, so the agent
-    sees the same candidates the auto-linker considered."""
+    string. Mirrors `product_resolution.extract_products` exactly — both
+    the longest-first ordering AND the word-boundary check — so the
+    candidates surfaced here match what the production linker would
+    consider. Without the boundary check, short aliases like `meta` or
+    `descript` produced ~30 spurious candidates per pass (matches inside
+    `metadata`/`descriptors`/etc.) that the labeling agent then had to
+    triage as false_positive."""
     haystack = " ".join((t or "").lower() for t in text_fields)
     if not haystack.strip():
         return ""
@@ -97,7 +121,7 @@ def _candidate_products(
     out: list[str] = []
     for canonical, alias in rows:
         a = alias.lower()
-        if a in haystack and canonical not in seen:
+        if _has_word_boundary_match(haystack, a) and canonical not in seen:
             seen.add(canonical)
             out.append(f"{canonical} (via '{alias}')")
             if len(out) >= limit:

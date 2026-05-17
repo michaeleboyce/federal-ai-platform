@@ -27,10 +27,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "data" / "federal_ai_inventory_2025.db"
-PASS_DIR = ROOT / "audit" / "linkage_pass_2026-05"
-INT = PASS_DIR / "integration"
+DEFAULT_PASS_DIR = ROOT / "audit" / "linkage_pass_2026-05"
 CATALOG_CSV = ROOT / "data" / "expanded_product_catalog.csv"
 HIERARCHY_CSV = ROOT / "data" / "product_hierarchy_edges.csv"
+
+# Populated in main(); module-level placeholders so the helper functions
+# below stay short. Callers MUST set _INT before invoking helpers.
+INT: Path = DEFAULT_PASS_DIR / "integration"
 
 
 def _norm(s: str | None) -> str:
@@ -315,13 +318,24 @@ def apply_links(conn: sqlite3.Connection, apply: bool) -> tuple[int, int]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true", help="Write changes. Default: dry-run.")
+    parser.add_argument(
+        "--pass-dir",
+        type=Path,
+        default=DEFAULT_PASS_DIR,
+        help="Audit-pass directory (parent of integration/). Defaults to the May 2026 pass.",
+    )
     args = parser.parse_args()
+
+    global INT
+    INT = (args.pass_dir / "integration").resolve()
+    if not INT.exists():
+        raise FileNotFoundError(INT)
 
     if not DB_PATH.exists():
         raise FileNotFoundError(DB_PATH)
 
     mode = "APPLY" if args.apply else "DRY-RUN"
-    print(f"[{mode}] linkage_pass_2026-05 apply")
+    print(f"[{mode}] linkage-pass apply ({args.pass_dir.name})")
     print(f"  DB: {DB_PATH}")
     print(f"  INT: {INT}")
     print()

@@ -1,0 +1,55 @@
+child_canonical_name,parent_canonical_name,confidence,reasoning,_agent
+Amazon Web Services,Amazon,high,AWS is Amazon's cloud division.,ws2_hierarchy
+Amazon Alexa,Amazon,high,"Alexa is an Amazon consumer product (devices/voice), distinct from AWS.",ws2_hierarchy
+Amazon Q,Amazon Web Services,high,"Amazon Q is a first-party AWS service (Q Developer, Q Business).",ws2_hierarchy
+AWS Bedrock,Amazon Web Services,high,Bedrock is the AWS generative-AI foundation-model service.,ws2_hierarchy
+AWS Kendra,Amazon Web Services,high,Kendra is a first-party AWS enterprise-search service.,ws2_hierarchy
+AWS Lex,Amazon Web Services,high,Lex is the AWS conversational-bot service.,ws2_hierarchy
+AWS Rekognition,Amazon Web Services,high,Rekognition is the AWS computer-vision service.,ws2_hierarchy
+AWS Textract,Amazon Web Services,high,Textract is the AWS document-OCR service.,ws2_hierarchy
+AWS Transcribe,Amazon Web Services,high,Transcribe is the AWS speech-to-text service.,ws2_hierarchy
+AWS Translate,Amazon Web Services,high,Translate is the AWS neural machine-translation service. Catalog row already has vendor='Amazon Web Services'.,ws2_hierarchy
+Amazon Comprehend,Amazon Web Services,high,Comprehend is the AWS NLP service.,ws2_hierarchy
+Amazon SageMaker,Amazon Web Services,high,SageMaker is the AWS ML training/serving platform.,ws2_hierarchy
+Amazon Connect,Amazon Web Services,high,Amazon Connect is the AWS contact-center service. Catalog row already has vendor='Amazon Web Services'.,ws2_hierarchy
+Westlaw AI,Thomson Reuters,high,Westlaw is Thomson Reuters' flagship legal-research product.,ws2_hierarchy
+CoCounsel,Thomson Reuters,high,CoCounsel (acquired from Casetext) is a Thomson Reuters legal-AI product.,ws2_hierarchy
+ProLaw,Thomson Reuters,high,ProLaw is a Thomson Reuters legal practice management product.,ws2_hierarchy
+Thomson Reuters CLEAR,Thomson Reuters,high,CLEAR is Thomson Reuters' investigative-data product.,ws2_hierarchy
+Adobe Creative Cloud Suite,Adobe,high,CC Suite is Adobe's flagship product family.,ws2_hierarchy
+ServiceNow Now Assist,ServiceNow,high,Now Assist is the ServiceNow generative-AI feature family.,ws2_hierarchy
+ServiceNow IT Operations Management (ITOM) Predictive AIOps,ServiceNow,high,ITOM Predictive AIOps is a ServiceNow product module.,ws2_hierarchy
+Cisco Identity Services Engine,Cisco,high,Cisco ISE is Cisco's network access-control product.,ws2_hierarchy
+Cisco Secure Network Analytics,Cisco,high,Cisco Secure Network Analytics (Stealthwatch) is a Cisco security product.,ws2_hierarchy
+Salesforce Einstein,Salesforce,high,Einstein is Salesforce's native AI/ML platform.,ws2_hierarchy
+Slack,Salesforce,high,Salesforce acquired Slack in 2021; catalog row already lists vendor='Salesforce'.,ws2_hierarchy
+Tableau,Salesforce,high,Salesforce acquired Tableau in 2019; catalog row already lists vendor='Salesforce'.,ws2_hierarchy
+Microsoft 365,Microsoft,high,"M365 is a Microsoft productivity-suite SKU. Adding this edge makes existing M365-children (Teams, Outlook, etc.) sit at depth 3 -- well under the depth-5 cap.",ws2_hierarchy
+Microsoft Azure Platform,Microsoft,high,Azure is Microsoft's cloud platform. Existing Azure-* children move to depth 3.,ws2_hierarchy
+Microsoft Power Platform,Microsoft,high,Power Platform is a Microsoft low-code SKU family.,ws2_hierarchy
+Microsoft Dynamics 365,Microsoft,high,Dynamics 365 is Microsoft's CRM/ERP suite.,ws2_hierarchy
+GitHub Copilot,Microsoft,high,"GitHub is Microsoft-owned; Copilot is a Microsoft product. Prior pass explicitly removed the GitHub Copilot -> M365 Copilot edge as sibling SKUs, so Microsoft (not M365) is the correct parent.",ws2_hierarchy
+Microsoft Edge,Microsoft,high,"Edge is the Microsoft browser; charter notes Edge is NOT part of M365 (separately licensed), so parent at Microsoft level.",ws2_hierarchy
+Microsoft Discovery,Microsoft,medium,Microsoft Discovery is a Microsoft research/scientific-AI offering; no narrower parent available.,ws2_hierarchy
+Microsoft HoloLens,Microsoft,high,HoloLens is a Microsoft AR hardware product.,ws2_hierarchy
+Microsoft ScreenSketch,Microsoft,high,ScreenSketch (Snip & Sketch) is a Microsoft Windows utility.,ws2_hierarchy
+Microsoft Skype,Microsoft,high,Skype is a Microsoft-owned communications product.,ws2_hierarchy
+Microsoft Viva,Microsoft,high,Viva is a Microsoft employee-experience platform. Note: Viva ties into M365 but is sold as a separate Microsoft SKU family; parenting at Microsoft level is safer.,ws2_hierarchy
+SQL Server Management Studio,Microsoft,high,SSMS is a Microsoft developer tool (SQL Server admin GUI).,ws2_hierarchy
+Visual Studio,Microsoft,high,Visual Studio is a Microsoft IDE.,ws2_hierarchy
+Gemini,Google,high,Gemini is Google's flagship LLM family.,ws2_hierarchy
+NotebookLM,Google,high,"NotebookLM is a Google product. Prior pass removed the NotebookLM -> Gemini edge (model-use not sub-SKU), so parent at Google level.",ws2_hierarchy
+Google Workspace,Google,high,Google Workspace (formerly G Suite) is Google's productivity SKU.,ws2_hierarchy
+Google Cloud Platform,Google,high,GCP is Google's public-cloud platform. Existing Vertex AI / Cloud Vision children move to depth 3.,ws2_hierarchy
+Google Translate,Google,high,Google Translate is a Google consumer/API translation product.,ws2_hierarchy
+Google Maps,Google,high,Google Maps is Google's mapping product.,ws2_hierarchy
+Google Lens,Google,high,Google Lens is Google's image-search/AR product.,ws2_hierarchy
+Google Pixel,Google,high,Pixel is Google's phone hardware line.,ws2_hierarchy
+Google Chrome Generative AI,Google,high,Chrome is a Google product; generative-AI features ship inside it.,ws2_hierarchy
+Google Colab,Google,high,Colab is Google's hosted Jupyter environment.,ws2_hierarchy
+Google Coral TPU,Google,high,Coral TPU is Google's edge-AI hardware line.,ws2_hierarchy
+Google Earth Engine,Google,high,Earth Engine is Google's geospatial-analysis platform.,ws2_hierarchy
+Google Earth Engine Wetlands Classifier,Google Earth Engine,high,Wetlands Classifier is a model running on Google Earth Engine. Two-hop chain (-> Google) stays at depth 3.,ws2_hierarchy
+Google News Brief,Google,medium,Google News Brief is a Google consumer-AI feature in the Google News surface.,ws2_hierarchy
+reCAPTCHA,Google,high,reCAPTCHA is a Google security/anti-bot product.,ws2_hierarchy
+Nuance PowerScribe One,Nuance Dragon,high,derived from add_product by ws1_va: Nuance PowerScribe One is a well-known radiology reporting product with AI assist.,ws1_va

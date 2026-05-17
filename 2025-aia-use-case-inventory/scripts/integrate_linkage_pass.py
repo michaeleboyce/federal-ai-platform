@@ -26,6 +26,7 @@ No DB writes here. The apply script in Phase 4 consumes these CSVs.
 """
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 from collections import defaultdict
@@ -33,15 +34,26 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
-PASS_DIR = ROOT / "audit" / "linkage_pass_2026-05"
-OUT = PASS_DIR / "integration"
 
-AGENT_INPUTS: list[tuple[str, Path, str]] = [
-    ("agent_a", PASS_DIR / "agent_a" / "recommendations.json", "individual"),
-    ("agent_b", PASS_DIR / "agent_b" / "recommendations.json", "mixed"),
-    ("agent_c", PASS_DIR / "agent_c" / "recommendations.json", "individual"),
-    ("agent_d", PASS_DIR / "agent_d" / "hierarchy_proposals.json", "hierarchy"),
-]
+
+def _resolve_inputs(pass_dir: Path) -> list[tuple[str, Path, str]]:
+    """Auto-detect agent subdirectories. Each subdir holds either
+    `recommendations.json` (link/add_product/alias decisions) or
+    `hierarchy_proposals.json` (Agent D-style). Returns
+    (agent_label, file_path, kind)."""
+    out: list[tuple[str, Path, str]] = []
+    for sub in sorted(pass_dir.iterdir()):
+        if not sub.is_dir():
+            continue
+        if sub.name in {"inputs", "integration", "review"}:
+            continue
+        rec = sub / "recommendations.json"
+        hier = sub / "hierarchy_proposals.json"
+        if rec.exists():
+            out.append((sub.name, rec, "decisions"))
+        if hier.exists():
+            out.append((sub.name, hier, "hierarchy"))
+    return out
 
 
 def _load(path: Path) -> list[dict[str, Any]]:
@@ -68,7 +80,21 @@ def _entry_key(d: dict[str, Any]) -> tuple[str, int] | None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--pass-dir",
+        type=Path,
+        default=ROOT / "audit" / "linkage_pass_2026-05",
+        help="Audit-pass directory (parent of agent subdirs and integration/).",
+    )
+    args = parser.parse_args()
+    pass_dir = args.pass_dir.resolve()
+    if not pass_dir.exists():
+        raise FileNotFoundError(pass_dir)
+    OUT = pass_dir / "integration"
     OUT.mkdir(parents=True, exist_ok=True)
+    AGENT_INPUTS = _resolve_inputs(pass_dir)
+    print(f"reading {len(AGENT_INPUTS)} agent file(s) from {pass_dir}")
     by_agent: dict[str, list[dict[str, Any]]] = {}
     for agent, path, _ in AGENT_INPUTS:
         by_agent[agent] = _load(path)
