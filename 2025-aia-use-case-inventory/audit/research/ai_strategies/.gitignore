@@ -1,0 +1,4 @@
+# Downloaded original documents (62 MB of PDFs/HTML) are kept local-only,
+# not versioned in git. The catalog in documents.csv records every document's
+# source URL and local_path so the archive can be re-fetched on any machine.
+documents/
