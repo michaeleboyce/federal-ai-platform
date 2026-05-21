@@ -61,6 +61,11 @@ fix:
 	python3 scripts/seed_federal_hierarchy.py
 	python3 scripts/backfill_bureau_orgs.py
 	python3 compute_maturity.py
+	# 2024↔2025 year-over-year aggregate rollup — populates the tidy
+	# `year_comparison` table (created by migration m010). Phase 2 of the
+	# 2024↔2025 comparison project. Reads use_cases_2024 + use_cases.
+	# Idempotent (wipe-and-reload). No dashboard surface until Phase 5.
+	python3 compute_year_comparison.py
 	python3 scripts/compute_org_maturity.py
 	# IFP-facing Federal AI Readiness Scorecard — 5-dimension weighted
 	# rubric, per agency. Reads agency_ai_maturity + use_cases + tags +

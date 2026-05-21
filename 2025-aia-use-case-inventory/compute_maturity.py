@@ -2,23 +2,23 @@
 
 from db import get_connection
 
-# 2024 OMB consolidated counts (for year-over-year growth)
-OMB_2024_COUNTS = {
-    "USDA": 89, "DOC": 57, "ED": 54, "DOE": 79, "HHS": 271, "DHS": 183,
-    "HUD": 6, "DOJ": 240, "DOL": 70, "State": 51, "DOI": 180, "DOT": 66,
-    "Treasury": 54, "VA": 229, "EPA": 17, "GSA": 24, "NASA": 18, "NSF": 16,
-    "OPM": 2, "SSA": 23, "USAID": 137, "CFTC": 4, "CFPB": 4, "EAC": 2,
-    "EEOC": 8, "FDIC": 55, "FERC": 4, "FHFA": 18, "FRB": 50, "FTC": 6,
-    "NARA": 9, "NCUA": 16, "NTSB": 2, "PBGC": 2, "PRC": 1, "PT": 5,
-    "SEC": 28, "TVA": 39, "USAGM": 8, "USCCR": 2, "USTDA": 4,
-}
-
 
 def compute_maturity():
     conn = get_connection()
     try:
         # Clear existing
         conn.execute("DELETE FROM agency_ai_maturity")
+
+        # 2024 per-agency individual-use-case counts, queried live from the
+        # ingested 2024 corpus (`use_cases_2024`, Phase 1 of the 2024↔2025
+        # comparison project). This replaces a hand-typed dict — the YoY
+        # column is now self-maintaining and tracks the v2 rolling-update
+        # additions automatically. Keyed by the agency PK (`agency_id`).
+        counts_2024 = dict(
+            conn.execute(
+                "SELECT agency_id, COUNT(*) FROM use_cases_2024 GROUP BY agency_id"
+            ).fetchall()
+        )
 
         # Get all agencies with use cases
         agencies = conn.execute("""
@@ -126,16 +126,16 @@ def compute_maturity():
             pct_with_risk_docs = (risk_docs_count / total_uc * 100) if total_uc else 0
 
             # Year-over-year growth — compare like-with-like against the
-            # 2024 OMB baseline, which is individual-format only (the
-            # consolidated / Appendix B checkbox format is new in 2025).
-            # Including total_cons in the numerator produces phantom growth
-            # for agencies that switched entirely to the consolidated format
-            # (PBGC, EAC, USTDA all showed +400-900% with zero individual
-            # use cases). Suppress YoY entirely when the agency filed no
-            # individual rows in 2025 — they didn't shrink by 100%, they
-            # changed filing formats, and either a negative or an inflated
-            # positive number would mislead readers.
-            omb_2024 = OMB_2024_COUNTS.get(abbr, 0)
+            # 2024 baseline in `use_cases_2024`, which is individual-format
+            # only (the consolidated / Appendix B checkbox format is new in
+            # 2025). Including total_cons in the numerator produces phantom
+            # growth for agencies that switched entirely to the consolidated
+            # format (PBGC, EAC, USTDA all showed +400-900% with zero
+            # individual use cases). Suppress YoY entirely when the agency
+            # filed no individual rows in 2025 — they didn't shrink by 100%,
+            # they changed filing formats, and either a negative or an
+            # inflated positive number would mislead readers.
+            omb_2024 = counts_2024.get(aid, 0)
             if omb_2024 > 0 and total_uc > 0:
                 yoy = ((total_uc - omb_2024) / omb_2024) * 100
             else:

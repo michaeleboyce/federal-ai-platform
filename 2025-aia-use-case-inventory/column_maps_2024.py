@@ -645,6 +645,15 @@ IMPACT_TYPE_ENUM_2024: tuple[str, ...] = (
 # "Implementation and Assessment" is mapped to Pilot (the assessment phase is
 # the closest pre-full-deployment state) — this is the lossy edge.
 #
+# Beyond the five canonical SDLC values, the live 2024 consolidated CSV also
+# carries ~50 off-enum rows that agencies filed using assorted ad-hoc stage
+# labels (`Planned`, `Ideation`, `In production`, `In mission`, `Research or
+# Administrative Action Complete`). These are recoded here too so the stage
+# rollup classifies them instead of dumping them in `unknown`; every off-enum
+# recode is `lossy: True` because the agency's intent has to be inferred.
+# Genuinely empty / unrecognized values are left unmapped — the rollup buckets
+# those as `unknown`.
+#
 # Each value maps to a dict: {"target": <2025 canonical>, "lossy": bool}.
 DEV_STAGE_RECODE_2024: dict[str, dict] = {
     "Initiated": {"target": "a) Pre-deployment", "lossy": False},
@@ -652,6 +661,15 @@ DEV_STAGE_RECODE_2024: dict[str, dict] = {
     "Implementation and Assessment": {"target": "b) Pilot", "lossy": True},
     "Operation and Maintenance": {"target": "c) Deployed", "lossy": False},
     "Retired": {"target": "d) Retired", "lossy": False},
+    # Off-enum real-world variants found in the v2 consolidated CSV.
+    "Planned": {"target": "a) Pre-deployment", "lossy": True},
+    "Ideation": {"target": "a) Pre-deployment", "lossy": True},
+    "In production": {"target": "c) Deployed", "lossy": True},
+    "In mission": {"target": "c) Deployed", "lossy": True},
+    "Research or Administrative Action Complete": {
+        "target": "d) Retired",
+        "lossy": True,
+    },
 }
 
 # Every DEV_STAGE_RECODE_2024 enum value the YAML defines, for test coverage.
