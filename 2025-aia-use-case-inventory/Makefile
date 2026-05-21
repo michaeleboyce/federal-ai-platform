@@ -63,6 +63,10 @@ fix:
 	# fedramp_product_links; writes agency_readiness. Constants mirror
 	# dashboard/lib/readiness-rubric.ts. Idempotent.
 	python3 scripts/compute_agency_readiness.py
+	# Researched public evidence of how widely agencies have deployed
+	# general-purpose AI tools. Loads audit/research/ai_access/*.json into
+	# agency_ai_access_evidence (table created by migration m008). Idempotent.
+	python3 scripts/apply_ai_access_evidence.py
 	# Linkage recovery: build_lookups.py wipes products and re-issues IDs each
 	# run, which orphans (and SQLite drops) any prior fedramp_product_links and
 	# parent_product_id edges. These scripts re-apply that state from the
