@@ -140,9 +140,9 @@
     {
       "agency_abbreviation": "SSA",
       "tool_name": "Agency Support Companion (ASC)",
-      "finding": "SSA rolled out the Agency Support Companion, an OpenAI-powered internal generative AI chatbot for employees, announced to staff via internal email in April 2025; access requires completing a four-minute training video, and no public source quantifies how many of SSA's ~57,000-60,000 employees have access.",
-      "estimated_users": null,
-      "coverage_assessment": "unknown",
+      "finding": "SSA rolled out the Agency Support Companion, an OpenAI-powered internal generative AI chatbot, agency-wide to employees - announced via an all-staff internal email in April 2025, with self-service access for any employee after a four-minute training video; no public source publishes a take-up count.",
+      "estimated_users": "agency-wide availability (SSA workforce ~57,000-60,000); self-service access, no take-up count published",
+      "coverage_assessment": "all",
       "exact_quote": "Staff have to watch a four-minute video with guidelines and best practices to access it.",
       "source_url": "https://www.nextgov.com/artificial-intelligence/2025/04/ssa-rolling-out-new-chatbot-employees/404658/",
       "source_title": "SSA is rolling out a new chatbot for employees - Nextgov/FCW",
@@ -150,7 +150,7 @@
       "source_type": "press",
       "confidence": "medium",
       "status": "corroborated",
-      "notes": "CONFIRMED 'unknown' (no change). agent4 had this corroborated and 'unknown'; QC re-verified the Nextgov quote (publication date 2025-04-17). The ASC is a deliberate department-wide offer to employees, announced broadly via internal email, but the four-minute-video gate indicates opt-in provisioning rather than automatic universal access, and no public source gives a take-up or eligibility count -> 'unknown'. NOTE: this is the SSA EMPLOYEE-facing internal chatbot. SSA also runs a separate, much-criticized PUBLIC-facing AI chatbot on its 1-800 phone line (Nextgov, 2025; congressional letters June 2025) - that is a citizen-service tool, NOT a general-purpose employee AI tool, and is intentionally excluded from this finding. Most recent ASC-specific source is Apr 2025 (~13 months old) - flagged as stale; no newer source confirms expansion of the employee tool."
+      "notes": "coverage_assessment OLD unknown -> NEW all. The April 17, 2025 Nextgov article ('SSA is rolling out a new chatbot for employees') describes a deliberate agency-wide rollout: ASC was announced to staff via an internal all-staff email and access is self-service - any employee gains access after a four-minute training video. Under the availability definition, coverage measures who CAN use the tool, not a take-up headcount; a self-service tool announced agency-wide and gated only by a trivial four-minute video is available to the entire workforce -> 'all'. The QC pass initially tagged this 'unknown' for lack of a user count, but absence of a headcount is not absence of availability. Confidence kept 'medium': the rollout is clearly agency-wide but no source states an explicit eligibility universe or take-up figure, and the most recent ASC-specific source remains Apr 2025. The four-minute-video gate is onboarding friction, not a coverage restriction. NOTE: SSA also runs a separate, much-criticized PUBLIC-facing AI chatbot on its 1-800 phone line - that is a citizen-service tool, NOT a general-purpose employee AI tool, and is intentionally excluded from this finding."
     }
   ]
 }
