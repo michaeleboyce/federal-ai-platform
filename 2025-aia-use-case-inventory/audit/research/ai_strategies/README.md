@@ -14,9 +14,12 @@ URL pattern. This tracker closes that gap.
 | File | What it is |
 |---|---|
 | `TRACKER.md` | Human-facing coverage matrix — one row per agency, which documents exist, what year. |
-| `documents.csv` | Long-format catalog — one row per document, with publication year and OMB-artifact mapping. |
+| `documents.csv` | Long-format catalog — one row per document, with publication year, page count, and OMB-artifact mapping. |
 | `coverage.csv` | One row per agency — search status, AI landing page, document counts, gaps. |
-| `documents/<AGENCY>/` | The downloaded original documents (PDF / HTML). |
+| `agency_policy_pages.html` | Bar chart — pages of AI policy by agency, plus the governing-document block. |
+| `research_notes.md` | Per-agency research notes from the five sweeps. |
+| `documents/<AGENCY>/` | The downloaded original agency documents (PDF / HTML / text). |
+| `documents/_governing/` | The downloaded executive orders and OMB memoranda. |
 
 ## Scope
 
@@ -27,6 +30,9 @@ URL pattern. This tracker closes that gap.
 - **Included:** AI strategies, OMB compliance plans, generative-AI policies, CAIO
   designations, AI governance charters, AI procurement policies, and any other formal
   AI-related policy or guidance.
+- **Governing documents:** the foundational executive orders and OMB memoranda are
+  also catalogued, tagged `agency_type = White House / OMB`. They are *not* agency
+  policy and are excluded from the agency page totals.
 - **Excluded:** news / press releases, blog posts, individual use-case or product
   entries, and the AI use case inventory itself (tracked separately in the repo-root
   `agency-inventory-tracker.csv`).
@@ -65,6 +71,8 @@ categories into a single **"high-impact AI"** definition.
 | `Historical AI Strategy` | Standalone AI strategy from 2023, predating the OMB memos. |
 | `AI Procurement Policy` | Agency M-25-22 procurement guidance. |
 | `Other Department AI Policy / Guidance` | Catch-all: roadmaps, frameworks, ethics principles, directives, component-agency policies. |
+| `Executive Order` | Presidential executive order on federal AI — a governing document, not agency-issued. |
+| `OMB Memorandum` | OMB memorandum on federal AI (M-24-10 / M-25-21 / M-25-22) — a governing document. |
 
 ## Methodology
 

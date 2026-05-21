@@ -113,6 +113,25 @@ DOC, DoD, DOJ, DOL, ED, FRTIB, GPO, NASA, NMB, SBA, SEC
 (DoD is statutorily exempt from M-25-21; the Federal Reserve is not a CFO Act agency
 and files a compliance plan voluntarily without the 180-day strategy obligation.)
 
+## Governing documents (White House & OMB)
+
+The foundation the agency documents above are written in response to. These are *not*
+agency policy and are excluded from the agency page counts; they are catalogued in
+`documents.csv` with `agency_type = White House / OMB` and stored under
+`documents/_governing/`.
+
+| Document | Year | Pages | Status | Implements |
+|---|---|---|---|---|
+| EO 13960 — Promoting the Use of Trustworthy AI in the Federal Government | 2020 | 5 | In effect | — |
+| EO 14110 — Safe, Secure, and Trustworthy Development and Use of AI | 2023 | 36 | Rescinded (EO 14148, 2025) | — |
+| EO 14179 — Removing Barriers to American Leadership in AI | 2025 | 2 | In effect | — |
+| OMB M-24-10 — Advancing Governance, Innovation, and Risk Management for Agency Use of AI | 2024 | 34 | Superseded (by M-25-21) | EO 14110 |
+| OMB M-25-21 — Accelerating Federal Use of AI through Innovation, Governance, and Public Trust | 2025 | 25 | In effect | EO 14179 |
+| OMB M-25-22 — Driving Efficient Acquisition of AI in Government | 2025 | 13 | In effect | EO 14179 |
+
+**6 documents, 115 pages.** M-25-21 rescinded and replaced M-24-10; EO 14148 (Jan 2025)
+rescinded EO 14110. EO 13960's federal AI use case inventory requirement remains in effect.
+
 ## Notes
 
 - **M-25-21 rescinded and replaced M-24-10.** A 2024 M-24-10 compliance plan still
