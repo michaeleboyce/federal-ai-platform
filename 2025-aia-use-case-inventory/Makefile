@@ -7,6 +7,10 @@ fix:
 	python3 db.py
 	python3 load_agencies.py
 	python3 load_inventories.py
+	# Raw 2024 (M-24-10) AI use case inventory corpus — 2,133 use cases in
+	# native 2024 shape into `use_cases_2024` (table created by migration
+	# m009). Phase 1 of the 2024↔2025 comparison project. Idempotent.
+	python3 load_2024.py
 	# OMB consolidated individually-reported AI use case file — mirror rows,
 	# match against DB, populate omb_match_audit. Schema-only DB additions
 	# come from migrations/m004; this is the data load. Idempotent.
