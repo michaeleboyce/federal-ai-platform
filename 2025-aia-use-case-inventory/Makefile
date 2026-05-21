@@ -15,6 +15,14 @@ fix:
 	# match against DB, populate omb_match_audit. Schema-only DB additions
 	# come from migrations/m004; this is the data load. Idempotent.
 	python3 load_omb_consolidated.py
+	# 2024↔2025 deterministic use-case matcher — links use_cases_2024 to
+	# use_cases (exact name → fuzzy name → narrative similarity), strictly
+	# per-agency, into the `use_case_year_links` table (created by migration
+	# m011). Phase 3 of the 2024↔2025 comparison project. Idempotent
+	# (wipe-and-reload, preserves first_seen). Also writes
+	# audit/year_match_queue.csv — the suggested_rename review queue for
+	# Phase 4. No dashboard surface until Phase 5.
+	python3 match_year_over_year.py
 	python3 scripts/backfill_use_case_id.py
 	python3 build_lookups.py
 	python3 auto_tag.py
@@ -55,6 +63,12 @@ fix:
 	# 'unclassified' backfill with concrete category labels (e.g.
 	# physical_security, developer_tool, threat_intel). Idempotent.
 	python3 scripts/apply_product_recategorization.py
+	# Split the conflated "OpenAI Codex" product into the deprecated 2021
+	# model and the 2025 Codex CLI, and link OPM's consolidated "Codex"
+	# COTS row to the CLI. The upstream linkage pass links OPM by a stale
+	# row id so the link never lands; this resolves it by stable slug.
+	# Runs AFTER both linkage passes and recategorization. Idempotent.
+	python3 scripts/apply_codex_split.py
 	# Federal organizations hierarchy — schema, seed, backfill, sub-agency
 	# maturity. Each script is idempotent.
 	python3 scripts/run_migrations.py
