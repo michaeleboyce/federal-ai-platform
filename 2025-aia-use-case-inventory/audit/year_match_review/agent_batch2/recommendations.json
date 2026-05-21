@@ -1,0 +1,1250 @@
+[
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-document-q-a-interface"
+  ],
+  "uc_2025_slugs": [
+   "hhs-open-ai-sharepoint-document-assistant"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR SCCT document Q&A tool vs 2025 NIH retired SharePoint assistant; different bureaus, systems, and the 2025 row is a retired stub. Name-overlap only."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-emergency-inventory-redistribution-model"
+  ],
+  "uc_2025_slugs": [
+   "hhs-mcp-server-registry-and-integration-platform"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR emergency inventory optimization (linear programming) vs 2025 CMS MCP server registry/integration platform; entirely different problems and systems."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-entity-resolution-tool"
+  ],
+  "uc_2025_slugs": [
+   "hhs-grantsolutions-text-analyzer-tool"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR SCCT entity-resolution tool for manufacturer/customer names vs 2025 ASFR GrantSolutions NOFO readability analyzer; unrelated problems."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-executive-report-generation-ai-copilot"
+  ],
+  "uc_2025_slugs": [
+   "hhs-executive-order-gap-analysis-tool"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR SCCT executive-report summarization copilot vs 2025 CMS Executive Order gap-analysis compliance tool; different bureau and purpose despite the word 'executive'."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-flow-model-edge-prioritization-estimation-tool"
+  ],
+  "uc_2025_slugs": [
+   "hhs-pdf-information-extraction-for-889-forms"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR supply-disruption flow model (regression) vs 2025 CDC OCR extraction of 889 compliance forms; no shared problem or system."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-generalized-demand-model-sensitivity-analyzer"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-enabled-user-support-and-impact-monitoring"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR demand-model sensitivity analyzer (constrained regression) vs 2025 NIH DSLD user-support chatbot; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-google-search-model-alerts"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-search-in-google-vertex-discovery"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR Google-search trend alerting model (EWMA) vs 2025 CMS Vertex AI website search; only the word 'Google' overlaps."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-google-search-model-rising-trend-entity-extraction"
+  ],
+  "uc_2025_slugs": [
+   "hhs-senior-leadership-briefing-generation"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR Google-search shortage entity extraction vs 2025 ASPR senior-leadership briefing generator; different problems despite same bureau."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-manufacturer-name-standardization"
+  ],
+  "uc_2025_slugs": [
+   "hhs-data-standardization-with-llm"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR SCCT manufacturer-name standardization vs 2025 CDC FluLIMS data-cleaning/standardization with LLM; both standardize data but different bureau, system, and domain."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-model-based-open-source-reporting-search-and-summarization"
+  ],
+  "uc_2025_slugs": [
+   "hhs-medical-records-summarization"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR open-source supply-chain reporting summarization vs 2025 HRSA medical-records summarization for claims review; different bureau and domain."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-ppe-product-classification-model"
+  ],
+  "uc_2025_slugs": [
+   "hhs-cder-publications"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 ASPR PPE product classification model vs 2025 FDA CDER publications curation/classification; unrelated domains."
+ },
+ {
+  "action": "confirm_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-global-gib-initiative-for-influenza-vaccine-equity-giive-ensuring-universal-acce"
+  ],
+  "uc_2025_slugs": [
+   "hhs-reviewing-global-influenza-vaccine-literature"
+  ],
+  "confidence": "high",
+  "reasoning": "Both describe LLM-assisted review of large volumes of published abstracts to identify global influenza vaccine access/equity literature for epidemiologist follow-up on the same EDAV platform; the 2025 filing renamed and tightened the narrative."
+ },
+ {
+  "action": "confirm_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-center-for-forecasting-and-outbreak-analytics-disease-modeling"
+  ],
+  "uc_2025_slugs": [
+   "hhs-center-for-forecast-and-analytics-cfa-model-studio"
+  ],
+  "confidence": "medium",
+  "reasoning": "Both are CDC Center for Forecasting and Outbreak Analytics modeling efforts on the same 1CDP platform; the 2025 'CFA Model Studio' is the renamed, productized continuation of the 2024 CFA disease-modeling use case."
+ },
+ {
+  "action": "confirm_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-chatcdc-cdc-enterprise-generative-ai-chatbot-data-extraction"
+  ],
+  "uc_2025_slugs": [
+   "hhs-cdc-chatbot-enterprise-data-assistant"
+  ],
+  "confidence": "high",
+  "reasoning": "Both describe the CDC enterprise generative-AI chatbot on the EDAV platform that lets staff extract and answer questions from large document sets; the 2025 filing consolidated the prior 'Data Extraction' sub-case into 'CDC Chatbot - Enterprise Data Assistant'."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-chatcdc-cdc-enterprise-generative-ai-chatbot-ideation"
+  ],
+  "uc_2025_slugs": [
+   "hhs-genaimeta-generative-ai-cdc-metadata-query-application"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CDC ChatCDC ideation chatbot vs 2025 CDC GenAIMeta metadata-query application; the 2025 row is a specific metadata-validation tool, not the general-purpose chatbot."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-chatcdc-cdc-enterprise-generative-ai-chatbot-software-development"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-generated-data-processing-and-visualization-code-development"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CDC ChatCDC software-development chatbot vs 2025 FDA AI-generated data-processing/visualization code; different bureau and a narrower code-gen scope."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-chatcdc-cdc-enterprise-generative-ai-chatbot-summarization"
+  ],
+  "uc_2025_slugs": [
+   "hhs-enhancing-the-rcdc-with-generative-ai"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CDC ChatCDC summarization chatbot vs 2025 NIH RCDC generative-AI enhancement; different bureau and a specific grant-categorization application."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-dcipher-sedric-aip-for-advanced-foodborne-outbreak-investigation-receipt-reading"
+  ],
+  "uc_2025_slugs": [
+   "hhs-aip-assist"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CDC SEDRIC receipt-reading AIP for foodborne outbreaks vs 2025 CDC 'AIP Assist' platform support chatbot; both on Palantir 1CDP but different functions (receipt extraction vs platform help)."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-dfwed-food-vehicle-investigation-module"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-web-content-search-engine-optimization-seo-in-drupal"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CDC food-vehicle investigation NLP module vs 2025 CMS Drupal SEO tool; completely unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-creation-of-synthetic-survey-like-insurance-names-for-use-coding-nhis-private-in"
+  ],
+  "uc_2025_slugs": [
+   "hhs-leveraging-ai-for-the-creation-of-synthetic-datasets"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CDC synthetic NHIS insurance-name generation vs 2025 CDC synthetic HAI dataset generation; both create synthetic data but different programs, data, and the 2024 row is retired."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-mastering-metadata-ai-powered-governance-for-data-insights"
+  ],
+  "uc_2025_slugs": [
+   "hhs-using-databricks-genie-for-routine-immunization-data-insights"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CDC NCIRD metadata-governance for data.cdc.gov vs 2025 CDC Databricks Genie immunization analytics; different problem and system, 2024 row retired."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-pii-detection-using-private-ai"
+  ],
+  "uc_2025_slugs": [
+   "hhs-writing-code-using-ai"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CDC NCHS PII-detection tool (Private AI, retired) vs 2025 NIH code-writing assistant; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-reddit-post-analysis-for-sexual-health-using-large-language-models"
+  ],
+  "uc_2025_slugs": [
+   "hhs-assessing-large-language-models-for-synthetic-survey-data-generation"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CDC Reddit sexual-health post analysis (retired) vs 2025 CDC LLM synthetic survey-data generation; different problems."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-bankruptcy-bot"
+  ],
+  "uc_2025_slugs": [
+   "hhs-idr-support-bot"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS bankruptcy-detection bot (PACER) vs 2025 CMS IDR support RAG chatbot; different problem and system."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-central-data-abstraction-tool-modernized-modernized-cdat-intake-process-automati"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ofr-robotics-and-process-automation-orpa"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS RADV medical-record intake automation vs 2025 CDC RPA bots for invoice/PCARD processing; both 'automation' but different bureau and process."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-cms-enterprise-portal-services-cms-enterprise-portal-chatbot"
+  ],
+  "uc_2025_slugs": [
+   "hhs-cms-chat"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS Enterprise Portal chatbot (Amazon Lex) vs 2025 CMS Chat productivity assistant (CEDAR); different system and a general-purpose vs portal-specific bot."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-exchange-complaints-review-categorization-ml-ai"
+  ],
+  "uc_2025_slugs": [
+   "hhs-dual-use-research-of-concern-durc-categorization-llm"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS exchange-complaints categorization model vs 2025 NIH DURC categorization LLM (retired stub); different bureau and domain."
+ },
+ {
+  "action": "confirm_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-knowledge-management-platform"
+  ],
+  "uc_2025_slugs": [
+   "hhs-knowledge-management-solution"
+  ],
+  "confidence": "high",
+  "reasoning": "Both are the same CMS knowledge-management system on CEDAR using NLP/knowledge graphs/LLMs to make structured and unstructured data accessible for decision-making; renamed 'Platform' to 'Solution'."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-msp-assignment-bot"
+  ],
+  "uc_2025_slugs": [
+   "hhs-dls-ai-assistant-tool"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS MSP case-assignment bot vs 2025 CDC DLS lab-compliance AI assistant; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-relationships-events-contacts-and-outreach-network-recon"
+  ],
+  "uc_2025_slugs": [
+   "hhs-creating-a-development-network"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS Salesforce-native RECON tool (retired) vs 2025 FDA CDER Sentinel clinical-data development network; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-data-lake-load-extract-transform-load-l-etl"
+  ],
+  "uc_2025_slugs": [
+   "hhs-product-label-and-text-extraction-system-plates"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS Security Data Lake L-ETL scaffolding vs 2025 FDA food-label extraction system PLATES; unrelated."
+ },
+ {
+  "action": "confirm_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-foia-document-review-redaction-automation"
+  ],
+  "uc_2025_slugs": [
+   "hhs-foia-redaction-fred-tool"
+  ],
+  "confidence": "medium",
+  "reasoning": "Both describe AI/GenAI automation of FOIA document review and redaction within HHS with the same outputs (recommended redactions for human QA); the 2025 CDER 'FRED' tool is the named continuation of HHS's FOIA-redaction use case."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-508-accessibility-automation-for-documents"
+  ],
+  "uc_2025_slugs": [
+   "hhs-smart-solution-for-docket-management-ssdm"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS 508 accessibility automation vs 2025 FDA docket-management public-comment tool; different bureau and process."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-brand-vs-generic-market-share"
+  ],
+  "uc_2025_slugs": [
+   "hhs-agentic-rag-chatbot"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS brand-vs-generic drug market-share forecasting vs 2025 CDC agentic RAG chatbot for public inquiries; unrelated."
+ },
+ {
+  "action": "confirm_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-chat-client-resource-library"
+  ],
+  "uc_2025_slugs": [
+   "hhs-resource-library-assistant"
+  ],
+  "confidence": "high",
+  "reasoning": "Both describe a chatbot over the CMS QPP Resource Library that answers user questions from a knowledge base of preloaded program documents; renamed 'Chat Client - Resource Library' to 'Resource Library Assistant'."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-drug-cost-anomaly-detection"
+  ],
+  "uc_2025_slugs": [
+   "hhs-rfi-comment-analysis-poc"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS drug-cost anomaly detection vs 2025 CMS RFI comment-analysis POC; both CMS but different problem and outputs."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-drug-cost-increase-predictions"
+  ],
+  "uc_2025_slugs": [
+   "hhs-drug-shortage-predictive-model"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS Part D drug-cost-increase prediction vs 2025 FDA drug-shortage predictive model; both predict drug-related events but different bureau, problem (cost vs supply), and system."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-medicare-part-c-d-plan-oversight-of-ai-used-for-prior-authorization-and-utilizat"
+  ],
+  "uc_2025_slugs": [
+   "hhs-machine-learning-techniques-for-early-detection-and-situational-awareness-of-rab"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS Part C/D plan oversight of AI vs 2025 CDC rabies-outbreak ML detection; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-negotiated-drug-predictions"
+  ],
+  "uc_2025_slugs": [
+   "hhs-foia-exemption-aligned-redaction"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS negotiated-drug price prediction vs 2025 HRSA FOIA exemption-aligned redaction; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-operational-efficiency-analytics"
+  ],
+  "uc_2025_slugs": [
+   "hhs-portfolio-analytics"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS appeals operational-efficiency analytics vs 2025 CDC publication portfolio theme analysis; different bureau and domain."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-icpg-governance-tool"
+  ],
+  "uc_2025_slugs": [
+   "hhs-elsa-genai-chat-tool"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS ICPG acquisition-plan classification tool vs 2025 FDA Elsa GenAI chat tool; different bureau and a general-purpose chatbot."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-oagm-rate-card"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ask-aithena"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS OAGM rate-card labor-category normalization vs 2025 NIH 'Ask Aithena' research literature chatbot; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-hazards-threats-awareness-data-processing-automation"
+  ],
+  "uc_2025_slugs": [
+   "hhs-grant-award-process-efficiency"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS hazards/threats situational-awareness automation vs 2025 NIH grant-award process efficiency; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-medicare-fee-for-service-requirements-modernization-mfrm"
+  ],
+  "uc_2025_slugs": [
+   "hhs-artificial-intelligence-use-case-pilot-in-medical-review-on-medicare-fee-for-ser"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 CMS MFRM Medicare coverage-requirements LLM curation vs 2025 CMS CERT improper-payment medical-review pilot; both CMS Medicare FFS but different process (requirements curation vs medical review) and system."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-ai-assisted-data-entry"
+  ],
+  "uc_2025_slugs": [
+   "hhs-federal-assistant-ai-agent"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS AI-assisted paper-form data entry vs 2025 HHS OCIO Federal Assistant agentic AI for citizen Q&A; different problem and outputs."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-transcription-in-zoom-and-teams"
+  ],
+  "uc_2025_slugs": [
+   "hhs-grants-portfolio-analysis"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS Zoom/Teams meeting transcription vs 2025 NIH grants portfolio analysis; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-email-prioritization-in-outlook"
+  ],
+  "uc_2025_slugs": [
+   "hhs-copilot-outlook"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS Outlook email categorization vs 2025 OCR Copilot for email drafting; both touch Outlook but different function (categorization vs drafting)."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-ai-assisted-pattern-detection"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-powered-assistant-for-pathogen-detection-aipd"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS AI log-pattern anomaly detection vs 2025 FDA AI-powered pathogen-detection assistant; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-report-summarization-by-commercial-genai-platform"
+  ],
+  "uc_2025_slugs": [
+   "hhs-llm-assisted-referral-justification-email-generator"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS commercial GenAI report summarization vs 2025 NIH LLM referral-justification email generator; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-information-search-from-google"
+  ],
+  "uc_2025_slugs": [
+   "hhs-aws-kendra-search-tool"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS generic Google search-engine use vs 2025 SAMHSA AWS Kendra search tool for SAMHSA STORE; the genuine 2024 partner for the Kendra tool is the retired 'Smart Search' use case, not Google search."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-document-digitization-by-adobepro"
+  ],
+  "uc_2025_slugs": [
+   "hhs-identification-of-emerging-areas"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS Adobe Pro document digitization vs 2025 NIH identification of emerging scientific areas; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-autocorrect-in-ms-word"
+  ],
+  "uc_2025_slugs": [
+   "hhs-grantsolutions-recipient-risk-tool"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS MS Word autocorrect vs 2025 ASFR GrantSolutions recipient risk-scoring tool; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-ai-assisted-real-time-collaboration"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-assisted-platform-for-clinical-pharmacology-review"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS AI-assisted real-time collaboration tool vs 2025 FDA clinical-pharmacology review platform; unrelated despite shared 'AI-assisted' phrasing."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-presentation-design-by-ms-powerpoint"
+  ],
+  "uc_2025_slugs": [
+   "hhs-delegations-repository-assistant"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS PowerPoint design suggestions vs 2025 CDC Delegations Library retrieval chatbot; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-data-modeling-and-visualization-by-ms-excel"
+  ],
+  "uc_2025_slugs": [
+   "hhs-machine-learning-with-premier-healthcare-data-to-inform-predictive-modeling-of-a"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS MS Excel data modeling/visualization vs 2025 CDC ML antibiotic-use prediction with Premier Healthcare data; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-travel-route-optimization-by-google-maps-and-apple-maps"
+  ],
+  "uc_2025_slugs": [
+   "hhs-pathogen-strain-characterization-from-mixed-strain-samples"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS Google/Apple Maps route optimization vs 2025 CDC pathogen strain characterization from mixed samples; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-ai-powered-travel-booking"
+  ],
+  "uc_2025_slugs": [
+   "hhs-rag-system-for-travel-planning"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS commercial travel-booking sites vs 2025 NIH RAG chatbot for travel-policy questions; both 'travel' but different function (booking optimization vs policy Q&A)."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-facial-recognition-unlock"
+  ],
+  "uc_2025_slugs": [
+   "hhs-amd-platform-data-harmonization"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 HHS iPhone Face ID unlock vs 2025 CDC AMD-platform metadata harmonization; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-augmenting-death-and-cause-of-death-ascertainment-in-observational-data-sources"
+  ],
+  "uc_2025_slugs": [
+   "hhs-driving-efficiency-and-expansion-of-dietary-supplement-label-database-data-throu"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 FDA Sentinel death/cause-of-death NLP augmentation vs 2025 NIH dietary-supplement label database expansion; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-clat-computerized-labeling-assessment-tool"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-and-vaccine-labeling"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 FDA CLAT drug-labeling assessment tool vs 2025 FDA CBER vaccine-labeling review app; both labeling review but different center (CDER vs CBER), system, and product domain."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-scalable-automated-nlp-assisted-chart-abstraction-and-feature-extraction-tool"
+  ],
+  "uc_2025_slugs": [
+   "hhs-case-management-tool-case-creation-automation"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 FDA Sentinel NLP chart-abstraction tool vs 2025 CMS case-management creation automation; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-artificial-intelligence-based-deduplication-algorithm-for-classification-of-dupl"
+  ],
+  "uc_2025_slugs": [
+   "hhs-chatbot-for-safety-reporting-portal-adverse-events-and-product-problems-submissi"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 FDA FAERS deduplication algorithm vs 2025 FDA safety-reporting-portal submission chatbot; both adverse-event-related but different function (deduplication vs intake routing) and system."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-development-of-automation-tools-and-data-warehouse-to-facilitate-be-assessments"
+  ],
+  "uc_2025_slugs": [
+   "hhs-hrsa-data-warehouse-chatbot"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 FDA bioequivalence automation/data warehouse vs 2025 HRSA data-warehouse public-inquiry chatbot; only 'data warehouse' overlaps, different bureau and function."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-four-part-harmony-identification"
+  ],
+  "uc_2025_slugs": [
+   "hhs-unaccompanied-child-sponsor-identity-verification"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 FDA deficiency-letter language identification vs 2025 ACF unaccompanied-child sponsor identity verification; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-pharmacovigilance-machine-learning-to-detect-excess-safety-signal"
+  ],
+  "uc_2025_slugs": [
+   "hhs-hamlet-harnessing-machine-learning-to-eliminate-tuberculosis"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 FDA pharmacovigilance safety-signal ML vs 2025 CDC HaMLET tuberculosis ML (retired stub); unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-oppq-policy-bot-aka-policy-and-guidance-documents-search"
+  ],
+  "uc_2025_slugs": [
+   "hhs-eslate-bot"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 FDA OPPQ policy-document search bot vs 2025 NIH eSlate nomination-package Q&A bot; different bureau and document domain."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-a-cluster-based-machine-learning-approach-for-evaluating-factors-associated-with"
+  ],
+  "uc_2025_slugs": [
+   "hhs-filer-evaluation-prioritization-using-risk-based-decision-machine-learning-appro"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH plasma-biomarker cluster ML for dementia (retired) vs 2025 FDA filer risk-scoring ML; only 'machine learning' overlaps."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-ai-solution-for-image-duplication-detection"
+  ],
+  "uc_2025_slugs": [
+   "hhs-virtual-assistant-for-the-niams-grant-management-applications"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH image-duplication detection for publications vs 2025 NIH NIAMS grants-management virtual assistant; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-ai-solution-for-research-funding-gap-analysis-rf-gap"
+  ],
+  "uc_2025_slugs": [
+   "hhs-funding-opportunity-redundancy-analysis"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH research funding-gap analysis (RF-GAP) vs 2025 ACF funding-opportunity redundancy analysis (retired stub); different bureau and a retired stub."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-ai-ml-for-study-section-prediction-in-nichd"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-for-clinical-study-risk-assessment-and-inspection-preparation"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NICHD study-section prediction ML vs 2025 FDA clinical-study risk-assessment AI; both ML for review but different bureau, problem (study-section routing vs inspection prep), and system."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-assessment-of-dtt-ntp-research-effectiveness"
+  ],
+  "uc_2025_slugs": [
+   "hhs-deep-research-multi-agent-system"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH DEXTR DTT/NTP research-effectiveness extraction vs 2025 CMS Deep Research multi-agent system; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-automated-annotation-of-study-data-using-knowledge-organization-systems"
+  ],
+  "uc_2025_slugs": [
+   "hhs-automating-the-distribution-of-cdc-state-department-cables-using-ai-models-in-th"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH knowledge-organization study annotation vs 2025 CDC State-Department cable distribution automation; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-automated-extraction-of-study-methods-and-assessment-of-reliability"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-for-bioanalytical-study-risk-assessment-and-inspection-readiness"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH study-methods extraction/reliability assessment vs 2025 FDA bioanalytical study risk-assessment AI; unrelated despite shared 'study' wording."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-automation-of-receipt-referral-process-of-niddk-grant-applications"
+  ],
+  "uc_2025_slugs": [
+   "hhs-detection-identification-of-reviewer-expertise-and-grant-application-content"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NIDDK grant receipt/referral automation vs 2025 NIH reviewer-expertise/grant-content detection (CSRDREAC); both NIH grant-routing but different problem (PCC assignment vs reviewer matching) and system."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-best-match-new-relevance-search-for-pubmed"
+  ],
+  "uc_2025_slugs": [
+   "hhs-deep-research-for-public-health"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH PubMed 'Best Match' relevance search vs 2025 CDC OpenAI Deep Research for public health; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-chatbot-for-researchers-to-find-data-sets-for-environmental-health-research-effo"
+  ],
+  "uc_2025_slugs": [
+   "hhs-determining-how-federal-pain-resarch-has-responded-to-the-federal-pain-research-"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH environmental-health dataset-discovery chatbot vs 2025 NIH federal pain-research portfolio ML categorization; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-computed-author-author-name-disambiguation-for-pubmed"
+  ],
+  "uc_2025_slugs": [
+   "hhs-category-subcategory-classification-safety-reports-bot"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH PubMed author name disambiguation vs 2025 FDA safety-report category classification bot; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-covid-19-pandemic-vulnerability-index-dashboard"
+  ],
+  "uc_2025_slugs": [
+   "hhs-lectora-ai-toolkit-and-microbuilder-authoring-tools"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH COVID-19 Pandemic Vulnerability Index dashboard vs 2025 CDC Lectora AI authoring tools (retired stub); unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-dextr-automated-data-extraction-tool"
+  ],
+  "uc_2025_slugs": [
+   "hhs-research-area-tracking-tool"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH DEXTR automated data-extraction tool vs 2025 NIH NIAID research-area tracking tool; different NIH systems and problems (literature extraction vs grant-area coding)."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-division-of-international-services-customer-service-chatbot"
+  ],
+  "uc_2025_slugs": [
+   "hhs-dhdsp-nofo-technical-assistance-chatbot"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH Division of International Services immigration chatbot vs 2025 CDC DHDSP NOFO technical-assistance chatbot; different bureau and grant-program domain."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-enhance-nlm-website-accessibility"
+  ],
+  "uc_2025_slugs": [
+   "hhs-bdc-website-search"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NLM website 508-accessibility remediation vs 2025 NIH BDC website natural-language search; both NIH website tools but different function (508 fixes vs search)."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-enhancing-responses-to-customer-questions-about-nlm-products"
+  ],
+  "uc_2025_slugs": [
+   "hhs-medicare-ai-customer-insights"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NLM customer-question response application vs 2025 CMS Medicare AI customer insights; different bureau and a customer-insights vs Q&A function."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-environmental-health-research-annotation-for-model-development"
+  ],
+  "uc_2025_slugs": [
+   "hhs-assessing-public-comment-responses-to-draft-niosh-wildland-fire-smoke-document"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH environmental-health research annotation for model development vs 2025 CDC NIOSH wildland-fire-smoke public-comment analysis; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-grant-application-subject-matter-classification-tool"
+  ],
+  "uc_2025_slugs": [
+   "hhs-pangolin-lineage-classification-of-sars-cov-2-genome-sequences"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NIEHS grant subject-matter classification tool vs 2025 NIH SARS-CoV-2 Pangolin lineage classification; only 'classification' overlaps, entirely different domain."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-hiv-related-grant-classifier-tool"
+  ],
+  "uc_2025_slugs": [
+   "hhs-text-embedding-analysis-tool"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH HIV-grant classifier tool vs 2025 CDC text-embedding analysis tool; different bureau and a general clustering tool vs grant classifier."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-improving-customer-response"
+  ],
+  "uc_2025_slugs": [
+   "hhs-analyzing-multidrug-resistant-organism-response-data"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NLM customer-response drafting AI vs 2025 CDC multidrug-resistant-organism free-text data analysis; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-improving-metadata-retrieval-and-transformation-for-metadata-management"
+  ],
+  "uc_2025_slugs": [
+   "hhs-incorporating-external-information-into-taxonomy"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NLM metadata retrieval/transformation for Dataset Catalog vs 2025 NIH external-information taxonomy incorporation; different problem (metadata transform vs organism-name taxonomy)."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-it-system-outage-alerts"
+  ],
+  "uc_2025_slugs": [
+   "hhs-splunk-it-system-monitoring-software"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH GenAI IT-outage alert creation vs 2025 NIH Splunk IT monitoring (retired stub); both IT monitoring but the 2025 row is a retired stub for different software."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-large-language-automation"
+  ],
+  "uc_2025_slugs": [
+   "hhs-tic-url-automation"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH 'Large Language Automation' multi-purpose grant/summary bot vs 2025 CMS marketplace Transparency-in-Coverage URL review automation; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-leveraging-user-generated-content-for-digital-behavioral-interventions"
+  ],
+  "uc_2025_slugs": [
+   "hhs-uspstf-public-forms-data-ai-integration"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH smoking-tweet classification model vs 2025 AHRQ USPSTF public-forms data integration (retired stub); unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-metamap"
+  ],
+  "uc_2025_slugs": [
+   "hhs-merops"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NLM MetaMap UMLS concept mapping vs 2025 NIH Merops manuscript copyediting; unrelated NLM tools."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-mtix"
+  ],
+  "uc_2025_slugs": [
+   "hhs-imaris"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NLM MTIX MeSH indexing system vs 2025 NIH Imaris microscopy object classification; entirely different domains."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-niaid-genai-toolkit"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ethics-ai-agent"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NIAID GenAI Toolkit chat/document bot vs 2025 NIH Ethics AI Agent; different bureau and a specialized ethics-Q&A agent vs general toolkit."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-nlm-chem-towards-automatic-chemical-indexing-in-pubmed-articles"
+  ],
+  "uc_2025_slugs": [
+   "hhs-powerautomate-delinquent-submissions"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NLM-Chem chemical indexing vs 2025 NIH PowerAutomate delinquent-submissions audit automation; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-nlm-gene-towards-automatic-gene-indexing-in-pubmed-articles"
+  ],
+  "uc_2025_slugs": [
+   "hhs-integrated-data-repository-idr-customer-analytic-environment-cae"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NLM-Gene gene indexing vs 2025 CMS IDR Customer Analytic Environment; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-semantic-group-prediction-in-the-umls-metathesaurus"
+  ],
+  "uc_2025_slugs": [
+   "hhs-prediction-of-protein-3d-structures"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH UMLS semantic-group prediction vs 2025 NIH protein 3D-structure prediction (retired stub); only 'prediction' overlaps."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-singlecite-improving-single-citation-search-in-pubmed"
+  ],
+  "uc_2025_slugs": [
+   "hhs-generating-metadata-for-web-archive-resources"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH NLM SingleCite citation search vs 2025 NIH web-archive metadata generation; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-tech-support-chatbot"
+  ],
+  "uc_2025_slugs": [
+   "hhs-mft-ui-chatbot"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 NIH OIIT tech-support chatbot vs 2025 CMS MFT UI chatbot; both support chatbots but different bureau (NIH ORS vs CMS CCIIO) and system."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-assessing-developing-possible-version-of-hhsgpt-for-oidp-specific-internal-use"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-identification-of-high-risk-health-centers"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 OASH OIDP 'Ask ABE' HIV.gov RAG chatbot exploration vs 2025 HRSA high-risk health-center predictive analytics; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-informal-generative-ai-research-for-oidp-s-hiv-gov"
+  ],
+  "uc_2025_slugs": [
+   "hhs-ai-generated-pre-briefs-for-mag-hearings-and-airc-sessions"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 OASH OIDP informal generative-AI research/monitoring vs 2025 CMS AI-generated pre-briefs for MAG hearings; unrelated."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-presenting-providing-technical-assistance-on-hiv-gov-s-cautious-transparent-use-"
+  ],
+  "uc_2025_slugs": [
+   "hhs-targeted-technical-assistance"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 OASH OIDP HIV.gov generative-AI training/workshops vs 2025 HRSA targeted technical-assistance health-center identification; unrelated despite shared 'technical assistance' wording."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-utilizing-hhsgpt-pilot-for-writing-editing"
+  ],
+  "uc_2025_slugs": [
+   "hhs-hive-ai-pilot"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 OASH OIDP HHSGPT writing/editing pilot vs 2025 FDA CBER HIVE AI pilot for IND review; different bureau and a regulatory-review tool vs general writing assistant."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-hhsgpt"
+  ],
+  "uc_2025_slugs": [
+   "hhs-chatgpt"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 OCIO HHSGPT enterprise ChatGPT/Azure pilot vs 2025 OCR ChatGPT for legal investigations; different bureau and a specific OCR investigative use vs the enterprise HHSGPT platform."
+ },
+ {
+  "action": "reject_rename",
+  "agency_abbreviation": "HHS",
+  "uc_2024_slugs": [
+   "hhs-smart-search"
+  ],
+  "uc_2025_slugs": [
+   "hhs-agentic-web-search"
+  ],
+  "confidence": "high",
+  "reasoning": "2024 SAMHSA 'Smart Search' (Kendra for SAMHSA STORE) vs 2025 CMS Agentic Web Search for CMS Chat; different bureau and problem. The 2024 Smart Search is recovered as the match for the 2025 SAMHSA Kendra tool instead."
+ }
+]

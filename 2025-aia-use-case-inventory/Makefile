@@ -23,6 +23,19 @@ fix:
 	# audit/year_match_queue.csv — the suggested_rename review queue for
 	# Phase 4. No dashboard surface until Phase 5.
 	python3 match_year_over_year.py
+	# Phase 4 of the 2024↔2025 comparison project. Overlays the committed
+	# multi-agent adjudication decisions
+	# (audit/year_match_review/integration/proposed_lineage.csv) onto the
+	# matcher's freshly-rebuilt baseline: confirm/reject renames, split,
+	# merge, recover missed matches; then asserts the ≥1 reconciliation
+	# invariant and writes the retired cross-check flags. Idempotent; a
+	# clean no-op until the Stage-2 agent pass produces decisions.
+	python3 scripts/apply_year_match_review.py
+	# Deterministic field-level drift over the 21 directly-comparable
+	# column pairs for every 1:1 continued/renamed link — writes
+	# use_case_year_links.drift_fields_json. Recoded-field drift is flagged
+	# lossy. Idempotent.
+	python3 compute_year_lineage_drift.py
 	python3 scripts/backfill_use_case_id.py
 	python3 build_lookups.py
 	python3 auto_tag.py

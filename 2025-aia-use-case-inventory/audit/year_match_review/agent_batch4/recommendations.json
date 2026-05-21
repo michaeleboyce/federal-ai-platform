@@ -1,0 +1,314 @@
+[
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-azure-openai-chat-prototype"],
+    "uc_2025_slugs": ["doc-doc-chat"],
+    "confidence": "medium",
+    "reasoning": "The 2024 row is a BEA-specific Azure OpenAI chat prototype; the 2025 'DOC Chat' is a department-wide OS-level chat tool with no narrative, different bureau and scope. Paired only on the word 'chat'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-sentinel-one-purple-ai"],
+    "uc_2025_slugs": ["doc-nowcasting-extreme-fire-behavior"],
+    "confidence": "high",
+    "reasoning": "A BEA cybersecurity incident-response tool and a NOAA wildfire-behavior nowcasting model are unrelated use cases in different bureaus and domains; the fuzzy matcher paired noise."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-firstnet-authority-ocio-ms-copilot-project"],
+    "uc_2025_slugs": ["doc-github-copilot"],
+    "confidence": "medium",
+    "reasoning": "The 2024 row is FirstNet's Microsoft 365 Copilot content-creation rollout; the 2025 NOAA GitHub Copilot is a software-development pair-programming tool. Different bureau, different product, different task."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-coralnet-ongoing-operational-use-improvement-and-development-of-machine-vision-p"],
+    "uc_2025_slugs": ["doc-grants-program-administration-tiered-environmental-assessment-ai-pilot"],
+    "confidence": "high",
+    "reasoning": "CoralNet is a NOAA coral-reef computer-vision system; the 2025 row is an NTIA grants/environmental-assessment drafting pilot. Wholly unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-operational-satellite-product-quality-monitoring-ai-ready-training-data"],
+    "uc_2025_slugs": ["doc-electronic-monitoring"],
+    "confidence": "medium",
+    "reasoning": "The 2024 row is satellite product-quality anomaly detection; 'Electronic Monitoring' in NOAA 2025 refers to fisheries electronic monitoring. Different problem and outputs despite shared bureau."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-lightningcast-ai-for-lightning-prediction"],
+    "uc_2025_slugs": ["doc-lightningcast-a-lightning-nowcasting-model"],
+    "confidence": "high",
+    "reasoning": "Both are NOAA's LightningCast model predicting near-term lightning probability; the 2025 filing only relabeled 'prediction' as 'nowcasting model'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-cybersecurity-hardening-automation"],
+    "uc_2025_slugs": ["doc-developing-deep-learning-models-to-automate-age-determination"],
+    "confidence": "high",
+    "reasoning": "A NOAA cybersecurity hardening tool and a fish age-determination deep-learning model are unrelated; matched only on the token 'automate'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-ai-based-community-radiative-transfer-model"],
+    "uc_2025_slugs": ["doc-a-hybrid-data-driven-and-physics-based-framework-for-atmospheric-radiative-trans"],
+    "confidence": "medium",
+    "reasoning": "Both touch radiative-transfer modeling, but the 2024 row is the established Community Radiative Transfer Model (CRTM) emulator while the 2025 row is a distinct new hybrid physics/data-driven framework; a separate 2025 row (doc-ai-based-radiative-transfer-emulator-for-data-assimilation-and-remote-sensing) is the closer descendant. No bilateral evidence these are the same project."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-ai-snowfall-detection-and-snowfall-rate-estimation"],
+    "uc_2025_slugs": ["doc-patent-fraud-detection-mitigation"],
+    "confidence": "high",
+    "reasoning": "A NOAA snowfall-estimation model and a USPTO patent-fraud detection system are unrelated across different bureaus and domains."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-ai-rain-rate-estimation"],
+    "uc_2025_slugs": ["doc-ai-based-precipitation-estimation"],
+    "confidence": "medium",
+    "reasoning": "Same NOAA bureau and same problem domain — AI estimation of rain/precipitation rate from satellite observations; the 2025 filing generalized 'rain rate' to 'precipitation'. Narratives are empty but name and domain align."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-ai-total-precipitable-water-estimation"],
+    "uc_2025_slugs": ["doc-ai-qc-of-water-level-observations"],
+    "confidence": "medium",
+    "reasoning": "Total precipitable water (atmospheric moisture) estimation and quality control of tide-gauge water-level observations are different NOAA use cases despite the shared word 'water'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-ai-cloud-liquid-water-estimation"],
+    "uc_2025_slugs": ["doc-use-of-ai-ml-cnn-for-viirs-cloud-clearing-and-super-resolution"],
+    "confidence": "medium",
+    "reasoning": "Cloud liquid water estimation and VIIRS cloud-clearing/super-resolution are distinct NOAA satellite tasks; shared token 'cloud' only."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-ai-retrieval-for-tm-design-coding-and-image-search"],
+    "uc_2025_slugs": ["doc-tm-word-and-image-search-tool-twist"],
+    "confidence": "high",
+    "reasoning": "Both are USPTO trademark image-search use cases using the Clarivate AI product (TMVision); the 2025 filing renamed it TWIST and reframed it for external clearance searches."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-enriched-citation"],
+    "uc_2025_slugs": ["doc-enhanced-precipitation-forecasting"],
+    "confidence": "high",
+    "reasoning": "USPTO's Enriched Citation prior-art dissemination system and a NOAA precipitation-forecasting model are unrelated; matched on 'Enriched'/'Enhanced' token noise across bureaus."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-inventor-search-assistant-isat"],
+    "uc_2025_slugs": ["doc-prior-art-search-patent-image-search"],
+    "confidence": "medium",
+    "reasoning": "iSAT helps inventors find documents/figures/classifications from a text description; the 2025 Patent Image Search compares an examiner-uploaded image against image databases. Different inputs, users, and modality despite both being USPTO search tools."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-patent-design-image-search-designvision"],
+    "uc_2025_slugs": ["doc-viame-video-and-image-analysis-for-the-marine-environment-softwaretoolkit"],
+    "confidence": "high",
+    "reasoning": "USPTO's DesignVision design-application image search and NOAA's VIAME marine video/image toolkit are unrelated systems in different bureaus."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-patent-automatic-document-code-determination"],
+    "uc_2025_slugs": ["doc-call-center-automations-internal"],
+    "confidence": "high",
+    "reasoning": "Quality control of patent document labels and a ServiceNow NowAssist IT help-desk tool are unrelated use cases despite both being USPTO."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOC",
+    "uc_2024_slugs": ["doc-patents-skill-group-matching"],
+    "uc_2025_slugs": ["doc-pre-exam-application-skill-group-matching"],
+    "confidence": "high",
+    "reasoning": "Both are USPTO Skill Group Matching — auto-assigning patent applications to examiner skill groups by subject matter; the 2025 filing reframed it under pre-exam application processing."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "USDA",
+    "uc_2024_slugs": ["usda-detection-of-pre-symptomatic-hlb-infected-citrus"],
+    "uc_2025_slugs": ["usda-random-forest-with-aquatic-effectiveness-monitoring"],
+    "confidence": "high",
+    "reasoning": "APHIS citrus-disease drone detection vs. a Forest Service random-forest model predicting post-wildfire stream sediment — unrelated bureaus, problems, and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "USDA",
+    "uc_2024_slugs": ["usda-detection-of-aquatic-weeds"],
+    "uc_2025_slugs": ["usda-incident-detection-and-response-acceleration"],
+    "confidence": "high",
+    "reasoning": "Drone-based aquatic-weed identification and a Food Safety cybersecurity incident-detection tool share only the word 'detection'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "USDA",
+    "uc_2024_slugs": ["usda-automated-detection-mapping-of-host-plants-from-ground-level-imagery"],
+    "uc_2025_slugs": ["usda-automated-road-mapping"],
+    "confidence": "high",
+    "reasoning": "APHIS host-plant mapping from streetview imagery and a Forest Service road/trail mapping system are different use cases; matched on 'automated...mapping' token overlap."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "USDA",
+    "uc_2024_slugs": ["usda-ocio-cdo-council-comment-analysis-tool"],
+    "uc_2025_slugs": ["usda-policy-analysis"],
+    "confidence": "medium",
+    "reasoning": "The 2024 row clusters public comments by topic; the 2025 Policy Analysis reviews ~1500 handbooks/policies for duplication and extraction. Different inputs (comments vs. policy documents) and bureaus."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "USDA",
+    "uc_2024_slugs": ["usda-artificial-intelligence-spam-mitigation-project"],
+    "uc_2025_slugs": ["usda-feral-ungulate-mitigation"],
+    "confidence": "high",
+    "reasoning": "An OASCR email-spam classifier and a Forest Service feral-ungulate camera-trap computer-vision program are unrelated; shared word 'mitigation' only."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "USDA",
+    "uc_2024_slugs": ["usda-ecological-site-descriptions-machine-learning"],
+    "uc_2025_slugs": ["usda-forest-health-protection-survey-and-mapping-of-forest-damage-from-insects-and-di"],
+    "confidence": "medium",
+    "reasoning": "NRCS soil/ecological-site classification and Forest Service insect/disease damage survey-and-mapping are distinct programs in different bureaus despite both producing GIS predictions."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "USDA",
+    "uc_2024_slugs": ["usda-hurricane-impact-descriptions"],
+    "uc_2025_slugs": ["usda-american-recovery-act-classification-tool"],
+    "confidence": "medium",
+    "reasoning": "Generating narrative cyclone-impact reports and classifying American Relief Act contracts by disaster theme are different Forest Service use cases; matched on disaster-response keywords."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "USDA",
+    "uc_2024_slugs": ["usda-emc-comment-parsing-and-analysis"],
+    "uc_2025_slugs": ["usda-nwrc-pepin-ml-ai"],
+    "confidence": "high",
+    "reasoning": "Forest Service public-comment parsing and the NWRC Pepin wildlife camera-trap/simulation analysis are unrelated; different bureaus, inputs, and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "SEC",
+    "uc_2024_slugs": ["sec-federal-acquisition-research-solution"],
+    "uc_2025_slugs": ["sec-streamlining-initial-research"],
+    "confidence": "medium",
+    "reasoning": "The 2024 tool summarizes federal acquisition policy for the acquisition workforce; the 2025 row streamlines initial research in examinations and enforcement matters. Different office and subject matter despite the shared word 'research'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "SEC",
+    "uc_2024_slugs": ["sec-human-resources-search"],
+    "uc_2025_slugs": ["sec-public-website-search"],
+    "confidence": "high",
+    "reasoning": "An OHR knowledge-article search tool and an EXAMS tool that summarizes and answers questions about external public websites are unrelated; matched only on 'search'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "SEC",
+    "uc_2024_slugs": ["sec-create-work-related-videos"],
+    "uc_2025_slugs": ["sec-creating-ai-generated-images"],
+    "confidence": "medium",
+    "reasoning": "Video creation/editing and AI image generation are distinct generative use cases in different SEC offices; matched on 'create'/'creating' token overlap."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "SEC",
+    "uc_2024_slugs": ["sec-public-filing-disclosure-review"],
+    "uc_2025_slugs": ["sec-disclosure-review-chatbot"],
+    "confidence": "medium",
+    "reasoning": "Both support SEC disclosure review — the 2024 row summarizes public filing disclosures and answers questions, the 2025 DREAM chatbot answers staff disclosure-review questions in Corporation Finance. Same problem (disclosure review) and Q&A output; the 2025 filing recast it as a chatbot."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "SEC",
+    "uc_2024_slugs": ["sec-exploring-ai-products-for-enterprise-use"],
+    "uc_2025_slugs": ["sec-extracting-data-from-foia-request-forms"],
+    "confidence": "high",
+    "reasoning": "An open-ended OIT 'exploring AI products' planning row and a specific FOIA-form data-extraction-to-SharePoint use case are not the same; the 2024 row is a generic placeholder."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "FDIC",
+    "uc_2024_slugs": ["fdic-invoice-and-contract-data-extraction"],
+    "uc_2025_slugs": ["fdic-data-extraction-from-contract-pdf-files"],
+    "confidence": "high",
+    "reasoning": "Both extract data from contract PDFs to a spreadsheet to support reconciliation/compliance checks; the 2025 filing narrowed the scope to contract date extraction and renamed it."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FDIC",
+    "uc_2024_slugs": ["fdic-ai-coding-assistant"],
+    "uc_2025_slugs": ["fdic-restitution-order-ai-assistance"],
+    "confidence": "high",
+    "reasoning": "A developer code-suggestion assistant and a restitution-order data identification/tracking tool are unrelated; matched on 'assistant'/'assistance'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FDIC",
+    "uc_2024_slugs": ["fdic-content-creation"],
+    "uc_2025_slugs": ["fdic-background-check-web-application"],
+    "confidence": "high",
+    "reasoning": "A Corporate University training-content generation tool and a Division of Resolutions CLEAR-based contact-lookup web app are unrelated use cases."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FDIC",
+    "uc_2024_slugs": ["fdic-structured-interview-si-tool"],
+    "uc_2025_slugs": ["fdic-enterprise-fdic-chat"],
+    "confidence": "high",
+    "reasoning": "A personnel structured-interview platform and an enterprise generative-AI chat assistant are unrelated; the matcher paired noise."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FDIC",
+    "uc_2024_slugs": ["fdic-fdic-narrative-reports-generation"],
+    "uc_2025_slugs": ["fdic-corporate-impact-analysis-object"],
+    "confidence": "medium",
+    "reasoning": "Quarterly narrative-report generation from financial data points and an Office of Legislative Affairs tool summarizing legislative impact are different problems in different offices despite both producing summaries."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FDIC",
+    "uc_2024_slugs": ["fdic-deposit-insurance-determination"],
+    "uc_2025_slugs": ["fdic-oig-computer-forensics-investigation-tools"],
+    "confidence": "high",
+    "reasoning": "Deposit-insurance document extraction for provisional holds and OIG computer-forensics investigation tools are unrelated; different division and purpose."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FDIC",
+    "uc_2024_slugs": ["fdic-post-examination-survey-comment-analysis"],
+    "uc_2025_slugs": ["fdic-digital-asset-liquidity-risk-analysis"],
+    "confidence": "high",
+    "reasoning": "Categorizing post-examination survey comments and Chainalysis-based digital-asset liquidity tracing are unrelated use cases; matched only on 'analysis'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FDIC",
+    "uc_2024_slugs": ["fdic-document-indexing"],
+    "uc_2025_slugs": ["fdic-social-listening"],
+    "confidence": "high",
+    "reasoning": "The RADD document-indexing system and a social-media listening/search tool are unrelated; the fuzzy matcher paired generic document/search vocabulary."
+  }
+]

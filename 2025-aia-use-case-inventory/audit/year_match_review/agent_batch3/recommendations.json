@@ -1,0 +1,234 @@
+[
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-data-analytics-and-machine-learning-damal-tools-for-analysis-of-environment-safe"],
+    "uc_2025_slugs": ["doe-nuclear-safety-analysis"],
+    "confidence": "high",
+    "reasoning": "2024 is a DAMaL similarity-based information-retrieval tool for ES&H records search; 2025 is a reactor risk/SAR automation tool for nuclear safety analysis. Different problem and outputs; the matcher paired on the word 'analysis'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-data-analytics-and-machine-learning-damal-tools-to-enhance-the-analysis-of-envir-2"],
+    "uc_2025_slugs": ["doe-machine-learning-for-geophysical-data-inversion"],
+    "confidence": "high",
+    "reasoning": "2024 is unsupervised text clustering of ES&H reports; 2025 is geophysical seismic/gravity data inversion for leak detection. Wholly unrelated systems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-fast-ai-for-real-time-online-diagnostics-and-calibration-ai-based-autonomous-sys"],
+    "uc_2025_slugs": ["doe-autonomous-real-time-guiding-of-bcp-film-synthesis"],
+    "confidence": "medium",
+    "reasoning": "2024 is real-time AI control of accelerator-based light-source beam operations; 2025 is autonomous control of block-copolymer film deposition/synthesis. Both 'autonomous real-time control' but different facilities, problems, and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-crowdstrike"],
+    "uc_2025_slugs": ["doe-crickets"],
+    "confidence": "high",
+    "reasoning": "2024 CrowdStrike predicts and blocks malicious endpoint behavior; 2025 'Crickets' flags access to inappropriate web content. Different security products and purposes; matcher paired on near-identical name strings."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-scmc-aws-data-infrastructure"],
+    "uc_2025_slugs": ["doe-doe-ai-data-infrastructure-system"],
+    "confidence": "medium",
+    "reasoning": "2024 is an SCMC AWS data-quality/governance automation system; 2025 uses generative AI and cloud infrastructure to improve the carbon capture and storage user experience. Both say 'data infrastructure' but solve different problems with different outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-tritium-accountancy-for-fusione-energy"],
+    "uc_2025_slugs": ["doe-ornl-ai-for-fusion-energy"],
+    "confidence": "medium",
+    "reasoning": "2024 is a specific tritium-accountancy uncertainty/prediction framework for fusion plants; 2025 'ORNL: AI for Fusion Energy' is one of a series of generic ORNL portfolio rollups ('accelerate scientific discovery'). Not the same use case — the 2025 row is a coarse program-level entry, not a rename of the tritium tool."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-coupa"],
+    "uc_2025_slugs": ["doe-copilot"],
+    "confidence": "high",
+    "reasoning": "2024 Coupa is AI-driven procurement/sourcing search; 2025 CoPilot provides communication suggestions and productivity. Different products and purposes; matcher paired on name similarity alone."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-position-description-tool"],
+    "uc_2025_slugs": ["doe-scripting"],
+    "confidence": "high",
+    "reasoning": "2024 streamlines creation of federal position descriptions; 2025 'Scripting' is AI-powered Python code generation for groundwater models. Entirely unrelated. (The genuine 2025 successor is 'SmartPD Creator' — see notes.md.)"
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-in-situ-monitoring-of-additively-manufactured-parts"],
+    "uc_2025_slugs": ["doe-ornl-ai-for-advanced-manufacturing"],
+    "confidence": "medium",
+    "reasoning": "2024 is a specific in-situ print-defect detection tool for additive manufacturing; 2025 'ORNL: AI for Advanced Manufacturing' is a generic ORNL portfolio rollup ('improve manufacturing'). The 2025 row is a program-level entry, not a rename of the specific tool."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOL",
+    "uc_2024_slugs": ["dol-data-ingestion-of-payroll-forms"],
+    "uc_2025_slugs": ["dol-nlp-processing-tool-for-ilab"],
+    "confidence": "high",
+    "reasoning": "2024 is a custom ML form-extraction model outputting JSON key/value pairs; 2025 ILAB NLP tool is a RAG conversational query/synthesis tool for evaluation reports. Different problems and outputs. (The genuine 2024 counterpart is 'Form Recognition model for Benefits Forms' — see notes.md.)"
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOL",
+    "uc_2024_slugs": ["dol-dol-intranet-website-chatbot-assistant"],
+    "uc_2025_slugs": ["dol-generative-ai-assistanti-ai-center"],
+    "confidence": "medium",
+    "reasoning": "2024 is a narrow procurement-Q&A intranet chatbot; 2025 'Generative AI Assistant (AI Center)' is a broad in-house GenAI platform for summarization, analysis and document comparison. Scope and purpose differ enough that this is a new platform, not a rename."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOL",
+    "uc_2024_slugs": ["dol-periscope-mobile-app"],
+    "uc_2025_slugs": ["dol-ebsa-case-file-summarization"],
+    "confidence": "high",
+    "reasoning": "2024 Periscope is a discontinued live-video mobile app; 2025 is EBSA investigative document-review summarization. No relationship whatsoever."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOL",
+    "uc_2024_slugs": ["dol-dragon-naturally-speaking"],
+    "uc_2025_slugs": ["dol-daisi-dol-ai-search-insights"],
+    "confidence": "high",
+    "reasoning": "2024 Dragon is speech-to-text dictation software; 2025 DAISI is an AI-powered intranet search/summarization assistant. Different products and functions."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOL",
+    "uc_2024_slugs": ["dol-abbyy-finereader"],
+    "uc_2025_slugs": ["dol-ai-headset"],
+    "confidence": "high",
+    "reasoning": "2024 ABBYY FineReader is desktop OCR software; 2025 AI Headset is a hands-free wearable for MSHA field inspections. Completely unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOL",
+    "uc_2024_slugs": ["dol-autodesk"],
+    "uc_2025_slugs": ["dol-qcew-naics-autocoder"],
+    "confidence": "high",
+    "reasoning": "2024 Autodesk Civil 3D is civil-engineering CAD software; 2025 QCEW NAICS Autocoder is a random-forest classifier assigning industry codes. No relationship."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOL",
+    "uc_2024_slugs": ["dol-webex-meeting-transcription"],
+    "uc_2025_slugs": ["dol-ppi-price-tolerance-prediction"],
+    "confidence": "high",
+    "reasoning": "2024 is Webex meeting transcription; 2025 PPI Price Tolerance Prediction recommends price-outlier boundaries from historical trends. Entirely unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOL",
+    "uc_2024_slugs": ["dol-adobe-acrobat-professional-latest-version"],
+    "uc_2025_slugs": ["dol-comment-actionability-likelihood-score"],
+    "confidence": "high",
+    "reasoning": "2024 Adobe Acrobat is document-workflow/OCR software; 2025 is a logistic-regression model scoring how actionable BLS.gov survey comments are. No relationship."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOL",
+    "uc_2024_slugs": ["dol-westlaw-precision-cocounsel"],
+    "uc_2025_slugs": ["dol-computer-assisted-review-ors-autocoder"],
+    "confidence": "high",
+    "reasoning": "2024 Westlaw is legal-research software; 2025 ORS Autocoder autocodes Occupational Requirements Survey records. Different products and purposes."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-vulnerability-tracking"],
+    "uc_2025_slugs": ["tva-tva-today-ai"],
+    "confidence": "high",
+    "reasoning": "2024 is a cybersecurity vulnerability-prioritization tool; 2025 'TVA Today AI' is a generic information-access productivity tool. Unrelated; matcher noise."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-advanced-threat-protection"],
+    "uc_2025_slugs": ["tva-generation-project-funding-estimates"],
+    "confidence": "high",
+    "reasoning": "2024 is a cyber threat-protection system; 2025 is generation-project funding estimation. No relationship."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-ai-driven-adaptive-protection"],
+    "uc_2025_slugs": ["tva-cobit-and-atad-prediction"],
+    "confidence": "high",
+    "reasoning": "2024 is real-time cyber threat-indicator exchange/blocking; 2025 'COBIT and ATAD Prediction' is unrelated. Generic 2025 narrative; no bilateral evidence."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-attack-surface-management"],
+    "uc_2025_slugs": ["tva-get-enhancement"],
+    "confidence": "high",
+    "reasoning": "2024 is ML-driven external attack-surface discovery; 2025 'GET Enhancement' adds SSL confidence-band plotting to the GET application. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-extended-threat-detection"],
+    "uc_2025_slugs": ["tva-environmental-documentation"],
+    "confidence": "high",
+    "reasoning": "2024 is unsupervised-ML network threat detection; 2025 'Environmental Documentation' is unrelated. No bilateral narrative evidence."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-augmented-email-protection"],
+    "uc_2025_slugs": ["tva-azure-nuclear-permitting-solution"],
+    "confidence": "high",
+    "reasoning": "2024 is an AI email-protection service; 2025 is an Azure nuclear-permitting solution. Entirely unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-security-operations-enhancement"],
+    "uc_2025_slugs": ["tva-cap-enhancement"],
+    "confidence": "high",
+    "reasoning": "2024 is AI-enriched SOC threat-intelligence; 2025 'CAP Enhancement' has only a generic efficiency narrative and no security content. No bilateral evidence."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-advanced-threat-protection-2"],
+    "uc_2025_slugs": ["tva-data-services-business-context-definition"],
+    "confidence": "high",
+    "reasoning": "2024 is a cyber threat-protection system; 2025 is a data-services business-context definition effort. No relationship."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-intrusion-detection-analysis"],
+    "uc_2025_slugs": ["tva-transmission-analytics"],
+    "confidence": "high",
+    "reasoning": "2024 is SOC intrusion-detection analysis; 2025 'Transmission analytics' (empty narrative) concerns power-transmission analytics. Unrelated; matcher paired on 'analysis'/'analytics'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-malware-reverse-engineering"],
+    "uc_2025_slugs": ["tva-gmet-enhancement"],
+    "confidence": "high",
+    "reasoning": "2024 is malware reverse-engineering for cyber defense; 2025 'GMET Enhancement' adds model-result filtering/visualization/export. No relationship."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "TVA",
+    "uc_2024_slugs": ["tva-threat-intelligence-feed"],
+    "uc_2025_slugs": ["tva-specification-intelligence"],
+    "confidence": "high",
+    "reasoning": "2024 is a cyber threat-intelligence feed; 2025 'Specification Intelligence' is a chat/harmonization tool for engineering specs. Unrelated; matcher paired on the word 'intelligence'."
+  }
+]

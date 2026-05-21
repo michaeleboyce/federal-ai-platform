@@ -1,0 +1,2245 @@
+{
+  "batch": 3,
+  "agencies": [
+    "DOE",
+    "DOL",
+    "TVA",
+    "USAGM",
+    "NMB",
+    "FHFA"
+  ],
+  "suggested_rename": [
+    {
+      "uc_2024_slug": "doe-data-analytics-and-machine-learning-damal-tools-for-analysis-of-environment-safe",
+      "uc_2024_name": "Data Analytics and Machine Learning (DAMaL) Tools for Analysis of Environment, Safety and Health (ES&H) data:  Similarity Based Information Retrieval",
+      "uc_2024_narrative": "(1) Searching for Information using AI (2) Improve efficiency of finding relevant data (e.g., ES&H data) Ranking of records",
+      "uc_2025_slug": "doe-nuclear-safety-analysis",
+      "uc_2025_name": "Nuclear Safety Analysis",
+      "uc_2025_narrative": "Safety, risk, and reliability analysis is performed by reactor designers, developers, and plant operators to ensure safe design and operation of the reactor and the plant; and is required by the regulators as part of license application. Performing s The outcome of this effort will provide a tool to the safety analysis teams which will enable them to automate creating the risk models resulting in significant reduction in time spent on performing safety analysis, writing SARs, and conducting the regulatory review of safety case. Failure Modes and Effects Analysis\nFault tree analysis\nCreating risk assessment models",
+      "name_score": 0.6667,
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "uc_2024_slug": "doe-data-analytics-and-machine-learning-damal-tools-to-enhance-the-analysis-of-envir-2",
+      "uc_2024_name": "Data Analytics and Machine Learning (DAMaL) Tools to enhance the analysis of Environment, Safety and Health (ES&H) data:  Unsupervised Machine Learning Text Clustering",
+      "uc_2024_narrative": "(1) Grouping Reports using AI (i.e., Clustering) (2) Improve efficiency of grouping and highlighting important data (e.g., ES&H data) Clustering of records with top terms and topics",
+      "uc_2025_slug": "doe-machine-learning-for-geophysical-data-inversion",
+      "uc_2025_name": "Machine Learning for geophysical data inversion",
+      "uc_2025_narrative": "Leak detection. Faster/better leak detection. Synthetic seismic and gravity data.",
+      "name_score": 0.6,
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "uc_2024_slug": "doe-fast-ai-for-real-time-online-diagnostics-and-calibration-ai-based-autonomous-sys",
+      "uc_2024_name": "Fast AI for real-time/online diagnostics and calibration; AI-based autonomous system control/operation optimization (including anomaly/failure detection)",
+      "uc_2024_narrative": "AI/ML to improve efficiency and quality of accelerator-based scientific user facility operation, including for light sources. Benefits include higher science throughput in scientific user facilities, greater energy efficiency, new scientific capabilities at Office of Science user facilities. Prediction of acclerator beam behavior, decisions about controllable variables to adjust to improve beam behavior.",
+      "uc_2025_slug": "doe-autonomous-real-time-guiding-of-bcp-film-synthesis",
+      "uc_2025_name": "Autonomous, real-time guiding of BCP film synthesis",
+      "uc_2025_narrative": "Adaptive synthesis and manufacturing processes will be realized by combining AI/ML methods for autonomous on-the-fly control of the deposition and processing of self-assembling polymer films. Adaptive synthesis and manufacturing processes will be realized by combining AI/ML methods for autonomous on-the-fly control of the deposition and processing of self-assembling polymer films. Adaptive synthesis and manufacturing processes will be realized by combining AI/ML methods for autonomous on-the-fly control of the deposition and processing of self-assembling polymer films.",
+      "name_score": 0.4286,
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "uc_2024_slug": "doe-crowdstrike",
+      "uc_2024_name": "CrowdStrike",
+      "uc_2024_narrative": "Predicts malicious behavior, provides decisions and blocks malicious behavior. Prediction, Recommendation, Decision",
+      "uc_2025_slug": "doe-crickets",
+      "uc_2025_name": "Crickets",
+      "uc_2025_narrative": "Facilitate analysis and user intent on detect of access to potentially inappropriate web content Reduce analysis cycle and response times Prediction",
+      "name_score": 0.5263,
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "uc_2024_slug": "doe-scmc-aws-data-infrastructure",
+      "uc_2024_name": "SCMC AWS Data Infrastructure",
+      "uc_2024_narrative": "Automation of multiple manual processes and improvement of data quality and governance. Initially the system will use M.L. to identify  inconsistent data and make preditions of how that data should be organized.",
+      "uc_2025_slug": "doe-doe-ai-data-infrastructure-system",
+      "uc_2025_name": "DOE AI Data Infrastructure System",
+      "uc_2025_narrative": "Leveraging generative AI and cloud-enabled data infrastructure to improve carbon capture and storage user experience Improve connectivity and create adaptive user interface User interface/data",
+      "name_score": 0.7213,
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "uc_2024_slug": "doe-tritium-accountancy-for-fusione-energy",
+      "uc_2024_name": "Tritium Accountancy for Fusione Energy",
+      "uc_2024_narrative": "Adaptive learning, improved uncertainty on accountancy, and prediction for commercial systems. Real-time tritium data with reduced uncertaintingy for a continually operating fusion power plant. A framework to be used in full systems.",
+      "uc_2025_slug": "doe-ornl-ai-for-fusion-energy",
+      "uc_2025_name": "ORNL: AI for Fusion Energy",
+      "uc_2025_narrative": "accelerate scientific discovery accelerate scientific discovery prediction and classification",
+      "name_score": 0.6562,
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "uc_2024_slug": "doe-coupa",
+      "uc_2024_name": "Coupa",
+      "uc_2024_narrative": "AI functionality within Coupa drives better search functionailty and drives efficiency of sourcing and procurment processes. Predictive analysis",
+      "uc_2025_slug": "doe-copilot",
+      "uc_2025_name": "CoPilot",
+      "uc_2025_narrative": "Communication suggestions better communication provides intelligent suggestions, and boosts productivity",
+      "name_score": 0.5,
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "uc_2024_slug": "doe-position-description-tool",
+      "uc_2024_name": "Position Description Tool",
+      "uc_2024_narrative": "Currently requirements are still be collected for this use case. The end goal of this use case is to  streamline the creation of position descriptions used as a critical component for hiring federal employees. Position descriptions for federal roles.",
+      "uc_2025_slug": "doe-scripting",
+      "uc_2025_name": "Scripting",
+      "uc_2025_narrative": "AI-powered scripting will improve automation, speed, and efficiency. Reduced cost in alteration of ground water models improving ground water outcomes. Python code for use in models",
+      "name_score": 0.4706,
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "uc_2024_slug": "doe-in-situ-monitoring-of-additively-manufactured-parts",
+      "uc_2024_name": "In-Situ Monitoring of Additively Manufactured Parts",
+      "uc_2024_narrative": "Identify print defects during the printing process. Layerwise annotated images of defects in print bed that can be registered to post print analysis or trigger a fixing process or a full stop to save on material.",
+      "uc_2025_slug": "doe-ornl-ai-for-advanced-manufacturing",
+      "uc_2025_name": "ORNL: AI for Advanced Manufacturing",
+      "uc_2025_narrative": "improve manufacturing improve manufacturing prediction and classification",
+      "name_score": 0.4651,
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "uc_2024_slug": "dol-data-ingestion-of-payroll-forms",
+      "uc_2024_name": "Data Ingestion of Payroll Forms",
+      "uc_2024_narrative": "Custom machine learning model to extract data from complex forms to tag data entries to field headers. The input is a document or scanned image of the form and the output is a JSON response with key/value pairs The output is a JSON response with key/value pairs extracted by running the form against the custom trained model.",
+      "uc_2025_slug": "dol-nlp-processing-tool-for-ilab",
+      "uc_2025_name": "NLP Processing tool for ILAB",
+      "uc_2025_narrative": "The Natural Language Processing tool is intended to be a conversational query and synthesis tool that summarizes and synthesizes evaluation and technical assistance reports, as well as responses to requests for public comments, and queries information contained in these reports. The tool uses a Retrieval-Augmented Generation (RAG) approach and will include processing of both publicly available and restricted-access documents to train and test the tool. Rapidly summarizes and synthesizes large volumes of evaluation and technical assistance reports, thereby increasing efficiency The tool responds to queries by providing information summarized from reports and other documents.",
+      "name_score": 0.4068,
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "uc_2024_slug": "dol-dol-intranet-website-chatbot-assistant",
+      "uc_2024_name": "DOL Intranet Website Chatbot Assistant",
+      "uc_2024_narrative": "Conversational AI Assistant & DOL intranet websites to help answer common procurement questions, as well as specific contract questions. It will answer question based on the question pertaining to the knowledge base.",
+      "uc_2025_slug": "dol-generative-ai-assistanti-ai-center",
+      "uc_2025_name": "Generative AI AssistantI  ( AI Center)",
+      "uc_2025_narrative": "Private and secure in-house solution to evaluate business use cases that can solve problems using Generative AI models and semantic search. Example use cases include text summarization, text analysis, and document comparisons. Private, secure in-house generative AI with semantic search accelerates text summarization, analysis, and document comparison to improve efficiency and decision support. The AI system provides recommendations.",
+      "name_score": 0.48,
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "uc_2024_slug": "dol-periscope-mobile-app",
+      "uc_2024_name": "Periscope Mobile App",
+      "uc_2024_narrative": "Periscope the place to show what’s happening in your world, creating vibrant communities and making the app what it was. The Periscope mobile app will be discontinued on March 31, 2021, but live video will live on as an important part of the conversation on Twitter. NLP, Communications",
+      "uc_2025_slug": "dol-ebsa-case-file-summarization",
+      "uc_2025_name": "EBSA Case File Summarization",
+      "uc_2025_narrative": "Identify and describe electronic documents received by EBSA investigators for formal investigations - save time by automating the first phase of the document review process Save time for EBSA investigators by automating the first phase of the document review process Generation of a document's formal title and description of the document's contents",
+      "name_score": 0.4167,
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "uc_2024_slug": "dol-dragon-naturally-speaking",
+      "uc_2024_name": "Dragon Naturally Speaking",
+      "uc_2024_narrative": "Nuance Dragon Naturally Speaking is a software used for diction purposes, you can write any document, email, and use it with any applications using your voice. NLP: text to voice. Audio output from text input",
+      "uc_2025_slug": "dol-daisi-dol-ai-search-insights",
+      "uc_2025_name": "DAISI ( DOL AI Search Insights)",
+      "uc_2025_narrative": "It's an AI-powered search assistant that retrieves and summarizes content from internal DOL sources to assist with information discovery. DAISI generates responses based on a database of facts, with all data coming from intranet content. Faster retrieval of information Text",
+      "name_score": 0.4286,
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "uc_2024_slug": "dol-abbyy-finereader",
+      "uc_2024_name": "ABBYY FineReader",
+      "uc_2024_narrative": "ABBYY FineReader is an optical character recognition (OCR) system. It is used to convert scanned documents, PDF documents, and image files, including digital photos, into editable formats. The output of ABBYY FineReader is the extracted and recognized text from the input document. It converts the text into editable formats such as Word documents, Excel spreadsheets, searchable PDFs, or plain text files. Text generation, Image to text",
+      "uc_2025_slug": "dol-ai-headset",
+      "uc_2025_name": "AI Headset",
+      "uc_2025_narrative": "Inspection: An AI headset offers a hands-free, voice-controlled solution that enhances the efficiency, safety, and accuracy of MSHA inspectors using the Inspection Application System (IAS). By enabling inspectors to access inspection checklists, capture photos and videos, and input data through voice commands, the headset reduces reliance on manual data entry and handheld devices in mining environments. It also supports real-time communication with field office supervisors and data collection, streamlining the inspection process and improving documentation. When integrated with IAS or compatible platforms, an AI headset  can significantly modernize field inspections, ensuring better compliance and faster reporting. Improve Inspection Onsite Documentation Time: The intended purpose of the AI headset is to provide a hands-free, voice-activated wearable solution that enhances the productivity, safety, and effectiveness of frontline government workers, such as MSHA inspectors. The expected benefits include significant cost savings through reduced inspection times and fewer repeat site visits, as well as improved documentation accuracy through real-time photo, video, and voice note capture. The device also enables live communication with remote experts, accelerating decision-making and reducing downtime. Outputs: For MSHA inspectors using the Inspection Application System (IAS), the AI system outputs of the AI headset are designed to streamline field operations, enhance safety, and improve data accuracy. These outputs are delivered through a combination of visual, audio, and data-driven interfaces that support real-time decision-making and documentation. The primary output is a high-resolution micro-display that appears in the inspector’s line of sight, showing inspection forms and data entry screens, mine data, safety protocols, or previous violation histories pulled from IAS or the Mine Data Retrieval System (MDRS)",
+      "name_score": 0.4615,
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "uc_2024_slug": "dol-autodesk",
+      "uc_2024_name": "Autodesk",
+      "uc_2024_narrative": "Autodesk Civil 3D® design software empowers civil engineers to meet complex infrastructure challenges in a 3D model-based environment. Detailed 3D models and visual simulations for civil engineering projects. ---  Autodesk Civil 3D incorporates AI components and features that enhance civil engineering design and drafting processes. These features leverage machine learning and automation to improve productivity, accuracy, and efficiency in tasks related to land development, transportation, and infrastructure projects.",
+      "uc_2025_slug": "dol-qcew-naics-autocoder",
+      "uc_2025_name": "QCEW NAICS Autocoder",
+      "uc_2025_narrative": "The primary data source for the Quarterly Census of Employment and Wages (QCEW) is administrative data from state unemployment insurance programs. Some of these records are submitted without a valid North American Industry Classification System (NAICS) code. The tool is intended to reduce the burden on human reviewers of these uncoded records by recommending the most likely NAICS codes. It also reduces the burden on the program office by reducing printing and mailing costs of soliciting unclassified data. The model is a random forest classifier trained on millions of QCEW records. It outputs the NAICS codes with the highest predicted probability given a business name.",
+      "name_score": 0.4286,
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "uc_2024_slug": "dol-webex-meeting-transcription",
+      "uc_2024_name": "Webex Meeting Transcription",
+      "uc_2024_narrative": "Webex has an internal transcription feature that is used to transcribe webinars, though it is reviewed by someone before the transcript is posted. Real-time transcriptions of spoken words during meetings.",
+      "uc_2025_slug": "dol-ppi-price-tolerance-prediction",
+      "uc_2025_name": "PPI Price Tolerance Prediction",
+      "uc_2025_narrative": "Recommends price tolerance boundaries for industries based on historical and seasonal trends. Improve statistical quality of price outlier detection. Predicted price tolerance boundaries.",
+      "name_score": 0.4561,
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "uc_2024_slug": "dol-adobe-acrobat-professional-latest-version",
+      "uc_2024_name": "Adobe Acrobat Professional Latest Version",
+      "uc_2024_narrative": "Streamlines document workflows. Text-searchable PDFs, form-filled documents, and automatically structured files. Document management\nPDF Text Recognition (OCR)\nDocument Layout Analysis",
+      "uc_2025_slug": "dol-comment-actionability-likelihood-score",
+      "uc_2025_name": "Comment Actionability\nLikelihood Score",
+      "uc_2025_narrative": "Many comments submitted through the BLS.gov customer satisfaction survey are not actionable (i.e., do not provide an issue or explanation of what could improve the user experience). Non-actionable submissions increase the burden on those tasked with reviewing comments. The tool reduces the burden on those tasked with reviewing these comments by providing them with a means to sort them by how actionable they are likely to be. The output is a logistic regression model's predicted probability that a comment would be labeled as actionable feedback for the agency.",
+      "name_score": 0.4051,
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "uc_2024_slug": "dol-westlaw-precision-cocounsel",
+      "uc_2024_name": "Westlaw Precision & CoCounsel",
+      "uc_2024_narrative": "Helps professionals find relevant case law, statutes, and legal precedents. Legal documents, case analysis, and predictions for legal outcomes.",
+      "uc_2025_slug": "dol-computer-assisted-review-ors-autocoder",
+      "uc_2025_name": "Computer-Assisted Review:\nORS Autocoder",
+      "uc_2025_narrative": "The Occupational Requirements Survey (ORS) collects and publishes information about specific work-related requirements. Every year, thousands of collected data must be reviewed manually by human staff. The ORS Autocoder, on a regular basis, autocodes and clears certain edit flags from records which it deems to be good, allowing human staff to focus on reviewing data that are more likely to be incorrect. Efficiency and data quality improvements SOC code",
+      "name_score": 0.4,
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "uc_2024_slug": "tva-vulnerability-tracking",
+      "uc_2024_name": "Vulnerability Tracking",
+      "uc_2024_narrative": "Vulnerability analysts track 1000s of vulnerabilities in real time across and enterprise of technologies. Prioritizing severity is a challenging task when there can be 100s of the same level of severity CVE. The tools in use help prioritize data based on contextual information within the environment and industry while also feeding other factors such as exploitability, Metrics, Alerting, and optional preventative/proactive protections",
+      "uc_2025_slug": "tva-tva-today-ai",
+      "uc_2025_name": "TVA Today AI",
+      "uc_2025_narrative": "Increased efficiency, productivity, and access to information",
+      "name_score": 0.4118,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-advanced-threat-protection",
+      "uc_2024_name": "Advanced Threat Protection",
+      "uc_2024_narrative": "Protecting against attackers and exploitations means testing using the same strategies that adversaries use. Leveraging billions of data points across operating systems, mail flow, and identity patterns, mathematical and probabilistic based decisions can be made to mitigate and even completed remove threats to the organization. ML and AI technology help reduce phishing emails, malware spread, leveraging compromised accounts, and further promote visibility to threats. Metrics, Alerting, and optional preventative/proactive protections",
+      "uc_2025_slug": "tva-generation-project-funding-estimates",
+      "uc_2025_name": "Generation Project Funding Estimates",
+      "uc_2025_narrative": "Increased efficiency and productivity, reduced errors",
+      "name_score": 0.4516,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-ai-driven-adaptive-protection",
+      "uc_2024_name": "AI -Driven Adaptive Protection",
+      "uc_2024_narrative": "Enables the real-time exchange of machine-readable cyber threat indicators and defensive measures to help protect against and ultimately reduce the prevalence of cyber incidents. This is useful in helping protect networks against human-operated ransomware, where a threat actor can quickly adjust and maneuver inside the network. Leveraging predictive analytics, the technology can actively engage blocking measures to stop further exploitation. Metrics, Alerting, and optional preventative/proactive protections",
+      "uc_2025_slug": "tva-cobit-and-atad-prediction",
+      "uc_2025_name": "COBIT and ATAD Prediction",
+      "uc_2025_narrative": "Increased efficiency and productivity",
+      "name_score": 0.5455,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-attack-surface-management",
+      "uc_2024_name": "Attack Surface Management",
+      "uc_2024_narrative": "Proprietary machine learning models help discover the systems and applications belonging to TVA, across the entire internet. This enables TVA to inventory and take action to ensure protections are in place for external services and applications. These ML tools continuously monitor the attack surface and help prioritize remediation actions for external TVA assets. Metrics, Alerting, and optional preventative/proactive protections",
+      "uc_2025_slug": "tva-get-enhancement",
+      "uc_2025_name": "GET Enhancement",
+      "uc_2025_narrative": "The requested updates will augment the GET application by adding the ability to subset and display SSL Confidence Band plots within the user interface.",
+      "name_score": 0.5,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-extended-threat-detection",
+      "uc_2024_name": "Extended Threat Detection",
+      "uc_2024_narrative": "Detecting threats within any environment requires large amounts of data, baselines of normalcy, and ability to detect anomalous behaviors within that baseline. Automated detection capabilities leveraging deep packet inspection and real-time analysis to identify the patterns that deviate from what's considered normal enables threat detection and response. Use of unsupervised machine learning models, that learn from previously seen behaviors and are able to determine when something becomes malicious or when an event is considered benign is paramount. New activities are closely monitored in order to most accurately attribute to benign or malicious. Overall, this AI based technology vastly improves visibility and accuracy in threat detection. Metrics, Alerting, and optional preventative/proactive protections",
+      "uc_2025_slug": "tva-environmental-documentation",
+      "uc_2025_name": "Environmental Documentation",
+      "uc_2025_narrative": "Increased efficiency and productivity",
+      "name_score": 0.5,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-augmented-email-protection",
+      "uc_2024_name": "Augmented Email Protection",
+      "uc_2024_narrative": "Email protection service that analyzes activity of messages within email services to determine if messages and associated content embedded within is malicious based on signals that include Al-generated signals regarding normative human behavior and known malicious content. Metrics, Alerting, and optional preventative/proactive protections",
+      "uc_2025_slug": "tva-azure-nuclear-permitting-solution",
+      "uc_2025_name": "Azure Nuclear Permitting Solution",
+      "uc_2025_narrative": "Increased efficiency and productivity, faster searching and access to information, improved compliance",
+      "name_score": 0.4746,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-security-operations-enhancement",
+      "uc_2024_name": "Security Operations Enhancement",
+      "uc_2024_narrative": "Empowering SOC analysts with AI-enriched threat intelligence to understand landscapes, security posturing, and live attacks. Promoting the prioritization of event handling and investigative actions to identify and stop attacks by optimizing decision-making. Metrics, Alerting, and optional preventative/proactive protections",
+      "uc_2025_slug": "tva-cap-enhancement",
+      "uc_2025_name": "CAP Enhancement",
+      "uc_2025_narrative": "Increased efficiency and productivity",
+      "name_score": 0.6087,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-advanced-threat-protection-2",
+      "uc_2024_name": "Advanced Threat Protection",
+      "uc_2024_narrative": "Protecting against attackers and exploitations means testing using the same strategies that adversaries use. Leveraging billions of data points across operating systems, mail flow, and identity patterns, mathematical and probabilistic based decisions can be made to mitigate and even completed remove threats to the organization. ML and AI technology help reduce phishing emails, malware spread, leveraging compromised accounts, and further promote visibility to threats. Metrics, Alerting, and optional preventative/proactive protections",
+      "uc_2025_slug": "tva-data-services-business-context-definition",
+      "uc_2025_name": "Data Services Business Context Definition",
+      "uc_2025_narrative": "Increased efficiency and productivity",
+      "name_score": 0.4179,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-intrusion-detection-analysis",
+      "uc_2024_name": "Intrusion Detection Analysis",
+      "uc_2024_narrative": "Threat hunting and Security Operations Center (SOC) analysts leverage automated tooling to refine alerts that enable discovery and detection of anomalous behavior across the network. These tools use a massive amount of data and provide intelligence beyond what could be seen from a single vector. Correlated network traffic data with proxy communications help identify compromised systems and networks. Metrics, Alerting, and optional preventative/proactive protections",
+      "uc_2025_slug": "tva-transmission-analytics",
+      "uc_2025_name": "Transmission analytics",
+      "uc_2025_narrative": "",
+      "name_score": 0.56,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-malware-reverse-engineering",
+      "uc_2024_name": "Malware Reverse Engineering",
+      "uc_2024_narrative": "Reverse engineering of malware, and software analysis more broadly, will continue to be a critical activity in support of TVA's cyber protections efforts. Analysis of files, URLs, Hashes, etc., to determine if contents are malicious using a combination of different anti-virus scanners and blocking services to advance efficiency and reduce the time spent by analysts analyzing various content within TVA's technology eco-system. Threat Intelligence",
+      "uc_2025_slug": "tva-gmet-enhancement",
+      "uc_2025_name": "GMET Enhancement",
+      "uc_2025_narrative": "This update allows TVA staff to filter, visualize, and export model results on demand, reducing reliance on static reports and improving operational efficiency.",
+      "name_score": 0.4186,
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "uc_2024_slug": "tva-threat-intelligence-feed",
+      "uc_2024_name": "Threat Intelligence Feed",
+      "uc_2024_narrative": "Information Sharing; advanced technology and industry expertise to provide participants with near real-time delivery of relevant and actionable threat information of external network traffic. Threat Intelligence",
+      "uc_2025_slug": "tva-specification-intelligence",
+      "uc_2025_name": "Specification Intelligence",
+      "uc_2025_narrative": "Phase1: chat window for users to ask questions of specs. Phase 2: break specs into concepts and create a matrix for harmonization.",
+      "name_score": 0.64,
+      "agency_abbreviation": "TVA"
+    }
+  ],
+  "retired_2024": [
+    {
+      "slug": "dol-form-recognition-model-for-benefits-forms",
+      "use_case_name": "Form Recognition model for Benefits Forms",
+      "narrative": "Custom machine learning model to extract data from complex forms to tag data entries to field headers. The input is a document or scanned image of the form and the output is a JSON response with key/value pairs extracted by running the form against the custom trained form recognition model. The AI system output is a recommendation.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-website-chatbot-assistant-2",
+      "use_case_name": "Website Chatbot Assistant",
+      "narrative": "The chatbot helps the end user with basic information about the Workforce Recruitment Program and information on who to contact. Generate content from the WRP program",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-ai-course-design-assistant",
+      "use_case_name": "AI Course Design Assistant",
+      "narrative": "AI tool to recommend the structure of a course, titles for modules, descriptions, and images. AI-powered algorithms analyze course content and quickly generate test questions and prompts for authentic assessments. (Blackboard/COTS Product, unmodified) Generated text and images for Course outlines, descriptions, tests/assessments.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-ai-assisted-coding-microsoft-github-copilot",
+      "use_case_name": "AI Assisted coding -Microsoft GitHub Copilot",
+      "narrative": "Automatically generate software code using Microsoft Copilot, this will reduce the time for generating code Automatically generate software code using Microsoft Copilot, this will reduce the time for generating code",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-camtasia",
+      "use_case_name": "Camtasia",
+      "narrative": "Intended for enhancing screen recordings and video tutorials. Helps users created professional videos quickly. Videos",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-adobe-premier-pro",
+      "use_case_name": "Adobe Premier Pro",
+      "narrative": "Assists video editors by automating complex tasks such as scene detection, video reframing, and color grading.--- Adobe Premiere Pro incorporates several AI components through its integration with Adobe Sensei, Adobe's artificial intelligence and machine learning platform. These AI-driven features are designed to enhance the video editing process, improve efficiency, and provide creative tools that simplify complex tasks. Intuitive videos",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-audiate",
+      "use_case_name": "Audiate",
+      "narrative": "Audiate primarily uses AI for  Speech-to-text transcription, text-based audio and video editing, AI-generated scripts and audio, text-to-speech conversion, and multilingual translation. Text transcriptions from voice recordings.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-snagit",
+      "use_case_name": "SnagIT",
+      "narrative": "SnagIT provides tools for quickly capturing, editing, and sharing visual content. SnagIt's Optional Character Recognition streamlines the process for extracting and reusing text from images. Screenshots and screen recordings.  SnagIt AI’s Grab Text\nImage Generation\nAutomatic Captions\nAutomatic Titles",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-facebook-mobile-app",
+      "use_case_name": "Facebook Mobile App",
+      "narrative": "AI is not the primary technology of the use case and is not necessary for the use case, but rather a feature within the application that cannot be turned off. The application use case is for PR needs and external communication to the public coming from the Department. MetaAI offer search and chatbot assistance with the Facebook application. Ask Meta AI to search topics that matter to you, and get instant results more interactive than just text.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-google-authenticator-mobile-app",
+      "use_case_name": "Google Authenticator Mobile App",
+      "narrative": "Google Authenticator adds an extra layer of security to your online accounts by adding a second step of verification when you sign in. This means that in addition to your password, you'll also need to enter a code that is generated by the Google Authenticator app on your phone Large number generation for matching for secure login.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-google-maps-mobile-app",
+      "use_case_name": "Google Maps Mobile App",
+      "narrative": "Get there faster with real-time updates\n• Beat traffic with real-time ETAs and traffic conditions\n• Catch your bus, train, or ride-share with real-time transit info\n• Save time with automatic rerouting based on live traffic, incidents, and road closure\n• With Live View in Google Maps, see the way you need to go with arrows and directions placed right on top of your world. There’s no second guessing or missing another turn. Recommendation systems, real-time traffic and route prediction",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-instagram-mobile-app",
+      "use_case_name": "Instagram Mobile App",
+      "narrative": "Keep up with friends on the fly with Stories and Notes that disappear after 24 hours.\nStart group chats and share unfiltered moments with your Close Friends.\nShare memories from recent events or trips in Feed.\nTurn your life into a movie and discover short, entertaining videos on Instagram with Reels.\nCustomize your posts with exclusive templates, music, stickers and filters. NLP, Communications",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-microsoft-authenticator-mobile-app",
+      "use_case_name": "Microsoft Authenticator Mobile App",
+      "narrative": "Use Microsoft Authenticator for easy, secure sign-ins for all your online accounts using multi-factor authentication, passwordless, or password autofill. You also have additional account management options for your Microsoft personal, work or school accounts. Authentication, random large number generation",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-x-formerly-twitter-mobile-app",
+      "use_case_name": "X (formerly Twitter) Mobile App",
+      "narrative": "Post content for the world to see and join public conversations\nStay up to date on breaking news and follow your interests\nStay better informed with extra context from Community Notes\nGo live with Spaces for audio or stream live video\nCommunicate privately with Direct Messages NLP, Communications",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-zoomtext-and-zoomtext-professional",
+      "use_case_name": "ZoomText and ZoomText Professional",
+      "narrative": "ZoomText Magnifier/Reader is a fully integrated magnification and reading program tailored for low-vision users. Text to speech",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-visual-studio",
+      "use_case_name": "Visual Studio",
+      "narrative": "Visual Studio IDE is a creative launching pad that you can use to edit, debug, and build code, and then publish an app. Content creation. Can vary depending on the specific tasks and goals of the user. Common outputs include executable applications, libraries, or web applications. --- There are multiple version of it. Visual Studio incorporates several AI components to enhance the development experience for programmers and software engineers. These AI features are primarily aimed at improving productivity, code quality, and collaboration.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-google-earth-pro",
+      "use_case_name": "Google Earth Pro",
+      "narrative": "Google Earth Pro is a free desktop tool with advanced GIS and mapping features. With this tool, users can create maps, import and export GIS data, and access historical images. A 3D representation of the Earth's surface, with satellite imagery and aerial photography providing a detailed view of different locations worldwide. --- Create and collaborate on immersive, data-driven maps from anywhere, with the new Google Earth. See the world from above with high-resolution satellite imagery, explore 3D terrain and buildings in hundreds of cities, and dive in to streets and neighborhoods with Street View's 360° perspectives. Image Generation Content creation Graphic Design Automation",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-adobe-creative-cloud-and-adobe-product-suite",
+      "use_case_name": "Adobe Creative Cloud and Adobe Product Suite",
+      "narrative": "After Effects - Create cinematic movie titles, intros, and transitions. Remove an object from a clip. Start a fire or make it rain. Animate a logo or character. With After Effects, the industry-standard motion graphics and visual effects software, you can take any idea and make it move.\n\n- > Audition is a comprehensive toolset that includes multitrack, waveform, and spectral display for creating, mixing, editing, and restoring audio content. This powerful audio workstation is designed to accelerate video production workflows and audio finishing — and deliver a polished mix with pristine sound.\n\n- > Bridge is a powerful creative asset manager that lets you preview, organize, edit, and publish multiple creative assets quickly and easily.\n\n- > Captivate is an authoring tool that is used for creating eLearning content such as software demonstrations, software simulations, branched scenarios, and randomized quizzes in HTML5 format.\n\n- > Character Animator uses your expressions and movements to animate characters in real time.\n\n- > Dimension - Create engaging content in 3D faster, with high-quality models, materials, and lighting. Dimension makes it easy to build brand visualizations, illustrations, product mockups, packaging designs, and other creative work.\n\n- >Dreamweaver - Adobe Dreamweaver is a proprietary web development tool from Adobe Inc.\n\n- >  Fuse CC Beta is part of Creative Cloud and comes with Adobe CreativeSync, so your assets are always at your fingertips right when you need them. Save the characters you create in Fuse to your Creative Cloud Libraries and then access them directly within Photoshop to take them further.\n\n- > Illustrator - Edit, composite, and create beautiful images, graphics, and art on desktop and iPad.\n\n- > InCopy - lets copywriters and editors style text, track changes, and make simple layout modifications to a document.\n\n- > InDesign - Design and publish elegant layouts for print and digital.\n\n- > LightRoom - The cloud-based photo service\n\n- > PhotoShop - Edit, composite, and create beautiful images, graphics, and art on desktop and iPad.\n\n- > Premiere Pro is a video editing software for film, TV, the web, creative tools, and integration with other apps and services.\n\n- > XD is a vector-based user experience design tool for web apps and mobile apps. Various types of creative content such as graphics, videos, websites, and more. --- Adobe Creative Cloud leverages AI through Adobe Sensei to enhance various applications, making creative processes more efficient, accurate, and innovative.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-ai-course-design-assistant-2",
+      "use_case_name": "AI Course Design Assistant",
+      "narrative": "AI tool to recommend the structure of a course, titles for modules, descriptions, and images. AI-powered algorithms analyze course content and quickly generate test questions and prompts for authentic assessments. (Blackboard/COTS Product, unmodified) Generated text and images for Course outlines, descriptions, tests/assessments.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-omni-page-ultimate-19",
+      "use_case_name": "Omni Page Ultimate 19",
+      "narrative": "Convert physical documents or image-based text into editable digital text. Searchable and editable text from scanned or image-based documents. Object recognition OCR\nDocument Digitization\nText Recognition",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-tableau-public-2023",
+      "use_case_name": "Tableau Public 2023",
+      "narrative": "Allows users to share data visualizations, providing interactive insights. Interactive visualizations such as charts, graphs, and dashboards that are easy to interpret and share. Data visualization\nData Classification\nPredictive Analytics",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-tableau-creator-desktop-and-prep",
+      "use_case_name": "Tableau Creator (Desktop and Prep)",
+      "narrative": "Enable analysts to connect, prepare, and visualize data. visual data dashboards, reports, and predictive models. Data Analysis\nPredictive Analytics\nData Classification",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-grammarly-14",
+      "use_case_name": "Grammarly 14",
+      "narrative": "Improve writing by correcting grammar, punctuation, and style errors while suggesting tone adjustments. NLP\nGrammar Correction\nTone Detection Grammatically correct, well-structured, and contextually appropriate text.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-adobe-creative-cloud-with-acrobat-pro-latest-version",
+      "use_case_name": "Adobe Creative Cloud with Acrobat Pro Latest Version",
+      "narrative": "Intended for enhancing creative workflows by automating repetitive tasks, improving accuracy of search functions, and enabling more advanced image manipulation and video editing. Object recognition\nImage Generation\nNLP Images, Videos, Content",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-microsoft-project-office-365",
+      "use_case_name": "Microsoft Project Office 365",
+      "narrative": "Assists project managers in planning, scheduling, and managing resources. Project Scheduling\nTask automation\nResource Allocation Optimized project timelines, resource schedules, and predictive alerts.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-stata-mp-18",
+      "use_case_name": "Stata/MP 18",
+      "narrative": "Provides advanced statistical tools for data scientists and researchers to analyze large datasets and build predictive models. Statistical modeling\nData Analysis\nPredictive Analytics Statistical analysis reports, regression models, and predative insights based on large data sets.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-dragon-legal-individual-speech-recognition",
+      "use_case_name": "Dragon Legal Individual (Speech Recognition)",
+      "narrative": "Helps legal professionals transcribe spoken language into text. Outputs transcriptions of legal dictations and spoken languages.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-speechify-text-to-speech-voice-reader-chrome-extension-9",
+      "use_case_name": "Speechify Text to Speech Voice Reader Chrome Extension 9",
+      "narrative": "Converts written text into natural-sounding speech. Synthesized speech from written text in various voices and languages.",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-adobe-creative-cloud-adobe-express-ai-feature",
+      "use_case_name": "Adobe Creative Cloud / Adobe Express AI feature",
+      "narrative": "Helps users create visual content quickly through AI-driven automation. Graphics, posters, and social media content. Image Generation\nContent Creation\nGraphic Design Automation",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-kurzweil",
+      "use_case_name": "Kurzweil",
+      "narrative": "Kurzweil 1000 makes printed or electronic text accessible to people with blindness and visual impairments, speaking text aloud in a variety of natural-sounding voices that can be modified to individual preferences. NLP: text to voice. Audio output from text input",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-microsoft-office-suite",
+      "use_case_name": "Microsoft Office Suite",
+      "narrative": "Microsoft Office Suite is a collection of productivity software applications developed by Microsoft. It is widely used for various personal, educational, and business tasks create slideshows combining text, images, and multimedia. creating, editing, and formatting text documents",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "tva-security-information-and-event-management-siem-alerting-models",
+      "use_case_name": "Security Information and Event Management (SIEM) Alerting Models",
+      "narrative": "Leveraged for comprehensive context interpretation, rapid event detection, and greater productivity with human-assisted automation to SecOps, ITOps. Enables faster alerting, review, and response to terabytes of log data. These automated tools support further refining of alerts based on aggregated data and analyst expertise. Metrics, Alerting, and optional preventative/proactive protections",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "usagm-microsoft-copilot-for-internal-employees",
+      "use_case_name": "Microsoft Copilot for Internal Employees",
+      "narrative": "USAGM is exploring the potential of Microsoft Copilot to enhance workplace productivity and collaboration across its internal teams. The tool leverages generative AI capabilities integrated within the Microsoft 365 suite, enabling employees to streamline workflows and focus on high-value tasks. Key features include drafting documents and presentations, summarizing content, automating reminders, managing editorial calendars, scheduling meetings, recording and transcribing conversations, and conducting natural language search for quick access to files and records. This initiative supports operational efficiency by integrating AI capabilities across collaboration, task management, and content creation workflows.",
+      "agency_abbreviation": "USAGM"
+    },
+    {
+      "slug": "usagm-automated-transcription-generation",
+      "use_case_name": "Automated Transcription Generation",
+      "narrative": "Generative AI is being leveraged in USAGM’s media workflows to enhance efficiency and accessibility. This use case integrates Latakoo, which utilizes OpenAI's Whisper technology for transcription. With high accuracy, the system transcribes content as it is processed and passes it into USAGM’s media asset management (MAM) system, ensuring that the content is easily searchable and accessible for future use.",
+      "agency_abbreviation": "USAGM"
+    },
+    {
+      "slug": "usagm-content-enhancement-for-articles",
+      "use_case_name": "Content Enhancement for Articles",
+      "narrative": "This project uses AI integrated with our content management system (CMS) and digital platforms to assist journalists in optimizing article quality. AI generates multiple versions of titles, automates the creation of SEO-friendly tags and text, and provides concise summaries for articles. These summaries enhance user engagement by increasing the time spent on pages, particularly when readers arrive via search engines or social media. Journalists can review and adjust AI suggestions to ensure alignment with their goals.",
+      "agency_abbreviation": "USAGM"
+    },
+    {
+      "slug": "usagm-automated-translations",
+      "use_case_name": "Automated Translations",
+      "narrative": "This initiative uses AI integrated with our content management system (CMS) to streamline multilingual content production across USAGM’s networks. Unlike typical translation tasks, USAGM faces the unique challenge of efficiently translating content into 50-plus languages, spanning diverse linguistic and cultural contexts. The AI translation tool provides draft translations for cloned articles, enabling seamless content reuse between language teams while maintaining accuracy and cultural sensitivity. This solution is critical for ensuring high-quality, localized content delivery to audiences worldwide.",
+      "agency_abbreviation": "USAGM"
+    },
+    {
+      "slug": "usagm-ai-powered-cms-guide-agent",
+      "use_case_name": "AI-Powered CMS Guide Agent",
+      "narrative": "An AI-driven agent is being developed to enhance user support within the CMS. The agent will respond to natural language questions, offering tailored guidance and solutions from the CMS’s internal help documentation.",
+      "agency_abbreviation": "USAGM"
+    },
+    {
+      "slug": "usagm-content-summarization-and-audience-engagement",
+      "use_case_name": "Content Summarization and Audience Engagement",
+      "narrative": "AI tools integrated with our content management system (CMS) are being piloted to create multi-article summaries, \"smart search\" responses, and interactive highlights tailored for mobile-first users. These tools enhance content discoverability within the CMS and enable the creation of widgets like \"all you need to know\" summaries, improving user engagement and accessibility. Additionally, AI-generated interactive formats provide better comprehension for long-form articles, ensuring a seamless user experience across digital platforms.",
+      "agency_abbreviation": "USAGM"
+    },
+    {
+      "slug": "usagm-automated-text-narration",
+      "use_case_name": "Automated Text Narration",
+      "narrative": "AI-generated audio narrations are being explored as a tool to enhance accessibility and engagement for long-form articles. An integrated audio player would allow users to consume content in a more convenient and flexible manner.",
+      "agency_abbreviation": "USAGM"
+    },
+    {
+      "slug": "usagm-automated-metadata-generation",
+      "use_case_name": "Automated Metadata Generation",
+      "narrative": "AI is being tested to automate the generation of descriptive metadata, such as content summaries and SEO tags. This capability aims to simplify cataloging processes, improve content discoverability, and reduce the manual effort required for metadata creation",
+      "agency_abbreviation": "USAGM"
+    },
+    {
+      "slug": "fhfa-desktop-productivity-using-microsoft-365",
+      "use_case_name": "Desktop productivity using Microsoft 365",
+      "narrative": "To help foster smart recommendations, data insights, and enhanced collaboration. Microsoft 365 suite (Teams, SharePoint, Excel, PowerPoint, Word) uses AI for various functionalities like language translation, smart recommendations, data insights, and enhanced collaboration.",
+      "agency_abbreviation": "FHFA"
+    },
+    {
+      "slug": "fhfa-mobile-worker-productivity-using-apple-ios-platform",
+      "use_case_name": "Mobile Worker Productivity using Apple iOS platform",
+      "narrative": "The Apple iOS platform provides multiple applications with Natural Language Processing (NLP) capability.  This is a predictive word  technology where the platfom makes an assumption in real time of the word that user is going to type, and allows for a single tap selection. The Apple iOS platform provides multiple applications with Natural Language Processing (NLP) capability.  This is a predictive word technology where the platform makes an assumption in real time of the word that user is going to type and allows for a single tap selection.",
+      "agency_abbreviation": "FHFA"
+    }
+  ],
+  "new_2025": [
+    {
+      "slug": "doe-ai-for-operations-center",
+      "use_case_name": "AI for Operations Center",
+      "narrative": "Reduce human effort and increase efficiency in identifying Lessons Learned to work planning. Increase awareness and use of Lessons Learned. Recommended Lessons Learned documents related to proposed and ongoing Work Projects.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-creation-of-polymer-datasets-and-inverse-design-of-polymers-with-targeted-backbo",
+      "use_case_name": "Creation of polymer datasets and inverse design of polymers with targeted backbones having \nHigh CO2 permeability and high CO2/N2 selectivity.",
+      "narrative": "Creation of polymer datasets and inverse design of polymers with targeted backbones having \nHigh CO2 permeability and high CO2/N2 selectivity. Predict permeability and selectivity of polymers Data",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-to-use-ai-to-calibrate-the-simulation-model-by-matching-simulation-data-with-pro",
+      "use_case_name": "To use AI to calibrate the simulation model by matching simulation data with production history data.",
+      "narrative": "To use AI to calibrate the simulation model by matching simulation data with production history data. Calibrate simulation models Data",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-data-discovery-processing-and-generation-using-machine-learning-for-a-range-of-c",
+      "use_case_name": "Data discovery, processing, and generation using machine learning for a range of CCS data and information",
+      "narrative": "Data discovery, processing, and generation using machine learning for a range of carbon capture and storage data and information Data compression, clustering, mapping Data",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-to-help-automate-data-discovery-and-preparations-to-support-a-range-of-cs-models",
+      "use_case_name": "To help automate data discovery and preparations to support a range of CS models, tools, and products",
+      "narrative": "To help automate data discovery and preparations to support a range of CS models, tools, and products Automate data dicovery Data",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ornl-foundational-ai-research",
+      "use_case_name": "ORNL: Foundational AI Research",
+      "narrative": "accelerate scientific discovery accelerate scientific discovery prediction and classification",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ornl-ai-for-materials-science",
+      "use_case_name": "ORNL: AI for Materials Science",
+      "narrative": "accelerate scientific discovery accelerate scientific discovery prediction and classification",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ornl-ai-for-experimental-facilities-operations",
+      "use_case_name": "ORNL: AI for Experimental Facilities Operations",
+      "narrative": "accelerate scientific discovery accelerate scientific discovery prediction and classification",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ornl-ai-for-transportation-and-mobility",
+      "use_case_name": "ORNL: AI for Transportation and Mobility",
+      "narrative": "accelerate scientific discovery accelerate scientific discovery prediction and classification",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ornl-ai-for-energy-generation-and-distribution",
+      "use_case_name": "ORNL: AI for Energy Generation and Distribution",
+      "narrative": "accelerate scientific discovery accelerate scientific discovery prediction and classification",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ornl-ai-for-bio-and-health-sciences",
+      "use_case_name": "ORNL: AI for Bio and Health Sciences",
+      "narrative": "improve health improve health prediction and classification",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ornl-ai-for-the-smart-laboratory",
+      "use_case_name": "ORNL: AI for the Smart Laboratory",
+      "narrative": "accelerate scientific discovery accelerate scientific discovery prediction and classification",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ornl-ai-for-neutron-science",
+      "use_case_name": "ORNL: AI for Neutron Science",
+      "narrative": "accelerate scientific discovery accelerate scientific discovery prediction and classification",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ornl-ai-for-earth-systems",
+      "use_case_name": "ORNL: AI for Earth Systems",
+      "narrative": "accelerate scientific discovery accelerate scientific discovery prediction and classification",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-network-security-and-analysis",
+      "use_case_name": "Network Security and Analysis",
+      "narrative": "behavior of attack, triage Vectra AI is a Structured and Unstructured machine learning (ML) and  Security -Led Artifical Intelligence (AI) tool used to detect patterns, anomalous or previously unseen activities inside petabytes of network and log data within the DOE HQ EITS networking boundary and cloud environments. Prediction: The Vectra AI Platform with Attack Signal Intelligence uses AI to analyze the behavior of attackers,  automatically apply triage, correlate, and prioritize each security event or incident.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-advancing-market-ready-building-energy-management-by-cost-effective-differentiab",
+      "use_case_name": "Advancing Market-Ready Building Energy Management by Cost-Effective Differentiable Predictive Control",
+      "narrative": "Enhance building energy management with predictive control, safety verification, and optimization. Lowers building energy costs while ensuring safe, resilient operations. Lowers building energy costs while ensuring safe, resilient operations.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-adaptive-cyber-physical-resilience-for-building-control-systems",
+      "use_case_name": "Adaptive Cyber-Physical Resilience for Building Control Systems",
+      "narrative": "How to maintain efficient, reliable, and secure operation of building control systems in the face of disruptions, changing conditions, or cyber-physical threats. Improves drug safety and reduces adverse health impacts in vulnerable populations. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-elucidating-genetic-and-environmental-risk-factors-for-antipsychotic-induced-met",
+      "use_case_name": "Elucidating Genetic and Environmental Risk Factors for Antipsychotic-induced Metabolic Adverse Effects Using AI",
+      "narrative": "Identifying individuals at higher risk for adverse metabolic effects from antipsychotic medications through predictive modeling of genetic and environmental data. Improves drug safety and reduces adverse health impacts in vulnerable populations. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-apt-analytics",
+      "use_case_name": "APT Analytics",
+      "narrative": "Automate analysis of atom probe tomography (APT) data for faster scientific insights. Speeds up materials research through automated nanoscale data analysis. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-used-for-predictive-modeling-and-real-time-control-of-traffic-systems",
+      "use_case_name": "AI used for predictive modeling and real time control of traffic systems",
+      "narrative": "Produce high-quality, contextually relevant, and coherent responses or content based on user input. Reduces traffic congestion, energy use, and greenhouse gas emissions. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-laboratory-automation",
+      "use_case_name": "Laboratory Automation",
+      "narrative": "Automate SEM/TEM data acquisition by identifying regions of interest with machine learning. Increases efficiency and throughput of scientific imaging and analysis. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-scalable-efficient-and-accelerated-causal-reasoning-operators-graphs-and-spikes-",
+      "use_case_name": "Scalable, Efficient and Accelerated Causal Reasoning Operators, Graphs and Spikes for Earth and Embedded Systems (SEA-CROGS)",
+      "narrative": "Improving Information Access, Understanding, and Productivity through Language Automation Accelerates scientific discovery and next-gen computing for earth and embedded systems. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-physics-informed-learning-machines-for-multiscale-and-multiphysics-problems-phil",
+      "use_case_name": "Physics-Informed Learning Machines for Multiscale and Multiphysics Problems (PhILMs)",
+      "narrative": "Produce high-quality, contextually relevant, and coherent responses or content based on user input. Promotes sustainable, economically viable waste-to-energy transitions. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-managing-curb-allocation-in-cities",
+      "use_case_name": "Managing curb allocation in cities",
+      "narrative": "Manage curb space dynamically in cities to address rising demand for curbside parking. Improves urban mobility and equitable access to curb space. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-regional-waste-feedstock-conversion-to-biofuels",
+      "use_case_name": "Regional waste feedstock conversion to biofuels",
+      "narrative": "Produce high-quality, contextually relevant, and coherent responses or content based on user input. Promotes sustainable, economically viable waste-to-energy transitions. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-use-of-developed-ml-techniques-to-parse-opensource-text-based-information",
+      "use_case_name": "Use of developed ML techniques to parse opensource text-based information.",
+      "narrative": "Parse open-source text to define disadvantaged communities for energy transition planning. Informs equitable energy transition policies for disadvantaged communities. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-techniques-for-identification-of-suitable-delivery-parking-spaces-in-an-urban",
+      "use_case_name": "AI techniques for identification of suitable delivery parking spaces in an urban scenario",
+      "narrative": "Identify optimal urban delivery parking spaces to support EV freight adoption. Supports sustainable freight delivery and electric vehicle adoption. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-surrogate-models-for-probabilistic-bayesian-inference",
+      "use_case_name": "Surrogate models for probabilistic Bayesian inference",
+      "narrative": "Estimate unknown model parameters using surrogate models for probabilistic Bayesian inference. Enables faster, more reliable insights from complex physical models. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-fims-invoice-bot",
+      "use_case_name": "FIMS Invoice BOT",
+      "narrative": "Employee Reimbursements and Purchase Power processes Employee Reimbursements and Purchase Power processes",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-incubator-sandbox",
+      "use_case_name": "AI Incubator Sandbox",
+      "narrative": "Provide a secure, multimodal AI chatbot sandbox for experimentation without internet access. Produce high-quality, contextually relevant, and coherent responses or content based on user input. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-swpa-generative-ai",
+      "use_case_name": "SWPA Generative AI",
+      "narrative": "",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-copilot-studio",
+      "use_case_name": "Copilot Studio",
+      "narrative": "Enhancing day to day processes. 1) Enhancing employee productivity and efficiency. Customization                                                                  Low-Code Development                                                   GPT-Based Capabilities                                   Analytics                                                        Entities and Variables",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-servicenow-ai-search",
+      "use_case_name": "ServiceNow AI Search",
+      "narrative": "Intelligent query features help you quickly find the answers ServiceNow users need. 1) Enhancing employee productivity and efficiency. AI Search includes search features that help users find the answers they need.                                                                                                Query for indexed terms and phrases. Control query logic with Boolean operators. Match a range of indexed terms using wildcard operators.                                                                                   AI Search provides users with clear answers for their search queries.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-copilot-for-microsoft-365",
+      "use_case_name": "Copilot for Microsoft 365",
+      "narrative": "Enhancing day to day processes. 1) Enhancing employee productivity and efficiency. Smart documentation Creation                                   Efficient Meeting Management                                     Data Insights and Analysis                                          Security and Compliance",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-for-high-risk-property",
+      "use_case_name": "AI for High Risk Property",
+      "narrative": "1) Regulatory compliance.  2) Improved identification of high-risk property items and increased productivity. 1) Regulatory compliance.  2) Improved identification of high-risk property items and increased productivity. Decision for high-risk property categorization",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-cyber-threat-enrichment",
+      "use_case_name": "Cyber Threat Enrichment",
+      "narrative": "Cyber threat analysis Enrich emerging cyber threat data with recent and past analysis data curated from the DOE-CESER Geo Threat Observable project and grid modernization project Deep Learning Malware using TBs of well structured cyber threat. Input vulnreability, weakness, malware inforamtion to find connections to well analyzed cyber threat including attack patterns, known exploited, spast mitigations and detections. When firmware binaries are analyzed and translated to structured threat used to create codified attack surfaces and Firmware or Software Bill of Materials (SBOM) for supply chain tracking Structured Threat Information Expression (STIX) data format providing actionable and implementable codified contextual data for use in cyber security products or if firmware binaries analyzed and translated to STIX output is codified attack surfaces and SBOM.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-for-isotopes-pellet-inspection",
+      "use_case_name": "AI for Isotopes (Pellet) Inspection",
+      "narrative": "Safety for employees 1) Reduce technician radiation exposure. 2) Increased productivity. Recommendation regarding pellet quality",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-smartpd-creator",
+      "use_case_name": "SmartPD Creator",
+      "narrative": "It improves the speed and accuracy for DOE employees to create position descriptions. The time to hire much needed resources will be reduced and the process will be greatly improved. Position descriptions for federal roles.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-dna-p-use-cases-leaverging-artificial-intellegence-pilot",
+      "use_case_name": "DNA-P Use Cases Leaverging Artificial Intellegence  (Pilot)",
+      "narrative": "\"- identify data clusters/trend analysis - identify data discrepencies/data enrichment - generate suggestions (including generating reports, data linkages, and courses of action) - generate graphical and natural language analyses\" \"-save time for DOE DNA-P users\n- improve DOE/NNSA data quality\n- improve DOE/NNSA safety operations\" \"- data clusters\n- summaries\n- recommendations (data linkages, data entries, and courses of action)\n- graphical and natural language analyses\n- extracted entities\n-responses to queries via RAG workflows\"",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-advanced-peer-to-peer-transactive-energy-platform-with-predictive-optimization",
+      "use_case_name": "Advanced Peer to Peer Transactive Energy Platform with Predictive Optimization",
+      "narrative": "Applying AI/ML to optimize renewable energy generation and consumption on Smart Grid with block chain technologies Applying AI/ML to optimize renewable energy generation and consumption on Smart Grid with block chain technologies Applying AI/ML to optimize renewable energy generation and consumption on Smart Grid with block chain technologies",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-servicenow-virtual-agent-natural-language-understanding",
+      "use_case_name": "ServiceNow Virtual Agent Natural Language Understanding",
+      "narrative": "Aid in users receiving better IT support for incident reporting and service delivery. Quicker and easier access for users to access pre-built IT Service Management incident and request templates. Pre-built IT Service Management incident and request templates. The Virtual Agent NLU is only used to understand the users intent and entity, where it then performs a search of the service catalog to return the most relevant result.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-bing-service",
+      "use_case_name": "Microsoft Bing Service",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ariculate-360-ai-assistant",
+      "use_case_name": "Ariculate 360 AI Assistant",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-azure-quantum-elements",
+      "use_case_name": "Microsoft Azure Quantum Elements",
+      "narrative": "Accelerate chemistry and materials discovery using AI, HPC, and quantum-ready tools. Speeds discovery of new materials and chemicals for energy solutions. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-nanoparticle-growth-kinetics-and-mechanism",
+      "use_case_name": "Nanoparticle growth kinetics and mechanism",
+      "narrative": "AI is used to digitalize the nanoparticle from TEM images. Morphology and crystalline feature will be made available through AI. Combining with kinetics modeling, AI detects critical material transformation event. The CFN TEM facility will be enhance AI is used to digitalize the nanoparticle from TEM images. Morphology and crystalline feature will be made available through AI. Combining with kinetics modeling, AI detects critical material transformation event. The CFN TEM facility will be enhanced by AI pipelines. AI is used to digitalize the nanoparticle from TEM images. Morphology and crystalline feature will be made available through AI. Combining with kinetics modeling, AI detects critical material transformation event. The CFN TEM facility will be enhanced by AI pipelines.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-bernie-ai-infrastructure-planning-support-poc",
+      "use_case_name": "Bernie-AI: Infrastructure Planning Support POC",
+      "narrative": "Quick access to specific building, and major asset information to be used for planning and predictive maintenance purposes Ability to quickly find and access building and asset information to support planning activities Specific, data-driven answers to building and major asset use and impacts",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-center-for-mesoscale-transport-properties",
+      "use_case_name": "Center for Mesoscale Transport Properties",
+      "narrative": "Center for Mesoscale Transport Properties Center for Mesoscale Transport Properties Center for Mesoscale Transport Properties",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-develop-a-machine-learning-framework-for-optimal-computational-campaigns-for-com",
+      "use_case_name": "Develop a Machine Learning Framework for Optimal Computational Campaigns for Complex Uncertain Systems",
+      "narrative": "'Two projects to use machine learning to acclerate the design of optimal strategies and robust computational campaigns for complex systems in the\npresence of substantial data and model uncertainty, and/or which have\nprocesses that span multiple scale 'Two projects to use machine learning to acclerate the design of optimal strategies and robust computational campaigns for complex systems in the\npresence of substantial data and model uncertainty, and/or which have\nprocesses that span multiple scales' 'Two projects to use machine learning to acclerate the design of optimal strategies and robust computational campaigns for complex systems in the\npresence of substantial data and model uncertainty, and/or which have\nprocesses that span multiple scales'",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-co-pilot",
+      "use_case_name": "Microsoft Co-Pilot",
+      "narrative": "Better analytics of data in our microsoft applications Better analytics of data in our microsoft applications text answers to input questions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-visual-studio-enterprise",
+      "use_case_name": "Visual Studio Enterprise",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-nlp-data-analytics-for-program-and-portfolio-insights",
+      "use_case_name": "NLP Data Analytics for Program and Portfolio Insights",
+      "narrative": "Improve analytical capabilities and self service to organizational data.  Increase process efficiency and analytical insights. Faster and more consistent analysis, earlier risk detection, enhanced decision-making. Dashboards, SQL Query results, structured datasets, extracted keywords, sentiment, thematic trends.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-command-media",
+      "use_case_name": "Command Media",
+      "narrative": "The AI is intended to solve the inefficiency of plant personnel who have questions about policies, procedures, and work instructions by providing a more direct way to find information. The expected benefit is increased effiency for plant personnel. Questions posed by plant personnel are answered by leveraging the knowledge corpus and providing answers in natural language text and links to relevent documents.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ask-cas",
+      "use_case_name": "Ask CAS",
+      "narrative": "GenAI-RAG to support issues management Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-ml-in-high-energy-physics-research",
+      "use_case_name": "AI/ML in High Energy Physics Research",
+      "narrative": "Within the high energy physics research in the energy, intensity and cosmic frontiers, as well as the advance detector R&D and scientific computing, AI/ML techniques have been developed and applied to solving a variety of problems in studying particl Within the high energy physics research in the energy, intensity and cosmic frontiers, as well as the advance detector R&D and scientific computing, AI/ML techniques have been developed and applied to solving a variety of problems in studying particle physics and cosmology. Within the high energy physics research in the energy, intensity and cosmic frontiers, as well as the advance detector R&D and scientific computing, AI/ML techniques have been developed and applied to solving a variety of problems in studying particle physics and cosmology.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-esh-q-nepa-app",
+      "use_case_name": "ESH&Q NEPA App",
+      "narrative": "Not available Speeds up environmental review processes and improves compliance accuracy, reducing delays in project approvals. Information summaries",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-onenote",
+      "use_case_name": "Microsoft OneNote",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-openai-chatgpt-pilot",
+      "use_case_name": "OpenAI ChatGPT Pilot",
+      "narrative": "Quick access to general knowledge. Ability to quickly find and access general knowledge and business productivity General answers to questions, summarized documentation, document creation, general research.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-acorn-autonomous-operation-for-reactor-technologies",
+      "use_case_name": "ACORN (Autonomous Operation for Reactor Technologies)",
+      "narrative": "AI automatically identifies process models from simulation and operational data, solves for optimal control actions that can achieve user-defined objectives, executes actions and observes system responses reduce labor and costs to performance operation tasks in advanced reactors and microreactors optimal control actions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-nif-shot-analytics-predictive-maintenance-support-pilot",
+      "use_case_name": "NIF Shot Analytics & Predictive Maintenance Support Pilot",
+      "narrative": "Quick access to specific NIF laser data and problem resolution information Ability to quickly find and access targeted NIF maintenance knowledge Specific, data-driven answers to NIF shot maintenance questions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-merlin-kcnsc-generative-ai-with-rag",
+      "use_case_name": "Merlin - KCNSC Generative AI with RAG",
+      "narrative": "Intended to address the opportunity to enhance overall productivity. No definite 'problem' being solved, just capitalizing on an opportunity to leverage industry investment in generative AI broadly. It serves as a general productivity enhancer -not driven by a specific problem, but by the opportunity to improve efficiency. outputs are context-aware responses that combine generated content with retrieved, authoritative information to ensure accuracy, relavance, and grounding.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-idaes-pse",
+      "use_case_name": "IDAES-PSE",
+      "narrative": "Offers extensive process systems engineering (PSE) capabilities for optimizing the design and operation of complex, interacting technologies and systems. Opitmize the design and operation of complex, interacting technologies and systems. Models",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-nrap-open-iam",
+      "use_case_name": "NRAP-Open-IAM",
+      "narrative": "Enables quantification of containment effectiveness and leakage risk at carbon storage sites in the context of system uncertainties and variability. Enables quantification of effectiveness and risk. Data",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-smmm",
+      "use_case_name": "SMMM",
+      "narrative": "AI/ML is being used to evaluate measurements in real-time during simultaneous experiments on two beamlines and then drive subsequent data collection on both of the beamlines to maximize the scientific value generated per time. AI/ML is being used to evaluate measurements in real-time during simultaneous experiments on two beamlines and then drive subsequent data collection on both of the beamlines to maximize the scientific value generated per time. AI/ML is being used to evaluate measurements in real-time during simultaneous experiments on two beamlines and then drive subsequent data collection on both of the beamlines to maximize the scientific value generated per time.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-custom-genai-for-evinci-microreactor-engineering-maurogpt",
+      "use_case_name": "Custom GenAI for eVinci Microreactor Engineering (MauroGPT)",
+      "narrative": "Reactor engineers spending extensive time manually iterating through documents during the reactor engineering process Reactor engineers save time by using the AI to quickly find answers and relevant source documents. Answers to reactor design and engineering questions with citations back to source documents.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-builder-document-scraping",
+      "use_case_name": "AI Builder Document Scraping",
+      "narrative": "Enhance and automate PDF scraping for large sets of PDF files. Improved Microsoft PDF scraping model that allows the user to provide a training set for their PDFs. Text and file output in Microsoft applications.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-azure-authoring-tools",
+      "use_case_name": "Microsoft Azure Authoring Tools",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-weto-sa",
+      "use_case_name": "WETO SA",
+      "narrative": "Assess the developable quantity and quality of the renewable resources. It seeks to better understand the uncertainty and impact of siting considerations and to understand when and where wind technological innovation may help to overcome potential land barriers. Robust surrogate models to deliver meaningful insights across a broad set of technology innovations and site characteristics while overcoming computational challenges",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-assistant-phase-2-simple-chat",
+      "use_case_name": "AI Assistant Phase 2 Simple Chat",
+      "narrative": "Emplyees at ORNL more productive Enhanced employee productivity Natural language responses based on a wide variety of file and text based input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-drone-imagery-analysis",
+      "use_case_name": "Drone Imagery Analysis",
+      "narrative": "AI used to allow drone to improve human safety in imagery collection and analysis. Simple and efficient asset inspection with improved safety factor. Automatically seam together images for visualization by humans.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-openai-enterprise",
+      "use_case_name": "OpenAI Enterprise",
+      "narrative": "Provide enterprise-grade AI assistance with secure access to OpenAI GPT models. Provides secure, reliable access to advanced AI capabilities for research. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-viper-visualizaiton-for-predictive-maintenance-recommendation",
+      "use_case_name": "VIPER (Visualizaiton for Predictive Maintenance Recommendation)",
+      "narrative": "VIPER presents comprehensive system health diagnostics, explainability metrics, and actionable recommendations to system engineers at nuclear power plants, enabling informed decision-making through an easy-to-use visualization interface. A multi-mode reduce labor and costs to performance maintenance tasks in existing light water reactors system diagnostic and prognostic results, system decription and root cause explanations",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-decisions-ai",
+      "use_case_name": "Decisions AI",
+      "narrative": "Enhance meeting management by integrating AI insights with Decisions platform. Enhances meeting effectiveness and decision-making outcomes. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-poseidon",
+      "use_case_name": "Poseidon",
+      "narrative": "Content analysis across domains and structured/unstructured content for SCRM Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-azure-document-intelligence",
+      "use_case_name": "Azure Document Intelligence",
+      "narrative": "Enhance and automate PDF scraping  for large sets of PDF files. Improved Microsoft PDF scraping model that allows the user to provide a training set for their PDFs. Text and file output in Microsoft applications or Azure Synapse Datalake",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-enhanced-hub",
+      "use_case_name": "AI-Enhanced Hub",
+      "narrative": "Enhance staff matching and profiles with AI-driven HUB search capabilities. Enhances collaboration and expertise matching across the lab. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-apple-intelligence",
+      "use_case_name": "Apple Intelligence",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-curie-conversational-unified-research-information-engine",
+      "use_case_name": "CURIE  -  Conversational Unified Research Information Engine",
+      "narrative": "Turning unstructured questions, tasks, or ideas into structured outcomes increasing productivity, enhance decision-making Textual outputs",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-screensketch",
+      "use_case_name": "Microsoft ScreenSketch",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-visual-c-additional-runtime",
+      "use_case_name": "Microsoft Visual C++ Additional Runtime",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-a-digital-twin-for-in-silico-spatiotemporally-resolved-experiments",
+      "use_case_name": "A Digital Twin for In-silico Spatiotemporally-resolved Experiments",
+      "narrative": "A Digital Twin for In-silico Spatiotemporally-resolved Experiments A Digital Twin for In-silico Spatiotemporally-resolved Experiments A Digital Twin for In-silico Spatiotemporally-resolved Experiments",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-machine-learning-for-accelerated-understanding-of-dynamic-catalysis",
+      "use_case_name": "Machine learning for accelerated understanding of dynamic catalysis",
+      "narrative": "The understanding of catalytic reactions has been a long-standing challenge due to the complexity and wide range of time scales involved in their mechanisms. There remain significant gaps in the understanding of how the catalyst's atomistic structure The understanding of catalytic reactions has been a long-standing challenge due to the complexity and wide range of time scales involved in their mechanisms. There remain significant gaps in the understanding of how the catalyst's atomistic structure determines the activity of reactions and how it is transiently transformed under varying operating conditions. The proposed effort seeks to take on this challenge with a data-science-driven approach to computational modeling, joining it with advanced experimental methods of characterization to create new methods for capturing realistic complexity of reactions at heterogenous and disordered interfaces. As a prototype application, we will focus on the water gas shift reaction (WGSR) CO + H2O â†’ CO2 +H2, as carried out over an active oxide (ceria CeO2) supported nanoscale Pt cluster catalyst. The Pt/CeO2 system is a high activity, low temperature catalyst for WGSR in which transient catalyst reconstructions and fluxional oscillating behavior of active sites at the metal-support interface play an essential role. The understanding of catalytic reactions has been a long-standing challenge due to the complexity and wide range of time scales involved in their mechanisms. There remain significant gaps in the understanding of how the catalyst's atomistic structure determines the activity of reactions and how it is transiently transformed under varying operating conditions. The proposed effort seeks to take on this challenge with a data-science-driven approach to computational modeling, joining it with advanced experimental methods of characterization to create new methods for capturing realistic complexity of reactions at heterogenous and disordered interfaces. As a prototype application, we will focus on the water gas shift reaction (WGSR) CO + H2O â†’ CO2 +H2, as carried out over an active oxide (ceria CeO2) supported nanoscale Pt cluster catalyst. The Pt/CeO2 system is a high activity, low temperature catalyst for WGSR in which transient catalyst reconstructions and fluxional oscillating behavior",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-computer-vision-for-defect-detection",
+      "use_case_name": "Computer Vision for Defect Detection",
+      "narrative": "\"To automate and enhance the detection of  visible defects in products, improving quality control and reducing production errors.\" Improved product quality, reduced production costs, less need for manual inspections, and enhanced productivity. The AI system will lead to significant cost savings and better consistency in products over time. \"The AI system outputs will include identified defects\n in product images, which will then be reviewed and verified by human operators.\"",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-project",
+      "use_case_name": "Microsoft Project",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-heygen",
+      "use_case_name": "HeyGen",
+      "narrative": "Explore the generation of engaging internal training videos using AI avatars. Makes internal training more engaging and effective. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-crewai",
+      "use_case_name": "CrewAI",
+      "narrative": "Automate and orchestrate workflows across LLMs and cloud platforms. Boosts efficiency by automating complex workflows across platforms. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-for-qa-audit",
+      "use_case_name": "AI for QA Audit",
+      "narrative": "Improve quality assurance at different levels of the Lab. Improved quality assurance Reccomendation to existing QA audit submissions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-google-chrome-generative-ai",
+      "use_case_name": "Google Chrome Generative AI",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-pws-builder",
+      "use_case_name": "PWS Builder",
+      "narrative": "Improved speed to create a performance work statement document. DOE employees would be able to quickly and accurately draft performance work statements for projects both net-new and in-flight. This would greatly reduce the time needed to get a project up and running. Performance work statements.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-servicenow-classification-prediction",
+      "use_case_name": "ServiceNow Classification Prediction",
+      "narrative": "Inconsistencies in classification values determined by human technicians Improved automation Prediction",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-safeguards-digital-twin",
+      "use_case_name": "Safeguards Digital Twin",
+      "narrative": "This deals with international safeguars approaches. Reduce the burden for inspectors by increasing synthesizing data and announcing anomalies. Flag for when off-normal operations is detected along with expected material generated.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-use-ai-ml-ml-to-optimize-data-and-experiments-at-national-synchrotron-light-sour",
+      "use_case_name": "Use AI/ML ML to Optimize Data and Experiments at National Synchrotron Light Source II (NSLS-II) and the Accelerator Test Facility (ATF)",
+      "narrative": "Three projects: use ML for denoising in scientific images; use ML to mine large quantities of data for automated evaluation of data quality and predictive analysis;  develop AI/ML infrastructure to tune / align / optimize instruments/beamlines at NSL Three projects: use ML for denoising in scientific images; use ML to mine large quantities of data for automated evaluation of data quality and predictive analysis;  develop AI/ML infrastructure to tune / align / optimize instruments/beamlines at NSLS-II and ATF Three projects: use ML for denoising in scientific images; use ML to mine large quantities of data for automated evaluation of data quality and predictive analysis;  develop AI/ML infrastructure to tune / align / optimize instruments/beamlines at NSLS-II and ATF",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-tabnine-ai-pair-programmer",
+      "use_case_name": "Tabnine AI Pair Programmer",
+      "narrative": "Accelerate and simplify software development across our entire site. There is no definite 'problem' being solved, just capitalizing on an opportunity to leverage industry investment in generative AI for software development This use case will boost engineering velocity, code quality, and developer happiness by automating the coding workflow through AI tools customized to our teams. Expediated quality software for Test Engineering",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-based-chat-bot",
+      "use_case_name": "AI-Based Chat Bot",
+      "narrative": "",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ask-alan",
+      "use_case_name": "Ask Alan",
+      "narrative": "GenAI/AI interactive learning Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-data-science-enabled-robust-and-rapid-mev-ultrafast-electron-diffraction-system-",
+      "use_case_name": "Data-Science Enabled, Robust and Rapid MeV Ultrafast Electron Diffraction System to Characterize Materials Including for Quantum and Energy Applications",
+      "narrative": "Data-Science Enabled, Robust and apid MeV Ultrafast Electron Diffraction System to Characterize Materials Including for Quantum and Energy Applications Data-Science Enabled, Robust and apid MeV Ultrafast Electron Diffraction System to Characterize Materials Including for Quantum and Energy Applications Data-Science Enabled, Robust and apid MeV Ultrafast Electron Diffraction System to Characterize Materials Including for Quantum and Energy Applications",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-github-co-pilot",
+      "use_case_name": "GitHub Co-Pilot",
+      "narrative": "quicker, more complete, and safer code development quicker, more complete, and safer code development text answers to input questions, code suggestions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-use-ml-as-part-of-an-integrated-strategy-for-forecasting-renewable-energy-resour",
+      "use_case_name": "Use ML as part of an integrated strategy for  forecasting renewable energy resources",
+      "narrative": "This is an inderdisciplinary project aiming to develop a novel system that transforms the forecasting of renewal energy resources by seamlessly integrating a numerical weather prediction model, ML, and measurements. This is an inderdisciplinary project aiming to develop a novel system that transforms the forecasting of renewal energy resources by seamlessly integrating a numerical weather prediction model, ML, and measurements. This is an inderdisciplinary project aiming to develop a novel system that transforms the forecasting of renewal energy resources by seamlessly integrating a numerical weather prediction model, ML, and measurements.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-dna-p-use-cases-leaverging-artificial-intellegence-pre-development",
+      "use_case_name": "DNA-P Use Cases Leaverging Artificial Intellegence (Pre-Development)",
+      "narrative": "\"- identify data clusters/trend analysis - identify data discrepencies/data enrichment - generate suggestions (including generating reports, data linkages, and courses of action) - generate graphical and natural language analyses\" \"-save time for DOE DNA-P users\n- improve DOE/NNSA data quality\n- improve DOE/NNSA safety operations\" \"- data clusters\n- summaries\n- recommendations (data linkages, data entries, and courses of action)\n- graphical and natural language analyses\n- extracted entities\n-responses to queries via RAG workflows\"",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-m365-copilot",
+      "use_case_name": "M365 Copilot",
+      "narrative": "Collaboration and Productivity improvements Automation of routine tasks such as email drafting, meeting summaries, and document generation.  Improved efficiency in the use of mundane tasks. Contextual responses, action results, agentic orchestration for Copilot Studio, apply templates, and a host of outputs depending on the M365 App it is being used with.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-edms-admin",
+      "use_case_name": "EDMS Admin",
+      "narrative": "Machine-readable information is difficult to quickly summarize by humans. By enabling summaries of information in our electronic document management system we have a previously-unavailable capability that addresses this problem. Reduces administrative burden through intelligent automation of routine tasks. Information summaries",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-energpt-canvas",
+      "use_case_name": "EnerGPT Canvas",
+      "narrative": "Improves the speed and accuracy DOE employees are able to draft, edit, and produce content. Allowing DOE users to edit their projects using AI in one single platform. New content, edits to existing content, code, etc.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-copilot",
+      "use_case_name": "Microsoft Copilot",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-project-optimus-prime-contract",
+      "use_case_name": "Project Optimus - Prime Contract",
+      "narrative": "Not available Improves contract lifecycle efficiency and compliance tracking. Contract citations, abstracts and other summaries.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-mr-dt",
+      "use_case_name": "MR-DT",
+      "narrative": "Aid safeguards analysts for determining if a reactor is being used in a non-declared way. Reduce the burden for inspectors by increasing synthesizing data and announcing anomalies. Flag for when off-normal operations is detected along with expected material generated.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-development-of-a-planning-operation-and-control-framework-for-hybrid-energy-stor",
+      "use_case_name": "Development of a Planning, Operation, and Control Framework for Hybrid Energy Storage and Renewable Generation Systems",
+      "narrative": "One project: will develop the initial framework for planning, operation, and control of these 'hybrid' energy systems containing high penetrations of renewables together with energy storage, non-wires alternatives, and conventional generating resourc One project: will develop the initial framework for planning, operation, and control of these 'hybrid' energy systems containing high penetrations of renewables together with energy storage, non-wires alternatives, and conventional generating resources by leveraging BNL's expertise in energy storage technologies, probabilistic-based planning and control solutions, and machine learning techniques. One project: will develop the initial framework for planning, operation, and control of these 'hybrid' energy systems containing high penetrations of renewables together with energy storage, non-wires alternatives, and conventional generating resources by leveraging BNL's expertise in energy storage technologies, probabilistic-based planning and control solutions, and machine learning techniques.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-github-copilot",
+      "use_case_name": "GitHub Copilot",
+      "narrative": "Enhancement of developer productivity Cost savings and efficiency Recommendations for code",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-accelerated-nanomaterial-discovery",
+      "use_case_name": "Accelerated Nanomaterial Discovery",
+      "narrative": "Historically the discovery and development of new materials has followed an iterative process of synthesis, measurement, and modeling, suitable integration of advanced characterization, robotics, and machine-learning provides an opportunity for radic Historically the discovery and development of new materials has followed an iterative process of synthesis, measurement, and modeling, suitable integration of advanced characterization, robotics, and machine-learning provides an opportunity for radically accelerating the material design process. The CFN has an established record of discovering nanomaterials by applying new materials synthesis strategies, advanced characterization, and machine-learning. Integrating these efforts will enable autonomous platforms for iteratively exploring material parameter spaces, which have potential to revolutionize materials science by uncovering fundamental links between synthetic pathways, material structure, and functional properties. Historically the discovery and development of new materials has followed an iterative process of synthesis, measurement, and modeling, suitable integration of advanced characterization, robotics, and machine-learning provides an opportunity for radically accelerating the material design process. The CFN has an established record of discovering nanomaterials by applying new materials synthesis strategies, advanced characterization, and machine-learning. Integrating these efforts will enable autonomous platforms for iteratively exploring material parameter spaces, which have potential to revolutionize materials science by uncovering fundamental links between synthetic pathways, material structure, and functional properties.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-directives",
+      "use_case_name": "DIRECTIVES",
+      "narrative": "GenAI-RAG on DOE/NNSA content Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-assisted-strategies-and-solutions-for-environmental-technology-ai-asset",
+      "use_case_name": "AI-Assisted Strategies and Solutions for Environmental Technology (AI-ASSET)",
+      "narrative": "Enable rapid technology transfer of the ALTEMIS AI approaches to new sites and new systems through an automated data analysis and knowledge management toolkit AI-assisted monitoring system design, generalized AIML contaminant forecasting framework, development of end state recommendations that account for site-specific environmental/technological/regulatory constraints, EM knowledge management Knowledge graphs, analysis output",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-google-agentspace-notebooklm",
+      "use_case_name": "Google Agentspace / NotebookLM",
+      "narrative": "Unify enterprise data and enable large-scale agent deployment with Google Agentspace. Improves enterprise knowledge use and team productivity at scale. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-spyglassgpt-chat-assistant",
+      "use_case_name": "SpyglassGPT Chat Assistant",
+      "narrative": "Aid in routine administrative tasks Increased efficiency for routine tasks Varies based on user prompts; it is a general purpose chatbot using government instances of popular Open AI models.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-custom-genai-for-advanced-reactor-development-lotusai",
+      "use_case_name": "Custom GenAI for Advanced Reactor Development (LotusAI)",
+      "narrative": "Engineers spending extensive time manually iterating through documents during the development of the LOTUS Test Bed, and have to frequently answer user questions. Engineers spending extensive time manually iterating through documents during the development of the LOTUS Test Bed, and have to frequently answer user questions. Answers to Test Bed design and engineering questions with citations back to source documents.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-use-ai-ml-for-climate-prediction",
+      "use_case_name": "Use AI/ML for Climate Prediction",
+      "narrative": "Two projects: leverage AI/ML tools to synthesize uncertainty quantification-targeted, complex, multi-scale, multi-domain observations into high-resolution processmodels to characterize 4D variability in aerosol dynamics and evolution, which accounts Two projects: leverage AI/ML tools to synthesize uncertainty quantification-targeted, complex, multi-scale, multi-domain observations into high-resolution processmodels to characterize 4D variability in aerosol dynamics and evolution, which accounts for large uncertainties in climate models; partial differential equation solving using machine learning for simulating the aerosol-cloud-precipitation system that is recognized to be the key in forecasting weather and climate change Two projects: leverage AI/ML tools to synthesize uncertainty quantification-targeted, complex, multi-scale, multi-domain observations into high-resolution processmodels to characterize 4D variability in aerosol dynamics and evolution, which accounts for large uncertainties in climate models; partial differential equation solving using machine learning for simulating the aerosol-cloud-precipitation system that is recognized to be the key in forecasting weather and climate change",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-m-o-program-trimester-reporting-modernization",
+      "use_case_name": "M&O Program Trimester Reporting Modernization",
+      "narrative": "Modernize and automate trimester reporting to improve clarity and consistency. Increases transparency and efficiency in program reporting. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-and-natural-language-powered-search",
+      "use_case_name": "AI and natural-language powered search",
+      "narrative": "Solve records retrieval issues. Efficienct retrieval of records. Open Text will generate a search results report.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-visual-c-redistributable",
+      "use_case_name": "Microsoft Visual C++ Redistributable",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-offshore-aiim-dashboard",
+      "use_case_name": "Offshore AIIM Dashboard",
+      "narrative": "Evaluate the integrity of offshore energy infrastructure (e.g., pipelines, platforms) in the U.S Gulf Region. Evaluate integrity of infrastructure. Data",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-edx-claimm",
+      "use_case_name": "EDX-ClaiMM",
+      "narrative": "Address fundamental knowledge gaps and foster the innovation of new techniques for enhanced characterization and recovery of critical minerals and materials (CMMs) within the US. Address fundamental knowledge gaps. Data",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-teams",
+      "use_case_name": "Microsoft Teams",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-storage-usage-effectiveness-and-data-placement-optimization-at-data-center",
+      "use_case_name": "Storage usage effectiveness and data placement optimization at Data Center",
+      "narrative": "The goal of this project is to take data management for data centers to the next level by implementing Artificial Intelligence (AI) and Machine Learning (ML) to create a precise data use prediction model to aid important business and operational deci The goal of this project is to take data management for data centers to the next level by implementing Artificial Intelligence (AI) and Machine Learning (ML) to create a precise data use prediction model to aid important business and operational decisions The goal of this project is to take data management for data centers to the next level by implementing Artificial Intelligence (AI) and Machine Learning (ML) to create a precise data use prediction model to aid important business and operational decisions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-xai-grok-pilot",
+      "use_case_name": "xAI Grok Pilot",
+      "narrative": "Quick access to general knowledge. Ability to quickly find and access general knowledge and business productivity General answers to questions, summarized documentation, document creation, general research.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-search-in-bing",
+      "use_case_name": "Microsoft Search in Bing",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-copilot-pilot",
+      "use_case_name": "Microsoft Copilot (Pilot)",
+      "narrative": "Improve general office productivity Content creation and drafting, data analysis and summerization, personalized learning and research Content review recommendations, content summaries, how to instructions.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-findmatid",
+      "use_case_name": "FindMATID",
+      "narrative": "Search for corporate material IDs Maxmize use of Strategic Agreements Material ID",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-enabled-code-review",
+      "use_case_name": "AI Enabled Code Review",
+      "narrative": "Enhance application development lifecycle capabilities Expidited code production Code",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-teams-classic",
+      "use_case_name": "Microsoft Teams Classic",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-custom-genai-for-advanced-reactor-development-rickoverai",
+      "use_case_name": "Custom GenAI for Advanced Reactor Development (RickoverAI)",
+      "narrative": "Reactor engineers spending extensive time manually iterating through documents during the reactor engineering process Reactor engineers save time by using the AI to quickly find answers and relevant source documents. Answers to reactor design and engineering questions with citations back to source documents.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-denoising",
+      "use_case_name": "AI Denoising",
+      "narrative": "",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-report-assistant",
+      "use_case_name": "Report Assistant",
+      "narrative": "Management spends excessive hours generating and reformatting reports for various customers/audiences this will reduce the learing curve and effort to translate information into the various formats, saving consideratble time and effort. This will reduce the time and effort required to generate reports, allowing management to focus on more critical tasks. It is expected to halve the time spent on report generation in the first year. The AI system will generate draft reports for review and finalization.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-tailored-learning-management-solutions",
+      "use_case_name": "AI-Tailored Learning Management Solutions",
+      "narrative": "To improve the quality, relevance, and delivery of training materials, ensuring they are tailored and effective for users. Improved training materials, dynamic learning tailored to user needs, real-time feedback, comprehensive evaluation, and higher staff effectiveness and readiness. The AI system outputs training materials with dynamic questions and feedback, detailed performance reports, and personalized learning paths.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-objective-driven-data-reduction-for-scientific-workflows",
+      "use_case_name": "Objective-Driven Data Reduction for Scientific Workflows",
+      "narrative": "This project aims to develop theories and algorithms for objective-driven reduction of scientific data in workflows that are composed of various models, including data-driven AI models This project aims to develop theories and algorithms for objective-driven reduction of scientific data in workflows that are composed of various models, including data-driven AI models This project aims to develop theories and algorithms for objective-driven reduction of scientific data in workflows that are composed of various models, including data-driven AI models",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-livchat",
+      "use_case_name": "LivChat",
+      "narrative": "Quick access to general policy and process knowledge. Ability to quickly find and access internal process and procedure knowledge, and and business productivity General answers to questions, summarized documentation, internal process and policy information.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ask-it",
+      "use_case_name": "Ask IT",
+      "narrative": "GenAI-RAG on IT content Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-servicenow-now-assist-askit",
+      "use_case_name": "ServiceNow Now Assist (AskIT)",
+      "narrative": "Service Desk operations Improve the timeliness and quality of transactional service desk requests through improved incident search, resolution, feedback as well as AI-assisted coding of  workflows. Outputs are consistent with commercial service desk products, including the search, creation and closure of service requests.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-low-dose-radiation-biology",
+      "use_case_name": "Low Dose Radiation Biology",
+      "narrative": "Predicting the effects of low dose radiation Predicting the effects of low dose radiation Predicting the effects of low dose radiation",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-claude-anthropic-enterprise",
+      "use_case_name": "Claude Anthropic Enterprise",
+      "narrative": "Deliver secure enterprise AI with Claude's large-context models and code generation. Offers secure, large-context AI tools for research and analysis. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-kbase-an-integrated-knowledgebase-for-predictive-biology-and-environmental-resea",
+      "use_case_name": "KBase: An Integrated Knowledgebase for Predictive Biology and Environmental Research",
+      "narrative": "Building knowledgebase for systems biology and enabling the predictive analysis using web interface Building knowledgebase for systems biology and enabling the predictive analysis using web interface Building knowledgebase for systems biology and enabling the predictive analysis using web interface",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-video-creation",
+      "use_case_name": "AI Video Creation",
+      "narrative": "Enhance internal communications and streamline Learning and Development Tool that lab staff can use to facilitate creation of generative AI enabled media Multi-modal media output",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-chatgpt",
+      "use_case_name": "ChatGPT",
+      "narrative": "Generative AI tools like this solve the problem of time-consuming knowledge work by instantly providing expert-level assistance with writing, coding, research, and analysis. They automate repetitive tasks that require human expertise, allowing people Boost employee productivity by helping to create content, assist in coding, and complex problem-solving tasks, while democratizing access to sophisticated capabilities like writing and design. This technology promises to accelerate innovation by serving as an intelligent collaborator, freeing humans to focus on higher-level strategic and creative work The outputs of this tool is human-like text, code, and creative content that appears to be written by an expert. These tools produce coherent paragraphs, functional programming code, detailed analyses, creative stories, technical documentation, and conversational responses that are contextually relevant and professionally structured.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-enhancing-the-circularity-cost-effective-battery-de-energization-disassembly-and",
+      "use_case_name": "Enhancing the circularity: Cost effective battery de-energization, disassembly, and pre-processing (CEBDDP)",
+      "narrative": "Predict state of health and state of function of spent batteries Improved ability for prediction to enable potential reuse of batteries, towards reducing costs of batteries Prediction of battery state of health",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-mspaint",
+      "use_case_name": "Microsoft MSPaint",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-agn-201-dt",
+      "use_case_name": "AGN-201 DT",
+      "narrative": "Aid safeguards analysts for determining if a reactor is being used in a non-declared way. Reduce the burden for inspectors by increasing synthesizing data and announcing anomalies. Flag for when off-normal operations is detected along with expected material generated.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-intrabot",
+      "use_case_name": "Intrabot",
+      "narrative": "The AI  is intended to improve efficiency by providing plant personnel with a faster way to access information on the Pantex Intranet. The expected benefit is increased effiency for plant personnel. Questions posed by plant personnel are answered by leveraging the knowledge corpus and providing answers in natural language text and links to relevent Intranet pages.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-drafting-of-operational-procedures-and-training-materials",
+      "use_case_name": "AI Drafting of Operational Procedures and Training Materials",
+      "narrative": "\"To automate and enhance the drafting of operational  procedures and training materials, reducing time, effort, and errors.\" \"Reduced development time, reduced errors, and rework, \nbetter context understanding, and improved standardization and formatting, cutting time spent on document creation by half.\" \"The AI system outputs draft operational procedures and training \nmaterials which need to be reviewed and corrected by users.\"",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-lntegrated-platform-for-multimodal-data-capture-exploration-and-discovery-driven",
+      "use_case_name": "lntegrated Platform for Multimodal Data Capture, Exploration and Discovery Driven by Al Tools",
+      "narrative": "This project will enable and accelerate scientific discovery by leveraging large complex multimodal datasets generated at BES user facilities, develop shared transferrable infrastructure to store, curate, analyze and disseminate the data.  Additional This project will enable and accelerate scientific discovery by leveraging large complex multimodal datasets generated at BES user facilities, develop shared transferrable infrastructure to store, curate, analyze and disseminate the data.  Additionally, we will build data analysis tools that reveal correlations in multimodal data and apply Machine Learning (ML) methods and train artificial Intelligence (AI) models that efficiently extract synergistic physical information and embed such models in new workflows for rapid scientific discovery. This project will enable and accelerate scientific discovery by leveraging large complex multimodal datasets generated at BES user facilities, develop shared transferrable infrastructure to store, curate, analyze and disseminate the data.  Additionally, we will build data analysis tools that reveal correlations in multimodal data and apply Machine Learning (ML) methods and train artificial Intelligence (AI) models that efficiently extract synergistic physical information and embed such models in new workflows for rapid scientific discovery.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-improve-scout-search-results",
+      "use_case_name": "Improve Scout Search results",
+      "narrative": "Improve enterprise search with natural language prompts and personalization. Provides faster, more accurate access to enterprise knowledge. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-consolidated-nuclear-waste-glass-database",
+      "use_case_name": "Consolidated Nuclear Waste Glass Database",
+      "narrative": "Incorporation of several physics-driven machine learning models to predict the properties of nuclear waste glass compositions – in addition, bootstrap other glass computational science models such as GlassPy and GlassNet to the database Develop an opensource, online database consisting of property information for nuclear waste glass data generated by various national laboratories over several decades Textual output; Chemical glass composition",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-in-storage-computing-for-multi-messenger-astronomy-in-neutrino-experiments-and-c",
+      "use_case_name": "In-storage computing for multi-messenger astronomy in neutrino experiments and cosmological surveys",
+      "narrative": "This project aims to address the big-data challenges and stringent time constraints facing multi-messenger astronomy (MMA) in neutrino experiments and cosomological surveys. Instead of following the traditional computing paradigm of moving data to th The purpose is to enhance the ability of large scale neutrino experiments like DUNE to detect neutrinos from core-collapse supernovas (CCSNs) and to extract useful information about their source in real time to provide prompt multi-messenger alerts to other observatories.  Aside from enabling prompt SN pointing that is also precise, this will cut down the rate of fake SN triggers (curretnly estimated at ~1/month) and therefore offer potential savings from a reduction in the hardware resources required for storing the large amounts of data associated with CCSN candidates. The output of the AI system is a set of predictions which will be used as the basis for a drastic reduction in the amount of data to be fed to the next stage involving reconstruction and analysis.  Before feeding the data to this stage, the AI system will also perform preprocessing operations such as noise removal to facilitate and speed up subsequent data processing.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-hr-job-postings",
+      "use_case_name": "HR Job Postings",
+      "narrative": "Generic or ineffective job postings Enhances applicant diversity and job match quality by optimizing language and structure in postings, improving recruitment outcomes. Improved job postings",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-visual-studio-community",
+      "use_case_name": "Visual Studio Community",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-invoice-scanning-system",
+      "use_case_name": "Invoice Scanning System",
+      "narrative": "Missing information in subcontract submittals greater accuracy of information on required forms Analytics",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-facilities-visual-inspection",
+      "use_case_name": "Facilities Visual Inspection",
+      "narrative": "Detect hazards and assess facility conditions through AI-enhanced visual inspections. Improves workplace safety and hazard detection in facilities. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-onedrive",
+      "use_case_name": "Microsoft OneDrive",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-quantomvision",
+      "use_case_name": "QuantomVision",
+      "narrative": "Workforce upskilling Predict workforce evolution  and analiyze skills mapping. Predict workforce evolution  and analiyze skills mapping.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-servicenow-cluster-analysis",
+      "use_case_name": "ServiceNow Cluster Analysis",
+      "narrative": "Identify patterns of tickets created to determine workflow and automated solutions Improved automation Recommendation",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-chatsrs",
+      "use_case_name": "ChatSRS",
+      "narrative": "General text-oriented chat (e.g., summarization, generation) Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-knowledge-capture-agent-kca",
+      "use_case_name": "Knowledge Capture Agent (KCA)",
+      "narrative": "Capturing tenured employees experience based knowledge. To pass down this experience and make it into a database Feeding a database that can later be querired by newcomers.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-support-agent-chatbot",
+      "use_case_name": "AI Support Agent Chatbot",
+      "narrative": "Manual helpdesk tickets consume staff time and delay issue resolution. Reduce Tier-1 support time, improve satisfaction with 24/7 responses, free staff for complex issues. Conversational responses, step-by-step guidance, and links to support documentation.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-unspsc-codes",
+      "use_case_name": "UNSPSC Codes",
+      "narrative": "Map requisition items to UNSPSC codes Maxmize use of Strategic Agreements and facilitate SCM reporting UNSPSC Codes",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-servicenow-similarity-analysis",
+      "use_case_name": "ServiceNow Similarity Analysis",
+      "narrative": "Identify patterns of tickets created to determine workflow and automated solutions Improved automation Recommendation",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-accelerating-hep-science-inference-and-machine-learning-at-extreme-scales",
+      "use_case_name": "Accelerating HEP Science: Inference and Machine Learning at Extreme Scales",
+      "narrative": "Developing Galaxy Image deblending with the gravitational lensing effects and scaling AI/ML algorithms Developing Galaxy Image deblending with the gravitational lensing effects and scaling AI/ML algorithms Developing Galaxy Image deblending with the gravitational lensing effects and scaling AI/ML algorithms",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-georeference-figures",
+      "use_case_name": "Georeference Figures",
+      "narrative": "AI-powered georeferencing will improve automation, speed, and efficiency. Manual georeferencing is expensive. Georeferenced of historical paper maps. AI outputs georeferenced vector file which will be evaluated by humans",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-discovery",
+      "use_case_name": "Microsoft Discovery",
+      "narrative": "Speed up transparent, governed R&D discovery with AI agents and graph knowledge engines. Accelerates innovation with transparent, AI-driven R&D processes. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-cybersearch",
+      "use_case_name": "CyberSearch",
+      "narrative": "The AI is intended to improve the efficiency of plant personnel by giving them an easy way to access and search cybersecurity documents. The expected benefit is increased effiency for plant personnel. Questions posed by plant personnel are answered by leveraging the knowledge corpus and providing answers in natural language text and links to relevent documents.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-o365-copilot",
+      "use_case_name": "O365 Copilot",
+      "narrative": "Improve day-to-day business functionality Automation of redundant business functions to increase efficiency Recommendations to provide insight for better decision making, scheduling, notetaking, and data analysis",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-critical-materials",
+      "use_case_name": "Critical Materials",
+      "narrative": "AI will make discoveries of unknown combinations of rare earth elements and ligands used in critical materials that are currently impossible to separate Make discoveries of combinations of rare earth elements and ligands used in critical materials efficiently, faster, less costly New datasets and benchmarks",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-365",
+      "use_case_name": "Microsoft 365",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-advanced-fuels-campaign",
+      "use_case_name": "Advanced Fuels Campaign",
+      "narrative": "Not available Accelerates fuel development cycles and improves performance predictions, reducing R&D costs and time to deployment. Information summaries",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-hanford-ai-liaison-hal-2-0",
+      "use_case_name": "Hanford Ai Liaison (HAL) 2.0",
+      "narrative": "connecting business data streams to AI for increased analysis and work efficiency cost savings, increased efficiency, increased productivity, greater analytics of data text answers to input questions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-atlas",
+      "use_case_name": "ATLAS",
+      "narrative": "Make processes in Technology Deployment more effective and efficient Enables faster data discovery and analysis across large datasets, improving research productivity and insight generation. Information summaries, fact sheets, marketing guides, propasal drafts, and categorization guidance",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-continuous-structure-descriptors-for-xanes-interpretation",
+      "use_case_name": "Continuous Structure Descriptors for XANES Interpretation",
+      "narrative": "Seeking a continuous local structure motif that correlates to X-ray spectral signatures Seeking a continuous local structure motif that correlates to X-ray spectral signatures Seeking a continuous local structure motif that correlates to X-ray spectral signatures",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-azure-ai-search",
+      "use_case_name": "Azure AI Search",
+      "narrative": "Enhance the capability to find structured and unstructured data within databases and datalakes. Improve efficiency of finding a data source. Azure AI Search also creates an internal knowledge base for use in a LLM. AI Search creates a vectorized database.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-pcomply-ai-high-risk",
+      "use_case_name": "pComply-AI-High Risk",
+      "narrative": "Preemptive procurement compliance: daily scans of recent PARIS requisition records. Developed as a rapid response for a corrective action to eliminate incidents when high-risk materials are procured inadvertently without the required review processes and handling. Solution features an interactive report \ndashboard and automatic email \nnotifications to persons involved with the \nrequisition when a high-risk scenario is \nidentified.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-instrument-documentation-search",
+      "use_case_name": "Instrument Documentation Search",
+      "narrative": "Provide quick answers about instrument operations by searching ingested manuals. Speeds troubleshooting and learning of lab instruments. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-moose-llm",
+      "use_case_name": "MOOSE-LLM",
+      "narrative": "Tools like MOOSE for multiphysics modeling have a steep learning curve. They demand considerable domain-specific knowledge, which makes it hard for newcomers to get started. Improves user experience and reduces training time by enabling natural language assistance within the MOOSE simulation framework. Improved documentation, inputfile completion, convergence analysis",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-devsec-ops-ai",
+      "use_case_name": "DevSec Ops AI",
+      "narrative": "Not available accelerates secure software delivery Information summaries",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-machine-learning-for-autonomous-control-of-scientific-user-facilities",
+      "use_case_name": "Machine Learning for Autonomous Control of Scientific User Facilities",
+      "narrative": "BNL will work alongside SLAC, to implement ML algorithm(s) into NSLS-II Operations to interpret accelerator data more intelligently.  We intend to train said algorithms with 5+ years of archived device-data from accelerator components, records of pre BNL will work alongside SLAC, to implement ML algorithm(s) into NSLS-II Operations to interpret accelerator data more intelligently.  We intend to train said algorithms with 5+ years of archived device-data from accelerator components, records of previous fault causes (to connect to data-symptoms) and stored beam current. BNL will work alongside SLAC, to implement ML algorithm(s) into NSLS-II Operations to interpret accelerator data more intelligently.  We intend to train said algorithms with 5+ years of archived device-data from accelerator components, records of previous fault causes (to connect to data-symptoms) and stored beam current.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-preventive-maintenance-procedure-development",
+      "use_case_name": "Preventive Maintenance Procedure Development",
+      "narrative": "The AI is intended to solve the inefficiency and potential for error in manually developing and updating preventive maintenance procedures. It addresses the challenge of synthesizing information from multiple, diverse data sources to ensure complianc The expected benefits include, increased productivity, reduced manual research time, minimized errors, improved compliance, enhanced equipment uptime, and cost savings. The system's outputs are comprehensive, compliant, and detailed preventive maintenance procedures for facilities and equipment.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-towards-edge-computing-a-software-and-hardware-co-design-methodology-for-applica",
+      "use_case_name": "Towards Edge Computing: A Software and Hardware Co-Design Methodology for Application-Specific Integrated\nCircuit (ASIC)-based Scientific Neuromorphic Computing (NC)",
+      "narrative": "One project: Current deep neural network (DNN)-based Artificial Intelligence (AI) algorithms have already been successfully applied to particle physics applications. This project will develop a co-design approach for methodologies and their implement One project: Current deep neural network (DNN)-based Artificial Intelligence (AI) algorithms have already been successfully applied to particle physics applications. This project will develop a co-design approach for methodologies and their implementation of edge computing for optimal handling of data streams One project: Current deep neural network (DNN)-based Artificial Intelligence (AI) algorithms have already been successfully applied to particle physics applications. This project will develop a co-design approach for methodologies and their implementation of edge computing for optimal handling of data streams",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-visual-c-minimum-runtime",
+      "use_case_name": "Microsoft Visual C++ Minimum Runtime",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-ml-for-applications-in-high-energy-adn-nuclear-physics",
+      "use_case_name": "AI/ML for Applications in High Energy adn Nuclear Physics",
+      "narrative": "Develop state-of-the-art cycle-consistent GANs to bridge the gap between simulations and experimental data; develop real-time particle tracking with deep learning on field programmable gate arrays; explore the challenges of deploying ML modeling onto Develop state-of-the-art cycle-consistent GANs to bridge the gap between simulations and experimental data; develop real-time particle tracking with deep learning on field programmable gate arrays; explore the challenges of deploying ML modeling onto real-time inference hardware - for High Energy or Nuclear Physics Develop state-of-the-art cycle-consistent GANs to bridge the gap between simulations and experimental data; develop real-time particle tracking with deep learning on field programmable gate arrays; explore the challenges of deploying ML modeling onto real-time inference hardware - for High Energy or Nuclear Physics",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-onedrive-mui",
+      "use_case_name": "Microsoft OneDrive MUI",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-rapids3-a-scidac-institute-for-computer-science-data-and-artificial-intelligence",
+      "use_case_name": "RAPIDS3: A SciDAC Institute for Computer Science, Data, and Artificial Intelligence",
+      "narrative": "A SciDAC computer science institute and BNL is co-leading AI team A SciDAC computer science institute and BNL is co-leading AI team A SciDAC computer science institute and BNL is co-leading AI team",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-lisa-chatbot-pilot",
+      "use_case_name": "LISA Chatbot Pilot",
+      "narrative": "Quick access to specific mission data sets and documentation Ability to quickly find and access relevant mission data and experiment documentation Specific, data-driven answers to mission science questions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-use-ai-ml-to-enhance-the-bioimaging-capabilities-at-brookhaven-national-laborato",
+      "use_case_name": "Use AI/ML to Enhance the Bioimaging Capabilities at Brookhaven National Laboratory (BNL)",
+      "narrative": "Three projects: use expertise in ML as one element in building an integrated multiscale bioimaging capability at BNL; use AI/ML tools use to accelerate the analysis of protein structure and function; develop a high-resolution AI-led analysis of nondi Three projects: use expertise in ML as one element in building an integrated multiscale bioimaging capability at BNL; use AI/ML tools use to accelerate the analysis of protein structure and function; develop a high-resolution AI-led analysis of nondisrputive, time-resolved light microscopy images measured at lower spatial resolutions Three projects: use expertise in ML as one element in building an integrated multiscale bioimaging capability at BNL; use AI/ML tools use to accelerate the analysis of protein structure and function; develop a high-resolution AI-led analysis of nondisrputive, time-resolved light microscopy images measured at lower spatial resolutions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-climate-weather-data",
+      "use_case_name": "Climate Weather Data",
+      "narrative": "Not available speeds up climate model analysis Not available",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ees-t-document-processing",
+      "use_case_name": "EES&T Document Processing",
+      "narrative": "Not available Cuts manual processing time and improves data accessibility by automating document classification and extraction, increasing operational efficiency. Information summaries",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-smart-co2-transport-route-planning-tool",
+      "use_case_name": "Smart CO2 Transport-Route Planning Tool",
+      "narrative": "Identify potential routes or evaluate existing corridors for carbon transport based on current legislation, best construction practices, and more. Inform planning and development Data",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-permitai",
+      "use_case_name": "PermitAI",
+      "narrative": "Streamline permitting processes with AI-powered environmental review tools. Speeds up Federal permitting while improving transparency. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-high-velocity-ai-generative-models",
+      "use_case_name": "High-Velocity AI: Generative Models",
+      "narrative": "",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-for-vendor-compliance",
+      "use_case_name": "AI for Vendor Compliance",
+      "narrative": "Making sure vendors are in compliance with regulations. More streamlined risk mitigation process with vendors. Improved consistency in vendor selection and retention",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-servicenow-lanl-ai-portal-integration",
+      "use_case_name": "ServiceNow LANL AI Portal Integration",
+      "narrative": "Provide GenAI capabilities for use in multiple use cases for the IT divisions at LANL Improved automation Recommendation",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-ai-builder",
+      "use_case_name": "Microsoft AI Builder",
+      "narrative": "Microsoft AI Builder solves the problem that most businesses want to use AI but lack the technical expertise and resources to build it themselves. It provides easy-to-use, pre-built AI tools that business users can implement without needing data scie Microsoft AI Builder democratizes AI development by enabling business users to easily create custom AI models and automation solutions without extensive coding. It integrates with the Microsoft Power Platform to add AI capabilities like document processing and predictions directly into workflows, accelerating digital transformation through accessible, low-code AI solutions that enhance business processes and decision-making. Microsoft AI Builder outputs structured business data and automated actions, including extracted information from documents, data predictions, and workflow automations that integrate directly into existing business processes and applications.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-lexisnexis",
+      "use_case_name": "LexisNexis",
+      "narrative": "searching legal database for case law Better case law material for legal team search results to input inquiries",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-365-apps-for-enterprise",
+      "use_case_name": "Microsoft 365 Apps for Enterprise",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-automated-sorting-of-high-repetition-rate-coherent-diffraction-data-from-xfels",
+      "use_case_name": "Automated sorting of high repetition rate coherent diffraction data from XFELS",
+      "narrative": "'Coherent X-rays are routinely provided today by the latest Synchrotron and X-ray Free-electron Laser Sources. When these diffract from a crystal containing defects, interference leads to the formation of a modulated diffraction pattern called ''spec 'Coherent X-rays are routinely provided today by the latest Synchrotron and X-ray Free-electron Laser Sources. When these diffract from a crystal containing defects, interference leads to the formation of a modulated diffraction pattern called ''speckle''. When the defects move around, they can be quantified by a correlation analysis technique called X-ray Photon Correlation Spectroscopy. But the speckles also change when the beam moves on the sample. By scanning the beam in a controlled way, the overlap between the adjacent regions gives redundancy to the data, which allows a solution of the inherent phase problem. This is the basis of the coherent X-ray ptychography method which can achieve image resolutions of 10nm, but only if the probe positions are known.\nThe goal of this proposal will be to separate ''genuine'' fluctuations of a material sample from the inherent beam fluctuations at the high data rates of XFELs. Algorithms will be developed to calculate the correlations between all the coherent diffraction patterns arriving in a time series, then used to separate the two sources of fluctuation using the criterion that the ''natural'' thermal fluctuations do not repeat, while beam ones do.  We separate the data stream into image and beam ''modes'' automatically.' 'Coherent X-rays are routinely provided today by the latest Synchrotron and X-ray Free-electron Laser Sources. When these diffract from a crystal containing defects, interference leads to the formation of a modulated diffraction pattern called ''speckle''. When the defects move around, they can be quantified by a correlation analysis technique called X-ray Photon Correlation Spectroscopy. But the speckles also change when the beam moves on the sample. By scanning the beam in a controlled way, the overlap between the adjacent regions gives redundancy to the data, which allows a solution of the inherent phase problem. This is the basis of the coherent X-ray ptychography method which can achieve image resolutions of 10nm, but only if the probe positions are known.\nThe goal of this proposal will be to separate ''genuine'' fluctuations of a material sample from the inherent beam fluctuations at the high data rates of XFELs. Algorithms will be developed to calculate the correlations between",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-software-implementation-assistant",
+      "use_case_name": "Software Implementation Assistant",
+      "narrative": "This AI solution is designed to streamline the process of software implementation by automating crucial planning tasks, technical documentation, and risk assessments, which typically demand significant time and effort. The solution aims to support ju The AI solution is expected to enhance the agency's mission by reducing the time, effort, and complexity involved in software implementation efforts, leading to significant cost savings. It will improve project planning, standardize technical documentation, aid junior resources, and allow subject matter experts to focus on critical tasks, ultimately improving project outcomes and resource utilization for the public's benefit. The AI system outputs detailed project plans, organized tasks, technical documents, use cases, test scripts, and risk assessments specific to the software implementation project and application.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-uncertainty-quantification-and-instrument-automation-to-enable-next-generation-c",
+      "use_case_name": "Uncertainty Quantification and Instrument Automation to enable next generation cosmological discoveries",
+      "narrative": "This project will develop AI-based tools to enable critical sectors for near-future cosmic applications. Uncertainty quantification is essential for performing discovery science now, and simulation-based inference offers a new approach. The automated create new methods for uncertainty quantification in AI ai algorithms",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-outlook-mui",
+      "use_case_name": "Microsoft Outlook MUI",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-halo-ai",
+      "use_case_name": "HALO AI",
+      "narrative": "Not available Increases operational awareness and response speed by automating data analysis, leading to faster, more informed decision-making. Information summaries",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-coreii",
+      "use_case_name": "COREII",
+      "narrative": "Support decision making for critical infrastructure OT cybersecurity operations. Provides a secure environment where senstive data can be ingested and retreived reliably. Reduces the time it takes to perform threat analysis, supply chain analysis, kn Making information and knowledge easier to retreive and digest. Signficantly improves analysis time. Maximizes the transfer of knowledge to users of various backgrounds. Translates complex and complicated research results into accessible practical solutions. Distillation of research results and findings into pratical decision making information.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-genai-for-classified-subject-area-categorization",
+      "use_case_name": "GenAI for Classified Subject Area Categorization",
+      "narrative": "Help users, DCs and classification analysts more quickly determine Classified Subject Areas. Help users, DCs and classification analysts more quickly determine Classified Subject Areas. List of recommendations of classified subject areas",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-sindri",
+      "use_case_name": "Sindri",
+      "narrative": "Automate code assignment at requisition generation time Maxmize use of Strategic Agreements and facilitate SCM reporting Decision",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-edge",
+      "use_case_name": "Microsoft Edge",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-anthropic-claude",
+      "use_case_name": "Anthropic Claude",
+      "narrative": "Generative AI tools like this solve the problem of time-consuming knowledge work by instantly providing expert-level assistance with writing, coding, research, and analysis. They automate repetitive tasks that require human expertise, allowing people Boost employee productivity by helping to create content, assist in coding, and complex problem-solving tasks, while democratizing access to sophisticated capabilities like writing and design. This technology promises to accelerate innovation by serving as an intelligent collaborator, freeing humans to focus on higher-level strategic and creative work The outputs of this tool is human-like text, code, and creative content that appears to be written by an expert. These tools produce coherent paragraphs, functional programming code, detailed analyses, creative stories, technical documentation, and conversational responses that are contextually relevant and professionally structured.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-amazon-q-chatbot-pilot",
+      "use_case_name": "Amazon Q Chatbot Pilot",
+      "narrative": "Quick access to AWS cloud engineering reference architectures and general AWS services information Ability to quickly find and access AWS architecture and services information Specific AWS architecture and services use-case responses to  questions",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-agentic-ai-for-cybersecurity-change-request-reviews",
+      "use_case_name": "Agentic AI for cybersecurity change request reviews",
+      "narrative": "Use AI Agents for cybersecurity review of documents and structured data to improve processes and to help identify areas of risk. AI agents automate routine tasks, enhance decision-making, and improve operational efficiency.  In addition, the AI Agent for cybersecurity will allow for a customized approach to tie specific requirement documents with structured data from a database. Depending on how the final product is designed, outputs can represent recommendations (e.g., suggesting a action), captured user inputs (like dates, names, or preferences), or contextual responses generated using AI.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-hpc-openai-compatible-api",
+      "use_case_name": "HPC OpenAI-Compatible API",
+      "narrative": "Not available Enhances scientific productivity by providing OpenAI-compatible APIs to the laboratory, allowing for rapid development of software and small code modifications for larger model usage. Foundational endpoint for utilization by other applications",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-anthropic-claude-pilot",
+      "use_case_name": "Anthropic Claude Pilot",
+      "narrative": "Quick access to general knowledge. Ability to quickly find and access general knowledge and business productivity General answers to questions, summarized documentation, document creation, general research.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ask-hr",
+      "use_case_name": "Ask HR",
+      "narrative": "GenAI-RAG on HR content Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-enabled-tech-desk-agent",
+      "use_case_name": "AI-Enabled Tech Desk Agent",
+      "narrative": "Allow staff to resolve tech issues through an AI-enabled self-service chat agent. Improves staff support with faster, AI-driven issue resolution. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-mass3",
+      "use_case_name": "mass3",
+      "narrative": "GenAI on STEM-optimized LLMs Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-365-copilot",
+      "use_case_name": "Microsoft 365 Copilot",
+      "narrative": "Modern enterprise search among Microsoft 365 content, AI integration into daily business applications, improvemed management of email and messaging. Increased efficiency for routine tasks using Microsoft 365 applications Text and file output in Microsoft 365 applications. Varies based on user prompts.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-form-and-questionnaire-assistant",
+      "use_case_name": "AI-Form and Questionnaire Assistant",
+      "narrative": "\"To automate and enhance the completion of standard  forms and questionnaires used onsite at SRNS. This AI aims to reduce time, effort, errors, and enhance context understanding, consistent formatting, and independent outputs from the system.\" Reduced development time, reduced errors and rework,  better context understanding, and improved standardization and formatting, reducing time spent on forms by half. \"The AI system outputs draft forms and questionnaires \nwhich need to be reviewed and corrected by users.\"",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-simulation-based-inference-for-cosmology",
+      "use_case_name": "Simulation-based inference for cosmology",
+      "narrative": "This project will develop and use simulation-based inference to estimate cosmological parameters related to cosmic acceleration in the early and late universe — via the cosmic microwave background and strong gravitational lensing, respectively. This DOE ECA award. apply SBI to strong lensing and cmb to infer cosmological parameters prediction of numerical values of cosmology",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-sql-server-management-studio",
+      "use_case_name": "SQL Server Management Studio",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-exchange-server",
+      "use_case_name": "Microsoft Exchange Server",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-collaborative-machine-learning-platform-for-scientific-discovery",
+      "use_case_name": "Collaborative Machine learning platform for Scientific Discovery",
+      "narrative": "New advances in scientific applied machine learning (ML) offer an opportunity to leverage the commonalities, scientific insights and collected experience of the larger scientific user facility community across different experiments and facilities.  T New advances in scientific applied machine learning (ML) offer an opportunity to leverage the commonalities, scientific insights and collected experience of the larger scientific user facility community across different experiments and facilities.  The result will be a shared platform that lowers the barrier to enter by leveraging the advances in machine learning methods across user facilities thus empowering domain scientists and data scientists to discover new science using existing and new data with new tools New advances in scientific applied machine learning (ML) offer an opportunity to leverage the commonalities, scientific insights and collected experience of the larger scientific user facility community across different experiments and facilities.  The result will be a shared platform that lowers the barrier to enter by leveraging the advances in machine learning methods across user facilities thus empowering domain scientists and data scientists to discover new science using existing and new data with new tools",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-performance-monitoring-at-the-salt-waste-processing-facility-swpf",
+      "use_case_name": "Performance Monitoring at the Salt Waste Processing Facility (SWPF)",
+      "narrative": "With data from SWPF instrumentation, train neural networks to consider process parameters and chemical speciation data from incoming salt batches to predict filtration rate performance. Proactive monitoring of complex facility processes with only select instrumentation data to guide prediction process operations Textual output; processing parameters",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-advanced-long-term-environmental-monitoring-systems-altemis",
+      "use_case_name": "Advanced Long Term Environmental Monitoring Systems (ALTEMIS)",
+      "narrative": "Reduce the cost of long-term monitoring using integrated sensing technologies and AI/ML to forecast groundwater plume migration and anomalies. Proactive, rather than reactive, monitoring of complex geochemical systems. Spatiotemporal optimization of sensor locations, correlate proxy variables (e.g., pH, specific conductance, water table elevation, etc.) with contaminants, measure proxy variables with various sensing modalities, predict concentrations across space and time given proxy variables.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-custom-genai-for-atr-fuel-conversion-project-fuelgpt",
+      "use_case_name": "Custom GenAI for ATR Fuel Conversion Project (FuelGPT)",
+      "narrative": "Engineers spending extensive time manually iterating through documents during the fuel conversion project. Engineers save time by using the AI to quickly find answers and relevant source documents. Engineers save time by using the AI to quickly find answers and relevant source documents.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-denoising-diffusion-to-accelerate-detector-simulation",
+      "use_case_name": "Denoising Diffusion to Accelerate Detector Simulation",
+      "narrative": "This program aims to develop generative models for quickly simulating showers of particles in calorimeters for LHC experiments This effort is exploring generative AI to replace costly detector simulation. This would enable faster, more accurate simulation, accelerating and enhancing scientific results and allowing easier use of GPU coprocessors at HPC centers. The AI system outputs simulated detector hits (energy deposits) in one or more subdetectors of the particle physics experiment.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-tackling-solid-state-electrochemical-interfaces-from-structure-to-function-utili",
+      "use_case_name": "Tackling Solid-State Electrochemical Interfaces from Structure to Function Utilizing HPC and Machine Learning Tools",
+      "narrative": "Applying AI/ML methods to discover better solid state battery interface material using HPC Applying AI/ML methods to discover better solid state battery interface material using HPC Applying AI/ML methods to discover better solid state battery interface material using HPC",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-5g-enabled-reliable-and-decentralized-iot-framework-with-blockchain",
+      "use_case_name": "5G-enabled Reliable and Decentralized IoT Framework with Blockchain",
+      "narrative": "We propose to develop an end-to-end, 5G-enabled, reliable, and decentralized IoT framework that improves data collection and communication among edge computing devices for science applications. We propose to develop an end-to-end, 5G-enabled, reliable, and decentralized IoT framework that improves data collection and communication among edge computing devices for science applications. We propose to develop an end-to-end, 5G-enabled, reliable, and decentralized IoT framework that improves data collection and communication among edge computing devices for science applications.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-hub-biography-builder",
+      "use_case_name": "Hub Biography Builder",
+      "narrative": "Automatically generate draft professional bios from resumes, CVs, and other inputs. Saves time and improves quality of professional staff bios. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-skype-app",
+      "use_case_name": "Microsoft Skype App",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-cloud-knowledge-hub",
+      "use_case_name": "Cloud Knowledge Hub",
+      "narrative": "Answer staff questions on cloud services and best practices via an AI knowledge hub. Expands staff expertise and accelerates cloud adoption. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-neptune",
+      "use_case_name": "Neptune",
+      "narrative": "Content analysis across domains and structured/unstructured content Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-accessai",
+      "use_case_name": "AccessAI",
+      "narrative": "GenAI-RAG on corporate content Productivity Tool Text",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-machine-learning-to-support-operational-efficiency",
+      "use_case_name": "Machine Learning to support Operational Efficiency",
+      "narrative": "Reducing risk of losing institutional knowledge associated with an aging workforce.  Ensure time to proficiency for junior operators is minimized through storing and accessing institutional knowledge to understand how operational efficiency can be im Less unanticipated downtime, improved decision making and improved manufacturing processes with optimized output. The system will evaluate process output, and seek to provide recommendations to realize the desired output along with the associated logic for why the change will yield the projected output.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-dna-p-use-cases-leaverging-artificial-intellegence-deployed",
+      "use_case_name": "DNA-P Use Cases Leaverging Artificial Intellegence (Deployed)",
+      "narrative": "\"- identify data clusters/trend analysis - identify data discrepencies/data enrichment - generate suggestions (including generating reports, data linkages, and courses of action) - generate graphical and natural language analyses\" '-save time for DOE DNA-P users\n- improve DOE/NNSA data quality\n- improve DOE/NNSA safety operations \"- data clusters\n- summaries\n- recommendations (data linkages, data entries, and courses of action)\n- graphical and natural language analyses\n- extracted entities\n-responses to queries via RAG workflows\"",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-create-statement-of-work-sow-for-procurement",
+      "use_case_name": "Create Statement of Work (SOW) for Procurement",
+      "narrative": "Ensure procurement SOWs meet standards through guided AI review and alignment checks. Ensures compliance and quality in procurement processes. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-workflow-to-process-voicemail-user-service-requests-and-translate-them-into-a",
+      "use_case_name": "AI workflow to process voicemail user service requests and translate them into actionable IT service tickets",
+      "narrative": "Faster user support and an additional chain of communication for users to report issues. More organized and consistent information extraction from a message. Faster user support and an additional chain of communication for users to report issues. More organized and consistent information extraction from a message. AI workflow to process voicemail user service requests and translate them into actionable IT service tickets",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-ml-in-particle-accelerator-controls-system",
+      "use_case_name": "AI/ML in Particle Accelerator Controls System",
+      "narrative": "Improving the safety and performance of particle accelerator operations through artificial intelligence assisted control systems. Improving the safety and performance of particle accelerator operations through artificial intelligence assisted control systems. Improving the safety and performance of particle accelerator operations through artificial intelligence assisted control systems.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-expanding-consumer-participation-in-consumer-electronics-recycling-programs-util",
+      "use_case_name": "Expanding Consumer Participation in Consumer Electronics Recycling Programs Utilizing Targeted Marketing Campaigns",
+      "narrative": "Identify laws and regulations related to e-waste Consolidate and provide a more convenient venue to find laws and regulations related to e-waste disposal and recycling Text describing laws and regulations on e-waste disposal and recycling and links to support documentation",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-chatlab",
+      "use_case_name": "Chatlab",
+      "narrative": "Not available Not available Not available",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-onenote-mui",
+      "use_case_name": "Microsoft OneNote MUI",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-identifying-controlling-variables-for-mercury-vapor-release-at-y-12-s-alpha-4",
+      "use_case_name": "Identifying Controlling Variables for Mercury Vapor Release at Y-12's Alpha-4",
+      "narrative": "Correlate indoor/outdoor meteorological conditions with mercury vapor releases such that PEL exceedances can be forecasted, improving respiratory worker safety and enhancing work planning Intraday forecast of mercury concentration in buildings given past chronology of meteorological conditions Prediction of elevated mercury concentrations in the building",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-fy19-lab-call-livewire-data-sharing-platform",
+      "use_case_name": "FY19 Lab Call – Livewire Data Sharing Platform",
+      "narrative": "Lack of easily-accessible, organized information on transportation and mobility-related projects. Enable time savings and quick answers to queries GenAI chatbot feature providing info on datasets in the platform or FAQs on how to use the platform",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-copilot-studio",
+      "use_case_name": "Microsoft Copilot Studio",
+      "narrative": "Build enterprise conversational AI agents that securely connect to data and workflows. Enables secure, scalable automation of enterprise workflows. Produce high-quality, contextually relevant, and coherent responses or content based on user input.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-geo-threat-observable-for-structure-cyber-threat-related-to-the-energy-sector",
+      "use_case_name": "Geo Threat Observable for structure cyber threat related to the energy sector",
+      "narrative": "Not available Correlations, recommendations and predictions for improved cyber response. Collected stored in graphdb and used in machine learning for similarities of threat enabling",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-for-financial-analysis",
+      "use_case_name": "AI for Financial Analysis",
+      "narrative": "Productivity enhancement for financial activities Enhance automation of  data processing for financial professionals. Enhanced financial process workflows",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-powerpoint-mui",
+      "use_case_name": "Microsoft PowerPoint MUI",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ai-ml-to-design-and-optimize-materials-and-their-properties",
+      "use_case_name": "AI/ML to design and optimize materials and their properties",
+      "narrative": "Design and optimize materials and their properties for Quantum Information Science and clean energy using AI/ML Design and optimize materials and their properties for Quantum Information Science and clean energy using AI/ML Design and optimize materials and their properties for Quantum Information Science and clean energy using AI/ML",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-ees-t-communications-impact",
+      "use_case_name": "EES&T Communications Impact",
+      "narrative": "Not available Provides actionable insights into communication effectiveness, enabling data-driven improvements in outreach and stakeholder engagement. Information summaries",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-na-ci-salesforce",
+      "use_case_name": "NA-CI Salesforce",
+      "narrative": "Solves inefficiency and inconsistency of manual data capture of stakeholder activities. Improve efficiency, data quality, and visibility. Synced records of emails, calendar events, and contacts from Outlook into Salesforce.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-power-bi-desktop",
+      "use_case_name": "Microsoft Power BI Desktop",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-microsoft-azure-powershell",
+      "use_case_name": "Microsoft Azure PowerShell",
+      "narrative": "N/A AI was automatically integrated into the product without an identified benefit to the organization. N/A",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-road-conditions-from-ibm-watson-for-inl",
+      "use_case_name": "Road Conditions from IBM Watson for INL",
+      "narrative": "Not available Not available Not available",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-intelligent-acquisition-and-reconstruction-for-hyper-spectral-tomography-systems",
+      "use_case_name": "Intelligent Acquisition and Reconstruction for Hyper-Spectral Tomography Systems",
+      "narrative": "We will develop artificial intelligence (AI) and machine learning (ML) algorithms to enable dramatic improvements in the throughput and performance of hyperspectral (i.e., multiple energies) computed tomography (HSCT) beamlines at DOE BES Scientific We will develop artificial intelligence (AI) and machine learning (ML) algorithms to enable dramatic improvements in the throughput and performance of hyperspectral (i.e., multiple energies) computed tomography (HSCT) beamlines at DOE BES Scientific User Facilities (SUFs).  We will demonstrate the utility of our algorithms by carefully designing experiments for energy materials at HSCT beamlines available at the Spallation Neutron Source (SNS) and the National Synchrotron Light Source II (NSLS-II).  We will also develop AI driven data acquisition algorithms that will optimize the scanning strategy on-the-fly, in order to obtain the fewest yet most informative set of measurements (i.e. reducing beam time and/or number of projections in a data set).  Our team will provide ML based reconstruction algorithms that can produce high quality reconstructions from incomplete, sparse and low signal-to-noise ratio datasets enabling real-time feedback and ensuring best possible reconstruction on completion of the experiment.  Finally, our efforts will be available to the user community at both facilities via a general user interface. We will develop artificial intelligence (AI) and machine learning (ML) algorithms to enable dramatic improvements in the throughput and performance of hyperspectral (i.e., multiple energies) computed tomography (HSCT) beamlines at DOE BES Scientific User Facilities (SUFs).  We will demonstrate the utility of our algorithms by carefully designing experiments for energy materials at HSCT beamlines available at the Spallation Neutron Source (SNS) and the National Synchrotron Light Source II (NSLS-II).  We will also develop AI driven data acquisition algorithms that will optimize the scanning strategy on-the-fly, in order to obtain the fewest yet most informative set of measurements (i.e. reducing beam time and/or number of projections in a data set).  Our team will provide ML based reconstruction algorithms that can produce high quality reconstructions from incomplete, sparse and low signal-to-noise ratio datasets enabling real-time feedback and ensuring best possible reconstruction on co",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-deep-learning-malware-analysis-for-reusable-cyber-defenses",
+      "use_case_name": "Deep Learning Malware Analysis for reusable cyber defenses.",
+      "narrative": "Not available Identify commonalities in malware Deep Learning Malware Analysis for reusable cyber defenses.",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-to-drive-insights-on-the-power-system-reliability-cost-and-operations-during-the",
+      "use_case_name": "To  drive insights on the power system reliability, cost, and operations during the energy transition with and without FECM technologies",
+      "narrative": "To  drive insights on the power system reliability, cost, and operations during the energy transition with and without FECM technologies Generate predictive scenarios Predictive scenarios",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-to-drive-insights-on-the-dependencies-between-the-natural-gas-and-electricity-se",
+      "use_case_name": "To  drive insights on the dependencies between the natural gas and electricity sectors to increase reliability of the NG system",
+      "narrative": "To  drive insights on the dependencies between the natural gas and electricity sectors to increase reliability of the NG system Generate predictive scenarios Predictive scenarios",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "doe-data-platform-to-expedite-access-and-reuse-of-carbon-ore-data-for-materials-manu",
+      "use_case_name": "Data platform to expedite access and reuse of carbon ore data for materials, manufacturing and research",
+      "narrative": "Data platform to expedite access and reuse of carbon ore data for materials, manufacturing and research Expedite access and reuse of carbon ore data Data",
+      "agency_abbreviation": "DOE"
+    },
+    {
+      "slug": "dol-web-scraping-to-identify-potentially-fraudulent-multiple-employer-welfare-arrang",
+      "use_case_name": "Web Scraping to Identify Potentially Fraudulent Multiple Employer Welfare Arrangements (MEWAs)",
+      "narrative": "",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "dol-eta-grants-monitoring-tool-through-doc-explorer",
+      "use_case_name": "ETA Grants Monitoring Tool through Doc Explorer",
+      "narrative": "Automates review of grant documents to detect anomalies, delays, and compliance issues.\nImproves consistency and accuracy in monitoring across programs. Saves time during site visit. Enhances monitoring efficiency and ensures accurate, timely use of Grants Summaries and Question answer",
+      "agency_abbreviation": "DOL"
+    },
+    {
+      "slug": "tva-westlaw",
+      "use_case_name": "Westlaw",
+      "narrative": "Reduces the time necessary to perform legal research and provides a tool to check for accuracy in legal writing.",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-copilot",
+      "use_case_name": "Copilot",
+      "narrative": "Increased efficiency and productivity",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-github-copilot",
+      "use_case_name": "Github Copilot",
+      "narrative": "Increased efficiency and productivity",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-esri-gis-ai",
+      "use_case_name": "ESRI GIS AI",
+      "narrative": "Increased efficiency and productivity",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-seeq-ai",
+      "use_case_name": "SEEQ AI",
+      "narrative": "It serves multiple functional roles to enhance productivity, accelerate insights, and bridge knowledge gaps for users working with time series data.",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-cisco-ml",
+      "use_case_name": "Cisco ML",
+      "narrative": "Insights, Increased efficiency, increased productivity",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-datum",
+      "use_case_name": "Datum",
+      "narrative": "Datum is a virtual knowledge employee for Teams. The system can search data and provide analysis.",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-aws-q",
+      "use_case_name": "AWS Q",
+      "narrative": "Use of AWS Q will help IT be more efficient and increase productivity",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-chatspp",
+      "use_case_name": "ChatSPP",
+      "narrative": "Increased efficiency and productivity, faster searching and access to information",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-gmet-multivariate-analysis",
+      "use_case_name": "GMET Multivariate analysis",
+      "narrative": "Increased efficiency and productivity, faster searching and access to information",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-land-management-records",
+      "use_case_name": "Land Management Records",
+      "narrative": "AI system to efficiently help find information for public inquiries related to land management, dock permits, and annual reviews.",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-bill-of-material",
+      "use_case_name": "Bill of Material",
+      "narrative": "Increased efficiency and productivity, faster searching and access to information",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-non-npg-cap",
+      "use_case_name": "Non-NPG CAP",
+      "narrative": "Increased efficiency and productivity",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-azure-fews-cua",
+      "use_case_name": "Azure FEWS CUA",
+      "narrative": "Increased efficiency and productivity, faster access to information",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-aws-transcribe",
+      "use_case_name": "AWS Transcribe",
+      "narrative": "Extract key business insights from customer calls, video files, clinical conversations, and more.",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-thinklabs",
+      "use_case_name": "Thinklabs",
+      "narrative": "Run TVA PSSE models, train a graph neural net on those results, utilize reinforcement learning on top of the GNN to optimally answer user questions.",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-trade-chat",
+      "use_case_name": "Trade Chat",
+      "narrative": "Improved code of conduct chat tool functions",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-amazon-connect",
+      "use_case_name": "Amazon Connect",
+      "narrative": "Improved customer support for helpdesk",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-enscape",
+      "use_case_name": "Enscape",
+      "narrative": "Enhanced visuals for economic development efforts",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-arkio",
+      "use_case_name": "Arkio",
+      "narrative": "Enhanced visuals for economic development efforts",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "tva-talkwalker",
+      "use_case_name": "Talkwalker",
+      "narrative": "Improved visibility of brand reputation",
+      "agency_abbreviation": "TVA"
+    },
+    {
+      "slug": "nmb-document-summarization",
+      "use_case_name": "Document Summarization",
+      "narrative": "To quickly summarize lengthy documents, such as case files, meeting minutes, and reports. Increased efficiency in information processing, allowing staff to focus on more complex tasks.",
+      "agency_abbreviation": "NMB"
+    },
+    {
+      "slug": "nmb-meeting-transcript-analysis",
+      "use_case_name": "Meeting Transcript Analysis",
+      "narrative": "To analyze meeting transcripts to identify key discussion points, decisions, and action items. Improved accuracy in record-keeping and follow-up actions.",
+      "agency_abbreviation": "NMB"
+    },
+    {
+      "slug": "nmb-automated-document-creation",
+      "use_case_name": "Automated Document Creation",
+      "narrative": "To automate the creation of standard documents, such as letters, notices, and reports, from templates and data inputs. Reduction in manual effort and time spent on document creation, ensuring consistency and accuracy in documentation.",
+      "agency_abbreviation": "NMB"
+    },
+    {
+      "slug": "nmb-ai-powered-proofreading-and-editing",
+      "use_case_name": "AI-Powered Proofreading and Editing",
+      "narrative": "To assist in proofreading and editing documents by identifying grammatical errors, style inconsistencies, and areas for improvement. Enhanced quality and clarity of written communications, improved professionalism in agency outputs.",
+      "agency_abbreviation": "NMB"
+    }
+  ]
+}

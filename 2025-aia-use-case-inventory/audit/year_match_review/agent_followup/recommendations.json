@@ -1,0 +1,42 @@
+[
+  {
+    "action": "recover_match",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-generative-ai-for-form-1040x-tax-examiner-assistant"],
+    "uc_2025_slugs": ["treasury-generative-ai-for-form-1040x-support-tool-for-amended-returns-star"],
+    "confidence": "high",
+    "reasoning": "Both are the IRS generative-AI tool that assists tax examiners processing Form 1040X amended returns; the 2025 filing renamed it to STAR (Support Tool for Amended Returns). The deterministic matcher missed the link because the rename dropped the 'Tax Examiner Assistant' phrasing."
+  },
+  {
+    "action": "recover_match",
+    "agency_abbreviation": "HHS",
+    "uc_2024_slugs": ["hhs-smart-search"],
+    "uc_2025_slugs": ["hhs-aws-kendra-search-tool"],
+    "confidence": "high",
+    "reasoning": "Both are the SAMHSA AWS Kendra search capability over the SAMHSA STORE content repository; the 2024 'Smart Search' was renamed to name the underlying Kendra service. Batch-2 adjudication explicitly identified this as the genuine partner for the 2025 Kendra tool."
+  },
+  {
+    "action": "recover_match",
+    "agency_abbreviation": "DOE",
+    "uc_2024_slugs": ["doe-position-description-tool"],
+    "uc_2025_slugs": ["doe-smartpd-creator"],
+    "confidence": "high",
+    "reasoning": "Both are the DOE tool that streamlines drafting and evaluation of federal position descriptions; the 2025 filing renamed it SmartPD Creator. Batch-3 adjudication's notes name SmartPD Creator as the genuine 2025 successor of the 2024 Position Description Tool."
+  },
+  {
+    "action": "recover_match",
+    "agency_abbreviation": "FDIC",
+    "uc_2024_slugs": ["fdic-deposit-insurance-determination"],
+    "uc_2025_slugs": ["fdic-provisional-holds-model"],
+    "confidence": "high",
+    "reasoning": "Both are the FDIC model that supports deposit-insurance determinations by computing provisional holds on deposit accounts during a failed-bank resolution; the 2025 filing renamed it after its provisional-holds output."
+  },
+  {
+    "action": "recover_match",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-flexline-detect-patterns-and-make-corrective-action-recommendations-in-applicati"],
+    "uc_2025_slugs": ["va-actions-for-application-vulnerabilities"],
+    "confidence": "medium",
+    "reasoning": "Both describe detecting patterns in application/dependency vulnerability data and recommending corrective actions to reduce time-to-mitigation; the 2025 filing renamed it 'Actions for Application Vulnerabilities'. The 2025 row is a bare stub with no narrative, so the match rests on name and the shared application-vulnerability remediation domain."
+  }
+]

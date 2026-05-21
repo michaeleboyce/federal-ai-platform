@@ -1,0 +1,490 @@
+[
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-airship"],
+    "uc_2025_slugs": ["doj-palantir"],
+    "confidence": "high",
+    "reasoning": "Airship is an enterprise video-management/surveillance OCR-and-object-detection platform; Palantir here is case-information integration and case-management summarization. Different products and disjoint problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-docketscope"],
+    "uc_2025_slugs": ["doj-adobe-photoshop"],
+    "confidence": "high",
+    "reasoning": "DocketScope is text analytics for deduplicating regulations.gov public comments; Adobe Photoshop is generative image enhancement for public-relations photos. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-obr-indexing"],
+    "uc_2025_slugs": ["doj-ocr-and-translation"],
+    "confidence": "medium",
+    "reasoning": "OBR Indexing is ATF firearms-trace GCA form field recognition; the 2025 OCR and Translation is FBI digitization/translation. Both use OCR but describe different systems, programs (ATF vs FBI), and mission outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-motorola-solutions-vigilant-learn"],
+    "uc_2025_slugs": ["doj-immigration-case-and-filing-content-summary"],
+    "confidence": "high",
+    "reasoning": "Vigilant-LEARN is license-plate/vehicle pattern recognition; the 2025 use case is EOIR immigration-filing summarization. Entirely different problems and components."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-clearview-ai"],
+    "uc_2025_slugs": ["doj-pega-genai"],
+    "confidence": "high",
+    "reasoning": "Clearview AI is facial-recognition lead generation (CEOS, discontinued); Pega GenAI is a developer workflow/code generation tool. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-zoom-auto-captioning"],
+    "uc_2025_slugs": ["doj-ai-enabled-workflow-automation"],
+    "confidence": "high",
+    "reasoning": "Zoom Auto Captioning is speech-to-text captioning (CRT, disabled); the 2025 use case is OIL immigration-litigation NLP triage and translation. Different systems and problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-tools-publicly-available-2"],
+    "uc_2025_slugs": ["doj-data-analytics-transportation-ocr"],
+    "confidence": "medium",
+    "reasoning": "The 2024 row is generic DEA public-data search/monitoring; the 2025 Transportation OCR fingerprints seized drug exhibits to identify cartels. Specific, distinct problem and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-tools-publicly-available-3"],
+    "uc_2025_slugs": ["doj-data-analytics-healthcare-fraud-detection"],
+    "confidence": "medium",
+    "reasoning": "Generic DEA public-data analytics in 2024 vs a specific health-care fraud detection use case (HCFAC, Medicare/Medicaid) in 2025. The matcher paired one of nine identical 2024 rows by name; no genuine narrative continuity."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-tools-publicly-available-4"],
+    "uc_2025_slugs": ["doj-geospatial-tools"],
+    "confidence": "medium",
+    "reasoning": "Generic DEA public-data analytics vs DOJ geospatial mapping/visualization. Different problem and outputs; arbitrary pairing of one duplicate 2024 row."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-tools-publicly-available-5"],
+    "uc_2025_slugs": ["doj-data-triage"],
+    "confidence": "medium",
+    "reasoning": "Generic DEA public-data analytics vs a generic FBI Data Triage row. No bilateral evidence of the same system; arbitrary pairing of a duplicate 2024 row."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-tools-publicly-available-6"],
+    "uc_2025_slugs": ["doj-big-data-visualization-tools"],
+    "confidence": "medium",
+    "reasoning": "Generic DEA public-data analytics vs open-source data-visualization tools (document review). Distinct problem; arbitrary pairing of one of nine duplicate 2024 rows."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-tools-publicly-available-7"],
+    "uc_2025_slugs": ["doj-graph-analytics-visualization"],
+    "confidence": "medium",
+    "reasoning": "Generic DEA public-data analytics vs graph analytics for case-link visualization. No continuity of system; arbitrary pairing of a duplicate 2024 row."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-tools-publicly-available-8"],
+    "uc_2025_slugs": ["doj-data-analytics-threat-and-security-incident-monitoring"],
+    "confidence": "medium",
+    "reasoning": "Generic DEA public-data analytics vs DEA threat/security-incident monitoring with entity resolution. Distinct problem and outputs; arbitrary pairing of a duplicate 2024 row."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-tools-publicly-available-9"],
+    "uc_2025_slugs": ["doj-sentiment-analysis-tool"],
+    "confidence": "medium",
+    "reasoning": "Generic DEA public-data analytics vs an FBI recruitment/hiring sentiment-analysis tool. Unrelated problem; arbitrary pairing of a duplicate 2024 row."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-tools-publicly-available-10"],
+    "uc_2025_slugs": ["doj-data-call-code-assist-tool"],
+    "confidence": "medium",
+    "reasoning": "Generic DEA public-data analytics vs an administrative data-call code-assist tool. Different problem; arbitrary pairing of a duplicate 2024 row."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-analytics-financial-and-cryptocurrency-transactions-3"],
+    "uc_2025_slugs": ["doj-data-synthesis-sentiment-filtering-and-location-linking"],
+    "confidence": "medium",
+    "reasoning": "2024 is DEA financial/cryptocurrency transaction pattern analysis; 2025 is generic data triage with sentiment/location linking for threat detection. Disjoint problems and outputs."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-drone-technology"],
+    "uc_2025_slugs": ["doj-autonomous-drone-detection-and-monitoring"],
+    "confidence": "high",
+    "reasoning": "Both are the DEA drone use case for AI autonomous navigation/obstacle avoidance supporting drone operators; narratives are near-verbatim with the 2025 filing expanding the outputs list."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-servicenow-2"],
+    "uc_2025_slugs": ["doj-customer-service-ai-agent-chatbot"],
+    "confidence": "medium",
+    "reasoning": "2024 ServiceNow is an internal IT-helpdesk automation platform; 2025 is a public-facing EOIR website navigation chatbot. Different audiences (internal staff vs public) and components."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-thomsonreuters-clear-ai-assisted-legal-research"],
+    "uc_2025_slugs": ["doj-ai-powered-legal-research"],
+    "confidence": "high",
+    "reasoning": "Both describe AI-assisted legal research synthesizing case law and recommending precedents; the 2025 filing renamed the use case and explicitly states it builds on existing Westlaw/Lexis subscriptions."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-veritone-2"],
+    "uc_2025_slugs": ["doj-record-digitization"],
+    "confidence": "medium",
+    "reasoning": "2024 Veritone (ENRD) is media transcription/translation/redaction for litigation discovery; 2025 Record Digitization is EOIR converting paper immigration case files to electronic records. Different components and problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-evidence-com-axon-3"],
+    "uc_2025_slugs": ["doj-ai-evidence-and-claim-consolidation"],
+    "confidence": "medium",
+    "reasoning": "Evidence.com/Axon is body-cam transcription/redaction/report drafting; the 2025 use case is litigation record synthesis and duplicate-claim detection for high-value torts. Different systems and missions."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-data-and-analytics-data-synthesis-filtering-and-linking-procurement-id-15f06722c"],
+    "uc_2025_slugs": ["doj-procurement-data-triage-tool"],
+    "confidence": "medium",
+    "reasoning": "Both describe a tool that triages/categorizes publicly available procurement information to assist analyst review; the 2024 name carries the same procurement ID and the 2025 filing renamed it Procurement Data Triage Tool."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-document-text-extraction-and-language-translation-tool"],
+    "uc_2025_slugs": ["doj-entity-extraction-and-summarization"],
+    "confidence": "medium",
+    "reasoning": "2024 is OCR/translation/biometric detection on tenprint cards; 2025 is generic FBI entity extraction and summarization (data triage). Different problem and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-adobe-acrobat"],
+    "uc_2025_slugs": ["doj-adobe-premiere"],
+    "confidence": "high",
+    "reasoning": "Adobe Acrobat OCR for FOIA/Privacy Act document search vs Adobe Premiere video and transcript editing for public-relations videos. Different products and problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-chatgpt"],
+    "uc_2025_slugs": ["doj-ufms-chatbot"],
+    "confidence": "high",
+    "reasoning": "2024 ChatGPT is general writing/grammar improvement; the 2025 UFMS ChatBot is an application-support assistant for Unified Financial Management System users. Different tools and purposes."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-federal-bureau-of-prisons-inmate-population-projections"],
+    "uc_2025_slugs": ["doj-data-triage-and-processing"],
+    "confidence": "high",
+    "reasoning": "FBOP inmate population forecasting vs generic FBI transcription/translation/object-detection data triage. Entirely unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-gemini"],
+    "uc_2025_slugs": ["doj-goblin"],
+    "confidence": "medium",
+    "reasoning": "2024 Gemini is grammar checking and content generation; the 2025 Goblin row has an empty narrative, so there is no bilateral evidence of the same use case."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-grammarly"],
+    "uc_2025_slugs": ["doj-diagram-creation"],
+    "confidence": "high",
+    "reasoning": "Grammarly is writing-quality improvement; Diagram Creation is GenAI image/diagram generation for briefs and trial demonstratives. Different tools and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-veritone-3"],
+    "uc_2025_slugs": ["doj-aws-rekognition"],
+    "confidence": "high",
+    "reasoning": "Veritone (FBOP) redacts videos/transcripts for FOIA; AWS Rekognition (USMS) is facial indexing to prevent duplicate Capture System records. Different products, components, and problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-aws-ai-testbed"],
+    "uc_2025_slugs": ["doj-aws-textract"],
+    "confidence": "high",
+    "reasoning": "AWS AI Testbed is a general environment for testing AWS AI tools; AWS Textract (USMS) is OCR of partner-agency PDFs to prepopulate intake screens. Different scope and purpose."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-foia-gov-virtual-assistant"],
+    "uc_2025_slugs": ["doj-writing-assistant"],
+    "confidence": "high",
+    "reasoning": "FOIA.gov Virtual Assistant is a public-facing FOIA-portal navigation wizard; the 2025 Writing assistant is a generic FBI written-comment quality tool. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-veritone-4"],
+    "uc_2025_slugs": ["doj-entity-resolution"],
+    "confidence": "high",
+    "reasoning": "Veritone (NSD) is media transcription/translation; the 2025 Entity Resolution use case builds a searchable index of records by distinct individual. Different problems and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-salesforce-2"],
+    "uc_2025_slugs": ["doj-systran-translate-server"],
+    "confidence": "high",
+    "reasoning": "Salesforce CRM Analytics Plus (AI features not in use) vs Systran Translate Server machine translation. Different products and purposes."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-cyber-network-analysis-for-ocdetf-mis"],
+    "uc_2025_slugs": ["doj-public-comment-analysis"],
+    "confidence": "high",
+    "reasoning": "OCDETF cyber network anomaly monitoring vs DOJ public-comment categorization and deduplication. Entirely different missions."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-prisoner-assessment-tool-targeting-estimated-risk-and-needs-pattern-2"],
+    "uc_2025_slugs": ["doj-smartphone-and-tablet-operating-systems-and-features"],
+    "confidence": "high",
+    "reasoning": "PATTERN is a recidivism-risk assessment tool; the 2025 use case is optimizing DOJ-issued smartphone/tablet OS features. Completely unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-eeg-live-captioning"],
+    "uc_2025_slugs": ["doj-ai-enabled-compliance-verification"],
+    "confidence": "high",
+    "reasoning": "EEG Live Captioning is real-time Section 508 event captioning; the 2025 use case is civil-rights compliance-certification verification. Different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-social-media-products"],
+    "uc_2025_slugs": ["doj-foia-production-tools"],
+    "confidence": "high",
+    "reasoning": "Social Media Products is auto-captioning/alt-text on social platforms; FOIA Production Tools (FOIAXpress) automates FOIA document classification/redaction/deduplication. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-lexisnexis-ai-assisted-legal-research-2"],
+    "uc_2025_slugs": ["doj-ai-assisted-legacy-code-modernization"],
+    "confidence": "high",
+    "reasoning": "LexisNexis legal research for clemency applications vs AI-assisted legacy code translation/refactoring. Entirely different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-westlaw-ai-assisted-legal-research-2"],
+    "uc_2025_slugs": ["doj-cohost-ai-podcast-hosting-service-feature"],
+    "confidence": "high",
+    "reasoning": "Westlaw legal research for clemency applications vs CoHost AI podcast production for public relations. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-salient-factor-score"],
+    "uc_2025_slugs": ["doj-trial-presentation-software"],
+    "confidence": "high",
+    "reasoning": "Salient Factor Score is an actuarial parole-risk assessment device; Trial Presentation Software displays exhibits/video in court. Different problems and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-oncue"],
+    "uc_2025_slugs": ["doj-netdocuments"],
+    "confidence": "high",
+    "reasoning": "OnCue is a trial-presentation exhibit display tool; NetDocuments AI gives predictive file-saving suggestions in OPR's document repository. Different products and purposes."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-clearview-ai-2"],
+    "uc_2025_slugs": ["doj-conduit-ai"],
+    "confidence": "high",
+    "reasoning": "Clearview AI (USMS) is facial-recognition lead generation; Conduit AI is a generative-AI document-review platform. Different products despite both being investigative tools."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-prisoner-movement-management-jpmm-jpats"],
+    "uc_2025_slugs": ["doj-case-management-system-integration"],
+    "confidence": "high",
+    "reasoning": "JPMM/JPATS uses facial recognition to identify prisoners in transit; the 2025 use case is AI-assisted case-management coding and completion estimation. Different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-thomson-reuters-clear-2"],
+    "uc_2025_slugs": ["doj-uipath-document-understanding"],
+    "confidence": "high",
+    "reasoning": "Thomson Reuters CLEAR searches public records for investigations; UiPath Document Understanding automates unstructured-document data entry. Different products and purposes."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-vendor-ai-assistant"],
+    "uc_2025_slugs": ["doj-ai-enabled-briefing-assistant"],
+    "confidence": "high",
+    "reasoning": "Vendor AI Assistant is a GenAI code-assistant for USTP system modernization; the 2025 AI-Enabled Briefing Assistant is a RAG legal-drafting tool for the Federal Programs Branch. Different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-product-service-code-automation-ml-model"],
+    "uc_2025_slugs": ["state-ds-5528-promissory-note-automation"],
+    "confidence": "high",
+    "reasoning": "The 2024 PSC Automation ML model was a retired/cancelled procurement-categorization proof of concept; DS-5528 Promissory Note Automation is a live form-data-extraction use case. Different systems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-tailored-integration-logistics-management-system-ilms-user-analytics"],
+    "uc_2025_slugs": ["state-wha-ex-information-management"],
+    "confidence": "high",
+    "reasoning": "The 2024 ILMS User Analytics was a cancelled pilot for tailored user experiences; WHA/EX Information Management is a knowledge-management/FAQ chatbot. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-automated-damage-assessments"],
+    "uc_2025_slugs": ["state-ai-augmented-declassification-review"],
+    "confidence": "high",
+    "reasoning": "Automated Damage Assessments (Conflict Observatory satellite imagery) is retired; AI-Augmented Declassification Review processes cables/emails for declassification. Entirely different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-automated-burning-detection"],
+    "uc_2025_slugs": ["state-automatic-detection-of-authentic-material"],
+    "confidence": "high",
+    "reasoning": "Automated Burning Detection (satellite near-infrared anomaly scans) is retired; Automatic Detection of Authentic Material identifies foreign-language curriculum material. Unrelated despite the name-overlap."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-servicenow-ai-powered-virtual-agent-chatbot"],
+    "uc_2025_slugs": ["state-ai-sharepoint-chatbot"],
+    "confidence": "medium",
+    "reasoning": "The 2024 ServiceNow Virtual Agent is explicitly retired; the AI SharePoint Chatbot is a distinct embassy-SharePoint post-information chatbot on a different platform. Different systems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-crisis-campaign-cable-analytics"],
+    "uc_2025_slugs": ["state-rosie-chat-bot"],
+    "confidence": "high",
+    "reasoning": "Crisis Campaign Cable Analytics (OCR/NLP on cables for crisis-training gaps) is retired; Rosie Chat Bot answers HR questions. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-optical-character-recognition-text-extraction"],
+    "uc_2025_slugs": ["state-utility-invoices-data-extraction"],
+    "confidence": "medium",
+    "reasoning": "The 2024 generic OCR text-extraction use case is retired; Utility Invoices Data Extraction is a specific live payment-reconciliation use case. Both use OCR but are different systems with no narrative continuity."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-topic-modeling"],
+    "uc_2025_slugs": ["state-databricks-code-assistant"],
+    "confidence": "high",
+    "reasoning": "Topic Modeling (clustering text into themes) is retired; Databricks Code Assistant analyzes mobile-plan billing. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-forecasting"],
+    "uc_2025_slugs": ["state-fa-gov-redactaid"],
+    "confidence": "high",
+    "reasoning": "Forecasting (statistical projections of COVID/violent events) is retired; FA.gov RedactAid flags sensitive data before publication. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-image-clustering"],
+    "uc_2025_slugs": ["state-stateinsight"],
+    "confidence": "high",
+    "reasoning": "Image Clustering (deep-learning image embeddings/hierarchical clustering) is retired; StateInsight summarizes procurement-award documents. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "State",
+    "uc_2024_slugs": ["state-louvain-community-detection"],
+    "uc_2025_slugs": ["state-integrated-country-strategy-ics-turbo"],
+    "confidence": "high",
+    "reasoning": "Louvain Community Detection (social-network node clustering) is retired; ICS Turbo does thematic analysis of Integrated Country Strategy documents. Different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "EPA",
+    "uc_2024_slugs": ["epa-identification-of-lead-service-lines-in-drinking-water-distribution-systems-usin"],
+    "uc_2025_slugs": ["epa-identifying-outliers-in-reported-emissions-data"],
+    "confidence": "high",
+    "reasoning": "The 2024 use case predicts lead service lines from microbiome bioindicators; the 2025 use case identifies outliers in reported emissions data. Different domains; the 2025 narrative is empty, giving no continuity evidence."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "EPA",
+    "uc_2024_slugs": ["epa-generative-ai-for-study-evaluation-and-document-chat"],
+    "uc_2025_slugs": ["epa-document-comparison"],
+    "confidence": "medium",
+    "reasoning": "The 2024 use case is GenAI study evaluation and document Q&A chat; Document comparison reviews/compares two documents to reduce templates. Related theme but different problems and outputs."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "EPA",
+    "uc_2024_slugs": ["epa-machine-learning-assisted-literature-screening"],
+    "uc_2025_slugs": ["epa-living-literature-review-semi-automated-literature-screening"],
+    "confidence": "high",
+    "reasoning": "Both describe an ML system that ranks/prioritizes scientific references by title and abstract relevance to speed evidence-review screening; the 2025 filing renamed it Living Literature Review and expanded the NAAQS/Clean Air Act context."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "NSF",
+    "uc_2024_slugs": ["nsf-ask-nsf-initial-pilot"],
+    "uc_2025_slugs": ["nsf-tip-ms-copilot-pilot"],
+    "confidence": "high",
+    "reasoning": "Ask NSF Initial Pilot tests an AI-platform chatbot answering questions from documents; the TIP MS Copilot Pilot is Microsoft 365 Copilot for text generation in Word/Excel/PowerPoint. Different tools and purposes."
+  },
+  {
+    "action": "recover_match",
+    "agency_abbreviation": "DOJ",
+    "uc_2024_slugs": ["doj-jaws"],
+    "uc_2025_slugs": ["doj-jaws-text-to-speech-assistant-for-accessibility"],
+    "confidence": "high",
+    "reasoning": "Both are JAWS text-to-speech accessibility software for visually impaired personnel, producing audio descriptions of visual objects and summaries of text. The 2025 filing only expanded the name, so the matcher missed it."
+  }
+]

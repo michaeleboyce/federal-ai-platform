@@ -1,0 +1,626 @@
+[
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-genesys-cloud-contact-center"],
+    "uc_2025_slugs": ["va-ai-enhanced-call-center"],
+    "confidence": "medium",
+    "reasoning": "2024 Genesys Cloud Contact Center describes AI knowledge recommendations, conversation summarization and QA automation for call-center staff; the 2025 'AI-Enhanced Call Center' is the same contact-center AI program renamed (2025 narrative is empty but name and platform context align)."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-ultrasound-ge-logic-e10"],
+    "uc_2025_slugs": ["va-ge-logiq-e10"],
+    "confidence": "high",
+    "reasoning": "Both are the GE Logiq E10 ultrasound device with AI assistant tools (auto-preset, kidney detection/measurement); only a typo correction in the name ('Logic' to 'Logiq')."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-nursing-proficiency-coach-nurse-proficiency-evaluator-and-beyond"],
+    "uc_2025_slugs": ["va-nurse-proficiency-writer-npw"],
+    "confidence": "high",
+    "reasoning": "Both describe the custom GPT(s) that evaluate a nurse's self-input against the 600+ functional statements/standards and produce performance feedback; 2025 narrows the title to the Nurse Proficiency Writer component but the system and problem are identical."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-patient-care-systems-integration-program-pcsip"],
+    "uc_2025_slugs": ["va-patient-care-services-integration-platform-pcsip"],
+    "confidence": "high",
+    "reasoning": "Same PCSIP program with the identical headline benefit (20% more Veterans cared for with existing staff at VAMCs); only 'Program' became 'Platform' in the name."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-agfa-dose-monitor-system"],
+    "uc_2025_slugs": ["va-preventice-bodyguardian-remote-monitoring-system"],
+    "confidence": "high",
+    "reasoning": "The AGFA Dose Monitor is a radiation-dose monitoring device; the Preventice BodyGuardian is a cardiac-arrhythmia remote monitor. Different vendors, different devices, different clinical functions."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-volpara-imaging-patient-hub"],
+    "uc_2025_slugs": ["va-volpara-imaging-software"],
+    "confidence": "high",
+    "reasoning": "Both are the Volpara breast-imaging product; 2025 expands the narrative to describe the volumetric breast-density measurements but it is the same vendor system."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-vet-home-contact-center-ai"],
+    "uc_2025_slugs": ["va-va-voicebot-for-call-center-modernization"],
+    "confidence": "medium",
+    "reasoning": "Both describe AI for VA contact-center modernization to handle Veteran queries and free agents for complex issues; 2025 reframes as a telephone VoiceBot with NLU but the same call-center modernization goal."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-using-ai-to-enhance-augment-classification-of-reported-patient-safety-events-and"],
+    "uc_2025_slugs": ["va-ai-for-classifying-safety-events"],
+    "confidence": "high",
+    "reasoning": "2024 describes AI classification of reported patient safety events to identify trends/anomalies; the 2025 'AI for Classifying Safety Events' is the same use case with a shortened name (2025 narrative empty)."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-esd-speech-sentiment-and-analytics"],
+    "uc_2025_slugs": ["va-heuristic-behavior-analytics"],
+    "confidence": "high",
+    "reasoning": "2024 ESD Speech Sentiment analyzes service-desk call sentiment for quality of service; 2025 Heuristic Behavior Analytics is a cybersecurity tool producing account/host risk scores for the CSOC. Unrelated."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-linq-and-linq-ii-loop-recorder"],
+    "uc_2025_slugs": ["va-linq-ii-insertable-cardiac-monitor"],
+    "confidence": "high",
+    "reasoning": "Both are the Medtronic LINQ II implantable cardiac/loop recorder that automatically detects and records arrhythmias; only the marketing name changed."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-zio-patch-heart-monitor"],
+    "uc_2025_slugs": ["va-continuous-glucose-monitoring-summary"],
+    "confidence": "high",
+    "reasoning": "Zio Patch is a 14-day cardiac arrhythmia monitor; Continuous Glucose Monitoring Summary is a Power BI dashboard summarizing Ambulatory Glucose Profile metrics. Different devices, different conditions."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-caller-intent-classification-using-google-dialogflow-voicebot"],
+    "uc_2025_slugs": ["va-benefits-contention-classification-model"],
+    "confidence": "high",
+    "reasoning": "2024 is caller-intent classification for call-center VoiceBot triage; 2025 classifies benefits claim contentions to select disability questionnaires. Different domains and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-clinical-outcomes-for-asynchronous-teledermatology"],
+    "uc_2025_slugs": ["va-clinical-ai-agent"],
+    "confidence": "high",
+    "reasoning": "2024 classifies teledermatology progress notes into 6 outcome classes; 2025 Clinical AI Agent is an ambient documentation agent generating draft clinical notes from clinician-patient conversations. The teledermatology use case continues separately in 2025 as va-teledermatology-clinical-outcome-classification."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-va-tryopenai"],
+    "uc_2025_slugs": ["va-tachyon-ai"],
+    "confidence": "high",
+    "reasoning": "TryOpenAI is a general GenAI assistant for drafting/summarizing employee work; Tachyon AI ('1E Intelligence') is a digital-employee-experience and endpoint/software-asset-management platform. Unrelated products."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-ivc-access-transformation-transformative-care-modalities-va-health-connect-using"],
+    "uc_2025_slugs": ["va-va-ai-assist"],
+    "confidence": "high",
+    "reasoning": "2024 uses ML to classify clinical triage calls as resolved/not for First Contact Resolution metrics; 2025 VA AI Assist is AI search/summarization of EHR data to prep clinicians before encounters. Different problem and outputs."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-avicenna-ich"],
+    "uc_2025_slugs": ["va-avicenna-cina"],
+    "confidence": "high",
+    "reasoning": "Both are the Avicenna.AI head-CT triage device flagging intracranial hemorrhage (the 2025 CINA product adds LVO detection); same vendor and core ICH-detection function."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-vitrea-ct-brain-perfusion"],
+    "uc_2025_slugs": ["va-therapytrainer"],
+    "confidence": "high",
+    "reasoning": "Vitrea CT Brain Perfusion is an imaging device; TherapyTrainer is a psychotherapy training simulator with simulated-patient agents. Completely unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-enterprise-command-center-generative-ai"],
+    "uc_2025_slugs": ["va-pyramid-analytics-generative-ai-options"],
+    "confidence": "high",
+    "reasoning": "2024 uses an LLM to rewrite operations-center alerts into plain English; 2025 Pyramid Analytics is a BI platform with generative-AI dashboard/report tools. Different systems and purposes."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-philips-epiq-diagnostic-ultrasound-system-philips-affiniti-diagnostic-ultrasound"],
+    "uc_2025_slugs": ["va-epiq-series-diagnostic-ultrasound-system-affiniti-series-diagnostic-ultrasound-s"],
+    "confidence": "high",
+    "reasoning": "Both are the Philips EPIQ and Affiniti diagnostic ultrasound systems; 2025 expands detail on the R-Trigger/AutoStrain algorithms but it is the same device pair."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-qv-cad"],
+    "uc_2025_slugs": ["va-qvcad-system"],
+    "confidence": "high",
+    "reasoning": "Both are the QView Medical QVCAD automated breast ultrasound CAD system using neural networks to flag suspicious breast-tissue areas; only spacing in the name changed."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-evaluation-of-autonomous-assistive-feeding-system-in-spinal-cord-injury-patients"],
+    "uc_2025_slugs": ["va-program-evaluation-for-commission-on-collegiate-nursing-education-ccne"],
+    "confidence": "high",
+    "reasoning": "2024 is a robotic assistive-feeding system for spinal-cord-injury patients; 2025 is text analytics for nursing-education program evaluation against CCNE standards. Only the word 'evaluation' overlaps."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-github-copilot"],
+    "uc_2025_slugs": ["va-image-quality-control-tool"],
+    "confidence": "high",
+    "reasoning": "GitHub Copilot is a developer code-completion tool; the Image Quality Control Tool flags low-quality patient-submitted dermatology images. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-transcription-services"],
+    "uc_2025_slugs": ["va-veteran-rehabilitation-services"],
+    "confidence": "high",
+    "reasoning": "2024 Transcription Services transcribes meetings/interviews; 2025 Veteran Rehabilitation Services aggregates rehab-service data across platforms to build a care timeline. Different functions; matched only on the word 'Services'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "VA",
+    "uc_2024_slugs": ["va-chatbot-within-esms"],
+    "uc_2025_slugs": ["va-champva-automation"],
+    "confidence": "high",
+    "reasoning": "2024 is an internal policy-question chatbot within ESMS; 2025 CHAMPVA Automation extracts data from VA Form 10-10d PDFs to clear an applications backlog. Different systems and problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-anomaly-detection-in-non-intrusive-inspection"],
+    "uc_2025_slugs": ["dhs-non-intrusive-vessel-and-object-detection-tool-tethered-aerostat-radar-system-ta"],
+    "confidence": "high",
+    "reasoning": "2024 detects contraband anomalies inside NII X-ray scan images; 2025 is the TARS aerostat radar tool detecting/classifying maritime vessels and objects. 'Non-intrusive' overlaps but the systems and domains differ."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-ai-curated-synthetic-data"],
+    "uc_2025_slugs": ["dhs-automated-incident-creation-it"],
+    "confidence": "high",
+    "reasoning": "2024 generates synthetic training data for NII threat-recognition algorithms; 2025 Automated Incident Creation triages contact messages to create ServiceNow helpdesk tickets. Entirely different use cases."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-rvss-legacy-overhauled-system-project"],
+    "uc_2025_slugs": ["dhs-ai-assisted-ediscovery-search"],
+    "confidence": "high",
+    "reasoning": "2024 RVSS is video computer-aided detection (Matroid) for border surveillance; 2025 is AI-assisted eDiscovery document search and summarization. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-agent-portable-surveillance"],
+    "uc_2025_slugs": ["dhs-license-plate-reader"],
+    "confidence": "high",
+    "reasoning": "2024 Agent Portable Surveillance is a backpack EO/IR + radar border-detection unit; 2025 License Plate Reader enhances low-quality imagery to extract plate numbers. Different systems."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-open-source-news-aggregation"],
+    "uc_2025_slugs": ["dhs-open-source-intelligence-for-investigations"],
+    "confidence": "medium",
+    "reasoning": "Both describe AI/ML processing of large volumes of multilingual open-source/publicly-available online data to surface relevant intelligence; 2025 reframes it under HSI investigations support but the core capability is the same OSINT exploitation."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-autonomous-aerostat"],
+    "uc_2025_slugs": ["dhs-open-metadata"],
+    "confidence": "high",
+    "reasoning": "2024 Autonomous Aerostat uses AI to launch/recover an aerostat based on weather; 2025 Open Metadata uses an LLM to generate data-catalog field descriptions. Completely unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-geospatial-imagery-utilizing-annotation"],
+    "uc_2025_slugs": ["dhs-facial-recognition-for-locating-vulnerable-populations"],
+    "confidence": "high",
+    "reasoning": "2024 uses SAR satellite imagery and machine vision to detect airframes/vehicles/vessels; 2025 is facial recognition to locate unaccompanied minors. Different modalities and missions."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-use-of-technology-to-identify-proof-of-life"],
+    "uc_2025_slugs": ["dhs-uscis-speech-translation-service"],
+    "confidence": "high",
+    "reasoning": "2024 is liveness detection to prevent spoofed images in mobile apps; 2025 USCIS Speech Translation provides speech-to-speech/text translation. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-integrated-digital-environment"],
+    "uc_2025_slugs": ["dhs-semantic-search-for-digital-forensics-data"],
+    "confidence": "high",
+    "reasoning": "2024 Integrated Digital Environment analyzes end-user application workflows for CBP IT optimization; 2025 Semantic Search supports HSI digital-forensics evidence retrieval. Different systems and purposes."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-port-of-entry-risk-assessments"],
+    "uc_2025_slugs": ["dhs-passenger-security-assessment-model"],
+    "confidence": "medium",
+    "reasoning": "Both are CBP AI risk-assessment models scoring travelers/vehicles in real time at ports of entry to prioritize high-risk individuals for inspection; 2025 names and narrows it to the passenger security model."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-traveler-verification-service-tvs"],
+    "uc_2025_slugs": ["dhs-document-translation-service-dts"],
+    "confidence": "high",
+    "reasoning": "TVS is CBP's biometric facial-comparison entry/exit matching service; DTS is an Azure-based document translation service. Only the acronym pattern '...Service' overlaps."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-i4-viewer-matroid-image-analysis"],
+    "uc_2025_slugs": ["dhs-cryptocurrency-analysis"],
+    "confidence": "high",
+    "reasoning": "2024 is Matroid computer-vision image/video detection; 2025 Cryptocurrency Analysis flags illicit crypto transactions. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-autonomous-maritime-awareness"],
+    "uc_2025_slugs": ["dhs-global-maritime-intelligence"],
+    "confidence": "medium",
+    "reasoning": "2024 Autonomous Maritime Awareness is cold-weather sensor surveillance detecting vessels; 2025 Global Maritime Intelligence is an HSI ML platform linking fragmented maritime activity data to find investigative leads. Both maritime but different systems (sensor surveillance vs. data-fusion analytics) and components."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-security-information-and-event-management-siem-alerting-models"],
+    "uc_2025_slugs": ["dhs-ai-security-and-monitoring"],
+    "confidence": "high",
+    "reasoning": "2024 SIEM Alerting Models refine CISA SOC log-based detection alerts; 2025 AI Security and Monitoring is an AI gateway securing enterprise AI use against shadow AI/data leaks. Different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-advanced-analytic-enabled-forensic-investigation"],
+    "uc_2025_slugs": ["dhs-mobile-device-forensics-for-investigations"],
+    "confidence": "medium",
+    "reasoning": "2024 is CISA cyber-event forensic analysis with AI agents for FCEB partners; 2025 is HSI AI tagging/decoding of mobile-device data for criminal investigations. Different components (CISA vs HSI) and forensic domains."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-advanced-network-anomaly-alerting"],
+    "uc_2025_slugs": ["dhs-enhanced-lead-identification-and-targeting"],
+    "confidence": "high",
+    "reasoning": "2024 refines NCPS Einstein network anomaly alerts for SOC analysts; 2025 extracts addresses from rap sheets/warrants to build ERO enforcement leads. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-cyber-threat-intelligence-feed-correlation"],
+    "uc_2025_slugs": ["dhs-dark-web-threat-intelligence-for-cyber-investigations"],
+    "confidence": "medium",
+    "reasoning": "2024 correlates incoming cyber threat-intelligence feeds for shared enrichment (CISA); 2025 summarizes dark-web data for HSI cyber investigations. Both cyber-threat-intel but different components and a different data source/workflow."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-cyber-incident-reporting"],
+    "uc_2025_slugs": ["dhs-traveler-entity-resolution"],
+    "confidence": "high",
+    "reasoning": "2024 Cyber Incident Reporting processes CIRCIA cyber-incident data with ML/NLP; 2025 Traveler Entity Resolution matches traveler records for CBP screening. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-cyber-vulnerability-reporting"],
+    "uc_2025_slugs": ["dhs-land-border-integration"],
+    "confidence": "high",
+    "reasoning": "2024 Cyber Vulnerability Reporting processes vulnerability (KEV/CVE) data; 2025 Land Border Integration does license-plate and facial recognition at land Ports of Entry. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-ai-security-and-robustness"],
+    "uc_2025_slugs": ["dhs-cargo-security-assessment-model"],
+    "confidence": "high",
+    "reasoning": "2024 AI Security and Robustness governs trustworthy AI acquisition/deployment (CISA); 2025 Cargo Security Assessment Model scores cargo shipments for inspection risk. Different domains; only 'Security' overlaps."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-operational-activities-explorer"],
+    "uc_2025_slugs": ["dhs-service-now-predictive-intelligence-tool"],
+    "confidence": "high",
+    "reasoning": "2024 Operational Activities Explorer analyzes critical-infrastructure incidents in a dashboard (never left conceptual phase); 2025 ServiceNow Predictive Intelligence flags duplicate Projects/Demands/Ideas. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-relativityone"],
+    "uc_2025_slugs": ["dhs-trade-entity-risk-model"],
+    "confidence": "high",
+    "reasoning": "RelativityOne is a litigation/FOIA document review platform; the Trade Entity Risk Model profiles trade entities for cargo-threat assessment. Unrelated."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-fema-ocfo-gpt"],
+    "uc_2025_slugs": ["dhs-executive-summary-gpt"],
+    "confidence": "medium",
+    "reasoning": "Both are FEMA internal GenAI tools (Azure OpenAI within the FEMA boundary) that summarize documents and draft responses to support leadership; 2025 reframes it as document upload and executive-summary generation. Plausible rename of the same FEMA OCFO GPT capability."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-virtual-agent-chatbot-for-human-capital"],
+    "uc_2025_slugs": ["dhs-natural-language-search-for-legal-case-management"],
+    "confidence": "high",
+    "reasoning": "2024 is a ServiceNow Virtual Agent chatbot for Human Capital questions; 2025 is natural-language search of the OPLA legal case-management system. Different systems and domains."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-machine-learning-translation-technology-initiative"],
+    "uc_2025_slugs": ["dhs-mobile-language-translation-services"],
+    "confidence": "medium",
+    "reasoning": "2024 Machine Learning Translation Technology Initiative is an ERO machine-translation solution for non-critical communications; 2025 Mobile Language Translation Services is the same ERO translation capability renamed (2025 narrative empty)."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-raven-compliance-automation-tool-cat"],
+    "uc_2025_slugs": ["dhs-video-analysis-tool-vat"],
+    "confidence": "high",
+    "reasoning": "RAVEn CAT uses OCR to ingest Form I-9 data; the Video Analysis Tool (VAT) analyzes video. Different RAVEn tools (2025 narrative empty, but the names and the I-9-OCR vs video distinction are clear)."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-data-tagging-and-classification"],
+    "uc_2025_slugs": ["dhs-trm-classification-tool"],
+    "confidence": "high",
+    "reasoning": "2024 Data Tagging and Classification is an HSI RAVEn data-tagging capability; 2025 TRM Classification Tool uses Gemini to categorize vendor products into the Technical Reference Model. Different systems and outputs."
+  },
+  {
+    "action": "split",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-facial-recognition-service"],
+    "uc_2025_slugs": ["dhs-facial-recognition-for-national-security-investigations", "dhs-facial-recognition-for-investigations-of-transnational-criminal-organizations", "dhs-facial-recognition-for-investigations-of-child-sexual-exploitation-and-abuse"],
+    "confidence": "high",
+    "reasoning": "The single 2024 HSI Facial Recognition Service (RAVEn project covering child-exploitation, war-criminal and other investigations) was re-filed in 2025 as three HSI component facial-recognition use cases for national-security, transnational-criminal-organization, and child-sexual-exploitation investigations. The matcher's suggested 2025 pair was a separate USBP facial-recognition row, which is rejected by this split."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-climate-change-assessment-tool"],
+    "uc_2025_slugs": ["dhs-dhs-asset-assessment-tool"],
+    "confidence": "medium",
+    "reasoning": "2024 Climate Change Assessment Tool predicts where extreme weather will affect DHS facilities; 2025 DHS Asset Assessment Tool is a natural-language/SQL tool for facility placement and consolidation analysis. Related real-estate domain but a different problem (climate risk vs. SQL-free asset analytics) and tool; insufficient bilateral evidence of the same system."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-sentiment-analysis-and-topic-modeling-sentop"],
+    "uc_2025_slugs": ["dhs-blockchain-analysis"],
+    "confidence": "high",
+    "reasoning": "SenTop is a DHS text-analytics package for sentiment/topic modeling; Blockchain Analysis is an HSI crypto-investigation platform. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-silicon-valley-innovation-program-svip-language-translator"],
+    "uc_2025_slugs": ["dhs-real-time-language-translation-services"],
+    "confidence": "medium",
+    "reasoning": "2024 SVIP Language Translator is a USCG handheld voice translator for vessel boardings; 2025 Real-Time Language Translation Services is an ICE field translation tool for offline/low-connectivity operations. Both translation but different components (USCG vs ICE) and a distinct SVIP-pilot vs ICE-operations framing."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-large-language-models-for-an-officer-training-tool"],
+    "uc_2025_slugs": ["dhs-large-language-model-llm-guided-data-dictionary-generation"],
+    "confidence": "high",
+    "reasoning": "2024 is an LLM officer-training tool generating personalized training materials; 2025 LLM-Guided Data Dictionary Generation creates metadata field definitions for FEMADex. Only 'Large Language Model' overlaps."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-asylum-text-analytics"],
+    "uc_2025_slugs": ["dhs-ai-resume-ats-app"],
+    "confidence": "high",
+    "reasoning": "2024 Asylum Text Analytics supports the USCIS asylum program; 2025 AI Resume & ATS App screens disaster-hiring resumes. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-timeseries-analysis-and-forecasting"],
+    "uc_2025_slugs": ["dhs-cbp-common-ai-service-ccais-image-analysis-and-data-correlation"],
+    "confidence": "high",
+    "reasoning": "2024 forecasts USCIS Form I-90 green-card application volumes; 2025 CCAIS does image analysis and data correlation flagging unauthorized presence in restricted environments. Different problems and modalities."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-testing-performance-of-ml-model-using-h2o"],
+    "uc_2025_slugs": ["dhs-passport-anomaly-model"],
+    "confidence": "high",
+    "reasoning": "2024 tests ML model performance on USCIS I-90 data with H2O; 2025 Passport Anomaly Model evaluates passport series characteristics for CBP travel-document verification. Different systems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-sentiment-analysis-employee-satisfaction-surveys"],
+    "uc_2025_slugs": ["dhs-spend-plan-analysis-gpt"],
+    "confidence": "high",
+    "reasoning": "2024 does sentiment analysis on employee satisfaction surveys; 2025 Spend Plan Analysis GPT queries FEMA budget/spend data. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-sentiment-analysis-elis-case-notes"],
+    "uc_2025_slugs": ["dhs-ice-enterprise-ai-assistant"],
+    "confidence": "high",
+    "reasoning": "2024 does sentiment analysis on ELIS case notes; 2025 ICE Enterprise AI Assistant is an agency-wide LLM chatbot. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-predicted-to-natzuralize"],
+    "uc_2025_slugs": ["dhs-illicit-trade"],
+    "confidence": "high",
+    "reasoning": "2024 Predicted to Naturalize predicts when LPRs become eligible to naturalize; 2025 Illicit Trade prioritizes high-risk inbound cargo shipments. Completely unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-topic-modeling-on-request-for-evidence-rfe-data-sets"],
+    "uc_2025_slugs": ["dhs-open-source-intelligence-for-lead-identification-and-targeting"],
+    "confidence": "high",
+    "reasoning": "2024 does topic modeling on USCIS Request-for-Evidence data; 2025 is OSINT for ICE/ERO lead identification. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DHS",
+    "uc_2024_slugs": ["dhs-i-539-approval-prediction"],
+    "uc_2025_slugs": ["dhs-ai-assisted-audio-video-redaction"],
+    "confidence": "high",
+    "reasoning": "2024 I-539 Approval Prediction is a USCIS topic-modeling/prediction model; 2025 AI-Assisted Audio/Video Redaction redacts media evidence. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "GSA",
+    "uc_2024_slugs": ["gsa-city-pairs-program-ticket-forecast-and-scenario-analysis-tools"],
+    "uc_2025_slugs": ["gsa-no-code-text-and-sentiment-analysis-with-xm-discover"],
+    "confidence": "high",
+    "reasoning": "2024 City Pairs forecasts air-travel ticket purchases; 2025 is no-code text/sentiment analysis with XM Discover. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "GSA",
+    "uc_2024_slugs": ["gsa-category-taxonomy-classifier"],
+    "uc_2025_slugs": ["gsa-strategic-atlas"],
+    "confidence": "high",
+    "reasoning": "2024 Category Taxonomy Classifier classifies obligation transactions into GWAS subcategories; 2025 Strategic Atlas monitors GSA strategy execution. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "GSA",
+    "uc_2024_slugs": ["gsa-cprm-contract-breach-forecast"],
+    "uc_2025_slugs": ["gsa-assist-global-search-and-inference"],
+    "confidence": "high",
+    "reasoning": "2024 CPRM Contract Breach Forecast predicts contract ceiling-breach risk; 2025 ASSIST Global Search is AI-powered information retrieval in the ASSIST system. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "GSA",
+    "uc_2024_slugs": ["gsa-enterprise-brain"],
+    "uc_2025_slugs": ["gsa-enterprise-chatbot-gsai"],
+    "confidence": "medium",
+    "reasoning": "2024 Enterprise Brain is a Tanjo document-discovery repository; 2025 Enterprise Chatbot (GSAi) is an enterprise-wide productivity LLM chatbot for drafting/research/coding. Different products despite the 'Enterprise' name; GSAi is a distinct new tool."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "GSA",
+    "uc_2024_slugs": ["gsa-grex-ai-document-classification"],
+    "uc_2025_slugs": ["gsa-assist-ecf-autoclassification-and-summary"],
+    "confidence": "medium",
+    "reasoning": "Both address AI/ML auto-classification of PDF documents in GSA leasing/contracting workflows (G-REX pilot to classify uploaded PDFs; ASSIST ECF auto-classification and summary of acquisition documents). The 2025 filing reframes the same document-auto-classification capability within ASSIST ECF."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "GSA",
+    "uc_2024_slugs": ["gsa-contract-acquisition-lifecycle-intelligence-cali"],
+    "uc_2025_slugs": ["gsa-lot-description-generation"],
+    "confidence": "high",
+    "reasoning": "2024 CALI evaluates vendor proposals against solicitation requirements for source selection; 2025 Lot Description Generation auto-generates auction lot descriptions. Unrelated."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "GSA",
+    "uc_2024_slugs": ["gsa-survey-comment-ham-spam-tester"],
+    "uc_2025_slugs": ["gsa-public-comments-analysis"],
+    "confidence": "low",
+    "reasoning": "2024 Survey Comment Ham/Spam Tester triages USA.gov survey comments for analyst attention; 2025 Public Comments Analysis processes large volumes of public comments on agency rules via regulations.gov. Both AI-assisted comment processing but the input (USA.gov survey comments vs regulatory dockets) differs - flagged low confidence; could reasonably be a reject."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "GSA",
+    "uc_2024_slugs": ["gsa-chatbot-for-federal-acquisition-community"],
+    "uc_2025_slugs": ["gsa-cybersecurity-chatbot"],
+    "confidence": "high",
+    "reasoning": "2024 Chatbot for Federal Acquisition Community answers acquisition FAQ for NCSC live-chat; 2025 Cybersecurity Chatbot supports GSA IT compliance documentation. Different domains."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "GSA",
+    "uc_2024_slugs": ["gsa-oas-kudos-chatbot"],
+    "uc_2025_slugs": ["gsa-ocfo-chatbot"],
+    "confidence": "high",
+    "reasoning": "2024 OAS Kudos Chatbot captures employee peer recognitions via Dialogflow; 2025 OCFO Chatbot answers financial inquiries. Different offices and purposes."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FRB",
+    "uc_2024_slugs": ["frb-document-organization-tool"],
+    "uc_2025_slugs": ["frb-data-quality-prioritization-dashboard"],
+    "confidence": "high",
+    "reasoning": "2024 Document Organization Tool labels reference documents to improve searchability; 2025 Data Quality Prioritization Dashboard prioritizes call-report data edits. Unrelated."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "FRB",
+    "uc_2024_slugs": ["frb-earnings-calls-search-tool"],
+    "uc_2025_slugs": ["frb-monitoring-earnings-conference-calls"],
+    "confidence": "medium",
+    "reasoning": "Both are tools for working with public earnings/conference-call transcripts (querying sections, identifying keyword mentions such as R&D/genAI); the 2025 filing renames and narrows the earnings-call search/monitoring capability."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FRB",
+    "uc_2024_slugs": ["frb-bank-subsidiary-identification"],
+    "uc_2025_slugs": ["frb-bank-examiner-search-engine"],
+    "confidence": "high",
+    "reasoning": "2024 identifies auto loans issued by bank finance-company subsidiaries; 2025 Bank Examiner Search Engine retrieves documents for examiners during exams. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FRB",
+    "uc_2024_slugs": ["frb-research-and-development-analysis"],
+    "uc_2025_slugs": ["frb-financial-system-data-analysis"],
+    "confidence": "high",
+    "reasoning": "2024 Research and Development Analysis quantifies industry R&D intensity as a time series; 2025 Financial System Data Analysis models counterparty exposures and produces risk scores. Different problems and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "FRB",
+    "uc_2024_slugs": ["frb-institutional-profile-dashboard"],
+    "uc_2025_slugs": ["frb-virtual-benefits-assistant"],
+    "confidence": "high",
+    "reasoning": "2024 Institutional Profile Dashboard gives leadership info on district FR Y-9C reporters; 2025 Virtual Benefits Assistant answers employee benefits questions. Completely unrelated."
+  }
+]

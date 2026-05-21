@@ -1,0 +1,810 @@
+[
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-doichatgpt-ai-chatbot"],
+    "uc_2025_slugs": ["doi-voiceatlas-no-code-chatbot-framework"],
+    "confidence": "high",
+    "reasoning": "DOIChatGPT is a department-wide Azure OpenAI chat behind DOI's security boundary; VoiceAtlas is a separate USGS no-code chatbot-building product for non-technical staff. Different systems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-doichatgpt-api-management-instance"],
+    "uc_2025_slugs": ["doi-adaptive-management-with-ammonitor"],
+    "confidence": "high",
+    "reasoning": "2024 is an Azure APIM service layer for DOIChatGPT; 2025 AMMonitor is automated species identification from remote-sensed images/audio. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-doichatgpt-api-management-development-environment"],
+    "uc_2025_slugs": ["doi-office-of-grants-management-pgm-grants-utility-tool"],
+    "confidence": "high",
+    "reasoning": "2024 is a DOIChatGPT APIM dev/training environment; 2025 is a PGM grants lifecycle compliance tool. No shared system."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-cost-estimation-using-edl-database-data"],
+    "uc_2025_slugs": ["doi-national-land-cover-database-nlcd-2024-inv-wo0000000107887"],
+    "confidence": "high",
+    "reasoning": "2024 estimates environmental remediation costs from the EDL database; 2025 NLCD is a deep-learning land-cover dataset. The INV# stamp references a different 2024 row, confirming a fuzzy mispair."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-rag-knowledge-base-of-agent-procedures"],
+    "uc_2025_slugs": ["doi-parsing-large-quantities-of-text-data-2024-inv-wo0000000113692"],
+    "confidence": "high",
+    "reasoning": "2024 is a customer-support RAG knowledge base; 2025 parses news articles for Upper Colorado water events. The INV# stamp points to an unrelated 2024 row."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-adobe-firefly-generative-images"],
+    "uc_2025_slugs": ["doi-document-review-platform-generative-ai"],
+    "confidence": "high",
+    "reasoning": "2024 Adobe Firefly generates artistic nature sketches for an NPS StoryMap; 2025 applies generative AI to FOIA document review. Unrelated despite both being 'generative AI'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-caseguard-studio"],
+    "uc_2025_slugs": ["doi-google-cloud-vision-2024-inv-wo0000000154445"],
+    "confidence": "high",
+    "reasoning": "2024 CaseGuard Studio redacts law-enforcement video/audio; 2025 uses Google Cloud Vision to extract text from topographic maps. The INV# stamp references a different 2024 row."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-use-of-ai-for-developing-bioacoustic-and-remote-camera-imagery-wildlife-species-"],
+    "uc_2025_slugs": ["doi-flor-ai-developing-a-remotely-sensed-image-classification-method-for-inventory-a"],
+    "confidence": "medium",
+    "reasoning": "2024 narrative is actually rainfall/flood forecasting in Great Smoky Mountains; 2025 Flor-AI is UAS lupine detection on Necedah NWR. Disjoint problems and systems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-nps-acquisition-management-workload-software"],
+    "uc_2025_slugs": ["doi-atlas-ti-qualitative-data-analysis-software"],
+    "confidence": "high",
+    "reasoning": "2024 drafts procurement packages; 2025 Atlas.ti is qualitative social-science data analysis software. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-azure-based-internal-controls-testing-app-for-award-descriptions"],
+    "uc_2025_slugs": ["doi-automated-power-line-extraction-using-deep-learning"],
+    "confidence": "high",
+    "reasoning": "2024 is a grants internal-controls testing app; 2025 extracts power lines from imagery via deep learning. No overlap."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-internal-controls-testing-sam-gov-certifications"],
+    "uc_2025_slugs": ["doi-machine-learning-for-stream-velocity-prediction"],
+    "confidence": "high",
+    "reasoning": "2024 scores SAM.gov certification PDFs for grants; 2025 predicts stream velocity from streamflow attributes. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-potential-applications-of-ai-models-to-uas-post-fire-mapping-data-analysis-and-i"],
+    "uc_2025_slugs": ["doi-ai-trapline-for-fire"],
+    "confidence": "medium",
+    "reasoning": "2024 evaluates AI for UAS post-fire damage/vegetation/erosion mapping; 2025 AI Trapline scrapes weather websites to build national fire-weather synopses. Different problems despite both touching wildfire."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-pilot-using-machine-learning-to-harvest-data-for-standardized-species-conservati"],
+    "uc_2025_slugs": ["doi-piloting-machine-learning-inflow-forecasts-across-reclamation-2024-inv-doi-58"],
+    "confidence": "high",
+    "reasoning": "2024 is FWS ML harvesting of species conservation data; 2025 is Reclamation ML reservoir inflow forecasting. The INV#DOI-58 stamp references a different 2024 row; fuzzy mispair on the word 'piloting'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-prediction-of-suitable-habitat-for-esa-listed-species"],
+    "uc_2025_slugs": ["doi-improving-prediction-capabilities-for-barrier-island-landscape-change"],
+    "confidence": "medium",
+    "reasoning": "2024 predicts ESA-listed species habitat via species distribution models; 2025 predicts barrier-island landscape change. Different domains."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-applying-deep-learning-to-detect-and-classify-ocean-wildlife"],
+    "uc_2025_slugs": ["doi-using-deep-learning-to-classify-potential-piping-plover-habitat-along-the-upper-"],
+    "confidence": "medium",
+    "reasoning": "2024 is FWS/BOEM marine bird and wildlife detection from aerial imagery; 2025 is USACE piping plover habitat classification on the Missouri River. Different programs and outputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-enhancing-migratory-bird-surveys-with-thermal-imagery-and-deep-learning"],
+    "uc_2025_slugs": ["doi-implementation-of-artificial-intelligence-to-estimate-population-size-of-a-migra"],
+    "confidence": "medium",
+    "reasoning": "Both are USFWS migratory-bird thermal-imagery deep-learning surveys, but the 2025 row carries an INV# stamp (DOI-67) referencing a distinct 2024 row and addresses a different survey-variability problem. Treated as a separate use case to avoid a wrong link."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-socs-documents-analysis"],
+    "uc_2025_slugs": ["doi-nepa-document-generation"],
+    "confidence": "medium",
+    "reasoning": "2024 is BOEM SOCS portal LLM analysis of environmental documents; 2025 generates NEPA documents from ePlanning templates. Related theme but different system, bureau, and workflow."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-predictive-ai-applications-for-wildlife-monitoring-seeotter-a-custom-built-softw"],
+    "uc_2025_slugs": ["doi-predictive-ai-applications-for-estimating-water-quality-constituents-as-causal-f"],
+    "confidence": "high",
+    "reasoning": "2024 SeeOtter does image-based sea otter population monitoring; 2025 estimates water-quality constituents driving harmful algal blooms. Name overlap only."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-seasonal-temporary-wetland-floodplain-delineation-using-remote-sensing-and-deep-"],
+    "uc_2025_slugs": ["doi-coastal-change-likelihood-synthesizing-change-factors-using-supervised-learning"],
+    "confidence": "medium",
+    "reasoning": "2024 delineates seasonal wetlands/floodplains via CNNs; 2025 predicts decadal coastal change with an SVM framework. Different problem and method."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-data-driven-sub-seasonal-forecasting-of-temperature-and-precipitation"],
+    "uc_2025_slugs": ["doi-patterns-in-the-landscape-analyses-of-cause-and-effect"],
+    "confidence": "high",
+    "reasoning": "2024 is sub-seasonal temperature/precipitation forecasting via prize competitions; 2025 is ML satellite-image classification of flood/fire events. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-data-driven-streamflow-forecasting"],
+    "uc_2025_slugs": ["doi-an-integrated-sensor-network-and-data-driven-approach-to-satellite-remote-sensin"],
+    "confidence": "high",
+    "reasoning": "2024 is 10-day streamflow forecasting; 2025 is satellite remote sensing of dissolved organic matter in water. Different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-improving-uas-derived-photogrammetric-data-and-analysis-accuracy-and-confidence-"],
+    "uc_2025_slugs": ["doi-machine-learning-for-high-resolution-downscaling-in-the-hawaiian-islands"],
+    "confidence": "high",
+    "reasoning": "2024 improves UAS photogrammetric data analysis for Reclamation assets; 2025 downscales rainfall models in Hawaii. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-photogrammetric-data-set-crack-mapping-technology-search"],
+    "uc_2025_slugs": ["doi-using-machine-learning-to-automate-crack-mapping-and-structural-health-monitorin"],
+    "confidence": "medium",
+    "reasoning": "Both concern ML-based crack mapping of Reclamation concrete structures from imagery; same problem, outputs, and bureau. The 2024 entry is the technology search and the 2025 entry the operational workflow — a genuine continuation."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-ai-ml-for-aquatic-science"],
+    "uc_2025_slugs": ["doi-machine-learning-for-bat-acoustics"],
+    "confidence": "high",
+    "reasoning": "2024 is individual fish recognition via computer vision; 2025 is bat acoustic species classification. Different taxa, data, and models."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-national-temperature-observations"],
+    "uc_2025_slugs": ["doi-willamette-regional-iwaas-gradient-boosted-ml-stream-temperature-modeling"],
+    "confidence": "medium",
+    "reasoning": "2024 is water-temperature data collection/QA workflows; 2025 is gradient-boosted ML stream-temperature prediction for the Willamette basin. Different scope and method."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-downscaling-and-assimilation-of-meteorology-data-for-local-estimates-of-irrigati"],
+    "uc_2025_slugs": ["doi-feature-extraction-and-characterization-for-update-of-the-national-map"],
+    "confidence": "high",
+    "reasoning": "2024 downscales meteorology data for irrigation water-demand estimates; 2025 extracts map features to update The National Map. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-national-extent-groundwater-quality-prediction-for-the-integrated-water-availabi"],
+    "uc_2025_slugs": ["doi-random-forest-models-for-predicting-water-quality-of-inland-waters-from-remotely"],
+    "confidence": "medium",
+    "reasoning": "2024 predicts groundwater quality nationally for water-availability assessments; 2025 predicts surface inland-water quality from remote-sensed imagery via random forest. Different water bodies and inputs."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-building-capacity-for-assessment-and-prediction-of-post-wildfire-water-availabil"],
+    "uc_2025_slugs": ["doi-wildfire-risk-assessment-predictive-modeling"],
+    "confidence": "medium",
+    "reasoning": "2024 forecasts post-wildfire water-quality impacts (sediment/salinity); 2025 assesses fire risk potential from fuel/weather conditions. Different problem despite shared 'wildfire' term."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-predictions-of-pfas-concentrations-in-groundwater"],
+    "uc_2025_slugs": ["doi-pfas-groundwater-model"],
+    "confidence": "high",
+    "reasoning": "Both describe a USGS random-forest/boosted-tree model predicting PFAS concentrations in groundwater across the CONUS to guide where sampling is needed. Same system, renamed."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-automating-blood-smear-cell-counts-using-machine-learning"],
+    "uc_2025_slugs": ["doi-refining-flood-risk-predictions-in-hawai-i-with-generative-machine-learning"],
+    "confidence": "high",
+    "reasoning": "2024 classifies white-blood-cell types in fish blood smears; 2025 is generative-ML flood-risk downscaling for Hawaii. Unrelated."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-synthesizing-mapping-and-monitoring-data-to-inform-prairie-dog-management-in-nat"],
+    "uc_2025_slugs": ["doi-synthesizing-mapping-and-monitoring-data-to-understand-fluctuations-in-prairie-d"],
+    "confidence": "high",
+    "reasoning": "Both synthesize mapping/monitoring data on prairie dog colony size at Theodore Roosevelt National Park; the 2025 row carries the matching [2024 INV#WO0000000109308] stamp. Same use case, renamed."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-automating-blood-smear-cell-counts-using-machine-learning-2"],
+    "uc_2025_slugs": ["doi-pawsc-ecotoxicology-pfas-machine-learning-2024-inv-wo0000000112908"],
+    "confidence": "high",
+    "reasoning": "2024 classifies fish blood-smear cells; 2025 PAWSC assesses PFAS ecological health risk in streams. The INV# stamp references a different 2024 row; fuzzy mispair."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-hotlink-the-volcanic-hotspot-learning-and-identification-network"],
+    "uc_2025_slugs": ["doi-machine-learning-for-rapid-earthquake-magnitude-estimation"],
+    "confidence": "high",
+    "reasoning": "2024 HotLINK detects volcanic thermal emissions; 2025 estimates earthquake magnitude for early warning. Different hazards. (HotLINK's true 2025 continuation is doi-hotlink-identifying-elevated-thermal-anomalies, a separate row.)"
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-flow-photo-explorer-to-estimate-flow"],
+    "uc_2025_slugs": ["doi-usgs-flow-photo-explorer-2024-inv-wo0000000109196"],
+    "confidence": "high",
+    "reasoning": "Both describe the USGS Flow Photo Explorer, an AI/ML platform estimating streamflow from timelapse imagery; the 2025 row carries the matching [2024 INV#WO0000000109196] stamp."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-landform-mapping-geoai"],
+    "uc_2025_slugs": ["doi-landfire"],
+    "confidence": "high",
+    "reasoning": "2024 is GeoAI landform mapping with active learning; 2025 LANDFIRE is a long-running vegetation/fuels mapping program. Different products."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-improved-point-cloud-classification-of-3dep-lidar-data-using-deep-learning-model"],
+    "uc_2025_slugs": ["doi-automated-identification-of-ducks-from-hunter-submitted-photos-using-deep-learni"],
+    "confidence": "high",
+    "reasoning": "2024 classifies 3DEP lidar point clouds; 2025 identifies duck species from hunter photos. Unrelated despite both using deep learning."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-knowledge-graph-development"],
+    "uc_2025_slugs": ["doi-using-graph-neural-networks-for-development-of-nonergodic-earthquake-ground-moti"],
+    "confidence": "high",
+    "reasoning": "2024 develops knowledge graphs for information interoperability via NLP; 2025 uses graph neural networks for earthquake ground-motion models. 'Graph' is the only overlap."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-hydrograhy-feature-extraction-from-remotely-sensed-data"],
+    "uc_2025_slugs": ["doi-frog-vocalization-recognition-from-digital-recordings"],
+    "confidence": "high",
+    "reasoning": "2024 extracts surface-water hydrography features from imagery; 2025 recognizes frog calls in audio recordings. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-modeling-sediment-abundance-in-the-eastern-snake-river-plain-aquifer-using-super"],
+    "uc_2025_slugs": ["doi-hydrologic-predictions-for-the-upper-mississippi-river-system-using-a-hybrid-dee"],
+    "confidence": "high",
+    "reasoning": "2024 models sediment abundance in the Snake River Plain aquifer; 2025 predicts discharge/water-surface elevation in the Upper Mississippi. Different basins and targets."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-probabilistic-source-classification-of-large-tephra-producing-eruptions-using-su"],
+    "uc_2025_slugs": ["doi-tephra-classification-with-machine-learning-2024-inv-wo0000000109095"],
+    "confidence": "high",
+    "reasoning": "Both probabilistically classify volcanic tephra layers to their source volcano using ML ensembles on geochemistry; the 2025 row carries the matching [2024 INV#WO0000000109095] stamp."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-predicting-inundation-dynamics-of-small-forested-wetlands-2"],
+    "uc_2025_slugs": ["doi-reducing-elevation-error-in-coastal-wetland-digital-elevation-models"],
+    "confidence": "high",
+    "reasoning": "2024 predicts wetting/drying of small forested wetlands; 2025 reduces elevation error in coastal wetland DEMs. Both use random forest but solve different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-intelligent-national-map-project"],
+    "uc_2025_slugs": ["doi-target-discrimination-on-portable-radar"],
+    "confidence": "high",
+    "reasoning": "2024 is the Intelligent National Map self-updating mapping vision; 2025 discriminates radar targets (animals vs precipitation). Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-classifying-gps-data-to-understand-flight-behavior-of-birds-2"],
+    "uc_2025_slugs": ["doi-mapping-vegetation-classes-to-understand-wildfire-fuel-conditions"],
+    "confidence": "high",
+    "reasoning": "2024 classifies eagle GPS data for wind-turbine collision risk; 2025 maps vegetation classes for wildfire fuel conditions. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-zero-shot-segmentation-to-expedite-quaternary-geologic-mapping-2"],
+    "uc_2025_slugs": ["doi-epermits-chatbot-implementation-and-permit-application-wizard-tools"],
+    "confidence": "high",
+    "reasoning": "2024 is zero-shot image segmentation for geologic mapping; 2025 is an ePermits chatbot/application wizard. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-inventorying-landforms-with-convolutional-neural-networks-2"],
+    "uc_2025_slugs": ["doi-hotlink-identifying-elevated-thermal-anomalies-at-volcanoes-2024-inv-wo000000010"],
+    "confidence": "high",
+    "reasoning": "2024 inventories landforms with CNNs from lidar; 2025 HOTLink detects volcanic thermal anomalies. The INV# stamp references a different 2024 row (the volcanic HotLINK use case)."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-improved-earthquake-detection-for-research-studies-2"],
+    "uc_2025_slugs": ["doi-diploid-detector-triploid-tracker-for-grass-carp"],
+    "confidence": "high",
+    "reasoning": "2024 improves deep-learning earthquake detection; 2025 determines ploidy of invasive grass carp. Entirely unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-machine-learning-for-tsunami-source-zones-2"],
+    "uc_2025_slugs": ["doi-machine-learning-for-avalanche-frequency-modeling"],
+    "confidence": "high",
+    "reasoning": "2024 selects tsunami source zones via unsupervised ML; 2025 models avalanche return periods via random forest. Different hazards."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-mendenhall-postdoctoral-fellow-using-machine-learning"],
+    "uc_2025_slugs": ["doi-ia-tribal-consultation-clearinghouse"],
+    "confidence": "high",
+    "reasoning": "2024 is a Mendenhall fellow's ML work on seafloor sulfide composition; 2025 is an Indian Affairs Tribal Consultation Clearinghouse webpage. Unrelated."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-critical-mineral-assessment-with-ai-support-criticalmaas"],
+    "uc_2025_slugs": ["doi-darpas-criticalmaas-2024-inv-wo0000000108419-wo0000000096527"],
+    "confidence": "high",
+    "reasoning": "Both describe the USGS-DARPA CriticalMAAS AI-assisted critical-mineral assessment workflow; the 2025 row carries the matching [2024 INV#] stamp."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-shoreline-modeling-2"],
+    "uc_2025_slugs": ["doi-remote-sensing-coastal-change-shoreline-change"],
+    "confidence": "medium",
+    "reasoning": "Both concern AI prediction of shoreline change, but 2024 evaluates LSTM/CNN/Transformer models against physics-based models while 2025 does rapid satellite-imagery classification. Different methods/scope; narratives too thin to confirm a 1:1 link."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-development-of-a-ploidy-distinction-application-a-machine-learning-approach-for-"],
+    "uc_2025_slugs": ["doi-improving-recreation-opportunities-and-access-to-public-lands-through-machine-le"],
+    "confidence": "high",
+    "reasoning": "2024 distinguishes carp ploidy from blood-smear imagery; 2025 estimates traffic for recreation/transportation planning. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-coastal-ecosystem-prediction-system"],
+    "uc_2025_slugs": ["doi-harmful-algal-bloom-prediction-and-detection-system-for-williams-fork-reservoir-"],
+    "confidence": "high",
+    "reasoning": "2024 projects wetland vulnerability to sea-level rise; 2025 predicts/detects harmful algal blooms at Williams Fork Reservoir. Different problems; the 2025 INV# stamp points elsewhere."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-national-wildlife-disease-database-2"],
+    "uc_2025_slugs": ["doi-u-s-wind-turbine-database"],
+    "confidence": "high",
+    "reasoning": "2024 is a national wildlife disease database; 2025 detects wind turbines in satellite imagery. 'Database' is the only overlap."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-annual-national-land-cover-database-deep-learning"],
+    "uc_2025_slugs": ["doi-global-detection-of-historical-harmful-algal-blooms-via-combined-satellite-data-"],
+    "confidence": "high",
+    "reasoning": "2024 maps annual land cover via geospatial AI; 2025 detects historical harmful algal blooms globally. Different products."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-data-driven-approaches-to-filling-missing-time-series-data-within-the-san-franci-2"],
+    "uc_2025_slugs": ["doi-use-modern-ai-ml-approaches-to-gain-insight-into-usgs-unstructured-data-such-as-"],
+    "confidence": "high",
+    "reasoning": "2024 fills gaps in San Francisco Bay-Delta time-series data; 2025 applies RAG to USGS unstructured text. Different data and methods; the 2025 INV# stamp references a different row."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-analytical-chemistry-geologic-resources-identification-from-laser-spectroscopy"],
+    "uc_2025_slugs": ["doi-general-land-office-records-modernization"],
+    "confidence": "high",
+    "reasoning": "2024 identifies geologic resources from laser spectroscopy; 2025 does OCR/NLP on land-record documents. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-analytical-chemistry-geologic-resources-identification-from-x-rays"],
+    "uc_2025_slugs": ["doi-pathogen-identification-in-salmon"],
+    "confidence": "high",
+    "reasoning": "2024 determines rock composition from X-ray analytical chemistry; 2025 identifies Ichthyophonus pathogen in salmon via transcriptomics. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-retrieval-augmented-generation-using-usgs-documentation"],
+    "uc_2025_slugs": ["doi-evapotranspiration-mapping-and-monitoring"],
+    "confidence": "high",
+    "reasoning": "2024 builds a RAG chatbot on USGS documentation; 2025 maps evapotranspiration via remote sensing. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-extracting-analysis-ready-information-from-narrative-geologic-descriptions"],
+    "uc_2025_slugs": ["doi-water-time-series-record-automation-framework-development"],
+    "confidence": "high",
+    "reasoning": "2024 extracts structured info from narrative geologic descriptions via LLM; 2025 automates water time-series record correction. Different domains."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-articulate-training-develpment-ai-add-on"],
+    "uc_2025_slugs": ["doi-user-guides-training-provided-in-chat-form"],
+    "confidence": "medium",
+    "reasoning": "2024 is an Articulate text-to-speech add-on for OEM course creation; 2025 makes user guides queryable via chat. Both touch 'training' but are different tools and bureaus."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-machine-learning-applied-to-geotechnical-engineering-statistical-methods-applied-2"],
+    "uc_2025_slugs": ["doi-machine-learning-approach-to-predict-the-composition-of-seafloor-massive-sulfide"],
+    "confidence": "high",
+    "reasoning": "2024 predicts seismic crest movement of embankment dams; 2025 predicts seafloor massive sulfide composition. The 2025 INV# stamp (WO0000000108420) references a different 2024 row (the Mendenhall fellow's sulfide work)."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "DOI",
+    "uc_2024_slugs": ["doi-machine-learning-working-group"],
+    "uc_2025_slugs": ["doi-multiple-machine-learning-estimation-of-groundwater-levels-and-trends-for-the-re"],
+    "confidence": "high",
+    "reasoning": "2024 is a Reclamation ML staff working group/networking effort; 2025 estimates groundwater levels for the Mississippi alluvial aquifer. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-systran-translation-software"],
+    "uc_2025_slugs": ["treasury-frb-ai-code-translation-poc"],
+    "confidence": "high",
+    "reasoning": "2024 Systran is COTS natural-language translation for IRS staff; 2025 FRB POC is generative-AI code/language translation for legacy-code migration. 'Translation' is the only overlap."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-automated-underreporter-aur-voicebot"],
+    "uc_2025_slugs": ["treasury-automated-document-processing"],
+    "confidence": "high",
+    "reasoning": "2024 AUR Voicebot authenticates taxpayers and answers account questions; 2025 converts legacy PDFs/charts into structured datasets. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-taxpayer-services-form-1040-voicebot"],
+    "uc_2025_slugs": ["treasury-application-to-ai-services-integration-poc"],
+    "confidence": "high",
+    "reasoning": "2024 is a 1040 IVR voicebot; 2025 builds an enterprise API endpoint to integrate COTS apps with AI services. Different systems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-where-s-my-refund-and-where-s-my-amended-return-voicebot"],
+    "uc_2025_slugs": ["treasury-generative-ai-for-form-1040x-support-tool-for-amended-returns-star"],
+    "confidence": "medium",
+    "reasoning": "2024 WMR/WMAR voicebot gives refund/amended-return status; 2025 STAR is a generative-AI examiner support tool for 1040X. Both touch amended returns but are a status IVR vs an examiner assistant — different systems. (2025 narrative is 'N/A'.)"
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-economic-impact-payment-eip-faq-voicebot"],
+    "uc_2025_slugs": ["treasury-policy-development-editorial-assistant"],
+    "confidence": "high",
+    "reasoning": "2024 EIP FAQ voicebot answers stimulus-payment inquiries; 2025 is a policy-manual editorial assistant. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-one-time-payment-voicebot"],
+    "uc_2025_slugs": ["treasury-genai-procurement-tool"],
+    "confidence": "high",
+    "reasoning": "2024 OTP voicebot handles one-time-payment inquiries; 2025 is a generative-AI procurement/contract compliance tool. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-faqs-notice-clarifications-voicebot"],
+    "uc_2025_slugs": ["treasury-identity-verification"],
+    "confidence": "high",
+    "reasoning": "2024 notice-clarifications voicebot; 2025 detects forged identity documents for IRS online registration. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-advance-child-tax-credit-advctc-voicebot"],
+    "uc_2025_slugs": ["treasury-advanced-anomaly-changepoint-detection"],
+    "confidence": "high",
+    "reasoning": "2024 AdvCTC voicebot answers tax-credit questions; 2025 detects anomalies/changepoints in market attention. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-insolvency-and-offer-in-compromise-voicebot"],
+    "uc_2025_slugs": ["treasury-inventory-replenishment-forecast"],
+    "confidence": "high",
+    "reasoning": "2024 OIC/insolvency voicebot; 2025 forecasts vendor performance and item stockouts. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-financial-relief-voicebot"],
+    "uc_2025_slugs": ["treasury-operational-support-bots"],
+    "confidence": "high",
+    "reasoning": "2024 Financial Relief voicebot answers taxpayer inquiries; 2025 Operational Support Bots handle IT service-desk tasks. Different systems despite both being 'bots'."
+  },
+  {
+    "action": "confirm_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-integrate-google-doc-ai-for-digitalization"],
+    "uc_2025_slugs": ["treasury-integrate-word-processor-ai-for-digitalization"],
+    "confidence": "high",
+    "reasoning": "Both describe the IRS Digital Enablement/Digitalization Platform (DEP) integrating an AI extraction engine to eliminate transcription of paper taxpayer documents. Same system, vendor name generalized."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-technical-demo-of-large-language-models-for-code-development"],
+    "uc_2025_slugs": ["treasury-establish-localized-large-language-model-llm"],
+    "confidence": "medium",
+    "reasoning": "2024 demos LLM code-assistance IDE plugins for developers; 2025 consolidates research into an enterprise LLM trained on internal docs for employee Q&A. Different objectives despite both being LLM efforts."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-tax-payer-notice-modernization"],
+    "uc_2025_slugs": ["treasury-zero-paper-ai-routing-for-digitalization"],
+    "confidence": "high",
+    "reasoning": "2024 simplifies tax-notice language for taxpayers; 2025 ZPI routes scanned mail submissions to business units. Different problems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-compliance-data-warehouse-data-access-log-monitoring"],
+    "uc_2025_slugs": ["treasury-integrated-data-retrieval-system-modernization"],
+    "confidence": "high",
+    "reasoning": "2024 scores anomalous CDW data-access behavior for PII risk; 2025 IDRS modernization converts legacy COBOL to Java. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-redaction-studio-redaction-assistant"],
+    "uc_2025_slugs": ["treasury-regulation-summarization"],
+    "confidence": "high",
+    "reasoning": "2024 Redaction Studio masks faces in body-cam footage; 2025 summarizes regulatory text. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-intelligent-document-management-system-idms"],
+    "uc_2025_slugs": ["treasury-integrated-financial-management-information-system-ifmis"],
+    "confidence": "high",
+    "reasoning": "2024 IDMS is a document-management platform with AI extraction; 2025 IFMIS supports budget forecasting/planning. Different systems despite both being acronymed Treasury platforms."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-expanded-systran-translation-software"],
+    "uc_2025_slugs": ["treasury-ediscovery-software"],
+    "confidence": "high",
+    "reasoning": "2024 expands Systran translation for IRS-CI seized foreign-language data; 2025 explores eDiscovery software for OCC legal requests. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-transcription-evidence-com"],
+    "uc_2025_slugs": ["treasury-1040x-ai-transcription"],
+    "confidence": "high",
+    "reasoning": "2024 Evidence.com transcribes law-enforcement audio recordings; 2025 extracts data from scanned 1040X form images. 'Transcription' is the only overlap."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-generative-ai-for-form-1040x-tax-examiner-assistant"],
+    "uc_2025_slugs": ["treasury-genai-for-data-platform-operations"],
+    "confidence": "high",
+    "reasoning": "2024 is a 1040X examiner workflow assistant; 2025 provides scalable LLM access for data-platform operations. Different systems."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-circular-dependencies-individual-master-file-modernization"],
+    "uc_2025_slugs": ["treasury-usaspending-natural-language-search-initiative"],
+    "confidence": "high",
+    "reasoning": "2024 resolves code circular dependencies in IMF modernization; 2025 pilots natural-language search on USAspending.gov. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-synthetic-test-data-generation-individual-master-file-modernization"],
+    "uc_2025_slugs": ["treasury-enterprise-systems-testing-generative-pre-trained-transformer-est-knowledge-sour"],
+    "confidence": "high",
+    "reasoning": "2024 generates synthetic test data from schemas; 2025 EST GPT is an AI knowledge repository for documentation. Different tools despite both touching enterprise testing."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-auto-tech-debt-remedy-individual-master-file-modernization"],
+    "uc_2025_slugs": ["treasury-ai-augmented-software-modernization-and-insight"],
+    "confidence": "medium",
+    "reasoning": "Both use AI to remediate technical debt in IRS code, but 2024 targets SonarQube-driven source-code fixes in IMF modernization while 2025 targets Java/Spring Boot dependency/vulnerability research. Different codebases and scope; not a confident 1:1 link."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-m365-copilot"],
+    "uc_2025_slugs": ["treasury-forms-conversion"],
+    "confidence": "high",
+    "reasoning": "2024 tests M365 Copilot features; 2025 AFCS drafts form conversions. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-copilot-for-power-platform"],
+    "uc_2025_slugs": ["treasury-genai-for-low-code-platform"],
+    "confidence": "medium",
+    "reasoning": "Both concern AI assisting low-code/Power Platform app development; the 2025 row generalizes the vendor and targets the HCO-WPA environment. Plausibly related but the 2024 entry is a broad multi-business-area Copilot pilot and 2025 a specific HR app-building use case. Rejected to avoid an over-broad link."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-copilot-for-m365-criminal-investigation-unit"],
+    "uc_2025_slugs": ["treasury-nccbr-data-validation-pilot"],
+    "confidence": "high",
+    "reasoning": "2024 is M365 Copilot for the Criminal Investigation Unit; 2025 NCCBR validates data-ingestion pipelines. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-automated-collection-system-acs-voicebot"],
+    "uc_2025_slugs": ["treasury-ink-and-paper-consumption-forecast-ipcf"],
+    "confidence": "high",
+    "reasoning": "2024 ACS voicebot handles collection/payment issues; 2025 IPCF forecasts ink/paper consumption for the Mint/BEP. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-customer-experience-analytics"],
+    "uc_2025_slugs": ["treasury-statistical-information-services-customer-correspondence-analytics"],
+    "confidence": "medium",
+    "reasoning": "2024 extracts insights from IRS customer-service call transcripts; 2025 SOI analyzes years of customer correspondence to realign resources. Both 'customer analytics' but different data (calls vs correspondence) and offices."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-incident-coordination-and-reporting-support"],
+    "uc_2025_slugs": ["treasury-line-item-consolidation-for-form-1120"],
+    "confidence": "high",
+    "reasoning": "2024 summarizes incident information into draft products; 2025 structures free-text labels on Form 1120 partnership filings. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-eftps-fraud-monitoring"],
+    "uc_2025_slugs": ["treasury-resume-ranking-engine"],
+    "confidence": "high",
+    "reasoning": "2024 EFTPS scores suspicious payment transactions; 2025 ranks resumes against job descriptions. Unrelated."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-digitization-of-microfilm"],
+    "uc_2025_slugs": ["treasury-digitalization-ai-agent"],
+    "confidence": "medium",
+    "reasoning": "2024 uses AI/ML in Iron Mountain microfilm digitization to identify savings-bond owners; 2025 is a general digitalization AI agent for document organization/recall. Different scope; name overlap on 'digitalization'."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "Treasury",
+    "uc_2024_slugs": ["treas-check-fraud-pipeline"],
+    "uc_2025_slugs": ["treasury-f1023-hybrid-nlp-and-ml-pipeline"],
+    "confidence": "high",
+    "reasoning": "2024 detects altered Treasury-check fraud; 2025 F1023 pipeline predicts non-compliance among tax-exempt entities. 'Pipeline' is the only overlap."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "ED",
+    "uc_2024_slugs": ["ed-generative-ai-usage"],
+    "uc_2025_slugs": ["ed-generative-ai-idea-suggestion"],
+    "confidence": "medium",
+    "reasoning": "The 2024 'Generative AI Usage' row describes producing summaries/outlines, not idea suggestion; ED's 51 interchangeable duplicate 2024 rows were genuinely restructured into named 2025 categories, so the fuzzy pairing is arbitrary rather than a 1:1 lineage."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "ED",
+    "uc_2024_slugs": ["ed-generative-ai-usage-2"],
+    "uc_2025_slugs": ["ed-generative-ai-image-generation"],
+    "confidence": "high",
+    "reasoning": "The 2024 row describes generating code snippets, not image generation; arbitrary fuzzy pairing among ED's interchangeable duplicate 2024 'Generative AI Usage' rows."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "ED",
+    "uc_2024_slugs": ["ed-generative-ai-usage-3"],
+    "uc_2025_slugs": ["ed-generative-ai-design-generation"],
+    "confidence": "medium",
+    "reasoning": "The 2024 row describes suggesting courses of action, not web/visual design generation; arbitrary pairing among ED's restructured duplicate 'Generative AI Usage' rows."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "ED",
+    "uc_2024_slugs": ["ed-generative-ai-usage-5"],
+    "uc_2025_slugs": ["ed-generative-ai-text-generation"],
+    "confidence": "medium",
+    "reasoning": "Content partially overlaps (text assistance), but the 2024 rows are 51 functionally interchangeable duplicates that ED genuinely restructured into named 2025 categories; no defensible 1:1 lineage to this specific pair."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "ED",
+    "uc_2024_slugs": ["ed-generative-ai-usage-6"],
+    "uc_2025_slugs": ["ed-generative-ai-code-generation"],
+    "confidence": "high",
+    "reasoning": "The 2024 row describes creating paragraphs/images for web design, not code generation; arbitrary fuzzy pairing among ED's interchangeable duplicate 2024 rows."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "ED",
+    "uc_2024_slugs": ["ed-generative-ai-usage-7"],
+    "uc_2025_slugs": ["ed-generative-ai-mock-data-generation"],
+    "confidence": "high",
+    "reasoning": "The 2024 row describes generating code snippets and DAX formulas, not mock data; arbitrary pairing among ED's restructured duplicate rows."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "ED",
+    "uc_2024_slugs": ["ed-generative-ai-usage-8"],
+    "uc_2025_slugs": ["ed-generative-ai-data-manipulation"],
+    "confidence": "high",
+    "reasoning": "The 2024 row describes generating R code for data analysis, not data-type conversion; arbitrary pairing among ED's interchangeable duplicate rows."
+  },
+  {
+    "action": "reject_rename",
+    "agency_abbreviation": "ED",
+    "uc_2024_slugs": ["ed-generative-ai-usage-9"],
+    "uc_2025_slugs": ["ed-generative-ai-capability-evaluation"],
+    "confidence": "high",
+    "reasoning": "The 2024 row describes generating sample paragraphs for communications, not evaluating AI capabilities; arbitrary pairing among ED's restructured duplicate rows."
+  }
+]
