@@ -437,6 +437,15 @@ def main():
         # omb_match_audit has FK→use_cases(id).
         conn.execute("DELETE FROM omb_match_audit")
         conn.execute("DELETE FROM omb_consolidated_rows")
+        # m011 year-over-year lineage — use_case_year_links has
+        # FK→use_cases(id) (and FK→use_cases_2024(id)). Clear before
+        # use_cases. match_year_over_year.py rebuilds it later in the
+        # pipeline (wipe-and-reload).
+        if conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' "
+            "AND name='use_case_year_links'"
+        ).fetchone():
+            conn.execute("DELETE FROM use_case_year_links")
         conn.execute("DELETE FROM use_cases")
         conn.execute("DELETE FROM consolidated_use_cases")
         conn.commit()

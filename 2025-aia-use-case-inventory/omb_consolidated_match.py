@@ -32,6 +32,16 @@ from typing import Iterable
 FUZZY_MATCH_THRESHOLD = 0.85
 SUGGESTED_RENAME_THRESHOLD = 0.40
 
+# Narrative-similarity threshold for the year-over-year matcher
+# (`match_year_over_year.py`, Phase 3). Token-set Jaccard over the
+# concatenated narrative paragraphs is a *coarse* deterministic signal —
+# it catches use cases whose names were rewritten between 2024 and 2025
+# but whose described problem/benefits/outputs stayed substantially the
+# same. 0.50 is a deliberately conservative starting point; it wants
+# calibration against a labelled sample. Phase 4's per-row LLM review does
+# the real semantic adjudication of the residual.
+NARRATIVE_MATCH_THRESHOLD = 0.50
+
 
 _AGENCY_ABBR_MAP = {"STATE": "State", "TREAS": "Treasury"}
 
@@ -44,12 +54,20 @@ def normalize_agency(abbr: str | None) -> str | None:
 
 _WHITESPACE_RE = re.compile(r"\s+")
 
+# Year-over-year provenance tags 2025 stamps onto names that were carried
+# over from the 2024 inventory — e.g. "Pyforecast [2024 INV#DOI-69]" or
+# "... [2024 Inv# WO0000000111250]". These are matching noise (they only
+# exist on one side) and dilute every name score, so strip them before
+# comparison. Tolerant of casing and the optional space after "INV#".
+_INV_TAG_RE = re.compile(r"\s*\[[^\]]*\binv#[^\]]*\]", flags=re.IGNORECASE)
+
 
 def normalize_name(s: str | None) -> str:
     if s is None:
         return ""
     s = s.replace("’", "'").replace("‘", "'")
     s = s.replace("“", '"').replace("”", '"')
+    s = _INV_TAG_RE.sub("", s)
     s = s.replace(" & ", " and ")
     s = s.lower().strip()
     s = _WHITESPACE_RE.sub(" ", s)
@@ -63,6 +81,149 @@ def name_match_score(a: str | None, b: str | None) -> float:
     if na == nb:
         return 1.0
     return SequenceMatcher(None, na, nb).ratio()
+
+
+# A substantive token of at least this length counts as "distinctive" on
+# its own — enough to let a one-word name like "PyForecast" containment-match
+# even though it contributes only a single token.
+_DISTINCTIVE_TOKEN_LEN = 6
+
+
+def name_containment_score(a: str | None, b: str | None) -> float:
+    """Token-containment signal for names where one is a subset of the other.
+
+    Companion to `name_match_score` (which difflib's character-ratio
+    penalizes for *length asymmetry*). 2025 systematically lengthened
+    titles — appending qualifiers, expanding acronyms — so a 2024 name is
+    often a clean token-subset of its 2025 counterpart ("PyForecast" →
+    "Seasonal Water Supply Forecasting: Pyforecast"). Returns
+    ``|A∩B| / min(|A|,|B|)`` over stopword-filtered name token sets — i.e.
+    "what fraction of the shorter name's substantive tokens appear in the
+    longer one".
+
+    **Guard:** to fire, the *shorter* name must contribute either
+      - at least 2 substantive (stopword-filtered) tokens, OR
+      - at least 1 substantive token of length >= `_DISTINCTIVE_TOKEN_LEN`.
+    This lets distinctive single-word names ("PyForecast") match while
+    refusing generic stubs ("AI Tool" → both tokens are stopwords; "Data
+    Hub" → two short generic tokens still passes the count guard but the
+    intersection requirement keeps it honest). Returns 0.0 when the guard
+    is not met or either side has no substantive tokens.
+
+    Pure — no DB, no I/O. `name_match_score` is intentionally left
+    unchanged; this is a separate signal the matcher combines via `max`.
+    """
+    ta = {
+        t for t in _strip_punct(normalize_name(a)).split(" ")
+        if t and t not in _STEM_STOPWORDS
+    }
+    tb = {
+        t for t in _strip_punct(normalize_name(b)).split(" ")
+        if t and t not in _STEM_STOPWORDS
+    }
+    if not ta or not tb:
+        return 0.0
+    smaller = ta if len(ta) <= len(tb) else tb
+    if not (
+        len(smaller) >= 2
+        or any(len(t) >= _DISTINCTIVE_TOKEN_LEN for t in smaller)
+    ):
+        return 0.0
+    intersection = len(ta & tb)
+    return intersection / len(smaller)
+
+
+# Floors that the containment fallback in `narrative_match_score` must
+# clear before it is allowed to promote a pair. The earlier guard
+# ("smaller side has >= 5 substantive tokens") was both on the wrong
+# quantity *and* set far too low: it gates the size of the *shorter*
+# narrative, not the size of the *shared* content, and 5 is well under
+# what any genuine rename carries. A tiny 2-6-word 2025 narrative whose
+# few tokens happen to sit inside a long unrelated 2024 paragraph cleared
+# it, and containment then scored a spurious 0.50-0.62 — 5 DOJ
+# false-positive `renamed` links (ServiceNow→Entity Extraction, FBOP
+# Inmate Projections→Audio Clarity Tool, OBR Indexing→Entity Resolution,
+# ArcGIS→OCR Tool, Veritone→Symphony).
+#
+# Replacement: an **absolute-intersection floor**. The honest signal is
+# the absolute number of substantive (stopword-filtered) tokens the two
+# narratives actually *share*. Measured on the regression sample:
+#   - the 5 DOJ false positives have |A∩B| ∈ {3, 3, 3, 5, 8};
+#   - the genuine low-scoring renames have |A∩B| = 8 (VA HTM-LLM →
+#     HTM112 Tutor) and 12 (VA AIDOC → AIDOC BriefCase); the strong
+#     genuine recoveries (Merbok 13, Finding the State 56, REACH VET 105)
+#     sit far higher.
+# A 2-6-word narrative cannot reach 6 substantive shared tokens, so
+# K = 6 sits squarely in the 5↔8 gap and drops the four thin FPs.
+#
+# One FP — OBR Indexing → Entity Resolution — is pathological: its |A∩B|
+# is exactly 8, *tying* the genuine VA HTM-LLM recovery, so no scalar
+# intersection floor can separate them. The discriminator there is the
+# *containment denominator*: OBR's smaller side is 13 substantive tokens
+# (a one-line 2025 stub padded just past the intersection floor) while
+# every genuine narrative-matched recovery has a smaller side >= 15
+# (Merbok 15, HTM-LLM 15, AIDOC 21, Finding the State 58, REACH VET 139).
+# So containment additionally requires the smaller token set to carry at
+# least _CONTAINMENT_MIN_SMALLER tokens — a corrected, calibrated version
+# of the original (broken-at-5) smaller-side guard. Sub-floor pairs fall
+# back to plain Jaccard, which the long side dilutes well below threshold.
+_CONTAINMENT_MIN_INTERSECTION = 6
+_CONTAINMENT_MIN_SMALLER = 14
+
+
+def narrative_match_score(a: str | None, b: str | None) -> float:
+    """Containment-aware token-set similarity over two narrative paragraphs.
+
+    Used by the year-over-year matcher (`match_year_over_year.py`) as the
+    third deterministic stage: when two use cases' names don't match but
+    their narrative text (problem / benefits / outputs) overlaps heavily,
+    they're likely the same use case renamed.
+
+    Returns ``max(jaccard, containment)`` where ``jaccard = |A∩B| / |A∪B|``
+    and ``containment = |A∩B| / min(|A|,|B|)`` over the same
+    stopword-filtered token sets. Plain Jaccard penalizes *length
+    asymmetry*: 2025 systematically lengthened narratives (three fields vs
+    2024's two), so when the 2024 text is a clean subset of the longer 2025
+    text, Jaccard dilutes well below threshold even at verbatim identity.
+    Containment measures "how much of the smaller side is covered" and is
+    immune to that.
+
+    **Guard:** containment only counts when *both* the intersection itself
+    has at least `_CONTAINMENT_MIN_INTERSECTION` substantive tokens (the
+    two narratives genuinely share that much distinctive content) *and*
+    the smaller token set has at least `_CONTAINMENT_MIN_SMALLER` tokens
+    (the shorter narrative is not a thin one-line stub padded just past
+    the intersection floor). Gating only the shorter narrative's size (the
+    prior guard) — and at just 5 tokens — was the wrong quantity at the
+    wrong threshold: a tiny 2-6-word 2025 narrative whose handful of
+    tokens sit inside a long unrelated 2024 paragraph still passed it and
+    scored a spurious 0.5+. Sub-floor pairs fall back to plain Jaccard,
+    which is heavily diluted by the long side and stays below threshold.
+
+    Jaccard (order-independent set overlap) also suits narrative paragraphs
+    better than difflib's character-ratio: agencies routinely reorder and
+    lightly reword clauses between years, which tanks a character-level
+    ratio but barely moves a token-set score. Words are lowercased,
+    stripped of punctuation, whitespace-split, and filtered through
+    `_STEM_STOPWORDS` (the same small stopword set used by the
+    consolidation-stem extractor). Returns 0.0 when either side is empty
+    or has no significant tokens.
+    """
+    ta = {t for t in _strip_punct(a or "").split(" ") if t and t not in _STEM_STOPWORDS}
+    tb = {t for t in _strip_punct(b or "").split(" ") if t and t not in _STEM_STOPWORDS}
+    if not ta or not tb:
+        return 0.0
+    intersection = len(ta & tb)
+    union = len(ta | tb)
+    jaccard = intersection / union if union else 0.0
+    smaller = min(len(ta), len(tb))
+    if (
+        intersection < _CONTAINMENT_MIN_INTERSECTION
+        or smaller < _CONTAINMENT_MIN_SMALLER
+    ):
+        return jaccard
+    containment = intersection / smaller if smaller else 0.0
+    return max(jaccard, containment)
 
 
 @dataclass(frozen=True)

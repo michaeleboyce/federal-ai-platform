@@ -74,8 +74,15 @@ def load(conn, csv_path: Path = CSV_PATH) -> dict:
         i for i, field in mapping.items() if field == "use_case_name"
     )
 
-    # Idempotent reload. No table has an FK to use_cases_2024 yet, so a
-    # single-table delete suffices — no FK-ordering dance.
+    # Idempotent reload. m011's use_case_year_links has FK→use_cases_2024(id),
+    # so it must be cleared first. It is rebuilt later in the pipeline by
+    # match_year_over_year.py (wipe-and-reload); the guard keeps this loader
+    # runnable against DBs predating m011.
+    if conn.execute(
+        "SELECT 1 FROM sqlite_master WHERE type='table' "
+        "AND name='use_case_year_links'"
+    ).fetchone():
+        conn.execute("DELETE FROM use_case_year_links")
     conn.execute("DELETE FROM use_cases_2024")
 
     insert_cols = DATA_FIELDS + ["agency_id", "source_file", "slug", "raw_json"]
