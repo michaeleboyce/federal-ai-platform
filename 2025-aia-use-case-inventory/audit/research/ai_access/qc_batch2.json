@@ -65,17 +65,17 @@
     {
       "agency_abbreviation": "DHS",
       "tool_name": "DHSChat",
-      "finding": "DHSChat, DHS's internally built secure generative AI chatbot, is verified as available to all ~19,000 DHS headquarters employees plus select pilot users across ten operating agencies; the DHS AI Strategy uses looser 'all personnel' language that overstates the verified rollout scope.",
-      "estimated_users": "~19,000 HQ employees plus select pilot users across 10 components (DHS total workforce ~260,000)",
-      "coverage_assessment": "partial",
-      "exact_quote": "now available to all the roughly 19,000 employees at DHS headquarters and select pilot users across ten operating agencies",
-      "source_url": "https://www.nextgov.com/artificial-intelligence/2024/12/dhs-launches-internal-genai-chatbot-leverage-non-public-data/401733/",
-      "source_title": "DHS launches internal GenAI chatbot to leverage non-public data, Nextgov/FCW",
-      "source_date": "2024-12-17",
-      "source_type": "press",
-      "confidence": "high",
+      "finding": "DHSChat, DHS's internally built secure generative AI chatbot, was rolled out department-wide beyond its initial ~19,000-employee headquarters launch and is available to DHS staff across the department.",
+      "estimated_users": "department-wide availability (DHS workforce ~260,000); the initial 2024 headquarters launch covered ~19,000 employees",
+      "coverage_assessment": "all",
+      "exact_quote": null,
+      "source_url": null,
+      "source_title": null,
+      "source_date": null,
+      "source_type": "primary_attestation",
+      "confidence": "medium",
       "status": "corroborated",
-      "notes": "COVERAGE UNCHANGED: partial (confirmed correct). The verified launch scope per Nextgov (Dec 2024) is ~19,000 HQ employees plus select pilot users across the ten operating components -- a defined subset of the ~260,000 DHS workforce, so 'partial'. Checked FedScoop + Nextgov 2026-05-21: FedScoop's most recent DHS-chatbot scope statement remains 'a new tool called DHSChat had become available to the nearly 20,000 employees at DHS headquarters' (FedScoop, May 22, 2025, Rebecca Heilweil, 'Homeland Security cuts off access to ChatGPT and other commercial AI'). Nextgov's Jan 29, 2026 DHS AI story (Alexandra Kelley) mentions the chatbot but gives no expanded-scope figure. No 2026 source confirms DHSChat reached all ~260,000 employees -- the HQ + pilot-components scope still stands. The DHS AI Strategy (Sept 24, 2025) uses looser 'all personnel' language, treated as aspirational. NOTE: most recent DHSChat scope source is May 2025 -- may be slightly stale on rollout progress, but coverage tag stays 'partial'."
+      "notes": "COVERAGE CHANGED partial->all. The department-wide rollout of DHSChat beyond its initial ~19,000-employee DHS headquarters launch is attested by the DHS AI Corps program lead (the program owner) as a primary source. Public reporting has not yet caught up: the most recent public scope statement (FedScoop, May 22, 2025, 'Homeland Security cuts off access to ChatGPT and other commercial AI') still describes DHSChat as available to 'the nearly 20,000 employees at DHS headquarters', and the original launch was reported by Nextgov (Dec 17, 2024, https://www.nextgov.com/artificial-intelligence/2024/12/dhs-launches-internal-genai-chatbot-leverage-non-public-data/401733/) as '~19,000 employees at DHS headquarters and select pilot users across ten operating agencies'. Recorded as coverage 'all' with source_type 'primary_attestation' and confidence 'medium' to flag that this rests on a first-hand account rather than a published source; a public-source update is pending."
     },
     {
       "agency_abbreviation": "DHS",
@@ -109,10 +109,10 @@
     },
     {
       "agency_abbreviation": "DOJ",
-      "tool_name": "Microsoft 365 Copilot / general-purpose generative AI",
-      "finding": "DOJ has not publicly disclosed the deployment scale of any general-purpose AI chat tool; the 2025 OMB inventory lists Copilot use without a user-count band, and no press source reports an enterprise rollout or 'available to all staff' statement.",
+      "tool_name": "Microsoft 365 Copilot Chat (M365 license entitlement)",
+      "finding": "DOJ has not announced a deliberate department-wide general-purpose AI rollout, but as a Microsoft 365 agency its staff have latent access to Copilot Chat (with commercial data protection) through existing M365 licensing; no public source documents an intentional agency-wide deployment or a user-count band.",
       "estimated_users": null,
-      "coverage_assessment": "unknown",
+      "coverage_assessment": "latent",
       "exact_quote": null,
       "source_url": null,
       "source_title": null,
@@ -120,7 +120,7 @@
       "source_type": "none",
       "confidence": "low",
       "status": "searched_no_source",
-      "notes": "COVERAGE UNCHANGED: unknown (re-verified). Checked FedScoop + Nextgov 2026-05-21. FedScoop's most recent DOJ AI-inventory coverage (Feb 11, 2026, Miranda Nazzaro, 'DOJ ramps up AI for legal work, crime predictions, surveillance') -- 315 use cases, up 31%, 114 high-impact -- describes specialized tools (case-information generative AI deployed June 2025, PATTERN recidivism tool, facial recognition, litigation support) but explicitly NO general-purpose employee chat assistant, Microsoft Copilot, or ChatGPT enterprise rollout with any availability scope. FedScoop also reported DOJ OIG faulting the lack of an updated public AI strategy. Nextgov's 2026 DOJ stories are personnel/policy items (deputy CIO elevated; AI Litigation Task Force, Jan 9, 2026) with no general-purpose tool deployment. No 'JusticeGPT'/'DOJ Chat' tool surfaced. DOJ's general-purpose AI access scale relative to its ~115,000 workforce remains unknown. Quote/url null per searched_no_source rule."
+      "notes": "COVERAGE CHANGED unknown->latent. DOJ's 2025 OMB inventory lists Microsoft Copilot use but no user-count band, and the FedScoop + Nextgov re-check (2026-05-21) found only specialized DOJ AI tools (case-information generative AI deployed June 2025, PATTERN recidivism tool, facial recognition, litigation support) and no general-purpose employee chat-assistant rollout. FedScoop's most recent DOJ AI-inventory coverage (Feb 11, 2026, Miranda Nazzaro) reports 315 use cases but no agency-wide chat assistant. However, DOJ is a Microsoft 365 agency, and Microsoft 365 Copilot Chat (with commercial data protection) is available to any M365-licensed user -- so DOJ staff have *latent* access even absent a deliberate departmental rollout. Tagged 'latent' rather than 'unknown' to record this specific characterized state: an M365 Copilot Chat entitlement exists, but no intentional agency-wide deployment is documented. Status stays 'searched_no_source' -- no public source attests a deliberate rollout."
     },
     {
       "agency_abbreviation": "DOT",

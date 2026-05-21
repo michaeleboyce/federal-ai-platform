@@ -42,10 +42,21 @@ from db import get_connection  # noqa: E402
 
 RESEARCH_DIR = _ROOT / "audit" / "research" / "ai_access"
 
+# `latent` — a general-purpose chat tool is technically reachable via the
+# agency's existing Microsoft 365 licensing (Copilot Chat with commercial
+# data protection) but no deliberate agency-wide rollout is documented.
 _VALID_STATUS = {"corroborated", "searched_no_source"}
-_VALID_COVERAGE = {"all", "most", "partial", "pilot", "unknown", "none"}
+_VALID_COVERAGE = {"all", "most", "partial", "pilot", "latent", "unknown", "none"}
 _VALID_CONFIDENCE = {"high", "medium", "low"}
-_VALID_SOURCE_TYPE = {"official", "press", "inventory_field", "none"}
+# `primary_attestation` — a first-hand account from a program owner that is
+# not (yet) reflected in public reporting.
+_VALID_SOURCE_TYPE = {
+    "official",
+    "press",
+    "inventory_field",
+    "primary_attestation",
+    "none",
+}
 
 
 def _load_files() -> list[dict]:
@@ -75,8 +86,10 @@ def _validate(finding: dict, src_file: str) -> list[str]:
     stype = finding.get("source_type")
     if stype is not None and stype not in _VALID_SOURCE_TYPE:
         errs.append(f"{src_file}: bad source_type {stype!r}")
-    # A corroborated row must carry a source URL + quote.
-    if st == "corroborated":
+    # A corroborated row must carry a source URL — unless it rests on a
+    # primary attestation (a program owner's first-hand account), which by
+    # definition has no public URL.
+    if st == "corroborated" and stype != "primary_attestation":
         if not finding.get("source_url"):
             errs.append(f"{src_file}: corroborated finding has no source_url")
     return errs
