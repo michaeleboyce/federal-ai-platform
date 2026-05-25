@@ -85,6 +85,11 @@ fix:
 	# Federal organizations hierarchy — schema, seed, backfill, sub-agency
 	# maturity. Each script is idempotent.
 	python3 scripts/run_migrations.py
+	# Load the federal AI policy/strategy tracker (CSVs at
+	# audit/research/ai_strategies/) into agency_ai_policy_{documents,
+	# compliance} (tables created by migration m012). Idempotent
+	# wipe-and-reload. Feeds the dashboard's /policy section.
+	python3 scripts/load_ai_policy_tracker.py
 	python3 scripts/seed_federal_hierarchy.py
 	python3 scripts/backfill_bureau_orgs.py
 	python3 compute_maturity.py
