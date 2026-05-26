@@ -57,6 +57,11 @@ fix:
 	# narrative fields). Idempotent. Without this in the pipeline, the
 	# manual links from commit 4bfbf5a get wiped on every rebuild.
 	python3 scripts/apply_product_gap_review.py
+	# Apply the 2026-05 generic-vendor-links retag (Microsoft/Google/Adobe/Amazon/
+	# Splunk/etc placeholder edges → specific catalog products, or downgrade to
+	# confidence='inferred' if the source named the vendor but not a product).
+	# See audit/retag/generic_vendor_links/. Idempotent; safe to re-run.
+	python3 scripts/apply_generic_vendor_retag.py
 	# May 2026 4-agent linkage pass (audit/linkage_pass_2026-05/integration/).
 	# Adds ~220 catalog rows, ~38 hierarchy edges, ~7 aliases, and ~220 hand-
 	# curated use_case→product links from the multi-agent labeling pass.

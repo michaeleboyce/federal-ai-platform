@@ -39,6 +39,62 @@ cp data/federal_ai_inventory_2025.db dashboard/data/federal_ai_inventory_2025.db
 cd dashboard && pytest tests/ -q && npm run build
 ```
 
+## Multi-agent safety: re-resolve IDs before EVERY write, commit, or push
+
+This workspace is often touched by multiple agents on the same branch in
+parallel. `products.id`, `use_cases.id`, and `consolidated_use_cases.id`
+are NOT stable across `make fix` runs or even across partial rebuilds
+(`load_inventories.py` does `DELETE … ; INSERT … AUTOINCREMENT`, so the
+sequence rotates). A foreground agent's prior `SELECT id WHERE
+canonical_name=…` reading may have become stale by the time it gets
+back to writing.
+
+**Hard rules — non-negotiable:**
+
+1. **Before any DB write** (UPDATE / INSERT / DELETE on `products`,
+   `use_cases`, `consolidated_use_cases`, `use_case_products`,
+   `consolidated_use_case_products`, `entry_product_edges`, etc.),
+   re-resolve every id in your working set immediately before the
+   write transaction, in the same connection. Treat any id you read
+   more than a few seconds ago as suspect. NEVER trust an id read
+   from a CSV, an LLM proposal, or a sibling agent's report — only
+   trust ids you just SELECTed by stable signature (canonical_name,
+   slug, `(agency_id, source_file, use_case_name)`, etc.).
+
+2. **Before any `git commit` or `git push`** that includes a DB or a
+   DB-derived artifact, re-run the relevant `pytest tests/ -q`
+   subset and a `sqlite3 …` sanity query for the entities you
+   touched. CSVs under `audit/retag/` that embed ids: verify a
+   representative sample still resolves before you commit them.
+
+3. **`use_case_products.confidence` / `consolidated_use_case_products.confidence`**
+   are `CHECK(confidence IN ('strong', 'inferred'))`. Any other
+   value silently violates the constraint and SQLite (without
+   `PRAGMA foreign_keys=ON`) will drop the row. If your CSV/agent
+   pipeline uses `high`/`medium`/`low` as a gating signal, translate
+   to `strong` / `inferred` AT THE WRITE BOUNDARY, never before.
+   See `scripts/apply_linkage_pass_2026_05.py` (post `400badb`) for
+   the reference pattern.
+
+4. **Stale-id resolution helpers** live in
+   `scripts/relink_stale_use_case_products.py`:
+   - `build_old_id_to_signature()` — read pre-rebuild ids → signature
+   - `build_signature_to_new_id(conn)` — read live DB ids by signature
+   - `scan_backup_signatures(needed)` — fall back to backups
+   Any apply script that consumes a CSV with ids in it MUST use these
+   or an equivalent re-resolution before writing.
+
+5. **If you discover a sibling agent has rebuilt the DB while you
+   were working** (telltale: a fresh `data/federal_ai_inventory_2025.db.backup-*`
+   file appeared, or `select max(id) from products` jumps by hundreds
+   from what you last saw), STOP, refresh your snapshot, and re-do any
+   id-bearing work. Do not assume your in-memory understanding is
+   still valid.
+
+The cost of an extra `SELECT … WHERE canonical_name=?` is microseconds.
+The cost of a silently-dangling FK row that survives a `make fix` and
+ships to the dashboard is hours of forensic work later.
+
 ## When NOT to touch this directory
 
 If the user asks for anything UI-shaped — a page change, a component, a route, a chart, a new section, a deploy fix — **`cd dashboard/` first**. Don't modify python files for those tasks.

@@ -1,0 +1,236 @@
+{
+  "validator_run_at": "2026-05-26T07:11:31.471003+00:00",
+  "db_mtime_at_validation": "2026-05-26T07:11:24.925203+00:00",
+  "db_path": "/Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/data/federal_ai_inventory_2025.db",
+  "merged_row_count": 268,
+  "placeholder_products": {
+    "Microsoft": {
+      "id_at_validation": 20575,
+      "edges_before": 141,
+      "edges_before_ucp": 135,
+      "edges_before_cucp": 6
+    },
+    "Google": {
+      "id_at_validation": 20576,
+      "edges_before": 55,
+      "edges_before_ucp": 51,
+      "edges_before_cucp": 4
+    },
+    "Amazon": {
+      "id_at_validation": 20577,
+      "edges_before": 15,
+      "edges_before_ucp": 13,
+      "edges_before_cucp": 2
+    },
+    "Adobe": {
+      "id_at_validation": 20571,
+      "edges_before": 18,
+      "edges_before_ucp": 10,
+      "edges_before_cucp": 8
+    },
+    "Splunk": {
+      "id_at_validation": 19835,
+      "edges_before": 12,
+      "edges_before_ucp": 5,
+      "edges_before_cucp": 7
+    },
+    "Thomson Reuters": {
+      "id_at_validation": 20570,
+      "edges_before": 11,
+      "edges_before_ucp": 11,
+      "edges_before_cucp": 0
+    },
+    "LexisNexis": {
+      "id_at_validation": 20139,
+      "edges_before": 8,
+      "edges_before_ucp": 7,
+      "edges_before_cucp": 1
+    },
+    "Veritone": {
+      "id_at_validation": 19950,
+      "edges_before": 5,
+      "edges_before_ucp": 5,
+      "edges_before_cucp": 0
+    },
+    "Cisco": {
+      "id_at_validation": 20573,
+      "edges_before": 3,
+      "edges_before_ucp": 3,
+      "edges_before_cucp": 0
+    },
+    "ServiceNow": {
+      "id_at_validation": 20572,
+      "edges_before": 0,
+      "edges_before_ucp": 0,
+      "edges_before_cucp": 0
+    },
+    "Salesforce": {
+      "id_at_validation": 20574,
+      "edges_before": 0,
+      "edges_before_ucp": 0,
+      "edges_before_cucp": 0
+    }
+  },
+  "expected_post_apply": {
+    "Microsoft": {
+      "strong_left_on_placeholder": 0,
+      "inferred_left_on_placeholder": 20,
+      "total_left_on_placeholder": 20,
+      "edges_removed_via_relink": 121
+    },
+    "Google": {
+      "strong_left_on_placeholder": 0,
+      "inferred_left_on_placeholder": 18,
+      "total_left_on_placeholder": 18,
+      "edges_removed_via_relink": 37
+    },
+    "Amazon": {
+      "strong_left_on_placeholder": 0,
+      "inferred_left_on_placeholder": 0,
+      "total_left_on_placeholder": 0,
+      "edges_removed_via_relink": 15
+    },
+    "Adobe": {
+      "strong_left_on_placeholder": 0,
+      "inferred_left_on_placeholder": 7,
+      "total_left_on_placeholder": 7,
+      "edges_removed_via_relink": 11
+    },
+    "Splunk": {
+      "strong_left_on_placeholder": 0,
+      "inferred_left_on_placeholder": 11,
+      "total_left_on_placeholder": 12,
+      "edges_removed_via_relink": 0
+    },
+    "Thomson Reuters": {
+      "strong_left_on_placeholder": 0,
+      "inferred_left_on_placeholder": 3,
+      "total_left_on_placeholder": 3,
+      "edges_removed_via_relink": 8
+    },
+    "LexisNexis": {
+      "strong_left_on_placeholder": 0,
+      "inferred_left_on_placeholder": 6,
+      "total_left_on_placeholder": 6,
+      "edges_removed_via_relink": 2
+    },
+    "Veritone": {
+      "strong_left_on_placeholder": 2,
+      "inferred_left_on_placeholder": 2,
+      "total_left_on_placeholder": 4,
+      "edges_removed_via_relink": 1
+    },
+    "Cisco": {
+      "strong_left_on_placeholder": 2,
+      "inferred_left_on_placeholder": 0,
+      "total_left_on_placeholder": 2,
+      "edges_removed_via_relink": 1
+    },
+    "ServiceNow": {
+      "strong_left_on_placeholder": 0,
+      "inferred_left_on_placeholder": 0,
+      "total_left_on_placeholder": 0,
+      "edges_removed_via_relink": 0
+    },
+    "Salesforce": {
+      "strong_left_on_placeholder": 0,
+      "inferred_left_on_placeholder": 0,
+      "total_left_on_placeholder": 0,
+      "edges_removed_via_relink": 0
+    }
+  },
+  "rows_to_apply_high_med": 263,
+  "rows_to_skip_low_confidence": 1,
+  "rows_blocked_validation_error": 0,
+  "validation_status_breakdown": {
+    "ok": 138,
+    "warning_pk_collision": 130
+  },
+  "spot_check_results": [
+    {
+      "use_case_id": "129630",
+      "agency": "DOJ",
+      "proposed": "Amazon Web Services",
+      "evidence_preview": "AWS/cloud.gov -  Network Routing",
+      "result": "pass"
+    },
+    {
+      "use_case_id": "129626",
+      "agency": "DOJ",
+      "proposed": "Microsoft Azure Platform",
+      "evidence_preview": "ding (LUIS) services which is developed using the Microsoft Azure Software As A ",
+      "result": "pass"
+    },
+    {
+      "use_case_id": "128722",
+      "agency": "DHS",
+      "proposed": "Azure OpenAI",
+      "evidence_preview": "Leverages Azure Commercial OpenAI within the FEMA system boundary, currently lev",
+      "result": "pass"
+    },
+    {
+      "use_case_id": "130640",
+      "agency": "HHS",
+      "proposed": "Azure OpenAI",
+      "evidence_preview": "Axle Informatics, Microsoft, OpenAI",
+      "result": "pass"
+    },
+    {
+      "use_case_id": "130117",
+      "agency": "FERC",
+      "proposed": "Microsoft Azure Platform",
+      "evidence_preview": "Microsoft Azure Commercial",
+      "result": "pass"
+    },
+    {
+      "use_case_id": "130113",
+      "agency": "FERC",
+      "proposed": "Microsoft Azure Platform",
+      "evidence_preview": "Microsoft Azure Commercial",
+      "result": "pass"
+    },
+    {
+      "use_case_id": "129735",
+      "agency": "DOJ",
+      "proposed": "Azure Speech",
+      "evidence_preview": "Speech to Text Managed Service - Voice Transcription to Text",
+      "result": "pass"
+    },
+    {
+      "use_case_id": "129178",
+      "agency": "DOE",
+      "proposed": "Azure OpenAI",
+      "evidence_preview": "neral purpose chatbot using government instances of popular Open AI models.",
+      "result": "pass"
+    },
+    {
+      "use_case_id": "129059",
+      "agency": "DOE",
+      "proposed": "Gemini",
+      "evidence_preview": "Google's Gemini familiy of models.",
+      "result": "pass"
+    },
+    {
+      "use_case_id": "129136",
+      "agency": "DOE",
+      "proposed": "Azure AI Document Intelligence",
+      "evidence_preview": "Azure Document Intelligence",
+      "result": "pass"
+    }
+  ],
+  "spot_check_pass_count": 10,
+  "verdict": "GO",
+  "pk_collisions": 130,
+  "pk_collision_policy": "DELETE placeholder edge instead of UPDATE/relink (the destination edge already exists)",
+  "use_case_id_resolution_strategy": "(agency_id, use_case_name) signature; agency mapped by abbreviation",
+  "notes": [
+    "IDs in slice_*.csv proposed_product_id columns are stale (DB rebuilt at 2026-05-26T00:27); trust proposed_product_name only.",
+    "live_use_case_id in by_row.csv was re-resolved by (agency_id, use_case_name) signature against the current DB.",
+    "Apply script MUST itself re-resolve current_product_id, proposed_product_id, use_case_id by name/signature at apply time, in case another rebuild happens between validation and apply.",
+    "DB confidence vocab is (strong, inferred): translate CSV high/medium relink \u2192 strong, delete_or_inferred \u2192 inferred.",
+    "Slice B encoded confidence as \"inferred\" (DB-vocab) for 18 delete_or_inferred rows; apply script should treat that as medium-equivalent gating (apply, do not skip).",
+    "For PK-collision rows (proposed product already has an edge from the use case), DELETE the placeholder edge instead of UPDATE.",
+    "4 keep_strong rows are no-ops \u2014 they leave the placeholder edge alone.",
+    "Validator did not have source_file in slice CSVs, so signature is (agency_id, use_case_name). All 268 resolved unambiguously against live DB."
+  ]
+}
