@@ -1,0 +1,112 @@
+{
+  "captured_by": "wave-0-priors",
+  "captured_at": "2026-05-26T03:00:19Z",
+  "method": "Median observed share-of-staff per coverage tier from estimated_users free-text in agency_ai_access_evidence. Only rows where an unambiguous (active/onboarded numerator, total-workforce denominator) pair could be extracted from the same evidence row were included. Rows describing availability-equals-workforce with no take-up figure, single-number rows, and rows where the denominator was a bureau/lab rather than agency total were skipped.",
+  "extractions": [
+    {
+      "agency": "DOT",
+      "tool": "chat.dot.gov (AI-CHAT)",
+      "coverage": "partial",
+      "numerator": 5000,
+      "denominator": 55000,
+      "share": 0.0909,
+      "quote": "5,000+ users (technology demonstrator; DOT workforce ~55,000)"
+    },
+    {
+      "agency": "DOT",
+      "tool": "Google Gemini",
+      "coverage": "most",
+      "numerator": 12500,
+      "denominator": 50000,
+      "share": 0.25,
+      "quote": "~12,500 DOT-proper employees live Feb 2026, FAA + remainder following (~50,000+ total workforce)"
+    },
+    {
+      "agency": "GSA",
+      "tool": "GSAi",
+      "coverage": "all",
+      "numerator": 6500,
+      "denominator": 13000,
+      "share": 0.5,
+      "quote": "all GSA staff (~13,000); GSA officials report nearly half use it daily"
+    },
+    {
+      "agency": "GSA",
+      "tool": "GSAi (March 2025 rollout stage)",
+      "coverage": "partial",
+      "numerator": 1500,
+      "denominator": 13000,
+      "share": 0.1154,
+      "quote": "1,500 (March 2025 expansion stage) of ~13,000 GSA staff"
+    },
+    {
+      "agency": "State",
+      "tool": "StateChat (adoption metrics)",
+      "coverage": "all",
+      "numerator": 58000,
+      "denominator": 75000,
+      "share": 0.7733,
+      "quote": "~58,000 users (Apr 2026); available to 75,000+ employees worldwide"
+    },
+    {
+      "agency": "VA",
+      "tool": "VA GPT",
+      "coverage": "all",
+      "numerator": 100000,
+      "denominator": 470000,
+      "share": 0.2128,
+      "quote": "available to every VA employee (~470,000); ~100,000 reported onboarded by late 2025"
+    },
+    {
+      "agency": "Treasury",
+      "tool": "ChatGPT Enterprise",
+      "coverage": "pilot",
+      "numerator": 150,
+      "denominator": 100000,
+      "share": 0.0015,
+      "quote": "150 licenses verified initially (Treasury workforce ~100,000, mostly IRS)"
+    }
+  ],
+  "priors": {
+    "all": {
+      "default": 0.5,
+      "n": 3,
+      "median": 0.5,
+      "min": 0.2128,
+      "max": 0.7733
+    },
+    "most": {
+      "default": 0.25,
+      "n": 1,
+      "median": 0.25,
+      "min": 0.25,
+      "max": 0.25
+    },
+    "partial": {
+      "default": 0.1032,
+      "n": 2,
+      "median": 0.1032,
+      "min": 0.0909,
+      "max": 0.1154
+    },
+    "pilot": {
+      "default": 0.0015,
+      "n": 1,
+      "median": 0.0015,
+      "min": 0.0015,
+      "max": 0.0015
+    },
+    "latent": {
+      "default": null,
+      "n": 0
+    },
+    "unknown": {
+      "default": null,
+      "n": 0
+    },
+    "none": {
+      "default": null,
+      "n": 0
+    }
+  }
+}

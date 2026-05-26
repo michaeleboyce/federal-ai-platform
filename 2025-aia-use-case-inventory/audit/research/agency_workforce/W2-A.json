@@ -1,0 +1,286 @@
+{
+  "captured_by": "W2-A",
+  "captured_at": "2026-05-25T00:00:00Z",
+  "updates": [
+    {
+      "evidence_id": 576,
+      "agency_abbreviation": "DHS",
+      "tool_name": "DHSChat",
+      "estimated_share_of_eligible": 0.29,
+      "share_rationale": "DHS: 19k initial HQ launch / 65k eligible (260k * 0.25) = 0.29; quote cites department-wide availability but only 19k onboarded so far",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 577,
+      "agency_abbreviation": "DHS",
+      "tool_name": "Commercial generative AI (ChatGPT, Claude, Copilot Chat) - pre-DHSChat program",
+      "estimated_share_of_eligible": 0.1032,
+      "share_rationale": "No specific take-up number ('thousands trained'); Wave-0 partial tier prior = 0.1032",
+      "matrix_product_key": null
+    },
+    {
+      "evidence_id": 569,
+      "agency_abbreviation": "DOC",
+      "tool_name": "General-purpose generative AI (USAi / Microsoft Copilot / Azure OpenAI)",
+      "estimated_share_of_eligible": 0.05,
+      "share_rationale": "Coverage=unknown, no quote; fallback unknown tier prior = 0.05",
+      "matrix_product_key": null
+    },
+    {
+      "evidence_id": 567,
+      "agency_abbreviation": "DOE",
+      "tool_name": "Joulix (DOE enterprise AI productivity suite)",
+      "estimated_share_of_eligible": 0.81,
+      "share_rationale": "DOE: 9.7k users / 12k eligible (16k * 0.75) = 0.81 (quote: '9,700+ users reported as of late 2025')",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 568,
+      "agency_abbreviation": "DOE",
+      "tool_name": "Claude for Enterprise (Lawrence Livermore National Laboratory)",
+      "estimated_share_of_eligible": 0.1032,
+      "share_rationale": "10k LLNL staff is a lab-scoped numerator, not DOE-wide; default to Wave-0 partial tier prior = 0.1032",
+      "matrix_product_key": "claude"
+    },
+    {
+      "evidence_id": 574,
+      "agency_abbreviation": "DOI",
+      "tool_name": "Department-wide generative AI platform (no confirmed agency-wide tool)",
+      "estimated_share_of_eligible": 0.1032,
+      "share_rationale": "No specific take-up number; Wave-0 partial tier prior = 0.1032",
+      "matrix_product_key": null
+    },
+    {
+      "evidence_id": 575,
+      "agency_abbreviation": "DOI",
+      "tool_name": "Microsoft Copilot / Copilot Chat, Synthesia (OMB inventory entry)",
+      "estimated_share_of_eligible": 0.1032,
+      "share_rationale": "OMB self-report of 50k+ is uncorroborated and exceeds plausible eligible workforce (24.5k); default to partial tier prior = 0.1032",
+      "matrix_product_key": "ms_copilot"
+    },
+    {
+      "evidence_id": 579,
+      "agency_abbreviation": "DOJ",
+      "tool_name": "Microsoft 365 Copilot Chat (M365 license entitlement)",
+      "estimated_share_of_eligible": 0.01,
+      "share_rationale": "Coverage=latent (license entitlement only, no active deployment); fallback latent tier prior = 0.01",
+      "matrix_product_key": "ms_copilot"
+    },
+    {
+      "evidence_id": 589,
+      "agency_abbreviation": "DOL",
+      "tool_name": "Generative AI Assistant / AI Center (OpenAI GPT-4o, GPT-4o mini via Azure)",
+      "estimated_share_of_eligible": 0.05,
+      "share_rationale": "Coverage=unknown, no take-up number; fallback unknown tier prior = 0.05",
+      "matrix_product_key": "chatgpt"
+    },
+    {
+      "evidence_id": 590,
+      "agency_abbreviation": "DOL",
+      "tool_name": "Microsoft 365 Copilot",
+      "estimated_share_of_eligible": 0.05,
+      "share_rationale": "Coverage=unknown, no take-up number; fallback unknown tier prior = 0.05",
+      "matrix_product_key": "ms_copilot"
+    },
+    {
+      "evidence_id": 580,
+      "agency_abbreviation": "DOT",
+      "tool_name": "chat.dot.gov (AI-CHAT)",
+      "estimated_share_of_eligible": 0.23,
+      "share_rationale": "DOT: 5k users / 22k eligible (55k * 0.40) = 0.23",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 581,
+      "agency_abbreviation": "DOT",
+      "tool_name": "Google Gemini (department-wide via Google Workspace migration)",
+      "estimated_share_of_eligible": 0.57,
+      "share_rationale": "DOT: 12.5k DOT-proper live / 22k eligible (55k * 0.40) = 0.57; FAA migration following",
+      "matrix_product_key": "gemini"
+    },
+    {
+      "evidence_id": 570,
+      "agency_abbreviation": "ED",
+      "tool_name": "GSA USAi / Azure OpenAI / AWS Bedrock (department-wide implementation per inventory)",
+      "estimated_share_of_eligible": 0.05,
+      "share_rationale": "Coverage=unknown, no take-up number; fallback unknown tier prior = 0.05",
+      "matrix_product_key": null
+    },
+    {
+      "evidence_id": 571,
+      "agency_abbreviation": "EPA",
+      "tool_name": "Secure GenAI chatbot (“govchat” / Azure OpenAI internal platform)",
+      "estimated_share_of_eligible": 0.1032,
+      "share_rationale": "No specific take-up number; Wave-0 partial tier prior = 0.1032",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 560,
+      "agency_abbreviation": "GSA",
+      "tool_name": "GSAi",
+      "estimated_share_of_eligible": 0.61,
+      "share_rationale": "GSA: ~6.5k daily users (nearly half of 13k staff) / 10.625k eligible (12.5k * 0.85) = 0.61",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 561,
+      "agency_abbreviation": "GSA",
+      "tool_name": "GSAi (March 2025 rollout stage)",
+      "estimated_share_of_eligible": 0.14,
+      "share_rationale": "GSA: 1.5k March 2025 cohort / 10.625k eligible (12.5k * 0.85) = 0.14",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 562,
+      "agency_abbreviation": "GSA",
+      "tool_name": "USAi.gov",
+      "estimated_share_of_eligible": 0.1032,
+      "share_rationale": "'Several thousand federal users' is cross-agency, not GSA-internal; default GSA-scoped partial tier prior = 0.1032",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 563,
+      "agency_abbreviation": "HHS",
+      "tool_name": "ChatGPT (OpenAI)",
+      "estimated_share_of_eligible": 0.5,
+      "share_rationale": "Coverage=all; Wave-0 'all' tier prior = 0.50 (no quoted take-up number)",
+      "matrix_product_key": "chatgpt"
+    },
+    {
+      "evidence_id": 564,
+      "agency_abbreviation": "HHS",
+      "tool_name": "ChIRP (NIH ChatGPT environment)",
+      "estimated_share_of_eligible": 0.1032,
+      "share_rationale": "NIH intramural community is a subset; default Wave-0 partial tier prior = 0.1032",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 586,
+      "agency_abbreviation": "HUD",
+      "tool_name": "Microsoft Copilot",
+      "estimated_share_of_eligible": 0.0015,
+      "share_rationale": "Coverage=pilot, OMB inventory band 1-100 users; Wave-0 pilot tier prior = 0.0015",
+      "matrix_product_key": "ms_copilot"
+    },
+    {
+      "evidence_id": 583,
+      "agency_abbreviation": "NASA",
+      "tool_name": "Microsoft 365 Copilot",
+      "estimated_share_of_eligible": 0.05,
+      "share_rationale": "Coverage=unknown, no take-up number; fallback unknown tier prior = 0.05",
+      "matrix_product_key": "ms_copilot"
+    },
+    {
+      "evidence_id": 584,
+      "agency_abbreviation": "NASA",
+      "tool_name": "ChatGSFC (Goddard-built LibreChat AI assistant)",
+      "estimated_share_of_eligible": 0.46,
+      "share_rationale": "NASA: 7k users across NASA / 15.3k eligible (18k * 0.85) = 0.46",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 585,
+      "agency_abbreviation": "NASA",
+      "tool_name": "Center-level Claude chatbots (Goddard pilot, Langley CUI chatbot / inventory name 'ALTIRA')",
+      "estimated_share_of_eligible": 0.0015,
+      "share_rationale": "Coverage=pilot, no take-up number; Wave-0 pilot tier prior = 0.0015",
+      "matrix_product_key": "claude"
+    },
+    {
+      "evidence_id": 588,
+      "agency_abbreviation": "NRC",
+      "tool_name": "SimplifAI (internal generative AI chatbot)",
+      "estimated_share_of_eligible": 0.05,
+      "share_rationale": "Coverage=unknown, no take-up number; fallback unknown tier prior = 0.05",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 587,
+      "agency_abbreviation": "NSF",
+      "tool_name": "Microsoft 365 Copilot (TIP pilot)",
+      "estimated_share_of_eligible": 0.0015,
+      "share_rationale": "Coverage=pilot, no take-up number; Wave-0 pilot tier prior = 0.0015",
+      "matrix_product_key": "ms_copilot"
+    },
+    {
+      "evidence_id": 565,
+      "agency_abbreviation": "OPM",
+      "tool_name": "Microsoft 365 Copilot Chat and OpenAI ChatGPT (GPT-5)",
+      "estimated_share_of_eligible": 1.0,
+      "share_rationale": "OPM: ~6k entire workforce / 4.76k eligible (5.6k * 0.85) > 1.0, capped at 1.0",
+      "matrix_product_key": "ms_copilot"
+    },
+    {
+      "evidence_id": 566,
+      "agency_abbreviation": "OPM",
+      "tool_name": "Anthropic Claude",
+      "estimated_share_of_eligible": 0.0,
+      "share_rationale": "Coverage=none (Claude removed from OPM use disclosure March 2026); 0.0",
+      "matrix_product_key": "claude"
+    },
+    {
+      "evidence_id": 591,
+      "agency_abbreviation": "SBA",
+      "tool_name": "Microsoft Copilot / Perplexity / Gemini / Grammarly",
+      "estimated_share_of_eligible": 0.0,
+      "share_rationale": "Coverage=none (paused for compliance review); 0.0",
+      "matrix_product_key": null
+    },
+    {
+      "evidence_id": 592,
+      "agency_abbreviation": "SSA",
+      "tool_name": "Agency Support Companion (ASC)",
+      "estimated_share_of_eligible": 0.5,
+      "share_rationale": "Coverage=all, no take-up count published; Wave-0 'all' tier prior = 0.50",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 572,
+      "agency_abbreviation": "State",
+      "tool_name": "StateChat",
+      "estimated_share_of_eligible": 0.95,
+      "share_rationale": "State: 47.5k cumulative users (midpoint of 45-50k Sept 2025) / 50.05k eligible (77k * 0.65) = 0.95",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 573,
+      "agency_abbreviation": "State",
+      "tool_name": "StateChat (adoption/usage metrics)",
+      "estimated_share_of_eligible": 1.0,
+      "share_rationale": "State: 58k users (Apr 2026) / 50.05k eligible (77k * 0.65) > 1.0, capped at 1.0",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 582,
+      "agency_abbreviation": "Treasury",
+      "tool_name": "ChatGPT Enterprise",
+      "estimated_share_of_eligible": 0.05,
+      "share_rationale": "Treasury: up to 3k licenses approved / 60k eligible (100k * 0.60) = 0.05 (uses upper reported figure)",
+      "matrix_product_key": "chatgpt"
+    },
+    {
+      "evidence_id": 578,
+      "agency_abbreviation": "USDA",
+      "tool_name": "Microsoft Copilot / OpenAI models / Grok (optional generative AI tools)",
+      "estimated_share_of_eligible": 0.1032,
+      "share_rationale": "No exact count disclosed; Wave-0 partial tier prior = 0.1032",
+      "matrix_product_key": null
+    },
+    {
+      "evidence_id": 558,
+      "agency_abbreviation": "VA",
+      "tool_name": "VA GPT",
+      "estimated_share_of_eligible": 0.69,
+      "share_rationale": "VA: ~100k onboarded by late 2025 / 144.6k eligible (482k * 0.30) = 0.69",
+      "matrix_product_key": "agency_built"
+    },
+    {
+      "evidence_id": 559,
+      "agency_abbreviation": "VA",
+      "tool_name": "Microsoft 365 Copilot Chat",
+      "estimated_share_of_eligible": 0.5,
+      "share_rationale": "Coverage=all (all VA staff have access); no take-up number; Wave-0 'all' tier prior = 0.50",
+      "matrix_product_key": "ms_copilot"
+    }
+  ]
+}
