@@ -31,7 +31,10 @@ DB_PATH = ROOT / "data" / "federal_ai_inventory_2025.db"
 DEFAULT_PASS_DIR = ROOT / "audit" / "linkage_pass_2026-05"
 CATALOG_CSV = ROOT / "data" / "expanded_product_catalog.csv"
 HIERARCHY_CSV = ROOT / "data" / "product_hierarchy_edges.csv"
-DROPS_CSV = ROOT / "audit" / "linkage_pass_2026-05" / "apply_drops.csv"
+def _drops_csv_for(pass_dir: Path) -> Path:
+    """Per-pass-dir apply_drops.csv so primary + followup don't clobber each
+    other when make fix runs the apply twice."""
+    return pass_dir / "apply_drops.csv"
 
 # Resolver helpers shipped with the Phase 1 relink script. We use them here
 # to re-map any stale `entry_id` integers (captured against an older DB
@@ -413,14 +416,13 @@ def apply_links(conn: sqlite3.Connection, apply: bool) -> tuple[int, int]:
 
 
 def _write_drops(rows: list[dict]) -> None:
-    """Append drop entries to audit/linkage_pass_2026-05/apply_drops.csv.
+    """Rewrite the per-pass-dir apply_drops.csv with this run's drops.
 
-    File is shared across primary + followup runs; the _pass_dir column
-    records which pass produced each drop. Header is written on first
-    create; subsequent runs append."""
-    if not rows:
-        return
-    DROPS_CSV.parent.mkdir(parents=True, exist_ok=True)
+    Truncate-and-rewrite (not append) so the file reflects only the most
+    recent apply. Per-pass-dir path keeps primary + followup independent;
+    make fix runs each once."""
+    drops_path = _drops_csv_for(INT.parent)
+    drops_path.parent.mkdir(parents=True, exist_ok=True)
     fields = [
         "_pass_dir",
         "_agent",
@@ -431,11 +433,9 @@ def _write_drops(rows: list[dict]) -> None:
         "confidence",
         "_drop_reason",
     ]
-    is_new = not DROPS_CSV.exists()
-    with DROPS_CSV.open("a", encoding="utf-8", newline="") as f:
+    with drops_path.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
-        if is_new:
-            w.writeheader()
+        w.writeheader()
         w.writerows(rows)
 
 
@@ -465,6 +465,12 @@ def main() -> int:
     print()
 
     conn = sqlite3.connect(DB_PATH)
+    # Phase 3: enforce declared FK constraints on this writer connection.
+    # With m015's CASCADE FKs in place, any INSERT that would dangle now
+    # raises IntegrityError instead of silently inserting. The Phase 2 patch
+    # below already resolves entry_ids at apply time, so this is a safety
+    # net for future codepaths rather than a load-bearing check today.
+    conn.execute("PRAGMA foreign_keys = ON")
     try:
         print("== 1. New products ==")
         apply_new_products(conn, args.apply)
