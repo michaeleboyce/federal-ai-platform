@@ -143,6 +143,30 @@ def main() -> int:
                 print(f"  - {e}")
             return 1
 
+        # Preserve the Wave-2 share/key columns (added by migration m013) across
+        # the DELETE + INSERT rebuild. Without this, every re-run of this
+        # script wipes the share-of-eligible + matrix_product_key data that the
+        # dashboard's headcount-derived seat estimate depends on.
+        # Match by (agency_abbreviation, tool_name) since that's the natural
+        # composite key — the surrogate `id` is regenerated on every rebuild.
+        preserved: dict[tuple[str, str], tuple] = {}
+        try:
+            for row in conn.execute(
+                """
+                SELECT agency_abbreviation, COALESCE(tool_name, ''),
+                       estimated_share_of_eligible, share_rationale,
+                       matrix_product_key
+                  FROM agency_ai_access_evidence
+                 WHERE estimated_share_of_eligible IS NOT NULL
+                    OR share_rationale IS NOT NULL
+                    OR matrix_product_key IS NOT NULL
+                """
+            ):
+                preserved[(row[0], row[1])] = (row[2], row[3], row[4])
+        except Exception:
+            # Column doesn't exist yet (pre-m013); fine to skip.
+            preserved = {}
+
         with conn:
             conn.execute("DELETE FROM agency_ai_access_evidence")
             conn.executemany(
@@ -156,6 +180,27 @@ def main() -> int:
                 """,
                 rows,
             )
+
+            # Restore preserved Wave-2 data onto matching rows.
+            restored = 0
+            for (abbr, tool), (share, rationale, key) in preserved.items():
+                cur = conn.execute(
+                    """
+                    UPDATE agency_ai_access_evidence
+                       SET estimated_share_of_eligible = ?,
+                           share_rationale             = ?,
+                           matrix_product_key          = ?
+                     WHERE agency_abbreviation = ?
+                       AND COALESCE(tool_name, '') = ?
+                    """,
+                    (share, rationale, key, abbr, tool),
+                )
+                restored += cur.rowcount
+            if preserved:
+                print(
+                    f"Preserved {restored} of {len(preserved)} Wave-2 column "
+                    f"rows across the rebuild."
+                )
 
         corroborated = sum(1 for r in rows if r[12] == "corroborated")
         gaps = sum(1 for r in rows if r[12] == "searched_no_source")
