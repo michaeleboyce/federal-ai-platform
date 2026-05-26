@@ -119,6 +119,15 @@ fix:
 	python3 scripts/apply_product_hierarchy_edges.py --apply
 	python3 scripts/promote_resolved_link_queue.py --apply
 	python3 scripts/apply_fedramp_link_decisions.py --apply
+	# auto_tag.py (line 41) sets use_cases.product_id pointing at whatever the
+	# tagger matched. Downstream merge_duplicate_products + cleanup_products
+	# may then delete those products, leaving stale refs. Clean any reverse-
+	# dangle and re-verify before snapshotting. SQLite doesn't enforce FKs
+	# without PRAGMA foreign_keys=ON, so this swept-up step prevents the bug
+	# class from re-introducing itself on every full rebuild. (Phase 3 will
+	# replace this with proper FK enforcement.)
+	python3 scripts/relink_stale_use_case_products.py fix-reverse
+	python3 scripts/relink_stale_use_case_products.py verify
 	python3 scripts/generate_db_snapshot.py
 	# OMB-vs-IFP discrepancy report (audit/omb_consolidated_diff_2025.md).
 	# Read by humans; complements the live /discrepancies dashboard page.

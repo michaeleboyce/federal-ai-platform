@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import csv
 import sqlite3
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -30,6 +31,18 @@ DB_PATH = ROOT / "data" / "federal_ai_inventory_2025.db"
 DEFAULT_PASS_DIR = ROOT / "audit" / "linkage_pass_2026-05"
 CATALOG_CSV = ROOT / "data" / "expanded_product_catalog.csv"
 HIERARCHY_CSV = ROOT / "data" / "product_hierarchy_edges.csv"
+DROPS_CSV = ROOT / "audit" / "linkage_pass_2026-05" / "apply_drops.csv"
+
+# Resolver helpers shipped with the Phase 1 relink script. We use them here
+# to re-map any stale `entry_id` integers (captured against an older DB
+# snapshot) to current `use_cases.id` / `consolidated_use_cases.id` values
+# before INSERT. Prevents the dangling-FK bug that Phase 1 just repaired.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from relink_stale_use_case_products import (  # noqa: E402
+    build_old_id_to_signature,
+    build_signature_to_new_id,
+    scan_backup_signatures,
+)
 
 # Populated in main(); module-level placeholders so the helper functions
 # below stay short. Callers MUST set _INT before invoking helpers.
@@ -243,8 +256,70 @@ def apply_aliases(conn: sqlite3.Connection, apply: bool) -> int:
     return applied
 
 
+def _build_link_resolver(
+    conn: sqlite3.Connection, all_links: list[dict[str, str]]
+) -> tuple[dict[int, tuple[str, str]], dict[tuple[str, str], int]]:
+    """Build the (old_id → signature) and (signature → current_id) maps used
+    to re-map stale entry_ids before INSERT. Includes a backup-scan fallback
+    for ids generated against older DB snapshots that aren't represented in
+    the current slice CSVs (which were re-keyed during the same rebuilds
+    that produced the dangling links Phase 1 just repaired)."""
+    old_to_sig = build_old_id_to_signature()
+    sig_to_new = build_signature_to_new_id(conn)
+    needed: set[int] = set()
+    for r in all_links:
+        eid = (r.get("entry_id") or "").strip()
+        if eid.isdigit():
+            old_id = int(eid)
+            if old_id not in old_to_sig:
+                needed.add(old_id)
+    if needed:
+        print(f"  links: scanning backups for {len(needed)} stale entry_ids…")
+        recovered = scan_backup_signatures(needed)
+        old_to_sig.update(recovered)
+        print(f"  links: recovered {len(recovered)} via backups")
+    return old_to_sig, sig_to_new
+
+
+def _resolve_for_insert(
+    raw_id: str,
+    declared_kind: str,
+    old_to_sig: dict[int, tuple[str, str]],
+    sig_to_new: dict[tuple[str, str], int],
+) -> tuple[int | None, str, str | None]:
+    """Resolve an entry_id from a proposal CSV to a CURRENT id.
+
+    Returns (new_id, effective_kind, drop_reason). On success drop_reason is
+    None. If the only signature match is in the OPPOSITE table, returns
+    effective_kind set to the cross-table value so the INSERT routes correctly
+    (this is the 7-row class of misrouted links Phase 1 caught and moved)."""
+    if not raw_id.isdigit():
+        return None, declared_kind, "non-integer entry_id"
+    old_id = int(raw_id)
+    sig = old_to_sig.get(old_id)
+    if sig is None:
+        return None, declared_kind, f"no signature for old_id={old_id} (not in inputs or backups)"
+    expected_prefix = "__uc__" if declared_kind == "use_case" else "__c__"
+    if sig[0].startswith(expected_prefix):
+        new_id = sig_to_new.get(sig)
+        if new_id is None:
+            return None, declared_kind, f"signature {sig} not in current DB"
+        return new_id, declared_kind, None
+    # Cross-table fallback
+    alt_kind = "consolidated" if declared_kind == "use_case" else "use_case"
+    new_id = sig_to_new.get(sig)
+    if new_id is None:
+        return None, declared_kind, f"signature {sig} not in current DB (cross-table check also failed)"
+    return new_id, alt_kind, None
+
+
 def apply_links(conn: sqlite3.Connection, apply: bool) -> tuple[int, int]:
-    """Insert into use_case_products or consolidated_use_case_products."""
+    """Insert into use_case_products or consolidated_use_case_products.
+
+    `entry_id` integers in the proposal CSVs were captured against an older
+    DB snapshot. Before each INSERT we resolve via (agency, name) signature
+    to the CURRENT id; otherwise the row would dangle silently. Unresolvable
+    rows are logged to apply_drops.csv instead of being inserted."""
     proposals = _read(INT / "proposed_links.csv")
 
     # Also pull linking_use_case_ids / linking_consolidated_ids from new
@@ -274,45 +349,94 @@ def apply_links(conn: sqlite3.Connection, apply: bool) -> tuple[int, int]:
     all_links = proposals + new_product_links
     inserted_uc = 0
     inserted_c = 0
+    cross_routed = 0
+    dropped: list[dict] = []
     if apply:
+        old_to_sig, sig_to_new = _build_link_resolver(conn, all_links)
         cur = conn.cursor()
         for r in all_links:
             kind = (r.get("entry_kind") or "").strip()
             eid = (r.get("entry_id") or "").strip()
             name = _norm(r.get("canonical_name"))
             if not (kind and eid and name and eid.isdigit()):
+                dropped.append({**r, "_drop_reason": "missing kind/eid/name or non-numeric eid", "_pass_dir": INT.parent.name})
                 continue
             pid_row = cur.execute(
                 "SELECT id FROM products WHERE LOWER(canonical_name) = LOWER(?)",
                 (name,),
             ).fetchone()
             if not pid_row:
+                dropped.append({**r, "_drop_reason": f"product '{name}' not in catalog", "_pass_dir": INT.parent.name})
                 continue
+            new_id, effective_kind, reason = _resolve_for_insert(
+                eid, kind, old_to_sig, sig_to_new
+            )
+            if new_id is None:
+                dropped.append({**r, "_drop_reason": reason, "_pass_dir": INT.parent.name})
+                continue
+            if effective_kind != kind:
+                cross_routed += 1
             evidence = (r.get("evidence_quote") or "")[:500]
-            conf = r.get("confidence") or "strong"
-            if kind == "use_case":
+            # The DB has CHECK(confidence IN ('strong', 'inferred')) — the
+            # agent vocabulary is high/medium/low, so we collapse: high → strong,
+            # everything else → inferred. The old code passed the raw agent
+            # value, which silently failed the CHECK and dropped ~108 link
+            # proposals across both passes.
+            raw_conf = (r.get("confidence") or "").strip().lower()
+            conf = "strong" if raw_conf in ("strong", "high") else "inferred"
+            if effective_kind == "use_case":
                 cur.execute(
                     """INSERT OR IGNORE INTO use_case_products
                        (use_case_id, product_id, evidence_text, confidence)
                        VALUES (?, ?, ?, ?)""",
-                    (int(eid), pid_row[0], evidence, conf),
+                    (new_id, pid_row[0], evidence, conf),
                 )
                 inserted_uc += cur.rowcount
-            elif kind == "consolidated":
+            elif effective_kind == "consolidated":
                 cur.execute(
                     """INSERT OR IGNORE INTO consolidated_use_case_products
                        (consolidated_use_case_id, product_id, evidence_text, confidence)
                        VALUES (?, ?, ?, ?)""",
-                    (int(eid), pid_row[0], evidence, conf),
+                    (new_id, pid_row[0], evidence, conf),
                 )
                 inserted_c += cur.rowcount
         conn.commit()
+        _write_drops(dropped)
     uc_count = sum(1 for r in all_links if r.get("entry_kind") == "use_case")
     c_count = sum(1 for r in all_links if r.get("entry_kind") == "consolidated")
     uc_display = inserted_uc if apply else f"{uc_count} (dry)"
     c_display = inserted_c if apply else f"{c_count} (dry)"
-    print(f"  links: use_case={uc_display} consolidated={c_display}")
+    cross_display = f" cross-routed={cross_routed}" if cross_routed else ""
+    drop_display = f" dropped={len(dropped)}" if dropped else ""
+    print(f"  links: use_case={uc_display} consolidated={c_display}{cross_display}{drop_display}")
     return (inserted_uc, inserted_c)
+
+
+def _write_drops(rows: list[dict]) -> None:
+    """Append drop entries to audit/linkage_pass_2026-05/apply_drops.csv.
+
+    File is shared across primary + followup runs; the _pass_dir column
+    records which pass produced each drop. Header is written on first
+    create; subsequent runs append."""
+    if not rows:
+        return
+    DROPS_CSV.parent.mkdir(parents=True, exist_ok=True)
+    fields = [
+        "_pass_dir",
+        "_agent",
+        "entry_kind",
+        "entry_id",
+        "canonical_name",
+        "evidence_quote",
+        "confidence",
+        "_drop_reason",
+    ]
+    is_new = not DROPS_CSV.exists()
+    with DROPS_CSV.open("a", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
+        if is_new:
+            w.writeheader()
+        w.writerows(rows)
 
 
 def main() -> int:
