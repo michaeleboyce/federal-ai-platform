@@ -1,0 +1,212 @@
+use_case_id_2024,tagged_by_agent,confidence,reasoning,entry_type,is_generative_ai,ai_sophistication,deployment_scope,scope_detail,is_enterprise_wide,is_general_llm_access,is_coding_tool,is_cots_commercial,tool_product_name,tool_vendor,is_microsoft_copilot,is_openai,is_anthropic,is_google,is_github_copilot,is_aws_ai,architecture_type,use_type,is_public_facing
+34836,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,classical_ml,bureau,CMS,0,,,1,,,,,,,,,unknown,administrative,
+34837,wave3-P2,high,"tagging_error_2024 — adopted proposed correction for entry_type,is_generative_ai,ai_sophistication,deployment_scope,is_general_llm_access,is_coding_tool",custom_system,1,agentic,bureau,CMS,0,0,0,1,,,,,,,,,unknown,administrative,
+34838,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,classical_ml,bureau,CMS,0,,,1,,,,,,,,,unknown,mission_critical,
+34841,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,CMS,0,,,,,,,,,,,,inference_only,mission_critical,
+34843,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,CMS,0,,,,,,,,,,,,inference_only,administrative,
+34844,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,pilot,CMS,0,,,,,,,,,,,,unknown,mission_critical,
+34847,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,CMS,0,,,,AWS Bedrock,AWS,,,,,,1,inference_only,mission_critical,
+34848,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,agentic,pilot,CMS,0,,,,,,,,,,,,rag_pipeline,mission_critical,
+34851,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,pilot,CMS,0,,,,,,,,,,,,unknown,administrative,
+34854,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,CMS,0,,,,AWS Bedrock,AWS,,,,,,1,inference_only,administrative,
+34856,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,bureau,CMS,0,,,1,,,,,,,,,unknown,administrative,
+34857,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",bespoke_application,0,classical_ml,bureau,CMS,0,,,1,,,,,,,,,inference_only,administrative,
+34858,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,office,CMS,0,,,1,,,,,,,,,unknown,administrative,
+34859,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,agentic,bureau,CMS,0,,,1,,,,,,,,,inference_only,mission_critical,
+34860,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,CMS,0,,,1,AWS Bedrock,AWS,,,,,,1,inference_only,administrative,
+34861,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,0,nlp_specific,bureau,CMS,0,,,,,,,,,,,,custom_trained,mission_critical,
+34862,wave3-P2,medium,misclassified_lifecycle — kept Wave 1 (no clean dev_stage signal),generic_use_pattern,1,general_llm,enterprise_wide,CMS,1,,,,,,,,,,,,inference_only,administrative,
+34863,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,predictive_analytics,bureau,CMS,0,,,1,,,,,,,,,unknown,administrative,
+34865,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,classical_ml,pilot,CMS,0,,,1,,,,,,,,,unknown,administrative,
+34866,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,computer_vision,bureau,CMS,0,,,1,,,,,,,,,unknown,administrative,
+34867,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_deployment,0,nlp_specific,bureau,CMS,0,,,1,,,,,,,,,unknown,administrative,
+34883,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,DAB,0,,,0,,,,,,,,,inference_only,administrative,
+34884,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,DAB,0,,,0,,,,,,,,,inference_only,administrative,
+34885,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,DAB,0,,,0,,,,,,,,,custom_trained,administrative,
+34886,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",bespoke_application,0,classical_ml,bureau,FDA,0,,,,,,,,,,,,custom_trained,administrative,
+34887,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",bespoke_application,1,general_llm,bureau,FDA,0,,,0,,,,,,,,,inference_only,administrative,
+34888,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,FDA,0,,,0,,,,,,,,,inference_only,administrative,
+34889,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,nlp_specific,bureau,FDA,0,,,1,,,,,,,,,unknown,mission_critical,
+34890,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,bureau,FDA,0,,,1,,,,,,,,,unknown,administrative,
+34891,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_deployment,0,nlp_specific,bureau,FDA,0,,,1,,,,,,,,,unknown,mission_critical,
+34892,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",custom_system,0,classical_ml,bureau,FDA,0,,,0,,,,,,,,,custom_trained,administrative,
+34893,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,FDA,0,,,0,,,,,,,,,inference_only,administrative,
+34894,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,FDA,0,,,0,,,,,,,,,custom_trained,administrative,
+34895,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,nlp_specific,bureau,FDA,0,,,1,,,,,,,,,unknown,administrative,
+34896,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,0,classical_ml,bureau,FDA,0,,,,,,,,,,,,custom_trained,administrative,
+34897,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",bespoke_application,0,classical_ml,bureau,FDA,0,,,,,,,,,,,,custom_trained,administrative,
+34898,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,nlp_specific,bureau,FDA,0,,,1,,,,,,,,,unknown,administrative,
+34900,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",bespoke_application,0,classical_ml,bureau,FDA,0,,,,,,,,,,,,custom_trained,administrative,
+34902,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_deployment,0,nlp_specific,bureau,FDA,0,,,1,,,,,,,,,unknown,administrative,
+34903,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,FDA,0,,,0,,,,,,,,,inference_only,mission_critical,
+34904,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,bureau,FDA,0,,,1,,,,,,,,,unknown,mission_critical,
+34905,wave3-P2,high,"tagging_error_2024 — adopted proposed correction for entry_type,is_generative_ai,ai_sophistication,deployment_scope,is_general_llm_access,is_coding_tool",bespoke_application,0,general_llm,bureau,FDA,0,1,0,,,,,,,,,,custom_trained,administrative,
+34907,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,0,classical_ml,bureau,FDA,0,,,,,,,,,,,,custom_trained,administrative,
+34908,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,FDA,0,,,0,,,,,,,,,custom_trained,administrative,
+34909,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,0,classical_ml,bureau,FDA,0,,,,,,,,,,,,custom_trained,administrative,
+34910,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,0,classical_ml,bureau,FDA,0,,,,,,,,,,,,custom_trained,administrative,
+34911,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,0,predictive_analytics,bureau,FDA,0,,,,,,,,,,,,custom_trained,administrative,
+34912,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_deployment,0,predictive_analytics,bureau,FDA,0,,,1,,,,,,,,,unknown,mission_critical,
+34913,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,HRSA,0,,,,,,,,,,,,rag_pipeline,administrative,
+34914,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,HRSA,0,,,,,,,,,,,,inference_only,mission_critical,
+34915,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,HRSA,0,,,,,,,,,,,,inference_only,administrative,
+34916,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,pilot,HRSA,0,,,,,,,,,,,,unknown,mission_critical,
+34917,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,HRSA,0,,,,,,,,,,,,inference_only,mission_critical,
+34918,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,pilot,HRSA,0,,,,,,,,,,,,unknown,mission_critical,
+34920,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,predictive_analytics,pilot,NIH,0,,,,,,,,,,,,unknown,mission_critical,
+34925,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,NIH,0,,,,,,,,,,,,inference_only,mission_critical,
+34926,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34927,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",custom_system,0,classical_ml,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34928,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,NIH,0,,,,,,,,,,,,unknown,mission_critical,
+34929,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,predictive_analytics,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34930,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,predictive_analytics,bureau,NIH,0,,,,,,,,,,,,unknown,mission_critical,
+34931,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34932,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34933,wave3-P2,high,internal_inconsistency — adopted 2025 reading on the inconsistent fields; misclassified_lifecycle — silently-dropped deployed system (retired_2024 + Operation/Maintenance); marked mission_critical,product_deployment,0,nlp_specific,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34935,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34937,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34938,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,predictive_analytics,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,1
+34939,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,NIH,0,,,,,,,,,,,,rag_pipeline,mission_critical,
+34942,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,NIH,0,,,0,,,,,,,,,inference_only,mission_critical,1
+34943,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,nlp_specific,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34944,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34945,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,nlp_specific,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34948,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,pilot,NIH,0,,,1,,,,,,,,,unknown,mission_critical,0
+34950,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34951,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,NIH,0,,,1,,,,,,,,,inference_only,mission_critical,
+34952,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34953,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,NIH,0,,,,AWS Bedrock,AWS,,,,,,1,inference_only,mission_critical,
+34954,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,nlp_specific,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34957,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,pilot,NIH,0,,,1,,,,,,,,,unknown,mission_critical,1
+34958,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_deployment,0,nlp_specific,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34960,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34963,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,NIH,0,,,,,,,,,,,,inference_only,mission_critical,
+34964,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,pilot,NIH,0,,,,,,,,,,,,unknown,mission_critical,
+34965,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34966,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,nlp_specific,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34967,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,pilot,NIH,0,,,,,,,,,,,,unknown,it_operations,
+34968,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34969,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34970,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,NIH,0,,,1,,,,,,,,,inference_only,it_operations,
+34971,wave3-P2,high,drift_legitimate — kept 2024 tag as filed; tagging_error_2025 — kept Wave 1 (2025 fix is out of scope),bespoke_application,1,general_llm,bureau,NIH,0,,,1,,,,,,,,,inference_only,mission_critical,
+34972,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,1,general_llm,bureau,NIH,0,,,0,Azure OpenAI,Microsoft/OpenAI,,1,,,,,inference_only,mission_critical,
+34974,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,1,general_llm,pilot,NIH,0,1,,1,Microsoft Copilot,Microsoft,1,1,,,,,inference_only,mission_critical,
+34975,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,predictive_analytics,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34978,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34979,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,NIH,0,,,,,,,,,,,,rag_pipeline,mission_critical,1
+34980,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,NIH,0,,,,,,,,,,,,rag_pipeline,mission_critical,1
+34981,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34982,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,NIH,0,,,,,,,,,,,,inference_only,mission_critical,
+34983,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,predictive_analytics,pilot,NIH,0,,,,,,,,,,,,unknown,mission_critical,
+34984,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,NIH,0,,,,,,,,,,,,unknown,mission_critical,
+34986,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,NIH,0,,,,,,,,,,,,inference_only,mission_critical,
+34987,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,bureau,NIH,0,,,0,,,,,,,,,inference_only,mission_critical,
+34988,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,predictive_analytics,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34989,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34991,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,nlp_specific,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34992,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34993,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34994,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,predictive_analytics,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34995,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,classical_ml,bureau,NIH,0,,,1,,,,,,,,,unknown,mission_critical,
+34997,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34998,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,NIH,0,,,0,,,,,,,,,custom_trained,mission_critical,
+34999,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,office,NIH,0,,,,,,,,,,,,unknown,mission_critical,
+35000,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,predictive_analytics,bureau,NIH,0,,,,,,,,,,,,unknown,mission_critical,
+35004,wave3-P2,high,misclassified_lifecycle — silently-dropped deployed system (retired_2024 + Operation/Maintenance); marked mission_critical,bespoke_application,1,general_llm,bureau,OASH,0,,,0,,,,,,,,,inference_only,administrative,
+35006,wave3-P2,high,drift_legitimate — kept 2024 tag as filed; tagging_error_2025 — kept Wave 1 (2025 fix is out of scope),bespoke_application,1,general_llm,pilot,SAMHSA,0,,,,,,,,,,,,inference_only,mission_critical,
+35007,wave3-P2,high,drift_legitimate — kept 2024 tag as filed; tagging_error_2025 — kept Wave 1 (2025 fix is out of scope),bespoke_application,1,general_llm,pilot,SAMHSA,0,,,,,,,,,,,,inference_only,administrative,1
+35008,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,SAMHSA,0,,,,,,,,,,,,inference_only,administrative,
+35009,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,SAMHSA,0,,,,,,,,,,,,inference_only,mission_critical,
+35012,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",bespoke_application,0,nlp_specific,bureau,Ginnie Mae,0,,,,,,,,,,,,custom_trained,mission_critical,
+35013,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,office,OCFO Customer Experience,0,,,,,,,,,,,,unknown,administrative,
+35015,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_deployment,0,nlp_specific,enterprise_wide,OPA,1,,,1,Google Translate,Google,,,,1,,,inference_only,mission_critical,1
+35018,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,computer_vision,bureau,JPL,0,,,,,,,,,,,,custom_trained,research,
+35020,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",custom_system,0,agentic,bureau,JPL,0,,,,,,,,,,,,custom_trained,research,
+35021,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,agentic,bureau,JPL,0,,,,,,,,,,,,custom_trained,research,
+35022,wave3-P2,high,"tagging_error_2024 — adopted proposed correction for entry_type,is_generative_ai,ai_sophistication,deployment_scope,is_general_llm_access,is_coding_tool,tool_product_name,tool_vendor; drift_legitimate — kept 2024 tag as filed",custom_system,1,agentic,bureau,JPL,0,0,0,,Aretec SEARCH,Aretec,,,,,,,custom_trained,research,
+35023,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",custom_system,0,agentic,bureau,JPL,0,,,,,,,,,,,,custom_trained,research,
+35028,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,computer_vision,office,Langley Badge & Pass Office,0,,,,,,,,,,,,inference_only,administrative,
+35030,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,computer_vision,bureau,JPL,0,,,,,,,,,,,,custom_trained,research,
+35034,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_deployment,1,general_llm,enterprise_wide,OCIO,1,,,1,Now Assist,ServiceNow,,,,,,,inference_only,it_operations,
+35037,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,1,general_llm,office,OLPA,0,,,1,Photoshop,Adobe,,,,,,,inference_only,administrative,
+35039,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,1,coding_assistant,pilot,OCIO,0,,1,1,CodeWhisperer / Amazon Q,AWS,,,,,,1,inference_only,it_operations,
+35040,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,1,general_llm,office,TIP-ITE-ENGINES,0,,,1,Airtable AI,Airtable,,1,,,,,inference_only,administrative,
+35041,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,1,general_llm,office,TIP-ITE-ENGINES,0,,,1,Airtable AI,Airtable,,1,,,,,inference_only,administrative,
+35043,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,1,general_llm,pilot,SBE/NCSES,0,,,,,,,,,,,,rag_pipeline,mission_critical,1
+35044,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,generic_use_pattern,1,general_llm,pilot,OD/OGC,0,,,,,,,,,,,,unknown,administrative,
+35047,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,office,OD/OIA,0,,,,,,,,,,,,custom_trained,research,
+35050,wave3-P2,high,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading; tagging_error_2025 — kept Wave 1 (2025 fix is out of scope)",custom_system,0,classical_ml,bureau,HRS/HRSES,0,,,,,,,,,,,,unknown,administrative,
+35051,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_deployment,1,general_llm,enterprise_wide,OCIO/CTO,1,1,,1,Microsoft 365 Copilot,Microsoft,1,,,,,,inference_only,administrative,
+35065,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",custom_system,0,nlp_specific,bureau,SSA 800#,,,,0,,,,,,,,,rag_pipeline,mission_critical,1
+35070,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",custom_system,1,general_llm,bureau,SSA ORDP,,,,0,,,,,,,,,custom_trained,research,1
+35072,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",bespoke_application,1,general_llm,enterprise_wide,SSA agency-wide ASC,1,1,,0,,,,,,,,,rag_pipeline,administrative,0
+35074,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,0,classical_ml,bureau,SSA OCIO DGP,,,,1,,,,,,,,,inference_only,it_operations,0
+35078,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,generic_use_pattern,0,nlp_specific,office,STATE A/PRI/LS,,,,1,,,,,,,,,inference_only,administrative,0
+35080,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",bespoke_application,0,general_llm,office,STATE BP/RPBI,,,,0,,,,,,,,,unknown,administrative,0
+35081,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",generic_use_pattern,1,general_llm,office,STATE CA/CST,,,,1,,,,,,,,,inference_only,administrative,1
+35082,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,classical_ml,bureau,STATE CA/CST platform,,,,1,,Microsoft,,,,,,,unknown,it_operations,0
+35086,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,classical_ml,bureau,STATE CA/CST,,,,1,,,,,,,,,unknown,mission_critical,1
+35087,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,0,nlp_specific,bureau,STATE CA/CST TSG,,,,0,,,,,,,,,rag_pipeline,mission_critical,1
+35088,wave3-P2,high,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading; tagging_error_2025 — kept Wave 1 (2025 fix is out of scope)",custom_system,0,classical_ml,bureau,STATE CA/CST CodeGen,,,1,0,,,,,,,,,unknown,it_operations,0
+35100,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",bespoke_application,1,general_llm,office,STATE FSI EdTech,,,,1,,,,,,,,,agentic_workflow,administrative,0
+35102,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",generic_use_pattern,1,general_llm,office,STATE FSI,,,,1,,,,,,,,,inference_only,administrative,0
+35104,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,classical_ml,office,STATE J,,,,0,,,,,,,,,unknown,mission_critical,0
+35105,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",bespoke_application,1,general_llm,office,STATE J/TIP,,,,0,,,,,,,,,inference_only,mission_critical,0
+35107,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",bespoke_application,1,general_llm,enterprise_wide,STATE enterprise StateChat,1,1,,0,,,,,,,,,inference_only,administrative,0
+35110,wave3-P2,high,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading; tagging_error_2025 — kept Wave 1 (2025 fix is out of scope)",custom_system,0,classical_ml,office,STATE R/ECA/EX/IT,,1,,1,,,,,,,,,unknown,administrative,0
+35122,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",custom_system,0,nlp_specific,office,STATE R/GPA/RA DMAP,,,,0,,,,,,,,,inference_only,research,0
+35153,wave3-P2,medium,misclassified_lifecycle — kept Wave 1 (no clean dev_stage signal),product_deployment,0,computer_vision,enterprise_wide,Internal Revenue Service,1,0,0,1,Microsoft 365 Copilot,Microsoft,1,0,0,0,0,0,inference_only,mission_critical,0
+35155,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,bureau,Internal Revenue Service,0,0,0,1,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35157,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,1,general_llm,pilot,Internal Revenue Service,0,0,0,1,Gemini,Google,0,0,0,1,0,0,rag_pipeline,mission_critical,1
+35161,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",product_deployment,0,classical_ml,bureau,Internal Revenue Service,0,0,0,1,,,0,0,0,0,0,0,unknown,mission_critical,0
+35164,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,bureau,Internal Revenue Service,0,0,0,,,,0,0,0,0,0,0,inference_only,mission_critical,0
+35166,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,1,general_llm,bureau,Internal Revenue Service,0,0,0,,,,0,0,0,0,0,0,inference_only,mission_critical,0
+35170,wave3-P2,medium,misclassified_lifecycle — kept Wave 1 (no clean dev_stage signal),product_deployment,1,general_llm,enterprise_wide,Internal Revenue Service,1,0,0,1,Microsoft 365 Copilot,Microsoft,1,0,0,0,0,0,inference_only,mission_critical,0
+35171,wave3-P2,medium,misclassified_lifecycle — kept Wave 1 (no clean dev_stage signal),product_deployment,1,general_llm,enterprise_wide,Internal Revenue Service,1,0,0,1,Microsoft 365 Copilot,Microsoft,1,0,0,0,0,0,inference_only,mission_critical,0
+35172,wave3-P2,medium,misclassified_lifecycle — kept Wave 1 (no clean dev_stage signal),product_deployment,1,general_llm,enterprise_wide,Internal Revenue Service,1,0,0,1,Microsoft 365 Copilot,Microsoft,1,0,0,0,0,0,inference_only,mission_critical,0
+35244,wave3-P2,high,misclassified_lifecycle — silently-dropped deployed system (retired_2024 + Operation/Maintenance); marked mission_critical,custom_system,0,computer_vision,bureau,USAID/Moldova,0,,,0,,,,,,,,,custom_trained,mission_critical,0
+35317,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,predictive_analytics,bureau,ARS: Agricultural Research Service,0,,,0,,,,,,,,,custom_trained,administrative,0
+35351,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,FNS: Food and Nutrition Service,0,,,0,,,,,,,,,custom_trained,mission_critical,0
+35357,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",custom_system,0,nlp_specific,bureau,APHIS: Animal and Plant Health Inspection Service; AMS: Agricultural Marketing Service,0,,,0,,,,,,,,,custom_trained,mission_critical,0
+35361,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",custom_system,0,predictive_analytics,bureau,ERS: Economic Research Service,0,,,0,,,,,,,,,unknown,research,0
+35368,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,predictive_analytics,pilot,OCIO: Office of the Chief Information Officer,0,,,0,,,,,,,,,custom_trained,it_operations,0
+35370,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,general_llm,bureau,ARS: Agricultural Research Service,0,,,0,,,,,,,,,unknown,administrative,0
+35380,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,1,general_llm,bureau,NASS: National Agricultural Statistics Service,0,,,0,,,,,,,,,inference_only,mission_critical,0
+35382,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,FS: Forest Service,0,,,0,,,,,,,,,custom_trained,administrative,0
+35384,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,classical_ml,bureau,FS: Forest Service,0,,,0,,,,,,,,,unknown,mission_critical,0
+35385,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,classical_ml,bureau,FS: Forest Service,0,,,0,,,,,,,,,unknown,mission_critical,0
+35401,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,nlp_specific,bureau,FS: Forest Service,0,,,0,,,,,,,,,unknown,mission_critical,0
+35402,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_deployment,0,computer_vision,bureau,FS: Forest Service,0,,,1,ArcGIS/Esri,Esri,,,,,,,custom_trained,mission_critical,0
+35424,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",custom_system,0,nlp_specific,office,CIO Organization,0,,,0,,,,,,,,,unknown,administrative,0
+35427,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,general_llm,office,CIO Organization,0,,,,,,,,,,,,unknown,it_operations,
+35428,wave3-P2,medium,internal_inconsistency — set is_generative_ai=0 (narrative lacks LLM signals),product_deployment,0,coding_assistant,pilot,CIO Organization,0,,1,,,,,,,,,,inference_only,it_operations,
+35452,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,nlp_specific,office,Division of Administration,0,,,1,,,,,,,,,unknown,administrative,
+35455,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,classical_ml,office,Division of Finance,0,,,,,,,,,,,,unknown,administrative,
+35460,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,classical_ml,office,Division of Finance,0,,,,,,,,,,,,unknown,administrative,
+35464,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",custom_system,1,general_llm,office,DRR,0,,,,,,,,,,,,unknown,mission_critical,
+35465,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",custom_system,1,general_llm,office,DRR,0,,,,,,,,,,,,unknown,mission_critical,
+35466,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",custom_system,1,general_llm,office,DRR,0,,,,,,,,,,,,unknown,mission_critical,
+35467,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",custom_system,1,general_llm,office,DRR,0,,,,,,,,,,,,unknown,mission_critical,
+35468,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",custom_system,1,general_llm,office,DRR,0,,,,,,,,,,,,unknown,mission_critical,
+35470,wave3-P2,medium,"material_divergence — 2024 narrative shows no generative AI signals, kept Wave 1",custom_system,1,general_llm,office,DRR,0,,,,,,,,,,,,unknown,mission_critical,
+35475,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,classical_ml,pilot,DRMS Atlanta,0,,,1,,,,,,,,,unknown,administrative,
+35478,wave3-P2,medium,internal_inconsistency — adopted 2025 reading on the inconsistent fields,product_deployment,0,nlp_specific,office,Legal Division,0,,,1,,,,,,,,,inference_only,mission_critical,
+35479,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",bespoke_application,0,nlp_specific,department,,0,,,,,,,,,,,,fine_tuned,mission_critical,
+35480,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,bespoke_application,0,computer_vision,bureau,Dam inspectors,0,,,,,,,,,,,,unknown,mission_critical,
+35482,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",bespoke_application,0,classical_ml,department,,0,,,,,,,,,,,,custom_trained,mission_critical,
+35485,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_deployment,0,classical_ml,enterprise_wide,,1,,,1,PhishER,KnowBe4,,,,,,,inference_only,cybersecurity,
+35488,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",product_deployment,0,general_llm,office,OBFM,0,,,1,VAO Ally,VAO,,,,,,,unknown,administrative,
+35489,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,1,general_llm,enterprise_wide,,1,,,1,Oracle 23AI,Oracle,,,,,,,rag_pipeline,it_operations,
+35490,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",generic_use_pattern,0,classical_ml,enterprise_wide,,1,,,,,,,,,,,,unknown,it_operations,
+35491,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",generic_use_pattern,0,classical_ml,enterprise_wide,,1,,,,,,,,,,,,unknown,it_operations,
+35492,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,0,classical_ml,enterprise_wide,,1,,,1,Identity Services Engine,Cisco,,,,,,,inference_only,cybersecurity,
+35493,wave3-P2,medium,misclassified_lifecycle — kept Wave 1 (no clean dev_stage signal),product_deployment,1,general_llm,enterprise_wide,,1,,,1,Microsoft 365,Microsoft,0,,,,,,inference_only,administrative,
+35494,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,0,classical_ml,enterprise_wide,,1,,,1,Citrix,Citrix,,,,,,,inference_only,it_operations,
+35495,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,0,predictive_analytics,enterprise_wide,,1,,,1,SQL Server,Microsoft,,,,,,,inference_only,it_operations,
+35496,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,product_feature,0,predictive_analytics,enterprise_wide,,1,,,1,ServiceNow,ServiceNow,,,,,,,inference_only,it_operations,
+35497,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,0,classical_ml,enterprise_wide,,1,,,1,Kiteworks,Kiteworks,,,,,,,inference_only,cybersecurity,
+35498,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,0,classical_ml,enterprise_wide,,1,,,1,WhatsUp Gold / Flowmon,Progress,,,,,,,inference_only,cybersecurity,
+35499,wave3-P2,medium,"material_divergence — kept Wave 1 (no proposal, genAI agrees)",product_feature,0,nlp_specific,office,OCIO,0,,,1,CommonLook Online,Allyant,,,,,,,inference_only,administrative,
+35521,wave3-P2,high,drift_legitimate — kept 2024 tag as filed,custom_system,0,computer_vision,office,Office of the Inspector General,0,0,0,,,,0,0,0,0,0,0,inference_only,mission_critical,0
+35534,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,nlp_specific,bureau,Division of Supervision and Regulation,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+35536,wave3-P2,medium,"material_divergence — 2024 narrative shows generative AI signals, adopted 2025 reading",custom_system,0,nlp_specific,bureau,Division of Information Technology,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0

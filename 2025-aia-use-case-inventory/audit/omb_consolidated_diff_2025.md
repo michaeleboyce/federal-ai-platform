@@ -1,6 +1,6 @@
 # OMB Consolidated 2025 ↔ IFP DB Discrepancy Report
 
-_Generated 2026-05-04 00:43_
+_Generated 2026-05-25 23:22_
 
 Source file: `data/raw/2025_individually_reported_AI_use_cases.xlsx`
 
@@ -13,7 +13,7 @@ Source file: `data/raw/2025_individually_reported_AI_use_cases.xlsx`
 | matched_fuzzy | 25 |
 | suggested_rename | 39 |
 | omb_only | 68 |
-| db_only | 57 |
+| db_only | 42 |
 | duplicate_in_omb | 12 |
 
 ## OMB-only — 68 use cases new in OMB file
@@ -91,7 +91,7 @@ These use cases appear in the OMB consolidated file but NOT in our DB. Net-new a
 | STB | TBD | Surface Transportation Board | Copilot for Appian |
 | STB | TBD | Surface Transportation Board | RelativityOne |
 
-## DB-only — 57 use cases missing from OMB file
+## DB-only — 42 use cases missing from OMB file
 
 These use cases are in our DB but NOT in the OMB consolidated file. Includes the 4 dropped agencies (FRTIB, GPO, NMB, OPM) plus agency-specific rows that OMB excluded from consolidation.
 
@@ -103,21 +103,6 @@ These use cases are in our DB but NOT in the OMB consolidated file. Includes the
 | ED | ED-0011 | Office of the Chief Information Officer | Department-wide implementation of GSA USAi |
 | ED | ED-0004 | Office of Migrant Education, Office of E | Grammarly AI Writing Assistant |
 | ED | ED-0006 | Office of Postsecondary Education | Legislation Comment Categorization |
-| ED | ED-0075 | Agency Wide | MS Copilot - Business Process Improvement |
-| ED | ED-0068 | Agency Wide | MS Copilot - Collaboration & Communication |
-| ED | ED-0067 | Agency Wide | MS Copilot - Compliance & Risk Management |
-| ED | ED-0072 | Agency Wide | MS Copilot - Content Organization & Archiving |
-| ED | ED-0077 | Agency Wide | MS Copilot - Creative & Productive Work Enhancement |
-| ED | ED-0065 | Agency Wide | MS Copilot - Data Analysis & Insights |
-| ED | ED-0063 | Agency Wide | MS Copilot - Document Creation & Editing |
-| ED | ED-0073 | Agency Wide | MS Copilot - Grant & Program Management |
-| ED | ED-0066 | Agency Wide | MS Copilot - Process & Workflow Automation |
-| ED | ED-0071 | Agency Wide | MS Copilot - Project & Task Management |
-| ED | ED-0069 | Agency Wide | MS Copilot - Research & Knowledge Management |
-| ED | ED-0074 | Agency Wide | MS Copilot - Security & Privacy |
-| ED | ED-0064 | Agency Wide | MS Copilot - Summarization |
-| ED | ED-0076 | Agency Wide | MS Copilot - Technical Assistance & Code Generation |
-| ED | ED-0070 | Agency Wide | MS Copilot - Training & Education |
 | FRTIB | FRTIB-001 | Agency Wide | AVA |
 | FRTIB | FRTIB-006 | Agency Wide | Adobe Firefly |
 | FRTIB | FRTIB-003 | Agency Wide | Contact Center AI |

@@ -1,0 +1,212 @@
+use_case_id_2024,tagged_by_agent,confidence,reasoning,entry_type,is_generative_ai,ai_sophistication,deployment_scope,scope_detail,is_enterprise_wide,is_general_llm_access,is_coding_tool,is_cots_commercial,tool_product_name,tool_vendor,is_microsoft_copilot,is_openai,is_anthropic,is_google,is_github_copilot,is_aws_ai,architecture_type,use_type,is_public_facing
+35553,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,0,nlp_specific,bureau,BCP,0,,,,,,,,,,,,unknown,mission_critical,1
+35556,wave3-P3,high,tagging_error_2025 — kept wave1 2024 tag; 2025 fix is out-of-scope here; drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,coding_assistant,pilot,BCP,0,,1,1,Azure OpenAI GPT-4,Microsoft/OpenAI,,1,,,,,inference_only,it_operations,
+35557,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,bespoke_application,0,nlp_specific,department,,0,,,,,,,,,,,,unknown,mission_critical,
+35559,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,general_llm,department,,0,,,,,,,,,,,,unknown,mission_critical,
+35562,wave3-P3,high,misclassified_lifecycle — dev_stage='Planned'; scope department→bureau,custom_system,1,general_llm,bureau,,0,,,,,,,,,,,,custom_trained,mission_critical,
+35564,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,general_llm,department,,0,,,,,,,,,,,,unknown,mission_critical,
+35565,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,bespoke_application,0,nlp_specific,department,,0,,,,,,,,,,,,unknown,mission_critical,
+35566,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,nlp_specific,enterprise_wide,,1,,,,,,,,,,,,inference_only,mission_critical,
+35576,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,classical_ml,office,OIT,0,,,,,,,,,,,,unknown,mission_critical,
+35581,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,nlp_specific,office,OHR,0,,,1,,,,,,,,,inference_only,administrative,
+35582,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),generic_use_pattern,1,general_llm,pilot,OIT,0,,,,,,,,,,,,unknown,it_operations,
+35583,wave3-P3,high,internal_inconsistency — entry_type=product_deployment lacks tool name; downgraded entry_type,generic_use_pattern,1,general_llm,office,OHR,0,,,1,,,,,,,,,inference_only,administrative,
+35586,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,office,OIT,0,,,,,,,,,,,,unknown,cybersecurity,
+35591,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,classical_ml,office,OIT,0,,,,,,,,,,,,unknown,mission_critical,
+35592,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),generic_use_pattern,1,general_llm,pilot,FinHub,0,,,,,,,,,,,,unknown,research,
+35597,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,generic_use_pattern,0,classical_ml,pilot,EXAMS,0,,,,,,,,,,,,unknown,research,
+35602,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,coding_assistant,office,ENF & DERA,0,,1,,,,,,,,,,inference_only,it_operations,
+35604,wave3-P3,high,misclassified_lifecycle — dev_stage='Initiated'; scope enterprise_wide→bureau,product_deployment,1,general_llm,bureau,OCIO,1,1,,1,Microsoft 365 Copilot,Microsoft,1,,,,,,inference_only,administrative,
+35605,wave3-P3,high,misclassified_lifecycle — dev_stage='Initiated'; scope department→bureau,bespoke_application,1,general_llm,bureau,OCIO,0,,,1,Latakoo/Whisper,Latakoo/OpenAI,,1,,,,,inference_only,mission_critical,
+35606,wave3-P3,high,misclassified_lifecycle — dev_stage='Initiated'; scope department→bureau,bespoke_application,1,general_llm,bureau,OCIO,0,,,,,,,,,,,,unknown,mission_critical,
+35607,wave3-P3,high,misclassified_lifecycle — dev_stage='Initiated'; scope department→bureau,bespoke_application,1,general_llm,bureau,OCIO,0,,,,,,,,,,,,unknown,mission_critical,
+35608,wave3-P3,high,misclassified_lifecycle — dev_stage='Planned'; scope department→bureau,bespoke_application,1,general_llm,bureau,OCIO,0,,,,,,,,,,,,rag_pipeline,administrative,
+35609,wave3-P3,high,misclassified_lifecycle — dev_stage='Planned'; scope department→bureau,bespoke_application,1,general_llm,bureau,OCIO,0,,,,,,,,,,,,unknown,mission_critical,
+35610,wave3-P3,high,misclassified_lifecycle — dev_stage='Planned'; scope department→bureau,bespoke_application,1,general_llm,bureau,OCIO,0,,,,,,,,,,,,inference_only,mission_critical,1
+35611,wave3-P3,high,misclassified_lifecycle — dev_stage='Planned'; scope department→bureau,bespoke_application,1,general_llm,bureau,OCIO,0,,,,,,,,,,,,unknown,mission_critical,
+35618,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35619,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,1,general_llm,pilot,OIT,0,1,,,Microsoft Copilot,Microsoft,1,,,,,,inference_only,administrative,
+35620,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35624,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,classical_ml,bureau,OIT,0,,,,,,,,,,,,inference_only,administrative,
+35629,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,classical_ml,bureau,VHA,0,,,,,,,,,,,,unknown,mission_critical,
+35630,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,0,nlp_specific,pilot,VHA,0,,,,,,,,,,,,custom_trained,mission_critical,
+35631,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,classical_ml,bureau,VHA,0,,,,,,,,,,,,unknown,mission_critical,
+35632,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,general_llm,bureau,VHA,0,,,,,,,,,,,,inference_only,mission_critical,
+35633,wave3-P3,medium,material_divergence (soph) — narrative supports LLM-class; adopted 2025 sophistication,bespoke_application,1,nlp_specific,office,VHA,0,,,0,,,,,,,,,inference_only,mission_critical,
+35635,wave3-P3,medium,tagging_error_2025 — kept wave1 2024 tag; 2025 fix is out-of-scope here,bespoke_application,1,general_llm,bureau,OIT,0,,,,,,,,,,,,inference_only,mission_critical,
+35637,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,general_llm,bureau,VHA,0,,,,,,,,,,,,inference_only,mission_critical,
+35643,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,general_llm,pilot,VHA,0,,,,,,,,,,,,inference_only,mission_critical,
+35647,wave3-P3,high,internal_inconsistency — entry_type=product_deployment lacks tool name; downgraded entry_type,bespoke_application,0,computer_vision,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35650,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,general_llm,pilot,OIT,0,,,,,,,,,,,,inference_only,mission_critical,
+35653,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,OM,0,,,0,,,,,,,,,custom_trained,administrative,
+35658,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,rag_pipeline,mission_critical,
+35661,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,product_deployment,0,predictive_analytics,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35672,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,agentic,bureau,VBA,0,,,1,,,,,,,,,inference_only,administrative,
+35678,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,classical_ml,bureau,VHA,0,,,,,,,,,,,,inference_only,administrative,
+35679,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,VHA,0,,,0,,,,,,,,,custom_trained,administrative,
+35683,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,VHA,0,,,0,,,,,,,,,custom_trained,administrative,
+35685,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,VHA,0,,,0,,,,,,,,,custom_trained,administrative,
+35686,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,classical_ml,bureau,VHA,0,,,,,,,,,,,,inference_only,mission_critical,
+35688,wave3-P3,high,tagging_error_2024 — adopted Wave 2 corrections (and 2025 mirror where Wave 2 cited),product_deployment,0,general_llm,bureau,VBA,0,1,0,0,,,,,,,,,custom_trained,mission_critical,
+35690,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,pilot,OIT,0,,,0,,,,,,,,,custom_trained,it_operations,
+35692,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,classical_ml,bureau,VHA,0,,,,,,,,,,,,custom_trained,mission_critical,
+35695,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,1,general_llm,bureau,OIT,0,,,,Microsoft Copilot,Microsoft,1,,,,,,inference_only,mission_critical,
+35699,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,OEHRM,0,,,,,,,,,,,,unknown,mission_critical,
+35700,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,0,predictive_analytics,pilot,VHA,0,,,,,,,,,,,,custom_trained,mission_critical,
+35701,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35704,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,1,general_llm,pilot,OAWP,0,,,,Azure OpenAI,Microsoft/OpenAI,,1,,,,,inference_only,administrative,
+35705,wave3-P3,medium,tagging_error_2025 — kept wave1 2024 tag; 2025 fix is out-of-scope here,bespoke_application,1,agentic,bureau,VHA,0,,,0,,,,,,,,,inference_only,mission_critical,
+35711,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,general_llm,bureau,VHA,0,,,,,,,,,,,,inference_only,mission_critical,
+35713,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35714,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35716,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35717,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,VHA,0,,,0,,,,,,,,,custom_trained,mission_critical,
+35719,wave3-P3,high,internal_inconsistency — entry_type=product_deployment lacks tool name; downgraded entry_type,bespoke_application,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35721,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35725,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,general_llm,pilot,VHA,0,,,,,,,,,,,,inference_only,mission_critical,
+35729,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,computer_vision,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35730,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35731,wave3-P3,high,tagging_error_2025 — kept wave1 2024 tag; 2025 fix is out-of-scope here; drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,1,general_llm,pilot,VHA,0,,,,ChatGPT,OpenAI,,1,,,,,inference_only,administrative,
+35732,wave3-P3,high,tagging_error_2025 — kept wave1 2024 tag; 2025 fix is out-of-scope here; drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,general_llm,pilot,VBA,0,,,1,,,,,,,,,inference_only,mission_critical,
+35733,wave3-P3,medium,tagging_error_2025 — kept wave1 2024 tag; 2025 fix is out-of-scope here,bespoke_application,1,general_llm,bureau,VBA,0,,,,,,,,,,,,inference_only,mission_critical,
+35736,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35739,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,general_llm,pilot,VHA,0,,,0,,,,,,,,,rag_pipeline,administrative,
+35749,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35751,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,VHA,0,,,,,,,,,,,,unknown,mission_critical,
+35752,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,general_llm,pilot,VHA,0,,,0,,,,,,,,,inference_only,administrative,
+35753,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,VHA,0,,,,,,,,,,,,unknown,mission_critical,
+35755,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,classical_ml,bureau,VHA,0,,,0,,,,,,,,,inference_only,mission_critical,
+35756,wave3-P3,high,internal_inconsistency — entry_type=product_deployment lacks tool name; downgraded entry_type,bespoke_application,0,computer_vision,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35762,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,bureau,OSVA,0,,,,,,,,,,,,unknown,administrative,
+35763,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35767,wave3-P3,medium,material_divergence (gen_ai) — narrative shows generative markers; adopted gen_ai=1,product_deployment,1,general_llm,bureau,VHA,0,,,,ChatGPT,OpenAI,,1,,,,,inference_only,mission_critical,
+35770,wave3-P3,medium,material_divergence (gen_ai) — narrative shows generative markers; adopted gen_ai=1,bespoke_application,1,general_llm,office,VHA,0,,,,,,,,,,,,inference_only,mission_critical,
+35773,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,1,general_llm,bureau,VHA,0,,,,,,,,,,,,fine_tuned,mission_critical,
+35777,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35780,wave3-P3,medium,material_divergence (gen_ai) — narrative shows generative markers; adopted gen_ai=1,bespoke_application,1,general_llm,bureau,VEO,0,,,,,,,,,,,,rag_pipeline,administrative,
+35781,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,computer_vision,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35785,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,classical_ml,bureau,VBA,0,,,,,,,,,,,,inference_only,mission_critical,
+35786,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,nlp_specific,pilot,OIT,0,,,,,,,,,,,,unknown,administrative,1
+35787,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,computer_vision,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35789,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35790,wave3-P3,medium,tagging_error_2025 — kept wave1 2024 tag; 2025 fix is out-of-scope here,bespoke_application,1,general_llm,bureau,VBA,0,,,,,,,,,,,,rag_pipeline,mission_critical,
+35793,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,computer_vision,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35796,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),bespoke_application,0,classical_ml,pilot,VHA,0,,,,,,,,,,,,custom_trained,administrative,
+35800,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,pilot,VHA,0,,,,,,,,,,,,unknown,mission_critical,
+35803,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,bureau,VHA,0,,,,,,,,,,,,unknown,mission_critical,
+35805,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,VHA,0,,,,,,,,,,,,unknown,mission_critical,
+35811,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,bespoke_application,0,classical_ml,bureau,VHA,0,,,0,,,,,,,,,inference_only,mission_critical,
+35827,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,computer_vision,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35829,wave3-P3,medium,tagging_error_2025 — kept wave1 2024 tag; 2025 fix is out-of-scope here,bespoke_application,1,general_llm,bureau,VHA,0,,,0,,,,,,,,,inference_only,mission_critical,
+35832,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,computer_vision,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35834,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35838,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,VHA,0,,,,,,,,,,,,unknown,administrative,
+35839,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,computer_vision,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35840,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35844,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,product_deployment,0,classical_ml,bureau,VHA,0,,,1,,,,,,,,,unknown,mission_critical,
+35847,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,office,Enterprise Planning,0,,,,,,,,,,,,custom_trained,mission_critical,
+35848,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,nlp_specific,office,Supply Chain,0,,,,,,,,,,,,unknown,administrative,
+35850,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,nlp_specific,office,Enterprise Analytics & Innovation,0,,,,,,,,,,,,custom_trained,mission_critical,
+35851,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,nlp_specific,office,Enterprise Analytics & Innovation,0,,,,,,,,,,,,custom_trained,mission_critical,
+35853,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,computer_vision,office,Enterprise Analytics & Innovation,0,,,,,,,,,,,,unknown,mission_critical,
+35854,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,computer_vision,office,Enterprise Analytics & Innovation,0,,,,,,,,,,,,custom_trained,mission_critical,
+35866,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,office,Enterprise Planning,0,,,,,,,,,,,,custom_trained,mission_critical,
+35870,wave3-P3,high,misclassified_lifecycle — dev_stage='Initiated'; scope department→bureau,generic_use_pattern,0,classical_ml,bureau,Cybersecurity,0,,,,,,,,,,,,inference_only,cybersecurity,
+35884,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,product_feature,0,nlp_specific,enterprise_wide,T&I Operations,1,,,,,,,,,,,,inference_only,administrative,
+35886,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,computer_vision,bureau,ATF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35889,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,nlp_specific,bureau,ATF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35900,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,computer_vision,bureau,ATF,0,0,0,1,Axon Evidence.com,Axon,0,0,0,0,0,0,,mission_critical,0
+35906,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,bureau,ATF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35909,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,team,ATF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35910,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,ATF,0,0,0,1,Palantir,Palantir,0,0,0,0,0,0,,mission_critical,0
+35911,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,nlp_specific,bureau,ATF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35912,wave3-P3,medium,material_divergence (soph) — narrative supports LLM-class; adopted 2025 sophistication,custom_system,1,nlp_specific,bureau,ATF,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+35918,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,product_deployment,0,computer_vision,bureau,ATF,0,0,0,1,Veritone,Veritone,0,0,0,0,0,0,,mission_critical,0
+35923,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,computer_vision,bureau,ATF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35924,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,product_deployment,0,computer_vision,bureau,ATR,0,0,0,1,Veritone,Veritone,0,0,0,0,0,0,,mission_critical,0
+35925,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,classical_ml,bureau,ATR,0,0,0,1,SAS,SAS,0,0,0,0,0,0,unknown,mission_critical,0
+35926,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,general_llm,bureau,ATR,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+35927,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,general_llm,bureau,ATR,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+35928,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,general_llm,bureau,ATR,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+35930,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,pilot,CIV,0,0,0,1,Salesforce,Salesforce,0,0,0,0,0,0,,mission_critical,0
+35932,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,pilot,CRM,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35938,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,bureau,CRT,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35939,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,nlp_specific,bureau,CRT,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35942,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,nlp_specific,bureau,CRT,0,0,0,1,Axon Evidence.com,Axon,0,0,0,0,0,0,,mission_critical,0
+35944,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,bureau,DEA,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35949,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,DEA,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35950,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,computer_vision,pilot,DEA,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35953,wave3-P3,high,tagging_error_2024 — adopted Wave 2 corrections (and 2025 mirror where Wave 2 cited),product_deployment,1,general_llm,bureau,DEA,0,1,0,0,Aretec SEARCH,Aretec,0,0,0,0,0,0,custom_trained,cybersecurity,1
+35967,wave3-P3,high,tagging_error_2024 — adopted Wave 2 corrections (and 2025 mirror where Wave 2 cited),custom_system,1,agentic,bureau,DEA,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35968,wave3-P3,high,tagging_error_2024 — adopted Wave 2 corrections (and 2025 mirror where Wave 2 cited),custom_system,1,agentic,bureau,DEA,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35970,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,general_llm,bureau,DEA,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+35971,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,bureau,DEA,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35973,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,1,general_llm,bureau,DEA,0,0,0,1,Salesforce,Salesforce,0,0,0,0,0,0,unknown,administrative,0
+35974,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,1,general_llm,pilot,DEA,0,0,0,0,,,0,0,0,0,0,0,unknown,research,0
+35975,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,general_llm,bureau,DEA,0,0,0,0,,,0,0,0,0,0,0,unknown,administrative,0
+35976,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,classical_ml,bureau,DEA,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+35980,wave3-P3,medium,material_divergence (gen_ai) — narrative shows generative markers; adopted gen_ai=1,custom_system,1,general_llm,bureau,DEA,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+35984,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),generic_use_pattern,0,classical_ml,department,Department-wide,0,0,0,0,,,0,0,0,0,0,0,,mission_critical,0
+35985,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,custom_system,0,classical_ml,enterprise_wide,Department-wide,1,0,0,0,,,0,0,0,0,0,0,custom_trained,cybersecurity,0
+35988,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,generic_use_pattern,0,classical_ml,department,Department-wide,0,0,0,0,,,0,0,0,0,0,0,,mission_critical,0
+35989,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,classical_ml,department,Department-wide,0,0,0,1,LexisNexis,LexisNexis,0,0,0,0,0,0,unknown,mission_critical,0
+35990,wave3-P3,medium,material_divergence (gen_ai) — narrative shows generative markers; adopted gen_ai=1,product_deployment,1,general_llm,department,Department-wide,0,0,0,1,Percipio Skillsoft,Skillsoft,0,0,0,0,0,0,unknown,mission_critical,0
+35992,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,generic_use_pattern,0,classical_ml,department,Department-wide,0,0,0,0,,,0,0,0,0,0,0,,mission_critical,0
+35993,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,product_deployment,1,general_llm,department,Department-wide,0,0,0,1,Westlaw,Thomson Reuters,0,0,0,0,0,0,unknown,mission_critical,0
+35996,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,1,general_llm,bureau,ENRD,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+36000,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,bureau,EOUSA,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36003,wave3-P3,high,tagging_error_2024 — adopted Wave 2 corrections (and 2025 mirror where Wave 2 cited),product_deployment,0,general_llm,bureau,EOUSA,0,1,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36009,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,bureau,FBI,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36012,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,custom_system,0,predictive_analytics,enterprise_wide,FBI,1,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36022,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,classical_ml,bureau,FBI,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36026,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,pilot,FBOP,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36034,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,FBOP,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36044,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,predictive_analytics,bureau,FBOP,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36056,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,FBOP,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36058,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,nlp_specific,bureau,JMD,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36059,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,nlp_specific,bureau,JMD,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36061,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,1,general_llm,pilot,JMD,0,0,0,1,Microsoft Copilot,Microsoft,1,0,0,0,0,0,inference_only,mission_critical,0
+36068,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,pilot,OCDETF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36069,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,1,general_llm,pilot,OCDETF,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+36070,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,1,general_llm,pilot,OCDETF,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+36071,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,1,general_llm,pilot,OCDETF,0,0,0,0,,,0,0,0,0,0,0,unknown,cybersecurity,0
+36072,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,pilot,OCDETF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,research,0
+36073,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,pilot,OCDETF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36074,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,1,general_llm,pilot,OCDETF,0,0,0,0,,,0,0,0,0,0,0,unknown,cybersecurity,0
+36075,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,1,general_llm,pilot,OCDETF,0,0,0,0,,,0,0,0,0,0,0,unknown,cybersecurity,0
+36076,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,pilot,OCDETF,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36077,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,nlp_specific,bureau,OIG,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36078,wave3-P3,medium,material_divergence (gen_ai) — narrative shows generative markers; adopted gen_ai=1,product_deployment,1,general_llm,bureau,OIG,0,0,0,1,Azure OpenAI,Microsoft,0,1,0,0,0,0,inference_only,mission_critical,0
+36079,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,1,general_llm,pilot,OIG,0,0,0,1,Azure OpenAI,Microsoft,0,1,0,0,0,0,inference_only,mission_critical,0
+36083,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,product_deployment,0,classical_ml,bureau,OIG,0,0,0,1,Axon,Axon,0,0,0,0,0,0,,mission_critical,0
+36085,wave3-P3,medium,tagging_error_2025 — kept wave1 2024 tag; 2025 fix is out-of-scope here,custom_system,1,general_llm,bureau,OJP,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+36086,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),generic_use_pattern,0,nlp_specific,pilot,OJP,0,0,0,0,,,0,0,0,0,0,0,,mission_critical,0
+36092,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,general_llm,bureau,PAO,0,0,0,0,,,0,0,0,0,0,0,unknown,mission_critical,0
+36094,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),generic_use_pattern,0,classical_ml,bureau,PAO,0,0,0,0,,,0,0,0,0,0,0,,mission_critical,0
+36099,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,generic_use_pattern,0,classical_ml,bureau,PARDON,0,0,0,0,,,0,0,0,0,0,0,,mission_critical,0
+36101,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,classical_ml,bureau,PARDON,0,0,0,1,Westlaw,Thomson Reuters,0,0,0,0,0,0,,mission_critical,0
+36105,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,nlp_specific,bureau,TAX,0,0,0,0,AWS Translate,AWS,0,0,0,0,0,1,custom_trained,mission_critical,0
+36106,wave3-P3,high,tagging_error_2024 — adopted Wave 2 corrections (and 2025 mirror where Wave 2 cited),product_deployment,1,general_llm,bureau,TAX,0,1,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36108,wave3-P3,high,tool_vendor_unverified — cleared product/vendor not supported by narrative,product_deployment,0,classical_ml,bureau,TAX,0,0,0,0,,,0,0,0,0,0,0,,mission_critical,0
+36109,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,computer_vision,bureau,USMS,0,0,0,1,Axon,Axon,0,0,0,0,0,0,,mission_critical,0
+36113,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,computer_vision,bureau,USMS,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36114,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,bureau,USMS,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36116,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,0,computer_vision,bureau,USMS,0,0,0,1,Axon,Axon,0,0,0,0,0,0,,mission_critical,0
+36119,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,bureau,USNCB,0,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36124,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),product_deployment,1,general_llm,pilot,USTP,0,0,0,1,Azure OpenAI,Microsoft,0,1,0,0,0,0,inference_only,mission_critical,0
+36129,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,generic_use_pattern,1,general_llm,bureau,ED FSA,,1,,1,,,,,,,,,inference_only,administrative,0
+36143,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,generic_use_pattern,1,general_llm,bureau,ED OCIO,,1,,1,,,,,,,,,inference_only,administrative,0
+36177,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,product_deployment,0,classical_ml,office,ED OFO,,,,1,Skillsoft Percipio CAISY,Skillsoft,,,,,,,inference_only,administrative,0
+36178,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,product_deployment,1,nlp_specific,office,ED OUS,,,,1,Otter.ai,Otter.ai,,,,,,,inference_only,administrative,1
+36179,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,bespoke_application,1,general_llm,bureau,FSA EDMAPS,,,,1,Bedrock,AWS,,,,,,1,inference_only,administrative,0
+36181,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,department,Department of Transportation,0,0,0,0,,,0,0,0,0,0,0,inference_only,mission_critical,0
+36182,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,department,Department of Transportation,0,0,0,,,,0,0,0,0,0,0,inference_only,mission_critical,0
+36183,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,department,Department of Transportation,0,0,0,,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36185,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,custom_system,1,general_llm,enterprise_wide,"CAIO, HASS, Volpe",1,0,0,0,,,0,0,0,0,0,0,inference_only,mission_critical,0
+36186,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,custom_system,1,general_llm,enterprise_wide,"CAIO, HASS, Volpe",1,0,0,,,,0,0,0,0,0,0,inference_only,mission_critical,0
+36207,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,predictive_analytics,bureau,FRA,0,0,0,,,,0,0,0,0,0,0,rag_pipeline,mission_critical,0
+36212,wave3-P3,low,material_divergence — narrative thin; kept wave1 tag,custom_system,0,classical_ml,enterprise_wide,"CAIO, FAA, OST-R, Volpe, OCIO",1,0,0,0,,,0,0,0,0,0,0,custom_trained,mission_critical,0
+36222,wave3-P3,medium,material_divergence (soph) — narrative does not support LLM-class; kept wave1 sophistication,custom_system,0,classical_ml,bureau,FAA AJO,0,0,0,,,,0,0,0,0,0,0,inference_only,mission_critical,0
+36238,wave3-P3,high,drift_legitimate — kept 2024 tag as filed (agency changed posture in 2025),custom_system,0,classical_ml,bureau,FAA AVS,0,0,0,,,,0,0,0,0,0,0,inference_only,mission_critical,0
+36241,wave3-P3,medium,material_divergence (gen_ai) — narrative lacks GenAI markers; adopted gen_ai=0,custom_system,0,classical_ml,bureau,FAA AGC,0,0,0,,,,0,0,0,0,0,0,inference_only,mission_critical,0
+36253,wave3-P3,high,internal_inconsistency — entry_type=product_deployment lacks tool name; downgraded entry_type,generic_use_pattern,0,nlp_specific,enterprise_wide,,1,,,1,,,,,,,,,inference_only,administrative,

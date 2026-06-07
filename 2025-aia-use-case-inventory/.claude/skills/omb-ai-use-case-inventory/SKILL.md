@@ -132,7 +132,7 @@ identity mappings; the remaining divergences are intentional and flagged.
 | `hi_appeal_process` | `hi_appeal_process` | same |
 | `hi_public_consultation` | `hi_public_consultation` | same |
 
-The DB also adds derived columns not in the source: `agency_id` (FK to `agencies`), `slug`, `id_provenance`, `organization_id`, `bureau_organization_id`, `product_id`, `template_id`, `raw_json` (the original row preserved for audit).
+The DB also adds derived columns not in the source: `agency_id` (FK to `agencies`), `slug`, `id_provenance`, `organization_id`, `bureau_organization_id`, `product_id`, `template_id`, `raw_json` (the original row preserved for audit), and (added by migration `m004`) `omb_consolidated_id`, `omb_consolidated_source`, `omb_consolidated_first_seen`, `omb_consolidated_last_seen` — the OMB-side identifier and ingest provenance from the OMB-consolidated `2025_individually_reported_AI_use_cases.xlsx`. **The two ID spaces are intentionally separate:** `use_case_id` is the IFP-canonical agency-as-filed ID (from each agency's raw inventory); `omb_consolidated_id` is OMB's own renumbering and is sometimes blank (ED, GSA, HHS, SSA, STATE, TVA), sometimes a bare integer (EPA, NSF, TREAS), and sometimes the canonical `AGENCY-N` form. The full OMB-side row mirror lives in `omb_consolidated_rows` and the match audit between the two ID spaces lives in `omb_match_audit` (see migrations `m004`/`m005`).
 
 ## Dashboard OMB-vs-IFP labeling
 

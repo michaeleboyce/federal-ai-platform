@@ -1,0 +1,407 @@
+use_case_id_2024,tagged_by_agent,entry_type,is_generative_ai,ai_sophistication,deployment_scope,confidence,reasoning,is_general_llm_access,is_coding_tool,is_cots_commercial,tool_product_name,tool_vendor,is_microsoft_copilot,is_openai,is_anthropic,is_google,is_github_copilot,is_aws_ai,is_enterprise_wide,architecture_type,has_model_training,use_type,is_public_facing,scope_detail
+34448,wave1-D,bespoke_application,1,general_llm,department,medium,"""Large Language Model"" indicates LLM/chatbot deployment.; department scope, in-house wrap on third-party model",1,,0,,,,,,,,,0,inference_only,0,mission_critical,0,OCIO
+34449,wave1-D,bespoke_application,1,general_llm,department,high,"""Azure OpenAI"" indicates LLM/chatbot deployment.; department scope, in-house wrap on third-party model",1,,1,Azure OpenAI,OpenAI/Microsoft,,1,,,,,0,inference_only,0,mission_critical,0,OCIO
+34450,wave1-D,bespoke_application,1,general_llm,pilot,high,"""Azure OpenAI"" indicates LLM/chatbot deployment.; pilot/prototype, in-house wrap on third-party model",1,,1,Azure OpenAI,OpenAI/Microsoft,,1,,,,,0,inference_only,0,mission_critical,1,OCIO
+34451,wave1-D,custom_system,0,predictive_analytics,department,medium,"""estimating"" → predictive/forecasting model.; department scope",,,0,,,,,,,,,0,unknown,0,administrative,0,OS - Office of the Secretary of the Interior
+34452,wave1-D,product_deployment,1,general_llm,bureau,high,"""Firefly"" indicates generative-AI use.; Adobe (Firefly/Acrobat AI) deployment",,,1,Adobe (Firefly/Acrobat AI),Adobe,,,,,,,0,inference_only,0,mission_critical,0,NPS
+34453,wave1-D,generic_use_pattern,1,general_llm,bureau,medium,"""chatbot"" indicates LLM/chatbot deployment.",1,,0,,,,,,,,,0,rag_pipeline,0,mission_critical,0,OCIO
+34454,wave1-D,custom_system,0,predictive_analytics,bureau,medium,"""forecasts"" → predictive/forecasting model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,NPS
+34455,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""machine learning"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,ONRR
+34456,wave1-D,product_deployment,0,nlp_specific,bureau,high,"""Machine Learning"" → text/NLP processing.; MS Power Platform deployment",,,1,MS Power Platform,Microsoft,,,,,,,0,custom_trained,1,mission_critical,0,ONRR
+34457,wave1-D,custom_system,0,computer_vision,bureau,medium,"""object detection"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,NPS
+34458,wave1-D,custom_system,1,general_llm,bureau,medium,"""Image Generation and Audio Video"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,ONRR
+34459,wave1-D,custom_system,0,computer_vision,bureau,medium,"""Use of AI for developing"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,NPS
+34460,wave1-D,product_deployment,0,classical_ml,bureau,high,"""machine learning"" → classical ML model.; Alteryx deployment",,,1,Alteryx,Alteryx,,,,,,,0,custom_trained,1,mission_critical,0,ONRR
+34461,wave1-D,custom_system,1,general_llm,bureau,medium,"""NPS Acquisition Management Workload Software"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,NPS
+34462,wave1-D,product_deployment,0,computer_vision,bureau,high,"""Caseguard Studio"" → imagery/CV model.; CaseGuard Studio deployment",,,1,CaseGuard Studio,CaseGuard,,,,,,,0,unknown,0,mission_critical,0,NPS
+34463,wave1-D,custom_system,0,classical_ml,department,low,"""Azure based Internal Controls Testing"" → classical ML model.; department scope",,,0,,,,,,,,,0,unknown,0,administrative,0,OS - Office of the Secretary of the Interior
+34464,wave1-D,custom_system,0,classical_ml,department,medium,"""AI model"" → classical ML model.; department scope, in-house build",,,0,,,,,,,,,0,custom_trained,1,administrative,1,OS - Office of the Secretary of the Interior
+34465,wave1-D,custom_system,0,computer_vision,department,medium,"""Potential Applications of AI Models"" → imagery/CV model.; department scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,OS - Office of the Secretary of the Interior
+34466,wave1-D,custom_system,1,general_llm,department,medium,"""Retrieval Augmented"" indicates generative-AI use.; department scope",,,0,,,,,,,,,0,rag_pipeline,0,mission_critical,0,OS - Office of the Secretary of the Interior
+34467,wave1-D,custom_system,0,nlp_specific,department,medium,"""Public Comment Analysis Tool (PCAT):"" → text/NLP processing.; department scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,OS - Office of the Secretary of the Interior
+34468,wave1-D,custom_system,1,general_llm,pilot,medium,"""machine learning"" indicates generative-AI use.; pilot/prototype, in-house build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,FWS
+34469,wave1-D,custom_system,1,general_llm,bureau,medium,"""Summarization of documents and output"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,FWS
+34470,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FWS
+34471,wave1-D,custom_system,0,computer_vision,bureau,high,"""computer vision"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FWS
+34472,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Deep learning"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FWS
+34473,wave1-D,custom_system,0,computer_vision,bureau,high,"""remote sensing"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FWS
+34474,wave1-D,custom_system,1,general_llm,bureau,medium,"""LLM"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,BOEM
+34475,wave1-D,custom_system,1,general_llm,bureau,medium,"""ONRR Video Hosting Platform [OVHP]"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,ONRR
+34476,wave1-D,custom_system,1,general_llm,bureau,medium,"""Video Creation and Editing"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,ONRR
+34477,wave1-D,custom_system,0,computer_vision,bureau,high,"""imagery"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FWS
+34478,wave1-D,custom_system,1,general_llm,bureau,medium,"""Generative AI"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,BTFA
+34479,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""machine learning"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,administrative,0,IBC
+34480,wave1-D,custom_system,0,computer_vision,bureau,high,"""deep learning"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34481,wave1-D,custom_system,0,predictive_analytics,pilot,high,"""prediction"" → predictive/forecasting model.; pilot/prototype, in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34482,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""forecasts"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34483,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimate"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34484,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""forecasting"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,it_operations,0,BOR
+34485,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34486,wave1-D,custom_system,0,computer_vision,bureau,high,"""machine learning"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34487,wave1-D,custom_system,0,computer_vision,bureau,high,"""machine learning"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34488,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Prediction"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34489,wave1-D,custom_system,0,computer_vision,bureau,high,"""image classification"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34490,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""time series"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34491,wave1-D,custom_system,0,predictive_analytics,pilot,high,"""estimate"" → predictive/forecasting model.; pilot/prototype, in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34492,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""prediction"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34493,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34494,wave1-D,custom_system,0,nlp_specific,bureau,high,"""FEMA mixed population flood-frequency analysis"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34495,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""simulate"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34496,wave1-D,custom_system,0,predictive_analytics,pilot,high,"""forecasts"" → predictive/forecasting model.; pilot/prototype, in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34497,wave1-D,custom_system,0,computer_vision,bureau,high,"""computer vision"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34498,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34499,wave1-D,generic_use_pattern,1,general_llm,bureau,high,"""ChatGPT"" indicates commercial LLM (OpenAI) wrap.; in-house build",,,1,ChatGPT/OpenAI,OpenAI,,1,,,,,0,inference_only,0,research,0,USGS
+34500,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Deep learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34501,wave1-D,custom_system,0,computer_vision,bureau,high,"""AI/ML"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34502,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimate"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34503,wave1-D,custom_system,0,classical_ml,pilot,medium,"""National Temperature Observations"" → classical ML model.; pilot/prototype, in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34504,wave1-D,custom_system,0,computer_vision,bureau,high,"""remote sensing"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,USGS
+34505,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34506,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Model development"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34507,wave1-D,custom_system,0,computer_vision,bureau,high,"""imagery"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34508,wave1-D,custom_system,0,computer_vision,bureau,high,"""Delineating sub-surface drainage using satellite"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34509,wave1-D,custom_system,0,computer_vision,bureau,high,"""satellite imagery"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34510,wave1-D,custom_system,0,computer_vision,bureau,high,"""imagery"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34511,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""reinforcement learning"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34512,wave1-D,custom_system,0,classical_ml,bureau,medium,"""artificial intelligence"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34513,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predicts"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34514,wave1-D,custom_system,0,classical_ml,bureau,medium,"""artificial intelligence"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34515,wave1-D,custom_system,0,computer_vision,bureau,high,"""Population and critical habitat modeling"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34516,wave1-D,custom_system,0,computer_vision,bureau,high,"""deep learning"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34517,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimate"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,USGS
+34518,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34519,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34520,wave1-D,custom_system,0,computer_vision,bureau,high,"""Automating blood smear cell counts"" → imagery/CV model.; in-house build",,,1,AWS AI,AWS,,,,,,1,0,custom_trained,1,research,0,USGS
+34521,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Machine learning for tsunami source"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34522,wave1-D,custom_system,0,computer_vision,bureau,high,"""CNN"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34523,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Determining the resource potential of"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34524,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""forecasting"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34525,wave1-D,custom_system,0,computer_vision,bureau,high,"""remote sensing"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,USGS
+34526,wave1-D,custom_system,0,computer_vision,bureau,high,"""aerial images"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34527,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""machine learning"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34528,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34529,wave1-D,custom_system,0,computer_vision,bureau,high,"""Automating blood smear cell counts"" → imagery/CV model.; in-house build",,,1,AWS AI,AWS,,,,,,1,0,custom_trained,1,research,0,USGS
+34530,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34531,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Ecological niche models for bat"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34532,wave1-D,custom_system,0,classical_ml,bureau,medium,"""HotLINK: The volcanic hotspot learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34533,wave1-D,custom_system,0,predictive_analytics,bureau,medium,"""machine learning"" → predictive/forecasting model.",,,0,,,,,,,,,0,unknown,0,research,0,USGS
+34534,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimate"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34535,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34536,wave1-D,custom_system,0,classical_ml,bureau,medium,"""AI/ML"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34537,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Seedling Identification and Percent Growth"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34538,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34539,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Flow Photo Explorer to estimate"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34540,wave1-D,custom_system,0,nlp_specific,bureau,high,"""machine learning"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34541,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34542,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34543,wave1-D,custom_system,0,computer_vision,bureau,high,"""satellite imagery"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34544,wave1-D,custom_system,0,computer_vision,bureau,high,"""remote sensing"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34545,wave1-D,custom_system,0,nlp_specific,bureau,high,"""natural language processing"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34546,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Predicting inundation dynamics of small"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34547,wave1-D,custom_system,0,computer_vision,bureau,high,"""remote sensing"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34548,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Using machine learning to detect"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34549,wave1-D,product_deployment,0,computer_vision,bureau,high,"""lidar"" → imagery/CV model.; ArcGIS/Esri deployment",,,1,ArcGIS/Esri,Esri,,,,,,,0,custom_trained,1,research,0,USGS
+34550,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Zero shot segmentation to expedite"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34551,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34552,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34553,wave1-D,custom_system,0,nlp_specific,bureau,high,"""machine learning"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34554,wave1-D,custom_system,0,classical_ml,bureau,medium,"""SAMPLE Toolbox"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34555,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Mapping wildfire fuels in previously"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34556,wave1-D,custom_system,0,computer_vision,bureau,high,"""LiDAR"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34557,wave1-D,custom_system,0,nlp_specific,bureau,high,"""machine learning"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34558,wave1-D,custom_system,0,computer_vision,bureau,high,"""aerial imagery"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,USGS
+34559,wave1-D,custom_system,0,nlp_specific,bureau,high,"""machine learning"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34560,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Artificial Intelligence"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34561,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Climate Futures for Lizards and"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34562,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Predicting inundation dynamics of small"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34563,wave1-D,custom_system,0,classical_ml,bureau,medium,"""artificial intelligence"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34564,wave1-D,custom_system,0,computer_vision,bureau,high,"""satellite imagery"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34565,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34566,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimating"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34567,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34568,wave1-D,custom_system,1,general_llm,bureau,medium,"""Extracting robust, searchable data from"" indicates generative-AI use.; in-house build",,,0,,,,,,,,,0,inference_only,0,research,0,USGS
+34569,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Classifying GPS data to understand"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34570,wave1-D,custom_system,0,classical_ml,bureau,medium,"""artificial intelligence"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34571,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""machine learning"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34572,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34573,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Classifying GPS data to understand"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34574,wave1-D,custom_system,0,computer_vision,bureau,high,"""imagery"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34575,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""machine learning"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34576,wave1-D,custom_system,0,computer_vision,bureau,high,"""machine learning"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34577,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Zero shot segmentation to expedite"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34578,wave1-D,custom_system,0,computer_vision,bureau,high,"""LiDAR"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34579,wave1-D,custom_system,0,nlp_specific,bureau,high,"""machine learning"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34580,wave1-D,custom_system,0,classical_ml,bureau,medium,"""AI/ML"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34581,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34582,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Deep learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34583,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34584,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""machine learning"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34585,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Critical Mineral Assessment with AI"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34586,wave1-D,custom_system,0,computer_vision,bureau,high,"""CNN"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34587,wave1-D,custom_system,0,computer_vision,bureau,high,"""Cell Phone Application for Oil"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34588,wave1-D,custom_system,0,computer_vision,bureau,high,"""Wave runup and total water"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34589,wave1-D,custom_system,0,computer_vision,bureau,high,"""machine learning"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34590,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Forecast"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34591,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34592,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34593,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34594,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Machine learning based shoreline time-series"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34595,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""prediction"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34596,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Machine Learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34597,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""forecasting"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34598,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34599,wave1-D,custom_system,0,computer_vision,bureau,high,"""satellite imagery"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34600,wave1-D,custom_system,0,computer_vision,bureau,high,"""artificial intelligence"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34601,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Event and sequence (life-stage, behavior,"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34602,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34603,wave1-D,custom_system,0,computer_vision,bureau,high,"""imagery"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34604,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34605,wave1-D,custom_system,0,computer_vision,bureau,high,"""Image classification from images on"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34606,wave1-D,generic_use_pattern,1,general_llm,bureau,high,"""ChatGPT"" indicates commercial LLM (OpenAI) wrap.; in-house build",,,1,ChatGPT/OpenAI,OpenAI,,1,,,,,0,inference_only,0,research,0,USGS
+34607,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Analytical Chemistry & Geologic Resources"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34608,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Analytical Chemistry & Geologic Resources"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34609,wave1-D,custom_system,1,general_llm,bureau,medium,"""Generative AI"" indicates generative-AI use.; in-house build",,,0,,,,,,,,,0,rag_pipeline,0,research,0,USGS
+34610,wave1-D,custom_system,1,general_llm,bureau,medium,"""machine learning"" indicates generative-AI use.; in-house build",,,0,,,,,,,,,0,inference_only,0,research,0,USGS
+34611,wave1-D,custom_system,0,computer_vision,bureau,high,"""Landsat"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34612,wave1-D,custom_system,0,computer_vision,bureau,high,"""Landsat"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,USGS
+34613,wave1-D,generic_use_pattern,1,general_llm,bureau,high,"""chatgpt"" indicates commercial LLM (OpenAI) wrap.; in-house build",,,1,ChatGPT/OpenAI,OpenAI,,1,,,,,0,inference_only,0,research,0,USGS
+34614,wave1-D,custom_system,1,general_llm,bureau,medium,"""21st Century Prospecting: AI-assisted Surveying"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,research,0,USGS
+34615,wave1-D,custom_system,0,classical_ml,department,low,"""Articulate Training Develpment AI Add"" → classical ML model.; department scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,OS - Office of the Secretary of the Interior
+34616,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34617,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""prediction"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34618,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34619,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""machine learning"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34620,wave1-D,custom_system,0,computer_vision,bureau,high,"""machine learning"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BOR
+34621,wave1-D,custom_system,1,general_llm,pilot,medium,"""generative AI"" indicates generative-AI use.; pilot/prototype",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,NPS
+34622,wave1-D,custom_system,0,computer_vision,bureau,high,"""Autonomous Drone Inspections"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BSEE
+34623,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Well Activity Report Classification"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BSEE
+34624,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""machine learning"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BSEE
+34625,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""risk score"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BSEE
+34626,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Prediction"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BSEE
+34627,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""prediction"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,BSEE
+35180,wave1-D,custom_system,0,classical_ml,bureau,low,"""status quo"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,"USAID/Bureau for Inclusive Growth, Partnerships, and Innovation"
+35181,wave1-D,custom_system,0,predictive_analytics,bureau,medium,"""predicting"" → predictive/forecasting model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Global Health (GH)
+35182,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""forecast"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Democracy, Human Rights, and Governance"
+35183,wave1-D,custom_system,0,computer_vision,bureau,medium,"""drone"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,"USAID/Bureau for Inclusive Growth, Partnerships, and Innovation"
+35184,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""Natural Language Processing"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,"USAID/Bureau for Inclusive Growth, Partnerships, and Innovation"
+35185,wave1-D,custom_system,0,classical_ml,bureau,low,"""machine learning"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Global Health (GH)
+35186,wave1-D,custom_system,0,predictive_analytics,bureau,medium,"""model developed"" → predictive/forecasting model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Global Health (GH)
+35187,wave1-D,custom_system,0,computer_vision,office,high,"""Image classification"" → imagery/CV model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Vietnam
+35188,wave1-D,custom_system,0,predictive_analytics,office,medium,"""Artificial Intelligence"" → predictive/forecasting model.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/India
+35189,wave1-D,custom_system,0,nlp_specific,pilot,medium,"""natural language processing"" → text/NLP processing.; pilot/prototype",,,0,,,,,,,,,0,unknown,0,mission_critical,0,"USAID/Bureau for Inclusive Growth, Partnerships, and Innovation"
+35190,wave1-D,custom_system,0,predictive_analytics,office,medium,"""prediction"" → predictive/forecasting model.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Southern Africa
+35191,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""CARI/El Salvador: Risk factors at"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Conflict Prevention and Stabilization
+35192,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""sentiment"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Conflict Prevention and Stabilization
+35193,wave1-D,custom_system,0,classical_ml,bureau,low,"""artificial intelligence"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,"USAID/Bureau for Inclusive Growth, Partnerships, and Innovation"
+35194,wave1-D,custom_system,0,computer_vision,bureau,medium,"""PEER 9-452: Long-term impacts of"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,"USAID/Bureau for Inclusive Growth, Partnerships, and Innovation"
+35195,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""natural language processing"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Global Health (GH)
+35196,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""USING PREDICTIVE ANALYTICS TO IMPROVE"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Inclusive Growth, Partnerships, and Innovation"
+35197,wave1-D,custom_system,0,nlp_specific,office,medium,"""Smart Supervision Platform - Superintendencia"" → text/NLP processing.; office scope",,,0,,,,,,,,,0,unknown,0,administrative,0,USAID/Colombia
+35198,wave1-D,custom_system,0,computer_vision,bureau,medium,"""deep learning"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,"USAID/Bureau for Resilience, Environment, and Food Security"
+35199,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimate"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Global Health (GH)
+35200,wave1-D,custom_system,0,predictive_analytics,bureau,medium,"""forecast"" → predictive/forecasting model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Global Health (GH)
+35201,wave1-D,custom_system,0,predictive_analytics,office,medium,"""forecasts"" → predictive/forecasting model.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/India
+35202,wave1-D,custom_system,0,classical_ml,office,low,"""Artificial Intelligence"" → classical ML model.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/India
+35203,wave1-D,custom_system,0,nlp_specific,office,medium,"""Artificial Intelligence"" → text/NLP processing.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/India
+35204,wave1-D,custom_system,1,general_llm,office,medium,"""AI system"" indicates generative-AI use.; office scope, contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/India
+35205,wave1-D,custom_system,0,predictive_analytics,office,high,"""predicts"" → predictive/forecasting model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/India
+35206,wave1-D,custom_system,0,computer_vision,office,medium,"""Image classification"" → imagery/CV model.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/India
+35207,wave1-D,custom_system,0,classical_ml,office,medium,"""Artificial Intelligence"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Colombia
+35208,wave1-D,custom_system,0,computer_vision,pilot,medium,"""machine learning"" → imagery/CV model.; pilot/prototype",,,0,,,,,,,,,0,unknown,0,cybersecurity,0,USAID/Bureau for Management
+35209,wave1-D,custom_system,0,classical_ml,bureau,low,"""Global Antimicrobial Resistance Surveillance System"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Global Health (GH)
+35210,wave1-D,custom_system,0,classical_ml,bureau,low,"""GXAlert"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Global Health (GH)
+35211,wave1-D,custom_system,0,classical_ml,bureau,low,"""DataToCare"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Global Health (GH)
+35212,wave1-D,custom_system,0,computer_vision,bureau,medium,"""Image classification"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Global Health (GH)
+35213,wave1-D,custom_system,0,classical_ml,office,low,"""DeepGreen Ukraine"" → classical ML model.; office scope",,,0,,,,,,,,,0,unknown,0,it_operations,0,USAID/Ukraine
+35214,wave1-D,custom_system,0,nlp_specific,office,medium,"""Text classification"" → text/NLP processing.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Democratic Republic of the Congo
+35215,wave1-D,custom_system,0,computer_vision,office,medium,"""Image classification"" → imagery/CV model.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Democratic Republic of the Congo
+35216,wave1-D,custom_system,0,classical_ml,office,low,"""AI-enabled presentation design"" → classical ML model.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Democratic Republic of the Congo
+35217,wave1-D,custom_system,0,classical_ml,bureau,low,"""AI tools for learning, evaluation,"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,"USAID/Bureau for Democracy, Human Rights, and Governance"
+35218,wave1-D,custom_system,0,classical_ml,bureau,medium,"""AI-enabled classification for Standardized Program"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,USAID/Bureau for the Middle East
+35219,wave1-D,custom_system,1,general_llm,bureau,medium,"""Chatbot"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for the Middle East
+35220,wave1-D,custom_system,0,classical_ml,bureau,low,"""Generating reports for program monitoring"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,"USAID/Bureau for Inclusive Growth, Partnerships, and Innovation"
+35221,wave1-D,custom_system,0,classical_ml,bureau,low,"""AI tools for grant application"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35222,wave1-D,custom_system,0,nlp_specific,office,high,"""natural language processing"" → text/NLP processing.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Kenya and East Africa
+35223,wave1-D,custom_system,0,classical_ml,office,medium,"""Identifying harmful social media content"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Sri Lanka
+35224,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""forecasts"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Resilience, Environment, and Food Security"
+35225,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Resilience, Environment, and Food Security"
+35226,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Resilience, Environment, and Food Security"
+35227,wave1-D,custom_system,0,computer_vision,bureau,high,"""SERVIR Ecosystem and Carbon Management:"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Resilience, Environment, and Food Security"
+35228,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Resilience, Environment, and Food Security"
+35229,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""SERVIR Air Quality and Health:"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Resilience, Environment, and Food Security"
+35230,wave1-D,custom_system,0,classical_ml,office,medium,"""Amazonía Mia - AI for"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Colombia
+35231,wave1-D,custom_system,0,classical_ml,office,medium,"""Knowledge management and situational awareness"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Colombia
+35232,wave1-D,custom_system,0,classical_ml,office,medium,"""host"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Colombia
+35233,wave1-D,custom_system,1,general_llm,office,medium,"""Chatbot"" indicates generative-AI use.; office scope, contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Colombia
+35234,wave1-D,custom_system,0,classical_ml,office,medium,"""LIDA: Instant Messaging System in"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,1,USAID/Colombia
+35235,wave1-D,generic_use_pattern,1,general_llm,office,high,"""LLM"" indicates LLM/chatbot deployment.; office scope, contracted build",1,,1,ChatGPT/OpenAI,OpenAI,,1,,,,,0,rag_pipeline,0,mission_critical,0,USAID/Colombia
+35236,wave1-D,custom_system,0,predictive_analytics,office,high,"""artificial intelligence"" → predictive/forecasting model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Colombia
+35237,wave1-D,custom_system,0,classical_ml,office,medium,"""Project Data Machine: Open governance"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Colombia
+35238,wave1-D,custom_system,1,general_llm,office,medium,"""ChatBot"" indicates generative-AI use.; office scope, contracted build",,,0,,,,,,,,,0,inference_only,0,administrative,0,USAID/Colombia
+35239,wave1-D,custom_system,0,computer_vision,office,high,"""Landsat"" → imagery/CV model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Colombia
+35240,wave1-D,generic_use_pattern,1,general_llm,office,medium,"""chatbot"" indicates LLM/chatbot deployment.; office scope, contracted build",1,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Colombia
+35241,wave1-D,custom_system,0,classical_ml,office,medium,"""Mobile application for reading rapid"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Guatemala
+35242,wave1-D,custom_system,1,general_llm,office,medium,"""chatbot"" indicates generative-AI use.; office scope, contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Guatemala
+35243,wave1-D,custom_system,0,predictive_analytics,office,high,"""Predictive analytics model to predict"" → predictive/forecasting model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Guatemala
+35244,wave1-D,custom_system,0,computer_vision,pilot,high,"""machine learning"" → imagery/CV model.; pilot/prototype, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Moldova
+35245,wave1-D,custom_system,0,classical_ml,office,medium,"""AI analysis of Moldova's media"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Moldova
+35246,wave1-D,generic_use_pattern,1,general_llm,office,medium,"""Bu Mira"" financial inclusion chatbot"" indicates LLM/chatbot deployment.; office scope, contracted build",1,,0,,,,,,,,,0,inference_only,0,administrative,0,USAID/Indonesia
+35247,wave1-D,custom_system,0,classical_ml,office,medium,"""Machine translation for communication with"" → classical ML model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/El Salvador
+35248,wave1-D,custom_system,0,predictive_analytics,office,high,"""E-Audit system for the tax"" → predictive/forecasting model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Jordan
+35249,wave1-D,custom_system,0,predictive_analytics,office,high,"""predictions"" → predictive/forecasting model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Nigeria
+35250,wave1-D,custom_system,0,predictive_analytics,office,high,"""prediction"" → predictive/forecasting model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Nigeria
+35251,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Automated due diligence for corruption"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,"USAID/Bureau for Democracy, Human Rights, and Governance"
+35252,wave1-D,custom_system,0,classical_ml,bureau,medium,"""AI-powered portal for the Development"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Conflict Prevention and Stabilization
+35253,wave1-D,custom_system,1,general_llm,bureau,medium,"""Generative AI"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Management
+35254,wave1-D,custom_system,1,general_llm,bureau,medium,"""AI system"" indicates generative-AI use.; contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,"USAID/Bureau for Resilience, Environment, and Food Security"
+35255,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Resilience, Environment, and Food Security"
+35256,wave1-D,custom_system,0,computer_vision,bureau,high,"""Using AI to detect information"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"USAID/Bureau for Democracy, Human Rights, and Governance"
+35257,wave1-D,custom_system,0,nlp_specific,bureau,high,"""transcribed"" → text/NLP processing.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Asia
+35258,wave1-D,custom_system,0,nlp_specific,office,high,"""transcribe"" → text/NLP processing.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Georgia
+35259,wave1-D,custom_system,0,predictive_analytics,office,high,"""trend"" → predictive/forecasting model.; office scope, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Georgia
+35260,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Global Health
+35261,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Global Health
+35262,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Global Health
+35263,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Global Health
+35264,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Global Health
+35265,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predicting"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for the Middle East
+35266,wave1-D,custom_system,0,classical_ml,office,low,"""Streamlining recruitment with AI-powered online"" → classical ML model.; office scope",,,0,,,,,,,,,0,unknown,0,administrative,0,USAID/Democratic Republic of the Congo
+35267,wave1-D,custom_system,0,nlp_specific,office,medium,"""Text classification"" → text/NLP processing.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Kenya and East Africa
+35268,wave1-D,custom_system,0,classical_ml,bureau,medium,"""AI-based translation for key Global"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Global Health
+35269,wave1-D,custom_system,1,general_llm,bureau,medium,"""Retrieval-augmented generation for government-to-government "" indicates generative-AI use.; in-house build",,,0,,,,,,,,,0,rag_pipeline,0,administrative,0,"USAID/Bureau for Inclusive Growth, Partnerships, and Innovation"
+35270,wave1-D,custom_system,0,classical_ml,bureau,low,"""ESDB/IDEA Series Classification"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Management
+35271,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""CDR Document Data Improvement with"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Management
+35272,wave1-D,custom_system,0,classical_ml,bureau,low,"""Evaluation Registry Abstracts Generator"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Management
+35273,wave1-D,custom_system,0,classical_ml,bureau,medium,"""first-pass"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Management
+35274,wave1-D,custom_system,0,classical_ml,bureau,medium,"""first-pass"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Management
+35275,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictive"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Management
+35276,wave1-D,custom_system,1,general_llm,bureau,medium,"""Ask CHOPP"" indicates generative-AI use.; contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Management
+35277,wave1-D,custom_system,1,general_llm,bureau,medium,"""Summarization"" indicates generative-AI use.; contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Management
+35278,wave1-D,custom_system,0,classical_ml,bureau,medium,"""USAID CDM-XDR (Extended Detection and"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,cybersecurity,0,USAID/Bureau for Management
+35279,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Boomitra: Accelerating soil carbon removal"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35280,wave1-D,custom_system,1,general_llm,bureau,medium,"""machine learning"" indicates generative-AI use.; contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35281,wave1-D,custom_system,0,classical_ml,bureau,medium,"""EYouth: Learning and training opportunities"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35282,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""forecast"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35283,wave1-D,custom_system,0,computer_vision,bureau,high,"""satellite imagery"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35284,wave1-D,custom_system,0,nlp_specific,bureau,high,"""natural language processing"" → text/NLP processing.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35285,wave1-D,custom_system,0,classical_ml,pilot,medium,"""WFP AI Sandbox: Platform to"" → classical ML model.; pilot/prototype, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35286,wave1-D,custom_system,0,computer_vision,bureau,high,"""Enhancing Smart Agriculture in Rural"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35287,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Emata: Affordable digital finance for"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,USAID/Bureau for Humanitarian Assistance
+35288,wave1-D,custom_system,0,computer_vision,bureau,high,"""satellite imagery"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35289,wave1-D,product_deployment,1,general_llm,bureau,high,"""Retrieval-Augmented"" indicates commercial LLM (AWS) wrap.; AWS AI deployment",,,1,AWS AI,AWS,,,,,,1,0,rag_pipeline,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35290,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Generating SQL queries from natural"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35291,wave1-D,generic_use_pattern,1,general_llm,bureau,medium,"""large language model"" indicates LLM/chatbot deployment.; contracted build",1,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35292,wave1-D,custom_system,0,nlp_specific,bureau,high,"""natural language processing"" → text/NLP processing.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35293,wave1-D,custom_system,0,nlp_specific,bureau,high,"""natural language processing"" → text/NLP processing.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35294,wave1-D,custom_system,0,classical_ml,bureau,low,"""AI translation of water, sanitation,"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35295,wave1-D,custom_system,0,classical_ml,bureau,medium,"""machine learning"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35296,wave1-D,custom_system,0,nlp_specific,bureau,high,"""NLP"" → text/NLP processing.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35297,wave1-D,custom_system,1,general_llm,bureau,medium,"""DEEP: Data Entry and Exploration"" indicates generative-AI use.; contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35298,wave1-D,custom_system,0,classical_ml,bureau,medium,"""AI for humanitarian logistics"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35299,wave1-D,custom_system,0,classical_ml,bureau,medium,"""SMARTplus: digital system for fast,"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35300,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Machine Learning"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35301,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Advanced language technology in marginalized"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35302,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""forecast"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35303,wave1-D,custom_system,0,nlp_specific,bureau,high,"""NLP"" → text/NLP processing.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35304,wave1-D,custom_system,1,general_llm,bureau,medium,"""Chatbot"" indicates generative-AI use.; contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35305,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Prediction"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35306,wave1-D,generic_use_pattern,1,general_llm,bureau,medium,"""chatbot"" indicates LLM/chatbot deployment.; contracted build",1,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35307,wave1-D,custom_system,0,classical_ml,pilot,medium,"""Using technology to combat violence"" → classical ML model.; pilot/prototype, contracted build",,,0,,,,,,,,,0,custom_trained,1,it_operations,0,USAID/Bureau for Humanitarian Assistance
+35308,wave1-D,custom_system,0,classical_ml,bureau,medium,"""AutoAnthro: 3D scanning for improved"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35309,wave1-D,custom_system,1,general_llm,bureau,medium,"""Machine learning"" indicates generative-AI use.; contracted build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35310,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Combatting health misinformation in Yemen"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35311,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictive"" → predictive/forecasting model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35312,wave1-D,custom_system,0,computer_vision,bureau,high,"""satellite imagery"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35313,wave1-D,generic_use_pattern,1,general_llm,bureau,medium,"""chatbot"" indicates LLM/chatbot deployment.; contracted build",1,,0,,,,,,,,,0,inference_only,0,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35314,wave1-D,custom_system,0,computer_vision,bureau,high,"""imagery"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35315,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Natural Language Processing"" → text/NLP processing.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,USAID/Bureau for Humanitarian Assistance
+35316,wave1-D,custom_system,0,classical_ml,office,low,"""Bambara language processing tool"" → classical ML model.; office scope",,,0,,,,,,,,,0,unknown,0,mission_critical,0,USAID/Mali
+35317,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""recommendation"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,ARS: Agricultural Research Service
+35318,wave1-D,custom_system,0,classical_ml,bureau,medium,"""ARS Project Mapping"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,research,0,ARS: Agricultural Research Service
+35319,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Thesaurus"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,ARS: Agricultural Research Service
+35320,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""prediction"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35321,wave1-D,custom_system,0,computer_vision,bureau,medium,"""drone"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35322,wave1-D,custom_system,0,computer_vision,bureau,medium,"""drone"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35323,wave1-D,custom_system,0,computer_vision,bureau,medium,"""Detection of Aquatic Weeds"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35324,wave1-D,custom_system,0,computer_vision,bureau,medium,"""Automated Detection & Mapping of"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35325,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Democratizing Data"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NASS: National Agricultural Statistics Service
+35326,wave1-D,custom_system,0,computer_vision,bureau,high,"""Land Change Analysis Tool (LCAT)"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FPAC-BC: FPAC Business Center
+35327,wave1-D,custom_system,0,nlp_specific,pilot,high,"""OCIO/CDO Council Comment Analysis Tool"" → text/NLP processing.; pilot/prototype, contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,OCIO: Office of the Chief Information Officer
+35328,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Retailer Receipt Analysis"" → text/NLP processing.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FNS: Food and Nutrition Service
+35329,wave1-D,product_deployment,0,classical_ml,bureau,high,"""Ecosystem Management Decision Support System"" → classical ML model.; ArcGIS/Esri deployment",,,1,ArcGIS/Esri,Esri,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35330,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Cross-Laminated Timber (CLT) Knowledge Database"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35331,wave1-D,custom_system,0,computer_vision,bureau,high,"""raster"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35332,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""TreeMap and FuelMap (all versions)"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service; Forest Service Research & Development
+35333,wave1-D,custom_system,0,computer_vision,bureau,high,"""Landscape Change Monitoring System (LCMS)"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35334,wave1-D,custom_system,0,computer_vision,bureau,high,"""Forest Health Detection Monitoring"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35335,wave1-D,custom_system,0,computer_vision,bureau,high,"""Cropland Data Layer"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NASS: National Agricultural Statistics Service
+35336,wave1-D,custom_system,0,classical_ml,bureau,medium,"""List Frame Deadwood Identification"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NASS: National Agricultural Statistics Service
+35337,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Natural Language Processing"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NIFA: National Institute of Food and Agriculture
+35338,wave1-D,custom_system,0,computer_vision,bureau,high,"""Video Surveillance System"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,"OSSP: Office of Safety, Security, and Protection"
+35339,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Aquisition Approval Request Compliance Tool"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,OCIO: Office of the Chief Information Officer
+35340,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""forecasts"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NRCS: Natural Resources Conservation Service
+35341,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""Natural Language Processing"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35342,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""prediction"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,it_operations,0,OCIO: Office of the Chief Information Officer
+35343,wave1-D,custom_system,0,nlp_specific,bureau,high,"""natural language processing"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,it_operations,0,OCIO: Office of the Chief Information Officer
+35344,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""AI/ML"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,cybersecurity,0,OASCR: Office of the Assistant Secretary for Civil Rights
+35345,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Approximate String Matching (aka fuzzy"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35346,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Automated PDF Document Processing and"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35347,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predicts"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NASS: National Agricultural Statistics Service
+35348,wave1-D,custom_system,0,classical_ml,bureau,low,"""AI/ML"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,NRCS: Natural Resources Conservation Service
+35349,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NRCS: Natural Resources Conservation Service
+35350,wave1-D,custom_system,0,computer_vision,bureau,medium,"""aerial images"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,NRCS: Natural Resources Conservation Service
+35351,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Nutrition Education & Local Access"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FNS: Food and Nutrition Service
+35352,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Survey Text Remarks Value Scoring"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NASS: National Agricultural Statistics Service
+35353,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""recommendation"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NASS: National Agricultural Statistics Service
+35354,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Multilingual Translation of Recalls and"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FSIS: Food Safety and Inspection Service
+35355,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FSIS: Food Safety and Inspection Service
+35356,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FSIS: Food Safety and Inspection Service
+35357,wave1-D,custom_system,0,nlp_specific,bureau,high,"""Public Comments Analysis"" → text/NLP processing.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,APHIS: Animal and Plant Health Inspection Service; AMS: Agricultural Marketing Service
+35358,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimated"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,research,0,ARS: Agricultural Research Service
+35359,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NASS: National Agricultural Statistics Service
+35360,wave1-D,product_deployment,0,nlp_specific,bureau,high,"""Dam Inspection Report Document Processing"" → text/NLP processing.; MS Power Platform deployment",,,1,MS Power Platform,Microsoft,,,,,,,0,custom_trained,1,mission_critical,0,NRCS: Natural Resources Conservation Service
+35361,wave1-D,custom_system,0,predictive_analytics,bureau,medium,"""recommendations"" → predictive/forecasting model.",,,0,,,,,,,,,0,unknown,0,research,0,ERS: Economic Research Service
+35362,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimate"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NRCS: Natural Resources Conservation Service
+35363,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35364,wave1-D,custom_system,1,general_llm,bureau,medium,"""FSA FLP Chatbot"" indicates generative-AI use.; in-house build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,FSA: Farm Service Agency
+35365,wave1-D,custom_system,0,classical_ml,bureau,medium,"""ROE Document Recognition - RoeDR"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,RMA: Risk Management Agency
+35366,wave1-D,custom_system,0,classical_ml,bureau,medium,"""IRIS"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35367,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Ticket Resolution Categorization (Incident/Change)"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,it_operations,0,OCIO: Office of the Chief Information Officer
+35368,wave1-D,custom_system,0,predictive_analytics,pilot,high,"""predictions"" → predictive/forecasting model.; pilot/prototype, contracted build",,,0,,,,,,,,,0,custom_trained,1,it_operations,0,OCIO: Office of the Chief Information Officer
+35369,wave1-D,custom_system,0,classical_ml,bureau,medium,"""File Rename Automation"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FSA: Farm Service Agency
+35370,wave1-D,custom_system,1,general_llm,bureau,medium,"""Rapid Drafting of ARS Research"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,administrative,0,ARS: Agricultural Research Service
+35371,wave1-D,custom_system,1,general_llm,bureau,medium,"""generative AI"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,NRCS: Natural Resources Conservation Service
+35372,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Dynamic Soils Hub"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NRCS: Natural Resources Conservation Service
+35373,wave1-D,custom_system,0,computer_vision,bureau,high,"""Cover Crop Mapping"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,RMA: Risk Management Agency
+35374,wave1-D,custom_system,0,computer_vision,bureau,high,"""Planting Date Detection"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,RMA: Risk Management Agency
+35375,wave1-D,custom_system,0,computer_vision,bureau,high,"""Acreage and Crop Type Validation"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,RMA: Risk Management Agency
+35376,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predicting"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35377,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predicting"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,APHIS: Animal and Plant Health Inspection Service
+35378,wave1-D,custom_system,0,predictive_analytics,bureau,medium,"""predicted"" → predictive/forecasting model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,NASS: National Agricultural Statistics Service
+35379,wave1-D,custom_system,0,computer_vision,bureau,high,"""County-level remotely-sensed corn and soybean"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,NASS: National Agricultural Statistics Service
+35380,wave1-D,custom_system,1,general_llm,bureau,medium,"""chatbot"" indicates generative-AI use.",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,NASS: National Agricultural Statistics Service
+35381,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""prediction"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35382,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Incident Invoice Document Understanding"" → classical ML model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,administrative,0,FS: Forest Service
+35383,wave1-D,custom_system,0,computer_vision,bureau,high,"""Forest disease detection and screening"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35384,wave1-D,custom_system,0,classical_ml,bureau,low,"""Use of LLMs for data"" → classical ML model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,FS: Forest Service
+35385,wave1-D,custom_system,1,general_llm,bureau,medium,"""summarization"" indicates generative-AI use.; in-house build",,,0,,,,,,,,,0,inference_only,0,mission_critical,0,FS: Forest Service
+35386,wave1-D,custom_system,0,computer_vision,bureau,high,"""raster"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35387,wave1-D,custom_system,0,computer_vision,bureau,high,"""raster"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35388,wave1-D,custom_system,0,classical_ml,bureau,medium,"""Spread and Balance Sample Design"" → classical ML model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35389,wave1-D,custom_system,0,computer_vision,bureau,high,"""Raster"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35390,wave1-D,custom_system,0,computer_vision,bureau,high,"""raster"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35391,wave1-D,custom_system,0,computer_vision,bureau,high,"""BirdNET to detect bird vocalizations"" → imagery/CV model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35392,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimated"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35393,wave1-D,custom_system,0,predictive_analytics,bureau,medium,"""predictions"" → predictive/forecasting model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,FS: Forest Service; USDOT: US Department of Transportation
+35394,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predicts"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35395,wave1-D,custom_system,0,computer_vision,bureau,medium,"""LiDAR"" → imagery/CV model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,FS: Forest Service
+35396,wave1-D,product_deployment,1,general_llm,bureau,high,"""chatbot"" indicates generative-AI use.; ArcGIS/Esri deployment",,,1,ArcGIS/Esri,Esri,,,,,,,0,inference_only,0,it_operations,0,FS: Forest Service
+35397,wave1-D,custom_system,0,computer_vision,bureau,high,"""object detection"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,research,0,FS: Forest Service; Forest Service Research & Development
+35398,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""predictions"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35399,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""estimates"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35400,wave1-D,custom_system,0,computer_vision,bureau,high,"""raster"" → imagery/CV model.; contracted build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35401,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""IOL Focus Group and Survey"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,FS: Forest Service
+35402,wave1-D,product_deployment,0,computer_vision,bureau,high,"""image classifications"" → imagery/CV model.; ArcGIS/Esri deployment",,,1,ArcGIS/Esri,Esri,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service
+35403,wave1-D,custom_system,0,nlp_specific,bureau,medium,"""public comment"" → text/NLP processing.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,FS: Forest Service
+35404,wave1-D,custom_system,0,predictive_analytics,bureau,medium,"""QUIC-Fire processing and analysis"" → predictive/forecasting model.",,,0,,,,,,,,,0,unknown,0,mission_critical,0,FS: Forest Service
+35405,wave1-D,custom_system,0,predictive_analytics,bureau,high,"""Analysis of prescribed fire turbulence"" → predictive/forecasting model.; in-house build",,,0,,,,,,,,,0,custom_trained,1,mission_critical,0,FS: Forest Service

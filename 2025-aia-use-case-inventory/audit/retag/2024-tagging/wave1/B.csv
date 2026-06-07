@@ -1,0 +1,377 @@
+use_case_id_2024,tagged_by_agent,entry_type,is_generative_ai,ai_sophistication,deployment_scope,confidence,reasoning,is_general_llm_access,is_coding_tool,is_cots_commercial,tool_product_name,tool_vendor,is_microsoft_copilot,is_openai,is_anthropic,is_google,is_github_copilot,is_aws_ai,is_enterprise_wide,architecture_type,has_model_training,use_type,is_public_facing,scope_detail
+34312,wave1-B,product_deployment,1,coding_assistant,pilot,high,"Says 'Code Modernization' — coding assistant, pilot/initiated stage.",0,1,1,GitHub Copilot,GitHub,0,0,0,0,1,0,0,inference_only,0,it_operations,0,BEA
+34313,wave1-B,product_deployment,1,general_llm,pilot,high,"Says 'LLM' — generative LLM use, pilot/initiated stage.",1,0,1,Azure OpenAI,Microsoft,0,1,0,0,0,0,0,inference_only,0,mission_critical,0,BEA
+34314,wave1-B,custom_system,0,classical_ml,pilot,medium,"Says 'AI' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,0,BEA
+34315,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'predictive' — predictive ML model, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CENSUS
+34316,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'object detection' — computer-vision task, CENSUS-scoped.",0,0,1,Google Earth Engine,Google,0,0,0,1,0,0,0,,0,mission_critical,0,CENSUS
+34317,wave1-B,custom_system,0,nlp_specific,bureau,high,"Says 'information extraction' — classical NLP task, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CENSUS
+34318,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'predicted' — predictive ML model, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CENSUS
+34319,wave1-B,custom_system,0,nlp_specific,bureau,high,"Says 'This AI use case aims to' — classical NLP task, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CENSUS
+34320,wave1-B,custom_system,0,nlp_specific,bureau,high,"Says 'Information extraction' — classical NLP task, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CENSUS
+34321,wave1-B,custom_system,0,nlp_specific,bureau,high,"Says 'This AI use case processes and' — classical NLP task, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CENSUS
+34322,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'predicted' — predictive ML model, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CENSUS
+34323,wave1-B,custom_system,0,nlp_specific,bureau,high,"Says 'natural language processing' — classical NLP task, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,CENSUS
+34324,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,CENSUS
+34325,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'Transformer-Based' — generative LLM use, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,administrative,0,CENSUS
+34326,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,1,CENSUS
+34327,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'ChatGPT' — generative LLM use, CENSUS-scoped.",0,0,1,ChatGPT,OpenAI,0,1,0,0,0,0,0,inference_only,0,mission_critical,0,CENSUS
+34328,wave1-B,custom_system,0,nlp_specific,enterprise_wide,high,"Says 'Translation' — classical NLP task, agency-wide deployment.",0,0,0,,,0,0,0,0,0,0,1,custom_trained,1,mission_critical,0,CENSUS
+34329,wave1-B,generic_use_pattern,1,general_llm,pilot,medium,"Says 'The Census API GPT provides guidance' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,CENSUS
+34330,wave1-B,generic_use_pattern,1,general_llm,pilot,medium,"Says 'LLM' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,rag_pipeline,,mission_critical,0,CENSUS
+34331,wave1-B,generic_use_pattern,0,predictive_analytics,bureau,low,"Says 'Machine Learning' — predictive ML model, CENSUS-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,CENSUS
+34332,wave1-B,product_deployment,1,general_llm,pilot,high,"Says 'CoPilot' — generative LLM use, pilot/initiated stage.",0,0,1,Microsoft 365 Copilot,Microsoft,1,0,0,0,0,0,0,inference_only,0,mission_critical,0,FIRSTNET
+34333,wave1-B,generic_use_pattern,0,computer_vision,bureau,low,"Says 'Utilize AI photo and video editing' — computer-vision task, FIRSTNET-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,administrative,0,FIRSTNET
+34334,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'Chatbot' — generative LLM use, ITA-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,ITA
+34335,wave1-B,custom_system,1,general_llm,pilot,medium,"Says 'Generative AI' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,ITA
+34336,wave1-B,custom_system,1,general_llm,pilot,medium,"Says 'Generative AI' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,administrative,0,ITA
+34337,wave1-B,custom_system,0,classical_ml,bureau,low,"Says 'WAWENETS' — classical ML pipeline, National Telecommunications and Information Administration-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,National Telecommunications and Information Administration
+34338,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'CoPilot' — generative LLM use, National Telecommunications and Information Administration-scoped.",0,0,1,Microsoft Copilot,Microsoft,1,0,0,0,0,0,0,inference_only,0,administrative,0,National Telecommunications and Information Administration
+34339,wave1-B,custom_system,0,classical_ml,pilot,low,"Says 'Spectrum Visualizations' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,National Telecommunications and Information Administration
+34340,wave1-B,product_deployment,1,general_llm,pilot,low,"Says 'Use of Lexis' — generative LLM use, pilot/initiated stage.",0,0,1,LexisNexis,LexisNexis,0,0,0,0,0,0,0,unknown,0,research,0,National Telecommunications and Information Administration
+34341,wave1-B,custom_system,0,predictive_analytics,pilot,high,"Says 'machine learning' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,National Telecommunications and Information Administration
+34342,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'Improving the quality of written communications,' — generative LLM use, NIST-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,NIST
+34343,wave1-B,custom_system,0,nlp_specific,bureau,high,"Says 'Assist end users is discovery, access,' — classical NLP task, NIST-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,NIST
+34344,wave1-B,custom_system,0,computer_vision,bureau,low,"Says 'Ocean image annotation and model building' — computer-vision task, NOAA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34345,wave1-B,custom_system,0,computer_vision,bureau,high,"Says 'land cover' — computer-vision task, NOAA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34346,wave1-B,custom_system,0,computer_vision,bureau,high,"Says 'Computer vision' — computer-vision task, NOAA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34347,wave1-B,custom_system,0,computer_vision,pilot,low,"Says 'Remote sensing data interpretation and prediction' — computer-vision task, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34348,wave1-B,custom_system,0,classical_ml,pilot,high,"Says 'model' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34349,wave1-B,custom_system,0,computer_vision,pilot,low,"Says 'CoralNet: Ongoing operational use, improvement, and' — computer-vision task, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34350,wave1-B,custom_system,0,computer_vision,pilot,low,"Says 'BANTER, a machine learning acoustic event' — computer-vision task, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34351,wave1-B,custom_system,0,computer_vision,bureau,high,"Says 'bounding boxes' — computer-vision task, NOAA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34352,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'prediction' — predictive ML model, NOAA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34353,wave1-B,custom_system,0,predictive_analytics,pilot,high,"Says 'risk assessments' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,0,NOAA
+34354,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'forecasts' — predictive ML model, NOAA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34355,wave1-B,custom_system,0,computer_vision,bureau,high,"Says 'Used to create internal ECM algorithm' — computer-vision task, NOAA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34356,wave1-B,custom_system,0,predictive_analytics,pilot,low,"Says 'AI Snowfall Detection and Snowfall Rate' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34357,wave1-B,custom_system,0,predictive_analytics,pilot,low,"Says 'AI Rain Rate estimation' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34358,wave1-B,custom_system,0,predictive_analytics,pilot,low,"Says 'AI Total Precipitable Water estimation' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34359,wave1-B,custom_system,0,predictive_analytics,pilot,low,"Says 'AI Cloud Liquid Water estimation' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,NOAA
+34360,wave1-B,custom_system,0,nlp_specific,bureau,high,"Says 'Augmentation for next generation patent search' — classical NLP task, USPTO-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USPTO
+34361,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'Predictions' — predictive ML model, USPTO-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USPTO
+34362,wave1-B,product_deployment,0,computer_vision,pilot,high,"Says 'Clarivate' — computer-vision task, pilot/initiated stage.",0,0,1,Clarivate,Clarivate,0,0,0,0,0,0,0,,0,mission_critical,0,USPTO
+34363,wave1-B,generic_use_pattern,1,general_llm,bureau,medium,"Says 'summarized' — generative LLM use, USPTO-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,1,USPTO
+34364,wave1-B,generic_use_pattern,0,nlp_specific,bureau,low,"Says 'Service to help inventors ""get started""' — classical NLP task, USPTO-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,USPTO
+34365,wave1-B,custom_system,0,computer_vision,bureau,high,"Says 'A SaaS AI driven image search' — computer-vision task, USPTO-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USPTO
+34366,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'chatbot' — generative LLM use, USPTO-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,1,USPTO
+34367,wave1-B,custom_system,0,nlp_specific,bureau,high,"Says 'Quality control of customer applied document' — classical NLP task, USPTO-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USPTO
+34368,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'Prediction' — predictive ML model, USPTO-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USPTO
+34369,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Predicts' — predictive ML model, LM HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,administrative,0,LM HQ
+34370,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'Reduce time required to classify email' — classical NLP task, EE HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,EE HQ
+34371,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'Natural Language Processing' — classical NLP task, EHSS HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,EHSS HQ
+34372,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Machine Learning' — predictive ML model, EHSS HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,EHSS HQ
+34373,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Machine Learning' — predictive ML model, EHSS HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,EHSS HQ
+34374,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Machine Learning' — predictive ML model, EHSS HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,EHSS HQ
+34375,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'Prediction' — predictive ML model, SLAC-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,SLAC
+34376,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'predictions' — predictive ML model, SLAC-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,SLAC
+34377,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, PM HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,PM HQ
+34378,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Predicts' — predictive ML model, LM HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,LM HQ
+34379,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, KCNSC-scoped.",0,0,0,AWS AI,AWS,0,0,0,0,0,1,0,custom_trained,1,administrative,0,KCNSC
+34380,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'Predictive' — predictive ML model, LANL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,LANL
+34381,wave1-B,generic_use_pattern,0,classical_ml,pilot,low,"Says 'AI' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,,,research,0,PNNL
+34382,wave1-B,product_deployment,1,general_llm,pilot,high,"Says 'Copilot' — generative LLM use, pilot/initiated stage.",0,0,1,Microsoft 365 Copilot,Microsoft,1,0,0,0,0,0,0,inference_only,0,research,0,PNNL
+34383,wave1-B,custom_system,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, LANL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,LANL
+34384,wave1-B,custom_system,0,classical_ml,pilot,high,"Says 'Spot, a mobile robot, can navigate' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,PNNL
+34385,wave1-B,generic_use_pattern,0,classical_ml,pilot,low,"Says 'AI' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,,,research,0,PNNL
+34386,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'speech-to-text (STT) and text-to-speech (TTS) services' — generative LLM use, HC HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,HC HQ
+34387,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'Provide troubleshooting assistance via chat to' — generative LLM use, LANL-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,LANL
+34388,wave1-B,product_deployment,0,classical_ml,pilot,high,"Says 'ML' — classical ML pipeline, pilot/initiated stage.",0,0,1,Databricks,Databricks,0,0,0,0,0,0,0,,0,research,0,PNNL
+34389,wave1-B,generic_use_pattern,0,classical_ml,bureau,low,"Says 'AI' — classical ML pipeline, EHSS HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,research,0,EHSS HQ
+34390,wave1-B,product_deployment,1,general_llm,pilot,high,"Says 'Copilot' — generative LLM use, pilot/initiated stage.",0,0,1,Microsoft Copilot for Security,Microsoft,1,0,0,0,0,0,0,inference_only,0,cybersecurity,0,PNNL
+34391,wave1-B,generic_use_pattern,0,classical_ml,bureau,low,"Says 'AI' — classical ML pipeline, KCNSC-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,research,0,KCNSC
+34392,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, NREL-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,NREL
+34393,wave1-B,custom_system,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, NE INL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,NE INL
+34394,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'EnerGPT aims to enhance user productivity' — classical ML pipeline, IM-50-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,IM-50
+34395,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, EHSS HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,EHSS HQ
+34396,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'predictions' — predictive ML model, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34397,wave1-B,generic_use_pattern,0,classical_ml,bureau,low,"Says 'ML' — classical ML pipeline, SEPA-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,research,0,SEPA
+34398,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'Prediction' — predictive ML model, SLAC-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,SLAC
+34399,wave1-B,custom_system,0,predictive_analytics,team,high,"Says 'Machine Learning' — predictive ML model, team-level use.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,0,SLAC
+34400,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, NREL-scoped.",0,0,0,,,0,0,0,0,0,0,0,rag_pipeline,,research,0,NREL
+34401,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, RL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,RL
+34402,wave1-B,bespoke_application,1,general_llm,pilot,medium,"Says 'RAG' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,rag_pipeline,1,research,0,PPPL
+34403,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, RL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,RL
+34404,wave1-B,bespoke_application,1,general_llm,pilot,medium,"Says 'generative AI' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,NE INL
+34405,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'LLM' — generative LLM use, RL-scoped.",0,0,1,ChatGPT,OpenAI,0,1,0,0,0,0,0,inference_only,1,research,0,RL
+34406,wave1-B,custom_system,0,predictive_analytics,pilot,medium,"Says 'prediction' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,SRS
+34407,wave1-B,custom_system,0,classical_ml,pilot,high,"Says 'AI' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,NE INL
+34408,wave1-B,bespoke_application,1,general_llm,pilot,medium,"Says 'Large Language Models' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,GDO HQ
+34409,wave1-B,custom_system,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, ANL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,ANL
+34410,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Reduce time required to classify legacy' — predictive ML model, EE HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,EE HQ
+34411,wave1-B,custom_system,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, ANL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,ANL
+34412,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'The Funding Finder will aggregate FOAs' — classical ML pipeline, IM-50-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,IM-50
+34413,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'PDF Analyzer will enable teams across' — generative LLM use, IM-50-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,IM-50
+34414,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'The purpose of the Hanford Service' — generative LLM use, RL-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,RL
+34415,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'chatgpt' — generative LLM use, NE INL-scoped.",0,0,1,ChatGPT,OpenAI,0,1,0,0,0,0,0,rag_pipeline,0,research,0,NE INL
+34416,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'This effort focuses on Transformer models' — generative LLM use, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,FNAL
+34417,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, RL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,RL
+34418,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, NREL-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,NREL
+34419,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, NREL-scoped.",0,0,0,,,0,0,0,0,0,0,0,rag_pipeline,,research,0,NREL
+34420,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Predictive' — predictive ML model, KCNSC-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,administrative,0,KCNSC
+34421,wave1-B,product_deployment,1,coding_assistant,pilot,high,"Says 'GitHub Copilot' — coding assistant, pilot/initiated stage.",0,1,1,GitHub Copilot,GitHub,0,1,0,0,1,0,0,inference_only,0,research,0,PNNL
+34422,wave1-B,generic_use_pattern,0,classical_ml,team,low,"Says 'AI' — classical ML pipeline, team-level use.",0,0,0,,,0,0,0,0,0,0,0,,,research,0,NA-IM (Enterprise) – Office of the Associate Administrator for Information Management and Chief Information Officer (HQ-Enterprise) (NNSA HQ)
+34423,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'Locating relevant information across multiple data' — generative LLM use, SLAC-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,SLAC
+34424,wave1-B,custom_system,0,classical_ml,pilot,high,"Says 'AI' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,PPPL
+34425,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, NREL-scoped.",0,0,0,,,0,0,0,0,0,0,0,rag_pipeline,,research,0,NREL
+34426,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'Large Language Models' — generative LLM use, LANL-scoped.",0,0,0,,,0,0,0,0,0,0,0,rag_pipeline,,it_operations,0,LANL
+34427,wave1-B,custom_system,0,classical_ml,pilot,medium,"Says 'Currently requirements are still be collected' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,IM-50
+34428,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'ChatGPT' — generative LLM use, LANL-scoped.",0,0,1,ChatGPT Enterprise,OpenAI,0,1,0,0,0,0,0,rag_pipeline,0,research,0,LANL
+34429,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'Large language model' — generative LLM use, ANL-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,ANL
+34430,wave1-B,bespoke_application,1,general_llm,pilot,medium,"Says 'RAG' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,rag_pipeline,1,research,0,PPPL
+34431,wave1-B,bespoke_application,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, NREL-scoped.",0,0,0,,,0,0,0,0,0,0,0,rag_pipeline,,research,0,NREL
+34432,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'Topic Modeling' — classical NLP task, PA HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,PA HQ
+34433,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Identify print defects during the printing' — classical ML pipeline, SRS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,SRS
+34434,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Automation of the robots movements' — classical ML pipeline, Y-12-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,Y-12
+34435,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, Y-12-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,Y-12
+34436,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'Transcribing' — classical NLP task, Y-12-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,Y-12
+34437,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'recommender' — predictive ML model, Y-12-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,Y-12
+34438,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'predictable' — predictive ML model, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34439,wave1-B,custom_system,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34440,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'prediction' — predictive ML model, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34441,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'prediction' — predictive ML model, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34442,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'AI algorithms are implemented in on-detector' — predictive ML model, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34443,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'prediction' — predictive ML model, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34444,wave1-B,custom_system,0,classical_ml,bureau,high,"Says 'ML' — classical ML pipeline, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34445,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'prediction' — predictive ML model, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34446,wave1-B,custom_system,0,predictive_analytics,bureau,high,"Says 'predictiojns' — predictive ML model, FNAL-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,FNAL
+34447,wave1-B,generic_use_pattern,0,predictive_analytics,bureau,low,"Says 'Predicts' — predictive ML model, LM HQ-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,administrative,0,LM HQ
+35886,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'OCR' — computer-vision task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35887,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'predictive' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35888,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'object detection' — computer-vision task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35889,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'natural language processing' — classical NLP task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35890,wave1-B,product_deployment,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, ATF-scoped.",0,0,1,Axon,Axon,0,0,0,0,0,0,0,,0,mission_critical,0,ATF
+35891,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'predictive' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35892,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'ATF recently enabled Storage subscription in' — classical ML pipeline, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35893,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'forecasting' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35894,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'anomaly detection' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35895,wave1-B,product_deployment,0,predictive_analytics,bureau,high,"Says 'CellHawk' — predictive ML model, ATF-scoped.",0,0,1,CellHawk,Hawk Analytics,0,0,0,0,0,0,0,,0,mission_critical,0,ATF
+35896,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'anomaly detection' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35897,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'ai' — classical ML pipeline, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,it_operations,0,ATF
+35898,wave1-B,generic_use_pattern,0,nlp_specific,bureau,low,"Says 'This product interfaces with regulations' — classical NLP task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,ATF
+35899,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'anomaly detection' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35900,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'bounding boxes' — computer-vision task, ATF-scoped.",0,0,1,Axon Evidence.com,Axon,0,0,0,0,0,0,0,,0,mission_critical,0,ATF
+35901,wave1-B,generic_use_pattern,0,nlp_specific,bureau,low,"Says 'This system allows agencies to receive' — classical NLP task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,1,ATF
+35902,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'machine learning' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35903,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'ATF uses the AI features in' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35904,wave1-B,product_deployment,0,predictive_analytics,bureau,high,"Says 'LexisNexis' — predictive ML model, ATF-scoped.",0,0,1,LexisNexis,LexisNexis,0,0,0,0,0,0,0,,0,mission_critical,0,ATF
+35905,wave1-B,product_deployment,0,predictive_analytics,bureau,high,"Says 'LexisNexis' — predictive ML model, ATF-scoped.",0,0,1,LexisNexis,LexisNexis,0,0,0,0,0,0,0,,0,mission_critical,0,ATF
+35906,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'The AI features of Mark43 Public' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35907,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'anomaly detection' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35908,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'OCR' — computer-vision task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35909,wave1-B,custom_system,0,classical_ml,team,medium,"Says 'AI' — classical ML pipeline, team-level use.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35910,wave1-B,product_deployment,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, ATF-scoped.",0,0,1,Palantir,Palantir,0,0,0,0,0,0,0,,0,mission_critical,0,ATF
+35911,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'natural language processing' — classical NLP task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35912,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'chatbot' — generative LLM use, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,ATF
+35913,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'This capability is not provided or' — classical ML pipeline, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35914,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'anomaly detection' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35915,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'ATF uses Spokeo to aggregate and' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35916,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Thomson Reuters Clear consolidates and analyzes' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35917,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'The purpose of the AI use' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35918,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'Veritone' — computer-vision task, ATF-scoped.",0,0,1,Veritone,Veritone,0,0,0,0,0,0,0,,0,mission_critical,0,ATF
+35919,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Whooster integrates and analyze data from' — predictive ML model, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35920,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'license plate' — computer-vision task, ATF-scoped.",0,0,1,Flock LPR,Flock Safety,0,0,0,0,0,0,0,,0,mission_critical,0,ATF
+35921,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'license plate' — computer-vision task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35922,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'license plate' — computer-vision task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35923,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'license plate' — computer-vision task, ATF-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ATF
+35924,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'Veritone' — computer-vision task, ATR-scoped.",0,0,1,Veritone,Veritone,0,0,0,0,0,0,0,,0,mission_critical,0,ATR
+35925,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'summarize' — generative LLM use, ATR-scoped.",0,0,1,SAS,SAS,0,0,0,0,0,0,0,unknown,0,mission_critical,0,ATR
+35926,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'summarize' — generative LLM use, ATR-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,ATR
+35927,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'summarize' — generative LLM use, ATR-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,ATR
+35928,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'summarize' — generative LLM use, ATR-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,ATR
+35929,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'summarize' — generative LLM use, ATR-scoped.",0,0,1,Databricks,Databricks,0,0,0,0,0,0,0,unknown,0,mission_critical,0,ATR
+35930,wave1-B,product_deployment,0,classical_ml,pilot,high,"Says 'AI' — classical ML pipeline, pilot/initiated stage.",0,0,1,Salesforce,Salesforce,0,0,0,0,0,0,0,,0,mission_critical,0,CIV
+35931,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'ChatBot' — generative LLM use, COPS-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,COPS
+35932,wave1-B,custom_system,0,predictive_analytics,pilot,medium,"Says 'Prediction' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CRM
+35933,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'Object recognition' — computer-vision task, CRM-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CRM
+35934,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, CRM-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,CRM
+35935,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'Veritone' — computer-vision task, CRM-scoped.",0,0,1,Veritone,Veritone,0,0,0,0,0,0,0,,0,mission_critical,0,CRM
+35936,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'geospatial' — computer-vision task, CRT-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CRT
+35937,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'To enable network routing technology to' — classical ML pipeline, CRT-scoped.",0,0,0,AWS AI,AWS,0,0,0,0,0,1,0,custom_trained,1,mission_critical,0,CRT
+35938,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'To enable network routing technology to' — classical ML pipeline, CRT-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CRT
+35939,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'Dynamic captions uses AI tech within' — classical NLP task, CRT-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CRT
+35940,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'To automate the disqualification of reports' — classical ML pipeline, CRT-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CRT
+35941,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'natural language processing' — classical NLP task, CRT-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CRT
+35942,wave1-B,product_deployment,0,nlp_specific,bureau,high,"Says 'transcribe' — classical NLP task, CRT-scoped.",0,0,1,Axon Evidence.com,Axon,0,0,0,0,0,0,0,,0,mission_critical,0,CRT
+35943,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'CRT uses an AI feature to' — classical NLP task, CRT-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,CRT
+35944,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'ML' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35945,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'License Plate' — computer-vision task, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35946,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'License Plate' — computer-vision task, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35947,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'License Plate' — computer-vision task, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35948,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'License Plate' — computer-vision task, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35949,wave1-B,custom_system,0,classical_ml,pilot,medium,"Says 'DEA has a mission to protect' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35950,wave1-B,custom_system,0,computer_vision,pilot,medium,"Says 'object detection' — computer-vision task, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35951,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'DEA has a mission to protect' — computer-vision task, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35952,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA has a mission to protect' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35953,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35954,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35955,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35956,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35957,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35958,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35959,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35960,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35961,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35962,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35963,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35964,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,1,DEA
+35965,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35966,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35967,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35968,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35969,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35970,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'DEA is a data-driven organization that' — generative LLM use, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,DEA
+35971,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA is a data-driven organization that' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35972,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'DEA has a mission to protect' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35973,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'Large Language Model' — generative LLM use, DEA-scoped.",0,0,1,Salesforce,Salesforce,0,0,0,0,0,0,0,unknown,0,administrative,0,DEA
+35974,wave1-B,custom_system,1,general_llm,pilot,medium,"Says 'Generative AI' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,research,0,DEA
+35975,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'DEA has a mission to protect' — generative LLM use, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,administrative,0,DEA
+35976,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35977,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Prediction' — predictive ML model, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35978,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'predictive' — predictive ML model, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35979,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'ai' — classical ML pipeline, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35980,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'Large Language Model' — generative LLM use, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,DEA
+35981,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'ML' — classical ML pipeline, DEA-scoped.",0,0,0,AWS AI,AWS,0,0,0,0,0,1,0,custom_trained,1,mission_critical,0,DEA
+35982,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'license plate' — computer-vision task, DEA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,DEA
+35983,wave1-B,generic_use_pattern,0,classical_ml,department,low,"Says 'AI' — classical ML pipeline, department-wide deployment.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,Department-wide
+35984,wave1-B,generic_use_pattern,0,classical_ml,department,low,"Says 'AI' — classical ML pipeline, department-wide deployment.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,Department-wide
+35985,wave1-B,custom_system,0,classical_ml,enterprise_wide,medium,"Says 'Certain tools are used department-wide to' — classical ML pipeline, agency-wide deployment.",0,0,0,,,0,0,0,0,0,0,1,custom_trained,1,cybersecurity,0,Department-wide
+35986,wave1-B,custom_system,0,classical_ml,department,medium,"Says 'AI' — classical ML pipeline, department-wide deployment.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,Department-wide
+35987,wave1-B,custom_system,0,classical_ml,department,medium,"Says 'Forensic analysis tools used to extract,' — classical ML pipeline, department-wide deployment.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,Department-wide
+35988,wave1-B,generic_use_pattern,0,classical_ml,department,low,"Says 'AI' — classical ML pipeline, department-wide deployment.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,Department-wide
+35989,wave1-B,product_deployment,1,general_llm,department,high,"Says 'LexisNexis' — generative LLM use, department-wide deployment.",0,0,1,LexisNexis,LexisNexis,0,0,0,0,0,0,0,unknown,0,mission_critical,0,Department-wide
+35990,wave1-B,product_deployment,1,general_llm,department,high,"Says 'generative AI' — generative LLM use, department-wide deployment.",0,0,1,Percipio Skillsoft,Skillsoft,0,0,0,0,0,0,0,unknown,0,mission_critical,0,Department-wide
+35991,wave1-B,custom_system,1,general_llm,department,medium,"Says 'To automate engagement with IT helpdesk' — generative LLM use, department-wide deployment.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,Department-wide
+35992,wave1-B,generic_use_pattern,0,classical_ml,department,low,"Says 'AI' — classical ML pipeline, department-wide deployment.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,Department-wide
+35993,wave1-B,product_deployment,1,general_llm,department,high,"Says 'Westlaw' — generative LLM use, department-wide deployment.",0,0,1,Westlaw,Thomson Reuters,0,0,0,0,0,0,0,unknown,0,mission_critical,0,Department-wide
+35994,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'land cover' — computer-vision task, ENRD-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ENRD
+35995,wave1-B,generic_use_pattern,0,classical_ml,bureau,low,"Says 'AI' — classical ML pipeline, ENRD-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,ENRD
+35996,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'summarize' — generative LLM use, ENRD-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,ENRD
+35997,wave1-B,generic_use_pattern,0,predictive_analytics,bureau,low,"Says 'predict' — predictive ML model, ENRD-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,ENRD
+35998,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'Veritone' — computer-vision task, ENRD-scoped.",0,0,1,Veritone,Veritone,0,0,0,0,0,0,0,,0,mission_critical,0,ENRD
+35999,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Zoom provides automatic closed captioning at' — classical ML pipeline, ENRD-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,ENRD
+36000,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Media monitoring service that allows users' — classical ML pipeline, EOUSA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,EOUSA
+36001,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'Draft One product can be used' — generative LLM use, EOUSA-scoped.",0,0,1,Axon Evidence.com,Axon,0,0,0,0,0,0,0,unknown,0,mission_critical,0,EOUSA
+36002,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Curating publicly available information to assist' — classical ML pipeline, EOUSA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,EOUSA
+36003,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'machine learning' — predictive ML model, EOUSA-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,EOUSA
+36004,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Security enhancement to Field Offices' — predictive ML model, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36005,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Tool facilitates more efficient categorization and' — classical ML pipeline, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36006,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'Facial Recognition' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36007,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'System which uses optical character recognition' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36008,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'License Plate' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36009,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Quicker processing of calls coming into' — classical ML pipeline, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36010,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'Facial Recognition' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36011,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'Multi-language text extraction and translation tools' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36012,wave1-B,custom_system,0,predictive_analytics,enterprise_wide,medium,"Says 'Two models work in tandem: Attrition' — predictive ML model, agency-wide deployment.",0,0,0,,,0,0,0,0,0,0,1,custom_trained,1,mission_critical,0,FBI
+36013,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'Tool facilitates audio and video recording' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36014,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'License Plate' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36015,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'License Plate' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36016,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'To provide NCIC with a more' — classical NLP task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36017,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'natural language processing' — classical NLP task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36018,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36019,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'facial recognition' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36020,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'The Threat Intake Processing System (TIPS)' — classical NLP task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36021,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'Facial Recognition' — computer-vision task, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36022,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Tool provides capabilities to support data' — classical ML pipeline, FBI-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBI
+36023,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'OCR' — computer-vision task, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36024,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'This application was used to check' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36025,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'This application was used to check' — generative LLM use, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,FBOP
+36026,wave1-B,custom_system,0,predictive_analytics,pilot,medium,"Says 'The ASCVD is used as a' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36027,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'The Automated Medication Dispensing Cabinet uses' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36028,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36029,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Predictions' — predictive ML model, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36030,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'predict' — predictive ML model, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36031,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36032,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'ChatGPT' — generative LLM use, FBOP-scoped.",0,0,1,ChatGPT,OpenAI,0,1,0,0,0,0,0,inference_only,0,mission_critical,0,FBOP
+36033,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'This is an FBOP-developed tool to' — predictive ML model, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36034,wave1-B,custom_system,0,classical_ml,pilot,medium,"Says 'This tool synchronizes audio files to' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36035,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'FBOP takes a strategic planning approach' — predictive ML model, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36036,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'Gemini' — generative LLM use, FBOP-scoped.",0,0,1,Gemini,Google,0,0,0,1,0,0,0,inference_only,0,mission_critical,0,FBOP
+36037,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'translation' — classical NLP task, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36038,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'This tool was used to improve' — generative LLM use, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,FBOP
+36039,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Data entered is analyzed to determine' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36040,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36041,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Initial assessment of medical and mental' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36042,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'Uses statistical techniques to classify text' — predictive ML model, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36043,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'To assist FBOP employees with career' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36044,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'risk score' — predictive ML model, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36045,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Psychological test interpretation assistance' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36046,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'FBOP uses reCAPTCHA to distinguish between' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36047,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Static-99 is used as one data' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36048,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'natural language processing' — classical NLP task, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36049,wave1-B,generic_use_pattern,1,general_llm,bureau,medium,"Says 'FBOP uses Thomson Reuters Drafting Assistant' — generative LLM use, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,administrative,0,FBOP
+36050,wave1-B,product_deployment,0,classical_ml,bureau,high,"Says 'Smiths Detection' — classical ML pipeline, FBOP-scoped.",0,0,1,Smiths Detection,Smiths Detection,0,0,0,0,0,0,0,,0,mission_critical,0,FBOP
+36051,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Security feature that allows only a' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36052,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36053,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Detects and analyzes UAS near FBOP' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,0,FBOP
+36054,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'This tool is used in research' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36055,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'Veritone' — computer-vision task, FBOP-scoped.",0,0,1,Veritone,Veritone,0,0,0,0,0,0,0,,0,mission_critical,0,FBOP
+36056,wave1-B,custom_system,0,classical_ml,pilot,medium,"Says 'AI' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36057,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'System can detect intruders while minimizing' — classical ML pipeline, FBOP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,FBOP
+36058,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'natural language processing' — classical NLP task, JMD-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,JMD
+36059,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'natural language processing' — classical NLP task, JMD-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,JMD
+36060,wave1-B,custom_system,0,classical_ml,pilot,medium,"Says 'AI' — classical ML pipeline, pilot/initiated stage.",0,0,0,AWS AI,AWS,0,0,0,0,0,1,0,custom_trained,1,mission_critical,0,JMD
+36061,wave1-B,product_deployment,1,general_llm,pilot,high,"Says 'CoPilot' — generative LLM use, pilot/initiated stage.",0,0,1,Microsoft Copilot,Microsoft,1,0,0,0,0,0,0,inference_only,0,mission_critical,0,JMD
+36062,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'The FOIA' — generative LLM use, JMD-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,JMD
+36063,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'Natural Language Processing' — classical NLP task, JMD-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,JMD
+36064,wave1-B,product_deployment,0,computer_vision,team,high,"Says 'Veritone' — computer-vision task, team-level use.",0,0,1,Veritone,Veritone,0,0,0,0,0,0,0,,0,mission_critical,0,NSD
+36065,wave1-B,product_deployment,0,predictive_analytics,pilot,high,"Says 'predictions' — predictive ML model, pilot/initiated stage.",0,0,1,Salesforce,Salesforce,0,0,0,0,0,0,0,,0,mission_critical,0,NSD
+36066,wave1-B,custom_system,0,predictive_analytics,pilot,medium,"Says 'Capture existing baseline network configuration and' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,0,OCDETF
+36067,wave1-B,custom_system,0,predictive_analytics,pilot,medium,"Says 'Capture existing baseline network configuration and' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,cybersecurity,0,OCDETF
+36068,wave1-B,custom_system,0,predictive_analytics,pilot,medium,"Says 'predictive' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OCDETF
+36069,wave1-B,custom_system,1,general_llm,pilot,medium,"Says 'generative AI' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,OCDETF
+36070,wave1-B,custom_system,1,general_llm,pilot,medium,"Says 'Create charts and graphs by describing' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,OCDETF
+36071,wave1-B,custom_system,1,general_llm,pilot,medium,"Says 'generative AI' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,cybersecurity,0,OCDETF
+36072,wave1-B,custom_system,0,predictive_analytics,pilot,medium,"Says 'Machine Learning' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,research,0,OCDETF
+36073,wave1-B,custom_system,0,predictive_analytics,pilot,medium,"Says 'Machine Learning' — predictive ML model, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OCDETF
+36074,wave1-B,custom_system,1,general_llm,pilot,medium,"Says 'Gen AI' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,cybersecurity,0,OCDETF
+36075,wave1-B,custom_system,1,general_llm,pilot,medium,"Says 'Gen AI' — generative LLM use, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,unknown,,cybersecurity,0,OCDETF
+36076,wave1-B,custom_system,0,classical_ml,pilot,medium,"Says 'ML' — classical ML pipeline, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OCDETF
+36077,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'Transcribe' — classical NLP task, OIG-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OIG
+36078,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'Azure OpenAI' — generative LLM use, OIG-scoped.",0,0,1,Azure OpenAI,Microsoft,0,1,0,0,0,0,0,inference_only,0,mission_critical,0,OIG
+36079,wave1-B,product_deployment,1,general_llm,pilot,high,"Says 'generative AI' — generative LLM use, pilot/initiated stage.",0,0,1,Azure OpenAI,Microsoft,0,1,0,0,0,0,0,inference_only,0,mission_critical,0,OIG
+36080,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'The application is speech recognition software' — classical NLP task, OIG-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OIG
+36081,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, OIG-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OIG
+36082,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'License Plate' — computer-vision task, OIG-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OIG
+36083,wave1-B,product_deployment,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, OIG-scoped.",0,0,1,Axon,Axon,0,0,0,0,0,0,0,,0,mission_critical,0,OIG
+36084,wave1-B,product_deployment,0,predictive_analytics,bureau,high,"Says 'risk assessment' — predictive ML model, OIG-scoped.",0,0,1,SAS,SAS,0,0,0,0,0,0,0,,0,mission_critical,0,OIG
+36085,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'LLM' — generative LLM use, OJP-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,OJP
+36086,wave1-B,generic_use_pattern,0,nlp_specific,pilot,low,"Says 'transcribed' — classical NLP task, pilot/initiated stage.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,OJP
+36087,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'The purpose of this tool is' — classical NLP task, OJP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OJP
+36088,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'predicts' — predictive ML model, OJP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OJP
+36089,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'The purpose of this tool is' — predictive ML model, OJP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OJP
+36090,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'natural language processing' — classical NLP task, OJP-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,OJP
+36091,wave1-B,product_deployment,0,nlp_specific,bureau,high,"Says 'transcribe' — classical NLP task, OPR-scoped.",0,0,1,Veritone,Veritone,0,0,0,0,0,0,0,,0,mission_critical,0,OPR
+36092,wave1-B,custom_system,1,general_llm,bureau,medium,"Says 'Adobe has function that enables the' — generative LLM use, PAO-scoped.",0,0,0,,,0,0,0,0,0,0,0,unknown,,mission_critical,0,PAO
+36093,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'EEG provides real-time captioning of live' — classical ML pipeline, PAO-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,PAO
+36094,wave1-B,generic_use_pattern,0,classical_ml,bureau,low,"Says 'AI' — classical ML pipeline, PAO-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,PAO
+36095,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Social media platforms used by PAO,' — classical ML pipeline, PAO-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,PAO
+36096,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'Veritone' — computer-vision task, PAO-scoped.",0,0,1,Veritone,Veritone,0,0,0,0,0,0,0,,0,mission_critical,0,PAO
+36097,wave1-B,product_deployment,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, PARDON-scoped.",0,0,1,LexisNexis,LexisNexis,0,0,0,0,0,0,0,,0,mission_critical,0,PARDON
+36098,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'LexisNexis' — generative LLM use, PARDON-scoped.",0,0,1,LexisNexis,LexisNexis,0,0,0,0,0,0,0,unknown,0,mission_critical,0,PARDON
+36099,wave1-B,generic_use_pattern,0,classical_ml,bureau,low,"Says 'AI' — classical ML pipeline, PARDON-scoped.",0,0,0,,,0,0,0,0,0,0,0,,,mission_critical,0,PARDON
+36100,wave1-B,product_deployment,1,general_llm,bureau,high,"Says 'Westlaw' — generative LLM use, PARDON-scoped.",0,0,1,Westlaw,Thomson Reuters,0,0,0,0,0,0,0,unknown,0,mission_critical,0,PARDON
+36101,wave1-B,product_deployment,0,classical_ml,bureau,high,"Says 'AI' — classical ML pipeline, PARDON-scoped.",0,0,1,Westlaw,Thomson Reuters,0,0,0,0,0,0,0,,0,mission_critical,0,PARDON
+36102,wave1-B,custom_system,0,predictive_analytics,bureau,medium,"Says 'risk assessment' — predictive ML model, PAROLE-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,PAROLE
+36103,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'ProLaw assists PRAO attorneys in searching' — classical ML pipeline, PRAO-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,PRAO
+36104,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'Transcribe' — classical NLP task, TAX-scoped.",0,0,0,AWS Transcribe,AWS,0,0,0,0,0,1,0,custom_trained,1,mission_critical,0,TAX
+36105,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'translation' — classical NLP task, TAX-scoped.",0,0,0,AWS Translate,AWS,0,0,0,0,0,1,0,custom_trained,1,mission_critical,0,TAX
+36106,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Text to speech software for the' — classical ML pipeline, TAX-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,TAX
+36107,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'OnCue is a trial presentation tool' — classical ML pipeline, TAX-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,TAX
+36108,wave1-B,product_deployment,0,classical_ml,bureau,high,"Says 'TextMap is a means for displaying' — classical ML pipeline, TAX-scoped.",0,0,1,LexisNexis,LexisNexis,0,0,0,0,0,0,0,,0,mission_critical,0,TAX
+36109,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'object recognition' — computer-vision task, USMS-scoped.",0,0,1,Axon,Axon,0,0,0,0,0,0,0,,0,mission_critical,0,USMS
+36110,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, USMS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USMS
+36111,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Justice Prisoner and Alien Transportation System' — classical ML pipeline, USMS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USMS
+36112,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Justice Prisoner and Alien Transportation System' — classical ML pipeline, USMS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USMS
+36113,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'OCR' — computer-vision task, USMS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USMS
+36114,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'AI' — classical ML pipeline, USMS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USMS
+36115,wave1-B,custom_system,0,nlp_specific,bureau,medium,"Says 'natural language processing' — classical NLP task, USMS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USMS
+36116,wave1-B,product_deployment,0,computer_vision,bureau,high,"Says 'Axon' — computer-vision task, USMS-scoped.",0,0,1,Axon,Axon,0,0,0,0,0,0,0,,0,mission_critical,0,USMS
+36117,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'USMS uses this tool for authorized' — classical ML pipeline, USMS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USMS
+36118,wave1-B,custom_system,0,computer_vision,bureau,medium,"Says 'facial recognition' — computer-vision task, USMS-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USMS
+36119,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Receive biometric data and reformat for' — classical ML pipeline, USNCB-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USNCB
+36120,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Translate from French, Spanish, or Arabic' — classical ML pipeline, USNCB-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USNCB
+36121,wave1-B,product_deployment,0,classical_ml,bureau,high,"Says 'LexisNexis' — classical ML pipeline, USNCB-scoped.",0,0,1,LexisNexis,LexisNexis,0,0,0,0,0,0,0,,0,mission_critical,0,USNCB
+36122,wave1-B,product_deployment,0,classical_ml,bureau,high,"Says 'Westlaw' — classical ML pipeline, USNCB-scoped.",0,0,1,Westlaw,Thomson Reuters,0,0,0,0,0,0,0,,0,mission_critical,0,USNCB
+36123,wave1-B,custom_system,0,classical_ml,bureau,medium,"Says 'Use of commercial tool and the' — classical ML pipeline, USNCB-scoped.",0,0,0,,,0,0,0,0,0,0,0,custom_trained,1,mission_critical,0,USNCB
+36124,wave1-B,product_deployment,1,general_llm,pilot,high,"Says 'Generative AI' — generative LLM use, pilot/initiated stage.",0,0,1,Azure OpenAI,Microsoft,0,1,0,0,0,0,0,inference_only,0,mission_critical,0,USTP
+36125,wave1-B,product_deployment,1,coding_assistant,bureau,high,"Says 'Code Assistant' — coding assistant, USTP-scoped.",0,1,1,GitHub Copilot,GitHub,0,0,0,0,1,0,0,inference_only,0,it_operations,0,USTP

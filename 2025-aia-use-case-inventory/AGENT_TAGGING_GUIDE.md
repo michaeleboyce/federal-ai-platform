@@ -104,3 +104,35 @@ After reviewing:
    - Key insights about this agency's AI deployment pattern
    - Any new product aliases added
    - Flag anything ambiguous for human review
+
+---
+
+## Addendum: Tagging 2024 rows (`use_cases_2024`)
+
+The 2024 inventory uses a different source schema than 2025. When tagging
+2024 rows (Wave 1 of the multi-wave plan in
+`docs/plans/2024-tagging/PLAN.md`), keep these differences in mind:
+
+- **No `ai_classification` column.** 2024 has no clean "generative AI vs
+  classical ML" signal. Infer GenAI vs not from narrative:
+  `use_case_name + purpose_benefits + outputs + commercial_ai +
+  dev_method + bureau`.
+- **`commercial_ai` conflates vendor + product + sometimes pipeline.**
+  E.g. it may read "Microsoft Copilot", "ChatGPT Enterprise via Azure",
+  "AWS Bedrock + custom RAG". Parse it into `tool_vendor` and
+  `tool_product_name`. When unclear, leave both blank and set
+  `confidence='low'`.
+- **`dev_stage` is the 2024 analogue of stage/lifecycle.** Treat
+  `Operation and Maintenance`, `Implementation and Assessment`, and
+  `In production` as deployed; `Initiated`, `Acquisition/Development`,
+  `Planned`, `Ideation`, `Research/Admin` as not yet deployed;
+  `Retired` as off.
+- **Do NOT read any 2025 table during Wave 1.** No `use_cases`, no
+  `use_case_tags`, no `use_case_year_links`. The point of Wave 1 is to
+  capture how agencies filed 2024, not how the 2025 mirror looks. The
+  comparison happens in Wave 2.
+- **Output format**: write a CSV with columns matching
+  `scripts/load_2024_tags.py`'s contract (any subset of
+  `entry_type, ai_sophistication, deployment_scope, …` plus the
+  required `use_case_id_2024, tagged_by_agent`, plus `reasoning` and
+  `confidence`). Do not write to the DB directly.
