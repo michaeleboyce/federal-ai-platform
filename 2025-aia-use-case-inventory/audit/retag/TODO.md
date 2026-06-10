@@ -67,3 +67,25 @@ Write a single migration script that, in order:
 - [x] **Subagency-level rollup for HHS, DHS, DOE, DOC, Treasury, DOJ — done in round-3.** See `audit/retag/round3/SUB_AGENCY_FINDINGS.md` for the editorial summary and `audit/retag/round3/<topic>/sub_agency_rows.csv` (96 rows × 3 topics) for the per-row evidence. Sub-agency tables now appended to all three `by_agency.md` rollups under a "Sub-agency rollup (round-3)" heading. Headline: VA/OIT is the only triple-strong sub-agency; HHS is a federation of 8 independently-Enterprise bureaus; NASA/GSFC carries the agency; DOE is bimodal across labs.
 - [ ] Cross-check 2024 → 2025 deltas on the named-platform list to find systems that quietly disappeared (e.g., State CodeGen retired).
 - [ ] Vendor-side corroboration for high-stakes claims (Databricks, Snowflake, Palantir, Anthropic public-sector pages).
+
+## 5. Data lineage (added 2026-06-09, post-restore)
+
+Raw agency files (`data/raw/*.{csv,xlsx}`) → `load_inventories.py` /
+`load_2024.py` (verbatim columns + raw_json; 2024 tags survive reloads via
+slug re-attachment) → `scripts/normalize_use_case_fields.py` (m016:
+`stage_normalized`, `ai_classification_normalized` — the only derived
+recodes of OMB-filed fields) → `auto_tag.py` keyword first pass →
+`scripts/retag_llm.py` + `apply_retag_audit.py` + `apply_round2_audit.py`
++ `apply_capability_reviews.py` (row-by-row audited corrections; ALL
+signature-keyed via `scripts/uc_signature.py` + the
+`id_snapshot_2026-04.csv` old-id map; hard-fail on >2% unresolved) →
+`compute_maturity.py` (capability flags now tag-derived, individually
+reported rows only).
+
+Citable numbers: regenerate `audit/article/fact_sheet.md` via
+`scripts/build_article_factsheet.py` after every `make fix`. Guardrails
+enforced by `audit/checks/check_article_guardrails.py`.
+
+The §4 consolidated apply pass below is COMPLETE as of 2026-06-09 (the
+original apply scripts had silently no-op'd on rotated ids; see
+`scripts/apply_retag_audit.py` docstring for the post-mortem).
