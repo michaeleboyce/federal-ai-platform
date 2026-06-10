@@ -1,0 +1,45 @@
+agency,use_case_name,tool_product_name,stage,tier,rule
+DHS,Commercial Generative AI for Code Generation,,Operation and Maintenance,permission,name:commercial generative ai for
+DHS,Commercial Generative AI for Image Generation,,Operation and Maintenance,permission,name:commercial generative ai for
+DHS,Commercial Generative AI for Text Generation (AI Chatbot),,Operation and Maintenance,permission,name:commercial generative ai for
+DOI,DOIChatGPT AI Chatbot,,Implementation and Assessment,tenanted,name:chatgpt
+DOI,DOIChatGPT API Management Instance,Azure OpenAI,Implementation and Assessment,operated_build,tool:azure openai
+DOI,Proposal for the I-NEPA System: Leveraging Artificial Intelligence (AI) for Enhanced Efficiency in E,,Implementation and Assessment,operated_build,name:i-nepa
+DOJ,Percipio Skillsoft CAISY,Percipio Skillsoft,Initiated,embedded_cots,tool:percipio
+DOJ,ServiceNow,,Operation and Maintenance,embedded_cots,name:servicenow
+DOJ,Westlaw (AI assisted legal research),Westlaw,Operation and Maintenance,embedded_cots,tool:westlaw
+DOL,Generative AI Assistant,,Operation and Maintenance,operated_build,name:generative ai assistant
+DOT,DOT Generative AI (GenAI) Policy,,Ideation,permission,name:policy
+DOT,"Enterprise ""Ask Dottie"" ChatBot Capability",,Ideation,operated_build,name:ask dottie
+DOT,Enterprise Personal Productivity Assistant Capability,,Acquisition and/or Development,operated_build,override
+EAC,Microsoft Copilot Integration,Microsoft 365 Copilot,Operation and Maintenance,tenanted,tool:copilot
+EEOC,Employee Training and Professional Development,,Operation and Maintenance,tenanted,task-phrase-2024
+EEOC,FOIA,,Operation and Maintenance,tenanted,task-phrase-2024
+EEOC,Language Translation,,Operation and Maintenance,tenanted,task-phrase-2024
+EEOC,Legal Research & Discovery,,Operation and Maintenance,tenanted,task-phrase-2024
+EEOC,Reasonable Accommodation,,Operation and Maintenance,tenanted,task-phrase-2024
+EEOC,Records Management,,Operation and Maintenance,tenanted,task-phrase-2024
+EEOC,Virtual Assistants,,Operation and Maintenance,operated_build,name:assistant
+EPA,GovChat,,Operation and Maintenance,operated_build,name:govchat
+FHFA,"Analytics,, Search, Queries and LLM integration for data management on Oracle",Oracle 23AI,Acquisition and/or Development,embedded_cots,name:oracle
+FHFA,Desktop productivity using Microsoft 365,Microsoft 365,Implementation and Assessment,tenanted,name:microsoft 365
+GSA,Gemini for Workspace,Gemini for Workspace,Acquisition and/or Development,tenanted,tool:gemini
+HHS,AI-Assisted Real-time Collaboration,,Operation and Maintenance,permission,name:ai-assisted real-time collaboration
+HHS,Hazards & Threats Awareness Data Processing Automation,,Acquisition and/or Development,operated_build,name:automat
+HHS,Report Summarization by commercial GenAI platform,ChatGPT,Operation and Maintenance,tenanted,tool:chatgpt
+HHS,Transcription in Zoom and Teams,,Operation and Maintenance,permission,name:transcription in zoom
+NARA,Develop a Natural Language Based Chat Interface (like ChatGPT) to Interact With the Archival Documents,,Planned,operated_build,override
+NCUA,Document Management,,Operation and Maintenance,tenanted,task-phrase-2024
+NCUA,Insights,,Operation and Maintenance,tenanted,task-phrase-2024
+NCUA,Native Editor,,Operation and Maintenance,tenanted,task-phrase-2024
+NSF,"ServiceNow GenAI ""Now Assist""",Now Assist,Acquisition and/or Development,embedded_cots,tool:now assist
+OPM,Copilot for Microsoft 365,Microsoft 365 Copilot,Acquisition and/or Development,tenanted,tool:copilot
+PT,Ability to find information through search results and other methods,,Operation and Maintenance,tenanted,task-phrase-2024
+PT,"Productivity and communications including the generation of insights, automation and workflow",,Operation and Maintenance,operated_build,name:automat
+SSA,Agency Support Companion (ASC) chatbot,,Acquisition and/or Development,operated_build,name:agency support companion
+STATE,StateChat,,Implementation and Assessment,operated_build,name:statechat
+TREAS,Copilot for M365 (Criminal Investigation Unit),Microsoft 365 Copilot,Acquisition and/or Development,tenanted,tool:copilot
+TREAS,Copilot for Power Platform,Microsoft 365 Copilot,Initiated,tenanted,tool:copilot
+TREAS,M365 Copilot,Microsoft 365 Copilot,Initiated,tenanted,tool:copilot
+USAGM,Microsoft Copilot for Internal Employees,Microsoft 365 Copilot,Initiated,tenanted,tool:copilot
+USCCR,Microsoft Copilot Integration,Microsoft 365 Copilot,Operation and Maintenance,tenanted,tool:copilot

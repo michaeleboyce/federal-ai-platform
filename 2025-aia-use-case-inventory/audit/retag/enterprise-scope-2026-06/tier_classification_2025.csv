@@ -1,0 +1,249 @@
+agency,use_case_name,tool_product_name,stage,tier,rule
+DHS,Commercial Generative AI for Code Generation,Unspecified commercial GenAI,"d) Retired – The use case was reported in the agency’s prior year’s inventory, but its development and/or use has since been discontinued.",permission,name:commercial generative ai for
+DHS,Commercial Generative AI for Image Generation,,"d) Retired – The use case was reported in the agency’s prior year’s inventory, but its development and/or use has since been discontinued.",permission,name:commercial generative ai for
+DHS,Commercial Generative AI for Text Generation (AI Chatbot),,"d) Retired – The use case was reported in the agency’s prior year’s inventory, but its development and/or use has since been discontinued.",permission,name:commercial generative ai for
+DHS,DHS-Chat,,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:dhs-chat
+DOC,USAi.gov,,,operated_build,name:usai
+DOE,EnerGPT,EnerGPT,Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:energpt
+DOI,FBMS UPC Chatbot,,Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:chatbot
+DOJ,BriefCatch,BriefCatch,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:briefcatch
+DOJ,Business Intelligence Tools,Tableau,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:tableau
+DOJ,CoPilot,,a) Pre-deployment – The use case is in a development or acquisition status.,tenanted,name:copilot
+DOJ,FOIA Production Tools,,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,name:foia production tools
+DOJ,ServiceNow,ServiceNow Now Assist,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:servicenow
+DOJ,Westlaw (AI assisted legal research),Westlaw AI,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:westlaw
+DOL,DAISI ( DOL AI Search Insights),Aretec SEARCH,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:aretec
+DOL,Generative AI AssistantI  ( AI Center),Custom In-House AI,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+DOT,Conversational Multi-modal Chatbot (Google Gemini),Gemini,Deployed,tenanted,tool:gemini
+DOT,DOT Generative AI (GenAI) Policy,,Pre-deployment,permission,name:policy
+DOT,"Enterprise ""Ask Dottie"" ChatBot Capability",,Pre-deployment,operated_build,name:ask dottie
+DOT,Enterprise Personal Productivity Assistant Capability,,Deployed,operated_build,override
+DOT,Report Sumarization (Google NotebookLM),NotebookLM,Deployed,tenanted,tool:notebooklm
+DOT,USAi (multi-model large language models),,Pilot,operated_build,name:usai
+ED,Department-wide implementation of GSA USAi,,b)  Pilot – The use case has been deployed in a limited test or pilot capacity.,operated_build,name:usai
+ED,Generative AI - Code Generation,OpenAI API,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:openai api
+ED,Generative AI - Idea Suggestion,OpenAI API,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:openai api
+ED,Generative AI - Information Summarization,OpenAI API,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:openai api
+ED,Generative AI - Text Generation,OpenAI API,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:openai api
+ED,MS Copilot - Business Process Improvement,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Collaboration & Communication,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Compliance & Risk Management,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Content Organization & Archiving,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Creative & Productive Work Enhancement,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Data Analysis & Insights,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Document Creation & Editing,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Grant & Program Management,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Process & Workflow Automation,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Project & Task Management,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Research & Knowledge Management,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Security & Privacy,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Summarization,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Technical Assistance & Code Generation,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+ED,MS Copilot - Training & Education,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+FHFA,Workflow automation and predictive analytics using ServiceNow,ServiceNow Now Assist,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:servicenow
+FRTIB,Adobe Firefly,Adobe Firefly,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:adobe
+FRTIB,Microsoft CoPilot,Microsoft 365 Copilot,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+FRTIB,Sumtotal Chatbot,,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+FTC,Microsoft 365 Copilot,Microsoft 365 Copilot,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,tenanted,tool:copilot
+GSA,Enterprise Chatbot (GSAi),,c)  Deployed - The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:gsai
+GSA,Gemini for Google Workspace,Gemini,c)  Deployed - The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:gemini
+HHS,1CDP (SEDRIC) AIP for Advanced Foodborne Outbreak Investigation (AI Summarization and Receipt Reading),Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,ABE (AI-driven. Beneficial. Efficient.),Custom In-House AI,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:custom in-house
+HHS,AI Agent Orchestrator POC,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,AI Audit Resolution Assistant (AIARA),,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:assistant
+HHS,AI Use Policy Tool,,a) Pre-deployment  The use case is in a development or acquisition status.,permission,name:policy
+HHS,AI for Assessing Bioanalytical Study Conduct Alignment with Guidance and Method SOPs,Elsa (FDA),b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:elsa
+HHS,AI for Bioanalytical Study Risk Assessment and Inspection Readiness,Elsa (FDA),b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:elsa
+HHS,AI for Clinical Study Risk Assessment and Inspection Preparation,Elsa (FDA),b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:elsa
+HHS,AI for Regulatory Review (AIRR) Pilot,Custom In-House AI,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:custom in-house
+HHS,AI in Slack,Slack,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,name:slack
+HHS,AI to Improve Public Access to the Administrative Appeals Process,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,AI-Powered Assistant for Pathogen Detection (AIPD),,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,AI-Powered Meeting Notes for MAG Hearings and AIRC Sessions,Microsoft Teams,a) Pre-deployment  The use case is in a development or acquisition status.,embedded_cots,tool:microsoft teams
+HHS,AIP Cyber Incident Ingestion,Palantir AIP,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,tenanted,tool:palantir
+HHS,ATSDR Toxicological Assistant chatbot,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+HHS,AWS Exscribo,AWS Bedrock,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:aws bedrock
+HHS,Acquisition support: assisting reviews and co-drafting technical evaluation documents,Microsoft 365 Copilot Chat,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+HHS,Acquisition support: co-drafting acquisition packages,Microsoft 365 Copilot Chat,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+HHS,Adverse Childhood Experiences (ACEs) Literature Review Dashboard,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,default
+HHS,Agent/Broker Fraud Analysis (ABCQI),,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Agentic RAG Chatbot,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:chatbot
+HHS,Agentic Web Search,Aretec SEARCH,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,tool:aretec
+HHS,Analytics-Driven Supplement Evaluation (ASE),Custom In-House AI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+HHS,Analyzing Public Comments on Proposed Rule,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,default
+HHS,Applicant Help Chatbot,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+HHS,Ask Aithena,OpenAI API,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:openai api
+HHS,Ask HR Policy,Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,Assessing Large Language Models for Synthetic Survey Data Generation,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Automated Analysis of Injury Control Research Center (ICRC) Annual Progress Reports (APRs) using Large Language Models,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:automat
+HHS,Automating LIMS Bioinformatics Workflow Configuration and Enhancing Lab Quality Management with AI,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:automat
+HHS,Builder Buddy,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,C3PO: CMS Comprehensive Cybersecurity and Privacy Optimization,OpenAI API,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:openai api
+HHS,CCSQ Now Assist for CSM,ServiceNow Now Assist,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:servicenow
+HHS,CCSQ ServiceNow AI Search,ServiceNow Now Assist,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:servicenow
+HHS,CDC Chatbot,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+HHS,CDC Chatbot - Enterprise Data Assistant,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+HHS,COMET (Consult Memo Assistant),,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,CSR Public Chatbot (CPC),,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+HHS,Case Management Tool Case Creation & Automation,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:automat
+HHS,Center for Forecast and Analytics (CFA) Model Studio,Palantir AIP,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,tenanted,tool:palantir
+HHS,ChatBot for Safety Reporting Portal Adverse Events and Product problems submissions,ServiceNow Now Assist,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:servicenow
+HHS,ChatGPT,ChatGPT,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,tenanted,tool:chatgpt
+HHS,Chatbot,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,name:chatbot
+HHS,Chatbot within Hub,Custom In-House AI,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,tool:custom in-house
+HHS,"Child Welfare Information Automated Inquiry System
+
+(Note: previously named ""Child Welfare Information Gateway OneReach Application"")",Amazon Connect,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:automat
+HHS,Citation Analysis and Survey Assistant (CASA - Nursing Home Survey CMS 2567),,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:assistant
+HHS,ClinicalTrials.gov Protocol Registration and Results System Review Assistant,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:assistant
+HHS,CoPilot Outlook,Westlaw AI,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,embedded_cots,tool:westlaw
+HHS,Collections Summarization Chatbot,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:chatbot
+HHS,Collective Bargaining Compass,Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,Contract Invoice Analyzer Assistant,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,CryoSPARC,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,name:cryosparc
+HHS,DECIDE,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,default
+HHS,DGMH AI Chatbot,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:chatbot
+HHS,DHDSP NOFO Technical Assistance Chatbot,Aretec SEARCH,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:aretec
+HHS,DHP Data Repository and Dashboard Chatbot,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:chatbot
+HHS,DHP Virtual Assistant,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:assistant
+HHS,DLS AI Assistant tool,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:assistant
+HHS,Data Management and Sharing Plans - Assistant Review Tool,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:assistant
+HHS,Data Standardization with LLM,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:llm
+HHS,Deep Research Multi-Agent System,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Deep Research for Public Health,OpenAI API,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:openai api
+HHS,Delegations Repository Assistant,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,Design Your Facility,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,default
+HHS,Detection of AI-Generated Reviewer Critiques,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,Development of in-silico genomic and patient datasets using generative ML algorithms,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,default
+HHS,Discover Financial Business Intelligence System (FBIS) Report Analysis (Sub-CAN Line Items),Palantir AIP,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,tenanted,tool:palantir
+HHS,Discover User Assistant,Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,Document Review for Alignment with Executive Orders: Grant Materials,Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,Document Review for Alignment with Executive Orders: Position Descriptions,Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,Document drafting and editing,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,default
+HHS,Dual Use Research of Concern (DURC) Categorization LLM,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,name:llm
+HHS,EDAV Virtual Assistant - Eva ( Microbot Service) - Bot as a Service (BaaS),,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:assistant
+HHS,Electronic translational services for regulatory documents for articles offered for import,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,Eligibility & Enrollment Medicare Online (ELMO) Chatbot,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+HHS,Elsa GenAI Chat Tool,Elsa (FDA),c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:elsa
+HHS,Enhanced Direct Enrollment Outlier Detection,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:llm
+HHS,Enhancing the RCDC with Generative AI,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:generative ai
+HHS,Enterprise Architecture LLM for CMS Regulatory Content,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:llm
+HHS,Ethics AI Agent,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Evaluating Generative AI for polio containment.,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,name:generative ai
+HHS,Expansion of Generative AI (GenAI) Caption Generation for all Collections Videos,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:generative ai
+HHS,Federal Assistant AI Agent,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,Federal Select Agents Program (FSAP) Customer Agent,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,GenAIMeta: Generative AI CDC Metadata Query Application,Azure OpenAI,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:azure openai
+HHS,Generative AI (GenAI) Still Image Tagging,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:generative ai
+HHS,Grant management support: structuring information in applications,Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,GrantSolutions AI Writing Assistant,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:assistant
+HHS,GrantSolutions Helpdesk Agent,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,GrantSolutions Non?Competing Continuation Approval Tool,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,GrantSolutions Non?Competing Continuation Review Tool,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,GrantSolutions Recipient Risk Tool,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,GrantSolutions Text Analyzer Tool,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,HIV Data Quality Score (DQS) Project,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,HIV Data Virtual Assistant,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,HRSA Data Warehouse ChatBot,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:chatbot
+HHS,Head Start Correspondence Categorizer,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Help Desk AI Assistant,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,IDR Support Bot,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name: bot
+HHS,Immunization Information Systems Guidance Documentation Navigation and Management (IDAB EDAV Azure OpenAI Technology Use),Azure OpenAI,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,tool:azure openai
+HHS,Independent Dispute Resolution (IDR) Eligibility Rules Engine,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,Knowledge Management Solution for Appeal Case Workers,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Knowledge Navigator,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,LLM Support for Admin Services,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,name:llm
+HHS,LLM-Assisted Referral Justification Email Generator,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:llm
+HHS,LLM-Assisted VAERS Analyses,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:llm
+HHS,LaserAI,LaserAI,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,Leveraging GenAI for Efficient Review of CDC Programmatic Reports,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Leveraging NLP and LLMs to identify and characterize NIH prevention research via 160-topic taxonomy,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:llm
+HHS,LibreChat,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:chat
+HHS,MCP Server Registry and Integration Platform,Microsoft Teams,a) Pre-deployment  The use case is in a development or acquisition status.,embedded_cots,tool:microsoft teams
+HHS,MFT UI Chatbot,Microsoft Teams,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,embedded_cots,tool:microsoft teams
+HHS,MLMS Upgrade MILA from CARLA to Druid,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Machine Learning Techniques for Early Detection and Situational Awareness of Rabies Outbreaks,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,Marketplace Qualified Health Plan Benefit AI Assistant (discovery),,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,MedWatch Dashboard,Custom In-House AI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+HHS,Medical Data Enterprise Artificial Intelligence (MDE AI),,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,Mining.AI,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,MirBot,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,NBS Virtual Assistant,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:assistant
+HHS,NCIRD SmartFind ChatBots - Public and Internal,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+HHS,NHLBI Chat,Azure OpenAI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:azure openai
+HHS,NHLBI Chat Workflow - Data Management and Sharing Plan,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:chat
+HHS,NHLBI Chat Workflow - Foreign Component,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:chat
+HHS,NIAMS AI Chatbot Pilot,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:chatbot
+HHS,NIGMS Azure Open AI,Custom In-House AI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+HHS,NIH Grants Virtual Assistant,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:assistant
+HHS,NIH Travel Policy AI Chatbot,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,permission,name:policy
+HHS,NOFO Compliance Assistant,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,NewsScape,Palantir AIP,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,tenanted,tool:palantir
+HHS,OCIO GenAI Advisor,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,default
+HHS,OIT Help Desk Chatbot,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:chatbot
+HHS,Open AI SharePoint Document Assistant,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,name:assistant
+HHS,PPE Concerns Copilot,,a) Pre-deployment  The use case is in a development or acquisition status.,tenanted,name:copilot
+HHS,PRF Program Chatbot,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+HHS,PRISM Ally,Unison PRISM,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,Policy Knowledge Base Data Migration,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",permission,name:policy
+HHS,Portfolio Analysis Summarization Tool (PAST),Custom In-House AI,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,tool:custom in-house
+HHS,Portfolio analysis and grant summarizing program,Azure OpenAI,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,tool:azure openai
+HHS,Production Operations Anomaly Analysis,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,Program Compliance and Reporting Knowledge Base Chatbot,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:chatbot
+HHS,Program Reporting  System Knowledge base Chatbot,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:chatbot
+HHS,Qualitative Analysis,Qualtrics,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,Quality Surveillance Dashboard (QSD),Custom In-House AI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+HHS,RAG System For Travel Planning,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,"Renamed: AI-Assisted Drug Review Letter Drafting
+Previously: Drug Review Letter Generation using GenAI",,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,"Renamed: Document Room Submission AI-Assisted Categorization
+Previously: Document Room Submission Auto-categorization",,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,"Renamed: FAR-based Facility Signal Detection Tool
+Previously: Post-market Surveillance Reports Signal Detection and Cluster Analysis.",Custom In-House AI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+HHS,"Renamed: Risk-based FAR Review & Decision Support
+Previously: Field Alert Reports (FAR) Prioritization Model",Custom In-House AI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+HHS,Resource Capacity Planning,Custom In-House AI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+HHS,Resource Library Assistant,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,Respirator Selection Logic (RSL) Copilot,,a) Pre-deployment  The use case is in a development or acquisition status.,tenanted,name:copilot
+HHS,Respiratory Virus Response (RVR) Data Analysis Concept,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,default
+HHS,Rx Data Integrity Review,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,SBC Content Review,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Scholarship Insight,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,School LLM initial abstract review process,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:llm
+HHS,Section 508 Azure OpenAI Chatbot,Azure OpenAI,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:azure openai
+HHS,Sidekick Comms bot Offering User-friendly Tips (SCOUT),,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name: bot
+HHS,Software Approval Agent,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Structuring Notice of Concern Data,Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,Structuring and Validating Completeness of Case Data Information,Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,Sub Can Line Finder,Palantir AIP,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+HHS,Support for MCP and AI APIs in Digital Gateway,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,The School Closure Awareness System,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,default
+HHS,Training and Technical Assistance (TTA) GenAI Chatbot,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,name:chatbot
+HHS,Transformer-Based Metadata Alignment Workflow,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,default
+HHS,Use case package 1: Empirical application of the Sentinel EHR and claims Data Partner network to address ARIA insufficient inferential requests (UC1),Custom In-House AI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+HHS,Using Generative AI for Stance Analysis of Public Comments on CDCs Proposed Rules,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:generative ai
+HHS,Using LLM to optimize National Health Interview Survey (NHIS) case note information,,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,name:llm
+HHS,Using generative AI to gain insight of older adult falls,,"d) Retired  The use case was reported in the agencys prior years inventory, but its development and/or use has since been discontinued.",operated_build,name:generative ai
+HHS,Vaccine Tracking System (VTrckS) Conversational AI Pilot,Custom In-House AI,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:custom in-house
+HHS,Virtual Assistant for the NIAMS Grant Management Applications,,a) Pre-deployment  The use case is in a development or acquisition status.,operated_build,name:assistant
+HHS,Warp Intelligent Learning Engine (WILEE),Custom In-House AI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:custom in-house
+HHS,eSlate Bot,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name: bot
+HUD,Microsoft Copilot,Microsoft 365 Copilot,b)  Pilot – The use case has been deployed in a limited test or pilot capacity.,tenanted,tool:copilot
+NARA,Develop a Natural Language Based Chat Interface (like ChatGPT) to Interact With the Archival Documents,ChatGPT,a) Pre-deployment – The use case is in a development or acquisition status.,operated_build,override
+NARA,Generative AI Solutions for Workplace Productivity (aka Gemini),Google Workspace,c)  Deployed – The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:google workspace
+NASA,NASA-GPT: Retrieval-Augmented Generation using NTRS and more,ChatGPT,a) Pre-deployment – The use case is in a development or acquisition status.,operated_build,override
+NRC,Support routine administrative tasks and enhancing communications,Microsoft 365 Copilot Chat,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:copilot
+NRC,Text Retrieval and Generation for NRC Staff Support,TekSynap SimplifAI,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,override
+NSF,"ServiceNow GenAI ""Now Assist""",ServiceNow Now Assist,Deployed,embedded_cots,tool:servicenow
+OPM,Anthropic Claude,Claude,Sandbox,tenanted,tool:claude
+OPM,Microsoft Copilot,Microsoft 365 Copilot,Production,tenanted,tool:copilot
+OPM,OPM Rexi Chatbot,,Production,operated_build,name:rexi
+OPM,OpenAI ChatGPT,ChatGPT,Pilot,tenanted,tool:chatgpt
+SBA,General AI Use Case across the SBA for web and desktop,Perplexity,Pilot,tenanted,tool:perplexity
+SSA,Agency Support Companion (ASC) chatbot,OpenAI API,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,tool:openai api
+SSA,Enterprise Ticketing System (ETS),ServiceNow Now Assist,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,embedded_cots,tool:servicenow
+SSA,General Use Chatbot,Microsoft 365 Copilot Chat,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,tenanted,tool:copilot
+SSA,Policy Assistance Tool (PAT),OpenAI API,b)  Pilot  The use case has been deployed in a limited test or pilot capacity.,operated_build,tool:openai api
+State,StateChat,Palantir AIP,c) Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,tenanted,tool:palantir
+USDA,Chatbot for IT Customer Help Desk,,c)  Deployed  The use case is being actively authorized or utilized to support the functions or mission of an agency.,operated_build,name:chatbot
+VA,E2 HelpBot,,a) Pre-deployment – The use case is in a development or acquisition status.,operated_build,default
