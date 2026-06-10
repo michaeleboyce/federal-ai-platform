@@ -18,11 +18,11 @@ unevenly it landed — not a decline.
 | Total AI use cases | 2,133 | 3,549 | **+66%** |
 | Generative-AI use cases | 527 | 969 | **+84%** |
 | Generative AI deployed / in production | ~200 | 468 | **~2.3×** |
-| Enterprise-wide generative AI | 44 | 233 | **5.3×** |
+| Enterprise-wide generative AI | 44 | 232 | **5.3×** |
 | New generative-AI capabilities introduced in 2025 | — | 643 | net new |
 
 Two caveats keep the growth honest. The enterprise-wide expansion is **concentrated**:
-of the 233 enterprise-wide GenAI use cases, **HHS alone accounts for 166** — strip it
+of the 232 enterprise-wide GenAI use cases, **HHS alone accounts for 165** — strip it
 out and the rest of government shares ~67. The *number of agencies* with any
 enterprise-wide GenAI rose **21 → 24**, but only after IFP's scope corrections on
 **both** years (the 2024 tagger never mapped its `department` scope into the
@@ -466,11 +466,11 @@ agencies that had near-nothing (Savannah River 0→21, USDA 4→24) *built out*.
 net "growth" number hides both.
 
 **3. The enterprise gap is the real divide.** Enterprise-wide GenAI use cases grew
-more than fivefold (44→233), and the *number of agencies* with any rose 21→24 per
+more than fivefold (44→232), and the *number of agencies* with any rose 21→24 per
 the scope-corrected tags (both years needed correction: 2024's `department` scope
 was never mapped to the enterprise flag; 2025's tagger recorded owning offices as
 scopes for StateChat, DHSChat, SSA ASC, OPM ChatGPT and peers) — but the row growth
-concentrated heavily (HHS alone = 166 of 233), and the *character* changed: 2024's
+concentrated heavily (HHS alone = 165 of 232), and the *character* changed: 2024's
 enterprise rows were mostly permissions and embedded COTS features, while 2025's
 are operated products. Most agencies still file nearly all of their AI as
 bureau-scoped: "the agency has AI" and "I have AI" remained different sentences.
