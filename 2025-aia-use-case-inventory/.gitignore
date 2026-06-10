@@ -85,3 +85,14 @@ yarn-error.log*
 /tmp/
 audit/.review2/
 .vercel
+
+# ------------------------------------------------------------------
+# DB snapshots taken by apply passes (data/*.backup-<tag>) — same policy
+# as *.bak above: never commit binary backups.
+# ------------------------------------------------------------------
+data/federal_ai_inventory_2025.db.backup-*
+
+# Root-level screenshot debris from browser-verification sessions
+/*.png
+/*.jpeg
+.playwright-mcp/
