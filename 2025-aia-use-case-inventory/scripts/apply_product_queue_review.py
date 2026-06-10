@@ -73,6 +73,14 @@ def main() -> int:
                         stats["bad_rows"] += 1
                         continue
                     reasoning = (row.get("reasoning") or "").strip()[:500]
+                    confidence = (row.get("confidence") or "").strip().lower()
+
+                    # House policy (matches apply_retag_audit): only
+                    # medium/high-confidence verdicts create edges or seed
+                    # products. Low-confidence verdicts are recorded on the
+                    # queue row for a human pass but change nothing.
+                    if confidence == "low" and decision in {"map_to_existing", "propose_new"}:
+                        decision = "low_confidence_deferred"
 
                     # Seed proposed products first so mapping can hit them.
                     if decision == "propose_new":
@@ -132,7 +140,7 @@ def main() -> int:
                                       llm_reasoning = ?
                                 WHERE use_case_id = ?
                                   AND substr(COALESCE(source_text,''), 1, 500) = ?""",
-                            ((row.get("confidence") or "").strip().lower() or None,
+                            (confidence or None,
                              f"{decision}: {reasoning}", uc_id, src),
                         ).rowcount
         print(f"[product-queue] {stats}")

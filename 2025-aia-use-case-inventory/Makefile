@@ -62,9 +62,6 @@ fix:
 	python3 scripts/persist_capability_evidence.py
 	# 2024-vs-2025 divergence queue resolutions (38 reviewed rows).
 	python3 scripts/apply_divergence_resolutions.py
-	# Re-derive the primary-product cache from the edges so the two layers
-	# can never drift (check_refactor_quality asserts equality).
-	python3 scripts/refresh_primary_product_cache.py
 	python3 scripts/apply_expanded_product_catalog.py
 	python3 scripts/populate_use_case_products.py
 	python3 scripts/cleanup_products_taxonomy.py
@@ -80,9 +77,6 @@ fix:
 	# confidence='inferred' if the source named the vendor but not a product).
 	# See audit/retag/generic_vendor_links/. Idempotent; safe to re-run.
 	python3 scripts/apply_generic_vendor_retag.py
-	# 2026-06 product-queue review: resolves the 626 compound/unmatched
-	# vendor strings (audit/product_queue_review_2026-06/). Signature-keyed.
-	python3 scripts/apply_product_queue_review.py
 	# May 2026 4-agent linkage pass (audit/linkage_pass_2026-05/integration/).
 	# Adds ~220 catalog rows, ~38 hierarchy edges, ~7 aliases, and ~220 hand-
 	# curated use_case→product links from the multi-agent labeling pass.
@@ -108,6 +102,10 @@ fix:
 	# row id so the link never lands; this resolves it by stable slug.
 	# Runs AFTER both linkage passes and recategorization. Idempotent.
 	python3 scripts/apply_codex_split.py
+	# 2026-06 product-queue review: resolves the 626 compound/unmatched
+	# vendor strings (audit/product_queue_review_2026-06/). Runs AFTER all
+	# catalog/alias passes so its seed-guard sees the full alias table.
+	python3 scripts/apply_product_queue_review.py
 	# Federal organizations hierarchy — schema, seed, backfill, sub-agency
 	# maturity. Each script is idempotent.
 	python3 scripts/run_migrations.py
@@ -145,6 +143,11 @@ fix:
 	python3 scripts/apply_product_hierarchy_edges.py --apply
 	python3 scripts/promote_resolved_link_queue.py --apply
 	python3 scripts/apply_fedramp_link_decisions.py --apply
+	# FINAL consistency pass: every product step above can move edges, so the
+	# primary-product cache and the maturity snapshot are re-derived last
+	# (check_refactor_quality asserts cache==edges and maturity==rollups).
+	python3 scripts/refresh_primary_product_cache.py
+	python3 compute_maturity.py
 	# auto_tag.py (line 41) sets use_cases.product_id pointing at whatever the
 	# tagger matched. Downstream merge_duplicate_products + cleanup_products
 	# may then delete those products, leaving stale refs. Clean any reverse-

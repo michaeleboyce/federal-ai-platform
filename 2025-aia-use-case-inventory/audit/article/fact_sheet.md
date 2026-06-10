@@ -1,6 +1,6 @@
 # Article fact sheet — 2025 Federal AI Use Case Inventory (IFP tags)
 
-_Generated: 2026-06-09 by `scripts/build_article_factsheet.py`. Re-run after any `make fix`._
+_Generated: 2026-06-10 by `scripts/build_article_factsheet.py`. Re-run after any `make fix`._
 
 Every number below is produced by the SQL shown with it, against
 `data/federal_ai_inventory_2025.db`. Caveats marked ⚠ MUST travel with
@@ -40,7 +40,7 @@ SELECT COUNT(*) FROM use_cases
 
 ### GenAI by IFP tag (2025)
 
-**969**
+**999**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -67,9 +67,9 @@ SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
 ```
 - ⚠ Definition: staff can submit arbitrary prompts, internal-work approved, broadly available — not single-workflow integrations. Low-confidence heuristic flips were re-adjudicated row-by-row in audit/retag/general_llm_round3/.
 
-### Agencies with enterprise-wide GenAI: 15 (2024) → 21 (2025)
+### Agencies with enterprise-wide GenAI: 21 (2024) → 21 (2025)
 
-**15 → 21**
+**21 → 21**
 
 ```sql
 SELECT COUNT(DISTINCT u.agency_id)
@@ -203,9 +203,9 @@ SELECT COUNT(*) FROM use_cases
 
 ## 5. Cross-year capacity (2024 → 2025)
 
-### Deployed GenAI use cases: 200 (2024) → 322 (2025)
+### Deployed GenAI use cases: 200 (2024) → 327 (2025)
 
-**200 → 322**
+**200 → 327**
 
 ```sql
 SELECT COUNT(DISTINCT u.id)

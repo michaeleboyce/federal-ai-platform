@@ -22,17 +22,12 @@ python3 scripts/build_article_factsheet.py              # citable numbers
 | stage / ai_classification normalization (m016) | `scripts/normalize_use_case_fields.py` |
 | 2024 tag backfill + verification (93.9–100% across 4 dims) | `audit/retag/2024-tagging-verification/verification_report.md` |
 | Article guardrails enforced as tests | `audit/checks/check_article_guardrails.py` |
+| review_queue_products: all 626 rows reviewed; 479 edges, 11 products seeded; low-confidence verdicts recorded but not auto-applied | `audit/product_queue_review_2026-06/verdicts_batch{1..5}.csv`, `scripts/apply_product_queue_review.py` |
+| 2024-vs-2025 divergence queue: 38 reviewed, 30 2025-tag fixes | `audit/retag/2024-vs-2025-divergence/resolutions.csv` |
 
-## In flight (2026-06-10)
+## In flight
 
-- **review_queue_products (626 rows)** — five reviewer batches writing
-  `audit/product_queue_review_2026-06/verdicts_batch{1..5}.csv`; applied by
-  `scripts/apply_product_queue_review.py` (signature-keyed, in `make fix`).
-  When complete, `audit/db_snapshot.md` `pending_product_reviews` should
-  drop toward 0 and stay there across rebuilds.
-- **2024-vs-2025 divergence queue (38 rows)** — reviewer writing
-  `audit/retag/2024-vs-2025-divergence/resolutions.csv`; applied by
-  `scripts/apply_divergence_resolutions.py`.
+(nothing — see Done)
 
 ## Remaining — needs a human (cannot be done by agents)
 
@@ -48,6 +43,14 @@ python3 scripts/build_article_factsheet.py              # citable numbers
    drop the reference or ask DOI directly.
 
 ## Remaining — agent-sized, lower priority
+
+- ~55 low-confidence product verdicts (queue rows whose llm_reasoning says
+  `low_confidence_deferred`) — reviewed but no edge auto-created; a human
+  spot-check pass could promote them. Notable flagged rows: FDIC OIG
+  forensics compound (ScanWriter/X1), Treasury "Identity Verification"
+  (ID.me inference).
+- 3 `unknown_product` mapped names that didn't resolve at apply time
+  (see apply_product_queue_review output in the make fix log).
 
 - 31 `data_analysis` shorthand rows skipped by evidence persistence
   (agent-abbreviated names like "Elastic ML Threat Detection" vs the DB's
