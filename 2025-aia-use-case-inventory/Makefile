@@ -11,6 +11,11 @@ fix:
 	# native 2024 shape into `use_cases_2024` (table created by migration
 	# m009). Phase 1 of the 2024↔2025 comparison project. Idempotent.
 	python3 load_2024.py
+	# Recompute the derived stage_normalized / ai_classification_normalized
+	# columns (m016) — the loader wipe-and-reload clears them every rebuild.
+	# Hard-fails if >5% of rows land in 'unknown' stage (new free-text
+	# variant in a source file).
+	python3 scripts/normalize_use_case_fields.py
 	# OMB consolidated individually-reported AI use case file — mirror rows,
 	# match against DB, populate omb_match_audit. Schema-only DB additions
 	# come from migrations/m004; this is the data load. Idempotent.
@@ -47,6 +52,11 @@ fix:
 	python3 scripts/retag_llm.py
 	python3 scripts/apply_retag_audit.py
 	python3 scripts/apply_round2_audit.py
+	# 2026-06 capability reviews: per-row adjudication of the low-confidence
+	# general-LLM flips (round 3) and the over-tagged 'agentic' rows. Signature
+	# -keyed; survives id rotation. See audit/retag/{general_llm_round3,
+	# agentic_review}/INSTRUCTIONS.md.
+	python3 scripts/apply_capability_reviews.py
 	python3 scripts/apply_expanded_product_catalog.py
 	python3 scripts/populate_use_case_products.py
 	python3 scripts/cleanup_products_taxonomy.py

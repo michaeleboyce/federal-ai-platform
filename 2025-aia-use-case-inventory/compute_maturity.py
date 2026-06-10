@@ -81,13 +81,19 @@ def compute_maturity():
             organization_id = org["id"] if org else None
 
             # Binary capability flags (agency has at least one entry of each type)
+            #
+            # Individually-reported rows ONLY: an Appendix-B template checkbox
+            # ("Microsoft Copilot ... Y") is not evidence of an enterprise
+            # rollout — counting consolidated entries here produced the FCC/
+            # PBGC/EAC/OSC false positives the 2026-04 retag audit flagged
+            # (audit/retag/TODO.md §3). The false negatives (State, VA, DOJ,
+            # DOT) are cured upstream by the web-verified scope corrections.
             has_enterprise_llm = conn.execute("""
                 SELECT COUNT(*) FROM use_case_tags t
-                LEFT JOIN use_cases uc ON uc.id = t.use_case_id
-                LEFT JOIN consolidated_use_cases c ON c.id = t.consolidated_use_case_id
-                WHERE (uc.agency_id = ? OR c.agency_id = ?)
-                  AND t.is_general_llm_access = 1 AND t.deployment_scope IN ('enterprise_wide','department')
-            """, (aid, aid)).fetchone()[0] > 0
+                JOIN use_cases uc ON uc.id = t.use_case_id
+                WHERE uc.agency_id = ?
+                  AND t.is_general_llm_access = 1 AND t.is_enterprise_wide = 1
+            """, (aid,)).fetchone()[0] > 0
 
             has_coding = coding_count > 0
             has_agentic = agentic_count > 0

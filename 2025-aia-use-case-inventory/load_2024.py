@@ -83,6 +83,34 @@ def load(conn, csv_path: Path = CSV_PATH) -> dict:
         "AND name='use_case_year_links'"
     ).fetchone():
         conn.execute("DELETE FROM use_case_year_links")
+
+    # m014's use_case_tags_2024 also FK-references use_cases_2024(id), but
+    # unlike year-links nothing downstream rebuilds it — the multi-wave 2024
+    # tag backfill (and its hand-applied corrections) lives only in this
+    # table. Snapshot the rows keyed by slug (unique, deterministic on
+    # (agency, name, load order)), clear, and re-attach after the reload.
+    tags_snapshot: list[tuple[str, tuple]] = []
+    tag_cols: list[str] = []
+    has_tags_table = conn.execute(
+        "SELECT 1 FROM sqlite_master WHERE type='table' "
+        "AND name='use_case_tags_2024'"
+    ).fetchone()
+    if has_tags_table:
+        tag_cols = [
+            r[1]
+            for r in conn.execute("PRAGMA table_info(use_case_tags_2024)")
+            if r[1] not in ("id", "use_case_id_2024")
+        ]
+        col_list = ", ".join(f"t.{c}" for c in tag_cols)
+        tags_snapshot = [
+            (row[0], tuple(row[1:]))
+            for row in conn.execute(
+                f"""SELECT u.slug, {col_list}
+                      FROM use_case_tags_2024 t
+                      JOIN use_cases_2024 u ON u.id = t.use_case_id_2024"""
+            )
+        ]
+        conn.execute("DELETE FROM use_case_tags_2024")
     conn.execute("DELETE FROM use_cases_2024")
 
     insert_cols = DATA_FIELDS + ["agency_id", "source_file", "slug", "raw_json"]
@@ -141,6 +169,33 @@ def load(conn, csv_path: Path = CSV_PATH) -> dict:
         conn.execute(insert_sql, values)
         inserted += 1
 
+    # Re-attach the 2024 tag rows to the freshly assigned ids via slug.
+    tags_restored = 0
+    tags_unresolved = 0
+    if tags_snapshot:
+        slug_to_id = {
+            r[0]: r[1] for r in conn.execute("SELECT slug, id FROM use_cases_2024")
+        }
+        placeholders_t = ",".join(["?"] * (len(tag_cols) + 1))
+        insert_tags_sql = (
+            f"INSERT INTO use_case_tags_2024 (use_case_id_2024, {','.join(tag_cols)}) "
+            f"VALUES ({placeholders_t})"
+        )
+        for slug, vals in tags_snapshot:
+            new_id = slug_to_id.get(slug)
+            if new_id is None:
+                tags_unresolved += 1
+                continue
+            conn.execute(insert_tags_sql, (new_id, *vals))
+            tags_restored += 1
+        if tags_unresolved / max(len(tags_snapshot), 1) > 0.02:
+            conn.rollback()
+            raise SystemExit(
+                f"load_2024: {tags_unresolved}/{len(tags_snapshot)} 2024 tag "
+                "rows failed slug re-attachment — aborting so the tag "
+                "backfill is not silently dropped."
+            )
+
     conn.commit()
 
     return {
@@ -150,6 +205,8 @@ def load(conn, csv_path: Path = CSV_PATH) -> dict:
         "skipped": skipped,
         "agencies_resolved": len(agency_ids),
         "skipped_unknown_agencies": skipped_unknown_agency,
+        "tags_2024_restored": tags_restored,
+        "tags_2024_unresolved": tags_unresolved,
     }
 
 
@@ -168,6 +225,10 @@ def main() -> int:
     print(f"agencies: {stats['agencies_resolved']}")
     if stats["skipped_unknown_agencies"]:
         print(f"unresolved agencies: {stats['skipped_unknown_agencies']}")
+    print(
+        f"2024 tags: {stats['tags_2024_restored']} re-attached, "
+        f"{stats['tags_2024_unresolved']} unresolved"
+    )
     print(f"{stats['inserted']} loaded, {stats['skipped']} skipped")
     return 0
 

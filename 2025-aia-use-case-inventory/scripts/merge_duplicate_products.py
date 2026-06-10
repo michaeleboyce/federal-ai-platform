@@ -57,6 +57,47 @@ def _merge_one(conn: sqlite3.Connection, survivor: int, loser: int, *, apply: bo
     pre_surv = _counts(conn, survivor)
     pre_lose = _counts(conn, loser)
     expected = {k: pre_surv[k] + pre_lose[k] for k in pre_surv}
+
+    # A use case (or alias / FedRAMP package) can be linked to BOTH sides of
+    # the merge; repointing those loser rows would violate the UNIQUE
+    # constraints. Count the overlaps, subtract them from the expectation,
+    # and delete the loser's overlapping rows before the repoint.
+    overlaps = {
+        "use_case_products": conn.execute(
+            """SELECT COUNT(*) FROM use_case_products l
+                WHERE l.product_id = ? AND EXISTS (
+                    SELECT 1 FROM use_case_products s
+                     WHERE s.product_id = ? AND s.use_case_id = l.use_case_id)""",
+            (loser, survivor),
+        ).fetchone()[0],
+        "consolidated_use_case_products": conn.execute(
+            """SELECT COUNT(*) FROM consolidated_use_case_products l
+                WHERE l.product_id = ? AND EXISTS (
+                    SELECT 1 FROM consolidated_use_case_products s
+                     WHERE s.product_id = ?
+                       AND s.consolidated_use_case_id = l.consolidated_use_case_id)""",
+            (loser, survivor),
+        ).fetchone()[0],
+        "product_aliases": conn.execute(
+            """SELECT COUNT(*) FROM product_aliases l
+                WHERE l.product_id = ? AND EXISTS (
+                    SELECT 1 FROM product_aliases s
+                     WHERE s.product_id = ? AND s.alias_text = l.alias_text)""",
+            (loser, survivor),
+        ).fetchone()[0],
+        "fedramp_product_links": conn.execute(
+            """SELECT COUNT(*) FROM fedramp_product_links l
+                WHERE l.inventory_product_id = ? AND EXISTS (
+                    SELECT 1 FROM fedramp_product_links s
+                     WHERE s.inventory_product_id = ? AND s.fedramp_id = l.fedramp_id)""",
+            (loser, survivor),
+        ).fetchone()[0],
+    }
+    for key, n in overlaps.items():
+        expected[key] -= n
+    expected["entry_product_edges"] -= (
+        overlaps["use_case_products"] + overlaps["consolidated_use_case_products"]
+    )
     # The "parent_of" dependents merge identically (children of loser become children of survivor).
     # The loser row itself is deleted, so it doesn't contribute to product_aliases as a row.
     # We add ONE alias for the loser's canonical_name -> survivor, but only if it isn't already
@@ -81,6 +122,32 @@ def _merge_one(conn: sqlite3.Connection, survivor: int, loser: int, *, apply: bo
         return
 
     cur = conn.cursor()
+    # Drop loser rows that already exist on the survivor side (counted above)
+    # so the repoint UPDATEs can't hit the UNIQUE constraints.
+    cur.execute(
+        """DELETE FROM use_case_products
+            WHERE product_id = ? AND use_case_id IN
+                  (SELECT use_case_id FROM use_case_products WHERE product_id = ?)""",
+        (loser, survivor),
+    )
+    cur.execute(
+        """DELETE FROM consolidated_use_case_products
+            WHERE product_id = ? AND consolidated_use_case_id IN
+                  (SELECT consolidated_use_case_id FROM consolidated_use_case_products WHERE product_id = ?)""",
+        (loser, survivor),
+    )
+    cur.execute(
+        """DELETE FROM product_aliases
+            WHERE product_id = ? AND alias_text IN
+                  (SELECT alias_text FROM product_aliases WHERE product_id = ?)""",
+        (loser, survivor),
+    )
+    cur.execute(
+        """DELETE FROM fedramp_product_links
+            WHERE inventory_product_id = ? AND fedramp_id IN
+                  (SELECT fedramp_id FROM fedramp_product_links WHERE inventory_product_id = ?)""",
+        (loser, survivor),
+    )
     cur.execute("UPDATE product_aliases SET product_id = ? WHERE product_id = ?", (survivor, loser))
     cur.execute("UPDATE use_case_products SET product_id = ? WHERE product_id = ?", (survivor, loser))
     cur.execute("UPDATE consolidated_use_case_products SET product_id = ? WHERE product_id = ?", (survivor, loser))
