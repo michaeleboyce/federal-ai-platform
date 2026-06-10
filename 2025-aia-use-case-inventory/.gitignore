@@ -96,3 +96,6 @@ data/federal_ai_inventory_2025.db.backup-*
 /*.png
 /*.jpeg
 .playwright-mcp/
+
+# Local screenshot/debris archive (never commit)
+/archive/
