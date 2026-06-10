@@ -57,6 +57,14 @@ fix:
 	# -keyed; survives id rotation. See audit/retag/{general_llm_round3,
 	# agentic_review}/INSTRUCTIONS.md.
 	python3 scripts/apply_capability_reviews.py
+	# Persist the audits' sources + quotes onto the use cases themselves
+	# (use_case_external_evidence) so findings stay traceable in the UI.
+	python3 scripts/persist_capability_evidence.py
+	# 2024-vs-2025 divergence queue resolutions (38 reviewed rows).
+	python3 scripts/apply_divergence_resolutions.py
+	# Re-derive the primary-product cache from the edges so the two layers
+	# can never drift (check_refactor_quality asserts equality).
+	python3 scripts/refresh_primary_product_cache.py
 	python3 scripts/apply_expanded_product_catalog.py
 	python3 scripts/populate_use_case_products.py
 	python3 scripts/cleanup_products_taxonomy.py
@@ -72,6 +80,9 @@ fix:
 	# confidence='inferred' if the source named the vendor but not a product).
 	# See audit/retag/generic_vendor_links/. Idempotent; safe to re-run.
 	python3 scripts/apply_generic_vendor_retag.py
+	# 2026-06 product-queue review: resolves the 626 compound/unmatched
+	# vendor strings (audit/product_queue_review_2026-06/). Signature-keyed.
+	python3 scripts/apply_product_queue_review.py
 	# May 2026 4-agent linkage pass (audit/linkage_pass_2026-05/integration/).
 	# Adds ~220 catalog rows, ~38 hierarchy edges, ~7 aliases, and ~220 hand-
 	# curated use_case→product links from the multi-agent labeling pass.
