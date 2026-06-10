@@ -18,15 +18,17 @@ unevenly it landed — not a decline.
 | Total AI use cases | 2,133 | 3,549 | **+66%** |
 | Generative-AI use cases | 527 | 969 | **+84%** |
 | Generative AI deployed / in production | ~200 | 468 | **~2.3×** |
-| Enterprise-wide generative AI | 28 | 220 | **7.9×** |
+| Enterprise-wide generative AI | 44 | 233 | **5.3×** |
 | New generative-AI capabilities introduced in 2025 | — | 643 | net new |
 
 Two caveats keep the growth honest. The enterprise-wide expansion is **concentrated**:
-of the 220 enterprise-wide GenAI use cases, **HHS alone accounts for 166** — strip it
-out and the rest of government shares ~54. The *number of agencies* with any
-enterprise-wide GenAI rose **15 → 21**, but only after IFP's web-verified scope
-corrections (StateChat, VA GPT, DHSChat, Ask Dottie and peers were under-scoped in
-the raw filings; the uncorrected data shows a misleading 15 → 12 decline — do not
+of the 233 enterprise-wide GenAI use cases, **HHS alone accounts for 166** — strip it
+out and the rest of government shares ~67. The *number of agencies* with any
+enterprise-wide GenAI rose **21 → 24**, but only after IFP's scope corrections on
+**both** years (the 2024 tagger never mapped its `department` scope into the
+enterprise flag, and the 2025 tagger recorded owning offices — OCIO, MGMT — as
+deployment scopes for agency-wide tools like StateChat, DHSChat, SSA's ASC, and
+OPM's ChatGPT; the uncorrected data shows a misleading 15 → 12 decline — do not
 cite that earlier figure). Where a single agency looks
 like it lost ground (IRS), it is a filing/consolidation artifact, not a capability
 loss — GAO counted 126 active IRS AI use cases in June 2025, far more than the public
@@ -42,13 +44,19 @@ is not the same as a description of experience. The more revealing question is t
 one a single employee asks on a Monday morning: *when I open my laptop, what AI is
 actually available to me — and what am I still forbidden to do with it?*
 
-Answered that way, the 2024 baseline is striking. Of the 41 agencies in the 2024
-inventory, only **15** had any enterprise-wide generative AI at all — and most of
-those were small independent agencies (EEOC, NCUA, FHFA, USCCR) that had simply
-switched on Microsoft 365 Copilot. Among the **ten largest agencies by use-case
-count, nine had zero enterprise-wide generative AI** in 2024. For the typical
-federal employee at a major mission agency, "the agency is doing AI" and "I have AI
-at my desk" were two entirely different statements.
+Answered that way, the 2024 baseline is striking — though not in the way a raw
+count suggests. Of the 41 agencies in the 2024 inventory, **21** had *some*
+enterprise-wide generative AI (scope-corrected). But look at what those rows
+actually were: small independent agencies (EEOC, NCUA, FHFA, USCCR) switching on
+Microsoft 365 Copilot, and big departments filing **permissions, not products** —
+DHS's "employees are permitted to use commercial generative AI," HHS's blessing of
+ChatGPT for non-sensitive summaries, DOJ's AI features embedded in Westlaw and
+ServiceNow licenses. Purpose-built, government-operated assistants at enterprise
+scale numbered just a handful (SSA's ASC, State's brand-new StateChat). And three
+of the largest mission agencies — **VA, USDA, and DOE — had zero** enterprise-wide
+generative AI of any kind. For the typical federal employee at a major mission
+agency, "the agency is doing AI" and "I have AI at my desk" were two entirely
+different statements.
 
 By 2025 the picture had moved — unevenly, and in two opposite directions at once.
 Some agencies **consolidated**, shedding generic "we use ChatGPT" filings down to
@@ -315,8 +323,10 @@ gone. The 2024 inventory shows exactly two SRS rows, both from the national lab,
 neither touching the 10,000+ operational workforce. Enterprise GenAI: zero.
 
 **By 2025, Savannah River had one of the densest single-site AI portfolios in the
-federal inventory — 21 enterprise-wide use cases, built largely in-house** on Azure
-AI Services. The two tools the contractor chose to announce publicly are
+federal inventory — 21 site-wide use cases, built largely in-house** on Azure
+AI Services. (SRS files them against its "Enterprise System Boundary," but that
+enterprise is the *site* — IFP's tags scope them as site/bureau-level, not
+DOE-wide.) The two tools the contractor chose to announce publicly are
 **ChatSRS** (general chat, built on OpenAI/ChatGPT via Microsoft) and **AskHR** —
 *"There's a lot of hype around AI. We focus on the practical and pragmatic
 application of this technology,"* SRS CIO-office director Len Bowers told local media
@@ -456,11 +466,14 @@ agencies that had near-nothing (Savannah River 0→21, USDA 4→24) *built out*.
 net "growth" number hides both.
 
 **3. The enterprise gap is the real divide.** Enterprise-wide GenAI use cases grew
-nearly eightfold (28→220), and the *number of agencies* with any rose 15→21 per the
-scope-corrected tags (raw filings under-scoped StateChat, VA GPT, DHSChat and peers)
-— but the row growth concentrated heavily (HHS alone = 166 of 220). Most agencies
-still file nearly all of their AI as bureau-scoped: "the agency has AI" and "I have
-AI" remained different sentences.
+more than fivefold (44→233), and the *number of agencies* with any rose 21→24 per
+the scope-corrected tags (both years needed correction: 2024's `department` scope
+was never mapped to the enterprise flag; 2025's tagger recorded owning offices as
+scopes for StateChat, DHSChat, SSA ASC, OPM ChatGPT and peers) — but the row growth
+concentrated heavily (HHS alone = 166 of 233), and the *character* changed: 2024's
+enterprise rows were mostly permissions and embedded COTS features, while 2025's
+are operated products. Most agencies still file nearly all of their AI as
+bureau-scoped: "the agency has AI" and "I have AI" remained different sentences.
 
 **4. The chatbot-per-bottleneck pattern.** The dominant 2025 shape is uniform: a RAG
 chatbot indexed on one bureau's worst document pile (farm-loan handbooks, DOE
