@@ -18,14 +18,16 @@ unevenly it landed — not a decline.
 | Total AI use cases | 2,133 | 3,549 | **+66%** |
 | Generative-AI use cases | 527 | 969 | **+84%** |
 | Generative AI deployed / in production | ~200 | 468 | **~2.3×** |
-| Enterprise-wide generative AI | 28 | 213 | **7.6×** |
+| Enterprise-wide generative AI | 28 | 220 | **7.9×** |
 | New generative-AI capabilities introduced in 2025 | — | 643 | net new |
 
 Two caveats keep the growth honest. The enterprise-wide expansion is **concentrated**:
-of the 213 enterprise-wide GenAI use cases, **HHS alone accounts for 175** — strip it
-out and the rest of government shares ~38. And the *number of agencies* with any
-enterprise-wide GenAI actually edged **down** (15 → 12): capacity deepened where it
-already existed rather than spreading to new agencies. Where a single agency looks
+of the 220 enterprise-wide GenAI use cases, **HHS alone accounts for 166** — strip it
+out and the rest of government shares ~54. The *number of agencies* with any
+enterprise-wide GenAI rose **15 → 21**, but only after IFP's web-verified scope
+corrections (StateChat, VA GPT, DHSChat, Ask Dottie and peers were under-scoped in
+the raw filings; the uncorrected data shows a misleading 15 → 12 decline — do not
+cite that earlier figure). Where a single agency looks
 like it lost ground (IRS), it is a filing/consolidation artifact, not a capability
 loss — GAO counted 126 active IRS AI use cases in June 2025, far more than the public
 inventory shows.
@@ -453,11 +455,12 @@ data.
 agencies that had near-nothing (Savannah River 0→21, USDA 4→24) *built out*. The
 net "growth" number hides both.
 
-**3. The enterprise gap is the real divide.** Enterprise-wide GenAI use cases nearly
-quintupled (28→213), but the *number of agencies* with any actually shrank (15→12) —
-the growth concentrated heavily (HHS alone = 175 of 213). VA is the extreme case: 100+
-GenAI tools, exactly one enterprise-wide, and it wasn't even live. "The agency has
-AI" and "I have AI" remained different sentences.
+**3. The enterprise gap is the real divide.** Enterprise-wide GenAI use cases grew
+nearly eightfold (28→220), and the *number of agencies* with any rose 15→21 per the
+scope-corrected tags (raw filings under-scoped StateChat, VA GPT, DHSChat and peers)
+— but the row growth concentrated heavily (HHS alone = 166 of 220). Most agencies
+still file nearly all of their AI as bureau-scoped: "the agency has AI" and "I have
+AI" remained different sentences.
 
 **4. The chatbot-per-bottleneck pattern.** The dominant 2025 shape is uniform: a RAG
 chatbot indexed on one bureau's worst document pile (farm-loan handbooks, DOE
