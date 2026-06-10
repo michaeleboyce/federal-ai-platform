@@ -41,22 +41,26 @@ def test_enterprise_wide_requires_evidence(conn):
 
 
 def test_enterprise_wide_total_consolidated_under_loose_ceiling(conn):
-    """Overall enterprise_wide population in consolidated rows.
+    """Overall enterprise_wide share of consolidated rows.
 
-    Baseline 111 of 192 consolidated rows (~58%). Audit: too high.
-    Phase 2 will likely cut this; ceiling 130 catches accidental over-tagging.
+    Re-baselined 2026-06-09: the full 900-row 2025 OMB consolidated COTS
+    load (2026-05-03) made the old absolute ceiling (130 of 192 rows)
+    meaningless. Current share is 468/900 (~52%) — consistent with the
+    pre-load ~58% ratio; the checkbox file genuinely skews enterprise.
+    Assert the RATIO stays under 60% so heuristic over-tagging still trips.
     """
-    n = conn.execute(
+    n, total = conn.execute(
         """
-        SELECT COUNT(*)
+        SELECT
+          SUM(CASE WHEN t.deployment_scope = 'enterprise_wide' THEN 1 ELSE 0 END),
+          COUNT(*)
         FROM use_case_tags t
         JOIN consolidated_use_cases c ON c.id = t.consolidated_use_case_id
-        WHERE t.deployment_scope = 'enterprise_wide'
         """
-    ).fetchone()[0]
-    assert n <= 130, (
-        f"enterprise_wide consolidated rows = {n} "
-        f"(baseline 111); ceiling 130 - over-tagging regression suspected"
+    ).fetchone()
+    assert total > 0 and n / total <= 0.60, (
+        f"enterprise_wide consolidated rows = {n}/{total} ({n / total:.0%}); "
+        f"ceiling 60% - over-tagging regression suspected"
     )
 
 
