@@ -1,5 +1,12 @@
 # Phase 5 — `/discrepancies` Page + Per-Case OMB ID Chip
 
+> **STATUS: COMPLETE (2026-06).** The `/discrepancies` page, the
+> `/discrepancies/[auditId]` drill-down, and the OMB-ID chip all shipped.
+> Phase 5b (the `components/navigation.tsx` link) also landed — the nav
+> rewrite completed and a `{ href: "/discrepancies", label: "Discrepancies" }`
+> entry is live (dashboard commit `d7d2605`, site-wide navigation audit).
+> Nothing outstanding.
+
 ## Context
 
 Phase 4 shipped the dashboard data layer (`lib/discrepancies.ts` with 4 query functions; `UseCase` type extended with `omb_consolidated_*` columns; both deployed). Phase 5 builds the user-facing UI on top of that:
