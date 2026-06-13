@@ -1,0 +1,422 @@
+[
+ {
+  "fedramp_id": "F1301251880",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "FedHR Navigator is a federal HR workflow platform (forms, cases, position management, benefits, retirement calculations). The description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1302201919",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Acquia Cloud is a Drupal-based content management and digital experience hosting platform. No AI/ML feature is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1302271924A",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "BlackBerry AtHoc is a crisis communication and personnel-accountability platform (alerting, mass notification, field reporting). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1303191948",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Maximus Cloud is a broad managed-cloud portfolio whose main job is contact-center/IaaS hosting, but it ships material AI: SuccessKPI uses AI/ML speech recognition and NLU for conversation analytics, IDP uses Amazon Bedrock with Claude for document classification, and it bundles AI-driven chatbots and agentic platforms (Kore.ai, OneReach).",
+  "signals": ["uses AI and machine learning to provide key insights", "AI-Powered Classification – leverages Amazon Bedrock with Claude AI for intelligent document categorization", "speech recognition and natural language understanding (NLU)", "enhancing customer interactions with AI-driven chatbots"]
+ },
+ {
+  "fedramp_id": "F1303221956",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GovDataHosting is a fully managed FedRAMP-compliant PaaS/IaaS hosting platform focused on security and compliance inheritance. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1304222071",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Proofpoint Email Archive is an email archiving, search, and e-discovery solution with encryption. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1305072116",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "This ServiceNow listing describes only the Government Community Cloud hosting environment for the Now Platform, with no AI feature named. While ServiceNow ships AI broadly, this specific authorization description centers on the compliant cloud infrastructure, not an AI capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1305132147",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Ex Libris Higher-Ed Platform (Alma, Primo, etc.) is library/research management and discovery software. The thin description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1306282198A",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Pega Cloud for Government is described as a no-code, model-based application development and case management platform. This description names no specific AI/ML feature, though Pega ships GenAI/decisioning elsewhere.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1308202329",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Coupa Spend Management is a procurement/spend platform whose core job is sourcing and invoicing, but it cites AI, ML, and image recognition to reduce manual and paper-based processing of invoices and documents.",
+  "signals": ["using the latest in Artificial Intelligence (AI), Machine Learning (ML), and Image Recognition"]
+ },
+ {
+  "fedramp_id": "F1309252456",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rectitude 369 Government Cloud is a FedRAMP IaaS for compute, network, and storage. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1311222650",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "GovPoint is a cloud-services marketplace (IaaS/PaaS plus bundled ISV SaaS). Its primary job is hosting, but bundled offerings cite AI/ML: the GRID20/20 sensor analytics platform advertises AI/Machine Learning enhancements and Sayari provides risk intelligence analytics.",
+  "signals": ["AI/Machine Learning enhancements"]
+ },
+ {
+  "fedramp_id": "F1311252651",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Esri Managed Cloud Services provides hosted ArcGIS GIS infrastructure and data management. This managed-hosting description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1311252652",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Granicus GovDelivery is a marketing-automation and mass-communication platform for public-sector messaging. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1403283529A",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Project Hosts GSS One Azure is a managed PaaS/compliance-hosting platform for ISV and agency applications. AI appears only incidentally in the names of hosted third-party apps (e.g. C3 AI, DAX CoPilot), not as a capability of the platform itself.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1404043549",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Accenture Federal Cloud ERP delivers virtualized Oracle-based back-office ERP (financials, HR, payroll, asset management). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1404304159",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "DataBank CloudPlus is FedRAMP-compliant cloud hosting (IaaS/PaaS) with monitoring, backup, and recovery. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1405214357",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PowerTrain Government Enclave is a hosted learning ecosystem (Moodle-based LMS, talent management, learning records). It offers analytics and reporting but names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1408115175",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Huddle is a secure document collaboration and file-sharing workspace with zero-trust access controls. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1412165928",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Everbridge Critical Event Management is a mass-notification and critical-communications platform. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1506046707",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Unison Contracting SaaS is a government contract-management and acquisition-compliance workflow tool. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1506046708",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Avaya Government Cloud is a UCaaS/CCaaS unified-communications and contact-center platform; its core job is telephony and collaboration, but the contact-center capabilities list AI, chatbots, and natural-language speech recognition among many features.",
+  "signals": ["self-service with natural language speech recognition", "AI, chatbots"]
+ },
+ {
+  "fedramp_id": "F1506076709",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Blackboard Learn SaaS is an online learning-management system with social and mobile tools. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1506096710",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Skyhigh SSE is a security service edge (CASB/SWG/DLP) platform whose core job is data and web security, but it ships material ML: machine-learning threat detection, AI-driven DLP classifiers, and UEBA behavioral analytics.",
+  "signals": ["leveraging machine learning, zero-day detection", "AI-driven classifiers automate policy creation", "user and entity behavior analytics (UEBA)", "Quantifiable risk across applications and users through machine learning and behavioral analytics"]
+ },
+ {
+  "fedramp_id": "F1506246782",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Complete Discovery Source is an eDiscovery hosting and managed-services provider supporting Relativity. Its core is litigation hosting, but it advertises advanced analytics over discovery data; eDiscovery platforms like Relativity center predictive-coding/technology-assisted-review ML.",
+  "signals": ["advanced analytics"]
+ },
+ {
+  "fedramp_id": "F1506256801",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "iSite Contract Management Portal is a web-based tool for tracking federal contract progress and finances. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1507116930",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Ivanti Neurons for MDM (formerly MobileIron) is a unified endpoint management and mobile threat-defense platform. The description centers on zero-trust device management and threat remediation with no AI/ML capability named.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1507136931A",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Druva Data Resiliency Cloud is a SaaS backup, disaster-recovery, and ransomware-recovery platform. This description centers on data protection and cyber resilience; no specific AI/ML capability is named.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1507317125",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Decision Lens is a prioritization and resource-optimization platform driven by analytics; its core job is decision support. It cites sophisticated analytics to identify best-outcome investments but names no explicit ML/AI technique.",
+  "signals": ["Driven by sophisticated analytics"]
+ },
+ {
+  "fedramp_id": "F1508127183",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NetComm Beacon is a data-analytics dashboarding and visualization toolset with HR/finance/workflow tools. It offers dashboards and reporting but names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1508207205",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Qualys Cloud Platform is a vulnerability management and security-posture platform that continuously analyzes and correlates security data. The description centers on sensor-based scanning and correlation, naming no ML/AI technique.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1508277234",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Government Cloud - Common Controls describes the shared common-controls boundary supporting Oracle SaaS/PaaS/IaaS offerings. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1509037236",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Adobe Connect is a web-conferencing, webinar, and virtual-classroom collaboration platform. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1509037239",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Adobe Experience Manager is a web content and digital-asset management platform for delivering digital experiences and forms. This description names no AI/ML capability, focusing on CMS and personalization workflows.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1509217359",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Cornerstone Galaxy is a talent/learning-management (HR) platform whose core job is workforce development, but it is described as AI-powered for identifying skills gaps and development opportunities, reflecting Cornerstone's AI-based skills engine.",
+  "signals": ["the complete AI-powered Workforce Agility platform"]
+ },
+ {
+  "fedramp_id": "F1509237360",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Veracode is an application-security testing platform (SAST, SCA, DAST). The description centers on automated code scanning and remediation; no ML/AI capability is named in this text.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1510017461",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "FedConnect is a federal acquisition and grants portal for posting opportunities and exchanging bids/awards between agencies and vendors. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1510057481",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "BMC Helix is an IT service and operations management platform; its core is ITSM/ITOM, but it ships material AIOps with predictive analytics, root-cause isolation, and intelligent automation for proactive event management.",
+  "signals": ["BMC Helix Operations Management with AIOps", "Predictive IT with AIOps", "root cause isolation, and intelligent automation", "Predictive analytics to manage IT resources"]
+ },
+ {
+  "fedramp_id": "F1510137547",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rackspace Government Cloud is a managed FedRAMP/DoD-compliant cloud built on VMware and AWS. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1511167634",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Kiteworks Private Data Network is a secure file-transfer, encryption, and compliance/governance platform. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1511207635",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Webex for Government is a UCaaS collaboration suite (meetings, messaging, calling). Its core job is communications, but it mentions AI-enabled software and hardware to optimize collaboration, reflecting Webex's AI meeting features.",
+  "signals": ["optimizing collaboration through AI-enabled software and hardware"]
+ },
+ {
+  "fedramp_id": "F1512017637",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Trellix Email Security is an email threat-prevention gateway using the signature-less MVX virtual-execution (sandbox) engine to detonate attachments and URLs. The detection is sandbox/behavioral detonation rather than a described ML/AI capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1512017638",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IdeaScale Gov is a crowdsourcing and innovation-management platform for soliciting and developing ideas. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1512167750",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Okta IDaaS is identity and access management (SSO, MFA, adaptive auth). Identity service with no AI/ML capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1602057825A",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "TRAPWIRE is a threat-detection and incident-analysis platform whose core job is incident reporting and information sharing, but it advertises pattern analysis and threat detection over reported activity. No explicit ML/AI technique is named.",
+  "signals": ["Pattern analysis", "Threat detection"]
+ },
+ {
+  "fedramp_id": "F1602257856",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SAP NS2 DDCIE hosts SAP enterprise applications (S/4HANA ERP, SuccessFactors HCM, Integrated Business Planning) for defense. This description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1603047866",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "AWS GovCloud is a general-purpose government IaaS/PaaS region. Although it can host AI workloads, this authorization description names no AI capability and generic cloud hosting is not_ai.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1603077867",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "SMX Elevate is a FedRAMP automation/hosting PaaS; its core job is secure cloud provisioning and compliance, but it ships material AI accelerators: an Elevate AI secure generative-AI offering and the embedded C3 AI/Generative AI (LLM-based) platform.",
+  "signals": ["Elevate AI: Secure Generative AI for sensitive missions", "foundational large language models (LLMs), deep learning retrieval models", "C3 Generative AI serves as a deep domain knowledge source"]
+ },
+ {
+  "fedramp_id": "F1603087869",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Azure Government is a general-purpose government cloud platform (IaaS/PaaS/SaaS including Dynamics 365). This authorization description names no specific AI service, and generic cloud hosting is not_ai even though Azure can host AI workloads.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1603157879",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Apptio is a Technology Business Management and cloud financial management (FinOps) SaaS for IT cost optimization. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1603257882",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Oracle Fusion Cloud is an enterprise SaaS suite (ERP/HCM/SCM/CRM); its core job is business applications, but the description names Oracle Digital Assistant (a conversational AI chatbot) and Oracle Intelligent Advisor as complementary services.",
+  "signals": ["Oracle Intelligent Advisor", "Oracle Digital Assistant"]
+ },
+ {
+  "fedramp_id": "F1603297883",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Lookout Security Platform is a mobile endpoint security and EDR product whose core job is mobile threat protection. It offers proactive threat hunting but names no explicit ML/AI capability in this text, though Lookout's detection relies on ML on its mobile telemetry dataset.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1603307884",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Trimble Unity Construct (e-Builder) is a construction program and capital-project management suite (cost, scheduling, documents). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1605027892",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Questionmark Government is an online assessment platform for authoring and delivering tests, quizzes, and surveys with reporting/analytics. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1605027893",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "DocuSign CLM is a contract lifecycle management product with workflow automation. This description centers on document/contract automation; no AI/ML capability is named.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1605037894",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Virtru Data Protection Platform provides end-to-end encrypted email and file transfer with policy controls. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1605107897",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Cisco Cloudlock is a CASB whose core job is cloud security and DLP, but it ships material ML: advanced machine-learning algorithms for UEBA anomaly detection across cloud platforms.",
+  "signals": ["advanced machine learning, and the data scientist-led CyberLab", "leverages advanced machine learning algorithms to detect anomalies", "User and Entity Behavior Analytics (UEBA)"]
+ },
+ {
+  "fedramp_id": "F1605107898",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "VBrick Rev is an enterprise video platform for live and on-demand video management, publishing, and distribution. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1606087903A",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Replicon Cloud Platform is a time-tracking, expense-management, and resource-scheduling SaaS with workforce analytics and reporting. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1606097904A",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Qualtrics XM Platform is an experience-management/survey platform; its core job is data collection, but it ships material integrated AI that identifies themes, predicts trends, and surfaces insights from open-text and unstructured feedback.",
+  "signals": ["Integrated artificial intelligence (AI) capabilities enhance data analysis by identifying key themes, predicting trends, and surfacing actionable insights", "open-text feedback from surveys"]
+ }
+]

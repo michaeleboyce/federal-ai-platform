@@ -1,0 +1,493 @@
+[
+ {
+  "fedramp_id": "FR2201340492",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "KnowBe4's security-awareness platform ships AI Defense Agents (AIDA), a suite of AI agents for human risk management that automate administration and personalize training content. AI is a material feature within a broader phishing/training platform.",
+  "signals": [
+   "AI Defense Agents (AIDA)",
+   "AIDA Agent",
+   "a suite of AI Agents for human risk management that continuously automates administration and content personalization"
+  ]
+ },
+ {
+  "fedramp_id": "FR2202555908",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Pexip Government Cloud is a video teleconferencing interoperability platform (CVI for Teams, Google Meet, SIP dialing). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2203732438",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "OpenText Cloud for Government delivers content management and low-code process automation. The description names no AI/ML extraction or classification capability, though the broader OpenText ECM may include such features elsewhere.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2204842850",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "ROSALIND is a bioinformatics analysis platform offering NGS/RNA-seq pipelines and knowledge graphs for genomic data. It is analytics-centered with knowledge-graph data modeling rather than an AI-first product; substantive ML is not explicitly claimed.",
+  "signals": [
+   "Rosalind uses knowledge graphs to securely store institutional data as searchable libraries"
+  ]
+ },
+ {
+  "fedramp_id": "FR2206159758",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "This Merlin GovCloud bundle hosts Cynamics, a SOC AI platform powered by a proprietary cybersecurity large language model (CynLLM) for AI-driven threat detection. Material AI capability is embedded in a broader compliance/hosting platform.",
+  "signals": [
+   "next-generation SOC AI platform powered by its proprietary sample-based NDR and cybersecurity large language model, CynLLM",
+   "By integrating intelligent sampling with cutting-edge AI, Cynamics facilitates real-time and scalable threat detection"
+  ]
+ },
+ {
+  "fedramp_id": "FR2207359708",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Laser AI's primary purpose is automating systematic literature reviews using natural language processing and AI to screen, extract, and synthesize health research with minimal human involvement. AI is the core of the product.",
+  "signals": [
+   "automating the development of Living Systematic Reviews using natural language processing (NLP) and artificial intelligence techniques",
+   "offloading much of the repetitive tasks to the AI-enabled system",
+   "enabling smooth interaction with suggestions provided by the AI"
+  ]
+ },
+ {
+  "fedramp_id": "FR2207365631",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "ECFax is a cloud-based managed fax service for secure document transfer. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2207643307",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "TeamMate is audit and internal-controls management software for planning, execution, and reporting. The description names no substantive AI/ML feature.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2208555094",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "IAM Advantage is an identity and access management platform; AI is not its purpose. It bundles CyberArk Privileged Threat Analytics and OpenSearch user behavior analytics, which provide ML-based behavioral threat detection as a feature.",
+  "signals": [
+   "CyberArk Privileged Threat Analytics",
+   "OpenSearch & Dashboards (SIEM & User Behavior Analytics)"
+  ]
+ },
+ {
+  "fedramp_id": "FR2209555576",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "RingMD is a telemedicine/video-consultation platform; its core is telehealth, not AI. It offers optional AI-enhanced screening and clinical decision support modules, but these are described as optional add-ons.",
+  "signals": [
+   "Optional AI-enhanced modules are available, including screening tools and clinical decision support features"
+  ]
+ },
+ {
+  "fedramp_id": "FR2210352243",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "SAS AI and Analytics for Government is an AI/ML and analytics platform built on SAS Viya, providing text analytics with NLP, machine learning model development, scoring, and lifecycle management. AI/ML is the core purpose.",
+  "signals": [
+   "Leverage the best combinations of linguistics, machine learning and natural language processing.",
+   "Register, modify, track, score, publish and report on AI and analytical models.",
+   "machine learning techniques all in a single, scalable, in-memory processing environment"
+  ]
+ },
+ {
+  "fedramp_id": "FR2210666939",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Melissa GovCloud Address Suite verifies, standardizes, and corrects mailing addresses against postal authority data. This is rule/reference-data address validation, not AI.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2210850126",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "ReadyOp is a collaboration, communication, and incident-management SaaS/PaaS platform. The description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2210851632",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "GetWell Anywhere is a digital patient-engagement platform that delivers personalized, proactive guidance and automates clinician tasks like documentation. The personalization/automation suggests algorithmic features but no specific AI/ML technique is named.",
+  "signals": [
+   "automated, personalized, and proactive guidance for each patient",
+   "automates repetitive tasks for clinicians—such as patient education, EMR documentation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2211452029",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "RQI1Stop delivers CPR training based on AHA guidelines as a SaaS offering. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2212912561",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Itamar Dispatcher Cloud supports home sleep apnea testing via WatchPAT devices, initializing devices and collecting test results. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2213647361",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Talkdesk CX Cloud is a cloud contact-center platform; its core is voice routing, agent workspace, and workforce management. Talkdesk's broader product is known for AI features, but this Government Edition description names no specific AI capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2213722684",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Spider Impact is a performance-management and business-intelligence reporting tool for KPIs, dashboards, and scorecards. It describes BI/analytics and data exploration but no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2213764335",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "RunCyberAssurance automates continuous-monitoring tasks, ingesting feeds from vulnerability scanners and generating FedRAMP/OSCAL reports. It is workflow/compliance automation; no AI/ML technique is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2214062312",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Actsoft Workforce Manager is a mobile workforce/fleet management platform (forms, timekeeping, dispatch, GPS, telematics). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2214150164",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Quzara Cybertorch is a managed SOC/MXDR security platform whose core is managed security services, but it materially uses AI-assisted analytics, triage, risk scoring, and a NISTcompliance.ai engine throughout detection and compliance.",
+  "signals": [
+   "AI-assisted analytics to unify threat detection",
+   "uses correlation, behavioral analytics, and AI-assisted triage",
+   "AI-assisted risk scoring and prioritization",
+   "informed by our NISTcompliance.ai platform"
+  ]
+ },
+ {
+  "fedramp_id": "FR2214346691",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Gobo is an AI-enabled cognitive automation platform built around agentic apps, AI chat grounded on enterprise knowledge, and AI agents for automating workflows. AI is the central purpose of the product.",
+  "signals": [
+   "an intuitive, AI-enabled cognitive automation platform for analyzing complex datasets",
+   "AI chats grounded on enterprise knowledge, AI agents for expediting complex workflows",
+   "AI Chat with Enterprise Knowledge Base"
+  ]
+ },
+ {
+  "fedramp_id": "FR2215045786",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Tenable Cloud Security (Ermetic) is a CNAPP that exposes cloud misconfigurations, risky entitlements, and vulnerabilities. The description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2215946050",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "OpenText ITMX is an IT service/asset management and PPM platform; its core is ITSM/ITAM/CMDB. It ships built-in AI within the ITSM module for self-service and automation as a feature.",
+  "signals": [
+   "boost IT efficiency with codeless configurations, built-in AI, and advanced automation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2218073444",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Lucid GovSuite provides visual collaboration via Lucidchart diagramming and Lucidspark whiteboarding. \"Intelligent diagramming\" is a marketing label with no identifiable AI/ML feature described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2219763604",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Zscaler Private Access is a zero-trust network access / VPN-replacement service based on least-privileged policy enforcement. The ZPA description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2220549818",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "CirrusMD Virtual Health Chat is a text-based provider-to-patient telehealth chat platform. Despite \"chat\" in the name, the description describes human-provider communication with no AI/chatbot capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2221161553",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "SecurityScorecard Security Ratings computes A-F cyber risk scores from publicly available data across factors like DNS health and IP reputation. The described approach is data-driven scoring; no AI/ML technique is named.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2221456469",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Bentley for Government provides infrastructure engineering software (ProjectWise collaboration, OpenGround geotechnical data management). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2222167230",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Own Government Cloud provides Salesforce backup/recovery, data masking/seeding, and archiving. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2224739070",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "iMatch uses a proprietary mathematical matching algorithm (market-design/stable-matching, Nobel-recognized) to place applicants to positions. This is operations-research optimization, not AI/ML.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2224752400",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Privoro Fulcrum Cloud provides management and monitoring for Privoro SafeCases mobile security hardware. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2225648574",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Mathematica Cloud Support System is a management and compliance console / general support system providing authorization, networking, and governance. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2226144516",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "MARi is an AI-driven career intelligence platform using predictive and prescriptive analytics to match people to jobs/skills and recommend gap-closing actions, backed by an AI/ML knowledge repository. AI is the core of the product.",
+  "signals": [
+   "AI-driven Career Intelligence platform for academic and workplace skills",
+   "Using real-time predictive and prescriptive analytics, MARi can match a person with any job or skill",
+   "AI/ML-based Knowledge Repository for Multimedia Knowledge Objects (KOs)"
+  ]
+ },
+ {
+  "fedramp_id": "FR2226146186",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "FleetCommander is a fleet management information system for vehicle reservations, demand forecasting, and reporting. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2226228379",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Trend Cloud One is an endpoint/server/cloud-workload security platform whose core is prevention and EDR/XDR, but it lists machine learning among its real-time prevention and detection capabilities.",
+  "signals": [
+   "behavioral analysis, machine learning, EDR, intrusion prevention (IPS)"
+  ]
+ },
+ {
+  "fedramp_id": "FR2226231529",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Trend Vision One is a security operations (XDR) platform; its core is threat detection and response, and it materially leverages AI and predictive machine learning for earlier detection and automated response.",
+  "signals": [
+   "this platform leverages AI and predictive machine learning to arm defenders with earlier threat detection",
+   "With built-in security analytics and threat intelligence"
+  ]
+ },
+ {
+  "fedramp_id": "FR2226322745",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Autodesk for Government provides AEC document management and BIM design collaboration (Docs, BIM Collaborate Pro). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2227062482",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Zscaler Internet Access is a secure web gateway / SSE platform; its core is web/SaaS security, and it materially incorporates a suite of AI-powered security services for inline inspection and threat prevention.",
+  "signals": [
+   "AI-powered protection from the world's largest security cloud",
+   "a suite of AI-powered cloud security services to stop ransomware, phishing, zero-day malware",
+   "a cloud native security solution infused with AI"
+  ]
+ },
+ {
+  "fedramp_id": "FR2229642430",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Lumen Cloud Contact Center is a CCaaS platform with ACD, IVR, call recording, and workforce management. The description names no AI/ML capability (e.g., no conversational AI or analytics ML).",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2230244107",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Illumio Government Cloud delivers Zero Trust microsegmentation with label-based policy and visibility. Its intelligence is policy/label-based segmentation, not AI/ML.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2230252267",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GovSlack is a channels-based team messaging/collaboration platform. The description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2230451369",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Snyk for Government is a developer security platform that scans code, dependencies, containers, and IaC for vulnerabilities using a security intelligence database. The description names no AI/ML technique.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2231052341",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qualys Government Platform is a suite of IT security and compliance services (VMDR, policy compliance, FIM, container security, WAS, patch management). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2231070252",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "BeyondTrust Identity Security is a privileged access management platform; its core is PAM and Zero Trust. Its Identity Security Insights component continuously assesses and maps human, machine, and AI identities to detect privilege risks, a security-analytics feature.",
+  "signals": [
+   "Continuously assess and maps human, machine, and AI identities, detects privilege risks, and provides prescriptive recommendations"
+  ]
+ },
+ {
+  "fedramp_id": "FR2231561929",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Mendix Cloud for Government is a no-code/low-code application development PaaS. The description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2231648178",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Onspring GovCloud is a GRC platform whose core is governance/risk/compliance workflows, but it includes AI-powered capabilities to accelerate documentation, improve consistency, and surface insights.",
+  "signals": [
+   "Onspring GovCloud also includes AI-powered capabilities that help teams accelerate documentation, improve consistency, surface insights"
+  ]
+ },
+ {
+  "fedramp_id": "FR2234256499",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Rubrik Security Cloud is a data security/backup platform whose core is cyber resilience, but it materially uses machine learning engines to identify sensitive data exposure and detect anomalous activity.",
+  "signals": [
+   "identifying sensitive data exposure and detecting anomalous activity via machine learning engines"
+  ]
+ },
+ {
+  "fedramp_id": "FR2234334891",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Glassbeam Clinsights is a healthcare operations analytics platform that transforms and analyzes multi-structured machine/clinical data, leveraging AI to enhance performance. AI is claimed as material to the analytics, though the description is thin.",
+  "signals": [
+   "leveraging Artificial Intelligence (AI) to enhance Healthcare performance and efficiency"
+  ]
+ },
+ {
+  "fedramp_id": "FR2234550858",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Concur Cloud for Public Sector is a travel and expense management platform; its core is T&E workflows. It includes Intelligent Audit and Detect by Oversight modules that apply ML-based anomaly/fraud detection to expense data.",
+  "signals": [
+   "Intelligent Audit",
+   "Detect by Oversight"
+  ]
+ },
+ {
+  "fedramp_id": "FR2234963115",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NCR VOYIX Government Cloud hosts commerce/point-of-sale solutions and open APIs for grocery, gas, loyalty, and food ordering. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2235154356",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "IDCommand is an identity platform supporting Zero Trust, PIV/CAC, FIDO2, and PKI. Its adaptive access engine assesses risk from device/context signals via policy rules; no AI/ML technique is named.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2235229299",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Actus is a government purchase-card financial-management platform; its core is GPC compliance automation. It uses RPA and intelligent digital document processing with AI for records authentication, validation, and suspicious pattern detection.",
+  "signals": [
+   "intelligent digital document processing using AI for records authentication, validation, retention, and disposal",
+   "Suspicious Pattern & Activity Detection"
+  ]
+ },
+ {
+  "fedramp_id": "FR2235965777",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Mark43 is a public-safety operations platform (CAD/RMS/mobile); its core is law enforcement workflows, but it ships material generative-AI features: ReportAI drafts report narratives from notes and BWC transcriptions, and BriefAI summarizes reports/case data.",
+  "signals": [
+   "Mark43 ReportAI is an AI-assisted report drafting capability embedded within Mark43 RMS",
+   "Mark43 BriefAI provides AI-assisted summarization of reports and case data",
+   "The system incorporates predictive analysis, automated response planning, and human-in-the-loop automation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2300457485",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "GSS One AWS is a managed PaaS/SaaS general support system for hosting and securing third-party applications and accelerating FedRAMP authorization. The platform itself is hosting/compliance infrastructure; AI products it can host (e.g., H2O.ai) are separate tenants, not part of this offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2301844932",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Orca Cloud Security Platform is an agentless CNAPP that discovers cloud assets and prioritizes risks via a Unified Data Model and contextual attack-path analysis. The analysis described is graph/context-based, not AI/ML.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2303852859",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SafeShare is a zero-trust encrypted file sharing and collaboration platform using patented Secure Objects encryption tied to identity. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2304546222",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "My Business Matches is an event, conference, and vendor business-matchmaking platform for webinars and networking. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2304757473",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Cisco Security Cloud for Government is a multi-product cloud security suite; its core is network/email/cloud security, and it materially incorporates AI throughout: Talos+AI adaptive threat detection in Secure Access, AIOps anomaly detection in firewall management, and AI-powered email threat detection.",
+  "signals": [
+   "powered by Cisco Talos and AI, enable real-time threat detection, behavioral analysis, and predictive defense",
+   "ensuring faster and accurate anomaly detection using Artificial Intelligence",
+   "harnesses AI powered detections to provide comprehensive protection against advanced email threats"
+  ]
+ },
+ {
+  "fedramp_id": "FR2306445868",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cohesity Cloud Services is a managed data security and backup-as-a-service portfolio with policy-based automation and data reduction. No AI/ML capability is described in this offering's text.",
+  "signals": []
+ }
+]

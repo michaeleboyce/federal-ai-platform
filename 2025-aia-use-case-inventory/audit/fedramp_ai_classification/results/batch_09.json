@@ -1,0 +1,506 @@
+[
+ {
+  "fedramp_id": "FR2526240411",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Electronic health record system for occupational health and medical records; the description covers record centralization, access, and sharing with no identifiable AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2526343759",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Core product is a searchable database of DoD-relevant innovation projects, but it ships material generative-AI capability: AI-powered conversational exploration and automated generation of market research reports.",
+  "signals": [
+   "AI-powered conversations",
+   "automatically generate requirement-specific market research reports"
+  ]
+ },
+ {
+  "fedramp_id": "FR2526948870",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Protective intelligence platform built on data aggregation, geospatial risk mapping, alerts, and case management; the description identifies no specific AI/ML capability. Ontic markets some AI-assisted analysis commercially, but none is evidenced in this offering description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2527004900",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "RChilli's entire product is automated resume and job-description parsing — an NLP/ML document-extraction service. Although the description avoids the word AI, machine-learning text extraction is the product's primary purpose.",
+  "signals": [
+   "detailed analysis of resumes",
+   "extracts and organizes key information"
+  ]
+ },
+ {
+  "fedramp_id": "FR2527132001",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Work and task management platform; the described offering is collaboration and workflow tracking with no AI capability mentioned. Asana sells AI features commercially, but none are indicated in this FedRAMP offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2527234065",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "SIEM and threat-intelligence platform whose primary job is security operations, with material ML capability: machine-learning threat detection, behavioral anomaly detection, and natural-language/AI query interfaces.",
+  "signals": [
+   "threat detection using machine learning algorithms",
+   "behavioral analytics and anomaly detection",
+   "natural language processing and AI-supported interfaces"
+  ]
+ },
+ {
+  "fedramp_id": "FR2527237823",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Secure collaboration and CUI-exchange platform; encrypted federated information sharing with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2527245282",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Ransomware defense platform whose core is kernel-level runtime protection and recovery; it ships an identifiable AI feature — AI-generated decoy data used for deception when an attack is detected.",
+  "signals": [
+   "AI-Driven Deception",
+   "AI-generated lures"
+  ]
+ },
+ {
+  "fedramp_id": "FR2527955211",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Flock Safety's product centers on automated license plate recognition and audio (gunshot) recognition — computer-vision and audio ML models are the core capability the cameras and software deliver.",
+  "signals": [
+   "license plate reading (LPR) technology",
+   "audio recognition sensors"
+  ]
+ },
+ {
+  "fedramp_id": "FR2527956755",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Learning management system for government training and compliance tracking; reporting and career-development tools are conventional, with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2528033654",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Knox itself is a managed hosting platform, but the authorized boundary includes hosted offerings with material AI: Sierra (conversational AI agents for citizen services) and Altana (AI-driven supply-chain mapping). AI is a feature of the bundle, not the platform's primary purpose.",
+  "signals": [
+   "uses artificial intelligence to create a single source of truth",
+   "build, deploy, and operate conversational AI agents"
+  ]
+ },
+ {
+  "fedramp_id": "FR2528336463",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Suite of VA clinical applications (telecare triage, suicide-prevention case management, ePrescribing, EHR) built on workflow automation, analytics dashboards, and rules-based alerts; no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2529113288",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Archiving and records-governance platform focused on retention, eDiscovery, and FOIA search. Data classification is mentioned but not described as AI/ML-driven, and no other AI capability is identified.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2529359931",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Compliance automation platform whose main job is FedRAMP authorization support; it explicitly combines pre-engineered security infrastructure with agentic AI to automate compliance work.",
+  "signals": [
+   "AI-powered compliance automation platform",
+   "agentic AI"
+  ]
+ },
+ {
+  "fedramp_id": "FR2529360449",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Compliance readiness platform; this description names no AI capability, but Secureframe's commercial product ships material AI features (Comply AI for remediation and questionnaire automation). Classified ai_featured on product knowledge with low confidence.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2530025267",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Continuous cyber compliance automation platform; audit and framework automation as described relies on rules and integrations, with no identifiable AI/ML capability in the description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2530646153",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Online survey design, distribution, and analysis platform; the described GovCloud offering includes no AI capability. QuestionPro's commercial AI text-analytics add-ons are not evidenced here.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2531047207",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GovCon ERP covering project management, accounting, timekeeping, and procurement; standard business-intelligence reporting with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2531062517",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Application security and networking platform (WAF, API security, DDoS mitigation, DNS, multi-cloud networking). The description identifies no AI/ML capability; F5's commercial ML-based bot and API discovery features are not evidenced in this offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2531142081",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Procurement workflow platform whose primary job is document review, approvals, and source selection, with material AI capability for AI-assisted document analysis and generation.",
+  "signals": [
+   "AI assisted document analysis and generation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2531434700",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Kubernetes cluster provisioning and lifecycle management platform; pure infrastructure automation with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2531434700XL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Kubernetes cluster provisioning and lifecycle management platform (Low-impact listing of the same Palette VerteX service); infrastructure automation with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2531865690",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Secure enterprise messaging platform with end-to-end encryption for text, voice, and video; no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2531940362",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IaaS/PaaS hosting with dedicated VPCs and managed infrastructure services; generic compute and managed operations with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2532557612",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Audit management platform whose main job is evidence collection and review for compliance assessments, with material AI features including AI-assisted evidence validation for FedRAMP 20x.",
+  "signals": [
+   "AI-powered audit management solution",
+   "AI-assisted validation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2532766956",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "GRC platform whose primary job is compliance management, shipping material AI capability: an integrated AI assistant trained on compliance methodologies for evidence analysis, control interpretation, gap evaluation, and documentation generation.",
+  "signals": [
+   "AI-powered",
+   "practitioner-trained AI features",
+   "integrated AI assistant"
+  ]
+ },
+ {
+  "fedramp_id": "FR2533155773",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "OpenAI's ChatGPT Enterprise and API Platform is a frontier LLM service — conversational AI and model APIs for natural language, code, and content generation are the product's entire purpose.",
+  "signals": [
+   "analyze or generate text",
+   "understanding or generation of natural language, code, and other content"
+  ]
+ },
+ {
+  "fedramp_id": "FR2533236012",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Contract lifecycle management platform whose main job is contract workflow and tracking, with a material AI feature for contract data extraction and AI-assisted negotiation/redlining.",
+  "signals": [
+   "Artificial intelligence (AI) data extraction and negotiation with playbooks redlining"
+  ]
+ },
+ {
+  "fedramp_id": "FR2533435144",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Low-code/no-code case management platform whose primary purpose is business process automation; it ships AI/ML and an RPA chatbot as integrated features rather than as the core product.",
+  "signals": [
+   "no-code/low-code platform with AI/ML",
+   "AI/ML, RPA chatbot integrated business process automation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2533440977",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "GovCon CRM/growth platform; the description is too thin to identify any capability and names no AI feature. TechnoMile markets some AI capabilities commercially, but nothing substantive is evidenced for this offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2533751675",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Pharmaceutical track-and-trace service that validates and retains DSCSA transaction data in GS1 EPCIS format; pure data exchange and validation with no AI capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2534547429",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Unified SASE networking and security stack (SD-WAN, ZTNA, firewall-as-a-service, CASB, DLP); the description identifies no AI/ML capability in the offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2534673267",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Project, program, and portfolio management suite (scheduling, budgeting, resource management, dashboards); conventional PPM capabilities with no AI feature described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2535161278",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Edge delivery, networking, and security platform (segmentation, app/API protection, DNS, DDoS); the described services are infrastructure and security delivery with no identifiable AI capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2535435454",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "The product is AI voice agents: conversational AI that autonomously handles calls, scheduling, reminders, and information requests end to end. AI is the product's primary purpose.",
+  "signals": [
+   "AI-powered voice agents",
+   "Conversational AI"
+  ]
+ },
+ {
+  "fedramp_id": "FR2535459082",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "FedRAMP 20x deployment landing zone on GCP with automated security assessment reporting; hosting and compliance infrastructure with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2535459236",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Content services platform whose main job is managing physical and digital records, with material AI/ML capability to automatically classify, extract, and enrich content.",
+  "signals": [
+   "leverages Machine Learning (ML) and Artificial Intelligence (AI) to automatically classify, extract, and enrich"
+  ]
+ },
+ {
+  "fedramp_id": "FR2600044765",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "The description is boilerplate with no capability detail. CoLab is an engineering design-review collaboration platform that has shipped AI-assisted design review features (the vendor now brands itself CoLab AI); classified on product knowledge with low confidence.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2600167032",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "GRC and trust management platform; this description names automation and integrations but no AI capability. Drata's commercial product ships material AI features (AI-powered questionnaire automation and control mapping); classified on product knowledge with low confidence.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2600545894",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Handheld ultrasound system and cloud whose primary purpose is medical imaging; it ships material AI capability (Compass AI and AI-assisted imaging guidance/interpretation built into the probe-and-app system).",
+  "signals": [
+   "Compass AI",
+   "harnesses the advantages of AI to deliver advanced imaging"
+  ]
+ },
+ {
+  "fedramp_id": "FR2601536221",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Behavioral-health training and supervision platform; this description covers secure audio, notes, and recorded sessions without naming AI. Keel Mind's commercial platform markets AI-assisted session analysis and note-taking; classified on product knowledge with low confidence.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2602138115",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "OT/IoT security platform whose main job is asset visibility and threat detection, with material AI capability: AI-driven asset analysis and enrichment, the Vantage IQ alert-correlation engine, and AI-driven remediation recommendations.",
+  "signals": [
+   "AI-driven analysis and enrichment",
+   "AI-Driven Remediation Recommendations",
+   "The AI engine correlates attack and anomaly telemetry"
+  ]
+ },
+ {
+  "fedramp_id": "FR260215856",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cryptography management and inventory tool for discovering and tracking cryptographic assets; the description identifies no AI/ML capability, and crypto inventory is not inherently AI even though SandboxAQ is an AI-focused vendor.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2602662279",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "The platform's entire pipeline is AI-driven: user queries are processed by AI to retrieve public government data and AI again synthesizes the results for the user. The vendor also self-categorizes under Artificial Intelligence. Description is brief, hence medium confidence.",
+  "signals": [
+   "enhanced using AI",
+   "processed by AI"
+  ]
+ },
+ {
+  "fedramp_id": "FR2604643715",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Perplexity's product is an AI answer engine: conversational access to frontier LLMs (GPT, Claude, Gemini, Sonar) grounded in a web-scale retrieval index, plus a search API for web-grounded AI answers. AI is the product's entire purpose.",
+  "signals": [
+   "access to leading frontier AI models",
+   "intuitive conversational interface"
+  ]
+ },
+ {
+  "fedramp_id": "FR2604835605",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Governance, risk, and compliance platform for RMF/ATO maintenance and regulatory tracking; no AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2604952026",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Gemini for Government is Google's generative AI offering for public-sector missions — a multi-tenant AI/ML cloud environment delivering Gemini models. AI is the product's primary purpose.",
+  "signals": [
+   "multi-tenant Artificial Intelligence (AI) and Machine Learning (ML) cloud computing environment",
+   "generative AI"
+  ]
+ },
+ {
+  "fedramp_id": "FR2604952842",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Location intelligence and geospatial visualization platform (data import, mapping, charting, alerting); the description identifies no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2605341343",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "GRC platform whose primary job is compliance management, shipping material AI capability: an integrated AI assistant trained on compliance methodologies for evidence analysis, control interpretation, gap evaluation, and documentation generation.",
+  "signals": [
+   "AI-powered",
+   "practitioner-trained AI features",
+   "integrated AI assistant"
+  ]
+ },
+ {
+  "fedramp_id": "FR2606141075",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Conversational AI platform for building and deploying intelligent virtual assistants across voice, web, and SMS, including custom AI agent development and real-time transcription. AI agents are the product itself.",
+  "signals": [
+   "intelligent virtual assistants",
+   "Custom AI agent development",
+   "Natural language conversations"
+  ]
+ },
+ {
+  "fedramp_id": "FR2607452240",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Integrated federal travel and expense management system; booking, expense, notification, and reporting services with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2607537684",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Compliance automation platform whose main job is producing ATO artifacts (SSPs, SARs, POA&Ms); it is built around an AI engine for evidence processing and document generation, including Artemis, a secure AI enclave for narrative drafting.",
+  "signals": [
+   "AI-native cyber compliance automation platform",
+   "AI-powered engine",
+   "secure AI enclave"
+  ]
+ },
+ {
+  "fedramp_id": "FR2607643783",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Computer-based assessment registration, scheduling, delivery, and reporting platform for licensure and credentialing; no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2607654741",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Enterprise quality management system for manufacturing (first article inspection, quality data capture and repository); standards-based data collection with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2609449664",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Workforce and talent management platform whose main job is talent-profile management; it ships identifiable AI features including an AI Career Assistant, AI-driven talent management tools, and predictive analytics.",
+  "signals": [
+   "AI and automation tools for agile talent management and workforce planning",
+   "AI Career Assistant",
+   "predictive analytics"
+  ]
+ },
+ {
+  "fedramp_id": "FR2609659556",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Investigative case management system for storing, searching, and analyzing case and intelligence data; the description identifies search, workflow, and link-style analysis but no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2610538972",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Enterprise architecture and portfolio management platform (Alfabet); its main job is portfolio analysis, with an explicitly listed AI capability for AI-enhanced portfolio decision-making.",
+  "signals": [
+   "AI-Enhanced Portfolio Decision-Making"
+  ]
+ },
+ {
+  "fedramp_id": "FR2611036548",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Identity validation, fraud mitigation, and risk intelligence platform. The description cites only proprietary identity technology and advanced analytics, but LexisNexis Risk Solutions' identity and fraud scoring is known to be ML-model driven; classified on product knowledge with low confidence.",
+  "signals": [
+   "proprietary identity technology to deliver advanced analytics"
+  ]
+ },
+ {
+  "fedramp_id": "FR2611539908",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Secure document management and collaboration platform for ITAR/regulatory compliance (storage, version control, access control, encryption); no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2612446381",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Document intelligence platform whose primary purpose is automated AI processing of documents: machine learning and LLM-based data extraction, automated classification, and OCR/ICR pipelines. The AI processing is the product, not an add-on feature.",
+  "signals": [
+   "machine learning and large language model-based data extraction",
+   "document intelligence platform",
+   "document classification, OCR/ICR processing, metadata extraction"
+  ]
+ }
+]

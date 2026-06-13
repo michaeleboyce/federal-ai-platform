@@ -1,0 +1,487 @@
+[
+ {
+  "fedramp_id": "FR2102036897",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Nuance Dragon is a cloud speech-recognition product: its primary purpose is converting voice to text for clinical and law-enforcement documentation. Automatic speech recognition is a core AI/ML capability.",
+  "signals": [
+   "Cloud based speech recognition software",
+   "use their voice to securely capture required narrative text"
+  ]
+ },
+ {
+  "fedramp_id": "FR2102577114",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SendPro 360 is mailroom shipping, package tracking, and smart-locker management software. Its analytics are reporting dashboards on postage and delivery metrics, with no identifiable machine-learning capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2102652499",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "RSA ID Plus is a cloud identity-assurance and authentication platform. The description claims no AI capability; risk-based authentication features in the commercial product are not evidenced here as a material AI feature.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2102758152",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Juniper Mist is a network-operations platform whose differentiating features are AI-driven: Mist AI performs automated event correlation, root-cause identification, and anomaly detection, and Marvis is a natural-language virtual network assistant. The product's job is network management, with ML as the engine.",
+  "signals": [
+   "artificial intelligence, machine learning, and data science techniques",
+   "AI-driven Virtual Network Assistant",
+   "proactive anomaly detection",
+   "based on machine learning and driven by Mist AI"
+  ]
+ },
+ {
+  "fedramp_id": "FR2103344623",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Workday is an HR/finance ERP suite, not an AI product, but the Government Cloud explicitly includes a Machine Learning application alongside ML-driven modules such as People Analytics and Talent Optimization.",
+  "signals": [
+   "Machine Learning",
+   "People Analytics"
+  ]
+ },
+ {
+  "fedramp_id": "FR2104636677",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Ipsos Research is a survey research platform whose analytics layer uses LLMs (via AWS Bedrock) to classify open-ended responses, extract insights, flag PII, and generate summaries. Survey data collection remains the primary function, with AI as a material analysis feature.",
+  "signals": [
+   "AI-Powered Data Analytics",
+   "Large Language Models (LLMs) through AWS Bedrock",
+   "Automatically Classify Verbatims",
+   "Generate Executive Summaries"
+  ]
+ },
+ {
+  "fedramp_id": "FR2104942200",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Acuant COFRS is an identity-verification service built around computer vision: facial-recognition matching of document photos to live subjects, liveness/presentation-attack detection, and ML-assisted document authentication are the product's primary purpose.",
+  "signals": [
+   "powered by AI and human assisted machine learning",
+   "facial recognition match",
+   "presentation attack detection via liveness assessment"
+  ]
+ },
+ {
+  "fedramp_id": "FR2105946715",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Netskope NewEdge is a Security Service Edge platform whose main job is zero-trust network security, with material AI features: AI/ML classifiers for DLP on text and images, AI-driven threat protection with UEBA, and discovery/control of GenAI application usage.",
+  "signals": [
+   "High-fidelity AI/ML classifiers for text and image data",
+   "AI-driven threat protection and UEBA",
+   "Continuous AI Visibility"
+  ]
+ },
+ {
+  "fedramp_id": "FR2106045767",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "CMTS is an investigative case-management system with configurable workflows, dashboards, and reporting. No AI/ML capability is described or known for the product.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2106555313",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "AchieveIt is a strategic-plan tracking and execution-management SaaS with dashboards and automated reporting. No AI/ML capability is identified.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2108360349",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Adobe Acrobat Sign for Government is an e-signature and document-workflow service. The authorized offering centers on signing, authentication, and workflow automation with no substantive AI feature in scope.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2108649352",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "The Tyler Federal (MicroPact) suite is case-management and BPM software, but entellitrak ships an integrated Natural Language Analytics module — an identifiable NLP capability inside a broader non-AI platform.",
+  "signals": [
+   "Natural Language Analytics"
+  ]
+ },
+ {
+  "fedramp_id": "FR2108731521",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "CyCloud is an IaaS platform delivering VMware Cloud Foundation compute, storage, and networking. Generic infrastructure that could host AI workloads but ships no AI capability of its own.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2110056334",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Gen3 is an open-source platform for building data commons and research workspaces for managing and sharing data. It provides data infrastructure, not AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2110251776",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Ontario Cloud Federal is healthcare revenue and accounts-receivable management software (debt collection, payments, reporting). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2110342613",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Tanium Cloud is an agent-based endpoint management and security platform built on real-time querying of endpoints. The offering as described has no identifiable AI/ML feature; Tanium's newer AI assistant features are not evidenced in this authorization.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2110836406",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Trustwave Fusion delivers managed detection and response and co-managed SIEM — largely analyst-driven monitoring, triage, and SOAR orchestration. No specific ML-based detection capability is claimed in the description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2112152882",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Datavant performs privacy-preserving record linkage using tokenized universal patient keys — a cryptographic/deterministic matching technique, not machine learning. No AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2112348346",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "ShadowPlex is a cyber-deception platform whose primary job is threat detection via decoys; Acalvio markets ML-driven automation for deception placement and recommendation (its 'autonomous' deception engine). The FedRAMP description itself names no specific AI feature, so confidence is low.",
+  "signals": [
+   "Autonomous Deception Platform"
+  ]
+ },
+ {
+  "fedramp_id": "FR2113157410",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "TRAIN Learning Network is a learning management system for public-health training: course hosting, tracking, and certificates. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2113346550",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "OpenWater is an application/awards submission and review platform with form building and reviewer assignment. Auto-assignment is rules-based workflow routing; no AI/ML capability is identified.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2113552479",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "dotStaff is a vendor-management system and survey-automation module for contingent labor and data collection. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2113557839",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Yello is recruiting-event and talent-pipeline management software with real-time reporting dashboards. Its analytics are descriptive metrics, with no identifiable machine-learning capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2115384377",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Commvault Cloud for Government is SaaS data backup and recovery. Anomaly alerting is described as 'pre-set' thresholds and keyword search rather than an identifiable ML capability, so claimed intelligence is not treated as substantive AI here.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2116544598A",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Keeper Security Government Cloud is a password manager and privileged access management platform built on zero-knowledge encryption. No AI/ML capability is described or central to the product.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2118043605",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Percipio is a learning-experience platform delivering courses, ebooks, and assessments. Skillsoft has added AI coaching features commercially, but no AI capability is described in this FedRAMP-assessed offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2118055930",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Motorola Solutions Federal Cloud is the platform behind the APX NEXT smart radio, which in the commercial product line includes the ViQi voice-assistant AI for hands-free queries by first responders. The description itself names no AI feature, so this rests on product knowledge and confidence is low.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2118080669",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "The Knightscope ASR is an autonomous security robot whose core capabilities are AI: autonomous navigation and patrol, computer-vision people detection, and license plate recognition.",
+  "signals": [
+   "fully autonomous security robot",
+   "People Detection",
+   "License Plate Recognition"
+  ]
+ },
+ {
+  "fedramp_id": "FR2118555665",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "TotaraGov is a learning management system for federal training delivery, compliance tracking, and reporting. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2118743892",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Digital.ai positions its DevOps platform around AI-driven predictive analytics across the software lifecycle. Only the Agility module is FedRAMP authorized, and the description names the AI capability at a high level, so confidence is moderate.",
+  "signals": [
+   "AI-Powered DevOps Platform",
+   "generate predictive insights"
+  ]
+ },
+ {
+  "fedramp_id": "FR2119265538",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV is public-sector HR software (HCM, HRIS, talent management, public-safety workforce management). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2120962552",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "LaunchDarkly is a feature-flag management platform for controlled software rollouts and experimentation. No AI/ML capability is described in the authorized offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2122038682",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "iboss IGCP is a Zero Trust SASE/SSE platform (SWG, CASB, ZTNA, FWaaS, DLP). Despite an extensive description, no specific ML-based detection or AI feature is claimed; threat protection is described in conventional terms (filtering, sandboxing, threat feeds).",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2122140784",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Exiger's 1Exiger platform is supply-chain and third-party risk management; its DDIQ module is a known AI-powered due-diligence engine that uses NLP to read and assess open-source content about entities. The FedRAMP description is thin, so this partly rests on product knowledge.",
+  "signals": [
+   "Due Diligence Intelligence (DDIQ)"
+  ]
+ },
+ {
+  "fedramp_id": "FR2122140784A",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Same 1Exiger platform at High baseline: supply-chain and third-party risk management whose DDIQ module is a known AI-powered due-diligence engine using NLP over open-source content. The description is thin, so this partly rests on product knowledge.",
+  "signals": [
+   "Due Diligence Intelligence (DDIQ)"
+  ]
+ },
+ {
+  "fedramp_id": "FR2122150307",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "MongoDB Atlas for Government is a managed document database platform. It is data infrastructure that can support AI applications (e.g., vector search in the commercial product), but no AI/ML capability is part of the described offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2124663764",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Intrepid Networks Government Platform is a real-time situational-awareness and secure-communications tool for public safety teams. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2125059322",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Gen3 Data Ecosystems Platform is open-source infrastructure for operating data commons, data meshes, and research workspaces. It provides data management and sharing, not AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2125561001",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Unqork is a no-code application development platform. No AI/ML capability is described in the authorized offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2125653037",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Qlik Cloud is a business-intelligence/analytics platform whose commercial product ships Insight Advisor, an AI-assisted engine for natural-language queries and automated insight generation. The government-cloud description does not name any AI feature, so confidence is low.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2126176344",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "MicroStrategy Cloud for Government delivers the full MicroStrategy Intelligence Platform, which commercially includes AI-assisted analytics (e.g., the Auto AI assistant atop its semantic graph). The FedRAMP description names no AI feature, so this rests on product knowledge and confidence is low.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2127765215",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Point Blue Science Cloud is a set of tools for managing, curating, and analyzing biodiversity observation data. Conventional data management and research analytics; no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2128235497",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "PMP Government-Gateway queries and visualizes prescription-dispensation records inside EHR workflows. The described offering is data retrieval and reporting with no identifiable AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2128462521",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Juvare's Unified Command Platform is an emergency-management and operations platform that ships JAI, an explicit suite of AI-assisted capabilities for search, summarization, data visualization, and agentic task automation within the product.",
+  "signals": [
+   "JAI, a suite of AI-assisted capabilities",
+   "agentic tasks and automations"
+  ]
+ },
+ {
+  "fedramp_id": "FR2128562231",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Collabspace is a records and information management platform that applies OCR and audio/video transcription — machine-learning capabilities — to categorize and analyze records for retention and FOIA processing.",
+  "signals": [
+   "OCR and audio/video transcription"
+  ]
+ },
+ {
+  "fedramp_id": "FR2129953050",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Manhattan Government Cloud is enterprise supply-chain and logistics software (warehouse, transportation, order management). No AI/ML capability is described in the authorized offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2130949241",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rally is agile portfolio planning and work-tracking software hosted by stackArmor. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2131766015",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Genesys Cloud CX is a contact-center platform with substantial built-in AI: conversational and predictive AI for routing and personalization, NLU-driven speech-enabled IVR and bots, and AI-powered workforce engagement analytics. The core product remains omnichannel contact-center software.",
+  "signals": [
+   "AI-powered experience orchestration platform",
+   "built-in conversational and predictive AI capabilities",
+   "natural language understanding (NLU) technology",
+   "predictive analytics, machine learning, and natural language understanding"
+  ]
+ },
+ {
+  "fedramp_id": "FR2131856836",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Okta is an identity and access management platform (SSO, MFA, directory). Adaptive MFA evaluates contextual risk factors via policy; no substantive AI/ML capability is described as part of the offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2132958724",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "UiPath Automation Cloud is an RPA/business-automation platform that ships material AI components: Document Understanding (intelligent document processing), process/task mining, and AI-powered digital assistants, alongside conventional UI/API automation.",
+  "signals": [
+   "AI-powered automation capabilities",
+   "Document Understanding/IDP",
+   "Process and Task Mining",
+   "Digital Assistants"
+  ]
+ },
+ {
+  "fedramp_id": "FR2133141131",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Nintex Automation GE is a no-code workflow, forms, and document-generation platform. Automation here is drag-and-drop process orchestration, not machine learning; no AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2134455708",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NucleusGov aggregates vulnerability scanner output and automates prioritization, ticketing, and reporting via a workflow engine. Rules-based automation and data consolidation; no identifiable ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2134635186",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Synack is a crowdsourced penetration-testing and vulnerability-management platform driven by vetted human researchers plus automated scanning. It can test LLM assets as targets, but testing AI systems is not itself an AI capability of the platform.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2135040486",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "HealthVerity PPRL de-identifies and links person-level records across datasets using tokenized anonymized identifiers — a privacy-preserving matching technique rather than an identifiable machine-learning capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2135043135",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "CloudLCMS is an eLearning course authoring and content-management platform producing SCORM/xAPI output. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2135180018",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "CuraPatient is a healthcare operations and patient-engagement platform that the vendor describes as AI-powered, applying AI to streamline medical claims processing and administrative workflows. The description is high-level about the specific models, so confidence is moderate.",
+  "signals": [
+   "Artificial Intelligence (AI) powered digital platform"
+  ]
+ },
+ {
+  "fedramp_id": "FR2135637226",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Pearson Federal Cloud is an assessment-delivery system whose boundary includes the OnVUE online proctoring platform, which in the commercial product uses AI-assisted identity verification and session monitoring. The description itself claims no AI capability, so confidence is low.",
+  "signals": [
+   "OnVUE online proctoring platform"
+  ]
+ },
+ {
+  "fedramp_id": "FR2135730387",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "IBM Federal HR Cloud is a human-capital-management suite that explicitly includes intelligent automation and cognitive (Watson-based) decision support for HR processes — AI features inside a broader HR platform.",
+  "signals": [
+   "intelligent automation",
+   "cognitive decision support"
+  ]
+ },
+ {
+  "fedramp_id": "FR2135915901",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Solventum RevCycle is a healthcare revenue-cycle platform whose flagship capability is NLP that automatically suggests CPT and ICD codes for computer-assisted coding, alongside non-AI grouping, reimbursement, and analytics services.",
+  "signals": [
+   "Natural Language Processing (NLP) for automatic suggestion of CPT and ICD codes",
+   "Computer Assisted Coding (CAC)",
+   "robust AI-inclusive methodologies"
+  ]
+ },
+ {
+  "fedramp_id": "FR2200507410",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Copado GovCloud is a DevOps/CI-CD platform for Salesforce release management with Git integration, quality gates, and compliance rules. No AI/ML capability is described in the authorized services.",
+  "signals": []
+ }
+]

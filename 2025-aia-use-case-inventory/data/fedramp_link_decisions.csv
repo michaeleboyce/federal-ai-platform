@@ -69,3 +69,14 @@ Westlaw AI,FR2502148523,manual,manual_csv,Westlaw runs on Thomson Reuters Legal 
 Thomson Reuters CLEAR,FR2333543855,manual,manual_csv,Thomson Reuters Risk & Fraud (TR R&F) — Agency Authorization In Process Moderate; covers CLEAR investigative platform.
 
 
+# 2026-06-12 — FedRAMP AI-classification unlinked-AI adjudication (links found while surfacing FedRAMP AI products absent from the inventory)
+Elastic Stack,FR2004446306,weak,manual_csv,"2026-06-12 AI-classification unlinked-AI adjudication: Elastic Cloud is the vendor-hosted Elasticsearch/Kibana offering, the same Elastic Stack denoted by the inventory entry 'Elastic Stack' (vendor Elastic)."
+Palantir Federal Cloud Service,FR2315464863,strong,manual_csv,"2026-06-12 AI-classification unlinked-AI adjudication: PFCS-SS is the supporting-services component of Palantir's Federal Cloud Service, the same offering as inventory 'Palantir Federal Cloud Service' (vendor Palantir)."
+Databricks,FR1834740315,strong,manual_csv,"2026-06-12 AI-classification unlinked-AI adjudication: Databricks on AWS is the Databricks lakehouse platform, matching the inventory entry 'Databricks' (vendor Databricks)."
+Butterfly iQ Ultrasound,FR2600545894,strong,manual_csv,2026-06-12 AI-classification unlinked-AI adjudication: FedRAMP Butterfly Network Ultrasound and inventory 'Butterfly iQ Ultrasound' (vendor Butterfly Network) are the same handheld-ultrasound offering from the same vendor.
+Exiger DDIQ,FR2122140784A,weak,manual_csv,2026-06-12 AI-classification unlinked-AI adjudication: Exiger Federal Cloud's AI capability is Exiger's DDIQ due-diligence engine; inventory 'Exiger DDIQ' (vendor Exiger) denotes the same vendor's AI offering.
+Databricks,FR2525247858,strong,manual_csv,2026-06-12 AI-classification unlinked-AI adjudication: FedRAMP 'Databricks on Azure' and inventory 'Databricks' (vendor Databricks) are the same lakehouse/AI platform from the same vendor.
+Elastic Stack,FR2523939103,weak,manual_csv,2026-06-12 AI-classification unlinked-AI adjudication: Elastic Cloud Hosted is the managed deployment of Elasticsearch/Kibana; inventory 'Elastic Stack' (vendor Elastic) is the same vendor's same core product.
+SAS Analytics,FR2210352243,strong,manual_csv,2026-06-12 AI-classification unlinked-AI adjudication: FedRAMP 'SAS AI and Analytics for Government' and inventory 'SAS Analytics' (vendor SAS) are the same SAS Viya analytics/AI platform from the same vendor.
+Vyond,FR2433985791,strong,manual_csv,2026-06-12 AI-classification unlinked-AI adjudication: FedRAMP 'Vyond for Government' and inventory 'Vyond' (vendor Vyond) are the same generative-video product from the same vendor.
+Vyond,FR2433985791XL,strong,manual_csv,2026-06-12 AI-classification unlinked-AI adjudication: FedRAMP 'Vyond for Government' (XL baseline) and inventory 'Vyond' (vendor Vyond) are the same generative-video product from the same vendor.

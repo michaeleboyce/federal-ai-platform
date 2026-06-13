@@ -1,0 +1,284 @@
+[
+ {
+  "fedramp_id": "FR2031222637",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Aurigo Masterworks is a capital-planning/construction-management platform with predictive analytics; no matching Aurigo product in the inventory (candidate Amped Software is unrelated forensic video)."
+ },
+ {
+  "fedramp_id": "FR2600545894",
+  "decision": "Butterfly iQ Ultrasound",
+  "confidence": "strong",
+  "notes": "FedRAMP Butterfly Network Ultrasound and inventory 'Butterfly iQ Ultrasound' (vendor Butterfly Network) are the same handheld-ultrasound offering from the same vendor."
+ },
+ {
+  "fedramp_id": "FR2317262742",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Ceribell EEG is from Ceribell; the candidate Persyst EEG is a different vendor (Persyst Development), so no inventory match."
+ },
+ {
+  "fedramp_id": "FR2511048038",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Check Point Infinity is a Check Point cybersecurity platform with no corresponding Check Point entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2014656304",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Civis Platform (Civis Analytics) has no Civis entry in the inventory; the analytics candidates are unrelated vendors."
+ },
+ {
+  "fedramp_id": "FR2600044765",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "CoLab AI is an engineering design-review tool; the candidate Google Colab is an unrelated Google notebook product."
+ },
+ {
+  "fedramp_id": "FR2533236012",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "CobbleStone Contract Insight (CLM) has no matching CobbleStone product in the inventory."
+ },
+ {
+  "fedramp_id": "FR2434758320",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Cognitus LambdaX CLM has no matching Cognitus/LambdaX entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2325657620",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Content Guru Storm is a CCaaS platform; the candidate FRTIB Contact Center AI is a federal in-house product, not Content Guru's."
+ },
+ {
+  "fedramp_id": "FR2122140784A",
+  "decision": "Exiger DDIQ",
+  "confidence": "inferred",
+  "notes": "Exiger Federal Cloud's AI capability is Exiger's DDIQ due-diligence engine; inventory 'Exiger DDIQ' (vendor Exiger) denotes the same vendor's AI offering."
+ },
+ {
+  "fedramp_id": "FR2416856649",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Creative Veteran FED-ILMS is an immersive LMS with a RAG feature; no matching entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2525247858",
+  "decision": "Databricks",
+  "confidence": "strong",
+  "notes": "FedRAMP 'Databricks on Azure' and inventory 'Databricks' (vendor Databricks) are the same lakehouse/AI platform from the same vendor."
+ },
+ {
+  "fedramp_id": "FR2600167032",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Drata Trust Management Platform has no matching Drata entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2523939103",
+  "decision": "Elastic Stack",
+  "confidence": "inferred",
+  "notes": "Elastic Cloud Hosted is the managed deployment of Elasticsearch/Kibana; inventory 'Elastic Stack' (vendor Elastic) is the same vendor's same core product."
+ },
+ {
+  "fedramp_id": "FR2615854261",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Everbridge Critical Event Management has no matching Everbridge entry; the Critical Mention candidate is an unrelated media-monitoring vendor."
+ },
+ {
+  "fedramp_id": "FR2510664395",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "ExtraHop RevealX (NDR) is from ExtraHop; the candidate Vectra AI is a different vendor, so no inventory match."
+ },
+ {
+  "fedramp_id": "FR2427818523",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Feith RMA iQ records-management has no matching Feith entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2620251735",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Ground Control GroundControl QC-documentation platform has no matching entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2524349489",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "IBM Data Services for Government is the watsonx portfolio; inventory 'IBM Watson' denotes the distinct legacy Watson brand, not the same watsonx offering."
+ },
+ {
+  "fedramp_id": "F1208031461A",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "IBM Platform Services (MaaS360/Verify/Instana/Turbonomic) is a device/observability suite with no matching IBM entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2022963780",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Icertis Contract Intelligence has no matching Icertis entry; the candidates are unrelated products."
+ },
+ {
+  "fedramp_id": "FR1710033970",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Infor Government Solutions ERP/HCM suite has no matching Infor entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2321143030",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Information First Content Manager RMA is a Micro Focus/OpenText-based RMA; the candidate OpenText Records Management is a different vendor's offering, so no clean match."
+ },
+ {
+  "fedramp_id": "FR2118080669",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Knightscope Autonomous Security Robot has no matching Knightscope entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2428168490",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "LogicMonitor observability/AIOps platform has no matching LogicMonitor entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2032665434",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Menlo Security browser-isolation platform has no matching Menlo entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2215946050",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Micro Focus/OpenText ITMX ITSM/ITAM platform has no matching entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2527245282",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Mimic Enterprise Ransomware Defense Platform has no matching Mimic entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2602138115",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Nozomi Vantage OT/IoT security has no matching Nozomi entry; the candidate Vectra AI is a different vendor."
+ },
+ {
+  "fedramp_id": "FR2235229299",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Paperless Innovations Actus purchase-card platform has no matching entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2135637226",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Pearson Federal Cloud (OnVUE proctoring) is distinct from the candidate Pearson Q-interactive cognitive-assessment product, so no clean match."
+ },
+ {
+  "fedramp_id": "FR2101000225",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "PlanStreet Case Management System has no matching PlanStreet entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2406651384",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Precisely Data Integrity Suite has no matching Precisely entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2310239588",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Riverbed Platform for Government has no matching Riverbed entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2210352243",
+  "decision": "SAS Analytics",
+  "confidence": "strong",
+  "notes": "FedRAMP 'SAS AI and Analytics for Government' and inventory 'SAS Analytics' (vendor SAS) are the same SAS Viya analytics/AI platform from the same vendor."
+ },
+ {
+  "fedramp_id": "FR2623840126",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Saviynt Identity Platform has no matching Saviynt entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2023666173",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Scale AI Data Platform has no matching Scale AI entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR1809360202A",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Snowflake 'The Data Cloud' is the data-warehouse platform; inventory 'Snowflake Cortex' denotes the specific Cortex AI feature, not the same generic-platform offering."
+ },
+ {
+  "fedramp_id": "FR2533435144",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Syneren CMAP low-code case-management platform has no matching entry in the inventory."
+ },
+ {
+  "fedramp_id": "F1602057825A",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "TRAPWIRE threat-detection system has no matching TRAPWIRE entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2213647361",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Talkdesk CX Cloud (CCaaS) is from Talkdesk; the candidate Genesys Cloud CX is a different vendor."
+ },
+ {
+  "fedramp_id": "FR2226228379",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Trend Cloud One security platform has no matching Trend Micro entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2226231529",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Trend Vision One XDR platform has no matching Trend Micro entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2525556241",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Vanta Trust Management Platform has no matching Vanta entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2433985791",
+  "decision": "Vyond",
+  "confidence": "strong",
+  "notes": "FedRAMP 'Vyond for Government' and inventory 'Vyond' (vendor Vyond) are the same generative-video product from the same vendor."
+ },
+ {
+  "fedramp_id": "FR2433985791XL",
+  "decision": "Vyond",
+  "confidence": "strong",
+  "notes": "FedRAMP 'Vyond for Government' (XL baseline) and inventory 'Vyond' (vendor Vyond) are the same generative-video product from the same vendor."
+ },
+ {
+  "fedramp_id": "FR2424945160",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "dMetrics Minsky no-code ML/NLP platform has no matching dMetrics entry; the candidate Broadcom Code for Z is an unrelated vendor."
+ }
+]

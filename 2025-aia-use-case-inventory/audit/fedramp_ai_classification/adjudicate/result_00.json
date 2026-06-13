@@ -1,0 +1,290 @@
+[
+ {
+  "fedramp_id": "AGENCYAMAZONEW",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "AWS US East/West is generic IaaS hosting; per rules a generic vendor cloud boundary should not link to the inventory 'Amazon' or specific AWS AI services."
+ },
+ {
+  "fedramp_id": "F1209051525",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Azure Commercial Cloud is a generic IaaS/PaaS boundary, not a specific named AI tool, so it should not link to 'Microsoft' or any specific Azure AI inventory entry."
+ },
+ {
+  "fedramp_id": "F1511207635",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Cisco Webex for Government is a UCaaS collaboration suite with no corresponding Webex entry in the inventory."
+ },
+ {
+  "fedramp_id": "F1210011608",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Appian Government Cloud is the low-code platform boundary that merely contains AI Skills; it is not the same as the specific 'Appian AI' inventory product."
+ },
+ {
+  "fedramp_id": "FR1719841002",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "SAP NS2 Cloud Intelligent Enterprise hosts the S/4HANA suite; the only SAP inventory entry (SAP Concur) is an unrelated travel/expense product."
+ },
+ {
+  "fedramp_id": "F1210161615",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Deloitte Evidence Management System (eDiscovery) has no matching vendor/product in the inventory."
+ },
+ {
+  "fedramp_id": "FR1728053006",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "IBM Automation Services (Maximo) does not match any IBM inventory entry (Watson/ARGOS/CoreDF are unrelated products)."
+ },
+ {
+  "fedramp_id": "FR1820435961",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Adobe Document Cloud / Acrobat AI Assistant is a document product not represented by any specific Adobe inventory entry (Firefly, Sensei, Photoshop are different tools)."
+ },
+ {
+  "fedramp_id": "FR1908649566",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Aruba Central network management has no corresponding Aruba product in the inventory."
+ },
+ {
+  "fedramp_id": "FR2231070252",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "BeyondTrust Identity Security has no matching BeyondTrust entry in the inventory."
+ },
+ {
+  "fedramp_id": "F1208031461",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "IBM Platform Services (MaaS360/Verify/Instana) does not match any IBM inventory entry."
+ },
+ {
+  "fedramp_id": "FR2004446306",
+  "decision": "Elastic Stack",
+  "confidence": "inferred",
+  "notes": "Elastic Cloud is the vendor-hosted Elasticsearch/Kibana offering, the same Elastic Stack denoted by the inventory entry 'Elastic Stack' (vendor Elastic)."
+ },
+ {
+  "fedramp_id": "F1506246782",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Complete Discovery Source Federal Cloud (Relativity hosting) has no matching CDS or hosting entry in the inventory."
+ },
+ {
+  "fedramp_id": "F1506096710",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Skyhigh Security SSE (CASB/SWG) has no matching Skyhigh entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2315464863",
+  "decision": "Palantir Federal Cloud Service",
+  "confidence": "strong",
+  "notes": "PFCS-SS is the supporting-services component of Palantir's Federal Cloud Service, the same offering as inventory 'Palantir Federal Cloud Service' (vendor Palantir)."
+ },
+ {
+  "fedramp_id": "FR1834740315",
+  "decision": "Databricks",
+  "confidence": "strong",
+  "notes": "Databricks on AWS is the Databricks lakehouse platform, matching the inventory entry 'Databricks' (vendor Databricks)."
+ },
+ {
+  "fedramp_id": "FR2135730387",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "IBM Federal HR Cloud (HCM suite) does not match any IBM inventory entry."
+ },
+ {
+  "fedramp_id": "FR2020767053",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Level Access Accessibility Management Platform has no matching Level Access entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR1704369518",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Accenture Insights Platform is an Accenture analytics offering; the candidate 'Palantir AIP' is a different vendor and product."
+ },
+ {
+  "fedramp_id": "FR2315535023",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Cisco Meraki cloud-managed networking has no specific Meraki product in the inventory."
+ },
+ {
+  "fedramp_id": "F1308202329",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Coupa Spend Management procurement platform has no matching Coupa entry in the inventory."
+ },
+ {
+  "fedramp_id": "F1507317125",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Decision Lens prioritization software has no matching entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR1831429369",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "HireVue video interviewing/assessment has no matching HireVue entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2100059668",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "OnSolve Critical Event Management has no matching OnSolve entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2234256499",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Rubrik Security Cloud (backup/data security) has no matching Rubrik entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2000945223",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Software AG ARIS process-mining platform has no matching entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR1935245314A",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Trellix GovCloud Security Platform has no matching Trellix entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2421252636",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Varonis Data Security Platform has no matching Varonis entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR1731347234",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Zimperium Mobile Endpoint Cyber Security has no matching Zimperium entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2304757473",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Cisco Security Cloud for Government is a multi-product suite with no specific matching Cisco product in the inventory."
+ },
+ {
+  "fedramp_id": "FR1827963145",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Exterro E-Discovery platform has no matching Exterro entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR1800263217",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Innovative Driven Government Cloud (Relativity/Nuix hosting) has no matching entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR1728351539",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Maximus MIVA virtual assistant has no matching Maximus entry in the inventory (candidate VAs are other vendors/agencies)."
+ },
+ {
+  "fedramp_id": "F1603077867",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "SMX Elevate Intelligent Automation Platform has no matching SMX entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2001938710A",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "SailPoint Identity Security Cloud has no matching SailPoint entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR1809360201",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Snowflake's base Data Cloud/warehouse is not the same as the specific AI feature 'Snowflake Cortex'; the base data platform has no proper inventory match."
+ },
+ {
+  "fedramp_id": "FR1730842236",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "T-Metrics Cloud Contact Center has no matching T-Metrics entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR1832869359",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Adobe Analytics is not represented as a specific Adobe inventory product (Sensei is the underlying AI engine, a different entry)."
+ },
+ {
+  "fedramp_id": "FR1832870021",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Adobe Learning Manager (LMS) has no matching specific Adobe product in the inventory."
+ },
+ {
+  "fedramp_id": "FR1823368486",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Cisco AppDynamics APM has no specific matching Cisco product in the inventory."
+ },
+ {
+  "fedramp_id": "F1605107897",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Cisco Cloudlock CASB has no specific matching Cisco product in the inventory."
+ },
+ {
+  "fedramp_id": "FR2016962740",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Eightfold Talent Intelligence Platform has no matching Eightfold entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2504062150",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "IBM Federal ATOM AI/automation platform does not match any IBM inventory entry (Watson/ARGOS/CoreDF are distinct products)."
+ },
+ {
+  "fedramp_id": "FR2102758152",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Juniper Mist AI-driven networking has no matching Juniper entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2112348346",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Acalvio ShadowPlex cyber-deception platform has no matching Acalvio entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2104942200",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Acuant COFRS identity/facial-recognition service has no matching Acuant entry (the Consular Consolidated Database FR is a State Dept system, not Acuant)."
+ },
+ {
+  "fedramp_id": "FR1726637760",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "American Heart Association Precision Medicine Platform has no matching entry in the inventory."
+ },
+ {
+  "fedramp_id": "FR2527234065",
+  "decision": "none",
+  "confidence": "inferred",
+  "notes": "Anomali Security Analytics SIEM/threat-intel platform has no matching Anomali entry in the inventory."
+ }
+]

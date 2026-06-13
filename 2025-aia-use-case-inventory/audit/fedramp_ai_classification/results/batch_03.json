@@ -1,0 +1,498 @@
+[
+ {
+  "fedramp_id": "FR2000174962",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "LibreView is a diabetes glucose-data review and management portal for patients and clinicians. The description describes review, analysis, and evaluation of historical glucose data with no machine-learning, predictive, or AI capability named.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2000863987",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare for Government is a network security, performance, and Zero Trust platform (DDoS protection, CDN, application acceleration). The description names no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2000863987A",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "High-impact variant of Cloudflare for Government, a network security and performance platform. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2000939520",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Terra is a cloud platform for biomedical/bioinformatics analysis offering data storage, workflows, and notebook-based interactive analysis (JupyterLab). It hosts analytic compute but the description names no built-in AI/ML service.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2000945223",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "ARIS is a business-process-management and enterprise-architecture platform. It cites process mining with real-time analytics for data-informed decisions, which can include ML-based process discovery, but no specific AI model or feature is named, so confidence is low.",
+  "signals": [
+   "Process Mining: The platform’s real-time analytics drive data-informed decision-making"
+  ]
+ },
+ {
+  "fedramp_id": "FR2000951694",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "DLH Infinibyte Cloud is a managed PaaS/IaaS hosting platform (VMs, OS, databases, patching, monitoring). It is general managed infrastructure with no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2001619337",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Idira Identity Security Platform is a privileged-access and access-management (PAM/SSO/MFA) solution. Adaptive authentication evaluates risk signals but the description names no machine-learning model; this is rules/risk-based identity security, not AI.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2001619708",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Idira Endpoint Privilege Manager is endpoint least-privilege and application-control/anti-ransomware tooling. The capabilities are policy- and rule-based with no AI/ML component described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2001938710A",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "SailPoint Identity Security Cloud is an identity governance suite that explicitly includes AI-driven identity offerings, which apply ML to access recommendations and anomaly detection within an identity-governance product.",
+  "signals": [
+   "AI-driven identity offerings"
+  ]
+ },
+ {
+  "fedramp_id": "FR2002367706",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Somnoware is a sleep/pulmonary diagnostic and care-management platform. It cites 'clinical intelligence' for instant diagnostic report generation and risk profiles, suggesting algorithmic analysis, but no explicit ML/AI feature is named, so confidence is low.",
+  "signals": [
+   "leveraging Somnoware's clinical intelligence",
+   "risk profiles"
+  ]
+ },
+ {
+  "fedramp_id": "FR2002757173",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "The GRB Platform is a federal retirement and benefits administration SaaS with HR/payroll integration. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2003061248",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Salesforce Government Cloud Plus is a CRM/PaaS platform; it cites automation tools and smart insights, and the Salesforce platform ships Einstein AI capabilities. AI is a feature within a broader CRM, not its primary purpose.",
+  "signals": [
+   "smart insights"
+  ]
+ },
+ {
+  "fedramp_id": "FR2004146362",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "MediaLab Federal is a healthcare quality-management SaaS (training, document management, accreditation, competency assessment). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2004446306",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Elastic Cloud is a hosted Elasticsearch/Kibana search and observability platform that explicitly includes machine learning capabilities for anomaly detection and analysis as part of its advanced Stack features.",
+  "signals": [
+   "machine learning"
+  ]
+ },
+ {
+  "fedramp_id": "FR2004753002",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "RelativityOne Government is an e-discovery platform with built-in machine learning, advanced analytics, and predictive coding used to surface relevant documents across large datasets.",
+  "signals": [
+   "advanced searching and analytics, machine learning, and visualizations all built in"
+  ]
+ },
+ {
+  "fedramp_id": "FR2009476860A",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Casepoint Government is an e-discovery/data-discovery platform with built-in artificial intelligence and analytics, including predictive analysis tools for legal review and investigations.",
+  "signals": [
+   "easy-to-use AI-powered platform",
+   "built-in artificial intelligence and analytics with advanced tools for predictive analysis"
+  ]
+ },
+ {
+  "fedramp_id": "FR2009746321",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "US AI is a platform built on an AI-powered data lake whose component apps (Forsight, Gini, Archangel, etc.) center on supervised/unsupervised machine learning for predictions in acquisition, grants, fraud, risk, and health. AI prediction is the platform's defining purpose.",
+  "signals": [
+   "built on an AI-powered data lake",
+   "Forsight is a novel general purpose AI platform that uses unsupervised and supervised machine learning",
+   "Forsight facilitates the extraction of crucial business insights and predictions"
+  ]
+ },
+ {
+  "fedramp_id": "FR2012366611",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Amplifire is a healthcare training/learning platform whose patented adaptive-learning algorithms detect and correct individual knowledge gaps and misconceptions, an ML-style personalization feature inside a training product.",
+  "signals": [
+   "Patented algorithms detect and correct the knowledge gaps, doubts, and misconceptions"
+  ]
+ },
+ {
+  "fedramp_id": "FR2012534927",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cisco Catalyst SD-WAN for Government is networking infrastructure (cloud-delivered WAN fabric, routing, SASE security). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2013059515",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cofense PhishMe is a phishing-simulation and security-awareness training tool using templates and playbooks. Recommendations are behavior/best-practice driven with no AI/ML capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2014363920",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Enel X Exchange is an online reverse-auction energy procurement platform with price alerts and consulting services. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2014656304",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Civis Platform is a public-sector data management and AI platform whose central purpose includes building and managing machine learning and AI models alongside data warehousing and reporting.",
+  "signals": [
+   "data management, analytics, and AI platform",
+   "develop machine learning and AI models"
+  ]
+ },
+ {
+  "fedramp_id": "FR2016131254",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Dynatrace is an observability and application-security platform whose core differentiator is advanced AIOps (its Davis AI engine) providing automated root-cause answers and intelligent automation from telemetry data.",
+  "signals": [
+   "advanced AIOps to provide answers and intelligent automation from data"
+  ]
+ },
+ {
+  "fedramp_id": "FR2016962740",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Eightfold Talent Intelligence Platform is an AI-first HR product that uses advanced AI to match, recruit, and develop talent across the lifecycle; AI matching is its core function.",
+  "signals": [
+   "uses advanced AI to optimize every phase of the talent lifecycle"
+  ]
+ },
+ {
+  "fedramp_id": "FR2017257053",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Infoblox Threat Defense is DNS-layer threat intelligence and detection. It uses rapid correlation and contextualization over millions of indicators; this is largely threat-intel data, and no explicit ML model is named, so the AI claim is weak.",
+  "signals": [
+   "rapid correlation and contextualization to minimize incident response times"
+  ]
+ },
+ {
+  "fedramp_id": "FR2017459185",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "HP Workforce Experience Platform Collaboration (formerly Vyopta) provides monitoring and analytics for unified-communications environments. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2017462201",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Prodigo Marketplace (SCMC) is an e-commerce procurement/requisitioning tool for healthcare supply chains. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2018946952",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Sunflower Asset Management Cloud is property/asset/fleet lifecycle management with reporting and dashboards. The analytics are conventional reporting; no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2020767053",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Level Access AMP is a digital-accessibility (Section 508) management platform with an automated accessibility test engine and 'intelligent reporting.' Automated accessibility scanning is rules-based and no specific ML model is named, so the AI signal is weak.",
+  "signals": [
+   "intelligent reporting"
+  ]
+ },
+ {
+  "fedramp_id": "FR2022243058",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "CGI Momentum Enterprise Suite is a federal financial, budget, asset, and procurement management system. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2022963780",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Icertis Contract Intelligence is a contract-lifecycle-management platform with AI-powered clause management that extracts and analyzes contract clauses and obligations.",
+  "signals": [
+   "AI-powered clause management"
+  ]
+ },
+ {
+  "fedramp_id": "FR2023601671",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "eGain Suite is a customer-engagement/contact-center suite that materially ships AI: a Knowledge+AI engine, SelfService+AI, and a virtual assistant/chatbot answering customer queries.",
+  "signals": [
+   "eGain Knowledge+AI is a knowledge management software\r\nincluding AI",
+   "eGain Virtual Assistant is a virtual agent",
+   "the virtual assistant (also called virtual agent or chatbot)"
+  ]
+ },
+ {
+  "fedramp_id": "FR2023666173",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Scale AI Data Platform is an AI-first product: training-data labeling, a Generative AI Platform (SGP) for model test/evaluation/operationalization, and Donovan, an enterprise AI chat solution. AI development is its entire purpose.",
+  "signals": [
+   "Scale's comprehensive AI Data Platform",
+   "Scale's Generative AI Platform (SGP)",
+   "Donovan, a powerful enterprise chat solution built on SGP"
+  ]
+ },
+ {
+  "fedramp_id": "FR2023864279A",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Datadog for Government is an observability and security platform that delivers AI-powered insights and automated remediation across metrics, traces, and logs; AI is a material feature of a broader monitoring product.",
+  "signals": [
+   "Datadog is an AI-powered observability and security platform",
+   "AI-powered insights and automated remediation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2025456731",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Vaultara Flare Services is a secure bi-directional file/data transfer solution (digital media exchange). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2025827270",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "AvePoint Online Services is a Microsoft 365 governance/backup/migration suite that includes the AvePoint Virtual Assistant (AVA), an AI chatbot for data recovery. AI is a feature within a broader data-management platform.",
+  "signals": [
+   "AvePoint Virtual Assistant (AVA) - data recovery and AI chatbot"
+  ]
+ },
+ {
+  "fedramp_id": "FR2025827270A",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "High-impact variant of AvePoint Online Services, a Microsoft 365 governance/backup suite that includes the AvePoint Virtual Assistant (AVA) AI chatbot. AI is a feature of a broader data-management platform.",
+  "signals": [
+   "AvePoint Virtual Assistant (AVA) - data recovery and AI chatbot"
+  ]
+ },
+ {
+  "fedramp_id": "FR2027958176",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Issio is a healthcare workforce-optimization and scheduling SaaS that provides predictive visibility into staffing, indicating a forecasting/ML capability within a broader scheduling product.",
+  "signals": [
+   "real-time and predictive visibility into staffing"
+  ]
+ },
+ {
+  "fedramp_id": "FR2028534270",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Trello Enterprise Cloud is a visual project-collaboration tool (boards, lists, cards) with automation and integrations. The automation is rules-based; no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2028958787",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "ClaimsXM is a rules-based healthcare claims-processing platform that detects fraud, waste, and abuse. Detection is described as rules-based rather than ML, so the AI signal is weak.",
+  "signals": [
+   "fraud, waste, and abuse within the healthcare system can be detected and reduced"
+  ]
+ },
+ {
+  "fedramp_id": "FR2028977567",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "NetDocuments is a document/content management platform emphasizing storage, security, and collaboration. The description is marketing-heavy ('unified insights') and names no concrete AI/ML extraction or classification feature.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2029183077",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "CorityOne is an EHS, sustainability, and quality management suite with analytics modules (CorInsights, CorAnalytics). The analytics are described as reporting/benchmarking with no specific AI/ML capability named.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2029331613",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Informatica Intelligent Cloud Services is a data integration/management and governance platform leveraging metadata to automate data functions. While Informatica ships its CLAIRE AI engine, this description names only metadata-driven automation, so the AI signal is weak.",
+  "signals": [
+   "leverages industry-leading metadata capabilities to accelerate and automate core data management"
+  ]
+ },
+ {
+  "fedramp_id": "FR2031155471",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Iron Mountain InSight is a content-services platform whose core function is using machine learning and AI to automatically classify, extract, and enrich physical and digital content.",
+  "signals": [
+   "leverages Machine Learning (ML) and Artificial Intelligence (AI) to automatically classify, extract, and enrich physical and digital content"
+  ]
+ },
+ {
+  "fedramp_id": "FR2031222637",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Aurigo Masterworks Cloud is a capital-planning and construction-management platform that provides predictive analytics to mitigate risks and improve decision-making; AI/ML is a feature within a broader infrastructure-management product.",
+  "signals": [
+   "real-time insights, automation, and predictive analytics to mitigate risks"
+  ]
+ },
+ {
+  "fedramp_id": "FR2031936863",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Armis FedRAMP Edition is a device-security platform whose Risk Engine analyzes device behavior against historical and peer baselines to detect behavioral anomalies and threats, an ML-style anomaly-detection capability within a security product.",
+  "signals": [
+   "continuously monitors the behavior of every device in the environment for behavioral anomalies"
+  ]
+ },
+ {
+  "fedramp_id": "FR2032042635",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "WidePoint ITMS manages technology assets, contracts, and invoices via a web portal. Despite the 'Intelligent' name, no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2032565438",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Kahua Government Network is a collaborative construction/capital-program management platform with a low-code app builder. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2032665434",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Menlo Security is a browser-isolation/security platform that leverages machine learning and AI-based URL analysis to identify and block sophisticated phishing sites, an ML feature within a broader security product.",
+  "signals": [
+   "Menlo leverages machine learning and AI-based URL analysis to identify and block the most sophisticated phishing sites"
+  ]
+ },
+ {
+  "fedramp_id": "FR2033152148",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Seven Bridges Platform is a cloud bioinformatics environment for storing and analyzing genomic data via on-demand compute and pipelines. It hosts analytic workloads but names no built-in AI/ML service.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2034966708",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "EEC Singularity is a managed security service platform (SOC, continuous monitoring, DevSecOps with SAST/DAST/RASP/IAST). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2035056105",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Bluescape with n8n is a secure collaboration workspace that materially integrates AI: summarizing and querying documents, plugging in third-party AI/ML tools, and aggregating multiple LLMs to produce mission analysis outputs.",
+  "signals": [
+   "Use the power of AI to summarize and make inquiries of document data within workspaces",
+   "Aggregate and train data from multiple LLMs to produce appropriate mission analysis"
+  ]
+ },
+ {
+  "fedramp_id": "FR2035740126",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Sprinklr CXM for Government is a customer-experience platform described as AI-backed, spanning research, care, and engagement across digital channels; Sprinklr's AI powers social listening and customer-care automation.",
+  "signals": [
+   "Sprinklr's AI-backed core platform"
+  ]
+ },
+ {
+  "fedramp_id": "FR2035860874",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GTS VirtualHealth Platform is a telehealth solution for remote patient monitoring, real-time video visits, and store-and-forward data. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2100059668",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "OnSolve Platform for Critical Event Management uses AI-powered risk intelligence to filter massive event-data volumes, identify crises, and automate threat detection, a material AI feature within an emergency-management product.",
+  "signals": [
+   "leverage real-time AI-powered risk intelligence",
+   "Enable teams with AI-powered technology to manage critical events"
+  ]
+ },
+ {
+  "fedramp_id": "FR2100740435",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Tango is a workplace/real-estate management suite whose Predictive Analytics module combines advanced AI/ML modeling with geospatial data to inform location and capital-investment decisions; AI is a feature within a broader IWMS product.",
+  "signals": [
+   "combining advanced AI/ML modeling with data in a scalable geospatial analytics platform"
+  ]
+ },
+ {
+  "fedramp_id": "FR2100757165",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IRBNet on GovCloud is a research-compliance submission, workflow, and collaboration platform for IRBs and committees. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2100845343",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "DevResults is a monitoring-and-evaluation web app for data capture, analysis, reporting, and project management. The analytics are conventional reporting/visualization; no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2101000225",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "PlanStreet is a case-management platform citing 'intelligent automation' for workflow reduction. No specific ML/AI model is named and the term reads as workflow automation, so the AI signal is weak.",
+  "signals": [
+   "intelligent automation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2102031769",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Red Hat OpenShift Service on AWS (ROSA) is a managed Kubernetes/container application platform (PaaS). It can host AI workloads but ships no AI/ML capability of its own.",
+  "signals": []
+ }
+]

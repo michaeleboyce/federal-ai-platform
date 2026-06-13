@@ -175,6 +175,12 @@ adjudicate-review-queue-scope:
 # Idempotent — safe to re-run after either DB changes.
 fedramp:
 	python3 load_fedramp.py
+	# Re-apply the per-product AI classification (LLM pass persisted at
+	# data/fedramp_ai_classification.csv) after the mirror reload. Idempotent
+	# wipe-and-reload keyed by stable fedramp_id. Exits non-zero if a fresh
+	# snapshot added products that are not yet classified — top up the CSV
+	# via scripts/classify_fedramp_ai.py first.
+	python3 scripts/apply_fedramp_ai_classification.py --apply
 	python3 link_fedramp.py --apply
 	# Promote resolved fedramp_link_queue decisions into fedramp_product_links.
 	# Picks up rows that link_fedramp.py left as 'multi_candidate' or 'no_alias'

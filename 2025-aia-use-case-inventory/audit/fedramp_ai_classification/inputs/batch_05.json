@@ -1,0 +1,1104 @@
+[
+ {
+  "fedramp_id": "FR2201340492",
+  "csp": "KnowBe4, Inc.",
+  "cso": "KnowBe4 Platform",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "The KnowBe4 Platform includes the following in-scope: KSAT Learning Management System and all included training content (ModStore, Compliance Plus), KSAT Simulated Phishing Platform, PhishER / PhishER Plus, Phish Alert Button, SecurityCoach (SCH) and AI Defense Agents (AIDA) (excluding AIDA Deepfakes).\r\n\r\nKnowBe4 products currently excluded from scope: Free Tools (SecondChance, RanSim, Password Exposure Test, Weak Password Test, Breached Password Test, Browser Password Inspector), AIDA Deepfakes, KCES (KnowBe4 Cloud Email Security of Defend / Prevent), Protect, Workspace and Webform.\r\n\r\nKSAT (KnowBe4 Security Awareness Training), which includes security awareness training and simulated phishing, is designed to provide users with an interactive platform to better manage IT security problems of social engineering, spear-phishing, and ransomware attacks. The ModStore and Compliance Plus are libraries of available training modules that can be used within the KSAT platform or in external learning management systems.\r\n\r\nPhishER (and its add-on PhishER Plus) is a Security Orchestration, Automation, and Response (SOAR) platform that can be used to manage emails that KSAT users report as suspicious or malicious. The purpose of this platform is to provide an organization with a way to evaluate suspicious emails making it through to the inbox of users.\r\n\r\nSecurityCoach (SCH) helps strengthen your organization\u2019s security culture by delivering immediate feedback to your users at the moment risky behavior occurs.\r\n\r\nAI Defense Agents (AIDA) is a suite of AI Agents for human risk management that continuously automates administration and content personalization so security teams can focus on strategic risk decisions rather than operational tasks. Each included AIDA Agent is optional to enable.\r\n\r\nThe Phish Alert Button (PAB) is an optional component placed in the inbox of a customer end user. This allows end users to report a suspected phishing simulation and any suspicious email message to their security team. The PAB integrates with KSAT and PhishER / PhishER Plus.\r\n\r\nKnowBe4 products share a central configuration and authentication settings area located within the KnowBe4 Platform. This is included in scope and is used throughout the KnowBe4 suite of products.",
+  "business_functions": [
+   "Cybersecurity & Risk Management",
+   "Education & Training"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "85499af63956a9ef"
+ },
+ {
+  "fedramp_id": "FR2202555908",
+  "csp": "Pexip Inc.",
+  "cso": "Pexip Government Cloud (PGC)",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Pexip Government Cloud is a SaaS-based video teleconferencing (VTC) solution for U.S. federal, state, and local government organizations. With Pexip, government customers can augment their existing on-premise VTC infrastructure with a subscription-based service model while retaining ownership of their specific endpoint dial plan and call control routing rules. By migrating to a SaaS or hybrid service model, government organizations maintain operational control of their endpoints and systems without incurring the long-term costs of developing and maintaining additional infrastructure.\nPexip Government Cloud\u2019s secure VTC platform brings the modernized meeting experience to the government user base in the following ways:\n\u2022        Microsoft-certified Cloud Video Interoperability (CVI) for Microsoft Teams \u2013 Helps agencies securely collaborate on Microsoft Teams in their hybrid workplace. With Pexip Government Cloud, employees can join Microsoft Teams calls from their existing standards-based meeting room video systems as well as enterprise-class standards-based soft clients.\n\u2022        Bi-Directional SIP Dialing for Windows-Based Microsoft Teams Rooms (MTRw) \u2013 Expanding on Pexip\u2019s CVI capability, this feature enables SIP-based video conferencing endpoints to call directly into Microsoft Teams Rooms (MTR) running on Windows, and vice versa. This allows government agencies to integrate MTRw into their broader VTC ecosystem, ensuring seamless cross-platform collaboration. \n\u2022        Google Meet Interoperability \u2013 Enables agencies to seamlessly connect standards-based VTC systems directly into Google Meet meetings using native SIP dialing. This allows government users to leverage existing room-based video conferencing hardware to join Google Meet sessions without additional plugins or workarounds, ensuring a secure, seamless, and familiar meeting experience.\n\u2022        Standards-Based Virtual Meeting Rooms (VMRs) \u2013 Supports customer VTC endpoint devices and clients, featuring Pexip\u2019s native CMVP-validated FIPS 140-3 encryption suite, ensuring secure and compliant video communications.\n\u2022        Self-Hosted Platform Integration \u2013 Enables hybrid VTC deployments where Pexip Government Cloud extends the customer\u2019s existing self-hosted platform. This integration allows VTC systems to seamlessly connect with enterprise third-party applications, support calendaring integrations for simplified end-user join flows, and align with global policy frameworks such as Zero Trust Architecture (ZTA) and Secure Access Service Edge (SASE).",
+  "business_functions": [
+   "Collaboration"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "7c297d24a7be83da"
+ },
+ {
+  "fedramp_id": "FR2203732438",
+  "csp": "OpenText",
+  "cso": "OpenText Cloud for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "OpenText Cloud for Government is a secure, scalable, cloud environment designed for the unique requirements of FedRAMP compliance. US federal agencies and entities requiring FedRAMP certification can use OpenText Cloud for Government to enable their digital transformation and cloud first initiatives as they move Information Management workloads to the cloud. The following OpenText applications are delivered as a service designed with a FedRAMP moderate level security control framework:\n\n - OpenText\u2122 Content Management (Extended ECM) for Government - Enterprise Content Services that link the digital workplace and applications that power ERP, HCM, BPM and CRM business processes to drive operational excellence and govern unstructured content.\n\n - OpenText\u2122 Process Automation for Government - Low-code development platform for building engaging process automation and dynamic case management applications. Fully integrated with OpenText\u2122 Content Management (Extended ECM) for Government, OpenText\u2122 Process Automation for Government helps re-engineer business processes around customer, employee and partner needs to deliver seamless digital experiences and adapt to changing market expectations while improving efficiency and managing risk.",
+  "business_functions": [
+   "Collaboration",
+   "Content Management System (CMS)",
+   "Customer Relations Management (CRM)",
+   "Customer Service",
+   "Development Tools",
+   "Finance",
+   "Human Resources",
+   "Legal & Policy",
+   "Marketing & Sales",
+   "Research"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "035fa2dfe4594df6"
+ },
+ {
+  "fedramp_id": "FR2204842850",
+  "csp": "Rosalind, Inc.",
+  "cso": "ROSALIND",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "ROSALIND is a multi-tenant SaaS solution for bioinformatics analyses, COVID diagnostic monitoring, knowledge management, and scientific collaboration. As a cloud-based software platform, ROSALIND provides a web interface for scientists and researchers to securely analyze and interpret datasets. Rosalind provides two web-based solutions, ROSALIND DxM and ROSALIND Research. Both operate in a visual manner and do not require command-line programming, cloud infrastructure setup, or bioinformatics pipeline development.\n\n- ROSALIND DxM provides real-time SARS-CoV-2 variant surveillance and diagnostic monitoring incorporating international viral sequence data. DxM also includes a comprehensive BioBank of SARS-CoV-2 specimens with sample tracking and workflow management for test panel creation, panel blinding, and results submission across participating labs and organizations.\n- ROSALIND Research provides visual analysis, interpretation, and cloud-based data sharing of genomic datasets produced with Next Generation Sequencing (NGS), NanoString instruments, and other multi-omic methods. ROSALIND Research features analysis pipelines for gene expression and gene regulation studies, including Single-Cell RNA-seq, bulk RNA-seq, miRNA-seq, ATAC-seq, ChIP-seq, and Proteomics.\n\nRosalind uses knowledge graphs to securely store institutional data as searchable libraries while enabling permissions-based data sharing between authorized users and across institutions.",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "5d2423c4241dfb48"
+ },
+ {
+  "fedramp_id": "FR2206159758",
+  "csp": "Merlin International",
+  "cso": "Constellation GovCloud (CGC)",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "Constellation GovCloud (CGC) is an information system that provides the necessary Platform as a Service (PaaS) architecture layers to support Merlin-operated Software as a Service (SaaS) applications. These Merlin SaaS applications will be hosted and provided to U.S. federal agencies, including local and state governments and tribal organizations. The CGC is part of a managed service that is designed to accelerate FedRAMP authorizations allowing Merlin SaaS companies to achieve a FedRAMP Authority to Operate (ATO) more quickly and cost-effectively.\n\nCynamics, a leading innovator in network cybersecurity, presents a next-generation SOC AI platform powered by its proprietary sample-based NDR and cybersecurity large language model, CynLLM. By integrating intelligent sampling with cutting-edge AI, Cynamics facilitates real-time and scalable threat detection without the heavy infrastructure requirements of traditional solutions. Already endorsed by Tier-1 municipalities, enterprises, and critical infrastructure providers globally, Cynamics offers unparalleled visibility, automation, and operational efficiency for today\u2019s security teams.\n\nInfoSec Global Federal\u2019s AgileSec Analytics provides automated discovery, monitoring, and policy\u2011driven control of cryptographic assets, including keys, certificates, algorithms, libraries, devices, applications, firmware, and protocols, across cloud and on\u2011premise environments. The AgileSec Analytics platform ensures agencies are prepared for emerging cryptographic threats, including quantum attacks, by monitoring usage of cryptography and preparing migration to post-quantum cryptography. Key capabilities include Automated Cryptographic Discovery & Inventory, Vulnerability Identification and Compliance Reporting, Post-Quantum Readiness, and Continuous Monitoring and Remediation Workflows. The AgileSec Analytics solution supports regulatory requirements including OMB 23-02 mandates and continuous diagnostics, with built-in reporting features evaluated and recognized by federal standards organizations. It also integrates with numerous ecosystem technologies including EDR, CLM, PKI, HSM, CDM dashboards, ITSM, GRC tools and more.\n\r\nHyperproof delivers a modern, cloud-based compliance operations platform designed to help government agencies and regulated organizations manage risk and compliance with confidence. Hyperproof Gov is a cloud-based governance, risk, and compliance (GRC) platform designed to support regulated organizations in managing security and compliance programs. The system provides centralized capabilities for control management, evidence collection, risk tracking, audit support, and continuous monitoring. Hyperproof Gov enables structured workflows and real-time compliance status reporting to support authorization, assessment, and ongoing monitoring activities. The platform is designed to integrate with external systems for automated evidence collection and to maintain traceability between controls, requirements, and supporting artifacts, supporting consistent and repeatable compliance operations.",
+  "business_functions": [
+   "Governance, Risk, and Compliance (GRC)"
+  ],
+  "service_models": [
+   "PaaS",
+   "SaaS"
+  ],
+  "input_hash": "14a0e0a7d1f87836"
+ },
+ {
+  "fedramp_id": "FR2207359708",
+  "csp": "Evidence Prime",
+  "cso": "Laser AI",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Li-SaaS",
+  "deployment_model": "Public Cloud",
+  "service_desc": "LASER is a system automating the development of Living Systematic Reviews using natural language processing (NLP) and artificial intelligence techniques, which synthesizes available knowledge about a given health problem continuously and with minimal human involvement. As a result, LASER speeds up the process of literature reviews, decreases its costs, and improves the quality of the reviews allowing overworked human specialists to focus on the essential elements offloading much of the repetitive tasks to the AI-enabled system. LASER also provides a human-centric user interface, enabling smooth interaction with suggestions provided by the AI.\n\nLASER supports classical systematic reviews as well as enables quick verification of the quality of the reviews by the regulators and the sponsors, makes it possible to perform a larger number of reviews for personalized medicine or the creation of high-quality rapid assessments in the face of epidemics or ecological disasters.\n\nLASER is built with larger organizations in mind, providing a high level of security as well as enterprise-grade management of projects, teams, roles, shared dictionaries, and customizable workflow processes. LASER helps with the following steps of literature reviews: creation of the review protocol, construction and execution of a search strategy, T&A screening, screening of full texts, data extraction, quality assessment, export of data to meta-analysis tools.",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "b3cdcf01f08e14b1"
+ },
+ {
+  "fedramp_id": "FR2207365631",
+  "csp": "Consensus Cloud Solutions",
+  "cso": "Enterprise Cloud Fax Government (ECFax)",
+  "status": "FedRAMP Authorized",
+  "impact_level": "High",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "ECFax\u00ae is a unified, secure, cloud-based managed service solution that modernizes manual or semi-automated faxing processes and eliminates the need for multiple faxing solutions. \r\n\r\nBuilt with a human-centered design approach, ECFax\u00ae simplifies fax services, improves the user experience, provides secure data transfer for PHI/PII, and reduces administrative costs. The solution gives agencies more control over their fax data transfer processes, eliminates the need to manage multiple vendors, and offers 24/7 state-of-the-art faxing capability and help desk support.\r\nECFax\u00ae delivers faxes digitally across multiple endpoints, including multifunction devices, shared folders, distribution lists, and inboxes: yielding operational efficiencies and reducing the need for standalone hardware.\r\nThe solution is:\r\n\u25cf\tScalable: Hosted on Amazon Web Services GovCloud, ECFax\u00ae scales on- demand to hundreds of millions of pages per month through auto-scaling and elastic load balancing.\r\n\u25cf\tTransparent: Performance dashboards provide visibility into service usage and operational status, which allows for near real-time production metrics.\r\n\u25cf\tSecure: ECFax and add on components are FedRAMP High certified and meet the most important security and quality assurance protocols for data protection\u2014including FIPS 140-2.   \r\n\r\nECFax\u00ae Services was developed specifically for the cloud, government agencies benefit from rapid scaling, efficiency and speed.\r\nECFax\u00ae is:\r\n\u25cf\tAccessible via AWS GovCloud;\r\n\u25cf\tSection 508 Compliant\r\n\u25cf\tDesigned to meet the highest security standards required by government agencies \r\nIn addition, the solution:\r\n\u25cf\tIntegrates with other applications via Restful API\r\n\u25cf\tSupports IDP-initiated SSO for authentication \r\n\u25cf\tFacilitates standardization across multiple locations",
+  "business_functions": [
+   "Communication",
+   "Health & Wellness"
+  ],
+  "service_models": [
+   "PaaS",
+   "SaaS"
+  ],
+  "input_hash": "d721b7add38864e3"
+ },
+ {
+  "fedramp_id": "FR2207643307",
+  "csp": "Wolters Kluwer",
+  "cso": "TeamMate FedRAMP",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "TeamMate Audit and TeamMate Controls are two integrated solutions that support government agencies in managing audits and internal controls within a secure cloud environment. TeamMate Audit enables end-to-end audit planning, execution, issue tracking, and reporting, while TeamMate Controls supports the documentation, testing, and monitoring of internal controls and remediation activities. Together, they provide a centralized approach to audit and control management, helping agencies improve oversight, consistency, and risk management.",
+  "business_functions": [
+   "Accounting",
+   "Analytics",
+   "Finance",
+   "Legal & Policy"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "8b273c3b380e2ed5"
+ },
+ {
+  "fedramp_id": "FR2208555094",
+  "csp": "UberEther",
+  "cso": "IAM Advantage",
+  "status": "FedRAMP Authorized",
+  "impact_level": "High",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "UberEther Advantage\n\nThe UberEther Advantage platform offers a highly secure and easy-to-deploy boundary platform with FedRAMP High and DoD IL5 authorizations based on NIST 800-53 Revision 5 security control requirements. The platform includes two main solutions within the authorization boundary:\n\u2022        ATO Advantage: An empty boundary platform designed to accelerate FedRAMP and DoD authorization for agency solutions and third-party software products.\n\u2022        IAM Advantage: A comprehensive identity and access management (IAM) solution equipped with pre-installed, configured, and optimized IAM tools.\n\nATO Advantage\nATO Advantage provides a Platform as a Service approach to satisfy over 355 of the required 425+ technical controls out-of-the-box, which are then inherited by third-party applications when deployed on the platform. This includes the preparation of required documentation and artifacts such as the System Security Plan (SSP) and automated POA&M reports. The platform can help agencies and software vendors deliver their solutions securely at the speed of need.\n\nIAM Advantage\nIAM Advantage delivers an end-to-end identity management solution integrating leading identity and access management products. This includes support for seamless single sign-on (SSO), multiple NIST 800-63 multi-factor authentication options, privileged user management, and separation of duties enforcement. The platform ensures compliance with Continuous Diagnostics and Mitigation (CDM) and EO 14028 requirements.\n\nServices:\n\u2022        AppGate Software Defined Perimeter\n\u2022        BeyondTrust Endpoint Privilege Management\n\u2022        BeyondTrust Password Safe\n\u2022        CyberArk Central Policy Manager\n\u2022        CyberArk Digital Vault\n\u2022        CyberArk OnDemand Privileged Manager\n\u2022        CyberArk Password Vault Web Access\n\u2022        CyberArk Privileged Access Management\n\u2022        CyberArk Privileged Session Manager\n\u2022        CyberArk Privileged Threat Analytics\n\u2022         PingAM (formerly ForgeRock Access Management)\n\u2022         PingDS (formerly ForgeRock Directory Services)\n\u2022         PingGateway (formerly ForgeRock Identity Gateway)\n\u2022         Ping IDM (formerly ForgeRock Identity Management)\n\u2022        Nok Nok - Phishing Resistant S3 Authentication Suite\n\u2022        OpenSearch & Dashboards (SIEM & User Behavior Analytics)\n\u2022        Ping Government Identity Cloud\n\u2022        PingAccess\n\u2022        PingAuthorize\n\u2022        PingCentral\n\u2022        PingDirectory\n\u2022        PingFederate\n\u2022        Ping MFA for Government\n\u2022        Radiant Logic RadiantOne Data Management\n\u2022        Sailpoint IdentityIQ (IIQ)\n\u2022        Tenable Enclave Security",
+  "business_functions": [
+   "Analytics",
+   "Collaboration",
+   "Cybersecurity & Risk Management",
+   "Development Tools",
+   "Network Management",
+   "Virtual Private Network (VPN)"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "e34042d41f97b607"
+ },
+ {
+  "fedramp_id": "FR2209555576",
+  "csp": "RingMD USA Inc.",
+  "cso": "RingMD Telemedicine",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "RingMD Telemedicine delivers a secure, cloud-based telehealth platform designed for federal use cases. The system enables video consultations between providers and patients, as well as provider-to-provider communications, with integrated screen sharing, secure in-app messaging, and file exchange capabilities. The platform supports integration with electronic prescribing (eRx) systems, electronic health records (EHR), electronic medical records (EMR), and laboratory information systems (LIS). It can be configured to align with agency-specific clinical workflows and branding requirements.\r\n\r\nRingMD includes built-in analytics and reporting capabilities to support operational oversight, utilization tracking, and performance evaluation. Optional AI-enhanced modules are available, including screening tools and clinical decision support features, developed in accordance with federal privacy and security standards.",
+  "business_functions": [
+   "Analytics",
+   "Communication",
+   "Content Management System (CMS)",
+   "Customer Relations Management (CRM)",
+   "Data Management",
+   "Education & Training",
+   "Health & Wellness",
+   "Research"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "70a817cd1a361391"
+ },
+ {
+  "fedramp_id": "FR2210352243",
+  "csp": "SAS Institute, Inc.",
+  "cso": "SAS AI and Analytics for Government on FedRAMP",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Hybrid Cloud",
+  "service_desc": "SAS\u00ae Viya\u00ae provides the foundation for SAS AI and Analytics for Government on FedRAMP, making it possible to integrate teams and technology and deliver significant productivity gains to agencies leveraging data and AI. \r\nWhat\u2019s included in SAS AI and Analytics for Government on FedRAMP:\r\n\r\n\u2022\tSAS Visual Text Analytics \t \r\n\u2022\tStart with training documents to build models iteratively by analyzing and categorizing.  \r\n\u2022\tIdentify and categorize key textual data with interpretive algorithms that incorporate context. \r\n\u2022\tLeverage the best combinations of linguistics, machine learning and natural language processing. \r\n\u2022\tSAS Visual Statistics\t \r\n\u2022\tEnable multiple users to explore data and develop models interactively. \r\n\u2022\tCreate, refine, and test models using in-memory capabilities. \r\n\u2022\tDiscover, predict and act with interactive data exploration and discovery \r\n\u2022\tSAS Viya \r\n\u2022\tCleanse, prepare and manage data for analysis, exploration and feature engineering with modern statistical, data mining and machine learning techniques all in a single, scalable, in-memory processing environment. \r\n\u2022\tUse the comprehensive visual interface to solve complex analytical problems that handles all tasks in the analytics life cycle. \r\n\u2022\tRegister, modify, track, score, publish and report on AI and analytical models. \r\n\u2022\tStore models within folders or projects. \r\n\u2022\tDevelop and validate candidate models and assess candidate models for champion model selection. Then publish and monitor champion models. \r\n\u2022\tSAS Visual Analytics \t \r\n\u2022\tLeverage self-service analytics to make faster decisions with data. \r\n\u2022\tDiscover more relevant relationships in your data. \r\n\u2022\tDevelop dashboards and reports for use and sharing.",
+  "business_functions": [
+   "Analytics",
+   "Data Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "8337d058b5dd77a7"
+ },
+ {
+  "fedramp_id": "FR2210666939",
+  "csp": "Melissa",
+  "cso": "Melissa GovCloud Address Suite",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Li-SaaS",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Web Service leveraging postal authorities (USPS, Canada Post, Royal Mail, EIRCODE) to Verify, Standardize, and Correct mailing addresses. Additional functions for move update for US residents and businesses are available within the service leveraging USPS\u00ae NCOALink.",
+  "business_functions": [
+   "Analytics",
+   "Communication",
+   "Customer Relations Management (CRM)",
+   "Customer Service",
+   "Data Management",
+   "Marketing & Sales"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "58e5597dd18366b1"
+ },
+ {
+  "fedramp_id": "FR2210850126",
+  "csp": "Cleartronic, Inc. dba. ReadyOp Communications, Inc.",
+  "cso": "ReadyOp",
+  "status": "Agency Authorization In Process",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "ReadyOp Platform is delivered as a SaaS offering with PaaS components using a multi-tenant Government-only cloud computing environment. It is available to federal, state, local, and tribal governments, as well as research institutions, federal contractors, and other government contractors, etc.",
+  "business_functions": [
+   "Collaboration",
+   "Communication",
+   "Content Management System (CMS)",
+   "Data Management",
+   "Fleet Management",
+   "Grant Management",
+   "Human Resources",
+   "Law Enforcement",
+   "Operations Management",
+   "Research"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "7cac39c2b6c11a74"
+ },
+ {
+  "fedramp_id": "FR2210851632",
+  "csp": "GetWellNetwork",
+  "cso": "GetWellNetwork  - Get Well Anywhere - Federal",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "GetWell Anywhere Federal (GWA-F) is a comprehensive digital patient engagement platform designed to guide, educate, entertain, navigate, and survey patients throughout their entire care journey. From pre-procedure preparation to the ED waiting room, inpatient settings, and post-discharge recovery, GWA-F ensures continuous support. Integrated with EMR systems, it provides automated, personalized, and proactive guidance for each patient, achieving scalable, individualized care through web and mobile applications. Additionally, GWA-F automates repetitive tasks for clinicians\u2014such as patient education, EMR documentation, and non-clinical requests\u2014allowing them to focus on providing top-of-license care.",
+  "business_functions": [
+   "Health & Wellness"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "a85c332d6dcce80f"
+ },
+ {
+  "fedramp_id": "FR2211452029",
+  "csp": "RQI Partners LLC",
+  "cso": "RQI1Stop",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Low",
+  "deployment_model": "Public Cloud",
+  "service_desc": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors etc.,",
+  "business_functions": [
+   "Education & Training",
+   "Health & Wellness"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "1ded744415316a76"
+ },
+ {
+  "fedramp_id": "FR2212912561",
+  "csp": "Itamar Medical",
+  "cso": "Itamar Dispatcher Cloud (IDC)",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Li-SaaS",
+  "deployment_model": "Public Cloud",
+  "service_desc": "The Zoll-Itamar Dispatcher Cloud (IDC) supports health care providers conducting home sleep apnea tests utilizing the WatchPAT device. The provider integrates the IDC APIs into supported patient management systems to initialize WatchPAT devices and collect test results. The patients take the sleep study using the device and a proprietary Mobile application that communicates and transfers sleep study data to IDC in a secure manner.",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "d48571fdbcc81c95"
+ },
+ {
+  "fedramp_id": "FR2213647361",
+  "csp": "Talkdesk",
+  "cso": "Talkdesk CX Cloud\u2122 Government Edition",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Talkdesk CX Cloud\u2122 Government Edition is a cloud native, browser-based, SaaS contact center platform that enables government institutions to deliver modern customer service, increase efficiencies, reduce costs, and innovate with technology to better meet their mission. Included in Talkdesk CX Cloud\u2122 Government Edition is voice engagement including orchestration and routing; agent workspace as a single pane of glass for conversational context; quality management to evaluate agent interactions; workforce management to forecast, plan and develop staff schedules; standard and custom reporting with bespoke and granular access to data and dashboards; and BYOC (bring your own carrier) capabilities.",
+  "business_functions": [
+   "Collaboration",
+   "Communication",
+   "Contact Center",
+   "Customer Relations Management (CRM)",
+   "Customer Service"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "93d86d3a471aa4da"
+ },
+ {
+  "fedramp_id": "FR2213722684",
+  "csp": "Spider Strategies",
+  "cso": "Spider Impact for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Spider Impact for Government enables cloud-based performance management for defining, measuring, and reporting agency performance against targets and strategic plans. The system is the Federal Government dedicated environment of Spider Strategies\u2019 Spider Impact software. Spider Impact for Government collects, stores, and displays agency key performance indicators (KPIs), generates executive Briefings, Dashboards, and Reports, and enables data analysis and exploration through its business intelligence reporting engine. Spider Impact for Government Scorecards allow agencies to define KPIs and metrics and align them to the overall agency strategy through objectives, initiatives, and corrective action plans. This permits users to track and evaluate their agency\u2019s performance strategically by comparing KPI performance against targets and goals resulting in Red/Amber/Green assessments. Spider Impact for Government Dashboards and Reports allow agencies to create custom, ad-hoc, or cascading dashboards to track and report performance across teams, projects, strategies, or organizations with dynamically updating data collected and reported via Spider Impact for Government scorecards and datasets. The result is reports and dashboards that provide a common operating picture across an agency, based on timely data and insights from agency leaders. Spider Impact for Government Datasets provides users a business intelligence engine to explore and analyze large amounts of data, allowing users to discover insights, trends, correlations, or anomalies within and across agency datasets. Datasets permits agencies to apply conditional and Boolean logic to sort, filter, or report subsets of data. Spider Impact for Government automates data input to save countless hours of data collection, entry, and quality review resulting in greater efficiency in data gathering, greater speed to reporting, and increased return on investment by allowing organizations to devote user time to data analysis and not data collection. Spider Impact for Government, from Spider Strategies, is an approved Software-as-a-Service (SaaS) Performance Management suite for all Federal Government customers, including the Department of Defense at Impact Level 4 (DoD IL4).",
+  "business_functions": [
+   "Analytics",
+   "Collaboration",
+   "Data Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "d4170acbcbcaa73b"
+ },
+ {
+  "fedramp_id": "FR2213764335",
+  "csp": "Noblis",
+  "cso": "RunCyberAssurance",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "Noblis\u2019 RunCyberAssurance\u00ae is a comprehensive, automated solution that advances the efficacy of Continuous Monitoring programs. The Noblis RunCyberAssurance solution enables agencies and their Cloud Service Providers to gain a fast, accurate view into their vulnerabilities, manage Plan of Action and Milestones (POA&Ms) and deviation requests and improve visibility into the security posture of complex information systems. RunCyberAssurance frees cybersecurity professionals from mundane manual tasks, allowing them to focus on high-value threat assessment activities. The solution accepts data feeds \u201cas is\u201d from over 40 industry standard vulnerability scanning tools and generates reports and outputs in FedRAMP and Open Security Controls Assessment Language (OSCAL) formats.   \n\nNoblis\u2019 RunCyberAssurance is powered by our EDGE@AWS Platform-as-a-Service (PaaS) and leverages the Community AWS GovGloud Infrastructure-as-a-Service. In addition, it leverages AWS US East/West, Okta ID-as-a-Service and ServiceNow. The Noblis EDGE@AWS PaaS provides a FedRAMP Moderate compliant platform for Noblis applications and systems.",
+  "business_functions": [
+   "Analytics",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Operations Management",
+   "System Administration"
+  ],
+  "service_models": [
+   "PaaS",
+   "SaaS"
+  ],
+  "input_hash": "a6b5486e48f69ee2"
+ },
+ {
+  "fedramp_id": "FR2214062312",
+  "csp": "Actsoft, Inc",
+  "cso": "Actsoft Workforce Manager for Gov.",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Workforce Manager for Gov is a fully-integrated platform, which facilitates the business needs of a agency with mobile employees. On top of robust features such as Wireless Forms, Timekeeping, Job Dispatching, and GPS Tracking, customers with vehicles can leverage the solution\u2019s fleet components to monitor vehicle activities like stop times, idling, driver behavior, score cards, and telematics. \n\nThis intuitive, yet flexible solution addresses key market challenges such as ease of use, data collection, mobile resource management, implementation costs, and worker compliance and overall accountability. The synergy of tools in Workforce Manager for Gov brings agencies greater efficiency and productivity gains by automating and streamlining processes that help them save time, reduce labor costs, and lower vehicle-related expenses such as fuel and maintenance. Agencies benefit from an easily deployable solution that provides a significant return on investment.\n\nWorkforce Manager for Gov is equipped with enterprise-grade workforce management tools that are typically only found in high-priced business applications, making it affordable and accessible to all Government Agencies. This approach provides customers with a solution that delivers relevant information about daily field operations, helping agencies craft new business strategies to save both time and money.",
+  "business_functions": [
+   "Construction",
+   "Data Management",
+   "Fleet Management",
+   "Human Resources",
+   "Mobile Device Management (MDM)"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "5a8eb74a0b32b57c"
+ },
+ {
+  "fedramp_id": "FR2214150164",
+  "csp": "Quzara, LLC.",
+  "cso": "Quzara Cybertorch (SOC-as-a-Service)",
+  "status": "FedRAMP Authorized",
+  "impact_level": "High",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Cybertorch\u2122 is a FedRAMP High Authorized, cloud-native security platform specializing in Sovereign Security Operations and Incident Response for the federal mission. Built and operated by U.S.-based cleared personnel, Cybertorch combines telemetry from Microsoft security, vulnerability management, and infrastructure logs with AI-assisted analytics to unify threat detection, response, and continuous compliance support for mission-critical workloads across cloud, hybrid, and on-premises environments.\r\n\r\nCore Service Components\r\n\r\nManaged Security Services\r\n\r\n1.        Managed Extended Detection & Response (MXDR)\r\nProvides 24x7x365 monitoring, investigation, and response across cloud, hybrid, and on-premises workloads. MXDR is operated by cleared U.S. analysts and uses correlation, behavioral analytics, and AI-assisted triage to link Endpoint Detection and Response (EDR), identity, email, and cloud telemetry and rapidly identify and contain advanced threats.\r\n2.        Managed Microsoft Security Services\r\nEnd-to-end deployment, configuration, and 24x7 management of Microsoft security capabilities, including EDR and XDR, across Commercial, GCC, and GCC High tenants. Services include tuning, alert triage, incident handling support, and alignment with agency-specific security and compliance requirements, with AI-informed detections and policies incorporated where appropriate.\r\n3.        Managed Vulnerability Management\r\nExpert-driven vulnerability management services leveraging FedRAMP-authorized Tenable solutions. Cybertorch delivers Tenable-based high managed services, including scan strategy design, continuous assessments, AI-assisted risk scoring and prioritization, remediation guidance, and integration of vulnerability data into SOC workflows and executive reporting.\r\n4.        Curated Threat Intelligence\r\nActionable, curated threat intelligence sourced from government, commercial, and internal hunting activities. SOC analysts incorporate this intelligence into detections, investigations, and proactive threat hunting, using AI-supported enrichment and pattern analysis to track evolving campaigns, techniques, and sector-relevant threats.\r\nContinuous Assurance Module\r\n1.        The Continuous Assurance Module helps agencies maintain an ongoing picture of how security controls are performing in practice. It correlates alerts, vulnerability data, and configuration baselines with NIST-based control frameworks used for FISMA, FedRAMP, and CMMC. The AI-enabled module provides workflows to assist with updating RMF documentation, assembling supporting evidence, and tracking changes in residual risk over time. Its AI-assisted analysis approach, informed by our NISTcompliance.ai platform, is used to highlight trends, gaps, and control drift, adding automation and consistency while preserving existing governance, review, and approval processes.",
+  "business_functions": [
+   "Analytics",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Operations Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "c84e567bd3a2bf6e"
+ },
+ {
+  "fedramp_id": "FR2214346691",
+  "csp": "Secunetics, Inc.",
+  "cso": "Gobo Framework (Gobo)",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Gobo provides an intuitive, AI-enabled cognitive automation platform for analyzing complex datasets, applying intelligent logic, and automating workflows across IT infrastructure, services, and business processes. Through agentic web-based applications called I2Apps, Gobo streamlines engineering and operations tasks. Specialized I2Apps are designed for the federal market, addressing government-specific use cases such as AI chats grounded on enterprise knowledge, AI agents for expediting complex workflows, tracking compliance with federal IT mandates, managing General Services Administration (GSA) Enterprise Infrastructure Solutions (EIS) services, and much more. Gobo's capabilities include AI Chat with Enterprise Knowledge Base, SLA Management, CLIN Management, Invoice Management, Service Inventory Management, Topology Management, Service Monitoring, Configuration Management, Service Transition Management (e.g., IPv6), and Capacity Management.",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "be33f4f1e2234c7a"
+ },
+ {
+  "fedramp_id": "FR2215045786",
+  "csp": "Tenable",
+  "cso": "Tenable Cloud Security for US Government - Ermetic",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "Tenable Cloud Security is the actionable solution to cloud risk, rapidly exposing and closing priority security gaps caused by cloud misconfigurations, risky entitlements for users and services, vulnerabilities and overly-permissive access to confidential data. Tenable Cloud Security is a Cloud Native Application Protection Platform (CNAPP) solution that isolates and minimizes these risks at scale across infrastructure, workloads, identities and data in the cloud.",
+  "business_functions": [
+   "Cybersecurity & Risk Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "54dfc403084ad7ea"
+ },
+ {
+  "fedramp_id": "FR2215946050",
+  "csp": "MicroFocus",
+  "cso": "ITMX Platform featuring Service & Asset Management, Universal Discovery, CMDB and Project & Portfolio Management",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "OpenText provides the most complete and integrated Information Management platform, allowing companies to organize, integrate and protect data and content as it flows through business processes inside and outside the organization. The OpenText IT Management Platform (ITMX) offers Service & Asset Management (ITSM, ITAM), Universal Discovery & CMDB, and Project & Portfolio Management (PPM) in AWS GovCloud.\n\n- ITSM \u2013 Empower users with a modern self-service experience and boost IT efficiency with codeless configurations, built-in AI, and advanced automation.\n\n- ITAM \u2013 Govern your IT assets across their lifecycles. Procurement, financial, vendor, and contract management processes are included in one centralized platform.\n- Discovery and CMDB \u2013 Discover, map, and manage your hybrid IT configurations\u2014on cloud or off. Service dependency mapping and proactive impact analysis improve your IT visibility and reduce service disruptions.\n\n- PPM \u2013 Drive business value through comprehensive strategic portfolio management and investment optimization, while ensuring projects are on time, in budget and satisfy goals. A strong workflow engine and what-if analysis scenario planning power this strategic portfolio and project management tool.\n\nHosted in the FedRAMP compliant Amazon Web Services (AWS) cloud, these services are fully configurable and scalable, and the service include integrations, and updates to the latest release.",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "bf6262c87e38e674"
+ },
+ {
+  "fedramp_id": "FR2218073444",
+  "csp": "Lucid Software, Inc.",
+  "cso": "Lucid GovSuite",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Lucid Software provides visual collaboration products to support public sector teams from end to end as they ideate, plan, and execute mission-critical projects. Government agencies and contractors use Lucid GovSuite \u2014 which includes Lucidchart (intelligent diagramming) and Lucidspark (virtual whiteboard) \u2014 to drive efficiency, streamline processes, and accelerate speed to mission delivery. Lucid also offers accelerators for Agile, cloud, and process transformation that, when added to Lucid GovSuite, help organizations streamline workflows, foster alignment, and drive business transformation at scale.",
+  "business_functions": [
+   "Collaboration",
+   "Communication",
+   "Development Tools",
+   "Education & Training",
+   "Human Resources",
+   "Law Enforcement",
+   "Marketing & Sales",
+   "Network Management",
+   "Research",
+   "System Administration"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "320300c49265edd0"
+ },
+ {
+  "fedramp_id": "FR2219763604",
+  "csp": "Zscaler, Inc.",
+  "cso": "Zscaler Private Access - Government (Zero Trust Exchange - VPN Replacement)",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Zscaler Private AccessGov, part of the Zscaler Zero Trust Exchange, enables fast, secure connections and allows your employees to work from anywhere using the internet as the corporate network. Based on the zero-trust principle of least-privileged access, it provides comprehensive security using context-based identity and policy enforcement. Zero Trust Exchange helps agencies achieve the target goals of the Executive Order 14028 and resulting OMB mandates, CISA guidance and directives.\n\nZPA Gov security products are currently utilized by over 100 federal agencies and federal systems integrators today in Zscaler's US-based FedRAMP Moderate and FedRAMP JAB High approved boundaries in support of the Cybersecurity and Infrastructure Security Agency (CISA) Trusted Internet Connection (TIC) 3.0 use case model for FedRAMP approved Policy Enforcement Point (PEP) capabilities. \n\nTIC 3.0 Use Case Examples (Branch Office, Remote Users, and Cloud)\n\nZero-trust VPN alternative: Legacy VPNs fail to deliver the security, visibility, and user experience today's distributed workforce requires. ZPA delivers fast, direct access to private apps by eliminating VPN traffic backhauling which creates latency, resulting in lost productivity. \n\nSecure Hybrid Workforce:  Users require the ability to move fluidly between their homes, remote locations, branch offices, and headquarters. ZPA enables seamless and secure access to private apps from wherever they need to work, on any device. Local users benefit from an identical experience through an on-prem broker that replicate the policies and controls of the cloud. \n\nThird-party Agentless Access: Third-party agencies, contractors, and vendors require secure, direct access to business applications and OT systems from unmanaged devices. ZPA provides secure, direct connectivity from authorized users to named applications without putting third parties on the network. With integrated agentless access, users can access applications from any browser, on any device, without the need to install a client or log into a VPN.\n\nVDI alternative: Traditional VDIs are often slow, unresponsive, and introduce significant costs with racks of servers needed in the data center to support remote access needs. ZPA provides secure, direct connectivity to apps over RDP and SSH, enabling a faster, more secure experience for users. With built-in agentless access through the browser employees and third-party users get seamless secure connectivity from any device without complicated desktop provisioning processes.\n\nSecure workload-to-workload connectivity: Agencies require fast, secure workload-to-workload connectivity across hybrid and multi-cloud environments. ZPA for Workloads reduces operational complexity and cost by eliminating the need for virtual DMZs and VPN meshes with least-privileged access-based connectivity across clouds. In addition, because workloads are hidden behind ZPA, they are invisible to the internet and impossible to attack.\n\nZscaler will also provide our Zero Trust Exchange services at the FedRAMP Moderate level not only for federal agencies and service integrators, but state, local, education, and critical infrastructure as a fully authorized StateRAMP solution. \n\n\nZscaler, a Leader in the Gartner Magic Quadrant for Security Service Edge.",
+  "business_functions": [
+   "Cybersecurity & Risk Management",
+   "Legal & Policy",
+   "Network Management",
+   "Virtual Private Network (VPN)"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "9a019ae4de423739"
+ },
+ {
+  "fedramp_id": "FR2220549818",
+  "csp": "CirrusMD",
+  "cso": "CirrusMD Virtual Health Chat for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "CirrusMD Virtual Health Chat for Government increases access to Agency Care and is delivered as a SaaS offering using a multi-tenant Government Only Community cloud computing environment. The CirrusMD system provides a SaaS cloud-based service offering that is architected using best-of-breed security solutions, utilizing the government community deployment model, allowing for repeatable, secure, and elastic delivery of application services to the government user community. The system enables the government to meet its goals of agile computing, generating fiscal savings, and increasing utilization of federal IT platforms. The CirrusMD system is a government cloud-based service offering that is fully secure and complies with HIPAA and GDPR.\r\n\r\nCirrusMD owns and operates the CirrusMD Virtual Health Chat for Government information system within the SaaS cloud deployment model. The collection of events is within the trusted path of the environment and tailored for the Federal customer environment. The Federal customer does not manage or control the underlying SaaS cloud environment, including network, server, operating system, storage, or individual application capabilities, except for the connectivity between environments, which is all supported by the provider.",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "afb72eecebb2cf9f"
+ },
+ {
+  "fedramp_id": "FR2221161553",
+  "csp": "SecurityScorecard, LLC",
+  "cso": "SecurityScorecard Security Ratings",
+  "status": "FedRAMP Ready",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "SecurityScorecard Security Ratings monitors the security posture of millions of companies by calculating a risk score derived from publicly available data. Companies are assigned A-F ratings across risk factors including domain name system (DNS) health, internet protocol (IP) reputation, web application security, network security, leaked information, hacker chatter, endpoint security, and patching cadence. This data is provided to customers via the Security Ratings web application.\nCustomers use the Security Ratings web application to review security ratings and detailed security reports. Users access Security Ratings through a standard web browser and leverage identity federation for authentication. Within the application, users search for companies of interest and review security reports developed by SecurityScorecard. These ratings and reports allow customers to evaluate the cybersecurity risk for companies of interest using data-driven, objective, and continuously evolving metrics that provide visibility into information security control weaknesses as well as potential vulnerabilities throughout the supply chain ecosystem. Users can also create \"portfolios\" to group together companies of interest and easily compare vendors to help make procurement decisions, evaluate acquisition targets, conduct industry benchmarking, and more.\nAdditional capabilities and data points (collected from publicly available data sources) in the Security Ratings web application include:\n\u2022\tIP attribution to company domain(s)\n\u2022\tSecurity vulnerability monitoring by company and security factors\n\u2022\tSecurity risk benchmarking and scoring by company and industry\n\u2022\tAlerts for changes in risk scores\n\u2022\tExecutive and detailed company scorecard reports\n\u2022\tWorkflow for collaboration and remediation with monitored suppliers",
+  "business_functions": [
+   "Analytics",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Network Management",
+   "Operations Management",
+   "System Administration"
+  ],
+  "service_models": [
+   "PaaS",
+   "SaaS"
+  ],
+  "input_hash": "b273f79b8a2d34fb"
+ },
+ {
+  "fedramp_id": "FR2221456469",
+  "csp": "Bentley Systems, Incorporated",
+  "cso": "Bentley for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Bentley Systems is a provider of infrastructure engineering software. Bentley for Government software solutions enable efficient planning, design, construction, and operation of critical public infrastructure assets. Bentley is committed to ensuring infrastructure engineers working for U.S. government agencies and contractors have access to secure cloud-connected software solutions that meet federal standards for confidentiality, integrity, and availability.\r\n\r\n \r\n\r\nProjectWise, part of Bentley Infrastructure Cloud, is a collaborative information management solution empowering engineering firms, construction contractors, departments of transportation, and federal agencies to share data and streamline workflows across project phases for more efficient, safer, and faster infrastructure project delivery.\r\n\r\n \r\n\r\nOpenGround is a secure, cloud-based geotechnical information management solution for collecting, managing, analyzing, reporting and sharing geotechnical data. OpenGround offers secure, enterprise-grade geotechnical data management and reporting, trusted by engineering consultants, departments of transportation, and federal agencies to enable collaboration at every stage of the ground investigation lifecycle.",
+  "business_functions": [
+   "Collaboration",
+   "Construction",
+   "Data Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "9f70c14877c47a73"
+ },
+ {
+  "fedramp_id": "FR2222167230",
+  "csp": "OwnBackup",
+  "cso": "Own Government Cloud",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Own from Salesforce solutions help manage and protect mission-critical data in Salesforce. FedRAMP authorized products include:\r\n\r\n\r\n- Backup and Recover - Protect data and metadata with comprehensive, automated backups and rapid, stress-free recovery. \r\n\r\n\r\n- Data Mask and Seed - Propagate data to sandboxes for faster innovation and ideal environments to safely develop, test, and train. \r\n\r\n\r\n- Archive - Preserve data in archives with customizable retention policies and simplified compliance and reporting.\r\n\r\n\r\nBackup and Recover as well as Seed capabilities of Data Mask and Seed are available through the Own from Salesforce application. Archive functions occur through the Salesforce UI.",
+  "business_functions": [
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Development Tools",
+   "Storage"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "a5787191b2750d55"
+ },
+ {
+  "fedramp_id": "FR2224739070",
+  "csp": "National Resident Matching Program",
+  "cso": "iMatch",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Building on 70+ years of physician matching, the NRMP partners with U.S. government agencies to offer simple, equitable, and effective solutions for matching applicants to posts, stations, and government offices around the globe to effectively address recruitment and selection needs and drive outcomes for success.  Using our software-as-a-service application called iMatch, administrators can invite participants to take part in a \u201cmatch\u201d where we leverage our proprietary mathematical matching algorithm to prioritize the selection preferences of participants, placing them in the most preferred positions possible on their rank lists. Participants have access to real time Match information and obtain their Match results in the iMatch system. Additional Match Outcome Reports can inform workforce trends and guide growth and development.\n\nNRMP\u2019s iMatch system and matching services simplify selection processes, reduce bias, and encourage stable outcomes based on the principles of market design and the following pillars :\n\n**Accuracy:** NRMP\u2019s proprietary mathematical matching algorithm places participants based on preferences and creates the best possible outcome. Research on the algorithm was the basis for awarding the 2012 Nobel Prize in Economic Sciences.\n**Reliability:** NRMP creates a Match schedule to ensure on-time delivery of services with well published and communicated deadlines throughout the matching process. Our iMatch technology is state-of-the-art, highly secure, and confidential allowing Match participants to create their location selection preferences with piece-of-mind.\n**Integrity:** NRMP Matches foster a spirit of fairness because our services and matching processes are transparent, and all Match participants must adhere to the same rules and deadlines.\nAccepts and electronically verifies Personal Identity Verification (PIV) credentials\nRanking information submitted by a Match participant is visible only to individuals connected with the Match\nProvides a standardized process based on 70 years of matching expertise\nMatch outcome reports and statistics displayed at the conclusion of each matchFIPS 199 System Categorization - Moderate \u200b\nService Model - SaaS \u200b\nDeployment Model - Community \u200b\nCloud Stack / Leveraged Systems\u200b - AWS GovCloud\nA system customizable to each Match sponsor\u2019s particular process:\n* Specific data fields displayed during participant registration\n* Branding with Agency logo alongside iMatch logo\n* Roles and responsibilities of users can be granted or removed specific to their job duties\n* Multi-tiered levels of access\n* Email reminders and confirmations with content relevant and detailed to each Match and Agency",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "9e348583f822f9e9"
+ },
+ {
+  "fedramp_id": "FR2224752400",
+  "csp": "Privoro LLC",
+  "cso": "Privoro Fulcrum Cloud",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "The Privoro Fulcrum Cloud (PFC) supports the use of and enhances the security of mobile devices in the Federal Government. Specifically, the PFC provides management and monitoring services for Privoro SafeCases (SC), which are out of boundary mobile security products that communicate to the PFC via the in boundary Privoro Mobile App (Privoro App) available for both iOS and Android. PFC and SafeCases support use cases such as mobile phone usage in Secure Spaces, mobile Signature Management and mobile Secure Comms.",
+  "business_functions": [
+   "Cybersecurity & Risk Management",
+   "Mobile Device Management (MDM)"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "da9686e534ff5c6b"
+ },
+ {
+  "fedramp_id": "FR2225648574",
+  "csp": "Mathematica Inc.",
+  "cso": "Mathematica Cloud Support System",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "The Mathematica Cloud Support System (MCSS) is a general support system (GSS) that provides Mathematica with a centralized place to scale enterprise features and enforce policy across projects that require IT presence in the cloud. The MCSS is a management and compliance console and does not produce, store, or transmit federal information. The centralized and preconfigured services offered by the MCSS include authorization, network connectivity, common security services, usage information, and governance/compliance functions. These services are ingested by application teams instantiating their information system and related components outside of the MCSS authorization boundary, leveraging the management and compliance support services from the MCSS.",
+  "business_functions": [
+   "Operations Management",
+   "System Administration"
+  ],
+  "service_models": [
+   "PaaS",
+   "SaaS"
+  ],
+  "input_hash": "7c69e454eec4639e"
+ },
+ {
+  "fedramp_id": "FR2226144516",
+  "csp": "MARi, LLC",
+  "cso": "MARi",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "MARi is an enterprise-wide, cloud-based, AI-driven Career Intelligence platform for academic and workplace skills. MARi can consume large sets of heterogeneous data and longitudinally track a person's knowledge, skills, and abilities throughout their entire life.  \n\nUsing real-time predictive and prescriptive analytics, MARi can match a person with any job or skill, show them the gaps they need to fill to reach their goals, and make recommendations on how to close those gaps. We call this, \u201dmatch-gap-recommend.\u201d\n\nAn intelligent \u201cwhole-person\u201d skill repository allows MARi to apply predictive and prescriptive algorithms for both individuals and teams. This enables real-time and over-time proficiency visualizations for both current and future jobs/tasks.\n\nMARi is a versatile platform that supports many learning, training, and career management  functions:\n\n\u2022\tLearning Record Store (LRS)\n\u2022\tLearning Management System (LMS)\n\u2022\tLearning Analytics\n\u2022\tAssessment Engine\n\u2022\tCompetency Tracking\n\u2022\tCareer Pathways\n\u2022\tAI/ML-based Knowledge Repository for Multimedia Knowledge Objects (KOs)",
+  "business_functions": [
+   "Analytics",
+   "Data Management",
+   "Education & Training",
+   "Human Resources"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "6b659ee8514cd987"
+ },
+ {
+  "fedramp_id": "FR2226146186",
+  "csp": "Agile Fleet",
+  "cso": "FleetCommander",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Low",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "FleetCommander is a robust, customizable Fleet Management Information System (FMIS). \nThe platform offers seamless vehicle reservation capabilities, along with tools to analyze and forecast fleet demand and capacity. It also streamlines data collection for odometer readings, driver credentials, check-in and check-out activity, and more. With intuitive reporting and analytics features, FleetCommander provides the visibility and control needed to optimize fleet utilization, enhance compliance, and support data-driven decision-making.",
+  "business_functions": [
+   "Fleet Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "f1a8c30cadaa9f0d"
+ },
+ {
+  "fedramp_id": "FR2226228379",
+  "csp": "Trend Micro Inc.",
+  "cso": "Trend Cloud One for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "Trend Micro offers the leading cybersecurity solution to protect endpoints, servers, and cloud workloads. Deploy security across your endpoints and physical, virtual, and multi-cloud environments to gain unified visibility, management, detection and prevention with Trend Cloud One for Government. \n\nNative integrated endpoint and server detection and response (EDR/XDR) sensors allow for quicker detection of complex attacks that bypass prevention. This provides an unmatched understanding of the activity data in your environment and a balanced approach to security, as teams can quickly see the story of an attack and respond faster and more confidently. \n\nThe platform's real-time prevention and detection capabilities (application control, anti-malware, behavioral analysis, machine learning, EDR, intrusion prevention (IPS), firewall, integrity monitoring, and log inspection) are managed via a single lightweight FIPS enabled agent. This agent is deployed on FIPS supported Operating systems for Windows and Linux  on the endpoint, server, or VM being protected. Combined with a rich set of application programming interfaces (APIs), Trend Micro Cloud One for Government allows you to automate security and reduce impact on your teams.\n\nTrend Micro Is trusted by 9 out of the top 10 Fortune 500 companies, blocks over 94 billion threats per year, analyzes over 100 TB of threat information per day and processes over 2.5 trillion events per day. We are cyber security experts.",
+  "business_functions": [
+   "Cybersecurity & Risk Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "72d7d811fef52959"
+ },
+ {
+  "fedramp_id": "FR2226231529",
+  "csp": "Trend Micro Inc.",
+  "cso": "Trend Vision One for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Trend Vision One for Government is a modern security operations platform that enables organizations to detect, investigate, prioritize, and respond to threats faster.  \n \nWith built-in security analytics and threat intelligence, Trend Vision One correlates data across multiple security layers from native sensors and third-party data sources to help security teams quickly see the full story of an attack and respond faster and more confidently. \n \nTrend Vision One - Endpoint Sensor serves the EDR use case, while delivering a solution path to a broader XDR (extended detection and response) strategy covering additional attack vectors, including servers and cloud workloads.\n \nBuilt for the SOC analyst, CISO, and threat hunter, this platform leverages AI and predictive machine learning to arm defenders with earlier threat detection and automated response options that make a difference. The visibility and efficiency provided by Trend Vision One makes great security teams even better, enabling them to do more with less.  \n \nTrend Micro is trusted by 9 out of the top 10 Fortune 500 companies, blocks over 94 billion threats per year, analyzes over 100 TB of threat information per day and processes over 2.5 trillion events per day. We are cyber security experts.",
+  "business_functions": [
+   "Cybersecurity & Risk Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "a6c86e83e317d645"
+ },
+ {
+  "fedramp_id": "FR2226322745",
+  "csp": "Autodesk",
+  "cso": "Autodesk for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Autodesk for Government is a SaaS offering hosted in a multi-tenant cloud computing environment. It includes two specialized solutions for Architecture, Engineering, and Construction (AEC) projects: Autodesk Docs for Government and Autodesk BIM Collaborate Pro for Government. These solutions are available to federal, state, local, and tribal governments, government contractors, U.S. Public Education, Federally Funded Research Development Centers, and Department of Homeland Security PPD-21 Critical Infrastructure entities, addressing shared concerns about compliance and security. \r\n\r\nAutodesk Docs for Government is built on top of Autodesk Platform Services (APS) and provides document storage, management, and file sharing; model viewing; and communication among and across teams. Autodesk Docs for Government simplifies collaboration and data management from design to construction and streamlines document review and approval workflows. Access to APS APIs is also available with this offering. \r\n\r\nAutodesk BIM Collaborate Pro for Government includes Autodesk Docs for Government capabilities, except for API access, in addition to powerful co-authoring and design collaboration tools through two key modules: Revit Cloud Worksharing (RCW) and Design Collaboration. Teams can co-author cloud models, centralize all project design data, and improve collaboration. The Design Collaboration module includes issues tracking, design timelines, and design packages.",
+  "business_functions": [
+   "Collaboration",
+   "Construction",
+   "Data Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "335625be84fad7ba"
+ },
+ {
+  "fedramp_id": "FR2227062482",
+  "csp": "Zscaler, Inc.",
+  "cso": "Zscaler Internet Access - Government (Secure Web Gateway - vTIC) - High",
+  "status": "FedRAMP Authorized",
+  "impact_level": "High",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Zscaler Internet Access Gov, part of the Zscaler Zero Trust Exchange, defines safe, fast internet and SaaS access with the industry's most comprehensive cloud native security service edge (SSE) platform.  Zscaler's Zero Trust Exchange helps agencies achieve the target goals of the Executive Order 14028 and resulting OMB mandates, CISA guidance and directives.\n\nZIA Gov security products are currently utilized by over 100 federal agencies and federal systems integrators today in Zscaler's US-based FedRAMP Moderate and FedRAMP JAB High approved boundaries in support of the Cybersecurity and Infrastructure Security Agency (CISA) Trusted Internet Connection (TIC) 3.0 use case model for FedRAMP approved Policy Enforcement Point (PEP) capabilities. \n\nDelivered as a scalable SaaS platform from the world's largest security cloud, ZIA eliminates legacy network security solutions to stop advanced attacks and prevent data loss with a comprehensive zero trust TIC 3.0 compliant approach, fully supporting the CISA approved Branch Office, Remote Users, and Cloud use cases with:\n\nBest-in-class, consistent security for today's hybrid workforce: When you move security to the cloud, all users, apps, devices, and locations get always-on threat protection based on identity and context. Your security policy goes everywhere your users go.\nSecure cloud-based telework solution: Migrate to a cloud-first, cloud-secure Trusted Internet Connections (TIC) 3.0 zero-trust architecture that can accelerate cloud migration, enhance user productivity, and improve support for cloud applications.\n\nLightning-fast access with zero infrastructure: Direct-to-cloud architecture ensures a fast, seamless user experience. This eliminates backhauling, improves performance and user experience, and simplifies network administration - with no physical infrastructure, ever.\n\nAI-powered protection from the world's largest security cloud: Inline inspection of all internet and SaaS traffic, including SSL decryption, with a suite of AI-powered cloud security services to stop ransomware, phishing, zero-day malware, and advanced attacks based on threat intelligence from 300 trillion daily signals.\n\nSimplified management: Using a cloud native security solution infused with AI, streamlined workflows, and business focused policy creation frees up valuable time for your team to focus on strategic goals.\n\nZscaler Internet Access includes a comprehensive suite of AI-powered security and data protection services to help you stop cyberattacks and data loss. As a fully cloud-delivered SaaS solution, you can add new capabilities without any additional hardware or lengthy deployment cycles. The modules available as part of Zscaler Internet Access are:\n- Cloud Secure Web Gateway (SWG)\n- Cloud Access Security Broker (CASB)\n- Cloud Data Loss Prevention (DLP)\n- Cloud Firewall & IPS\n- Cloud Sandbox\n- Digital Experience Monitoring (ZDX) \n\nZscaler will also provide our Zero Trust Exchange services at the FedRAMP Moderate level not only for federal agencies and service integrators, but state, local, education, and critical infrastructure as a fully authorized StateRAMP solution. \n\nAll Zscaler's FedRAMP platforms are fully managed and supported by US Citizens and meet the ITAR, CJIS, and DFARS requirements and attestations. \n\nZscaler, a Leader in the Gartner Magic Quadrant for Security Service Edge.",
+  "business_functions": [
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Legal & Policy",
+   "Network Management",
+   "Operations Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "87a290acf52d9836"
+ },
+ {
+  "fedramp_id": "FR2229642430",
+  "csp": "Lumen",
+  "cso": "Cloud Contact Center",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "Lumen Cloud Contact Center provides enterprise-grade contact center services in a secure cloud-based Contact Center-as-a-Service (CCaaS) solution with a predictable operational expense (OpEx) consumption model. The Lumen Cloud Contact Center solution is designed to meet the unique needs of federal agencies, combining a customizable feature set with deep industry expertise and proven best practices, in a turnkey cloud contact center. The Lumen Cloud Contact Center solution unifies customer and agent interactions across channels, delivering a dynamic, personalized digital experience with real-time engagement, cloud-grade reliability, and ability to scale, with over two decades of demonstrated capability handling large, complex call volumes. Features include: Automatic Call Distribution, Interactive Voice Response, Call Recording, Multi-Channel, Workforce Management, Offline Hold, Callback, Analytics, Customizable Real-time and Historical Reporting, Multi-Site Routing, Administration Portals.",
+  "business_functions": [
+   "Collaboration",
+   "Communication",
+   "Contact Center",
+   "Customer Relations Management (CRM)",
+   "Customer Service"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "3cd87cec6e3020eb"
+ },
+ {
+  "fedramp_id": "FR2230244107",
+  "csp": "Illumio, Inc.",
+  "cso": "Illumio Government Cloud",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Illumio Government Cloud delivers Zero Trust Segmentation, including microsegmentation, across multi-cloud and data center workloads and endpoints for government agencies and departments. This offering includes Illumio Core and Illumio Endpoint.  \n\nIllumio Core provides Zero Trust Segmentation for cloud and data center workloads. Illumio Core stops ransomware and cyberattacks from spreading by delivering intelligent visibility, radically simple label-based policy creation,\n and automated segmentation and enforcement. \n\nKey features: \n\n- Gain real-time visibility into traffic flows, application dependencies, and connectivity across all agent and agentless workloads, including containers, IoT, and virtual machines. \n- Simplify policy generation and automate enforcement to support Zero Trust initiatives with segmentation in minutes. \n- Stop the spread of ransomware and contain cyberattacks by preventing lateral movement \u2014 regardless of architecture, size, or complexity. \n \n\nIllumio Endpoint extends Zero Trust Segmentation to endpoint devices. Illumio Endpoint is flexible enough to handle dynamic work-from-home settings without impacting endpoint performance. It also prevents unnecessary communication from end-user devices to other endpoints or the data center to further reduce your attack surface. \n\nKey features:  \n\n- Apply dynamic segmentation policies based on context, automatically changing if the device moves from the corporate environment to being on the go or at home. \n- Prevent the spread of ransomware between endpoints by blocking all but necessary communication among laptops, VDIs and workstations. \n- Gain complete visibility and control of both endpoints and server workloads in one single map. \n\n\nIllumio Government Cloud is an easy, fast, and proven Zero Trust Segmentation solution that uses a lightweight agent known as the Virtual Enforcement Node (VEN). The VEN is a local component of Illumio Government Cloud and is installed on each workload within a customer\u2019s environment. It provides workload information and enforces policy rules by managing Linux iptables or Windows Filtering Platform (WFP) policies. The VEN is included in the Illumio Government Cloud FedRAMP package.",
+  "business_functions": [
+   "Cybersecurity & Risk Management",
+   "Legal & Policy",
+   "Network Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "eb8d1f5c11652502"
+ },
+ {
+  "fedramp_id": "FR2230252267",
+  "csp": "Slack Technologies",
+  "cso": "GovSlack",
+  "status": "FedRAMP Authorized",
+  "impact_level": "High",
+  "deployment_model": "Public Cloud",
+  "service_desc": "GovSlack is an instance of Slack created specifically for the purposes of handling high workloads for Government customers and highly regulated commercial sectors. Slack has transformed business communication. It's the leading channels-based messaging platform, used by millions to align their teams, unify their systems, and drive their business forward. Only Slack offers a secure, enterprise-grade environment that can scale with the largest companies in the world. It is a new layer of the business technology stack where people can work together more effectively, connect all their other software tools and services, and find information they need to do their best work. Slack is where work happens.",
+  "business_functions": [],
+  "service_models": [
+   "PaaS"
+  ],
+  "input_hash": "856e4d89c85d1b8b"
+ },
+ {
+  "fedramp_id": "FR2230451369",
+  "csp": "Snyk",
+  "cso": "Snyk for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "Snyk for Government (https://app.snykgov.io/) is a cloud driven, developer security platform that  scans code early in the software development lifecycle, providing developers with vulnerability information about their projects directly in the IDE and PR Checks, as well as providing actionable fix advice. Powered by an industry-leading security intelligence database, Snyk for Government analyzes code, open-source dependencies, containers, and IaC (Infrastructure as Code) to find, prioritize, and automatically fix vulnerabilities in projects. Snyk users can interact with the service via the Snyk for Government Web UI, the Snyk CLI, in the IDE, or with an API.\nSnyk for Government is hosted within AWS US East as the Cloud Service Provider (CSP) which assures product lines are maintained in a secure and trusted environment. Snyk for Government boundary includes the Production environment consisting of virtual compute, storage, databases, and internal management web applications.\nThe Snyk for Government environment is designed and operated based on security compliance and operations best practice by automating the build and operational processes as much as possible using Infrastructure as Code (IaC), CIS benchmarks, vulnerability scanning, continuous monitoring of critical security controls and a managed system development process to obtain initial and continuous FedRAMP Moderate Approval to Operate (ATO).",
+  "business_functions": [
+   "Cybersecurity & Risk Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "46033989f3cae566"
+ },
+ {
+  "fedramp_id": "FR2231052341",
+  "csp": "Qualys, Inc.",
+  "cso": "Qualys Government Platform",
+  "status": "FedRAMP Authorized",
+  "impact_level": "High",
+  "deployment_model": "Public Cloud",
+  "service_desc": "Qualys Government Platform (QGP) consists of a suite of Information Technology (IT) security and compliance solutions delivered via a SaaS deployment model that leverages a highly scalable multi-tenant cloud infrastructure. The below services are part of the QGP platform - Vulnerability Management, Detection, and Response (VMDR) service enables customers to discover, assess, prioritize, and patch critical vulnerabilities and misconfigurations in near real-time and across your global hybrid-IT landscape all-in-one subscription. Policy Compliance (PC) service provides the ability to run compliance scans and create compliance reports on hosts (IP addresses) that have been added to the Policy Compliance account. File Integrity Monitoring (FIM) service enables monitoring critical files, directories, and registry paths for changes in near real-time, and helps adhere to compliance mandates such as FedRAMP. Container Security (CS) service provides discovery, tracking, and continuously protecting container environments. Addresses vulnerability management for images and containers in their DevOps pipeline and deployments across cloud and on-premises environments. Certificate View (CertView) service provides a comprehensive view of all the SSL/TLS certificates across the enterprise and cloud-hosted assets. CyberSecurity Asset Management (CSAM) service continuously gathers information on all assets, listing systems and hardware details, running services, open ports, installed software and user accounts. Asset discovery and inventory collection is done through a combination of Qualys Sensors, which together can collect comprehensive data from across on-premises or cloud infrastructure as well as remote endpoints. Web Application Scanning (WAS) service enables organisation's to assess, track and remediate web application vulnerabilities to keep their web applications secure. Patch Management (PM) service is used to patch and apply post-patch configuration changes to operating systems, mobile devices, and 3rd-party applications from a large variety of vendors, all from a central dashboard.",
+  "business_functions": [
+   "Cybersecurity & Risk Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "e83e297df19e2dc2"
+ },
+ {
+  "fedramp_id": "FR2231070252",
+  "csp": "BeyondTrust",
+  "cso": "BeyondTrust Identity Security For Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "BeyondTrust delivers identity security solutions designed for U.S. government agencies through a unified ecosystem that consolidates controls, shares intelligence, and enforces Zero Trust across human, machine, and AI identities. All solutions are FedRAMP-authorized and hosted in a secure government cloud, supporting federal, state, local, and tribal organizations.\r\n-Zero Trust Privileged Access Management for Government: The solution enforces zero trust principles by providing essential identity security and control over remote connections, eliminating the need for traditional VPNs, and protecting common Paths to Privilege that attackers exploit. Provides secure, just-in-time access across cloud, on-premises, and OT environments. Enforces identity verification and privilege control, replacing VPNs while reducing common attack paths.\r\n-Remote Support for Government: Enables secure, auditable access for IT teams. Eliminates the need for traditional VPNs and standing privileges, ensuring access is granted only when necessary and under strict monitoring. With session logging including full video, audit reports contain granular details and metadata to ensure compliance is met.\r\n-Identity Security Insights for Government: Continuously assess and maps human, machine, and AI identities, detects privilege risks, and provides prescriptive recommendations to reduce risk. Aligns findings to MITRE ATT&CK and integrates with incident response workflows.\r\nPathfinder Platform\r\nPathfinder integrates these solutions, delivering shared visibility, coordinated response, and continuous Zero Trust enforcement.\r\nMission Benefits\r\nAgencies can enforce least privilege and just-in-time access, eliminate unnecessary escalation paths, reduce exposure from over-privileged accounts, and meet Zero Trust and FedRAMP compliance requirements while securing mission-critical operations.",
+  "business_functions": [
+   "Contact Center",
+   "Customer Service",
+   "Cybersecurity & Risk Management",
+   "Fleet Management",
+   "Mobile Device Management (MDM)",
+   "Network Management",
+   "Operations Management",
+   "System Administration",
+   "Virtual Private Network (VPN)"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "804967edc2e067b6"
+ },
+ {
+  "fedramp_id": "FR2231561929",
+  "csp": "Siemens Government Technologies",
+  "cso": "Mendix Cloud for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Mendix Cloud for Government offers a no-code and low-code development platform-as-a-service (PaaS) that allows accelerated development of software-as-a-service (SaaS)-based, enterprise-grade applications. This accelerated development allows for rapid application delivery across an entire application development lifecycle, from ideation to deployment and operations. \n\nThe Mendix platform consists of a front-end development tool, Mendix Studio Pro, and back-end infrastructure to support the deployment of developed applications. Mendix enables customers to implement both Agile and DevOps best practices and involves business stakeholders closely in the development of applications to ensure suitability of the solution.",
+  "business_functions": [
+   "Collaboration",
+   "Data Management",
+   "Development Tools",
+   "Education & Training",
+   "Finance",
+   "Fleet Management",
+   "Health & Wellness",
+   "Human Resources",
+   "Law Enforcement",
+   "Legal & Policy"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "8c3de40bc574f05b"
+ },
+ {
+  "fedramp_id": "FR2231648178",
+  "csp": "Onspring Technologies, LLC",
+  "cso": "Onspring GovCloud",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "Onspring GovCloud is a FedRAMP-authorized, cloud-based platform designed to support government governance, risk management, and compliance programs. It helps agencies centralize and structure data, enforce data integrity and access controls, manage workflows and deliver real-time reporting across critical processes.\r\n\r\nAgencies use Onspring GovCloud to support programs such as OMB A-123, POA&M, and other GRC initiatives, as well as related operational processes. The platform enables agencies to configure and extend out-of-the-box solutions while accommodating agency-specific requirements without added complexity.\r\n\r\nOnspring GovCloud also includes AI-powered capabilities that help teams accelerate documentation, improve consistency, surface insights, and reduce manual effort, while maintaining appropriate controls, transparency, and human oversight.",
+  "business_functions": [
+   "Analytics",
+   "Collaboration",
+   "Content Management System (CMS)",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Governance, Risk, and Compliance (GRC)",
+   "Human Resources",
+   "Legal & Policy",
+   "Operations Management",
+   "Storage"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "e6bad601454b34f6"
+ },
+ {
+  "fedramp_id": "FR2234256499",
+  "csp": "Rubrik",
+  "cso": "Rubrik Security Cloud - Government (RSC-G)",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Rubrik Security Cloud Government (RSC-G) is a cyber resilience and data security platform designed for federal, state, and local governments, and educational institutions to secure data across enterprise, cloud, and SaaS applications. The service is hosted in a dedicated, U.S. based sovereign cloud instance and is built on Zero Trust Data Security principles. The platform utilizes a purpose built file system that is inherently immutable, safeguarding data integrity and availability through air gapped and access controlled backups.\n\nThe platform integrates data protection with advanced cybersecurity capabilities, allowing agencies to proactively reduce risk by identifying sensitive data exposure and detecting anomalous activity via machine learning engines. RSC-G provides centralized management for data residing in on premises data centers, cloud environments, and SaaS applications through automated discovery and policy driven protection.\n\nIn the event of a cyberattack, RSC-G enables rapid mission continuity by providing automated threat containment and surgical recovery of affected applications and data. These capabilities are designed to eliminate the risk of malware reinfection during the restoration process. The service includes specialized tools to protect large scale unstructured data sets and the restoration of identity provider objects, ensuring the integrity of the identity control plane and overall operational continuity.\n\n\nAvailable services as part of Rubrik Security Cloud - Government\nData Protection & Backup Services\n\u25cf        Virtualization: VMware vSphere, VMware Cloud Director (VCD), Microsoft Hyper-V, Nutanix AHV, Proxmox\n\u25cf        Containers: K8s / KubeVirt, OpenShift / OpenShift Virtualization\n\u25cf        Databases: Microsoft SQL Server, Oracle Database, SAP HANA, PostgreSQL, MySQL, MongoDB, IBM DB2\n\u25cf        Operating Systems: Linux (RHEL, CentOS, Ubuntu), Microsoft Windows Server\n\u25cf        Unstructured Data: NAS (NFS/SMB), Managed File Shares\nData Security & Recovery Operations\n\u25cf        Threat Monitoring: Anomaly Detection and Ransomware Investigation\n\u25cf        Sensitive Data Discovery: Data Classification and Exposure Analysis\n\u25cf        Orchestrated Recovery: Blueprint based recovery for complex application stacks\nCloud and SaaS Resilience Services\n\u25cf        Cloud Native Workloads: Amazon EC2, Amazon EBS, Amazon RDS, Amazon S3, Azure VM, Azure SQL, Azure Blob, GCP VM & Volumes\n\u25cf        SaaS Platforms: Data protection for Salesforce and Microsoft 365 (Exchange, OneDrive, SharePoint, Teams)\nEnhanced Resilience and Archival Services\n\u25cf        Rubrik Cloud Vault: Provides a managed, isolated cloud repository for offsite data storage and logical air gapping.\n\u25cf        Identity Recovery: Provides backup and point in time restoration for Microsoft Active Directory and Microsoft EntraID objects to maintain the integrity of identity and access management systems.",
+  "business_functions": [
+   "Analytics",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Storage"
+  ],
+  "service_models": [
+   "PaaS"
+  ],
+  "input_hash": "aee62263d33a85c6"
+ },
+ {
+  "fedramp_id": "FR2234334891",
+  "csp": "Glassbeam, Inc.",
+  "cso": "Glassbeam Clinsights",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Glassbeam\u2019s Clinsights\u2122 solutions transform healthcare operations through actionable insights. The patented cloud-based platforms are designed to transform and analyze multi-structured data, leveraging Artificial Intelligence (AI) to enhance Healthcare performance and efficiency.",
+  "business_functions": [
+   "Analytics",
+   "Data Management",
+   "Health & Wellness",
+   "Operations Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "e9bd1801a8395ceb"
+ },
+ {
+  "fedramp_id": "FR2234550858",
+  "csp": "Concur Technologies, Inc.",
+  "cso": "Concur Cloud for Public Sector",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of travel and spend management solutions. SAP Concur U.S. soil requirements do not necessarily extend to external services leveraged by CCPS. Customers can be federal, state, local, tribal, territorial, federally funded research centers (FFRDCs), contractors working on behalf of the government, or lab entities. Concur Cloud for Public Sector provides a comprehensive environment that accommodates the complex processes of government travel and expense. Users are able to access the Federal Travel Regulation (FTR)- and Joint Travel Regulation (JTR)-compliant Concur Cloud applications via standard web browsers or on a smartphone with our SAP Concur mobile app. CCPS brings commercial functionality and scalability to government agencies while still meeting government-mandated security and regulatory needs. \n\nConcur Travel and Expense (CTE): Includes a web application portal to communicate with system users and provide access to all services. The web application gives users the ability to facilitate travel booking services, change travel reservations, and authorize travel. From vouchering services to documenting trip approvals and expense reimbursements, the web application provides accurate accounting information to government systems in compliance with the Federal Travel Regulation (FTR) and the Joint Travel Regulation (JTR). Users access applications within CCPS by using standard web browsers via a URL or by using SAP Concur mobile applications for supported smart phone and tablet computer platforms. All data collected by Concur applications is made available to customers via reporting enabled by the Cognos reporting tool that provides reports and the ability to create and/or manage new reports.\n\nConcurGov: SAP Concur's travel and expense solution provided to U.S. Federal Civilian customers under the ETS2 contract. ConcurGov includes services that are not included with CTE, such as GovPay, within the CCPS CSO.\n\nGlobal Distribution Systems (GDSs): Travel content aggregators that sell content on behalf of airlines, hotels, rail, and rental car companies. Many organizations that provide travel services sell their content only through one or more GDS.\n\nDirect Connect Providers: Travel providers (airlines, hotels, rail, and rental car companies) that do not use GDSs but instead sell their travel content directly.\n\nTravel Management Companies (TMCs): Travel management companies that book travel on behalf of agency users, provide reservation fulfillment, reporting, and mid- and back-office systems as part of the entire end-to-end travel reservation process.\nE-Receipt Providers: Travel providers (airlines, hotels, rail, and rental car companies) that electronically transmit electronic receipts to SAP Concur for inclusion in travel voucher requests.\n\nThe following SAP Concur products and services are available in CCPS: \n\u2022        Advanced Care\n\u2022        Budget\n\u2022        Central Reconciliation\n\u2022        Client Web Services\n\u2022        Company Bill Statements\n\u2022        Consultative Intelligence\n\u2022        Custom Connector \u2013 Expense\n\u2022        Data Delivery Services (DDS)\n\u2022        Detect by Oversight\n\u2022        Concur Travel & Expense\n\u2022        Concur Travel only (Direct)\n\u2022        ConcurGov\n\u2022        Concur Expense only\n\u2022        Data Extract Service\n\u2022        Essential Care\n\u2022        ExpenseIt\n\u2022        Extract Services\n\u2022        Intelligent Audit\n\u2022        Intelligence\n\u2022        Production Sandbox Environment\n\u2022        Concur Request\n\u2022        SAP Integration\n\u2022        Select Care\n\u2022        TripLink\n\u2022        User Support Desk for Public Sector\n\u2022        Verify",
+  "business_functions": [
+   "Accounting",
+   "Finance",
+   "Travel Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "020116721532ce44"
+ },
+ {
+  "fedramp_id": "FR2234963115",
+  "csp": "NCR Government, LLC",
+  "cso": "NCR VOYIX GOVERNMENT CLOUD",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "NCR VOYIX Government Cloud is a GCP native API\u2013first cloud driven environment, which hosts and manages NCR\u2019s Various Commerce Solutions such as, Advanced Marketing Solution (AMS), Freshop applications and BSL Open API services. These Offerings provide Government Agencies with Commerce Point-of-Sale Systems (such as Emerald, Aloha, RPOS, non-NCR POS, etc.) and Applications to facilitate both in-store and above-store grocery, gas, loyalty, and/or food ordering transactions. Additionally, BSL Open APIs, provide common interfaces for customers and 3rd parties to more easily enable their applications and services within the customer\u2019s ecosystem.",
+  "business_functions": [
+   "Customer Service",
+   "Data Management",
+   "Marketing & Sales",
+   "Operations Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "74cb1b01f4885d3d"
+ },
+ {
+  "fedramp_id": "FR2235154356",
+  "csp": "Lastwall Corp",
+  "cso": "IDCommand",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "IDCommand\u2122 by Lastwall is a mission-ready Identity Platform purpose-built for the unique demands of U.S. government and defense environments.\r\nAt its core, IDCommand delivers secure, seamless access enabling a Zero Trust architecture - allowing agencies to modernize their authentication without compromising on compliance, control, or security posture.\r\n\r\nIDCommand supports the identity standards federal agencies trust - including SAML 2.0, OIDC, PIV/CAC, and FIDO2/WebAuthn - for strong, passwordless login experiences that eliminate credential vulnerabilities and streamline secure access. Whether you're operating in government, national security, or critical infrastructure, IDCommand makes it easy to implement Public Key Infrastructure (PKI) by design - so secure identity can be deployed quickly and confidently at scale.\r\n\r\nOur adaptive access engine continuously assesses risk in real time - factoring in device posture, patch levels, geographic context, and other environmental signals to deliver intelligent, policy-driven access decisions. These capabilities support alignment with key federal frameworks such as NIST SP 800-53 Rev.5 (Security and Privacy Controls for Information Systems and Organizations), NIST SP 800-63 (Digital Identity) and NIST SP 800-207 (Zero Trust architecture).\r\n\r\nEngineered for high-security domains, IDCommand integrates seamlessly into existing architectures - empowering federal teams to deploy modern identity controls that prioritize mission continuity, not complexity.",
+  "business_functions": [
+   "Cybersecurity & Risk Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "3e9978221457b284"
+ },
+ {
+  "fedramp_id": "FR2235229299",
+  "csp": "Paperless Innovations, Inc.",
+  "cso": "Actus",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Public Cloud",
+  "service_desc": "Paperless Innovations, with our Actus solution, has repositioned GPC utilization and funds management processes as a government-wide shared service under the auspices of Treasury Management available on the FM QSMO Marketplace. Actus is eligible for direct award under pre-competed terms on GSA MAS contract # 47QTCA24D002X utilizing SIN 518210FM (Financial Management) and 54151ECOM (Ecommerce). Our end-to-end (E2E) process optimizations are inclusive of requisitions, obligations, order and transaction processing, settlements, close-out of commitments, records management, and audit. \n\nAgencies benefit operationally by adopting FedRAMP secured Cloud-based Government Purchase Card (GPC) processes supporting accurate and timely close-outs of commitments in their preferred financial system. Paperless Innovations, Inc. is committed to enabling GPC spend under management to improve the efficiency and accuracy of government purchase card programs as a compliant financial instrument on par with all Treasury disbursements. \nActus eliminates improper payments in the GPC Program utilizing secure, best of breed practices including RPA workflow automations, intelligent digital document authentication with data validation on required forms and attachments, providing financial accuracy and reliability with real-time status of funds, automated reconciliation, and inherent internal controls enforcement.\n\nActus is currently in daily use by thousands of government cardholders and Approving Officials with implementations including end-to-end regulatory and compliance automation for Purchase Card Program Management, cardholders, and associated approvers, requestors, financial managers, and auditors.\n\nAs directed in OMB Memorandum A-123, Appendix B, Risk Management Guidelines for Government Purchase Card Programs, Agencies should seek cloud automation solutions enabling GPC financial management, internal controls, and prevention of improper payments in avoidance of fraud, waste, and abuse. The OMB guidance is based on 3 pillars of operational excellence: Accountability, Compliance, and Transparency.\n\n- Accountability - Actus helps agencies paint a complete and total picture of each expense, eliminating guesswork, human error, and manual data entry tracking. Workflow automations ensure all Agency policies supporting separation of duties, improper payments reduction, and avoidance of split purchases are inherently enforced.\n\n- Compliance - Simplified, structured data is at the heart of compliance automation ensuring adherence to Agency policies and acquisition regulations. The Actus solution streamlines and automates oversight processes while maintaining rich transactional records for instant audit reporting. Actus furthers the regulatory mission of each agency with intelligent digital document processing using AI for records authentication, validation, retention, and disposal of purchase records presented as supporting documentation by cardholders. Adoption of Actus itself satisfies and supplements Federal paperless mandate compliance as well as DATA Act, IPERA, IPERIA, Public Law 115 The Evidence Act, M-19-16 Shared Services, A-11 Preparation, Submission, and Execution of the Budget, and more.\n\n- Transparency - Actus enables real time visibility over the status of funds in Government Purchase Card Programs, enabling Agencies to maximize GPC purchasing efficiency throughout the entire federal fiscal year. Actus presents role-specific dashboards enabling full visualization of all workflow processes, transactional data, and documents on a need-to-know, right-to-know basis. Audit automation occurs with every upload of bank transactions without requiring manual packet creation by cardholders and enables inspection of every detail of each purchase made within a selected time frame in a unified, streamlined format.\nActus elevates GPC financial management to the level of any other public funds obligation, supports accounting with financial system integration, enables informed budgeting with detailed item level transaction data, configures and customizes instant reporting, and unlocks actionable data for analytics, records examination, and transactions investigation. Actus increases Agency confidence to maximize refunds with daily bill pay and enables the use of purchase cards up through $25,000 in coordination with blanket purchases and standing orders.\n\nP-Card Compliance Automation Features:\n- Custom Approval Workflows\n- Financial Data Capture\n- Full Lifecycle Spend Tracking\n- Cloud Storage of Reconciliation Packets\n- Dashboard Visualization of data & documents\n- Automated Reconciliation Statements\n- Structured Item Level (Level 3) Data\n- Merchant Class Code Tracking\n- Suspicious Pattern & Activity Detection\n- Alerts for Each Stage of Transaction\n- Transactional Keyword Search\n- Bank Statement Transaction Matching\n- Auto-Matched Transactions\n- Travel Expense Tracking and Management\n- Daily, Weekly, or Monthly Reconciliation\n- PIV/CAC authentication\n- Simplified documentation in support of G-Invoicing\n- Live Agent Contact Center and Customer Services\n- Actus web app runs on all modern browsers",
+  "business_functions": [
+   "Accounting",
+   "Collaboration",
+   "Data Management",
+   "Finance",
+   "Operations Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "22d64cb4ebc079b4"
+ },
+ {
+  "fedramp_id": "FR2235965777",
+  "csp": "Mark43, Inc.",
+  "cso": "Mark43 Public Safety Platform (PSP)",
+  "status": "FedRAMP Authorized",
+  "impact_level": "High",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Mark43 provides a cloud-native public safety operations platform that supports end-to-end law enforcement and emergency response workflows, from call intake and dispatch through reporting, investigation, and operational analysis. The platform delivers integrated Computer-Aided Dispatch (CAD), Records Management System (RMS), mobile, analytics, and supporting services through a unified, web-based and mobile-accessible environment. \r\nThe Mark43 platform enables agencies to operate efficiently across desktop, mobile data terminals (MDT), and mobile devices, providing real-time access to operational data and workflows. The system is designed to be scalable and maintenance-free, supporting secure information sharing and collaboration across public safety teams. \r\nMark43 RMS is a law enforcement Records Management System supporting incident and field reporting, arrests, records management, property and evidence tracking, and case management. It enables officers to complete reports from any location using intuitive workflows, real-time data access, and built-in support for standardized reporting requirements, including NIBRS. \r\nMark43 CAD is a cloud-native, multi-discipline Computer-Aided Dispatch system supporting law enforcement, fire, and EMS operations. It unifies call intake, dispatch recommendations, and unit coordination, and provides desktop, MDT, and mobile interfaces for dispatchers and responders. The system incorporates predictive analysis, automated response planning, and human-in-the-loop automation to support consistent execution and reduce operational errors. \r\nMark43 OnScene (Mobile) is a mobile application available on Android and iOS devices that enables responders to remain connected to dispatch teams while in the field. It provides situational awareness, officer-based GPS tracking, and mobile reporting capabilities to support rapid response, officer safety, and continued field presence. \r\nMark43 Insights & Data Lake provide analytics and reporting capabilities that enable agencies to analyze operational and historical data. The Data Lake is a secure, cloud-based replicated database that supports advanced analytics and integration with agency business intelligence tools. \r\nMark43 ReportAI is an AI-assisted report drafting capability embedded within Mark43 RMS. It uses structured report data, officer notes, and optional Body-Worn Camera (BWC) transcriptions to generate draft narrative content, supporting faster and more consistent report completion while maintaining officer review and control. \r\nMark43 BriefAI provides AI-assisted summarization of reports and case data, enabling users to quickly generate standardized summaries to support case assignment and investigation workflows. \r\nMark43 eCitations is a mobile-first citation solution that enables officers to capture, issue, print, and submit citations from a single application. It supports license and VIN scanning, DMV and NCIC queries, and offline operation when network connectivity is unavailable. \r\nMark43 Fortified provides security and compliance monitoring capabilities, including real-time detection of security, compliance, and data misuse risks, prioritized alerts, and guided remediation workflows, enabling agencies to maintain visibility into their security posture. \r\nMark43 Universal Search enables users to search across data within the Mark43 platform and supported external databases through a single unified interface, returning consolidated results without leaving the system.",
+  "business_functions": [
+   "Analytics",
+   "Collaboration",
+   "Communication",
+   "Data Management",
+   "Fleet Management",
+   "Law Enforcement",
+   "Legal & Policy"
+  ],
+  "service_models": [
+   "PaaS"
+  ],
+  "input_hash": "3b051fcb95e25e67"
+ },
+ {
+  "fedramp_id": "FR2300457485",
+  "csp": "Project Hosts Inc.",
+  "cso": "GSS One - AWS",
+  "status": "FedRAMP Authorized",
+  "impact_level": "High",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "The GSS One AWS is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors etc.)].\n\nThe Project Hosts GSS One AWS PaaS is a General Support System (GSS) deployed on AWS GovCloud. The GSS One AWS is composed of systems and services that manage access control, authentication, auditing, monitoring, scanning, patching, configuration management, malware prevention, intrusion prevention, incident response, backup, and disaster recovery for each application leveraging the GSS One AWS. All of the systems that make up the GSS One AWS and the Project Hosts engineers that administer the systems can be leveraged by any customers to meet the security requirements for their systems.\n\n\nThere is one main SaaS components customers deployed on the GSS One AWS system can leverage:\n\n- GSS One Portal/Admin Page: The GSS One Portal is a page where customer users and PH support can login to create and manage non privileged users for their organization including revoking access. It also provides them with the ability to upload software binaries to the test environment, and request Just in Time (JIT) access to production. The GSS One AWS Admin page is accessible only to PH engineers and is used for managing inventory, privileged user maintenance windows, account creation, hardware token association and JIT access among other administrative functions and has dashboards for PH engineers to provide a centralized view of each environment. \n\nThere are two main types of customers who use the GSS One AWS: (i) Independent Software Vendors (ISVs) deploying multitenant SaaS applications and (ii) Federal, state, or local agencies deploying dedicated applications just for their agency or organization (not multitenant). For both types of customers, their applications are deployed on customer-dedicated virtual servers (or FedRAMP-authorized AWS PaaS services) inside customer-dedicated subnets. Firewall access controls (NSGs and SGs) ensure that each customer's systems are completely isolated from and has no access to any other customer's subnet.\n\nFor GSS One AWS customers, Project Hosts also provides services that are over and above the PaaS offering described in the GSS One AWS FedRAMP package. Namely, Project Hosts deploys, secures, manages, and provides continuous monitoring for applications that are compatible with the GSS One AWS architecture, authentication, operating system, database, and access requirements.\n\nMany software vendors do not have the staff or knowledge to fully deploy a cloud workload, write security documentation, refactor the application to meet compliance requirements and work with agencies and the PMO to obtain a FedRAMP authorization which leads to wasted time, money, and resources both for government sponsors and the vendors. Project Hosts works with these software vendors and agencies to quickly deploy the application to the cloud and build out and manage the system for the customers which includes acting as the security and compliance team for the application. In addition, Project Hosts works with these software vendors to document security controls, perform compliance reviews, perform disaster recovery, and advises the ISV on how refactor the application to meet FedRAMP requirements. Project Hosts security compliance team also performs monthly vulnerability scanning include ACAS scans, dynamic web app scans and container image scans and documents and tracks these findings in accordance with continuous monitoring requirements. Among other things the Project Hosts team also performs (for each customer deployed within the GSS One AWS) monthly baseline compliance scanning, configuration management, patch and vulnerability management, malware prevention and intrusion prevention using HBSS software, incident response reporting, analysis, eradication, and recovery as well as all SOC review and analysis of audit logs and responding/investigating alerts for suspicious activity. Project Hosts deploys systems to monitor workloads for availability and performance issues and proactively take action to ensure maximum uptime and availability. Performing these functions on the ISVs\u2019 behalf allows the software vendors to focus on their core business model in delivering a secure, highly functional application to the agency.\n\nFor ISV customers, Project Hosts also creates their SaaS-level FedRAMP package, helps them throughout the agency authorization process, and manages their 3PAO annual assessments.\n\nFor agency customers, Project Hosts assists them in the creation of their own SSP, manages annual 3PAO scanning and penetration testing of their dedicated applications, and provides a monthly application-level POA&M.  Following is a partial list of applications for which Project Hosts is providing these hosting and additional services leveraging the GSS One AWS platform:\n\n1Factory (1Factory)\n202 Group/ BlueVoyant Government Services (Supply Chain Command)\nBrightly (Brightly Software)\nCaveonix (Caveonix Platform)\nChainbridge Solutions (Perseus\u2122)\nCloudApper (Cloudapper.ai)\nFutureFeed (FutureFeed)\nH2O.ai (H2O.ai Cloud for Government)\nInvicti (Invicti Application Security Posture Management (ASPM) and Invicti Unified Platform (UP)\nJAMIS (JAMIS Prime ERP)\nMicrosoft (Office, Dynamics, Power BI Server, Project Server, SharePoint, SSRS)\nProSymmetry\nSan Luis Aviation, Inc. (ESChat)\nSiemens Government Technologies (Teamcenter)\nTelcloud (Telcloud)\nTCP Software (TimeClock Plus)\nWordPress (WordPress CMS)\nWordPress As a Service (WPaaS)\n \n\nIf an agency would like to use one of these Applications or bring in another GSS One AWS compatible Application, Project Hosts will provide application-level artifacts that will help the agency assess the risk of deploying that application in the GSS One AWS as well as any other documentation or evidence required in order to grant an Authority to Operate (ATO).\n\n\nGSS One AWS customers also are provided with access to the following systems running on the GSS One Azure system.\n\n- GSS One Command Center: The GSS One Command Center is a one stop shop for agency and CSP customers to view relevant information for their system and aid in implementing and maintaining ConMon requirements including a document repo for SSP and appendixes, POA&Ms and vulnerability scans, allows them to manage training, track incidents, track vulnerabilities and other corrective actions, track red teaming activities, view availability monitoring alerts, change control ticketing, link controls to artifacts and evidence to speed up ATO times and provide continuous monitoring/ Trust Center views for agencies leveraging their systems.\n\n- GSS One Support Center: Project Hosts has configured a customer-facing support portal for creating and managing support tickets powered by Atlassian Jira. This allows customers to view all of their relevant tickets, create tickets, upload screenshots and communicate with PH staff through a secure channel.",
+  "business_functions": [
+   "Collaboration",
+   "Communication",
+   "Content Management System (CMS)",
+   "Customer Service",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Development Tools",
+   "Network Management",
+   "Operations Management",
+   "Storage"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "4d55ee64812d0426"
+ },
+ {
+  "fedramp_id": "FR2301844932",
+  "csp": "Orca Security",
+  "cso": "Orca Cloud Security Platform",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Orca Security provides an agentless Cloud Security Platform that discovers all cloud assets, and identifies, prioritizes, and remediates risks and compliance issues across your cloud environments in AWS GovCloud, AWS US East/West and Azure Government. The platform detects cloud risks, including vulnerabilities, malware, misconfigurations, API risks, lateral movement risks, weak and leaked passwords, and overly permissive identities. Orca deploys in minutes, provides visibility into all your assets, and automatically includes new assets as they are added. The Orca Platform helps federal agencies and contractors achieve regulatory compliance with over 65 out-of-the-box frameworks, CIS Benchmarks, and custom compliance checks. Leveraging a Unified Data Model, Orca performs contextual analysis of all the risks in your cloud estate, uncovering potential attack paths (with references to the MITRE ATT&CK framework), enabling rapid identification of which risks present the highest danger to mission data and security objectives.",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "bc79942cec4bcfa4"
+ },
+ {
+  "fedramp_id": "FR2303852859",
+  "csp": "Cocoon Data",
+  "cso": "SafeShare (SFS)",
+  "status": "FedRAMP Ready",
+  "impact_level": "Moderate",
+  "deployment_model": "Hybrid Cloud",
+  "service_desc": "System Functionality: SFS is a zero-trust data security, sharing, and collaboration web platform that uses Cocoon Data-patented technology called Secure Objects to apply the principles of least privilege to the document level. SFS is a system similar to services such as Google Drive or Box. It enables the customer to securely share files and collaborate on them within the SFS web app. The difference is in how SFS implements encryption and the concept of zero-trust security with these files by encapsulating them in Cocoon Data-patented technology called Secure Objects. Each file has a unique encryption key tied to identity and access controls attributes such as clearance and classification.\r\n\r\nThe SFS SaaS solution allows customers to securely store, share, and control access to encrypted files and folders within the customer\u2019s organization, outside the authorization boundary, and from mobile devices through a self-contained unit called an \u201corganization.\u201d An organization (deployed customer tenant) is self-contained, meaning that the sharing and manipulation of content is handled solely within the scope of the organization itself; therefore, any SFS user\u2019s ownership of content (including permissions to access the customer\u2019s content/data) is specific to each organization.\r\n\r\nThrough the implementation of Secure Objects, the identity of the user is validated through the identity provider (Lightweight Directory Access Protocol [LDAP], Personal Identity Verification [PIV], etc.) that ties the identity of the data owner to its associated encryption keys. Secure Objects must be associated with a key (for encryption) and an originator (data owner). Customers have the option to designate collaborators, metadata, and apply extensive access controls to their data.\r\n\r\n\r\nSFS is available to customers with two options for tenancy:\r\nCustomers may use the shared tenancy option where they receive their own Organization within the SFS application. This option logically separates customers within the SFS application but each file is encrypted using Cocoon Data\u2019s proprietary Secure Objects technology and the Cocoon Data Content Crypto Service cryptographic module (CMVP# 4307). \r\nCustomers may opt for the private tenancy option where they receive their own instances of the SFS Application. The customer would have their own custom URL for logging into the system and their own dedicated infrastructure. This option allows the customer to set up multiple Organizations as they see fit to further control which of their users can access what files they\u2019ve uploaded to SFS.\r\nThe private tenancy option is the recommended option for Federal Agencies as it offers the strongest separation measures from other customers.\r\n\r\n\r\nThe services/functions provided to the customer by SFS are delivered via containerized services. Containerization is used across multiple availability zones for redundancy. The containers that run the service are the Content Service, Access Service, GeoFence Service, Notification Service, Web Service, Office Server Service, API Server, etcd, Controller and Scheduler.\r\n\r\nContent Service\r\nThe Content Service contains the FIPS validated Cocoon Data Content Crypto Service (Certificate #4307). This service is responsible for handling the encryption keys, content encryption, version control, integrity checks and overall management of the data.\r\n\r\n\r\nAccess Service \r\nThe Access Service  contains the Cocoon Data Access Service. This service is responsible for the access control to the Cocoon Data system, internal authentication, external LDAP authorizations, and SAML 2.0 authentications. It is also responsible for determining if a user has access to files or not based on a multitude of factors including but not limited to; clearances and classification, geographic location of the user and geofencing, user security roles, and security permissions. The scope of access to documents can also be further restricted so that users with access will only be able to perform specific actions on the file. An example would be giving a user view, but not download permissions.",
+  "business_functions": [
+   "Collaboration",
+   "Communication",
+   "Cybersecurity & Risk Management",
+   "Data Management",
+   "Storage",
+   "System Administration"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "8748fce505a8a6e2"
+ },
+ {
+  "fedramp_id": "FR2304546222",
+  "csp": "My Business Matches",
+  "cso": "Vendor Event & Business Matchmaking Platform",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Low",
+  "deployment_model": "Public Cloud",
+  "service_desc": "My Business Matches (MBM) is the definitive source for federal agencies when it comes to their Event & Business Matchmaking needs. Our platform deals with event preparation, conference management and vendor outreach for any onsite, hybrid or virtual occasion, in need of support. You can access our technology effortlessly as it is created to be compliant with federal devices and firewalls. MBM is a FedRAMP Authorized Secure Service! Be assured that our gathering functions let you provide both safe and interactive webinars, business matchmaking, networking roundtables and speakers engagements.",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "1267b4186046a7a0"
+ },
+ {
+  "fedramp_id": "FR2304757473",
+  "csp": "Cisco Systems Inc.",
+  "cso": "Cisco Security Cloud for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Cisco Security Cloud for Government provides cloud-based security solutions with multiple component products.\r\n\r\n \r\n\r\nCisco Umbrella for Government \r\n\r\nCisco Umbrella for Government delivers advanced, cloud-native cybersecurity, ensuring protection and compliance for government agencies to support their mission. It significantly uplevels government cybersecurity, offering comprehensive protection that meets the unique needs of government agencies. Cisco Umbrella for Government provides a comprehensive security suite with DNS-layer security and Secure Internet Gateway (SIG) capabilities, such as secure web gateway (SWG) , cloud-delivered firewall and intrusion prevention (Snort IPS), cloud access security broker (CASB), and data loss prevention (DLP), and integration with CISA Protective DNS. The feature set is comparable to the Cisco Umbrella product in use by over 30,000 Enterprise customers. Cisco Secure Access for Government includes more robust SSE capabilities than Cisco Umbrella for Government. Agencies looking for ZTNA and a high-performance architecture should choose Secure Access for Government.\r\n\r\n \r\n\r\nCisco Secure Access for Government\r\n\r\nCisco Secure Access for Government is a comprehensive Security Service Edge solution grounded in Zero Trust, that empowers Federal, State, and Local agencies to secure their workforce and data, simplify operations, and advance their mission with confidence. Its adaptive security capabilities, powered by Cisco Talos and AI, enable real-time threat detection, behavioral analysis, and predictive defense\u2014ensuring proactive protection of your people and data against evolving cyber risks. With a comprehensive zero trust approach and a unique unified client, users gain seamless, secure access to critical applications across devices and locations\u2014without compromising usability or performance. When paired with Catalyst\u00ae SD-WAN, Cisco Secure Access for Government delivers a holistic SASE solution. Enhanced integration with Catalyst SD-WAN will be available in 2026.\r\n\r\nKey capabilities include:\r\n\r\n- A single platform for IT teams that centralizes management, streamlines policy enforcement, and reduces overhead. AI-driven automation accelerates response times and reduces human error, which integrates with solutions like Duo and Cisco SD-WAN will enable a compliant, Zero Trust architecture tailored for public sector needs.\r\n- Cloud-native and continuously updated, Cisco Secure Access removes hardware complexity and scales effortlessly to meet the demands of dynamic government environments. The result: stronger security, improved user experience, and simplified operations\u2014all built to protect the mission and serve the public. \r\n- Secure Access for Government includes the following: Secure Internet Access (SIA) and Secure Private Access (SPA). Both products have Essentials and Advantage SKUs.\r\n- Offers robust protection against modern-day cyber threats through Zero Trust Network Access, DNS security, Secure Web Gateway (SWG), Data Loss Prevention (DLP), Cloud-Delivered Firewall (FWaaS), Cloud Access Security Broker (CASB), VPN as-a-Service (VPNaaS), Advanced Malware Protection, and Talos\u00ae Threat Intelligence capabilities.\r\n- Extends DNS security with an Integration with the Cybersecurity and Infrastructure Security Agency (CISA\u2019s) Protective DNS (PDNS).\r\n\r\nCisco Security Cloud Control - Firewall Management for Government \r\n\r\nCisco Security Cloud Control - Firewall Management for Government delivers cloud-native firewall policy and device management through a unified management plane accessible through an intuitive web-based console. It enables centralized, scalable, and secure orchestration of Cisco next-generation firewalls (NGFWs) \u2014 including ASA and Secure Firewall Threat Defense (FTD) devices \u2014 across hybrid, cloud, and on-premises environments. With real-time visibility into traffic and threats, automated policy and object updates, and zero-touch provisioning for remote deployments - Security Cloud Control Firewall Management for Government reduces operational complexity for IT teams while strengthening cyber resilience and enabling secure modernization across mission-critical infrastructure. This product will now also include AIOps features like Policy Analyzer & Optimizer, Feature adoption, and a summary dashboard for customers to ensuring faster and accurate anomaly detection using Artificial Intelligence. A SAL Eventing License Utilization Dashboard will also be available to the customers.\r\n\r\n\r\n\r\nCisco Multicloud Defense for Government \r\n\r\nCisco Multicloud Defense for Government is designed to provide consistent, automated protection across multicloud environments, including AWS, Azure, GCP, and OCI. It integrates network security with multicloud networking, offering multi-directional protection to stop inbound attacks, prevent lateral movement, and block data exfiltration. With its centralized SaaS control plane, Cisco Multicloud Defense simplifies security management, enabling organizations to create and enforce unified security policies across all cloud environments in real-time. By leveraging advanced features such as dynamic policy management, continuous asset discovery, and automation, Cisco Multicloud Defense empowers organizations to reduce complexity, enhance operational efficiency, and maintain robust security across their multi-cloud infrastructure.\r\n\r\n \r\n\r\nCisco Secure Email Threat Defense for Government\r\n\r\nCisco Secure Email Threat Defense for Government exemplifies our ongoing commitment to delivering trusted, government-grade email security for agencies, contractors, and organizations handling regulated or sensitive data. Secure Email Threat Defense, a cloud-scale advanced email security layer, harnesses AI powered detections to provide comprehensive protection against advanced email threats, integrated as an API-based supplemental control or with the addition of new pre-delivery inline gateway protection.\r\n\r\nBeyond the governance and compliance benefits, Cisco Secure Email Threat Defense for Government delivers a set of advanced protection capabilities that align directly with real-world email threat risks \u2014 especially for organizations that are particularly sensitive to BEC, phishing, QR Code/Quishing Detection, brand impersonation, or high-risk personnel.",
+  "business_functions": [
+   "Cybersecurity & Risk Management"
+  ],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "fda0ae941809f6d2"
+ },
+ {
+  "fedramp_id": "FR2306445868",
+  "csp": "Cohesity",
+  "cso": "Cohesity Cloud Services for Government",
+  "status": "FedRAMP Authorized",
+  "impact_level": "Moderate",
+  "deployment_model": "Government Community Cloud",
+  "service_desc": "Cohesity Cloud Services for Government is a portfolio of fully-managed data security and management offerings, including backup as a service (BaaS) for protecting mission-critical cloud-native, SaaS, and on-premises workloads. The multi-layered data security architecture, policy-based automation, and global data reduction help secure and protect data, and simplify IT operations. Flexible data retention and rapid recovery to any point in time enable organizations to meet their demanding business SLAs and improve ROI.",
+  "business_functions": [],
+  "service_models": [
+   "SaaS"
+  ],
+  "input_hash": "7a0625fa69793557"
+ }
+]

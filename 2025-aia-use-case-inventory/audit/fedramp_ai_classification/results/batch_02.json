@@ -1,0 +1,481 @@
+[
+ {
+  "fedramp_id": "FR1818240234",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Employee engagement survey platform for survey design, data collection, reporting, and action planning. Perceptyx markets AI-driven people analytics commercially, but the authorized service description identifies no AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1818459251",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Integrated Library System (ILS) for library automation, cataloging, and accessibility. No AI capability is described or central to the product.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1819057982",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Secure data-sharing and research facility for government administrative records with collaboration tools. Hosting confidential data for analysis is not itself an AI capability, and no AI feature is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1819168894",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Email security product whose detection of new, never-before-seen attacks relies on Proofpoint's machine-learning threat-detection stack (NexusAI). The description implies but does not explicitly name the ML capability, so confidence is moderated.",
+  "signals": [
+   "detects both known and new, never-before-seen attacks"
+  ]
+ },
+ {
+  "fedramp_id": "FR1819254092",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Virtual desktop and application delivery (DaaS) platform with centralized administration. No AI capability is described or central to the product.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1819254092A",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "High-impact sovereign-cloud edition of Citrix's virtual desktop and application delivery (DaaS) platform. No AI capability is described or central to the product.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1820435960",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Creative design suite whose apps ship material AI features (Adobe Sensei/Firefly capabilities such as content-aware editing and neural filters); the description explicitly lists artificial intelligence features among the included capabilities. The product's main job is creative tooling, with AI as a feature.",
+  "signals": [
+   "artificial intelligence (AI) features"
+  ]
+ },
+ {
+  "fedramp_id": "FR1820435961",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Document platform that includes Adobe Acrobat AI Assistant, a generative AI assistant for querying and summarizing documents, plus AI-driven automated document tagging. AI is a material, named feature within a broader document-management product.",
+  "signals": [
+   "Adobe Acrobat AI Assistant",
+   "Innovative technology and artificial intelligence"
+  ]
+ },
+ {
+  "fedramp_id": "FR1821062403",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Identity governance and privileged access (IGA/PAM) platform. Saviynt ships ML-driven identity analytics (peer-group access analysis, risk-based certification recommendations) in EIC, but the description only gestures at advanced analytics, so this classification leans on product knowledge.",
+  "signals": [
+   "intelligent and converged platform",
+   "combines advanced analytics"
+  ]
+ },
+ {
+  "fedramp_id": "FR1821856903",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Customer-service ticketing and self-service platform. Zendesk sells AI agents and ML-based answer bots commercially, but the authorized offering description identifies no AI capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1821933307",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Trust accounting and wealth management SaaS. No AI capability is described or known to be central to the product.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1823149273",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Two-factor authentication and device-trust service. Access policy enforcement is rule-based (location, device health), with no substantive AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1823368486",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Application performance monitoring whose automatic anomaly identification is powered by AppDynamics' ML-based baselining (Cognition Engine). AI augments a broader observability product; the description describes the capability without naming ML explicitly.",
+  "signals": [
+   "automatically identify performance anomalies"
+  ]
+ },
+ {
+  "fedramp_id": "FR1823447014",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Channels-based messaging and collaboration platform. Slack AI exists as a commercial add-on, but no AI capability appears in this authorized description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1824057433",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Productivity and collaboration suite (email, documents, Teams) for government. Microsoft 365 Copilot is a separately authorized offering, and no AI capability is identified in this authorization's description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1825232355A",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Healthcare care-navigation platform integrating EHRs and provider networks, with configurable analytics dashboards. No AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1825941347A",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Collaboration platform (meetings, phone, contact center) that includes AI Companion for ZfG, an explicitly described set of generative AI assistant features inside the broader suite.",
+  "signals": [
+   "AI Companion for ZfG",
+   "generative AI assistant",
+   "a set of generative AI features"
+  ]
+ },
+ {
+  "fedramp_id": "FR1827963145",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "E-discovery and legal/FOIA platform with a named AI layer, Exterro Intelligence, used for early case assessment and reducing document review volumes - AI-assisted review inside a broader legal data platform.",
+  "signals": [
+   "Leverage AI with Confidence",
+   "Exterro Intelligence accelerates early case assessment"
+  ]
+ },
+ {
+  "fedramp_id": "FR1828574469",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Workplace scheduling, desk booking, and visitor management software. IoT sensor utilization reporting is descriptive analytics, not an AI capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1828848692",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Electronic signature and digital transaction management service. No AI capability is described or central to the product.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1829538820",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Shared government sign-in and identity service. The description covers authentication and account access with no AI capability identified.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1830842316",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "CRM, correspondence, and casework management for agencies and elected officials. Workflow, document management, and reporting features with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1831429369",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Video interviewing and hiring-assessment platform whose candidate assessments are scored using artificial intelligence combined with predictive industrial-organizational science - a material, well-documented AI capability inside a broader recruiting workflow.",
+  "signals": [
+   "predictive, validated I-O science and artificial intelligence"
+  ]
+ },
+ {
+  "fedramp_id": "FR1832869359",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Web and customer analytics platform that ships AI-powered predictive models (Adobe Sensei capabilities such as anomaly detection and propensity scoring) as a built-in feature of a broader analytics product.",
+  "signals": [
+   "artificial intelligence (AI)-powered predictive models"
+  ]
+ },
+ {
+  "fedramp_id": "FR1832870021",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Learning management system with AI-powered personalized learning recommendations driven by profile, skill-group, and peer data - a material ML feature within a broader LMS.",
+  "signals": [
+   "AI-powered intelligent learning recommendations"
+  ]
+ },
+ {
+  "fedramp_id": "FR1833967442",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed hosting PaaS for Atlassian tooling and DevSecOps environments, with patching, backups, and security monitoring services. No AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1834172478",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "GRC/compliance automation platform for SSPs, POA&Ms, and continuous monitoring dashboards. Its automation is workflow- and integration-based; no substantive AI/ML capability is identified in the description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1834336116",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Managed threat-monitoring service built on real-time threat intelligence and SOAR workflow automation. XDR services often embed ML detection in underlying tooling, but the description names no AI/ML capability, so none can be substantiated.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1834348080",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Suite of federal HR applications (time and attendance, performance management, onboarding, org charts). The FedLens reporting tool advertises a Predictions module, but this appears to be benchmarked statistical workforce reporting rather than a substantive AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1834740315",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Unified data lakehouse where AI/ML is first-class rather than incidental: ML and generative AI/LLM workloads, model development and MLOps tooling (MLflow, Mosaic AI), and an AI-driven Data Intelligence Engine with natural-language access. Could also be read as a data platform with built-in ML, hence medium confidence on the core_ai call.",
+  "signals": [
+   "AI-powered platform",
+   "Machine Learning (ML) and generative Artificial Intelligence (AI) including Large Language Models (LLMs)",
+   "AI-driven data cataloging"
+  ]
+ },
+ {
+  "fedramp_id": "FR1900048743",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "General-purpose IaaS/PaaS government cloud. Infrastructure that can host AI workloads is not itself an AI product, and no AI service is named in this authorization's description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1901136437",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Data collation, retrieval, and dissemination platform for federal logistics information. Search, cataloging, and knowledge-management functionality with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1902240018",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Research operations platform for randomized evaluations and evidence-based policy research (sample randomization, secure data collection, analytics). Conventional research statistics, with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1907354404",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Multichannel marketing campaign orchestration and execution platform. Unlike Adobe's Analytics offering, this description identifies no AI-powered capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1907847653",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Contact-center platform with multiple concrete AI features: NLP/NLU-driven voice and chat bots in the speech-enabled IVR, speech-to-text analytics, text and sentiment analytics, and an AI-powered Predictive Engine for experience scoring.",
+  "signals": [
+   "Natural Language Processing and Natural Language Understanding (NLU/NLP)",
+   "Voice Bot and Chat Bot",
+   "proven predictive data science and AI-powered technologies",
+   "Text to Speech Analytics"
+  ]
+ },
+ {
+  "fedramp_id": "FR1908649566",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Cloud network management console that explicitly includes AI for wired and wireless operations - Aruba Central's AIOps capability (ML-based anomaly detection and AI Insights for network troubleshooting) inside a broader management product.",
+  "signals": [
+   "unified management, AI and security"
+  ]
+ },
+ {
+  "fedramp_id": "FR1910758409",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Insider-risk and data-exfiltration monitoring across endpoint and cloud. Detection is described as data-movement monitoring with risk context, and no substantive AI/ML capability is identified.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1912051231",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed DevSecOps toolchain and CI/CD pipeline hosting for federal agencies. No AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1913470600",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Network security and security-operations portfolio with pervasive, named ML/AI capabilities: WildFire machine-learning malware analysis, ML-powered URL filtering and Cloud NGFW, Precision AI threat prevention, ML-powered IoT visibility, and AIOps. Security is the primary job; ML/AI powers detection throughout.",
+  "signals": [
+   "innovative machine learning techniques",
+   "Powered by Precision AI",
+   "ML-powered visibility",
+   "AIOps harnesses big data"
+  ]
+ },
+ {
+  "fedramp_id": "FR1913835324",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Governance, risk, and compliance management application covering assessment, continuous monitoring, and lifecycle tracking. No AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1915750265",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GRC audit and compliance assessment automation (auto-mapped frameworks, questionnaires, reporting). The automation is template- and workflow-based, with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1915765924",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Hosted eDiscovery environment providing Relativity tooling for government data. Relativity includes ML-assisted document review (active learning, analytics) as standard capability, but the description itself names no AI feature, so this rests on product knowledge.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1916055736",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "E-discovery platform known to ship ML-based predictive coding, clustering, and generative EverlawAI Assistant features for document review, though this description cites only advanced technology without naming the AI capabilities.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1916254386",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Integration platform (iPaaS) whose authorization explicitly covers Boomi AI Agents - AI-powered developer accelerators that autonomously design integrations and generate documentation - material AI inside a broader integration product.",
+  "signals": [
+   "Boomi AI Agents",
+   "AI-powered developer accelerators",
+   "autonomously design integrations"
+  ]
+ },
+ {
+  "fedramp_id": "FR1918150046",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Vehicle telematics and fleet management platform. The brief description identifies no AI capability, and Geotab's ML-based safety analytics are not indicated as part of this offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1918442180",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Business process automation (BPM/workflow) platform. Digital process automation here is workflow orchestration, with no AI/ML capability identified in the description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1918740338",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Log analytics and cloud SIEM whose threat detection explicitly uses machine learning - ML-predicted true-positive Global Confidence scores for alert triage - a concrete AI capability inside a broader observability and security platform.",
+  "signals": [
+   "machine learning (ML) predicted true positive Global Confidence scores"
+  ]
+ },
+ {
+  "fedramp_id": "FR1919071020A",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Endpoint/XDR security platform built on machine learning and behavioral AI detection, plus Purple AI, an agentic LLM-based assistant for security analysts. Security is the product's job; ML/AI is its core detection method.",
+  "signals": [
+   "advanced machine learning algorithms and behavioral AI",
+   "Purple AI is an agentic-AI powered capability",
+   "LLM, Generative AI, and Natural Language processing technologies"
+  ]
+ },
+ {
+  "fedramp_id": "FR1919750997",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Crowdsourced bug bounty and vulnerability disclosure platform. Vulnerability discovery is performed by human security researchers, with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1920363607",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Managed threat detection and response built on the USM/AlienVault platform. Detection relies on cloud sensors, threat-intelligence correlation, and SOC analysts; no substantive ML capability is named.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1923039219",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed print services platform (secure print, scan routing, fleet auditing and supply management). No AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1923743650A",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed WordPress CMS hosting platform with enterprise security and support. No AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1924344515",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Technology transfer and intellectual-property management workflow suite (disclosures, contracts, licensing, iEdison reporting). No AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1924942935",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Clinician call and shift scheduling automation for healthcare workforces. Rule-based schedule optimization, with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1927682057",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Infrastructure maintenance management system (configuration baselines, preventive maintenance, ticketing, inventory, reporting). No AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1930046270",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Utility bill accounting and energy management software with analysis and reporting. Conventional analytics, with no AI capability described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1931476240",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "High-performance computing platform for engineering simulation that explicitly integrates applied AI and generative capabilities into modeling and R&D workflows, supports AI/ML workloads on GPUs, and uses intelligent workload-to-hardware matching. AI materially augments a compute-orchestration product.",
+  "signals": [
+   "applied AI to accelerate modeling and simulation",
+   "Applied AI and generative capabilities",
+   "AI/ML for Engineering & Scientific R&D"
+  ]
+ },
+ {
+  "fedramp_id": "FR1932554201",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Security Service Edge platform (CASB, ZTNA, SWG, DLP, RBI). Protections described are policy-, proxy-, and isolation-based, with no AI/ML capability identified in the description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1935245314A",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Security operations platform whose detection explicitly uses machine learning, artificial intelligence, and behavioral analysis, including the ML Protect machine-learning cloud and AI-augmented Trellix Insights threat intelligence. Security is the primary job; ML/AI powers detection.",
+  "signals": [
+   "Machine learning, artificial intelligence, and behavioral analysis",
+   "machine learning cloud",
+   "augmented with sophisticated AI"
+  ]
+ },
+ {
+  "fedramp_id": "FR1935661915",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Digital adoption platform that overlays codeless guidance on existing software. The description identifies no AI capability; WalkMe's newer AI features are not indicated as part of this offering.",
+  "signals": []
+ }
+]

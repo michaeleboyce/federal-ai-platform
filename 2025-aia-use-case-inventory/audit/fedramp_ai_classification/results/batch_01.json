@@ -1,0 +1,422 @@
+[
+ {
+  "fedramp_id": "F1607057910",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "New Relic is an observability platform whose core job is telemetry monitoring, but it materially ships ML-based anomaly detection and 'intelligent observability' (applied intelligence/AIOps) that automatically surfaces issues across logs, metrics, and traces.",
+  "signals": ["the intelligent observability platform"]
+ },
+ {
+  "fedramp_id": "F1607067912",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloud.gov is a Cloud Foundry-based Platform-as-a-Service for compliant app hosting and ATO documentation. No AI/ML capability is present.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1607077914A",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Oracle EPM is a financial planning, consolidation, and reporting suite. It mentions Oracle Digital Assistant as a complementary leverageable service, but EPM itself is a performance-management application, not an AI product.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1607197917",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Splunk Cloud is a machine-data search, indexing, and analytics platform. This base description covers ingestion, search-language queries, and visualization; no substantive ML feature (e.g., MLTK) is described here.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1608097919",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PTC Cloud Services delivers PLM, SLM, and IoT application hosting. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1609267945",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "DocuSign IAM eSignature provides electronic signature, identity management, and workflow automation. No substantive AI capability is described in this offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "F1610037949",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "mLINQS is a hosted relocation-management SaaS that automates federal travel/relocation policy compliance. No AI/ML capability is present.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1703752011",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Axon FedCloud is a digital evidence and records management platform; it ships material AI in Axon Records automation and broader Axon ML for video search/redaction, though this description emphasizes evidence storage and search over named AI features.",
+  "signals": ["harnesses the power of automation", "intuitive search"]
+ },
+ {
+  "fedramp_id": "FR1704369518",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Accenture Insights Platform is an advanced-analytics-as-a-service offering that bundles best-of-breed analytics/data-science tooling to turn big data into insight; it positions analytics and ML acceleration as core, though specific AI features are not itemized.",
+  "signals": ["Advanced Analytics needs", "insights-driven organizations"]
+ },
+ {
+  "fedramp_id": "FR1704655535",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "NiCE CXone Mpower is a contact-center platform that ships extensive AI: intelligent virtual agents, automatic speech recognition, text-to-speech, voice biometrics, real-time agent guidance, AI-driven forecasting, and speech/text analytics.",
+  "signals": ["AI-Enhanced Service Delivery", "intelligent virtual agents", "Automatic Speech Recognition (ASR), text-to-speech and voice biometrics", "AI-driven forecasting, scheduling, and quality management"]
+ },
+ {
+  "fedramp_id": "FR1706403967",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Collibra is a data-governance/catalog platform; its core is metadata management and data workflows, but it ships ML-based automation for data classification, lineage, and 'automate data workflows.' Specific AI features are not named in this thin description.",
+  "signals": ["automate data workflows"]
+ },
+ {
+  "fedramp_id": "FR1707156421",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Acadis Readiness Suite is a training and readiness management SaaS (program management, certification tracking, scheduling). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1708752710",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Armedia Content Cloud is a content/case-management platform that bundles Ephesoft Transact for Intelligent Document Processing and Intelligent Document Capture, which use OCR/ML to classify and extract data from documents.",
+  "signals": ["Ephesoft Transact for Intelligent Document Processing", "Intelligent Document Capture"]
+ },
+ {
+  "fedramp_id": "FR1710033970",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Infor Government Solutions is an ERP/HCM/EAM suite that includes Infor Burst BI built with machine-learning technologies and EAM that leverages IoT and analytics to predict asset failure for predictive maintenance.",
+  "signals": ["patented data warehouse automation and machine learning technologies", "leverage IoT and analytics to predict asset failure"]
+ },
+ {
+  "fedramp_id": "FR1711262842",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Medallia Experience Cloud is an experience-management platform that applies proprietary AI to structured and unstructured text/comments to produce predictive insights, including text analytics on open-ended feedback.",
+  "signals": ["Medallia applies proprietary AI technology on data that is structured and unstructured (text and comments) to reveal personalized and predictive insights"]
+ },
+ {
+  "fedramp_id": "FR1711546389",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Monster Hiring Management Enterprise automates federal recruitment and hiring workflows. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1712871948",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Aconex is a construction-industry document and collaboration platform (common data environment, business process management). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1714261912",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "AuthentX Cloud is an identity, credential, and access management (ICAM) and HSM-as-a-service offering for PIV/HSPD-12. No AI/ML capability is present.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1716961549",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Peraton Next Generation Cloud Platform is a PaaS hosting several business SaaS modules (performance management, BPM, data transmission). No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1718334757",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "ID.me Identity Gateway is primarily a credential service and identity-proofing provider; its 'Intelligent Policy Engine' provides risk-based authentication orchestration, but the description does not establish substantive ML beyond rules-based adaptive routing.",
+  "signals": ["An Intelligent Policy Engine provides a dynamic orchestration capability that enables agencies to configure adaptive Risk-Based Authentication"]
+ },
+ {
+  "fedramp_id": "FR1719759604",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Zscaler Private Access is a zero-trust network access / VPN replacement for secure connectivity to private apps. This offering centers on access policy enforcement, not AI.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1719841002",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "SAP NS2 Cloud Intelligent Enterprise hosts SAP S/4HANA, BTP, and SAP Analytics Cloud, the last of which provides AI-driven predictive analytics and insights as a built-in capability of the suite.",
+  "signals": ["predictive analytics in a single platform", "AI-driven insights"]
+ },
+ {
+  "fedramp_id": "FR1720454205",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Zscaler Internet Access is a secure web gateway/SSE platform whose core is web traffic security, but it ships AI-powered cloud security services for inline detection of ransomware, phishing, and zero-day malware.",
+  "signals": ["AI-powered protection from the world's largest security cloud", "a suite of AI-powered cloud security services to stop ransomware, phishing, zero-day malware"]
+ },
+ {
+  "fedramp_id": "FR1720461312",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Proofpoint Email and Information Protection is an email security gateway (threat, spam, virus, DLP). Modern Proofpoint detection uses ML, but this short description names only conventional detection categories, not an explicit AI feature.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1721059275A",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "OneStream is a Corporate Performance Management platform for financial consolidation, reporting, planning, and budgeting. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1722160191",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "CORAS is described as an agentic-AI decision intelligence platform centered on Gary, an LLM-powered orchestrator that activates purpose-built AI agents to turn plain-English questions into action, automate workflows, and generate documents. AI is the product's primary purpose.",
+  "signals": ["an agentic-AI decision intelligence platform", "Gary, a secure, LLM-powered orchestrator", "activates purpose-built AI agents to generate insights, automate workflows"]
+ },
+ {
+  "fedramp_id": "FR1722532017",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Clarity (Broadcom ValueOps, hosted by stackArmor) is a Strategic Portfolio Management / project-and-portfolio management tool. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1722838693",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rave Safety Platform is a critical-communication, mass-notification, and incident-management solution. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1724526654",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Intelliworx is a workflow/forms automation platform using 'adaptive interviews' for data collection; the description indicates rules-based dynamic forms rather than substantive ML/AI.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1726564822",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Workiva is a connected reporting and compliance platform built on a data-management engine with collaboration and audit trails. No substantive AI/ML capability is described in this offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1726637760",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "The AHA Precision Medicine Platform is a cloud data resource with workspaces and tools for cardiovascular research; such platforms enable ML/analytics on datasets, but no specific AI feature is named in the description.",
+  "signals": ["cutting-edge tools and cloud-based workspaces"]
+ },
+ {
+  "fedramp_id": "FR1728053006",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "IBM Automation Services for Government bundles Maximo Application Suite, an intelligent EAM platform that uses advanced analytics and IoT for predictive maintenance to optimize asset performance.",
+  "signals": ["an intelligent Enterprise Asset Management (EAM) platform that enables predictive maintenance", "leverages advanced analytics and IoT capabilities"]
+ },
+ {
+  "fedramp_id": "FR1728349078",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Hootsuite is a social-media management platform; its real-time social listening measures public sentiment, which entails NLP-based sentiment analysis, though no AI is explicitly named.",
+  "signals": ["real-time social listening capabilities", "monitor and measure public sentiment"]
+ },
+ {
+  "fedramp_id": "FR1728351539",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Maximus Intelligent Virtual Assistant (MIVA) is an AI-powered conversational virtual assistant that replaces IVRs, using artificial intelligence to interact conversationally with callers via voice, email, and text. AI is its primary purpose.",
+  "signals": ["MIVA uses a combination of artificial intelligence (AI) and human understanding to interact conversationally with callers"]
+ },
+ {
+  "fedramp_id": "FR1730334049",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Xerox Managed Print and Capture Services manages print devices and document digitization/capture workflows. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1730842236",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "T-Metrics Cloud Contact Center is a CCaaS platform that ships AI capabilities including sentiment analysis, natural language speech recognition, and voicebots/chatbots.",
+  "signals": ["Analytics and Sentiment Analysis", "Natural language speech recognition", "Voicebots and chatbots"]
+ },
+ {
+  "fedramp_id": "FR1730866868",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Smartsheet Gov is a work-management/collaboration platform that automates repetitive tasks via simple rules. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1731347234",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Zimperium Mobile Endpoint Cyber Security is a mobile threat defense product whose on-device detection engine uses machine learning to detect anomalies and identify malicious attacks.",
+  "signals": ["The zIPS on-device app incorporates machine learning techniques to detect anomalies"]
+ },
+ {
+  "fedramp_id": "FR1733061545",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GoRPM is a real-property and facilities investment management SaaS for asset inventory, condition assessment, and budget planning. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1734750951",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "OCLC WorldShare Management Services is a library-services platform (cataloging, circulation, acquisitions, discovery, analytics). No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1800263217",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Innovative Driven Government Cloud is an eDiscovery platform built on Relativity and Nuix; it provides advanced analytics and assisted review (technology-assisted review / predictive coding), which apply ML to document review.",
+  "signals": ["advanced analytics, assisted review"]
+ },
+ {
+  "fedramp_id": "FR1801046750",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Treasury Cloud (TCloud) is a multi-cloud IaaS/PaaS hosting environment with security and management services for Treasury bureaus. It could host AI workloads but provides no AI capability itself.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1802451335",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "FedHIVE is primarily an IaaS/PaaS/SaaS FedRAMP High hosting accelerator, but within its boundary it hosts AI-featured applications including Tungsten TotalAgility (AI-powered intelligent document processing) and Allocore platforms with AI-driven fraud detection.",
+  "signals": ["Tungsten TotalAgility® (formerly Kofax TotalAgility) is an AI-powered automation platform", "intelligent document processing (IDP)", "AI‑driven fraud detection, real‑time risk assessment"]
+ },
+ {
+  "fedramp_id": "FR1804557312",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Veritone iDEMS is built around the aiWARE operating system for artificial intelligence, applying AI engines for transcription, redaction, re-identification person/vehicle tracking, and multi-language media analysis of audio/video evidence. AI is the platform's primary purpose.",
+  "signals": ["aiWARE™ for Government is an operating system for artificial intelligence (AI)", "It uses re-identification AI technology to detect people and vehicles", "With its AI-powered, all-in-one approach, Redact transforms the way agencies"]
+ },
+ {
+  "fedramp_id": "FR1805751477",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Google Cloud Platform is a broad IaaS/PaaS suite whose primary purpose is general cloud compute/storage, but it materially includes machine-learning capabilities (Vertex AI and ML services) as part of the offering.",
+  "signals": ["machine learning capabilities"]
+ },
+ {
+  "fedramp_id": "FR1805752046",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "AEON is a no-code business process automation/management SaaS for acquisition lifecycle, contract writing, and budgeting. Automation here is workflow/rules-based; no substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1807853629A",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "CrowdStrike Falcon is an endpoint security/XDR platform whose primary purpose is cybersecurity, but it materially ships Charlotte AI, which delivers automated triage and LLM inferencing within SOAR workflows.",
+  "signals": ["Charlotte AI - Delivers automated triage analysis for endpoint, identity and cloud detections and enables security teams to activate LLM inferencing within Falcon Fusion SOAR workflows"]
+ },
+ {
+  "fedramp_id": "FR1809360201",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Snowflake is a cloud data platform/warehouse; this base description centers on data warehousing and sharing, but Snowflake materially provides built-in ML/AI services (Cortex/Snowpark ML) for in-platform model development. Specific AI features are not named here.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1809360202A",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Snowflake Data Cloud (Azure Gov High) is a cloud data warehouse/platform; like its sibling offering it provides built-in ML/AI services (Cortex/Snowpark ML) atop the data platform, though no AI feature is named in this thin description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1811073663A",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Esri ArcGIS Online is a mapping and spatial-analysis SaaS; its core is GIS/spatial analytics, and modern ArcGIS includes GeoAI/ML spatial-analysis tooling, though no specific AI feature is named in this description.",
+  "signals": ["spatial analysis workflows"]
+ },
+ {
+  "fedramp_id": "FR1812058188",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "GitHub Enterprise Cloud is a collaborative software development and version-control platform. This description does not mention Copilot or any AI capability, so no substantive AI is established here.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1814168113",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Authentic8 Silo is a remote/isolation browser that embeds security, identity, and data policies to isolate web code from endpoints. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1814240140",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "CircleCI Cloud is a continuous integration and delivery (CI/CD) platform automating build, test, and deploy. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1814276801",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Tenable One for Government is an exposure/vulnerability management platform providing attack-surface visibility, compliance, and cyber risk analysis. The description does not name a substantive AI/ML feature.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1814557199",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "The DNAnexus Platform is a cloud genomics analysis and data-management PaaS for high-throughput molecular data, precision medicine, and drug discovery; it enables bioinformatics/ML pipelines on the data, though no specific AI feature is named.",
+  "signals": ["for processing high-throughput molecular data"]
+ },
+ {
+  "fedramp_id": "FR1815547467",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "RMW Virtual Employee Network is a federal relocation/PCS management platform automating relocation policy, vouchers, and e-signatures. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1815734543",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Gordian Federal Cloud is a construction cost-estimating SaaS powered by RSMeans cost data for bids, pricing, and facilities planning. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1816364586",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Ivanti Neurons for ITSM (Service Manager) is an IT service management tool with workflow automation supporting ITIL incident/problem/change processes. No substantive AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1817874315",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Valimail Enforce is a DMARC email authentication and anti-impersonation platform. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR1818161169",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "MuleSoft Anypoint Platform is an iPaaS/API management platform for designing, developing, and managing APIs and integrations. No substantive AI/ML capability is described.",
+  "signals": []
+ }
+]

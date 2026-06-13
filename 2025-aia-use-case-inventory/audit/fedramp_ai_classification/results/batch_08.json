@@ -1,0 +1,487 @@
+[
+ {
+  "fedramp_id": "FR2431264500",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "AppOmni is a SaaS security posture management platform that works by API-based configuration scanning and rule-driven monitoring. The description mentions anomalous-activity notification but identifies no machine-learning or AI detection capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2432218524",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PowerCore is an energy market settlements, billing, and trading/risk management application. Its capabilities are workflow automation, data downloading, and reporting, with no AI/ML functionality described or known.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2432824061",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "TimeLooper Xplore is a content management platform for publishing digital content to mobile apps. No AI capability is described or known for the product.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2432940371",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "The description covers only standard LMS functions, but Docebo's commercial platform is known for material AI features such as AI-driven content suggestions, auto-tagging, and skills recommendations. Classified ai_featured on product knowledge; the FedRAMP description itself names no AI capability, so confidence is low.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2433446013",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "The Lifebit Platform is described as biomedical/genomic data management with containerized workflow orchestration, job execution, and visualization. The description identifies no AI/ML capability; bioinformatics pipeline execution is not itself AI.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2433985791",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "The description covers only general video creation, but Vyond's flagship platform includes Vyond Go, a generative-AI script and video creator, which is a material AI feature of the product. Classified on product knowledge since the FedRAMP description names no AI capability; confidence is low.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2433985791XL",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "The description covers only general video creation, but Vyond's flagship platform includes Vyond Go, a generative-AI script and video creator, which is a material AI feature of the product. Classified on product knowledge since the FedRAMP description names no AI capability; confidence is low.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2434074613",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Black Kite provides third-party cyber risk ratings using technical assessments, FAIR financial-impact analysis, and standards-based grading. The described methodology is rules- and standards-driven scoring; no specific AI/ML capability is identified.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2434554673",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Palantir Federal Cloud Service delivers Foundry, Gotham, and AIP — Palantir's Artificial Intelligence Platform for deploying LLM- and ML-driven workflows on government data. AI/ML is a primary, named purpose of the offering, not an add-on feature.",
+  "signals": [
+   "Foundry, AIP, Gotham, Apollo",
+   "Artificial Intelligence, Machine Learning"
+  ]
+ },
+ {
+  "fedramp_id": "FR2434758320",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "LambdaX is a contract lifecycle management platform whose main job is contract authoring, workflow, and repository management, with an explicit AI-assisted processing module for clause extraction, clause classification, and non-standard language detection.",
+  "signals": [
+   "AI-assisted capabilities for clause extraction, clause classification",
+   "identification of non-standard contractual language"
+  ]
+ },
+ {
+  "fedramp_id": "FR2435353186",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Kiteworks is a secure file transfer and content collaboration platform (SFTP/MFT, encryption, DLP integration, possessionless editing). No AI/ML capability is described; its security features are policy- and signature-based.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2500938675",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Federal ZenGRC is a governance, risk, and compliance workflow tool for document management, audits, and control mapping. Automation described is workflow automation, not AI/ML.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2500967834",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "TransAccess GCR is a records management platform whose core job is electronic records, but it ships material AI features: AI-powered entity detection for FOIA redaction, AI-driven records classification, automated metadata tagging, intelligent redaction, and predictive compliance alerts.",
+  "signals": [
+   "AI-powered entity detection",
+   "AI-driven capabilities to streamline records classification",
+   "intelligent redaction",
+   "predictive compliance alerts"
+  ]
+ },
+ {
+  "fedramp_id": "FR2501644859",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Vibrent's Digital Health Research Platform is a CMS and participant-engagement portal for longitudinal health research recruitment and data collection. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2502148523",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "The description covers traditional legal research (Westlaw search, KeyCite, Practical Law) without naming AI, but Westlaw's commercial platform now ships material AI capabilities (AI-assisted research in Westlaw Precision, natural-language search). Classified ai_featured on product knowledge; whether those AI features are inside this FedRAMP boundary is unclear, so confidence is low.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2502182285",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Security Control's platform manages facility clearances, personnel security records, and tracking activities like foreign travel debriefs. It is a records/workflow system with no AI capability described or known.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2502224058",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "zLinkFM is an IWMS/CAFM/CMMS facility, asset, space, and maintenance management system. No AI/ML capability is described or known.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2502834044",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Trisotech Digital Enterprise Suite is a visual business process and decision modeling/automation suite (BPMN/DMN-style rules and workflows). Rules-based business automation is not AI, and no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2502963317",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "HP Managed Services for Government is managed print and PC fleet services — service dispatch, firmware updates, supply provisioning, and asset management. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2503350987",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Artera Harmony is a patient communication platform whose core job is messaging and care coordination, powered by conversational-AI virtual agents that triage patient inquiries 24/7 and automate inbound/outbound communications across voice, text, and web.",
+  "signals": [
+   "powered by its advanced virtual agents",
+   "Triaging patient inquiries 24/7"
+  ]
+ },
+ {
+  "fedramp_id": "FR2504062150",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "IBM Federal ATOM is an AI and automation shared-services platform: its core offering is intelligent document processing, NLP, machine learning, fraud detection, and generative-AI assistants and autonomous agents for federal business processes. AI is the platform's primary purpose.",
+  "signals": [
+   "natural language processing, machine learning and generative AI",
+   "Generative AI assistants & autonomous agents",
+   "intelligent document processing"
+  ]
+ },
+ {
+  "fedramp_id": "FR2504148525",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Footprint is the e-commerce/transaction platform behind Recreation.gov — payments, content management, account management, and reporting. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2504154395",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Persona is an identity verification platform whose verification pipeline materially relies on AI: computer-vision document checks, selfie biometric liveness detection, and algorithmic detection of deepfakes and spoofing. The platform's overall job is identity workflow/compliance, with AI as a major embedded capability.",
+  "signals": [
+   "selfie verification with biometric liveness detection",
+   "advanced algorithms to detect fraud attempts like deepfakes and spoofing"
+  ]
+ },
+ {
+  "fedramp_id": "FR2504154395XL",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Persona is an identity verification platform whose verification pipeline materially relies on AI: computer-vision document checks, selfie biometric liveness detection, and algorithmic detection of deepfakes and spoofing. The platform's overall job is identity workflow/compliance, with AI as a major embedded capability.",
+  "signals": [
+   "selfie verification with biometric liveness detection",
+   "advanced algorithms to detect fraud attempts like deepfakes and spoofing"
+  ]
+ },
+ {
+  "fedramp_id": "FR2505553757",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NiOS is a telecom expense management and managed mobility system — order workflows, inventory, bill reconciliation, and budget reporting. No AI/ML capability is described or known.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2507664687",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "BlackLine is a financial close automation SaaS (reconciliations, journal entries). The one-line description identifies no AI capability; BlackLine's commercial ML transaction-matching features are not evidenced here.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2508262726",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Dexcom Clarity is retrospective reporting software for continuous glucose monitoring data — patterns, trends, and statistics for clinicians. The described analytics are statistical reporting, not an identified AI/ML capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2510341317",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Incode is an identity verification platform whose verification flows materially depend on AI computer vision — ID validation and face match with liveness detection — alongside fraud checks. The platform's broader job is verification workflow and compliance management, with AI biometrics embedded.",
+  "signals": [
+   "face match with liveness",
+   "fraud checks"
+  ]
+ },
+ {
+  "fedramp_id": "FR2510550050",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Bugcrowd for Government is a crowdsourced security testing platform — vulnerability disclosure, bug bounty, and pen-test program management with human researcher triage. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2510634052",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "The description covers traditional legal research (primary law, Shepard's citation validation, document review) without naming AI, but the commercial Lexis+ platform ships material AI capabilities such as Brief Analysis and AI-assisted search. Classified ai_featured on product knowledge; whether those features are inside this FedRAMP boundary is unclear, so confidence is low.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2510664395",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "ExtraHop RevealX is a network detection and response (NDR) product whose core job is network security monitoring, explicitly leveraging cloud-scale AI and machine learning for real-time threat detection and behavioral analytics.",
+  "signals": [
+   "cloud-scale artificial intelligence (AI) and machine learning (ML)",
+   "real-time threat detection and network performance analytics"
+  ]
+ },
+ {
+  "fedramp_id": "FR2511048038",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Check Point Infinity is a unified cybersecurity platform whose email security and threat prevention rely on named AI capabilities: AI-driven threat detection in Harmony Email and the ThreatCloud AI threat-intelligence engine for real-time analysis and zero-day prevention.",
+  "signals": [
+   "AI-driven threat detection and prevention",
+   "ThreatCloud AI"
+  ]
+ },
+ {
+  "fedramp_id": "FR2512056954",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NORC Data Enclave Gov is a secure data-sharing and research enclave providing access to statistical, analytical, and visualization tools. It is hosting/data-governance infrastructure; no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2513256853",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "The Armory is a compliance-focused landing-zone/hosting platform on GCP for FedRAMP-regulated workloads — security architecture, IAM, logging, and monitoring. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2514624801",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Checkmarx One is an application security testing platform (SAST, SCA, ASPM, container/IaC scanning) built on static analysis engines and threat intelligence. The description identifies no AI/ML capability; Checkmarx's commercial AI-guided remediation features are not evidenced here.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2514747735",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Valid Eval is a structured group decision-making and evaluation tool using human evaluators scoring against weighted rubrics, with workflow automation and audit reporting. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2515655059",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Omnissa Workspace ONE is a unified endpoint management platform for deploying, configuring, and securing devices. The description identifies no AI capability; commercial Workspace ONE Intelligence ML features are not evidenced in this boundary.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2516072131",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "The description covers only charge cards, expense management, and bill payments, but Ramp's commercial platform is known for material AI features (Ramp Intelligence: AI receipt matching, expense coding, and finance copilots). Classified ai_featured on product knowledge; the FedRAMP description names no AI capability, so confidence is low.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2516365096",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Procore for Government is construction project management — bidding, document management, quality/safety, cost management, and reporting. The description identifies no AI capability, and Procore's newer commercial AI agents are not evidenced in this government edition.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2518163100",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cisco Spaces derives location insights from MAC-address and wireless network telemetry. It is location analytics over network data; no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2518756614",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Exostar MAG with Managed Microsoft 365 is identity federation, SSO, account administration, and a managed M365 GCC High subscription. No AI/ML capability is described in the offering.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2518943913",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "SentiLink's product is machine-learning fraud risk scoring: model-generated synthetic identity and ID theft scores (0-999) and fraud-flag models are the core offering, making it an AI-first decision platform for identity fraud. The description references the underlying models without using the term ML, hence medium confidence.",
+  "signals": [
+   "Synthetic Fraud Scores",
+   "The model incorporates geographic and fraud alert data",
+   "proprietary matching logic"
+  ]
+ },
+ {
+  "fedramp_id": "FR2519759620",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cribl.Cloud is an observability data pipeline — collecting, reducing, enriching, routing, storing, and searching telemetry. The description identifies no AI/ML capability; Cribl's commercial AI assistant features are not evidenced here.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2520254824",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "InEight Document is construction document control software with configurability and tracking. No AI/ML capability is described or known for this module.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2520950455",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "The FedRAMP description is boilerplate with no feature detail, but Andesite AI's Azimuth is known as an AI-native security operations platform that uses LLM-driven analysis to assist SOC analysts with investigation and decision-making. Classified core_ai on product knowledge; confidence lowered because the description itself names no AI capability.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2521554684",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "H2O.ai Cloud for Government is a unified AI/ML platform: predictive and generative model development, fine-tuning, RAG and LLM application tooling, agentic AI, and AI governance/observability are the product's entire purpose.",
+  "signals": [
+   "unified AI platform",
+   "predictive, generative, agentic, and AI observability & governance",
+   "RAG and LLM-based applications",
+   "AI model development, fine-tuning, and evaluation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2522249893",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Asset Management Suite manages inspection and lifecycle data for bridges, tunnels, and culverts — inventory, scheduling, field data collection, and reporting. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2523143582",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "ETHERFAX GovCloud is a secure cloud fax and data exchange service with integrations into Teams, Office 365, and legacy fax systems. No AI/ML capability is described or known.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2523656707",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cisco ThousandEyes is a network and application performance monitoring platform using active synthetic monitoring and real-user data. The description identifies no AI/ML capability; its insights are measurement-based visibility.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2523857656",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Forescout is an asset visibility and network security platform whose core job is device discovery and policy enforcement, with material AI capabilities named throughout: AI-powered context augmentation for asset classification, AI modeling for device trust evaluation, and AI-based recommendations for risk mitigation.",
+  "signals": [
+   "using AI to secure the enterprise",
+   "AI-powered context augmentation",
+   "AI modeling",
+   "AI-based recommendations"
+  ]
+ },
+ {
+  "fedramp_id": "FR2523939103",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Elastic Cloud is a search, observability, and security data platform that ships built-in machine learning (anomaly detection) and vector search capabilities as material features on top of its core Elasticsearch/Kibana stack.",
+  "signals": [
+   "machine learning, alerting, and monitoring",
+   "Search (including Vector Search)"
+  ]
+ },
+ {
+  "fedramp_id": "FR2524251176",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Atlas by LMI manages logistics and cost data for scientific merit review panels — travel, payments, compliance tracking, and reporting. No AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2524349489",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "IBM Data Services for Government is the watsonx portfolio: watsonx.ai (AI development studio with foundation models and RAG), watsonx.governance (AI governance), and watsonx Orchestrate (building and deploying AI agents), plus AI-ready data services. Building and running AI is the product's primary purpose.",
+  "signals": [
+   "integrated AI development studio",
+   "retrieval augmented generation (RAG)",
+   "build, test, and deploy AI agents",
+   "end-to-end AI governance service"
+  ]
+ },
+ {
+  "fedramp_id": "FR2524416446",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "OrbusInfinity is an enterprise architecture and business transformation platform — repositories, dashboards, and IT portfolio analysis. The lone phrase 'create AI-driven value' is marketing language without an identified AI feature in the description.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2524434194",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "ThreatLocker is a deny-by-default endpoint protection platform built on explicit allowlisting, ringfencing, firewall, and storage-control policies. Its model is policy enforcement rather than ML detection; no AI capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2525247858",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Databricks is a lakehouse data platform whose primary job is data engineering, governance, and analytics, shipping material built-in AI/ML capability: machine learning and generative AI/LLM workloads, AI-driven data cataloging, and natural-language data access via its Data Intelligence Engine.",
+  "signals": [
+   "AI-powered platform",
+   "Machine Learning (ML) and generative Artificial Intelligence (AI) including Large Language Models (LLMs)",
+   "AI-driven data cataloging",
+   "natural language access"
+  ]
+ },
+ {
+  "fedramp_id": "FR2525556241",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Vanta is a security compliance automation platform whose core job is GRC, with a material AI feature: Vanta AI powers its security questionnaire automation (LLM-drafted answers) and vendor review. The description names questionnaire automation but not AI explicitly, hence medium confidence.",
+  "signals": [
+   "questionnaire automation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2525556241XM",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Vanta Government Cloud is a GRC/compliance automation platform that the vendor describes as powered by AI, with Vanta AI driving questionnaire automation and compliance workflows. AI is a material embedded feature rather than the product's primary purpose.",
+  "signals": [
+   "powered by AI and automation",
+   "questionnaire automation"
+  ]
+ },
+ {
+  "fedramp_id": "FR2525557617",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "XBU40 is a secure hosting and compliance-automation enclave platform — landing zones, vulnerability management, and automated evidence validation against FedRAMP KSIs. Its automation is rules/API-based; no AI/ML capability is described.",
+  "signals": []
+ },
+ {
+  "fedramp_id": "FR2525662082",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Nexthink Infinity is a digital employee experience platform combining endpoint analytics and user feedback for proactive IT support. The description identifies no AI/ML capability; commercial Nexthink AI assistant features are not evidenced in this boundary.",
+  "signals": []
+ }
+]
