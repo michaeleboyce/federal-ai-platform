@@ -95,7 +95,7 @@ RESEARCH_DIR = _ROOT / "audit" / "research" / "agency_workforce"
 
 _VALID_LEVEL = {"agency", "bureau"}
 _VALID_CONFIDENCE = {"high", "medium", "low"}
-_VALID_WAVE = {"0-calibration", "1", "2", "3"}
+_VALID_WAVE = {"0-calibration", "1", "2", "3", "4"}
 _VALID_DENOMINATOR_BASIS = {"federal_employees", "incl_contractors"}
 _VALID_OCC_STRATUM = {
     "general",
@@ -195,7 +195,7 @@ def _validate_w2_update(upd: dict, src: str) -> list[str]:
 
 
 def _wave_rank(wave: str) -> int:
-    order = {"0-calibration": 0, "1": 1, "2": 2, "3": 3}
+    order = {"0-calibration": 0, "1": 1, "2": 2, "3": 3, "4": 4}
     return order.get(wave, -1)
 
 
