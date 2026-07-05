@@ -1,6 +1,6 @@
 # Plan: FedRAMP authorized-services ingest + AI labeling — "the shelf inside the shelf"
 
-**Status: Phases 1–4 complete (2026-07-04); Phase 5 (Wave A) complete 2026-07-05; Phases 6–7 (Wave B + article artifacts) not started.** Check boxes as phases complete; each phase ends with a
+**Status: Phases 1–4 complete (2026-07-04); Phases 5–6 (Waves A+B) complete 2026-07-05; Phase 7 (article artifacts) not started.** Check boxes as phases complete; each phase ends with a
 verification gate. Written 2026-07-03, revised 2026-07-04 (QC loop + surface
 map); numbers reflect the 2026-06-12 snapshot.
 
@@ -193,22 +193,22 @@ against direct sqlite3; hub card ↔ spread section numbers agree.
 `app/fedramp/coverage/agencies/[abbr]/page.tsx` (+ its `_sections/`),
 `lib/db/fedramp/` helpers.
 
-- [ ] **Marketplace product detail**: render the in-scope services list for
+- [x] **Marketplace product detail**: render the in-scope services list for
   the 90 products that have one, with core_ai/ai_featured chips (Bedrock
   visibly flagged inside the AWS listing). This is the verification surface
   a fact-checking reader lands on.
-- [ ] **Per-agency coverage drill** (`/fedramp/coverage/agencies/[abbr]`):
+- [x] **Per-agency coverage drill** (`/fedramp/coverage/agencies/[abbr]`):
   additive section "Frontier-adjacent services in reach" — core-AI services
   inside packages THIS agency holds an ATO for, with issued dates. This is
   beat 4's per-agency lookup.
-- [ ] **The article's money query**, exposed as a small table on the same
+- [x] **The article's money query**, exposed as a small table on the same
   drill (and exported for the fact sheet): agencies ranked by
   (core-AI services in reach) × (IFP coverage estimate from
   `agency_ai_access_evidence`) — i.e. DOJ/HUD/SBA holding Bedrock-bearing
   packages against ~0–1% employee coverage. Label IFP estimates with the
   standard provenance chip; do NOT imply the agency enabled the service —
   copy must say "in scope of a package the agency holds," nothing stronger.
-- [ ] Nav discoverability: no new routes in Wave B (sections on existing
+- [x] Nav discoverability: no new routes in Wave B (sections on existing
   pages), so no nav changes; hub + spread cross-link the agency drills.
 
 **Gate:** tsc + vitest + dev smoke on 3 agency drills (DOJ, HUD, VA) and the
