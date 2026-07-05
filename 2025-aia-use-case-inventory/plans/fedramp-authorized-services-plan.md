@@ -1,6 +1,6 @@
 # Plan: FedRAMP authorized-services ingest + AI labeling — "the shelf inside the shelf"
 
-**Status: not started.** Check boxes as phases complete; each phase ends with a
+**Status: Phases 1–4 complete (2026-07-04); Phases 5–7 (dashboard waves + article artifacts) not started.** Check boxes as phases complete; each phase ends with a
 verification gate. Written 2026-07-03, revised 2026-07-04 (QC loop + surface
 map); numbers reflect the 2026-06-12 snapshot.
 
@@ -58,15 +58,15 @@ the strongest single artifact this data can hand the article.
 
 **Files:** `2025-fedramp/scripts/build_db.py`, `2025-fedramp/tests/`
 
-- [ ] In `build_db.py` (~L404), populate `pas_rows` from `all_others` and
+- [x] In `build_db.py` (~L404), populate `pas_rows` from `all_others` and
   `service_last_90` instead of the always-empty `authorized_services`.
   Extend the table to carry provenance and recency:
   `product_authorized_services (fedramp_id TEXT, service TEXT, recency TEXT
   CHECK (recency IN ('last_90','older')))` (~L232 DDL).
-- [ ] Add a loud regression guard: if a snapshot yields 0 total service rows
+- [x] Add a loud regression guard: if a snapshot yields 0 total service rows
   while >0 products have non-empty `all_others`, exit non-zero.
-- [ ] Rebuild: `cd 2025-fedramp && python3 scripts/build_db.py`.
-- [ ] Pytest: ≥1,900 rows; AWS US East/West package contains 'Amazon
+- [x] Rebuild: `cd 2025-fedramp && python3 scripts/build_db.py`.
+- [x] Pytest: ≥1,900 rows; AWS US East/West package contains 'Amazon
   Bedrock'; Azure package contains 'Azure OpenAI'.
 
 **Gate:** `SELECT COUNT(*), COUNT(DISTINCT service) FROM
@@ -76,11 +76,11 @@ product_authorized_services` ≈ 1918 / 1591; pytest green.
 
 **Files:** `load_fedramp.py` (MIRROR_SCHEMA + `moves` list ~L193)
 
-- [ ] Add mirror table `fedramp_authorized_services` (same columns + indexes
+- [x] Add mirror table `fedramp_authorized_services` (same columns + indexes
   on `fedramp_id` and `service`); add the pair to `moves`.
-- [ ] Back up the inventory DB, then run **`make fedramp`** (standard chain:
+- [x] Back up the inventory DB, then run **`make fedramp`** (standard chain:
   reload, re-apply product classification, re-link, promote queue).
-- [ ] `pytest tests/ -q` (52 tests); compare `fedramp_product_links` count
+- [x] `pytest tests/ -q` (52 tests); compare `fedramp_product_links` count
   before/after — must be unchanged.
 
 **Gate:** mirror row count matches Phase 1; existing tests green.
@@ -92,10 +92,10 @@ product_authorized_services` ≈ 1918 / 1591; pytest green.
 
 ### 3a. Label (cheap, wide)
 
-- [ ] Exporter: dedupe the 1,591 service names; attach context (host
+- [x] Exporter: dedupe the 1,591 service names; attach context (host
   packages, csp, a `service_desc` snippet from the host); write
   `inputs/batch_NN.json` at ~50/batch → **~32 batches**.
-- [ ] Spawn parallel labeler subagents — `model: "sonnet"` (Sonnet 5), low
+- [x] Spawn parallel labeler subagents — `model: "sonnet"` (Sonnet 5), low
   effort, ~8 concurrent. Each reads one input batch, writes ONLY its
   `results/batch_NN.json`:
   `{service, category, confidence, reasoning, signals: [verbatim cues]}`.
@@ -106,12 +106,12 @@ product_authorized_services` ≈ 1918 / 1591; pytest green.
 
 ### 3b. QC with a smarter model (stratified, adversarial)
 
-- [ ] Judge agents on the **frontier model** (main-loop model / `model:
+- [x] Judge agents on the **frontier model** (main-loop model / `model:
   "opus"` if delegated; judging is where the capability spend belongs):
   - **100% of `core_ai`** labels (these become article claims),
   - **25% random of `ai_featured`**, **10% random of `not_ai`**,
   - **100% of `confidence: low`** rows regardless of category.
-- [ ] Each judge verdict → `qc/batch_NN.json`: `{service, verdict:
+- [x] Each judge verdict → `qc/batch_NN.json`: `{service, verdict:
   confirm|overturn, corrected_category?, error_tag?, reasoning}`. Judges are
   prompted to **refute**, not rubber-stamp, and to assign an `error_tag`
   from a shared taxonomy they may extend (e.g. `marketing-name-confusion`,
@@ -120,21 +120,21 @@ product_authorized_services` ≈ 1918 / 1591; pytest green.
 
 ### 3c. Correction loop (triggered, not unconditional)
 
-- [ ] Aggregate QC: per-batch error rate + per-tag counts across batches.
-- [ ] **Trigger conditions** for a correction round:
+- [x] Aggregate QC: per-batch error rate + per-tag counts across batches.
+- [x] **Trigger conditions** for a correction round:
   - any batch with >10% overturns, or
   - any `error_tag` appearing ≥5 times across batches (a *systematic*
     mistake, i.e. rubric flaw rather than noise).
-- [ ] Correction round: amend the rubric with explicit counter-examples
+- [x] Correction round: amend the rubric with explicit counter-examples
   drawn from the overturned rows (rubric v2 written to
   `corrections/rubric_v2.md`); **relabel only the affected slice** — the
   overturned rows plus every unsampled row matching the systematic tag's
   pattern (e.g. all services whose names match the confused pattern), with
   fresh Sonnet agents on rubric v2; re-QC the relabeled slice at 100%.
-- [ ] Loop until: overturn rate <5% on the final QC pass AND no un-remediated
+- [x] Loop until: overturn rate <5% on the final QC pass AND no un-remediated
   systematic tag. Residual one-off disagreements adjudicated by the main
   loop, reasoning persisted, `source: adjudicated`.
-- [ ] Consolidate to `data/fedramp_service_classification.csv`, keyed by
+- [x] Consolidate to `data/fedramp_service_classification.csv`, keyed by
   service name, with `source ∈ {llm, qc_confirmed, qc_corrected, adjudicated}`
   so the provenance of every label is auditable.
 
@@ -146,13 +146,13 @@ correction-loop exit criteria met; CSV + rubric versions committed.
 
 **New file:** `scripts/apply_fedramp_service_classification.py`
 
-- [ ] Sidecar table `fedramp_ai_service_classification (service TEXT PRIMARY
+- [x] Sidecar table `fedramp_ai_service_classification (service TEXT PRIMARY
   KEY, category, confidence, reasoning, signals, model, classified_at,
   source)` — wipe-and-reload from the CSV, idempotent, exits non-zero if the
   mirror contains service names missing from the CSV (top-up signal, same
   contract as the product-level apply).
-- [ ] Wire into the `fedramp:` Makefile target after the product-level apply.
-- [ ] Run; sync DB to `dashboard/data/`; `pytest tests/ -q`.
+- [x] Wire into the `fedramp:` Makefile target after the product-level apply.
+- [x] Run; sync DB to `dashboard/data/`; `pytest tests/ -q`.
 
 **Gate:** Bedrock / Azure OpenAI / Gemini Enterprise present as `core_ai`;
 core_ai service count plausible (~40–80); join to
