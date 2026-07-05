@@ -1,6 +1,6 @@
 # Plan: FedRAMP authorized-services ingest + AI labeling — "the shelf inside the shelf"
 
-**Status: Phases 1–4 complete (2026-07-04); Phases 5–7 (dashboard waves + article artifacts) not started.** Check boxes as phases complete; each phase ends with a
+**Status: Phases 1–4 complete (2026-07-04); Phase 5 (Wave A) complete 2026-07-05; Phases 6–7 (Wave B + article artifacts) not started.** Check boxes as phases complete; each phase ends with a
 verification gate. Written 2026-07-03, revised 2026-07-04 (QC loop + surface
 map); numbers reflect the 2026-06-12 snapshot.
 
@@ -165,23 +165,23 @@ core_ai service count plausible (~40–80); join to
 `_sections/services-table.tsx`, `lib/db/fedramp/coverage.ts` (hub),
 `app/fedramp/coverage/page.tsx`, Vitest + fixture schema.
 
-- [ ] Helpers (guard on table existence; section hides when absent):
+- [x] Helpers (guard on table existence; section hides when absent):
   `getAiServicesInScope()` (core_ai service × host package × count of
   inventory-mapped agencies holding the package ATO) and
   `getAiServiceShelfCounts()` (headline: distinct core-AI services in scope;
   distinct agencies holding ≥1 package containing ≥1 core-AI service).
-- [ ] **Spread page**: new section between §III (20x trio) and §IV — "The
+- [x] **Spread page**: new section between §III (20x trio) and §IV — "The
   shelf inside the shelf": headline stats + table (service · host package ·
   impact level · agencies holding the package). Rewrite §IV's third-channel
   sentence to cite the now-live number instead of asserting the channel
   exists. Method footer notes raw-snapshot provenance + the three-definition
   distinction.
-- [ ] **Coverage hub**: extend the "Two ways to be AI" definition band to
+- [x] **Coverage hub**: extend the "Two ways to be AI" definition band to
   three ways (linkage / listing classification / **service scope**) — the
   distinction is load-bearing and the hub is where readers learn definitions.
   Add one stat card ("Core-AI services in scope inside authorized packages —
   N across M packages") linking to the spread section anchor.
-- [ ] Vitest for both helpers (fixture rows incl. a package with a core_ai
+- [x] Vitest for both helpers (fixture rows incl. a package with a core_ai
   service and an agency ATO).
 
 **Gate:** tsc + vitest green; dev smoke; every displayed number cross-checked
