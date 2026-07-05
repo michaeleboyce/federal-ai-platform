@@ -1,0 +1,780 @@
+[
+ {
+  "service": "Managed Service for Apache Spark (formerly Dataproc)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "32e9885b53d6c289"
+ },
+ {
+  "service": "Management Agent Service",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "0fe525a7d37c0756"
+ },
+ {
+  "service": "Management Console",
+  "hosts": [
+   {
+    "fedramp_id": "FR2309544938",
+    "csp": "Cloudera Government Solutions, Inc",
+    "cso": "Cloudera for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudera for Government is a secure and governed cloud service platform that offers a broad set of enterprise data cloud services with data analytics and artificial intelligence functionality. With Cloudera for Government, users can create and manage secure data lakes, self-service analytics, and machine learning services without installing and managing the data platform software. Cloudera for Gov",
+  "input_hash": "62d585829e07a919"
+ },
+ {
+  "service": "Mark43 Analytics & Data Lake",
+  "hosts": [
+   {
+    "fedramp_id": "FR2235965777",
+    "csp": "Mark43, Inc.",
+    "cso": "Mark43 Public Safety Platform (PSP)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Mark43 provides a cloud-native public safety operations platform that supports end-to-end law enforcement and emergency response workflows, from call intake and dispatch through reporting, investigation, and operational analysis. The platform delivers integrated Computer-Aided Dispatch (CAD), Records Management System (RMS), mobile, analytics, and supporting services through a unified, web-based a",
+  "input_hash": "901f7d950735fdbe"
+ },
+ {
+  "service": "Mark43 CAD",
+  "hosts": [
+   {
+    "fedramp_id": "FR2235965777",
+    "csp": "Mark43, Inc.",
+    "cso": "Mark43 Public Safety Platform (PSP)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Mark43 provides a cloud-native public safety operations platform that supports end-to-end law enforcement and emergency response workflows, from call intake and dispatch through reporting, investigation, and operational analysis. The platform delivers integrated Computer-Aided Dispatch (CAD), Records Management System (RMS), mobile, analytics, and supporting services through a unified, web-based a",
+  "input_hash": "21fb2c763230666b"
+ },
+ {
+  "service": "Mark43 OnScene (Mobile)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2235965777",
+    "csp": "Mark43, Inc.",
+    "cso": "Mark43 Public Safety Platform (PSP)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Mark43 provides a cloud-native public safety operations platform that supports end-to-end law enforcement and emergency response workflows, from call intake and dispatch through reporting, investigation, and operational analysis. The platform delivers integrated Computer-Aided Dispatch (CAD), Records Management System (RMS), mobile, analytics, and supporting services through a unified, web-based a",
+  "input_hash": "f7df5673a9e28acf"
+ },
+ {
+  "service": "Mark43 RMS",
+  "hosts": [
+   {
+    "fedramp_id": "FR2235965777",
+    "csp": "Mark43, Inc.",
+    "cso": "Mark43 Public Safety Platform (PSP)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Mark43 provides a cloud-native public safety operations platform that supports end-to-end law enforcement and emergency response workflows, from call intake and dispatch through reporting, investigation, and operational analysis. The platform delivers integrated Computer-Aided Dispatch (CAD), Records Management System (RMS), mobile, analytics, and supporting services through a unified, web-based a",
+  "input_hash": "cb02aeaff21289a7"
+ },
+ {
+  "service": "Marketing Cloud Growth & Advanced",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "a2c4c295aecc9a5c"
+ },
+ {
+  "service": "Marketplace",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "3bd1a7ef0390cd79"
+ },
+ {
+  "service": "Marketplace Portal",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "f8285f7522cb6607"
+ },
+ {
+  "service": "Materials Testing and Management",
+  "hosts": [
+   {
+    "fedramp_id": "FR2031222637",
+    "csp": "Aurigo Software Technologies, Inc.",
+    "cso": "Masterworks Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Aurigo Masterworks Cloud is a capital planning and construction management solution designed exclusively for public agencies. Masterworks Cloud empowers federal, state, and local governments with a secure, AI-powered platform to plan, fund, and deliver infrastructure projects efficiently. With end-to-end capital planning, federal aid reimbursement, and construction project management, agencies can",
+  "input_hash": "70add70cf0f26ef9"
+ },
+ {
+  "service": "Max users per escalation level",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "d7b8e96d241cc910"
+ },
+ {
+  "service": "Maximus Amazon Connect Platform",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "606844880df04596"
+ },
+ {
+  "service": "Maximus CodeShuttle",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "2c9a14d39c9cc95d"
+ },
+ {
+  "service": "Maximus Digital Experience Hub (DXHub)",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "3307e4868c7ff915"
+ },
+ {
+  "service": "Maximus Enhanced Reporting",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "c6270b8d55348d5c"
+ },
+ {
+  "service": "Maximus Intelligent Document Processing (IDP)",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "b1acdb6a68ae6305"
+ },
+ {
+  "service": "Maximus RPA",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "c96de5155fcca68e"
+ },
+ {
+  "service": "Maximus Suicide Prevention Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "ad1c6cda719c06dd"
+ },
+ {
+  "service": "Memorystore for Valkey",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "dc6a7b3949371378"
+ },
+ {
+  "service": "Metadata on Gemini Enterprise Agent Platform (Vertex ML Metadata)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "05bf3168f1cbe75f"
+ },
+ {
+  "service": "Metering",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "439c5152184a387d"
+ },
+ {
+  "service": "Microsoft 365 Copilot",
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server",
+  "input_hash": "e8f53db0435005d8"
+ },
+ {
+  "service": "Microsoft 365 Defender",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "069ce10a2e4ff41b"
+ },
+ {
+  "service": "Microsoft 365 Suite User Experience (SUE) (including Admin Center to Administer M365, Manage core service settings from M365, Windows PowerShell to Manage M365)",
+  "hosts": [
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government. These cloud-based services are designed to provide organizations with streamlined commu",
+  "input_hash": "d28caea2c5e3639a"
+ },
+ {
+  "service": "Microsoft Azure Attestation",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "75e1bf814aad313b"
+ },
+ {
+  "service": "Microsoft Azure Government Management Portal",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "66f99b5fc1b522c1"
+ },
+ {
+  "service": "Microsoft Azure Peering Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "ea25442613b8dd73"
+ },
+ {
+  "service": "Microsoft Cloud App Security",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "f8e445047dfa7aa2"
+ },
+ {
+  "service": "Microsoft Copilot Studio",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "036dd3376b41f9f7"
+ },
+ {
+  "service": "Microsoft Defender Threat Intelligence",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "d58db82b3ecc1423"
+ },
+ {
+  "service": "Microsoft Defender Vulnerability Management",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "29a3130a786153de"
+ },
+ {
+  "service": "Microsoft Defender for Endpoint",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "2847629fa3f01a5f"
+ },
+ {
+  "service": "Microsoft Digital Contact Center Platform",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "3fad69ee88f5687b"
+ },
+ {
+  "service": "Microsoft Entra ID Free",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "055036629b05ed02"
+ },
+ {
+  "service": "Microsoft Entra ID Governance",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "6d618de266a2bf1a"
+ },
+ {
+  "service": "Microsoft Entra ID PI and Microsoft Entra ID P2",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "ff1ff6444d72cafb"
+ },
+ {
+  "service": "Microsoft Fabric",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "dbff8b8d33eda3d3"
+ },
+ {
+  "service": "Microsoft Foundry Portal (formerly Azure AI Portal)",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "daf7077d99f41f43"
+ },
+ {
+  "service": "Microsoft Graph",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "e78efe0ac08c5f6e"
+ },
+ {
+  "service": "Microsoft Peering Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "df3806c584619384"
+ },
+ {
+  "service": "Microsoft Pin Reset Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "539a941d3bf659e5"
+ },
+ {
+  "service": "Microsoft PowerApps",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "12c6c448a5b8a272"
+ },
+ {
+  "service": "Microsoft Purview",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "86a062d7de69d3c4"
+ },
+ {
+  "service": "Microsoft Purview and MDO (including Adoption Score, Compliance Management, Manual retention labels, Basic org-wide or location-wide retention policies, Rules-based automatic retention policies, Machine Learning-based retention, Teams message retention policies, Records Management, Basic Message Encryption, Advanced Message Encryption, DLP for emails & files, DLP for Teams chat, Endpoint DLP, Microsoft Defender for Office 365 Plan 2 , Safe Documents , eDiscovery (Standard) (including Hold and Export) , Litigation Hold , eDiscovery (Premium) , Audit (Standard) , Audit (Premium) , Microsoft Purview Insider Risk Management, Communication Compliance, Information Barriers, Microsoft Defender Suite GCCH, Microsoft Purview Suite GCCH, Microsoft 365 G5 Info Protection and Governance, Microsoft 365 G5 Insider Risk Management, Microsoft Purview Insider Risk Management forensic evidence, Microsoft 365 G5 eDiscovery and Audit, Microsoft Defender Suite FLW for GCCH, Microsoft 365 Purview Suite FLW for GCCH, Microsoft Defender + Purview Suite FLW for GCCH, Microsoft 365 F5 Information Protection and Governance, Microsoft 365 F5 Insider Risk Management, Microsoft 365 F5 eDiscovery and Audit, Microsoft Defender for Office 365 Plan 1, Microsoft Defender for Office 365 Plan 2, Premium Assessments add-on for Compliance Manager, Priva Privacy Risk Management, Priva Subject Rights Requests, Microsoft Purview Data Loss Prevention (for email and files), 10-year Audit Log Retention)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server",
+  "input_hash": "882140cb4bfcdde2"
+ },
+ {
+  "service": "Microsoft Purview and MDO (including Adoption Score, Secure Score, Compliance Management, Manual retention labels, Basic org-wide or location-wide retention policies, Rules-based automatic retention policies, Machine Learning-based retention, Teams message retention policies, Records Management, DLP for emails & files, DLP for Teams chat, Endpoint DLP, Basic Message Encryption, Advanced Message Encryption, Microsoft Defender for Office 365 Plan 2 , Safe Documents , eDiscovery (Standard) (including Hold and Export) , Litigation Hold , eDiscovery (Premium) , Audit (Standard) , Audit (Premium) , Microsoft Purview Insider Risk Management, Communication Compliance, Information Barriers, Microsoft Defender Suite GCC, Microsoft Purview Suite GCC, Microsoft 365 G5 Info Protection and Governance, Microsoft 365 G5 Insider Risk Management, Microsoft Purview Insider Risk Management forensic evidence, Microsoft 365 G5 eDiscovery and Audit, Microsoft Defender Suite FLW for GCC, Microsoft Purview Suite FLW for GCC, Microsoft Defender + Purview Suite FLW for GCC, Microsoft 365 F5 Information Protection and Governance, Microsoft 365 F5 Insider Risk Management, Microsoft 365 F5 eDiscovery and Audit, Microsoft Defender for Office 365 Plan 1, Microsoft Defender for Office 365 Plan 2, Premium Assessments add-on for Compliance Manager, Priva Privacy Risk Management, Priva Subject Rights Requests, Microsoft Purview Data Loss Prevention (for email and files), 10-year Audit Log Retention)",
+  "hosts": [
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government. These cloud-based services are designed to provide organizations with streamlined commu",
+  "input_hash": "ae2961ff5741b89a"
+ },
+ {
+  "service": "Microsoft Secure Score",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "bd4ad03ddeee4698"
+ },
+ {
+  "service": "Microsoft Stream",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "f8be598a3eb58c33"
+ },
+ {
+  "service": "Microsoft Teams (MS Teams) (including Unlimited chat, Online meetings, Live Events, Webinars, Screen sharing and custom backgrounds, Record meetings, Priority notifications, Teams Phone Standard (via Direct Routing), Audio Conferencing (via Direct Routing), \"In-person events, Hybrid RSVP, Places card, , Work plans, Workplace presence\", Places Explorer, Places Finder, Teams Premium, Audio Conferencing (Direct Routing), Microsoft Teams Shared Space License",
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server",
+  "input_hash": "44388738324de711"
+ },
+ {
+  "service": "Microsoft Teams (MSTeams) (including Microsoft Teams, Unlimited chat, Online meetings, Live Events, Webinars, Screen sharing and custom backgrounds, Record meetings, Priority notifications, Audio Conferencing, In-person events, Hybrid RSVP, Places card, Work plans, Workplace presence, Places Explorer, Places Finder, Teams Premium, Audio Conferencing with Select Dial Out, Extended Dial Out Minutes to US and Canada , Teams Phone Standard, Domestic Calling Plan, Domestic Calling 120 Minute Plan, International Calling Plan (includes Domestic Plan), Teams Phone with Calling Plan, Microsoft Teams Shared Space License)",
+  "hosts": [
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government. These cloud-based services are designed to provide organizations with streamlined commu",
+  "input_hash": "59e79b5962a72b43"
+ }
+]

@@ -1,0 +1,204 @@
+[
+ {
+  "service": "Tanium Ask",
+  "verdict": "overturn",
+  "corrected_category": "ai_featured",
+  "error_tag": "search-vs-ai-ambiguity",
+  "reasoning": "Tanium Ask is fundamentally the real-time endpoint query engine (a structured sensor-based question grammar for retrieving endpoint data), not itself an AI/ML capability; the generative-AI natural-language translation is a newer embedded add-on, so it is at most ai_featured, not core_ai."
+ },
+ {
+  "service": "Tanium Automate",
+  "verdict": "confirm",
+  "reasoning": "Rules-based endpoint workflow/remediation automation; no ML capability. not_ai stands."
+ },
+ {
+  "service": "Tanium Certificate Manager",
+  "verdict": "confirm",
+  "reasoning": "Certificate discovery/lifecycle management module; plumbing, not AI."
+ },
+ {
+  "service": "Tanium Client Management",
+  "verdict": "confirm",
+  "reasoning": "Endpoint agent/client administration; not an ML capability."
+ },
+ {
+  "service": "Tanium Comply",
+  "verdict": "confirm",
+  "reasoning": "Rules-based compliance/vulnerability benchmark scanning; not AI."
+ },
+ {
+  "service": "Tanium Deploy",
+  "verdict": "confirm",
+  "reasoning": "Software deployment/patching module; infrastructure automation, not ML."
+ },
+ {
+  "service": "Tanium Guide",
+  "verdict": "confirm",
+  "reasoning": "In-product guided-walkthrough/onboarding module; no AI function. not_ai is correct and low confidence is appropriate."
+ },
+ {
+  "service": "Tanium Map",
+  "verdict": "confirm",
+  "reasoning": "Application-dependency/topology visualization; not an ML capability."
+ },
+ {
+  "service": "Tanium Provision",
+  "verdict": "confirm",
+  "reasoning": "OS imaging/provisioning tool; infrastructure automation, not ML."
+ },
+ {
+  "service": "Tanium Reputation",
+  "verdict": "confirm",
+  "reasoning": "File/process reputation lookup against threat-intel feeds; a database/lookup service, not a distinct ML capability."
+ },
+ {
+  "service": "Tanium SBOM",
+  "verdict": "confirm",
+  "reasoning": "Software bill-of-materials inventory/generation; not ML."
+ },
+ {
+  "service": "Tenancy Lifecycle Service",
+  "verdict": "confirm",
+  "reasoning": "Oracle Cloud tenancy provisioning/lifecycle; account infrastructure, not ML."
+ },
+ {
+  "service": "Text Analytics",
+  "verdict": "confirm",
+  "reasoning": "Azure Text Analytics (Cognitive Services for Language) is an NLP API (sentiment, entity, key-phrase); unambiguous core_ai."
+ },
+ {
+  "service": "Threat Intelligence Platform",
+  "verdict": "confirm",
+  "reasoning": "Oracle threat-intelligence aggregation is a feed/database-oriented service with no distinct named ML component; not_ai with low confidence is appropriate."
+ },
+ {
+  "service": "Ticketing System Service",
+  "verdict": "confirm",
+  "reasoning": "Standard ticketing/workflow tooling on GovDataHosting; not AI."
+ },
+ {
+  "service": "Torus",
+  "verdict": "confirm",
+  "reasoning": "Internal M365 identity/token infrastructure component; no AI/ML function. not_ai stands."
+ },
+ {
+  "service": "TotalAppSec (WAS & API Security)",
+  "verdict": "confirm",
+  "reasoning": "Qualys web-application and API vulnerability scanning; signature/rules-based, not ML."
+ },
+ {
+  "service": "Translate",
+  "verdict": "confirm",
+  "reasoning": "A standalone service named Translate on a multimedia/FMV exploitation platform reads most naturally as machine language translation, which is an explicit NLP core_ai capability; medium confidence is appropriate given the generic name."
+ },
+ {
+  "service": "Translator Text",
+  "verdict": "confirm",
+  "reasoning": "Azure Translator Text is a machine-translation NLP API; unambiguous core_ai."
+ },
+ {
+  "service": "Trellix Endpoint Detection and Response (EDR)",
+  "verdict": "confirm",
+  "reasoning": "EDR is a broader endpoint-security product shipping ML-driven behavioral detection as an embedded feature; ai_featured is correct."
+ },
+ {
+  "service": "Trellix Global Threat Intelligence (GTI)",
+  "verdict": "confirm",
+  "reasoning": "A cloud reputation/threat-intel feed aggregating sensor telemetry; fundamentally a feed/database service, not a named ML capability. not_ai stands."
+ },
+ {
+  "service": "Trellix Helix Connect",
+  "verdict": "confirm",
+  "reasoning": "SecOps/XDR orchestration platform (formerly FireEye Helix) with ML-based correlation/analytics embedded; ai_featured with low confidence fits the security-analytics-with-ML example in the rubric."
+ },
+ {
+  "service": "Trellix Insights",
+  "verdict": "confirm",
+  "reasoning": "Trellix Insights uses predictive analytics/ML to forecast threat prevalence and prioritize risk; embedded ML feature within the broader platform. ai_featured is correct."
+ },
+ {
+  "service": "Trellix Threat Intelligence Exchange (TIE)",
+  "verdict": "confirm",
+  "reasoning": "A file/reputation-sharing exchange across endpoints; primarily a database/correlation service, not a distinct ML capability. not_ai stands."
+ },
+ {
+  "service": "Tungsten TotalAgility Cloud®",
+  "verdict": "confirm",
+  "reasoning": "Tungsten (formerly Kofax) TotalAgility is an intelligent document-processing platform built around AI-driven cognitive capture, OCR, and classification; document intelligence is its defining core, so core_ai is defensible."
+ },
+ {
+  "service": "Unstructured Platform",
+  "verdict": "confirm",
+  "reasoning": "Unstructured converts documents into structured data using ML layout-detection/OCR models for LLM/RAG pipelines; that ML-based document parsing matches the document-intelligence definition of core_ai. Medium confidence is apt."
+ },
+ {
+  "service": "User Onboarding Report",
+  "verdict": "confirm",
+  "reasoning": "A PagerDuty reporting feature tracking user onboarding; not AI."
+ },
+ {
+  "service": "User Support Desk for Public Sector",
+  "verdict": "confirm",
+  "reasoning": "A help-desk/support service for Concur's public-sector offering; not AI."
+ },
+ {
+  "service": "VCN Flow Logs",
+  "verdict": "confirm",
+  "reasoning": "Oracle Cloud network flow logging; monitoring/logging infrastructure, not AI."
+ },
+ {
+  "service": "VMDR – Vulnerability Management, Detection & Response",
+  "verdict": "confirm",
+  "reasoning": "Qualys VMDR is a vulnerability scanning/management platform correlating CVEs; signature-based, not a named AI/ML capability. not_ai stands."
+ },
+ {
+  "service": "VPC Service Controls",
+  "verdict": "confirm",
+  "reasoning": "Google Cloud network security perimeter / data-exfiltration control; networking/security, not AI."
+ },
+ {
+  "service": "VX-P949",
+  "verdict": "confirm",
+  "reasoning": "An opaque Motorola product/model code within the Mission Critical Ecosystem; no AI signal, default not_ai per precision-over-recall."
+ },
+ {
+  "service": "Valinor Harbor",
+  "verdict": "confirm",
+  "reasoning": "An opaque codename in Palantir's supporting-services boundary with no discernible product signal; not_ai is the correct conservative call."
+ },
+ {
+  "service": "Video Indexer",
+  "verdict": "confirm",
+  "reasoning": "Azure AI Video Indexer is a computer-vision/speech AI service extracting faces, transcripts, and objects from video; unambiguous core_ai."
+ },
+ {
+  "service": "Video Intelligence API*",
+  "verdict": "confirm",
+  "reasoning": "Google Cloud Video Intelligence API is a computer-vision service detecting objects/scenes/activities in video; unambiguous core_ai."
+ },
+ {
+  "service": "Virtual Care",
+  "verdict": "confirm",
+  "reasoning": "Salesforce Virtual Care is a CRM-based health/care-coordination application, not an AI capability itself. not_ai stands."
+ },
+ {
+  "service": "Vitals (Early Intervention)",
+  "verdict": "confirm",
+  "reasoning": "A NEOGOV public-safety early-intervention module tracking risk indicators, most likely rule/threshold based rather than a distinct ML capability. not_ai with low confidence is appropriate."
+ },
+ {
+  "service": "WatchTower and WatchTower Pro Threat Hunting services",
+  "verdict": "confirm",
+  "reasoning": "A managed threat-hunting service delivered on SentinelOne's Singularity platform whose detection engine explicitly uses machine learning and behavioral AI; ai_featured fits the security-analytics-with-ML rubric example."
+ },
+ {
+  "service": "Wayfinder MDR Elite",
+  "verdict": "confirm",
+  "reasoning": "Managed detection and response built on SentinelOne's ML/behavioral-AI detection engine; ai_featured is correct."
+ },
+ {
+  "service": "Wayfinder MDR Essentials",
+  "verdict": "confirm",
+  "reasoning": "Managed detection and response built on SentinelOne's ML/behavioral-AI detection engine; ai_featured is correct."
+ }
+]

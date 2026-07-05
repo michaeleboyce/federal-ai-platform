@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Office for Web (including Microsoft 365 for the web, Visio for the web, Microsoft Editor premium features, Multilingual user interface for Microsoft 365 apps)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Primarily the Office web-app productivity suite, but explicitly bundles Microsoft Editor premium features, an NLP-driven writing assistant (grammar, clarity, rewrite suggestions) shipped as an embedded feature.",
+  "signals": ["Microsoft Editor premium features", "Office for Web", "writing assistant"]
+ },
+ {
+  "service": "Okta Device Access",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Device trust and desktop MFA/passwordless access management; identity infrastructure, not AI.",
+  "signals": ["Device Access", "identity", "MFA"]
+ },
+ {
+  "service": "Okta Identity Governance (OIG)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Access certification and identity governance/compliance workflows; not AI.",
+  "signals": ["Identity Governance", "access certification"]
+ },
+ {
+  "service": "Okta Workflows",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A no-code automation/orchestration tool for identity-related business processes; rule-based automation, not AI.",
+  "signals": ["Workflows", "no-code automation", "identity"]
+ },
+ {
+  "service": "On-call Schedules",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty's rotation/scheduling feature for on-call staff; not AI.",
+  "signals": ["On-call Schedules", "rotation"]
+ },
+ {
+  "service": "On-prem and Cloud connectivity",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qlik data-connectivity feature linking on-prem and cloud sources; integration plumbing, not AI.",
+  "signals": ["connectivity", "on-prem", "cloud"]
+ },
+ {
+  "service": "Onboard (Employee Onboarding)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV's HR onboarding workflow module; standard HCM/HRIS functionality, not AI.",
+  "signals": ["Onboarding", "HCM", "workforce management"]
+ },
+ {
+  "service": "One Touch to Join to Conference Bridge*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A conferencing/dial-in convenience feature within PagerDuty incident response; not AI.",
+  "signals": ["Conference Bridge", "One Touch to Join"]
+ },
+ {
+  "service": "OneDrive SharePoint (ODSP) (including SharePoint Kiosk (2 GB OneDrive storage) , SharePoint Plan 1 (10 GB storage, 1 TB OneDrive storage), SharePoint Plan 2 (10 GB storage, 1+ TB OneDrive storage), Microsoft Lists, SharePoint Advanced Management, Microsoft 365 Extra File Storage, Viva Connections)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "File storage, collaboration, and intranet-portal bundle (OneDrive/SharePoint/Lists/Viva Connections); document/collaboration infrastructure, not AI.",
+  "signals": ["OneDrive", "SharePoint", "file storage", "Viva Connections"]
+ },
+ {
+  "service": "OneDrive SharePoint (ODSP) (including SharePoint Kiosk (2 GB OneDrive storage), SharePoint Plan 1 (10GB Storage, 1 TB OneDrive storage), SharePoint Plan 2  (10GB storage, 1+ TB OneDrive storage), Microsoft Lists, SharePoint Advanced Management, Extra Graph Connector Capacity, Office 365 Extra File Storage)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same OneDrive/SharePoint storage and collaboration bundle (GCC-High variant); not AI.",
+  "signals": ["OneDrive", "SharePoint", "file storage"]
+ },
+ {
+  "service": "OneNet",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be a network/connectivity offering under the FedHIVE IaaS/PaaS/SaaS accelerator platform; no evidence of an AI capability.",
+  "signals": ["OneNet", "FedHIVE", "network"]
+ },
+ {
+  "service": "OneReach (ONR)",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "OneReach.ai is a conversational-AI / intelligent virtual agent (IVA) builder platform used by government contact centers; this matches the rubric's agent-builder core_ai category.",
+  "signals": ["OneReach", "conversational AI", "virtual agent", "IVA"]
+ },
+ {
+  "service": "OpenText Asset Management  [+ OpenText Core Asset Management]",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IT asset management (ITAM) module within OpenText's ITMX platform; not AI.",
+  "signals": ["Asset Management", "ITAM"]
+ },
+ {
+  "service": "OpenText Project and Portfolio Management [+ OpenText Core Project and Portfolio Management]",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Project and portfolio management (PPM) tooling; not AI.",
+  "signals": ["Project and Portfolio Management", "PPM"]
+ },
+ {
+  "service": "OpenText Service Management [+ OpenText Core Service Management]",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IT service management (ITSM) module; ticketing/workflow tooling, not AI.",
+  "signals": ["Service Management", "ITSM"]
+ },
+ {
+  "service": "OpenText Universal Discovery and CMDB  [+ OpenText Core Universal Discovery and CMDB]",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Asset discovery and configuration management database (CMDB); infrastructure inventory tooling, not AI.",
+  "signals": ["Universal Discovery", "CMDB"]
+ },
+ {
+  "service": "OpenText XMedius",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "XMedius is a fax-over-IP / secure document delivery product; not AI.",
+  "signals": ["XMedius", "fax", "document delivery"]
+ },
+ {
+  "service": "OpenText™ Content Management (Extended ECM) for Government",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "An enterprise content management (ECM) platform for organizing and governing documents/records; core function is content/records management, not AI.",
+  "signals": ["Content Management", "Extended ECM", "records"]
+ },
+ {
+  "service": "OpenText™ Core Application Security (FoD)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Fortify on Demand static/dynamic application security testing; code-scanning security service, not AI.",
+  "signals": ["Application Security", "Fortify", "static code scanning"]
+ },
+ {
+  "service": "OpenText™ Process Automation for Government",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Business process automation/workflow orchestration tooling; rule-driven BPM, not AI.",
+  "signals": ["Process Automation", "workflow"]
+ },
+ {
+  "service": "Operational Maturity",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty reporting/benchmarking feature on incident-response maturity; dashboards/metrics, not AI.",
+  "signals": ["Operational Maturity", "reporting"]
+ },
+ {
+  "service": "Operational Reviews, On-call Readiness Analytics and Administration",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Administrative reporting and readiness-analytics dashboards within PagerDuty; standard analytics/admin tooling, not a distinct AI capability.",
+  "signals": ["Readiness Analytics", "Operational Reviews", "Administration"]
+ },
+ {
+  "service": "Operations Insight",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Oracle's Ops Insights capability applies machine-learning-based capacity forecasting and anomaly detection on top of OCI monitoring data, an embedded ML analytics feature within a broader operations product.",
+  "signals": ["Operations Insight", "capacity planning", "anomaly detection", "ML forecasting"]
+ },
+ {
+  "service": "Operator Access Control",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A security control restricting/logging Oracle personnel access to customer tenancies; access-control governance, not AI.",
+  "signals": ["Operator Access Control", "access control"]
+ },
+ {
+  "service": "Opterra",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be a named module within SMX's Elevate Intelligent Automation Platform (provisioning/monitoring/lifecycle management); no clear AI-specific capability identifiable, so defaulting to not_ai per precision-over-recall.",
+  "signals": ["Opterra", "Elevate IAP", "automation platform"]
+ },
+ {
+  "service": "Oracle Access Governance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Identity/access governance and certification service; not AI.",
+  "signals": ["Access Governance", "identity"]
+ },
+ {
+  "service": "Oracle Analytics Cloud",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A BI/analytics platform whose product ships embedded AI-powered auto-insights, natural-language query, and forecasting as a secondary capability layered on core reporting/dashboarding.",
+  "signals": ["Analytics Cloud", "AI-powered insights", "natural language query"]
+ },
+ {
+  "service": "Oracle Cloud AI Services (Anomaly Detection)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "A dedicated Oracle AI Services offering providing ML-based anomaly detection as its core function.",
+  "signals": ["AI Services", "Anomaly Detection", "ML"]
+ },
+ {
+  "service": "Oracle Cloud AI Services (Language)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's NLP AI service (entity extraction, sentiment, text classification); a core language-AI capability.",
+  "signals": ["AI Services", "Language", "NLP"]
+ },
+ {
+  "service": "Oracle Cloud AI Services (Speech)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's speech-to-text AI service; a core speech AI capability.",
+  "signals": ["AI Services", "Speech", "speech-to-text"]
+ },
+ {
+  "service": "Oracle Cloud AI Services (Time Series Forecasting Service)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's ML-based time-series forecasting AI service; a core ML capability.",
+  "signals": ["AI Services", "Time Series Forecasting", "ML"]
+ },
+ {
+  "service": "Oracle Cloud AI Services (Vision)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's computer-vision AI service (image classification, object detection, OCR); a core CV capability.",
+  "signals": ["AI Services", "Vision", "computer vision"]
+ },
+ {
+  "service": "Oracle Enterprise Performance Management Enterprise Cloud Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A broad financial planning, budgeting, consolidation, and reporting (EPM) suite; core identity is FP&A software, not an AI capability, even though isolated ML forecasting modules exist elsewhere in Oracle's portfolio.",
+  "signals": ["Enterprise Performance Management", "planning", "budgeting", "consolidation"]
+ },
+ {
+  "service": "Oracle Enterprise Performance Management Standard Cloud Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard-tier EPM planning/budgeting/reporting suite; financial management software, not AI.",
+  "signals": ["Enterprise Performance Management", "Standard", "budgeting"]
+ },
+ {
+  "service": "Oracle Integration Cloud",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "An iPaaS/integration and low-code process-automation platform; connects and orchestrates systems, not itself an AI capability.",
+  "signals": ["Integration Cloud", "iPaaS", "process automation"]
+ },
+ {
+  "service": "Oracle Managed Access (OMA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's operator-access-control security mechanism restricting internal personnel access to customer environments; not AI.",
+  "signals": ["Managed Access", "operator access control"]
+ },
+ {
+  "service": "Oracle Process Automation (OPA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Low-code business process automation/BPM tooling; rule-driven workflow, not AI.",
+  "signals": ["Process Automation", "BPM", "workflow"]
+ },
+ {
+  "service": "Organization Policy Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP's resource governance/policy-constraint service; not AI.",
+  "signals": ["Organization Policy", "governance", "GCP"]
+ },
+ {
+  "service": "Out-of-the-box Integrations, Plus Workflow Extensions*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Pre-built integrations and workflow extension capability within PagerDuty; integration tooling, not AI.",
+  "signals": ["Integrations", "Workflow Extensions"]
+ },
+ {
+  "service": "OutSystems 11",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A low-code application development platform that ships an embedded ML-based AI Mentor System (architecture/technical-debt analysis) and generative-AI development assistance as feature additions to the core low-code product.",
+  "signals": ["OutSystems", "AI Mentor System", "low-code"]
+ },
+ {
+  "service": "Outbound Firewall",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A network egress firewall control; not AI.",
+  "signals": ["Firewall", "outbound", "network security"]
+ },
+ {
+  "service": "Outbound HTTP/HTTPS Proxy",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A network proxy for outbound web traffic; not AI.",
+  "signals": ["HTTP/HTTPS Proxy", "outbound", "network"]
+ },
+ {
+  "service": "Outlier Incidents",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A PagerDuty analytics report surfacing services with abnormally high incident volume; likely rule/threshold-based reporting rather than a distinct ML capability, so defaulting to not_ai per precision-over-recall.",
+  "signals": ["Outlier Incidents", "analytics report"]
+ },
+ {
+  "service": "PC – Policy Compliance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qualys policy-compliance auditing against configuration benchmarks; compliance scanning, not AI.",
+  "signals": ["Policy Compliance", "configuration benchmarks"]
+ },
+ {
+  "service": "PCI – PCI Compliance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qualys PCI-DSS compliance scanning module; not AI.",
+  "signals": ["PCI Compliance", "PCI-DSS scanning"]
+ },
+ {
+  "service": "PHInventory (Server & Software Inventory Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Server and software inventory tracking within Project Hosts' GSS One platform; asset inventory tooling, not AI.",
+  "signals": ["Inventory Management", "server inventory"]
+ },
+ {
+  "service": "PM – Patch Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qualys patch-management module; vulnerability remediation tooling, not AI.",
+  "signals": ["Patch Management", "vulnerability remediation"]
+ },
+ {
+  "service": "POA&M",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Plan of Action and Milestones tracking within a GRC platform (Onspring); compliance/risk tracking, not AI.",
+  "signals": ["POA&M", "GRC", "compliance tracking"]
+ },
+ {
+  "service": "PPAC Admin Analytics",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be an administrative analytics/reporting dashboard on Azure Commercial Cloud; no evidence of a distinct AI/ML capability.",
+  "signals": ["Admin Analytics", "dashboard"]
+ },
+ {
+  "service": "Package Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A document/data package handling feature within Oracle Aconex's construction collaboration platform; not AI.",
+  "signals": ["Package Management", "Aconex", "document collaboration"]
+ }
+]

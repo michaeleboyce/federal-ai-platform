@@ -1,0 +1,352 @@
+[
+ {
+  "service": "HPE ProLiant Servers",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Physical server hardware line; no AI/ML capability.",
+  "signals": ["ProLiant", "servers"]
+ },
+ {
+  "service": "Harmony Portal",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Access/management portal for Motorola's mission-critical communications ecosystem; no evidence of an AI/ML capability in the named service.",
+  "signals": ["portal", "mission critical communications"]
+ },
+ {
+  "service": "Health Insights",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Health Insights is Microsoft's AI service for clinical document analysis, trial matching, and medical text intelligence.",
+  "signals": ["Health Insights", "Azure AI", "clinical NLP"]
+ },
+ {
+  "service": "Healthcare Bot",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Microsoft Healthcare Bot is a conversational AI/chat assistant service built for healthcare scenarios.",
+  "signals": ["Healthcare Bot", "conversational AI"]
+ },
+ {
+  "service": "Hirevue GovCloud",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Video interviewing/recruiting platform whose core differentiator is embedded AI-driven candidate assessment scoring, per the snippet's explicit 'artificial intelligence' reference.",
+  "signals": ["artificial intelligence", "predictive I-O science", "video interviewing"]
+ },
+ {
+  "service": "Home Health",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce Health Cloud vertical module for home health case/care management; CRM functionality, not AI.",
+  "signals": ["Salesforce", "care management"]
+ },
+ {
+  "service": "Horizon3.ai Node Zero",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "NodeZero is an autonomous penetration-testing platform whose attack-path decisioning is algorithm/ML-driven, embedded within a broader offensive-security-testing product.",
+  "signals": ["autonomous penetration testing", "Horizon3.ai"]
+ },
+ {
+  "service": "Hyperdrive",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare Hyperdrive accelerates database connections/query caching; infrastructure, not AI.",
+  "signals": ["database connection pooling", "Cloudflare"]
+ },
+ {
+  "service": "Hyperproof Gov",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GRC (governance, risk, compliance) workflow/evidence-management SaaS; not AI-driven.",
+  "signals": ["compliance", "GRC"]
+ },
+ {
+  "service": "Hyperscience Hypercell",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Hyperscience's platform performs ML-based intelligent document processing — classification and data extraction from forms/documents.",
+  "signals": ["Hyperscience", "document intelligence", "machine learning"]
+ },
+ {
+  "service": "IA (Internal Affairs Case Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV case-management module for internal affairs workflows; plain case tracking, not AI.",
+  "signals": ["case management"]
+ },
+ {
+  "service": "IBM Concert for Government",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "IBM Concert is an application resource/dependency management platform built around watsonx generative-AI insights layered on top of core IT-ops functionality.",
+  "signals": ["AI-driven recommendations", "application management", "watsonx"]
+ },
+ {
+  "service": "IBM Instana for Government",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "APM/observability tool whose signature capability is automated, algorithmic root-cause analysis across dependency graphs — an embedded analytics/ML feature within a monitoring product.",
+  "signals": ["AI-powered observability", "automatic root cause analysis"]
+ },
+ {
+  "service": "IBM MaaS360 for Government",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Primarily a mobile device/unified endpoint management (UEM) product; any AI-based risk-scoring layer is unclear/secondary from available evidence.",
+  "signals": ["mobile device management", "UEM"]
+ },
+ {
+  "service": "IBM Turbonomic for Government",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Application Resource Management platform that continuously analyzes supply/demand and automates resource-optimization decisions via an analytics/decision engine.",
+  "signals": ["automated resource optimization", "decision engine"]
+ },
+ {
+  "service": "IBM Verify for Government",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "IAM/CIAM product whose adaptive access capability applies risk-based, ML-informed scoring to authentication decisions as an embedded feature.",
+  "signals": ["adaptive access", "risk-based authentication", "identity"]
+ },
+ {
+  "service": "IBM zCloud Platform as a Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Mainframe-based IaaS/PaaS compute provisioning; infrastructure, not AI.",
+  "signals": ["IaaS", "mainframe cloud"]
+ },
+ {
+  "service": "IDEAs Personalization Service – RunTime (IPS-RT)",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Name indicates a personalization/recommendation runtime, a category typically backed by ML models, but specifics of this Microsoft 365 component are not verifiable from the snippet.",
+  "signals": ["Personalization Service", "RunTime"]
+ },
+ {
+  "service": "IaaS",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Generic Infrastructure-as-a-Service compute/storage/network offering; no AI.",
+  "signals": ["IaaS", "VMware Cloud Foundation"]
+ },
+ {
+  "service": "Ideas",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce's legacy community idea-management/voting module; not AI-driven.",
+  "signals": ["Salesforce", "idea management"]
+ },
+ {
+  "service": "Identity Domains",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure IAM/domains service; identity administration, not AI.",
+  "signals": ["identity domains", "Oracle Cloud"]
+ },
+ {
+  "service": "Identity Platform*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud customer identity and access management (CIAM) service; not AI.",
+  "signals": ["Identity Platform", "Google Cloud"]
+ },
+ {
+  "service": "Identity Security Insights for Government",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "BeyondTrust product that correlates identity data across systems to surface risk/security insights, an analytics-driven capability embedded in a broader identity security suite.",
+  "signals": ["identity security insights", "risk analytics", "unified ecosystem"]
+ },
+ {
+  "service": "Identity Threat Protection (ITP)",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Okta's real-time identity threat detection product applies continuous behavioral risk analytics to flag account compromise, matching the ML-based security-analytics pattern.",
+  "signals": ["threat protection", "identity risk detection", "Okta"]
+ },
+ {
+  "service": "Identity and Access Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure IAM; standard identity administration, not AI.",
+  "signals": ["IAM", "Oracle Cloud"]
+ },
+ {
+  "service": "Identity and Access Management (IAM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud IAM; standard identity/permissions administration, not AI.",
+  "signals": ["IAM", "Google Cloud"]
+ },
+ {
+  "service": "Identity-Aware Proxy (IAP) (excluding IAP for TCP)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud access-control proxy for applications; network/identity security, not AI.",
+  "signals": ["identity-aware proxy", "access control"]
+ },
+ {
+  "service": "If/else statements",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty workflow automation building block (conditional logic); rule-based, not AI.",
+  "signals": ["conditional logic", "workflow automation"]
+ },
+ {
+  "service": "Inbound and outbound package tracking",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Quadient mail/shipping tracking feature; logistics tracking, not AI.",
+  "signals": ["package tracking", "shipping"]
+ },
+ {
+  "service": "Incident Activity and Service Performance Reports",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty reporting feature; plain analytics/reporting, not ML-driven.",
+  "signals": ["reports", "service performance"]
+ },
+ {
+  "service": "Incident Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Onspring GRC platform module for tracking incidents; workflow/case tracking, not AI.",
+  "signals": ["GRC", "incident tracking"]
+ },
+ {
+  "service": "Incident Priority",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty configuration feature for setting incident priority levels; rule-based, not AI.",
+  "signals": ["priority levels", "PagerDuty"]
+ },
+ {
+  "service": "Incident Response and Contingency Tracking Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IT-CNP feature for tracking incident response/contingency plans; plain tracking tool, not AI.",
+  "signals": ["incident response tracking"]
+ },
+ {
+  "service": "Incident Roles",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty feature for assigning incident responder roles; administrative configuration, not AI.",
+  "signals": ["responder roles", "PagerDuty"]
+ },
+ {
+  "service": "Incident Tasks",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty feature for tracking incident-related tasks; plain task tracking, not AI.",
+  "signals": ["task tracking", "PagerDuty"]
+ },
+ {
+  "service": "Incident Timeline",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty feature that logs a chronological incident timeline; plain logging, not AI.",
+  "signals": ["timeline", "PagerDuty"]
+ },
+ {
+  "service": "Incident Urgencies",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty configuration feature for urgency levels; rule-based, not AI.",
+  "signals": ["urgency levels", "PagerDuty"]
+ },
+ {
+  "service": "Incident Workflows*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty rule-based automation for incident response steps; workflow automation, not AI.",
+  "signals": ["workflow automation", "PagerDuty"]
+ },
+ {
+  "service": "Industry Cloud - including Health Cloud, Financial Services Cloud, Manufacturing Cloud, and Education Cloud (Admissions Connect, Student Success Hub, Education Data Architecture)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce vertical-industry CRM configurations/data models; standard CRM, not an AI capability (Einstein AI is a separate product not named here).",
+  "signals": ["industry cloud", "CRM", "Salesforce"]
+ },
+ {
+  "service": "InfoSec Global Federal — AgileSec Analytics",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cryptographic inventory/analytics tool for crypto-agility and PQC readiness; discovery/analysis of crypto usage, not ML-based.",
+  "signals": ["cryptographic analytics", "crypto agility"]
+ },
+ {
+  "service": "Ingest Actions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Splunk data-ingestion pipeline feature; data processing configuration, not AI.",
+  "signals": ["data ingestion", "Splunk"]
+ },
+ {
+  "service": "Inherited Firewall/VPN and Web Application Firewall (WAF) Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network security infrastructure (firewall/VPN/WAF); rule-based network protection, not AI.",
+  "signals": ["firewall", "VPN", "WAF"]
+ },
+ {
+  "service": "Insight (Applicant Tracking System)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "NEOGOV's applicant tracking system module; recruiting workflow tool, no clear AI capability named.",
+  "signals": ["applicant tracking system"]
+ },
+ {
+  "service": "Insight Advisor",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Qlik's Insight Advisor is an AI-driven augmented-analytics engine that auto-generates data insights and supports natural-language querying.",
+  "signals": ["Insight Advisor", "Qlik", "augmented analytics"]
+ },
+ {
+  "service": "Integration Mangement",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "RegScale GRC platform module for managing system/tool integrations; configuration management, not AI.",
+  "signals": ["integration management", "GRC"]
+ },
+ {
+  "service": "Integrations to authorized IL4 and FedRAMP Document Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Bluescape/n8n connectors to other authorized document services; workflow integration plumbing, not AI.",
+  "signals": ["integrations", "document services", "n8n"]
+ },
+ {
+  "service": "Intelligence",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Likely refers to a Concur travel/expense analytics/reporting module; no clear evidence of an ML/AI capability given the generic name and ambiguous host context.",
+  "signals": ["Concur", "expense analytics"]
+ },
+ {
+  "service": "Intelligent Alert Grouping",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "PagerDuty feature that uses machine learning to cluster related alerts and reduce noise, an embedded ML capability within the broader incident-management platform.",
+  "signals": ["intelligent aggregation", "machine learning", "alert grouping"]
+ },
+ {
+  "service": "Internal Status Pages",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty feature for publishing internal incident status pages; plain communication tool, not AI.",
+  "signals": ["status pages", "PagerDuty"]
+ },
+ {
+  "service": "International SMS/Phone notifications",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty notification delivery feature (SMS/phone alerts); plain messaging infrastructure, not AI.",
+  "signals": ["SMS notifications", "phone notifications"]
+ }
+]

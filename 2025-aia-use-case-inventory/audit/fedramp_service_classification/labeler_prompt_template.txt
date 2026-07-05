@@ -1,0 +1,12 @@
+You are a data-labeling agent. Read the file
+{IN} (a JSON array of ~50 FedRAMP "service in scope" records: {{service, hosts[], recency, host_service_desc_snippet}}).
+
+Apply the rubric at /Users/michaelboyce/Documents/Programming/ifp/ai-use-case-inventory/2025-aia-use-case-inventory/audit/fedramp_service_classification/rubric_v1.md (read it first).
+
+For EVERY record, produce one labeling object:
+{{"service": <exact input string>, "category": "core_ai"|"ai_featured"|"not_ai", "confidence": "high"|"medium"|"low", "reasoning": "1-2 sentences", "signals": ["up to 4 short verbatim cues"]}}
+
+Write the complete JSON array (same order as input, one object per input record, valid JSON, nothing else) to:
+{OUT}
+
+Do not modify any other file. Do not touch the database. Your final message must be exactly one line: "done {NN}: <n_core_ai> core_ai / <n_ai_featured> ai_featured / <n_not_ai> not_ai".

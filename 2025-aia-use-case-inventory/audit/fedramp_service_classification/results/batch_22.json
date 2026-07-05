@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Microsoft Threat Experts",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A Microsoft Defender managed threat-hunting service that combines human security experts with ML-based behavioral analytics to surface targeted attacks; security analytics with embedded ML detection.",
+  "signals": ["Threat Experts", "threat hunting", "managed detection"]
+ },
+ {
+  "service": "Mobile Analytics",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A reporting/telemetry feature within Omnissa Workspace ONE for mobile device management; standard analytics/dashboarding, not an ML/AI product.",
+  "signals": ["Mobile Analytics", "Workspace ONE"]
+ },
+ {
+  "service": "Mobile App Plus",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Salesforce mobile app add-on/license tier; not AI-related.",
+  "signals": ["Mobile App Plus", "Salesforce"]
+ },
+ {
+  "service": "Model Armor",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "A Google Cloud AI-safety service that uses ML classifiers to screen generative-AI prompts and responses for prompt injection, jailbreaks, and sensitive/harmful content.",
+  "signals": ["Model Armor", "Google Cloud"]
+ },
+ {
+  "service": "Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A generic infrastructure/application monitoring service; not AI-related.",
+  "signals": ["Monitoring"]
+ },
+ {
+  "service": "Monitoring and Developer Integrations*",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "PagerDuty's monitoring and developer-integration tooling; the named service is generic incident-monitoring/integration plumbing rather than an AI product.",
+  "signals": ["Monitoring", "Developer Integrations"]
+ },
+ {
+  "service": "Multi-Factor Authentication",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard identity authentication service; not AI-related.",
+  "signals": ["Multi-Factor Authentication"]
+ },
+ {
+  "service": "Multi-factor Authentication Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard identity authentication service; not AI-related.",
+  "signals": ["Multi-factor Authentication"]
+ },
+ {
+  "service": "MySQL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed relational database offering; not AI-related.",
+  "signals": ["MySQL"]
+ },
+ {
+  "service": "MySQL Heatwave",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Oracle's MySQL HeatWave ships embedded in-database ML (HeatWave ML) and GenAI/vector capabilities as a feature of a broader managed-database service.",
+  "signals": ["MySQL Heatwave", "Oracle"]
+ },
+ {
+  "service": "NG-VPNaaS Next Generation",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A next-generation VPN-as-a-service networking product; not AI-related.",
+  "signals": ["VPNaaS", "Next Generation"]
+ },
+ {
+  "service": "NM Agent",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be a network/node monitoring agent within Azure Government; no evidence of AI/ML capability.",
+  "signals": ["NM Agent"]
+ },
+ {
+  "service": "NOC Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network operations center support services; not AI-related.",
+  "signals": ["NOC Services"]
+ },
+ {
+  "service": "NSX-T",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "VMware's network virtualization and security platform component; not AI-related.",
+  "signals": ["NSX-T", "VMware"]
+ },
+ {
+  "service": "Neptune License Management Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A software license management service (unrelated to AWS's Neptune graph database); not AI-related.",
+  "signals": ["License Management"]
+ },
+ {
+  "service": "Nessus ACAS vulnerability and baseline configuration scanner",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A signature/rule-based vulnerability and configuration compliance scanner; not an ML/AI product.",
+  "signals": ["Nessus", "vulnerability", "scanner"]
+ },
+ {
+  "service": "Net Zero Cloud (formerly Sustainability Cloud)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Salesforce carbon accounting/sustainability tracking platform; not AI-related.",
+  "signals": ["Net Zero Cloud", "Sustainability"]
+ },
+ {
+  "service": "Network Datapath",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Core networking data-plane infrastructure; not AI-related.",
+  "signals": ["Network Datapath"]
+ },
+ {
+  "service": "Network Firewall",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed network firewall service; not AI-related.",
+  "signals": ["Network Firewall"]
+ },
+ {
+  "service": "Network Interconnect",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Cloudflare network interconnection/peering service; not AI-related.",
+  "signals": ["Network Interconnect"]
+ },
+ {
+  "service": "Network Load Balancer",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A standard load-balancing networking service; not AI-related.",
+  "signals": ["Network Load Balancer"]
+ },
+ {
+  "service": "Network Path Analyzer",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A network diagnostics/tracing tool for visualizing traffic paths; a monitoring tool, not AI/ML.",
+  "signals": ["Path Analyzer"]
+ },
+ {
+  "service": "Network Service Tiers*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's network performance/cost tiering options; not AI-related.",
+  "signals": ["Network Service Tiers"]
+ },
+ {
+  "service": "Network Topology Visualization",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A network-mapping/visualization tool; plain monitoring/visualization, not AI/ML.",
+  "signals": ["Topology Visualization"]
+ },
+ {
+  "service": "Network Watcher",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's network monitoring and diagnostics service; not AI-related.",
+  "signals": ["Network Watcher"]
+ },
+ {
+  "service": "Network Watcher Traffic Analytics",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A flow-log visualization and traffic analytics add-on to Network Watcher; plain monitoring/logging analytics rather than an AI/ML product.",
+  "signals": ["Traffic Analytics", "Network Watcher"]
+ },
+ {
+  "service": "Network Watcher-Traffic Analytics",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A flow-log visualization and traffic analytics add-on to Network Watcher; plain monitoring/logging analytics rather than an AI/ML product.",
+  "signals": ["Traffic Analytics", "Network Watcher"]
+ },
+ {
+  "service": "New Sites",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "The Google Sites website-building feature within Google Workspace; not AI-related.",
+  "signals": ["New Sites", "Google Workspace"]
+ },
+ {
+  "service": "NexTalk TTY",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A text-telephone (TTY) telecommunications relay accessibility service; not AI-related.",
+  "signals": ["NexTalk TTY"]
+ },
+ {
+  "service": "Next Generation Governance, Risk Management, and compliance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "RegScale's continuous-controls-monitoring GRC platform for compliance program management; not an ML/AI product.",
+  "signals": ["Governance, Risk Management", "compliance", "RegScale"]
+ },
+ {
+  "service": "No SQL Database Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed NoSQL database offering; not AI-related.",
+  "signals": ["No SQL Database"]
+ },
+ {
+  "service": "Non-Employee Risk Management",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A SailPoint identity-governance module for managing contractor/non-employee access risk; the named capability is governance/risk workflow rather than an explicitly AI/ML feature.",
+  "signals": ["Non-Employee Risk Management", "SailPoint"]
+ },
+ {
+  "service": "Notification Hubs",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's push-notification delivery service; not AI-related.",
+  "signals": ["Notification Hubs"]
+ },
+ {
+  "service": "Notifications",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud's notification delivery service; not AI-related.",
+  "signals": ["Notifications"]
+ },
+ {
+  "service": "OCI Cache",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed in-memory caching service; not AI-related.",
+  "signals": ["OCI Cache"]
+ },
+ {
+  "service": "OCI Container Instances Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A serverless container-hosting service; compute infrastructure, not AI.",
+  "signals": ["Container Instances"]
+ },
+ {
+  "service": "OCI Control Center",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A management/administration console for OCI resources; not AI-related.",
+  "signals": ["Control Center"]
+ },
+ {
+  "service": "OCI Document Understanding Service",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's AI service for OCR and ML-based extraction/classification of data from documents, part of the OCI AI Services suite.",
+  "signals": ["Document Understanding", "OCI AI Services"]
+ },
+ {
+  "service": "OCI Queue",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed message-queuing service; not AI-related.",
+  "signals": ["OCI Queue"]
+ },
+ {
+  "service": "OCI Search Service with Opensearch",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A managed OpenSearch-based full-text search and analytics engine; a search/database service rather than an AI/ML product.",
+  "signals": ["Search Service", "Opensearch"]
+ },
+ {
+  "service": "OCI Service Mesh",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed service-mesh for microservices networking/observability; not AI-related.",
+  "signals": ["Service Mesh"]
+ },
+ {
+  "service": "OMB A-123 Compliance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A GRC compliance-program feature (Onspring) for managing OMB A-123 internal control requirements; not AI-related.",
+  "signals": ["OMB A-123", "Compliance"]
+ },
+ {
+  "service": "OS Management Hub",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's centralized OS patching/configuration management service; not AI-related.",
+  "signals": ["OS Management Hub"]
+ },
+ {
+  "service": "OS/Database/Application Vulnerability Scanning and Patch Management Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A vulnerability scanning and patch management service; signature/rule-based security tooling, not AI/ML.",
+  "signals": ["Vulnerability Scanning", "Patch Management"]
+ },
+ {
+  "service": "Object Storage",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed object storage service; not AI-related.",
+  "signals": ["Object Storage"]
+ },
+ {
+  "service": "ObjectStore",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Backend object storage supporting Microsoft 365 services; not AI-related.",
+  "signals": ["ObjectStore"]
+ },
+ {
+  "service": "Office 365 Suite User Experience (SUE) (including Admin Center to Administer M365, manage core service settings from M365, Windows PowerShell to Manage M365)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Administrative tooling (Admin Center, PowerShell) for managing Microsoft 365; not AI-related.",
+  "signals": ["Admin Center", "PowerShell", "manage core service settings"]
+ },
+ {
+  "service": "Office Intelligent Services (IS) (including Install apps on up to 5 PCs/Mac + 5 tablets  + 5 smartphones, Create and share Microsoft Loop components and pages, Contribute to Loop components, pages and workspaces , Microsoft Forms, Microsoft Planner, Microsoft To Do, Shared computer activation for Microsoft 365 apps)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "\"Office Intelligent Services\" is Microsoft's branding for AI/cloud-intelligence features embedded across Office apps (e.g., Designer, Researcher, Ideas); bundled here with non-AI Loop/Forms/Planner/To Do app entitlements, so AI is an embedded feature rather than the whole product.",
+  "signals": ["Intelligent Services", "Microsoft 365"]
+ },
+ {
+  "service": "Office Intelligent Services (IS) (including Install apps on up to 5 PCs/Mac + 5 tablets + 5 smartphones, Microsoft Forms, Microsoft Planner, Microsoft To Do, Shared computer activation for Microsoft 365 apps)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "\"Office Intelligent Services\" is Microsoft's branding for AI/cloud-intelligence features embedded across Office apps (e.g., Designer, Researcher, Ideas); bundled here with non-AI Forms/Planner/To Do app entitlements, so AI is an embedded feature rather than the whole product.",
+  "signals": ["Intelligent Services", "Microsoft 365"]
+ },
+ {
+  "service": "Office Service Infrastructure (OSI)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Backend service infrastructure supporting Microsoft 365 apps; not AI-related.",
+  "signals": ["Service Infrastructure"]
+ }
+]

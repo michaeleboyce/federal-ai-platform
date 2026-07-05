@@ -1,0 +1,352 @@
+[
+ {
+  "service": "BoxRelay",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Box Relay is a workflow/process automation tool for routing documents through approval steps, not an AI capability.",
+  "signals": ["Relay", "workflow automation"]
+ },
+ {
+  "service": "BoxShield",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Box Shield is Box's built-in security product that uses machine learning to detect anomalous downloads, logins, and malicious content, embedded within the broader content platform.",
+  "signals": ["Shield", "intelligent automation platform"]
+ },
+ {
+  "service": "BoxShuttle (Moderate)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Box Shuttle is a content migration tool for moving data into Box, not an AI capability.",
+  "signals": ["Shuttle", "migration"]
+ },
+ {
+  "service": "BoxSign",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Box Sign is an e-signature product, a document workflow feature with no AI/ML core.",
+  "signals": ["Sign", "e-signature"]
+ },
+ {
+  "service": "Breached Credentials Detection/Protection",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "This Okta capability checks user credentials against known breach databases (hash-matching), which is a lookup/rules mechanism rather than an ML model.",
+  "signals": ["Breached Credentials", "identity and access management"]
+ },
+ {
+  "service": "Broadband Over the Air Rekeying (BBOTAR)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "BBOTAR is a radio encryption key management protocol for mission-critical communications, unrelated to AI/ML.",
+  "signals": ["Over the Air Rekeying", "mission critical communications"]
+ },
+ {
+  "service": "Budget",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Concur's Budget module is standard travel/expense budgeting functionality, not an AI feature.",
+  "signals": ["Budget", "travel and expense"]
+ },
+ {
+  "service": "Budgets",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure Budgets is a cost-management/spend-tracking tool, not an AI capability.",
+  "signals": ["Budgets", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Business Application Platform",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be a generic umbrella/infrastructure designation for the Dynamics/Power Platform environment hosting the neighboring CDS/CRM/CAP services, not a named AI product itself.",
+  "signals": ["Business Application Platform", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Business Performance Reviews",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty reporting/review feature for operational metrics, not an AI capability.",
+  "signals": ["Performance Reviews", "PagerDuty"]
+ },
+ {
+  "service": "Business Service Subscription",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A subscription/licensing management construct within PagerDuty, not AI-related.",
+  "signals": ["Subscription", "PagerDuty"]
+ },
+ {
+  "service": "Business and Technical Services and Dependencies",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A service-dependency mapping/documentation feature in PagerDuty, not an AI/ML capability.",
+  "signals": ["Dependencies", "PagerDuty"]
+ },
+ {
+  "service": "C3 AI",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "C3 AI is a well-known enterprise AI/ML application-development platform (predictive maintenance, fraud detection, etc.), offered here as an authorized service on SMX's PaaS.",
+  "signals": ["C3 AI", "Intelligent Automation Platform"]
+ },
+ {
+  "service": "CAMS AI Bot",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Explicitly named as an AI bot/chat assistant, matching the core_ai category directly.",
+  "signals": ["AI Bot", "CAMS"]
+ },
+ {
+  "service": "CAP Admin Deflection Service",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Internal admin service name with an unclear 'CAP' acronym; no catalog evidence this is an AI-driven case-deflection feature rather than generic workload routing.",
+  "signals": ["CAP Admin", "Deflection Service"]
+ },
+ {
+  "service": "CAP Admin Sandbox Operations Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "An internal sandbox/operations administration service, not an AI capability.",
+  "signals": ["Sandbox Operations", "CAP Admin"]
+ },
+ {
+  "service": "CAP Core Services",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Generic core infrastructure services for an internal platform, not AI-related.",
+  "signals": ["Core Services", "CAP"]
+ },
+ {
+  "service": "CAP Package Deployer Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A deployment/packaging automation service, not an AI/ML capability.",
+  "signals": ["Package Deployer", "CAP"]
+ },
+ {
+  "service": "CASB",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cloud Access Security Broker functionality is primarily policy enforcement and visibility/DLP; core function is access control rather than an ML detection engine.",
+  "signals": ["CASB", "Cloudflare for Government"]
+ },
+ {
+  "service": "CDS API",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Common Data Service (Dataverse) API is a generic data-platform interface, not an AI capability.",
+  "signals": ["CDS API", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "CDS SandBox",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A sandbox environment for the Common Data Service, not AI-related.",
+  "signals": ["CDS SandBox"]
+ },
+ {
+  "service": "CIS/STIG Hardened Operating System Gold Images",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Pre-hardened VM images for compliance baselines; pure infrastructure, no AI/ML component.",
+  "signals": ["Hardened Operating System", "Gold Images"]
+ },
+ {
+  "service": "CMMC In a Box",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Hosted on Ask Sage, a generative-AI platform built on Bedrock/Azure OpenAI/Vertex; this appears to be a packaged compliance assistant/toolkit leveraging that underlying GenAI capability rather than being a raw model-hosting service itself.",
+  "signals": ["CMMC In a Box", "Generative AI platform", "Ask Sage"]
+ },
+ {
+  "service": "CRM Activity Logging",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard CRM activity/audit logging, not AI.",
+  "signals": ["Activity Logging"]
+ },
+ {
+  "service": "CRM Admin API",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An administrative API for CRM configuration, not AI-related.",
+  "signals": ["Admin API"]
+ },
+ {
+  "service": "CRM Analytics (formerly Tableau CRM and Einstein Analytics) - including Analytics Platform, Einstein Discovery – Analyst, Einstein Discovery – User, Sales Analytics App, and Service Analytics App",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Explicitly includes Einstein Discovery, Salesforce's automated ML-based predictive analytics and statistical driver-discovery engine, making this a core AI/ML capability rather than a plain BI tool.",
+  "signals": ["Einstein Discovery", "Einstein Analytics", "predictive"]
+ },
+ {
+  "service": "CRM Cloud Provisioning Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Infrastructure provisioning service for CRM tenants, not AI.",
+  "signals": ["Cloud Provisioning"]
+ },
+ {
+  "service": "CRM Cloud Scale Groups",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Scaling/capacity grouping infrastructure for CRM, not AI.",
+  "signals": ["Cloud Scale Groups"]
+ },
+ {
+  "service": "CRM Cloud Sync Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Data synchronization service for CRM, not AI.",
+  "signals": ["Cloud Sync"]
+ },
+ {
+  "service": "CRM First Party Integration Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An integration/connector service between first-party Microsoft apps and CRM, not AI.",
+  "signals": ["First Party Integration"]
+ },
+ {
+  "service": "CRM Global Discovery Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A tenant/endpoint discovery/lookup service, not an AI 'discovery' analytics tool despite the name.",
+  "signals": ["Global Discovery Service"]
+ },
+ {
+  "service": "CRM Marketplace Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "App marketplace/listing service for CRM add-ons, not AI.",
+  "signals": ["Marketplace Service"]
+ },
+ {
+  "service": "CRM Portal Provisioning (SiteWide)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Provisioning infrastructure for CRM web portals, not AI.",
+  "signals": ["Portal Provisioning"]
+ },
+ {
+  "service": "CRM Portals",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Customer/partner self-service web portals for CRM, not AI.",
+  "signals": ["Portals"]
+ },
+ {
+  "service": "CRM Reports (SSRS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SQL Server Reporting Services-based reporting for CRM, a standard BI/reporting feature, not AI.",
+  "signals": ["SSRS", "Reports"]
+ },
+ {
+  "service": "CRM Sitewide Servers",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Underlying server infrastructure for CRM, not AI.",
+  "signals": ["Sitewide Servers"]
+ },
+ {
+  "service": "CRM Trial Signup Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A trial account signup/provisioning service, not AI.",
+  "signals": ["Trial Signup"]
+ },
+ {
+  "service": "CRM Trusted Published System",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A publishing/trust-boundary infrastructure designation for CRM systems, not AI.",
+  "signals": ["Trusted Published System"]
+ },
+ {
+  "service": "CSAM – CyberSecurity Asset Management",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Qualys CSAM is primarily an asset inventory and vulnerability/risk management tool; core function is discovery and cataloging rather than an ML detection engine.",
+  "signals": ["CyberSecurity Asset Management", "Qualys Cloud Platform"]
+ },
+ {
+  "service": "CX Insights (formerly Conversational Insights)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "This is Google's Contact Center AI Insights product, which applies NLP (topic modeling, sentiment/intent analysis) to analyze customer conversations.",
+  "signals": ["Conversational Insights", "Google Services"]
+ },
+ {
+  "service": "Cache Reserve",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare Cache Reserve is a CDN caching/storage optimization feature, not AI.",
+  "signals": ["Cache Reserve", "Cloudflare"]
+ },
+ {
+  "service": "Calabrio Workforce Engagement Management",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Calabrio's WEM suite is primarily workforce scheduling, recording, and quality management; while some analytics add-ons exist, the named service is the broader WEM platform, not an AI-specific feature.",
+  "signals": ["Workforce Engagement Management", "Calabrio"]
+ },
+ {
+  "service": "Calendar",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace Calendar is a standard scheduling application, not AI.",
+  "signals": ["Calendar", "Google Workspace"]
+ },
+ {
+  "service": "Callisto Learning Platform powered by Moodle™",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Moodle-based learning management system for training content delivery, not AI.",
+  "signals": ["Learning Platform", "Moodle"]
+ },
+ {
+  "service": "Capital Planning",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Named for a generic capital-planning/construction-management feature; the 'AI-powered' phrase in the snippet describes the host CSO's marketing generally, not a documented AI capability of this specific service.",
+  "signals": ["Capital Planning", "AI-powered platform (host marketing, not service-specific)"]
+ },
+ {
+  "service": "Career Voyager Talent Platform",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A career/talent-development platform for employee learning paths, not AI.",
+  "signals": ["Talent Platform", "Career Voyager"]
+ },
+ {
+  "service": "Carrier Shipping and rating",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A shipping-rate lookup/carrier integration feature for mail/shipping management, not AI.",
+  "signals": ["Shipping and rating", "Carrier"]
+ },
+ {
+  "service": "Cellar Server (Rsync file backups)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An rsync-based file backup server, pure infrastructure, not AI.",
+  "signals": ["Rsync file backups", "Cellar Server"]
+ },
+ {
+  "service": "Celonis Process Mining (CPM4)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Celonis Process Mining applies algorithmic/ML techniques (process discovery, conformance checking, predictive recommendations) to event-log data, making AI/ML a material embedded capability of the product.",
+  "signals": ["Process Mining", "Celonis"]
+ },
+ {
+  "service": "Central Reconciliation",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A financial reconciliation feature within Concur's travel/expense suite, not AI.",
+  "signals": ["Reconciliation", "Concur"]
+ }
+]

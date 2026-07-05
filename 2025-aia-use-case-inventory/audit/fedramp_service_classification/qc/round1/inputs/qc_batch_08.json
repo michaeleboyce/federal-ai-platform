@@ -1,0 +1,792 @@
+[
+ {
+  "service": "Resilinc Supply Chain Risk and Compliance Platform",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Resilinc's supply-chain risk monitoring (EventWatch) applies NLP/ML to scan global data sources for disruption events, an embedded AI feature within a broader risk/compliance platform.",
+   "signals": "[\"Supply Chain Risk\", \"Resilinc\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206111371",
+    "csp": "CoSo Cloud, LLC.",
+    "cso": "Knox Systems",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "Resource Management",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Hosted on the Eightfold Talent Intelligence Platform, whose core differentiator is deep-learning-based skills/talent matching; this module applies that AI matching engine to internal resource/staffing allocation.",
+   "signals": "[\"Eightfold AI\", \"advanced AI\", \"Talent Intelligence Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\""
+ },
+ {
+  "service": "Resource Scheduling for Microsoft Dynamics",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "Overlaps in name with Microsoft's Resource Scheduling Optimization capability for Dynamics 365 Field Service, which uses an optimization/AI engine to assign technicians; but the plain scheduling-board feature may be non-AI, hence lower confidence.",
+   "signals": "[\"Resource Scheduling\", \"Microsoft Dynamics\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "SCAP Compliance Checker",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Rule-based configuration/vulnerability compliance scanning against SCAP benchmarks, not ML-driven.",
+   "signals": "[\"SCAP Compliance Checker\", \"GSS One - Azure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove"
+ },
+ {
+  "service": "SGX PCK Certificate Cache",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Intel SGX attestation certificate caching service, a hardware security/infrastructure function.",
+   "signals": "[\"SGX\", \"PCK Certificate Cache\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "SIEM (Azure Monitor, Log Analytics, Defender for Cloud, Azure Sentinel)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Bundle includes Azure Sentinel and Defender for Cloud, cloud-native SIEM/security tools with embedded ML-based threat/anomaly detection.",
+   "signals": "[\"Azure Sentinel\", \"Defender for Cloud\", \"SIEM\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove"
+ },
+ {
+  "service": "SQL Data Warehouse",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Azure's data warehouse service, a database/analytics infrastructure product.",
+   "signals": "[\"SQL Data Warehouse\", \"Azure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "SRX 2200",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "Appears to be a Motorola Solutions hardware/radio network device model, not an AI capability.",
+   "signals": "[\"SRX 2200\", \"Motorola Solutions Federal Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2118055930",
+    "csp": "Motorola Solutions",
+    "cso": "Motorola Solutions Federal Cloud (MSFC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Motorola Solutions is expanding its \u201cMission Critical Ecosystem\u201d which consists of a suite of software and technology that supports mission critical communications in evolving ways and that provides fast access to actionable information. The purpose of the Motorola Solutions Federal Cloud (MSFC) is to serve as the platform upon which the applications and solutions that are part of this Mission Cri"
+ },
+ {
+  "service": "SSL/TLS for SaaS",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Transport encryption/certificate service for SaaS applications, not an AI capability.",
+   "signals": "[\"SSL/TLS\", \"Cloudflare\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero "
+ },
+ {
+  "service": "Salesforce Mobile (iOS/Android)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Mobile client application for Salesforce, not an AI capability.",
+   "signals": "[\"Salesforce Mobile\", \"iOS/Android\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a"
+ },
+ {
+  "service": "Salesforce Personalization",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Salesforce Personalization is a real-time recommendation/personalization engine powered by machine learning, embedded as a feature within the broader CRM platform.",
+   "signals": "[\"Personalization\", \"Salesforce\", \"smart insights\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a"
+ },
+ {
+  "service": "Sayari Counterparty and Supply Chain Risk Intelligence",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A corporate/supply-chain risk data and graph-based entity research platform; 'Intelligence' here denotes business/risk intelligence rather than a demonstrated core ML capability in the name or snippet.",
+   "signals": "[\"Risk Intelligence\", \"Counterparty\", \"Supply Chain\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1311222650",
+    "csp": "MIS Sciences Corporation",
+    "cso": "GovPoint Cloud Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "GovPoint Cloud Services (GCS) offers a variety of cloud solutions, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS), custom and private clouds, and 'bring your own hardware' options, allowing tailored cloud solutions to meet specific needs. \r\nOverview of Authorized Services \r\n\u2022\tCalabrio Workforce Engagement Management\r\n\u2022\tGRID20/20 - Advanced "
+ },
+ {
+  "service": "Scale Generative AI Platform",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Explicitly named generative AI platform (Scale AI's SGP) for building, testing, and deploying AI-enabled applications.",
+   "signals": "[\"Generative AI Platform\", \"Scale AI\", \"AI-enabled enterprise applications\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2023666173",
+    "csp": "Scale AI, Inc",
+    "cso": "Scale AI Data Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The ScaleGov mission is to accelerate the development and deployment of artificial intelligence (AI) solutions within the government space. Scale's comprehensive AI Data Platform goes beyond data labeling, now offering a fully-managed, API-driven solution for the test, evaluation, and development of AI-enabled enterprise applications. This includes Scale's Generative AI Platform (SGP), which empow"
+ },
+ {
+  "service": "Security: Security RX (Remediation Explorer)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "A remediation-guidance/recommendation feature that plausibly leverages New Relic's AI-assisted analysis to prioritize and suggest fixes, embedded within the broader observability platform.",
+   "signals": "[\"Remediation Explorer\", \"intelligent observability platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user "
+ },
+ {
+  "service": "Select Care",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A SAP Concur travel duty-of-care program, not an AI capability.",
+   "signals": "[\"Select Care\", \"Concur\", \"travel\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2234550858",
+    "csp": "Concur Technologies, Inc.",
+    "cso": "Concur Cloud for Public Sector",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of"
+ },
+ {
+  "service": "SentinelOne Management Console",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "Administrative console surfacing the ML/behavioral-AI-driven detections of the SentinelOne Singularity platform; the console itself is administrative but tightly coupled to the platform's embedded ML detection.",
+   "signals": "[\"Management Console\", \"SentinelOne Singularity\", \"machine learning algorithms\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Service Architecture Intelligence: Catalogs",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "A New Relic feature for automatically discovering and cataloging service architecture/dependencies from telemetry; the 'Intelligence' branding suggests an embedded automated-analysis capability, though it may be largely rule/graph-based rather than ML.",
+   "signals": "[\"Service Architecture Intelligence\", \"Catalogs\", \"intelligent observability platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user "
+ },
+ {
+  "service": "Service Fabric",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Azure's distributed systems platform for building/managing microservices; infrastructure, not AI.",
+   "signals": "[\"Fabric\", \"Azure\", \"microservices\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Sierra",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Name matches Sierra (sierra.ai), an AI agent platform for customer service, hosted here as a third-party commercial product on Knox Systems' multi-tenant delivery platform; not independently confirmed from the snippet alone.",
+   "signals": "[\"Sierra\", \"commercial software\", \"multi-tenant cloud platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2528033654",
+    "csp": "Knox Systems",
+    "cso": "Knox Systems FedRAMP High Managed Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "Sift",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Name matches Sift, a digital trust & safety company whose core product is machine-learning-based fraud/risk scoring, hosted as third-party commercial software on Knox Systems.",
+   "signals": "[\"Sift\", \"commercial software\", \"multi-tenant cloud platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2528033654",
+    "csp": "Knox Systems",
+    "cso": "Knox Systems FedRAMP High Managed Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "Singularity Cloud Native Security (CNS)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "SentinelOne's cloud workload/CNAPP security product, part of the Singularity platform explicitly built on 'advanced machine learning algorithms and behavioral AI' for detection.",
+   "signals": "[\"Cloud Native Security\", \"machine learning algorithms\", \"behavioral AI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Singularity Threat Intelligence",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "SentinelOne's threat-intel feed/IOC module; likely incorporates some ML scoring but the snippet doesn't specifically attribute AI to this module rather than the platform's endpoint detection generally.",
+   "signals": "[\"Threat Intelligence\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "SkyNET 2.0",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "Kernos-hosted platform described as performing 'near-real-time video exploitation' and full-motion-video analysis, a domain that commonly involves computer-vision/ML analytics, though not explicitly claimed as AI in the snippet.",
+   "signals": "[\"video exploitation\", \"full motion video (FMV)\", \"common operating picture\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2411443563",
+    "csp": "Valley IT Solutions, LLC",
+    "cso": "Kernos",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Kernos is a multi-tenant, cloud-native \u201cSaaS\u201d (software-as-a-service) cloud service offering (CSO). It leverages Amazon Web Services (AWS), IaaS (infrastructure-as-a-service), and PaaS (platform-as-a-service) for its underlying infrastructure and hardware.\n\nKernos integrates near-real-time video exploitation, common operating picture (COP), advanced multimedia and full motion video (FMV) (unclassi"
+ },
+ {
+  "service": "Slides",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Google Workspace presentation application; productivity software, not AI.",
+   "signals": "[\"Google Workspace\", \"Slides\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206081364",
+    "csp": "Google",
+    "cso": "Google Workspace",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please re"
+ },
+ {
+  "service": "SmartConnect",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Motorola Mission Critical Ecosystem integration/connector component; not AI.",
+   "signals": "[\"SmartConnect\", \"Motorola\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2118055930",
+    "csp": "Motorola Solutions",
+    "cso": "Motorola Solutions Federal Cloud (MSFC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Motorola Solutions is expanding its \u201cMission Critical Ecosystem\u201d which consists of a suite of software and technology that supports mission critical communications in evolving ways and that provides fast access to actionable information. The purpose of the Motorola Solutions Federal Cloud (MSFC) is to serve as the platform upon which the applications and solutions that are part of this Mission Cri"
+ },
+ {
+  "service": "SmartMessaging",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Motorola messaging component; communications feature, not AI.",
+   "signals": "[\"SmartMessaging\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2118055930",
+    "csp": "Motorola Solutions",
+    "cso": "Motorola Solutions Federal Cloud (MSFC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Motorola Solutions is expanding its \u201cMission Critical Ecosystem\u201d which consists of a suite of software and technology that supports mission critical communications in evolving ways and that provides fast access to actionable information. The purpose of the Motorola Solutions Federal Cloud (MSFC) is to serve as the platform upon which the applications and solutions that are part of this Mission Cri"
+ },
+ {
+  "service": "SmartPM",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Appears to be a project-management tool within Palantir's PFCS-SS bundle; no evidence of an AI/ML capability.",
+   "signals": "[\"SmartPM\", \"PFCS-SS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "Solaris",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "No specific product information beyond the generic Kernos hosting description; likely an OS/infrastructure component or unrelated named service, not identifiable as AI.",
+   "signals": "[\"Kernos\", \"SaaS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2411443563",
+    "csp": "Valley IT Solutions, LLC",
+    "cso": "Kernos",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Kernos is a multi-tenant, cloud-native \u201cSaaS\u201d (software-as-a-service) cloud service offering (CSO). It leverages Amazon Web Services (AWS), IaaS (infrastructure-as-a-service), and PaaS (platform-as-a-service) for its underlying infrastructure and hardware.\n\nKernos integrates near-real-time video exploitation, common operating picture (COP), advanced multimedia and full motion video (FMV) (unclassi"
+ },
+ {
+  "service": "Spacelift",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Spacelift is a well-known Infrastructure-as-Code (Terraform/OpenTofu) CI/CD management platform; DevOps tooling, not AI.",
+   "signals": "[\"Spacelift\", \"Knox Systems\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206111371",
+    "csp": "CoSo Cloud, LLC.",
+    "cso": "Knox Systems",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "Spanner",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Google Cloud's globally distributed relational database; a database service, not AI.",
+   "signals": "[\"Spanner\", \"Google Cloud Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Spartan Data Platform Management",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "No specific product information beyond the generic Azure hosting description; reads as a data-platform administration tool, not identifiable as AI.",
+   "signals": "[\"Data Platform Management\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Speech Services",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Cognitive Services Speech \u2014 speech-to-text, text-to-speech, and speech translation; a dedicated ML-based speech AI service.",
+   "signals": "[\"Speech Services\", \"Azure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Stakeholder Users",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "PagerDuty user-role/access management feature for external stakeholders; administrative feature, not AI.",
+   "signals": "[\"Stakeholder Users\", \"PagerDuty\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "Substrate Intelligence Platform (SIP)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "Microsoft's Substrate is the underlying data/services layer connecting Microsoft 365 content and signals, which powers AI-driven experiences (Copilot, intelligent search) elsewhere; it is data infrastructure with AI enablement as a purpose rather than an AI product itself.",
+   "signals": "[\"Substrate Intelligence Platform\", \"Microsoft 365\", \"intelligent search\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server"
+ },
+ {
+  "service": "THEIA",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "Hosted on Kernos, a C5ISR platform whose snippet describes near-real-time video exploitation and full-motion-video (FMV) processing, terminology commonly associated with AI/computer-vision-assisted analysis, though not explicitly confirmed as ML-based.",
+   "signals": "[\"video exploitation\", \"full motion video (FMV)\", \"C5ISR\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2411443563",
+    "csp": "Valley IT Solutions, LLC",
+    "cso": "Kernos",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Kernos is a multi-tenant, cloud-native \u201cSaaS\u201d (software-as-a-service) cloud service offering (CSO). It leverages Amazon Web Services (AWS), IaaS (infrastructure-as-a-service), and PaaS (platform-as-a-service) for its underlying infrastructure and hardware.\n\nKernos integrates near-real-time video exploitation, common operating picture (COP), advanced multimedia and full motion video (FMV) (unclassi"
+ },
+ {
+  "service": "TRM Labs",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "TRM Labs is a blockchain intelligence/crypto-compliance platform that combines threat intelligence with machine learning models for real-time transaction risk scoring, an embedded ML capability within a broader analytics product.",
+   "signals": "[\"risk scoring\", \"machine learning models\", \"blockchain intelligence\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "Talent 2 Opportunity (T2O)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "HireVue's comprehensive talent-acquisition platform that matches candidates to roles using the company's predictive, AI-driven assessment science alongside video interviewing, an embedded AI capability within a broader hiring platform.",
+   "signals": "[\"matches candidates\", \"predictive\", \"artificial intelligence\", \"HireVue\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1831429369",
+    "csp": "HireVue",
+    "cso": "Recruitment Assessments and Video Interviewing",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "HireVue helps global enterprises gain a competitive advantage in the modern talent marketplace with video interviewing software and recruitment assessments. The HireVue platform is transforming the way organizations discover, hire, and develop talent. By combining video interviews with predictive, validated I-O science and artificial intelligence.\n\nBased in Sandy, Utah, HireVue works with more tha"
+ },
+ {
+  "service": "Talent Flex",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "An internal-mobility/gig-staffing module of Eightfold's AI-driven Talent Intelligence Platform.",
+   "signals": "[\"Eightfold AI\", \"advanced AI\", \"Talent Intelligence Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\""
+ },
+ {
+  "service": "Talent Management",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A workforce-development module of Eightfold's AI-driven Talent Intelligence Platform.",
+   "signals": "[\"Eightfold AI\", \"advanced AI\", \"Talent Intelligence Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\""
+ },
+ {
+  "service": "Talent Solution*",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Google Cloud Talent Solution is explicitly a machine-learning-powered job search/candidate-matching API, using pre-trained ML models to match job seekers to postings.",
+   "signals": "[\"Talent Solution\", \"machine learning\", \"job matching API\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ }
+]

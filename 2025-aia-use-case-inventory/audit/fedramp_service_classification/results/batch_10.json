@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Certificate Authority Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PKI/certificate issuance service, a security/infrastructure function with no ML component.",
+  "signals": ["Certificate Authority", "GCP infrastructure"]
+ },
+ {
+  "service": "Certificate Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Certificate lifecycle management tool, purely infrastructure/PKI.",
+  "signals": ["Certificate Manager", "GCP"]
+ },
+ {
+  "service": "Certificate View",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qualys CertView is a certificate inventory/monitoring tool, not an AI capability.",
+  "signals": ["Certificate", "Qualys Cloud Platform"]
+ },
+ {
+  "service": "Certificates",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure certificate management service, infrastructure/PKI function.",
+  "signals": ["Certificates", "OCI"]
+ },
+ {
+  "service": "Chain Management",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Generic Azure service name with no clear AI/ML function evident; likely a workflow or supply-chain management tool.",
+  "signals": ["Chain Management", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Change Correlation",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "PagerDuty feature for correlating change events with incidents; name doesn't indicate an AI product even though the host platform mentions general 'intelligent aggregation.'",
+  "signals": ["Change Correlation", "event orchestration", "intelligent aggregation"]
+ },
+ {
+  "service": "Change Events",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty event feed/log for tracking changes, not an AI capability.",
+  "signals": ["Change Events", "PagerDuty"]
+ },
+ {
+  "service": "Charlotte AI",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "CrowdStrike's generative-AI security analyst assistant, explicitly branded and functioning as a chat-based copilot.",
+  "signals": ["Charlotte AI", "CrowdStrike Falcon", "Threat Intelligence"]
+ },
+ {
+  "service": "ChatOps*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "ChatOps refers to running operational commands via chat/Slack integrations, not an AI/ML capability.",
+  "signals": ["ChatOps", "PagerDuty"]
+ },
+ {
+  "service": "Chatter / Chatter Answers",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce Chatter is an internal enterprise social-collaboration and Q&A feature, not an AI product.",
+  "signals": ["Chatter", "Chatter Answers", "Salesforce CRM"]
+ },
+ {
+  "service": "Chrome Sync (Google Workspace for Education domains only)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Browser settings/bookmark sync feature, purely a productivity/collaboration function.",
+  "signals": ["Chrome Sync", "Google Workspace"]
+ },
+ {
+  "service": "Cisco Multicloud Defense for Government",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A cloud network security gateway (segmentation/firewalling across clouds), not an AI-branded product.",
+  "signals": ["Multicloud Defense", "Cisco Security Cloud"]
+ },
+ {
+  "service": "Cisco Secure Access for Government",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cisco's SSE/ZTNA secure access product; a networking/identity security service, not an AI capability.",
+  "signals": ["Secure Access", "Cisco Security Cloud"]
+ },
+ {
+  "service": "Cisco Secure Email Threat Defense for Government",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Cisco's email threat defense product uses ML-based detection models for phishing/BEC identification as a core embedded capability of a broader security product.",
+  "signals": ["Threat Defense", "Email", "Cisco Security Cloud"]
+ },
+ {
+  "service": "Cisco Security Cloud Control – Firewall Management for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Centralized firewall policy management console, a network security administration tool.",
+  "signals": ["Firewall Management", "Security Cloud Control"]
+ },
+ {
+  "service": "Cisco Umbrella for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "DNS-layer security / secure web gateway product, not an AI capability.",
+  "signals": ["Umbrella", "Cisco Security Cloud"]
+ },
+ {
+  "service": "Civil Rights and Labor Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A compliance/labor-management module within a construction management platform; the host's 'AI-powered' language is marketing and doesn't describe this specific module.",
+  "signals": ["Civil Rights and Labor Management", "capital planning", "AI-powered platform (marketing)"]
+ },
+ {
+  "service": "Class for Zoom",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A virtual classroom management add-on for Zoom, an education/collaboration tool with no AI function.",
+  "signals": ["Class for Zoom", "Knox Systems"]
+ },
+ {
+  "service": "Classic Compute",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A Databricks compute/cluster type (VM-based compute resource), an infrastructure primitive rather than an AI/ML capability itself.",
+  "signals": ["Classic Compute", "Databricks"]
+ },
+ {
+  "service": "Classroom",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Classroom is a learning-management/collaboration tool, not an AI capability.",
+  "signals": ["Classroom", "Google Workspace"]
+ },
+ {
+  "service": "Claude for Government (C4G)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Anthropic's Claude large language model offered as a hosted service, a direct LLM/chat-assistant capability.",
+  "signals": ["Claude for Government", "commercially available software", "PFCS-SS"]
+ },
+ {
+  "service": "Client Web Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SAP Concur travel-and-expense web service layer, a business application function with no AI component.",
+  "signals": ["Client Web Services", "Concur", "travel and expense"]
+ },
+ {
+  "service": "Cloud Advisor",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Oracle Cloud Advisor provides rule-based best-practice recommendations (cost/security/performance), not a marketed AI/ML product.",
+  "signals": ["Cloud Advisor", "OCI", "recommendations"]
+ },
+ {
+  "service": "Cloud Asset Inventory",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP resource inventory/metadata tracking service, an infrastructure management tool.",
+  "signals": ["Asset Inventory", "GCP"]
+ },
+ {
+  "service": "Cloud Billing*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP billing/cost management service, not an AI capability.",
+  "signals": ["Cloud Billing", "GCP"]
+ },
+ {
+  "service": "Cloud Build",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP CI/CD build service, a DevOps tool with no AI function.",
+  "signals": ["Cloud Build", "GCP"]
+ },
+ {
+  "service": "Cloud CDN*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP content delivery network, a networking/caching service.",
+  "signals": ["Cloud CDN", "GCP"]
+ },
+ {
+  "service": "Cloud DNS",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP managed DNS service, pure networking infrastructure.",
+  "signals": ["Cloud DNS", "GCP"]
+ },
+ {
+  "service": "Cloud Data Fusion",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "GCP's visual/managed ETL data-integration service; a data pipeline tool, not an AI/ML product.",
+  "signals": ["Data Fusion", "GCP"]
+ },
+ {
+  "service": "Cloud Data Loss Prevention API",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Google's DLP API uses ML-based classifiers to detect and redact sensitive data (PII), an embedded ML capability within a data-governance/security service.",
+  "signals": ["Data Loss Prevention API", "GCP"]
+ },
+ {
+  "service": "Cloud Deploy",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP continuous-delivery/deployment service, a DevOps tool.",
+  "signals": ["Cloud Deploy", "GCP"]
+ },
+ {
+  "service": "Cloud Domains",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP domain registration service, not an AI capability.",
+  "signals": ["Cloud Domains", "GCP"]
+ },
+ {
+  "service": "Cloud Endpoints*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP API gateway/management service, infrastructure function.",
+  "signals": ["Cloud Endpoints", "GCP"]
+ },
+ {
+  "service": "Cloud Error Reporting*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP error aggregation/monitoring tool for application logs, not an AI product.",
+  "signals": ["Cloud Error Reporting", "GCP"]
+ },
+ {
+  "service": "Cloud External Key Manager (Cloud EKM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP external key management for encryption keys, a security/infrastructure function.",
+  "signals": ["Key Manager", "GCP"]
+ },
+ {
+  "service": "Cloud Functions for Firebase*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Serverless compute functions for Firebase apps, an infrastructure/compute service.",
+  "signals": ["Cloud Functions", "Firebase", "GCP"]
+ },
+ {
+  "service": "Cloud Funnel",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "SentinelOne's Cloud Funnel streams telemetry/log data to external SIEM/data lakes; a data-export pipeline feature, not itself an AI capability (the host's ML/behavioral-AI language describes the broader platform, not this specific function).",
+  "signals": ["Cloud Funnel", "data lake", "machine learning algorithms (platform-level)"]
+ },
+ {
+  "service": "Cloud Guard",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Oracle Cloud Guard is a cloud security posture management service whose detection recipes include machine-learning-based anomaly detection, an embedded ML feature within a broader security monitoring product.",
+  "signals": ["Cloud Guard", "OCI", "detector recipes"]
+ },
+ {
+  "service": "Cloud Guard Instance Security",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "An instance-level security monitoring sub-component of Oracle Cloud Guard; likely rule-based configuration/vulnerability checks rather than an ML feature.",
+  "signals": ["Instance Security", "Cloud Guard", "OCI"]
+ },
+ {
+  "service": "Cloud HSM (Hardware Security Module)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hardware-backed cryptographic key storage service, purely a security/infrastructure function.",
+  "signals": ["Cloud HSM", "GCP"]
+ },
+ {
+  "service": "Cloud Healthcare API (formerly Cloud Healthcare)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A healthcare data interoperability/exchange API (FHIR/HL7), a data-integration service rather than an AI/NLP product.",
+  "signals": ["Healthcare API", "GCP"]
+ },
+ {
+  "service": "Cloud Identity",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP identity and access management service, not an AI capability.",
+  "signals": ["Cloud Identity", "GCP"]
+ },
+ {
+  "service": "Cloud Infrastructure Entitlement Management",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "SailPoint's CIEM tool manages cloud access entitlements; the host snippet's mention of 'AI-driven identity offerings' refers to other SailPoint products, not this specific CIEM function.",
+  "signals": ["Cloud Infrastructure Entitlement Management", "SailPoint", "AI-driven identity offerings (other products)"]
+ },
+ {
+  "service": "Cloud Input Intelligence (CII)",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Likely a Microsoft 365 predictive-text/input-suggestion feature; 'Intelligence' in the name suggests an embedded ML-based prediction capability secondary to the core collaboration suite.",
+  "signals": ["Cloud Input Intelligence", "Microsoft 365 GCC"]
+ },
+ {
+  "service": "Cloud Interconnect",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP dedicated network connectivity service, pure networking infrastructure.",
+  "signals": ["Cloud Interconnect", "GCP"]
+ },
+ {
+  "service": "Cloud Intrusion Detection System (Cloud IDS)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Google's Cloud IDS is built on Palo Alto Networks signature-based threat detection technology, a traditional network IDS rather than an AI-branded product.",
+  "signals": ["Intrusion Detection System", "GCP"]
+ },
+ {
+  "service": "Cloud Key Management Service (Cloud KMS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Encryption key management service, purely a security/infrastructure function.",
+  "signals": ["Key Management Service", "GCP"]
+ },
+ {
+  "service": "Cloud Load Balancing: Application Load Balancer",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP load balancing infrastructure for application traffic, a networking function.",
+  "signals": ["Load Balancing", "GCP"]
+ },
+ {
+  "service": "Cloud Load Balancing: Passthrough Network Load Balancer",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP network-layer load balancer, pure networking infrastructure.",
+  "signals": ["Load Balancing", "Network Load Balancer", "GCP"]
+ },
+ {
+  "service": "Cloud Load Balancing: Proxy Network Load Balancer",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP proxy-based network load balancer, pure networking infrastructure.",
+  "signals": ["Load Balancing", "Proxy Network Load Balancer", "GCP"]
+ }
+]

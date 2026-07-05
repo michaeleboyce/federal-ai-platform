@@ -1,0 +1,864 @@
+[
+ {
+  "service": "Amazon Q Business",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "cf78d49fbd0fd01d"
+ },
+ {
+  "service": "Amazon Q Developer in chat applications",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "3b9ba6301cf0a967"
+ },
+ {
+  "service": "Amazon Quick Suite",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "f66425d93901f0dc"
+ },
+ {
+  "service": "Amazon RDS for Db2",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "61137a21981d9388"
+ },
+ {
+  "service": "Amazon RDS for MariaDB",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "5fd8f0c1dd0a70e7"
+ },
+ {
+  "service": "Amazon RDS for MySQL",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "8c8f4d436dcc5f8c"
+ },
+ {
+  "service": "Amazon RDS for Oracle",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "ba2ac3ca5aa42922"
+ },
+ {
+  "service": "Amazon RDS for Postgres",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "48136af9fb4ff578"
+ },
+ {
+  "service": "Amazon RDS for SQL Server",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "207ad497d8e73519"
+ },
+ {
+  "service": "Amazon Redshift",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "2af6264f8301825d"
+ },
+ {
+  "service": "Amazon Rekognition",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "a6d310c892c3f5be"
+ },
+ {
+  "service": "Amazon Route 53",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "9e16887bc5d9a427"
+ },
+ {
+  "service": "Amazon S3 Glacier",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "7ad6ddacac4f8e8e"
+ },
+ {
+  "service": "Amazon SageMaker AI",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "29d89110221c4d60"
+ },
+ {
+  "service": "Amazon Security Lake",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "65118a2d1705eb80"
+ },
+ {
+  "service": "Amazon Simple Email Service (SES)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "1f1885e27cf81241"
+ },
+ {
+  "service": "Amazon Simple Notification Service (SNS)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "d8a52f51842457c1"
+ },
+ {
+  "service": "Amazon Simple Queue Service (SQS)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "711de93cbaa8952f"
+ },
+ {
+  "service": "Amazon Simple Storage Service (S3)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "68adc3d29bdd513d"
+ },
+ {
+  "service": "Amazon Simple Workflow Service (SWF)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "b7d6656fedb7f2d2"
+ },
+ {
+  "service": "Amazon Textract",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "9c08e3b7112d611d"
+ },
+ {
+  "service": "Amazon Timestream for LiveAnalytics",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "b05c97109d069700"
+ },
+ {
+  "service": "Amazon Transcribe",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "0200fd826dbbef96"
+ },
+ {
+  "service": "Amazon Translate",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "d3e4f62656d486d1"
+ },
+ {
+  "service": "Amazon Verified Permissions",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "944eb23a847a5645"
+ },
+ {
+  "service": "Amazon Virtual Private Cloud (VPC)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "3c2268993d503034"
+ },
+ {
+  "service": "Amazon WorkSpaces",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "7f9522f5d7f4ee99"
+ },
+ {
+  "service": "Amazon WorkSpaces Applications",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "06fa64459cdbb949"
+ },
+ {
+  "service": "Amazon WorkSpaces Secure Browser",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "ae52463abe478e0f"
+ },
+ {
+  "service": "Analytics",
+  "hosts": [
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero ",
+  "input_hash": "f784e5a619cacd93"
+ },
+ {
+  "service": "Analytics API and Data Export",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "4b1d101e2bc55168"
+ },
+ {
+  "service": "Analytics Dashboard",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "c46d03f582722a28"
+ },
+ {
+  "service": "Android and Chrome Device Management",
+  "hosts": [
+   {
+    "fedramp_id": "F1206081364",
+    "csp": "Google",
+    "cso": "Google Workspace",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please re",
+  "input_hash": "469b2953ad5c896c"
+ },
+ {
+  "service": "Announcements",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "cc224474b69e6480"
+ },
+ {
+  "service": "Antivirus, Antimalware and HIPS solution (Trellix Endpoint Security with Advanced Threat Protection) and ePolicy Orchestrator",
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove",
+  "input_hash": "df053d58c9ad2fe1"
+ },
+ {
+  "service": "Apigee",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "8c44c31a16e03ca4"
+ },
+ {
+  "service": "Apollo",
+  "hosts": [
+   {
+    "fedramp_id": "FR2434554673",
+    "csp": "Palantir Technologies Inc.",
+    "cso": "Palantir Federal Cloud Service",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Palantir Federal Cloud Service (PFCS) is a dedicated environment for the purpose of delivering Palantir software to federal government customers as a cloud service. Palantir software, including Foundry, AIP, Gotham, Apollo, and supporting products utilizing the same infrastructure, enables a multitude of collaborative and operational workflows for end government users. Palantir enables organiz",
+  "input_hash": "55405222694de25d"
+ },
+ {
+  "service": "Apollo Agent",
+  "hosts": [
+   {
+    "fedramp_id": "FR2434554673",
+    "csp": "Palantir Technologies Inc.",
+    "cso": "Palantir Federal Cloud Service",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Palantir Federal Cloud Service (PFCS) is a dedicated environment for the purpose of delivering Palantir software to federal government customers as a cloud service. Palantir software, including Foundry, AIP, Gotham, Apollo, and supporting products utilizing the same infrastructure, enables a multitude of collaborative and operational workflows for end government users. Palantir enables organiz",
+  "input_hash": "80c99ab3de1970a7"
+ },
+ {
+  "service": "App Hub",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "3fbd10597e44557f"
+ },
+ {
+  "service": "AppOmni SaaS Security for Government",
+  "hosts": [
+   {
+    "fedramp_id": "FR2431264500",
+    "csp": "AppOmni",
+    "cso": "AppOmni SaaS Security for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AppOmni SaaS Security for Government is a SaaS security platform designed to protect SaaS applications with posture management, threat detection and response, and identity security capabilities. The AppOmni Platform uses an application programming interface (API) connector to scan customer SaaS instances to discover, protect, and continuously monitor SaaS applications and data. AppOmni can discove",
+  "input_hash": "e6007f5d263b9595"
+ },
+ {
+  "service": "AppStream",
+  "hosts": [
+   {
+    "fedramp_id": "F1603077867",
+    "csp": "SMX (Formerly Smartronix)",
+    "cso": "Elevate Intelligent Automation Platform (IAP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "SMX Elevate Intelligent Automation Platform (IAP) is a FedRAMP-certified PaaS that accelerates secure cloud adoption for commercial and government organizations\u2014even in the most regulated environments. Elevate IAP integrates provisioning, monitoring, security, and lifecycle management to streamline operations, minimize complexity, and mitigate risks.\n\nWhat sets Elevate IAP apart:\n\nBuilt-in complia",
+  "input_hash": "b1618e995751a2de"
+ },
+ {
+  "service": "Appian Process Automation Platform",
+  "hosts": [
+   {
+    "fedramp_id": "FR2318051429",
+    "csp": "Appian",
+    "cso": "Appian Government Cloud - High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Appian Government Cloud (AGC) provides Appian\u2019s process automation platform for high-impact workloads. AGC offers Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS) functionality, which empowers agencies to design, automate, and optimize their operations to increase efficiency and productivity. It's an ideal solution for government agencies looking to streamline processes, particularly ",
+  "input_hash": "dcaf0f04a588958f"
+ },
+ {
+  "service": "Application Change Analysis",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "148b1baca9237830"
+ },
+ {
+  "service": "Application Dependency Management",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "4c3c7dd340bba5bd"
+ },
+ {
+  "service": "Application Gateway",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "2d28bf3a3104541c"
+ },
+ {
+  "service": "Application Insights",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "4c4a6a3e4d0e0cd8"
+ },
+ {
+  "service": "Application Integration",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "14b223e199630ef2"
+ },
+ {
+  "service": "Application Performance Monitoring (APM)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "46c1e4b969c0f4e6"
+ },
+ {
+  "service": "Applications - including Lightning Force 100, Lightning Platform Plus, and Lightning Platform Starter",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "72ebf439dbcb5466"
+ },
+ {
+  "service": "Arca CDS Instance Container Management Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "df2a320f4d526261"
+ }
+]

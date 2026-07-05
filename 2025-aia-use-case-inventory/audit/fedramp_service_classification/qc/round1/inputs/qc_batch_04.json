@@ -1,0 +1,762 @@
+[
+ {
+  "service": "Data Labeling",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Oracle Cloud's Data Labeling service is purpose-built to annotate datasets for machine learning model training, a core ML-tooling function.",
+   "signals": "[\"Data Labeling\", \"Oracle Cloud Infrastructure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Data Loss Prevention (DLP) Service",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A data loss prevention/security service on GovDataHosting; policy-based content controls, not an ML capability per the rubric's default.",
+   "signals": "[\"Data Loss Prevention\", \"GovDataHosting Cloud Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1303221956",
+    "csp": "IT-CNP",
+    "cso": "GovDataHosting Cloud Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "IT-CNP\u2019s FedRAMP Class D (High) certified GovDataHosting Cloud Platform is delivered as a fully managed, FISMA-compliant Platform-as-a-Service (PaaS) offering using multi-tenant Federal Government cloud and private cloud computing environment deployment models. The GovDataHosting Cloud Platform is deployed over both our own purpose-built GovDataHosting IaaS and AWS GovCloud IaaS, giving customers "
+ },
+ {
+  "service": "Data Management",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "RegScale's Continuous Controls Monitoring/GRC data management feature; compliance automation, not ML.",
+   "signals": "[\"Data Management\", \"RegScale CCM\", \"GRC\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2414158717",
+    "csp": "RegScale",
+    "cso": "RegScale CCM",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The RegScale Continuous Controls Monitoring (CCM) Platform is delivered as a Software-as-a-Service (SaaS) offering, hosted in a multi-tenant public cloud computing environment. Built on Microsoft Azure, RegScale provides next-generation Governance, Risk, and Compliance (GRC) capabilities that allow organizations to automate and accelerate the management of cybersecurity programs such as FISMA, Fed"
+ },
+ {
+  "service": "Data Protection for Database (Microsoft SQL Oracle SAP HANA)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Commvault database backup/recovery; storage capability, not ML.",
+   "signals": "[\"Data Protection for Database\", \"Commvault\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2115384377",
+    "csp": "Commvault Systems, Inc.",
+    "cso": "Commvault Cloud for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Commvault Cloud for Government delivers a fully automated cyber resilient SaaS data backup and recovery solution, with automated deployment, reduced overhead, automated patching and upgrades, continuous security monitoring, and requiring no Agency maintenance. Fully differentiated storage enables the move to cloud by providing the option to leverage cloud or on-premises storage within the web cons"
+ },
+ {
+  "service": "Data Protection for Dynamics 365, Data Protection for Salesforce",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Commvault SaaS backup/recovery for Dynamics 365 and Salesforce; not ML.",
+   "signals": "[\"Data Protection\", \"Dynamics 365\", \"Salesforce\", \"Commvault\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2115384377",
+    "csp": "Commvault Systems, Inc.",
+    "cso": "Commvault Cloud for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Commvault Cloud for Government delivers a fully automated cyber resilient SaaS data backup and recovery solution, with automated deployment, reduced overhead, automated patching and upgrades, continuous security monitoring, and requiring no Agency maintenance. Fully differentiated storage enables the move to cloud by providing the option to leverage cloud or on-premises storage within the web cons"
+ },
+ {
+  "service": "Data Protection for File & Object (Windows Server Azure Blob & Files OCI Object Storage Amazon S3 Linux/Unix)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Commvault file/object storage backup across multiple clouds; not ML.",
+   "signals": "[\"Data Protection for File & Object\", \"Commvault\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2115384377",
+    "csp": "Commvault Systems, Inc.",
+    "cso": "Commvault Cloud for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Commvault Cloud for Government delivers a fully automated cyber resilient SaaS data backup and recovery solution, with automated deployment, reduced overhead, automated patching and upgrades, continuous security monitoring, and requiring no Agency maintenance. Fully differentiated storage enables the move to cloud by providing the option to leverage cloud or on-premises storage within the web cons"
+ },
+ {
+  "service": "Data Science",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Oracle Cloud Data Science is an explicit ML platform for building, training, and deploying machine learning models.",
+   "signals": "[\"Data Science\", \"Oracle Cloud Infrastructure\", \"machine learning\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Data Security Posture Management",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A DSPM cloud-security feature on Google Cloud; classified as a security-posture tool by default rather than an ML-core capability, though some DSPM tooling uses ML classification internally.",
+   "signals": "[\"Data Security Posture Management\", \"Google Cloud Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Database Cloud Service",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Oracle's managed relational database offering; plain database hosting with no ML component.",
+   "signals": "[\"Database Cloud Service\", \"Oracle Cloud Infrastructure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Databricks Apps",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A general app-hosting framework for deploying interactive data apps inside Databricks; not itself an AI/ML capability.",
+   "signals": "[\"Apps\", \"lakehouse architecture\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine"
+ },
+ {
+  "service": "Databricks Assistant",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Databricks Assistant is an LLM-powered coding/query copilot embedded in the workspace, matching the chat-assistant/copilot definition of core_ai.",
+   "signals": "[\"Assistant\", \"Data Intelligence Engine\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine"
+ },
+ {
+  "service": "Deep Security",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Trend Micro Deep Security is an endpoint/server security suite; no clear AI/ML signal in the host context, so default to not_ai per precision-over-recall.",
+   "signals": "[\"Deep Security\", \"Elevate Intelligent Automation Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603077867",
+    "csp": "SMX (Formerly Smartronix)",
+    "cso": "Elevate Intelligent Automation Platform (IAP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "SMX Elevate Intelligent Automation Platform (IAP) is a FedRAMP-certified PaaS that accelerates secure cloud adoption for commercial and government organizations\u2014even in the most regulated environments. Elevate IAP integrates provisioning, monitoring, security, and lifecycle management to streamline operations, minimize complexity, and mitigate risks.\n\nWhat sets Elevate IAP apart:\n\nBuilt-in complia"
+ },
+ {
+  "service": "Defend Ingestion for Government",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "This appears to be Wiz's cloud data-ingestion component for its CNAPP scanning pipeline, a plumbing function rather than a named AI capability.",
+   "signals": "[\"Ingestion\", \"Wiz for U.S. Government\", \"cloud-native environment\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2308034636A",
+    "csp": "Wiz, Inc.",
+    "cso": "Wiz for U.S. Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Wiz for U.S. Government\r\n\r\nWiz for U.S. Government (\u201cWiz for Gov\u201d) is a cloud-native environment and product line that delivers a unified view of risk across a customer\u2019s full cloud environment, from code to production. Wiz for Gov helps public sector agencies meet FedRAMP and FISMA compliance needs by focusing on the issues that matter most. The Wiz for Gov unified product line has three differen"
+ },
+ {
+  "service": "Delta Live Tables (DLT)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Same Delta Live Tables ETL pipeline capability as above; not an AI/ML service.",
+   "signals": "[\"Delta Live Tables\", \"DLT\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2324740262",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine"
+ },
+ {
+  "service": "Demise",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Unclear standalone service name within the Kernos platform; while Kernos does video/FMV exploitation, there's no specific evidence this named service is an AI capability, so default to not_ai.",
+   "signals": "[\"Kernos\", \"video exploitation\", \"FMV\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2411443563",
+    "csp": "Valley IT Solutions, LLC",
+    "cso": "Kernos",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Kernos is a multi-tenant, cloud-native \u201cSaaS\u201d (software-as-a-service) cloud service offering (CSO). It leverages Amazon Web Services (AWS), IaaS (infrastructure-as-a-service), and PaaS (platform-as-a-service) for its underlying infrastructure and hardware.\n\nKernos integrates near-real-time video exploitation, common operating picture (COP), advanced multimedia and full motion video (FMV) (unclassi"
+ },
+ {
+  "service": "Devin Desktop",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Devin is Cognition's autonomous AI software-engineering agent; Devin Desktop is its client for that AI coding agent.",
+   "signals": "[\"Devin\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "Dialogflow CX",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Dialogflow CX is Google's conversational AI/chatbot-building platform, a core NLP/agent-builder service.",
+   "signals": "[\"Dialogflow\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Dialogflow ES",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Dialogflow ES (Essentials) is Google's conversational AI/chatbot platform, same core_ai category as Dialogflow CX.",
+   "signals": "[\"Dialogflow\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Digital Assistant",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Oracle Digital Assistant is a conversational AI/chatbot-building platform for enterprise apps.",
+   "signals": "[\"Digital Assistant\", \"Oracle Cloud Infrastructure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Digital Forensics & Incident Response (DFIR) services",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "DFIR services run on SentinelOne's Singularity platform, which the description explicitly says leverages advanced machine learning and behavioral AI for detection.",
+   "signals": "[\"machine learning algorithms\", \"behavioral AI\", \"DFIR\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Donovan",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Donovan is Scale AI's generative-AI decision-support/agentic platform for government, hosted on Scale's AI Data Platform explicitly built for AI development and deployment.",
+   "signals": "[\"Scale AI\", \"Generative AI Platform\", \"artificial intelligence\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2023666173",
+    "csp": "Scale AI, Inc",
+    "cso": "Scale AI Data Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The ScaleGov mission is to accelerate the development and deployment of artificial intelligence (AI) solutions within the government space. Scale's comprehensive AI Data Platform goes beyond data labeling, now offering a fully-managed, API-driven solution for the test, evaluation, and development of AI-enabled enterprise applications. This includes Scale's Generative AI Platform (SGP), which empow"
+ },
+ {
+  "service": "Dynamic Data Active Searchable (DDAS)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Splunk log search/indexing feature; name gives no ML/AI signal and description is generic operational intelligence marketing.",
+   "signals": "[\"Dynamic Data\", \"Searchable\", \"operational intelligence\", \"machine-generated data\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1607197917",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP Moderate",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Splunk Cloud provides operational intelligence capabilities to organizations around the world. It provides an easy and fast way to analyze the massive streams of machine-generated data coming from IT systems and applications, wherever they are deployed-on-premises, in virtualized environments or in the cloud.\n\r\nSplunk Cloud delivers the Splunk Enterprise software in a cloud environment where the s"
+ },
+ {
+  "service": "Dynamic Data Self-Storage (DDSS)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A Splunk data storage/retention feature, not an AI capability.",
+   "signals": "[\"Self-Storage\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1607197917",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP Moderate",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Splunk Cloud provides operational intelligence capabilities to organizations around the world. It provides an easy and fast way to analyze the massive streams of machine-generated data coming from IT systems and applications, wherever they are deployed-on-premises, in virtualized environments or in the cloud.\n\r\nSplunk Cloud delivers the Splunk Enterprise software in a cloud environment where the s"
+ },
+ {
+  "service": "Dynamics 365 Customer Insights",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A customer data platform whose segmentation and prediction features are ML-driven, embedded in a broader CDP product.",
+   "signals": "[\"Customer Insights\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Dynamics 365 Project Operations",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Project/resource management ERP module, not AI.",
+   "signals": "[\"Project Operations\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Dynamics 365 Relevance Search",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A full-text/ranked search feature over CRM records; unclear whether it involves material ML beyond standard search indexing.",
+   "signals": "[\"Relevance Search\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Dynamics 365 Supply",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Truncated/ambiguous name that appears to reference an ERP supply-chain module rather than an AI capability.",
+   "signals": "[\"Supply\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Dynatrace",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Dynatrace's Davis AI causal-analysis and anomaly-detection engine is a central, material capability of this observability/APM platform.",
+   "signals": "[\"Dynatrace\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603077867",
+    "csp": "SMX (Formerly Smartronix)",
+    "cso": "Elevate Intelligent Automation Platform (IAP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "SMX Elevate Intelligent Automation Platform (IAP) is a FedRAMP-certified PaaS that accelerates secure cloud adoption for commercial and government organizations\u2014even in the most regulated environments. Elevate IAP integrates provisioning, monitoring, security, and lifecycle management to streamline operations, minimize complexity, and mitigate risks.\n\nWhat sets Elevate IAP apart:\n\nBuilt-in complia"
+ },
+ {
+  "service": "EASM \u2013 External Attack Surface Management",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "Asset discovery and attack-surface correlation feature; not primarily ML-driven.",
+   "signals": "[\"Attack Surface Management\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g"
+ },
+ {
+  "service": "ETM \u2013 Enterprise TruRisk Management",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A risk-scoring/prioritization framework; unclear whether its scoring is ML-based versus rules/formula-based.",
+   "signals": "[\"TruRisk Management\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g"
+ },
+ {
+  "service": "Earth Engine*",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Google Earth Engine is primarily a planetary-scale geospatial data analysis platform; any embedded ML classification capability is secondary and not evident from the name alone.",
+   "signals": "[\"Earth Engine\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Email Delivery",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "An email/SMTP sending service, not AI.",
+   "signals": "[\"Email Delivery\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Endpoint Protection Platform (EPP)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Same SentinelOne Singularity platform whose protection capability is built on ML/behavioral-AI detection.",
+   "signals": "[\"machine learning algorithms\", \"behavioral AI\", \"Endpoint Protection Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Enterprise h2oGPTe",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "H2O.ai's enterprise generative-AI/LLM assistant platform (GPT-based RAG offering); the host description explicitly frames it as a generative/agentic AI platform.",
+   "signals": "[\"h2oGPTe\", \"generative\", \"agentic\", \"AI platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen"
+ },
+ {
+  "service": "Epsilon3",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A spaceflight/mission-operations procedure and test-management software product hosted on Palantir's platform; not primarily an AI product by name.",
+   "signals": "[\"Epsilon3\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "Estimation and Bidding",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A construction cost-estimation and bid-management module within Aurigo Masterworks; the host's 'AI-powered platform' language is boundary marketing rather than evidence this specific module is ML-driven.",
+   "signals": "[\"Estimation and Bidding\", \"capital planning\", \"construction management\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2031222637",
+    "csp": "Aurigo Software Technologies, Inc.",
+    "cso": "Masterworks Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Aurigo Masterworks Cloud is a capital planning and construction management solution designed exclusively for public agencies. Masterworks Cloud empowers federal, state, and local governments with a secure, AI-powered platform to plan, fund, and deliver infrastructure projects efficiently. With end-to-end capital planning, federal aid reimbursement, and construction project management, agencies can"
+ },
+ {
+  "service": "Event Triggered Webhooks*",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Webhook notification triggers within PagerDuty, not AI/ML.",
+   "signals": "[\"Webhooks\", \"PagerDuty\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "Exadata Database Service on Cloud@Customer",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "On-premises Exadata database infrastructure service, not AI/ML.",
+   "signals": "[\"Exadata\", \"Cloud@Customer\", \"Oracle\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "ExpenseIt",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "SAP Concur's ExpenseIt uses machine learning/OCR to read receipt photos and auto-populate expense entries \u2014 a document-intelligence capability.",
+   "signals": "[\"ExpenseIt\", \"Concur\", \"receipt scanning\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2234550858",
+    "csp": "Concur Technologies, Inc.",
+    "cso": "Concur Cloud for Public Sector",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of"
+ },
+ {
+  "service": "Extract Services",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A Concur data-extraction/reporting API for pulling expense/travel data, not clearly ML-driven.",
+   "signals": "[\"Extract Services\", \"Concur\", \"data extraction\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2234550858",
+    "csp": "Concur Technologies, Inc.",
+    "cso": "Concur Cloud for Public Sector",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of"
+ }
+]

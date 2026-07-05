@@ -1,0 +1,864 @@
+[
+ {
+  "service": "1Kosmos BlockID",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "1Kosmos BlockID is an identity-verification product built on biometric (facial recognition/liveness) matching, an ML-based identity/biometric verification capability explicitly named in the rubric.",
+   "signals": "[\"BlockID\", \"biometric\", \"identity verification\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1802451335",
+    "csp": "Human Resources Technologies, Inc. (HRTec)",
+    "cso": "Federal High Impact Virtualized Environment (FedHIVE)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "FedHIVE\u00ae is the only FedRAMP High Authorized accelerator platform delivering Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) capabilities within a single High-impact authorization boundary. Originally granted a Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP High baseline, FedHIVE enables broad reuse across "
+ },
+ {
+  "service": "AGENCYAMAZONEW",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "This string is a FedRAMP package identifier artifact rather than a product name; the underlying host is a CPR-training SaaS platform with no described AI/ML component.",
+   "signals": "[\"RQI1Stop\", \"CPR training\", \"SaaS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr"
+ },
+ {
+  "service": "AI Builder",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Microsoft Power Platform's AI Builder is a no-code tool for building and running custom ML models (form processing, prediction, object detection) \u2014 core ML tooling.",
+   "signals": "[\"AI Builder\", \"Power Platform\", \"ML models\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "AI Builder MiddleTier",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Backend/middle-tier service component supporting Microsoft AI Builder's model training and inference.",
+   "signals": "[\"AI Builder\", \"MiddleTier\", \"Azure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "AI Builder Structured ML",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Explicitly named machine-learning component of Microsoft AI Builder for structured-data models.",
+   "signals": "[\"AI Builder\", \"Structured ML\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "AI Builder Unstructured ML",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Explicitly named machine-learning component of Microsoft AI Builder for unstructured-data models (e.g. document/image processing).",
+   "signals": "[\"AI Builder\", \"Unstructured ML\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "AI Copilot",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Appian's AI Copilot is a generative-AI chat assistant embedded in the Appian platform, matching the rubric's chat-assistant/copilot core_ai category.",
+   "signals": "[\"AI Copilot\", \"Appian\", \"copilot\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1210011608",
+    "csp": "Appian",
+    "cso": "Appian Government Cloud - Moderate",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2318051429",
+    "csp": "Appian",
+    "cso": "Appian Government Cloud - High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Appian Government Cloud (AGC) Moderate provides Appian\u2019s process automation platform for moderate-impact workloads. AGC offers Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS) functionality, which empowers agencies to design, automate, and optimize their operations to increase efficiency and productivity. It's an ideal solution for government agencies looking to streamline processes, "
+ },
+ {
+  "service": "AI Skill",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Appian's AI Skill designer lets users build and embed AI-driven skills (e.g. document extraction, classification) into workflows, functioning as an agent/model-building tool.",
+   "signals": "[\"AI Skill\", \"Appian\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1210011608",
+    "csp": "Appian",
+    "cso": "Appian Government Cloud - Moderate",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2318051429",
+    "csp": "Appian",
+    "cso": "Appian Government Cloud - High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Appian Government Cloud (AGC) Moderate provides Appian\u2019s process automation platform for moderate-impact workloads. AGC offers Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS) functionality, which empowers agencies to design, automate, and optimize their operations to increase efficiency and productivity. It's an ideal solution for government agencies looking to streamline processes, "
+ },
+ {
+  "service": "AI integrator",
+  "label": {
+   "category": "core_ai",
+   "confidence": "low",
+   "reasoning": "Named 'AI integrator' feature within the Bluescape/n8n for Government offering, apparently connecting workflows to AI models/services \u2014 an AI-integration/agent-builder capability, though the snippet gives limited detail.",
+   "signals": "[\"AI integrator\", \"n8n\", \"Bluescape\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2035056105",
+    "csp": "Bluescape",
+    "cso": "Bluescape with n8n for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Bluescape is the secure workspace for government and defense operations, giving teams a common picture to act with speed and precision. FedRAMP-authorized and trusted across national security, it brings intelligence, plans, and imagery together in one place, so mission partners align quickly and make time-critical decisions with confidence. \r\n\r\nBluescape supports use cases such as operations cente"
+ },
+ {
+  "service": "AIP",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Palantir AIP (Artificial Intelligence Platform) is explicitly an LLM/agent orchestration and model-deployment platform for integrating generative AI into operations \u2014 a core AI capability.",
+   "signals": "[\"AIP\", \"Artificial Intelligence Platform\", \"Palantir\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2434554673",
+    "csp": "Palantir Technologies Inc.",
+    "cso": "Palantir Federal Cloud Service",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Palantir Federal Cloud Service (PFCS) is a dedicated environment for the purpose of delivering Palantir software to federal government customers as a cloud service. Palantir software, including Foundry, AIP, Gotham, Apollo, and supporting products utilizing the same infrastructure, enables a multitude of collaborative and operational workflows for end government users. Palantir enables organiz"
+ },
+ {
+  "service": "APX N30",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+   "signals": "[\"APX\", \"Motorola Solutions\", \"radio\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2118055930",
+    "csp": "Motorola Solutions",
+    "cso": "Motorola Solutions Federal Cloud (MSFC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Motorola Solutions is expanding its \u201cMission Critical Ecosystem\u201d which consists of a suite of software and technology that supports mission critical communications in evolving ways and that provides fast access to actionable information. The purpose of the Motorola Solutions Federal Cloud (MSFC) is to serve as the platform upon which the applications and solutions that are part of this Mission Cri"
+ },
+ {
+  "service": "APX2500",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+   "signals": "[\"APX\", \"Motorola Solutions\", \"radio\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2118055930",
+    "csp": "Motorola Solutions",
+    "cso": "Motorola Solutions Federal Cloud (MSFC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Motorola Solutions is expanding its \u201cMission Critical Ecosystem\u201d which consists of a suite of software and technology that supports mission critical communications in evolving ways and that provides fast access to actionable information. The purpose of the Motorola Solutions Federal Cloud (MSFC) is to serve as the platform upon which the applications and solutions that are part of this Mission Cri"
+ },
+ {
+  "service": "ATO In a Box",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Hosted on Ask Sage, explicitly described as a multi-modal Generative AI platform built on Azure OpenAI, AWS Bedrock, and Vertex AI; 'ATO in a Box' is a generative-AI-driven compliance-automation offering on that platform.",
+   "signals": "[\"Generative AI platform\", \"Azure OpenAI\", \"AWS Bedrock\", \"Ask Sage\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2401839361",
+    "csp": "Ask Sage, Inc.",
+    "cso": "Ask Sage",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Ask Sage is a Multi-modal Generative AI platform designed specifically to enable secure access to Generative AI models for both government teams. Ask Sage is built on Generative AI technologies such as Azure OpenAI (GPT 3.5, GPT 4, GPT 4o etc.), AWS Bedrock Gov (LLMA3, Titan etc.), Google Vertex AI (Google Gemini Pro 1.5 etc.), and various open-source LLMs.\n\nAsk Sage also supports OpenAI Whisper, "
+ },
+ {
+  "service": "AWS Database Migration Service (DMS)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Database migration and replication service; ETL/migration tooling, not AI/ML.",
+   "signals": "[\"DMS\", \"database migration\", \"replication\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "AWS Firewall Manager",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Centralized firewall rule and security policy management across accounts; rules-based security management, not AI.",
+   "signals": "[\"Firewall Manager\", \"security policy management\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "AWS HealthOmics",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Managed service for storing and running bioinformatics/genomics workflows (e.g., variant calling pipelines); primarily workflow orchestration and storage rather than a marketed AI/ML product.",
+   "signals": "[\"HealthOmics\", \"genomics\", \"bioinformatics workflows\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "AWS Identity and Access Management (IAM)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Core access control service for managing users, roles, and permissions; foundational identity infrastructure, not AI.",
+   "signals": "[\"IAM\", \"access control\", \"permissions\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "AWS IoT Events",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Detects and responds to events from IoT sensors/apps using user-defined detector models; rules/state-machine based, not ML.",
+   "signals": "[\"IoT Events\", \"detector models\", \"event detection\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "AWS Wickr",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "End-to-end encrypted messaging/collaboration app; not AI.",
+   "signals": "[\"Wickr\", \"messaging\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Acquisition In a Box",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A packaged acquisition-workflow offering built on the Ask Sage generative-AI platform, which the host description confirms is a multi-model GenAI service; the named capability is an application on top rather than a model itself.",
+   "signals": "[\"Ask Sage\", \"Generative AI platform\", \"GPT\", \"Bedrock Gov\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2401839361",
+    "csp": "Ask Sage, Inc.",
+    "cso": "Ask Sage",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Ask Sage is a Multi-modal Generative AI platform designed specifically to enable secure access to Generative AI models for both government teams. Ask Sage is built on Generative AI technologies such as Azure OpenAI (GPT 3.5, GPT 4, GPT 4o etc.), AWS Bedrock Gov (LLMA3, Titan etc.), Google Vertex AI (Google Gemini Pro 1.5 etc.), and various open-source LLMs.\n\nAsk Sage also supports OpenAI Whisper, "
+ },
+ {
+  "service": "Acsense IAM Resilience Platform",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "IAM continuity/resilience platform for identity infrastructure failover; not AI.",
+   "signals": "[\"IAM Resilience\", \"Knox Systems\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2528033654",
+    "csp": "Knox Systems",
+    "cso": "Knox Systems FedRAMP High Managed Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "Active Directory and Active Directory Federation Services (Single-Sign On, Certificate/TOTP MFA)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Identity/SSO/MFA infrastructure; not AI.",
+   "signals": "[\"Active Directory\", \"Single-Sign On\", \"TOTP MFA\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove"
+ },
+ {
+  "service": "Admin Console",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Google Workspace/Cloud administrative management console; not AI.",
+   "signals": "[\"Admin Console\", \"Google Services\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Advanced and Scalable Incident Handling",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "General incident-response/orchestration capability; the name and snippet reference event orchestration but do not clearly indicate an ML-driven core feature.",
+   "signals": "[\"Incident Handling\", \"event orchestration\", \"PagerDuty\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "Agent Assist",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Google Cloud Contact Center AI's Agent Assist provides real-time ML/NLP-based suggestions to live support agents, a core conversational-AI capability.",
+   "signals": "[\"Agent Assist\", \"Google Services\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Agent Search on Gemini Enterprise Agent Platform (formerly Vertex AI Search)",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Explicitly named as part of Google's Gemini Enterprise Agent Platform and Vertex AI Search, an LLM/semantic-search and agent-building product.",
+   "signals": "[\"Gemini Enterprise Agent Platform\", \"Vertex AI Search\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Agentforce",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Salesforce's autonomous AI agent-building platform; a core agentic-AI product.",
+   "signals": "[\"Agentforce\", \"Salesforce\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a"
+ },
+ {
+  "service": "Alert Triage & Deduplication",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "Alert-management capability in PagerDuty; name suggests automation but lacks explicit ML/AI evidence, so classified conservatively as not_ai.",
+   "signals": "[\"Alert Triage\", \"Deduplication\", \"PagerDuty\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "Allocore ULP-UGP-UFP Software",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "HR/workforce management software product; not AI.",
+   "signals": "[\"Allocore\", \"HRTec\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1802451335",
+    "csp": "Human Resources Technologies, Inc. (HRTec)",
+    "cso": "Federal High Impact Virtualized Environment (FedHIVE)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "FedHIVE\u00ae is the only FedRAMP High Authorized accelerator platform delivering Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) capabilities within a single High-impact authorization boundary. Originally granted a Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP High baseline, FedHIVE enables broad reuse across "
+ },
+ {
+  "service": "Amazon Bedrock",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Fully managed foundation-model hosting and inference service; core generative AI/LLM platform.",
+   "signals": "[\"Bedrock\", \"foundation model\", \"LLM hosting\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Comprehend",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Natural language processing API for entity extraction, sentiment, and text analysis.",
+   "signals": "[\"NLP\", \"Comprehend\", \"text analysis\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Comprehend Medical",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "NLP service specialized for extracting medical information from unstructured clinical text.",
+   "signals": "[\"NLP\", \"medical text extraction\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Data Firehose",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Streaming data delivery/ETL pipeline service; no ML component.",
+   "signals": "[\"data streaming\", \"delivery\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon DataZone",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Primarily a data governance/cataloging and data-sharing service; any ML-assisted metadata suggestions are a minor, secondary aspect of the product.",
+   "signals": "[\"data catalog\", \"governance\", \"data sharing\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Detective",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Security investigation service that uses ML and graph analysis to build behavior baselines and surface anomalies for root-cause analysis.",
+   "signals": "[\"security analytics\", \"behavior graph\", \"ML-based investigation\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Elastic File System (EFS)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Managed network file storage; plain storage infrastructure.",
+   "signals": "[\"file storage\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon FSx",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Managed file system service (Windows/Lustre/NetApp/OpenZFS); plain storage.",
+   "signals": "[\"file system\", \"storage\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Forecast",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Managed ML service purpose-built for time-series forecasting.",
+   "signals": "[\"Forecast\", \"machine learning\", \"time-series\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon GuardDuty",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Threat-detection service that applies ML and anomaly detection to logs/network data to flag malicious activity.",
+   "signals": "[\"threat detection\", \"machine learning\", \"anomaly detection\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Kendra",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Intelligent enterprise search service built on machine learning/NLP for semantic document retrieval and Q&A.",
+   "signals": "[\"intelligent search\", \"machine learning\", \"semantic search\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ }
+]

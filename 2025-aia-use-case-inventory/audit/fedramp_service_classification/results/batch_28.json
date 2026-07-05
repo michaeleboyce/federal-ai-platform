@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Standards (Accreditation Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV HR module for tracking accreditation/standards compliance, not AI/ML.",
+  "signals": ["Accreditation Management", "NEOGOV"]
+ },
+ {
+  "service": "Status Update Notification Templates",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty templated notification configuration, not AI.",
+  "signals": ["Notification Templates", "PagerDuty"]
+ },
+ {
+  "service": "StorSimple",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Microsoft StorSimple is a hybrid cloud storage/backup appliance service, plain storage infrastructure.",
+  "signals": ["StorSimple", "Azure Government"]
+ },
+ {
+  "service": "StorSimple Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same StorSimple hybrid storage appliance offering under Azure Commercial Cloud.",
+  "signals": ["StorSimple Service", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Storage (Blobs, Disks, Files, Queues, Tables)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Core Azure storage primitives, plain infrastructure.",
+  "signals": ["Blobs", "Disks", "Files", "Queues"]
+ },
+ {
+  "service": "Storage Transfer Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google's data-migration/transfer utility between storage systems, not AI.",
+  "signals": ["Storage Transfer Service", "Google Cloud Platform"]
+ },
+ {
+  "service": "Stream Analytics",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Azure Stream Analytics is primarily a SQL-like real-time event/query processing engine; any ML integration is via optional UDFs, not the core product.",
+  "signals": ["Stream Analytics", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Streaming",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure Streaming is a Kafka-like message streaming service, plain infrastructure.",
+  "signals": ["Streaming", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Streamline (by Valinor)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Valinor Streamline is ontology-native data-collection software for Palantir Foundry (structured forms and write-back), not itself an AI/ML capability, though it operates within an AI-heavy Foundry/AIP ecosystem.",
+  "signals": ["ontology-native data collection", "Foundry", "Streamline"]
+ },
+ {
+  "service": "Streams Messaging",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Kafka-based messaging component of Cloudera's data platform, not an AI/ML feature itself.",
+  "signals": ["Streams Messaging", "Cloudera"]
+ },
+ {
+  "service": "Substrate Intelligence Platform (SIP)",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Microsoft's Substrate is the underlying data/services layer connecting Microsoft 365 content and signals, which powers AI-driven experiences (Copilot, intelligent search) elsewhere; it is data infrastructure with AI enablement as a purpose rather than an AI product itself.",
+  "signals": ["Substrate Intelligence Platform", "Microsoft 365", "intelligent search"]
+ },
+ {
+  "service": "Support Center (Cloud Incident Service)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's customer support/incident-ticketing service, not AI/ML.",
+  "signals": ["Support Center", "Cloud Incident Service"]
+ },
+ {
+  "service": "THEIA",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Hosted on Kernos, a C5ISR platform whose snippet describes near-real-time video exploitation and full-motion-video (FMV) processing, terminology commonly associated with AI/computer-vision-assisted analysis, though not explicitly confirmed as ML-based.",
+  "signals": ["video exploitation", "full motion video (FMV)", "C5ISR"]
+ },
+ {
+  "service": "TP – Threat Protection",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qualys vulnerability/threat management module using signature- and correlation-based analysis, not marketed as an AI/ML capability.",
+  "signals": ["Threat Protection", "Qualys Cloud Platform"]
+ },
+ {
+  "service": "TRM Labs",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "TRM Labs is a blockchain intelligence/crypto-compliance platform that combines threat intelligence with machine learning models for real-time transaction risk scoring, an embedded ML capability within a broader analytics product.",
+  "signals": ["risk scoring", "machine learning models", "blockchain intelligence"]
+ },
+ {
+  "service": "Tableau Next",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Tableau Next (Tableau Einstein) is a BI/analytics platform built around generative-AI agents (Data Pro, Concierge, Inspector) for natural-language querying and automated insight generation, AI as a headline embedded feature of a broader analytics product.",
+  "signals": ["AI agents", "generative AI", "conversational analytics", "Einstein"]
+ },
+ {
+  "service": "Talent 2 Opportunity (T2O)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "HireVue's comprehensive talent-acquisition platform that matches candidates to roles using the company's predictive, AI-driven assessment science alongside video interviewing, an embedded AI capability within a broader hiring platform.",
+  "signals": ["matches candidates", "predictive", "artificial intelligence", "HireVue"]
+ },
+ {
+  "service": "Talent Acquisition",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A recruiting workflow module of Eightfold's Talent Intelligence Platform, which uses AI to optimize matching and sourcing; the module itself is an HR function powered by the vendor's underlying ML models.",
+  "signals": ["Eightfold AI", "advanced AI", "Talent Intelligence Platform"]
+ },
+ {
+  "service": "Talent Flex",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "An internal-mobility/gig-staffing module of Eightfold's AI-driven Talent Intelligence Platform.",
+  "signals": ["Eightfold AI", "advanced AI", "Talent Intelligence Platform"]
+ },
+ {
+  "service": "Talent Management",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A workforce-development module of Eightfold's AI-driven Talent Intelligence Platform.",
+  "signals": ["Eightfold AI", "advanced AI", "Talent Intelligence Platform"]
+ },
+ {
+  "service": "Talent Solution*",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud Talent Solution is explicitly a machine-learning-powered job search/candidate-matching API, using pre-trained ML models to match job seekers to postings.",
+  "signals": ["Talent Solution", "machine learning", "job matching API"]
+ },
+ {
+  "service": "Talent Tracking",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A candidate-pipeline tracking module of Eightfold's AI-driven Talent Intelligence Platform.",
+  "signals": ["Eightfold AI", "advanced AI", "Talent Intelligence Platform"]
+ },
+ {
+  "service": "Tanium Account",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Account/tenant administration for the Tanium platform, not AI/ML.",
+  "signals": ["Tanium Account"]
+ },
+ {
+  "service": "Tanium Ask",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Tanium Ask is an explicitly AI-powered natural-language question bar that translates plain-English questions into Tanium's query syntax to return endpoint data.",
+  "signals": ["AI-powered", "natural language questions", "Tanium Ask"]
+ },
+ {
+  "service": "Tanium Asset",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IT asset inventory module, not AI/ML.",
+  "signals": ["Tanium Asset"]
+ },
+ {
+  "service": "Tanium Automate",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rules-based workflow automation for endpoint remediation tasks.",
+  "signals": ["Tanium Automate"]
+ },
+ {
+  "service": "Tanium Benchmark",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Configuration/security benchmarking against standards (e.g., CIS), rules-based comparison, not AI.",
+  "signals": ["Tanium Benchmark"]
+ },
+ {
+  "service": "Tanium Certificate Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Certificate lifecycle management module, not AI/ML.",
+  "signals": ["Tanium Certificate Manager"]
+ },
+ {
+  "service": "Tanium Client Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Endpoint agent/client administration, not AI.",
+  "signals": ["Tanium Client Management"]
+ },
+ {
+  "service": "Tanium Cloud Workloads",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloud workload visibility/management module, not AI/ML.",
+  "signals": ["Tanium Cloud Workloads"]
+ },
+ {
+  "service": "Tanium Comply",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Compliance/vulnerability benchmark scanning module, rules-based.",
+  "signals": ["Tanium Comply"]
+ },
+ {
+  "service": "Tanium Connect",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Data export/integration connector service, not AI.",
+  "signals": ["Tanium Connect"]
+ },
+ {
+  "service": "Tanium Connector for Microsoft Intune",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Integration connector to Microsoft Intune, not AI/ML.",
+  "signals": ["Tanium Connector", "Microsoft Intune"]
+ },
+ {
+  "service": "Tanium Criticality",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Asset/vulnerability criticality scoring module; appears to be a rules/heuristics-based prioritization feature rather than a marketed ML capability.",
+  "signals": ["Tanium Criticality"]
+ },
+ {
+  "service": "Tanium Deploy",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Software deployment/patching module, not AI.",
+  "signals": ["Tanium Deploy"]
+ },
+ {
+  "service": "Tanium Direct Connect",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Remote-access connectivity module, not AI/ML.",
+  "signals": ["Tanium Direct Connect"]
+ },
+ {
+  "service": "Tanium Directory Query",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Directory-service (e.g., AD/LDAP) lookup module, not AI.",
+  "signals": ["Tanium Directory Query"]
+ },
+ {
+  "service": "Tanium Discover",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network/asset discovery module, not AI/ML.",
+  "signals": ["Tanium Discover"]
+ },
+ {
+  "service": "Tanium End-User Notifications",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "End-user messaging/notification module, not AI.",
+  "signals": ["Tanium End-User Notifications"]
+ },
+ {
+  "service": "Tanium Endpoint Configuration",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Endpoint configuration management module, not AI/ML.",
+  "signals": ["Tanium Endpoint Configuration"]
+ },
+ {
+  "service": "Tanium Endpoint Management for Mobile",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Mobile device management module, not AI/ML.",
+  "signals": ["Tanium Endpoint Management for Mobile"]
+ },
+ {
+  "service": "Tanium Enforce",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Policy enforcement module for endpoint configuration, rules-based.",
+  "signals": ["Tanium Enforce"]
+ },
+ {
+  "service": "Tanium Engage",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Appears to be an end-user communication/engagement module, not AI/ML.",
+  "signals": ["Tanium Engage"]
+ },
+ {
+  "service": "Tanium Gateway",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network gateway/connectivity component, not AI.",
+  "signals": ["Tanium Gateway"]
+ },
+ {
+  "service": "Tanium Guardian",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Tanium Guardian provides visibility/inventory of AI tools, local LLMs, and MCP servers running on endpoints for governance purposes; it is an asset-discovery/governance capability about AI usage rather than itself an AI/ML-powered service.",
+  "signals": ["AI governance", "visibility into AI tools", "local LLMs", "MCP servers"]
+ },
+ {
+  "service": "Tanium Guide",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Could not confirm this specific module's function; no clear evidence it is an AI capability distinct from Tanium's other named AI products (Atlas, Ask), so treated conservatively as not_ai.",
+  "signals": ["Tanium Guide"]
+ },
+ {
+  "service": "Tanium Impact",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Appears to be a risk/impact scoring or reporting module, not confirmed as an ML-based capability.",
+  "signals": ["Tanium Impact"]
+ },
+ {
+  "service": "Tanium Integrations Gallery",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A catalog/marketplace of third-party integrations, not AI/ML.",
+  "signals": ["Integrations Gallery"]
+ },
+ {
+  "service": "Tanium Integrity Monitor",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "File integrity monitoring module, signature/hash-based, not AI.",
+  "signals": ["Tanium Integrity Monitor"]
+ },
+ {
+  "service": "Tanium Interact",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Tanium Interact is the underlying structured question-bar/query interface (with basic syntax autocomplete) that Tanium Ask's AI translation layer sits on top of; Interact itself requires Tanium query syntax rather than being AI-powered.",
+  "signals": ["question bar", "Interact syntax", "real-time suggestions"]
+ }
+]

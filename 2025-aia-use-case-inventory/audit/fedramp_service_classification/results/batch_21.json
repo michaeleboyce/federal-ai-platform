@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Managed Service for Apache Spark (formerly Dataproc)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP Dataproc is a managed big-data processing service (Spark/Hadoop clusters), not an AI/ML product.",
+  "signals": ["Apache Spark", "Dataproc", "Google Cloud Platform"]
+ },
+ {
+  "service": "Management Agent Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Management Agent Service is infrastructure monitoring/telemetry collection, not AI/ML.",
+  "signals": ["Management Agent Service", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Management Console",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A generic administrative console for Cloudera; the host's broader AI/ML analytics capability is context, not this specific console feature.",
+  "signals": ["Management Console", "Cloudera for Government"]
+ },
+ {
+  "service": "Mark43 Analytics & Data Lake",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A public-safety data lake and analytics/reporting module; no specific ML capability is named for it.",
+  "signals": ["Analytics & Data Lake", "operational analysis", "public safety"]
+ },
+ {
+  "service": "Mark43 CAD",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Computer-Aided Dispatch for law enforcement call intake/dispatch, not an AI capability.",
+  "signals": ["CAD", "call intake and dispatch"]
+ },
+ {
+  "service": "Mark43 OnScene (Mobile)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "The mobile field-app component of the public safety platform, not AI/ML.",
+  "signals": ["OnScene", "Mobile", "mobile"]
+ },
+ {
+  "service": "Mark43 RMS",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Records Management System for law enforcement reporting, not an AI capability.",
+  "signals": ["RMS", "Records Management System"]
+ },
+ {
+  "service": "Marketing Cloud Growth & Advanced",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Salesforce Marketing Cloud's Advanced/Growth tiers embed Einstein AI features (predictive engagement, send-time optimization) as part of the broader marketing platform, though the name itself is generic.",
+  "signals": ["Marketing Cloud", "smart insights", "Growth & Advanced"]
+ },
+ {
+  "service": "Marketplace",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Marketplace for discovering/deploying third-party images and apps, not AI/ML.",
+  "signals": ["Marketplace", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Marketplace Portal",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Marketplace storefront portal, not an AI capability.",
+  "signals": ["Marketplace Portal", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Materials Testing and Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A construction materials testing/tracking module within Aurigo's capital planning platform, not AI/ML.",
+  "signals": ["Materials Testing and Management", "construction management"]
+ },
+ {
+  "service": "Max users per escalation level",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty configuration setting/limit, not a service capability at all, let alone AI.",
+  "signals": ["Max users per escalation level", "PagerDuty"]
+ },
+ {
+  "service": "Maximus Amazon Connect Platform",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Named as a contact-center platform (built on Amazon Connect); no specific ML/AI capability of the platform is called out by name.",
+  "signals": ["Amazon Connect Platform", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Maximus CodeShuttle",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Appears to be a code/data deployment or migration tool, not an AI product.",
+  "signals": ["CodeShuttle", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Maximus Digital Experience Hub (DXHub)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A digital customer-experience/engagement portal, not an AI capability by name.",
+  "signals": ["Digital Experience Hub", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Maximus Enhanced Reporting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A reporting/analytics dashboard feature, not AI/ML.",
+  "signals": ["Enhanced Reporting", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Maximus Intelligent Document Processing (IDP)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "\"Intelligent Document Processing\" is the standard industry term for ML/NLP-based document extraction and classification (OCR plus AI).",
+  "signals": ["Intelligent Document Processing", "IDP"]
+ },
+ {
+  "service": "Maximus RPA",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Robotic Process Automation is rule/script-based workflow automation, not ML-driven per se.",
+  "signals": ["RPA", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Maximus Suicide Prevention Service",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Named as a human-staffed crisis-line/prevention service; no AI/ML capability is indicated.",
+  "signals": ["Suicide Prevention Service", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Memorystore for Valkey",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP Memorystore for Valkey is a managed in-memory cache (Redis-compatible), not AI/ML.",
+  "signals": ["Memorystore", "Valkey", "Google Cloud Platform"]
+ },
+ {
+  "service": "Metadata on Gemini Enterprise Agent Platform (Vertex ML Metadata)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Vertex ML Metadata is ML pipeline/model lineage tooling within Google's Gemini Enterprise Agent (Vertex AI) platform, a core ML tooling capability.",
+  "signals": ["Vertex ML Metadata", "Gemini Enterprise Agent Platform"]
+ },
+ {
+  "service": "Metering",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Metering is a usage/billing tracking service, not AI/ML.",
+  "signals": ["Metering", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Microsoft 365 Copilot",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Microsoft 365 Copilot is a generative-AI assistant embedded across Office apps, a core AI product.",
+  "signals": ["Copilot", "Microsoft 365"]
+ },
+ {
+  "service": "Microsoft 365 Defender",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "M365 Defender is an XDR security suite whose cross-signal incident correlation and detection rely materially on ML analytics, embedded within a broader security product.",
+  "signals": ["Defender", "detection", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft 365 Suite User Experience (SUE) (including Admin Center to Administer M365, Manage core service settings from M365, Windows PowerShell to Manage M365)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Administrative tooling (admin center, PowerShell management) for M365, not AI/ML.",
+  "signals": ["Admin Center", "PowerShell to Manage M365"]
+ },
+ {
+  "service": "Microsoft Azure Attestation",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A hardware/trusted-execution-environment attestation service, not AI/ML.",
+  "signals": ["Azure Attestation", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Azure Government Management Portal",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An administrative portal for Azure Government, not AI/ML.",
+  "signals": ["Management Portal", "Azure Government"]
+ },
+ {
+  "service": "Microsoft Azure Peering Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A network peering/connectivity service, not AI/ML.",
+  "signals": ["Peering Service", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Cloud App Security",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Microsoft's CASB (Defender for Cloud Apps) relies on ML-based user/entity behavior analytics for anomaly detection, an embedded AI capability within a broader security product.",
+  "signals": ["Cloud App Security", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Copilot Studio",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Copilot Studio is Microsoft's generative-AI agent/copilot builder platform, a core AI product.",
+  "signals": ["Copilot Studio"]
+ },
+ {
+  "service": "Microsoft Defender Threat Intelligence",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Primarily a curated threat-intelligence lookup/feed product rather than an ML-detection-centric capability.",
+  "signals": ["Threat Intelligence", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Defender Vulnerability Management",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Primarily asset/vulnerability scanning and patch prioritization, not a named ML capability.",
+  "signals": ["Vulnerability Management", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Defender for Endpoint",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Defender for Endpoint's next-gen antivirus/EDR relies materially on ML-based behavioral and malware detection, embedded within a broader endpoint security product.",
+  "signals": ["Defender for Endpoint", "Azure Government"]
+ },
+ {
+  "service": "Microsoft Digital Contact Center Platform",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Microsoft markets this contact-center platform with embedded generative-AI virtual agents and Copilot capabilities across Dynamics 365/Teams/Nuance.",
+  "signals": ["Digital Contact Center Platform", "Azure Government"]
+ },
+ {
+  "service": "Microsoft Entra ID Free",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Free-tier identity and access management, not AI/ML.",
+  "signals": ["Entra ID Free", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Entra ID Governance",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Identity lifecycle/access governance (reviews, entitlement management), primarily rules-based rather than a named ML capability.",
+  "signals": ["Entra ID Governance", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Entra ID PI and Microsoft Entra ID P2",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Identity/IAM licensing tiers; though P2's Identity Protection includes ML-based sign-in risk detection, the service name itself denotes identity licensing generally.",
+  "signals": ["Entra ID P1", "Entra ID P2", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Fabric",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Fabric is a unified data/analytics platform (Power BI, Data Factory, Synapse) with Copilot generative-AI features embedded throughout, secondary to its core data platform function.",
+  "signals": ["Microsoft Fabric", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Foundry Portal (formerly Azure AI Portal)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "This is Microsoft's AI Foundry platform (rebrand of Azure AI Studio) for building, deploying, and managing generative AI models and apps.",
+  "signals": ["Foundry Portal", "formerly Azure AI Portal"]
+ },
+ {
+  "service": "Microsoft Graph",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Microsoft Graph is an API for accessing M365 data/objects, not an AI/ML capability.",
+  "signals": ["Microsoft Graph", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Peering Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A network connectivity/peering service, not AI/ML.",
+  "signals": ["Peering Service", "Azure Government"]
+ },
+ {
+  "service": "Microsoft Pin Reset Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An identity/credential (PIN) reset utility, not AI/ML.",
+  "signals": ["Pin Reset Service", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft PowerApps",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "PowerApps is a low-code application-building platform that ships an embedded AI Builder module for adding ML capabilities to apps, matching the low-code-plus-AI-module pattern directly.",
+  "signals": ["PowerApps", "low-code", "AI Builder (embedded)"]
+ },
+ {
+  "service": "Microsoft Purview",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Purview's data governance/classification and insider risk management rely on embedded ML classifiers, secondary to its broader compliance/governance platform function.",
+  "signals": ["Purview", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Purview and MDO (including Adoption Score, Compliance Management, Manual retention labels, Basic org-wide or location-wide retention policies, Rules-based automatic retention policies, Machine Learning-based retention, Teams message retention policies, Records Management, Basic Message Encryption, Advanced Message Encryption, DLP for emails & files, DLP for Teams chat, Endpoint DLP, Microsoft Defender for Office 365 Plan 2 , Safe Documents , eDiscovery (Standard) (including Hold and Export) , Litigation Hold , eDiscovery (Premium) , Audit (Standard) , Audit (Premium) , Microsoft Purview Insider Risk Management, Communication Compliance, Information Barriers, Microsoft Defender Suite GCCH, Microsoft Purview Suite GCCH, Microsoft 365 G5 Info Protection and Governance, Microsoft 365 G5 Insider Risk Management, Microsoft Purview Insider Risk Management forensic evidence, Microsoft 365 G5 eDiscovery and Audit, Microsoft Defender Suite FLW for GCCH, Microsoft 365 Purview Suite FLW for GCCH, Microsoft Defender + Purview Suite FLW for GCCH, Microsoft 365 F5 Information Protection and Governance, Microsoft 365 F5 Insider Risk Management, Microsoft 365 F5 eDiscovery and Audit, Microsoft Defender for Office 365 Plan 1, Microsoft Defender for Office 365 Plan 2, Premium Assessments add-on for Compliance Manager, Priva Privacy Risk Management, Priva Subject Rights Requests, Microsoft Purview Data Loss Prevention (for email and files), 10-year Audit Log Retention)",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "This large compliance/DLP/eDiscovery bundle explicitly names \"Machine Learning-based retention\" as one of its included features, an embedded ML capability within a broader governance suite.",
+  "signals": ["Machine Learning-based retention", "Insider Risk Management", "eDiscovery (Premium)"]
+ },
+ {
+  "service": "Microsoft Purview and MDO (including Adoption Score, Secure Score, Compliance Management, Manual retention labels, Basic org-wide or location-wide retention policies, Rules-based automatic retention policies, Machine Learning-based retention, Teams message retention policies, Records Management, DLP for emails & files, DLP for Teams chat, Endpoint DLP, Basic Message Encryption, Advanced Message Encryption, Microsoft Defender for Office 365 Plan 2 , Safe Documents , eDiscovery (Standard) (including Hold and Export) , Litigation Hold , eDiscovery (Premium) , Audit (Standard) , Audit (Premium) , Microsoft Purview Insider Risk Management, Communication Compliance, Information Barriers, Microsoft Defender Suite GCC, Microsoft Purview Suite GCC, Microsoft 365 G5 Info Protection and Governance, Microsoft 365 G5 Insider Risk Management, Microsoft Purview Insider Risk Management forensic evidence, Microsoft 365 G5 eDiscovery and Audit, Microsoft Defender Suite FLW for GCC, Microsoft Purview Suite FLW for GCC, Microsoft Defender + Purview Suite FLW for GCC, Microsoft 365 F5 Information Protection and Governance, Microsoft 365 F5 Insider Risk Management, Microsoft 365 F5 eDiscovery and Audit, Microsoft Defender for Office 365 Plan 1, Microsoft Defender for Office 365 Plan 2, Premium Assessments add-on for Compliance Manager, Priva Privacy Risk Management, Priva Subject Rights Requests, Microsoft Purview Data Loss Prevention (for email and files), 10-year Audit Log Retention)",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Same bundle as the GCC-H variant; explicitly names \"Machine Learning-based retention\" as an included feature within a broader compliance/DLP/eDiscovery suite.",
+  "signals": ["Machine Learning-based retention", "Insider Risk Management", "eDiscovery (Premium)"]
+ },
+ {
+  "service": "Microsoft Secure Score",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A rules-based security posture scoring/recommendation checklist rather than an ML detection capability.",
+  "signals": ["Secure Score", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Stream",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Microsoft Stream has historically included embedded AI features (automatic transcription, face detection, keyword extraction for video search) atop its core video-hosting function.",
+  "signals": ["Stream", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Microsoft Teams (MS Teams) (including Unlimited chat, Online meetings, Live Events, Webinars, Screen sharing and custom backgrounds, Record meetings, Priority notifications, Teams Phone Standard (via Direct Routing), Audio Conferencing (via Direct Routing), \"In-person events, Hybrid RSVP, Places card, , Work plans, Workplace presence\", Places Explorer, Places Finder, Teams Premium, Audio Conferencing (Direct Routing), Microsoft Teams Shared Space License",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A collaboration/conferencing license bundle (chat, meetings, phone); no AI capability is named among the bundled features.",
+  "signals": ["Unlimited chat", "Online meetings", "Teams Phone Standard"]
+ },
+ {
+  "service": "Microsoft Teams (MSTeams) (including Microsoft Teams, Unlimited chat, Online meetings, Live Events, Webinars, Screen sharing and custom backgrounds, Record meetings, Priority notifications, Audio Conferencing, In-person events, Hybrid RSVP, Places card, Work plans, Workplace presence, Places Explorer, Places Finder, Teams Premium, Audio Conferencing with Select Dial Out, Extended Dial Out Minutes to US and Canada , Teams Phone Standard, Domestic Calling Plan, Domestic Calling 120 Minute Plan, International Calling Plan (includes Domestic Plan), Teams Phone with Calling Plan, Microsoft Teams Shared Space License)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Same collaboration/conferencing/calling license bundle for the GCC variant; no AI capability is named among the bundled features.",
+  "signals": ["Unlimited chat", "Online meetings", "Teams Phone Standard"]
+ }
+]

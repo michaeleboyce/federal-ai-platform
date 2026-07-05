@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Internet of Things (IoT) Cloud Services (IoTCS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IoT device connectivity/data platform for mission-critical communications infrastructure; no stated ML/AI capability.",
+  "signals": ["IoT Cloud Services", "Mission Critical Ecosystem"]
+ },
+ {
+  "service": "Intune",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Microsoft Intune is a mobile device/endpoint management (MDM/UEM) service; no AI/ML capability.",
+  "signals": ["Intune", "device management"]
+ },
+ {
+  "service": "Jamboard",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace's digital whiteboard collaboration tool; no AI/ML capability.",
+  "signals": ["Jamboard", "Google Workspace"]
+ },
+ {
+  "service": "Java Management Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud service for tracking/patching Java installations; no AI/ML capability.",
+  "signals": ["Java Management Service", "Oracle"]
+ },
+ {
+  "service": "Jobs & Workflows",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Databricks job-scheduling/orchestration feature; the named capability is task scheduling, not the platform's ML/AI functionality.",
+  "signals": ["Jobs & Workflows", "scheduling", "orchestration"]
+ },
+ {
+  "service": "Jump box/Bastion Servers",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Secure remote-access gateway servers; no AI/ML capability.",
+  "signals": ["Jump box", "Bastion Servers"]
+ },
+ {
+  "service": "K-CHAT",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Likely a chat/messaging module within the Kernos operational-picture platform; insufficient evidence of an LLM/AI-based capability versus plain messaging.",
+  "signals": ["K-CHAT", "Kernos", "SaaS"]
+ },
+ {
+  "service": "KSOC",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "The Knightscope Autonomous Security Robot (ASR) is a physical security product whose core value is autonomous navigation and self-operation without human intervention, indicating embedded AI/autonomy as a material feature of the broader hardware/security offering.",
+  "signals": ["Autonomous Security Robot", "navigate autonomously", "without any human intervention"]
+ },
+ {
+  "service": "KV Store",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Splunk's key-value data store feature; no AI/ML capability.",
+  "signals": ["KV Store", "Splunk"]
+ },
+ {
+  "service": "Keep",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace note-taking app; no AI/ML capability.",
+  "signals": ["Keep", "Google Workspace"]
+ },
+ {
+  "service": "Kepler User Management Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure internal user/identity management service; no AI/ML capability.",
+  "signals": ["User Management Service", "Azure"]
+ },
+ {
+  "service": "Key Access Justification",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud feature requiring justification for encryption key access requests; no AI/ML capability.",
+  "signals": ["Key Access Justification", "Google Cloud"]
+ },
+ {
+  "service": "Kloud",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be a cloud/hosting component of the Kernos platform; snippet does not indicate an AI/ML capability specific to this named service.",
+  "signals": ["Kloud", "Kernos", "SaaS"]
+ },
+ {
+  "service": "Knightscope Security Operations Center (KSOC)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "The SOC dashboard for Knightscope's autonomous security robots consolidates video/sensor feeds from AI-driven autonomous robots, making embedded AI-based monitoring/analytics a material feature of this operations-center product.",
+  "signals": ["Knightscope", "Security Operations Center", "autonomous"]
+ },
+ {
+  "service": "Knowledge",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce's knowledge-base/article-management CRM feature; no AI/ML capability stated.",
+  "signals": ["Knowledge", "Salesforce", "CRM"]
+ },
+ {
+  "service": "Knowledge Catalog (formerly Dataplex Universal Catalog; replaced Data Catalog)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Google's metadata/data-governance catalog for discovering and managing data assets; primarily a cataloging/governance tool rather than an ML/AI service.",
+  "signals": ["Knowledge Catalog", "Dataplex", "Data Catalog"]
+ },
+ {
+  "service": "Kore.ai (Kore)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Kore.ai is a well-known conversational-AI platform for building virtual assistants and chatbots, matching the core_ai chat-assistant definition.",
+  "signals": ["Kore.ai", "conversational"]
+ },
+ {
+  "service": "Kovr.AI",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Kovr.AI is an AI/LLM-driven compliance-automation product (e.g., generating security compliance documentation), an explicit AI tool per its name and positioning.",
+  "signals": ["Kovr.AI", ".AI"]
+ },
+ {
+  "service": "Ksplice",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's live kernel-patching service; no AI/ML capability.",
+  "signals": ["Ksplice", "kernel patching"]
+ },
+ {
+  "service": "L3/L4 DDoS Protection",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network-layer DDoS mitigation service; no AI/ML capability.",
+  "signals": ["DDoS Protection", "L3/L4"]
+ },
+ {
+  "service": "L7 DDoS Protection",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Application-layer DDoS mitigation service; no AI/ML capability.",
+  "signals": ["DDoS Protection", "L7"]
+ },
+ {
+  "service": "LMS-Express",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Learning management system for training delivery; no AI/ML capability.",
+  "signals": ["LMS-Express", "Learning Enclave"]
+ },
+ {
+  "service": "Lakeflow Connect",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Databricks data-ingestion/connector feature for pulling data into the lakehouse; an ETL/connector tool, not an ML/AI capability itself.",
+  "signals": ["Lakeflow Connect", "data ingestion"]
+ },
+ {
+  "service": "Lakeflow Declarative Pipelines",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Databricks declarative ETL pipeline-building feature; data engineering tooling, not ML/AI itself.",
+  "signals": ["Declarative Pipelines", "ETL"]
+ },
+ {
+  "service": "Lakeflow Jobs & Workflows",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Databricks job-scheduling/orchestration feature; not an ML/AI capability itself.",
+  "signals": ["Jobs & Workflows", "scheduling"]
+ },
+ {
+  "service": "Lakeview",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Databricks BI dashboard/visualization tool; reporting feature, not ML/AI itself.",
+  "signals": ["Lakeview", "dashboard"]
+ },
+ {
+  "service": "Launchpoint+",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Synack's on-demand penetration-testing/security-testing platform delivery portal; a security-testing service, not itself an AI/ML capability (the snippet mentions testing LLM assets, not being one).",
+  "signals": ["security testing", "penetration testing", "Launchpoint+"]
+ },
+ {
+  "service": "Learn (Training Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV's training/learning management module; no AI/ML capability.",
+  "signals": ["Learn", "Training Management"]
+ },
+ {
+  "service": "Legion (by Legion Intelligence)",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Insufficient information on this named product's actual functionality to determine whether it is an AI/ML capability; defaulting to not_ai per precision-over-recall guidance.",
+  "signals": ["Legion Intelligence", "Palantir"]
+ },
+ {
+  "service": "License Management Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud software-license tracking/management service; no AI/ML capability.",
+  "signals": ["License Management Service", "Oracle"]
+ },
+ {
+  "service": "Lightning Console",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce's agent workspace/console UI; no AI/ML capability.",
+  "signals": ["Lightning Console", "Salesforce"]
+ },
+ {
+  "service": "Line (Public Safety Wellness App)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV wellness/mental-health support app for public safety personnel; no AI/ML capability.",
+  "signals": ["Wellness App", "NEOGOV"]
+ },
+ {
+  "service": "Linux/YUM Repo",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Linux package repository service; no AI/ML capability.",
+  "signals": ["Linux/YUM Repo", "Oracle"]
+ },
+ {
+  "service": "Live Agent",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce's live human-agent chat routing tool for customer support; no AI/ML capability stated.",
+  "signals": ["Live Agent", "Salesforce"]
+ },
+ {
+  "service": "Live Call Routing*",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "PagerDuty's on-call phone-call routing feature; a rules-based routing capability rather than a stated ML/AI service.",
+  "signals": ["Live Call Routing", "PagerDuty"]
+ },
+ {
+  "service": "Load Balancer",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure network load-balancing service; no AI/ML capability.",
+  "signals": ["Load Balancer", "Azure"]
+ },
+ {
+  "service": "Load Balancing",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle/Cloudflare network load-balancing service; no AI/ML capability.",
+  "signals": ["Load Balancing"]
+ },
+ {
+  "service": "Log Aggregation Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Centralized log collection service; plain logging, no AI/ML capability.",
+  "signals": ["Log Aggregation", "logging"]
+ },
+ {
+  "service": "Log Analytics",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure/Oracle log query and monitoring service; plain monitoring/logging per rubric's not_ai examples.",
+  "signals": ["Log Analytics", "monitoring"]
+ },
+ {
+  "service": "Logic Apps",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's workflow automation/iPaaS service; no AI/ML capability.",
+  "signals": ["Logic Apps", "workflow automation"]
+ },
+ {
+  "service": "Loyalty Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce CRM module for managing loyalty programs; no AI/ML capability stated.",
+  "signals": ["Loyalty Management", "Salesforce"]
+ },
+ {
+  "service": "Lucid GovSuite",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Lucidchart/Lucidspark diagramming and whiteboarding tools; \"intelligent diagramming\" is generic marketing language rather than a stated ML/AI capability.",
+  "signals": ["intelligent diagramming", "Lucidchart", "virtual whiteboard"]
+ },
+ {
+  "service": "MLFlow",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "MLflow is an open-source ML lifecycle/experiment-tracking and model-registry tool, explicitly matching the rubric's ML tooling core_ai category.",
+  "signals": ["MLFlow", "ML lifecycle", "experiment tracking"]
+ },
+ {
+  "service": "Machine Identity Security",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "SailPoint's governance/management of non-human (machine) identities and access; an identity-governance capability rather than an ML/AI service itself.",
+  "signals": ["Machine Identity Security", "identity", "access"]
+ },
+ {
+  "service": "Magic Firewall",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's network firewall-as-a-service; no AI/ML capability.",
+  "signals": ["Magic Firewall", "Cloudflare"]
+ },
+ {
+  "service": "Magic Transit",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's network-layer DDoS protection/traffic routing service; no AI/ML capability.",
+  "signals": ["Magic Transit", "Cloudflare"]
+ },
+ {
+  "service": "Magic WAN",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's software-defined WAN networking service; no AI/ML capability.",
+  "signals": ["Magic WAN", "Cloudflare"]
+ },
+ {
+  "service": "Malware Detection",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Generic security-control feature within a broader cloud platform; no specific ML/AI branding or vendor detail is given to confirm an ML-based detection engine.",
+  "signals": ["Malware Detection", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Managed Applications",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's managed application deployment service; no AI/ML capability.",
+  "signals": ["Managed Applications", "Azure"]
+ },
+ {
+  "service": "Managed Operating System, Database, and Application Runtime Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed infrastructure/runtime hosting service (OS, database, application runtime); no AI/ML capability.",
+  "signals": ["Managed Operating System", "Database", "Application Runtime"]
+ }
+]

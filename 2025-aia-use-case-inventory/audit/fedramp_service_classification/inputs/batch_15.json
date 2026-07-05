@@ -1,0 +1,744 @@
+[
+ {
+  "service": "Dynamic Data Active Searchable (DDAS)",
+  "hosts": [
+   {
+    "fedramp_id": "F1607197917",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP Moderate",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Splunk Cloud provides operational intelligence capabilities to organizations around the world. It provides an easy and fast way to analyze the massive streams of machine-generated data coming from IT systems and applications, wherever they are deployed-on-premises, in virtualized environments or in the cloud.\n\r\nSplunk Cloud delivers the Splunk Enterprise software in a cloud environment where the s",
+  "input_hash": "555e0a561124dcf5"
+ },
+ {
+  "service": "Dynamic Data Self-Storage (DDSS)",
+  "hosts": [
+   {
+    "fedramp_id": "F1607197917",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP Moderate",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Splunk Cloud provides operational intelligence capabilities to organizations around the world. It provides an easy and fast way to analyze the massive streams of machine-generated data coming from IT systems and applications, wherever they are deployed-on-premises, in virtualized environments or in the cloud.\n\r\nSplunk Cloud delivers the Splunk Enterprise software in a cloud environment where the s",
+  "input_hash": "39d38dfdd4de3165"
+ },
+ {
+  "service": "Dynamic Field Enrichment and Extraction",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "7761c053d897afda"
+ },
+ {
+  "service": "Dynamic Service Graph",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "15a915a15345deee"
+ },
+ {
+  "service": "Dynamically Add Additional Responders",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "d3c36b5cd623ff5b"
+ },
+ {
+  "service": "Dynamics 365",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "a5bbf9eb9bacbcc0"
+ },
+ {
+  "service": "Dynamics 365 Athena \u2013 CDS to Azure Data Lake",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "facca6faca9e9a71"
+ },
+ {
+  "service": "Dynamics 365 Commerce",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "b82c2ef0692db6fa"
+ },
+ {
+  "service": "Dynamics 365 Contact Center",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "3d335868f8cbca7f"
+ },
+ {
+  "service": "Dynamics 365 Customer Engagement",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "c9d9f78d0e139312"
+ },
+ {
+  "service": "Dynamics 365 Customer Insights",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "f3605e13f53b6908"
+ },
+ {
+  "service": "Dynamics 365 Customer Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "e443a656d440422c"
+ },
+ {
+  "service": "Dynamics 365 Data Sync Framework",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "333fa8d4d546648c"
+ },
+ {
+  "service": "Dynamics 365 Field Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "dadbc83aeeea001e"
+ },
+ {
+  "service": "Dynamics 365 Finance",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "0e7ec90ed2786c74"
+ },
+ {
+  "service": "Dynamics 365 Forms Pro",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "f88e3e7ac41f5818"
+ },
+ {
+  "service": "Dynamics 365 Fraud Protection",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "56343aadbb56d3b0"
+ },
+ {
+  "service": "Dynamics 365 Guides",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "95d6a20280496cba"
+ },
+ {
+  "service": "Dynamics 365 Intelligent Order Management",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "641162151ce17ed8"
+ },
+ {
+  "service": "Dynamics 365 Omni-channel Engagement Hub",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "0039b35d20ea0f46"
+ },
+ {
+  "service": "Dynamics 365 Project Operations",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "566a7af5b335b449"
+ },
+ {
+  "service": "Dynamics 365 Project Service Automation",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "90b3e1473b740894"
+ },
+ {
+  "service": "Dynamics 365 Relevance Search",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "ae59847a0ca5dd62"
+ },
+ {
+  "service": "Dynamics 365 Sales",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "5a2e37198f77eab2"
+ },
+ {
+  "service": "Dynamics 365 Sales Insights",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "374ab326e9f38643"
+ },
+ {
+  "service": "Dynamics 365 Sales Professional",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "a55aeac71ec0aeb4"
+ },
+ {
+  "service": "Dynamics 365 Service Omni-Channel Engagement Hub",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "c84bae328e2c923d"
+ },
+ {
+  "service": "Dynamics 365 Supply",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "58abad71612c747b"
+ },
+ {
+  "service": "Dynamics 365 Supply Chain Mangement",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "7a0a5973ce7ee190"
+ },
+ {
+  "service": "Dynatrace",
+  "hosts": [
+   {
+    "fedramp_id": "F1603077867",
+    "csp": "SMX (Formerly Smartronix)",
+    "cso": "Elevate Intelligent Automation Platform (IAP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "SMX Elevate Intelligent Automation Platform (IAP) is a FedRAMP-certified PaaS that accelerates secure cloud adoption for commercial and government organizations\u2014even in the most regulated environments. Elevate IAP integrates provisioning, monitoring, security, and lifecycle management to streamline operations, minimize complexity, and mitigate risks.\n\nWhat sets Elevate IAP apart:\n\nBuilt-in complia",
+  "input_hash": "310daca42294f680"
+ },
+ {
+  "service": "EASM \u2013 External Attack Surface Management",
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g",
+  "input_hash": "7ece2019a5bf1751"
+ },
+ {
+  "service": "EDR \u2013 Endpoint Detection & Response",
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g",
+  "input_hash": "bff72a9648e72acb"
+ },
+ {
+  "service": "ETM \u2013 Enterprise TruRisk Management",
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g",
+  "input_hash": "5eb1c6f4cfc6f652"
+ },
+ {
+  "service": "Earth Engine*",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "bbb14827f17f5291"
+ },
+ {
+  "service": "Email Delivery",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "cbc11d7af38e89a8"
+ },
+ {
+  "service": "Email and push notifications",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "253cae2dfa658d3e"
+ },
+ {
+  "service": "Embedded Analytics",
+  "hosts": [
+   {
+    "fedramp_id": "FR2125653037",
+    "csp": "Qlik Technologies Inc.",
+    "cso": "Qlik Cloud Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Qlik Cloud Government is a SaaS platform purpose-built for delivering Qlik technology to U.S. public sector customers within a safe, FedRAMP-compliant cloud environment. Qlik empowers organizations with data and analytics technology that improves decision-making and solves their most challenging problems. Qlik Cloud Government simplifies data and analytics operations across an organization through",
+  "input_hash": "e378058ad67e939d"
+ },
+ {
+  "service": "Endpoint Detection and Response (EDR)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a",
+  "input_hash": "efeb2d7b190bef2c"
+ },
+ {
+  "service": "Endpoint Protection Platform (EPP)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a",
+  "input_hash": "bacbc7c29f3bd073"
+ },
+ {
+  "service": "Endpoint/Antivirus (AV), File Integrity Monitoring (FIM)/Whitelisting Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1303221956",
+    "csp": "IT-CNP",
+    "cso": "GovDataHosting Cloud Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "IT-CNP\u2019s FedRAMP Class D (High) certified GovDataHosting Cloud Platform is delivered as a fully managed, FISMA-compliant Platform-as-a-Service (PaaS) offering using multi-tenant Federal Government cloud and private cloud computing environment deployment models. The GovDataHosting Cloud Platform is deployed over both our own purpose-built GovDataHosting IaaS and AWS GovCloud IaaS, giving customers ",
+  "input_hash": "5c775c71d0ed3963"
+ },
+ {
+  "service": "Energy & Utilities Cloud",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "39608ce4671d2716"
+ },
+ {
+  "service": "Engage (Community Outreach)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2119265538",
+    "csp": "NEOGOV",
+    "cso": "NEOGOV Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "NEOGOV is a Software as a Service (SaaS) provider of cloud-based workforce management solutions, uniquely designed for the public sector, higher education, and public safety.\n\nNEOGOV offers Human Capital Management (HCM), Human Resource Information System (HRIS), and Talent Management Software (TMS) solutions that empower government agencies to seamlessly source, recruit, hire, onboard, develop, a",
+  "input_hash": "abe6dcdb8f64e523"
+ },
+ {
+  "service": "Enhanced Video Streaming Capabilities",
+  "hosts": [
+   {
+    "fedramp_id": "FR2035056105",
+    "csp": "Bluescape",
+    "cso": "Bluescape with n8n for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Bluescape is the secure workspace for government and defense operations, giving teams a common picture to act with speed and precision. FedRAMP-authorized and trusted across national security, it brings intelligence, plans, and imagery together in one place, so mission partners align quickly and make time-critical decisions with confidence. \r\n\r\nBluescape supports use cases such as operations cente",
+  "input_hash": "e85ac688663a4936"
+ },
+ {
+  "service": "Enterprise Data Management Cloud Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1607077914A",
+    "csp": "Oracle",
+    "cso": "Oracle Enterprise Performance Management (EPM)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management. Customers can s",
+  "input_hash": "cf850a8585a239b4"
+ },
+ {
+  "service": "Enterprise Level Authentication & Integrations available with Single Sign-On APIs",
+  "hosts": [
+   {
+    "fedramp_id": "FR1712871948",
+    "csp": "Oracle",
+    "cso": "Aconex for Defense",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Aconex provides the #1 cloud and mobile collaboration platform for the global construction industry. This highly secure platform provides a single source of truth for all program related documents and communications across agency stakeholders and streamlines business process management with standardization across the project lifecycle. Oracle Aconex for Defense brings a modern set of flexib",
+  "input_hash": "a6d071c4a0c7ba5d"
+ },
+ {
+  "service": "Enterprise Performance Management for United States Government Cloud Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1607077914A",
+    "csp": "Oracle",
+    "cso": "Oracle Enterprise Performance Management (EPM)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management. Customers can s",
+  "input_hash": "db56399ad1296b88"
+ },
+ {
+  "service": "Enterprise Reporting",
+  "hosts": [
+   {
+    "fedramp_id": "FR2125653037",
+    "csp": "Qlik Technologies Inc.",
+    "cso": "Qlik Cloud Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Qlik Cloud Government is a SaaS platform purpose-built for delivering Qlik technology to U.S. public sector customers within a safe, FedRAMP-compliant cloud environment. Qlik empowers organizations with data and analytics technology that improves decision-making and solves their most challenging problems. Qlik Cloud Government simplifies data and analytics operations across an organization through",
+  "input_hash": "43d8b5b2f8e3e1e7"
+ },
+ {
+  "service": "Enterprise h2oGPTe",
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen",
+  "input_hash": "3d873003c0753ed8"
+ },
+ {
+  "service": "Epsilon3",
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government (",
+  "input_hash": "983b6f8a9b9f38b6"
+ },
+ {
+  "service": "Escalation Policy Report",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "014834f6073ab4bf"
+ }
+]

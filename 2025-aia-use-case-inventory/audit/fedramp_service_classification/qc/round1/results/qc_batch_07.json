@@ -1,0 +1,204 @@
+[
+ {
+  "service": "Network Topology Visualization",
+  "verdict": "confirm",
+  "reasoning": "OCI network-mapping/visualization tooling; monitoring/visualization plumbing with no AI/ML core."
+ },
+ {
+  "service": "Non-Employee Risk Management",
+  "verdict": "confirm",
+  "reasoning": "SailPoint non-employee identity-governance module; access-risk workflow/governance, not a defining AI/ML capability."
+ },
+ {
+  "service": "OCI Document Understanding Service",
+  "verdict": "confirm",
+  "reasoning": "Oracle's document-intelligence AI service (OCR, ML key-value/table extraction, classification); squarely a core AI capability."
+ },
+ {
+  "service": "Office for Web (including Microsoft 365 for the web, Visio for the web, Microsoft Editor premium features, Multilingual user interface for Microsoft 365 apps)",
+  "verdict": "confirm",
+  "reasoning": "Primarily the Office web productivity suite, but explicitly bundles Microsoft Editor premium features, an NLP-based writing assistant shipped as an embedded feature; ai_featured is defensible."
+ },
+ {
+  "service": "Okta Identity Governance (OIG)",
+  "verdict": "confirm",
+  "reasoning": "Access-certification and identity-governance/compliance workflows; the named capability is governance, not an AI/ML feature."
+ },
+ {
+  "service": "On-prem and Cloud connectivity",
+  "verdict": "confirm",
+  "reasoning": "Qlik data-source connectivity/integration plumbing linking on-prem and cloud; no AI."
+ },
+ {
+  "service": "OneNet",
+  "verdict": "confirm",
+  "reasoning": "Network/connectivity offering within the FedHIVE accelerator platform; no evidence of an AI capability."
+ },
+ {
+  "service": "OneReach (ONR)",
+  "verdict": "confirm",
+  "reasoning": "OneReach.ai is a conversational-AI / intelligent-virtual-agent builder platform used in government contact centers; matches the agent-builder core_ai category."
+ },
+ {
+  "service": "OpenText XMedius",
+  "verdict": "confirm",
+  "reasoning": "XMedius is a fax-over-IP / secure document exchange product; not AI."
+ },
+ {
+  "service": "Operations Insight",
+  "verdict": "confirm",
+  "reasoning": "Oracle Ops Insights applies ML-based capacity forecasting and anomaly detection over OCI monitoring data; a material embedded ML analytics feature, so ai_featured holds."
+ },
+ {
+  "service": "Opterra",
+  "verdict": "confirm",
+  "reasoning": "Named module within SMX's Elevate automation platform with no identifiable AI-specific capability; conservative not_ai is correct."
+ },
+ {
+  "service": "Oracle Cloud AI Services (Anomaly Detection)",
+  "verdict": "confirm",
+  "reasoning": "Dedicated Oracle AI service whose core function is ML-based anomaly detection."
+ },
+ {
+  "service": "Oracle Cloud AI Services (Language)",
+  "verdict": "confirm",
+  "reasoning": "Oracle's NLP AI service (entity extraction, sentiment, classification, PII); a core language-AI capability."
+ },
+ {
+  "service": "Oracle Cloud AI Services (Speech)",
+  "verdict": "confirm",
+  "reasoning": "Oracle's speech-to-text AI service; a core speech-AI capability."
+ },
+ {
+  "service": "Oracle Cloud AI Services (Time Series Forecasting Service)",
+  "verdict": "confirm",
+  "reasoning": "Oracle's ML time-series forecasting AI service; a core ML capability."
+ },
+ {
+  "service": "Oracle Cloud AI Services (Vision)",
+  "verdict": "confirm",
+  "reasoning": "Oracle's computer-vision AI service (image classification, object detection, document OCR); a core CV capability."
+ },
+ {
+  "service": "Oracle Enterprise Performance Management Enterprise Cloud Service",
+  "verdict": "confirm",
+  "reasoning": "EPM/FP&A suite (planning, budgeting, consolidation, reporting); core identity is financial software, not AI."
+ },
+ {
+  "service": "Outlier Incidents",
+  "verdict": "confirm",
+  "reasoning": "A single PagerDuty analytics report; even if ML-assisted it is a minor embedded report, and the conservative not_ai call is defensible under precision-over-recall."
+ },
+ {
+  "service": "PPAC Admin Analytics",
+  "verdict": "confirm",
+  "reasoning": "Administrative analytics/reporting dashboard; no evidence of a distinct AI/ML capability."
+ },
+ {
+  "service": "Peregrine",
+  "verdict": "confirm",
+  "reasoning": "Named hosted application (data-integration/situational-awareness platform) with no concrete AI/ML evidence in scope; conservative not_ai is appropriate."
+ },
+ {
+  "service": "Periscope",
+  "verdict": "confirm",
+  "reasoning": "Named module on SMX's automation platform with no concrete AI evidence; conservative not_ai holds."
+ },
+ {
+  "service": "Picogrid Legion",
+  "verdict": "confirm",
+  "reasoning": "Defense sensor/data-integration platform with no defining AI/ML capability evidenced here; conservative not_ai is appropriate."
+ },
+ {
+  "service": "Planned Maintenance",
+  "verdict": "confirm",
+  "reasoning": "Infrastructure maintenance scheduling notice; not AI."
+ },
+ {
+  "service": "Platform Events & Change Data Capture",
+  "verdict": "confirm",
+  "reasoning": "Salesforce event-streaming and change-data-capture; a data-pipeline capability, not AI."
+ },
+ {
+  "service": "Policy Management",
+  "verdict": "confirm",
+  "reasoning": "GRC policy-management module within Onspring GovCloud; workflow/compliance, not AI."
+ },
+ {
+  "service": "Portals",
+  "verdict": "confirm",
+  "reasoning": "Low-code portal-building feature within Appian's process-automation platform; not AI."
+ },
+ {
+  "service": "Power BI Embedded",
+  "verdict": "confirm",
+  "reasoning": "Embeddable Power BI carrying the product's material embedded AI analytics (Q&A NLP, Quick Insights); ai_featured is defensible."
+ },
+ {
+  "service": "Process Management",
+  "verdict": "confirm",
+  "reasoning": "Business-process/workflow module within Oracle Aconex; not AI."
+ },
+ {
+  "service": "Procurement Sciences",
+  "verdict": "confirm",
+  "reasoning": "Procurement Sciences (Awarded AI) is a generative-AI product that drafts market research and acquisition documents for federal acquisition; AI is the core capability."
+ },
+ {
+  "service": "Pryzm",
+  "verdict": "confirm",
+  "reasoning": "Commercial software (program/acquisition management) hosted on Palantir's supporting-services boundary; no recognized AI/ML product by this name."
+ },
+ {
+  "service": "Purple AI Foundations for Public Sector",
+  "verdict": "confirm",
+  "reasoning": "SentinelOne Purple AI is an explicitly branded generative-AI security analyst/threat-hunting copilot; a direct AI capability."
+ },
+ {
+  "service": "Qlik Cloud Data Integration",
+  "verdict": "confirm",
+  "reasoning": "ETL/data-pipeline integration service; not AI."
+ },
+ {
+  "service": "QnA Maker",
+  "verdict": "confirm",
+  "reasoning": "Microsoft QnA Maker is an NLP question-answering / knowledge-base Cognitive Service for building bots; a direct AI/ML capability."
+ },
+ {
+  "service": "RadioCentral Insights",
+  "verdict": "confirm",
+  "reasoning": "Radio-fleet health/usage analytics dashboard within Motorola's ecosystem; no documented ML capability, so conservative not_ai holds."
+ },
+ {
+  "service": "Recall (Policy Training)",
+  "verdict": "confirm",
+  "reasoning": "NEOGOV policy-training/acknowledgment module; not AI."
+ },
+ {
+  "service": "Recommender",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "Google Cloud Recommender (Active Assist) is a cloud resource cost/security/performance optimization advisory service, largely rule/heuristic-based; the name suggests an ML recommendation engine but it is not a customer-facing AI/ML capability one could cite as core_ai."
+ },
+ {
+  "service": "Red Hat Lightspeed",
+  "verdict": "confirm",
+  "reasoning": "Red Hat Lightspeed is a generative-AI assistant line (Ansible/OpenShift Lightspeed) that generates automation content and answers admin queries; a direct AI capability."
+ },
+ {
+  "service": "RegScale Governance, Risk and Compliance",
+  "verdict": "confirm",
+  "reasoning": "GRC/compliance-automation platform; primary function is control tracking and documentation, not a defining AI/ML capability; conservative not_ai holds."
+ },
+ {
+  "service": "Remote Browser Isolation",
+  "verdict": "confirm",
+  "reasoning": "Cloudflare browser isolation runs web sessions in a remote sandbox; a virtualization/isolation security technique, not AI."
+ },
+ {
+  "service": "Reporting",
+  "verdict": "confirm",
+  "reasoning": "Generic reporting feature within Oracle Aconex; not AI."
+ }
+]

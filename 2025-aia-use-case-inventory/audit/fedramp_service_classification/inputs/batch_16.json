@@ -1,0 +1,720 @@
+[
+ {
+  "service": "Escalation policies",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "73c8735b85693841"
+ },
+ {
+  "service": "Essential Care",
+  "hosts": [
+   {
+    "fedramp_id": "FR2234550858",
+    "csp": "Concur Technologies, Inc.",
+    "cso": "Concur Cloud for Public Sector",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of",
+  "input_hash": "297b86458cf193ec"
+ },
+ {
+  "service": "Estimation and Bidding",
+  "hosts": [
+   {
+    "fedramp_id": "FR2031222637",
+    "csp": "Aurigo Software Technologies, Inc.",
+    "cso": "Masterworks Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Aurigo Masterworks Cloud is a capital planning and construction management solution designed exclusively for public agencies. Masterworks Cloud empowers federal, state, and local governments with a secure, AI-powered platform to plan, fund, and deliver infrastructure projects efficiently. With end-to-end capital planning, federal aid reimbursement, and construction project management, agencies can",
+  "input_hash": "dd1ef300a461e2ee"
+ },
+ {
+  "service": "Event Grid",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "06a4cdf8968274d0"
+ },
+ {
+  "service": "Event Hubs",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "34403bb97527f6e1"
+ },
+ {
+  "service": "Event Rule Notes",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "49be7aae0822ce91"
+ },
+ {
+  "service": "Event Triggered Webhooks*",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "67f7a88f277c1ac1"
+ },
+ {
+  "service": "EventArc Standard (excluding Advanced)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "28d06ece243bb0d5"
+ },
+ {
+  "service": "Events",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "67d270093620ee26"
+ },
+ {
+  "service": "Exadata Cloud Service",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "6bef923fed7a1cb3"
+ },
+ {
+  "service": "Exadata Database Service on Cloud@Customer",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "e5c0f6843fe2bb68"
+ },
+ {
+  "service": "Exadata Fleet Update Service",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "269cca845fb62be4"
+ },
+ {
+  "service": "Exchange Online (EXO) (including Exchange Kiosk (2 GB mailbox) , Exchange Plan 1 1 (50 GB mailbox + 50 GB archive), Exchange Plan 2  (100 GB mailbox + up to 1.5 TB archive), Calendar , Auto-expanding email archive , Built-in security add-on for cloud mailboxes, Public folder mailboxes , Resource mailboxes , Inactive mailboxes , Microsoft Shifts, Microsoft Bookings, Microsoft Search, Viva Insights app in Teams, Personal insights and experiences, Premium personal insights and experiences, Personal Data Encryption, Customer Key, Microsoft 365 Groups , Customer Lockbox, Viva Insights, Exchange Archiving)",
+  "hosts": [
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government. These cloud-based services are designed to provide organizations with streamlined commu",
+  "input_hash": "9eb7aecc20cdd3f7"
+ },
+ {
+  "service": "Exchange Online (EXO) (including Exchange Kiosk (2 GB mailbox), Exchange Plan 1 (50 GB mailbox), Exchange Plan 2 (100 GB mailbox), Calendar, Auto-expanding email archive, Exchange Online Protection, Public folder mailboxes, Resource mailboxes, Inactive mailboxes, Microsoft Bookings, Microsoft Search, Personal insights in Teams, Customer Key, Personal Data Encryption, Customer Lockbox, Exchange Archiving)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server",
+  "input_hash": "9a098c916c92cfb5"
+ },
+ {
+  "service": "ExpenseIt",
+  "hosts": [
+   {
+    "fedramp_id": "FR2234550858",
+    "csp": "Concur Technologies, Inc.",
+    "cso": "Concur Cloud for Public Sector",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of",
+  "input_hash": "ee515606103ba317"
+ },
+ {
+  "service": "Experience Cloud (formerly Community Cloud) - including Experience Cloud, Customer Community, Customer Community Plus, and Partner Community",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "81d7f1628480f761"
+ },
+ {
+  "service": "ExpressRoute",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "61dee49495508488"
+ },
+ {
+  "service": "Extended Detection and Response (XDR)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a",
+  "input_hash": "c228450ded1cd5c1"
+ },
+ {
+  "service": "External Status Pages",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "0e9a934a637f730e"
+ },
+ {
+  "service": "Extract Services",
+  "hosts": [
+   {
+    "fedramp_id": "FR2234550858",
+    "csp": "Concur Technologies, Inc.",
+    "cso": "Concur Cloud for Public Sector",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of",
+  "input_hash": "58e3701228e44cb4"
+ },
+ {
+  "service": "F1506096710",
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr",
+  "input_hash": "7f073f0f892f203c"
+ },
+ {
+  "service": "FIM \u2013 File Integrity Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g",
+  "input_hash": "3ad44c3c9aced84c"
+ },
+ {
+  "service": "FR1812058188",
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr",
+  "input_hash": "f7da20c5fa875748"
+ },
+ {
+  "service": "FR1814276801",
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr",
+  "input_hash": "264293c6d1be27ad"
+ },
+ {
+  "service": "FR1918740338",
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr",
+  "input_hash": "51fced6a96a9e73e"
+ },
+ {
+  "service": "FR2023864279",
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr",
+  "input_hash": "82c36c08f1604310"
+ },
+ {
+  "service": "Face",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "2844407dc113d624"
+ },
+ {
+  "service": "Falcon Adversary Intelligence",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "06b7da0d65a5f825"
+ },
+ {
+  "service": "Falcon Adversary Intelligence Premium",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "5c6f9878ad83bc12"
+ },
+ {
+  "service": "Falcon Adversary OverWatch",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "8c2001d1381084e7"
+ },
+ {
+  "service": "Falcon Cloud Security",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "2970f66bd2ddc842"
+ },
+ {
+  "service": "Falcon Cloud Security for Containers",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "a180890d13049703"
+ },
+ {
+  "service": "Falcon Cloud Security for Managed Containers",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "a096484047f25634"
+ },
+ {
+  "service": "Falcon Complete",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "b49787d7fb4afc24"
+ },
+ {
+  "service": "Falcon Data Protection",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "8849ad7e5ffed564"
+ },
+ {
+  "service": "Falcon Device Control",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "18782d9faac92331"
+ },
+ {
+  "service": "Falcon Discover",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "1ec1e1632e9bfc07"
+ },
+ {
+  "service": "Falcon External Attack Surface Management",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "869a03fc12cb4250"
+ },
+ {
+  "service": "Falcon FileVantage",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "454db06c0bf52768"
+ },
+ {
+  "service": "Falcon Firewall Management",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "9394e7307d38d882"
+ },
+ {
+  "service": "Falcon For IT",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "5df25011ac87863b"
+ },
+ {
+  "service": "Falcon Forensics",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "d3b4682a988beb0e"
+ },
+ {
+  "service": "Falcon Foundry",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "a401da0175a7c683"
+ },
+ {
+  "service": "Falcon Fusion",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "6c63067b4f0b7368"
+ },
+ {
+  "service": "Falcon Identity Protection",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "5510fac568870342"
+ },
+ {
+  "service": "Falcon Insight XDR",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "8882fb15f9db798f"
+ },
+ {
+  "service": "Falcon Next-Gen SIEM",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "2d3aa58fe72e5516"
+ },
+ {
+  "service": "Falcon Prevent",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "0f8420c5358974d9"
+ },
+ {
+  "service": "Falcon SIEM Connector",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "9875168959b04c1d"
+ },
+ {
+  "service": "Falcon Sandbox",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "5d66982fcc4fba5e"
+ }
+]

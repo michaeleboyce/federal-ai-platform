@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Azure Stack Bridge",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hybrid connectivity/registration component for Azure Stack, not an AI capability.",
+  "signals": ["Stack Bridge", "hybrid cloud platform"]
+ },
+ {
+  "service": "Azure Stack Edge",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Edge computing appliance whose main draw is local compute/storage/networking, but it ships GPU/FPGA-accelerated ML inferencing as a marketed embedded capability for edge AI workloads.",
+  "signals": ["Stack Edge", "edge computing device", "AI-enabled"]
+ },
+ {
+  "service": "Azure Static Web Apps",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Static web hosting/CI-CD service, no AI capability.",
+  "signals": ["Static Web Apps"]
+ },
+ {
+  "service": "Azure Synapse Link for Dataverse",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Data replication/integration link between Dataverse and Synapse analytics, not an AI capability itself.",
+  "signals": ["Synapse Link", "Dataverse"]
+ },
+ {
+  "service": "Azure Update Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Patch/update management for VMs, standard IT operations tooling.",
+  "signals": ["Update Manager"]
+ },
+ {
+  "service": "Azure VM Image Builder and supporting infrastructure and platform services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "VM image build automation and supporting compute infrastructure, no AI component.",
+  "signals": ["VM Image Builder", "infrastructure and platform services"]
+ },
+ {
+  "service": "Azure VMWare Solution",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed VMware virtualization on Azure, pure infrastructure.",
+  "signals": ["VMWare Solution"]
+ },
+ {
+  "service": "Azure Video Indexer",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure AI service that extracts insights from video using ML models for transcription, face/object detection, OCR, and sentiment.",
+  "signals": ["Video Indexer"]
+ },
+ {
+  "service": "Azure Virtual Network NAT",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network address translation gateway service, pure networking.",
+  "signals": ["Virtual Network NAT"]
+ },
+ {
+  "service": "Azure Virtual WAN",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Networking/WAN management service.",
+  "signals": ["Virtual WAN"]
+ },
+ {
+  "service": "Azure Vmware Solution",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Duplicate listing of managed VMware virtualization on Azure, pure infrastructure.",
+  "signals": ["Vmware Solution"]
+ },
+ {
+  "service": "Azure Web PubSub",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed real-time messaging/WebSocket service, not AI.",
+  "signals": ["Web PubSub"]
+ },
+ {
+  "service": "AzureHound",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Open-source Azure/Entra ID reconnaissance/graph-collection tool used with BloodHound; rule/graph-based, not ML.",
+  "signals": ["AzureHound"]
+ },
+ {
+  "service": "BIM Collaboration",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Building Information Modeling collaboration module within a construction project management platform (Oracle Aconex).",
+  "signals": ["BIM Collaboration", "construction industry"]
+ },
+ {
+  "service": "Background Runtime (Async)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Asynchronous compute runtime feature, generic execution infrastructure.",
+  "signals": ["Background Runtime", "Async"]
+ },
+ {
+  "service": "Background Runtime (Jobs)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Job-based compute runtime feature, generic execution infrastructure.",
+  "signals": ["Background Runtime", "Jobs"]
+ },
+ {
+  "service": "Backup",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard data backup service.",
+  "signals": ["Backup"]
+ },
+ {
+  "service": "Backup & Recover Next",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce backup/recovery feature, no AI capability.",
+  "signals": ["Backup & Recover"]
+ },
+ {
+  "service": "Backup and DR Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud backup and disaster recovery service.",
+  "signals": ["Backup and DR"]
+ },
+ {
+  "service": "Backup and Disaster Recovery Management Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Backup/DR management offering on a PaaS platform, standard IT ops.",
+  "signals": ["Backup and Disaster Recovery"]
+ },
+ {
+  "service": "Backup for GKE",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Kubernetes cluster backup service on GCP.",
+  "signals": ["Backup for GKE"]
+ },
+ {
+  "service": "Backupta",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Name reads as a backup-related service on a general multi-tenant cloud platform; no AI signal.",
+  "signals": ["Backup"]
+ },
+ {
+  "service": "Basic Conditions",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "PagerDuty event orchestration rule/condition configuration, rule-based routing rather than an AI capability.",
+  "signals": ["Basic Conditions", "event orchestration"]
+ },
+ {
+  "service": "Basic Enrichment",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "PagerDuty event enrichment feature (adding contextual data to alerts), not an ML capability.",
+  "signals": ["Basic Enrichment"]
+ },
+ {
+  "service": "Bastion",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure secure bastion host access service.",
+  "signals": ["Bastion"]
+ },
+ {
+  "service": "Batch",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Batch compute job scheduling service.",
+  "signals": ["Batch"]
+ },
+ {
+  "service": "Batch*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud Batch job scheduling/compute service.",
+  "signals": ["Batch"]
+ },
+ {
+  "service": "Benefits (Benefit Plan Administration)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV HR benefits administration module.",
+  "signals": ["Benefit Plan Administration", "Human Capital Management"]
+ },
+ {
+  "service": "Beyond Identity",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Passwordless cryptographic identity/authentication provider, not ML-based biometric verification.",
+  "signals": ["Beyond Identity"]
+ },
+ {
+  "service": "Bidding and Tendering",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Construction procurement/tendering module within Oracle Aconex.",
+  "signals": ["Bidding and Tendering", "construction industry"]
+ },
+ {
+  "service": "Big Data Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle managed Hadoop/Spark big-data infrastructure service, not an AI capability itself.",
+  "signals": ["Big Data Service"]
+ },
+ {
+  "service": "BigID",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Data security/privacy governance platform whose core discovery and classification of sensitive data relies on embedded ML/NLP models, though the product is broader than a pure AI API.",
+  "signals": ["BigID", "data discovery", "classification"]
+ },
+ {
+  "service": "BigQuery",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloud data warehouse/analytics engine; core service is SQL analytics, not an AI capability (BigQuery ML is a separate add-on not named here).",
+  "signals": ["BigQuery"]
+ },
+ {
+  "service": "BigQuery Data Transfer Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed data ingestion/transfer service for BigQuery.",
+  "signals": ["Data Transfer Service"]
+ },
+ {
+  "service": "Bigtable",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud NoSQL wide-column database.",
+  "signals": ["Bigtable"]
+ },
+ {
+  "service": "Binary Authorization",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GKE/container image signing and deploy-time policy enforcement, a security control not AI.",
+  "signals": ["Binary Authorization"]
+ },
+ {
+  "service": "Block Storage",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure block storage volumes.",
+  "signals": ["Block Storage"]
+ },
+ {
+  "service": "Bluescape API services",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "APIs for Bluescape's visual collaboration workspace with n8n workflow automation; collaboration/automation tooling, not an AI capability.",
+  "signals": ["Bluescape", "n8n", "workspace"]
+ },
+ {
+  "service": "Bot Management",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Cloudflare's Bot Management uses machine learning models to distinguish automated bot traffic from humans, embedded within its broader security platform.",
+  "signals": ["Bot Management", "Cloudflare"]
+ },
+ {
+  "service": "Box Cloud Content Management Platform",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Broad content management/collaboration platform that markets embedded 'intelligent automation' and Box AI capabilities as material features alongside its core file/collaboration functions.",
+  "signals": ["intelligent automation platform", "content management, collaboration"]
+ },
+ {
+  "service": "BoxAI",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Box's dedicated generative-AI feature for content Q&A, summarization, and extraction over documents.",
+  "signals": ["BoxAI"]
+ },
+ {
+  "service": "BoxApps",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Custom app/integration extensibility framework for Box, not an AI capability.",
+  "signals": ["BoxApps"]
+ },
+ {
+  "service": "BoxCanvas",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Visual whiteboard/canvas collaboration tool.",
+  "signals": ["BoxCanvas"]
+ },
+ {
+  "service": "BoxDrive",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Desktop sync client for Box content, no AI capability.",
+  "signals": ["BoxDrive"]
+ },
+ {
+  "service": "BoxGovernance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Retention/legal hold and compliance governance feature, not AI.",
+  "signals": ["BoxGovernance"]
+ },
+ {
+  "service": "BoxHubs",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Box's curated-content Hubs product is marketed with embedded AI Q&A/summarization over hub content, though it is fundamentally a content organization feature.",
+  "signals": ["BoxHubs", "intelligent automation platform"]
+ },
+ {
+  "service": "BoxKeySafe",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Customer-managed encryption key service, security/infrastructure not AI.",
+  "signals": ["BoxKeySafe"]
+ },
+ {
+  "service": "BoxMobile",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Box's mobile client application, no AI capability.",
+  "signals": ["BoxMobile"]
+ },
+ {
+  "service": "BoxNotes",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Collaborative note-taking/document editing tool.",
+  "signals": ["BoxNotes"]
+ },
+ {
+  "service": "BoxPlatform (APIs)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "General-purpose developer APIs for content upload/download/metadata management, not an AI capability itself.",
+  "signals": ["BoxPlatform", "APIs"]
+ }
+]

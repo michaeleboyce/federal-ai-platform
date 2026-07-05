@@ -1,0 +1,356 @@
+[
+ {
+  "service": "Probable Origin",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A named PagerDuty incident-intelligence feature that algorithmically identifies the likely originating service/cause of an incident, part of its ML-based event intelligence/AIOps capability.",
+   "signals": "[\"Probable Origin\", \"intelligent aggregation\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "Public Sector Solutions (Public Sector Foundation) - including Public Sector Solutions; OmniStudio; Emergency Program Management; Business Rules Engine; CRM Analytics for Public Sector Solutions; Customer Community for Public Sector; Employee Experience for Public Sector; WDC (Formerly Work.com); Access to Productivity managed packages like Employee Workspace, Employee Concierge, HR Service Center, Employee Health Verification, and Employee Concierge Bot; Public Sector Application Forms; Composable Case Management; and Benefit Management",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "This is a broad case-management/HR bundle, but it explicitly includes Einstein-powered CRM Analytics and an 'Employee Concierge Bot', making embedded AI/ML a material but secondary capability of the overall package.",
+   "signals": "[\"CRM Analytics\", \"Employee Concierge Bot\", \"Public Sector Solutions bundle\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a"
+ },
+ {
+  "service": "Qlik Sense Enterprise SaaS",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Qlik Sense embeds AI-augmented analytics (Insight Advisor uses NLP/ML to auto-generate insights and natural-language search) within a broader BI platform, making AI a secondary but material feature.",
+   "signals": "[\"Qlik Sense\", \"data and analytics technology\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2125653037",
+    "csp": "Qlik Technologies Inc.",
+    "cso": "Qlik Cloud Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Qlik Cloud Government is a SaaS platform purpose-built for delivering Qlik technology to U.S. public sector customers within a safe, FedRAMP-compliant cloud environment. Qlik empowers organizations with data and analytics technology that improves decision-making and solves their most challenging problems. Qlik Cloud Government simplifies data and analytics operations across an organization through"
+ },
+ {
+  "service": "SIEM (Amazon Inspector, Amazon Guard Duty, Amazon CloudTrail, Amazon Detective, Amazon Security Hub)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "This bundle includes Amazon GuardDuty and Amazon Detective, which use ML-based anomaly/threat detection as an embedded feature within a broader security monitoring service.",
+   "signals": "[\"Amazon Guard Duty\", \"Amazon Detective\", \"SIEM\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The GSS One AWS is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors et"
+ },
+ {
+  "service": "Sensitive Data Protection (formerly Cloud DLP)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Google's data loss prevention service uses ML-based classifiers to detect and redact sensitive data, an embedded ML capability within a data-governance/security service.",
+   "signals": "[\"Sensitive Data Protection\", \"Cloud DLP\", \"GCP\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Sentinel Agent (Windows, macOS, Linux, and cloud-native Kubernetes)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "SentinelOne's endpoint agent relies on machine learning and behavioral AI models for real-time threat detection, an embedded ML capability within an endpoint security product.",
+   "signals": "[\"Sentinel Agent\", \"machine learning algorithms\", \"behavioral AI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Smartscan",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Synack's automated continuous attack-surface/vulnerability scanning technology, which complements human researchers and is generally understood to use ML-assisted analysis for prioritization, within a broader security-testing platform.",
+   "signals": "[\"continuous security testing\", \"vulnerability management\", \"Synack Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2134635186",
+    "csp": "Synack",
+    "cso": "On-Demand Security Testing Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Synack Platform is a multi-tenant SaaS that delivers continuous security testing, vulnerability management and a managed Vulnerability Disclosure Program (VDP) supported by a network of vetted security researchers. Synack's security testing products include on-demand penetration testing of web, host, cloud, APIs, LLM (AI) and mobile assets \u2013 covering both internal and external assets for most "
+ },
+ {
+  "service": "Splunk Enterprise Security",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Splunk's SIEM security-analytics app, which incorporates risk-based alerting and statistical/ML-assisted correlation as a core embedded feature of an otherwise broader security platform.",
+   "signals": "[\"Enterprise Security\", \"operational intelligence\", \"SIEM\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2314156865",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP High",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1607197917",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP Moderate",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Splunk Cloud provides operational intelligence capabilities to organizations around the world. It provides an easy and fast way to analyze the massive streams of machine-generated data coming from IT systems and applications, wherever they are deployed-on-premises, in virtualized environments or in the cloud.\r\n\r\nSplunk Cloud delivers the Splunk Enterprise software in a cloud environment where the "
+ },
+ {
+  "service": "Splunk IT Service Intelligence",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Splunk ITSI includes machine-learning-based adaptive thresholding and anomaly detection for service health scoring as a core embedded feature.",
+   "signals": "[\"IT Service Intelligence\", \"operational intelligence\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2314156865",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP High",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1607197917",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP Moderate",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Splunk Cloud provides operational intelligence capabilities to organizations around the world. It provides an easy and fast way to analyze the massive streams of machine-generated data coming from IT systems and applications, wherever they are deployed-on-premises, in virtualized environments or in the cloud.\r\n\r\nSplunk Cloud delivers the Splunk Enterprise software in a cloud environment where the "
+ },
+ {
+  "service": "Tableau Next",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Tableau Next (Tableau Einstein) is a BI/analytics platform built around generative-AI agents (Data Pro, Concierge, Inspector) for natural-language querying and automated insight generation, AI as a headline embedded feature of a broader analytics product.",
+   "signals": "[\"AI agents\", \"generative AI\", \"conversational analytics\", \"Einstein\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a"
+ },
+ {
+  "service": "Talent Acquisition",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A recruiting workflow module of Eightfold's Talent Intelligence Platform, which uses AI to optimize matching and sourcing; the module itself is an HR function powered by the vendor's underlying ML models.",
+   "signals": "[\"Eightfold AI\", \"advanced AI\", \"Talent Intelligence Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\""
+ },
+ {
+  "service": "Talent Tracking",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A candidate-pipeline tracking module of Eightfold's AI-driven Talent Intelligence Platform.",
+   "signals": "[\"Eightfold AI\", \"advanced AI\", \"Talent Intelligence Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\""
+ },
+ {
+  "service": "TotalAI",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Qualys TotalAI is an AI-security module within the broader Qualys Cloud Platform for discovering and testing AI/ML models and LLM-powered applications for vulnerabilities; the AI focus is a specific embedded capability within a larger security-scanning product.",
+   "signals": "[\"TotalAI\", \"Qualys Cloud Platform\", \"identifying and homing-in on threats\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g"
+ },
+ {
+  "service": "Trellix ML Protect (formerly known as Trellix Real Protect)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "An ML-based static/behavioral malware-classification engine (the name itself says ML) embedded within the broader Trellix endpoint protection suite.",
+   "signals": "[\"ML Protect\", \"Real Protect\", \"Machine learn\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1935245314A",
+    "csp": "Trellix",
+    "cso": "Trellix GovCloud Security Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Trellix GovCloud Security Platform (formerly known as Trellix XDR GovCloud) is a SaaS offering that is deployed on AWS GovCloud IaaS. The SaaS offering is made up of a suite of solutions developed by Trellix. Trellix GovCloud Security Platform enables customers to centrally manage security for their organization while leveraging real-time monitoring and protection of the environment. Machine learn"
+ },
+ {
+  "service": "Vigilance Managed Detection and Response (MDR) services",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A managed security service delivered on SentinelOne's Singularity platform, which the description explicitly says leverages advanced machine learning and behavioral AI for detection.",
+   "signals": "[\"machine learning algorithms\", \"behavioral AI\", \"Managed Detection and Response\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Wayfinder Incent Readiness & Response",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "SentinelOne's Wayfinder managed detection/response service runs on the Singularity platform's ML-based behavioral detection engine.",
+   "signals": "[\"Wayfinder\", \"machine learning algorithms\", \"behavioral AI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Wayfinder Threat Hunting",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A managed threat-hunting service built on SentinelOne's ML/behavioral-AI detection engine.",
+   "signals": "[\"Threat Hunting\", \"machine learning algorithms\", \"behavioral AI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Workforce Exchange",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "A talent-marketplace module of Eightfold's Talent Intelligence Platform, whose core matching/recommendation capability is built on Eightfold's AI models per the host description ('uses advanced AI to optimize every phase of the talent lifecycle').",
+   "signals": "[\"Eightfold AI\", \"advanced AI\", \"Talent Intelligence Platform\", \"Workforce Exchange\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\""
+ }
+]

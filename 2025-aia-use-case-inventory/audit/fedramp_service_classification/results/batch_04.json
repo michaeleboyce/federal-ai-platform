@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Amazon Q Business",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Amazon Q Business is AWS's generative-AI assistant/chatbot for enterprise data and workflows, a direct chat-assistant/copilot product.",
+  "signals": ["Amazon Q", "Business"]
+ },
+ {
+  "service": "Amazon Q Developer in chat applications",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Amazon Q Developer is AWS's GenAI coding assistant/copilot; the chat-application integration is still the same LLM-backed assistant.",
+  "signals": ["Amazon Q Developer", "chat applications"]
+ },
+ {
+  "service": "Amazon Quick Suite",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Quick Suite is AWS's agentic AI productivity/BI suite (successor bundling Q/QuickSight capabilities with AI agents), matching the agent-builder/copilot definition of core_ai.",
+  "signals": ["Quick Suite", "Amazon"]
+ },
+ {
+  "service": "Amazon RDS for Db2",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed relational database service; no AI/ML capability.",
+  "signals": ["RDS", "Db2", "database"]
+ },
+ {
+  "service": "Amazon RDS for MariaDB",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed relational database service; no AI/ML capability.",
+  "signals": ["RDS", "MariaDB"]
+ },
+ {
+  "service": "Amazon RDS for MySQL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed relational database service; no AI/ML capability.",
+  "signals": ["RDS", "MySQL"]
+ },
+ {
+  "service": "Amazon RDS for Oracle",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed relational database service; no AI/ML capability.",
+  "signals": ["RDS", "Oracle"]
+ },
+ {
+  "service": "Amazon RDS for Postgres",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed relational database service; no AI/ML capability.",
+  "signals": ["RDS", "Postgres"]
+ },
+ {
+  "service": "Amazon RDS for SQL Server",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed relational database service; no AI/ML capability.",
+  "signals": ["RDS", "SQL Server"]
+ },
+ {
+  "service": "Amazon Redshift",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Redshift is a cloud data warehouse; it has an optional Redshift ML add-on but the named service itself is a database product.",
+  "signals": ["Redshift", "data warehouse"]
+ },
+ {
+  "service": "Amazon Rekognition",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Rekognition is AWS's computer-vision API for image/video analysis, a canonical core_ai ML service.",
+  "signals": ["Rekognition", "computer vision"]
+ },
+ {
+  "service": "Amazon Route 53",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "DNS/domain routing service; no AI/ML capability.",
+  "signals": ["Route 53", "DNS"]
+ },
+ {
+  "service": "Amazon S3 Glacier",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cold-storage/archival storage tier; no AI/ML capability.",
+  "signals": ["S3 Glacier", "storage"]
+ },
+ {
+  "service": "Amazon SageMaker AI",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "SageMaker is AWS's ML model training/hosting/tooling platform, explicitly named as core_ai in the rubric.",
+  "signals": ["SageMaker AI", "ML platform"]
+ },
+ {
+  "service": "Amazon Security Lake",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Security Lake centralizes security log/event data into a data lake; it is a data-aggregation service, not itself an ML/analytics engine.",
+  "signals": ["Security Lake", "data lake"]
+ },
+ {
+  "service": "Amazon Simple Email Service (SES)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Transactional email-sending service; no AI/ML capability.",
+  "signals": ["Simple Email Service", "SES"]
+ },
+ {
+  "service": "Amazon Simple Notification Service (SNS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Pub/sub messaging service; no AI/ML capability.",
+  "signals": ["SNS", "notification"]
+ },
+ {
+  "service": "Amazon Simple Queue Service (SQS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Message queuing service; no AI/ML capability.",
+  "signals": ["SQS", "queue"]
+ },
+ {
+  "service": "Amazon Simple Storage Service (S3)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Object storage service; no AI/ML capability.",
+  "signals": ["S3", "storage"]
+ },
+ {
+  "service": "Amazon Simple Workflow Service (SWF)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Workflow orchestration service; no AI/ML capability.",
+  "signals": ["SWF", "workflow"]
+ },
+ {
+  "service": "Amazon Textract",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Textract is AWS's ML-based document-intelligence/OCR API, a canonical core_ai service.",
+  "signals": ["Textract", "document"]
+ },
+ {
+  "service": "Amazon Timestream for LiveAnalytics",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Time-series database service; no AI/ML capability.",
+  "signals": ["Timestream", "time-series database"]
+ },
+ {
+  "service": "Amazon Transcribe",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Transcribe is AWS's ML-based speech-to-text API, a canonical core_ai service.",
+  "signals": ["Transcribe", "speech"]
+ },
+ {
+  "service": "Amazon Translate",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Translate is AWS's ML-based machine-translation API, a canonical core_ai service.",
+  "signals": ["Translate", "translation"]
+ },
+ {
+  "service": "Amazon Verified Permissions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Policy-based fine-grained authorization service (Cedar); no AI/ML capability.",
+  "signals": ["Verified Permissions", "authorization"]
+ },
+ {
+  "service": "Amazon Virtual Private Cloud (VPC)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Networking/isolation infrastructure service; no AI/ML capability.",
+  "signals": ["VPC", "networking"]
+ },
+ {
+  "service": "Amazon WorkSpaces",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Virtual desktop (DaaS) service; no AI/ML capability.",
+  "signals": ["WorkSpaces", "virtual desktop"]
+ },
+ {
+  "service": "Amazon WorkSpaces Applications",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Application streaming variant of WorkSpaces; no AI/ML capability.",
+  "signals": ["WorkSpaces Applications"]
+ },
+ {
+  "service": "Amazon WorkSpaces Secure Browser",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed secure browser/DaaS service; no AI/ML capability.",
+  "signals": ["Secure Browser"]
+ },
+ {
+  "service": "Analytics",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cloudflare's Analytics feature is traffic/performance reporting, a plain analytics dashboard rather than an ML capability.",
+  "signals": ["Analytics", "Cloudflare"]
+ },
+ {
+  "service": "Analytics API and Data Export",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty feature for exporting operational data via API; plain reporting, not ML.",
+  "signals": ["Analytics API", "Data Export"]
+ },
+ {
+  "service": "Analytics Dashboard",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty's dashboard for viewing incident/operational metrics; plain analytics, not ML.",
+  "signals": ["Analytics Dashboard", "PagerDuty"]
+ },
+ {
+  "service": "Android and Chrome Device Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace mobile/device management (MDM) feature; no AI/ML capability.",
+  "signals": ["Device Management", "Android", "Chrome"]
+ },
+ {
+  "service": "Announcements",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure feature for posting service announcements/notices; no AI/ML capability.",
+  "signals": ["Announcements", "Oracle"]
+ },
+ {
+  "service": "Antivirus, Antimalware and HIPS solution (Trellix Endpoint Security with Advanced Threat Protection) and ePolicy Orchestrator",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Trellix Endpoint Security with Advanced Threat Protection markets ML-based malware/behavioral threat detection as a core feature embedded in a broader endpoint-security product.",
+  "signals": ["Advanced Threat Protection", "Antimalware", "HIPS"]
+ },
+ {
+  "service": "Apigee",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google's API management/gateway platform; no AI/ML capability.",
+  "signals": ["Apigee", "API management"]
+ },
+ {
+  "service": "Apollo",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Palantir Apollo is a continuous-delivery/deployment-management platform for software across environments, not an AI/ML capability itself.",
+  "signals": ["Apollo", "Palantir", "deployment"]
+ },
+ {
+  "service": "Apollo Agent",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "The Apollo Agent is the software agent component of Palantir's deployment-management platform (Apollo), not an AI agent.",
+  "signals": ["Apollo Agent", "Palantir"]
+ },
+ {
+  "service": "App Hub",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud App Hub is an application-management/organization service for cloud resources; no AI/ML capability.",
+  "signals": ["App Hub", "Google Cloud"]
+ },
+ {
+  "service": "AppOmni SaaS Security for Government",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "AppOmni is a SaaS security posture-management platform; the snippet mentions generic threat detection/monitoring without a clear ML/AI claim.",
+  "signals": ["posture management", "threat detection and response"]
+ },
+ {
+  "service": "AppStream",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Application-streaming/virtual-desktop service; no AI/ML capability.",
+  "signals": ["AppStream", "streaming"]
+ },
+ {
+  "service": "Appian Process Automation Platform",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Appian is a low-code process-automation platform that ships embedded AI/AI-Skills features as a secondary capability alongside its core BPM/case-management product.",
+  "signals": ["Process Automation Platform", "low-code", "automate"]
+ },
+ {
+  "service": "Application Change Analysis",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure monitoring feature for tracking application/infrastructure changes; plain change tracking, not ML.",
+  "signals": ["Change Analysis", "Azure"]
+ },
+ {
+  "service": "Application Dependency Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud feature for mapping/managing application dependencies; no AI/ML capability.",
+  "signals": ["Dependency Management", "Oracle"]
+ },
+ {
+  "service": "Application Gateway",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's layer-7 load balancer/reverse proxy service; no AI/ML capability.",
+  "signals": ["Application Gateway", "Azure"]
+ },
+ {
+  "service": "Application Insights",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure APM/telemetry monitoring service; plain monitoring per the rubric's not_ai examples, despite some anomaly-detection heuristics.",
+  "signals": ["Application Insights", "monitoring"]
+ },
+ {
+  "service": "Application Integration",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud iPaaS/integration service for connecting applications; no AI/ML capability.",
+  "signals": ["Application Integration", "Google"]
+ },
+ {
+  "service": "Application Performance Monitoring (APM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud APM/monitoring service; plain monitoring, explicitly a not_ai category example.",
+  "signals": ["Performance Monitoring", "APM"]
+ },
+ {
+  "service": "Applications - including Lightning Force 100, Lightning Platform Plus, and Lightning Platform Starter",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Salesforce's Lightning Platform app-building tiers are low-code CRM/application platform offerings without a stated AI/ML feature in the snippet.",
+  "signals": ["Lightning Platform", "Lightning Force", "CRM"]
+ },
+ {
+  "service": "Arca CDS Instance Container Management Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure-hosted container/instance management service; no AI/ML capability.",
+  "signals": ["Container Management", "Azure"]
+ }
+]

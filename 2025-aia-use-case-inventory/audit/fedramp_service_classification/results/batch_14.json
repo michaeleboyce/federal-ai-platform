@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Database Autonomous Recovery Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle backup/recovery service for databases, a data-protection utility with no AI/ML capability.",
+  "signals": ["Autonomous Recovery", "Database", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Database Center",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's console/management surface for viewing and administering databases, not an AI capability.",
+  "signals": ["Database Center", "Google Cloud Platform"]
+ },
+ {
+  "service": "Database Cloud Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's managed relational database offering; plain database hosting with no ML component.",
+  "signals": ["Database Cloud Service", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Database Management Service (DBM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle DBM is a database fleet management/monitoring tool, not an AI service.",
+  "signals": ["Database Management Service", "DBM"]
+ },
+ {
+  "service": "Database Migration",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard data migration tooling for moving databases into Oracle Cloud; no AI/ML function.",
+  "signals": ["Database Migration"]
+ },
+ {
+  "service": "Database Migration Service*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's managed database migration tool; purely infrastructure/data-transfer, no AI.",
+  "signals": ["Database Migration Service"]
+ },
+ {
+  "service": "Databox Datacenter Infra Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Data Box family for bulk/offline data transfer into datacenters; hardware logistics, not AI.",
+  "signals": ["Databox", "Datacenter Infra"]
+ },
+ {
+  "service": "Databox Disk and Pod Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Data Box Disk/Pod physical appliances for offline bulk data transfer; not an AI capability.",
+  "signals": ["Databox Disk and Pod"]
+ },
+ {
+  "service": "Databox Pod & Disk Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same Azure Data Box physical transfer offering as Databox Disk and Pod Service; not AI.",
+  "signals": ["Databox Pod", "Disk Service"]
+ },
+ {
+  "service": "Databricks",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "The Databricks Data Intelligence Platform is primarily a data/lakehouse analytics platform, but ships a Data Intelligence Engine and integrated ML tooling as material embedded features.",
+  "signals": ["AI-powered platform", "Data Intelligence Engine", "Machine Learning"]
+ },
+ {
+  "service": "Databricks Apps",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A general app-hosting framework for deploying interactive data apps inside Databricks; not itself an AI/ML capability.",
+  "signals": ["Apps", "lakehouse architecture"]
+ },
+ {
+  "service": "Databricks Assistant",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Databricks Assistant is an LLM-powered coding/query copilot embedded in the workspace, matching the chat-assistant/copilot definition of core_ai.",
+  "signals": ["Assistant", "Data Intelligence Engine"]
+ },
+ {
+  "service": "Databricks SQL (DBSQL)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Databricks SQL is a serverless data warehouse / SQL analytics engine, not an AI/ML capability itself.",
+  "signals": ["SQL", "DBSQL", "data warehouse"]
+ },
+ {
+  "service": "Dataflow",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud Dataflow is a managed stream/batch data-pipeline execution service (Apache Beam), not AI.",
+  "signals": ["Dataflow", "Google Cloud Platform"]
+ },
+ {
+  "service": "Dataform",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud Dataform is a SQL-based data transformation/orchestration tool, not an AI capability.",
+  "signals": ["Dataform", "Google Cloud Platform"]
+ },
+ {
+  "service": "Datastore*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud Datastore is a NoSQL document database; plain data storage with no ML function.",
+  "signals": ["Datastore", "Google Cloud Platform"]
+ },
+ {
+  "service": "Deep Security",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Trend Micro Deep Security is an endpoint/server security suite; no clear AI/ML signal in the host context, so default to not_ai per precision-over-recall.",
+  "signals": ["Deep Security", "Elevate Intelligent Automation Platform"]
+ },
+ {
+  "service": "Defend Ingestion for Government",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "This appears to be Wiz's cloud data-ingestion component for its CNAPP scanning pipeline, a plumbing function rather than a named AI capability.",
+  "signals": ["Ingestion", "Wiz for U.S. Government", "cloud-native environment"]
+ },
+ {
+  "service": "Dell PowerStore",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Dell PowerStore is enterprise storage hardware; infrastructure, not AI.",
+  "signals": ["PowerStore", "FedHIVE"]
+ },
+ {
+  "service": "Dell PowerSwitch",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Dell PowerSwitch is networking hardware (data center switches); not AI.",
+  "signals": ["PowerSwitch", "FedHIVE"]
+ },
+ {
+  "service": "Delta Live Tables",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Delta Live Tables is a declarative ETL pipeline framework in Databricks; data engineering, not AI/ML itself.",
+  "signals": ["Delta Live Tables", "lakehouse architecture"]
+ },
+ {
+  "service": "Delta Live Tables (DLT)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same Delta Live Tables ETL pipeline capability as above; not an AI/ML service.",
+  "signals": ["Delta Live Tables", "DLT"]
+ },
+ {
+  "service": "Delta Sharing",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Delta Sharing is an open protocol for secure data sharing between organizations; data governance, not AI.",
+  "signals": ["Delta Sharing", "data and governance"]
+ },
+ {
+  "service": "Demise",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Unclear standalone service name within the Kernos platform; while Kernos does video/FMV exploitation, there's no specific evidence this named service is an AI capability, so default to not_ai.",
+  "signals": ["Kernos", "video exploitation", "FMV"]
+ },
+ {
+  "service": "Descope",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Descope is a customer identity and access management (CIAM)/authentication platform; not AI despite unrelated 'Claude for Government' boundary noise in the snippet.",
+  "signals": ["Descope", "identity"]
+ },
+ {
+  "service": "Detect by Oversight",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Oversight's Detect module applies AI/ML-based anomaly and risk detection to travel-and-expense spend data, an embedded analytics feature within the broader Concur platform.",
+  "signals": ["Detect", "Oversight", "travel and expense"]
+ },
+ {
+  "service": "DevOps - Deploy",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud DevOps deployment tooling for CI/CD; not AI.",
+  "signals": ["DevOps", "Deploy"]
+ },
+ {
+  "service": "DevOps – Build Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud DevOps build pipeline service; standard CI/CD, not AI.",
+  "signals": ["DevOps", "Build Service"]
+ },
+ {
+  "service": "DevOps – Project Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud DevOps project management tooling; not AI.",
+  "signals": ["DevOps", "Project Service"]
+ },
+ {
+  "service": "DevOps – Source Code Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud DevOps source control (git hosting); not AI.",
+  "signals": ["DevOps", "Source Code Management"]
+ },
+ {
+  "service": "Devin Desktop",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Devin is Cognition's autonomous AI software-engineering agent; Devin Desktop is its client for that AI coding agent.",
+  "signals": ["Devin"]
+ },
+ {
+  "service": "Dialogflow CX",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Dialogflow CX is Google's conversational AI/chatbot-building platform, a core NLP/agent-builder service.",
+  "signals": ["Dialogflow"]
+ },
+ {
+  "service": "Dialogflow ES",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Dialogflow ES (Essentials) is Google's conversational AI/chatbot platform, same core_ai category as Dialogflow CX.",
+  "signals": ["Dialogflow"]
+ },
+ {
+  "service": "Digital Assistant",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Digital Assistant is a conversational AI/chatbot-building platform for enterprise apps.",
+  "signals": ["Digital Assistant", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Digital Employee Experience (DEX)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Omnissa Workspace ONE's DEX capability uses ML-based experience scoring and anomaly detection embedded within the broader endpoint-management platform.",
+  "signals": ["Digital Employee Experience", "Workspace ONE", "manage endpoint devices"]
+ },
+ {
+  "service": "Digital Forensics & Incident Response (DFIR) services",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "DFIR services run on SentinelOne's Singularity platform, which the description explicitly says leverages advanced machine learning and behavioral AI for detection.",
+  "signals": ["machine learning algorithms", "behavioral AI", "DFIR"]
+ },
+ {
+  "service": "Directory Sync",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace Directory Sync mirrors on-prem directories to the cloud; identity provisioning, not AI.",
+  "signals": ["Directory Sync", "Google Workspace"]
+ },
+ {
+  "service": "Discover IoT / Insight IoT",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "CrowdStrike Falcon Discover/Insight for IoT provide asset visibility and IT-hygiene inventory of devices, not a distinct AI/ML capability, even though the broader Falcon platform uses ML.",
+  "signals": ["Discover", "Insight IoT", "Endpoint Security"]
+ },
+ {
+  "service": "Docs",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Docs is a word processor within Google Workspace; not AI.",
+  "signals": ["Docs", "Google Workspace"]
+ },
+ {
+  "service": "Docs APIs: Apps Activity API, Calendar API, Contacts API, Drive REST API (replaced Documents List API), Gmail",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A bundle of Google Workspace productivity APIs (calendar, contacts, drive, gmail); not AI services.",
+  "signals": ["Calendar API", "Contacts API", "Drive REST API", "Gmail"]
+ },
+ {
+  "service": "Document Control",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Aconex Document Control is a construction-industry document management/collaboration feature, not AI.",
+  "signals": ["Document Control", "Aconex", "construction industry"]
+ },
+ {
+  "service": "Domain Controllers",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Domain Controllers provide Active Directory identity infrastructure; not AI.",
+  "signals": ["Domain Controllers"]
+ },
+ {
+  "service": "Domain Name System (DNS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare DNS is core internet name-resolution infrastructure/networking, not AI.",
+  "signals": ["Domain Name System", "DNS", "Cloudflare"]
+ },
+ {
+  "service": "Domestic SMS/Phone notifications",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty notification channel (SMS/phone alerts); a delivery mechanism, not an AI capability.",
+  "signals": ["SMS/Phone notifications", "PagerDuty"]
+ },
+ {
+  "service": "Donovan",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Donovan is Scale AI's generative-AI decision-support/agentic platform for government, hosted on Scale's AI Data Platform explicitly built for AI development and deployment.",
+  "signals": ["Scale AI", "Generative AI Platform", "artificial intelligence"]
+ },
+ {
+  "service": "Drawings",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Drawings is a diagramming tool within Google Workspace; not AI.",
+  "signals": ["Drawings", "Google Workspace"]
+ },
+ {
+  "service": "Drive",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Drive is cloud file storage within Google Workspace; not AI.",
+  "signals": ["Drive", "Google Workspace"]
+ },
+ {
+  "service": "Drupal™ Secure Baseline for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A hardened Drupal CMS baseline hosted in a government enclave; content management, not AI.",
+  "signals": ["Drupal", "Secure Baseline", "Government Learning Enclave"]
+ },
+ {
+  "service": "Durable Objects",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare Durable Objects is a serverless stateful-compute primitive; infrastructure, not AI.",
+  "signals": ["Durable Objects", "Cloudflare"]
+ },
+ {
+  "service": "Dynamic Data Active Archive (DDAA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Splunk's DDAA is a data archiving/retention tier for the Splunk platform; storage, not AI.",
+  "signals": ["Dynamic Data Active Archive", "Splunk Cloud"]
+ }
+]

@@ -1,0 +1,744 @@
+[
+ {
+  "service": "Internet of Things (IoT) Cloud Services (IoTCS)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2118055930",
+    "csp": "Motorola Solutions",
+    "cso": "Motorola Solutions Federal Cloud (MSFC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Motorola Solutions is expanding its \u201cMission Critical Ecosystem\u201d which consists of a suite of software and technology that supports mission critical communications in evolving ways and that provides fast access to actionable information. The purpose of the Motorola Solutions Federal Cloud (MSFC) is to serve as the platform upon which the applications and solutions that are part of this Mission Cri",
+  "input_hash": "15b79a0c8482d741"
+ },
+ {
+  "service": "Intune",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "dc26dca87b97307a"
+ },
+ {
+  "service": "Jamboard",
+  "hosts": [
+   {
+    "fedramp_id": "F1206081364",
+    "csp": "Google",
+    "cso": "Google Workspace",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please re",
+  "input_hash": "372ffed48f50100e"
+ },
+ {
+  "service": "Java Management Service",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "a414678c51d271a5"
+ },
+ {
+  "service": "Jobs & Workflows",
+  "hosts": [
+   {
+    "fedramp_id": "FR2324740262",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine",
+  "input_hash": "90e27a8be0429142"
+ },
+ {
+  "service": "Jump box/Bastion Servers",
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove",
+  "input_hash": "8a7c1d57b6e6f4dd"
+ },
+ {
+  "service": "K-CHAT",
+  "hosts": [
+   {
+    "fedramp_id": "FR2411443563",
+    "csp": "Valley IT Solutions, LLC",
+    "cso": "Kernos",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Kernos is a multi-tenant, cloud-native \u201cSaaS\u201d (software-as-a-service) cloud service offering (CSO). It leverages Amazon Web Services (AWS), IaaS (infrastructure-as-a-service), and PaaS (platform-as-a-service) for its underlying infrastructure and hardware.\n\nKernos integrates near-real-time video exploitation, common operating picture (COP), advanced multimedia and full motion video (FMV) (unclassi",
+  "input_hash": "014333f6dc2a9d9c"
+ },
+ {
+  "service": "KSOC",
+  "hosts": [
+   {
+    "fedramp_id": "FR2118080669",
+    "csp": "Knightscope, Inc.",
+    "cso": "Knightscope Autonomous Security Robot (Knightscope ASR)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Knightscope Autonomous Security Robot (ASR) is a fully autonomous security robot equipped with four (4) cameras, microphones, and speakers, for 360-degree video and audio. The ASRs navigate the area(s) of operation autonomously and stream live video back to the user via a web browser. The ASRs run 24/7 on its own including autonomously recharging itself without any human intervention have the ",
+  "input_hash": "921a1a540ad5238f"
+ },
+ {
+  "service": "KV Store",
+  "hosts": [
+   {
+    "fedramp_id": "F1607197917",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP Moderate",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Splunk Cloud provides operational intelligence capabilities to organizations around the world. It provides an easy and fast way to analyze the massive streams of machine-generated data coming from IT systems and applications, wherever they are deployed-on-premises, in virtualized environments or in the cloud.\n\r\nSplunk Cloud delivers the Splunk Enterprise software in a cloud environment where the s",
+  "input_hash": "d82566f6667c963b"
+ },
+ {
+  "service": "Keep",
+  "hosts": [
+   {
+    "fedramp_id": "F1206081364",
+    "csp": "Google",
+    "cso": "Google Workspace",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please re",
+  "input_hash": "997c1ff0b394752c"
+ },
+ {
+  "service": "Kepler User Management Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "4e7ebb4e6aae4b97"
+ },
+ {
+  "service": "Key Access Justification",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "2392291924948ad1"
+ },
+ {
+  "service": "Kloud",
+  "hosts": [
+   {
+    "fedramp_id": "FR2411443563",
+    "csp": "Valley IT Solutions, LLC",
+    "cso": "Kernos",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Kernos is a multi-tenant, cloud-native \u201cSaaS\u201d (software-as-a-service) cloud service offering (CSO). It leverages Amazon Web Services (AWS), IaaS (infrastructure-as-a-service), and PaaS (platform-as-a-service) for its underlying infrastructure and hardware.\n\nKernos integrates near-real-time video exploitation, common operating picture (COP), advanced multimedia and full motion video (FMV) (unclassi",
+  "input_hash": "2357109ef7d612c3"
+ },
+ {
+  "service": "Knightscope Security Operations Center (KSOC)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government (",
+  "input_hash": "249de9656c64a2b8"
+ },
+ {
+  "service": "Knowledge",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "5ce5b65143d00f7e"
+ },
+ {
+  "service": "Knowledge Catalog (formerly Dataplex Universal Catalog; replaced Data Catalog)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "37b86dbd063b8bcb"
+ },
+ {
+  "service": "Kore.ai (Kore)",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "27c2d1b63b667224"
+ },
+ {
+  "service": "Kovr.AI",
+  "hosts": [
+   {
+    "fedramp_id": "F1206111371",
+    "csp": "CoSo Cloud, LLC.",
+    "cso": "Knox Systems",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se",
+  "input_hash": "81f64d3cd76f3ce1"
+ },
+ {
+  "service": "Ksplice",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "0dce86e52f86f245"
+ },
+ {
+  "service": "L3/L4 DDoS Protection",
+  "hosts": [
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero ",
+  "input_hash": "b87bb2278e3f2dfd"
+ },
+ {
+  "service": "L7 DDoS Protection",
+  "hosts": [
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero ",
+  "input_hash": "7cf80247e9fc44f3"
+ },
+ {
+  "service": "LMS-Express",
+  "hosts": [
+   {
+    "fedramp_id": "F1405214357",
+    "csp": "PowerTrain Inc.",
+    "cso": "PowerTrain Government Learning Enclave - SaaS",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PowerTrain Government Enclave (PGE) is a secure, FedRAMP-authorized cloud environment that hosts a diverse portfolio of mission and enterprise applications. This includes the Government Learning Enclave (GLE), PowerTrain\u2019s integrated learning ecosystem, as well as a range of Software-as-a-Service (SaaS) offerings and other secure applications.\r\n\r\nKey solutions within the enclave include the Ca",
+  "input_hash": "6201359f4770c112"
+ },
+ {
+  "service": "Lakeflow Connect",
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine",
+  "input_hash": "42970cc52e6369bd"
+ },
+ {
+  "service": "Lakeflow Declarative Pipelines",
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine",
+  "input_hash": "30b32d6f10e8520e"
+ },
+ {
+  "service": "Lakeflow Jobs & Workflows",
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine",
+  "input_hash": "196ff646e2cc7c7b"
+ },
+ {
+  "service": "Lakeview",
+  "hosts": [
+   {
+    "fedramp_id": "FR2324740262",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine",
+  "input_hash": "0bc6a1dba0feaaf8"
+ },
+ {
+  "service": "Launchpoint+",
+  "hosts": [
+   {
+    "fedramp_id": "FR2134635186",
+    "csp": "Synack",
+    "cso": "On-Demand Security Testing Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Synack Platform is a multi-tenant SaaS that delivers continuous security testing, vulnerability management and a managed Vulnerability Disclosure Program (VDP) supported by a network of vetted security researchers. Synack's security testing products include on-demand penetration testing of web, host, cloud, APIs, LLM (AI) and mobile assets \u2013 covering both internal and external assets for most ",
+  "input_hash": "dc831e01e358f498"
+ },
+ {
+  "service": "Learn (Training Management)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2119265538",
+    "csp": "NEOGOV",
+    "cso": "NEOGOV Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "NEOGOV is a Software as a Service (SaaS) provider of cloud-based workforce management solutions, uniquely designed for the public sector, higher education, and public safety.\n\nNEOGOV offers Human Capital Management (HCM), Human Resource Information System (HRIS), and Talent Management Software (TMS) solutions that empower government agencies to seamlessly source, recruit, hire, onboard, develop, a",
+  "input_hash": "4f326ac3b2459f43"
+ },
+ {
+  "service": "Legion (by Legion Intelligence)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government (",
+  "input_hash": "0c5d3c0942791b8f"
+ },
+ {
+  "service": "License Management Service",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "6a87de9dde532214"
+ },
+ {
+  "service": "Lightning Console",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "73871ece75b935fe"
+ },
+ {
+  "service": "Line (Public Safety Wellness App)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2119265538",
+    "csp": "NEOGOV",
+    "cso": "NEOGOV Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "NEOGOV is a Software as a Service (SaaS) provider of cloud-based workforce management solutions, uniquely designed for the public sector, higher education, and public safety.\n\nNEOGOV offers Human Capital Management (HCM), Human Resource Information System (HRIS), and Talent Management Software (TMS) solutions that empower government agencies to seamlessly source, recruit, hire, onboard, develop, a",
+  "input_hash": "80f34afd24413d05"
+ },
+ {
+  "service": "Linux/YUM Repo",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "7c690f83c3431f76"
+ },
+ {
+  "service": "Live Agent",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "0271b1bc8f9c2f5c"
+ },
+ {
+  "service": "Live Call Routing*",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "65da8625651cd68b"
+ },
+ {
+  "service": "Load Balancer",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "ab17688c1d9d367c"
+ },
+ {
+  "service": "Load Balancing",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "d0342257d6d8bf72"
+ },
+ {
+  "service": "Log Aggregation Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1303221956",
+    "csp": "IT-CNP",
+    "cso": "GovDataHosting Cloud Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "IT-CNP\u2019s FedRAMP Class D (High) certified GovDataHosting Cloud Platform is delivered as a fully managed, FISMA-compliant Platform-as-a-Service (PaaS) offering using multi-tenant Federal Government cloud and private cloud computing environment deployment models. The GovDataHosting Cloud Platform is deployed over both our own purpose-built GovDataHosting IaaS and AWS GovCloud IaaS, giving customers ",
+  "input_hash": "cf586c88025fe4eb"
+ },
+ {
+  "service": "Log Analytics",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "f4e141bb61095aa6"
+ },
+ {
+  "service": "Logic Apps",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "077c516a5351f2b8"
+ },
+ {
+  "service": "Loyalty Management",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "d17060686f73079f"
+ },
+ {
+  "service": "Lucid GovSuite",
+  "hosts": [
+   {
+    "fedramp_id": "FR2218073444",
+    "csp": "Lucid Software, Inc.",
+    "cso": "Lucid GovSuite",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Lucid Software provides visual collaboration products to support public sector teams from end to end as they ideate, plan, and execute mission-critical projects. Government agencies and contractors use Lucid GovSuite \u2014 which includes Lucidchart (intelligent diagramming) and Lucidspark (virtual whiteboard) \u2014 to drive efficiency, streamline processes, and accelerate speed to mission delivery. Lucid ",
+  "input_hash": "42bceb2725a32950"
+ },
+ {
+  "service": "MLFlow",
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine",
+  "input_hash": "651ecfe5b530f51d"
+ },
+ {
+  "service": "Machine Identity Security",
+  "hosts": [
+   {
+    "fedramp_id": "FR2001938710A",
+    "csp": "SailPoint Technologies, Inc.",
+    "cso": "SailPoint Identity Security Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "SailPoint Identity Security Cloud is a SaaS-based, multi-tenant suite that provides complete visibility and control over access to applications, systems, and sensitive data. SailPoint Identity Security Cloud consists of SailPoints IdentityNow, Cloud Infrastructure Entitlement Management, and AI-driven identity offerings.",
+  "input_hash": "a85cf309b97a3be2"
+ },
+ {
+  "service": "Magic Firewall",
+  "hosts": [
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero ",
+  "input_hash": "9fe5b1e085573d7a"
+ },
+ {
+  "service": "Magic Transit",
+  "hosts": [
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero ",
+  "input_hash": "a74c9550c670a111"
+ },
+ {
+  "service": "Magic WAN",
+  "hosts": [
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero ",
+  "input_hash": "c0b42c3ec6420b02"
+ },
+ {
+  "service": "Malware Detection",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "08824b8175347870"
+ },
+ {
+  "service": "Managed Applications",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "5d28783c47a2aece"
+ },
+ {
+  "service": "Managed Operating System, Database, and Application Runtime Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1303221956",
+    "csp": "IT-CNP",
+    "cso": "GovDataHosting Cloud Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "IT-CNP\u2019s FedRAMP Class D (High) certified GovDataHosting Cloud Platform is delivered as a fully managed, FISMA-compliant Platform-as-a-Service (PaaS) offering using multi-tenant Federal Government cloud and private cloud computing environment deployment models. The GovDataHosting Cloud Platform is deployed over both our own purpose-built GovDataHosting IaaS and AWS GovCloud IaaS, giving customers ",
+  "input_hash": "1c435676ca7df7b2"
+ }
+]

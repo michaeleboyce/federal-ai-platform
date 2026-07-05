@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Cloud Logging",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP's log management/aggregation service; pure observability infrastructure, no ML/AI capability.",
+  "signals": ["Logging", "GCP infrastructure"]
+ },
+ {
+  "service": "Cloud Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP's metrics/monitoring service; standard observability tooling with no AI functionality.",
+  "signals": ["Monitoring", "GCP infrastructure"]
+ },
+ {
+  "service": "Cloud Monitoring Console",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Splunk's operational intelligence/log-analysis console; analyzes machine data but is not itself an ML/AI product.",
+  "signals": ["operational intelligence", "analyze the massive streams of machine-generated data"]
+ },
+ {
+  "service": "Cloud NAT (Network Address Translation)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP networking primitive for outbound NAT; pure infrastructure.",
+  "signals": ["Network Address Translation"]
+ },
+ {
+  "service": "Cloud Natural Language API",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's NLP API for entity/sentiment/syntax analysis of text — a dedicated ML-based language service.",
+  "signals": ["Natural Language API"]
+ },
+ {
+  "service": "Cloud Next Generation Firewall (Cloud NGFW) - Essentials",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP managed firewall product; network security, not AI.",
+  "signals": ["Firewall"]
+ },
+ {
+  "service": "Cloud Next Generation Firewall (Cloud NGFW) - Standard",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP managed firewall product; network security, not AI.",
+  "signals": ["Firewall"]
+ },
+ {
+  "service": "Cloud Profiler*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP application performance profiling tool; developer tooling, not AI.",
+  "signals": ["Profiler"]
+ },
+ {
+  "service": "Cloud Quotas",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP resource-quota management service; administrative infrastructure.",
+  "signals": ["Quotas"]
+ },
+ {
+  "service": "Cloud SDK",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP command-line/developer SDK tooling; not an AI product.",
+  "signals": ["SDK"]
+ },
+ {
+  "service": "Cloud SQL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP managed relational database service.",
+  "signals": ["SQL", "database"]
+ },
+ {
+  "service": "Cloud Scheduler*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP managed cron/job scheduler; not AI.",
+  "signals": ["Scheduler"]
+ },
+ {
+  "service": "Cloud Search (including 3P)",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Google Workspace's enterprise search feature; while it may use ML-based relevance ranking under the hood, it is not marketed or classified as a distinct AI capability.",
+  "signals": ["Google Workspace", "Search"]
+ },
+ {
+  "service": "Cloud Service Mesh (formerly Anthos Service Mesh)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP service mesh for microservice networking/traffic management; infrastructure, not AI.",
+  "signals": ["Service Mesh"]
+ },
+ {
+  "service": "Cloud Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Legacy Azure PaaS compute hosting model; generic cloud compute, not AI.",
+  "signals": ["Azure Commercial Cloud", "build, test, deploy"]
+ },
+ {
+  "service": "Cloud Services Extended Support",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Extended support tier for legacy Azure Cloud Services; generic compute, not AI.",
+  "signals": ["Azure Government"]
+ },
+ {
+  "service": "Cloud Shell",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Browser-based command-line/dev environment across Azure/Oracle; developer tooling, not AI.",
+  "signals": ["Shell"]
+ },
+ {
+  "service": "Cloud Shell*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP's browser-based CLI environment; developer tooling, not AI.",
+  "signals": ["Shell"]
+ },
+ {
+  "service": "Cloud Source Repositories*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP hosted Git source-code repository service; not AI.",
+  "signals": ["Source Repositories"]
+ },
+ {
+  "service": "Cloud Storage",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP object storage service; pure storage infrastructure.",
+  "signals": ["Storage"]
+ },
+ {
+  "service": "Cloud Storage for Firebase*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Firebase's object storage product; storage infrastructure, not AI.",
+  "signals": ["Storage", "Firebase"]
+ },
+ {
+  "service": "Cloud Tasks",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP asynchronous task-queue service; not AI.",
+  "signals": ["Tasks", "queue"]
+ },
+ {
+  "service": "Cloud Trace*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP distributed tracing/APM tool; observability, not AI.",
+  "signals": ["Trace"]
+ },
+ {
+  "service": "Cloud Translation API",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's machine-translation API, a dedicated ML/NLP language service.",
+  "signals": ["Translation API"]
+ },
+ {
+  "service": "Cloud VPN",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP managed VPN networking service; not AI.",
+  "signals": ["VPN"]
+ },
+ {
+  "service": "Cloud Vision API",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's computer-vision API for image analysis (labels, OCR, face/object detection) — a dedicated ML service.",
+  "signals": ["Vision API"]
+ },
+ {
+  "service": "Cloud Workload Protection (CWP)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "SentinelOne's cloud workload security product; the host description explicitly cites 'advanced machine learning algorithms and behavioral AI' as core to its detection/response capability.",
+  "signals": ["advanced machine learning algorithms", "behavioral AI", "detection and response"]
+ },
+ {
+  "service": "Cloud Workstations",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP managed cloud development-environment/VM product; developer infrastructure, not AI.",
+  "signals": ["Workstations"]
+ },
+ {
+  "service": "Cloudera AI",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Named ML/data-science product line within Cloudera's platform, explicitly for building and managing machine learning services.",
+  "signals": ["Cloudera AI", "machine learning services", "artificial intelligence functionality"]
+ },
+ {
+  "service": "Cloudflare Access",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's Zero Trust identity/access-control product; not AI.",
+  "signals": ["Access", "Zero Trust"]
+ },
+ {
+  "service": "Cloudflare Images",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cloudflare's image storage/optimization/resizing CDN product; a media-delivery service, not an AI capability.",
+  "signals": ["Images"]
+ },
+ {
+  "service": "Cloudflare Logs",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's log export/analytics product; not AI.",
+  "signals": ["Logs"]
+ },
+ {
+  "service": "Cloudflare Spectrum",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's TCP/UDP proxy/DDoS-protection product for non-HTTP traffic; networking, not AI.",
+  "signals": ["Spectrum"]
+ },
+ {
+  "service": "Cloudflare Stream",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's video hosting/streaming/encoding product; media delivery, not AI.",
+  "signals": ["Stream", "video"]
+ },
+ {
+  "service": "Cloudflare Tunnel",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's secure outbound-only network tunnel product; networking, not AI.",
+  "signals": ["Tunnel"]
+ },
+ {
+  "service": "Cloudflare Zero Trust",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's Zero Trust security suite (access control, network security); not AI.",
+  "signals": ["Zero Trust"]
+ },
+ {
+  "service": "Cloudflare for SaaS",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's custom-hostname/SSL provisioning product for SaaS providers; not AI.",
+  "signals": ["for SaaS"]
+ },
+ {
+  "service": "Cluster Placement Groups",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure compute placement/topology feature; infrastructure, not AI.",
+  "signals": ["Placement Groups", "compute"]
+ },
+ {
+  "service": "CodeScan, Guard, & ARMOR",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "AutoRABIT's static code analysis/DevOps governance tools for Salesforce; rule-based code quality/security scanning, not AI.",
+  "signals": ["static code analysis tool", "quality gates"]
+ },
+ {
+  "service": "Cognition Plugins",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Listed within Palantir's PFCS-SS supporting-services bundle alongside 'Claude for Government'; the 'Cognition' naming suggests an LLM/AI-extension plugin layer, but the exact product scope is not independently confirmed.",
+  "signals": ["Cognition", "Claude for Government", "supporting services"]
+ },
+ {
+  "service": "Cohere",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Cohere is an LLM provider; its models (Command, Embed, etc.) are foundation-model hosting/inference, hosted here via Second Front's Game Warden platform.",
+  "signals": ["Cohere", "commercial technology", "Game Warden"]
+ },
+ {
+  "service": "Collaborative Operations Center Feature Pack",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Bluescape's visual collaborative workspace add-on for operations centers; collaboration/whiteboard tooling, not AI.",
+  "signals": ["secure workspace", "operations centers", "Feature Pack"]
+ },
+ {
+  "service": "ColorTokens",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Microsegmentation/zero-trust network security product hosted on SMX's IAP; not AI.",
+  "signals": ["ColorTokens"]
+ },
+ {
+  "service": "Command Central Digital Evidence Management System",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Motorola's digital evidence storage/chain-of-custody management system; records-management product, no stated AI capability.",
+  "signals": ["Digital Evidence Management System"]
+ },
+ {
+  "service": "CommandCentral Admin (CCAdmin)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Motorola CommandCentral suite's administration module; system management tooling, not AI.",
+  "signals": ["Admin", "CommandCentral"]
+ },
+ {
+  "service": "CommandCentral Aware (CCAware)",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Motorola CommandCentral's situational-awareness/mapping module; described as fast access to information, no explicit ML/AI claim.",
+  "signals": ["Aware", "actionable information"]
+ },
+ {
+  "service": "Common Data Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Microsoft's data platform underlying Power Platform/Dynamics (now Dataverse); a database service, not AI.",
+  "signals": ["Data Service"]
+ },
+ {
+  "service": "Communications Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce's CRM product for communications-industry service delivery; CRM, not AI.",
+  "signals": ["CRM", "Salesforce"]
+ },
+ {
+  "service": "Company Bill Statements",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SAP Concur travel/expense billing feature; finance/expense management, not AI.",
+  "signals": ["Bill Statements", "Concur", "travel and expense"]
+ },
+ {
+  "service": "Compliance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Onspring GovCloud's GRC/compliance-management module; workflow and reporting for governance programs, not AI.",
+  "signals": ["governance, risk management, and compliance"]
+ }
+]

@@ -1,0 +1,204 @@
+[
+ {
+  "service": "Data Labeling",
+  "verdict": "confirm",
+  "reasoning": "OCI Data Labeling is a purpose-built dataset-annotation service for ML training data; the rubric buckets ML tooling as core_ai."
+ },
+ {
+  "service": "Data Loss Prevention (DLP) Service",
+  "verdict": "confirm",
+  "reasoning": "DLP is policy/pattern-based content control, a security-plumbing function with no material ML core."
+ },
+ {
+  "service": "Data Management",
+  "verdict": "confirm",
+  "reasoning": "RegScale GRC data-management feature; compliance automation, not an ML capability."
+ },
+ {
+  "service": "Data Protection for Database (Microsoft SQL Oracle SAP HANA)",
+  "verdict": "confirm",
+  "reasoning": "Commvault database backup/recovery is storage/data-protection, not AI/ML."
+ },
+ {
+  "service": "Data Protection for Dynamics 365, Data Protection for Salesforce",
+  "verdict": "confirm",
+  "reasoning": "Commvault SaaS backup/recovery for CRM/ERP data; no ML component."
+ },
+ {
+  "service": "Data Protection for File & Object (Windows Server Azure Blob & Files OCI Object Storage Amazon S3 Linux/Unix)",
+  "verdict": "confirm",
+  "reasoning": "Commvault multi-cloud file/object backup; storage capability, not AI."
+ },
+ {
+  "service": "Data Science",
+  "verdict": "confirm",
+  "reasoning": "OCI Data Science is an explicit ML platform for building, training, and deploying models; core_ai ML tooling."
+ },
+ {
+  "service": "Data Security Posture Management",
+  "verdict": "confirm",
+  "reasoning": "GCP DSPM is a cloud data-security-posture tool; any embedded ML classification is secondary, so default not_ai is correct."
+ },
+ {
+  "service": "Database Cloud Service",
+  "verdict": "confirm",
+  "reasoning": "Oracle managed relational database hosting; no ML."
+ },
+ {
+  "service": "Databricks Apps",
+  "verdict": "confirm",
+  "reasoning": "Databricks Apps is a hosting framework for interactive data apps, not itself an AI/ML capability."
+ },
+ {
+  "service": "Databricks Assistant",
+  "verdict": "confirm",
+  "reasoning": "Databricks Assistant is an LLM-powered query/code copilot embedded in the workspace; matches the assistant/copilot core_ai definition."
+ },
+ {
+  "service": "Deep Security",
+  "verdict": "confirm",
+  "reasoning": "Trend Micro Deep Security is a traditional multi-layer server security suite (IPS, firewall, anti-malware); ML is one non-central module, so not_ai holds under precision-over-recall."
+ },
+ {
+  "service": "Defend Ingestion for Government",
+  "verdict": "confirm",
+  "reasoning": "Wiz CNAPP data-ingestion component; a pipeline/plumbing function, not a named AI capability."
+ },
+ {
+  "service": "Delta Live Tables (DLT)",
+  "verdict": "confirm",
+  "reasoning": "Databricks DLT is a declarative ETL/pipeline framework, not AI/ML."
+ },
+ {
+  "service": "Demise",
+  "verdict": "confirm",
+  "reasoning": "Obscure named component in the Kernos platform with no evidence it is an AI capability; default not_ai is correct."
+ },
+ {
+  "service": "Devin Desktop",
+  "verdict": "confirm",
+  "reasoning": "Devin is Cognition's autonomous AI software-engineering agent; Devin Desktop is its client, an AI coding agent = core_ai."
+ },
+ {
+  "service": "Dialogflow CX",
+  "verdict": "confirm",
+  "reasoning": "Google Dialogflow CX is a conversational-AI/agent-builder NLP platform; core_ai."
+ },
+ {
+  "service": "Dialogflow ES",
+  "verdict": "confirm",
+  "reasoning": "Dialogflow ES (Essentials) is Google's conversational-AI chatbot platform; core_ai like CX."
+ },
+ {
+  "service": "Digital Assistant",
+  "verdict": "confirm",
+  "reasoning": "Oracle Digital Assistant is a conversational-AI/chatbot-building platform; core_ai."
+ },
+ {
+  "service": "Digital Forensics & Incident Response (DFIR) services",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "managed-service-overcall",
+  "reasoning": "DFIR is a forensics/incident-response services line, not itself an AI/ML capability; ai_featured was assigned from the host platform's ML marketing language rather than the named service, which rubric rule 1 treats as noise."
+ },
+ {
+  "service": "Donovan",
+  "verdict": "confirm",
+  "reasoning": "Donovan is Scale AI's generative-AI decision-support platform on the Scale AI Data Platform; core_ai."
+ },
+ {
+  "service": "Dynamic Data Active Searchable (DDAS)",
+  "verdict": "confirm",
+  "reasoning": "Splunk searchable data-tier/indexing feature; no ML in the named capability."
+ },
+ {
+  "service": "Dynamic Data Self-Storage (DDSS)",
+  "verdict": "confirm",
+  "reasoning": "Splunk data storage/retention tier; not an AI capability."
+ },
+ {
+  "service": "Dynamics 365 Customer Insights",
+  "verdict": "confirm",
+  "reasoning": "Customer Insights is a CDP whose segmentation/prediction is ML-driven, embedded in a broader product; ai_featured is appropriate."
+ },
+ {
+  "service": "Dynamics 365 Project Operations",
+  "verdict": "confirm",
+  "reasoning": "Project/resource-management ERP module; not AI."
+ },
+ {
+  "service": "Dynamics 365 Relevance Search",
+  "verdict": "confirm",
+  "reasoning": "Dataverse relevance search over Azure Search index; conventional full-text ranking, not material ML, so not_ai holds."
+ },
+ {
+  "service": "Dynamics 365 Supply",
+  "verdict": "confirm",
+  "reasoning": "Truncated reference to a supply-chain ERP module; not an AI capability."
+ },
+ {
+  "service": "Dynatrace",
+  "verdict": "confirm",
+  "reasoning": "Dynatrace's Davis AI causal/anomaly engine is a central, material capability of the observability platform; ai_featured is correct."
+ },
+ {
+  "service": "EASM \u2013 External Attack Surface Management",
+  "verdict": "confirm",
+  "reasoning": "Qualys EASM is asset discovery and attack-surface correlation; not primarily ML-driven."
+ },
+ {
+  "service": "ETM \u2013 Enterprise TruRisk Management",
+  "verdict": "confirm",
+  "reasoning": "Qualys TruRisk scoring is a risk-prioritization framework, largely formula/rules-based; not_ai holds."
+ },
+ {
+  "service": "Earth Engine*",
+  "verdict": "confirm",
+  "reasoning": "Google Earth Engine is a planetary-scale geospatial-analysis platform; any ML is user-supplied and secondary, so not_ai."
+ },
+ {
+  "service": "Email Delivery",
+  "verdict": "confirm",
+  "reasoning": "OCI Email Delivery is an SMTP/transactional email service; not AI."
+ },
+ {
+  "service": "Endpoint Protection Platform (EPP)",
+  "verdict": "confirm",
+  "reasoning": "SentinelOne EPP protection is built on ML/behavioral-AI detection; matches the rubric's 'security analytics with ML detection' ai_featured example."
+ },
+ {
+  "service": "Enterprise h2oGPTe",
+  "verdict": "confirm",
+  "reasoning": "h2oGPTe is H2O.ai's enterprise generative-AI/LLM (RAG) assistant platform; core_ai."
+ },
+ {
+  "service": "Epsilon3",
+  "verdict": "confirm",
+  "reasoning": "Epsilon3 is spaceflight/mission-operations procedure and test-management software; not primarily an AI product."
+ },
+ {
+  "service": "Estimation and Bidding",
+  "verdict": "confirm",
+  "reasoning": "Aurigo Masterworks construction cost-estimation/bid module; host 'AI-powered' language is boundary marketing, so not_ai holds."
+ },
+ {
+  "service": "Event Triggered Webhooks*",
+  "verdict": "confirm",
+  "reasoning": "PagerDuty webhook notification triggers; not AI/ML."
+ },
+ {
+  "service": "Exadata Database Service on Cloud@Customer",
+  "verdict": "confirm",
+  "reasoning": "Oracle Exadata on-premises database infrastructure service; not AI."
+ },
+ {
+  "service": "ExpenseIt",
+  "verdict": "confirm",
+  "reasoning": "SAP Concur ExpenseIt uses ML/OCR to read receipts and auto-populate expense entries; the named service is itself a document-intelligence capability = core_ai."
+ },
+ {
+  "service": "Extract Services",
+  "verdict": "confirm",
+  "reasoning": "SAP Concur Extract Services is a scheduled flat-file/batch data-export API for expense and travel records; it performs no ML inference (distinct from Concur's separate OCR/audit features). not_ai is correct."
+ }
+]

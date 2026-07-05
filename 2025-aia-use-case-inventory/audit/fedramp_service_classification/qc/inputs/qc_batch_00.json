@@ -1,0 +1,798 @@
+[
+ {
+  "service": "*Appsheet",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "AppSheet is Google's no-code/low-code app-building platform; it has added AI features (natural-language app generation, automations) but its core function is app development, not AI itself.",
+   "signals": "[\"AppSheet\", \"no-code\", \"Google Workspace\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206081364",
+    "csp": "Google",
+    "cso": "Google Workspace",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please re"
+ },
+ {
+  "service": "AI Protection",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Google Cloud's AI Protection is a security-governance suite for discovering and securing AI workloads \u2014 security/ML analytics tooling embedded in the broader Google Services security stack, not itself a generative or model-hosting service.",
+   "signals": "[\"AI Protection\", \"Google Services\", \"security\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "AI powered Control Implementation and Audit",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A named AI-powered feature of RegScale's GRC/continuous-controls-monitoring platform that automates control implementation and audit tasks \u2014 AI embedded in a broader compliance product.",
+   "signals": "[\"AI powered\", \"RegScale\", \"GRC\", \"Control Implementation and Audit\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2414158717",
+    "csp": "RegScale",
+    "cso": "RegScale CCM",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The RegScale Continuous Controls Monitoring (CCM) Platform is delivered as a Software-as-a-Service (SaaS) offering, hosted in a multi-tenant public cloud computing environment. Built on Microsoft Azure, RegScale provides next-generation Governance, Risk, and Compliance (GRC) capabilities that allow organizations to automate and accelerate the management of cybersecurity programs such as FISMA, Fed"
+ },
+ {
+  "service": "AI/BI",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Databricks AI/BI (Genie) is a business-intelligence/dashboarding capability that adds natural-language and ML-assisted analytics as a feature atop the core Databricks data platform.",
+   "signals": "[\"AI/BI\", \"Databricks\", \"Data Intelligence Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine"
+ },
+ {
+  "service": "ASR",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Knightscope's Autonomous Security Robot performs autonomous navigation and continuous video/audio surveillance, capabilities that typically rely on embedded ML-based analytics (e.g. detection, license-plate/face recognition) within a physical security-robot product.",
+   "signals": "[\"Autonomous Security Robot\", \"autonomously\", \"cameras, microphones\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2118080669",
+    "csp": "Knightscope, Inc.",
+    "cso": "Knightscope Autonomous Security Robot (Knightscope ASR)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Knightscope Autonomous Security Robot (ASR) is a fully autonomous security robot equipped with four (4) cameras, microphones, and speakers, for 360-degree video and audio. The ASRs navigate the area(s) of operation autonomously and stream live video back to the user via a web browser. The ASRs run 24/7 on its own including autonomously recharging itself without any human intervention have the "
+ },
+ {
+  "service": "AWS Compute Optimizer",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A resource right-sizing tool whose recommendations are generated by AWS's own machine-learning analysis of historical utilization metrics, making ML the core embedded mechanism of an otherwise operational tool.",
+   "signals": "[\"Compute Optimizer\", \"machine learning\", \"recommendations\", \"utilization metrics\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AWS GovCloud (US) is an AWS Region designed to allow US government agencies and customers supporting the US government to move more sensitive workloads into the cloud. In addition to complying with FedRAMP requirements, the AWS GovCloud (US) framework adheres to U.S. International Traffic in Arms Regulations (ITAR) regulations. Additional information is available at http://aws.amazon.com/govcloud-"
+ },
+ {
+  "service": "AWS Entity Resolution",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A record-matching service whose matching workflows rely on AWS-provided ML matching techniques in addition to rule-based matching, making ML a material embedded capability of a broader data-linking product.",
+   "signals": "[\"Entity Resolution\", \"matching\", \"ML matching techniques\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "AWS HealthLake",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A HIPAA-eligible health-data store (FHIR) that embeds NLP to extract and structure medical entities from unstructured clinical text, giving it a material AI-derived feature beyond plain storage/query.",
+   "signals": "[\"HealthLake\", \"FHIR\", \"NLP\", \"unstructured clinical text\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Connect",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Cloud contact center platform whose core is call routing/telephony, but it ships embedded ML features (Contact Lens sentiment/transcription analysis, AI agent assist) as material product capability.",
+   "signals": "[\"contact center\", \"Contact Lens\", \"sentiment analysis\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AWS GovCloud (US) is an AWS Region designed to allow US government agencies and customers supporting the US government to move more sensitive workloads into the cloud. In addition to complying with FedRAMP requirements, the AWS GovCloud (US) framework adheres to U.S. International Traffic in Arms Regulations (ITAR) regulations. Additional information is available at http://aws.amazon.com/govcloud-"
+ },
+ {
+  "service": "Amazon DevOps Guru",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Operational monitoring product whose core mechanism is ML-based anomaly detection over application/infrastructure telemetry, analogous to ML-driven security analytics.",
+   "signals": "[\"machine learning\", \"anomaly detection\", \"operational insights\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Macie",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Data security service that uses ML to discover and classify sensitive data (PII) at scale, an embedded ML capability within a broader security/compliance product.",
+   "signals": "[\"machine learning\", \"sensitive data discovery\", \"PII classification\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Antivirus, Antimalware and HIPS solution (Trellix Endpoint Security with Advanced Threat Protection) and ePolicy Orchestrator",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Trellix Endpoint Security with Advanced Threat Protection markets ML-based malware/behavioral threat detection as a core feature embedded in a broader endpoint-security product.",
+   "signals": "[\"Advanced Threat Protection\", \"Antimalware\", \"HIPS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The GSS One AWS is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors et"
+ },
+ {
+  "service": "Appian Process Automation Platform",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Appian is a low-code process-automation platform that ships embedded AI/AI-Skills features as a secondary capability alongside its core BPM/case-management product.",
+   "signals": "[\"Process Automation Platform\", \"low-code\", \"automate\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2318051429",
+    "csp": "Appian",
+    "cso": "Appian Government Cloud - High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Appian Government Cloud (AGC) provides Appian\u2019s process automation platform for high-impact workloads. AGC offers Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS) functionality, which empowers agencies to design, automate, and optimize their operations to increase efficiency and productivity. It's an ideal solution for government agencies looking to streamline processes, particularly "
+ },
+ {
+  "service": "Augmented Analytics",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Qlik's Augmented Analytics is an embedded AI/ML-driven insight-generation capability within the broader Qlik Cloud Government analytics platform.",
+   "signals": "[\"Augmented Analytics\", \"Qlik Cloud Government\", \"data and analytics technology\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2125653037",
+    "csp": "Qlik Technologies Inc.",
+    "cso": "Qlik Cloud Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Qlik Cloud Government is a SaaS platform purpose-built for delivering Qlik technology to U.S. public sector customers within a safe, FedRAMP-compliant cloud environment. Qlik empowers organizations with data and analytics technology that improves decision-making and solves their most challenging problems. Qlik Cloud Government simplifies data and analytics operations across an organization through"
+ },
+ {
+  "service": "Azure Advanced Threat Protection",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A security analytics product (now Defender for Identity) that uses behavioral analytics and ML to detect identity-based threats, embedded within a broader security monitoring service.",
+   "signals": "[\"Advanced Threat Protection\", \"threat detection\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure DataBricks",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A unified data-analytics and engineering platform (Apache Spark based) that ships substantial embedded ML training/tooling (e.g., MLflow), but is broader than a pure AI/ML product.",
+   "signals": "[\"DataBricks\", \"unified analytics\", \"ML tooling\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Power Automate",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Low-code workflow automation platform that ships an embedded AI Builder module (form processing, object detection, prediction models) as an add-on feature.",
+   "signals": "[\"Power Automate\", \"AI Builder\", \"low-code\", \"form processing\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure Search",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Azure's search-as-a-service (Cognitive/AI Search) offers semantic and vector search with an ML-based ranking core, but is fundamentally a search product with AI as an embedded feature.",
+   "signals": "[\"Search\", \"semantic search\", \"ranking\", \"vector search\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure Sentinel",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "A cloud SIEM/SOAR platform whose core value includes ML-driven fusion analytics and user/entity behavior analytics for threat detection \u2014 the rubric's canonical 'security analytics with ML detection' example.",
+   "signals": "[\"Sentinel\", \"SIEM\", \"fusion analytics\", \"UEBA\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "BigID",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Data security/privacy governance platform whose core discovery and classification of sensitive data relies on embedded ML/NLP models, though the product is broader than a pure AI API.",
+   "signals": "[\"BigID\", \"data discovery\", \"classification\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206111371",
+    "csp": "CoSo Cloud, LLC.",
+    "cso": "Knox Systems",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "Bot Management",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Cloudflare's Bot Management uses machine learning models to distinguish automated bot traffic from humans, embedded within its broader security platform.",
+   "signals": "[\"Bot Management\", \"Cloudflare\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero "
+ },
+ {
+  "service": "Box Cloud Content Management Platform",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Broad content management/collaboration platform that markets embedded 'intelligent automation' and Box AI capabilities as material features alongside its core file/collaboration functions.",
+   "signals": "[\"intelligent automation platform\", \"content management, collaboration\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1212191840A",
+    "csp": "Box Inc.",
+    "cso": "Box Enterprise Cloud Content Collaboration Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Box is a FedRAMP High, FedRAMP Moderate and DoD IL4 Authorized secure cloud content management, collaboration, and intelligent automation platform that enables federal agencies and the Department of Defense to securely manage, share, and analyze mission-critical content in the cloud.\n\nBuilt to support the rigorous compliance, security, and operational demands of U.S. federal and defense environmen"
+ },
+ {
+  "service": "BoxShield",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Box Shield is Box's built-in security product that uses machine learning to detect anomalous downloads, logins, and malicious content, embedded within the broader content platform.",
+   "signals": "[\"Shield\", \"intelligent automation platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1212191840A",
+    "csp": "Box Inc.",
+    "cso": "Box Enterprise Cloud Content Collaboration Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Box is a FedRAMP High, FedRAMP Moderate and DoD IL4 Authorized secure cloud content management, collaboration, and intelligent automation platform that enables federal agencies and the Department of Defense to securely manage, share, and analyze mission-critical content in the cloud.\n\nBuilt to support the rigorous compliance, security, and operational demands of U.S. federal and defense environmen"
+ },
+ {
+  "service": "CMMC In a Box",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Hosted on Ask Sage, a generative-AI platform built on Bedrock/Azure OpenAI/Vertex; this appears to be a packaged compliance assistant/toolkit leveraging that underlying GenAI capability rather than being a raw model-hosting service itself.",
+   "signals": "[\"CMMC In a Box\", \"Generative AI platform\", \"Ask Sage\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2401839361",
+    "csp": "Ask Sage, Inc.",
+    "cso": "Ask Sage",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Ask Sage is a Multi-modal Generative AI platform designed specifically to enable secure access to Generative AI models for both government teams. Ask Sage is built on Generative AI technologies such as Azure OpenAI (GPT 3.5, GPT 4, GPT 4o etc.), AWS Bedrock Gov (LLMA3, Titan etc.), Google Vertex AI (Google Gemini Pro 1.5 etc.), and various open-source LLMs.\n\nAsk Sage also supports OpenAI Whisper, "
+ },
+ {
+  "service": "Celonis Process Mining (CPM4)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Celonis Process Mining applies algorithmic/ML techniques (process discovery, conformance checking, predictive recommendations) to event-log data, making AI/ML a material embedded capability of the product.",
+   "signals": "[\"Process Mining\", \"Celonis\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206111371",
+    "csp": "CoSo Cloud, LLC.",
+    "cso": "Knox Systems",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "Cisco Secure Email Threat Defense for Government",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Cisco's email threat defense product uses ML-based detection models for phishing/BEC identification as a core embedded capability of a broader security product.",
+   "signals": "[\"Threat Defense\", \"Email\", \"Cisco Security Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2304757473",
+    "csp": "Cisco Systems Inc.",
+    "cso": "Cisco Security Cloud for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cisco Security Cloud for Government provides cloud-based security solutions with multiple component products.\r\n\r\n \r\n\r\nCisco Umbrella for Government \r\n\r\nCisco Umbrella for Government delivers advanced, cloud-native cybersecurity, ensuring protection and compliance for government agencies to support their mission. It significantly uplevels government cybersecurity, offering comprehensive protection "
+ },
+ {
+  "service": "Cloud Guard",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Oracle Cloud Guard is a cloud security posture management service whose detection recipes include machine-learning-based anomaly detection, an embedded ML feature within a broader security monitoring product.",
+   "signals": "[\"Cloud Guard\", \"OCI\", \"detector recipes\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Consultative Intelligence",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "SAP Concur's \"Consultative Intelligence\" is a machine-learning-driven insights/recommendations feature layered onto the expense suite, secondary to the core travel-and-expense product.",
+   "signals": "[\"Consultative Intelligence\", \"Concur\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2234550858",
+    "csp": "Concur Technologies, Inc.",
+    "cso": "Concur Cloud for Public Sector",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of"
+ },
+ {
+  "service": "Content-Based Alert Grouping",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "PagerDuty's Event Intelligence uses machine-learning-based content correlation to group related alerts, an embedded ML feature within the broader incident-response platform.",
+   "signals": "[\"Content-Based Alert Grouping\", \"intelligent aggregation\", \"event orchestration\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "Counter Adversary Elite",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "CrowdStrike Falcon's managed threat-hunting/response tier that runs on the Falcon platform's ML-based detection engine and threat intelligence, an embedded AI capability within a broader cybersecurity service.",
+   "signals": "[\"Counter Adversary\", \"CrowdStrike Falcon Platform\", \"cloud-based intelligence engine\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Counter Adversary Operations",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "CrowdStrike's combined threat-intelligence and managed-hunting offering built on the Falcon platform's ML detection/intelligence engine.",
+   "signals": "[\"Counter Adversary Operations\", \"cloud-based intelligence engine\", \"CrowdStrike Falcon\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Customer Decision Hub (CDH)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Pega's Customer Decision Hub is a real-time next-best-action decisioning module (adaptive/predictive models) embedded within the broader Pega customer engagement platform, not a standalone AI product line.",
+   "signals": "[\"Customer Decision Hub\", \"Pega Government Platform\", \"no-code application development\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1306282198A",
+    "csp": "Pegasystems",
+    "cso": "Pega Cloud for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Pega Cloud for Government is a fully managed cloud designed specifically for US Government Agencies. It provides the tools, environments, and operational support necessary to enable applications to scale with consistent performance while meeting strict FedRAMP security standards. Pega Government Platform (PGP) is a no-code application development solution, allowing Government users to collaborativ"
+ },
+ {
+  "service": "Cynamics AI",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Cynamics is an AI/ML-driven network traffic anomaly-detection (NDR) product hosted as a SaaS app on Constellation GovCloud; the name itself flags AI, and it fits the security-analytics-with-ML-detection pattern rather than a general-purpose model API.",
+   "signals": "[\"Cynamics AI\", \"Merlin-operated SaaS\", \"network\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2206159758",
+    "csp": "Merlin International",
+    "cso": "Constellation GovCloud (CGC)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Constellation GovCloud (CGC) is an information system that provides the necessary Platform as a Service (PaaS) architecture layers to support Merlin-operated Software as a Service (SaaS) applications. These Merlin SaaS applications will be hosted and provided to U.S. federal agencies, including local and state governments and tribal organizations. The CGC is part of a managed service that is desig"
+ },
+ {
+  "service": "Databricks",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "The Databricks Data Intelligence Platform is primarily a data/lakehouse analytics platform, but ships a Data Intelligence Engine and integrated ML tooling as material embedded features.",
+   "signals": "[\"AI-powered platform\", \"Data Intelligence Engine\", \"Machine Learning\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Detect by Oversight",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Oversight's Detect module applies AI/ML-based anomaly and risk detection to travel-and-expense spend data, an embedded analytics feature within the broader Concur platform.",
+   "signals": "[\"Detect\", \"Oversight\", \"travel and expense\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2234550858",
+    "csp": "Concur Technologies, Inc.",
+    "cso": "Concur Cloud for Public Sector",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of"
+ },
+ {
+  "service": "Digital Employee Experience (DEX)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Omnissa Workspace ONE's DEX capability uses ML-based experience scoring and anomaly detection embedded within the broader endpoint-management platform.",
+   "signals": "[\"Digital Employee Experience\", \"Workspace ONE\", \"manage endpoint devices\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2515655059",
+    "csp": "Omnissa",
+    "cso": "Omnissa Government Services",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "Workspace ONE (WS1) is delivered as a SaaS offering using a multi-tenant Hybrid cloud computing environment.  \n\nWS1 provides industry-leading management for desktops, servers, mobile devices, email, applications, content, and browsers, allowing organizations to easily deploy, configure, secure, and manage endpoint devices across multiple operating systems, user populations, geographies, and deploy"
+ },
+ {
+  "service": "Dynamics 365 Contact Center",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Microsoft's newer contact-center offering built around Copilot generative-AI agent assist as a core differentiator, layered on the broader CCaaS platform.",
+   "signals": "[\"Contact Center\", \"Dynamics 365\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Dynamics 365 Fraud Protection",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "An adaptive machine-learning fraud/risk-scoring service embedded as Microsoft's fraud detection offering.",
+   "signals": "[\"Fraud Protection\", \"Dynamics 365\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Dynamics 365 Intelligent Order Management",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Order orchestration platform whose fulfillment optimization/routing draws on ML, signaled by the 'Intelligent' naming.",
+   "signals": "[\"Intelligent Order Management\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Dynamics 365 Sales Insights",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Microsoft's AI-powered add-on for predictive lead/opportunity scoring and relationship analytics within Dynamics 365 Sales.",
+   "signals": "[\"Sales Insights\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ }
+]

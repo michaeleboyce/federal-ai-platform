@@ -1,0 +1,780 @@
+[
+ {
+  "service": "F1506096710",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+   "signals": "[\"RQI1Stop\", \"CPR training\", \"SaaS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr"
+ },
+ {
+  "service": "FR1812058188",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+   "signals": "[\"RQI1Stop\", \"CPR training\", \"SaaS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr"
+ },
+ {
+  "service": "FR1814276801",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+   "signals": "[\"RQI1Stop\", \"CPR training\", \"SaaS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr"
+ },
+ {
+  "service": "FR1918740338",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+   "signals": "[\"RQI1Stop\", \"CPR training\", \"SaaS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr"
+ },
+ {
+  "service": "FR2023864279",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+   "signals": "[\"RQI1Stop\", \"CPR training\", \"SaaS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2211452029",
+    "csp": "RQI Partners LLC",
+    "cso": "RQI1Stop",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "RQI Partners, a partnership created by the American Heart Association\u00ae (AHA\u00ae) and Laerdal Medical, exists to deliver modernized CPR training based on the latest AHA guidelines.\nRQI1stop is delivered as a SaaS offering using a multi-tenant Public Cloud computing environment. It is available to the public, federal, state, local, and tribal governments, as well as research institutions, federal contr"
+ },
+ {
+  "service": "Face",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Face is Microsoft's computer-vision API for facial detection, recognition, and attribute analysis \u2014 an explicit CV/AI service.",
+   "signals": "[\"Face\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Falcon Adversary Intelligence",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "CrowdStrike's threat-intelligence offering combines curated research with ML-driven correlation of malware/adversary data \u2014 AI embedded in a broader security platform rather than a standalone AI product.",
+   "signals": "[\"Adversary Intelligence\", \"Threat Intelligence\", \"CrowdStrike\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Cloud Security",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Cloud security posture and workload protection that includes ML-based runtime threat detection alongside configuration/compliance checks.",
+   "signals": "[\"Cloud Security\", \"CrowdStrike\", \"runtime protection\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Cloud Security for Managed Containers",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "A managed variant of container security combining human service delivery with the platform's ML-based detection engine.",
+   "signals": "[\"Managed Containers\", \"CrowdStrike\", \"Cloud Security\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Data Protection",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Endpoint data-loss-prevention module, typically driven by policy/pattern-matching rules rather than a distinct ML capability.",
+   "signals": "[\"Data Protection\", \"DLP\", \"CrowdStrike\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon External Attack Surface Management",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "External asset discovery and exposure scanning; primarily an inventory/scanning capability rather than a distinct ML-driven service.",
+   "signals": "[\"External Attack Surface Management\", \"CrowdStrike\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Sandbox",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Automated malware-detonation sandbox that uses behavioral/ML-assisted classification to generate analysis reports, embedded within the Falcon platform.",
+   "signals": "[\"Falcon Sandbox\", \"malware analysis\", \"CrowdStrike\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon for Mobile",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "CrowdStrike's mobile threat defense module, part of the Falcon platform which relies on cloud/on-device ML-based detection to identify malicious apps and mobile threats.",
+   "signals": "[\"Falcon for Mobile\", \"endpoint security\", \"cloud-based intelligence engine\", \"threat intelligence\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Feature Store",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Databricks Feature Store is ML tooling for storing, sharing, and serving features used to train and serve machine learning models, explicitly a core ML-tooling capability.",
+   "signals": "[\"Feature Store\", \"AI-powered platform\", \"Machine Learning\", \"Data Intelligence Engine\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2324740262",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine"
+ },
+ {
+  "service": "Feature Store, Jobs & Workflows",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A bundled entitlement pairing Databricks' ML Feature Store with generic Jobs & Workflows orchestration; the ML feature-store component is material but the row also covers plain job scheduling.",
+   "signals": "[\"Feature Store\", \"Jobs & Workflows\", \"AI-powered platform\", \"Machine Learning\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2324740262",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine"
+ },
+ {
+  "service": "Foundry",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "Palantir Foundry is primarily a data integration and operational analytics platform; it increasingly embeds ML model integration and ontology-driven analytics as features, but the named AI product (AIP) is a separate offering from Foundry itself.",
+   "signals": "[\"Foundry\", \"Palantir\", \"data integration\", \"operational workflows\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2434554673",
+    "csp": "Palantir Technologies Inc.",
+    "cso": "Palantir Federal Cloud Service",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Palantir Federal Cloud Service (PFCS) is a dedicated environment for the purpose of delivering Palantir software to federal government customers as a cloud service. Palantir software, including Foundry, AIP, Gotham, Apollo, and supporting products utilizing the same infrastructure, enables a multitude of collaborative and operational workflows for end government users. Palantir enables organiz"
+ },
+ {
+  "service": "Full Stack Observability: AI Monitoring",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A New Relic observability module specifically for monitoring AI/LLM application behavior and performance, an AI-focused feature embedded within the broader observability platform.",
+   "signals": "[\"AI Monitoring\", \"intelligent observability platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user "
+ },
+ {
+  "service": "Full Stack Observability: OpenTelemetry",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Support for ingesting OpenTelemetry-formatted telemetry data; a data-ingestion standard integration, not AI.",
+   "signals": "[\"OpenTelemetry\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user "
+ },
+ {
+  "service": "GAV \u2013 Global Asset View",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Qualys's IT asset inventory/CMDB capability; asset discovery and cataloging, not ML-driven.",
+   "signals": "[\"Global Asset View\", \"Qualys Cloud Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g"
+ },
+ {
+  "service": "GSS One Ticketing System (powered by JIRA)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "JIRA-based IT service ticketing; not AI.",
+   "signals": "[\"Ticketing System\", \"JIRA\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove"
+ },
+ {
+  "service": "Gemini App",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Google's Gemini conversational AI assistant app; a core LLM/chat product.",
+   "signals": "[\"Gemini App\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206081364",
+    "csp": "Google",
+    "cso": "Google Workspace",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please re"
+ },
+ {
+  "service": "Gemini Enterprise",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Google's enterprise generative-AI/agent platform; a core AI product.",
+   "signals": "[\"Gemini Enterprise\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Gemini Enterprise for Customer Experience (GECX) (formerly Conversational AI and Contact Center AI)",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Explicitly a conversational-AI / Contact Center AI product for customer experience; core NLP/chat capability.",
+   "signals": "[\"Conversational AI\", \"Contact Center AI\", \"Gemini Enterprise\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Gemini for Workspace",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Google's generative-AI assistant embedded across Workspace apps (Docs, Gmail, etc.); a core AI capability.",
+   "signals": "[\"Gemini\", \"Workspace\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206081364",
+    "csp": "Google",
+    "cso": "Google Workspace",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please re"
+ },
+ {
+  "service": "GenAI Blueprint",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Pega's generative-AI feature that uses AI to auto-generate application/workflow designs from business requirements; the product name and function are explicitly generative-AI-driven.",
+   "signals": "[\"GenAI Blueprint\", \"Pega\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1306282198A",
+    "csp": "Pegasystems",
+    "cso": "Pega Cloud for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Pega Cloud for Government is a fully managed cloud designed specifically for US Government Agencies. It provides the tools, environments, and operational support necessary to enable applications to scale with consistent performance while meeting strict FedRAMP security standards. Pega Government Platform (PGP) is a no-code application development solution, allowing Government users to collaborativ"
+ },
+ {
+  "service": "Generative AI Service",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Oracle Cloud Infrastructure's Generative AI Service is an LLM hosting/inference offering, analogous to Bedrock or Azure OpenAI.",
+   "signals": "[\"Generative AI Service\", \"OCI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Genie",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Databricks Genie is a natural-language / conversational AI interface for querying data within the Data Intelligence Platform.",
+   "signals": "[\"Genie\", \"Data Intelligence Platform\", \"AI-powered\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine"
+ },
+ {
+  "service": "Global Secure Access",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Microsoft Entra network/security access service (SSE); not AI.",
+   "signals": "[\"Global Secure Access\", \"Azure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Google Cloud Marketplace",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Catalog for deploying third-party software on GCP; not AI.",
+   "signals": "[\"Cloud Marketplace\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Gotham",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "Palantir's data-integration and operational-analysis platform for defense/intel; the host snippet lists AIP as a separate product line from Gotham, indicating Gotham itself is the traditional data-integration platform rather than the AI-specific offering.",
+   "signals": "[\"Gotham\", \"operational workflows\", \"Foundry, AIP, Gotham, Apollo\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2434554673",
+    "csp": "Palantir Technologies Inc.",
+    "cso": "Palantir Federal Cloud Service",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Palantir Federal Cloud Service (PFCS) is a dedicated environment for the purpose of delivering Palantir software to federal government customers as a cloud service. Palantir software, including Foundry, AIP, Gotham, Apollo, and supporting products utilizing the same infrastructure, enables a multitude of collaborative and operational workflows for end government users. Palantir enables organiz"
+ },
+ {
+  "service": "GovSignals",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Insufficient evidence that this Palantir supporting-services product is an ML/AI capability rather than a general signals/reporting tool; defaulting to not_ai per precision-over-recall guidance.",
+   "signals": "[\"GovSignals\", \"PFCS-SS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "H2O AI App Store",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Part of H2O.ai's unified AI platform; an app store/marketplace for deploying AI/ML applications.",
+   "signals": "[\"H2O AI App Store\", \"unified AI platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen"
+ },
+ {
+  "service": "H2O Driverless AI",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "H2O.ai's automated machine learning (AutoML) product for model training; core ML tooling.",
+   "signals": "[\"Driverless AI\", \"AutoML\", \"H2O.ai\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen"
+ },
+ {
+  "service": "H2O Eval Studio",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "H2O.ai's tool for evaluating and benchmarking ML/LLM models; core AI tooling.",
+   "signals": "[\"Eval Studio\", \"H2O.ai\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen"
+ },
+ {
+  "service": "H2O Hydrogen Torch",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "H2O.ai's deep-learning training platform for computer vision/NLP/audio models; core ML tooling.",
+   "signals": "[\"Hydrogen Torch\", \"H2O.ai\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen"
+ },
+ {
+  "service": "H2O LLM Studio",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "H2O.ai's tool for fine-tuning large language models; core generative-AI tooling.",
+   "signals": "[\"LLM Studio\", \"H2O.ai\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen"
+ },
+ {
+  "service": "H2O Label Genie",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "H2O.ai's AI-assisted data-labeling tool for building ML training sets; core ML tooling.",
+   "signals": "[\"Label Genie\", \"H2O.ai\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen"
+ },
+ {
+  "service": "H2O MLOPs",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "H2O.ai's MLOps platform for deploying, monitoring, and managing ML models; core ML tooling.",
+   "signals": "[\"MLOPs\", \"H2O.ai\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen"
+ },
+ {
+  "service": "H2O-3",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "H2O.ai's open-source distributed machine-learning platform; core ML tooling.",
+   "signals": "[\"H2O-3\", \"machine learning\", \"H2O.ai\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2521554684",
+    "csp": "H2O.AI for Government",
+    "cso": "H2O.AI",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "H2O.ai Cloud for Government (H2O-GOV) is the unified AI platform that delivers the convergence of predictive, generative, agentic, and AI observability & governance for federal agencies. Hosted on AWS GovCloud and fully deployed and managed by H2O.ai, H2O.ai Cloud for Government provides agencies with a secure, mission-ready AI technology stack with dedicated tenancy and full sovereignty over agen"
+ },
+ {
+  "service": "Health Insights",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Health Insights is Microsoft's AI service for clinical document analysis, trial matching, and medical text intelligence.",
+   "signals": "[\"Health Insights\", \"Azure AI\", \"clinical NLP\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ }
+]

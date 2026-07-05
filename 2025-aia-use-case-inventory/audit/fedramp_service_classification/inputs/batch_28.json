@@ -1,0 +1,726 @@
+[
+ {
+  "service": "Standards (Accreditation Management)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2119265538",
+    "csp": "NEOGOV",
+    "cso": "NEOGOV Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "NEOGOV is a Software as a Service (SaaS) provider of cloud-based workforce management solutions, uniquely designed for the public sector, higher education, and public safety.\n\nNEOGOV offers Human Capital Management (HCM), Human Resource Information System (HRIS), and Talent Management Software (TMS) solutions that empower government agencies to seamlessly source, recruit, hire, onboard, develop, a",
+  "input_hash": "5374af551db60db1"
+ },
+ {
+  "service": "Status Update Notification Templates",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "d32e2277ba9713e7"
+ },
+ {
+  "service": "StorSimple",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "ffa2813e5bc2bb55"
+ },
+ {
+  "service": "StorSimple Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "0868436c63c69a85"
+ },
+ {
+  "service": "Storage (Blobs, Disks, Files, Queues, Tables)",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "3fddbfbe2a01d3ab"
+ },
+ {
+  "service": "Storage Transfer Service",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "2c039fe45017644c"
+ },
+ {
+  "service": "Stream Analytics",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "61e8edef1e65ef4a"
+ },
+ {
+  "service": "Streaming",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "d6458e8561e96c07"
+ },
+ {
+  "service": "Streamline (by Valinor)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government (",
+  "input_hash": "d309d654a3029507"
+ },
+ {
+  "service": "Streams Messaging",
+  "hosts": [
+   {
+    "fedramp_id": "FR2309544938",
+    "csp": "Cloudera Government Solutions, Inc",
+    "cso": "Cloudera for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudera for Government is a secure and governed cloud service platform that offers a broad set of enterprise data cloud services with data analytics and artificial intelligence functionality. With Cloudera for Government, users can create and manage secure data lakes, self-service analytics, and machine learning services without installing and managing the data platform software. Cloudera for Gov",
+  "input_hash": "a87044f4e78689a7"
+ },
+ {
+  "service": "Substrate Intelligence Platform (SIP)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server",
+  "input_hash": "a6423627a16839b3"
+ },
+ {
+  "service": "Support Center (Cloud Incident Service)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "fd75985a942bb3db"
+ },
+ {
+  "service": "THEIA",
+  "hosts": [
+   {
+    "fedramp_id": "FR2411443563",
+    "csp": "Valley IT Solutions, LLC",
+    "cso": "Kernos",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Kernos is a multi-tenant, cloud-native \u201cSaaS\u201d (software-as-a-service) cloud service offering (CSO). It leverages Amazon Web Services (AWS), IaaS (infrastructure-as-a-service), and PaaS (platform-as-a-service) for its underlying infrastructure and hardware.\n\nKernos integrates near-real-time video exploitation, common operating picture (COP), advanced multimedia and full motion video (FMV) (unclassi",
+  "input_hash": "dc9e7959bc184a19"
+ },
+ {
+  "service": "TP \u2013 Threat Protection",
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g",
+  "input_hash": "9de22bb90e3255f4"
+ },
+ {
+  "service": "TRM Labs",
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government (",
+  "input_hash": "65a2c556a2e25ba0"
+ },
+ {
+  "service": "Tableau Next",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "c28535fcf134bc5a"
+ },
+ {
+  "service": "Talent 2 Opportunity (T2O)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1831429369",
+    "csp": "HireVue",
+    "cso": "Recruitment Assessments and Video Interviewing",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "HireVue helps global enterprises gain a competitive advantage in the modern talent marketplace with video interviewing software and recruitment assessments. The HireVue platform is transforming the way organizations discover, hire, and develop talent. By combining video interviews with predictive, validated I-O science and artificial intelligence.\n\nBased in Sandy, Utah, HireVue works with more tha",
+  "input_hash": "95c03dd31d85770f"
+ },
+ {
+  "service": "Talent Acquisition",
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\"",
+  "input_hash": "bc715db472b1b988"
+ },
+ {
+  "service": "Talent Flex",
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\"",
+  "input_hash": "0253175a7b257b81"
+ },
+ {
+  "service": "Talent Management",
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\"",
+  "input_hash": "31a8707240b5b716"
+ },
+ {
+  "service": "Talent Solution*",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "537a5654c538ed82"
+ },
+ {
+  "service": "Talent Tracking",
+  "hosts": [
+   {
+    "fedramp_id": "FR2016962740",
+    "csp": "Eightfold AI Inc.",
+    "cso": "Eightfold Talent Intelligence Platform (TIP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Eightfold Talent Intelligence Platform (TIP) is a SaaS solution that uses advanced AI to optimize every phase of the talent lifecycle including recruiting, retention, and workforce development. By centralizing talent operations and automating workflows, TIP helps public-sector agencies reduce costs, improve efficiency, and meet compliance requirements. TIP has varying capabilities or \"modules\"",
+  "input_hash": "e52d669998c623d7"
+ },
+ {
+  "service": "Tanium Account",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "5625fb6dff4e34cb"
+ },
+ {
+  "service": "Tanium Ask",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "4e92b5fa8dcf88a4"
+ },
+ {
+  "service": "Tanium Asset",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "9f4dc3c8b9fcb511"
+ },
+ {
+  "service": "Tanium Automate",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "688c3d12250e99a7"
+ },
+ {
+  "service": "Tanium Benchmark",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "94d8d67d054d535a"
+ },
+ {
+  "service": "Tanium Certificate Manager",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "82a0d38d7f195f6a"
+ },
+ {
+  "service": "Tanium Client Management",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "ccc77f23845d3c65"
+ },
+ {
+  "service": "Tanium Cloud Workloads",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "93ddbe93f91a6cd6"
+ },
+ {
+  "service": "Tanium Comply",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "a2d583f4609eb2a1"
+ },
+ {
+  "service": "Tanium Connect",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "8c87448c886c3a59"
+ },
+ {
+  "service": "Tanium Connector for Microsoft Intune",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "916b680bb5a550e2"
+ },
+ {
+  "service": "Tanium Criticality",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "9397f6353981126b"
+ },
+ {
+  "service": "Tanium Deploy",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "80bd2e1280fd5c40"
+ },
+ {
+  "service": "Tanium Direct Connect",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "cc05c2d8776286c3"
+ },
+ {
+  "service": "Tanium Directory Query",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "2a4252b126ae86c1"
+ },
+ {
+  "service": "Tanium Discover",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "0e88843e966a53ca"
+ },
+ {
+  "service": "Tanium End-User Notifications",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "e80aef9db7456ee9"
+ },
+ {
+  "service": "Tanium Endpoint Configuration",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "1dcde378ff018c86"
+ },
+ {
+  "service": "Tanium Endpoint Management for Mobile",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "c850b1f511ad91eb"
+ },
+ {
+  "service": "Tanium Enforce",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "7a71df6a7bb2aa4a"
+ },
+ {
+  "service": "Tanium Engage",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "5e76aa696a982e86"
+ },
+ {
+  "service": "Tanium Gateway",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "501c3f880a4504e1"
+ },
+ {
+  "service": "Tanium Guardian",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "fd21e7b0fe9241cd"
+ },
+ {
+  "service": "Tanium Guide",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "3f84c904c08c0eee"
+ },
+ {
+  "service": "Tanium Impact",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "d70ea395f3c8565a"
+ },
+ {
+  "service": "Tanium Integrations Gallery",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "8dd0e6f1695b377a"
+ },
+ {
+  "service": "Tanium Integrity Monitor",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "49bdc5fb094b3ab9"
+ },
+ {
+  "service": "Tanium Interact",
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com.",
+  "input_hash": "75c0ecf66ffc0d3d"
+ }
+]

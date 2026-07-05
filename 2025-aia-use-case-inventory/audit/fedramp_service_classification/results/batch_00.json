@@ -1,0 +1,352 @@
+[
+ {
+  "service": "*Appsheet",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "AppSheet is Google's no-code/low-code app-building platform; it has added AI features (natural-language app generation, automations) but its core function is app development, not AI itself.",
+  "signals": ["AppSheet", "no-code", "Google Workspace"]
+ },
+ {
+  "service": "1Kosmos BlockID",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "1Kosmos BlockID is an identity-verification product built on biometric (facial recognition/liveness) matching, an ML-based identity/biometric verification capability explicitly named in the rubric.",
+  "signals": ["BlockID", "biometric", "identity verification"]
+ },
+ {
+  "service": "AGENCYAMAZONEW",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "This string is a FedRAMP package identifier artifact rather than a product name; the underlying host is a CPR-training SaaS platform with no described AI/ML component.",
+  "signals": ["RQI1Stop", "CPR training", "SaaS"]
+ },
+ {
+  "service": "AI Builder",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Microsoft Power Platform's AI Builder is a no-code tool for building and running custom ML models (form processing, prediction, object detection) — core ML tooling.",
+  "signals": ["AI Builder", "Power Platform", "ML models"]
+ },
+ {
+  "service": "AI Builder MiddleTier",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Backend/middle-tier service component supporting Microsoft AI Builder's model training and inference.",
+  "signals": ["AI Builder", "MiddleTier", "Azure"]
+ },
+ {
+  "service": "AI Builder Structured ML",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Explicitly named machine-learning component of Microsoft AI Builder for structured-data models.",
+  "signals": ["AI Builder", "Structured ML"]
+ },
+ {
+  "service": "AI Builder Unstructured ML",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Explicitly named machine-learning component of Microsoft AI Builder for unstructured-data models (e.g. document/image processing).",
+  "signals": ["AI Builder", "Unstructured ML"]
+ },
+ {
+  "service": "AI Copilot",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Appian's AI Copilot is a generative-AI chat assistant embedded in the Appian platform, matching the rubric's chat-assistant/copilot core_ai category.",
+  "signals": ["AI Copilot", "Appian", "copilot"]
+ },
+ {
+  "service": "AI Protection",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Google Cloud's AI Protection is a security-governance suite for discovering and securing AI workloads — security/ML analytics tooling embedded in the broader Google Services security stack, not itself a generative or model-hosting service.",
+  "signals": ["AI Protection", "Google Services", "security"]
+ },
+ {
+  "service": "AI Skill",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Appian's AI Skill designer lets users build and embed AI-driven skills (e.g. document extraction, classification) into workflows, functioning as an agent/model-building tool.",
+  "signals": ["AI Skill", "Appian"]
+ },
+ {
+  "service": "AI integrator",
+  "category": "core_ai",
+  "confidence": "low",
+  "reasoning": "Named 'AI integrator' feature within the Bluescape/n8n for Government offering, apparently connecting workflows to AI models/services — an AI-integration/agent-builder capability, though the snippet gives limited detail.",
+  "signals": ["AI integrator", "n8n", "Bluescape"]
+ },
+ {
+  "service": "AI powered Control Implementation and Audit",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A named AI-powered feature of RegScale's GRC/continuous-controls-monitoring platform that automates control implementation and audit tasks — AI embedded in a broader compliance product.",
+  "signals": ["AI powered", "RegScale", "GRC", "Control Implementation and Audit"]
+ },
+ {
+  "service": "AI/BI",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Databricks AI/BI (Genie) is a business-intelligence/dashboarding capability that adds natural-language and ML-assisted analytics as a feature atop the core Databricks data platform.",
+  "signals": ["AI/BI", "Databricks", "Data Intelligence Platform"]
+ },
+ {
+  "service": "AIP",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Palantir AIP (Artificial Intelligence Platform) is explicitly an LLM/agent orchestration and model-deployment platform for integrating generative AI into operations — a core AI capability.",
+  "signals": ["AIP", "Artificial Intelligence Platform", "Palantir"]
+ },
+ {
+  "service": "API Gateway",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure's API Gateway is plain API request routing/management infrastructure, not an AI capability.",
+  "signals": ["API Gateway", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "API Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure API Management is standard API publishing/gateway infrastructure with no AI/ML function.",
+  "signals": ["API Management", "Azure"]
+ },
+ {
+  "service": "API Shield",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare API Shield is API schema-validation and abuse-protection tooling, not an AI/ML product.",
+  "signals": ["API Shield", "Cloudflare"]
+ },
+ {
+  "service": "APIs (Salesforce APIs / Salesforce Connect / Files Connect / Salesforce Data Loader)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Plain data-integration and API tooling for Salesforce (connectors, data loading), no AI/ML component.",
+  "signals": ["Salesforce APIs", "Data Loader", "Files Connect"]
+ },
+ {
+  "service": "APX 1000i",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series is a land-mobile-radio hardware product line with no AI/ML function.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX 5000",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX 6000",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX 8000",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX 8000H",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX 900",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX N30",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX N50",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX N70",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX NEXT",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX NEXT International",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX NEXT Smart Radio",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware; 'Smart Radio' refers to networked/software features, not an AI capability.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX NEXT XN",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX1500",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX2500",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX4500",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX5500",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX6500",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "APX8500",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Solutions APX-series land-mobile radio hardware, not an AI product.",
+  "signals": ["APX", "Motorola Solutions", "radio"]
+ },
+ {
+  "service": "ASR",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Knightscope's Autonomous Security Robot performs autonomous navigation and continuous video/audio surveillance, capabilities that typically rely on embedded ML-based analytics (e.g. detection, license-plate/face recognition) within a physical security-robot product.",
+  "signals": ["Autonomous Security Robot", "autonomously", "cameras, microphones"]
+ },
+ {
+  "service": "ATO In a Box",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Hosted on Ask Sage, explicitly described as a multi-modal Generative AI platform built on Azure OpenAI, AWS Bedrock, and Vertex AI; 'ATO in a Box' is a generative-AI-driven compliance-automation offering on that platform.",
+  "signals": ["Generative AI platform", "Azure OpenAI", "AWS Bedrock", "Ask Sage"]
+ },
+ {
+  "service": "AWS App Mesh",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "AWS App Mesh is a service-mesh networking product for microservices, not AI/ML.",
+  "signals": ["App Mesh", "AWS"]
+ },
+ {
+  "service": "AWS Application Auto Scaling",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rule/metric-based compute auto-scaling infrastructure, not AI/ML.",
+  "signals": ["Auto Scaling", "AWS GovCloud"]
+ },
+ {
+  "service": "AWS Application Migration Service (MGN)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Lift-and-shift server migration tooling, not AI/ML.",
+  "signals": ["Migration Service", "MGN", "AWS"]
+ },
+ {
+  "service": "AWS Audit Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Compliance evidence-collection and audit-prep automation based on rules/frameworks, not ML-driven.",
+  "signals": ["Audit Manager", "AWS"]
+ },
+ {
+  "service": "AWS Backup",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Centralized backup management service, not AI/ML.",
+  "signals": ["Backup", "AWS"]
+ },
+ {
+  "service": "AWS Batch",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Batch computing job scheduler/orchestrator, not AI/ML.",
+  "signals": ["Batch", "AWS"]
+ },
+ {
+  "service": "AWS Certificate Manager (ACM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "TLS/SSL certificate provisioning and management service, not AI/ML.",
+  "signals": ["Certificate Manager", "ACM", "AWS"]
+ },
+ {
+  "service": "AWS Clean Rooms",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A data-collaboration/privacy service for joint analytics across parties; core functionality is data governance and query control rather than an AI/ML capability.",
+  "signals": ["Clean Rooms", "AWS", "data collaboration"]
+ },
+ {
+  "service": "AWS Cloud Map",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Service discovery/registry for cloud resources, not AI/ML.",
+  "signals": ["Cloud Map", "AWS"]
+ },
+ {
+  "service": "AWS Cloud9",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloud-based IDE, not AI/ML.",
+  "signals": ["Cloud9", "AWS"]
+ },
+ {
+  "service": "AWS CloudFormation",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Infrastructure-as-code provisioning/templating service, not AI/ML.",
+  "signals": ["CloudFormation", "AWS"]
+ }
+]

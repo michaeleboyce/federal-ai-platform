@@ -1,0 +1,116 @@
+[
+ {
+  "service": "Web Risk API*",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Google's Web Risk API is primarily a threat-intelligence/blocklist lookup service for unsafe URLs; not framed as an AI capability by name.",
+   "signals": "[\"Web Risk API\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Windows Autopatch and Microsoft Managed Desktop",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Patch management and managed desktop service, not AI.",
+   "signals": "[\"Autopatch\", \"Managed Desktop\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Wiz Defend for Government",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "Cloud detection and response module built on Wiz's graph-based risk correlation rather than an ML-centric detection engine.",
+   "signals": "[\"Wiz Defend\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2308034636A",
+    "csp": "Wiz, Inc.",
+    "cso": "Wiz for U.S. Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Wiz for U.S. Government\r\n\r\nWiz for U.S. Government (\u201cWiz for Gov\u201d) is a cloud-native environment and product line that delivers a unified view of risk across a customer\u2019s full cloud environment, from code to production. Wiz for Gov helps public sector agencies meet FedRAMP and FISMA compliance needs by focusing on the issues that matter most. The Wiz for Gov unified product line has three differen"
+ },
+ {
+  "service": "Workers",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Cloudflare's serverless edge-compute platform, not AI.",
+   "signals": "[\"Workers\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2000863987",
+    "csp": "Cloudflare",
+    "cso": "Cloudflare for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Cloudflare is a global network, designed to help agencies enhance the security, performance and reliability for any Internet-connected service.  Our FedRAMP offering protects entire agency networks, helps agencies build Internet-scale applications efficiently, accelerates any website or Internet application, wards off DDoS attacks, keeps hackers at bay, and helps agencies in their journey to Zero "
+ },
+ {
+  "service": "eSSESSMENT",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Appears to be an online assessment/testing tool hosted on Knox Systems; no clear AI/ML signal in the name.",
+   "signals": "[\"eSSESSMENT\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206111371",
+    "csp": "CoSo Cloud, LLC.",
+    "cso": "Knox Systems",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "reCAPTCHA Enterprise*",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Google reCAPTCHA Enterprise's core function is a machine-learning risk-analysis engine that scores traffic as human vs. bot/fraudulent.",
+   "signals": "[\"reCAPTCHA Enterprise\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ }
+]

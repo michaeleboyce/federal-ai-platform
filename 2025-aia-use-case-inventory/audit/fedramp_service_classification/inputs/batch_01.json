@@ -1,0 +1,930 @@
+[
+ {
+  "service": "AWS CloudHSM",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "14d29bc92f4e57b2"
+ },
+ {
+  "service": "AWS CloudShell",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "51992b19a604279d"
+ },
+ {
+  "service": "AWS CloudTrail",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "59abc36592269e9f"
+ },
+ {
+  "service": "AWS CodeBuild",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "abdcba3976b01f92"
+ },
+ {
+  "service": "AWS CodeCommit",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "c725937cb0af4163"
+ },
+ {
+  "service": "AWS CodeDeploy",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "bdbe19dd117adf6d"
+ },
+ {
+  "service": "AWS CodePipeline",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "b865e305e6f80db2"
+ },
+ {
+  "service": "AWS Compute Optimizer",
+  "hosts": [
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AWS GovCloud (US) is an AWS Region designed to allow US government agencies and customers supporting the US government to move more sensitive workloads into the cloud. In addition to complying with FedRAMP requirements, the AWS GovCloud (US) framework adheres to U.S. International Traffic in Arms Regulations (ITAR) regulations. Additional information is available at http://aws.amazon.com/govcloud-",
+  "input_hash": "2fadef3e955dfce2"
+ },
+ {
+  "service": "AWS Config",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "e141fc3388e87cdd"
+ },
+ {
+  "service": "AWS Control Tower",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "ea0c9fc5eac4c710"
+ },
+ {
+  "service": "AWS DataSync",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "afd8d148e0552476"
+ },
+ {
+  "service": "AWS Database Migration Service (DMS)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "c41bea95bd6aa340"
+ },
+ {
+  "service": "AWS Direct Connect",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "8859bacf6f3c31a2"
+ },
+ {
+  "service": "AWS Directory Service",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "b16fbf53031adf08"
+ },
+ {
+  "service": "AWS Elastic Beanstalk",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "6bb375c2d5afc120"
+ },
+ {
+  "service": "AWS Elastic Disaster Recovery (AWS DRS)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "717a4fbaf53f4ae9"
+ },
+ {
+  "service": "AWS Elemental MediaConvert",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "bf2cdd4e8d8f5577"
+ },
+ {
+  "service": "AWS Entity Resolution",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "3ea498102d9bfe1f"
+ },
+ {
+  "service": "AWS Fault Injection Service",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "0c79bb099f0c0258"
+ },
+ {
+  "service": "AWS Firewall Manager",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "0517293bc418eeee"
+ },
+ {
+  "service": "AWS Global Accelerator",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "79cae81e69e89fe3"
+ },
+ {
+  "service": "AWS Glue",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "0e415759749c83c1"
+ },
+ {
+  "service": "AWS Glue DataBrew",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "07822f0e118778fb"
+ },
+ {
+  "service": "AWS Ground Station",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "58d29f1551e6a1cc"
+ },
+ {
+  "service": "AWS Health Dashboard",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "2fe8d603ca09f3c7"
+ },
+ {
+  "service": "AWS HealthImaging",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "5783ceebf6328a12"
+ },
+ {
+  "service": "AWS HealthLake",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "670305972c218a2a"
+ },
+ {
+  "service": "AWS HealthOmics",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "622200893f246b6f"
+ },
+ {
+  "service": "AWS IAM Identity Center",
+  "hosts": [
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AWS GovCloud (US) is an AWS Region designed to allow US government agencies and customers supporting the US government to move more sensitive workloads into the cloud. In addition to complying with FedRAMP requirements, the AWS GovCloud (US) framework adheres to U.S. International Traffic in Arms Regulations (ITAR) regulations. Additional information is available at http://aws.amazon.com/govcloud-",
+  "input_hash": "6a21a235acd35e04"
+ },
+ {
+  "service": "AWS Identity and Access Management (IAM)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "76037cf1625f000c"
+ },
+ {
+  "service": "AWS IoT Core",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "286e36d6057da3e1"
+ },
+ {
+  "service": "AWS IoT Device Defender",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "0afac5326c1e4624"
+ },
+ {
+  "service": "AWS IoT Device Management",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "0cbc6f09750e46ef"
+ },
+ {
+  "service": "AWS IoT Events",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "6c777d045ada901a"
+ },
+ {
+  "service": "AWS IoT Greengrass",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "3e6ed5f520db98ae"
+ },
+ {
+  "service": "AWS IoT SiteWise",
+  "hosts": [
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AWS GovCloud (US) is an AWS Region designed to allow US government agencies and customers supporting the US government to move more sensitive workloads into the cloud. In addition to complying with FedRAMP requirements, the AWS GovCloud (US) framework adheres to U.S. International Traffic in Arms Regulations (ITAR) regulations. Additional information is available at http://aws.amazon.com/govcloud-",
+  "input_hash": "f17856e89a1d1ae6"
+ },
+ {
+  "service": "AWS IoT TwinMaker",
+  "hosts": [
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AWS GovCloud (US) is an AWS Region designed to allow US government agencies and customers supporting the US government to move more sensitive workloads into the cloud. In addition to complying with FedRAMP requirements, the AWS GovCloud (US) framework adheres to U.S. International Traffic in Arms Regulations (ITAR) regulations. Additional information is available at http://aws.amazon.com/govcloud-",
+  "input_hash": "12a82ac0f21e9af9"
+ },
+ {
+  "service": "AWS Key Management Service (KMS)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "da11b13164e08f9d"
+ },
+ {
+  "service": "AWS Lambda",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "47f13a4efa95b253"
+ },
+ {
+  "service": "AWS License Manager",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "545338ea86313b3b"
+ },
+ {
+  "service": "AWS Mainframe Modernization",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "000d051389815793"
+ },
+ {
+  "service": "AWS Managed Services (AMS)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "d6fec0552f00fa4f"
+ },
+ {
+  "service": "AWS Network Firewall",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "3830027fa0c4eb2c"
+ },
+ {
+  "service": "AWS Network Manager",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "46226a1a505a637d"
+ },
+ {
+  "service": "AWS Organizations",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "2dc1fc7e55bc423d"
+ },
+ {
+  "service": "AWS Outposts (software)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "15ae79e363d17ba9"
+ },
+ {
+  "service": "AWS Private Certificate Authority",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "0dd88f897445acc5"
+ },
+ {
+  "service": "AWS Resilience Hub",
+  "hosts": [
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AWS GovCloud (US) is an AWS Region designed to allow US government agencies and customers supporting the US government to move more sensitive workloads into the cloud. In addition to complying with FedRAMP requirements, the AWS GovCloud (US) framework adheres to U.S. International Traffic in Arms Regulations (ITAR) regulations. Additional information is available at http://aws.amazon.com/govcloud-",
+  "input_hash": "ea6761ec5ae32c4d"
+ },
+ {
+  "service": "AWS Resource Access Manager (AWS RAM)",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "32e7b44e60253a63"
+ },
+ {
+  "service": "AWS Resource Groups",
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of",
+  "input_hash": "985a33285917092d"
+ }
+]

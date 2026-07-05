@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Archer Risk and Resilience Management (RRM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Archer RRM is a GRC/risk-management software suite (part of RSA Archer); no AI/ML capability is named.",
+  "signals": ["Risk and Resilience Management", "FedHIVE accelerator platform"]
+ },
+ {
+  "service": "Argo Tunnel",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Argo Tunnel is Cloudflare's secure outbound tunneling/networking product, unrelated to AI/ML.",
+  "signals": ["Tunnel", "network", "DDoS"]
+ },
+ {
+  "service": "Armedia Content Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A digital-transformation/enterprise content management platform, not an AI product.",
+  "signals": ["Content Cloud", "digital transformation platform"]
+ },
+ {
+  "service": "Armis APEX Manage",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Armis APEX Manage is the asset-visibility/management console of the Armis security platform; the name signals management functionality rather than an AI capability.",
+  "signals": ["APEX Manage", "Knox Systems multi-tenant platform"]
+ },
+ {
+  "service": "Artifact Analysis",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP Artifact Analysis is a container vulnerability/metadata scanning service, not an AI/ML product.",
+  "signals": ["Artifact Analysis", "Google Cloud Platform"]
+ },
+ {
+  "service": "Artifact Registry",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A package/container image registry (storage service), not AI/ML.",
+  "signals": ["Artifact Registry", "Google Cloud Platform"]
+ },
+ {
+  "service": "Artifact Registry (replaced Container Registry)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same GCP package/container registry storage service as above, just noting it superseded Container Registry.",
+  "signals": ["Artifact Registry", "replaced Container Registry"]
+ },
+ {
+  "service": "Ask Sage In a Box",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Ask Sage is explicitly a multi-modal generative AI platform providing secure access to LLMs (Azure OpenAI GPT, AWS Bedrock, Vertex AI Gemini) for government use.",
+  "signals": ["Multi-modal Generative AI platform", "Azure OpenAI (GPT", "AWS Bedrock Gov (LLMA3", "OpenAI Whisper"]
+ },
+ {
+  "service": "Assured Open Source Software (Assured OSS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Assured OSS is a Google service curating vetted/secured open-source packages, a supply-chain security offering rather than AI/ML.",
+  "signals": ["Assured Open Source Software", "Google Cloud Platform"]
+ },
+ {
+  "service": "Attract (Candidate Relationship Management - CRM)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "NEOGOV Attract is a recruiting/candidate CRM module within an HCM suite; no AI capability is named for this specific service.",
+  "signals": ["Candidate Relationship Management", "Talent Management Software"]
+ },
+ {
+  "service": "Audio and Video Conference Integrations*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty integration feature for conferencing tools, not an AI capability.",
+  "signals": ["Conference Integrations", "PagerDuty Operations Cloud"]
+ },
+ {
+  "service": "Audit",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Audit is a cloud audit-logging service, not AI/ML.",
+  "signals": ["Audit", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Audit & Assurance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A GRC module in Onspring for audit/assurance workflow management, not AI.",
+  "signals": ["Audit & Assurance", "governance, risk management, and compliance"]
+ },
+ {
+  "service": "Audit Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP Audit Manager supports compliance/audit reporting, not an AI/ML capability.",
+  "signals": ["Audit Manager", "Google Cloud Platform"]
+ },
+ {
+  "service": "Audit Trail Reporting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty logging/reporting feature, not AI.",
+  "signals": ["Audit Trail Reporting", "PagerDuty Operations Cloud"]
+ },
+ {
+  "service": "Audit Trails",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Aconex audit trail logging for construction collaboration, not AI.",
+  "signals": ["Audit Trails", "Aconex for Defense"]
+ },
+ {
+  "service": "Augmented Analytics",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Qlik's Augmented Analytics is an embedded AI/ML-driven insight-generation capability within the broader Qlik Cloud Government analytics platform.",
+  "signals": ["Augmented Analytics", "Qlik Cloud Government", "data and analytics technology"]
+ },
+ {
+  "service": "Aurigo Engage",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Aurigo Engage is a capital-planning/construction engagement module; the host snippet's 'AI-powered' language describes the broader Masterworks Cloud platform generally rather than this specific service.",
+  "signals": ["capital planning and construction management", "AI-powered platform (marketing)", "Masterworks Cloud"]
+ },
+ {
+  "service": "Authifi",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Name suggests an authentication/identity federation product; no AI/ML capability is indicated and host context (Palantir PFCS-SS) is generic infrastructure noise.",
+  "signals": ["Authifi", "PFCS-SS supporting services"]
+ },
+ {
+  "service": "Authorium",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Authorium is a govtech policy/contract lifecycle and legislative drafting platform; no AI capability is named.",
+  "signals": ["Authorium", "PFCS-SS supporting services"]
+ },
+ {
+  "service": "Auto-Pause Incident Notifications",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A PagerDuty rules-based incident-noise-reduction feature; no ML capability specifically named.",
+  "signals": ["Auto-Pause", "Incident Notifications", "event orchestration"]
+ },
+ {
+  "service": "Auto-Pause Transient Events",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A PagerDuty rules-based event suppression feature, not an AI capability.",
+  "signals": ["Auto-Pause", "Transient Events", "event orchestration"]
+ },
+ {
+  "service": "AutoML",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Databricks AutoML is a machine-learning automation/model-training tool, a core ML capability.",
+  "signals": ["AutoML", "Databricks", "Machine Learning"]
+ },
+ {
+  "service": "Autodesk BIM Collaborate Pro for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A building-information-modeling collaboration tool for AEC projects, not AI/ML.",
+  "signals": ["BIM Collaborate", "Architecture, Engineering, and Construction"]
+ },
+ {
+  "service": "Autodesk Docs for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Document management for AEC projects, not AI/ML.",
+  "signals": ["Docs for Government", "digital transformation platform"]
+ },
+ {
+  "service": "AutogenAI Federal",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "AutogenAI is a generative-AI platform for drafting proposals/bids; the product name itself denotes an AI writing tool.",
+  "signals": ["AutogenAI", "Federal", "generative"]
+ },
+ {
+  "service": "Automated Evidence collection",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "RegScale's automated evidence collection is a GRC/compliance automation feature (rule/integration-driven), not an ML capability.",
+  "signals": ["Automated Evidence collection", "Continuous Controls Monitoring", "GRC"]
+ },
+ {
+  "service": "Automated Private App Validation",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A Splunk Cloud automated validation/testing feature for private apps, not an AI/ML capability.",
+  "signals": ["Automated Private App Validation", "operational intelligence"]
+ },
+ {
+  "service": "Automation",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Automation provides runbook/configuration automation (process automation), not AI/ML.",
+  "signals": ["Automation", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Automotive Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce Automotive Cloud is an industry-vertical CRM product, not an AI capability.",
+  "signals": ["Automotive Cloud", "CRM", "Government Cloud Plus"]
+ },
+ {
+  "service": "Autonomous Dedicated",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Oracle Autonomous Database (Dedicated) is a self-managing database offering; despite ML-driven internal automation, it is fundamentally a database/infrastructure product per rubric defaults.",
+  "signals": ["Autonomous Dedicated", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Autonomous Shared",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Oracle Autonomous Database (Shared) is a self-managing database offering; a database/infrastructure product, not a customer-facing AI capability.",
+  "signals": ["Autonomous Shared", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Autoscale",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Appian's Autoscale is infrastructure elasticity/capacity management, not AI/ML.",
+  "signals": ["Autoscale", "Appian Government Cloud"]
+ },
+ {
+  "service": "Autoscaling",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle OCI Autoscaling is compute resource scaling, not AI/ML.",
+  "signals": ["Autoscaling", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Axiad Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Axiad Cloud/Conductor is a credential management and PKI/MFA platform, not an AI product.",
+  "signals": ["credential management system", "phishing-resistant multi-factor authentication"]
+ },
+ {
+  "service": "Azure AI  Personalizer",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Personalizer is a reinforcement-learning-based content personalization API, a core ML service.",
+  "signals": ["Azure AI", "Personalizer"]
+ },
+ {
+  "service": "Azure AI - Computer Vision",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Computer Vision is a core CV/ML API for image analysis.",
+  "signals": ["Azure AI", "Computer Vision"]
+ },
+ {
+  "service": "Azure AI - Container Platform",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Listed under the Azure AI service family but the name denotes container hosting infrastructure for AI workloads rather than a model/inference capability itself.",
+  "signals": ["Azure AI", "Container Platform"]
+ },
+ {
+  "service": "Azure AI - Content Moderator",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Content Moderator is an ML-based content moderation API.",
+  "signals": ["Azure AI", "Content Moderator"]
+ },
+ {
+  "service": "Azure AI - Custom Vision",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Custom Vision is a service for training custom image-classification ML models.",
+  "signals": ["Azure AI", "Custom Vision"]
+ },
+ {
+  "service": "Azure AI - Face",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Face is an ML-based facial detection/recognition API.",
+  "signals": ["Azure AI", "Face"]
+ },
+ {
+  "service": "Azure AI - Form Recognizer",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Form Recognizer is an ML document-intelligence/data-extraction API.",
+  "signals": ["Azure AI", "Form Recognizer"]
+ },
+ {
+  "service": "Azure AI - Language Understanding",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Language Understanding (LUIS) is an NLP intent/entity recognition service.",
+  "signals": ["Azure AI", "Language Understanding"]
+ },
+ {
+  "service": "Azure AI - Personalizer",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Personalizer is a reinforcement-learning-based content personalization API, a core ML service.",
+  "signals": ["Azure AI", "Personalizer"]
+ },
+ {
+  "service": "Azure AI - QnA Maker",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure QnA Maker is an NLP question-answering service.",
+  "signals": ["Azure AI", "QnA Maker"]
+ },
+ {
+  "service": "Azure AI - Text Analytics",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Text Analytics is an NLP API for sentiment/entity/key-phrase extraction.",
+  "signals": ["Azure AI", "Text Analytics"]
+ },
+ {
+  "service": "Azure AI - Translator Text",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Translator Text is a machine-translation API.",
+  "signals": ["Azure AI", "Translator Text"]
+ },
+ {
+  "service": "Azure AI Content Safety",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure AI Content Safety is an ML-based content moderation/safety classification service (including for generative AI outputs).",
+  "signals": ["Azure AI Content Safety"]
+ },
+ {
+  "service": "Azure AI Document Intelligence",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure AI Document Intelligence (successor to Form Recognizer) is an ML document-extraction service.",
+  "signals": ["Azure AI Document Intelligence"]
+ },
+ {
+  "service": "Azure AI Foundry Portal",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure AI Foundry is Microsoft's platform for building, deploying, and managing generative AI models and applications.",
+  "signals": ["Azure AI Foundry Portal"]
+ }
+]

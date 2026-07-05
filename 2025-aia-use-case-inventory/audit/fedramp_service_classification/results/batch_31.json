@@ -1,0 +1,289 @@
+[
+ {
+  "service": "WAN-as-a-Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare wide-area networking connectivity service, not AI.",
+  "signals": ["WAN-as-a-Service"]
+ },
+ {
+  "service": "Waiting Room",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare traffic-queueing feature to manage site load spikes, not AI.",
+  "signals": ["Waiting Room"]
+ },
+ {
+  "service": "Warp ZT",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's zero-trust device/VPN client (WARP), not AI.",
+  "signals": ["Warp ZT"]
+ },
+ {
+  "service": "WatchTower and WatchTower Pro Threat Hunting services",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A managed threat-hunting service built on SentinelOne's Singularity platform, whose detection engine is explicitly described as using machine learning and behavioral AI.",
+  "signals": ["Threat Hunting", "machine learning algorithms", "behavioral AI"]
+ },
+ {
+  "service": "Wayfinder Incent Readiness & Response",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "SentinelOne's Wayfinder managed detection/response service runs on the Singularity platform's ML-based behavioral detection engine.",
+  "signals": ["Wayfinder", "machine learning algorithms", "behavioral AI"]
+ },
+ {
+  "service": "Wayfinder MDR Elite",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A managed detection and response tier built on SentinelOne's ML/behavioral-AI detection engine.",
+  "signals": ["MDR", "machine learning algorithms", "behavioral AI"]
+ },
+ {
+  "service": "Wayfinder MDR Essentials",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A managed detection and response tier built on SentinelOne's ML/behavioral-AI detection engine.",
+  "signals": ["MDR", "machine learning algorithms", "behavioral AI"]
+ },
+ {
+  "service": "Wayfinder Threat Hunting",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A managed threat-hunting service built on SentinelOne's ML/behavioral-AI detection engine.",
+  "signals": ["Threat Hunting", "machine learning algorithms", "behavioral AI"]
+ },
+ {
+  "service": "Web Analytics",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare web traffic analytics/reporting feature, not AI.",
+  "signals": ["Web Analytics"]
+ },
+ {
+  "service": "Web Application Acceleration (WAA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle CDN/content-acceleration service, not AI.",
+  "signals": ["Application Acceleration"]
+ },
+ {
+  "service": "Web Application Firewall",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard Azure WAF, a rules-based perimeter security control, not AI.",
+  "signals": ["Web Application Firewall"]
+ },
+ {
+  "service": "Web Application Firewall (WAF) with API Protection",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cloudflare's WAF/API protection is primarily managed-ruleset and schema-validation based, not an ML/AI capability.",
+  "signals": ["Web Application Firewall", "API Protection"]
+ },
+ {
+  "service": "Web Application Firewall (WAFv2)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud's rules-based WAF, not AI.",
+  "signals": ["Web Application Firewall"]
+ },
+ {
+  "service": "Web Apps (App Service)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure App Service PaaS hosting for web apps, not AI.",
+  "signals": ["App Service"]
+ },
+ {
+  "service": "Web Apps (App Service) Windows Virtual Desktop",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure App Service / Windows Virtual Desktop hosting, not AI.",
+  "signals": ["App Service", "Virtual Desktop"]
+ },
+ {
+  "service": "Web Risk API*",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Google's Web Risk API is primarily a threat-intelligence/blocklist lookup service for unsafe URLs; not framed as an AI capability by name.",
+  "signals": ["Web Risk API"]
+ },
+ {
+  "service": "Webex for Government Calling",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cisco Webex VoIP calling feature, not AI.",
+  "signals": ["Calling"]
+ },
+ {
+  "service": "Windows 10 IoT Core Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IoT operating system service, not AI.",
+  "signals": ["Windows 10 IoT Core"]
+ },
+ {
+  "service": "Windows 365 (W365)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloud PC / virtual desktop service, not AI.",
+  "signals": ["Windows 365"]
+ },
+ {
+  "service": "Windows Autopatch and Microsoft Managed Desktop",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Patch management and managed desktop service, not AI.",
+  "signals": ["Autopatch", "Managed Desktop"]
+ },
+ {
+  "service": "Windows Update for Business reports",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Patch-compliance reporting feature, not AI.",
+  "signals": ["Windows Update for Business reports"]
+ },
+ {
+  "service": "Windows Virtual Desktop",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure VDI service, not AI.",
+  "signals": ["Virtual Desktop"]
+ },
+ {
+  "service": "Wiz Advanced for Government",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cloud security posture management tier based on graph-based risk correlation, not primarily an ML/AI capability.",
+  "signals": ["Wiz for Gov", "unified view of risk"]
+ },
+ {
+  "service": "Wiz Code for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Code/IaC security scanning module, not AI.",
+  "signals": ["Wiz Code"]
+ },
+ {
+  "service": "Wiz Defend for Government",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cloud detection and response module built on Wiz's graph-based risk correlation rather than an ML-centric detection engine.",
+  "signals": ["Wiz Defend"]
+ },
+ {
+  "service": "Wiz Essential for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Base-tier cloud security posture management, not AI.",
+  "signals": ["Wiz Essential"]
+ },
+ {
+  "service": "Wiz Sensor for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Agent/sensor component for cloud workload scanning, not AI.",
+  "signals": ["Sensor"]
+ },
+ {
+  "service": "Workers",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's serverless edge-compute platform, not AI.",
+  "signals": ["Workers"]
+ },
+ {
+  "service": "Workers KV",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's edge key-value data store, not AI.",
+  "signals": ["Workers KV"]
+ },
+ {
+  "service": "Workflow and Document Approvals including online reviews with markup",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Aconex document-approval/collaboration workflow feature, not AI.",
+  "signals": ["Document Approvals", "online reviews with markup"]
+ },
+ {
+  "service": "Workflows*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's serverless orchestration service, not AI.",
+  "signals": ["Workflows"]
+ },
+ {
+  "service": "Workforce Exchange",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "A talent-marketplace module of Eightfold's Talent Intelligence Platform, whose core matching/recommendation capability is built on Eightfold's AI models per the host description ('uses advanced AI to optimize every phase of the talent lifecycle').",
+  "signals": ["Eightfold AI", "advanced AI", "Talent Intelligence Platform", "Workforce Exchange"]
+ },
+ {
+  "service": "Workplace Command Center + Employee Wellness Check",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A Salesforce public-sector workplace-safety dashboard/checklist tool; the platform's 'smart insights' phrasing is generic marketing rather than a specific embedded AI feature of this product.",
+  "signals": ["Command Center", "Wellness Check"]
+ },
+ {
+  "service": "Zabbix Monitoring Servers (Server and application monitoring)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Plain server/application monitoring tool, not AI.",
+  "signals": ["Monitoring"]
+ },
+ {
+  "service": "Zero Trust Network Access",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare ZTNA access-control service, not AI.",
+  "signals": ["Zero Trust Network Access"]
+ },
+ {
+  "service": "eAlert Messaging Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A notification/messaging service, not AI.",
+  "signals": ["Messaging Services"]
+ },
+ {
+  "service": "eForms (Employee Document Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV document-management feature, not AI.",
+  "signals": ["Document Management"]
+ },
+ {
+  "service": "eSSESSMENT",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be an online assessment/testing tool hosted on Knox Systems; no clear AI/ML signal in the name.",
+  "signals": ["eSSESSMENT"]
+ },
+ {
+  "service": "eShare",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A file-sharing service on the SMX Elevate platform, not AI.",
+  "signals": ["eShare"]
+ },
+ {
+  "service": "n8n for Government by Bluescape",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "n8n is a workflow-automation/integration tool; its base capability is orchestration, not an embedded ML/AI feature.",
+  "signals": ["n8n", "workflow"]
+ },
+ {
+  "service": "reCAPTCHA Enterprise*",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Google reCAPTCHA Enterprise's core function is a machine-learning risk-analysis engine that scores traffic as human vs. bot/fraudulent.",
+  "signals": ["reCAPTCHA Enterprise"]
+ }
+]

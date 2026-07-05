@@ -1,0 +1,726 @@
+[
+ {
+  "service": "Falcon Spotlight",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "da89960b4bbc7d73"
+ },
+ {
+  "service": "Falcon for Mobile",
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect ",
+  "input_hash": "10de9dd70264fd10"
+ },
+ {
+  "service": "FastConnect",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "c46d6507389a36e9"
+ },
+ {
+  "service": "Feature Store",
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2324740262",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine",
+  "input_hash": "46bf073567b4e273"
+ },
+ {
+  "service": "Feature Store, Jobs & Workflows",
+  "hosts": [
+   {
+    "fedramp_id": "FR2324740262",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine",
+  "input_hash": "c079d0e165d05077"
+ },
+ {
+  "service": "Federal Aid Reimbursement",
+  "hosts": [
+   {
+    "fedramp_id": "FR2031222637",
+    "csp": "Aurigo Software Technologies, Inc.",
+    "cso": "Masterworks Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Aurigo Masterworks Cloud is a capital planning and construction management solution designed exclusively for public agencies. Masterworks Cloud empowers federal, state, and local governments with a secure, AI-powered platform to plan, fund, and deliver infrastructure projects efficiently. With end-to-end capital planning, federal aid reimbursement, and construction project management, agencies can",
+  "input_hash": "2c0b867198235e62"
+ },
+ {
+  "service": "Federated Search",
+  "hosts": [
+   {
+    "fedramp_id": "F1607197917",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP Moderate",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Splunk Cloud provides operational intelligence capabilities to organizations around the world. It provides an easy and fast way to analyze the massive streams of machine-generated data coming from IT systems and applications, wherever they are deployed-on-premises, in virtualized environments or in the cloud.\n\r\nSplunk Cloud delivers the Splunk Enterprise software in a cloud environment where the s",
+  "input_hash": "45d95668746375fb"
+ },
+ {
+  "service": "Feedback Management",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "524295cb082db191"
+ },
+ {
+  "service": "FigJam",
+  "hosts": [
+   {
+    "fedramp_id": "FR2311345531",
+    "csp": "Figma",
+    "cso": "Figma for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Figma is a design and development platform for teams who build\r\nproducts together. Figma for Government's authorization boundary currently covers Figma Design, FigJam, Figma Slides, Dev Mode, Figma\r\nDraw, and Figma Make.",
+  "input_hash": "9c11e94a6a517d9f"
+ },
+ {
+  "service": "Figma",
+  "hosts": [
+   {
+    "fedramp_id": "FR2311345531",
+    "csp": "Figma",
+    "cso": "Figma for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Figma is a design and development platform for teams who build\r\nproducts together. Figma for Government's authorization boundary currently covers Figma Design, FigJam, Figma Slides, Dev Mode, Figma\r\nDraw, and Figma Make.",
+  "input_hash": "a17ccfdc9974e6f2"
+ },
+ {
+  "service": "File Integrity Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "a1c18ed66d08aaab"
+ },
+ {
+  "service": "File Storage",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "4ff3cbb09782daf8"
+ },
+ {
+  "service": "FileCloud",
+  "hosts": [
+   {
+    "fedramp_id": "FR1802451335",
+    "csp": "Human Resources Technologies, Inc. (HRTec)",
+    "cso": "Federal High Impact Virtualized Environment (FedHIVE)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "FedHIVE\u00ae is the only FedRAMP High Authorized accelerator platform delivering Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) capabilities within a single High-impact authorization boundary. Originally granted a Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP High baseline, FedHIVE enables broad reuse across ",
+  "input_hash": "0ec655c914bd9715"
+ },
+ {
+  "service": "Filestore (Basic HDD and Basic SSD tiers)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "c0a4b8526c34884e"
+ },
+ {
+  "service": "Firebase Authentication*",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "618271739b51c614"
+ },
+ {
+  "service": "Firestore (replaced Datastore; excluding Firestore with MongoDB compatibility)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "04d2f3d940436e6f"
+ },
+ {
+  "service": "Firewall Insights",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "1dd1999f1a718df2"
+ },
+ {
+  "service": "First Due Fire and EMS RMS Software",
+  "hosts": [
+   {
+    "fedramp_id": "FR1802451335",
+    "csp": "Human Resources Technologies, Inc. (HRTec)",
+    "cso": "Federal High Impact Virtualized Environment (FedHIVE)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "FedHIVE\u00ae is the only FedRAMP High Authorized accelerator platform delivering Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) capabilities within a single High-impact authorization boundary. Originally granted a Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP High baseline, FedHIVE enables broad reuse across ",
+  "input_hash": "f29a08d3d913fefc"
+ },
+ {
+  "service": "Flow Orchestration",
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a",
+  "input_hash": "bbd11529bd55e298"
+ },
+ {
+  "service": "Fluid Relay Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "3ac520a18985a516"
+ },
+ {
+  "service": "Form Assembly Government Cloud",
+  "hosts": [
+   {
+    "fedramp_id": "FR1802451335",
+    "csp": "Human Resources Technologies, Inc. (HRTec)",
+    "cso": "Federal High Impact Virtualized Environment (FedHIVE)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "FedHIVE\u00ae is the only FedRAMP High Authorized accelerator platform delivering Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) capabilities within a single High-impact authorization boundary. Originally granted a Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP High baseline, FedHIVE enables broad reuse across ",
+  "input_hash": "61665140ba731fce"
+ },
+ {
+  "service": "Forms",
+  "hosts": [
+   {
+    "fedramp_id": "F1206081364",
+    "csp": "Google",
+    "cso": "Google Workspace",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please re",
+  "input_hash": "4a59ff809280f955"
+ },
+ {
+  "service": "Foundry",
+  "hosts": [
+   {
+    "fedramp_id": "FR2434554673",
+    "csp": "Palantir Technologies Inc.",
+    "cso": "Palantir Federal Cloud Service",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Palantir Federal Cloud Service (PFCS) is a dedicated environment for the purpose of delivering Palantir software to federal government customers as a cloud service. Palantir software, including Foundry, AIP, Gotham, Apollo, and supporting products utilizing the same infrastructure, enables a multitude of collaborative and operational workflows for end government users. Palantir enables organiz",
+  "input_hash": "2190d3f7d9b7dd61"
+ },
+ {
+  "service": "Full Stack Disaster Recovery",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "58a1e8f3a2f9bc10"
+ },
+ {
+  "service": "Full Stack Observability: AI Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "abce05bf22a46034"
+ },
+ {
+  "service": "Full Stack Observability: Application Performance Monitoring (APM)",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "8d4a8482f6082249"
+ },
+ {
+  "service": "Full Stack Observability: Browser Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "583d3a763877f18a"
+ },
+ {
+  "service": "Full Stack Observability: Cloud Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "1bd92434f86a8cdc"
+ },
+ {
+  "service": "Full Stack Observability: Infrastructure Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "e5e794be7fd84cce"
+ },
+ {
+  "service": "Full Stack Observability: Kubernetes Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "5de382430293356c"
+ },
+ {
+  "service": "Full Stack Observability: Log Management",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "2cf14477f621cff7"
+ },
+ {
+  "service": "Full Stack Observability: Mobile Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "9a16b59a16aadad2"
+ },
+ {
+  "service": "Full Stack Observability: Model Performance Monitoring (MLOps)",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "8bd625f502ebc1d1"
+ },
+ {
+  "service": "Full Stack Observability: Network Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "2ad28ff48e8d7991"
+ },
+ {
+  "service": "Full Stack Observability: OpenTelemetry",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "25308e476418ff36"
+ },
+ {
+  "service": "Full Stack Observability: SAP Solutions",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "37a311be5e3c4357"
+ },
+ {
+  "service": "Full Stack Observability: Serverless Function Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "837092e3fc619e89"
+ },
+ {
+  "service": "Full Stack Observability: Streaming Video & Ads",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "eed2b0ff01079d1a"
+ },
+ {
+  "service": "Full Stack Observability: Synthetic Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "acab584154165a37"
+ },
+ {
+  "service": "Full Stack Observability: Website Performance Monitoring",
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user ",
+  "input_hash": "1b8bee79cce1d1e2"
+ },
+ {
+  "service": "Full-Featured Mobile App for iOS and Android",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "59f4580296b6970e"
+ },
+ {
+  "service": "Functions",
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc",
+  "input_hash": "ebd56d281bfd427f"
+ },
+ {
+  "service": "Fusion Application as a Service",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "75ceea260d0c9ecf"
+ },
+ {
+  "service": "GAV \u2013 Global Asset View",
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g",
+  "input_hash": "25cd28e4e908e020"
+ },
+ {
+  "service": "GCP Assured Workloads",
+  "hosts": [
+   {
+    "fedramp_id": "FR2122150307",
+    "csp": "MongoDB",
+    "cso": "MongoDB Atlas for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "MongoDB Atlas for Government is a fully-managed multi-cloud developer data platform authorized at FedRAMP\u00ae Moderate. Building on MongoDB\u2019s document data model and query API, Atlas for Government automates operational and administrative tasks and offers advanced data distribution capabilities.\r\n\r\n\r\nDesigned to be secure by default, it runs in a FedRAMP Moderate Authorized, dedicated environment tai",
+  "input_hash": "57dd6dca60f4bb22"
+ },
+ {
+  "service": "GKE Config Sync (formerly Config Sync)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "cd55c87acae4e4f7"
+ },
+ {
+  "service": "GKE Hub",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "cad8d3e7422bddf3"
+ },
+ {
+  "service": "GKE Identity Service (formerly Anthos Identity Service (AIS) - [Hybrid Identity])",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "12169157109e43f9"
+ },
+ {
+  "service": "GRID20/20 -  Advanced Transformer Infrastructure (ATI) - Sensor Devices",
+  "hosts": [
+   {
+    "fedramp_id": "F1311222650",
+    "csp": "MIS Sciences Corporation",
+    "cso": "GovPoint Cloud Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "GovPoint Cloud Services (GCS) offers a variety of cloud solutions, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS), custom and private clouds, and 'bring your own hardware' options, allowing tailored cloud solutions to meet specific needs. \r\nOverview of Authorized Services \r\n\u2022\tCalabrio Workforce Engagement Management\r\n\u2022\tGRID20/20 - Advanced ",
+  "input_hash": "e398af5256fad6ed"
+ },
+ {
+  "service": "GSS One Admin Center",
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove",
+  "input_hash": "315bcbe8dfcdf820"
+ }
+]

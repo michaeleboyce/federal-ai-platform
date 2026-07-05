@@ -1,0 +1,834 @@
+[
+ {
+  "service": "Amazon Kinesis Video Streams",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Video stream ingestion/storage service; downstream AI (e.g., Rekognition) is a separate service, not this one.",
+   "signals": "[\"video streaming\", \"ingestion\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AWS GovCloud (US) is an AWS Region designed to allow US government agencies and customers supporting the US government to move more sensitive workloads into the cloud. In addition to complying with FedRAMP requirements, the AWS GovCloud (US) framework adheres to U.S. International Traffic in Arms Regulations (ITAR) regulations. Additional information is available at http://aws.amazon.com/govcloud-"
+ },
+ {
+  "service": "Amazon Lex",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Conversational AI service for building chatbots/voicebots using NLU/ASR.",
+   "signals": "[\"conversational AI\", \"chatbot\", \"NLU\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Polly",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Text-to-speech synthesis service using deep-learning voice models.",
+   "signals": "[\"text-to-speech\", \"Polly\", \"speech synthesis\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Q Business",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Amazon Q Business is AWS's generative-AI assistant/chatbot for enterprise data and workflows, a direct chat-assistant/copilot product.",
+   "signals": "[\"Amazon Q\", \"Business\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Q Developer in chat applications",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Amazon Q Developer is AWS's GenAI coding assistant/copilot; the chat-application integration is still the same LLM-backed assistant.",
+   "signals": "[\"Amazon Q Developer\", \"chat applications\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Quick Suite",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Quick Suite is AWS's agentic AI productivity/BI suite (successor bundling Q/QuickSight capabilities with AI agents), matching the agent-builder/copilot definition of core_ai.",
+   "signals": "[\"Quick Suite\", \"Amazon\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Rekognition",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Rekognition is AWS's computer-vision API for image/video analysis, a canonical core_ai ML service.",
+   "signals": "[\"Rekognition\", \"computer vision\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon SageMaker AI",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "SageMaker is AWS's ML model training/hosting/tooling platform, explicitly named as core_ai in the rubric.",
+   "signals": "[\"SageMaker AI\", \"ML platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Textract",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Textract is AWS's ML-based document-intelligence/OCR API, a canonical core_ai service.",
+   "signals": "[\"Textract\", \"document\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Transcribe",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Transcribe is AWS's ML-based speech-to-text API, a canonical core_ai service.",
+   "signals": "[\"Transcribe\", \"speech\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Translate",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Translate is AWS's ML-based machine-translation API, a canonical core_ai service.",
+   "signals": "[\"Translate\", \"translation\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "Amazon Verified Permissions",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Policy-based fine-grained authorization service (Cedar); no AI/ML capability.",
+   "signals": "[\"Verified Permissions\", \"authorization\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "AGENCYAMAZONEW",
+    "csp": "Amazon",
+    "cso": "AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "F1603047866",
+    "csp": "Amazon",
+    "cso": "AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Amazon US East/West is a multi-tenant public cloud for Federal, State and Local Government customers, as well as commercial customers, designed to meet a wide range of regulatory requirements, to include government compliance and security requirements. AWS leverages the Infrastructure-as-a-Service (IaaS) cloud computing model, which enables convenient, on-demand Internet access to a shared pool of"
+ },
+ {
+  "service": "AppOmni SaaS Security for Government",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "AppOmni is a SaaS security posture-management platform; the snippet mentions generic threat detection/monitoring without a clear ML/AI claim.",
+   "signals": "[\"posture management\", \"threat detection and response\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2431264500",
+    "csp": "AppOmni",
+    "cso": "AppOmni SaaS Security for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "AppOmni SaaS Security for Government is a SaaS security platform designed to protect SaaS applications with posture management, threat detection and response, and identity security capabilities. The AppOmni Platform uses an application programming interface (API) connector to scan customer SaaS instances to discover, protect, and continuously monitor SaaS applications and data. AppOmni can discove"
+ },
+ {
+  "service": "Application Gateway",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Azure's layer-7 load balancer/reverse proxy service; no AI/ML capability.",
+   "signals": "[\"Application Gateway\", \"Azure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Application Insights",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Azure APM/telemetry monitoring service; plain monitoring per the rubric's not_ai examples, despite some anomaly-detection heuristics.",
+   "signals": "[\"Application Insights\", \"monitoring\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Application Performance Monitoring (APM)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Oracle Cloud APM/monitoring service; plain monitoring, explicitly a not_ai category example.",
+   "signals": "[\"Performance Monitoring\", \"APM\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Applications - including Lightning Force 100, Lightning Platform Plus, and Lightning Platform Starter",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "Salesforce's Lightning Platform app-building tiers are low-code CRM/application platform offerings without a stated AI/ML feature in the snippet.",
+   "signals": "[\"Lightning Platform\", \"Lightning Force\", \"CRM\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a"
+ },
+ {
+  "service": "Ask Sage In a Box",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Ask Sage is explicitly a multi-modal generative AI platform providing secure access to LLMs (Azure OpenAI GPT, AWS Bedrock, Vertex AI Gemini) for government use.",
+   "signals": "[\"Multi-modal Generative AI platform\", \"Azure OpenAI (GPT\", \"AWS Bedrock Gov (LLMA3\", \"OpenAI Whisper\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2401839361",
+    "csp": "Ask Sage, Inc.",
+    "cso": "Ask Sage",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Ask Sage is a Multi-modal Generative AI platform designed specifically to enable secure access to Generative AI models for both government teams. Ask Sage is built on Generative AI technologies such as Azure OpenAI (GPT 3.5, GPT 4, GPT 4o etc.), AWS Bedrock Gov (LLMA3, Titan etc.), Google Vertex AI (Google Gemini Pro 1.5 etc.), and various open-source LLMs.\n\nAsk Sage also supports OpenAI Whisper, "
+ },
+ {
+  "service": "Authifi",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Name suggests an authentication/identity federation product; no AI/ML capability is indicated and host context (Palantir PFCS-SS) is generic infrastructure noise.",
+   "signals": "[\"Authifi\", \"PFCS-SS supporting services\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "Authorium",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Authorium is a govtech policy/contract lifecycle and legislative drafting platform; no AI capability is named.",
+   "signals": "[\"Authorium\", \"PFCS-SS supporting services\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "AutoML",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Databricks AutoML is a machine-learning automation/model-training tool, a core ML capability.",
+   "signals": "[\"AutoML\", \"Databricks\", \"Machine Learning\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1834740315",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS US East/West",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2324740262",
+    "csp": "Databricks, Inc.",
+    "cso": "Databricks on AWS GovCloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Databricks Data Intelligence Platform is a unified, AI-powered platform built on a lakehouse architecture to provide an open, unified foundation for all data and governance, and is powered by a Data Intelligence Engine & Apache Spark\u2122 that understands the uniqueness of your data. It enables organizations to process, govern, and extract actionable insights from all their data using both Machine"
+ },
+ {
+  "service": "AutogenAI Federal",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "AutogenAI is a generative-AI platform for drafting proposals/bids; the product name itself denotes an AI writing tool.",
+   "signals": "[\"AutogenAI\", \"Federal\", \"generative\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "Automated Private App Validation",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "A Splunk Cloud automated validation/testing feature for private apps, not an AI/ML capability.",
+   "signals": "[\"Automated Private App Validation\", \"operational intelligence\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1607197917",
+    "csp": "Splunk",
+    "cso": "Splunk Cloud Platform for FedRAMP Moderate",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Splunk Cloud provides operational intelligence capabilities to organizations around the world. It provides an easy and fast way to analyze the massive streams of machine-generated data coming from IT systems and applications, wherever they are deployed-on-premises, in virtualized environments or in the cloud.\n\r\nSplunk Cloud delivers the Splunk Enterprise software in a cloud environment where the s"
+ },
+ {
+  "service": "Automation",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Azure Automation provides runbook/configuration automation (process automation), not AI/ML.",
+   "signals": "[\"Automation\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Autoscaling",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Oracle OCI Autoscaling is compute resource scaling, not AI/ML.",
+   "signals": "[\"Autoscaling\", \"Oracle Cloud Infrastructure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Azure AI  Personalizer",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Personalizer is a reinforcement-learning-based content personalization API, a core ML service.",
+   "signals": "[\"Azure AI\", \"Personalizer\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure AI - Computer Vision",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Computer Vision is a core CV/ML API for image analysis.",
+   "signals": "[\"Azure AI\", \"Computer Vision\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - Container Platform",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "Listed under the Azure AI service family but the name denotes container hosting infrastructure for AI workloads rather than a model/inference capability itself.",
+   "signals": "[\"Azure AI\", \"Container Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - Content Moderator",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Content Moderator is an ML-based content moderation API.",
+   "signals": "[\"Azure AI\", \"Content Moderator\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - Custom Vision",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Custom Vision is a service for training custom image-classification ML models.",
+   "signals": "[\"Azure AI\", \"Custom Vision\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - Face",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Face is an ML-based facial detection/recognition API.",
+   "signals": "[\"Azure AI\", \"Face\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - Form Recognizer",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Form Recognizer is an ML document-intelligence/data-extraction API.",
+   "signals": "[\"Azure AI\", \"Form Recognizer\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - Language Understanding",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Language Understanding (LUIS) is an NLP intent/entity recognition service.",
+   "signals": "[\"Azure AI\", \"Language Understanding\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - Personalizer",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Personalizer is a reinforcement-learning-based content personalization API, a core ML service.",
+   "signals": "[\"Azure AI\", \"Personalizer\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - QnA Maker",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure QnA Maker is an NLP question-answering service.",
+   "signals": "[\"Azure AI\", \"QnA Maker\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - Text Analytics",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Text Analytics is an NLP API for sentiment/entity/key-phrase extraction.",
+   "signals": "[\"Azure AI\", \"Text Analytics\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI - Translator Text",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Translator Text is a machine-translation API.",
+   "signals": "[\"Azure AI\", \"Translator Text\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI Content Safety",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure AI Content Safety is an ML-based content moderation/safety classification service (including for generative AI outputs).",
+   "signals": "[\"Azure AI Content Safety\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure AI Document Intelligence",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure AI Document Intelligence (successor to Form Recognizer) is an ML document-extraction service.",
+   "signals": "[\"Azure AI Document Intelligence\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure AI Foundry Portal",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure AI Foundry is Microsoft's platform for building, deploying, and managing generative AI models and applications.",
+   "signals": "[\"Azure AI Foundry Portal\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ }
+]

@@ -1,0 +1,732 @@
+[
+ {
+  "service": "Office for Web (including Microsoft 365 for the web, Visio for the web, Microsoft Editor premium features, Multilingual user interface for Microsoft 365 apps)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server",
+  "input_hash": "993dec416d914fcd"
+ },
+ {
+  "service": "Okta Device Access",
+  "hosts": [
+   {
+    "fedramp_id": "FR2131856836",
+    "csp": "Okta",
+    "cso": "Okta IDaaS Government High Cloud (GHC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Okta for Government High service offering provides centralized identity and access management capabilities to customers who want to manage access across any application or device, whether they are on-premises in the customer\u2019s office/data center or in the cloud. The Okta IDaaS platform is the primary application platform provided to customers. The IDaaS application provides several important featu",
+  "input_hash": "a530f4ca48c87a62"
+ },
+ {
+  "service": "Okta Identity Governance (OIG)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2131856836",
+    "csp": "Okta",
+    "cso": "Okta IDaaS Government High Cloud (GHC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Okta for Government High service offering provides centralized identity and access management capabilities to customers who want to manage access across any application or device, whether they are on-premises in the customer\u2019s office/data center or in the cloud. The Okta IDaaS platform is the primary application platform provided to customers. The IDaaS application provides several important featu",
+  "input_hash": "9e59a4277c0af5ce"
+ },
+ {
+  "service": "Okta Workflows",
+  "hosts": [
+   {
+    "fedramp_id": "FR2131856836",
+    "csp": "Okta",
+    "cso": "Okta IDaaS Government High Cloud (GHC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Okta for Government High service offering provides centralized identity and access management capabilities to customers who want to manage access across any application or device, whether they are on-premises in the customer\u2019s office/data center or in the cloud. The Okta IDaaS platform is the primary application platform provided to customers. The IDaaS application provides several important featu",
+  "input_hash": "2f9dcd3f8350cd9d"
+ },
+ {
+  "service": "On-call Schedules",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "e493eb9a024a55eb"
+ },
+ {
+  "service": "On-prem and Cloud connectivity",
+  "hosts": [
+   {
+    "fedramp_id": "FR2125653037",
+    "csp": "Qlik Technologies Inc.",
+    "cso": "Qlik Cloud Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Qlik Cloud Government is a SaaS platform purpose-built for delivering Qlik technology to U.S. public sector customers within a safe, FedRAMP-compliant cloud environment. Qlik empowers organizations with data and analytics technology that improves decision-making and solves their most challenging problems. Qlik Cloud Government simplifies data and analytics operations across an organization through",
+  "input_hash": "5ed281446f5feac2"
+ },
+ {
+  "service": "Onboard (Employee Onboarding)",
+  "hosts": [
+   {
+    "fedramp_id": "FR2119265538",
+    "csp": "NEOGOV",
+    "cso": "NEOGOV Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "NEOGOV is a Software as a Service (SaaS) provider of cloud-based workforce management solutions, uniquely designed for the public sector, higher education, and public safety.\n\nNEOGOV offers Human Capital Management (HCM), Human Resource Information System (HRIS), and Talent Management Software (TMS) solutions that empower government agencies to seamlessly source, recruit, hire, onboard, develop, a",
+  "input_hash": "e1c180e1fbcd707e"
+ },
+ {
+  "service": "One Touch to Join to Conference Bridge*",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "0661a748b69b7c4c"
+ },
+ {
+  "service": "OneDrive SharePoint (ODSP) (including SharePoint Kiosk (2 GB OneDrive storage) , SharePoint Plan 1 (10 GB storage, 1 TB OneDrive storage), SharePoint Plan 2 (10 GB storage, 1+ TB OneDrive storage), Microsoft Lists, SharePoint Advanced Management, Microsoft 365 Extra File Storage, Viva Connections)",
+  "hosts": [
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government. These cloud-based services are designed to provide organizations with streamlined commu",
+  "input_hash": "7c2b3acb8de1a249"
+ },
+ {
+  "service": "OneDrive SharePoint (ODSP) (including SharePoint Kiosk (2 GB OneDrive storage), SharePoint Plan 1 (10GB Storage, 1 TB OneDrive storage), SharePoint Plan 2  (10GB storage, 1+ TB OneDrive storage), Microsoft Lists, SharePoint Advanced Management, Extra Graph Connector Capacity, Office 365 Extra File Storage)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server",
+  "input_hash": "f0e0d71d77e118e8"
+ },
+ {
+  "service": "OneNet",
+  "hosts": [
+   {
+    "fedramp_id": "FR1802451335",
+    "csp": "Human Resources Technologies, Inc. (HRTec)",
+    "cso": "Federal High Impact Virtualized Environment (FedHIVE)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "FedHIVE\u00ae is the only FedRAMP High Authorized accelerator platform delivering Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) capabilities within a single High-impact authorization boundary. Originally granted a Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP High baseline, FedHIVE enables broad reuse across ",
+  "input_hash": "728901963db9b77c"
+ },
+ {
+  "service": "OneReach (ONR)",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "851dddede47cffb4"
+ },
+ {
+  "service": "OpenText Asset Management  [+ OpenText Core Asset Management]",
+  "hosts": [
+   {
+    "fedramp_id": "FR2215946050",
+    "csp": "MicroFocus",
+    "cso": "ITMX Platform featuring Service & Asset Management, Universal Discovery, CMDB and Project & Portfolio Management",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "OpenText provides the most complete and integrated Information Management platform, allowing companies to organize, integrate and protect data and content as it flows through business processes inside and outside the organization. The OpenText IT Management Platform (ITMX) offers Service & Asset Management (ITSM, ITAM), Universal Discovery & CMDB, and Project & Portfolio Management (PPM) in AWS Go",
+  "input_hash": "0345a1910b85e9bb"
+ },
+ {
+  "service": "OpenText Project and Portfolio Management [+ OpenText Core Project and Portfolio Management]",
+  "hosts": [
+   {
+    "fedramp_id": "FR2215946050",
+    "csp": "MicroFocus",
+    "cso": "ITMX Platform featuring Service & Asset Management, Universal Discovery, CMDB and Project & Portfolio Management",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "OpenText provides the most complete and integrated Information Management platform, allowing companies to organize, integrate and protect data and content as it flows through business processes inside and outside the organization. The OpenText IT Management Platform (ITMX) offers Service & Asset Management (ITSM, ITAM), Universal Discovery & CMDB, and Project & Portfolio Management (PPM) in AWS Go",
+  "input_hash": "e55dfaabc3d99796"
+ },
+ {
+  "service": "OpenText Service Management [+ OpenText Core Service Management]",
+  "hosts": [
+   {
+    "fedramp_id": "FR2215946050",
+    "csp": "MicroFocus",
+    "cso": "ITMX Platform featuring Service & Asset Management, Universal Discovery, CMDB and Project & Portfolio Management",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "OpenText provides the most complete and integrated Information Management platform, allowing companies to organize, integrate and protect data and content as it flows through business processes inside and outside the organization. The OpenText IT Management Platform (ITMX) offers Service & Asset Management (ITSM, ITAM), Universal Discovery & CMDB, and Project & Portfolio Management (PPM) in AWS Go",
+  "input_hash": "a3a5e5cd2d1ebaa1"
+ },
+ {
+  "service": "OpenText Universal Discovery and CMDB  [+ OpenText Core Universal Discovery and CMDB]",
+  "hosts": [
+   {
+    "fedramp_id": "FR2215946050",
+    "csp": "MicroFocus",
+    "cso": "ITMX Platform featuring Service & Asset Management, Universal Discovery, CMDB and Project & Portfolio Management",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "OpenText provides the most complete and integrated Information Management platform, allowing companies to organize, integrate and protect data and content as it flows through business processes inside and outside the organization. The OpenText IT Management Platform (ITMX) offers Service & Asset Management (ITSM, ITAM), Universal Discovery & CMDB, and Project & Portfolio Management (PPM) in AWS Go",
+  "input_hash": "f85184808b421868"
+ },
+ {
+  "service": "OpenText XMedius",
+  "hosts": [
+   {
+    "fedramp_id": "F1303191948",
+    "csp": "MAXIMUS Inc.",
+    "cso": "MAXIMUS Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Maximus Cloud is a FedRAMP Authorized multi-tenant Private and Government Community Hybrid Cloud designed exclusively for use by government customers only. Built to meet government compliance and security requirements, our managed Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) portfolio of solutions are hosted, managed, secured, and monitored to ",
+  "input_hash": "d771186f974533ce"
+ },
+ {
+  "service": "OpenText\u2122 Content Management (Extended ECM) for Government",
+  "hosts": [
+   {
+    "fedramp_id": "FR2203732438",
+    "csp": "OpenText",
+    "cso": "OpenText Cloud for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "OpenText Cloud for Government is a secure, scalable, cloud environment designed for the unique requirements of FedRAMP compliance. US federal agencies and entities requiring FedRAMP certification can use OpenText Cloud for Government to enable their digital transformation and cloud first initiatives as they move Information Management workloads to the cloud. The following OpenText applications are",
+  "input_hash": "4535fbddd9f29283"
+ },
+ {
+  "service": "OpenText\u2122 Core Application Security (FoD)",
+  "hosts": [
+   {
+    "fedramp_id": "F1301101857",
+    "csp": "OpenText",
+    "cso": "OpenText\u2122 Core Application Security (Fortify On Demand)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The OpenText\u2122 Core Application Security (FoD) for US Public Sector performs security assessments of application code and web site/web services testing without any software to install or manage. Static Code Scanning of code such as Java, .NET and other major programming languages for security defects are performed in the FoD System at the code layer followed by an audit review by a OpenText Fortify",
+  "input_hash": "eb893e60c875e614"
+ },
+ {
+  "service": "OpenText\u2122 Process Automation for Government",
+  "hosts": [
+   {
+    "fedramp_id": "FR2203732438",
+    "csp": "OpenText",
+    "cso": "OpenText Cloud for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "OpenText Cloud for Government is a secure, scalable, cloud environment designed for the unique requirements of FedRAMP compliance. US federal agencies and entities requiring FedRAMP certification can use OpenText Cloud for Government to enable their digital transformation and cloud first initiatives as they move Information Management workloads to the cloud. The following OpenText applications are",
+  "input_hash": "a1782fb74a6b840e"
+ },
+ {
+  "service": "Operational Maturity",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "a0360a4c7ed70cd0"
+ },
+ {
+  "service": "Operational Reviews, On-call Readiness Analytics and Administration",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "0bbbef1480ce25db"
+ },
+ {
+  "service": "Operations Insight",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "b79de6c8eed7606b"
+ },
+ {
+  "service": "Operator Access Control",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "8510321029506cd5"
+ },
+ {
+  "service": "Opterra",
+  "hosts": [
+   {
+    "fedramp_id": "F1603077867",
+    "csp": "SMX (Formerly Smartronix)",
+    "cso": "Elevate Intelligent Automation Platform (IAP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "SMX Elevate Intelligent Automation Platform (IAP) is a FedRAMP-certified PaaS that accelerates secure cloud adoption for commercial and government organizations\u2014even in the most regulated environments. Elevate IAP integrates provisioning, monitoring, security, and lifecycle management to streamline operations, minimize complexity, and mitigate risks.\n\nWhat sets Elevate IAP apart:\n\nBuilt-in complia",
+  "input_hash": "5719c087af00a5ea"
+ },
+ {
+  "service": "Oracle Access Governance",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "b5d408002afafada"
+ },
+ {
+  "service": "Oracle Analytics Cloud",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "6a97a368d822694d"
+ },
+ {
+  "service": "Oracle Cloud AI Services (Anomaly Detection)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "3d7b2e360fca7509"
+ },
+ {
+  "service": "Oracle Cloud AI Services (Language)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "4a79b7c506151c1d"
+ },
+ {
+  "service": "Oracle Cloud AI Services (Speech)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "e3dce40885152517"
+ },
+ {
+  "service": "Oracle Cloud AI Services (Time Series Forecasting Service)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "d05dc967f2bde923"
+ },
+ {
+  "service": "Oracle Cloud AI Services (Vision)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "664df5c28202bc60"
+ },
+ {
+  "service": "Oracle Enterprise Performance Management Enterprise Cloud Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1607077914A",
+    "csp": "Oracle",
+    "cso": "Oracle Enterprise Performance Management (EPM)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management. Customers can s",
+  "input_hash": "e6249c96aa8d8a0f"
+ },
+ {
+  "service": "Oracle Enterprise Performance Management Standard Cloud Service",
+  "hosts": [
+   {
+    "fedramp_id": "F1607077914A",
+    "csp": "Oracle",
+    "cso": "Oracle Enterprise Performance Management (EPM)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Enterprise Performance Management (Oracle Cloud EPM) is a full suite of industry standard EPM business processes comprised of planning (strategy, financial, workforce, capital, projects), budget formulation and execution, consolidation and close, account reconciliation, profitability & cost management, tax reporting, narrative reporting, and enterprise data management. Customers can s",
+  "input_hash": "d1cd7f5613159eaf"
+ },
+ {
+  "service": "Oracle Integration Cloud",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "81ceaafb24d463ec"
+ },
+ {
+  "service": "Oracle Managed Access (OMA)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "876409419456a0ee"
+ },
+ {
+  "service": "Oracle Process Automation (OPA)",
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available ",
+  "input_hash": "bf7aac5ec5fa38d5"
+ },
+ {
+  "service": "Organization Policy Service",
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo",
+  "input_hash": "80a5824e1fb56dfd"
+ },
+ {
+  "service": "Out-of-the-box Integrations, Plus Workflow Extensions*",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "63e158fe07f56d83"
+ },
+ {
+  "service": "OutSystems 11",
+  "hosts": [
+   {
+    "fedramp_id": "F1206111371",
+    "csp": "CoSo Cloud, LLC.",
+    "cso": "Knox Systems",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se",
+  "input_hash": "80fa254d79b72e6e"
+ },
+ {
+  "service": "Outbound Firewall",
+  "hosts": [
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The GSS One AWS is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, government contractors et",
+  "input_hash": "b0a59df34014ed96"
+ },
+ {
+  "service": "Outbound HTTP/HTTPS Proxy",
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove",
+  "input_hash": "a25e48ceaf9d9eaf"
+ },
+ {
+  "service": "Outlier Incidents",
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo",
+  "input_hash": "5cff35b39dc7c492"
+ },
+ {
+  "service": "PC \u2013 Policy Compliance",
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g",
+  "input_hash": "b49475124653f030"
+ },
+ {
+  "service": "PCI \u2013 PCI Compliance",
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g",
+  "input_hash": "b02e4131c4917de4"
+ },
+ {
+  "service": "PHInventory (Server & Software Inventory Management)",
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove",
+  "input_hash": "0d37d35e1df873ec"
+ },
+ {
+  "service": "PM \u2013 Patch Management",
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g",
+  "input_hash": "164507bf2abc2f65"
+ },
+ {
+  "service": "POA&M",
+  "hosts": [
+   {
+    "fedramp_id": "FR2231648178",
+    "csp": "Onspring Technologies, LLC",
+    "cso": "Onspring GovCloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Onspring GovCloud is a FedRAMP-authorized, cloud-based platform designed to support government governance, risk management, and compliance programs. It helps agencies centralize and structure data, enforce data integrity and access controls, manage workflows and deliver real-time reporting across critical processes.\r\n\r\nAgencies use Onspring GovCloud to support programs such as OMB A-123, POA&M, an",
+  "input_hash": "aa442b3a3fed263c"
+ },
+ {
+  "service": "PPAC Admin Analytics",
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog",
+  "input_hash": "a8544dd00657c651"
+ },
+ {
+  "service": "Package Management",
+  "hosts": [
+   {
+    "fedramp_id": "FR1712871948",
+    "csp": "Oracle",
+    "cso": "Aconex for Defense",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Aconex provides the #1 cloud and mobile collaboration platform for the global construction industry. This highly secure platform provides a single source of truth for all program related documents and communications across agency stakeholders and streamlines business process management with standardization across the project lifecycle. Oracle Aconex for Defense brings a modern set of flexib",
+  "input_hash": "9516787e1c1c9caa"
+ }
+]

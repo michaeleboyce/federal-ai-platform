@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Compliance Documents Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A document management service for compliance artifacts on Oracle Cloud; no ML/AI capability indicated by the name.",
+  "signals": ["Compliance Documents", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Compliance Scanning",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Generic compliance/configuration scanning offering on MAXIMUS Cloud, not an ML capability.",
+  "signals": ["Compliance Scanning", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Compliance as Code",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "RegScale's GRC/continuous-controls-monitoring automation product; rules-based compliance tooling, not AI/ML.",
+  "signals": ["Compliance as Code", "GRC", "RegScale"]
+ },
+ {
+  "service": "Compute",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Generic IaaS compute offering.",
+  "signals": ["Compute", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Compute Engine",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Compute Engine is plain virtual-machine IaaS, no AI/ML capability.",
+  "signals": ["Compute Engine", "Google Cloud Platform"]
+ },
+ {
+  "service": "Compute Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Infrastructure monitoring for compute resources, not an AI/ML service.",
+  "signals": ["Compute Monitoring", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Computer Vision",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Computer Vision is Microsoft's image/video analysis ML API (OCR, object detection, tagging).",
+  "signals": ["Computer Vision", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Concur Expense only",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SAP Concur travel-and-expense module; expense tracking/reimbursement, not an AI capability.",
+  "signals": ["Concur Expense", "Concur Cloud for Public Sector"]
+ },
+ {
+  "service": "Concur Request",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Concur's pre-trip request/approval workflow module.",
+  "signals": ["Concur Request", "travel and expense"]
+ },
+ {
+  "service": "Concur Travel & Expense",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Core Concur travel-and-expense booking/management suite.",
+  "signals": ["Concur Travel & Expense"]
+ },
+ {
+  "service": "Concur Travel and Expense",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same as Concur Travel & Expense, a duplicate naming variant.",
+  "signals": ["Concur Travel and Expense"]
+ },
+ {
+  "service": "Concur Travel only (Direct/Indirect)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Concur's travel-booking-only module.",
+  "signals": ["Concur Travel only"]
+ },
+ {
+  "service": "ConcurGov",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Government-branded name for the same Concur travel/expense product.",
+  "signals": ["ConcurGov", "Concur Cloud for Public Sector"]
+ },
+ {
+  "service": "ConductorAI Conduit Platform",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "ConductorAI is a vendor providing AI-driven document/workpaper analysis and automation (e.g., for audit and compliance workflows); \"Conduit Platform\" is its delivery mechanism, hosted here inside Palantir's AI-heavy PFCS-SS boundary.",
+  "signals": ["ConductorAI", "Conduit Platform", "Claude for Government"]
+ },
+ {
+  "service": "Configuration Control Board Tool (powered by JIRA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A change/configuration-control workflow tool built on JIRA, not AI/ML.",
+  "signals": ["powered by JIRA", "Configuration Control Board"]
+ },
+ {
+  "service": "Configuration Management / Change Control Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Generic IT change-control/configuration-management service.",
+  "signals": ["Configuration Management", "Change Control"]
+ },
+ {
+  "service": "Confluence Knowledge Base and Document Repository",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Atlassian Confluence wiki/document repository, a collaboration tool with no core AI capability implied.",
+  "signals": ["Confluence", "Knowledge Base", "Document Repository"]
+ },
+ {
+  "service": "Construction Project Management",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A project-management module within Aurigo Masterworks; the host boilerplate mentions \"AI-powered platform\" generically but the named service itself is standard project management, not a described AI feature.",
+  "signals": ["Construction Project Management", "AI-powered platform (host boilerplate)"]
+ },
+ {
+  "service": "Consultant Service Contracting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Contract/consultant management module in Aurigo Masterworks, not an AI feature.",
+  "signals": ["Consultant Service Contracting"]
+ },
+ {
+  "service": "Consultative Intelligence",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "SAP Concur's \"Consultative Intelligence\" is a machine-learning-driven insights/recommendations feature layered onto the expense suite, secondary to the core travel-and-expense product.",
+  "signals": ["Consultative Intelligence", "Concur"]
+ },
+ {
+  "service": "Contacts",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace contacts/address-book service.",
+  "signals": ["Contacts", "Google Workspace"]
+ },
+ {
+  "service": "Container Engine for Kubernetes (OKE)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's managed Kubernetes container orchestration service, plain infrastructure.",
+  "signals": ["Container Engine for Kubernetes", "OKE"]
+ },
+ {
+  "service": "Container Image Scanning (Amazon Inspector)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Amazon Inspector performs signature/CVE-based vulnerability scanning of container images, not an ML capability.",
+  "signals": ["Container Image Scanning", "Amazon Inspector"]
+ },
+ {
+  "service": "Container Image Scanning (Inspector, Trivy)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Vulnerability scanning tooling (Inspector, Trivy), not AI/ML.",
+  "signals": ["Container Image Scanning", "Trivy"]
+ },
+ {
+  "service": "Container Image Scanning (Microsoft Defender Vulnerability Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Defender Vulnerability Management scans container images for known CVEs/misconfigurations, not a core AI product.",
+  "signals": ["Container Image Scanning", "Defender Vulnerability Management"]
+ },
+ {
+  "service": "Container Platform",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Generic Azure container-hosting platform.",
+  "signals": ["Container Platform", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Container Registry",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Container Registry stores/manages container images, plain infrastructure.",
+  "signals": ["Container Registry", "Azure Government"]
+ },
+ {
+  "service": "Containers on Substrate-Managed Intelligent Clusters (COSMIC) (including Microsoft Search in Bing (MSB), Meeting Intelligence (MEET), Universal Print, Universal Print Volume Add-on, Profile Card (aka Loki), Hauk, Thor)",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "COSMIC is Microsoft 365's internal container-hosting backend infrastructure; \"Intelligent\" here refers to cluster orchestration, not a delivered AI capability, though bundled sub-features like Meeting Intelligence could carry ML elements.",
+  "signals": ["Substrate-Managed Intelligent Clusters", "container", "Meeting Intelligence"]
+ },
+ {
+  "service": "Containers on Substrate-Managed Intelligent Clusters (COSMIC) (including Universal Print, Universal Print Volume Add-on)",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Same COSMIC backend container infrastructure, here bundled only with Universal Print (a printing service), no AI capability named.",
+  "signals": ["Substrate-Managed Intelligent Clusters", "Universal Print"]
+ },
+ {
+  "service": "Contegix TrustStack Atlassian Confluence",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hosted Confluence wiki/collaboration tool.",
+  "signals": ["Atlassian Confluence", "TrustStack"]
+ },
+ {
+  "service": "Contegix TrustStack Atlassian JIRA",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hosted JIRA issue-tracking tool.",
+  "signals": ["Atlassian JIRA", "TrustStack"]
+ },
+ {
+  "service": "Contegix TrustStack Mattermost",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hosted Mattermost team-chat/collaboration tool.",
+  "signals": ["Mattermost", "TrustStack"]
+ },
+ {
+  "service": "Content Delivery Network",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard CDN networking service.",
+  "signals": ["Content Delivery Network", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Content Delivery Network CDN)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's CDN offering, networking/edge acceleration, not AI/ML.",
+  "signals": ["Content Delivery Network", "Cloudflare"]
+ },
+ {
+  "service": "Content Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Generic content/document management service on Oracle Cloud.",
+  "signals": ["Content Management", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Content Management System (CMS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce's CMS for web/content publishing, a CRM-adjacent product, not core AI.",
+  "signals": ["Content Management System", "Salesforce"]
+ },
+ {
+  "service": "Content Moderator",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Content Moderator is Microsoft's ML-based service for automated text/image/video moderation.",
+  "signals": ["Content Moderator", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Content-Based Alert Grouping",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "PagerDuty's Event Intelligence uses machine-learning-based content correlation to group related alerts, an embedded ML feature within the broader incident-response platform.",
+  "signals": ["Content-Based Alert Grouping", "intelligent aggregation", "event orchestration"]
+ },
+ {
+  "service": "Continuous Controls Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "RegScale's rules-based GRC continuous-monitoring platform, not AI/ML.",
+  "signals": ["Continuous Controls Monitoring", "GRC"]
+ },
+ {
+  "service": "Continuous Monitoring (ConMon) Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "FedRAMP-style continuous security monitoring service, not an ML capability.",
+  "signals": ["Continuous Monitoring", "ConMon"]
+ },
+ {
+  "service": "Control Plane Services",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cluster/orchestration control-plane management for Cloudera; the host snippet mentions the broader platform's analytics/AI capabilities, but this named service is infrastructure management, not the AI feature itself.",
+  "signals": ["Control Plane Services", "Cloudera for Government"]
+ },
+ {
+  "service": "CoreHR (Employee Lifecycle Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV's HR/HCM employee lifecycle management module, not AI/ML.",
+  "signals": ["CoreHR", "Employee Lifecycle Management", "NEOGOV"]
+ },
+ {
+  "service": "Cost Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Cost Management is a billing/spend-analysis tool, not AI/ML.",
+  "signals": ["Cost Management", "Azure"]
+ },
+ {
+  "service": "Counter Adversary Elite",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "CrowdStrike Falcon's managed threat-hunting/response tier that runs on the Falcon platform's ML-based detection engine and threat intelligence, an embedded AI capability within a broader cybersecurity service.",
+  "signals": ["Counter Adversary", "CrowdStrike Falcon Platform", "cloud-based intelligence engine"]
+ },
+ {
+  "service": "Counter Adversary Operations",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "CrowdStrike's combined threat-intelligence and managed-hunting offering built on the Falcon platform's ML detection/intelligence engine.",
+  "signals": ["Counter Adversary Operations", "cloud-based intelligence engine", "CrowdStrike Falcon"]
+ },
+ {
+  "service": "Custom Change Event Transformer",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty configuration feature for transforming change-event payloads, rules-based, not AI.",
+  "signals": ["Custom Change Event Transformer"]
+ },
+ {
+  "service": "Custom Connector - Expense",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Concur integration connector for expense data, not an AI feature.",
+  "signals": ["Custom Connector", "Expense"]
+ },
+ {
+  "service": "Custom Fields",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty's configurable metadata fields feature, not AI.",
+  "signals": ["Custom Fields", "PagerDuty"]
+ },
+ {
+  "service": "Custom Incident Actions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty workflow automation for incident response actions, rules-based, not AI/ML.",
+  "signals": ["Custom Incident Actions", "PagerDuty"]
+ },
+ {
+  "service": "Custom Vision",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Custom Vision is a machine-learning service for training custom image classification/object-detection models.",
+  "signals": ["Custom Vision", "Azure Commercial Cloud"]
+ }
+]

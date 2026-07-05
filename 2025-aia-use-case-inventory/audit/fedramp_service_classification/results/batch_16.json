@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Escalation policies",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A configuration feature for routing incident alerts to on-call staff within PagerDuty; rule-based, not AI/ML.",
+  "signals": ["Escalation policies", "PagerDuty", "on-call"]
+ },
+ {
+  "service": "Essential Care",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A support/service tier name within SAP Concur's travel and expense suite, not an AI capability.",
+  "signals": ["Essential Care", "Concur", "support tier"]
+ },
+ {
+  "service": "Estimation and Bidding",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A construction cost-estimation and bid-management module within Aurigo Masterworks; the host's 'AI-powered platform' language is boundary marketing rather than evidence this specific module is ML-driven.",
+  "signals": ["Estimation and Bidding", "capital planning", "construction management"]
+ },
+ {
+  "service": "Event Grid",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Event Grid is a pub/sub eventing/messaging service, not AI/ML.",
+  "signals": ["Event Grid", "Azure"]
+ },
+ {
+  "service": "Event Hubs",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Event Hubs is a data-streaming ingestion service, not AI/ML.",
+  "signals": ["Event Hubs", "Azure"]
+ },
+ {
+  "service": "Event Rule Notes",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty configuration feature for annotating event rules, not AI/ML.",
+  "signals": ["Event Rule Notes", "PagerDuty"]
+ },
+ {
+  "service": "Event Triggered Webhooks*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Webhook notification triggers within PagerDuty, not AI/ML.",
+  "signals": ["Webhooks", "PagerDuty"]
+ },
+ {
+  "service": "EventArc Standard (excluding Advanced)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud EventArc is an event-routing service between GCP services, not AI/ML.",
+  "signals": ["EventArc", "Google Services"]
+ },
+ {
+  "service": "Events",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure Events is a pub/sub notification service, not AI/ML.",
+  "signals": ["Events", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Exadata Cloud Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Exadata is managed database infrastructure, not AI/ML.",
+  "signals": ["Exadata Cloud Service", "Oracle"]
+ },
+ {
+  "service": "Exadata Database Service on Cloud@Customer",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "On-premises Exadata database infrastructure service, not AI/ML.",
+  "signals": ["Exadata", "Cloud@Customer", "Oracle"]
+ },
+ {
+  "service": "Exadata Fleet Update Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Patch/update management for Exadata database infrastructure, not AI/ML.",
+  "signals": ["Exadata Fleet Update Service", "Oracle"]
+ },
+ {
+  "service": "Exchange Online (EXO) (including Exchange Kiosk (2 GB mailbox) , Exchange Plan 1 1 (50 GB mailbox + 50 GB archive), Exchange Plan 2  (100 GB mailbox + up to 1.5 TB archive), Calendar , Auto-expanding email archive , Built-in security add-on for cloud mailboxes, Public folder mailboxes , Resource mailboxes , Inactive mailboxes , Microsoft Shifts, Microsoft Bookings, Microsoft Search, Viva Insights app in Teams, Personal insights and experiences, Premium personal insights and experiences, Personal Data Encryption, Customer Key, Microsoft 365 Groups , Customer Lockbox, Viva Insights, Exchange Archiving)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Exchange Online is core email/calendar/collaboration infrastructure; bundled features (Bookings, Shifts, Search, Viva Insights) are productivity add-ons, not the named service's AI capability.",
+  "signals": ["Exchange Online", "mailbox", "Calendar", "Microsoft 365"]
+ },
+ {
+  "service": "Exchange Online (EXO) (including Exchange Kiosk (2 GB mailbox), Exchange Plan 1 (50 GB mailbox), Exchange Plan 2 (100 GB mailbox), Calendar, Auto-expanding email archive, Exchange Online Protection, Public folder mailboxes, Resource mailboxes, Inactive mailboxes, Microsoft Bookings, Microsoft Search, Personal insights in Teams, Customer Key, Personal Data Encryption, Customer Lockbox, Exchange Archiving)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Exchange Online GCC-High is core email/calendar/collaboration infrastructure, not an AI capability.",
+  "signals": ["Exchange Online", "mailbox", "GCC-High"]
+ },
+ {
+  "service": "ExpenseIt",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "SAP Concur's ExpenseIt uses machine learning/OCR to read receipt photos and auto-populate expense entries — a document-intelligence capability.",
+  "signals": ["ExpenseIt", "Concur", "receipt scanning"]
+ },
+ {
+  "service": "Experience Cloud (formerly Community Cloud) - including Experience Cloud, Customer Community, Customer Community Plus, and Partner Community",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce's digital-experience/community portal builder, not an AI capability.",
+  "signals": ["Experience Cloud", "Community Cloud", "Salesforce"]
+ },
+ {
+  "service": "ExpressRoute",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure ExpressRoute is a private network connectivity service, not AI/ML.",
+  "signals": ["ExpressRoute", "Azure"]
+ },
+ {
+  "service": "Extended Detection and Response (XDR)",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "SentinelOne's XDR correlates endpoint/network telemetry using machine learning and behavioral AI for threat detection — security analytics with an ML core embedded in a broader security platform.",
+  "signals": ["XDR", "machine learning", "behavioral AI", "SentinelOne"]
+ },
+ {
+  "service": "External Status Pages",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty's public-facing incident status page feature, not AI/ML.",
+  "signals": ["Status Pages", "PagerDuty"]
+ },
+ {
+  "service": "Extract Services",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A Concur data-extraction/reporting API for pulling expense/travel data, not clearly ML-driven.",
+  "signals": ["Extract Services", "Concur", "data extraction"]
+ },
+ {
+  "service": "F1506096710",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+  "signals": ["RQI1Stop", "CPR training", "SaaS"]
+ },
+ {
+  "service": "FIM – File Integrity Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qualys FIM checks files against known-good baselines/hashes for unauthorized changes, a rules-based capability, not AI/ML.",
+  "signals": ["File Integrity Monitoring", "Qualys"]
+ },
+ {
+  "service": "FR1812058188",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+  "signals": ["RQI1Stop", "CPR training", "SaaS"]
+ },
+ {
+  "service": "FR1814276801",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+  "signals": ["RQI1Stop", "CPR training", "SaaS"]
+ },
+ {
+  "service": "FR1918740338",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+  "signals": ["RQI1Stop", "CPR training", "SaaS"]
+ },
+ {
+  "service": "FR2023864279",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "The 'service' string is a FedRAMP package identifier artifact, not a product name; host is a CPR-training SaaS platform with no described AI/ML component.",
+  "signals": ["RQI1Stop", "CPR training", "SaaS"]
+ },
+ {
+  "service": "Face",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Face is Microsoft's computer-vision API for facial detection, recognition, and attribute analysis — an explicit CV/AI service.",
+  "signals": ["Face", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Falcon Adversary Intelligence",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "CrowdStrike's threat-intelligence offering combines curated research with ML-driven correlation of malware/adversary data — AI embedded in a broader security platform rather than a standalone AI product.",
+  "signals": ["Adversary Intelligence", "Threat Intelligence", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Adversary Intelligence Premium",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Premium tier of CrowdStrike's ML-assisted threat-intelligence offering.",
+  "signals": ["Adversary Intelligence Premium", "Threat Intelligence", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Adversary OverWatch",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "CrowdStrike's managed 24/7 threat-hunting service is primarily a human analyst service layered on the Falcon platform, not itself an AI product.",
+  "signals": ["OverWatch", "managed threat hunting", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Cloud Security",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Cloud security posture and workload protection that includes ML-based runtime threat detection alongside configuration/compliance checks.",
+  "signals": ["Cloud Security", "CrowdStrike", "runtime protection"]
+ },
+ {
+  "service": "Falcon Cloud Security for Containers",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Container runtime security with ML-based threat/behavioral detection as part of CrowdStrike's cloud security suite.",
+  "signals": ["Cloud Security for Containers", "CrowdStrike", "runtime protection"]
+ },
+ {
+  "service": "Falcon Cloud Security for Managed Containers",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "A managed variant of container security combining human service delivery with the platform's ML-based detection engine.",
+  "signals": ["Managed Containers", "CrowdStrike", "Cloud Security"]
+ },
+ {
+  "service": "Falcon Complete",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "CrowdStrike's fully managed detection-and-response offering is a human SOC service built on top of the Falcon platform, not itself an AI product.",
+  "signals": ["Falcon Complete", "managed detection and response", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Data Protection",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Endpoint data-loss-prevention module, typically driven by policy/pattern-matching rules rather than a distinct ML capability.",
+  "signals": ["Data Protection", "DLP", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Device Control",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "USB/peripheral device policy enforcement, a rules-based control, not AI/ML.",
+  "signals": ["Device Control", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Discover",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IT hygiene / asset and application inventory visibility tool, not AI/ML.",
+  "signals": ["Falcon Discover", "asset visibility", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon External Attack Surface Management",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "External asset discovery and exposure scanning; primarily an inventory/scanning capability rather than a distinct ML-driven service.",
+  "signals": ["External Attack Surface Management", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon FileVantage",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "File integrity monitoring capability, rules/baseline-based, not AI/ML.",
+  "signals": ["FileVantage", "file integrity", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Firewall Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Host firewall policy configuration and management, not AI/ML.",
+  "signals": ["Firewall Management", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon For IT",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IT operations/asset management tooling within the Falcon platform, not AI/ML.",
+  "signals": ["Falcon For IT", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Forensics",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Forensic data collection and investigation tooling, not itself an ML-driven capability.",
+  "signals": ["Forensics", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Foundry",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A low-code app-development platform for building custom applications on Falcon data; no specific AI-builder module is described.",
+  "signals": ["Falcon Foundry", "low-code", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Fusion",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "SOAR-style workflow automation and orchestration for security response playbooks, not itself an ML capability.",
+  "signals": ["Falcon Fusion", "orchestration", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Identity Protection",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Identity threat detection and response relies on behavioral/ML analytics to spot credential misuse and lateral movement — security analytics with an ML core.",
+  "signals": ["Identity Protection", "behavioral", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Insight XDR",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "CrowdStrike's core EDR/XDR product correlates endpoint telemetry using machine learning and behavioral AI for detection, a security-analytics product with an ML core.",
+  "signals": ["Insight XDR", "machine learning", "behavioral AI", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Next-Gen SIEM",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A SIEM product that applies AI/ML-based correlation across ingested log data for threat detection, embedded within the broader Falcon platform.",
+  "signals": ["Next-Gen SIEM", "CrowdStrike", "correlation"]
+ },
+ {
+  "service": "Falcon Prevent",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "CrowdStrike's next-gen antivirus uses machine-learning-based malware prevention as its core detection mechanism, embedded in the broader endpoint security platform.",
+  "signals": ["Falcon Prevent", "machine learning", "malware prevention", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon SIEM Connector",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A log-forwarding connector/integration tool for exporting Falcon events to third-party SIEMs, not AI/ML.",
+  "signals": ["SIEM Connector", "CrowdStrike"]
+ },
+ {
+  "service": "Falcon Sandbox",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Automated malware-detonation sandbox that uses behavioral/ML-assisted classification to generate analysis reports, embedded within the Falcon platform.",
+  "signals": ["Falcon Sandbox", "malware analysis", "CrowdStrike"]
+ }
+]

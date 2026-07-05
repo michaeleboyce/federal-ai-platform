@@ -181,6 +181,11 @@ fedramp:
 	# snapshot added products that are not yet classified — top up the CSV
 	# via scripts/classify_fedramp_ai.py first.
 	python3 scripts/apply_fedramp_ai_classification.py --apply
+	# Same contract for the per-service AI labels (services-in-scope catalog,
+	# persisted at data/fedramp_service_classification.csv). Exits non-zero if
+	# a fresh snapshot added services not yet labeled — top up via
+	# scripts/classify_fedramp_services.py.
+	python3 scripts/apply_fedramp_service_classification.py --apply
 	python3 link_fedramp.py --apply
 	# Promote resolved fedramp_link_queue decisions into fedramp_product_links.
 	# Picks up rows that link_fedramp.py left as 'multi_candidate' or 'no_alias'

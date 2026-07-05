@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Turnstile",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cloudflare Turnstile is a non-intrusive bot/human verification widget; while it uses behavioral signals, it is marketed as a CAPTCHA alternative rather than a named AI/ML capability.",
+  "signals": ["Turnstile", "Cloudflare", "DDoS attacks"]
+ },
+ {
+  "service": "UTM Firewall",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A unified threat management firewall appliance; traditional network security, not AI.",
+  "signals": ["UTM Firewall", "Elevate Intelligent Automation Platform"]
+ },
+ {
+  "service": "Unified Communications Manager Cloud for Government (UCMC-G)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cisco's cloud-hosted call/UC manager for Webex for Government; telephony/collaboration infrastructure, not AI.",
+  "signals": ["Unified Communications Manager", "Webex for Government"]
+ },
+ {
+  "service": "Unified Endpoint Management (UEM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Omnissa Workspace ONE UEM manages desktops, mobile devices, and apps; device management infrastructure, not an AI capability.",
+  "signals": ["Unified Endpoint Management", "manage endpoint devices"]
+ },
+ {
+  "service": "Unison CLM (Contracting Lifecycle Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A contract lifecycle/acquisition management SaaS for government contracting compliance; not AI.",
+  "signals": ["Contracting Lifecycle Management", "FAR/DFARS"]
+ },
+ {
+  "service": "Unison Marketplace",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A procurement/contracting marketplace product from Unison; not an AI capability.",
+  "signals": ["Marketplace", "contracting professionals"]
+ },
+ {
+  "service": "Unity Catalog",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Databricks Unity Catalog is a data governance and cataloging layer for the lakehouse; metadata/access-control tooling, not AI itself.",
+  "signals": ["Unity Catalog", "governance"]
+ },
+ {
+  "service": "Unlimited Open and Flexible APIs",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A generic API-access feature of the PagerDuty platform; not an AI capability itself.",
+  "signals": ["APIs", "PagerDuty Operations Cloud"]
+ },
+ {
+  "service": "Unstructured Platform",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Unstructured is a document-parsing/ETL platform purpose-built to convert unstructured documents into structured data for LLM and RAG pipelines, matching the document-intelligence definition of core_ai.",
+  "signals": ["Unstructured Platform", "Kubernetes infrastructure", "PFCS-SS"]
+ },
+ {
+  "service": "Upload/Download, File/Folder Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Basic Box file storage operations (upload, download, folder management); not AI.",
+  "signals": ["Upload/Download", "File/Folder Management"]
+ },
+ {
+  "service": "User Access Mgmt and Admin Console",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Box's administrative console for user access/permissions; identity/access administration, not AI.",
+  "signals": ["User Access Mgmt", "Admin Console"]
+ },
+ {
+  "service": "User Onboarding Report",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty reporting feature tracking user onboarding; not AI.",
+  "signals": ["Onboarding Report", "PagerDuty"]
+ },
+ {
+  "service": "User Support Desk for Public Sector",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A customer/help-desk support service for Concur's public-sector offering; not AI.",
+  "signals": ["Support Desk", "Concur Cloud for Public Sector"]
+ },
+ {
+  "service": "VCD",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "VMware Cloud Director, an IaaS management/orchestration layer; infrastructure, not AI.",
+  "signals": ["VCD", "VMware Cloud Foundation", "IaaS"]
+ },
+ {
+  "service": "VCF",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "VMware Cloud Foundation, a compute/storage/network virtualization platform; infrastructure, not AI.",
+  "signals": ["VCF", "software-defined storage"]
+ },
+ {
+  "service": "VCN Flow Logs",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud network flow logging for its Virtual Cloud Network; monitoring/logging infrastructure, not AI.",
+  "signals": ["VCN Flow Logs", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "VMDR – Vulnerability Management, Detection & Response",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Qualys VMDR is a vulnerability scanning/management platform correlating known threats and CVEs; primarily signature-based scanning rather than a named AI/ML capability.",
+  "signals": ["Vulnerability Management", "Qualys Cloud Platform", "eliminating vulnerabilities"]
+ },
+ {
+  "service": "VMware Cloud Director",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "VMware's IaaS management console for provisioning virtual data centers; infrastructure, not AI.",
+  "signals": ["VMware Cloud Director", "IaaS"]
+ },
+ {
+  "service": "VMware Cloud Foundation",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A full-stack virtualization platform (compute, storage, network); infrastructure, not AI.",
+  "signals": ["VMware Cloud Foundation", "FedHIVE"]
+ },
+ {
+  "service": "VMware Solution",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's hosted VMware offering for lift-and-shift virtualization; infrastructure, not AI.",
+  "signals": ["VMware Solution", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "VPC Service Controls",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's network security perimeter/data exfiltration control; networking/security, not AI.",
+  "signals": ["VPC Service Controls", "Google Cloud Platform"]
+ },
+ {
+  "service": "VPN Gateway",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's site-to-site VPN networking service; infrastructure, not AI.",
+  "signals": ["VPN Gateway", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "VX-P949",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "An unclear model/product code within Motorola's Mission Critical Ecosystem, likely a radio or dispatch hardware/software unit; no evidence of an AI capability, so default to not_ai.",
+  "signals": ["Motorola Solutions Federal Cloud", "Mission Critical Ecosystem"]
+ },
+ {
+  "service": "Valinor Harbor",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "An opaque codename within Palantir's supporting-services boundary with no discernible product signal; default to not_ai per precision-over-recall.",
+  "signals": ["Palantir Federal Cloud Service", "PFCS-SS"]
+ },
+ {
+  "service": "Vault",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Vault (eDiscovery/retention) and Oracle Vault (secrets/key management) are both governance/security utilities, not AI.",
+  "signals": ["Vault", "Google Workspace", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Veracity Learning Record Store",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An xAPI Learning Record Store for tracking training data within PowerTrain's learning ecosystem; data storage, not AI.",
+  "signals": ["Learning Record Store", "Government Learning Enclave"]
+ },
+ {
+  "service": "Versa Unified SASE for Government",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Versa's SASE offering combines SD-WAN and network security; a networking/security fabric, not a named AI capability.",
+  "signals": ["Unified SASE", "Elevate Intelligent Automation Platform"]
+ },
+ {
+  "service": "Vetted (Background Investigation)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A NEOGOV module for managing background investigations in HR workflows; case/workflow management, not AI.",
+  "signals": ["Background Investigation", "NEOGOV Cloud"]
+ },
+ {
+  "service": "Video Indexer",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure AI Video Indexer is a computer-vision/speech AI service that extracts insights (faces, transcripts, objects) from video content.",
+  "signals": ["Video Indexer", "Azure"]
+ },
+ {
+  "service": "Video Intelligence API*",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud Video Intelligence API is a computer-vision service for detecting objects, scenes, and activities in video, squarely a core AI/ML API.",
+  "signals": ["Video Intelligence API"]
+ },
+ {
+  "service": "Vigilance Managed Detection and Response (MDR) services",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A managed security service delivered on SentinelOne's Singularity platform, which the description explicitly says leverages advanced machine learning and behavioral AI for detection.",
+  "signals": ["machine learning algorithms", "behavioral AI", "Managed Detection and Response"]
+ },
+ {
+  "service": "Virtual Care",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A Salesforce health/care-coordination solution for public sector telehealth workflows; a CRM-based application, not an AI capability itself.",
+  "signals": ["Virtual Care", "Salesforce Government Cloud Plus"]
+ },
+ {
+  "service": "Virtual Cloud Networks",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud's virtual networking (VCN) service; networking infrastructure, not AI.",
+  "signals": ["Virtual Cloud Networks", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Virtual Desktop Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A VDI offering from GovPoint Cloud Services; desktop virtualization infrastructure, not AI.",
+  "signals": ["Virtual Desktop Services", "GovPoint Cloud Services"]
+ },
+ {
+  "service": "Virtual Machines",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure IaaS compute instances; not AI.",
+  "signals": ["Virtual Machines", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Virtual Machines Scale Sets",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's autoscaling compute service for VM fleets; infrastructure, not AI.",
+  "signals": ["Virtual Machines Scale Sets"]
+ },
+ {
+  "service": "Virtual Machines Scale Sets (VMSS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same Azure autoscaling VM feature as Virtual Machines Scale Sets; infrastructure, not AI.",
+  "signals": ["VMSS", "Azure Government"]
+ },
+ {
+  "service": "Virtual NAT",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's managed network address translation service; networking, not AI.",
+  "signals": ["Virtual NAT", "Azure Government"]
+ },
+ {
+  "service": "Virtual Network",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's core software-defined networking service; infrastructure, not AI.",
+  "signals": ["Virtual Network", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Virtual Network Directory Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An Azure networked directory/identity service; not AI.",
+  "signals": ["Virtual Network Directory Service", "Azure Government"]
+ },
+ {
+  "service": "Virtual Visitation Service for Webex for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A video-conferencing based visitation feature (e.g., for correctional/telepresence use) built on Webex; collaboration tooling, not AI.",
+  "signals": ["Virtual Visitation", "Webex for Government"]
+ },
+ {
+  "service": "Visibility Console",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty dashboard/console for operational visibility; not an AI capability.",
+  "signals": ["Visibility Console", "PagerDuty"]
+ },
+ {
+  "service": "Visual Builder Cloud Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Oracle Visual Builder is a low-code application development tool; a builder platform, not a named AI capability.",
+  "signals": ["Visual Builder Cloud Service", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Visual Builder Studio",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's DevOps/CI-CD and version-control tooling for Visual Builder applications; not AI.",
+  "signals": ["Visual Builder Studio", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Visual Spatial Event Map",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A Bluescape collaborative spatial-canvas mapping capability for operations centers; visualization/workspace tooling, not AI.",
+  "signals": ["Visual Spatial Event Map", "Bluescape", "operations cente"]
+ },
+ {
+  "service": "Visualizations and Dashboards",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Standard Qlik BI charting/dashboard capability; a data-visualization feature, not itself an AI/ML capability.",
+  "signals": ["Visualizations and Dashboards", "Qlik Cloud Government"]
+ },
+ {
+  "service": "Vitals (Early Intervention)",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A NEOGOV public-safety early-intervention module tracking employee risk indicators, most likely rule/threshold based rather than a distinct AI/ML capability.",
+  "signals": ["Early Intervention", "NEOGOV Cloud"]
+ },
+ {
+  "service": "Voice",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Google Voice's core telephony/VoIP service within Google Workspace; calling/texting is the primary function even though voicemail transcription is a minor AI-adjacent feature.",
+  "signals": ["Voice", "Google Workspace"]
+ },
+ {
+  "service": "Vulnerability Scanning",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard vulnerability/CVE scanning offered across MAXIMUS Cloud and SMX Elevate IAP; security scanning infrastructure, not AI.",
+  "signals": ["Vulnerability Scanning", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Vulnerability Scanning Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud's vulnerability scanning service; security scanning infrastructure, not AI.",
+  "signals": ["Vulnerability Scanning Service", "Oracle Cloud Infrastructure"]
+ }
+]

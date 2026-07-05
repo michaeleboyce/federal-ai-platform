@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Dynamic Data Active Searchable (DDAS)",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Splunk log search/indexing feature; name gives no ML/AI signal and description is generic operational intelligence marketing.",
+  "signals": ["Dynamic Data", "Searchable", "operational intelligence", "machine-generated data"]
+ },
+ {
+  "service": "Dynamic Data Self-Storage (DDSS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Splunk data storage/retention feature, not an AI capability.",
+  "signals": ["Self-Storage"]
+ },
+ {
+  "service": "Dynamic Field Enrichment and Extraction",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "PagerDuty feature for extracting/enriching fields from incoming event payloads, typically rule/regex-based rather than ML-driven.",
+  "signals": ["Field Enrichment", "Extraction"]
+ },
+ {
+  "service": "Dynamic Service Graph",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "PagerDuty's service dependency mapping/visualization feature, not an ML capability itself.",
+  "signals": ["Service Graph"]
+ },
+ {
+  "service": "Dynamically Add Additional Responders",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty incident-workflow/escalation feature with no AI component.",
+  "signals": ["Add Additional Responders"]
+ },
+ {
+  "service": "Dynamics 365",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "The broad Microsoft ERP/CRM suite name itself; no specific AI capability is named.",
+  "signals": ["Dynamics 365"]
+ },
+ {
+  "service": "Dynamics 365 Athena – CDS to Azure Data Lake",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A data export/integration pipeline moving Common Data Service data into Azure Data Lake; not an AI feature.",
+  "signals": ["CDS to Azure Data Lake"]
+ },
+ {
+  "service": "Dynamics 365 Commerce",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Retail/e-commerce ERP module, not an AI product.",
+  "signals": ["Commerce"]
+ },
+ {
+  "service": "Dynamics 365 Contact Center",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Microsoft's newer contact-center offering built around Copilot generative-AI agent assist as a core differentiator, layered on the broader CCaaS platform.",
+  "signals": ["Contact Center", "Dynamics 365"]
+ },
+ {
+  "service": "Dynamics 365 Customer Engagement",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Legacy umbrella name for the Dynamics 365 CRM apps, not an AI capability.",
+  "signals": ["Customer Engagement"]
+ },
+ {
+  "service": "Dynamics 365 Customer Insights",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A customer data platform whose segmentation and prediction features are ML-driven, embedded in a broader CDP product.",
+  "signals": ["Customer Insights"]
+ },
+ {
+  "service": "Dynamics 365 Customer Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Core case-management CRM module; its Copilot features are a separately licensed add-on rather than the base service itself.",
+  "signals": ["Customer Service"]
+ },
+ {
+  "service": "Dynamics 365 Data Sync Framework",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A data integration/synchronization tool, not an AI capability.",
+  "signals": ["Data Sync Framework"]
+ },
+ {
+  "service": "Dynamics 365 Field Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Scheduling and dispatch management module for field technicians; core function is not ML-based.",
+  "signals": ["Field Service"]
+ },
+ {
+  "service": "Dynamics 365 Finance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Financial ERP module, not an AI product.",
+  "signals": ["Finance"]
+ },
+ {
+  "service": "Dynamics 365 Forms Pro",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A survey/forms authoring tool (predecessor to Customer Voice), not AI.",
+  "signals": ["Forms Pro"]
+ },
+ {
+  "service": "Dynamics 365 Fraud Protection",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "An adaptive machine-learning fraud/risk-scoring service embedded as Microsoft's fraud detection offering.",
+  "signals": ["Fraud Protection", "Dynamics 365"]
+ },
+ {
+  "service": "Dynamics 365 Guides",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A mixed-reality (HoloLens) instructional-content authoring tool, not an AI capability.",
+  "signals": ["Guides"]
+ },
+ {
+  "service": "Dynamics 365 Intelligent Order Management",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Order orchestration platform whose fulfillment optimization/routing draws on ML, signaled by the 'Intelligent' naming.",
+  "signals": ["Intelligent Order Management"]
+ },
+ {
+  "service": "Dynamics 365 Omni-channel Engagement Hub",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Channel routing/engagement module, not an AI feature.",
+  "signals": ["Omni-channel Engagement Hub"]
+ },
+ {
+  "service": "Dynamics 365 Project Operations",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Project/resource management ERP module, not AI.",
+  "signals": ["Project Operations"]
+ },
+ {
+  "service": "Dynamics 365 Project Service Automation",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Project scheduling/billing automation; 'automation' here is workflow automation, not ML.",
+  "signals": ["Project Service Automation"]
+ },
+ {
+  "service": "Dynamics 365 Relevance Search",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A full-text/ranked search feature over CRM records; unclear whether it involves material ML beyond standard search indexing.",
+  "signals": ["Relevance Search"]
+ },
+ {
+  "service": "Dynamics 365 Sales",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Core CRM sales-pipeline module, not an AI product.",
+  "signals": ["Sales"]
+ },
+ {
+  "service": "Dynamics 365 Sales Insights",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Microsoft's AI-powered add-on for predictive lead/opportunity scoring and relationship analytics within Dynamics 365 Sales.",
+  "signals": ["Sales Insights"]
+ },
+ {
+  "service": "Dynamics 365 Sales Professional",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A lighter-tier CRM sales SKU that does not include the AI Insights module.",
+  "signals": ["Sales Professional"]
+ },
+ {
+  "service": "Dynamics 365 Service Omni-Channel Engagement Hub",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Channel routing/engagement module, not AI.",
+  "signals": ["Omni-Channel Engagement Hub"]
+ },
+ {
+  "service": "Dynamics 365 Supply",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Truncated/ambiguous name that appears to reference an ERP supply-chain module rather than an AI capability.",
+  "signals": ["Supply"]
+ },
+ {
+  "service": "Dynamics 365 Supply Chain Mangement",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Core ERP supply-chain management module; not primarily an AI product.",
+  "signals": ["Supply Chain Mangement"]
+ },
+ {
+  "service": "Dynatrace",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Dynatrace's Davis AI causal-analysis and anomaly-detection engine is a central, material capability of this observability/APM platform.",
+  "signals": ["Dynatrace"]
+ },
+ {
+  "service": "EASM – External Attack Surface Management",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Asset discovery and attack-surface correlation feature; not primarily ML-driven.",
+  "signals": ["Attack Surface Management"]
+ },
+ {
+  "service": "EDR – Endpoint Detection & Response",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Qualys EDR incorporates ML-based behavioral threat detection as part of a broader security/vulnerability platform.",
+  "signals": ["Endpoint Detection & Response"]
+ },
+ {
+  "service": "ETM – Enterprise TruRisk Management",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A risk-scoring/prioritization framework; unclear whether its scoring is ML-based versus rules/formula-based.",
+  "signals": ["TruRisk Management"]
+ },
+ {
+  "service": "Earth Engine*",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Google Earth Engine is primarily a planetary-scale geospatial data analysis platform; any embedded ML classification capability is secondary and not evident from the name alone.",
+  "signals": ["Earth Engine"]
+ },
+ {
+  "service": "Email Delivery",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An email/SMTP sending service, not AI.",
+  "signals": ["Email Delivery"]
+ },
+ {
+  "service": "Email and push notifications",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty notification-delivery channel, not AI.",
+  "signals": ["Email and push notifications"]
+ },
+ {
+  "service": "Embedded Analytics",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Qlik's dashboard-embedding capability for third-party apps; a BI/reporting feature rather than an AI one.",
+  "signals": ["Embedded Analytics"]
+ },
+ {
+  "service": "Endpoint Detection and Response (EDR)",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Host description explicitly states SentinelOne 'leverages advanced machine learning algorithms and behavioral AI' as the detection engine underlying this service.",
+  "signals": ["machine learning algorithms", "behavioral AI", "Endpoint Detection and Response"]
+ },
+ {
+  "service": "Endpoint Protection Platform (EPP)",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Same SentinelOne Singularity platform whose protection capability is built on ML/behavioral-AI detection.",
+  "signals": ["machine learning algorithms", "behavioral AI", "Endpoint Protection Platform"]
+ },
+ {
+  "service": "Endpoint/Antivirus (AV), File Integrity Monitoring (FIM)/Whitelisting Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Traditional antivirus/file-integrity-monitoring/whitelisting service, typically signature or hash based rather than ML.",
+  "signals": ["Antivirus (AV)", "File Integrity Monitoring", "Whitelisting"]
+ },
+ {
+  "service": "Energy & Utilities Cloud",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A Salesforce industry-vertical CRM package for the energy/utilities sector, not an AI product itself.",
+  "signals": ["Energy & Utilities Cloud"]
+ },
+ {
+  "service": "Engage (Community Outreach)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV community-outreach/case tool, not AI.",
+  "signals": ["Community Outreach"]
+ },
+ {
+  "service": "Enhanced Video Streaming Capabilities",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Bluescape video-streaming feature, not AI.",
+  "signals": ["Video Streaming"]
+ },
+ {
+  "service": "Enterprise Data Management Cloud Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle EPM data-management tooling, not AI.",
+  "signals": ["Data Management"]
+ },
+ {
+  "service": "Enterprise Level Authentication & Integrations available with Single Sign-On APIs",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SSO/authentication and integration APIs for Oracle Aconex, not AI.",
+  "signals": ["Single Sign-On APIs", "Authentication"]
+ },
+ {
+  "service": "Enterprise Performance Management for United States Government Cloud Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle EPM budgeting/planning/reporting suite, not AI.",
+  "signals": ["Enterprise Performance Management"]
+ },
+ {
+  "service": "Enterprise Reporting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qlik BI reporting feature, not AI.",
+  "signals": ["Enterprise Reporting"]
+ },
+ {
+  "service": "Enterprise h2oGPTe",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "H2O.ai's enterprise generative-AI/LLM assistant platform (GPT-based RAG offering); the host description explicitly frames it as a generative/agentic AI platform.",
+  "signals": ["h2oGPTe", "generative", "agentic", "AI platform"]
+ },
+ {
+  "service": "Epsilon3",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A spaceflight/mission-operations procedure and test-management software product hosted on Palantir's platform; not primarily an AI product by name.",
+  "signals": ["Epsilon3"]
+ },
+ {
+  "service": "Escalation Policy Report",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty reporting feature, not AI.",
+  "signals": ["Escalation Policy Report"]
+ }
+]

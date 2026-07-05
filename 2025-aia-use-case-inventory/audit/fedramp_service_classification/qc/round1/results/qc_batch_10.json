@@ -1,0 +1,34 @@
+[
+ {
+  "service": "Web Risk API*",
+  "verdict": "confirm",
+  "reasoning": "Google Web Risk is a URL/blocklist threat-intelligence lookup against known-unsafe sites; it is a security data service, not an AI/ML capability. not_ai holds."
+ },
+ {
+  "service": "Windows Autopatch and Microsoft Managed Desktop",
+  "verdict": "confirm",
+  "reasoning": "Patch orchestration and managed-desktop endpoint management; no AI/ML capability. not_ai is correct."
+ },
+ {
+  "service": "Wiz Defend for Government",
+  "verdict": "confirm",
+  "reasoning": "Wiz's differentiator is graph-based cloud risk correlation (CNAPP/CDR), not an ML-centric detection engine; it does not meet the bar for material embedded ML. not_ai holds."
+ },
+ {
+  "service": "Workers",
+  "verdict": "confirm",
+  "reasoning": "Cloudflare Workers is a serverless edge-compute runtime; pure plumbing with no AI capability. not_ai is correct."
+ },
+ {
+  "service": "eSSESSMENT",
+  "verdict": "confirm",
+  "reasoning": "Obscure assessment/testing app on the Knox platform with no name or snippet signal of AI/ML; low-confidence not_ai is the right conservative call."
+ },
+ {
+  "service": "reCAPTCHA Enterprise*",
+  "verdict": "overturn",
+  "corrected_category": "ai_featured",
+  "error_tag": "security-detection-core-ai-overcall",
+  "reasoning": "reCAPTCHA Enterprise is a bot/fraud-abuse prevention product whose engine happens to be ML risk scoring; it is a security-detection service with an ML core, matching ai_featured, not a citable standalone AI/ML capability like Bedrock or Vertex. Precision rule pushes it down from core_ai."
+ }
+]

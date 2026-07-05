@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Profile Data Roaming Service (PDRS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Microsoft 365 feature that syncs user profile/settings data across devices, not an AI capability.",
+  "signals": ["Data Roaming", "profile"]
+ },
+ {
+  "service": "Programmable Network Platform (DRG-Transit Hub)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An Oracle Cloud networking/transit-routing infrastructure component (Dynamic Routing Gateway transit hub), not AI.",
+  "signals": ["Network Platform", "Transit Hub"]
+ },
+ {
+  "service": "Project Communication and Instructions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An Aconex construction-collaboration feature for sharing project communications/documents, not AI.",
+  "signals": ["Communication and Instructions", "collaboration platform"]
+ },
+ {
+  "service": "Pryzm",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "No recognized AI/ML product by this name; appears to be a specific commercial software package hosted on Palantir's supporting-services boundary rather than an AI capability itself.",
+  "signals": ["Pryzm", "commercially available software"]
+ },
+ {
+  "service": "Public Logging",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard Oracle Cloud Infrastructure logging service, not AI.",
+  "signals": ["Public Logging", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Public Sector Solutions (Public Sector Foundation) - including Public Sector Solutions; OmniStudio; Emergency Program Management; Business Rules Engine; CRM Analytics for Public Sector Solutions; Customer Community for Public Sector; Employee Experience for Public Sector; WDC (Formerly Work.com); Access to Productivity managed packages like Employee Workspace, Employee Concierge, HR Service Center, Employee Health Verification, and Employee Concierge Bot; Public Sector Application Forms; Composable Case Management; and Benefit Management",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "This is a broad case-management/HR bundle, but it explicitly includes Einstein-powered CRM Analytics and an 'Employee Concierge Bot', making embedded AI/ML a material but secondary capability of the overall package.",
+  "signals": ["CRM Analytics", "Employee Concierge Bot", "Public Sector Solutions bundle"]
+ },
+ {
+  "service": "Purple AI Foundations for Public Sector",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "SentinelOne's Purple AI is an explicitly branded generative-AI security analyst/copilot for threat hunting, a direct AI capability.",
+  "signals": ["Purple AI", "machine learning algorithms and behavioral AI"]
+ },
+ {
+  "service": "Push Agent V2",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Appears to be a push-notification/messaging agent component, not an AI capability.",
+  "signals": ["Push Agent", "Azure Government"]
+ },
+ {
+  "service": "Qflow – Qualys Flow Application",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Qualys Flow is a no-code workflow/automation builder for security operations, not itself an ML/AI capability.",
+  "signals": ["Flow Application", "Qualys Cloud Platform"]
+ },
+ {
+  "service": "Qlik Application Automation",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A workflow/process orchestration and integration-automation tool within Qlik Cloud, not an AI/ML feature.",
+  "signals": ["Application Automation", "Qlik Cloud Government"]
+ },
+ {
+  "service": "Qlik Cloud Data Integration",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An ETL/data-pipeline integration service, not AI.",
+  "signals": ["Data Integration", "Qlik Cloud"]
+ },
+ {
+  "service": "Qlik Sense Enterprise SaaS",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Qlik Sense embeds AI-augmented analytics (Insight Advisor uses NLP/ML to auto-generate insights and natural-language search) within a broader BI platform, making AI a secondary but material feature.",
+  "signals": ["Qlik Sense", "data and analytics technology"]
+ },
+ {
+  "service": "QnA Maker",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "QnA Maker is Microsoft's NLP-based question-answering/knowledge-base service used to build chatbots, a direct AI/ML capability.",
+  "signals": ["QnA Maker"]
+ },
+ {
+  "service": "R2",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare R2 is object storage, not AI.",
+  "signals": ["R2", "Cloudflare"]
+ },
+ {
+  "service": "REST API (replaced Email Migration API), Sheets API, Sites API, Tasks API",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard Google Workspace application APIs for data access/migration, not AI capabilities.",
+  "signals": ["Sheets API", "Sites API", "Tasks API"]
+ },
+ {
+  "service": "RPA",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Appian's RPA is rules-based process automation/bot scripting rather than an ML model; plain RPA does not imply an AI capability under this rubric.",
+  "signals": ["RPA", "process automation platform"]
+ },
+ {
+  "service": "RadioCentral Insights",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be a radio-fleet health/usage analytics dashboard for Motorola's mission-critical ecosystem rather than a documented ML capability.",
+  "signals": ["Insights", "Mission Critical Ecosystem"]
+ },
+ {
+  "service": "RadioCentral with SmartProgramming (RCP)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A radio fleet programming/configuration management tool; 'SmartProgramming' denotes automated configuration deployment, not an AI/ML feature.",
+  "signals": ["SmartProgramming", "RadioCentral"]
+ },
+ {
+  "service": "Rate Limiting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A standard traffic-control/network-security feature, not AI.",
+  "signals": ["Rate Limiting", "Cloudflare"]
+ },
+ {
+  "service": "Ready (Field and New Role Training)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A NEOGOV training-content module for onboarding/role training, not AI.",
+  "signals": ["Field and New Role Training", "NEOGOV"]
+ },
+ {
+  "service": "Real Property Management",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A generic real-property/asset-tracking module within Aurigo's capital-planning suite; no specific AI capability documented for this named service.",
+  "signals": ["Real Property Management", "Masterworks Cloud Platform"]
+ },
+ {
+  "service": "Recall (Policy Training)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A NEOGOV policy-training/acknowledgment module, not AI.",
+  "signals": ["Policy Training", "NEOGOV"]
+ },
+ {
+  "service": "Recommender",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Google Cloud's Recommender is a documented ML-driven service that analyzes usage patterns to generate cost, security, and performance optimization recommendations across GCP resources.",
+  "signals": ["Recommender", "Google Cloud Platform"]
+ },
+ {
+  "service": "Recurring Conditions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty rules feature for suppressing/grouping repeat alert conditions, not AI.",
+  "signals": ["Recurring Conditions", "PagerDuty"]
+ },
+ {
+  "service": "Red Hat Lightspeed",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Red Hat Lightspeed is a generative-AI assistant product line (e.g., for Ansible/OpenShift) that generates automation content and answers admin queries, a direct AI capability.",
+  "signals": ["Lightspeed", "Red Hat"]
+ },
+ {
+  "service": "Red Hat OpenShift",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Kubernetes-based container application platform, not AI.",
+  "signals": ["OpenShift", "container platform"]
+ },
+ {
+  "service": "Red Hat OpenShift Service on AWS (ROSA) Classic",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed Kubernetes container platform on AWS, not AI.",
+  "signals": ["ROSA Classic", "OpenShift"]
+ },
+ {
+  "service": "Red Hat OpenShift Service on AWS with Hosted Control Planes",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed Kubernetes container platform variant, not AI.",
+  "signals": ["Hosted Control Planes", "OpenShift"]
+ },
+ {
+  "service": "Redis Cache",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An in-memory caching data store, not AI.",
+  "signals": ["Redis Cache", "Azure"]
+ },
+ {
+  "service": "RegScale Governance, Risk and Compliance",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A GRC/compliance-automation platform; primary function is control tracking and documentation rather than a documented AI/ML capability.",
+  "signals": ["Governance, Risk and Compliance", "RegScale"]
+ },
+ {
+  "service": "Regional Network Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure networking management infrastructure, not AI.",
+  "signals": ["Network Manager", "Azure Government"]
+ },
+ {
+  "service": "Registry",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A container/artifact registry service on Oracle Cloud, not AI.",
+  "signals": ["Registry", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Related Incidents",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty incident-correlation/linking feature (rules-based grouping), not AI.",
+  "signals": ["Related Incidents", "PagerDuty"]
+ },
+ {
+  "service": "Remote Browser Isolation",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare's browser isolation runs web sessions in a remote sandbox for security; a virtualization/isolation technique, not AI.",
+  "signals": ["Remote Browser Isolation", "Cloudflare"]
+ },
+ {
+  "service": "Remote Desktop Gateway (Microsoft Remote Desktop Gateway, Apache Guacamole)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Remote desktop access/gateway infrastructure, not AI.",
+  "signals": ["Remote Desktop Gateway", "Apache Guacamole"]
+ },
+ {
+  "service": "Remote Support for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "BeyondTrust's remote support tool for privileged remote access sessions, not AI.",
+  "signals": ["Remote Support", "BeyondTrust"]
+ },
+ {
+  "service": "RemoteOps and RemoteOps Forensics",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A SentinelOne operational tool for remote shell access and forensic evidence collection; distinct from the platform's underlying ML detection engine.",
+  "signals": ["RemoteOps Forensics", "remote command execution"]
+ },
+ {
+  "service": "Reporting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A generic reporting feature within Oracle Aconex, not AI.",
+  "signals": ["Reporting", "Aconex for Defense"]
+ },
+ {
+  "service": "Repos",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Databricks Repos is a git-integration feature for source-controlling notebooks/code in the workspace; a dev-tooling feature, not itself an ML capability, despite living within an AI-branded data platform.",
+  "signals": ["Repos", "git", "Databricks"]
+ },
+ {
+  "service": "Resilinc Supply Chain Risk and Compliance Platform",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Resilinc's supply-chain risk monitoring (EventWatch) applies NLP/ML to scan global data sources for disruption events, an embedded AI feature within a broader risk/compliance platform.",
+  "signals": ["Supply Chain Risk", "Resilinc"]
+ },
+ {
+  "service": "Resource Management",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Hosted on the Eightfold Talent Intelligence Platform, whose core differentiator is deep-learning-based skills/talent matching; this module applies that AI matching engine to internal resource/staffing allocation.",
+  "signals": ["Eightfold AI", "advanced AI", "Talent Intelligence Platform"]
+ },
+ {
+  "service": "Resource Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Resource Manager is an infrastructure-as-code/orchestration tool (Terraform-based), not AI.",
+  "signals": ["Resource Manager", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Resource Scheduling for Microsoft Dynamics",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Overlaps in name with Microsoft's Resource Scheduling Optimization capability for Dynamics 365 Field Service, which uses an optimization/AI engine to assign technicians; but the plain scheduling-board feature may be non-AI, hence lower confidence.",
+  "signals": ["Resource Scheduling", "Microsoft Dynamics"]
+ },
+ {
+  "service": "Responder and Team Reports",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty reporting feature on responder/team activity, not AI.",
+  "signals": ["Team Reports", "PagerDuty"]
+ },
+ {
+  "service": "Right of Way Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A land-rights/easement tracking module within Aurigo's capital-planning suite, not AI.",
+  "signals": ["Right of Way Management", "Masterworks Cloud Platform"]
+ },
+ {
+  "service": "Risk Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A GRC risk-tracking module on Onspring GovCloud, not AI.",
+  "signals": ["Risk Management", "Onspring GovCloud"]
+ },
+ {
+  "service": "Role-based permissions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard access-control/RBAC functionality, not AI.",
+  "signals": ["Role-based permissions", "PagerDuty"]
+ },
+ {
+  "service": "Round Robin Scheduling",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A simple rotation-based on-call scheduling algorithm, not AI/ML.",
+  "signals": ["Round Robin Scheduling", "PagerDuty"]
+ },
+ {
+  "service": "Routing Rules",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rules-based alert routing configuration, not AI.",
+  "signals": ["Routing Rules", "PagerDuty"]
+ },
+ {
+  "service": "Roving Edge Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's Roving Edge Infrastructure is portable/ruggedized physical edge-compute and storage hardware, not AI.",
+  "signals": ["Roving Edge", "Oracle Cloud Infrastructure"]
+ }
+]

@@ -140,6 +140,14 @@ CREATE TABLE IF NOT EXISTS fedramp_service_models (
 );
 CREATE INDEX IF NOT EXISTS idx_fsm_fedramp_id ON fedramp_service_models(fedramp_id);
 CREATE INDEX IF NOT EXISTS idx_fsm_model      ON fedramp_service_models(model);
+
+CREATE TABLE IF NOT EXISTS fedramp_authorized_services (
+    fedramp_id TEXT NOT NULL,
+    service    TEXT NOT NULL,
+    recency    TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_fauthsvc_fedramp_id ON fedramp_authorized_services(fedramp_id);
+CREATE INDEX IF NOT EXISTS idx_fauthsvc_service    ON fedramp_authorized_services(service);
 """
 
 
@@ -199,6 +207,7 @@ def load_fedramp(*, dry_run: bool = False) -> None:
             ("product_leveraged_systems", "fedramp_leveraged_systems"),
             ("product_business_functions", "fedramp_business_functions"),
             ("product_service_models",     "fedramp_service_models"),
+            ("product_authorized_services", "fedramp_authorized_services"),
         ]
         counts: dict[str, int] = {}
         for src_t, dst_t in moves:

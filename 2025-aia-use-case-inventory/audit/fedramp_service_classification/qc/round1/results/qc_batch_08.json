@@ -1,0 +1,218 @@
+[
+ {
+  "service": "Resilinc Supply Chain Risk and Compliance Platform",
+  "verdict": "confirm",
+  "reasoning": "Resilinc's EventWatch applies NLP/ML to monitor global sources for supply-chain disruption events, a material embedded ML feature within a broader risk/compliance product; ai_featured holds."
+ },
+ {
+  "service": "Resource Management",
+  "verdict": "overturn",
+  "corrected_category": "ai_featured",
+  "error_tag": "module-inherits-platform-ai",
+  "reasoning": "A generic staffing/resource-allocation module is not itself an AI/ML capability; it applies Eightfold's platform matching engine. Sibling Eightfold modules (Talent Flex, Talent Management) were tagged ai_featured — this should match, not core_ai."
+ },
+ {
+  "service": "Resource Scheduling for Microsoft Dynamics",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "Basic Dynamics 365 Resource Scheduling is a manual scheduling board; the AI engine is a separate SKU (Resource Scheduling Optimization). Labeler conflated the two and hedged; precision-over-recall favors not_ai."
+ },
+ {
+  "service": "SCAP Compliance Checker",
+  "verdict": "confirm",
+  "reasoning": "Rule-based SCAP benchmark scanning; deterministic compliance/vuln checking, no ML. not_ai is correct."
+ },
+ {
+  "service": "SGX PCK Certificate Cache",
+  "verdict": "confirm",
+  "reasoning": "Intel SGX PCK attestation certificate caching — hardware/security plumbing, not AI. not_ai correct."
+ },
+ {
+  "service": "SIEM (Azure Monitor, Log Analytics, Defender for Cloud, Azure Sentinel)",
+  "verdict": "confirm",
+  "reasoning": "Bundle includes Azure Sentinel, which ships UEBA and ML-based anomaly detection as a material embedded feature of a security-analytics product; ai_featured holds."
+ },
+ {
+  "service": "SQL Data Warehouse",
+  "verdict": "confirm",
+  "reasoning": "Azure SQL Data Warehouse (Synapse) is a database/analytics store; not AI. not_ai correct."
+ },
+ {
+  "service": "SRX 2200",
+  "verdict": "confirm",
+  "reasoning": "A hardware/radio network device model in Motorola's ecosystem; not an AI capability. not_ai correct."
+ },
+ {
+  "service": "SSL/TLS for SaaS",
+  "verdict": "confirm",
+  "reasoning": "Transport encryption/certificate service from Cloudflare; networking/security plumbing, not AI. not_ai correct."
+ },
+ {
+  "service": "Salesforce Mobile (iOS/Android)",
+  "verdict": "confirm",
+  "reasoning": "Mobile client app for the Salesforce CRM; not itself an AI capability. not_ai correct."
+ },
+ {
+  "service": "Salesforce Personalization",
+  "verdict": "confirm",
+  "reasoning": "Salesforce Personalization (Marketing Cloud Personalization/Einstein) is an ML-driven real-time recommendation engine embedded in the CRM; ai_featured holds."
+ },
+ {
+  "service": "Sayari Counterparty and Supply Chain Risk Intelligence",
+  "verdict": "confirm",
+  "reasoning": "Sayari is primarily a knowledge-graph/entity-resolution data product; 'Intelligence' is business-risk framing, not a demonstrated core ML product. Conservative not_ai is defensible under precision-over-recall."
+ },
+ {
+  "service": "Scale Generative AI Platform",
+  "verdict": "confirm",
+  "reasoning": "Scale's SGP is an explicitly named generative-AI application platform; unambiguous core_ai."
+ },
+ {
+  "service": "Security: Security RX (Remediation Explorer)",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "speculative-ai-attribution",
+  "reasoning": "A vulnerability-remediation guidance/explorer view surfaces findings and fix steps from data; the labeler only speculates ('plausibly leverages') AI. No defensible ML core — precision favors not_ai."
+ },
+ {
+  "service": "Select Care",
+  "verdict": "confirm",
+  "reasoning": "SAP Concur travel duty-of-care program; not AI. not_ai correct."
+ },
+ {
+  "service": "SentinelOne Management Console",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "admin-console-overcall",
+  "reasoning": "The named unit is an administrative console/UI. Coupling to a platform's ML detections does not make the console itself an AI feature; the ML lives in the detection products, not the management surface."
+ },
+ {
+  "service": "Service Architecture Intelligence: Catalogs",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "New Relic service catalogs/maps are built from telemetry and instrumentation via rules/graph, not ML; the labeler admits it 'may be largely rule/graph-based.' 'Intelligence' branding drove the overcall."
+ },
+ {
+  "service": "Service Fabric",
+  "verdict": "confirm",
+  "reasoning": "Azure Service Fabric is a distributed-systems/microservices platform; infrastructure, not AI. not_ai correct."
+ },
+ {
+  "service": "Sierra",
+  "verdict": "confirm",
+  "reasoning": "Name matches Sierra (sierra.ai), a prominent conversational AI-agent platform for customer service, hosted as third-party commercial software on Knox; core_ai is defensible given the strong name match to a known AI product."
+ },
+ {
+  "service": "Sift",
+  "verdict": "confirm",
+  "reasoning": "Sift's core product is ML-based fraud/risk scoring — the ML is the capability, not an add-on; hosted as commercial software on Knox. core_ai defensible."
+ },
+ {
+  "service": "Singularity Cloud Native Security (CNS)",
+  "verdict": "confirm",
+  "reasoning": "SentinelOne's cloud workload/CNAPP product includes behavioral-AI runtime threat detection as a material embedded feature of the Singularity platform; ai_featured holds."
+ },
+ {
+  "service": "Singularity Threat Intelligence",
+  "verdict": "confirm",
+  "reasoning": "Threat-intel feed/IOC module is primarily curated intelligence aggregation; snippet does not attribute ML to this module specifically. Conservative not_ai is appropriate."
+ },
+ {
+  "service": "SkyNET 2.0",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "host-snippet-inference",
+  "reasoning": "AI is inferred solely from the host's 'video exploitation/FMV' blurb (context only, per rubric rule 1); the named service has no AI attribution and video exploitation can be non-ML. Precision favors not_ai."
+ },
+ {
+  "service": "Slides",
+  "verdict": "confirm",
+  "reasoning": "Google Workspace presentation app; productivity software, not an AI capability itself. not_ai correct."
+ },
+ {
+  "service": "SmartConnect",
+  "verdict": "confirm",
+  "reasoning": "Motorola integration/connector component; not AI. not_ai correct."
+ },
+ {
+  "service": "SmartMessaging",
+  "verdict": "confirm",
+  "reasoning": "Motorola messaging component; communications feature, not AI. not_ai correct."
+ },
+ {
+  "service": "SmartPM",
+  "verdict": "confirm",
+  "reasoning": "A project-management tool within Palantir's PFCS-SS bundle; no evidence of ML capability. not_ai correct."
+ },
+ {
+  "service": "Solaris",
+  "verdict": "confirm",
+  "reasoning": "No product evidence beyond generic Kernos hosting; reads as an OS/infra or unrelated component, not identifiable as AI. Conservative not_ai correct."
+ },
+ {
+  "service": "Spacelift",
+  "verdict": "confirm",
+  "reasoning": "Spacelift is an Infrastructure-as-Code (Terraform/OpenTofu) CI/CD management platform; DevOps tooling, not AI. not_ai correct."
+ },
+ {
+  "service": "Spanner",
+  "verdict": "confirm",
+  "reasoning": "Google Cloud Spanner is a globally distributed relational database; not AI. not_ai correct."
+ },
+ {
+  "service": "Spartan Data Platform Management",
+  "verdict": "confirm",
+  "reasoning": "No specific evidence beyond generic Azure hosting; reads as a data-platform admin tool, not identifiable as AI. Conservative not_ai correct."
+ },
+ {
+  "service": "Speech Services",
+  "verdict": "confirm",
+  "reasoning": "Azure Cognitive Services Speech (STT/TTS/translation) is a dedicated ML-based speech AI service; core_ai correct."
+ },
+ {
+  "service": "Stakeholder Users",
+  "verdict": "confirm",
+  "reasoning": "PagerDuty user-role/access feature for external stakeholders; administrative, not AI. not_ai correct."
+ },
+ {
+  "service": "Substrate Intelligence Platform (SIP)",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "ai-enabler-not-ai",
+  "reasoning": "Microsoft Substrate is the M365 data/signals layer that powers AI experiences elsewhere; it is data infrastructure/plumbing, not itself an AI product. The labeler's own reasoning concedes this."
+ },
+ {
+  "service": "THEIA",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "host-snippet-inference",
+  "reasoning": "Like SkyNET, AI is inferred only from the shared Kernos video-exploitation/FMV host blurb (context only per rubric); the named service has no independent ML attribution. Precision favors not_ai."
+ },
+ {
+  "service": "TRM Labs",
+  "verdict": "confirm",
+  "reasoning": "TRM Labs is a blockchain-intelligence platform whose ML risk-scoring models are a material embedded capability within a broader analytics product; ai_featured holds."
+ },
+ {
+  "service": "Talent 2 Opportunity (T2O)",
+  "verdict": "confirm",
+  "reasoning": "HireVue's talent-acquisition platform matches candidates using predictive AI-driven assessment science alongside video interviewing; ai_featured holds."
+ },
+ {
+  "service": "Talent Flex",
+  "verdict": "confirm",
+  "reasoning": "Internal-mobility/gig-staffing module of Eightfold's AI-driven Talent Intelligence Platform; broader HR module with embedded AI matching. ai_featured holds."
+ },
+ {
+  "service": "Talent Management",
+  "verdict": "confirm",
+  "reasoning": "Workforce-development module of Eightfold's AI-driven Talent Intelligence Platform; embedded AI matching within a broader module. ai_featured holds."
+ },
+ {
+  "service": "Talent Solution*",
+  "verdict": "confirm",
+  "reasoning": "Google Cloud Talent Solution is an explicitly ML-powered job-search/candidate-matching API using pre-trained models; core_ai correct."
+ }
+]

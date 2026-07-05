@@ -1,0 +1,204 @@
+[
+ {
+  "service": "Azure AI Services",
+  "verdict": "confirm",
+  "reasoning": "Correct. Azure AI Services (formerly Cognitive Services) is Microsoft's umbrella AI/ML API product spanning vision, language, speech, and generative models; unambiguously core_ai."
+ },
+ {
+  "service": "Azure Active Directory (AAD) Domain Services",
+  "verdict": "confirm",
+  "reasoning": "Managed LDAP/Kerberos/NTLM domain services are identity infrastructure with no ML component; not_ai is correct."
+ },
+ {
+  "service": "Azure Backup",
+  "verdict": "confirm",
+  "reasoning": "Managed backup/recovery is storage infrastructure with no AI capability; not_ai is correct."
+ },
+ {
+  "service": "Azure Bot Service",
+  "verdict": "confirm",
+  "reasoning": "Azure Bot Service is Microsoft's conversational-bot/agent building and hosting platform, which the rubric names explicitly under core_ai ('chat assistants and copilots; agent builders')."
+ },
+ {
+  "service": "Azure CXP Nomination Portal",
+  "verdict": "confirm",
+  "reasoning": "An internal Microsoft customer-experience nomination/case portal; no AI/ML product behind the name. not_ai is correct."
+ },
+ {
+  "service": "Azure Container Registry",
+  "verdict": "confirm",
+  "reasoning": "A managed private Docker/OCI image registry; pure developer infrastructure, not_ai is correct."
+ },
+ {
+  "service": "Azure DDOS Protection",
+  "verdict": "confirm",
+  "reasoning": "Network-layer DDoS mitigation; adaptive tuning does not make it a material AI product. not_ai is correct."
+ },
+ {
+  "service": "Azure Data Share",
+  "verdict": "confirm",
+  "reasoning": "Secure cross-organization data sharing; no ML capability. not_ai is correct."
+ },
+ {
+  "service": "Azure Dedicated HSM",
+  "verdict": "confirm",
+  "reasoning": "Dedicated hardware security modules for key management; cryptography/security infrastructure, not_ai is correct."
+ },
+ {
+  "service": "Azure Front Door",
+  "verdict": "confirm",
+  "reasoning": "Global load balancing / application-delivery / CDN; networking infrastructure. not_ai is correct."
+ },
+ {
+  "service": "Azure Immersive Reader",
+  "verdict": "confirm",
+  "reasoning": "Immersive Reader is an Azure Applied AI / Cognitive Services offering powered by TTS, translation, and NLP models; a defensible NLP-driven core_ai capability in Microsoft's AI catalog."
+ },
+ {
+  "service": "Azure IoT Hub",
+  "verdict": "confirm",
+  "reasoning": "Bidirectional device-messaging hub; connectivity infrastructure with no ML. not_ai is correct."
+ },
+ {
+  "service": "Azure Key Vault",
+  "verdict": "confirm",
+  "reasoning": "Secrets/keys/certificate management; security infrastructure. not_ai is correct."
+ },
+ {
+  "service": "Azure Kubernetes Configuration Management",
+  "verdict": "confirm",
+  "reasoning": "GitOps configuration management for AKS clusters; infrastructure tooling. not_ai is correct."
+ },
+ {
+  "service": "Azure Language Understanding",
+  "verdict": "confirm",
+  "reasoning": "This is LUIS, an NLP intent/entity-extraction Cognitive Service; a genuine core_ai NLP capability."
+ },
+ {
+  "service": "Azure LockBox",
+  "verdict": "confirm",
+  "reasoning": "Customer Lockbox is an access-approval workflow gate for Microsoft support access; governance control, not AI. not_ai is correct."
+ },
+ {
+  "service": "Azure Machine Learning",
+  "verdict": "confirm",
+  "reasoning": "Azure's end-to-end ML training/deployment platform; canonical core_ai."
+ },
+ {
+  "service": "Azure Machine Learning Service",
+  "verdict": "confirm",
+  "reasoning": "The same Azure ML platform under earlier naming; core_ai is correct."
+ },
+ {
+  "service": "Azure OpenAI",
+  "verdict": "confirm",
+  "reasoning": "Hosted GPT/OpenAI foundation-model inference; the canonical core_ai example named in the rubric."
+ },
+ {
+  "service": "Azure Security Center",
+  "verdict": "confirm",
+  "reasoning": "Defender for Cloud is a security posture/workload-protection product with embedded ML threat and anomaly detection; matches the rubric's 'security analytics with ML detection' ai_featured example."
+ },
+ {
+  "service": "Azure Security for IoT",
+  "verdict": "confirm",
+  "reasoning": "Defender for IoT is OT/IoT security monitoring built on behavioral/ML anomaly detection embedded in a broader monitoring product; ai_featured is defensible."
+ },
+ {
+  "service": "Azure Service Health",
+  "verdict": "confirm",
+  "reasoning": "A service status/health notification dashboard; not_ai is correct."
+ },
+ {
+  "service": "Azure Sign Up Portal",
+  "verdict": "confirm",
+  "reasoning": "Account onboarding/sign-up portal; not_ai is correct."
+ },
+ {
+  "service": "Azure Stack Edge",
+  "verdict": "confirm",
+  "reasoning": "An edge appliance whose headline marketed capability includes built-in hardware-accelerated (GPU/FPGA) ML inferencing for edge AI; ai_featured (not core_ai) appropriately reflects that the AI is an embedded feature of a compute box."
+ },
+ {
+  "service": "Azure Video Indexer",
+  "verdict": "confirm",
+  "reasoning": "Azure AI service extracting insights from video via ML (transcription, face/object detection, OCR, sentiment); core_ai is correct."
+ },
+ {
+  "service": "Backupta",
+  "verdict": "confirm",
+  "reasoning": "Obscure name reading as a backup service on a general multi-tenant platform; no AI signal. not_ai (low) is the appropriately cautious call."
+ },
+ {
+  "service": "Basic Conditions",
+  "verdict": "confirm",
+  "reasoning": "PagerDuty event-orchestration rule/condition configuration is deterministic rule-based routing, not an ML capability. not_ai is correct."
+ },
+ {
+  "service": "BoxAI",
+  "verdict": "confirm",
+  "reasoning": "Box AI is Box's dedicated generative-AI feature for content Q&A, summarization, and extraction; core_ai is correct."
+ },
+ {
+  "service": "BoxCanvas",
+  "verdict": "confirm",
+  "reasoning": "Box Canvas is a visual whiteboard/collaboration surface; no AI. not_ai is correct."
+ },
+ {
+  "service": "BoxHubs",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "collab-ai-feature-overcall",
+  "reasoning": "Box Hubs is fundamentally a content-curation/portal surface; the AI Q&A it exposes is the separately-tagged Box AI product bolted across Box, not a material capability intrinsic to Hubs. Against a skeptic ai_featured is not defensible (label was itself low-confidence and self-doubting), so overturn to the weaker not_ai."
+ },
+ {
+  "service": "Business Application Platform",
+  "verdict": "confirm",
+  "reasoning": "Reads as a generic umbrella/environment designation for the neighboring Dynamics/Power Platform services rather than a named AI product; not_ai (low) is appropriately cautious."
+ },
+ {
+  "service": "C3 AI",
+  "verdict": "confirm",
+  "reasoning": "C3 AI is a well-known enterprise AI/ML application-development platform; core_ai is correct."
+ },
+ {
+  "service": "CAMS AI Bot",
+  "verdict": "confirm",
+  "reasoning": "The name explicitly asserts an AI bot/chat assistant, matching the core_ai 'chat assistants' definition directly."
+ },
+ {
+  "service": "CAP Admin Deflection Service",
+  "verdict": "confirm",
+  "reasoning": "Obscure internal admin service with an unclear acronym and no catalog evidence of an AI-driven capability; not_ai (low) is the appropriately cautious call."
+ },
+ {
+  "service": "CRM Analytics (formerly Tableau CRM and Einstein Analytics) - including Analytics Platform, Einstein Discovery – Analyst, Einstein Discovery – User, Sales Analytics App, and Service Analytics App",
+  "verdict": "confirm",
+  "reasoning": "The bundle explicitly names Einstein Discovery (Salesforce's automated AutoML predictive/driver-discovery engine) as two of its five licensed components, making genuine ML a material, named part rather than incidental; core_ai is defensible."
+ },
+ {
+  "service": "CX Insights (formerly Conversational Insights)",
+  "verdict": "confirm",
+  "reasoning": "This is Google Contact Center AI Insights, which applies NLP (topic/sentiment/intent modeling) to conversations; core_ai is correct."
+ },
+ {
+  "service": "Capital Planning",
+  "verdict": "confirm",
+  "reasoning": "Aurigo Masterworks Capital Planning is a capital-planning/construction feature; the 'AI-powered' phrasing is host-CSO marketing, not a documented AI capability of this specific service. The labeler correctly disaggregated it. not_ai is correct."
+ },
+ {
+  "service": "Cellar Server (Rsync file backups)",
+  "verdict": "confirm",
+  "reasoning": "An rsync-based file backup server; pure infrastructure. not_ai is correct."
+ },
+ {
+  "service": "Certificate Authority Service",
+  "verdict": "confirm",
+  "reasoning": "GCP Certificate Authority Service is PKI/certificate issuance; security infrastructure with no ML. not_ai is correct."
+ },
+ {
+  "service": "Certificate View",
+  "verdict": "confirm",
+  "reasoning": "Qualys CertView is a certificate inventory/monitoring tool, not an ML-detection capability. not_ai is correct."
+ }
+]

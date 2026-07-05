@@ -1,0 +1,780 @@
+[
+ {
+  "service": "Tanium Ask",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Tanium Ask is an explicitly AI-powered natural-language question bar that translates plain-English questions into Tanium's query syntax to return endpoint data.",
+   "signals": "[\"AI-powered\", \"natural language questions\", \"Tanium Ask\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium Automate",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Rules-based workflow automation for endpoint remediation tasks.",
+   "signals": "[\"Tanium Automate\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium Certificate Manager",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Certificate lifecycle management module, not AI/ML.",
+   "signals": "[\"Tanium Certificate Manager\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium Client Management",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Endpoint agent/client administration, not AI.",
+   "signals": "[\"Tanium Client Management\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium Comply",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Compliance/vulnerability benchmark scanning module, rules-based.",
+   "signals": "[\"Tanium Comply\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium Deploy",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Software deployment/patching module, not AI.",
+   "signals": "[\"Tanium Deploy\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium Guide",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Could not confirm this specific module's function; no clear evidence it is an AI capability distinct from Tanium's other named AI products (Atlas, Ask), so treated conservatively as not_ai.",
+   "signals": "[\"Tanium Guide\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium Map",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "An asset/network topology visualization tool; not an ML capability.",
+   "signals": "[\"Tanium Map\", \"endpoint management\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium Provision",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "OS imaging/provisioning tool; infrastructure automation, not ML.",
+   "signals": "[\"Tanium Provision\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium Reputation",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "File/process reputation lookup against threat-intel feeds; a database/lookup service rather than a distinct ML capability.",
+   "signals": "[\"Tanium Reputation\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tanium SBOM",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Software bill-of-materials generation/inventory; not ML.",
+   "signals": "[\"Tanium SBOM\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2110342613",
+    "csp": "Tanium",
+    "cso": "Tanium Cloud for US Government (TC-USG)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Tanium Cloud for US Government (TC-USG) delivers an agent-based endpoint management and security platform, managed and delivered as a cloud-hosted SaaS. The Tanium Core Platform and its services are automatically configured and maintained. For more information, please visit https://www.tanium.com."
+ },
+ {
+  "service": "Tenancy Lifecycle Service",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Oracle Cloud tenancy provisioning/lifecycle management; account infrastructure, not ML.",
+   "signals": "[\"Tenancy Lifecycle Service\", \"Oracle Cloud Infrastructure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Text Analytics",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Text Analytics (Cognitive Services for Language) is an NLP API for sentiment analysis, entity recognition, and key-phrase extraction, a core-AI capability by name.",
+   "signals": "[\"Text Analytics\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Threat Intelligence Platform",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A generic Oracle threat-intelligence aggregation service; feed/database-oriented by name, without a distinct named ML component.",
+   "signals": "[\"Threat Intelligence Platform\", \"Oracle Cloud Infrastructure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Ticketing System Service",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A ticketing system on GovDataHosting; standard workflow tooling, not ML.",
+   "signals": "[\"Ticketing System Service\", \"GovDataHosting\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1303221956",
+    "csp": "IT-CNP",
+    "cso": "GovDataHosting Cloud Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "IT-CNP\u2019s FedRAMP Class D (High) certified GovDataHosting Cloud Platform is delivered as a fully managed, FISMA-compliant Platform-as-a-Service (PaaS) offering using multi-tenant Federal Government cloud and private cloud computing environment deployment models. The GovDataHosting Cloud Platform is deployed over both our own purpose-built GovDataHosting IaaS and AWS GovCloud IaaS, giving customers "
+ },
+ {
+  "service": "Torus",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "An internal Microsoft 365 service component (identity/token infrastructure); no AI/ML function indicated by the name.",
+   "signals": "[\"Torus\", \"Microsoft 365 Government Community Cloud-High\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server"
+ },
+ {
+  "service": "TotalAppSec (WAS & API Security)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Web application and API security scanning (WAS); standard vulnerability scanning, not ML.",
+   "signals": "[\"WAS & API Security\", \"Qualys\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g"
+ },
+ {
+  "service": "Translate",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Named language-translation service; translation is an explicit core-AI/NLP capability, though the Kernos host context (video exploitation platform) gives limited further detail.",
+   "signals": "[\"Translate\", \"Kernos\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2411443563",
+    "csp": "Valley IT Solutions, LLC",
+    "cso": "Kernos",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Kernos is a multi-tenant, cloud-native \u201cSaaS\u201d (software-as-a-service) cloud service offering (CSO). It leverages Amazon Web Services (AWS), IaaS (infrastructure-as-a-service), and PaaS (platform-as-a-service) for its underlying infrastructure and hardware.\n\nKernos integrates near-real-time video exploitation, common operating picture (COP), advanced multimedia and full motion video (FMV) (unclassi"
+ },
+ {
+  "service": "Translator Text",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure Translator Text is a machine-translation API, an explicit NLP/translation core-AI service.",
+   "signals": "[\"Translator Text\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Trellix Endpoint Detection and Response (EDR)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Trellix EDR is a broader endpoint security product that ships ML-driven behavioral detection and AI-guided investigation as an embedded feature.",
+   "signals": "[\"Endpoint Detection and Response\", \"Machine learn\", \"real-time monitoring\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1935245314A",
+    "csp": "Trellix",
+    "cso": "Trellix GovCloud Security Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Trellix GovCloud Security Platform (formerly known as Trellix XDR GovCloud) is a SaaS offering that is deployed on AWS GovCloud IaaS. The SaaS offering is made up of a suite of solutions developed by Trellix. Trellix GovCloud Security Platform enables customers to centrally manage security for their organization while leveraging real-time monitoring and protection of the environment. Machine learn"
+ },
+ {
+  "service": "Trellix Global Threat Intelligence (GTI)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A cloud reputation/threat-intelligence feed aggregating telemetry across Trellix's sensor network; fundamentally a database/feed service rather than a named ML capability.",
+   "signals": "[\"Global Threat Intelligence\", \"Trellix\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1935245314A",
+    "csp": "Trellix",
+    "cso": "Trellix GovCloud Security Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Trellix GovCloud Security Platform (formerly known as Trellix XDR GovCloud) is a SaaS offering that is deployed on AWS GovCloud IaaS. The SaaS offering is made up of a suite of solutions developed by Trellix. Trellix GovCloud Security Platform enables customers to centrally manage security for their organization while leveraging real-time monitoring and protection of the environment. Machine learn"
+ },
+ {
+  "service": "Trellix Helix Connect",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "A security operations/XDR orchestration platform (formerly FireEye Helix) integrating multiple analytics tools with some ML-based correlation; a broader platform with embedded analytics rather than a dedicated AI product.",
+   "signals": "[\"Helix Connect\", \"security analytics\", \"event orchestration\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1935245314A",
+    "csp": "Trellix",
+    "cso": "Trellix GovCloud Security Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Trellix GovCloud Security Platform (formerly known as Trellix XDR GovCloud) is a SaaS offering that is deployed on AWS GovCloud IaaS. The SaaS offering is made up of a suite of solutions developed by Trellix. Trellix GovCloud Security Platform enables customers to centrally manage security for their organization while leveraging real-time monitoring and protection of the environment. Machine learn"
+ },
+ {
+  "service": "Trellix Insights",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Trellix Insights (formerly MVISION Insights) uses predictive analytics/ML to forecast threat prevalence and prioritize risk, an embedded ML feature within the broader security platform.",
+   "signals": "[\"Trellix Insights\", \"predict\", \"threat prioritization\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1935245314A",
+    "csp": "Trellix",
+    "cso": "Trellix GovCloud Security Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Trellix GovCloud Security Platform (formerly known as Trellix XDR GovCloud) is a SaaS offering that is deployed on AWS GovCloud IaaS. The SaaS offering is made up of a suite of solutions developed by Trellix. Trellix GovCloud Security Platform enables customers to centrally manage security for their organization while leveraging real-time monitoring and protection of the environment. Machine learn"
+ },
+ {
+  "service": "Trellix Threat Intelligence Exchange (TIE)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "A file/reputation-sharing exchange across endpoints; primarily a database/correlation service, not a distinct ML capability.",
+   "signals": "[\"Threat Intelligence Exchange\", \"Trellix\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1935245314A",
+    "csp": "Trellix",
+    "cso": "Trellix GovCloud Security Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Trellix GovCloud Security Platform (formerly known as Trellix XDR GovCloud) is a SaaS offering that is deployed on AWS GovCloud IaaS. The SaaS offering is made up of a suite of solutions developed by Trellix. Trellix GovCloud Security Platform enables customers to centrally manage security for their organization while leveraging real-time monitoring and protection of the environment. Machine learn"
+ },
+ {
+  "service": "Tungsten TotalAgility Cloud\u00ae",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Tungsten (formerly Kofax) TotalAgility is an intelligent document processing platform built around AI-driven capture, OCR, and document classification, a document-intelligence core-AI capability.",
+   "signals": "[\"TotalAgility\", \"intelligent document processing\", \"FedHIVE\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1802451335",
+    "csp": "Human Resources Technologies, Inc. (HRTec)",
+    "cso": "Federal High Impact Virtualized Environment (FedHIVE)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "FedHIVE\u00ae is the only FedRAMP High Authorized accelerator platform delivering Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) capabilities within a single High-impact authorization boundary. Originally granted a Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP High baseline, FedHIVE enables broad reuse across "
+ },
+ {
+  "service": "Unstructured Platform",
+  "label": {
+   "category": "core_ai",
+   "confidence": "medium",
+   "reasoning": "Unstructured is a document-parsing/ETL platform purpose-built to convert unstructured documents into structured data for LLM and RAG pipelines, matching the document-intelligence definition of core_ai.",
+   "signals": "[\"Unstructured Platform\", \"Kubernetes infrastructure\", \"PFCS-SS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "User Onboarding Report",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A PagerDuty reporting feature tracking user onboarding; not AI.",
+   "signals": "[\"Onboarding Report\", \"PagerDuty\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "User Support Desk for Public Sector",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A customer/help-desk support service for Concur's public-sector offering; not AI.",
+   "signals": "[\"Support Desk\", \"Concur Cloud for Public Sector\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2234550858",
+    "csp": "Concur Technologies, Inc.",
+    "cso": "Concur Cloud for Public Sector",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Concur Cloud for Public Sector (CCPS) is a Government-Only Community Cloud environment that hosts SAP Concur\u2019s extensive suite of travel and expense cloud solutions, hosted on AWS GovCloud Infrastructure. CCPS is designed for the U.S. Public Sector, managed by SAP Concur personnel on U.S. soil, and ensures data security, confidentiality, and availability without compromising usability standards of"
+ },
+ {
+  "service": "VCN Flow Logs",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Oracle Cloud network flow logging for its Virtual Cloud Network; monitoring/logging infrastructure, not AI.",
+   "signals": "[\"VCN Flow Logs\", \"Oracle Cloud Infrastructure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "VMDR \u2013 Vulnerability Management, Detection & Response",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "Qualys VMDR is a vulnerability scanning/management platform correlating known threats and CVEs; primarily signature-based scanning rather than a named AI/ML capability.",
+   "signals": "[\"Vulnerability Management\", \"Qualys Cloud Platform\", \"eliminating vulnerabilities\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g"
+ },
+ {
+  "service": "VPC Service Controls",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Google Cloud's network security perimeter/data exfiltration control; networking/security, not AI.",
+   "signals": "[\"VPC Service Controls\", \"Google Cloud Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "VX-P949",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "An unclear model/product code within Motorola's Mission Critical Ecosystem, likely a radio or dispatch hardware/software unit; no evidence of an AI capability, so default to not_ai.",
+   "signals": "[\"Motorola Solutions Federal Cloud\", \"Mission Critical Ecosystem\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2118055930",
+    "csp": "Motorola Solutions",
+    "cso": "Motorola Solutions Federal Cloud (MSFC)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Motorola Solutions is expanding its \u201cMission Critical Ecosystem\u201d which consists of a suite of software and technology that supports mission critical communications in evolving ways and that provides fast access to actionable information. The purpose of the Motorola Solutions Federal Cloud (MSFC) is to serve as the platform upon which the applications and solutions that are part of this Mission Cri"
+ },
+ {
+  "service": "Valinor Harbor",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "An opaque codename within Palantir's supporting-services boundary with no discernible product signal; default to not_ai per precision-over-recall.",
+   "signals": "[\"Palantir Federal Cloud Service\", \"PFCS-SS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "Video Indexer",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure AI Video Indexer is a computer-vision/speech AI service that extracts insights (faces, transcripts, objects) from video content.",
+   "signals": "[\"Video Indexer\", \"Azure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Video Intelligence API*",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Google Cloud Video Intelligence API is a computer-vision service for detecting objects, scenes, and activities in video, squarely a core AI/ML API.",
+   "signals": "[\"Video Intelligence API\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Virtual Care",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "A Salesforce health/care-coordination solution for public sector telehealth workflows; a CRM-based application, not an AI capability itself.",
+   "signals": "[\"Virtual Care\", \"Salesforce Government Cloud Plus\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a"
+ },
+ {
+  "service": "Vitals (Early Intervention)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "A NEOGOV public-safety early-intervention module tracking employee risk indicators, most likely rule/threshold based rather than a distinct AI/ML capability.",
+   "signals": "[\"Early Intervention\", \"NEOGOV Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2119265538",
+    "csp": "NEOGOV",
+    "cso": "NEOGOV Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "NEOGOV is a Software as a Service (SaaS) provider of cloud-based workforce management solutions, uniquely designed for the public sector, higher education, and public safety.\n\nNEOGOV offers Human Capital Management (HCM), Human Resource Information System (HRIS), and Talent Management Software (TMS) solutions that empower government agencies to seamlessly source, recruit, hire, onboard, develop, a"
+ },
+ {
+  "service": "WatchTower and WatchTower Pro Threat Hunting services",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A managed threat-hunting service built on SentinelOne's Singularity platform, whose detection engine is explicitly described as using machine learning and behavioral AI.",
+   "signals": "[\"Threat Hunting\", \"machine learning algorithms\", \"behavioral AI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Wayfinder MDR Elite",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A managed detection and response tier built on SentinelOne's ML/behavioral-AI detection engine.",
+   "signals": "[\"MDR\", \"machine learning algorithms\", \"behavioral AI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Wayfinder MDR Essentials",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A managed detection and response tier built on SentinelOne's ML/behavioral-AI detection engine.",
+   "signals": "[\"MDR\", \"machine learning algorithms\", \"behavioral AI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ }
+]

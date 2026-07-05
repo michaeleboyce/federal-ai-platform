@@ -1,0 +1,834 @@
+[
+ {
+  "service": "Azure AI Services",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "This is Microsoft's umbrella AI/ML API product (formerly Cognitive Services), covering vision, language, speech, and generative AI models.",
+   "signals": "[\"AI Services\", \"Azure AI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Active Directory (AAD) Domain Services",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Managed domain services (LDAP/Kerberos/NTLM) for identity; not AI-related.",
+   "signals": "[\"Domain Services\", \"Active Directory\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Backup",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A managed data backup and recovery service; not AI-related.",
+   "signals": "[\"Backup\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure Bot Service",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "A managed platform for building, hosting, and connecting conversational AI bots/chat assistants.",
+   "signals": "[\"Bot Service\", \"conversational\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure CXP Nomination Portal",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Appears to be an internal Microsoft customer-experience nomination/case portal, not an AI/ML product.",
+   "signals": "[\"CXP Nomination Portal\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure Container Registry",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A managed private Docker/OCI image registry; not AI-related.",
+   "signals": "[\"Container Registry\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure DDOS Protection",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Network-layer DDoS mitigation service; not AI-related.",
+   "signals": "[\"DDOS Protection\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure Data Share",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A service for securely sharing data with other organizations; not AI-related.",
+   "signals": "[\"Data Share\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Dedicated HSM",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Dedicated hardware security modules for key management; a security/cryptography service, not AI.",
+   "signals": "[\"Dedicated HSM\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Front Door",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A global load-balancing and application-delivery/CDN service; networking, not AI.",
+   "signals": "[\"Front Door\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Immersive Reader",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Immersive Reader is an Azure Applied AI / Cognitive Services offering that uses NLP and text-to-speech models to improve reading comprehension (read-aloud, syllabification, picture dictionary, translation).",
+   "signals": "[\"Immersive Reader\", \"read-aloud\", \"text-to-speech\", \"Cognitive Services\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure IoT Hub",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A managed messaging hub for bidirectional IoT device communication; pure connectivity/messaging infrastructure.",
+   "signals": "[\"IoT Hub\", \"messaging\", \"device communication\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Key Vault",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Secrets, keys, and certificate management service; no AI/ML capability.",
+   "signals": "[\"Key Vault\", \"secrets\", \"keys\", \"certificates\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Kubernetes Configuration Management",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "GitOps-based configuration management for Kubernetes clusters; infrastructure tooling, not AI.",
+   "signals": "[\"Kubernetes Configuration Management\", \"GitOps\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure Language Understanding",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "This is LUIS (Language Understanding Intelligent Service), an NLP service for intent recognition and entity extraction \u2014 a core Cognitive Services AI capability.",
+   "signals": "[\"Language Understanding\", \"LUIS\", \"NLP\", \"intent recognition\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure LockBox",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Customer Lockbox is an access-approval workflow control for Microsoft support engineer data access; not AI.",
+   "signals": "[\"LockBox\", \"access approval workflow\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure Machine Learning",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure's end-to-end ML platform for training, deploying, and managing machine learning models \u2014 a core ML capability.",
+   "signals": "[\"Machine Learning\", \"model training\", \"ML platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure Machine Learning Service",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Same Azure ML platform (earlier product naming) for building and deploying ML models.",
+   "signals": "[\"Machine Learning Service\", \"ML platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure OpenAI",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure OpenAI Service provides hosted access to GPT and other OpenAI foundation models for inference \u2014 the canonical core_ai example named in the rubric.",
+   "signals": "[\"OpenAI\", \"GPT\", \"foundation models\", \"inference\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Security Center",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Cloud security posture management and workload protection (now Defender for Cloud) that incorporates ML-based threat/anomaly detection as an embedded feature within a broader security product.",
+   "signals": "[\"Security Center\", \"threat detection\", \"security posture\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Security for IoT",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "IoT/OT security monitoring (Defender for IoT) that uses anomaly-detection analytics embedded in a broader network security monitoring product.",
+   "signals": "[\"Security for IoT\", \"anomaly detection\", \"network monitoring\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Service Health",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "A service status/health notification dashboard; not AI.",
+   "signals": "[\"Service Health\", \"status notifications\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Sign Up Portal",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "The account sign-up/onboarding portal for Azure; not AI.",
+   "signals": "[\"Sign Up Portal\", \"onboarding\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Azure Stack Edge",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Edge computing appliance whose main draw is local compute/storage/networking, but it ships GPU/FPGA-accelerated ML inferencing as a marketed embedded capability for edge AI workloads.",
+   "signals": "[\"Stack Edge\", \"edge computing device\", \"AI-enabled\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Azure Video Indexer",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Azure AI service that extracts insights from video using ML models for transcription, face/object detection, OCR, and sentiment.",
+   "signals": "[\"Video Indexer\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Backupta",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Name reads as a backup-related service on a general multi-tenant cloud platform; no AI signal.",
+   "signals": "[\"Backup\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206111371",
+    "csp": "CoSo Cloud, LLC.",
+    "cso": "Knox Systems",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "Basic Conditions",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "PagerDuty event orchestration rule/condition configuration, rule-based routing rather than an AI capability.",
+   "signals": "[\"Basic Conditions\", \"event orchestration\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "BoxAI",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Box's dedicated generative-AI feature for content Q&A, summarization, and extraction over documents.",
+   "signals": "[\"BoxAI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1212191840A",
+    "csp": "Box Inc.",
+    "cso": "Box Enterprise Cloud Content Collaboration Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Box is a FedRAMP High, FedRAMP Moderate and DoD IL4 Authorized secure cloud content management, collaboration, and intelligent automation platform that enables federal agencies and the Department of Defense to securely manage, share, and analyze mission-critical content in the cloud.\n\nBuilt to support the rigorous compliance, security, and operational demands of U.S. federal and defense environmen"
+ },
+ {
+  "service": "BoxCanvas",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Visual whiteboard/canvas collaboration tool.",
+   "signals": "[\"BoxCanvas\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1212191840A",
+    "csp": "Box Inc.",
+    "cso": "Box Enterprise Cloud Content Collaboration Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Box is a FedRAMP High, FedRAMP Moderate and DoD IL4 Authorized secure cloud content management, collaboration, and intelligent automation platform that enables federal agencies and the Department of Defense to securely manage, share, and analyze mission-critical content in the cloud.\n\nBuilt to support the rigorous compliance, security, and operational demands of U.S. federal and defense environmen"
+ },
+ {
+  "service": "BoxHubs",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "low",
+   "reasoning": "Box's curated-content Hubs product is marketed with embedded AI Q&A/summarization over hub content, though it is fundamentally a content organization feature.",
+   "signals": "[\"BoxHubs\", \"intelligent automation platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1212191840A",
+    "csp": "Box Inc.",
+    "cso": "Box Enterprise Cloud Content Collaboration Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Box is a FedRAMP High, FedRAMP Moderate and DoD IL4 Authorized secure cloud content management, collaboration, and intelligent automation platform that enables federal agencies and the Department of Defense to securely manage, share, and analyze mission-critical content in the cloud.\n\nBuilt to support the rigorous compliance, security, and operational demands of U.S. federal and defense environmen"
+ },
+ {
+  "service": "Business Application Platform",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Appears to be a generic umbrella/infrastructure designation for the Dynamics/Power Platform environment hosting the neighboring CDS/CRM/CAP services, not a named AI product itself.",
+   "signals": "[\"Business Application Platform\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "C3 AI",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "C3 AI is a well-known enterprise AI/ML application-development platform (predictive maintenance, fraud detection, etc.), offered here as an authorized service on SMX's PaaS.",
+   "signals": "[\"C3 AI\", \"Intelligent Automation Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603077867",
+    "csp": "SMX (Formerly Smartronix)",
+    "cso": "Elevate Intelligent Automation Platform (IAP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "SMX Elevate Intelligent Automation Platform (IAP) is a FedRAMP-certified PaaS that accelerates secure cloud adoption for commercial and government organizations\u2014even in the most regulated environments. Elevate IAP integrates provisioning, monitoring, security, and lifecycle management to streamline operations, minimize complexity, and mitigate risks.\n\nWhat sets Elevate IAP apart:\n\nBuilt-in complia"
+ },
+ {
+  "service": "CAMS AI Bot",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Explicitly named as an AI bot/chat assistant, matching the core_ai category directly.",
+   "signals": "[\"AI Bot\", \"CAMS\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603077867",
+    "csp": "SMX (Formerly Smartronix)",
+    "cso": "Elevate Intelligent Automation Platform (IAP)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "SMX Elevate Intelligent Automation Platform (IAP) is a FedRAMP-certified PaaS that accelerates secure cloud adoption for commercial and government organizations\u2014even in the most regulated environments. Elevate IAP integrates provisioning, monitoring, security, and lifecycle management to streamline operations, minimize complexity, and mitigate risks.\n\nWhat sets Elevate IAP apart:\n\nBuilt-in complia"
+ },
+ {
+  "service": "CAP Admin Deflection Service",
+  "label": {
+   "category": "not_ai",
+   "confidence": "low",
+   "reasoning": "Internal admin service name with an unclear 'CAP' acronym; no catalog evidence this is an AI-driven case-deflection feature rather than generic workload routing.",
+   "signals": "[\"CAP Admin\", \"Deflection Service\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "CRM Analytics (formerly Tableau CRM and Einstein Analytics) - including Analytics Platform, Einstein Discovery \u2013 Analyst, Einstein Discovery \u2013 User, Sales Analytics App, and Service Analytics App",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "Explicitly includes Einstein Discovery, Salesforce's automated ML-based predictive analytics and statistical driver-discovery engine, making this a core AI/ML capability rather than a plain BI tool.",
+   "signals": "[\"Einstein Discovery\", \"Einstein Analytics\", \"predictive\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2003061248",
+    "csp": "Salesforce",
+    "cso": "Salesforce Government Cloud Plus",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Salesforce is the #1 CRM, enabling public sector organizations to modernize service.\n\nSalesforce helps public sector organizations to transform digital service delivery, achieve faster time to value, and improve mission success with automation tools, purpose-built solutions, and smart insights that help move the mission forward - all within a compliant cloud environment. Government Cloud Plus is a"
+ },
+ {
+  "service": "CX Insights (formerly Conversational Insights)",
+  "label": {
+   "category": "core_ai",
+   "confidence": "high",
+   "reasoning": "This is Google's Contact Center AI Insights product, which applies NLP (topic modeling, sentiment/intent analysis) to analyze customer conversations.",
+   "signals": "[\"Conversational Insights\", \"Google Services\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Capital Planning",
+  "label": {
+   "category": "not_ai",
+   "confidence": "medium",
+   "reasoning": "Named for a generic capital-planning/construction-management feature; the 'AI-powered' phrase in the snippet describes the host CSO's marketing generally, not a documented AI capability of this specific service.",
+   "signals": "[\"Capital Planning\", \"AI-powered platform (host marketing, not service-specific)\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2031222637",
+    "csp": "Aurigo Software Technologies, Inc.",
+    "cso": "Masterworks Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Aurigo Masterworks Cloud is a capital planning and construction management solution designed exclusively for public agencies. Masterworks Cloud empowers federal, state, and local governments with a secure, AI-powered platform to plan, fund, and deliver infrastructure projects efficiently. With end-to-end capital planning, federal aid reimbursement, and construction project management, agencies can"
+ },
+ {
+  "service": "Cellar Server (Rsync file backups)",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "An rsync-based file backup server, pure infrastructure, not AI.",
+   "signals": "[\"Rsync file backups\", \"Cellar Server\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1403283529A",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - Azure",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "FR2300457485",
+    "csp": "Project Hosts Inc.",
+    "cso": "GSS One - AWS",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The GSS One Azure is delivered as a hybrid offering using a multi-tenant PaaS/SaaS cloud computing environment. It is available to both private and public multitenant customers deployed per the agencies preference and agreements and can be utilized by the following audiences: the public, federal, DoD, state, local, and tribal governments, as well as research institutions, federal contractors, gove"
+ },
+ {
+  "service": "Certificate Authority Service",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "PKI/certificate issuance service, a security/infrastructure function with no ML component.",
+   "signals": "[\"Certificate Authority\", \"GCP infrastructure\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1805751477",
+    "csp": "Google",
+    "cso": "Google Services (Google Cloud Platform Products and underlying Infrastructure)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Google Services offering consists of two primary layers: Google Cloud Platform (GCP) and Google Common Infrastructure (GCI). The Google Cloud Platform is made up of customer facing services. The services within the Google Cloud Platform sit on top of Google Common Infrastructure, which is infrastructure private to Google that is responsible for the implementation of common controls for all Goo"
+ },
+ {
+  "service": "Certificate View",
+  "label": {
+   "category": "not_ai",
+   "confidence": "high",
+   "reasoning": "Qualys CertView is a certificate inventory/monitoring tool, not an AI capability.",
+   "signals": "[\"Certificate\", \"Qualys Cloud Platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   },
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "The Qualys Cloud Platform (QCP) is a multi-tenant shared cloud service environment. Its unique computing power is capable of continuously analyzing and correlating information, to assist IT management with identifying and homing-in on threats and eliminating vulnerabilities. With its Qualys sensors, a core service of the Qualys Cloud Platform, make it easy to extend your security throughout your g"
+ }
+]

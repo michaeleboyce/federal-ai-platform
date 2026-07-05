@@ -1,0 +1,810 @@
+[
+ {
+  "service": "EDR \u2013 Endpoint Detection & Response",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Qualys EDR incorporates ML-based behavioral threat detection as part of a broader security/vulnerability platform.",
+   "signals": "[\"Endpoint Detection & Response\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2231052341",
+    "csp": "Qualys, Inc.",
+    "cso": "Qualys Government Platform",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1508207205",
+    "csp": "Qualys",
+    "cso": "Qualys Cloud Platform",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "last_90",
+  "host_service_desc_snippet": "Qualys Government Platform (QGP) consists of a suite of Information Technology (IT) security and compliance solutions delivered via a SaaS deployment model that leverages a highly scalable multi-tenant cloud infrastructure. The below services are part of the QGP platform - Vulnerability Management, Detection, and Response (VMDR) service enables customers to discover, assess, prioritize, and patch "
+ },
+ {
+  "service": "Endpoint Detection and Response (EDR)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Host description explicitly states SentinelOne 'leverages advanced machine learning algorithms and behavioral AI' as the detection engine underlying this service.",
+   "signals": "[\"machine learning algorithms\", \"behavioral AI\", \"Endpoint Detection and Response\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Extended Detection and Response (XDR)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "SentinelOne's XDR correlates endpoint/network telemetry using machine learning and behavioral AI for threat detection \u2014 security analytics with an ML core embedded in a broader security platform.",
+   "signals": "[\"XDR\", \"machine learning\", \"behavioral AI\", \"SentinelOne\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1919071020A",
+    "csp": "SentinelOne",
+    "cso": "SentinelOne Singularity Platform High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The SentinelOne Singularity platform is a unified, cloud-delivered security platform that provides customers with automation, endpoint detection and response and security information and event management (SIEM) capabilities integrated with a unified data lake to ingest and centralize structured and unstructured data. SentinelOne leverages advanced machine learning algorithms and behavioral AI to a"
+ },
+ {
+  "service": "Falcon Adversary Intelligence Premium",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Premium tier of CrowdStrike's ML-assisted threat-intelligence offering.",
+   "signals": "[\"Adversary Intelligence Premium\", \"Threat Intelligence\", \"CrowdStrike\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Cloud Security for Containers",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Container runtime security with ML-based threat/behavioral detection as part of CrowdStrike's cloud security suite.",
+   "signals": "[\"Cloud Security for Containers\", \"CrowdStrike\", \"runtime protection\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Identity Protection",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Identity threat detection and response relies on behavioral/ML analytics to spot credential misuse and lateral movement \u2014 security analytics with an ML core.",
+   "signals": "[\"Identity Protection\", \"behavioral\", \"CrowdStrike\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Insight XDR",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "CrowdStrike's core EDR/XDR product correlates endpoint telemetry using machine learning and behavioral AI for detection, a security-analytics product with an ML core.",
+   "signals": "[\"Insight XDR\", \"machine learning\", \"behavioral AI\", \"CrowdStrike\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Next-Gen SIEM",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A SIEM product that applies AI/ML-based correlation across ingested log data for threat detection, embedded within the broader Falcon platform.",
+   "signals": "[\"Next-Gen SIEM\", \"CrowdStrike\", \"correlation\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Prevent",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "CrowdStrike's next-gen antivirus uses machine-learning-based malware prevention as its core detection mechanism, embedded in the broader endpoint security platform.",
+   "signals": "[\"Falcon Prevent\", \"machine learning\", \"malware prevention\", \"CrowdStrike\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Falcon Spotlight",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "CrowdStrike's vulnerability management module, which prioritizes vulnerabilities using CrowdStrike's ExPRT.AI machine-learning exploit-prediction rating embedded within the broader Falcon endpoint security platform.",
+   "signals": "[\"Falcon Spotlight\", \"vulnerability management\", \"cloud-based intelligence engine\", \"endpoint security\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1807853629A",
+    "csp": "CrowdStrike, Inc.",
+    "cso": "CrowdStrike Falcon Platform for Government",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The primary purpose of the CrowdStrike Falcon Platform is to provide organizations with a comprehensive cybersecurity solution that encompasses the following system functions:\r\n\r\n \r\n\r\nEndpoint Security - Advanced endpoint security capabilities to protect laptops, desktops, servers, and virtual machines from various cyber threats.\r\n\r\nThreat Intelligence - Cloud-based intelligence engine to collect "
+ },
+ {
+  "service": "Full Stack Observability: Model Performance Monitoring (MLOps)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A New Relic module specifically for monitoring deployed ML model performance (MLOps), an AI/ML-focused observability feature embedded in the broader platform.",
+   "signals": "[\"Model Performance Monitoring\", \"MLOps\", \"intelligent observability platform\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1607057910",
+    "csp": "New Relic",
+    "cso": "New Relic",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "New Relic is the intelligent observability platform, providing complete visibility across your complex IT environment (both on-prem and in the cloud). Our SaaS solution is a unified data platform that ingests and analyzes a wide array of telemetry data\u2014metrics, events, logs, and traces. This provides a single source of truth for monitoring the performance of applications, infrastructure, and user "
+ },
+ {
+  "service": "Google Vids",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A video-creation product in Workspace that embeds generative AI (Gemini) for script writing, storyboards, and narration, but the product itself is video editing/production, not a model or chat interface.",
+   "signals": "[\"Google Vids\", \"Workspace\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206081364",
+    "csp": "Google",
+    "cso": "Google Workspace",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Google Workspace (formerly G Suite) is comprised of Google\u2019s multi-tenant public and hybrid cloud instances and leverages Google Services.\n\n** The entire authorized security boundary of Google Services is documented, assessed, and managed against the FedRAMP High baseline of security and privacy controls. Services that are denoted with an asterisk (*) do not meet the SA-9(5) requirement. Please re"
+ },
+ {
+  "service": "Hirevue GovCloud",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Video interviewing/recruiting platform whose core differentiator is embedded AI-driven candidate assessment scoring, per the snippet's explicit 'artificial intelligence' reference.",
+   "signals": "[\"artificial intelligence\", \"predictive I-O science\", \"video interviewing\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1831429369",
+    "csp": "HireVue",
+    "cso": "Recruitment Assessments and Video Interviewing",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "HireVue helps global enterprises gain a competitive advantage in the modern talent marketplace with video interviewing software and recruitment assessments. The HireVue platform is transforming the way organizations discover, hire, and develop talent. By combining video interviews with predictive, validated I-O science and artificial intelligence.\n\nBased in Sandy, Utah, HireVue works with more tha"
+ },
+ {
+  "service": "Horizon3.ai Node Zero",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "NodeZero is an autonomous penetration-testing platform whose attack-path decisioning is algorithm/ML-driven, embedded within a broader offensive-security-testing product.",
+   "signals": "[\"autonomous penetration testing\", \"Horizon3.ai\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1802451335",
+    "csp": "Human Resources Technologies, Inc. (HRTec)",
+    "cso": "Federal High Impact Virtualized Environment (FedHIVE)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "FedHIVE\u00ae is the only FedRAMP High Authorized accelerator platform delivering Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) capabilities within a single High-impact authorization boundary. Originally granted a Joint Authorization Board (JAB) Provisional Authority to Operate (P-ATO) at the FedRAMP High baseline, FedHIVE enables broad reuse across "
+ },
+ {
+  "service": "IBM Concert for Government",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "IBM Concert is an application resource/dependency management platform built around watsonx generative-AI insights layered on top of core IT-ops functionality.",
+   "signals": "[\"AI-driven recommendations\", \"application management\", \"watsonx\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1208031461",
+    "csp": "IBM",
+    "cso": "IBM Platform Services for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency. These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that a"
+ },
+ {
+  "service": "IBM Instana for Government",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "APM/observability tool whose signature capability is automated, algorithmic root-cause analysis across dependency graphs \u2014 an embedded analytics/ML feature within a monitoring product.",
+   "signals": "[\"AI-powered observability\", \"automatic root cause analysis\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1208031461",
+    "csp": "IBM",
+    "cso": "IBM Platform Services for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency. These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that a"
+ },
+ {
+  "service": "IBM Turbonomic for Government",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Application Resource Management platform that continuously analyzes supply/demand and automates resource-optimization decisions via an analytics/decision engine.",
+   "signals": "[\"automated resource optimization\", \"decision engine\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1208031461",
+    "csp": "IBM",
+    "cso": "IBM Platform Services for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency. These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that a"
+ },
+ {
+  "service": "IBM Verify for Government",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "IAM/CIAM product whose adaptive access capability applies risk-based, ML-informed scoring to authentication decisions as an embedded feature.",
+   "signals": "[\"adaptive access\", \"risk-based authentication\", \"identity\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1208031461",
+    "csp": "IBM",
+    "cso": "IBM Platform Services for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "IBM Platform Services provides core services for managing devices, applications, content, identity & access management, end-to-end visibility, dynamic resource allocation, and improved operational risk and resiliency. These services work together to modernize device management, IAM, observability, application resource monitoring, and providing clients with AI-driven recommendations and tips that a"
+ },
+ {
+  "service": "Identity Security Insights for Government",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "BeyondTrust product that correlates identity data across systems to surface risk/security insights, an analytics-driven capability embedded in a broader identity security suite.",
+   "signals": "[\"identity security insights\", \"risk analytics\", \"unified ecosystem\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2231070252",
+    "csp": "BeyondTrust",
+    "cso": "BeyondTrust Identity Security For Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "BeyondTrust delivers identity security solutions designed for U.S. government agencies through a unified ecosystem that consolidates controls, shares intelligence, and enforces Zero Trust across human, machine, and AI identities. All solutions are FedRAMP-authorized and hosted in a secure government cloud, supporting federal, state, local, and tribal organizations.\r\n-Zero Trust Privileged Access M"
+ },
+ {
+  "service": "Identity Threat Protection (ITP)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Okta's real-time identity threat detection product applies continuous behavioral risk analytics to flag account compromise, matching the ML-based security-analytics pattern.",
+   "signals": "[\"threat protection\", \"identity risk detection\", \"Okta\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2131856836",
+    "csp": "Okta",
+    "cso": "Okta IDaaS Government High Cloud (GHC)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1512167750",
+    "csp": "Okta",
+    "cso": "Okta IDaaS Regulated Cloud",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Okta for Government High service offering provides centralized identity and access management capabilities to customers who want to manage access across any application or device, whether they are on-premises in the customer\u2019s office/data center or in the cloud. The Okta IDaaS platform is the primary application platform provided to customers. The IDaaS application provides several important featu"
+ },
+ {
+  "service": "Intelligent Alert Grouping",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "PagerDuty feature that uses machine learning to cluster related alerts and reduce noise, an embedded ML capability within the broader incident-management platform.",
+   "signals": "[\"intelligent aggregation\", \"machine learning\", \"alert grouping\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "KSOC",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "The Knightscope Autonomous Security Robot (ASR) is a physical security product whose core value is autonomous navigation and self-operation without human intervention, indicating embedded AI/autonomy as a material feature of the broader hardware/security offering.",
+   "signals": "[\"Autonomous Security Robot\", \"navigate autonomously\", \"without any human intervention\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2118080669",
+    "csp": "Knightscope, Inc.",
+    "cso": "Knightscope Autonomous Security Robot (Knightscope ASR)",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The Knightscope Autonomous Security Robot (ASR) is a fully autonomous security robot equipped with four (4) cameras, microphones, and speakers, for 360-degree video and audio. The ASRs navigate the area(s) of operation autonomously and stream live video back to the user via a web browser. The ASRs run 24/7 on its own including autonomously recharging itself without any human intervention have the "
+ },
+ {
+  "service": "Knightscope Security Operations Center (KSOC)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "The SOC dashboard for Knightscope's autonomous security robots consolidates video/sensor feeds from AI-driven autonomous robots, making embedded AI-based monitoring/analytics a material feature of this operations-center product.",
+   "signals": "[\"Knightscope\", \"Security Operations Center\", \"autonomous\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2315464863",
+    "csp": "Palantir Technologies",
+    "cso": "Palantir Federal Cloud Service \u2013 Supporting Services (PFCS-SS)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PFCS-SS is a dedicated environment for the purpose of delivering best-of-breed commercial software to federal government customers as a secure cloud service at the FedRAMP High baseline. The software deployed to PFCS-SS is commercially available software configured to run on PFCS\u2019 Kubernetes infrastructure and leverage PFCS\u2019 management plane services.  This includes:\r\n\r\nClaude for Government ("
+ },
+ {
+  "service": "Microsoft 365 Defender",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "M365 Defender is an XDR security suite whose cross-signal incident correlation and detection rely materially on ML analytics, embedded within a broader security product.",
+   "signals": "[\"Defender\", \"detection\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Microsoft Cloud App Security",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Microsoft's CASB (Defender for Cloud Apps) relies on ML-based user/entity behavior analytics for anomaly detection, an embedded AI capability within a broader security product.",
+   "signals": "[\"Cloud App Security\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Microsoft Defender for Endpoint",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Defender for Endpoint's next-gen antivirus/EDR relies materially on ML-based behavioral and malware detection, embedded within a broader endpoint security product.",
+   "signals": "[\"Defender for Endpoint\", \"Azure Government\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Microsoft Digital Contact Center Platform",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Microsoft markets this contact-center platform with embedded generative-AI virtual agents and Copilot capabilities across Dynamics 365/Teams/Nuance.",
+   "signals": "[\"Digital Contact Center Platform\", \"Azure Government\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Microsoft Fabric",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Fabric is a unified data/analytics platform (Power BI, Data Factory, Synapse) with Copilot generative-AI features embedded throughout, secondary to its core data platform function.",
+   "signals": "[\"Microsoft Fabric\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "Microsoft PowerApps",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "PowerApps is a low-code application-building platform that ships an embedded AI Builder module for adding ML capabilities to apps, matching the low-code-plus-AI-module pattern directly.",
+   "signals": "[\"PowerApps\", \"low-code\", \"AI Builder (embedded)\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Microsoft Purview",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Purview's data governance/classification and insider risk management rely on embedded ML classifiers, secondary to its broader compliance/governance platform function.",
+   "signals": "[\"Purview\", \"Azure Commercial Cloud\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ },
+ {
+  "service": "Microsoft Purview and MDO (including Adoption Score, Secure Score, Compliance Management, Manual retention labels, Basic org-wide or location-wide retention policies, Rules-based automatic retention policies, Machine Learning-based retention, Teams message retention policies, Records Management, DLP for emails & files, DLP for Teams chat, Endpoint DLP, Basic Message Encryption, Advanced Message Encryption, Microsoft Defender for Office 365 Plan 2 , Safe Documents , eDiscovery (Standard) (including Hold and Export) , Litigation Hold , eDiscovery (Premium) , Audit (Standard) , Audit (Premium) , Microsoft Purview Insider Risk Management, Communication Compliance, Information Barriers, Microsoft Defender Suite GCC, Microsoft Purview Suite GCC, Microsoft 365 G5 Info Protection and Governance, Microsoft 365 G5 Insider Risk Management, Microsoft Purview Insider Risk Management forensic evidence, Microsoft 365 G5 eDiscovery and Audit, Microsoft Defender Suite FLW for GCC, Microsoft Purview Suite FLW for GCC, Microsoft Defender + Purview Suite FLW for GCC, Microsoft 365 F5 Information Protection and Governance, Microsoft 365 F5 Insider Risk Management, Microsoft 365 F5 eDiscovery and Audit, Microsoft Defender for Office 365 Plan 1, Microsoft Defender for Office 365 Plan 2, Premium Assessments add-on for Compliance Manager, Priva Privacy Risk Management, Priva Subject Rights Requests, Microsoft Purview Data Loss Prevention (for email and files), 10-year Audit Log Retention)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "high",
+   "reasoning": "Same bundle as the GCC-H variant; explicitly names \"Machine Learning-based retention\" as an included feature within a broader compliance/DLP/eDiscovery suite.",
+   "signals": "[\"Machine Learning-based retention\", \"Insider Risk Management\", \"eDiscovery (Premium)\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government. These cloud-based services are designed to provide organizations with streamlined commu"
+ },
+ {
+  "service": "Microsoft Threat Experts",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A Microsoft Defender managed threat-hunting service that combines human security experts with ML-based behavioral analytics to surface targeted attacks; security analytics with embedded ML detection.",
+   "signals": "[\"Threat Experts\", \"threat hunting\", \"managed detection\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Commercial Cloud is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Commercial Cloud exports savings to the customer by delivering the software, platform, and information technolog"
+ },
+ {
+  "service": "MySQL Heatwave",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Oracle's MySQL HeatWave ships embedded in-database ML (HeatWave ML) and GenAI/vector capabilities as a feature of a broader managed-database service.",
+   "signals": "[\"MySQL Heatwave\", \"Oracle\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "Office Intelligent Services (IS) (including Install apps on up to 5 PCs/Mac + 5 tablets  + 5 smartphones, Create and share Microsoft Loop components and pages, Contribute to Loop components, pages and workspaces , Microsoft Forms, Microsoft Planner, Microsoft To Do, Shared computer activation for Microsoft 365 apps)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "\"Office Intelligent Services\" is Microsoft's branding for AI/cloud-intelligence features embedded across Office apps (e.g., Designer, Researcher, Ideas); bundled here with non-AI Loop/Forms/Planner/To Do app entitlements, so AI is an embedded feature rather than the whole product.",
+   "signals": "[\"Intelligent Services\", \"Microsoft 365\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "MSO365MT",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud & Supporting Services",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud (GCC) is a suite of cloud-hosted messaging and collaboration services to meet the unique and evolving requirements of the United States Federal, State, Local, and Tribal governments, as well as contractors holding or processing data on behalf of the US Government. These cloud-based services are designed to provide organizations with streamlined commu"
+ },
+ {
+  "service": "Office Intelligent Services (IS) (including Install apps on up to 5 PCs/Mac + 5 tablets + 5 smartphones, Microsoft Forms, Microsoft Planner, Microsoft To Do, Shared computer activation for Microsoft 365 apps)",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "\"Office Intelligent Services\" is Microsoft's branding for AI/cloud-intelligence features embedded across Office apps (e.g., Designer, Researcher, Ideas); bundled here with non-AI Forms/Planner/To Do app entitlements, so AI is an embedded feature rather than the whole product.",
+   "signals": "[\"Intelligent Services\", \"Microsoft 365\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1824057433",
+    "csp": "Microsoft",
+    "cso": "Microsoft 365 Government Community Cloud-High",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft 365 (M365) Government Community Cloud-High (GCC-H) is a product family of cloud-hosted messaging and collaboration services. These cloud-based services are designed to provide organizations with streamlined communication, high availability, comprehensive security, and simplified information technology (IT) management. M365 GCC-H provides the interactivity of on-premises client and server"
+ },
+ {
+  "service": "Oracle Analytics Cloud",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A BI/analytics platform whose product ships embedded AI-powered auto-insights, natural-language query, and forecasting as a secondary capability layered on core reporting/dashboarding.",
+   "signals": "[\"Analytics Cloud\", \"AI-powered insights\", \"natural language query\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR1900048743",
+    "csp": "Oracle",
+    "cso": "Oracle Cloud Infrastructure-Government Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Oracle Cloud Infrastructure is a government-community cloud architected to provide U.S. public sector entities with best-in-class security and industry leading price-performance. Oracle Cloud Infrastructure services are a set of complementary infrastructure and platform cloud services that enable customers to build and run their enterprise workloads through high-performance, secure, and available "
+ },
+ {
+  "service": "OutSystems 11",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A low-code application development platform that ships an embedded ML-based AI Mentor System (architecture/technical-debt analysis) and generative-AI development assistance as feature additions to the core low-code product.",
+   "signals": "[\"OutSystems\", \"AI Mentor System\", \"low-code\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1206111371",
+    "csp": "CoSo Cloud, LLC.",
+    "cso": "Knox Systems",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Knox Systems provides a multi-tenant cloud platform for delivering commercial software to federal government customers. Customer applications deploy on Knox's managed infrastructure across AWS, Azure, and Google Cloud Platform using Kubernetes containers, serverless functions, or virtual machines. Knox provides 24/7 Security Operations Center and Network Operations Center management, continuous se"
+ },
+ {
+  "service": "PagerDuty Advance",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "PagerDuty's premium AIOps-oriented bundle, layering ML-based noise reduction and generative-AI incident summarization onto the core event-orchestration platform.",
+   "signals": "[\"Advance\", \"intelligent aggregation\", \"event orchestration\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2310974411",
+    "csp": "PagerDuty",
+    "cso": "PagerDuty Operations Cloud",
+    "impact_level": "Low"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "The PagerDuty Operations Cloud is a comprehensive platform that enables automated detection, diagnosis, and response to a wide range of events, including customer support alerts, suspicious or abnormal behavior, system disruptions, and performance-impacting incidents. By leveraging advanced event orchestration and intelligent aggregation features, PagerDuty enhances the signal-to-noise ratio, allo"
+ },
+ {
+  "service": "Pattern-of-Life Profiler",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "A named analytic capability for automated behavioral/pattern-of-life profiling from activity data, embedded as a feature within Bluescape's broader collaboration workspace.",
+   "signals": "[\"Pattern-of-Life Profiler\", \"operations center\", \"intelligence\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "FR2035056105",
+    "csp": "Bluescape",
+    "cso": "Bluescape with n8n for Government",
+    "impact_level": "Moderate"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Bluescape is the secure workspace for government and defense operations, giving teams a common picture to act with speed and precision. FedRAMP-authorized and trusted across national security, it brings intelligence, plans, and imagery together in one place, so mission partners align quickly and make time-critical decisions with confidence. \r\n\r\nBluescape supports use cases such as operations cente"
+ },
+ {
+  "service": "Power BI",
+  "label": {
+   "category": "ai_featured",
+   "confidence": "medium",
+   "reasoning": "Primarily a BI/reporting and visualization tool, but ships embedded AI-driven features (natural-language Q&A, Key Influencers, smart narratives) as material secondary capabilities.",
+   "signals": "[\"Power BI\"]"
+  },
+  "hosts": [
+   {
+    "fedramp_id": "F1603087869",
+    "csp": "Microsoft",
+    "cso": "Azure Government (includes Dynamics 365)",
+    "impact_level": "High"
+   },
+   {
+    "fedramp_id": "F1209051525",
+    "csp": "Microsoft",
+    "cso": "Azure Commercial Cloud",
+    "impact_level": "High"
+   }
+  ],
+  "recency": "older",
+  "host_service_desc_snippet": "Microsoft Azure Government is an open and flexible cloud platform that enables customers to quickly build, test, deploy, and manage their applications, services, and product development across a network of Microsoft-managed datacenters within the United States. The Microsoft Azure Government exports savings to the customer by delivering the software, platform, and information technology infrastruc"
+ }
+]

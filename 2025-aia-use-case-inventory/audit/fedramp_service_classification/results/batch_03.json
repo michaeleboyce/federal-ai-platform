@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Amazon Athena",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Serverless interactive SQL query service over S3 data; no ML/AI component.",
+  "signals": ["query service", "SQL"]
+ },
+ {
+  "service": "Amazon Aurora MySQL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed relational database engine; plain data storage/compute.",
+  "signals": ["database", "MySQL"]
+ },
+ {
+  "service": "Amazon Aurora PostgreSQL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed relational database engine; plain data storage/compute.",
+  "signals": ["database", "PostgreSQL"]
+ },
+ {
+  "service": "Amazon Bedrock",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Fully managed foundation-model hosting and inference service; core generative AI/LLM platform.",
+  "signals": ["Bedrock", "foundation model", "LLM hosting"]
+ },
+ {
+  "service": "Amazon Chime SDK",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Video/voice/messaging communications SDK; not an AI capability.",
+  "signals": ["SDK", "video/voice communications"]
+ },
+ {
+  "service": "Amazon Cloud Directory",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hierarchical directory data store service; plain data structure hosting.",
+  "signals": ["directory", "data store"]
+ },
+ {
+  "service": "Amazon CloudFront",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Content delivery network (CDN); networking/edge caching, no AI.",
+  "signals": ["CDN", "content delivery"]
+ },
+ {
+  "service": "Amazon CloudWatch",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Monitoring and observability service; metrics/dashboards, not ML-driven.",
+  "signals": ["monitoring", "metrics"]
+ },
+ {
+  "service": "Amazon CloudWatch Logs",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Log aggregation and storage component of CloudWatch; plain logging.",
+  "signals": ["logging"]
+ },
+ {
+  "service": "Amazon Cognito",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Identity and access management / user authentication service.",
+  "signals": ["Cognito", "identity", "authentication"]
+ },
+ {
+  "service": "Amazon Comprehend",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Natural language processing API for entity extraction, sentiment, and text analysis.",
+  "signals": ["NLP", "Comprehend", "text analysis"]
+ },
+ {
+  "service": "Amazon Comprehend Medical",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "NLP service specialized for extracting medical information from unstructured clinical text.",
+  "signals": ["NLP", "medical text extraction"]
+ },
+ {
+  "service": "Amazon Connect",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Cloud contact center platform whose core is call routing/telephony, but it ships embedded ML features (Contact Lens sentiment/transcription analysis, AI agent assist) as material product capability.",
+  "signals": ["contact center", "Contact Lens", "sentiment analysis"]
+ },
+ {
+  "service": "Amazon Data Firehose",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Streaming data delivery/ETL pipeline service; no ML component.",
+  "signals": ["data streaming", "delivery"]
+ },
+ {
+  "service": "Amazon DataZone",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Primarily a data governance/cataloging and data-sharing service; any ML-assisted metadata suggestions are a minor, secondary aspect of the product.",
+  "signals": ["data catalog", "governance", "data sharing"]
+ },
+ {
+  "service": "Amazon Detective",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Security investigation service that uses ML and graph analysis to build behavior baselines and surface anomalies for root-cause analysis.",
+  "signals": ["security analytics", "behavior graph", "ML-based investigation"]
+ },
+ {
+  "service": "Amazon DevOps Guru",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Operational monitoring product whose core mechanism is ML-based anomaly detection over application/infrastructure telemetry, analogous to ML-driven security analytics.",
+  "signals": ["machine learning", "anomaly detection", "operational insights"]
+ },
+ {
+  "service": "Amazon DocumentDB (with MongoDB compatibility)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed document database compatible with MongoDB; plain data storage.",
+  "signals": ["database", "MongoDB compatible"]
+ },
+ {
+  "service": "Amazon DynamoDB",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed NoSQL key-value database; no AI component.",
+  "signals": ["NoSQL database"]
+ },
+ {
+  "service": "Amazon EC2 Image Builder",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Automates creation/maintenance of VM/container images; not AI-related.",
+  "signals": ["image building", "automation"]
+ },
+ {
+  "service": "Amazon ElastiCache",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed in-memory caching service (Redis/Memcached); no AI.",
+  "signals": ["caching", "in-memory"]
+ },
+ {
+  "service": "Amazon Elastic Block Store (EBS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Block storage volumes for EC2; plain storage infrastructure.",
+  "signals": ["block storage"]
+ },
+ {
+  "service": "Amazon Elastic Compute Cloud (EC2)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "General-purpose virtual compute service (IaaS); no inherent AI capability.",
+  "signals": ["compute", "IaaS", "virtual machines"]
+ },
+ {
+  "service": "Amazon Elastic Container Registry (ECR)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Container image registry; storage/distribution of container images.",
+  "signals": ["container registry"]
+ },
+ {
+  "service": "Amazon Elastic Container Service (ECS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Container orchestration service; compute infrastructure, no AI.",
+  "signals": ["container orchestration"]
+ },
+ {
+  "service": "Amazon Elastic File System (EFS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed network file storage; plain storage infrastructure.",
+  "signals": ["file storage"]
+ },
+ {
+  "service": "Amazon Elastic Kubernetes Service (EKS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed Kubernetes container orchestration; compute infrastructure, no AI.",
+  "signals": ["Kubernetes", "container orchestration"]
+ },
+ {
+  "service": "Amazon Elastic MapReduce (EMR)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed big-data processing framework (Spark/Hadoop); a data processing platform, not itself an AI product.",
+  "signals": ["big data", "Spark/Hadoop"]
+ },
+ {
+  "service": "Amazon EventBridge",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Serverless event bus for application integration; no AI component.",
+  "signals": ["event bus", "integration"]
+ },
+ {
+  "service": "Amazon FSx",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed file system service (Windows/Lustre/NetApp/OpenZFS); plain storage.",
+  "signals": ["file system", "storage"]
+ },
+ {
+  "service": "Amazon FinSpace",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Data management and analytics platform for financial services (managed Spark/Jupyter clusters); analytics tooling rather than a core AI product.",
+  "signals": ["financial data management", "analytics clusters"]
+ },
+ {
+  "service": "Amazon Forecast",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Managed ML service purpose-built for time-series forecasting.",
+  "signals": ["Forecast", "machine learning", "time-series"]
+ },
+ {
+  "service": "Amazon GuardDuty",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Threat-detection service that applies ML and anomaly detection to logs/network data to flag malicious activity.",
+  "signals": ["threat detection", "machine learning", "anomaly detection"]
+ },
+ {
+  "service": "Amazon Inspector",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Automated vulnerability/configuration scanning based on known CVE databases, not ML-driven analysis.",
+  "signals": ["vulnerability scanning"]
+ },
+ {
+  "service": "Amazon Inspector Classic",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Legacy vulnerability assessment service; rule/signature-based scanning, not ML.",
+  "signals": ["vulnerability assessment"]
+ },
+ {
+  "service": "Amazon Kendra",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Intelligent enterprise search service built on machine learning/NLP for semantic document retrieval and Q&A.",
+  "signals": ["intelligent search", "machine learning", "semantic search"]
+ },
+ {
+  "service": "Amazon Keyspaces (for Apache Cassandra)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed Cassandra-compatible NoSQL database; no AI component.",
+  "signals": ["NoSQL database", "Cassandra"]
+ },
+ {
+  "service": "Amazon Kinesis Data Streams",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Real-time data streaming ingestion service; no AI component.",
+  "signals": ["data streaming"]
+ },
+ {
+  "service": "Amazon Kinesis Video Streams",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Video stream ingestion/storage service; downstream AI (e.g., Rekognition) is a separate service, not this one.",
+  "signals": ["video streaming", "ingestion"]
+ },
+ {
+  "service": "Amazon Lex",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Conversational AI service for building chatbots/voicebots using NLU/ASR.",
+  "signals": ["conversational AI", "chatbot", "NLU"]
+ },
+ {
+  "service": "Amazon Location Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Maps, geocoding, tracking, and geofencing APIs; a location/mapping service, not primarily an AI product.",
+  "signals": ["maps", "geocoding", "location"]
+ },
+ {
+  "service": "Amazon MQ",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed message broker (ActiveMQ/RabbitMQ); no AI component.",
+  "signals": ["message broker"]
+ },
+ {
+  "service": "Amazon Macie",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Data security service that uses ML to discover and classify sensitive data (PII) at scale, an embedded ML capability within a broader security/compliance product.",
+  "signals": ["machine learning", "sensitive data discovery", "PII classification"]
+ },
+ {
+  "service": "Amazon Managed Service for Apache Flink",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed stream-processing framework; data pipeline infrastructure, not AI.",
+  "signals": ["stream processing", "Apache Flink"]
+ },
+ {
+  "service": "Amazon Managed Streaming for Apache Kafka (Amazon MSK)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed Apache Kafka streaming service; messaging infrastructure, no AI.",
+  "signals": ["Kafka", "streaming"]
+ },
+ {
+  "service": "Amazon MemoryDB",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Redis-compatible in-memory durable database; no AI component.",
+  "signals": ["in-memory database", "Redis compatible"]
+ },
+ {
+  "service": "Amazon Neptune",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed graph database; data storage/query engine, not AI.",
+  "signals": ["graph database"]
+ },
+ {
+  "service": "Amazon OpenSearch Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Search and log-analytics engine; optional ML plugins (anomaly/kNN) exist but the service is primarily used as a general search/observability backend.",
+  "signals": ["search engine", "log analytics"]
+ },
+ {
+  "service": "Amazon Pinpoint and End User Messaging",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Customer messaging/marketing communications service (email, SMS, push); no core AI capability.",
+  "signals": ["messaging", "marketing communications"]
+ },
+ {
+  "service": "Amazon Polly",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Text-to-speech synthesis service using deep-learning voice models.",
+  "signals": ["text-to-speech", "Polly", "speech synthesis"]
+ }
+]

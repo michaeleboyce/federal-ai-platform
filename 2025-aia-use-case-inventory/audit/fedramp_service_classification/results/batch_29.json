@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Tanium Investigate",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An endpoint search/forensics tool for querying live endpoint data via structured questions, not an ML capability.",
+  "signals": ["Tanium Investigate", "endpoint management", "agent-based"]
+ },
+ {
+  "service": "Tanium Jump Gate",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A network relay/connectivity component for the Tanium linear chain architecture; infrastructure, not ML.",
+  "signals": ["Jump Gate", "Tanium Core Platform"]
+ },
+ {
+  "service": "Tanium Map",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An asset/network topology visualization tool; not an ML capability.",
+  "signals": ["Tanium Map", "endpoint management"]
+ },
+ {
+  "service": "Tanium Patch",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Patch management/deployment tooling; not ML.",
+  "signals": ["Tanium Patch", "endpoint management"]
+ },
+ {
+  "service": "Tanium Performance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Endpoint performance monitoring; standard telemetry, not ML.",
+  "signals": ["Tanium Performance"]
+ },
+ {
+  "service": "Tanium Provision",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "OS imaging/provisioning tool; infrastructure automation, not ML.",
+  "signals": ["Tanium Provision"]
+ },
+ {
+  "service": "Tanium Reporting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard reporting/dashboards feature; not ML.",
+  "signals": ["Tanium Reporting"]
+ },
+ {
+  "service": "Tanium Reputation",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "File/process reputation lookup against threat-intel feeds; a database/lookup service rather than a distinct ML capability.",
+  "signals": ["Tanium Reputation"]
+ },
+ {
+  "service": "Tanium Reveal",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Sensitive-data discovery on endpoints via pattern/regex-based scanning; not marketed as an ML capability.",
+  "signals": ["Tanium Reveal"]
+ },
+ {
+  "service": "Tanium Risk",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rule/score-based risk assessment from vulnerability and configuration data; not ML.",
+  "signals": ["Tanium Risk"]
+ },
+ {
+  "service": "Tanium SBOM",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Software bill-of-materials generation/inventory; not ML.",
+  "signals": ["Tanium SBOM"]
+ },
+ {
+  "service": "Tanium Software Bill of Materials (SBOM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same SBOM generation/inventory capability spelled out in full; not ML.",
+  "signals": ["Software Bill of Materials"]
+ },
+ {
+  "service": "Tanium Threat Response",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Endpoint detection/response and incident investigation tooling; primarily signature/behavior-rule based per Tanium's product positioning, not a named ML capability.",
+  "signals": ["Threat Response", "endpoint management and security"]
+ },
+ {
+  "service": "Tanium Trends",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Historical trend charting/analytics dashboards; not ML.",
+  "signals": ["Tanium Trends"]
+ },
+ {
+  "service": "Tanium Zero Trust",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Zero-trust posture assessment based on endpoint compliance signals; not ML.",
+  "signals": ["Tanium Zero Trust"]
+ },
+ {
+  "service": "Team On-Call Handoff Reviews",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An on-call scheduling/handoff review feature within PagerDuty; operational workflow, not ML.",
+  "signals": ["On-Call Handoff Reviews", "PagerDuty"]
+ },
+ {
+  "service": "Team-based Organizing and Advanced Permissions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Team structure and permissions/RBAC administration feature; not ML.",
+  "signals": ["Advanced Permissions", "Team-based Organizing"]
+ },
+ {
+  "service": "Tenable Security Center",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Vulnerability management/scanning platform; signature-based scanning, not an ML capability.",
+  "signals": ["Tenable Security Center", "GSS One"]
+ },
+ {
+  "service": "Tenancy Lifecycle Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud tenancy provisioning/lifecycle management; account infrastructure, not ML.",
+  "signals": ["Tenancy Lifecycle Service", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Tenant Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud tenant administration tooling; not ML.",
+  "signals": ["Tenant Manager", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Terminal Service Gateway (TSG)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A remote desktop/terminal services gateway on M365 GCC-H; network access infrastructure, not ML.",
+  "signals": ["Terminal Service Gateway", "Microsoft 365"]
+ },
+ {
+  "service": "Terrace Server (Software Repository & Backup Services)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Software repository and backup infrastructure; not ML.",
+  "signals": ["Software Repository", "Backup Services"]
+ },
+ {
+  "service": "Terraform",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Infrastructure-as-code provisioning tool; not ML.",
+  "signals": ["Terraform", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Text Analytics",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Text Analytics (Cognitive Services for Language) is an NLP API for sentiment analysis, entity recognition, and key-phrase extraction, a core-AI capability by name.",
+  "signals": ["Text Analytics", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Third-Party/Vendor Risk",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A GRC/vendor-risk-management workflow module on Onspring; policy/workflow tooling, not ML.",
+  "signals": ["Third-Party/Vendor Risk", "governance, risk management, and compliance"]
+ },
+ {
+  "service": "Threat Intelligence Platform",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A generic Oracle threat-intelligence aggregation service; feed/database-oriented by name, without a distinct named ML component.",
+  "signals": ["Threat Intelligence Platform", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Threshold Conditions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A rule-based alert-threshold configuration feature in PagerDuty; not ML.",
+  "signals": ["Threshold Conditions", "PagerDuty"]
+ },
+ {
+  "service": "Ticketing",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A standard ticketing/case-management feature on MAXIMUS Cloud; not ML.",
+  "signals": ["Ticketing", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "Ticketing *",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty's ticketing/incident-tracking integration feature; not ML.",
+  "signals": ["Ticketing", "PagerDuty"]
+ },
+ {
+  "service": "Ticketing System Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A ticketing system on GovDataHosting; standard workflow tooling, not ML.",
+  "signals": ["Ticketing System Service", "GovDataHosting"]
+ },
+ {
+  "service": "Tiered Cache",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Cloudflare CDN caching-tier feature; networking/performance, not ML.",
+  "signals": ["Tiered Cache", "Cloudflare"]
+ },
+ {
+  "service": "Time & Attendance (Employee Time Tracking)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An HR time-tracking module in NEOGOV's workforce-management suite; not ML.",
+  "signals": ["Time & Attendance", "Employee Time Tracking", "NEOGOV"]
+ },
+ {
+  "service": "Time-Based Alert Grouping",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A time-window-based alert deduplication/grouping rule in PagerDuty; rule-based aggregation, not a named ML capability.",
+  "signals": ["Time-Based Alert Grouping", "PagerDuty"]
+ },
+ {
+  "service": "Torus",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "An internal Microsoft 365 service component (identity/token infrastructure); no AI/ML function indicated by the name.",
+  "signals": ["Torus", "Microsoft 365 Government Community Cloud-High"]
+ },
+ {
+  "service": "TotalAI",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Qualys TotalAI is an AI-security module within the broader Qualys Cloud Platform for discovering and testing AI/ML models and LLM-powered applications for vulnerabilities; the AI focus is a specific embedded capability within a larger security-scanning product.",
+  "signals": ["TotalAI", "Qualys Cloud Platform", "identifying and homing-in on threats"]
+ },
+ {
+  "service": "TotalAppSec (WAS & API Security)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Web application and API security scanning (WAS); standard vulnerability scanning, not ML.",
+  "signals": ["WAS & API Security", "Qualys"]
+ },
+ {
+  "service": "TotalCloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloud security posture management module; configuration/compliance scanning, not ML.",
+  "signals": ["TotalCloud", "Qualys"]
+ },
+ {
+  "service": "Tovuti LMS",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A learning management system for course delivery; not ML.",
+  "signals": ["Tovuti LMS", "Knox Systems"]
+ },
+ {
+  "service": "Traffic Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Traffic Manager is DNS-based traffic routing/load balancing; networking, not ML.",
+  "signals": ["Traffic Manager", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Translate",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Named language-translation service; translation is an explicit core-AI/NLP capability, though the Kernos host context (video exploitation platform) gives limited further detail.",
+  "signals": ["Translate", "Kernos"]
+ },
+ {
+  "service": "Translator Text",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Translator Text is a machine-translation API, an explicit NLP/translation core-AI service.",
+  "signals": ["Translator Text", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Trellix Endpoint Detection and Response (EDR)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Trellix EDR is a broader endpoint security product that ships ML-driven behavioral detection and AI-guided investigation as an embedded feature.",
+  "signals": ["Endpoint Detection and Response", "Machine learn", "real-time monitoring"]
+ },
+ {
+  "service": "Trellix Global Threat Intelligence (GTI)",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A cloud reputation/threat-intelligence feed aggregating telemetry across Trellix's sensor network; fundamentally a database/feed service rather than a named ML capability.",
+  "signals": ["Global Threat Intelligence", "Trellix"]
+ },
+ {
+  "service": "Trellix Helix Connect",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "A security operations/XDR orchestration platform (formerly FireEye Helix) integrating multiple analytics tools with some ML-based correlation; a broader platform with embedded analytics rather than a dedicated AI product.",
+  "signals": ["Helix Connect", "security analytics", "event orchestration"]
+ },
+ {
+  "service": "Trellix Insights",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Trellix Insights (formerly MVISION Insights) uses predictive analytics/ML to forecast threat prevalence and prioritize risk, an embedded ML feature within the broader security platform.",
+  "signals": ["Trellix Insights", "predict", "threat prioritization"]
+ },
+ {
+  "service": "Trellix ML Protect (formerly known as Trellix Real Protect)",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "An ML-based static/behavioral malware-classification engine (the name itself says ML) embedded within the broader Trellix endpoint protection suite.",
+  "signals": ["ML Protect", "Real Protect", "Machine learn"]
+ },
+ {
+  "service": "Trellix Threat Intelligence Exchange (TIE)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A file/reputation-sharing exchange across endpoints; primarily a database/correlation service, not a distinct ML capability.",
+  "signals": ["Threat Intelligence Exchange", "Trellix"]
+ },
+ {
+  "service": "Trellix ePolicy Orchestrator (ePO)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A centralized security management/policy console; administrative tooling, not ML.",
+  "signals": ["ePolicy Orchestrator", "centrally manage security"]
+ },
+ {
+  "service": "TripLink",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SAP Concur's travel-booking integration feature; not ML.",
+  "signals": ["TripLink", "Concur Cloud for Public Sector"]
+ },
+ {
+  "service": "Tungsten TotalAgility Cloud®",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Tungsten (formerly Kofax) TotalAgility is an intelligent document processing platform built around AI-driven capture, OCR, and document classification, a document-intelligence core-AI capability.",
+  "signals": ["TotalAgility", "intelligent document processing", "FedHIVE"]
+ }
+]

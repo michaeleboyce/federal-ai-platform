@@ -1,0 +1,352 @@
+[
+ {
+  "service": "GSS One Azure SMTP Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Email relay/SMTP service within the GSS One hosting environment; not AI.",
+  "signals": ["SMTP Service", "GSS One"]
+ },
+ {
+  "service": "GSS One Certificate Authority",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PKI/certificate-issuance infrastructure; not AI.",
+  "signals": ["Certificate Authority"]
+ },
+ {
+  "service": "GSS One Ticketing System (powered by JIRA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "JIRA-based IT service ticketing; not AI.",
+  "signals": ["Ticketing System", "JIRA"]
+ },
+ {
+  "service": "GSS One User Portal",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Customer-facing administrative portal; not AI.",
+  "signals": ["User Portal", "GSS One"]
+ },
+ {
+  "service": "GSS One-AWS SMTP Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Email relay/SMTP service; not AI.",
+  "signals": ["SMTP Service"]
+ },
+ {
+  "service": "GSS One-Console",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Administrative management console for the GSS One environment; not AI.",
+  "signals": ["Console", "GSS One"]
+ },
+ {
+  "service": "Gemini App",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Google's Gemini conversational AI assistant app; a core LLM/chat product.",
+  "signals": ["Gemini App"]
+ },
+ {
+  "service": "Gemini Enterprise",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Google's enterprise generative-AI/agent platform; a core AI product.",
+  "signals": ["Gemini Enterprise"]
+ },
+ {
+  "service": "Gemini Enterprise for Customer Experience (GECX) (formerly Conversational AI and Contact Center AI)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Explicitly a conversational-AI / Contact Center AI product for customer experience; core NLP/chat capability.",
+  "signals": ["Conversational AI", "Contact Center AI", "Gemini Enterprise"]
+ },
+ {
+  "service": "Gemini for Workspace",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Google's generative-AI assistant embedded across Workspace apps (Docs, Gmail, etc.); a core AI capability.",
+  "signals": ["Gemini", "Workspace"]
+ },
+ {
+  "service": "GenAI Blueprint",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Pega's generative-AI feature that uses AI to auto-generate application/workflow designs from business requirements; the product name and function are explicitly generative-AI-driven.",
+  "signals": ["GenAI Blueprint", "Pega"]
+ },
+ {
+  "service": "Generative AI Service",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure's Generative AI Service is an LLM hosting/inference offering, analogous to Bedrock or Azure OpenAI.",
+  "signals": ["Generative AI Service", "OCI"]
+ },
+ {
+  "service": "Genie",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Databricks Genie is a natural-language / conversational AI interface for querying data within the Data Intelligence Platform.",
+  "signals": ["Genie", "Data Intelligence Platform", "AI-powered"]
+ },
+ {
+  "service": "Global Event Orchestration*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty event-routing/orchestration configuration; not AI.",
+  "signals": ["Event Orchestration", "PagerDuty"]
+ },
+ {
+  "service": "Global Integration Key",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "API/integration credential management feature; not AI.",
+  "signals": ["Integration Key", "PagerDuty"]
+ },
+ {
+  "service": "Global Search",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard keyword search across PagerDuty resources; not AI.",
+  "signals": ["Global Search", "PagerDuty"]
+ },
+ {
+  "service": "Global Secure Access",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Microsoft Entra network/security access service (SSE); not AI.",
+  "signals": ["Global Secure Access", "Azure"]
+ },
+ {
+  "service": "Gmail",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Email client/service; not itself an AI product.",
+  "signals": ["Gmail"]
+ },
+ {
+  "service": "Golden Gate",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle GoldenGate is a data replication/integration tool; not AI.",
+  "signals": ["Golden Gate", "Oracle"]
+ },
+ {
+  "service": "Google Chat",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Team messaging application; not AI.",
+  "signals": ["Google Chat"]
+ },
+ {
+  "service": "Google Cloud Armor",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "DDoS protection and WAF service; not AI.",
+  "signals": ["Cloud Armor", "WAF"]
+ },
+ {
+  "service": "Google Cloud Marketplace",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Catalog for deploying third-party software on GCP; not AI.",
+  "signals": ["Cloud Marketplace"]
+ },
+ {
+  "service": "Google Cloud Migration Center",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Assessment/planning tool for migrating workloads to Google Cloud; primarily a discovery and planning product, not an AI capability.",
+  "signals": ["Migration Center"]
+ },
+ {
+  "service": "Google Drive for Work",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloud file storage/collaboration; not AI.",
+  "signals": ["Google Drive"]
+ },
+ {
+  "service": "Google Meet",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Video conferencing service; not AI.",
+  "signals": ["Google Meet"]
+ },
+ {
+  "service": "Google Meet - Livestream",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Livestreaming feature of Google Meet; not AI.",
+  "signals": ["Meet", "Livestream"]
+ },
+ {
+  "service": "Google Tasks",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Simple to-do/task list app; not AI.",
+  "signals": ["Google Tasks"]
+ },
+ {
+  "service": "Google Vids",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A video-creation product in Workspace that embeds generative AI (Gemini) for script writing, storyboards, and narration, but the product itself is video editing/production, not a model or chat interface.",
+  "signals": ["Google Vids", "Workspace"]
+ },
+ {
+  "service": "Google Workspace Security Center (for Google Workspace Enterprise and Google Workspace Enterprise for Education domains only)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Security dashboard/analytics for Workspace admins; primarily reporting and rule-based alerts rather than a distinct ML product.",
+  "signals": ["Security Center", "Google Workspace"]
+ },
+ {
+  "service": "Gotham",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Palantir's data-integration and operational-analysis platform for defense/intel; the host snippet lists AIP as a separate product line from Gotham, indicating Gotham itself is the traditional data-integration platform rather than the AI-specific offering.",
+  "signals": ["Gotham", "operational workflows", "Foundry, AIP, Gotham, Apollo"]
+ },
+ {
+  "service": "Gotham Thick Client",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Desktop client application for accessing Gotham; an interface, not an AI capability itself.",
+  "signals": ["Thick Client", "Gotham"]
+ },
+ {
+  "service": "GovSignals",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Insufficient evidence that this Palantir supporting-services product is an ML/AI capability rather than a general signals/reporting tool; defaulting to not_ai per precision-over-recall guidance.",
+  "signals": ["GovSignals", "PFCS-SS"]
+ },
+ {
+  "service": "GovernmentJobs.com (Government Job Board)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV's public-sector job posting board; not AI.",
+  "signals": ["Job Board", "NEOGOV"]
+ },
+ {
+  "service": "Grafana Alloy",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Open-source observability data collector/agent; not AI.",
+  "signals": ["Grafana Alloy", "observability"]
+ },
+ {
+  "service": "Grafana Federal Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed Grafana observability/dashboarding offering; not AI.",
+  "signals": ["Grafana", "Federal Cloud"]
+ },
+ {
+  "service": "Grants Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce CRM module for administering grants; not AI.",
+  "signals": ["Grants Management", "Salesforce"]
+ },
+ {
+  "service": "Groups for Business",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Groups mailing-list/collaboration feature; not AI.",
+  "signals": ["Groups for Business"]
+ },
+ {
+  "service": "Guest Configuration",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Policy feature for auditing/configuring settings inside VMs; not AI.",
+  "signals": ["Guest Configuration", "Azure"]
+ },
+ {
+  "service": "H2O AI App Store",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Part of H2O.ai's unified AI platform; an app store/marketplace for deploying AI/ML applications.",
+  "signals": ["H2O AI App Store", "unified AI platform"]
+ },
+ {
+  "service": "H2O Driverless AI",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "H2O.ai's automated machine learning (AutoML) product for model training; core ML tooling.",
+  "signals": ["Driverless AI", "AutoML", "H2O.ai"]
+ },
+ {
+  "service": "H2O Eval Studio",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "H2O.ai's tool for evaluating and benchmarking ML/LLM models; core AI tooling.",
+  "signals": ["Eval Studio", "H2O.ai"]
+ },
+ {
+  "service": "H2O Hydrogen Torch",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "H2O.ai's deep-learning training platform for computer vision/NLP/audio models; core ML tooling.",
+  "signals": ["Hydrogen Torch", "H2O.ai"]
+ },
+ {
+  "service": "H2O LLM Studio",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "H2O.ai's tool for fine-tuning large language models; core generative-AI tooling.",
+  "signals": ["LLM Studio", "H2O.ai"]
+ },
+ {
+  "service": "H2O Label Genie",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "H2O.ai's AI-assisted data-labeling tool for building ML training sets; core ML tooling.",
+  "signals": ["Label Genie", "H2O.ai"]
+ },
+ {
+  "service": "H2O MLOPs",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "H2O.ai's MLOps platform for deploying, monitoring, and managing ML models; core ML tooling.",
+  "signals": ["MLOPs", "H2O.ai"]
+ },
+ {
+  "service": "H2O-3",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "H2O.ai's open-source distributed machine-learning platform; core ML tooling.",
+  "signals": ["H2O-3", "machine learning", "H2O.ai"]
+ },
+ {
+  "service": "HDInsight",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's managed Hadoop/Spark big-data analytics service; a data-processing platform, not an AI/ML product itself.",
+  "signals": ["HDInsight", "Azure"]
+ },
+ {
+  "service": "HPE Alletra",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "HPE storage hardware/array product; not AI.",
+  "signals": ["Alletra", "storage"]
+ },
+ {
+  "service": "HPE Aruba",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "HPE Aruba networking hardware/software; not AI.",
+  "signals": ["Aruba", "networking"]
+ },
+ {
+  "service": "HPE GreenLake",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "HPE's hybrid cloud/edge-to-cloud platform-as-a-service; infrastructure offering, not AI.",
+  "signals": ["GreenLake", "hybrid cloud"]
+ }
+]

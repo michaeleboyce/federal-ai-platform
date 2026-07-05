@@ -1,0 +1,216 @@
+[
+ {
+  "service": "*Appsheet",
+  "verdict": "confirm",
+  "reasoning": "AppSheet is Google's no-code app-building platform whose core is app development; it ships genuine embedded AI (natural-language app generation, AI automations) as a material feature, fitting the low-code-platform-with-AI-builder ai_featured pattern."
+ },
+ {
+  "service": "AI Protection",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "Google Cloud AI Protection is a security-posture/governance suite that discovers, secures, and administers AI workloads rather than shipping AI itself; per rubric-v2 rule 1 (security/governance OF AI) it is not_ai despite the 'AI' name."
+ },
+ {
+  "service": "AI powered Control Implementation and Audit",
+  "verdict": "confirm",
+  "reasoning": "A named GenAI feature of RegScale's GRC/CCM platform that drafts control implementations and audit artifacts; AI is a material embedded capability within a broader compliance product, so ai_featured is correct."
+ },
+ {
+  "service": "AI/BI",
+  "verdict": "confirm",
+  "reasoning": "Databricks AI/BI (Genie) is a BI/dashboarding capability with a bolt-on natural-language/ML analytics layer atop the core data platform; per rubric-v2 rule 6 the NL layer keeps it ai_featured rather than core_ai."
+ },
+ {
+  "service": "ASR",
+  "verdict": "confirm",
+  "reasoning": "The Knightscope Autonomous Security Robot's own description attributes autonomous navigation (\"navigate the area(s) of operation autonomously\"), which is genuine embedded CV/ML robotics material to the product, so ai_featured stands independent of the host."
+ },
+ {
+  "service": "AWS Compute Optimizer",
+  "verdict": "confirm",
+  "reasoning": "Compute Optimizer's entire function is ML analysis of historical utilization to produce right-sizing recommendations; ML is the core embedded mechanism, so ai_featured is correct."
+ },
+ {
+  "service": "AWS Entity Resolution",
+  "verdict": "confirm",
+  "reasoning": "Entity Resolution offers ML-based matching techniques as a documented, material capability alongside rule-based matching in a data-linking product, fitting ai_featured."
+ },
+ {
+  "service": "AWS HealthLake",
+  "verdict": "confirm",
+  "reasoning": "HealthLake is a FHIR datastore that embeds integrated medical NLP (Comprehend Medical) to extract entities from unstructured clinical text, a material AI feature beyond plain storage, so ai_featured holds."
+ },
+ {
+  "service": "Amazon Connect",
+  "verdict": "confirm",
+  "reasoning": "Contact-center platform whose core is telephony/routing but ships material embedded ML (Contact Lens sentiment/transcription, agent assist), fitting ai_featured."
+ },
+ {
+  "service": "Amazon DevOps Guru",
+  "verdict": "confirm",
+  "reasoning": "DevOps Guru's explicit purpose is ML-powered anomaly detection over operational telemetry; ML is the core mechanism, so ai_featured is correct."
+ },
+ {
+  "service": "Amazon Macie",
+  "verdict": "confirm",
+  "reasoning": "Macie uses ML to discover and classify sensitive data (PII) at scale, an embedded ML capability within a security/compliance product, fitting ai_featured."
+ },
+ {
+  "service": "Antivirus, Antimalware and HIPS solution (Trellix Endpoint Security with Advanced Threat Protection) and ePolicy Orchestrator",
+  "verdict": "confirm",
+  "reasoning": "Trellix Endpoint Security with ATP ships ML-based malware/behavioral detection as a core embedded capability, the canonical security-analytics-with-ML ai_featured pattern."
+ },
+ {
+  "service": "Appian Process Automation Platform",
+  "verdict": "confirm",
+  "reasoning": "Appian is a low-code BPM/process-automation platform that embeds AI Skills as a secondary feature; per v1 a low-code platform with an AI module is ai_featured."
+ },
+ {
+  "service": "Augmented Analytics",
+  "verdict": "confirm",
+  "reasoning": "Qlik Augmented Analytics is the embedded AI/ML insight-generation module of the broader Qlik Cloud analytics platform, fitting ai_featured."
+ },
+ {
+  "service": "Azure Advanced Threat Protection",
+  "verdict": "confirm",
+  "reasoning": "Defender for Identity uses behavioral analytics and ML to detect identity-based threats, a security-analytics-with-ML capability embedded in a monitoring service, so ai_featured is correct."
+ },
+ {
+  "service": "Azure DataBricks",
+  "verdict": "confirm",
+  "reasoning": "Databricks on Azure is a data/lakehouse analytics platform that ships substantial embedded ML training/tooling (MLflow, ML runtimes) as a material feature, fitting ai_featured."
+ },
+ {
+  "service": "Azure Power Automate",
+  "verdict": "confirm",
+  "reasoning": "Low-code workflow automation platform with an embedded AI Builder module (form processing, object detection, prediction) as a material add-on, fitting ai_featured."
+ },
+ {
+  "service": "Azure Search",
+  "verdict": "confirm",
+  "reasoning": "Azure AI Search is a search product with genuine semantic/vector/ML ranking as an embedded feature; per rubric-v2 rule 6 the ML search core keeps it ai_featured rather than core_ai."
+ },
+ {
+  "service": "Azure Sentinel",
+  "verdict": "confirm",
+  "reasoning": "Sentinel is a cloud SIEM/SOAR with ML fusion analytics and UEBA for threat detection, the rubric's canonical security-analytics-with-ML ai_featured example."
+ },
+ {
+  "service": "BigID",
+  "verdict": "confirm",
+  "reasoning": "BigID's core discovery and classification of sensitive data relies on embedded ML/NLP models, a material AI capability within a broader data-security platform, fitting ai_featured."
+ },
+ {
+  "service": "Bot Management",
+  "verdict": "confirm",
+  "reasoning": "Cloudflare Bot Management uses ML models to distinguish bot from human traffic; per rubric-v2 rule 5 a bot-mitigation product whose engine is ML is ai_featured (not core_ai), which matches the current label."
+ },
+ {
+  "service": "Box Cloud Content Management Platform",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "infra-with-ml-feature-overcall",
+  "reasoning": "The named unit is the core Box content-management/collaboration platform, which v1 places in not_ai (collaboration); Box AI is a thin recent add-on and the snippet's 'intelligent automation' refers to workflow (Box Relay), not material embedded AI."
+ },
+ {
+  "service": "BoxShield",
+  "verdict": "confirm",
+  "reasoning": "Box Shield is Box's security layer that uses ML to detect anomalous downloads/logins and malicious content, a genuine embedded ML security feature, fitting ai_featured."
+ },
+ {
+  "service": "CMMC In a Box",
+  "verdict": "confirm",
+  "reasoning": "A packaged compliance solution built on the Ask Sage GenAI platform; per rubric-v2 rule 4 a solution/template packaged on a GenAI platform is ai_featured, not core_ai, matching the current label."
+ },
+ {
+  "service": "Celonis Process Mining (CPM4)",
+  "verdict": "confirm",
+  "reasoning": "Celonis process mining embeds genuine ML (predictive/next-best-action recommendations, ML-assisted conformance) as a material capability atop deterministic event-log mining, fitting ai_featured."
+ },
+ {
+  "service": "Cisco Secure Email Threat Defense for Government",
+  "verdict": "confirm",
+  "reasoning": "Cisco's email threat defense uses ML-based detection models for phishing/BEC as a core embedded capability of a broader security product, fitting the security-analytics-with-ML ai_featured pattern."
+ },
+ {
+  "service": "Cloud Guard",
+  "verdict": "confirm",
+  "reasoning": "Oracle Cloud Guard's detector recipes include ML-based anomaly detection embedded in its security-posture monitoring, a documented ML detection feature consistent with the security-analytics-with-ML ai_featured pattern."
+ },
+ {
+  "service": "Consultative Intelligence",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "SAP Concur Consultative Intelligence is a spend-benchmarking/insights offering; the ai_featured label rests on the 'Intelligence' name fragment with no independent AI attribution, which rubric-v2 rule 3 rules out -> not_ai."
+ },
+ {
+  "service": "Content-Based Alert Grouping",
+  "verdict": "confirm",
+  "reasoning": "The named unit is PagerDuty's ML-based content-correlation feature (Event Intelligence) that groups related alerts; the unit itself is the ML capability, so ai_featured is correct."
+ },
+ {
+  "service": "Counter Adversary Elite",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "managed-service-not-ai",
+  "reasoning": "Counter Adversary Elite is a human-delivered managed threat-hunting/intelligence service; the ML lives in the underlying Falcon platform, and per rubric-v2 rule 2 that host-platform AI must not be attributed to this sub-service -> not_ai."
+ },
+ {
+  "service": "Counter Adversary Operations",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "managed-service-not-ai",
+  "reasoning": "A combined threat-intelligence and managed-hunting services offering (human analysts + intel reports) with no independent AI attribution; per rubric-v2 rule 2 the Falcon platform's ML cannot be attributed to it -> not_ai."
+ },
+ {
+  "service": "Customer Decision Hub (CDH)",
+  "verdict": "confirm",
+  "reasoning": "Pega Customer Decision Hub embeds real-time adaptive/predictive ML decisioning (next-best-action) as a material capability within the Pega platform, fitting ai_featured."
+ },
+ {
+  "service": "Cynamics AI",
+  "verdict": "confirm",
+  "reasoning": "Cynamics is an ML-driven network anomaly-detection (NDR) product; its engine is ML but its category is security detection, fitting ai_featured rather than core_ai."
+ },
+ {
+  "service": "Databricks",
+  "verdict": "confirm",
+  "reasoning": "The Databricks Data Intelligence Platform ships integrated ML tooling and a Data Intelligence Engine as material embedded features atop a data/lakehouse platform, fitting ai_featured."
+ },
+ {
+  "service": "Detect by Oversight",
+  "verdict": "confirm",
+  "reasoning": "Oversight's Detect module applies ML-based anomaly/risk detection to travel-and-expense spend data as its core mechanism, a material embedded analytics capability, fitting ai_featured."
+ },
+ {
+  "service": "Digital Employee Experience (DEX)",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "infra-with-ml-feature-overcall",
+  "reasoning": "Omnissa Workspace ONE DEX is an endpoint experience-monitoring product (telemetry, scoring, remediation dashboards); ML anomaly detection is a minor component, and v1 places plain monitoring in not_ai -> the ML is not material enough for ai_featured."
+ },
+ {
+  "service": "Dynamics 365 Contact Center",
+  "verdict": "confirm",
+  "reasoning": "Microsoft's Copilot-centric contact-center offering is built around generative-AI agent assist as a core differentiator layered on the CCaaS platform, fitting ai_featured."
+ },
+ {
+  "service": "Dynamics 365 Fraud Protection",
+  "verdict": "confirm",
+  "reasoning": "An adaptive ML fraud/risk-scoring service; per rubric-v2 rule 5 a product whose engine is ML but whose category is fraud is ai_featured, not core_ai, matching the current label."
+ },
+ {
+  "service": "Dynamics 365 Intelligent Order Management",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "D365 Intelligent Order Management is an order-orchestration product driven largely by rules/optimization; the ai_featured label rests solely on the 'Intelligent' name fragment with no substantive AI evidence, which rubric-v2 rule 3 rules out -> not_ai."
+ },
+ {
+  "service": "Dynamics 365 Sales Insights",
+  "verdict": "confirm",
+  "reasoning": "Sales Insights is Microsoft's AI-powered add-on for predictive lead/opportunity scoring and relationship analytics within Dynamics 365 Sales, a material embedded ML capability, fitting ai_featured."
+ }
+]

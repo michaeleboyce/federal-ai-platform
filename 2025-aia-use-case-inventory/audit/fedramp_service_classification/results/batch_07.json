@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Azure Immersive Reader",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Immersive Reader is an Azure Applied AI / Cognitive Services offering that uses NLP and text-to-speech models to improve reading comprehension (read-aloud, syllabification, picture dictionary, translation).",
+  "signals": ["Immersive Reader", "read-aloud", "text-to-speech", "Cognitive Services"]
+ },
+ {
+  "service": "Azure Import/Export",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A bulk data transfer service using physically shipped disks; no AI/ML capability.",
+  "signals": ["Import/Export", "disk", "data transfer"]
+ },
+ {
+  "service": "Azure Information Protection",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Document classification, labeling, and rights-management/encryption service driven by policy rules, not an ML capability.",
+  "signals": ["Information Protection", "labeling", "encryption", "rights management"]
+ },
+ {
+  "service": "Azure Internet Analyzer - MOI Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network performance measurement/analysis tool for comparing routing configurations; no AI component.",
+  "signals": ["Internet Analyzer", "network performance"]
+ },
+ {
+  "service": "Azure IoT Central",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A fully-managed IoT application platform for device management and telemetry; not an AI service itself.",
+  "signals": ["IoT Central", "IoT application platform"]
+ },
+ {
+  "service": "Azure IoT Hub",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed messaging hub for bidirectional IoT device communication; pure connectivity/messaging infrastructure.",
+  "signals": ["IoT Hub", "messaging", "device communication"]
+ },
+ {
+  "service": "Azure Key Vault",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Secrets, keys, and certificate management service; no AI/ML capability.",
+  "signals": ["Key Vault", "secrets", "keys", "certificates"]
+ },
+ {
+  "service": "Azure Kubernetes Configuration Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GitOps-based configuration management for Kubernetes clusters; infrastructure tooling, not AI.",
+  "signals": ["Kubernetes Configuration Management", "GitOps"]
+ },
+ {
+  "service": "Azure Kubernetes Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed Kubernetes container orchestration service; compute/orchestration, not AI.",
+  "signals": ["Kubernetes Service", "container orchestration"]
+ },
+ {
+  "service": "Azure Lab Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed virtual lab environments for training/classroom scenarios; no AI capability.",
+  "signals": ["Lab Services", "virtual labs"]
+ },
+ {
+  "service": "Azure Language Understanding",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "This is LUIS (Language Understanding Intelligent Service), an NLP service for intent recognition and entity extraction — a core Cognitive Services AI capability.",
+  "signals": ["Language Understanding", "LUIS", "NLP", "intent recognition"]
+ },
+ {
+  "service": "Azure Load Testing",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A fully managed load-testing service for application performance; no AI/ML capability.",
+  "signals": ["Load Testing", "performance testing"]
+ },
+ {
+  "service": "Azure LockBox",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Customer Lockbox is an access-approval workflow control for Microsoft support engineer data access; not AI.",
+  "signals": ["LockBox", "access approval workflow"]
+ },
+ {
+  "service": "Azure Lockbox",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same Customer Lockbox access-approval control (casing variant); not AI.",
+  "signals": ["Lockbox", "access approval workflow"]
+ },
+ {
+  "service": "Azure Machine Learning",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure's end-to-end ML platform for training, deploying, and managing machine learning models — a core ML capability.",
+  "signals": ["Machine Learning", "model training", "ML platform"]
+ },
+ {
+  "service": "Azure Machine Learning Service",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Same Azure ML platform (earlier product naming) for building and deploying ML models.",
+  "signals": ["Machine Learning Service", "ML platform"]
+ },
+ {
+  "service": "Azure Managed Applications",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A deployment/management mechanism for publishing turnkey solutions to customers; not AI.",
+  "signals": ["Managed Applications", "deployment"]
+ },
+ {
+  "service": "Azure Managed Grafana",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed dashboarding/visualization service built on Grafana; monitoring UI, not AI.",
+  "signals": ["Managed Grafana", "dashboarding"]
+ },
+ {
+  "service": "Azure Managed Services Azure Light House",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Lighthouse enables cross-tenant management delegation for service providers; management tooling, not AI.",
+  "signals": ["Light House", "cross-tenant management"]
+ },
+ {
+  "service": "Azure Managed Services – Azure Light House",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same Azure Lighthouse cross-tenant management delegation service (naming variant); not AI.",
+  "signals": ["Light House", "cross-tenant management"]
+ },
+ {
+  "service": "Azure Maps",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A geospatial/mapping and location-services platform; core function is maps/routing/geocoding rather than an AI capability.",
+  "signals": ["Maps", "geospatial", "routing"]
+ },
+ {
+  "service": "Azure Migrate",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A tool for discovery, assessment, and migration of on-prem workloads to Azure; not AI.",
+  "signals": ["Migrate", "workload migration"]
+ },
+ {
+  "service": "Azure Monitor",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Core observability/monitoring service for metrics, logs, and alerts; not an AI capability.",
+  "signals": ["Monitor", "metrics", "logs", "alerts"]
+ },
+ {
+  "service": "Azure Multi-factor Authentication (MFA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Identity authentication service adding a second verification factor; not AI.",
+  "signals": ["Multi-factor Authentication", "MFA"]
+ },
+ {
+  "service": "Azure NetApp Files",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Enterprise file storage service; pure storage infrastructure, not AI.",
+  "signals": ["NetApp Files", "file storage"]
+ },
+ {
+  "service": "Azure Open Datasets",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A catalog of curated public datasets intended to feed analytics/ML pipelines, but the service itself only hosts/serves data rather than performing any inference or ML function.",
+  "signals": ["Open Datasets", "curated datasets", "data catalog"]
+ },
+ {
+  "service": "Azure OpenAI",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure OpenAI Service provides hosted access to GPT and other OpenAI foundation models for inference — the canonical core_ai example named in the rubric.",
+  "signals": ["OpenAI", "GPT", "foundation models", "inference"]
+ },
+ {
+  "service": "Azure Policy",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Governance/compliance rule enforcement service for Azure resources; not AI.",
+  "signals": ["Policy", "governance", "compliance rules"]
+ },
+ {
+  "service": "Azure Portal",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "The web-based management console/UI for Azure resources; not AI.",
+  "signals": ["Portal", "management console"]
+ },
+ {
+  "service": "Azure Power Automate",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Low-code workflow automation platform that ships an embedded AI Builder module (form processing, object detection, prediction models) as an add-on feature.",
+  "signals": ["Power Automate", "AI Builder", "low-code", "form processing"]
+ },
+ {
+  "service": "Azure Private Link",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Private network connectivity service to Azure PaaS resources; pure networking, not AI.",
+  "signals": ["Private Link", "private connectivity"]
+ },
+ {
+  "service": "Azure Public IP",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Networking resource providing public IP addresses; not AI.",
+  "signals": ["Public IP", "networking"]
+ },
+ {
+  "service": "Azure Red Hat OpenShift",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed Kubernetes/OpenShift container platform; compute/orchestration, not AI.",
+  "signals": ["Red Hat OpenShift", "container platform"]
+ },
+ {
+  "service": "Azure Resource Graph",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A query service for exploring Azure resource inventories at scale; not AI.",
+  "signals": ["Resource Graph", "resource query"]
+ },
+ {
+  "service": "Azure Resource Manager (ARM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "The core deployment and resource-management layer for Azure; infrastructure control plane, not AI.",
+  "signals": ["Resource Manager", "ARM", "deployment"]
+ },
+ {
+  "service": "Azure Resource Mover",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A tool for moving Azure resources across regions; not AI.",
+  "signals": ["Resource Mover", "cross-region move"]
+ },
+ {
+  "service": "Azure Route Server",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A networking service that exchanges routing information via BGP with network virtual appliances; not AI.",
+  "signals": ["Route Server", "BGP", "networking"]
+ },
+ {
+  "service": "Azure SQL Managed Instance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed relational database instance service; not AI.",
+  "signals": ["SQL Managed Instance", "database"]
+ },
+ {
+  "service": "Azure Search",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Azure's search-as-a-service (Cognitive/AI Search) offers semantic and vector search with an ML-based ranking core, but is fundamentally a search product with AI as an embedded feature.",
+  "signals": ["Search", "semantic search", "ranking", "vector search"]
+ },
+ {
+  "service": "Azure Security Center",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Cloud security posture management and workload protection (now Defender for Cloud) that incorporates ML-based threat/anomaly detection as an embedded feature within a broader security product.",
+  "signals": ["Security Center", "threat detection", "security posture"]
+ },
+ {
+  "service": "Azure Security for IoT",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "IoT/OT security monitoring (Defender for IoT) that uses anomaly-detection analytics embedded in a broader network security monitoring product.",
+  "signals": ["Security for IoT", "anomaly detection", "network monitoring"]
+ },
+ {
+  "service": "Azure Sentinel",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "A cloud SIEM/SOAR platform whose core value includes ML-driven fusion analytics and user/entity behavior analytics for threat detection — the rubric's canonical 'security analytics with ML detection' example.",
+  "signals": ["Sentinel", "SIEM", "fusion analytics", "UEBA"]
+ },
+ {
+  "service": "Azure Service Health",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A service status/health notification dashboard; not AI.",
+  "signals": ["Service Health", "status notifications"]
+ },
+ {
+  "service": "Azure Service Manager (RDFE)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "The legacy classic-deployment management API/service; infrastructure control plane, not AI.",
+  "signals": ["Service Manager", "RDFE", "classic deployment"]
+ },
+ {
+  "service": "Azure Sign Up Portal",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "The account sign-up/onboarding portal for Azure; not AI.",
+  "signals": ["Sign Up Portal", "onboarding"]
+ },
+ {
+  "service": "Azure SignalR Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed real-time messaging service for pushing content to connected clients; not AI.",
+  "signals": ["SignalR", "real-time messaging"]
+ },
+ {
+  "service": "Azure Signup Portal",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same account sign-up/onboarding portal (spelling variant); not AI.",
+  "signals": ["Signup Portal", "onboarding"]
+ },
+ {
+  "service": "Azure Site Recovery",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Disaster-recovery/replication service for workloads; not AI.",
+  "signals": ["Site Recovery", "disaster recovery", "replication"]
+ },
+ {
+  "service": "Azure Sphere",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A secured IoT device platform (hardware, OS, and security service); not AI.",
+  "signals": ["Sphere", "IoT device security"]
+ },
+ {
+  "service": "Azure Spring Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed hosting service for Spring Boot/Java microservices applications; not AI.",
+  "signals": ["Spring Cloud", "Spring Boot", "microservices hosting"]
+ }
+]

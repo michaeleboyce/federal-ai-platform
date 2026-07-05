@@ -1,0 +1,208 @@
+[
+ {
+  "service": "1Kosmos BlockID",
+  "verdict": "overturn",
+  "corrected_category": "ai_featured",
+  "error_tag": "identity-biometrics-line",
+  "reasoning": "BlockID is fundamentally a passwordless/decentralized identity (FIDO2, distributed credential) platform; ML biometric liveness/face-match is one embedded auth factor, not the product's core capability, so ai_featured is more defensible than core_ai."
+ },
+ {
+  "service": "AGENCYAMAZONEW",
+  "verdict": "confirm",
+  "reasoning": "This is a FedRAMP package-id artifact string; the host is RQI1Stop, a CPR-training SaaS with no AI/ML component. not_ai is correct."
+ },
+ {
+  "service": "AI Builder",
+  "verdict": "confirm",
+  "reasoning": "Power Platform AI Builder is a no-code service for building and running custom ML models (prediction, form processing, object detection); it is itself an AI/ML capability."
+ },
+ {
+  "service": "AI Builder MiddleTier",
+  "verdict": "confirm",
+  "reasoning": "Named sub-component of the AI Builder model-serving stack; inseparable from and exists solely to serve AI Builder ML inference. Reasonably grouped as core_ai."
+ },
+ {
+  "service": "AI Builder Structured ML",
+  "verdict": "confirm",
+  "reasoning": "Explicitly the structured-data machine-learning component of AI Builder; a core ML capability."
+ },
+ {
+  "service": "AI Builder Unstructured ML",
+  "verdict": "confirm",
+  "reasoning": "Explicitly the unstructured-data (document/image) machine-learning component of AI Builder; a core ML capability."
+ },
+ {
+  "service": "AI Copilot",
+  "verdict": "confirm",
+  "reasoning": "Appian AI Copilot is a generative-AI chat assistant embedded in the platform, matching the rubric's copilot/chat-assistant core_ai category."
+ },
+ {
+  "service": "AI Skill",
+  "verdict": "confirm",
+  "reasoning": "Appian AI Skill builds and embeds AI/ML-driven skills (document extraction, classification) into workflows; functions as an AI model/agent builder, so core_ai holds."
+ },
+ {
+  "service": "AI integrator",
+  "verdict": "overturn",
+  "corrected_category": "ai_featured",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "In n8n an 'AI integrator' is a connector node that calls AI services, not itself a model or agent builder; it brings AI capability into a workflow-automation platform, so ai_featured is defensible while core_ai is not."
+ },
+ {
+  "service": "AIP",
+  "verdict": "confirm",
+  "reasoning": "Palantir AIP (Artificial Intelligence Platform) is an LLM/agent orchestration and model-deployment platform; core_ai is correct."
+ },
+ {
+  "service": "APX N30",
+  "verdict": "confirm",
+  "reasoning": "Motorola APX-series land-mobile radio hardware; not AI. not_ai correct."
+ },
+ {
+  "service": "APX2500",
+  "verdict": "confirm",
+  "reasoning": "Motorola APX-series land-mobile radio hardware; not AI. not_ai correct."
+ },
+ {
+  "service": "ATO In a Box",
+  "verdict": "overturn",
+  "corrected_category": "ai_featured",
+  "error_tag": "solution-on-genai-overcall",
+  "reasoning": "ATO In a Box is a compliance-automation solution packaged on the Ask Sage GenAI platform, not a model/assistant itself; the sibling 'Acquisition In a Box' on the same platform was labeled ai_featured, and precision favors the weaker category here too."
+ },
+ {
+  "service": "AWS Database Migration Service (DMS)",
+  "verdict": "confirm",
+  "reasoning": "Database migration/replication (ETL) tooling; no ML. not_ai correct."
+ },
+ {
+  "service": "AWS Firewall Manager",
+  "verdict": "confirm",
+  "reasoning": "Centralized rules-based firewall/security-policy management across accounts; not AI. not_ai correct."
+ },
+ {
+  "service": "AWS HealthOmics",
+  "verdict": "confirm",
+  "reasoning": "Managed genomics/bioinformatics storage and workflow-orchestration service; primarily pipelines and storage, not a marketed AI/ML product. not_ai correct."
+ },
+ {
+  "service": "AWS Identity and Access Management (IAM)",
+  "verdict": "confirm",
+  "reasoning": "Foundational access-control service for users/roles/permissions; not AI. not_ai correct."
+ },
+ {
+  "service": "AWS IoT Events",
+  "verdict": "confirm",
+  "reasoning": "Detects and responds to IoT events via user-defined detector models (rules/state machines), not ML. not_ai correct."
+ },
+ {
+  "service": "AWS Wickr",
+  "verdict": "confirm",
+  "reasoning": "End-to-end encrypted messaging/collaboration; not AI. not_ai correct."
+ },
+ {
+  "service": "Acquisition In a Box",
+  "verdict": "confirm",
+  "reasoning": "An acquisition-workflow solution built on the Ask Sage GenAI platform; the named unit is an application on top of the model, so ai_featured is the correct call."
+ },
+ {
+  "service": "Acsense IAM Resilience Platform",
+  "verdict": "confirm",
+  "reasoning": "IAM continuity/backup/failover platform for identity infrastructure; not AI. not_ai correct."
+ },
+ {
+  "service": "Active Directory and Active Directory Federation Services (Single-Sign On, Certificate/TOTP MFA)",
+  "verdict": "confirm",
+  "reasoning": "Identity/SSO/MFA infrastructure; not AI. not_ai correct."
+ },
+ {
+  "service": "Admin Console",
+  "verdict": "confirm",
+  "reasoning": "Google administrative management console; not AI. not_ai correct."
+ },
+ {
+  "service": "Advanced and Scalable Incident Handling",
+  "verdict": "confirm",
+  "reasoning": "Generic PagerDuty incident-response/orchestration capability; no evidence the named unit's core is ML. not_ai is the appropriately conservative call."
+ },
+ {
+  "service": "Agent Assist",
+  "verdict": "confirm",
+  "reasoning": "Google Contact Center AI Agent Assist gives real-time ML/NLP suggestions to live agents; a core conversational-AI capability. core_ai correct."
+ },
+ {
+  "service": "Agent Search on Gemini Enterprise Agent Platform (formerly Vertex AI Search)",
+  "verdict": "confirm",
+  "reasoning": "Vertex AI Search / Gemini Enterprise is an LLM-backed semantic-search and RAG/agent product where ML is the whole product, not secondary. core_ai correct."
+ },
+ {
+  "service": "Agentforce",
+  "verdict": "confirm",
+  "reasoning": "Salesforce Agentforce is an autonomous agentic-AI building/runtime platform; a core AI product. core_ai correct."
+ },
+ {
+  "service": "Alert Triage & Deduplication",
+  "verdict": "confirm",
+  "reasoning": "Deduplication is rules-based and the named unit lacks explicit material ML; conservative not_ai is defensible."
+ },
+ {
+  "service": "Allocore ULP-UGP-UFP Software",
+  "verdict": "confirm",
+  "reasoning": "HR/workforce-management software; not AI. not_ai correct."
+ },
+ {
+  "service": "Amazon Bedrock",
+  "verdict": "confirm",
+  "reasoning": "Managed foundation-model hosting/inference; the definitional core_ai example."
+ },
+ {
+  "service": "Amazon Comprehend",
+  "verdict": "confirm",
+  "reasoning": "NLP API for entity/sentiment/text analysis; a core NLP capability. core_ai correct."
+ },
+ {
+  "service": "Amazon Comprehend Medical",
+  "verdict": "confirm",
+  "reasoning": "NLP service for extracting medical entities from clinical text; core NLP/document-intelligence. core_ai correct."
+ },
+ {
+  "service": "Amazon Data Firehose",
+  "verdict": "confirm",
+  "reasoning": "Streaming data delivery/ETL pipeline; no ML core. not_ai correct."
+ },
+ {
+  "service": "Amazon DataZone",
+  "verdict": "confirm",
+  "reasoning": "Data governance/catalog and data-sharing service; any ML metadata assist is secondary. not_ai correct."
+ },
+ {
+  "service": "Amazon Detective",
+  "verdict": "confirm",
+  "reasoning": "Security-investigation service AWS markets as using ML, statistical analysis, and graph theory to baseline behavior and surface anomalies; ML is a material embedded feature. ai_featured correct."
+ },
+ {
+  "service": "Amazon Elastic File System (EFS)",
+  "verdict": "confirm",
+  "reasoning": "Managed network file storage; plain infrastructure. not_ai correct."
+ },
+ {
+  "service": "Amazon FSx",
+  "verdict": "confirm",
+  "reasoning": "Managed file-system service (Windows/Lustre/NetApp/OpenZFS); plain storage. not_ai correct."
+ },
+ {
+  "service": "Amazon Forecast",
+  "verdict": "confirm",
+  "reasoning": "Managed ML service purpose-built for time-series forecasting; a core ML capability. core_ai correct."
+ },
+ {
+  "service": "Amazon GuardDuty",
+  "verdict": "confirm",
+  "reasoning": "Threat-detection service applying ML/anomaly detection to logs and network telemetry; ML is a material embedded feature of a broader security product. ai_featured correct."
+ },
+ {
+  "service": "Amazon Kendra",
+  "verdict": "confirm",
+  "reasoning": "Purpose-built ML/NLP enterprise search with semantic retrieval and Q&A where ML IS the product (not secondary); core_ai is defensible."
+ }
+]

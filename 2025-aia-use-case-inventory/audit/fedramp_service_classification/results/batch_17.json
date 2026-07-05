@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Falcon Spotlight",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "CrowdStrike's vulnerability management module, which prioritizes vulnerabilities using CrowdStrike's ExPRT.AI machine-learning exploit-prediction rating embedded within the broader Falcon endpoint security platform.",
+  "signals": ["Falcon Spotlight", "vulnerability management", "cloud-based intelligence engine", "endpoint security"]
+ },
+ {
+  "service": "Falcon for Mobile",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "CrowdStrike's mobile threat defense module, part of the Falcon platform which relies on cloud/on-device ML-based detection to identify malicious apps and mobile threats.",
+  "signals": ["Falcon for Mobile", "endpoint security", "cloud-based intelligence engine", "threat intelligence"]
+ },
+ {
+  "service": "FastConnect",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's dedicated private network connectivity service to OCI; pure networking infrastructure.",
+  "signals": ["FastConnect", "dedicated network"]
+ },
+ {
+  "service": "Feature Store",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Databricks Feature Store is ML tooling for storing, sharing, and serving features used to train and serve machine learning models, explicitly a core ML-tooling capability.",
+  "signals": ["Feature Store", "AI-powered platform", "Machine Learning", "Data Intelligence Engine"]
+ },
+ {
+  "service": "Feature Store, Jobs & Workflows",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A bundled entitlement pairing Databricks' ML Feature Store with generic Jobs & Workflows orchestration; the ML feature-store component is material but the row also covers plain job scheduling.",
+  "signals": ["Feature Store", "Jobs & Workflows", "AI-powered platform", "Machine Learning"]
+ },
+ {
+  "service": "Federal Aid Reimbursement",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An Aurigo Masterworks module for tracking federal aid reimbursement in capital construction projects; a financial/administrative workflow tool despite the host platform's general 'AI-powered' marketing.",
+  "signals": ["Federal Aid Reimbursement", "capital planning", "construction project management"]
+ },
+ {
+  "service": "Federated Search",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Splunk's capability to search across multiple indexes/datasets from one query; a search/query feature, not ML-driven.",
+  "signals": ["Federated Search", "Splunk Cloud", "search"]
+ },
+ {
+  "service": "Feedback Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce module for building and managing surveys/feedback forms; a CRM feature, not AI/ML.",
+  "signals": ["Feedback Management", "Salesforce", "surveys"]
+ },
+ {
+  "service": "FigJam",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Figma's online whiteboard/collaboration tool; a design collaboration product, not AI/ML.",
+  "signals": ["FigJam", "design and development platform"]
+ },
+ {
+  "service": "Figma",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Core Figma design tool for collaborative interface design; a design platform, not an AI/ML capability.",
+  "signals": ["Figma", "design and development platform"]
+ },
+ {
+  "service": "File Integrity Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Checksum/change-detection monitoring of files for unauthorized modification; rules-based security control, not ML.",
+  "signals": ["File Integrity Monitoring"]
+ },
+ {
+  "service": "File Storage",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure's managed file storage service; storage infrastructure, not AI.",
+  "signals": ["File Storage", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "FileCloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Enterprise file sync-and-share platform; file storage/collaboration, not AI/ML.",
+  "signals": ["FileCloud", "file sharing"]
+ },
+ {
+  "service": "Filestore (Basic HDD and Basic SSD tiers)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP managed file storage service; storage infrastructure, not AI.",
+  "signals": ["Filestore", "HDD", "SSD", "Google Cloud Platform"]
+ },
+ {
+  "service": "Firebase Authentication*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Firebase's user authentication service; identity/auth infrastructure, not AI.",
+  "signals": ["Firebase Authentication"]
+ },
+ {
+  "service": "Firestore (replaced Datastore; excluding Firestore with MongoDB compatibility)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GCP's NoSQL document database; a database service, not AI/ML.",
+  "signals": ["Firestore", "Datastore", "database"]
+ },
+ {
+  "service": "Firewall Insights",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "GCP tool that analyzes firewall rule usage and provides configuration recommendations; a rules-analysis/network-security tool rather than an AI/ML product.",
+  "signals": ["Firewall Insights", "Google Cloud Platform"]
+ },
+ {
+  "service": "First Due Fire and EMS RMS Software",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Records management system for fire and EMS departments; operational records software, not AI.",
+  "signals": ["Fire and EMS RMS Software", "records management"]
+ },
+ {
+  "service": "Flow Orchestration",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Salesforce's declarative business-process automation/workflow tool; rules-based automation, not ML-driven.",
+  "signals": ["Flow Orchestration", "Salesforce", "automation tools"]
+ },
+ {
+  "service": "Fluid Relay Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Microsoft Azure's real-time data synchronization relay for collaborative applications (Fluid Framework); a sync/messaging infrastructure service, not AI.",
+  "signals": ["Fluid Relay Service", "Azure Government", "real-time collaboration"]
+ },
+ {
+  "service": "Form Assembly Government Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Online form-building and data-collection tool; a forms product, not AI/ML.",
+  "signals": ["Form Assembly", "FedHIVE"]
+ },
+ {
+  "service": "Forms",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Forms, a survey/form-creation tool within Google Workspace; not AI/ML.",
+  "signals": ["Forms", "Google Workspace"]
+ },
+ {
+  "service": "Foundry",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Palantir Foundry is primarily a data integration and operational analytics platform; it increasingly embeds ML model integration and ontology-driven analytics as features, but the named AI product (AIP) is a separate offering from Foundry itself.",
+  "signals": ["Foundry", "Palantir", "data integration", "operational workflows"]
+ },
+ {
+  "service": "Full Stack Disaster Recovery",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle OCI's disaster recovery orchestration service for failover/replication; infrastructure resiliency tooling, not AI.",
+  "signals": ["Full Stack Disaster Recovery", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Full Stack Observability: AI Monitoring",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A New Relic observability module specifically for monitoring AI/LLM application behavior and performance, an AI-focused feature embedded within the broader observability platform.",
+  "signals": ["AI Monitoring", "intelligent observability platform"]
+ },
+ {
+  "service": "Full Stack Observability: Application Performance Monitoring (APM)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard application performance monitoring (traces, metrics); general observability, not AI-specific.",
+  "signals": ["APM", "Application Performance Monitoring"]
+ },
+ {
+  "service": "Full Stack Observability: Browser Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Client-side browser performance monitoring; general observability, not AI.",
+  "signals": ["Browser Monitoring"]
+ },
+ {
+  "service": "Full Stack Observability: Cloud Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloud infrastructure monitoring; general observability, not AI.",
+  "signals": ["Cloud Monitoring"]
+ },
+ {
+  "service": "Full Stack Observability: Infrastructure Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Server/infrastructure metrics monitoring; general observability, not AI.",
+  "signals": ["Infrastructure Monitoring"]
+ },
+ {
+  "service": "Full Stack Observability: Kubernetes Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Kubernetes cluster monitoring; general observability, not AI.",
+  "signals": ["Kubernetes Monitoring"]
+ },
+ {
+  "service": "Full Stack Observability: Log Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Log ingestion, storage, and search; general observability, not AI.",
+  "signals": ["Log Management"]
+ },
+ {
+  "service": "Full Stack Observability: Mobile Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Mobile app performance monitoring; general observability, not AI.",
+  "signals": ["Mobile Monitoring"]
+ },
+ {
+  "service": "Full Stack Observability: Model Performance Monitoring (MLOps)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A New Relic module specifically for monitoring deployed ML model performance (MLOps), an AI/ML-focused observability feature embedded in the broader platform.",
+  "signals": ["Model Performance Monitoring", "MLOps", "intelligent observability platform"]
+ },
+ {
+  "service": "Full Stack Observability: Network Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network performance and connectivity monitoring; general observability, not AI.",
+  "signals": ["Network Monitoring"]
+ },
+ {
+  "service": "Full Stack Observability: OpenTelemetry",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Support for ingesting OpenTelemetry-formatted telemetry data; a data-ingestion standard integration, not AI.",
+  "signals": ["OpenTelemetry"]
+ },
+ {
+  "service": "Full Stack Observability: SAP Solutions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Monitoring integration tailored to SAP environments; general observability, not AI.",
+  "signals": ["SAP Solutions"]
+ },
+ {
+  "service": "Full Stack Observability: Serverless Function Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Monitoring for serverless function execution; general observability, not AI.",
+  "signals": ["Serverless Function Monitoring"]
+ },
+ {
+  "service": "Full Stack Observability: Streaming Video & Ads",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Monitoring for streaming media and ad delivery performance; general observability, not AI.",
+  "signals": ["Streaming Video & Ads"]
+ },
+ {
+  "service": "Full Stack Observability: Synthetic Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Scripted/synthetic transaction monitoring to simulate user activity; general observability, not AI.",
+  "signals": ["Synthetic Monitoring"]
+ },
+ {
+  "service": "Full Stack Observability: Website Performance Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Website performance/uptime monitoring; general observability, not AI.",
+  "signals": ["Website Performance Monitoring"]
+ },
+ {
+  "service": "Full-Featured Mobile App for iOS and Android",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty's mobile client application for incident response; a mobile app, not itself an AI capability despite the host platform's mention of 'intelligent aggregation.'",
+  "signals": ["Mobile App", "iOS and Android", "PagerDuty Operations Cloud"]
+ },
+ {
+  "service": "Functions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Serverless function execution (Azure Functions / Oracle Functions); general-purpose compute, not AI.",
+  "signals": ["Functions", "Azure Government", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Fusion Application as a Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Oracle Fusion Applications is a broad ERP/HCM/CRM SaaS suite; primarily business applications rather than an AI/ML product, notwithstanding some embedded AI features in the wider suite.",
+  "signals": ["Fusion Application as a Service", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "GAV – Global Asset View",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Qualys's IT asset inventory/CMDB capability; asset discovery and cataloging, not ML-driven.",
+  "signals": ["Global Asset View", "Qualys Cloud Platform"]
+ },
+ {
+  "service": "GCP Assured Workloads",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's compliance-boundary control service for enforcing data residency/security policies; a governance/compliance tool, not AI.",
+  "signals": ["Assured Workloads", "compliance"]
+ },
+ {
+  "service": "GKE Config Sync (formerly Config Sync)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GitOps-based configuration sync tool for Kubernetes clusters; configuration management, not AI.",
+  "signals": ["Config Sync", "GKE", "Kubernetes"]
+ },
+ {
+  "service": "GKE Hub",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Centralized fleet management for Kubernetes clusters; cluster management infrastructure, not AI.",
+  "signals": ["GKE Hub", "fleet management"]
+ },
+ {
+  "service": "GKE Identity Service (formerly Anthos Identity Service (AIS) - [Hybrid Identity])",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hybrid identity/authentication service for GKE/Anthos clusters; identity infrastructure, not AI.",
+  "signals": ["Identity Service", "Hybrid Identity", "GKE"]
+ },
+ {
+  "service": "GRID20/20 -  Advanced Transformer Infrastructure (ATI) - Sensor Devices",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Physical/IoT sensor devices for monitoring electrical transformer infrastructure; sensor hardware and data collection, with no indicated ML/AI analysis capability.",
+  "signals": ["Sensor Devices", "Advanced Transformer Infrastructure", "GRID20/20"]
+ },
+ {
+  "service": "GSS One Admin Center",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Administrative console for the GSS One PaaS/SaaS hosting environment; platform administration, not AI.",
+  "signals": ["Admin Center", "GSS One", "multi-tenant PaaS/SaaS"]
+ }
+]

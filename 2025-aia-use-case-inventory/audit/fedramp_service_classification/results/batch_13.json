@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Customer Decision Hub (CDH)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Pega's Customer Decision Hub is a real-time next-best-action decisioning module (adaptive/predictive models) embedded within the broader Pega customer engagement platform, not a standalone AI product line.",
+  "signals": ["Customer Decision Hub", "Pega Government Platform", "no-code application development"]
+ },
+ {
+  "service": "Customer Feedback Service (CFS)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A survey/feedback collection service; no ML or model capability indicated by the name or host context.",
+  "signals": ["Customer Feedback Service", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Customer Insight and Analysis (CIA)",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Generic analytics/reporting service name on M365 GCC; no explicit ML/AI capability named.",
+  "signals": ["Insight and Analysis", "Microsoft 365 Government Community Cloud"]
+ },
+ {
+  "service": "Customer Insight and Analysis (CIA) (A.K.A. Usage Reports)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Explicitly aliased as usage reporting, a standard analytics/telemetry function rather than an AI capability.",
+  "signals": ["A.K.A. Usage Reports", "GCC-High"]
+ },
+ {
+  "service": "Customer Relationship Management (CRM) - including Lightning Platform (including Force.com), Sales Cloud, and Service Cloud",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "The named service is Salesforce's core CRM/platform stack (Sales Cloud, Service Cloud, Lightning); named AI features like Einstein are not called out in this entry.",
+  "signals": ["Sales Cloud", "Service Cloud", "Lightning Platform", "#1 CRM"]
+ },
+ {
+  "service": "CyberSTAR™ SaaS",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A workforce-qualification/compliance-mapping tool (DoDD 8570/8140.03, NICE/NIST framework mapping) with no ML/AI function.",
+  "signals": ["workforce elements", "compliance mapping", "KSATs"]
+ },
+ {
+  "service": "Cynamics AI",
+  "category": "ai_featured",
+  "confidence": "high",
+  "reasoning": "Cynamics is an AI/ML-driven network traffic anomaly-detection (NDR) product hosted as a SaaS app on Constellation GovCloud; the name itself flags AI, and it fits the security-analytics-with-ML-detection pattern rather than a general-purpose model API.",
+  "signals": ["Cynamics AI", "Merlin-operated SaaS", "network"]
+ },
+ {
+  "service": "D365 Integrator APP",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Dynamics 365 integration connector on Azure Government; no AI/ML function named.",
+  "signals": ["D365 Integrator", "Azure Government"]
+ },
+ {
+  "service": "D365 Integrator App",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Same integrator app on Azure Commercial Cloud; purely an integration utility.",
+  "signals": ["D365 Integrator", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "DAST Scanner (Acunetix)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Acunetix is a dynamic application security testing (DAST) scanner; a rule/signature-based security tool, not an ML capability.",
+  "signals": ["DAST Scanner", "Acunetix"]
+ },
+ {
+  "service": "DMZ Services and VDSS Stack (Web Application Proxy Servers, Web Application Firewalls)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network proxy/firewall infrastructure; explicitly named as WAF and proxy servers, no ML component.",
+  "signals": ["Web Application Proxy Servers", "Web Application Firewalls", "DMZ"]
+ },
+ {
+  "service": "DarkNET",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Kernos is described as video/FMV exploitation and common-operating-picture tooling; no explicit ML/AI capability is named for the service itself.",
+  "signals": ["video exploitation", "full motion video (FMV)", "common operating picture"]
+ },
+ {
+  "service": "Dashboard Studio",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Splunk dashboard-building feature for visualizing operational data; not an ML capability.",
+  "signals": ["Dashboard Studio", "Splunk Cloud", "operational intelligence"]
+ },
+ {
+  "service": "Dashboards",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A Databricks BI/visualization feature; the host platform is AI-powered overall, but this named feature is charting/reporting, not a model capability.",
+  "signals": ["Dashboards", "Databricks", "lakehouse"]
+ },
+ {
+  "service": "Data Access Security",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A SailPoint identity-governance/data-access control feature; the host mentions AI-driven identity offerings generally, but this specific service is access control, not ML.",
+  "signals": ["Data Access Security", "SailPoint Identity Security Cloud", "access to applications"]
+ },
+ {
+  "service": "Data Catalog",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle's metadata/catalog service for organizing data assets; not an ML capability.",
+  "signals": ["Data Catalog", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Data Cloud",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Salesforce Data Cloud is primarily a customer data platform/unification layer; AI is marketed around it (Einstein/Agentforce) but not the named function itself.",
+  "signals": ["Data Cloud", "Salesforce", "smart insights"]
+ },
+ {
+  "service": "Data Detect",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be a Salesforce data quality/security detection feature; no explicit ML capability named.",
+  "signals": ["Data Detect", "Salesforce Government Cloud Plus"]
+ },
+ {
+  "service": "Data Discovery and Exploration",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A Cloudera data exploration/analytics feature; the broader platform advertises AI functionality but this named service is generic data browsing/analytics.",
+  "signals": ["Data Discovery and Exploration", "self-service analytics", "Cloudera"]
+ },
+ {
+  "service": "Data Engine",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Scale AI's Data Engine is explicitly an AI training-data platform (labeling, evaluation, and Generative AI Platform tooling) for building/deploying AI models.",
+  "signals": ["Scale AI", "AI Data Platform", "Generative AI Platform (SGP)", "data labeling"]
+ },
+ {
+  "service": "Data Engineering",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cloudera's data-engineering/ETL pipeline tooling; a data-pipeline capability, not itself an ML/AI function.",
+  "signals": ["Data Engineering", "data lakes", "Cloudera"]
+ },
+ {
+  "service": "Data Factory",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Data Factory is an ETL/data-orchestration service, not an AI/ML capability.",
+  "signals": ["Data Factory", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "Data Flow",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Data Flow is a managed Spark data-processing service; ETL/big-data, not ML.",
+  "signals": ["Data Flow", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Data Insights: Alerts",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A New Relic observability alerting feature; standard threshold/telemetry alerting, not ML-driven.",
+  "signals": ["Alerts", "New Relic", "observability platform"]
+ },
+ {
+  "service": "Data Insights: Change Tracking",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "New Relic deployment/change tracking feature; an observability capability, not ML.",
+  "signals": ["Change Tracking", "New Relic"]
+ },
+ {
+  "service": "Data Insights: Charts, dashboards, and querying",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "New Relic charting/dashboard/query feature; standard BI/observability tooling.",
+  "signals": ["Charts, dashboards, and querying", "New Relic"]
+ },
+ {
+  "service": "Data Insights: Cloud Cost Intelligence",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "New Relic cost-monitoring feature; cost analytics, not an ML capability.",
+  "signals": ["Cloud Cost Intelligence", "New Relic"]
+ },
+ {
+  "service": "Data Insights: Distributed Tracing",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "New Relic APM distributed tracing feature; standard telemetry tracing, not ML.",
+  "signals": ["Distributed Tracing", "New Relic"]
+ },
+ {
+  "service": "Data Insights: Errors Inbox",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "New Relic error-aggregation feature; observability tooling, not ML.",
+  "signals": ["Errors Inbox", "New Relic"]
+ },
+ {
+  "service": "Data Insights: NRQL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NRQL is New Relic's SQL-like query language for telemetry data; a query interface, not an ML capability.",
+  "signals": ["NRQL", "New Relic", "querying"]
+ },
+ {
+  "service": "Data Insights: Service Level Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "New Relic SLO/SLI management feature; standard observability governance, not ML.",
+  "signals": ["Service Level Management", "New Relic"]
+ },
+ {
+  "service": "Data Integration Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle ETL/data-integration service; a pipeline capability, not ML.",
+  "signals": ["Data Integration Service", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Data Labeling",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud's Data Labeling service is purpose-built to annotate datasets for machine learning model training, a core ML-tooling function.",
+  "signals": ["Data Labeling", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Data Localization",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudflare data residency/localization control; a networking/compliance feature, not ML.",
+  "signals": ["Data Localization", "Cloudflare"]
+ },
+ {
+  "service": "Data Loss Prevention (DLP) Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A data loss prevention/security service on GovDataHosting; policy-based content controls, not an ML capability per the rubric's default.",
+  "signals": ["Data Loss Prevention", "GovDataHosting Cloud Platform"]
+ },
+ {
+  "service": "Data Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "RegScale's Continuous Controls Monitoring/GRC data management feature; compliance automation, not ML.",
+  "signals": ["Data Management", "RegScale CCM", "GRC"]
+ },
+ {
+  "service": "Data Mart",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A Cloudera data-warehousing/data-mart feature; storage/analytics infrastructure, not ML.",
+  "signals": ["Data Mart", "Cloudera"]
+ },
+ {
+  "service": "Data Protection for Active Directory",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Commvault backup/recovery for Active Directory; a data-protection capability, not ML.",
+  "signals": ["Data Protection", "Active Directory", "Commvault"]
+ },
+ {
+  "service": "Data Protection for Azure VM Kubernetes Microsoft Hyper-V VMWare AWC EC2 VMWare Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Commvault backup/recovery for virtualization platforms; storage/backup, not ML.",
+  "signals": ["Data Protection", "backup and recovery", "Commvault"]
+ },
+ {
+  "service": "Data Protection for Database (Microsoft SQL Oracle SAP HANA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Commvault database backup/recovery; storage capability, not ML.",
+  "signals": ["Data Protection for Database", "Commvault"]
+ },
+ {
+  "service": "Data Protection for Dynamics 365, Data Protection for Salesforce",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Commvault SaaS backup/recovery for Dynamics 365 and Salesforce; not ML.",
+  "signals": ["Data Protection", "Dynamics 365", "Salesforce", "Commvault"]
+ },
+ {
+  "service": "Data Protection for Endpoints",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Commvault endpoint backup/recovery; not ML.",
+  "signals": ["Data Protection for Endpoints", "Commvault"]
+ },
+ {
+  "service": "Data Protection for File & Object (Windows Server Azure Blob & Files OCI Object Storage Amazon S3 Linux/Unix)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Commvault file/object storage backup across multiple clouds; not ML.",
+  "signals": ["Data Protection for File & Object", "Commvault"]
+ },
+ {
+  "service": "Data Protection for Microsoft 365 (Exchange Teams SharePoint and OneDrive)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Commvault M365 backup/recovery; not ML.",
+  "signals": ["Data Protection for Microsoft 365", "Commvault"]
+ },
+ {
+  "service": "Data Safe",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Data Safe is a database security service (auditing, masking, activity monitoring); not an ML capability.",
+  "signals": ["Data Safe", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Data Science",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Data Science is an explicit ML platform for building, training, and deploying machine learning models.",
+  "signals": ["Data Science", "Oracle Cloud Infrastructure", "machine learning"]
+ },
+ {
+  "service": "Data Security Posture Management",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A DSPM cloud-security feature on Google Cloud; classified as a security-posture tool by default rather than an ML-core capability, though some DSPM tooling uses ML classification internally.",
+  "signals": ["Data Security Posture Management", "Google Cloud Platform"]
+ },
+ {
+  "service": "Data Studio (formerly Looker Studio (including Pro))",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Looker Studio/Data Studio is a BI/reporting and dashboarding tool; not an ML capability.",
+  "signals": ["Looker Studio", "Data Studio", "Google Services"]
+ },
+ {
+  "service": "DataHub",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloudera DataHub is a data-lake/cluster provisioning service; infrastructure, not ML.",
+  "signals": ["DataHub", "data lakes", "Cloudera"]
+ },
+ {
+  "service": "DataStream*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud Datastream is a change-data-capture/replication service; a data-movement capability, not ML.",
+  "signals": ["DataStream", "Google Cloud Platform"]
+ }
+]

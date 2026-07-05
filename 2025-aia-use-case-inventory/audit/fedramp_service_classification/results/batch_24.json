@@ -1,0 +1,352 @@
+[
+ {
+  "service": "PagerDuty Advance",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "PagerDuty's premium AIOps-oriented bundle, layering ML-based noise reduction and generative-AI incident summarization onto the core event-orchestration platform.",
+  "signals": ["Advance", "intelligent aggregation", "event orchestration"]
+ },
+ {
+  "service": "Palantir Data Connector",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A data ingestion/integration connector for moving data into the Palantir platform; plumbing, not an AI capability itself.",
+  "signals": ["Data Connector", "Palantir"]
+ },
+ {
+  "service": "Password Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard identity password reset/management feature within SailPoint's identity suite.",
+  "signals": ["Password Management", "Identity Security Cloud"]
+ },
+ {
+  "service": "Past Incidents",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Historical incident log/view within PagerDuty, not an AI capability.",
+  "signals": ["Past Incidents"]
+ },
+ {
+  "service": "Patch Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard IT operations patching feature.",
+  "signals": ["Patch Management"]
+ },
+ {
+  "service": "Patch Management Solutions (WSUS for Windows, CFGMGR for Linux)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Named tools (WSUS, ConfigMgr) are traditional patch management systems, no AI component.",
+  "signals": ["WSUS", "CFGMGR"]
+ },
+ {
+  "service": "Patching",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard IT operations patching service.",
+  "signals": ["Patching"]
+ },
+ {
+  "service": "Pattern-of-Life Profiler",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A named analytic capability for automated behavioral/pattern-of-life profiling from activity data, embedded as a feature within Bluescape's broader collaboration workspace.",
+  "signals": ["Pattern-of-Life Profiler", "operations center", "intelligence"]
+ },
+ {
+  "service": "Paused Incident Notifications",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Notification-control setting within PagerDuty, not an AI capability.",
+  "signals": ["Paused Incident Notifications"]
+ },
+ {
+  "service": "Payroll (Pay & Tax Processing)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard HR payroll and tax processing module.",
+  "signals": ["Pay & Tax Processing"]
+ },
+ {
+  "service": "Pega User Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "User/account administration feature for the Pega platform.",
+  "signals": ["User Management"]
+ },
+ {
+  "service": "Peregrine",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Product name and host snippet give no concrete evidence of an AI/ML capability; treated conservatively as a generic hosted application.",
+  "signals": ["Peregrine", "Knox Systems"]
+ },
+ {
+  "service": "Perform (Performance Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard HR employee performance-review module.",
+  "signals": ["Performance Management"]
+ },
+ {
+  "service": "Periscope",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Product name and host snippet give no concrete evidence of an AI/ML capability; treated conservatively.",
+  "signals": ["Periscope", "Elevate Intelligent Automation Platform"]
+ },
+ {
+  "service": "Permitting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Government permitting workflow module within a capital-planning/construction management platform.",
+  "signals": ["Permitting"]
+ },
+ {
+  "service": "Photon",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Databricks' native vectorized query execution engine that accelerates Spark SQL/DataFrame processing; a performance engine, not an AI/ML capability.",
+  "signals": ["Photon", "vectorized", "query engine"]
+ },
+ {
+  "service": "Picogrid Legion",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Named defense sensor/situational-awareness product with insufficient concrete evidence here of a defining AI/ML capability; treated conservatively.",
+  "signals": ["Picogrid Legion"]
+ },
+ {
+  "service": "Planned Maintenance",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard cloud infrastructure maintenance scheduling notice, not AI.",
+  "signals": ["Planned Maintenance"]
+ },
+ {
+  "service": "Platform Events & Change Data Capture",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce event-streaming and change-data-capture feature, a data pipeline capability not AI.",
+  "signals": ["Platform Events", "Change Data Capture"]
+ },
+ {
+  "service": "Platform Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Generic underlying platform/infrastructure services for Synack's security testing SaaS; the AI mention in the snippet refers to assets tested (LLM/AI assets), not the service itself.",
+  "signals": ["Platform Services"]
+ },
+ {
+  "service": "Policy (Policy Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "HR policy management module.",
+  "signals": ["Policy Management"]
+ },
+ {
+  "service": "Policy Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GRC policy management module within Onspring GovCloud.",
+  "signals": ["Policy Management", "governance, risk"]
+ },
+ {
+  "service": "Policy as Code",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Compliance automation feature that codifies controls as machine-readable rules; rule-based GRC automation, not ML.",
+  "signals": ["Policy as Code", "Continuous Controls Monitoring"]
+ },
+ {
+  "service": "Portals",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Low-code portal-building feature within Appian's process automation platform.",
+  "signals": ["Portals"]
+ },
+ {
+  "service": "Portals / Service Cloud / Customer / Partner",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce customer/partner portal capability, not an AI feature.",
+  "signals": ["Portals", "Service Cloud"]
+ },
+ {
+  "service": "Postgre SQL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed PostgreSQL database service.",
+  "signals": ["Postgre SQL"]
+ },
+ {
+  "service": "Postmortems",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Incident postmortem documentation feature within PagerDuty.",
+  "signals": ["Postmortems"]
+ },
+ {
+  "service": "Power BI",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Primarily a BI/reporting and visualization tool, but ships embedded AI-driven features (natural-language Q&A, Key Influencers, smart narratives) as material secondary capabilities.",
+  "signals": ["Power BI"]
+ },
+ {
+  "service": "Power BI Embedded",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Embeddable version of Power BI carrying the same embedded AI-driven analytics features as the core product.",
+  "signals": ["Power BI Embedded"]
+ },
+ {
+  "service": "Power Platform Admin Center",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Administrative console for managing Power Platform environments, not AI.",
+  "signals": ["Admin Center"]
+ },
+ {
+  "service": "Power Platform ISV Portal Platform",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "ISV portal/publishing infrastructure for Power Platform, not AI.",
+  "signals": ["ISV Portal Platform"]
+ },
+ {
+  "service": "Power Query Online",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Data preparation/ETL transformation tool; core function is rule/formula-based data shaping, not an AI capability.",
+  "signals": ["Power Query"]
+ },
+ {
+  "service": "PowerApps – UCI",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Low-code app builder's Unified Client Interface runtime, not an AI capability.",
+  "signals": ["PowerApps", "UCI"]
+ },
+ {
+  "service": "PowerCore Contract Billing",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Energy-sector contract billing module.",
+  "signals": ["Contract Billing"]
+ },
+ {
+  "service": "PowerCore ETRM (Energy Trading and Risk Management)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard energy trading and risk management system, not an AI capability.",
+  "signals": ["Energy Trading and Risk Management"]
+ },
+ {
+  "service": "PowerCore ISO/RTO",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Energy market ISO/RTO settlement module, not AI.",
+  "signals": ["ISO/RTO"]
+ },
+ {
+  "service": "PowerCore Visual Analytics",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Dashboard/visualization module for energy data; standard BI visualization, no stated ML capability.",
+  "signals": ["Visual Analytics"]
+ },
+ {
+  "service": "Privacy Center",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce data privacy/consent management tool.",
+  "signals": ["Privacy Center"]
+ },
+ {
+  "service": "Private Connectivity",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Private network connectivity option for Splunk Cloud, pure networking.",
+  "signals": ["Private Connectivity"]
+ },
+ {
+  "service": "Private Endpoints",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure private networking endpoints.",
+  "signals": ["Private Endpoints"]
+ },
+ {
+  "service": "Private FedRAMP Cloud",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Private cloud IaaS/PaaS/SaaS hosting offering, not AI.",
+  "signals": ["Private FedRAMP Cloud"]
+ },
+ {
+  "service": "Private Link",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure private networking connectivity service.",
+  "signals": ["Private Link"]
+ },
+ {
+  "service": "Private Status Pages",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Status page publishing feature within PagerDuty, not AI.",
+  "signals": ["Private Status Pages"]
+ },
+ {
+  "service": "Privileged Access Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Privileged access management/security control, not AI.",
+  "signals": ["Privileged Access Manager"]
+ },
+ {
+  "service": "Privileged Remote Access for Government",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Privileged remote access/PAM tool; the snippet's mention of 'AI identities' refers to what it secures, not an AI capability of the service itself.",
+  "signals": ["Privileged Remote Access", "Zero Trust"]
+ },
+ {
+  "service": "Probable Origin",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A named PagerDuty incident-intelligence feature that algorithmically identifies the likely originating service/cause of an incident, part of its ML-based event intelligence/AIOps capability.",
+  "signals": ["Probable Origin", "intelligent aggregation"]
+ },
+ {
+  "service": "Process HQ",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Process management console within Appian, not AI.",
+  "signals": ["Process HQ"]
+ },
+ {
+  "service": "Process Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Business process/workflow management module within Oracle Aconex.",
+  "signals": ["Process Management"]
+ },
+ {
+  "service": "Procurement Sciences",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "A generative-AI product for federal acquisition professionals that drafts market research and acquisition documents, making AI the core capability rather than an add-on feature.",
+  "signals": ["Procurement Sciences"]
+ },
+ {
+  "service": "Production Sandbox Environment",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A testing/sandbox environment for SAP Concur, infrastructure not AI.",
+  "signals": ["Sandbox Environment"]
+ }
+]

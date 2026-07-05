@@ -1,0 +1,352 @@
+[
+ {
+  "service": "AWS Secrets Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Secrets/credential storage and rotation service; no ML/AI component.",
+  "signals": ["Secrets Manager", "IaaS"]
+ },
+ {
+  "service": "AWS Security Hub CSPM",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Cloud security posture management that aggregates compliance findings and rule-based checks; not an ML detection product (that would be GuardDuty).",
+  "signals": ["Security Hub", "CSPM"]
+ },
+ {
+  "service": "AWS Serverless Application Repository",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A catalog/repository for deploying serverless application code samples; no AI capability.",
+  "signals": ["Serverless Application Repository"]
+ },
+ {
+  "service": "AWS Service Catalog",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IT service catalog for managing approved cloud resource templates; not AI.",
+  "signals": ["Service Catalog"]
+ },
+ {
+  "service": "AWS Shield Advanced",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "DDoS protection service; not an AI/ML product.",
+  "signals": ["Shield Advanced", "DDoS"]
+ },
+ {
+  "service": "AWS Signer",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Code-signing service for Lambda and IoT; no AI component.",
+  "signals": ["Signer", "code signing"]
+ },
+ {
+  "service": "AWS Snowball Edge",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Physical edge-computing/data-transfer appliance; not an AI service.",
+  "signals": ["Snowball Edge"]
+ },
+ {
+  "service": "AWS Step Functions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Serverless workflow orchestration service; no AI/ML capability.",
+  "signals": ["Step Functions", "workflow"]
+ },
+ {
+  "service": "AWS Storage Gateway",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hybrid cloud storage connector; not AI.",
+  "signals": ["Storage Gateway"]
+ },
+ {
+  "service": "AWS Systems Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Operational management/patching tool for AWS resources; not AI.",
+  "signals": ["Systems Manager"]
+ },
+ {
+  "service": "AWS Transfer Family",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed SFTP/FTPS/FTP file-transfer service; not AI.",
+  "signals": ["Transfer Family", "file transfer"]
+ },
+ {
+  "service": "AWS Trusted Advisor",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rule-based best-practice/cost checks for AWS accounts; not an ML product.",
+  "signals": ["Trusted Advisor"]
+ },
+ {
+  "service": "AWS Verified Access (AVA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Zero-trust network access control service; not AI.",
+  "signals": ["Verified Access"]
+ },
+ {
+  "service": "AWS Web Application Firewall (WAF)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rule-based web application firewall; not an AI/ML product.",
+  "signals": ["WAF", "firewall"]
+ },
+ {
+  "service": "AWS Web Application Firewall Classic (WAF Classic)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Legacy WAF offering; rule-based, not AI.",
+  "signals": ["WAF Classic", "firewall"]
+ },
+ {
+  "service": "AWS Well-Architected Tool",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Self-assessment/architecture review tool using static best-practice checklists; not AI.",
+  "signals": ["Well-Architected Tool"]
+ },
+ {
+  "service": "AWS Wickr",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "End-to-end encrypted messaging/collaboration app; not AI.",
+  "signals": ["Wickr", "messaging"]
+ },
+ {
+  "service": "AWS X-Ray",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Distributed tracing/observability service for debugging applications; not AI.",
+  "signals": ["X-Ray", "tracing"]
+ },
+ {
+  "service": "Access & Hub Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Part of Omnissa Workspace ONE endpoint/device management; not an AI capability.",
+  "signals": ["Workspace ONE", "endpoint management"]
+ },
+ {
+  "service": "Access Approval*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud IAM feature that requires explicit approval before Google support accesses customer data; access-control, not AI.",
+  "signals": ["Access Approval", "Google Services"]
+ },
+ {
+  "service": "Access Context Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud service for defining context-aware access-control perimeters; not AI.",
+  "signals": ["Access Context Manager", "GCP"]
+ },
+ {
+  "service": "Access Transparency",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud audit-logging feature showing admin access actions; not AI.",
+  "signals": ["Access Transparency", "logging"]
+ },
+ {
+  "service": "Aconex Mobile is also available on both iOS and Android devices providing Field capabilities for Inspection Management (Punchlists) and Issue Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Mobile app for construction document/issue management; not AI.",
+  "signals": ["Aconex Mobile", "Inspection Management", "Issue Management"]
+ },
+ {
+  "service": "Acquisition In a Box",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A packaged acquisition-workflow offering built on the Ask Sage generative-AI platform, which the host description confirms is a multi-model GenAI service; the named capability is an application on top rather than a model itself.",
+  "signals": ["Ask Sage", "Generative AI platform", "GPT", "Bedrock Gov"]
+ },
+ {
+  "service": "Acsense IAM Resilience Platform",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IAM continuity/resilience platform for identity infrastructure failover; not AI.",
+  "signals": ["IAM Resilience", "Knox Systems"]
+ },
+ {
+  "service": "Action (Officer Action Reporting)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "NEOGOV HR/workforce-management reporting module; not AI.",
+  "signals": ["Officer Action Reporting", "NEOGOV"]
+ },
+ {
+  "service": "Active Directory and Active Directory Federation Services (Single-Sign On, Certificate MFA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Identity/SSO/MFA infrastructure; not AI.",
+  "signals": ["Active Directory", "Single-Sign On", "MFA"]
+ },
+ {
+  "service": "Active Directory and Active Directory Federation Services (Single-Sign On, Certificate/TOTP MFA)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Identity/SSO/MFA infrastructure; not AI.",
+  "signals": ["Active Directory", "Single-Sign On", "TOTP MFA"]
+ },
+ {
+  "service": "Address validation",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A mailing/shipping address-verification feature within a mail-management suite, typically rule/database (USPS) driven rather than ML-based.",
+  "signals": ["Address validation", "S.M.A.R.T.", "Shipping, Mailing"]
+ },
+ {
+  "service": "Admin Config Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Splunk Cloud administrative configuration component; not AI.",
+  "signals": ["Admin Config", "Splunk Cloud"]
+ },
+ {
+  "service": "Admin Console",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace/Cloud administrative management console; not AI.",
+  "signals": ["Admin Console", "Google Services"]
+ },
+ {
+  "service": "Admin SDK: Admin Settings API, Apps Email Audit API, Calendar Resource API, Directory API (replaced Provisioning API), Domain Shared Contacts API, Email Settings API, Enterprise License Manager API, Groups Migration API, Groups Settings API, Reports API, Reseller API",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Bundle of Google Workspace administrative/directory management APIs; not AI.",
+  "signals": ["Admin SDK", "Directory API", "Reports API"]
+ },
+ {
+  "service": "Adobe Connect",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Web conferencing/webinar platform; not AI.",
+  "signals": ["Adobe Connect", "web conferencing"]
+ },
+ {
+  "service": "Adobe LM",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "License manager component for Adobe Connect; not AI.",
+  "signals": ["Adobe LM", "License"]
+ },
+ {
+  "service": "Advance Workflow Management",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "RegScale GRC workflow/automation module for compliance processes; not AI.",
+  "signals": ["Workflow Management", "RegScale", "GRC"]
+ },
+ {
+  "service": "Advanced Care",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A premium support tier within Concur's travel/expense product; not AI.",
+  "signals": ["Concur", "travel and expense"]
+ },
+ {
+  "service": "Advanced Ticketing Integrations*",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty integrations with external ticketing systems; integration plumbing, not AI.",
+  "signals": ["Ticketing Integrations", "PagerDuty"]
+ },
+ {
+  "service": "Advanced and Scalable Incident Handling",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "General incident-response/orchestration capability; the name and snippet reference event orchestration but do not clearly indicate an ML-driven core feature.",
+  "signals": ["Incident Handling", "event orchestration", "PagerDuty"]
+ },
+ {
+  "service": "Agent Assist",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud Contact Center AI's Agent Assist provides real-time ML/NLP-based suggestions to live support agents, a core conversational-AI capability.",
+  "signals": ["Agent Assist", "Google Services"]
+ },
+ {
+  "service": "Agent Search on Gemini Enterprise Agent Platform (formerly Vertex AI Search)",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Explicitly named as part of Google's Gemini Enterprise Agent Platform and Vertex AI Search, an LLM/semantic-search and agent-building product.",
+  "signals": ["Gemini Enterprise Agent Platform", "Vertex AI Search"]
+ },
+ {
+  "service": "Agentforce",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce's autonomous AI agent-building platform; a core agentic-AI product.",
+  "signals": ["Agentforce", "Salesforce"]
+ },
+ {
+  "service": "Air Gap Protection Hybrid cloud for Commvault Complete™ and HyperScale™ X deployments",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Backup/air-gapped data-resilience storage offering; not AI.",
+  "signals": ["Air Gap Protection", "Commvault", "backup and recovery"]
+ },
+ {
+  "service": "Alert Deduplication",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Alert-management feature in PagerDuty's operations platform; described generically without ML specifics, so treated as rule-based deduplication rather than a distinct AI capability.",
+  "signals": ["Alert Deduplication", "PagerDuty"]
+ },
+ {
+  "service": "Alert Severity",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Alert classification/labeling feature within incident management; not AI.",
+  "signals": ["Alert Severity", "PagerDuty"]
+ },
+ {
+  "service": "Alert Suppression",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rule-based alert filtering feature; not AI.",
+  "signals": ["Alert Suppression", "PagerDuty"]
+ },
+ {
+  "service": "Alert Triage & Deduplication",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Alert-management capability in PagerDuty; name suggests automation but lacks explicit ML/AI evidence, so classified conservatively as not_ai.",
+  "signals": ["Alert Triage", "Deduplication", "PagerDuty"]
+ },
+ {
+  "service": "Alerting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Standard alerting/notification feature within Qlik's analytics platform; not itself an AI capability.",
+  "signals": ["Alerting", "Qlik Cloud"]
+ },
+ {
+  "service": "Allocore ULP-UGP-UFP Software",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "HR/workforce management software product; not AI.",
+  "signals": ["Allocore", "HRTec"]
+ },
+ {
+  "service": "Amazon API Gateway",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed API front-end/routing service; not AI.",
+  "signals": ["API Gateway"]
+ },
+ {
+  "service": "Amazon AppFlow",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed data-integration service between SaaS apps and AWS; not AI.",
+  "signals": ["AppFlow", "data integration"]
+ }
+]

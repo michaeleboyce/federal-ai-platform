@@ -1,0 +1,218 @@
+[
+ {
+  "service": "EDR – Endpoint Detection & Response",
+  "verdict": "confirm",
+  "reasoning": "Qualys EDR is security analytics whose detection uses ML-based behavioral/anomaly models embedded in a broader vuln/compliance platform — the v1 canonical ai_featured pattern."
+ },
+ {
+  "service": "Endpoint Detection and Response (EDR)",
+  "verdict": "confirm",
+  "reasoning": "Host explicitly attributes 'machine learning algorithms and behavioral AI' as SentinelOne's detection engine; ML detection is material and central, so ai_featured holds."
+ },
+ {
+  "service": "Extended Detection and Response (XDR)",
+  "verdict": "confirm",
+  "reasoning": "SentinelOne XDR correlates telemetry via the same ML/behavioral-AI detection engine; security analytics with a material ML core is ai_featured per v1."
+ },
+ {
+  "service": "Falcon Adversary Intelligence Premium",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "This is a cyber threat-intelligence subscription (IOC feeds, adversary reports, dark-web monitoring) — 'Intelligence' means threat intel, not AI; no material embedded ML in what the customer buys."
+ },
+ {
+  "service": "Falcon Cloud Security for Containers",
+  "verdict": "confirm",
+  "reasoning": "CrowdStrike container/runtime protection uses the Falcon behavioral-ML detection engine for runtime threat detection, a material embedded ML capability in a broader cloud-security product."
+ },
+ {
+  "service": "Falcon Identity Protection",
+  "verdict": "confirm",
+  "reasoning": "Identity threat detection/response built on behavioral (UEBA) analytics to catch credential misuse and lateral movement — security analytics with a material ML core, ai_featured."
+ },
+ {
+  "service": "Falcon Insight XDR",
+  "verdict": "confirm",
+  "reasoning": "CrowdStrike's core EDR/XDR uses ML and behavioral AI as its detection engine; a security-analytics product with a material ML core is ai_featured."
+ },
+ {
+  "service": "Falcon Next-Gen SIEM",
+  "verdict": "confirm",
+  "reasoning": "Next-gen SIEM applies ML/UEBA correlation for threat detection over ingested logs — an embedded material ML analytics capability, not plain log storage."
+ },
+ {
+  "service": "Falcon Prevent",
+  "verdict": "confirm",
+  "reasoning": "Next-gen antivirus whose core malware-prevention mechanism is ML classification; the ML is material and central, so ai_featured is correct."
+ },
+ {
+  "service": "Falcon Spotlight",
+  "verdict": "confirm",
+  "reasoning": "Vulnerability management that ships CrowdStrike's named ExPRT.AI ML exploit-prediction model for prioritization — a material embedded ML feature within the broader platform."
+ },
+ {
+  "service": "Full Stack Observability: Model Performance Monitoring (MLOps)",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "monitoring-of-ai-not-ai",
+  "reasoning": "This is New Relic observability OF deployed ML models — monitoring AI, not shipping it; rubric-v2 rule 1 (the New Relic 'AI Monitoring' anchor) makes this not_ai."
+ },
+ {
+  "service": "Google Vids",
+  "verdict": "confirm",
+  "reasoning": "Workspace video-creation app with embedded Gemini generative AI for scripts, storyboards, and narration; genAI is a material secondary feature of a video product, so ai_featured."
+ },
+ {
+  "service": "Hirevue GovCloud",
+  "verdict": "confirm",
+  "reasoning": "Video-interviewing/recruiting platform whose differentiator is AI-driven candidate assessment (snippet explicitly cites 'artificial intelligence'); AI is a material embedded feature."
+ },
+ {
+  "service": "Horizon3.ai Node Zero",
+  "verdict": "confirm",
+  "reasoning": "NodeZero is an autonomous penetration-testing product whose attack-path decisioning is algorithmically autonomous; the embedded autonomy/decision engine is a material AI capability, ai_featured."
+ },
+ {
+  "service": "IBM Concert for Government",
+  "verdict": "confirm",
+  "reasoning": "IBM Concert independently ships watsonx-based generative-AI insights/recommendations for application management as its signature capability — a material embedded genAI feature, not merely the host's AI."
+ },
+ {
+  "service": "IBM Instana for Government",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "infra-with-ml-feature-overcall",
+  "reasoning": "Instana is APM/observability plumbing whose 'automatic root-cause analysis' is primarily deterministic dependency/timing correlation marketed as AIOps; the ML is not material — monitoring tagged AI for a thin feature."
+ },
+ {
+  "service": "IBM Turbonomic for Government",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "infra-with-ml-feature-overcall",
+  "reasoning": "Turbonomic's engine is deterministic supply/demand mathematical optimization (an economic decision model), not ML; the label itself claims only an 'analytics/decision engine' — a resource-optimization tool marketed as AI."
+ },
+ {
+  "service": "IBM Verify for Government",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "infra-with-ml-feature-overcall",
+  "reasoning": "IBM Verify is IAM/CIAM plumbing (SSO/MFA/lifecycle) whose 'adaptive access' risk scoring is a minor, largely rule-based feature; the product's engine is identity management, not ML — v1 identity=not_ai."
+ },
+ {
+  "service": "Identity Security Insights for Government",
+  "verdict": "confirm",
+  "reasoning": "BeyondTrust ISI is a purpose-built identity threat-detection/analytics product that correlates identity signals to surface risk — security analytics with an embedded ML/analytics core, ai_featured."
+ },
+ {
+  "service": "Identity Threat Protection (ITP)",
+  "verdict": "confirm",
+  "reasoning": "Okta ITP performs continuous, real-time identity threat detection using behavioral risk analytics and shared signals — the ML-based security-analytics pattern, ai_featured."
+ },
+ {
+  "service": "Intelligent Alert Grouping",
+  "verdict": "confirm",
+  "reasoning": "PagerDuty feature that uses machine learning to cluster related alerts and cut noise; a material embedded ML capability within the incident-management platform, ai_featured."
+ },
+ {
+  "service": "KSOC",
+  "verdict": "confirm",
+  "reasoning": "Host boundary is the Knightscope Autonomous Security Robot itself, which embeds material AI (autonomous navigation and computer-vision-driven patrol); ai_featured for the robot system."
+ },
+ {
+  "service": "Knightscope Security Operations Center (KSOC)",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "Named here as the SOC monitoring/control console (running on a generic Palantir cloud host); a dashboard that displays robot feeds is a monitoring console, not itself AI — rubric-v2 rule 1/2, don't attribute the robots' AI to the console."
+ },
+ {
+  "service": "Microsoft 365 Defender",
+  "verdict": "confirm",
+  "reasoning": "XDR suite whose cross-signal incident correlation and detection rely materially on ML analytics — security analytics with an embedded ML core, ai_featured."
+ },
+ {
+  "service": "Microsoft Cloud App Security",
+  "verdict": "confirm",
+  "reasoning": "Defender for Cloud Apps (CASB) uses ML-based user/entity behavior analytics for anomaly detection — a material embedded ML capability within a broader security product."
+ },
+ {
+  "service": "Microsoft Defender for Endpoint",
+  "verdict": "confirm",
+  "reasoning": "Defender for Endpoint's next-gen AV/EDR relies materially on ML behavioral and malware detection as its core engine; ai_featured holds."
+ },
+ {
+  "service": "Microsoft Digital Contact Center Platform",
+  "verdict": "confirm",
+  "reasoning": "Contact-center platform with embedded generative-AI virtual agents, Copilot, and Nuance conversational AI as material differentiators layered on the telephony/CRM core — ai_featured."
+ },
+ {
+  "service": "Microsoft Fabric",
+  "verdict": "confirm",
+  "reasoning": "Unified data/analytics platform with Copilot generative-AI assistance embedded throughout; genAI is a material secondary feature of the data platform, ai_featured."
+ },
+ {
+  "service": "Microsoft PowerApps",
+  "verdict": "confirm",
+  "reasoning": "Low-code app-building platform that ships the embedded AI Builder ML module — the exact 'low-code platform with an AI builder module' example named in v1 for ai_featured."
+ },
+ {
+  "service": "Microsoft Purview",
+  "verdict": "confirm",
+  "reasoning": "Purview ships trainable ML classifiers and ML-based insider-risk detection as material components of its data-governance/compliance function; embedded ML makes it ai_featured."
+ },
+ {
+  "service": "Microsoft Purview and MDO (including Adoption Score, Secure Score, Compliance Management, Manual retention labels, Basic org-wide or location-wide retention policies, Rules-based automatic retention policies, Machine Learning-based retention, Teams message retention policies, Records Management, DLP for emails & files, DLP for Teams chat, Endpoint DLP, Basic Message Encryption, Advanced Message Encryption, Microsoft Defender for Office 365 Plan 2 , Safe Documents , eDiscovery (Standard) (including Hold and Export) , Litigation Hold , eDiscovery (Premium) , Audit (Standard) , Audit (Premium) , Microsoft Purview Insider Risk Management, Communication Compliance, Information Barriers, Microsoft Defender Suite GCC, Microsoft Purview Suite GCC, Microsoft 365 G5 Info Protection and Governance, Microsoft 365 G5 Insider Risk Management, Microsoft Purview Insider Risk Management forensic evidence, Microsoft 365 G5 eDiscovery and Audit, Microsoft Defender Suite FLW for GCC, Microsoft Purview Suite FLW for GCC, Microsoft Defender + Purview Suite FLW for GCC, Microsoft 365 F5 Information Protection and Governance, Microsoft 365 F5 Insider Risk Management, Microsoft 365 F5 eDiscovery and Audit, Microsoft Defender for Office 365 Plan 1, Microsoft Defender for Office 365 Plan 2, Premium Assessments add-on for Compliance Manager, Priva Privacy Risk Management, Priva Subject Rights Requests, Microsoft Purview Data Loss Prevention (for email and files), 10-year Audit Log Retention)",
+  "verdict": "confirm",
+  "reasoning": "The bundle explicitly names 'Machine Learning-based retention' plus ML-driven insider-risk management as included capabilities — a material embedded ML feature within the compliance/DLP suite, ai_featured."
+ },
+ {
+  "service": "Microsoft Threat Experts",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "Threat Experts is a human-delivered managed threat-hunting service (Experts on Demand / targeted-attack notifications); its distinguishing element is human expertise, and the ML lives in Defender proper — rubric-v2 rule 2 bars attributing the platform's ML to this sub-service."
+ },
+ {
+  "service": "MySQL Heatwave",
+  "verdict": "confirm",
+  "reasoning": "Oracle MySQL HeatWave ships embedded in-database ML (HeatWave ML) and GenAI/vector capabilities as material features of the managed-database service, ai_featured."
+ },
+ {
+  "service": "Office Intelligent Services (IS) (including Install apps on up to 5 PCs/Mac + 5 tablets  + 5 smartphones, Create and share Microsoft Loop components and pages, Contribute to Loop components, pages and workspaces , Microsoft Forms, Microsoft Planner, Microsoft To Do, Shared computer activation for Microsoft 365 apps)",
+  "verdict": "confirm",
+  "reasoning": "'Office Intelligent Services' is Microsoft's actual licensing term for the AI/cloud-backed connected experiences in Office (Editor, Designer, Ideas, Translator) — material embedded AI, even though bundled with non-AI app entitlements."
+ },
+ {
+  "service": "Office Intelligent Services (IS) (including Install apps on up to 5 PCs/Mac + 5 tablets + 5 smartphones, Microsoft Forms, Microsoft Planner, Microsoft To Do, Shared computer activation for Microsoft 365 apps)",
+  "verdict": "confirm",
+  "reasoning": "Same 'Office Intelligent Services' AI-backed connected-experiences component (Editor/Designer/Ideas/Translator) bundled with non-AI entitlements; material embedded AI keeps it ai_featured."
+ },
+ {
+  "service": "Oracle Analytics Cloud",
+  "verdict": "confirm",
+  "reasoning": "BI/analytics platform that ships embedded AI-powered auto-insights, natural-language query, and forecasting as material secondary capabilities on the core reporting engine — ai_featured."
+ },
+ {
+  "service": "OutSystems 11",
+  "verdict": "confirm",
+  "reasoning": "Low-code app-development platform with an embedded ML-based AI Mentor System and generative-AI development assistance — the low-code-plus-AI-module pattern, ai_featured."
+ },
+ {
+  "service": "PagerDuty Advance",
+  "verdict": "confirm",
+  "reasoning": "PagerDuty's AIOps bundle layering ML-based noise reduction and generative-AI incident summarization onto the event-orchestration platform — material embedded AI, ai_featured."
+ },
+ {
+  "service": "Pattern-of-Life Profiler",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "unknown-service-guess",
+  "reasoning": "An obscure, unverifiable named capability on a collaboration-workspace host (Bluescape/n8n); rubric-v2 rule 3 bars inferring ai_featured from 'Profiler'/'intelligence' fragments alone, and rule 2 treats the host context as noise — not_ai, low confidence."
+ },
+ {
+  "service": "Power BI",
+  "verdict": "confirm",
+  "reasoning": "BI/visualization tool that ships embedded AI features (natural-language Q&A, Key Influencers, smart narratives, Copilot) as material secondary capabilities — ai_featured per v1."
+ }
+]

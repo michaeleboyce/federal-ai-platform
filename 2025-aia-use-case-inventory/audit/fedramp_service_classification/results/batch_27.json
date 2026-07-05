@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Service Architecture Intelligence: GitHub Integration",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "New Relic feature that links service catalog entries to GitHub repos for ownership/context; observability tooling, not an ML capability despite the 'Intelligence' branding.",
+  "signals": ["Service Architecture", "GitHub Integration", "observability platform"]
+ },
+ {
+  "service": "Service Architecture Intelligence: Maps",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "New Relic feature that visualizes service dependency maps; architecture visualization, not ML/AI.",
+  "signals": ["Service Architecture", "Maps", "observability platform"]
+ },
+ {
+  "service": "Service Architecture Intelligence: Scorecards",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "New Relic feature that grades services against best-practice checklists; rule-based scorecarding, not ML/AI.",
+  "signals": ["Scorecards", "Service Architecture"]
+ },
+ {
+  "service": "Service Architecture Intelligence: Teams",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "New Relic feature that maps services to owning teams; organizational metadata, not ML/AI.",
+  "signals": ["Teams", "Service Architecture"]
+ },
+ {
+  "service": "Service Bus",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure managed messaging/queueing service; not AI.",
+  "signals": ["Bus", "messaging"]
+ },
+ {
+  "service": "Service Cloud Messaging",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce Service Cloud channel for customer messaging; CRM feature, not AI.",
+  "signals": ["Salesforce", "Messaging", "CRM"]
+ },
+ {
+  "service": "Service Cloud Voice",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Salesforce's telephony/voice-channel integration for Service Cloud contact centers; a communications feature, no stated AI capability at this level.",
+  "signals": ["Voice", "Salesforce", "CRM"]
+ },
+ {
+  "service": "Service Connector",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure feature for connecting compute resources to backing services; infrastructure plumbing, not AI.",
+  "signals": ["Connector", "Azure"]
+ },
+ {
+  "service": "Service Connector Hub",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure event-routing/integration hub; infrastructure, not AI.",
+  "signals": ["Connector Hub", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Service Directory",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty's catalog of services/ownership metadata; directory/config feature, not AI.",
+  "signals": ["Directory", "PagerDuty"]
+ },
+ {
+  "service": "Service Fabric",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's distributed systems platform for building/managing microservices; infrastructure, not AI.",
+  "signals": ["Fabric", "Azure", "microservices"]
+ },
+ {
+  "service": "Service Orchestration Rules*",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "PagerDuty's rule-based automation for incident orchestration; configured rules, not an ML capability.",
+  "signals": ["Orchestration Rules", "event orchestration"]
+ },
+ {
+  "service": "Service Performance Reviews",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty reporting feature reviewing service performance metrics; analytics/reporting, not AI.",
+  "signals": ["Performance Reviews"]
+ },
+ {
+  "service": "Service Rules",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty configuration rules for service event handling; not AI.",
+  "signals": ["Rules", "PagerDuty"]
+ },
+ {
+  "service": "Services Bus",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure Government's managed messaging/queueing service; not AI.",
+  "signals": ["Bus", "Azure Government"]
+ },
+ {
+  "service": "Sharetru Federal",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "GovPoint's branded IaaS/PaaS/SaaS hosting offering; generic cloud hosting, not AI.",
+  "signals": ["cloud solutions", "IaaS", "PaaS", "SaaS"]
+ },
+ {
+  "service": "SharpHound",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SharpHound is the Active Directory data-collection tool used to feed BloodHound attack-path graphs; a security recon/graph tool, not ML/AI.",
+  "signals": ["SharpHound", "PFCS-SS"]
+ },
+ {
+  "service": "Sheets",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace spreadsheet application; productivity software, not AI.",
+  "signals": ["Google Workspace", "Sheets"]
+ },
+ {
+  "service": "Sierra",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Name matches Sierra (sierra.ai), an AI agent platform for customer service, hosted here as a third-party commercial product on Knox Systems' multi-tenant delivery platform; not independently confirmed from the snippet alone.",
+  "signals": ["Sierra", "commercial software", "multi-tenant cloud platform"]
+ },
+ {
+  "service": "Sift",
+  "category": "core_ai",
+  "confidence": "medium",
+  "reasoning": "Name matches Sift, a digital trust & safety company whose core product is machine-learning-based fraud/risk scoring, hosted as third-party commercial software on Knox Systems.",
+  "signals": ["Sift", "commercial software", "multi-tenant cloud platform"]
+ },
+ {
+  "service": "Single Sign-on",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty's SSO/identity feature; authentication, not AI.",
+  "signals": ["Single Sign-on"]
+ },
+ {
+  "service": "Singularity Cloud Native Security (CNS)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "SentinelOne's cloud workload/CNAPP security product, part of the Singularity platform explicitly built on 'advanced machine learning algorithms and behavioral AI' for detection.",
+  "signals": ["Cloud Native Security", "machine learning algorithms", "behavioral AI"]
+ },
+ {
+  "service": "Singularity Data Lake",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SentinelOne's centralized data ingestion/storage layer for security telemetry; a data lake/storage component, not itself an ML capability.",
+  "signals": ["Data Lake", "ingest and centralize"]
+ },
+ {
+  "service": "Singularity Hyperautomation",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "SentinelOne's SOAR-style workflow/playbook automation module; rule- and workflow-driven automation, not a distinct ML capability.",
+  "signals": ["Hyperautomation", "automation"]
+ },
+ {
+  "service": "Singularity Marketplace",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SentinelOne's app/integration marketplace within the Singularity platform; a distribution catalog, not AI.",
+  "signals": ["Marketplace"]
+ },
+ {
+  "service": "Singularity Network Discovery",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "SentinelOne's asset/network discovery scanning feature; discovery/inventory tooling, not a distinct ML capability.",
+  "signals": ["Network Discovery"]
+ },
+ {
+  "service": "Singularity Operations Center (OpsCenter)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SentinelOne's management console/dashboard for the Singularity platform; administrative UI, not AI.",
+  "signals": ["Operations Center", "OpsCenter"]
+ },
+ {
+  "service": "Singularity Threat Intelligence",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "SentinelOne's threat-intel feed/IOC module; likely incorporates some ML scoring but the snippet doesn't specifically attribute AI to this module rather than the platform's endpoint detection generally.",
+  "signals": ["Threat Intelligence"]
+ },
+ {
+  "service": "Singularity Vulnerability Management",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "SentinelOne's vulnerability scanning/prioritization module; vulnerability management tooling, not a distinct ML capability.",
+  "signals": ["Vulnerability Management"]
+ },
+ {
+  "service": "Sites Classic",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace's legacy website-builder tool; not AI.",
+  "signals": ["Sites Classic", "Google Workspace"]
+ },
+ {
+  "service": "SkyNET 2.0",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Kernos-hosted platform described as performing 'near-real-time video exploitation' and full-motion-video analysis, a domain that commonly involves computer-vision/ML analytics, though not explicitly claimed as AI in the snippet.",
+  "signals": ["video exploitation", "full motion video (FMV)", "common operating picture"]
+ },
+ {
+  "service": "Slides",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Workspace presentation application; productivity software, not AI.",
+  "signals": ["Google Workspace", "Slides"]
+ },
+ {
+  "service": "SmartConnect",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola Mission Critical Ecosystem integration/connector component; not AI.",
+  "signals": ["SmartConnect", "Motorola"]
+ },
+ {
+  "service": "SmartLocate (Location Services)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola location/GPS tracking service; not AI.",
+  "signals": ["Location Services"]
+ },
+ {
+  "service": "SmartMapping",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Motorola GIS/mapping component of the Mission Critical suite; mapping/visualization tooling, no stated ML capability.",
+  "signals": ["SmartMapping", "Motorola"]
+ },
+ {
+  "service": "SmartMessaging",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Motorola messaging component; communications feature, not AI.",
+  "signals": ["SmartMessaging"]
+ },
+ {
+  "service": "SmartPM",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be a project-management tool within Palantir's PFCS-SS bundle; no evidence of an AI/ML capability.",
+  "signals": ["SmartPM", "PFCS-SS"]
+ },
+ {
+  "service": "Smartscan",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Synack's automated continuous attack-surface/vulnerability scanning technology, which complements human researchers and is generally understood to use ML-assisted analysis for prioritization, within a broader security-testing platform.",
+  "signals": ["continuous security testing", "vulnerability management", "Synack Platform"]
+ },
+ {
+  "service": "Solaris",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "No specific product information beyond the generic Kernos hosting description; likely an OS/infrastructure component or unrelated named service, not identifiable as AI.",
+  "signals": ["Kernos", "SaaS"]
+ },
+ {
+  "service": "Spacelift",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Spacelift is a well-known Infrastructure-as-Code (Terraform/OpenTofu) CI/CD management platform; DevOps tooling, not AI.",
+  "signals": ["Spacelift", "Knox Systems"]
+ },
+ {
+  "service": "Spanner",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Google Cloud's globally distributed relational database; a database service, not AI.",
+  "signals": ["Spanner", "Google Cloud Platform"]
+ },
+ {
+  "service": "Spartan Data Platform Management",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "No specific product information beyond the generic Azure hosting description; reads as a data-platform administration tool, not identifiable as AI.",
+  "signals": ["Data Platform Management", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "SpecterOps BloodHound Enterprise",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "BloodHound is a graph-based Active Directory attack-path analysis tool; uses graph algorithms, not marketed as ML/AI.",
+  "signals": ["BloodHound", "PFCS-SS"]
+ },
+ {
+  "service": "Speech Services",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Azure Cognitive Services Speech — speech-to-text, text-to-speech, and speech translation; a dedicated ML-based speech AI service.",
+  "signals": ["Speech Services", "Azure"]
+ },
+ {
+  "service": "Splunk Cloud Platform",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Splunk's core log ingestion/search/analysis platform; operational intelligence infrastructure, not itself an ML/AI product.",
+  "signals": ["operational intelligence", "analyze the massive streams of machine-generated data"]
+ },
+ {
+  "service": "Splunk Enterprise Security",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Splunk's SIEM security-analytics app, which incorporates risk-based alerting and statistical/ML-assisted correlation as a core embedded feature of an otherwise broader security platform.",
+  "signals": ["Enterprise Security", "operational intelligence", "SIEM"]
+ },
+ {
+  "service": "Splunk IT Service Intelligence",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Splunk ITSI includes machine-learning-based adaptive thresholding and anomaly detection for service health scoring as a core embedded feature.",
+  "signals": ["IT Service Intelligence", "operational intelligence"]
+ },
+ {
+  "service": "Splunk SOAR",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Splunk's security orchestration, automation, and response product; primarily playbook/workflow automation, not a distinct ML capability.",
+  "signals": ["SOAR", "automation"]
+ },
+ {
+  "service": "Stack Monitoring",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Oracle Cloud Infrastructure's application/infrastructure monitoring service; observability, not AI.",
+  "signals": ["Monitoring", "Oracle Cloud Infrastructure"]
+ },
+ {
+  "service": "Stakeholder Users",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty user-role/access management feature for external stakeholders; administrative feature, not AI.",
+  "signals": ["Stakeholder Users", "PagerDuty"]
+ }
+]

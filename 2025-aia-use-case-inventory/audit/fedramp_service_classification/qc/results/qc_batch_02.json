@@ -1,0 +1,102 @@
+[
+ {
+  "service": "Probable Origin",
+  "verdict": "confirm",
+  "reasoning": "Probable Origin is a genuine PagerDuty AIOps/event-intelligence feature that uses ML to identify the likely originating service of an incident, a material embedded ML capability within an incident-management platform."
+ },
+ {
+  "service": "Public Sector Solutions (Public Sector Foundation) - including Public Sector Solutions; OmniStudio; Emergency Program Management; Business Rules Engine; CRM Analytics for Public Sector Solutions; Customer Community for Public Sector; Employee Experience for Public Sector; WDC (Formerly Work.com); Access to Productivity managed packages like Employee Workspace, Employee Concierge, HR Service Center, Employee Health Verification, and Employee Concierge Bot; Public Sector Application Forms; Composable Case Management; and Benefit Management",
+  "verdict": "confirm",
+  "reasoning": "A broad case-management/HR bundle that explicitly includes Einstein-powered CRM Analytics and an Employee Concierge Bot, making embedded AI a material but secondary capability of the overall package."
+ },
+ {
+  "service": "Qlik Sense Enterprise SaaS",
+  "verdict": "confirm",
+  "reasoning": "Qlik Sense embeds Insight Advisor (NLP/ML augmented analytics and natural-language search) as a material secondary feature within a broader BI platform, fitting the ai_featured pattern."
+ },
+ {
+  "service": "SIEM (Amazon Inspector, Amazon Guard Duty, Amazon CloudTrail, Amazon Detective, Amazon Security Hub)",
+  "verdict": "confirm",
+  "reasoning": "The bundle includes GuardDuty and Detective, which use ML-based anomaly/threat detection as an embedded feature of a broader security-monitoring service, the canonical security-analytics-with-ML ai_featured case."
+ },
+ {
+  "service": "Sensitive Data Protection (formerly Cloud DLP)",
+  "verdict": "confirm",
+  "reasoning": "Google's DLP ships ML-based sensitive-data classifiers (infoType detection, image redaction) as a material embedded capability within a data-governance/security service."
+ },
+ {
+  "service": "Sentinel Agent (Windows, macOS, Linux, and cloud-native Kubernetes)",
+  "verdict": "confirm",
+  "reasoning": "The SentinelOne endpoint agent itself is the product that ships ML and behavioral-AI models for real-time threat detection, an embedded ML capability in an endpoint-security product."
+ },
+ {
+  "service": "Smartscan",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "unknown-service-guess",
+  "reasoning": "The label's own reasoning hedges ('generally understood to use ML-assisted analysis'), inventing an AI capability for a vulnerability/attack-surface scanner; scanning is not inherently AI and there is no independent AI attribution for Smartscan."
+ },
+ {
+  "service": "Splunk Enterprise Security",
+  "verdict": "confirm",
+  "reasoning": "Splunk ES ships ML-based risk scoring and anomaly detection (MLTK-backed) as a material embedded feature of its SIEM/security-analytics app, the classic ai_featured case."
+ },
+ {
+  "service": "Splunk IT Service Intelligence",
+  "verdict": "confirm",
+  "reasoning": "ITSI includes ML-based adaptive thresholding and anomaly detection for service-health scoring as a genuine embedded ML feature."
+ },
+ {
+  "service": "Tableau Next",
+  "verdict": "confirm",
+  "reasoning": "Tableau Next (Tableau Einstein) is a BI/analytics platform with generative-AI agents for NL querying and automated insight generation as a headline embedded feature, correctly ai_featured rather than core_ai."
+ },
+ {
+  "service": "Talent Acquisition",
+  "verdict": "confirm",
+  "reasoning": "A recruiting software module of Eightfold's Talent Intelligence Platform whose core sourcing/matching is genuinely driven by Eightfold's AI models; the module is an HR function materially powered by embedded AI."
+ },
+ {
+  "service": "Talent Tracking",
+  "verdict": "confirm",
+  "reasoning": "A candidate-pipeline software module of Eightfold's AI-driven Talent Intelligence Platform that surfaces AI-ranked matches; embedded AI is material but secondary to the tracking workflow."
+ },
+ {
+  "service": "TotalAI",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "marketing-name-confusion",
+  "reasoning": "Qualys TotalAI is a security scanner that assesses/tests AI and LLM apps for vulnerabilities; per rubric-v2 rule 1, a service that monitors/administers AI rather than shipping it is not_ai, and the AI-sounding name is not evidence."
+ },
+ {
+  "service": "Trellix ML Protect (formerly known as Trellix Real Protect)",
+  "verdict": "confirm",
+  "reasoning": "An ML-based malware-classification engine embedded within the Trellix endpoint suite; per rubric-v2 rule 5 its category is malware protection with an ML engine, so ai_featured (not core_ai) is correct."
+ },
+ {
+  "service": "Vigilance Managed Detection and Response (MDR) services",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "host-ai-overattribution",
+  "reasoning": "Vigilance MDR is a human-delivered managed SOC service on the SentinelOne ML host with no independent AI attribution; per rubric-v2 rule 2 (its cited 'DFIR services on an ML-security host -> not_ai' precedent) the platform's ML must not be attributed to the managed-service SKU."
+ },
+ {
+  "service": "Wayfinder Incent Readiness & Response",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "host-ai-overattribution",
+  "reasoning": "A human-delivered managed incident-readiness/response service on the SentinelOne ML host; rubric-v2 rule 2 bars attributing the Singularity platform's ML to this managed-service SKU, which has no independent AI."
+ },
+ {
+  "service": "Wayfinder Threat Hunting",
+  "verdict": "overturn",
+  "corrected_category": "not_ai",
+  "error_tag": "host-ai-overattribution",
+  "reasoning": "A human-analyst managed threat-hunting service on the SentinelOne ML host, directly analogous to the rule-2 'DFIR services' precedent; the host's ML must not be attributed to this service SKU, so not_ai."
+ },
+ {
+  "service": "Workforce Exchange",
+  "verdict": "confirm",
+  "reasoning": "A talent-marketplace software module of Eightfold's platform whose core matching/recommendation is built on Eightfold's AI models; embedded AI is material to the module, so ai_featured is correct."
+ }
+]

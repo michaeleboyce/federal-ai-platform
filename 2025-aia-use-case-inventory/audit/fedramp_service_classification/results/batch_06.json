@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Azure AI Services",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "This is Microsoft's umbrella AI/ML API product (formerly Cognitive Services), covering vision, language, speech, and generative AI models.",
+  "signals": ["AI Services", "Azure AI"]
+ },
+ {
+  "service": "Azure API for FHIR",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed API for storing/exchanging healthcare data in the FHIR standard; a data-interoperability service, not AI/ML.",
+  "signals": ["API for FHIR", "healthcare data"]
+ },
+ {
+  "service": "Azure Active Directory (AAD) Domain Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed domain services (LDAP/Kerberos/NTLM) for identity; not AI-related.",
+  "signals": ["Domain Services", "Active Directory"]
+ },
+ {
+  "service": "Azure Active Directory (AAD) Free",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "The free tier of Azure AD identity and access management; not AI-related.",
+  "signals": ["Active Directory", "Free"]
+ },
+ {
+  "service": "Azure Active Directory (AAD) Premium P1 + P2",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Premium identity/access management licensing tiers of Azure AD; not AI-related.",
+  "signals": ["Active Directory", "Premium P1", "P2"]
+ },
+ {
+  "service": "Azure Active Directory (AAD) Sync Fabric",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Backend directory-synchronization infrastructure for Azure AD; not AI-related.",
+  "signals": ["Sync Fabric", "Active Directory"]
+ },
+ {
+  "service": "Azure Active Directory B2C - CPIM",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Customer identity and access management (B2C) service; not AI-related.",
+  "signals": ["Active Directory B2C", "CPIM"]
+ },
+ {
+  "service": "Azure Active Directory Domain Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed domain services (LDAP/Kerberos/NTLM) for identity; not AI-related.",
+  "signals": ["Domain Services", "Active Directory"]
+ },
+ {
+  "service": "Azure Advanced Threat Protection",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A security analytics product (now Defender for Identity) that uses behavioral analytics and ML to detect identity-based threats, embedded within a broader security monitoring service.",
+  "signals": ["Advanced Threat Protection", "threat detection"]
+ },
+ {
+  "service": "Azure Advisor",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A recommendation engine for cost, security, and performance best practices; primarily rule-based guidance rather than an ML/AI product.",
+  "signals": ["Advisor", "recommendations", "best practice"]
+ },
+ {
+  "service": "Azure Analysis Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed OLAP/BI semantic modeling service for building tabular data models; not an ML/AI product.",
+  "signals": ["Analysis Services", "OLAP"]
+ },
+ {
+  "service": "Azure App Configuration",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A centralized app settings and feature-flag management service; not AI-related.",
+  "signals": ["App Configuration"]
+ },
+ {
+  "service": "Azure Arc Enabled SQL Server",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hybrid management of SQL Server instances via Azure Arc; a database/infrastructure management service, not AI.",
+  "signals": ["Arc Enabled", "SQL Server"]
+ },
+ {
+  "service": "Azure Arc for servers",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hybrid/multi-cloud server management via Azure Arc; infrastructure management, not AI.",
+  "signals": ["Arc", "servers"]
+ },
+ {
+  "service": "Azure Arc-enabled Kubernetes",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hybrid management of Kubernetes clusters via Azure Arc; container orchestration management, not AI.",
+  "signals": ["Arc-enabled", "Kubernetes"]
+ },
+ {
+  "service": "Azure Arc-enabled Servers",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hybrid/multi-cloud server management via Azure Arc; infrastructure management, not AI.",
+  "signals": ["Arc-enabled", "Servers"]
+ },
+ {
+  "service": "Azure Archive Storage",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A cold-tier blob storage offering for infrequently accessed data; plain storage, not AI.",
+  "signals": ["Archive Storage"]
+ },
+ {
+  "service": "Azure Backup",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed data backup and recovery service; not AI-related.",
+  "signals": ["Backup"]
+ },
+ {
+  "service": "Azure Bastion",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed bastion host providing secure RDP/SSH access to VMs; a networking/security service, not AI.",
+  "signals": ["Bastion"]
+ },
+ {
+  "service": "Azure Bastion Hybrid Networking Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed bastion host for secure remote access in hybrid networking scenarios; not AI.",
+  "signals": ["Bastion", "Hybrid Networking"]
+ },
+ {
+  "service": "Azure Blueprints",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A governance service for orchestrating repeatable environment deployments (policies, roles, templates); not AI.",
+  "signals": ["Blueprints"]
+ },
+ {
+  "service": "Azure Bot Service",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "A managed platform for building, hosting, and connecting conversational AI bots/chat assistants.",
+  "signals": ["Bot Service", "conversational"]
+ },
+ {
+  "service": "Azure CXP Nomination Portal",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "Appears to be an internal Microsoft customer-experience nomination/case portal, not an AI/ML product.",
+  "signals": ["CXP Nomination Portal"]
+ },
+ {
+  "service": "Azure Container Apps",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A serverless container hosting platform; compute infrastructure, not AI.",
+  "signals": ["Container Apps"]
+ },
+ {
+  "service": "Azure Container Instances",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "On-demand container hosting without orchestration; compute infrastructure, not AI.",
+  "signals": ["Container Instances"]
+ },
+ {
+  "service": "Azure Container Registry",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed private Docker/OCI image registry; not AI-related.",
+  "signals": ["Container Registry"]
+ },
+ {
+  "service": "Azure Content Delivery Network",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A CDN for caching and delivering web content; networking service, not AI.",
+  "signals": ["Content Delivery Network"]
+ },
+ {
+  "service": "Azure Cosmos DB",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A globally distributed multi-model NoSQL database; a data store, not an AI/ML product.",
+  "signals": ["Cosmos DB"]
+ },
+ {
+  "service": "Azure DDOS Protection",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network-layer DDoS mitigation service; not AI-related.",
+  "signals": ["DDOS Protection"]
+ },
+ {
+  "service": "Azure DDoS Protection",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network-layer DDoS mitigation service; not AI-related.",
+  "signals": ["DDoS Protection"]
+ },
+ {
+  "service": "Azure DNS",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed DNS hosting service; networking, not AI.",
+  "signals": ["DNS"]
+ },
+ {
+  "service": "Azure Data Box Edge",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An on-premises edge appliance for data transfer/local compute; primarily a storage/edge-compute device, not an AI product.",
+  "signals": ["Data Box Edge"]
+ },
+ {
+  "service": "Azure Data Explorer",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A fast big-data analytics/query engine (Kusto) for logs and telemetry; a query/analytics database rather than an ML/AI service.",
+  "signals": ["Data Explorer", "analytics"]
+ },
+ {
+  "service": "Azure Data Movement",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A library/service for moving data between Azure storage services; data transfer, not AI.",
+  "signals": ["Data Movement"]
+ },
+ {
+  "service": "Azure Data Share",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A service for securely sharing data with other organizations; not AI-related.",
+  "signals": ["Data Share"]
+ },
+ {
+  "service": "Azure DataBricks",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "A unified data-analytics and engineering platform (Apache Spark based) that ships substantial embedded ML training/tooling (e.g., MLflow), but is broader than a pure AI/ML product.",
+  "signals": ["DataBricks", "unified analytics", "ML tooling"]
+ },
+ {
+  "service": "Azure Database Migration Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A service for migrating databases to Azure; migration tooling, not AI.",
+  "signals": ["Database Migration Service"]
+ },
+ {
+  "service": "Azure Database for MySQL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed MySQL database service; not AI-related.",
+  "signals": ["Database for MySQL"]
+ },
+ {
+  "service": "Azure Database for PostgreSQL",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed PostgreSQL database service; not AI-related.",
+  "signals": ["Database for PostgreSQL"]
+ },
+ {
+  "service": "Azure Dedicated HSM",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Dedicated hardware security modules for key management; a security/cryptography service, not AI.",
+  "signals": ["Dedicated HSM"]
+ },
+ {
+  "service": "Azure DevTest Labs",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A service for quickly provisioning dev/test environments; not AI-related.",
+  "signals": ["DevTest Labs"]
+ },
+ {
+  "service": "Azure Event Grid",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed event-routing/pub-sub service; messaging infrastructure, not AI.",
+  "signals": ["Event Grid"]
+ },
+ {
+  "service": "Azure File Sync",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A service that syncs Azure file shares with on-premises servers; storage, not AI.",
+  "signals": ["File Sync"]
+ },
+ {
+  "service": "Azure Firewall",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A managed network firewall service; not AI-related.",
+  "signals": ["Firewall"]
+ },
+ {
+  "service": "Azure Firewall Manager",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Centralized security policy and route management for Azure Firewalls; not AI-related.",
+  "signals": ["Firewall Manager"]
+ },
+ {
+  "service": "Azure For Education",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An education-focused offering/pricing program for Azure; not an AI product itself.",
+  "signals": ["For Education"]
+ },
+ {
+  "service": "Azure Front Door",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A global load-balancing and application-delivery/CDN service; networking, not AI.",
+  "signals": ["Front Door"]
+ },
+ {
+  "service": "Azure Functions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A serverless compute/event-driven function execution service; general compute, not AI.",
+  "signals": ["Functions", "serverless"]
+ },
+ {
+  "service": "Azure Guest Configuration",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A policy-based in-VM configuration auditing/enforcement service; not AI-related.",
+  "signals": ["Guest Configuration"]
+ },
+ {
+  "service": "Azure HPC Cache",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A high-performance file caching service for HPC workloads; storage/compute infrastructure, not AI.",
+  "signals": ["HPC Cache"]
+ }
+]

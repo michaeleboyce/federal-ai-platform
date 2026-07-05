@@ -1,0 +1,352 @@
+[
+ {
+  "service": "Rule Nesting",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A PagerDuty event-orchestration configuration feature (nested rule logic), not an AI capability.",
+  "signals": ["Rule Nesting", "PagerDuty", "event orchestration"]
+ },
+ {
+  "service": "Rustici Content Controller",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SCORM/xAPI e-learning content management tool, not an AI capability.",
+  "signals": ["Content Controller", "PowerTrain Government Learning Enclave"]
+ },
+ {
+  "service": "SAP Integration",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A data integration connector between Concur and SAP, not an AI capability.",
+  "signals": ["SAP Integration", "Concur"]
+ },
+ {
+  "service": "SCAP Compliance Checker",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Rule-based configuration/vulnerability compliance scanning against SCAP benchmarks, not ML-driven.",
+  "signals": ["SCAP Compliance Checker", "GSS One - Azure"]
+ },
+ {
+  "service": "SCG Distributed Systems Services",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Generic distributed-systems infrastructure service within IBM SmartCloud, no indication of an AI/ML function.",
+  "signals": ["Distributed Systems Services", "SmartCloud for Government"]
+ },
+ {
+  "service": "SDN PubSub Service",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A software-defined-network publish/subscribe messaging service, purely networking infrastructure.",
+  "signals": ["PubSub", "SDN", "Azure Government"]
+ },
+ {
+  "service": "SDX",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Cloudera's Shared Data Experience is a data governance/security/metadata layer, not an AI/ML capability itself.",
+  "signals": ["SDX", "Cloudera for Government"]
+ },
+ {
+  "service": "SGX PCK Certificate Cache",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Intel SGX attestation certificate caching service, a hardware security/infrastructure function.",
+  "signals": ["SGX", "PCK Certificate Cache", "Azure Commercial Cloud"]
+ },
+ {
+  "service": "SIEM",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Generic Security Information and Event Management offering with no specific ML/AI branding mentioned.",
+  "signals": ["SIEM", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "SIEM (Amazon Inspector, Amazon Guard Duty, Amazon CloudTrail, Amazon Detective, Amazon Security Hub)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "This bundle includes Amazon GuardDuty and Amazon Detective, which use ML-based anomaly/threat detection as an embedded feature within a broader security monitoring service.",
+  "signals": ["Amazon Guard Duty", "Amazon Detective", "SIEM"]
+ },
+ {
+  "service": "SIEM (Azure Monitor, Log Analytics, Defender for Cloud, Azure Sentinel)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Bundle includes Azure Sentinel and Defender for Cloud, cloud-native SIEM/security tools with embedded ML-based threat/anomaly detection.",
+  "signals": ["Azure Sentinel", "Defender for Cloud", "SIEM"]
+ },
+ {
+  "service": "SOC Services",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Human-staffed Security Operations Center managed service, not an AI capability.",
+  "signals": ["SOC Services", "MAXIMUS Cloud"]
+ },
+ {
+  "service": "SQL Data Warehouse",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Azure's data warehouse service, a database/analytics infrastructure product.",
+  "signals": ["SQL Data Warehouse", "Azure"]
+ },
+ {
+  "service": "SQL Database",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed relational database service, not an AI capability.",
+  "signals": ["SQL Database", "Azure"]
+ },
+ {
+  "service": "SQL Server Stretch Database",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Hybrid on-premises/cloud SQL Server data-tiering feature, a database service.",
+  "signals": ["Stretch Database", "Azure"]
+ },
+ {
+  "service": "SQL Server on Azure Virtual Machines",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "SQL Server hosted on IaaS virtual machines, purely a database/compute service.",
+  "signals": ["SQL Server", "Azure Virtual Machines"]
+ },
+ {
+  "service": "SRX 2200",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Appears to be a Motorola Solutions hardware/radio network device model, not an AI capability.",
+  "signals": ["SRX 2200", "Motorola Solutions Federal Cloud"]
+ },
+ {
+  "service": "SSL/TLS",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Transport encryption/certificate service, not an AI capability.",
+  "signals": ["SSL/TLS", "Cloudflare"]
+ },
+ {
+  "service": "SSL/TLS for SaaS",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Transport encryption/certificate service for SaaS applications, not an AI capability.",
+  "signals": ["SSL/TLS", "Cloudflare"]
+ },
+ {
+  "service": "SVX Device",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Appears to be a Motorola Solutions hardware/radio device, not an AI capability.",
+  "signals": ["SVX Device", "Motorola Solutions Federal Cloud"]
+ },
+ {
+  "service": "Salesforce Field Service (Dispatcher, Technician, Contractor, Mobile App)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Field service workforce management and dispatch tooling; named as a standard operations product rather than an AI-branded capability.",
+  "signals": ["Field Service", "Dispatcher", "Salesforce"]
+ },
+ {
+  "service": "Salesforce Mobile (iOS/Android)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Mobile client application for Salesforce, not an AI capability.",
+  "signals": ["Salesforce Mobile", "iOS/Android"]
+ },
+ {
+  "service": "Salesforce Personalization",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Salesforce Personalization is a real-time recommendation/personalization engine powered by machine learning, embedded as a feature within the broader CRM platform.",
+  "signals": ["Personalization", "Salesforce", "smart insights"]
+ },
+ {
+  "service": "Salesforce Private Connect",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Private network connectivity service between Salesforce and customer networks, a networking function.",
+  "signals": ["Private Connect", "Salesforce"]
+ },
+ {
+  "service": "Salesforce Shield (Platform Encryption, Field Audit Trail, and Event Monitoring)",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A security/compliance suite covering encryption, audit trails, and event monitoring; rule-based governance features, not an AI capability.",
+  "signals": ["Platform Encryption", "Field Audit Trail", "Event Monitoring"]
+ },
+ {
+  "service": "Salesforce Surveys",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A survey creation/distribution tool, not an AI capability.",
+  "signals": ["Surveys", "Salesforce"]
+ },
+ {
+  "service": "Sayari Counterparty and Supply Chain Risk Intelligence",
+  "category": "not_ai",
+  "confidence": "low",
+  "reasoning": "A corporate/supply-chain risk data and graph-based entity research platform; 'Intelligence' here denotes business/risk intelligence rather than a demonstrated core ML capability in the name or snippet.",
+  "signals": ["Risk Intelligence", "Counterparty", "Supply Chain"]
+ },
+ {
+  "service": "Scale Center and Test",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Salesforce's performance/load-testing tool for orgs, not an AI capability.",
+  "signals": ["Scale Center", "Test", "Salesforce"]
+ },
+ {
+  "service": "Scale Generative AI Platform",
+  "category": "core_ai",
+  "confidence": "high",
+  "reasoning": "Explicitly named generative AI platform (Scale AI's SGP) for building, testing, and deploying AI-enabled applications.",
+  "signals": ["Generative AI Platform", "Scale AI", "AI-enabled enterprise applications"]
+ },
+ {
+  "service": "Schedule (Personnel Scheduling)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "HR personnel scheduling tool, not an AI capability.",
+  "signals": ["Personnel Scheduling", "NEOGOV"]
+ },
+ {
+  "service": "Schedule Conditions",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "PagerDuty on-call schedule configuration logic, not an AI capability.",
+  "signals": ["Schedule Conditions", "PagerDuty"]
+ },
+ {
+  "service": "SchoolJobs.com (Education Job Board)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "An education-sector job board/listing site, not an AI capability.",
+  "signals": ["Job Board", "NEOGOV"]
+ },
+ {
+  "service": "Screenshare+",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "A screen-sharing/collaboration feature integrated with n8n workflow automation; no AI/ML function indicated.",
+  "signals": ["Screenshare", "Bluescape", "n8n"]
+ },
+ {
+  "service": "Secrets in Vault",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Secrets/credential management service, a security infrastructure function.",
+  "signals": ["Secrets", "Vault", "OCI"]
+ },
+ {
+  "service": "Secure Desktops",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Virtual desktop infrastructure service, not an AI capability.",
+  "signals": ["Secure Desktops", "OCI"]
+ },
+ {
+  "service": "Secure LDAP",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Directory-service protocol endpoint (LDAP over TLS), an identity/infrastructure function.",
+  "signals": ["Secure LDAP", "Google Workspace"]
+ },
+ {
+  "service": "Secure Partner Access",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Okta identity/access management for external partners, not an AI capability.",
+  "signals": ["Partner Access", "Okta"]
+ },
+ {
+  "service": "Secure Web Gateway",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Network/web traffic security filtering service, not an AI capability.",
+  "signals": ["Secure Web Gateway", "Cloudflare"]
+ },
+ {
+  "service": "SecureWiki",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A knowledge-base/wiki tool, not an AI capability.",
+  "signals": ["SecureWiki", "PowerTrain"]
+ },
+ {
+  "service": "Security Center",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A security monitoring/administration dashboard, not an AI capability.",
+  "signals": ["Security Center", "Salesforce"]
+ },
+ {
+  "service": "Security Information and Event Management (SIEM) Service",
+  "category": "not_ai",
+  "confidence": "medium",
+  "reasoning": "Generic SIEM offering with no specific ML/AI branding mentioned in the name or snippet.",
+  "signals": ["SIEM", "GovDataHosting Cloud Platform"]
+ },
+ {
+  "service": "Security: Interactive Application Security Testing (IAST)",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "IAST is an instrumentation-based application security testing technique, not an ML/AI capability; the host's 'intelligent observability' tagline is generic marketing.",
+  "signals": ["Interactive Application Security Testing", "instrumentation"]
+ },
+ {
+  "service": "Security: Security RX (Remediation Explorer)",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "A remediation-guidance/recommendation feature that plausibly leverages New Relic's AI-assisted analysis to prioritize and suggest fixes, embedded within the broader observability platform.",
+  "signals": ["Remediation Explorer", "intelligent observability platform"]
+ },
+ {
+  "service": "Select Care",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A SAP Concur travel duty-of-care program, not an AI capability.",
+  "signals": ["Select Care", "Concur", "travel"]
+ },
+ {
+  "service": "Sensitive Data Protection (formerly Cloud DLP)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "Google's data loss prevention service uses ML-based classifiers to detect and redact sensitive data, an embedded ML capability within a data-governance/security service.",
+  "signals": ["Sensitive Data Protection", "Cloud DLP", "GCP"]
+ },
+ {
+  "service": "Sentinel Agent (Windows, macOS, Linux, and cloud-native Kubernetes)",
+  "category": "ai_featured",
+  "confidence": "medium",
+  "reasoning": "SentinelOne's endpoint agent relies on machine learning and behavioral AI models for real-time threat detection, an embedded ML capability within an endpoint security product.",
+  "signals": ["Sentinel Agent", "machine learning algorithms", "behavioral AI"]
+ },
+ {
+  "service": "SentinelOne Management Console",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "Administrative console surfacing the ML/behavioral-AI-driven detections of the SentinelOne Singularity platform; the console itself is administrative but tightly coupled to the platform's embedded ML detection.",
+  "signals": ["Management Console", "SentinelOne Singularity", "machine learning algorithms"]
+ },
+ {
+  "service": "Serverless Compute",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "A generic serverless compute resource type in Databricks, an infrastructure primitive rather than an AI/ML capability itself.",
+  "signals": ["Serverless Compute", "Databricks"]
+ },
+ {
+  "service": "Serverless Kubernetes",
+  "category": "not_ai",
+  "confidence": "high",
+  "reasoning": "Managed container orchestration compute service, not an AI capability.",
+  "signals": ["Serverless Kubernetes", "OCI"]
+ },
+ {
+  "service": "Service Architecture Intelligence: Catalogs",
+  "category": "ai_featured",
+  "confidence": "low",
+  "reasoning": "A New Relic feature for automatically discovering and cataloging service architecture/dependencies from telemetry; the 'Intelligence' branding suggests an embedded automated-analysis capability, though it may be largely rule/graph-based rather than ML.",
+  "signals": ["Service Architecture Intelligence", "Catalogs", "intelligent observability platform"]
+ }
+]
