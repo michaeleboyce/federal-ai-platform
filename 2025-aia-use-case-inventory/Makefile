@@ -57,6 +57,14 @@ fix:
 	# -keyed; survives id rotation. See audit/retag/{general_llm_round3,
 	# agentic_review}/INSTRUCTIONS.md.
 	python3 scripts/apply_capability_reviews.py
+	# 2026-07 genai-flag adjudication: Sonnet-labeled verdicts for every row
+	# where the keyword-derived is_generative_ai disagreed with the agency's
+	# own ai_classification (687 rows, 3 cohorts — the "autonomous"/"chatbot"
+	# keyword over-fires plus declared-GenAI under-tags). Signature-keyed;
+	# skips with a warning until verdict batches land. MUST run before
+	# apply_llm_flag_drift.py, which keeps the last word on the
+	# llm_access=1 ⇒ genai=1 invariant. See audit/retag/genai_review_2026-07/.
+	python3 scripts/apply_genai_review.py --apply
 	# 2026-07 flag-drift adjudication: reconciles rows where
 	# is_general_llm_access=1 but is_generative_ai=0 (a contradiction — a
 	# general chat LLM is generative by definition). Signature-keyed via
@@ -219,6 +227,14 @@ fedramp:
 	# a fresh snapshot added services not yet labeled — top up via
 	# scripts/classify_fedramp_services.py.
 	python3 scripts/apply_fedramp_service_classification.py --apply
+	# Curated crosswalk: core-AI in-scope services -> inventory products
+	# (data/fedramp_service_product_map.csv). String-keyed; survives make fix.
+	# Backs the sleeping-services coverage board.
+	python3 scripts/apply_fedramp_service_product_map.py --apply
+	# Per-product capability labels (LLM pass persisted at
+	# data/product_capability_labels.csv) for the sleeping-services
+	# "nothing similar deployed" test. Keyed by canonical_name.
+	python3 scripts/apply_product_capability_labels.py --apply
 	python3 link_fedramp.py --apply
 	# Promote resolved fedramp_link_queue decisions into fedramp_product_links.
 	# Picks up rows that link_fedramp.py left as 'multi_candidate' or 'no_alias'

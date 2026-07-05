@@ -673,7 +673,12 @@ def tag_use_case(row, agency_abbr, aliases_dict, templates, products_dict, is_co
     else:
         is_llm = infer_llm_flag(row, product_id, products_dict)
     is_coding = 1 if ai_soph == "coding_assistant" or keyword_any(search_text, CODING_KEYWORDS) else 0
-    is_genai = 1 if prod.get("is_generative_ai") or keyword_any(search_text, LLM_KEYWORDS + AGENTIC_KEYWORDS) else 0
+    # LLM_KEYWORDS only — AGENTIC_KEYWORDS ("agent", "autonomous", "workflow")
+    # over-fire on classical autonomy and RPA (2026-07 genai review: the
+    # pre-2023 GenAI tail was almost entirely these false positives). Agentic
+    # sophistication detection still uses AGENTIC_KEYWORDS above; reviewed
+    # rows are overlaid by scripts/apply_genai_review.py either way.
+    is_genai = 1 if prod.get("is_generative_ai") or keyword_any(search_text, LLM_KEYWORDS) else 0
     is_frontier = 1 if prod.get("canonical_name") in FRONTIER_LLMS else 0
 
     # Development type
