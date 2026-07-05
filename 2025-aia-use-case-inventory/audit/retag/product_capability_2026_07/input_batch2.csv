@@ -1,0 +1,123 @@
+canonical_name,vendor,product_type,is_generative_ai_hint,is_frontier_llm_hint,parent_product,description,edge_count,agency_count,sample_use_snippets
+Gemini,Google,general_llm,1,1,Google,Google's conversational AI,58,15,gemini 1.5 | gemini code assist | gemini
+Google,Google,productivity,0,0,,,18,10,Google | google | Google
+Google Agentspace,Google,general_llm,1,0,Google Vertex AI,,2,2,google agentspace | Google Agentspace / NotebookLM
+Google Calendar,Google,productivity,0,0,Google Workspace,,1,1,Google Calendar
+Google Chrome Generative AI,Google,consumer_feature,1,0,Google,,1,1,Google Chrome Generative AI
+Google Cloud Platform,Google,general_llm,1,0,Google,,21,5,google | Google Cloud Platform | Google Cloud Platform
+Google Cloud Vision,Google,computer_vision,0,0,Google Cloud Platform,,1,1,Google Cloud Vision
+Google Colab,Google,developer_tool,0,0,Google,,1,1,google colab
+Google Coral TPU,Google,developer_tool,0,0,Google,,1,1,google coral tpu
+Google Distributed Cloud,Google,other,0,0,,,10,1,"product_queue_review_2026-06: Vendor ""OpenAI & Google Distributed Cloud"" — Google Distributed Cloud is a specific Google product missing from catalog; ""OpenAI"" is vendor-only with no product named (ge | product_queue_review_2026-06: Same vendor string ""OpenAI & Google Distributed Cloud"" — GDC is a real Google product absent from catalog; OpenAI vendor-only, not mapped. | product_queue_review_2026-06: Same vendor string ""OpenAI & Google Distributed Cloud"" — GDC is a real Google product absent from catalog; OpenAI vendor-only, not mapped."
+Google Earth Engine,Google,data_analytics,0,0,Google,,4,2,Google | Google | Google Earth Engine
+Google Lens,Google,computer_vision,1,0,Google,Google's image-recognition product,2,2,Google Lens | Google Lens
+Google Maps,Google,consumer_feature,0,0,Google,Google Maps with AI-powered routing,15,15,Google Maps | Google Maps | Google Maps
+Google News Brief,Google,consumer_feature,1,0,Google,,4,4,Google News Brief | Google News Brief | Google News Brief
+Google Pixel,Google,consumer_feature,0,0,Google,"Google Pixel with on-device AI features (Face Unlock, Magic Eraser)",2,2,Google Pixel | Google Pixel
+Google Translate,Google,translation,0,0,Google,,2,2,Google Translate | Google Translate
+Google Vertex AI,Google,general_llm,1,0,Google Cloud Platform,,3,3,google | Google Vertex AI Document workbench | google
+Google Workspace,Google,productivity,0,0,Google,Google's productivity suite,1,1,Google Workspace
+NotebookLM,Google,general_llm,1,0,Google,Google's Gemini-powered research notebook for document Q&A and synthesis,7,4,Google NotebookLM | Google NotebookLM | product_queue_review_2026-06: 'Google Agentspace / NotebookLM ... enable large-scale agent deployment with Google Agentspace' - both catalog entries.
+reCAPTCHA,Google,security_tool,0,0,Google,Google reCAPTCHA bot detection service that uses behavioral signals and risk scoring.,1,1,reCAPTCHA
+Lexis+ AI,LexisNexis,legal_research,1,0,LexisNexis,Legal research AI,2,2,LexisNexis | LexisNexis
+Lexis+ Protege,LexisNexis,legal_research,1,0,Lexis+ AI,LexisNexis Protege is a personalized generative AI legal assistant; distinct from the broader Lexis+ AI platform.,1,1,Lexis Protege
+LexisNexis,LexisNexis,investigative_data,0,0,,,6,4,LexisNexis | LexisNexis | lexisnexis
+LexisNexis Risk Solutions,LexisNexis,investigative_data,0,0,LexisNexis,,1,1,REX DBA Lexis Nexis
+NexisXplore,LexisNexis,investigative_data,0,0,LexisNexis,,1,1,NexisXplore
+CoCounsel,Thomson Reuters,legal_research,1,0,Thomson Reuters,"Thomson Reuters CoCounsel is a generative AI legal assistant for research, document review, and drafting.",3,3,Cocounsel AI | Thomson Reuters | CoCounsel
+ProLaw,Thomson Reuters,legal_research,0,0,Thomson Reuters,Thomson Reuters ProLaw legal practice management with integrated search and AI features.,1,1,ProLaw
+Thomson Reuters,Thomson Reuters,legal_research,0,0,,,3,1,Thomson Reuters | thomson reuters | Thomson Reuters
+Thomson Reuters CLEAR,Thomson Reuters,data_analytics,0,0,Thomson Reuters,,5,2,Thomson Reuters CLEAR | Thomson Reuters CLEAR | product_queue_review_2026-06: 'CLEAR is used to assist with fraud investigations. It searches and retrieves publicly available data on individuals and businesses' — Thomson Reuters CLEAR public-record
+Westlaw AI,Thomson Reuters,legal_research,1,0,Thomson Reuters,Legal research with AI,16,9,Westlaw | Westlaw | westlaw
+Brainlab Cirq Alignment,Brainlab,clinical_decision_support,0,0,,,1,1,via add_product
+Brainlab Cranial Navigation,Brainlab,clinical_decision_support,0,0,,,1,1,via add_product
+Brainlab Elements,Brainlab,clinical_decision_support,0,0,,,1,1,brainlab elements
+Brainlab Elements Spine,Brainlab,clinical_decision_support,0,0,,,1,1,via add_product
+Medtronic CareLink,Medtronic,clinical_decision_support,0,0,,,1,1,via add_product
+Medtronic GI Genius,Medtronic,clinical_decision_support,0,0,,,1,1,via add_product
+Medtronic LINQ II,Medtronic,clinical_decision_support,0,0,,,1,1,via add_product
+Medtronic O-arm O2,Medtronic,clinical_decision_support,0,0,,,1,1,via add_product
+ServiceNow,ServiceNow,itsm,0,0,,,4,2,"product_queue_review_2026-06: 'CCSQ ServiceNow AI Search is a product inside ServiceNow (SaaS)' — ServiceNow platform search feature; mapped to catalog 'ServiceNow' (distinct from Now Assist). | product_queue_review_2026-06: 'ServiceNow, Inc. / Tenable ServiceNow Vulnerability Response' AI remediation assistance — ServiceNow platform AI with Tenable; no closer catalog entry for Vulnerability  | product_queue_review_2026-06: 'ServiceNow Vulnerability Response AI Vulnerability Ticket Deduplication' — ServiceNow AI feature; Tenable/Qualys/Rapid7 appear only as scanner data sources generating du"
+ServiceNow AI Search,ServiceNow,other,0,0,,,1,1,"product_queue_review_2026-06: ""ServiceNow AI Search Intelligent query features"" — real named ServiceNow product distinct from catalog's ServiceNow Now Assist; missing from catalog."
+ServiceNow IT Operations Management (ITOM) Predictive AIOps,ServiceNow,itsm,0,0,ServiceNow,,1,1,ServiceNow IT Operations Management (ITOM) Predictive AIOps
+ServiceNow Now Assist,ServiceNow,itsm,1,0,ServiceNow,ServiceNow's GenAI features,47,18,servicenow | servicenow | servicenow
+RAVEn Investigative Prioritization Aggregator,U.S. Homeland Security Investigations,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'Sandia National Laboratories Repository for Analytics in a Virtualized Environment Investigative Prioritization Aggregator' - RAVEn is HSI's Repository for Analytics in 
+RAVEn Normalization Services,U.S. Homeland Security Investigations,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'Booz Allen Repository for Analytics in a Virtualized Environment Normalization Services' - catalog 'RAVEn Normalization Services'.
+RAVEn Translation and Transcription Service,U.S. Homeland Security Investigations,translation,0,0,,,1,1,"product_queue_review_2026-06: 'Booz Allen Repository for Analytics in a Virtualized Environment, Translation and Transcription for Investigative Data' - catalog 'RAVEn Translation and Transcription Se"
+Claude,Anthropic,general_llm,1,1,,Anthropic's conversational AI,36,11,Anthropic | Anthropic Claude | anthropic
+Claude Code,Anthropic,coding_assistant,1,0,Claude,Anthropic's coding agent,1,1,Claude Code
+CMS IDR Support Bot,CMS / GDIT,general_llm,1,0,CMS Integrated Data Repository Customer Analytic Environment,,1,1,product_queue_review_2026-06: 'GDIT Integrated Data Repository (IDR) Cloud IDR Support Bot' — catalog entry 'CMS IDR Support Bot'.
+CMS Integrated Data Repository Customer Analytic Environment,CMS / GDIT,ml_platform,0,0,,,1,1,product_queue_review_2026-06: 'GDIT ... Integrated Data Repository (IDR) Customer Analytic Environment (CAE)' — catalog entry 'CMS Integrated Data Repository Customer Analytic Environment'.
+Hologic 3D Quorum,Hologic,clinical_decision_support,0,0,,,1,1,Identifies clinically relevant regions of interest through overlapping slices (3mm) to ensure no loss
+Hologic Genius AI Detection,Hologic,clinical_decision_support,0,0,,,1,1,via add_product
+Ptolemy,Open source,scientific_ml,0,0,,Open-source CryoEM micrograph screening and triage tool using ML.,1,1,Ptolemy
+Topaz CryoEM,Open source,scientific_ml,0,0,,Topaz is a deep-learning-based particle-picking tool for CryoEM data.,2,2,topaz | Topaz
+USDA Recreation Site Chatbot,USDA Forest Service / University of Washington,general_llm,0,0,,,1,1,"product_queue_review_2026-06: ""University of Washington  Recreation site chatbot Estimating recreation use at recreation sites"" -- catalog USDA Recreation Site Chatbot (USDA FS / University of Washing"
+Washington Forest Inventory Maps,USDA Forest Service / University of Washington,scientific_ml,0,0,,,1,1,"product_queue_review_2026-06: ""University of Washington - Natural Resource Spatial Informatics Group  Washington state forest inventory maps"" -- catalog Washington Forest Inventory Maps."
+Abridge Ambient Scribe,Abridge,transcription,1,0,,,1,1,abridge ambient scribe
+Airship AI Platform,Airship AI Holdings Inc.,computer_vision,0,0,,,3,2,Unmanned Aerial Systems (UAS) | unmanned aerial systems (uas) | product_queue_review_2026-06: 'Airship ... Outpost uses machine learning to identify the type of conveyance' - Outpost is an Airship AI edge product; catalog carries only the platform-level entry 'Air
+ASCVD Risk Estimator,American College of Cardiology,clinical_decision_support,0,0,,,1,1,"product_queue_review_2026-06: ""ASCVD (Atherosclerotic Cardiovascular Disease) Risk Estimator"" from the American College of Cardiology — exact catalog product."
+Asana,Asana,productivity,1,0,,Work-management platform with Asana Intelligence (GenAI),2,2,Asana | Asana
+Aware Biometrics,Aware,biometrics,0,0,,"Aware's biometric platform providing facial, fingerprint, and multimodal recognition.",22,10,aware | Aware | aware
+Beckman Coulter DxH 800,Beckman Coulter,clinical_decision_support,0,0,,,1,1,beckman coulter dxh 800
+Biosense Webster CARTO 3,Biosense Webster (Johnson & Johnson),clinical_decision_support,0,0,,,1,1,via add_product
+BriefCatch,BriefCatch,legal_research,1,0,,"AI-powered legal-writing editor that suggests style, citation, and clarity improvements to briefs and memoranda.",1,1,BriefCatch
+Buzzsprout CoHost AI,Buzzsprout,media_analysis,1,0,,"Buzzsprout's CoHost AI generates podcast titles, descriptions, transcripts, and chapter markers from uploaded audio.",1,1,CoHost AI
+CMS ELMO Chatbot,CMS / Peraton,general_llm,1,0,,,1,1,"product_queue_review_2026-06: 'Peraton, Inc. ... Eligibility & Enrollment Medicare Online (ELMO) Chatbot' — catalog entry 'CMS ELMO Chatbot'."
+Canva,Canva,productivity,1,0,,Design platform with generative AI features (Magic Studio),2,2,Canva | Canva
+CaseGuard,CaseGuard,forensics,0,0,,,1,1,Case Guard  AI-Assisted Audio/Video Redaction
+Chiral Wildlife Deterrent System,Chiral Software,computer_vision,0,0,,,1,1,"product_queue_review_2026-06: ""Chiral Software  Wildlife Deterrent System ... keep coyotes out of a fenced area"" -- catalog Chiral Wildlife Deterrent System."
+Cloudflare Turnstile,Cloudflare,security_tool,0,0,,Cloudflare's privacy-preserving bot detection and CAPTCHA-replacement service.,1,1,Cloudflare Turnstile
+Democratizing Data,Coleridge Institute,data_analytics,0,0,,,1,1,Democratizing Data
+CrewAI,CrewAI,agent_platform,0,0,,,1,1,CrewAI
+CISAChat,DHS CISA,general_llm,1,0,,,1,1,CISAChat
+NLCOO Lessons Learned AI,DOE NETL,search,0,0,,,1,1,"product_queue_review_2026-06: ""NLCOO AI for Lessons Learned tool"" matches catalog entry NLCOO Lessons Learned AI; surrounding text is AWS ATO boilerplate, not a product."
+DRUID AI,DRUID AI,agent_platform,1,0,,,2,1,DRUID AI | DRUID AI
+Descript,Descript,media_analysis,1,0,,"AI-powered audio and video editor with transcription, voice cloning, and text-based editing.",1,1,Descript
+Lectora AI,ELB Learning,training,1,0,,,1,1,lectora ai
+Emerald Innovations,Emerald Innovations,scientific_ml,0,0,,,1,1,Emerald Innovations
+Everlaw AI Assistant,"Everlaw, Inc.",ediscovery,0,0,,,2,2,"Everlaw AI Assistant for Responsive Review | product_queue_review_2026-06: ""Migrate CORA data to Relativity One or Everlaw ... enable Relativity's and Everlaw's AI tools"" — Relativity in catalog; Everlaw's AI tools map to Everlaw AI Assistant."
+FS Pro,FS Pro,productivity,1,0,,Foreign Service productivity tool used at the Department of State,3,1,FS Pro | FS Pro | FS Pro
+Freed AI Medical Scribe,Freed,transcription,1,0,,,1,1,freed ai medical scribe
+Ginnie Mae Subledger Data Quality ML,Ginnie Mae / Ernst & Young,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'Subledger Data Quality Machine Learning' (Ernst & Young / Ginnie Mae) matches catalog Ginnie Mae Subledger Data Quality ML.
+Griffeye Analyze,Griffeye,forensics,0,0,,Forensic media analysis platform used by law enforcement to triage CSAM and other illicit imagery with classifiers.,1,1,Griffeye
+Grants.gov Similar Opportunities,HHS / MicroHealth,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'MicroHealth Grants.gov Cloud Similar Opportunities (KNN)' matches catalog Grants.gov Similar Opportunities (HHS / MicroHealth).
+HRSA Knowledge Navigator,HRSA / Publicis Sapient,general_llm,1,0,,,1,1,product_queue_review_2026-06: 'Publicis Sapient BMISS Knowledge Navigator' answering APG questions for loan repayment/scholarship programs — catalog entry 'HRSA Knowledge Navigator'.
+ID.me,ID.me,identity_verification,0,0,,,2,2,"ID.me | product_queue_review_2026-06: ""Improves identity document verification process for IRS users who complete the registration process ... detect submissions of forged identity documents"" -- IRS online-ac"
+Informatica,Informatica,data_catalog,0,0,,,3,3,Informatica | Informatica | Informatica
+Koios DS Breast,Koios Medical,clinical_decision_support,0,0,,,1,1,via add_product
+LaserAI,LaserAI,document_ai,1,0,,Commercial systematic-review automation product that uses ML to screen and extract from scientific literature.,1,1,LaserAI
+Lenel OnGuard,LenelS2 (Honeywell),physical_security,0,0,,Lenel OnGuard physical access control system with analytics for credential and intrusion events.,1,1,Lenel
+Lookout,Lookout,security_tool,0,0,,,2,2,Lookout | Lookout
+Magnet Forensics,Magnet Forensics,forensics,1,0,,Digital forensics platform with Magnet Copilot AI features,3,2,"product_queue_review_2026-06: ""These tools include, for example, Cellebrite, Magnet Axiom and Griffeye"" — Magnet Axiom maps to Magnet Forensics, Griffeye to Griffeye Analyze; plain ""Cellebrite"" is ven | Magnet Copilot | Magnet Copilot"
+KESTREL,Maxar,data_analytics,0,0,,,1,1,Maxar KESTREL Aircraft Landing Location Predictor (KESTREL)
+Milestone XProtect,Milestone Systems,physical_security,0,0,,Milestone XProtect video management software with integrated AI analytics for object and event detection.,3,2,Milestone | Milestone | milestone
+NASA CAAP Cost Analytics,NASA / Raytheon,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'Cloud Account Allocation Plan (CAAP) Cost Analytics Support' (Raytheon/Earthdata Cloud) matches catalog NASA CAAP Cost Analytics.
+NIH Travel Policy AI Chatbot,NIH / Infer Solutions,general_llm,1,0,,,1,1,NIH Travel Policy AI Chatbot
+NetApp ARP/AI,NetApp,security_tool,0,0,,,1,1,NetApp ARP/AI
+FOIAXpress AI,OPEXUS,document_ai,0,0,,,1,1,FOIAXpress AI
+Fiji ImageJ,Open source (NIH ImageJ / Fiji community),scientific_ml,0,0,,Fiji is the bundled ImageJ distribution for scientific image analysis; widely used with ML plugins for microscopy.,1,1,FIJI
+Palo Alto Networks,Palo Alto Networks,security_tool,0,0,,Network security,5,5,Palo Alto Networks | Palo Alto | Palo Alto
+Perplexity,Perplexity AI,general_llm,1,0,,Conversational answer engine,24,6,perplexity.ai | perplexity.ai | Perplexity AI
+Podimetrics SmartMat,Podimetrics,clinical_decision_support,0,0,,,1,1,via add_product
+Flowmon,Progress Flowmon,security_tool,0,0,,,1,1,Flowmon
+RWS Trados,RWS,translation,1,0,,Trados is a leading computer-assisted translation suite with neural MT and translation-memory features.,1,1,RWS Trados
+Raytheon BBN M3S,Raytheon BBN,media_analysis,0,0,,Raytheon BBN's Multimedia Monitoring System (M3S) ingests and analyzes broadcast and online media for situational awareness.,1,1,Raytheon Multimedia Monitoring System (M3S)
+ReflexAI,ReflexAI,training,1,0,,,1,1,reflexai
+Roche Digital Pathology,Roche,clinical_decision_support,0,0,,,1,1,roche digital pathology
+SSA Quick Disability Determinations Model,SSA / IBM,clinical_decision_support,0,0,,,1,1,product_queue_review_2026-06: 'IBM eDIB (electronic disability) Quick Disability Determinations Model' matches catalog SSA Quick Disability Determinations Model (SSA / IBM).
+Skydio X2D,Skydio,physical_security,0,0,,,1,1,Skydio and Xtender Skydio X2D
+ShotSpotter,SoundThinking,audio_analysis,0,0,,SoundThinking ShotSpotter acoustic gunshot detection and localization service for law enforcement.,1,1,ShotSpotter
+CryoSPARC,Structura Biotechnology,scientific_ml,0,0,,,1,1,CryoSPARC
+TRM Labs Blockchain Analysis Platform,TRM Labs,blockchain_analytics,0,0,,,2,1,TRM Labs  Blockchain Analysis | product_queue_review_2026-06: 'TRM Labs  Cryptocurrency Analysis ... crypto to circumvent financial reporting' - catalog 'TRM Labs Blockchain Analysis Platform'.
+FLIR 280 HD,Teledyne FLIR,physical_security,0,0,,,1,1,FLIR 280 HD
+ThruWave NII 3D Imaging Tool,ThruWave,physical_security,0,0,,,1,1,ThruWave  Non-Intrusive Inspection (NII) 3D Imaging Tool
+USDA Equine Operations Dataset,USDA / Colorado State University,scientific_ml,0,0,,,1,1,"product_queue_review_2026-06: ""Colorado State University ... develop a dataset that addresses the problem of not having complete information about where horse farms are located"" -- catalog USDA Equine"
+USDA TreeSearch AI,USDA Forest Service / Google,search,1,0,,,1,1,"product_queue_review_2026-06: ""Google Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS) TreeSearch ... streamline the usability of the US Forest Service (USFS) TreeSearch "
+USGS Flow Photo Explorer,USGS / Walker Environmental Research,scientific_ml,0,0,,,1,1,USGS Flow Photo Explorer
+Rangeland Analysis Platform,University of Montana / NRCS,scientific_ml,0,0,,Public Rangeland Analysis Platform on Google Cloud providing remote-sensing-derived rangeland vegetation models.,2,2,rap | Rangeland Analysis Platform
+VUNO Med-DeepBrain,VUNO,clinical_decision_support,0,0,,,1,1,vuno med-deepbrain
+Volta Medical AF-Xplorer,Volta Medical,clinical_decision_support,0,0,,,1,1,via add_product
+Whooster,Whooster,data_analytics,0,0,,,1,1,Whooster
+Zscaler,Zscaler,security_tool,0,0,,Cloud security platform,2,2,Zscaler | Zscaler
+iRhythm Zio ECG,iRhythm Technologies,clinical_decision_support,0,0,,,1,1,via add_product

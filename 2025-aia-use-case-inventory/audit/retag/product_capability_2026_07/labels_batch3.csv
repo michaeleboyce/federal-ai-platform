@@ -1,0 +1,123 @@
+canonical_name,categories,gen_ai,confidence,reasoning
+GE Healthcare AMX Portable X-ray,vision,0,medium,AI-enabled portable X-ray whose imaging AI (Critical Care Suite) analyzes radiographs for findings.
+GE Healthcare Critical Care Suite,vision,0,high,On-device AI that detects pneumothorax and tube placement on chest X-rays.
+GE Healthcare Discovery MI,vision,0,medium,PET/CT scanner using deep-learning image reconstruction and analysis.
+GE Healthcare EchoPAC,vision,0,medium,Cardiac ultrasound analysis software with automated AI measurement of echo images.
+GE Healthcare FastStroke CT Perfusion 4D,vision,0,high,AI CT perfusion analysis for stroke imaging quantification.
+GE Healthcare LOGIQ Ultrasound,vision,0,medium,Ultrasound system with AI-assisted image acquisition and measurement.
+GE Healthcare Omni Legend PET/CT,vision,0,medium,PET/CT scanner with AI-based image reconstruction and analysis.
+GE Healthcare SIGNA Artist (AIR Recon DL),vision,0,high,MRI with AIR Recon DL deep-learning image reconstruction.
+GE Healthcare TrueFidelity CT,vision,0,high,CT using deep-learning image reconstruction to denoise and enhance images.
+GE Healthcare Venue Fit,vision,0,medium,Point-of-care ultrasound with AI-assisted image interpretation.
+GE Healthcare Vivid E Ultrasound,vision,0,medium,Cardiac ultrasound with AI automated measurements on echo images.
+GE Healthcare Vivid iq,vision,0,medium,Portable cardiac ultrasound with AI-assisted image analysis.
+GE Healthcare Voluson Expert,vision,0,medium,OB/GYN ultrasound with AI-assisted image measurement (SonoAI-style features).
+GE Healthcare Xeleris V,vision,0,medium,Nuclear medicine processing workstation with AI-based image quantification.
+ChatGPT,genai_platform,1,high,OpenAI general-purpose conversational LLM surface.
+DALL-E,genai_platform,1,high,OpenAI generative image model serving novel images from prompts.
+OpenAI API,genai_platform,1,high,Direct OpenAI LLM API access as a general-purpose generative model surface.
+OpenAI Codex (legacy model),genai_platform,1,high,OpenAI code-generation LLM that powered original GitHub Copilot.
+OpenAI Codex CLI,assistant,1,high,Agentic terminal-based AI coding assistant peer to Claude Code.
+OpenAI Deep Research,genai_platform,1,medium,OpenAI agentic LLM research product that generates cited reports.
+Philips EPIQ/Affiniti Ultrasound,vision,0,medium,Ultrasound systems with AI-assisted image acquisition and measurement.
+Philips QLAB,vision,0,medium,Cardiac ultrasound quantification software with automated AI image analysis.
+Philips Smart Collimation Thorax,vision,0,medium,AI-driven auto-collimation on chest X-ray using image analysis.
+Philips Vereos PET/CT,vision,0,medium,PET/CT scanner with AI-based image reconstruction.
+Philips eCareManager,none,0,low,Tele-ICU platform with predictive analytics; no listed AI capability class applies.
+ATS Passport Anomaly Model,none,0,low,Anomaly-scoring model on passport data; predictive ML with no listed capability class.
+ATS Trade Entity Risk Model,none,0,low,Risk-scoring model over trade entities; predictive analytics outside the vocabulary.
+Advanced Trade Analytics Platform,none,0,low,CBP trade analytics platform; general analytics with no clear AI capability class.
+CBP Translate,translation,0,high,CBP machine translation service between human languages.
+Traveler Verification Service,vision,0,high,CBP facial-recognition biometric matching service for travelers.
+Canon Alphenix Angio Workstation,vision,0,medium,Angiography workstation with AI-assisted image processing.
+Canon Aplio Ultrasound,vision,0,medium,Ultrasound with AI-assisted image acquisition and analysis.
+Canon Aquilion ONE AiCE,vision,0,high,CT with AiCE deep-learning image reconstruction.
+Canon Cartesion Prime PET/CT,vision,0,medium,PET/CT scanner with AI-based image reconstruction.
+PEST (Parameter Estimation),none,0,low,Groundwater model parameter-estimation/optimization software rather than an AI capability class.
+Tesseract OCR,doc_processing,0,high,Open-source optical character recognition engine.
+crYOLO,vision,0,high,Deep-learning object detection for particle picking in cryo-EM micrographs.
+cryoDRGN,vision,0,medium,Neural-network reconstruction of 3D structure from cryo-EM images.
+Cisco,none,0,low,Bare vendor name with no product specificity to assign a capability.
+Cisco Identity Services Engine,none,0,medium,Network access control with ML device profiling; security analytics only.
+Cisco Secure Network Analytics,none,0,medium,Network detection-and-response using ML anomaly detection; security analytics only.
+APT Analytics,none,0,low,DOE analytics tool with insufficient detail to assign a capability class.
+DOE OGC Docket Database,none,0,low,Internal docket-tracking database; no AI capability described.
+SEA-CROGS,none,0,low,DOE scientific-ML research effort with insufficient detail to classify.
+Veritone,speech,0,medium,Veritone aiWARE media-analysis platform with transcription and facial recognition engines.
+Veritone Digital Media Hub,search,0,medium,AI-powered search of event photo/media databases in a DAM portal.
+Veritone Illuminate,speech,0,low,Government media analysis/redaction tool using transcription and detection engines.
+DOL Auntee Bot,nlp,1,medium,Meeting-notes summarization tool that generates text summaries.
+Worker PLUS,none,0,low,DOL data analytics tool with insufficient detail to assign a capability.
+Litera Compare,none,0,medium,Document comparison/redlining tool without a listed AI capability class.
+Litera TOA Builder,nlp,0,medium,Extracts legal citations from documents to build tables of authorities.
+OpenText Axcelerate,search,0,medium,eDiscovery platform with AI/NLP-powered search and predictive coding.
+OpenText Decisiv,search,0,medium,AI-powered legal knowledge search and retrieval.
+CargoNet,none,0,low,Cargo-theft data aggregation and predictive analytics outside the vocabulary.
+ISO ClaimSearch,none,0,low,Claims database with fraud analytics; predictive analytics outside the vocabulary.
+Agfa DR 800 MUSICA,vision,0,medium,X-ray system with MUSICA AI image processing and enhancement.
+Airtable AI,assistant,1,medium,Embedded OpenAI-backed AI assistant features in a low-code database product.
+Amped Software,vision,0,medium,Forensic image and video authentication and enhancement analysis.
+Ask Sage,genai_platform,1,high,GenAI platform authorized for federal/DoD LLM use.
+Axon,speech,1,medium,Evidence platform with AI transcription and video redaction plus generative report drafting (Draft One).
+BD Pyxis MedStation,none,0,medium,Medication-dispensing system with predictive inventory analytics; no listed capability class.
+Biotronik Home Monitoring,none,0,medium,Cardiac device remote monitoring with analytics; no listed AI capability class.
+Broadcom Code for Z,assistant,1,medium,AI-assisted mainframe code analysis and refactoring assistant.
+C3 AI,ml_platform,0,high,Enterprise ML model development and deployment platform.
+CMS Medicare AI Customer Insights,nlp,1,low,AI analysis of Medicare customer feedback (likely sentiment and summarization).
+CareCentra,none,0,low,Behavioral-health engagement with predictive nudges; no clear listed capability class.
+CathWorks FFRangio,vision,0,high,AI analysis of coronary angiograms to compute FFR from images.
+Circle CVI42,vision,0,high,Cardiac MRI post-processing with AI-based image segmentation and analysis.
+Windsurf,assistant,1,high,Codeium AI coding assistant/agentic IDE.
+Commonlook Online,none,0,low,PDF accessibility remediation tool; no listed AI capability class clearly applies.
+Critical Mention,speech,0,medium,Broadcast media monitoring with transcription and sentiment analysis.
+ERNIE Radiological Detection,none,0,low,Analyzes radiation portal monitor spectra rather than images or text; no listed capability class.
+MAPPRITE,genai_platform,1,low,DOE tool flagged as LLM-based; insufficient detail beyond the generative hint.
+Databricks,ml_platform|assistant,1,high,Data-science/ML platform plus embedded Assistant/Genie generative features.
+Digital Science Dimensions,search,0,low,Research publication database with AI-assisted search and analytics.
+EarlySense WAVE Clinical Platform,none,0,medium,Contact-free patient monitoring with predictive analytics; no listed capability class.
+Ephesoft Transact,doc_processing,0,high,Intelligent document capture and OCR extraction platform.
+Exiger DDIQ,nlp,0,medium,Due-diligence engine applying NLP to adverse-media and documents for risk scoring.
+FirstTwo,none,0,low,OSINT data aggregation for lookups; no listed AI capability class.
+JAWS Screen Reader,speech,0,high,Screen reader providing text-to-speech accessibility.
+Glassbeam Clinsights,none,0,low,Medical device machine-data analytics; no listed AI capability class.
+Gurucul UEBA,none,0,medium,User/entity behavior analytics for security; security ML alone does not qualify.
+HealthData.gov AI Harvest Service,nlp,0,low,AI metadata harvesting/classification of datasets for the catalog.
+Harvey,assistant,1,high,Domain-specific generative AI legal assistant.
+IDEMIA CAT-2/AutoCAT,vision,0,high,Credential authentication with camera performing facial biometric matching.
+Invariant Acoustic Signature AI,none,0,medium,Gunshot acoustic-signature detection; audio analysis with no matching capability class.
+Konica Minolta Dispatcher Paragon,none,0,high,Print/output management software with no AI capability class.
+Lasso Security,none,0,medium,AI/LLM security monitoring tool; security analytics does not qualify.
+ELSAG ALPR,vision,0,high,License-plate-reader cameras with image recognition analytics.
+Lumivero NVivo,nlp,0,medium,Qualitative data analysis with AI-assisted text coding and theme detection.
+Traffic Jam,vision,0,medium,Anti-trafficking investigative tool using facial recognition image search.
+Medallia,nlp|speech,0,medium,Experience management with text sentiment analysis and speech/call analytics.
+Mindray TE X Ultrasound,vision,0,medium,Ultrasound with AI-assisted image acquisition and measurement.
+NCI MOSSAIC SEER NLP,nlp,0,high,Deep-learning NLP on cancer pathology reports for SEER registries.
+NIH eRA Internal Referral Module,nlp,0,high,NLP-based routing/referral of grant applications.
+NetDocuments,search|assistant,1,low,Document management with AI search and ndMAX generative drafting features.
+Okta Adaptive MFA,none,0,medium,Risk-based adaptive authentication; identity-security ML with no listed capability class.
+Otter.ai,speech,1,medium,Meeting transcription (speech-to-text) with generative AI summaries.
+Parable 3D Wound Care,vision,0,medium,3D wound imaging and measurement using AI image analysis.
+Persyst EEG,none,0,medium,EEG signal analysis with AI event detection; no matching capability class.
+Polarity,none,0,medium,Data-overlay/observability platform with no listed AI capability class.
+Provar Manager,none,0,medium,Salesforce test-automation management tool; no listed AI capability class.
+Radformation AutoContour,vision,0,high,AI auto-segmentation of anatomy on medical images for radiotherapy.
+Reclaim.AI,none,0,medium,AI calendar/scheduling optimization; no listed AI capability class applies.
+Rekor,vision,0,high,License-plate and vehicle recognition image analytics.
+Rohde & Schwarz QPS Walk-Through Scanner,vision,0,high,Millimeter-wave body scanner with AI on-person threat image detection.
+ScreenPoint Transpara,vision,0,high,AI detection and analysis of mammography images.
+Skyward CEDAR/CLAW,assistant,1,low,CMS Chat conversational assistant and analysis wizard on the CEDAR platform.
+Splunk,none,0,medium,SIEM with ML security analytics; security analytics alone does not qualify.
+SumTotal,none,0,high,Learning management system with no AI capability class.
+Tabnine,assistant,1,high,AI code-completion pair-programming assistant.
+Tenable,none,0,high,Vulnerability management/security tool with no listed AI capability class.
+PLATES/FoodTrak,doc_processing,0,high,Product label and text extraction system performing OCR/document extraction.
+USDA AgCloud Helpdesk Chatbot,chatbot,1,medium,LLM-backed IT help-desk conversational chatbot.
+USDA Forest Health ML Survey,vision,0,medium,ML analysis of geospatial/aerial imagery for forest damage survey and mapping.
+UiPath Enterprise RPA,none,0,medium,Robotic process automation platform; RPA-only per rubric maps to none.
+SpyglassGPT,genai_platform,1,low,Name indicates an LLM chat surface; limited detail beyond generative hint.
+Vectra AI,none,0,medium,Network detection-and-response security AI; security analytics does not qualify.
+Vyond,none,1,medium,AI text-to-video animation generation; generative but no analysis capability class fits.
+Wildfire.org Turbo Plan,genai_platform,1,low,LLM-powered environmental planning acceleration tool.
+Expert.ai Cogito,nlp,0,high,NLP engine that tags and classifies research articles.
+Monday.com,assistant,1,medium,Work-OS with embedded monday AI generative assistant features.

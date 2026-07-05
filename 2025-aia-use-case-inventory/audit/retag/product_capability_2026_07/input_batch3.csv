@@ -1,0 +1,123 @@
+canonical_name,vendor,product_type,is_generative_ai_hint,is_frontier_llm_hint,parent_product,description,edge_count,agency_count,sample_use_snippets
+GE Healthcare AMX Portable X-ray,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare Critical Care Suite,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare Discovery MI,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare EchoPAC,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare FastStroke CT Perfusion 4D,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare LOGIQ Ultrasound,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare Omni Legend PET/CT,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare SIGNA Artist (AIR Recon DL),GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare TrueFidelity CT,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare Venue Fit,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare Vivid E Ultrasound,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare Vivid iq,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare Voluson Expert,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+GE Healthcare Xeleris V,GE Healthcare,clinical_decision_support,0,0,,,1,1,via add_product
+ChatGPT,OpenAI,general_llm,1,1,,OpenAI's conversational AI assistant,74,19,chatgpt enterprise | chatgpt | ChatGPT Enterprise
+DALL-E,OpenAI,computer_vision,1,0,ChatGPT,OpenAI's image generation model,1,1,DALL-E
+OpenAI API,OpenAI,general_llm,1,1,,Direct OpenAI API access (non-Azure),53,14,OpenAI | OpenAI | OpenAI
+OpenAI Codex (legacy model),OpenAI,coding_assistant,1,0,,Deprecated 2021 OpenAI code-generation model that powered the original GitHub Copilot; sunset March 2023. Distinct from the 2025 OpenAI Codex CLI.,1,1,OpenAI Codex
+OpenAI Codex CLI,OpenAI,coding_assistant,1,0,,"OpenAI's agentic coding CLI, released April 2025. Terminal-based AI software-engineering agent; peer to Anthropic's Claude Code. Distinct from the deprecated 2021 Codex model.",1,1,"OPM consolidated COTS entry 'Generating code using AI' lists commercial_product 'Codex'; in a 2025 code-generation context this reads as the OpenAI Codex CLI, not the deprecated 2021 model."
+OpenAI Deep Research,OpenAI,other,0,0,,,1,1,product_queue_review_2026-06: 'OpenAI EDAV ... Deep Research for Public Health' — OpenAI's Deep Research product (not in catalog) deployed for CDC on the EDAV platform (catalog product 'EDAV (CDC)').
+Philips EPIQ/Affiniti Ultrasound,Philips,clinical_decision_support,0,0,,,1,1,via add_product
+Philips QLAB,Philips,clinical_decision_support,0,0,,,1,1,philips qlab
+Philips Smart Collimation Thorax,Philips,clinical_decision_support,0,0,,,1,1,via add_product
+Philips Vereos PET/CT,Philips,clinical_decision_support,0,0,,,1,1,via add_product
+Philips eCareManager,Philips,clinical_decision_support,0,0,,,1,1,via add_product
+ATS Passport Anomaly Model,U.S. Customs and Border Protection,nlp,0,0,,,1,1,product_queue_review_2026-06: 'ManTech Automated Targeting System (ATS) Passport Anomaly Model' - catalog 'ATS Passport Anomaly Model'.
+ATS Trade Entity Risk Model,U.S. Customs and Border Protection,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'ManTech Automated Targeting System (ATS) Trade Entity Risk Model' - exact catalog entry.
+Advanced Trade Analytics Platform,U.S. Customs and Border Protection,data_analytics,0,0,,,1,1,Advanced Trade Analytics Platform
+CBP Translate,U.S. Customs and Border Protection,translation,0,0,,,1,1,CBP Translate
+Traveler Verification Service,U.S. Customs and Border Protection,biometrics,0,0,,,10,1,Traveler Verification Service | Traveler Verification Service | Traveler Verification Service
+Canon Alphenix Angio Workstation,Canon Medical Systems,clinical_decision_support,0,0,,,1,1,via add_product
+Canon Aplio Ultrasound,Canon Medical Systems,clinical_decision_support,0,0,,,1,1,via add_product
+Canon Aquilion ONE AiCE,Canon Medical Systems,clinical_decision_support,0,0,,,2,1,"Aquilion ONE (TSX-306A/3) V10.12 with Spectral Imaging System, Vitrea Software Package | Aquilion ONE with AiCE"
+Canon Cartesion Prime PET/CT,Canon Medical Systems,clinical_decision_support,0,0,,,1,1,via add_product
+PEST (Parameter Estimation),Open Source,scientific_ml,0,0,,,1,1,product_queue_review_2026-06: 'PEST LMGSS Groundwater Modeling ... Forward cast ground water behavior' - catalog 'PEST (Parameter Estimation)'.
+Tesseract OCR,Open Source,document_ai,0,0,,,1,1,product_queue_review_2026-06: Vendor 'Tesseract' for georeferencing historical paper maps - catalog 'Tesseract OCR' (Open Source).
+crYOLO,Open Source,scientific_ml,0,0,,,1,1,crYOLO
+cryoDRGN,Open Source,scientific_ml,0,0,,,1,1,cryodrgn
+Cisco,Cisco,security_tool,0,0,,,2,2,Cisco | cisco
+Cisco Identity Services Engine,Cisco,security_tool,0,0,Cisco,Cisco ISE network access control platform that uses ML for device profiling and posture assessment.,1,1,Cisco Identify Services engine
+Cisco Secure Network Analytics,Cisco,security_tool,0,0,Cisco,Cisco's network detection-and-response platform (formerly Stealthwatch) using ML to surface anomalous network behavior.,1,1,Cisco Secure Network Analytics
+APT Analytics,DOE,scientific_ml,0,0,,,1,1,APT Analytics
+DOE OGC Docket Database,DOE,document_ai,0,0,,Internal DOE Office of General Counsel docket-tracking database,1,1,OGC Docket Database
+SEA-CROGS,DOE,scientific_ml,0,0,,,1,1,SEA-CROGS
+Veritone,Veritone,media_analysis,0,0,,,4,2,Veritone | Veritone | Veritone
+Veritone Digital Media Hub,Veritone,other,0,0,,,1,1,"product_queue_review_2026-06: ""Veritone Digital Media Hub includes AI features that allow PAO to search our event photo databases"" — a specific Veritone commercial product (aiWARE DMH) not in catalog;"
+Veritone Illuminate,Veritone,media_analysis,0,0,Veritone,,1,1,Veritone Illuminate
+DOL Auntee Bot,Department of Labor,productivity,1,0,,,1,1,"product_queue_review_2026-06: System ""AUNTEE BOT"" meeting-notes summarizer — catalog DOL Auntee Bot."
+Worker PLUS,Department of Labor,data_analytics,0,0,,,1,1,Worker PLUS
+Litera Compare,Litera,document_ai,0,0,,,1,1,Litera-compare
+Litera TOA Builder,Litera,legal_research,0,0,,Litera (formerly Levit & James) Word plugin for automated table-of-authorities and legal document drafting.,1,1,Levit & James
+OpenText Axcelerate,OpenText,ediscovery,0,0,,,1,1,OpenText Axcelerate AI and natural-language powered search
+OpenText Decisiv,OpenText,search,0,0,,,1,1,OpenText Decisiv
+CargoNet,Verisk,investigative_data,0,0,,Verisk CargoNet aggregates cargo theft incident data and applies analytics to predict and disrupt supply-chain crime.,1,1,CargoNet
+ISO ClaimSearch,Verisk,investigative_data,0,0,,Verisk ISO ClaimSearch is the all-claims database with analytics used by NICB and insurers to detect fraud.,1,1,National Insurance Crime Bureau ISO ClaimSearch
+Agfa DR 800 MUSICA,Agfa HealthCare,clinical_decision_support,0,0,,,1,1,via add_product
+Airtable AI,Airtable,productivity,1,0,,Airtable's embedded AI (OpenAI-backed) for low-code databases,2,1,airtable's ai | airtable ai
+Amped Software,Amped Software,forensics,0,0,,,2,2,Amped | amped
+Ask Sage,Ask Sage Inc.,general_llm,1,1,,GenAI platform authorized for federal/DoD use,7,4,Ask Sage | Ask Sage | Ask Sage
+Axon,Axon Enterprise,media_analysis,1,0,,,7,3,Axon | Axon | Axon
+BD Pyxis MedStation,Becton Dickinson,clinical_decision_support,0,0,,Automated medication-dispensing system with predictive analytics for inventory and diversion detection.,1,1,BD Pyxis
+Biotronik Home Monitoring,Biotronik,clinical_decision_support,0,0,,,1,1,biotronik home monitoring
+Broadcom Code for Z,Broadcom,code_modernization,1,0,,Mainframe code-modernization tool providing AI-assisted analysis and refactoring of COBOL and z/OS applications.,1,1,Broadcom Code for Z
+C3 AI,C3.ai,ml_platform,0,0,,,1,1,C3.AI
+CMS Medicare AI Customer Insights,CMS / commonFont,data_analytics,1,0,,,1,1,product_queue_review_2026-06: 'commonFont and AWS Public Website Shared Services Medicare AI Customer Insights' — catalog entry 'CMS Medicare AI Customer Insights'.
+CareCentra,CareCentra,clinical_decision_support,1,0,,,1,1,carecentra
+CathWorks FFRangio,CathWorks,clinical_decision_support,0,0,,,1,1,via add_product
+Circle CVI42,Circle Cardiovascular Imaging,clinical_decision_support,0,0,,,2,1,circle cvi42 | via add_product
+Windsurf,Codeium,coding_assistant,1,0,,,2,2,Windsurf | Windsurf
+Commonlook Online,Commonlook,document_ai,0,0,,,1,1,Commonlook Online
+Critical Mention,Critical Mention,media_analysis,0,0,,Real-time broadcast and online media monitoring with transcription and sentiment analysis.,1,1,Critical Mention
+ERNIE Radiological Detection,DHS Countering Weapons of Mass Destruction,computer_vision,0,0,,,1,1,product_queue_review_2026-06: 'ERNIE is used to analyze Radiation Portal Monitor (RPM) data' for DHS CWMD - catalog 'ERNIE Radiological Detection'.
+MAPPRITE,DOE Special Technologies Laboratory,general_llm,1,0,,,1,1,MAPPRITE
+Databricks,Databricks,ml_platform,1,0,,ML platform,14,9,databricks | Databricks | Databricks
+Digital Science Dimensions,Digital Science,data_analytics,0,0,,,1,1,Digital Science Dimensions
+EarlySense WAVE Clinical Platform,EarlySense,clinical_decision_support,0,0,,,1,1,via add_product
+Ephesoft Transact,Ephesoft,document_ai,0,0,,,1,1,via add_product
+Exiger DDIQ,Exiger,supply_chain,0,0,,,2,1,"product_queue_review_2026-06: ""Exiger Supply Chain Risk Management - DDIQ Due Diligence Analytics"" — catalog Exiger DDIQ. | product_queue_review_2026-06: ""Exiger Supply Chain Risk Management - DDIQ Research Engine"" — catalog Exiger DDIQ."
+FirstTwo,FirstTwo,investigative_data,0,0,,"Geospatial OSINT platform that aggregates address, person, and location data for investigative lookups.",1,1,First Two
+JAWS Screen Reader,Freedom Scientific,productivity,1,0,,,1,1,"product_queue_review_2026-06: ""JAWS (Text-to-Speech Assistant for Accessibility)"" from Freedom Scientific — catalog JAWS Screen Reader."
+Glassbeam Clinsights,Glassbeam,data_analytics,0,0,,,1,1,glassbeam clinsights
+Gurucul UEBA,Gurucul,security_tool,0,0,,,1,1,Gurucul ESS User Entity and Behavior Analytics (UEBA)
+HealthData.gov AI Harvest Service,HHS / Tyler Technologies,data_analytics,1,0,,,1,1,HealthData.gov AI Harvest Service
+Harvey,Harvey,legal_research,1,0,,Domain-specific generative AI legal assistant for law firms and legal departments.,1,1,harvey.ai
+IDEMIA CAT-2/AutoCAT,IDEMIA,biometrics,0,0,,,1,1,"product_queue_review_2026-06: 'IDEMIA Identity, Security USA LLC ... Credential Authentication Technology with Camera System (CAT-2) and AutoCAT' - catalog 'IDEMIA CAT-2/AutoCAT'."
+Invariant Acoustic Signature AI,Invariant Corporation,audio_analysis,0,0,,,1,1,product_queue_review_2026-06: 'Invariant Corporation' vendor on gunshot acoustic-signature AI - catalog 'Invariant Acoustic Signature AI'.
+Konica Minolta Dispatcher Paragon,Konica Minolta,productivity,0,0,,,1,1,Konica Minolta Dispatcher Paragon
+Lasso Security,Lasso Security,security_tool,0,0,,,1,1,Lasso ESS AI Security and Monitoring
+ELSAG ALPR,Leonardo,computer_vision,0,0,,Leonardo ELSAG license-plate-reader cameras and back-end analytics used by law enforcement.,1,1,ELSAG/Leonardo
+Lumivero NVivo,Lumivero,data_analytics,1,0,,NVivo qualitative data analysis tool with AI-assisted coding and theme detection.,1,1,NVivo
+Traffic Jam,Marinus Analytics,investigative_data,0,0,,,1,1,Marinus Analytics Traffic Jam
+Medallia,Medallia,social_listening,1,0,,,5,4,Medallia MASS | Medallia | Medallia
+Mindray TE X Ultrasound,Mindray,clinical_decision_support,0,0,,,1,1,via add_product
+NCI MOSSAIC SEER NLP,NCI / Oak Ridge National Lab,nlp,0,0,,,1,1,product_queue_review_2026-06: 'MOSSAIC applies deep learning natural language processing (NLP) ... to population-based cancer data collected by NCI's ... SEER program' — catalog entry 'NCI MOSSAIC SEE
+NIH eRA Internal Referral Module,NIH / Leidos,nlp,0,0,,,1,1,product_queue_review_2026-06: 'Leidos and Highrise eRA Internal Referral Module (IRM)' — catalog entry 'NIH eRA Internal Referral Module'.
+NetDocuments,NetDocuments,document_ai,1,0,,Cloud document and email management for legal/professional services with predictive filing and GenAI features.,1,1,NetDocuments
+Okta Adaptive MFA,Okta,identity_verification,0,0,,,1,1,Okta
+Otter.ai,Otter,productivity,1,0,,Meeting transcription,2,2,Otter.AI | Otter
+Parable 3D Wound Care,Parable Health,clinical_decision_support,0,0,,,1,1,parable 3d wound care
+Persyst EEG,Persyst Development,clinical_decision_support,0,0,,,1,1,via add_product
+Polarity,Polarity.io,other,0,0,,,1,1,product_queue_review_2026-06: Compound vendor list 'Illumio; AttackIQ; Cofense; Splunk; Crowdstrike; Polarity' - five map to catalog entries; Polarity (commercial data-overlay/observability platform u
+Provar Manager,Provar,other,0,0,,,1,1,"product_queue_review_2026-06: ""Integration of Provar Manager with VA GPT ... testing of Customer Relationship Management (CRM) applications developed in Salesforce"" -- VA GPT and Salesforce are catalo"
+Radformation AutoContour,Radformation,clinical_decision_support,0,0,,,1,1,via add_product
+Reclaim.AI,Reclaim,productivity,1,0,,AI calendar management,1,1,Reclaim.AI
+Rekor,Rekor,computer_vision,0,0,,,1,1,Rekor
+Rohde & Schwarz QPS Walk-Through Scanner,Rohde & Schwarz,computer_vision,0,0,,,1,1,"product_queue_review_2026-06: 'Leidos, Rohde & Schwarz ... Low Probability of False Alarm (Low-Pfa) Algorithm for on-person screening' - maps to catalog 'Rohde & Schwarz QPS Walk-Through Scanner'; the"
+ScreenPoint Transpara,ScreenPoint Medical,clinical_decision_support,0,0,,,1,1,via add_product
+Skyward CEDAR/CLAW,Skyward IT Solutions,agent_platform,0,0,,,2,1,product_queue_review_2026-06: 'Skyward IT Solutions CEDAR CMS Chat' — CMS Chat is delivered by Skyward on the CEDAR platform; catalog entry 'Skyward CEDAR/CLAW'. | product_queue_review_2026-06: 'Skyward Solutions CEDAR CMS Labor Analysis Wizard (CLAW)' — catalog entry 'Skyward CEDAR/CLAW'.
+Splunk,Splunk,security_tool,0,0,,SIEM with ML analytics,12,9,Splunk | Splunk | Splunk
+SumTotal,SumTotal,training,0,0,,,1,1,SumTotal
+Tabnine,Tabnine,coding_assistant,0,0,,,2,1,Tabnine AI Pair Programmer | Tabnine
+Tenable,Tenable,security_tool,0,0,,,3,2,Tenable | Tenable | Tenable
+PLATES/FoodTrak,Trigent Solutions,document_ai,0,0,,,1,1,"product_queue_review_2026-06: 'Trigent Solutions Inc, Digitrix LLC PLATES, FoodTrak Product Label and Text Extraction System (PLATES)' — catalog entry 'PLATES/FoodTrak'."
+USDA AgCloud Helpdesk Chatbot,USDA / Steampunk,general_llm,1,0,,,1,1,"product_queue_review_2026-06: ""Steampunk AgCloud Chatbot for IT Customer Help Desk"" -- catalog USDA AgCloud Helpdesk Chatbot (USDA / Steampunk)."
+USDA Forest Health ML Survey,USDA Forest Service / Kikaha Solutions,scientific_ml,0,0,,,1,1,"product_queue_review_2026-06: ""Kikaha Solutions, LLC ... Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS), USFS Geospatial Platform ... Survey and mapping of forest damag"
+UiPath Enterprise RPA,UiPath,rpa,0,0,,,4,3,"UiPath; Microsoft; Apryse; Personable Inc. Enterprise Robotic Process Automation | product_queue_review_2026-06: 'UIPath ... Multiple Robotics and Process Automation (RPA) bots are in use' — catalog entry 'UiPath Enterprise RPA'. | product_queue_review_2026-06: ""We utilize the commercial software UIPath Studio with computer vision to automate this process"" -- UiPath Studio is the authoring component of UiPath's RPA platform; cat"
+SpyglassGPT,Unknown,general_llm,0,0,,,1,1,SpyglassGPT
+Vectra AI,Vectra Networks,security_tool,0,0,,,2,1,Vectra Networks | Vectra AI
+Vyond,Vyond,media_analysis,1,0,,,4,3,Vyond | Vyond | Vyond
+Wildfire.org Turbo Plan,Wildfire.org,general_llm,1,0,,,1,1,"product_queue_review_2026-06: ""Wildfire.org Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS) Turbo plan ... Accelerating environmental planning"" -- catalog Wildfire.org T"
+Expert.ai Cogito,expert.ai,nlp,0,0,,,1,1,"product_queue_review_2026-06: ""Expert AI (Cogito) ... automatically assigns word tags to agricultural research articles"" -- catalog Expert.ai Cogito; ""ARSAzure"" is the internal hosting environment, no"
+Monday.com,monday.com,productivity,1,0,,Work-OS with monday AI features,1,1,Monday.com

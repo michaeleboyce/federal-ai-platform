@@ -1,0 +1,643 @@
+canonical_name,category,gen_ai,confidence,reasoning,model,labeled_at,source
+ACCRETE ARGUS,nlp,0,low,Supply-chain influence analytics inferred to use NLP over open-source text.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+AIS Resume Screening Tool,nlp,0,medium,"Screens and matches resume text, an NLP classification task.",claude-fable-5,2026-07-05T00:00:00Z,llm
+APT Analytics,none,0,low,DOE analytics tool with insufficient detail to assign a capability class.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ARANZ Silhouette Wound Imaging,vision,0,medium,"Wound imaging and measurement, a medical-imaging vision capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+ARC Travel Intelligence,none,0,medium,Commercial air-travel data analytics for investigations — investigative data product outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+ASCVD Risk Estimator,none,0,high,"Statistical cardiovascular risk calculator, not an AI capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+ATLAS (Forest Service),none,0,low,"Geospatial analytics/mapping platform, no clear vocabulary capability.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ATS Passport Anomaly Model,none,0,low,Anomaly-scoring model on passport data; predictive ML with no listed capability class.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ATS Trade Entity Risk Model,none,0,low,Risk-scoring model over trade entities; predictive analytics outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+AWS Bedrock,genai_platform,1,high,Amazon's managed foundation-model service for hosting and serving generative LLMs.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+AWS Kendra,search,0,high,Amazon's AI-powered enterprise semantic search and retrieval service.,claude-fable-5,2026-07-05T00:00:00Z,llm
+AWS Lex,chatbot,0,high,Conversational bot-building service for virtual agents and dialog flows.,claude-fable-5,2026-07-05T00:00:00Z,llm
+AWS Rekognition,vision,0,high,Image and video analysis for object/text detection and recognition.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+AWS Textract,doc_processing,0,high,OCR and intelligent document text/form extraction service.,claude-fable-5,2026-07-05T00:00:00Z,llm
+AWS Transcribe,speech,0,high,Speech-to-text transcription service.,claude-fable-5,2026-07-05T00:00:00Z,llm
+AWS Translate,translation,0,high,Amazon's neural machine translation service; the gen-AI hint overstates it — NMT is not novel-content generation.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Abbott OPTIS Imaging,vision,0,low,OCT medical imaging system; the extent of productized AI image analysis is unclear from the record.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Abridge Ambient Scribe,speech,1,high,Ambient medical scribe: speech-to-text transcription plus generative note drafting.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Adobe,none,0,low,Generic vendor umbrella brand with no specific AI capability identified.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Adobe Creative Cloud Suite,vision,1,medium,Creative suite bundling generative image tools like Firefly and generative fill.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Adobe Firefly,vision,1,high,Generative image creation model.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Adobe Photoshop,vision,1,high,Image editing with generative fill and other generative AI image features.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Adobe Premiere Pro,vision,0,low,Video editing tool whose AI features center on media/scene analysis.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Adobe Sensei,vision,0,low,"Adobe's embedded AI engine, primarily powering image and content analysis features.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Advanced Trade Analytics Platform,none,0,low,CBP trade analytics platform; general analytics with no clear AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Agfa DR 800 MUSICA,vision,0,medium,X-ray system with MUSICA AI image processing and enhancement.,claude-fable-5,2026-07-05T00:00:00Z,llm
+AgileMD eCART,none,0,low,Clinical early-warning risk score with no vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Aidoc BriefCase,vision,0,high,Radiology imaging AI for triage/detection (medical-imaging vision).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Airship AI Platform,vision,0,high,Machine-learning video/UAS analytics identifying objects and conveyances.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Airtable AI,assistant,1,medium,Embedded OpenAI-backed AI assistant features in a low-code database product.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Alation Data Catalog,none,0,low,Data catalog whose ML features do not clearly match a vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+AlphaFold,none,0,low,Protein-structure prediction model; scientific prediction has no clean listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Altana Atlas,none,0,low,Entity resolution for global trade/supply-chain data; entity resolution does not map cleanly to a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Alteryx,ml_platform,1,medium,Self-service analytics/data-science platform with AutoML (Intelligence Suite) and generative AiDIN assistant features.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Amazon Alexa,chatbot,0,medium,Voice assistant combining speech recognition with conversational dialog handling.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Amazon Alexa,speech,0,medium,Voice assistant combining speech recognition with conversational dialog handling.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Amazon CodeWhisperer,assistant,1,high,AI coding assistant that generates code suggestions in the developer workflow.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Amazon Comprehend,nlp,0,high,"Text analytics service for entity extraction, sentiment, and classification.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Amazon Connect,chatbot,1,high,"Cloud contact center providing IVR/virtual-agent bots, call transcription, and sentiment analytics, with generative agent-assist (Amazon Q in Connect).",claude-fable-5,2026-07-05T00:00:00Z,llm
+Amazon Connect,speech,1,high,"Cloud contact center providing IVR/virtual-agent bots, call transcription, and sentiment analytics, with generative agent-assist (Amazon Q in Connect).",claude-fable-5,2026-07-05T00:00:00Z,llm
+Amazon Connect,nlp,1,high,"Cloud contact center providing IVR/virtual-agent bots, call transcription, and sentiment analytics, with generative agent-assist (Amazon Q in Connect).",claude-fable-5,2026-07-05T00:00:00Z,llm
+Amazon Q,assistant,1,high,Amazon's enterprise AI copilot embedded across developer and business workflows.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Amazon SageMaker,ml_platform,0,high,"Full data-science platform to build, train, and deploy ML models.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Amazon Web Services,none,0,medium,"Umbrella cloud platform, not itself a discrete AI capability product.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Amped Software,vision,0,medium,Forensic image and video authentication and enhancement analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Apple Face ID,vision,0,high,"On-device facial-recognition biometric, a vision capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Apple Intelligence,assistant,1,medium,Apple's suite of embedded generative AI writing/image assistant features.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Apple Maps,none,0,high,Consumer navigation app with no productized AI capability from the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Apple News,none,0,medium,Consumer news app with no AI capability from the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Aretec EDP,ml_platform,0,medium,Aretec Enterprise Data Platform supporting analytics and ML workloads at the SEC.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Aretec NEAT,nlp,0,medium,Market-surveillance tool with name matching and plain-language-to-notation parsing (nlp).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Aretec SEARCH,search,0,medium,Full-text and analytical search platform across regulatory filings.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Articulate 360 AI Assistant,assistant,1,medium,"AI assistant embedded in the Articulate course-authoring workflow, generating training content and audio.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Asana,assistant,1,low,Work-management platform whose Asana Intelligence provides an embedded generative assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Ask Sage,genai_platform,1,high,GenAI platform authorized for federal/DoD LLM use.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+AttackIQ,none,0,high,"Breach-and-attack-simulation security analytics, excluded per security rule.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Autonomous Surveillance Tower,vision,0,medium,Surveillance towers using computer-vision object detection.,claude-fable-5,2026-07-05T00:00:00Z,llm
+AveriSource,none,0,low,Legacy code analysis/modernization tooling with no clearly listed AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Avicenna.AI CINA,vision,0,high,Commercial CT triage AI that detects critical findings in medical imaging.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Aware Biometrics,vision,0,high,Facial and multimodal biometric recognition platform.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Axon,speech,1,medium,Evidence platform with AI transcription and video redaction plus generative report drafting (Draft One).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Axon Evidence,vision,0,medium,"Digital evidence platform with productized AI video redaction (vision) and audio transcription (speech); the gen-AI hint likely reflects Draft One, a different Axon product.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Axon Evidence,speech,0,medium,"Digital evidence platform with productized AI video redaction (vision) and audio transcription (speech); the gen-AI hint likely reflects Draft One, a different Axon product.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Axon FUSUS,vision,0,medium,Real-time crime center that runs video analytics over integrated camera feeds.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Azure AI Document Intelligence,doc_processing,0,high,"Microsoft's OCR/intelligent document extraction service, the canonical doc_processing product.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Azure AI Foundry,genai_platform,1,high,"Azure AI Foundry hosts, serves, and fine-tunes generative models — named in the rubric as a genai_platform.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Azure AI Translator,translation,0,high,Azure's neural machine translation service; the gen-AI hint overstates it — NMT translation is not novel-content generation.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Azure Computer Vision,vision,0,high,"Azure's image-analysis API used here for blank-page detection, explicitly described as non-generative.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Azure Data Factory,none,0,medium,Data integration/ETL service; embedded anomaly-detection and data-quality ML does not amount to any vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Azure OpenAI,genai_platform,1,high,"OpenAI models hosted on Azure — a general-purpose LLM API surface, the archetypal genai_platform.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Azure Speech,speech,0,high,Azure's speech-to-text and text-to-speech cognitive service.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Azure Synapse Analytics,none,0,medium,Data warehousing/analytics platform; no productized capability from the vocabulary despite Spark ML adjacency.,claude-fable-5,2026-07-05T00:00:00Z,llm
+BD Pyxis MedStation,none,0,medium,Medication-dispensing system with predictive inventory analytics; no listed capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+BI SmartLINK,vision,0,medium,Biometric check-in app using facial recognition.,claude-fable-5,2026-07-05T00:00:00Z,llm
+BLS Expenditure Classification Autocoder,nlp,0,high,"Assigns expenditure classification categories to survey text, an NLP task.",claude-fable-5,2026-07-05T00:00:00Z,llm
+BMC Helix ITSM,none,0,medium,IT service management platform; no specific AI capability indicated.,claude-fable-5,2026-07-05T00:00:00Z,llm
+BSEE Corrosion Classifier,vision,0,medium,"Classifies platform corrosion, an image-based classification (vision) capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Babel Street Babel,nlp,0,medium,"Multilingual OSINT platform providing cross-lingual search plus text analytics (entity, sentiment) over public data.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Babel Street Babel,search,0,medium,"Multilingual OSINT platform providing cross-lingual search plus text analytics (entity, sentiment) over public data.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Beckman Coulter DxH 800,vision,0,low,Hematology analyzer using digital cell-morphology image classification.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Benefits Manager Virtual Assistant,chatbot,1,medium,Conversational virtual assistant answering benefits questions.,claude-fable-5,2026-07-05T00:00:00Z,llm
+BillieGPT,genai_platform,1,medium,VA general-purpose GPT chat surface (LLM platform).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Bio-Rad BioPlex 2200,none,0,medium,"Laboratory immunoassay analyzer (instrument), not an AI capability product.",claude-fable-5,2026-07-05T00:00:00Z,llm
+BioRender,assistant,1,low,Scientific diagramming tool with an embedded AI assist that generates figures from prompts; AI capability is peripheral to the product.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Biometrics Enrollment Tool,vision,0,medium,"USCIS biometric capture/enrollment tool, a biometrics (vision) capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Biosense Webster CARTO 3,none,0,low,Cardiac electroanatomic 3D mapping system; signal/spatial mapping outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Biotronik Home Monitoring,none,0,medium,Cardiac device remote monitoring with analytics; no listed AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Bloomberg Government,none,0,medium,Policy and procurement analytics/BI product with no vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Boston Dynamics Spot,none,0,high,Robotics hardware platform.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Boston Scientific Preventice BodyGuardian,none,0,medium,Wearable cardiac monitor with ML ECG analysis — physiological signal analytics outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Brainlab Cirq Alignment,none,0,low,Robotic surgical alignment arm; hardware/robotics outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Brainlab Cranial Navigation,vision,0,low,Image-guided surgical navigation registers and processes medical imaging.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Brainlab Elements,vision,0,medium,"Medical image-processing suite (segmentation, registration, fusion).",claude-fable-5,2026-07-05T00:00:00Z,llm
+Brainlab Elements Spine,vision,0,low,Spine imaging and planning module built on medical image analysis.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+BriefCatch,nlp,1,low,Legal-writing editor analyzing text and suggesting (partly generative) rewrites.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Broadcom Code for Z,assistant,1,medium,AI-assisted mainframe code analysis and refactoring assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Butterfly iQ Ultrasound,vision,0,medium,Handheld ultrasound with AI-guided image acquisition and interpretation aids — medical imaging AI.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Buzzsprout CoHost AI,speech,1,high,Generates transcripts (speech-to-text) plus generative titles/descriptions/chapters from podcast audio.,claude-fable-5,2026-07-05T00:00:00Z,llm
+C3 AI,ml_platform,0,high,Enterprise ML model development and deployment platform.,claude-fable-5,2026-07-05T00:00:00Z,llm
+CANDA UEBA,none,0,high,"User-and-entity behavior analytics security tool, excluded per security rule.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CBP Translate,translation,0,high,CBP machine translation service between human languages.,claude-fable-5,2026-07-05T00:00:00Z,llm
+CISAChat,genai_platform,1,medium,DHS internal general-purpose LLM chat surface.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CMS AI Agent Orchestrator,genai_platform,1,medium,Noblis-built POC that orchestrates generative AI agents for CMS analytics — an agent-serving platform.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CMS ELMO Chatbot,chatbot,1,medium,Medicare eligibility/enrollment generative support chatbot.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CMS IDR Support Bot,chatbot,1,medium,Task-specific generative support bot for the CMS IDR/CAE environment.,claude-fable-5,2026-07-05T00:00:00Z,llm
+CMS Integrated Data Repository Customer Analytic Environment,none,0,low,"Data repository/analytic environment (warehouse), not a listed AI capability.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CMS Medicare AI Customer Insights,nlp,1,low,AI analysis of Medicare customer feedback (likely sentiment and summarization).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+COREII,genai_platform,1,low,INL generative AI capability inferred from name and gen-AI hint.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CWTSatoTravel,none,0,high,"Travel management service, not an AI capability product.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Calendly,none,0,high,Scheduling tool; 'AI-enabled' marketing does not map to any vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Canon Alphenix Angio Workstation,vision,0,medium,Angiography workstation with AI-assisted image processing.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Canon Aplio Ultrasound,vision,0,medium,Ultrasound with AI-assisted image acquisition and analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Canon Aquilion ONE AiCE,vision,0,high,CT with AiCE deep-learning image reconstruction.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Canon Cartesion Prime PET/CT,vision,0,medium,PET/CT scanner with AI-based image reconstruction.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Canva,assistant,1,low,Design platform whose Magic Studio provides an embedded generative design assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CareCentra,none,0,low,Behavioral-health engagement with predictive nudges; no clear listed capability class.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CareView Patient Safety System,vision,0,medium,Computer-vision patient monitoring for safety events.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Carestream CS 9600,none,0,low,Dental CBCT imaging scanner (hardware); no distinct AI capability indicated.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CargoNet,none,0,low,Cargo-theft data aggregation and predictive analytics outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CaseGuard,vision,0,low,AI-assisted redaction detects faces/objects in video (vision) and PII in audio (speech).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CaseGuard,speech,0,low,AI-assisted redaction detects faces/objects in video (vision) and PII in audio (speech).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CathWorks FFRangio,vision,0,high,AI analysis of coronary angiograms to compute FFR from images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Cell Hawk,none,0,low,"Call-detail-record parsing/visualization for investigations, no vocabulary capability.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CellaVision DM1200,vision,0,medium,Digital blood-cell morphology image analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Cellebrite Media Classifier,vision,0,high,Classifies media/images in digital forensic evidence (vision).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Chainalysis,none,0,high,Blockchain/cryptocurrency investigation analytics — outside the capability vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+ChatGPT,genai_platform,1,high,OpenAI general-purpose conversational LLM surface.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Chiral Wildlife Deterrent System,vision,0,medium,Computer vision detects animals (e.g. coyotes) to trigger deterrence.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Circle CVI42,vision,0,high,Cardiac MRI post-processing with AI-based image segmentation and analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Cisco,none,0,low,Bare vendor name with no product specificity to assign a capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Cisco Identity Services Engine,none,0,medium,Network access control with ML device profiling; security analytics only.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Cisco Secure Network Analytics,none,0,medium,Network detection-and-response using ML anomaly detection; security analytics only.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Citrix,none,0,high,"Virtualization/desktop delivery platform, no AI capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+ClassifAI,doc_processing,1,low,"DHS/Starlo document-AI tool that appears to classify/process documents; sparse evidence, gen-AI hint followed tentatively.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Claude,genai_platform,1,high,Anthropic's general-purpose LLM chat/API surface.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Claude Code,assistant,1,high,Anthropic's embedded generative coding agent.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Clearview AI,vision,0,high,"Facial-recognition traveler verification, a biometric vision capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Clirio,none,0,medium,AR visualization app used with HoloLens for inspection training — no vocabulary AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Cloudflare Turnstile,none,0,high,"Bot-detection/CAPTCHA-replacement security service, none of the listed capabilities.",claude-fable-5,2026-07-05T00:00:00Z,llm
+CoCounsel,assistant,1,high,"Generative legal assistant for research (retrieval), document review, and drafting.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CoCounsel,search,1,high,"Generative legal assistant for research (retrieval), document review, and drafting.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Cofense PhishMe,none,0,high,"Phishing simulation with ML triage, excluded per security rule.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Cogitativo,none,0,low,Healthcare data-science/ML services with no specific listed capability described.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Cohesity,none,0,high,Data backup/management and security product; no vocabulary capability in evidence.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Commonlook Online,none,0,low,PDF accessibility remediation tool; no listed AI capability class clearly applies.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Conductor Conduit AI,nlp,1,low,Document-review/litigation platform inferred to apply NLP with generative features.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Consular Consolidated Database Facial Recognition,vision,0,high,Facial recognition on the Consular Consolidated Database (biometric vision).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Cortechs NeuroQuant,vision,0,high,Automated MR brain-imaging post-processing/volumetrics (medical-imaging vision).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Credal,genai_platform,1,high,"Secure enterprise gen-AI platform (LLM gateway, RAG, agent building) sold to government customers.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+CrewAI,genai_platform,1,medium,Framework for orchestrating multi-agent LLM workflows.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Critical Mention,speech,0,medium,Broadcast media monitoring with transcription and sentiment analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Crowdstrike Falcon,none,0,high,"Endpoint security analytics ML, excluded per CrowdStrike rule.",claude-fable-5,2026-07-05T00:00:00Z,llm
+CryoSPARC,vision,0,medium,CryoEM processing with ML particle picking and 3D image reconstruction.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Custom In-House AI,none,1,low,"Umbrella entry for heterogeneous agency-built AI spanning many capabilities; no single category can honestly be assigned, and the grab-bag includes generative builds.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+DALL-E,genai_platform,1,high,OpenAI generative image model serving novel images from prompts.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+DEA GenAI R&D Sandbox,genai_platform,1,high,NVIDIA R&D environment to test and prototype generative AI (LLM platform).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+DOE OGC Docket Database,none,0,low,Internal docket-tracking database; no AI capability described.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+DOE Soil Moisture Modeling,none,0,medium,University of Montana scientific ML model for soil moisture — research modeling outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+DOL Auntee Bot,nlp,1,medium,Meeting-notes summarization tool that generates text summaries.,claude-fable-5,2026-07-05T00:00:00Z,llm
+DRUID AI,chatbot,1,medium,Conversational AI platform for building virtual-agent/dialog experiences.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Databricks,ml_platform,1,high,Data-science/ML platform plus embedded Assistant/Genie generative features.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Databricks,assistant,1,high,Data-science/ML platform plus embedded Assistant/Genie generative features.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Dataminr First Alert,nlp,0,medium,Detects real-time events by analyzing public/social text streams.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+DeepEMhancer,none,0,low,Deep-learning CryoEM density-map denoising/sharpening; scientific image enhancement with no clean listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Democratizing Data,nlp,0,low,ML text/entity extraction to identify dataset usage in publications.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Dentsply Sirona CEREC,none,0,low,Dental CAD/CAM restoration system (hardware/imaging); no distinct listed AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Descript,speech,1,high,AI audio/video editor with transcription and generative voice cloning.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Digital Science Dimensions,search,0,low,Research publication database with AI-assisted search and analytics.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Doble Test Assistant,none,0,low,Electrical test-data analysis assistant with no clear vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+DocketScope,nlp,0,low,"Analyzes regulatory docket comments/documents (text analytics, nlp).",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Dun & Bradstreet,none,0,medium,Business/risk data with fraud-anomaly analytics; fraud analytics does not map to a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Dynatrace,none,0,high,Observability/AIOps platform (Davis AI); IT-operations anomaly detection is outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+EDAV (CDC),ml_platform,0,low,CDC enterprise data analytics/visualization environment supporting data-science and ML workloads.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ELIS,none,0,low,Core USCIS Electronic Immigration System is a case-management platform; AI capabilities live in its named sub-services.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ELIS Card Photo Validation Service,vision,0,medium,"Validates card photos, an image/biometric analysis (vision) capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+ELIS Evidence Classifier Service,doc_processing,0,medium,Classifies evidence documents in USCIS ELIS (document processing/classification).,claude-fable-5,2026-07-05T00:00:00Z,llm
+ELSAG ALPR,vision,0,high,License-plate-reader cameras with image recognition analytics.,claude-fable-5,2026-07-05T00:00:00Z,llm
+EPA Agency Records Management System,doc_processing,0,low,Records management system inferred to classify/process document records.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+EPA RCRA PA,none,0,low,"Risk-scoring analytics for hazardous-waste inspections, no vocabulary capability.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ERNIE Radiological Detection,none,0,low,Analyzes radiation portal monitor spectra rather than images or text; no listed capability class.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+EarlySense WAVE Clinical Platform,none,0,medium,Contact-free patient monitoring with predictive analytics; no listed capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Edwards Acumen Hypotension Prediction Index,none,0,low,"Clinical ML hypotension-prediction index, no vocabulary capability.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Elastic Stack,search,0,medium,Elasticsearch/Kibana search and analytics with built-in ML jobs (AI-powered search).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Elsa (FDA),genai_platform,1,high,"QC correction: Standalone agency-wide general-purpose GPT surface — same class as BillieGPT/CISAChat, so genai_platform not embedded assistant.",claude-fable-5,2026-07-05T00:00:00Z,qc_corrected
+Emerald Innovations,none,0,low,Insufficient detail to assign a capability; likely sensing/health analytics.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+EnerGPT,genai_platform,1,medium,Domain generative AI assistant tuned for energy queries.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Ephesoft Transact,doc_processing,0,high,Intelligent document capture and OCR extraction platform.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Equifax Background Screening,none,0,low,Background-verification data automation with no vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Espyr Therapy Chatbot,chatbot,1,high,Text-based mental-health support chatbot (conversational front-end).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Esri ArcGIS AI,vision,0,medium,ArcGIS GeoAI's productized capability is deep-learning feature extraction/object detection on satellite and aerial imagery; plain GIS alone would be none.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Everlaw AI Assistant,nlp,1,medium,Ediscovery AI that classifies/reviews documents for responsiveness with generative assistance.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Exiger DDIQ,nlp,0,medium,Due-diligence engine applying NLP to adverse-media and documents for risk scoring.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Expert.ai Cogito,nlp,0,high,NLP engine that tags and classifies research articles.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FA.gov PII Picker,nlp,0,medium,"Detects PII in text, an NLP entity-extraction task.",claude-fable-5,2026-07-05T00:00:00Z,llm
+FA.gov RedactAid,doc_processing,0,medium,Document redaction tool identifying and removing sensitive content from documents.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FBOP Pathfinder,none,0,low,Employee career-pathways guidance tool; the underlying AI capability (recommendation) is outside the vocabulary and details are thin.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FDA 356H ML Facility Supply Chain Role Classification,doc_processing,0,medium,Deloitte CDEROne tool that extracts and classifies facility/supply-chain roles from unstructured 356H submissions.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FDA 356H ML Facility Supply Chain Role Classification,nlp,0,medium,Deloitte CDEROne tool that extracts and classifies facility/supply-chain roles from unstructured 356H submissions.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FDA Annual Report CMC Extraction,doc_processing,0,medium,Extracts CMC changes from unstructured annual-report documents; gen_ai hint conflicts as this is extraction not generation.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FDA Application-DMF Reference Extraction,doc_processing,0,medium,Extracts Drug Master File references from unstructured application documents (intelligent document processing).,claude-fable-5,2026-07-05T00:00:00Z,llm
+FDA DMF Facilities Extraction,doc_processing,0,medium,Extracts facility references from unstructured Type II DMF documents.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FDA HIVE AI Pilot,genai_platform,1,low,SAIC HIVE generative-AI pilot for IND review; LLM platform inferred.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FDA IND Safety Reports OCR,doc_processing,0,high,OCR/AI extraction of FAERS data from IND safety report documents.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FDA Module 3 Facilities Extraction,doc_processing,0,medium,Extracts manufacturing facilities from unstructured Module 3 submissions; gen_ai hint overridden as this is extraction.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FDA Packaging Materials and Suppliers Extraction,doc_processing,0,medium,Extracts packaging materials and supplier data from unstructured submissions.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FDA Real World Data/Evidence Identification,doc_processing,0,medium,Identifies and classifies unstructured submissions containing Real World Data/Evidence.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FDA Real World Data/Evidence Identification,nlp,0,medium,Identifies and classifies unstructured submissions containing Real World Data/Evidence.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FDA Regulatory Starting Materials Extraction,doc_processing,0,medium,Extracts Regulatory Starting Materials and their suppliers from unstructured documents.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FDA Safety Reports Categorization Bot,nlp,0,medium,Classifies safety reports into category/subcategory via text classification.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FDA Smart Solution for Docket Management,nlp,0,medium,"Analyzes public comments on FDA dockets; text-analytics rather than a chat surface, so gen_ai hint overridden.",claude-fable-5,2026-07-05T00:00:00Z,llm
+FERC Zvolvant Inspection AI,vision,0,medium,Computer vision analysis of dam and pipeline inspection imagery.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FERC Zvolvant Interconnection Assistant,assistant,1,low,"Assistant supporting interconnection request responses, inferred generative.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FERC Zvolvant Market Surveillance,none,0,low,Market-surveillance and fraud-detection analytics with no vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FINDER (ATF),search,0,low,Sifts/searches violent-crime and firearms-trafficking data (search/retrieval).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FLIR 280 HD,none,0,low,Thermal imaging camera hardware with no clearly productized AI analysis.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FOIAXpress AI,doc_processing,1,low,FOIA document processing with review/redaction and likely generative summarization.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FRTIB AVA,chatbot,1,medium,Converge AVA virtual assistant answering participant questions about the TSP.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FRTIB Fraud Detection,none,0,medium,Fraud/abuse detection analytics platform; fraud analytics does not map to a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FS Pro,none,0,low,Foreign Service productivity tool with no specified AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FSA Aidan Chatbot,chatbot,0,medium,Federal Student Aid virtual-assistant chatbot.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FTC Sentinel Analytic Sandbox,none,0,low,An analytics sandbox environment for the Sentinel network with no specific AI capability described.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FTC Sentinel Chatbot,chatbot,0,medium,Automated chatbots for ReportFraud.ftc.gov and IdentityTheft.gov (conversational front-end).,claude-fable-5,2026-07-05T00:00:00Z,llm
+FTC Sentinel Developer Productivity,assistant,1,medium,AI coding-productivity/code-quality assistant for developers.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FTC Sentinel Graph Analytics,none,0,low,Graph analytics linking complaints; relationship analytics does not map to a listed AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+FTC Sentinel PSC Classification,nlp,0,high,Automatically classifies consumer complaints by PSC (text classification).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Federal Docket Management System,none,0,low,Regulatory docket management system with no specific AI capability described.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Fiji ImageJ,vision,0,medium,Scientific image-analysis platform (microscopy) commonly used with ML plugins.,claude-fable-5,2026-07-05T00:00:00Z,llm
+FirstTwo,none,0,low,OSINT data aggregation for lookups; no listed AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Fivecast,nlp,0,medium,OSINT analytics applying NLP over open-source text data.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Flashpoint,none,0,low,Threat-intelligence/investigative data platform; security intel does not map to a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Flock Safety,vision,0,high,License-plate-reader camera network with AI vehicle recognition and analytics.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Flowmon,none,0,high,Network traffic monitoring/anomaly detection; security analytics outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Freed AI Medical Scribe,speech,1,high,Ambient medical scribe: transcription plus generative clinical-note drafting.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GAIA AI,vision,0,low,Named computer-vision product with limited detail.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+GE Healthcare AMX Portable X-ray,vision,0,medium,AI-enabled portable X-ray whose imaging AI (Critical Care Suite) analyzes radiographs for findings.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare Critical Care Suite,vision,0,high,On-device AI that detects pneumothorax and tube placement on chest X-rays.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare Discovery MI,vision,0,medium,PET/CT scanner using deep-learning image reconstruction and analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare EchoPAC,vision,0,medium,Cardiac ultrasound analysis software with automated AI measurement of echo images.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+GE Healthcare FastStroke CT Perfusion 4D,vision,0,high,AI CT perfusion analysis for stroke imaging quantification.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare LOGIQ Ultrasound,vision,0,medium,Ultrasound system with AI-assisted image acquisition and measurement.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare Omni Legend PET/CT,vision,0,medium,PET/CT scanner with AI-based image reconstruction and analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare SIGNA Artist (AIR Recon DL),vision,0,high,MRI with AIR Recon DL deep-learning image reconstruction.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare TrueFidelity CT,vision,0,high,CT using deep-learning image reconstruction to denoise and enhance images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare Venue Fit,vision,0,medium,Point-of-care ultrasound with AI-assisted image interpretation.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare Vivid E Ultrasound,vision,0,medium,Cardiac ultrasound with AI automated measurements on echo images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare Vivid iq,vision,0,medium,Portable cardiac ultrasound with AI-assisted image analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare Voluson Expert,vision,0,medium,OB/GYN ultrasound with AI-assisted image measurement (SonoAI-style features).,claude-fable-5,2026-07-05T00:00:00Z,llm
+GE Healthcare Xeleris V,vision,0,medium,Nuclear medicine processing workstation with AI-based image quantification.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Gemini,genai_platform,1,high,"Google's general-purpose LLM offered both as a chat/API surface and as embedded assistants (Code Assist, Workspace).",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Gemini,assistant,1,high,"Google's general-purpose LLM offered both as a chat/API surface and as embedded assistants (Code Assist, Workspace).",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Genesys Cloud CX,chatbot,1,medium,Contact-center platform with virtual agents/bots and agent-assist copilots.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Genesys Cloud CX,assistant,1,medium,Contact-center platform with virtual agents/bots and agent-assist copilots.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Genetec Security Center,vision,0,medium,Physical-security platform whose AI component is video analytics over camera feeds.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Ginnie Mae Automated Draft Narrative Reports,nlp,0,low,"Custom NLG system drafting narrative reports from financial data; likely template/analysis-driven generation rather than a generative model, but details are thin.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Ginnie Mae Counterparty Risk Anomaly Detection,none,0,medium,Anomaly-detection analytics over counterparty risk data — data-science analytics outside the capability vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Ginnie Mae Subledger Data Quality ML,none,0,low,ML for financial data-quality checks; no listed capability class fits.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+GitHub Copilot,assistant,1,high,AI pair-programming copilot embedded in the developer workflow — a rubric-listed assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Glassbeam Clinsights,none,0,low,Medical device machine-data analytics; no listed AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+GlobalComm Video Surveillance,vision,0,medium,Video surveillance with computer-vision analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Google,none,0,low,Bare brand placeholder with no specific product named in snippets.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Agentspace,search,1,medium,"Enterprise agentic search over org data grounded in Gemini, bundled with NotebookLM.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Agentspace,assistant,1,medium,"Enterprise agentic search over org data grounded in Gemini, bundled with NotebookLM.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Calendar,none,0,high,Calendar/productivity app with no distinct AI capability from the closed vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Google Chrome Generative AI,assistant,1,medium,Chrome's embedded generative writing/help features act as an in-browser copilot.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Cloud Platform,ml_platform,1,low,"Umbrella cloud brand that agencies use to host and run ML and generative models (Vertex), though the entry is broad.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Cloud Platform,genai_platform,1,low,"Umbrella cloud brand that agencies use to host and run ML and generative models (Vertex), though the entry is broad.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Cloud Vision,vision,0,high,"Image analysis API for object detection, labeling, and OCR.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Google Colab,none,0,medium,"Hosted notebook/dev environment, not itself a labeled AI capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Google Coral TPU,none,0,high,"ML accelerator hardware, not a software capability class.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Google Distributed Cloud,genai_platform,1,low,QC correction: Snippets pair it with OpenAI models it hosts on-prem; hosting/serving generative models meets the genai_platform definition even for an infra product.,claude-fable-5,2026-07-05T00:00:00Z,qc_corrected
+Google Earth Engine,none,0,medium,"Geospatial data-analytics platform (GIS), outside the capability vocabulary.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Google Lens,vision,0,high,Image-recognition product identifying objects and text in photos.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Google Maps,none,0,high,Mapping and routing service; navigation is not a listed AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Google News Brief,nlp,1,low,"Generates short news summaries, a summarization/analysis capability.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Pixel,vision,1,low,Phone whose headline AI is biometric Face Unlock (vision) plus generative photo editing.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Translate,translation,0,high,Machine translation between human languages.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Google Vertex AI,ml_platform,1,high,Full data-science platform that also serves and orchestrates generative models.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Vertex AI,genai_platform,1,high,Full data-science platform that also serves and orchestrates generative models.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Google Workspace,none,0,low,Productivity suite; its Gemini assistant is catalogued separately.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Grammarly,assistant,1,high,"Writing assistant embedded in user workflows, with generative rewrite/compose (GrammarlyGO) on top of grammar NLP.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+GrantSolutions,none,0,low,Grants-management platform; snippets give no evidence of a specific vocabulary AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+GrantSolutions AI Writing Assistant,assistant,1,high,Generative writing assistant embedded in the GrantSolutions workflow.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+GrantSolutions Helpdesk Agent,chatbot,1,medium,QC correction: A helpdesk support virtual agent is the task-specific dialog product class (chatbot) rather than a workflow copilot.,claude-fable-5,2026-07-05T00:00:00Z,qc_corrected
+GrantSolutions Recipient Risk Tool,none,0,low,Recipient risk-scoring analytics with no clear vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+GrantSolutions Text Analyzer Tool,nlp,0,high,Text analytics tool for analyzing grant-related text.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Grants.gov Applicant Help Chatbot,chatbot,0,high,Chatbot answering Grants.gov applicant questions (conversational front-end).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Grants.gov Similar Opportunities,search,0,medium,KNN similarity retrieval recommending related grant opportunities.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Griffeye Analyze,vision,0,high,Forensic image/video classifiers to triage CSAM and illicit imagery.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Grok,genai_platform,1,high,xAI's general-purpose LLM chat/API surface.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Gurucul UEBA,none,0,medium,User/entity behavior analytics for security; security ML alone does not qualify.,claude-fable-5,2026-07-05T00:00:00Z,llm
+H2O GPTe,genai_platform,1,high,h2oGPTe generative AI platform powering an assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+HHS FITARA Tool,doc_processing,0,low,Deloitte-built FITARA compliance tool typed as document AI; capability inferred from type with thin evidence.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+HRSA AI Audit Resolution Assistant,assistant,1,medium,Mindpetal-built AI assistant on UiPath that helps resolve Provider Relief Fund audits within the workflow.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+HRSA Knowledge Navigator,chatbot,1,medium,Generative Q&A bot answering program (loan repayment/scholarship) questions.,claude-fable-5,2026-07-05T00:00:00Z,llm
+HRSA PRF Program Chatbot,chatbot,1,high,PRF program chatbot answering applicant questions.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Harvey,assistant,1,high,Domain-specific generative AI legal assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+HealthData.gov AI Harvest Service,nlp,0,low,AI metadata harvesting/classification of datasets for the catalog.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+HeyGen,speech,1,medium,Generates synthetic talking-avatar videos with AI voice and image synthesis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+HeyGen,vision,1,medium,Generates synthetic talking-avatar videos with AI voice and image synthesis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Hologic 3D Quorum,vision,0,high,Mammography imaging AI that identifies clinically relevant regions across image slices.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Hologic Genius AI Detection,vision,0,high,AI detection (CADe) on mammography images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Hootsuite,nlp,1,low,Social-media management with AI social analytics (nlp) and AI content generation.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Hyperscience,doc_processing,0,high,Rubric-listed intelligent document processing platform.,claude-fable-5,2026-07-05T00:00:00Z,llm
+IBM ARGOS,nlp,0,low,IBM Watson-family text-processing tool; nlp inferred from product type with little detail.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+IBM CoreDF,doc_processing,0,low,IBM Watson-family document-processing tool inferred from product type.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+IBM Watson,ml_platform,0,medium,IBM Watson AI platform with core ML and NLP services.,claude-fable-5,2026-07-05T00:00:00Z,llm
+IBM Watson,nlp,0,medium,IBM Watson AI platform with core ML and NLP services.,claude-fable-5,2026-07-05T00:00:00Z,llm
+IBM watsonx Code Assistant,assistant,1,high,Generative code assistant including mainframe (Z) modernization variant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ID.me,vision,0,medium,Identity verification via facial matching (vision) and ID-document verification/extraction (doc processing).,claude-fable-5,2026-07-05T00:00:00Z,llm
+ID.me,doc_processing,0,medium,Identity verification via facial matching (vision) and ID-document verification/extraction (doc processing).,claude-fable-5,2026-07-05T00:00:00Z,llm
+IDEMIA CAT-2/AutoCAT,vision,0,high,Credential authentication with camera performing facial biometric matching.,claude-fable-5,2026-07-05T00:00:00Z,llm
+INL Classified Subject Area GenAI,nlp,1,low,QC correction: The described capability is subject-area categorization of documents (text classification) — a GenAI-powered application not an LLM platform.,claude-fable-5,2026-07-05T00:00:00Z,qc_corrected
+INL Intelligent Automation,assistant,1,low,QC correction: GenAI applied over INL procedures and controlled documents for workflow automation reads as an embedded assistant not a model platform.,claude-fable-5,2026-07-05T00:00:00Z,qc_corrected
+ISO ClaimSearch,none,0,low,Claims database with fraud analytics; predictive analytics outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Ideation ReadyAI,genai_platform,1,high,Platform hosting FEMA GPTs built on Azure OpenAI.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Illumio,none,0,high,Zero-trust network segmentation security product; no listed AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Imaris,vision,0,medium,Microscopy image analysis with ML-based segmentation and tracking.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Informatica,none,0,low,Data integration/catalog platform; its CLAIRE ML metadata features don't clearly map to a capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Invariant Acoustic Signature AI,none,0,medium,Gunshot acoustic-signature detection; audio analysis with no matching capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+JAWS Screen Reader,speech,0,high,Screen reader providing text-to-speech accessibility.,claude-fable-5,2026-07-05T00:00:00Z,llm
+KESTREL,vision,0,low,"Maxar imagery-derived predictor of aircraft landing locations, an imagery-analysis task.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Kiteworks,none,0,high,"Secure file-sharing/governance platform, no AI capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+KnowBe4 PhishER,none,0,high,Phishing incident-response security tooling; no listed AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Knowtex Ambient Scribe,speech,1,high,Ambient clinical scribe: speech-to-text capture of encounters with generative drafting of clinical notes.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Koios DS Breast,vision,0,high,AI decision support analyzing breast ultrasound images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Konica Minolta Dispatcher Paragon,none,0,high,Print/output management software with no AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+LANL AI Portal,genai_platform,1,medium,Los Alamos internal portal providing staff access to LLM chat/models — a general LLM surface.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+LIGER Generative AI Toolkit,genai_platform,1,medium,Generative AI toolkit for building GenAI capabilities.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+LISA Chatbot,chatbot,1,medium,Named generative chatbot built on AWS.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Lambient AI Scribe,speech,1,medium,Ambient AI clinical scribe transcribing and drafting notes (speech-to-text plus generation).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Lantheus aPROMISE,vision,0,high,AI analysis of PSMA PET/CT medical images for lesion quantification.,claude-fable-5,2026-07-05T00:00:00Z,llm
+LaserAI,nlp,0,medium,ML screening and extraction from scientific literature (text classification/extraction).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Lasso Security,none,0,medium,AI/LLM security monitoring tool; security analytics does not qualify.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Lectora AI,assistant,1,low,E-learning authoring tool with embedded generative course-creation assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Leica Aivia,vision,0,high,Machine-learning object classification and segmentation for microscopy imaging.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Lenel OnGuard,none,0,high,Physical access-control system; security hardware outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Lexical Intelligence,nlp,0,medium,Text/lexical analytics NLP product.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Lexis+ AI,assistant,1,high,Generative legal-research assistant combining semantic retrieval with drafting.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Lexis+ AI,search,1,high,Generative legal-research assistant combining semantic retrieval with drafting.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Lexis+ Protege,assistant,1,high,Personalized generative AI legal assistant embedded in the Lexis workflow.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+LexisNexis,search,0,low,Legal/public-records research brand whose core is retrieval over content.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+LexisNexis Risk Solutions,search,0,low,Public-records and identity/fraud data service centered on record search.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+LibreChat,genai_platform,1,high,Open-source general-purpose LLM chat interface fronting multiple model APIs.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Litera Compare,none,0,medium,Document comparison/redlining tool without a listed AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Litera TOA Builder,nlp,0,medium,Extracts legal citations from documents to build tables of authorities.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Llama,genai_platform,1,high,Meta's open-weight generative LLM family; the gen-AI hint of 0 is wrong — Llama is unambiguously a generative model platform.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Lookout,none,0,high,"Mobile/endpoint security product, none of the listed capabilities.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Lumivero NVivo,nlp,0,medium,Qualitative data analysis with AI-assisted text coding and theme detection.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Lyssn,speech,0,medium,AI analysis of conversation recordings combining transcription and text analytics.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Lyssn,nlp,0,medium,AI analysis of conversation recordings combining transcription and text analytics.,claude-fable-5,2026-07-05T00:00:00Z,llm
+MAPPRITE,genai_platform,1,low,DOE tool flagged as LLM-based; insufficient detail beyond the generative hint.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+MCG Energy Solutions Integrated Asset Manager,none,0,high,Wholesale-energy bid/scheduling/settlement software; no listed AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+MIT Lincoln Lab Speech Translation,speech,0,high,Automates transcription and translation of Spanish and Mandarin audio — both capabilities productized.,claude-fable-5,2026-07-05T00:00:00Z,llm
+MIT Lincoln Lab Speech Translation,translation,0,high,Automates transcription and translation of Spanish and Mandarin audio — both capabilities productized.,claude-fable-5,2026-07-05T00:00:00Z,llm
+MSHA AI Headset,vision,0,low,"AI head-gear for mine safety, inferred camera-based hazard detection (vision).",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Magnet Forensics,vision,1,medium,Forensic media categorization (vision) plus the Magnet Copilot generative assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Magnet Forensics,assistant,1,medium,Forensic media categorization (vision) plus the Magnet Copilot generative assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Mark43,assistant,1,medium,Public-safety records platform with AI-assisted report-writing copilot.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Matroid I4 Viewer,vision,0,high,Matroid computer-vision object/video detection viewer.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+MaxQ AI CT CoPilot,vision,0,high,AI detection of intracranial hemorrhage on CT medical imaging.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Medallia,nlp,0,medium,Experience management with text sentiment analysis and speech/call analytics.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Medallia,speech,0,medium,Experience management with text sentiment analysis and speech/call analytics.,claude-fable-5,2026-07-05T00:00:00Z,llm
+MediaViz AI,vision,0,low,QC correction: Media/image analysis is supported but nothing evidences generative output; the gen-AI hint appears spurious so gen_ai=0.,claude-fable-5,2026-07-05T00:00:00Z,qc_corrected
+Medtronic CareLink,none,0,low,Remote cardiac-device monitoring network; data telemetry rather than a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Medtronic GI Genius,vision,0,high,Real-time computer-vision polyp detection on colonoscopy video.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Medtronic LINQ II,none,0,low,Insertable cardiac monitor with signal-based arrhythmia detection; no listed capability fits.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Medtronic O-arm O2,none,0,low,"Intraoperative imaging scanner hardware, not an AI analysis product.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Meltwater,nlp,0,medium,Media-monitoring and social analytics (text/sentiment nlp).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Merlin,genai_platform,1,medium,DOE KCNSC general-purpose LLM ('Merlin').,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Microsoft,none,0,low,Vendor-level umbrella entry with no identifiable product or capability; snippets are just the vendor name.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Microsoft 365,none,0,medium,"Productivity suite umbrella; the AI capabilities (Copilot, Copilot Chat) are separate catalog entries.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft 365 Apps for Enterprise,none,0,low,"Office apps licensing SKU; the gen-AI hint likely reflects Copilot, which is a separate catalog product.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Microsoft 365 Copilot,assistant,1,high,Enterprise LLM copilot embedded in Office apps — the rubric's worked example for assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Microsoft 365 Copilot Chat,assistant,1,high,"Free in-app Copilot chat tier embedded in the Microsoft 365 workflow suite, so assistant rather than standalone platform.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Microsoft AI Builder,ml_lowcode,0,high,"Rubric-listed low-code ML builder, and the snippets show productized OCR/forms extraction (889 Document Processor) as a bought capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft AI Builder,doc_processing,0,high,"Rubric-listed low-code ML builder, and the snippets show productized OCR/forms extraction (889 Document Processor) as a bought capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Azure Authoring Tools,none,0,medium,Azure developer/authoring tools SKU with no AI capability of its own.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Azure Platform,none,0,medium,"Cloud infrastructure umbrella; the AI capabilities (OpenAI, Speech, Document Intelligence) are separate child catalog entries.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Azure PowerShell,none,0,high,Command-line management tooling for Azure with no AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Azure Quantum Elements,none,0,medium,HPC/quantum-chemistry simulation service for materials science; scientific computing outside the capability vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Copilot Studio,chatbot,1,high,Low-code platform for building custom copilots and dialog agents (Power Virtual Agents successor) — the task-specific bot-building class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Copilot for Security,assistant,1,high,GenAI security-operations copilot embedded in the security analyst workflow.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Microsoft Defender,none,0,high,Endpoint security with embedded ML threat detection; per the rubric security analytics ML alone does not qualify for a category.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Discovery,genai_platform,1,low,Microsoft's agentic generative-AI platform for scientific R&D; sparse snippets so the platform framing is uncertain despite the hint of 0.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Microsoft Dynamics 365,none,0,medium,CRM/ERP business application; embedded AI features do not constitute a vocabulary capability here.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Edge,none,0,high,Web browser; consumer feature entry with no procurable AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Exchange Server,none,0,high,Email server software with no AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft HoloLens,none,0,medium,AR headset hardware used for inspection training; device-level tracking is not a procurable vision-analytics capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft OneDrive,none,0,high,File storage/sync product with no AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft OneNote,none,0,high,Note-taking app with no AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Outlook,none,0,high,Email client with no standalone AI capability (Copilot is separate).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Power BI,none,0,high,BI dashboarding product — plain BI is an explicit none per the rubric.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Power Platform,ml_lowcode,0,high,Low-code app platform whose AI features (AI Builder class) are the rubric's ml_lowcode example.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft PowerPoint,none,0,high,Presentation software with no standalone AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Microsoft Project,none,0,high,Project management software with no AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Purview,none,0,medium,"Data governance/compliance product; its embedded ML classifiers are governance plumbing, analogous to the rubric's security-analytics exclusion.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Purview eDiscovery,nlp,0,medium,"Snippet shows attorney-client privilege detection — text classification of documents, a productized NLP capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft ScreenSketch,none,0,high,Screen capture/annotation utility with no AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Search in Bing,search,0,medium,Microsoft Search enterprise search with semantic ranking across M365 content.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Sentinel,none,0,high,SIEM security analytics; ML-based detection alone does not qualify per the rubric.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Microsoft Skype,none,0,high,Consumer communications app with no AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Teams,speech,0,medium,Collaboration platform whose live meeting transcription is a genuinely productized speech-to-text capability; Copilot in Teams is the separate M365 Copilot entry.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Microsoft Viva,none,0,medium,"Employee-experience/insights analytics suite; despite the gen-AI hint, the Viva products here (Insights) are workplace analytics dashboards.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Milestone XProtect,vision,0,high,Video management software with AI object/event-detection analytics.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Mindray TE X Ultrasound,vision,0,medium,Ultrasound with AI-assisted image acquisition and measurement.,claude-fable-5,2026-07-05T00:00:00Z,llm
+MirBot,chatbot,0,low,Named bot inferred to provide conversational interaction.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ModelAngelo,vision,0,low,"Deep-learning automated atomic-model building from CryoEM density maps — 3D image interpretation, though it sits at the edge of the vision class.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Monday.com,assistant,1,medium,Work-OS with embedded monday AI generative assistant features.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Motorola License Plate Recognition,vision,0,high,"Automated license-plate recognition, a vision capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Mural,assistant,1,low,Collaborative whiteboard with embedded AI clustering/summarization/generation assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NARA A1 Museum AI,vision,0,low,"Cortina exhibit-personalization system typed as computer vision (visitor sensing), but the record is too thin to be sure of mechanism or generative use.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NASA CAAP Cost Analytics,none,0,high,"Cloud cost analytics/BI, not a listed AI capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+NCI MOSSAIC SEER NLP,nlp,0,high,Deep-learning NLP on cancer pathology reports for SEER registries.,claude-fable-5,2026-07-05T00:00:00Z,llm
+NEC NeoFace,vision,0,high,Facial-recognition biometric matching.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NIAID DAIT AIDS Research Prioritization,nlp,0,low,Analyzes grant-application text to suggest prioritization; nlp inferred.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NIAID OSPIDA Scientific Coding Assistance Tool,nlp,0,medium,"Assists scientific coding/classification of research (text classification), not software coding.",claude-fable-5,2026-07-05T00:00:00Z,llm
+NIAID TB Portals (TB DEPOT),none,0,low,"Tuberculosis data exploration portal, primarily a data platform.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NIAID TB Portals Outlier Detection,none,0,low,Outlier/anomaly detection function with no vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NIAMS GenAI Chatbot,chatbot,1,medium,NIH NIAMS generative-AI chatbot (conversational front-end).,claude-fable-5,2026-07-05T00:00:00Z,llm
+NIH Grants Virtual Assistant,chatbot,0,medium,Google-built task-specific virtual assistant answering grants questions — a dialog-flow virtual agent.,claude-fable-5,2026-07-05T00:00:00Z,llm
+NIH SRDMS NLP COI Module,nlp,0,high,"NLP module for conflict-of-interest analysis, explicitly nlp.",claude-fable-5,2026-07-05T00:00:00Z,llm
+NIH Travel Policy AI Chatbot,chatbot,1,medium,Generative chatbot answering NIH travel-policy questions.,claude-fable-5,2026-07-05T00:00:00Z,llm
+NIH eRA Internal Referral Module,nlp,0,high,NLP-based routing/referral of grant applications.,claude-fable-5,2026-07-05T00:00:00Z,llm
+NLCOO Lessons Learned AI,search,0,low,AI tool for searching/retrieving lessons-learned knowledge.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NetApp ARP/AI,none,0,high,Autonomous ransomware protection using storage anomaly detection; security analytics outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+NetDocuments,search,1,medium,Document management with AI search and ndMAX generative drafting features.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NetDocuments,assistant,1,medium,Document management with AI search and ndMAX generative drafting features.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NexisXplore,search,0,low,LexisNexis investigative research and retrieval product.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Nightwing PII Detection,nlp,0,high,Uses NLP to flag potential PII in text.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Nlets LPR Pointer Index,none,0,low,Federates license-plate-reader hits as a pointer index; the index itself performs no recognition.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+NotebookLM,assistant,1,high,"Gemini-powered research assistant for document Q&A, synthesis, and audio overviews.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Nuance Dragon,speech,0,high,Professional speech-recognition and dictation product family.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Nuance PowerScribe One,speech,0,high,Radiology speech-recognition reporting product; core capability is dictation despite the gen-AI hint.,claude-fable-5,2026-07-05T00:00:00Z,llm
+OATI webSmartTag,none,0,high,Transmission scheduling/e-tagging product for energy markets — no vocabulary AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ORR Unaccompanied Children Policy Research Tool,assistant,1,low,QC correction: A task-specific generative policy/procedure research and Q&A tool is an assistant application rather than a general LLM platform surface.,claude-fable-5,2026-07-05T00:00:00Z,qc_corrected
+Okta Adaptive MFA,none,0,medium,Risk-based adaptive authentication; identity-security ML with no listed capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+OnCue Trial Presentation,none,0,medium,Trial exhibit presentation/display software with no AI capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+OpenAI API,genai_platform,1,high,Direct OpenAI LLM API access as a general-purpose generative model surface.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+OpenAI Codex (legacy model),genai_platform,1,high,OpenAI code-generation LLM that powered original GitHub Copilot.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+OpenAI Codex CLI,assistant,1,high,Agentic terminal-based AI coding assistant peer to Claude Code.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+OpenAI Deep Research,genai_platform,1,medium,OpenAI agentic LLM research product that generates cited reports.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+OpenText Axcelerate,search,0,medium,eDiscovery platform with AI/NLP-powered search and predictive coding.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+OpenText Decisiv,search,0,medium,AI-powered legal knowledge search and retrieval.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Otter.ai,speech,1,medium,Meeting transcription (speech-to-text) with generative AI summaries.,claude-fable-5,2026-07-05T00:00:00Z,llm
+PDRI Automatically-Scored Writing Assessment,nlp,0,medium,"Automatically scores written assessments (automated essay scoring, nlp).",claude-fable-5,2026-07-05T00:00:00Z,llm
+PDRI Remote Proctor,vision,0,medium,Camera-based ML monitoring of candidates for remote exam proctoring.,claude-fable-5,2026-07-05T00:00:00Z,llm
+PEST (Parameter Estimation),none,0,low,Groundwater model parameter-estimation/optimization software rather than an AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+PLATES/FoodTrak,doc_processing,0,high,Product label and text extraction system performing OCR/document extraction.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Palantir AIP,ml_platform,1,high,Ops platform with first-class LLM orchestration alongside ML tooling.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Palantir AIP,genai_platform,1,high,Ops platform with first-class LLM orchestration alongside ML tooling.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Palantir Case Management & Analytics (CMA),none,0,low,"QC correction: Case-management analytics application, not a platform; its ml_platform capability is already captured by PFCS, so no category cleanly applies.",claude-fable-5,2026-07-05T00:00:00Z,qc_corrected
+Palantir Decision and Analytics Platform (DNA-P),ml_platform,0,medium,Decision-and-analytics platform for data modeling and analytics.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Palantir Federal Cloud Service,ml_platform,0,medium,Foundry-based federal cloud platform hosting analytics and GenAI apps.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Palo Alto Networks,none,0,high,"Network security platform, none of the listed capabilities.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Pangolin Lineage,none,0,low,"Bioinformatics lineage-assignment classifier, no vocabulary capability.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Parable 3D Wound Care,vision,0,medium,3D wound imaging and measurement using AI image analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+PassiveLogic,none,0,low,Autonomous building-controls AI with no vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Pearson Q-interactive,none,0,medium,"Tablet platform administering and scoring psychological assessments; rule-based scoring, no listed AI capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Penlink,none,0,low,Communications-records and OSINT investigative platform; specific vocabulary AI capability not evidenced in the record.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Perplexity,genai_platform,1,high,Conversational answer engine grounding LLM responses in web search/retrieval.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Perplexity,search,1,high,Conversational answer engine grounding LLM responses in web search/retrieval.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Person-Centric Identity Services Deduplication Model,nlp,0,low,Identity-record deduplication via name/text matching; closest fit is nlp entity matching.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Persyst EEG,none,0,medium,EEG signal analysis with AI event detection; no matching capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Philips EPIQ/Affiniti Ultrasound,vision,0,medium,Ultrasound systems with AI-assisted image acquisition and measurement.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Philips QLAB,vision,0,medium,Cardiac ultrasound quantification software with automated AI image analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Philips Smart Collimation Thorax,vision,0,medium,AI-driven auto-collimation on chest X-ray using image analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Philips Vereos PET/CT,vision,0,medium,PET/CT scanner with AI-based image reconstruction.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Philips eCareManager,none,0,low,Tele-ICU platform with predictive analytics; no listed AI capability class applies.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Pingoo.AI,chatbot,1,low,AI chatbot platform inferred to be generative.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Planmeca Romexis,none,0,low,Dental imaging management software; no distinct listed AI capability indicated.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Plexis Quantum Choice,none,0,medium,Claims adjudication and benefits-administration platform with rules/ML — decision analytics outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Podimetrics SmartMat,none,0,low,Sensor mat with predictive monitoring for diabetic ulcers; no listed capability fits.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Polarity,none,0,medium,Data-overlay/observability platform with no listed AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Poolside,assistant,1,high,AI coding assistant for developers.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Precise MLaaS,ml_platform,0,medium,Machine-learning-as-a-service platform.,claude-fable-5,2026-07-05T00:00:00Z,llm
+ProLaw,none,0,low,Legal practice-management software; its AI/search features are peripheral and vague.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ProcureSight,none,0,low,Procurement market-research analytics tool; possible AI search features but no evidence in the record.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Provar Manager,none,0,medium,Salesforce test-automation management tool; no listed AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Ptolemy,vision,0,medium,ML CryoEM micrograph screening/triage is image object detection and classification.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Pyramid Analytics,ml_platform,1,low,Augmented-analytics BI platform with AutoML and added generative features.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Qualtrics,nlp,1,medium,Experience/survey platform with sentiment/topic text analytics (nlp) and generative summaries.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Quantaero Marine Wildlife AI,vision,0,high,AI detection of marine wildlife in aerial survey imagery for offshore energy reviews.,claude-fable-5,2026-07-05T00:00:00Z,llm
+RAIO AI Interview Simulator,chatbot,1,medium,Generative conversational simulator that lets RAIO trainees practice interview techniques against an AI interviewee.,claude-fable-5,2026-07-05T00:00:00Z,llm
+RAVEn Investigative Prioritization Aggregator,none,0,low,HSI analytics environment that aggregates and prioritizes investigative leads; no clean capability match.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+RAVEn Normalization Services,none,0,medium,"Data normalization/ETL service, not an AI capability class.",claude-fable-5,2026-07-05T00:00:00Z,llm
+RAVEn Translation and Transcription Service,translation,0,high,Named service providing translation and transcription for investigative data.,claude-fable-5,2026-07-05T00:00:00Z,llm
+RAVEn Translation and Transcription Service,speech,0,high,Named service providing translation and transcription for investigative data.,claude-fable-5,2026-07-05T00:00:00Z,llm
+RWS Trados,translation,0,high,Computer-assisted translation suite with neural machine translation.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Radformation AutoContour,vision,0,high,AI auto-segmentation of anatomy on medical images for radiotherapy.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Rangeland Analysis Platform,vision,0,low,Remote-sensing ML deriving rangeland vegetation models from imagery.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Rank One Computing,vision,0,high,Face-recognition biometric SDK.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+RapidAI,vision,0,high,Stroke/neuro imaging AI (medical-imaging vision).,claude-fable-5,2026-07-05T00:00:00Z,llm
+RaySearch RayStation,vision,0,medium,Radiotherapy planning system with deep-learning auto-segmentation of medical images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Raytheon BBN M3S,speech,0,medium,"Multimedia monitoring ingests broadcast/online media with transcription, translation, and content analysis.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Raytheon BBN M3S,translation,0,medium,"Multimedia monitoring ingests broadcast/online media with transcription, translation, and content analysis.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Raytheon BBN M3S,nlp,0,medium,"Multimedia monitoring ingests broadcast/online media with transcription, translation, and content analysis.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Reclaim.AI,none,0,medium,AI calendar/scheduling optimization; no listed AI capability class applies.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Recorded Future,none,0,low,"Cyber threat-intelligence analytics, treated as security analytics.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+RedCastle Forest Health,vision,0,medium,"Detects tree damage from satellite imagery (remote-sensing image analysis, vision).",claude-fable-5,2026-07-05T00:00:00Z,llm
+RedSeal,none,0,high,Network security posture modeling — cybersecurity analytics outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+ReflexAI,chatbot,1,low,Conversational AI roleplay for training crisis counselors plus conversation QA.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Rekor,vision,0,high,License-plate and vehicle recognition image analytics.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Relativity,nlp,1,medium,E-discovery document review/classification with generative review features.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Riverain ClearRead CT,vision,0,high,FDA-cleared AI detection of lung nodules on CT medical imaging.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Roche Digital Pathology,vision,0,high,AI analysis of digital pathology images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Rohde & Schwarz QPS Walk-Through Scanner,vision,0,high,Millimeter-wave body scanner with AI on-person threat image detection.,claude-fable-5,2026-07-05T00:00:00Z,llm
+SAP Concur,none,0,high,"Travel-and-expense management software, no AI capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+SAS Analytics,ml_platform,0,high,SAS statistical analytics and ML platform.,claude-fable-5,2026-07-05T00:00:00Z,llm
+SEA-CROGS,none,0,low,DOE scientific-ML research effort with insufficient detail to classify.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+SITE Intelligence Group,none,0,high,"Threat-intelligence subscription content service, not an AI capability product.",claude-fable-5,2026-07-05T00:00:00Z,llm
+SQL Server Management Studio,none,0,high,Database administration tooling with no AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+SRNS AI Drafting Assistant,assistant,1,medium,AI assistant that drafts operational procedures and training materials (generative).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+SRNS AI Form and Questionnaire Assistant,assistant,1,medium,AI assistant for completing forms and questionnaires (generative).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+SRNS AI Tailored Learning,none,0,low,AI-tailored/adaptive learning management; personalization does not map cleanly to a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+SRNS Computer Vision Defect Detection,vision,0,high,Computer vision for defect detection.,claude-fable-5,2026-07-05T00:00:00Z,llm
+SRNS Operational Efficiency ML,none,0,low,Applied ML for operational efficiency with no specific listed capability; predictive analytics only.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+SSA Quick Disability Determinations Model,none,0,low,Predictive model flagging high-probability disability claims; data-mining without a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+SWBTRAC,none,0,low,DOJ tracking analytics tool with no clear vocabulary capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Salesforce,none,0,medium,Base Salesforce CRM platform; its AI capability lives in the separately catalogued Einstein.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Salesforce Einstein,assistant,1,high,Salesforce Einstein/Agentforce embedded CRM AI copilot.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Scopus AI,search,1,high,Elsevier's generative-AI research discovery tool — semantic search over Scopus with LLM-generated summaries.,claude-fable-5,2026-07-05T00:00:00Z,llm
+ScreenPoint Transpara,vision,0,high,AI detection and analysis of mammography images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+SentinelOne,none,0,high,"Endpoint security ML detection, excluded per security rule.",claude-fable-5,2026-07-05T00:00:00Z,llm
+ServiceNow,none,0,low,ITSM platform; its generative and search AI features are catalogued as separate entries.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ServiceNow AI Search,search,0,medium,Intelligent/semantic query capability within the ServiceNow platform.,claude-fable-5,2026-07-05T00:00:00Z,llm
+ServiceNow IT Operations Management (ITOM) Predictive AIOps,none,0,medium,Predictive AIOps anomaly detection for IT ops; no listed capability class fits.,claude-fable-5,2026-07-05T00:00:00Z,llm
+ServiceNow Now Assist,assistant,1,high,ServiceNow's embedded generative AI copilot across its workflows.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Shabash Merops,nlp,0,low,"Automated copyediting of scientific manuscripts (text processing, nlp).",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ShotSpotter,none,0,medium,Acoustic gunshot detection/localization; not human-speech processing and no generic audio category exists.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Siemens ACUSON Sequoia,vision,0,low,Ultrasound imaging system whose AI capability is medical image analysis.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Siemens Biograph PET/CT,vision,0,low,PET/CT scanner with AI-assisted medical image reconstruction and analysis.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Siemens MAGNETOM,vision,0,low,MRI scanner family with AI-assisted medical image processing.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Siemens SOMATOM go.,vision,0,low,CT scanner with AI-assisted medical imaging.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Siemens YSIO Max,vision,0,low,X-ray imaging system with AI-assisted image processing.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Siemens syngo,vision,0,low,Medical imaging visualization/analysis software.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+SimplyFile,nlp,0,medium,"ML email categorization/filing, a text classification task.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Skillsoft Percipio CAISY,chatbot,1,medium,AI conversation simulator for practicing workplace conversations — a task-specific generative dialog agent.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Skydio X2D,vision,0,medium,Autonomous drone relying on computer vision for obstacle avoidance and flight autonomy.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Skyward CEDAR/CLAW,assistant,1,low,CMS Chat conversational assistant and analysis wizard on the CEDAR platform.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Slack,assistant,1,medium,"Slack with Slack AI, an embedded assistant for summarization and search.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Smiths Detection TruNarc,none,0,low,"Raman-spectroscopy narcotics classifier, not a vocabulary capability.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Solventum 360 Encompass,nlp,0,medium,Computer-assisted medical coding/CDI using NLP on clinical documentation.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Sonic Incytes Velacur,vision,0,medium,Liver ultrasound elastography device with AI-assisted image quantification.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Splunk,none,0,medium,SIEM with ML security analytics; security analytics alone does not qualify.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Spokeo,none,0,medium,"People-search public-records aggregation, no AI capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Sprinklr,nlp,0,medium,Customer-experience/social-media platform with social text analytics (nlp).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Sprout Social,nlp,1,medium,"Social listening with sentiment/text analytics, plus generative AI Assist for composing posts.",claude-fable-5,2026-07-05T00:00:00Z,llm
+SpyglassGPT,genai_platform,1,low,Name indicates an LLM chat surface; limited detail beyond generative hint.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+State Department AI Research Engine (AIRE),genai_platform,1,low,Generative AI research engine inferred as an LLM surface.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+State Department Declassification Review AI,nlp,0,medium,Analyzes classified document text to support declassification review.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+State FACTS Info Foreign Assistance NLP,nlp,0,high,NLP for analysis of foreign-assistance appropriations text.,claude-fable-5,2026-07-05T00:00:00Z,llm
+State Integrated Country Strategy Turbo,nlp,0,low,Country-strategy document analysis tool inferred to apply text analytics.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+State NIV Adjudication Review Recommendation Engine,nlp,0,low,"Recommendation engine over visa adjudication case text, inferred as text analytics.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+SumTotal,none,0,high,Learning management system with no AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Supportbench,assistant,1,low,Customer-support platform with embedded generative AI assist features.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Synthesia,speech,1,low,"AI avatar video generation including synthesized speech; video generation lacks a listed capability, TTS captured as speech.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Systran Translate,translation,0,high,Systran's machine translation product.,claude-fable-5,2026-07-05T00:00:00Z,llm
+TLOxp,none,0,low,Investigative record-linking/skip-trace search platform; entity aggregation does not map cleanly to a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+TRM Labs Blockchain Analysis Platform,none,0,high,"Blockchain/crypto transaction analytics, outside the capability vocabulary.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Tableau,assistant,1,medium,BI platform whose Tableau Pulse/Tableau GPT features act as an embedded generative assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Tabnine,assistant,1,high,AI code-completion pair-programming assistant.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Techsmith Audiate,speech,1,medium,Text-based audio editor with AI transcription and voice cleanup (speech).,claude-fable-5,2026-07-05T00:00:00Z,llm
+TekSynap SimplifAI,genai_platform,1,high,Commercial generative AI platform sold to federal customers per its own description.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Tenable,none,0,high,Vulnerability management/security tool with no listed AI capability class.,claude-fable-5,2026-07-05T00:00:00Z,llm
+TeraRecon iNtuition,vision,0,medium,Advanced medical image visualization and analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Tesseract OCR,doc_processing,0,high,Open-source optical character recognition engine.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Thomson Reuters,search,0,low,Legal/research brand placeholder; core offering is content retrieval.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Thomson Reuters CLEAR,search,0,high,Public-record search and retrieval tool for fraud/investigations.,claude-fable-5,2026-07-05T00:00:00Z,llm
+ThruVision TAC 16,vision,0,medium,Passive terahertz body scanner using AI detection of concealed objects in sensor imagery.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+ThruWave NII 3D Imaging Tool,vision,0,medium,Millimeter-wave 3D imaging with ML detection of concealed items.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Topaz CryoEM,vision,0,medium,Deep-learning particle picking in CryoEM images is a computer-vision task.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Traffic Jam,vision,0,medium,Anti-trafficking investigative tool using facial recognition image search.,claude-fable-5,2026-07-05T00:00:00Z,llm
+TransUnion TLOxp,none,0,low,Investigative background-search/record-linking data product; no clean listed AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Traveler Verification Service,vision,0,high,CBP facial-recognition biometric matching service for travelers.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Trunet Biometrics,vision,0,high,Biometric capture and matching system (vision/biometrics).,claude-fable-5,2026-07-05T00:00:00Z,llm
+Truview,none,0,low,Truview analytics product with no specific AI capability described.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USAi (GSA),genai_platform,1,high,GSA's government general-purpose generative-AI platform (usai.gov).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USCIS Customer Profile Management System Facial Recognition,vision,0,high,"Facial recognition through IDENT, a biometric vision capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+USCIS Text Analytics,nlp,0,high,"Sentence-similarity/text-analytics data-science model, explicitly nlp.",claude-fable-5,2026-07-05T00:00:00Z,llm
+USCIS Verification Match Model,nlp,0,low,Verification record/name matching model; closest fit is nlp text matching.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USDA AgCloud Helpdesk Chatbot,chatbot,1,medium,LLM-backed IT help-desk conversational chatbot.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USDA Automated Road Mapping,vision,0,medium,"Extracts roads from imagery, a computer-vision task.",claude-fable-5,2026-07-05T00:00:00Z,llm
+USDA Bugnet,vision,0,medium,Detects and maps insect/disease tree damage from imagery — image-analysis capability.,claude-fable-5,2026-07-05T00:00:00Z,llm
+USDA Equine Operations Dataset,none,0,low,"Effort to build a dataset of horse-farm locations; a data product, not a capability.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USDA Forest Health ML Survey,vision,0,medium,ML analysis of geospatial/aerial imagery for forest damage survey and mapping.,claude-fable-5,2026-07-05T00:00:00Z,llm
+USDA Marbled Murrelet Habitat Mapping,none,0,low,Species habitat distribution modeling; scientific ML with no clean listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USDA NRCS NETS Automated Waterway Design,none,0,low,Automated engineering waterway design tool — computational design outside the vocabulary; despite the gen-AI hint there is no evidence of generative models.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USDA Oregon State Forest Mapping,vision,0,medium,Builds forest-structure maps from satellite imagery plus survey data — remote-sensing image analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+USDA Recreation One Stop AI,chatbot,1,low,Recreation.gov booking-support tool that suggests alternatives; likely a gen-AI conversational/recommendation assistant but the record is thin.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USDA Recreation Site Chatbot,chatbot,0,low,"Named recreation-site chatbot, though the snippet's 'estimating use' framing leaves gen-AI status unclear.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USDA TreeSearch AI,search,1,low,Improves search/usability over Forest Service TreeSearch research publications.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USDA VegScape/CropCASMA,none,0,low,Remote-sensing crop-condition/soil-moisture data portal; derived-data visualization with no clean listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+USGS Flow Photo Explorer,vision,0,medium,Analyzes stream photos with ML to estimate streamflow (image analysis).,claude-fable-5,2026-07-05T00:00:00Z,llm
+UiPath Enterprise RPA,none,0,medium,Robotic process automation platform; RPA-only per rubric maps to none.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Ultralytics YOLO,vision,0,high,YOLO object-detection computer-vision model.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Unison PRISM,assistant,1,low,Acquisition/contract-writing software whose PRISM 7.6 added AI document generation (embedded assistant).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+UpToDate,none,0,low,Clinical evidence reference/lookup; curated medical reference does not map cleanly to a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Upstream Tech HydroForecast,none,0,low,ML hydrological inflow forecasting model; scientific prediction with no clean listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+VA AI Assist,assistant,1,low,Generic VA AI assistant; embedded copilot inferred from name.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+VA Clinical AI Agent,assistant,1,low,"Clinical AI agent/copilot; assistant inferred, transcription type suggests possible speech component.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+VA E2 HelpBot,chatbot,0,medium,Help bot for the E2 travel system (conversational front-end).,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+VA GPT,genai_platform,1,high,VA's internal general-purpose GPT chat service for staff.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+VA VoiceBot,speech,0,medium,Voice-driven conversational bot combining speech and dialog capabilities.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+VA VoiceBot,chatbot,0,medium,Voice-driven conversational bot combining speech and dialog capabilities.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+VAO Ally,assistant,1,low,Agent/assistant platform ('Ally'); generative assistant inferred from agent-platform type.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+VUNO Med-DeepBrain,vision,0,high,AI analysis of brain MRI images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Vectra AI,none,0,medium,Network detection-and-response security AI; security analytics does not qualify.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Verathon BladderScan Prime PLUS,vision,0,medium,Ultrasound bladder-volume estimation via ML image analysis.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Veritone,speech,0,medium,Veritone aiWARE media-analysis platform with transcription and facial recognition engines.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Veritone Digital Media Hub,search,0,medium,AI-powered search of event photo/media databases in a DAM portal.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Veritone Illuminate,speech,0,low,Government media analysis/redaction tool using transcription and detection engines.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Verkada,vision,0,high,"Cloud video surveillance with on-camera AI analytics (object/person detection, vision).",claude-fable-5,2026-07-05T00:00:00Z,llm
+Visual Studio,none,0,medium,IDE; built-in IntelliCode completion is incidental and GitHub Copilot is cataloged separately.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Visual Studio Enterprise,none,0,medium,IDE licensing SKU with no standalone AI capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+VoiceAtlas,chatbot,0,medium,"Navteca's no-code chatbot/voice-assistant framework — a bot-building product, not a general LLM surface.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Volpara Imaging,vision,0,high,AI breast-density and mammography image analysis.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Volta Medical AF-Xplorer,none,0,low,AI mapping of cardiac electrograms; signal analysis with no listed capability match.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Vyond,none,1,medium,AI text-to-video animation generation; generative but no analysis capability class fits.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Washington Forest Inventory Maps,vision,0,low,Remote-sensing ML that classifies imagery into forest-inventory maps.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+WellSaid Labs,speech,1,high,Synthetic voice / generative text-to-speech platform.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Welldoc BlueStar,none,0,low,Digital diabetes management/coaching app; personalized coaching does not map cleanly to a listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Westlaw AI,assistant,1,high,AI legal research combining semantic case-law retrieval with generative answers.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Westlaw AI,search,1,high,AI legal research combining semantic case-law retrieval with generative answers.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Whiterabbit.ai WRDensity,vision,0,high,AI breast-density assessment on mammography images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+Whooster,none,0,low,"QC correction: Public-records skip-trace lookup, not AI semantic search; consistent with TLOxp/idiCORE labeled none.",claude-fable-5,2026-07-05T00:00:00Z,qc_corrected
+Wildfire.org Turbo Plan,genai_platform,1,low,LLM-powered environmental planning acceleration tool.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Windsurf,assistant,1,high,Codeium AI coding assistant/agentic IDE.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Wiz,none,0,high,"Cloud security posture with AI risk prioritization, excluded per security rule.",claude-fable-5,2026-07-05T00:00:00Z,llm
+Worker PLUS,none,0,low,DOL data analytics tool with insufficient detail to assign a capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Yurts AI,genai_platform,1,medium,Yurts/Legion enterprise generative-AI platform; gen_ai hint overridden.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Zeiss CLARUS,vision,0,low,Fundus imaging camera; classed with medical imaging but the productized AI analysis component is unclear.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Zoom,assistant,1,medium,"Video conferencing whose Zoom AI Companion is an embedded generative meeting assistant, alongside productized meeting transcription.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Zoom,speech,1,medium,"Video conferencing whose Zoom AI Companion is an embedded generative meeting assistant, alongside productized meeting transcription.",claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+Zscaler,none,0,high,"Cloud security platform, none of the listed capabilities.",claude-fable-5,2026-07-05T00:00:00Z,llm
+crYOLO,vision,0,high,Deep-learning object detection for particle picking in cryo-EM micrographs.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+cryoDRGN,vision,0,medium,Neural-network reconstruction of 3D structure from cryo-EM images.,claude-fable-5,2026-07-05T00:00:00Z,llm
+iCAD ProFound AI,vision,0,high,"Mammography AI detection, a medical-imaging vision capability.",claude-fable-5,2026-07-05T00:00:00Z,llm
+iCatalyst RPA,none,0,high,Robotic process automation bot (RPA-only).,claude-fable-5,2026-07-05T00:00:00Z,llm
+iProov,vision,0,high,Face biometric liveness verification — the vision/biometrics capability class.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+iRhythm Zio ECG,none,0,medium,Ambulatory ECG with ML arrhythmia detection; signal analysis outside the vocabulary.,claude-fable-5,2026-07-05T00:00:00Z,llm
+idiCORE,none,0,low,LexisNexis investigative identity-search/record-linking product; no clean listed capability.,claude-fable-5,2026-07-05T00:00:00Z,qc_confirmed
+reCAPTCHA,none,0,high,"Bot-detection/risk-scoring security service, none of the listed capabilities.",claude-fable-5,2026-07-05T00:00:00Z,llm

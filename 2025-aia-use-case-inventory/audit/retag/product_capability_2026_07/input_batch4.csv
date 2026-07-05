@@ -1,0 +1,123 @@
+canonical_name,vendor,product_type,is_generative_ai_hint,is_frontier_llm_hint,parent_product,description,edge_count,agency_count,sample_use_snippets
+AWS Bedrock,Amazon,general_llm,1,1,Amazon Web Services,Amazon's managed foundation model service,13,9,Amazon Bedrock | AWS Bedrock | AWS Bedrock
+AWS Kendra,Amazon,search,0,0,Amazon Web Services,,2,2,AWS Kendra | Amazon
+AWS Lex,Amazon,nlp,0,0,Amazon Web Services,,3,3,Lex Natural Language Interface | Amazon | Amazon
+AWS Rekognition,Amazon,computer_vision,0,0,Amazon Web Services,,3,3,"aws rekognition | Amazon | User uploads a DICOM image, which is converted and passed to the AWS Rekognition service. Output is a JSON block with predictions on the location of text within an image"
+AWS Textract,Amazon,computer_vision,0,0,Amazon Web Services,Amazon's document text-extraction / OCR service,4,4,aws textract | Amazon | Amazon Textract
+AWS Transcribe,Amazon,nlp_specific,0,0,Amazon Web Services,Speech-to-text service,3,2,AWS Transcribe | Amazon | aws transcribe
+Amazon Alexa,Amazon,nlp,0,0,Amazon,Amazon's voice assistant platform supporting custom skills and voice-driven applications.,1,1,Amazon Alexa Skill
+Amazon CodeWhisperer,Amazon,coding_assistant,1,0,Amazon Q,Amazon's AI coding assistant,1,1,aws codewhisperer
+Amazon Comprehend,Amazon,nlp,0,0,Amazon Web Services,,1,1,Amazon
+Amazon Q,Amazon,general_llm,1,1,Amazon Web Services,Amazon's enterprise AI assistant,12,8,q developer | Amazon Q | q business
+Amazon SageMaker,Amazon,ml_platform,0,0,Amazon Web Services,,1,1,amazon sagemaker
+Amazon Web Services,Amazon,cloud_platform,0,0,Amazon,,13,9,amazon web services | Amazon | Amazon Web Services
+Adobe,Adobe,productivity,0,0,,,7,6,adobe | Adobe | Adobe
+Adobe Creative Cloud Suite,Adobe,productivity,1,0,Adobe,,4,4,Adobe Suite Applications | adobe | Adobe
+Adobe Firefly,Adobe,computer_vision,1,0,Adobe Creative Cloud Suite,Image generation,7,7,Adobe Firefly | Adobe Firefly | Adobe Firefly
+Adobe Photoshop,Adobe,computer_vision,1,0,Adobe Creative Cloud Suite,Image editing with generative fill and other AI features,5,4,Photoshop | Adobe Photoshop | adobe photoshop
+Adobe Premiere Pro,Adobe,media_analysis,1,0,Adobe Creative Cloud Suite,,2,2,Adobe | Adobe
+Adobe Sensei,Adobe,general_llm,1,0,Adobe Creative Cloud Suite,,1,1,adobe sensei
+Siemens ACUSON Sequoia,Siemens Healthineers,clinical_decision_support,0,0,,,1,1,via add_product
+Siemens Biograph PET/CT,Siemens Healthineers,clinical_decision_support,0,0,,,1,1,via add_product
+Siemens MAGNETOM,Siemens Healthineers,clinical_decision_support,0,0,,,1,1,MAGNETOM Vida; MAGNETOM Lumina; MAGNETOM Aera; MAGNETOM Skyra; MAGNETOM Prisma
+Siemens SOMATOM go.,Siemens Healthineers,clinical_decision_support,0,0,,,1,1,via add_product
+Siemens YSIO Max,Siemens Healthineers,clinical_decision_support,0,0,,,1,1,siemens ysio max
+Siemens syngo,Siemens Healthineers,clinical_decision_support,0,0,,,1,1,via add_product
+FA.gov PII Picker,State Department / Guidehouse,nlp,0,0,,,1,1,FA.gov PII Picker
+FA.gov RedactAid,State Department / Guidehouse,document_ai,0,0,,,1,1,FA.gov RedactAid
+State FACTS Info Foreign Assistance NLP,State Department / Guidehouse,nlp,0,0,,,1,1,product_queue_review_2026-06: 'Guidehouse FACTS Info Natural Language Processing (NLP) for Foreign Assistance Appropriations Analysis' matches catalog State FACTS Info Foreign Assistance NLP.
+State Integrated Country Strategy Turbo,State Department / Guidehouse,nlp,0,0,,,1,1,product_queue_review_2026-06: 'Integrated Country Strategy (ICS) Turbo' (Guidehouse) matches catalog State Integrated Country Strategy Turbo.
+State NIV Adjudication Review Recommendation Engine,State Department / Guidehouse,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'NIV Adjudication Review Recommendation Engine (ARRE)' (Guidehouse) matches catalog State NIV Adjudication Review Recommendation Engine.
+Apple Face ID,Apple,consumer_feature,0,0,,Apple's on-device facial recognition for device unlock,24,23,Apple Iphone | Apple iPhone | Apple iPhone
+Apple Intelligence,Apple,general_llm,1,0,,,1,1,Apple Intelligence
+Apple Maps,Apple,consumer_feature,0,0,,Apple Maps with AI-powered routing,16,16,Apple Maps | Apple Maps | Apple Maps
+Apple News,Apple,consumer_feature,0,0,,,1,1,Apple News
+GrantSolutions AI Writing Assistant,GrantSolutions (HHS Shared Service),general_llm,1,0,GrantSolutions,,1,1,GrantSolutions AI Writing Assistant
+GrantSolutions Helpdesk Agent,GrantSolutions (HHS Shared Service),general_llm,1,0,GrantSolutions,,1,1,GrantSolutions Helpdesk Agent
+GrantSolutions Recipient Risk Tool,GrantSolutions (HHS Shared Service),data_analytics,0,0,GrantSolutions,,1,1,GrantSolutions Recipient Risk Tool
+GrantSolutions Text Analyzer Tool,GrantSolutions (HHS Shared Service),nlp,0,0,GrantSolutions,,1,1,GrantSolutions Text Analyzer Tool
+Palantir AIP,Palantir,agent_platform,1,0,Palantir Federal Cloud Service,Palantir's AI Platform,25,6,Palantir | Palantir | palantir
+Palantir Case Management & Analytics (CMA),Palantir,data_analytics,0,0,Palantir Federal Cloud Service,,2,1,Palantir Case Management & Analytics (CMA) | Palantir Case Management & Analytics (CMA)
+Palantir Decision and Analytics Platform (DNA-P),Palantir,data_analytics,0,0,Palantir Federal Cloud Service,,2,1,Palantir Decision and Analytics Platform (DNA-P) | Palantir Decision and Analytics Platform (DNA-P)
+Palantir Federal Cloud Service,Palantir,cloud_platform,0,0,,,3,2,"Palantir Palantir Federal Cloud Service | product_queue_review_2026-06: 'Palantir CfA PFCS PFCS Proving Ground' — PFCS is the Palantir Federal Cloud Service, a catalog entry. | product_queue_review_2026-06: 'Palantir, OpenAI CfA PFCS StateChat' — StateChat is State's enterprise GenAI chatbot built on Palantir Federal Cloud Service with OpenAI models."
+COREII,DOE Idaho National Lab,general_llm,1,0,,,1,1,COREII
+INL Classified Subject Area GenAI,DOE Idaho National Lab,general_llm,1,0,,,1,1,product_queue_review_2026-06: 'Open source development with INL Advanced Analytics Center of Excellence ... GenAI for Classified Subject Area Categorization' - catalog 'INL Classified Subject Area Gen
+INL Intelligent Automation,DOE Idaho National Lab,general_llm,1,0,,,1,1,product_queue_review_2026-06: 'AI for Intelligent Automation ... using INL procedures and controlled documents' - catalog 'INL Intelligent Automation' (DOE Idaho National Lab).
+FERC Zvolvant Inspection AI,Zvolvant,computer_vision,0,0,,,1,1,product_queue_review_2026-06: 'Zvolvant ... Improve Safety Inspections Use Case ... dam and LNG pipeline structure inspections' — catalog entry 'FERC Zvolvant Inspection AI'.
+FERC Zvolvant Interconnection Assistant,Zvolvant,nlp,1,0,,,1,1,product_queue_review_2026-06: 'Zvolvant ... Support Interconnection Request Responses Use Case' — catalog entry 'FERC Zvolvant Interconnection Assistant'.
+FERC Zvolvant Market Surveillance,Zvolvant,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'Zvolvant ... Enhance Market Surveillance and Fraud Detection Use Case' — catalog entry 'FERC Zvolvant Market Surveillance'.
+EPA Agency Records Management System,EPA,document_ai,0,0,,,1,1,product_queue_review_2026-06: 'Agency Records Management System (ARMS)' built by Savan Group — exact catalog entry 'EPA Agency Records Management System'.
+EPA RCRA PA,EPA,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'RCRA PA Risk scoring of Large Quantity Generators (LQGs) to support RCRA inspections' — catalog entry 'EPA RCRA PA'.
+NIAID TB Portals (TB DEPOT),NIAID,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'TB DEPOT (Tuberculosis Data Exploration Portal)' matches catalog NIAID TB Portals (TB DEPOT).
+NIAID TB Portals Outlier Detection,NIAID,computer_vision,0,0,NIAID TB Portals (TB DEPOT),,1,1,product_queue_review_2026-06: 'TB Portals Outlier Detection Lambda Function' matches catalog NIAID TB Portals Outlier Detection.
+State Department AI Research Engine (AIRE),State Department / Deloitte,general_llm,1,0,,,1,1,"product_queue_review_2026-06: 'AI Research Engine (AIRE)' (Deloitte, Data.State-SBU) matches catalog State Department AI Research Engine (AIRE)."
+State Department Declassification Review AI,State Department / Deloitte,document_ai,0,0,,,1,1,product_queue_review_2026-06: 'AI-Augmented Declassification Review' (Deloitte) matches catalog State Department Declassification Review AI.
+ACCRETE ARGUS,ACCRETE AI Government,supply_chain,0,0,,,1,1,"product_queue_review_2026-06: ""ACCRETE AI Government ARGUS ... ARGUS AI Supply Chain Influence"" -- catalog ACCRETE ARGUS."
+AIS Resume Screening Tool,AIS,document_ai,0,0,,,1,1,product_queue_review_2026-06: vendor_name 'AIS' on an 'AI-Assisted Resume Screening Tool' - matches catalog 'AIS Resume Screening Tool'.
+AgileMD eCART,AgileMD,clinical_decision_support,0,0,,,1,1,agilemd ecart
+Alation Data Catalog,Alation,data_catalog,0,0,,,1,1,Alation Data Catalog
+Autonomous Surveillance Tower,Anduril,physical_security,0,0,,,1,1,Anduril Autonomous Surveillance Towers
+AttackIQ,AttackIQ,security_tool,0,0,,Breach-and-attack-simulation platform that uses ML to validate security controls against MITRE ATT&CK techniques.,1,1,AttackIQ
+BI SmartLINK,BI Incorporated,biometrics,0,0,,,1,1,product_queue_review_2026-06: 'BI ISAP IV (SmartLink)' biometric check-in app - catalog 'BI SmartLINK' (BI Incorporated).
+Benefits Manager Virtual Assistant,Benefits Manager,general_llm,1,0,,,1,1,product_queue_review_2026-06: 'Benefits Manager Virtual Benefits Assistant ... Virtual Assistant is designed to answer questions' — catalog entry 'Benefits Manager Virtual Assistant'.
+Bloomberg Government,Bloomberg,investigative_data,0,0,,"Bloomberg Government (BGOV) provides policy, regulatory, and procurement analytics for federal stakeholders.",2,2,Bloomberg Government (BGOV) | Bloomberg Government
+BLS Expenditure Classification Autocoder,Bureau of Labor Statistics,data_analytics,0,0,,,1,1,"product_queue_review_2026-06: ""Expenditure Classification Autocoder [a]ssigns expense classification categories ... Consumer Expenditure Diary Survey"" — catalog BLS Expenditure Classification Autocode"
+CANDA UEBA,CANDA Solutions,security_tool,0,0,,,1,1,product_queue_review_2026-06: 'CANDA Solutions Vetting Identities for an Enterprise Workforce User and Entity Behavior Analytics (UEBA)' - catalog 'CANDA UEBA'.
+Pangolin Lineage,COG-UK,scientific_ml,0,0,,,1,1,Pangolin Lineage
+CareView Patient Safety System,CareView Communications,computer_vision,0,0,,,1,1,careview patient safety system
+CellaVision DM1200,CellaVision,clinical_decision_support,0,0,,,1,1,cellavision dm1200
+Citrix,Citrix,virtualization,0,0,,,3,2,Citrix | citrix | citrix
+Cofense PhishMe,Cofense,security_tool,0,0,,Cofense's phishing simulation and reporting platform with ML-based threat triage.,1,1,Cofense
+Conductor Conduit AI,Conductor,document_ai,1,0,,Conductor's Conduit AI platform for document review and litigation workflows.,1,1,Conduit AI
+Crowdstrike Falcon,Crowdstrike,security_tool,0,0,,Endpoint security with ML,15,13,Crowdstrike | CrowdStrike | CrowdStrike Falcon
+LISA Chatbot,DOE / AWS,general_llm,1,0,,,1,1,LISA Chatbot
+SWBTRAC,DOJ,data_analytics,0,0,,,1,1,SWBTRAC
+Dataminr First Alert,Dataminr,social_listening,0,0,,,3,2,First Alert/Dataminr | product_queue_review_2026-06: 'Dataminr Dataminr Public Information Compilation for Travel Threat Analysis' - catalog 'Dataminr First Alert' is the government product. | product_queue_review_2026-06: Use case 'Dataminr' for 'Timely awareness of transportation safety events' — Dataminr's public-sector product is cataloged as Dataminr First Alert.
+Doble Test Assistant,Doble Engineering,data_analytics,1,0,,,1,1,Doble Test Assistant
+Edwards Acumen Hypotension Prediction Index,Edwards Lifesciences,clinical_decision_support,0,0,,,1,1,via add_product
+Equifax Background Screening,Equifax,data_analytics,0,0,,,1,1,"product_queue_review_2026-06: 'Equifax, Trans Union Financial Background Investigation ... automating the verification process for conducting background screenings' — maps to the two bureaus' catalog "
+Elsa (FDA),"FDA (internal, vendor-supported)",general_llm,1,0,,FDA's Elsa is an internal generative AI assistant used by FDA staff for document drafting and search.,5,1,Elsa | elsa | elsa
+Fivecast,Fivecast,other,0,0,,,1,1,"product_queue_review_2026-06: 'Penlink, Fivecast  Open-Source Intelligence for Investigations' - Penlink is in catalog; Fivecast (commercial OSINT analytics vendor, product ONYX) is a real product mis"
+GAIA AI,GAIA AI,computer_vision,0,0,,,1,1,GAIA AI
+GlobalComm Video Surveillance,GlobalComm,computer_vision,0,0,,,1,1,GlobalComm Video Surveillance
+H2O GPTe,H2O.ai,general_llm,0,0,,,1,1,product_queue_review_2026-06: Vendor field 'H2O.GPTe' powering the NBS Virtual Assistant — catalog entry 'H2O GPTe'.
+ORR Unaccompanied Children Policy Research Tool,HHS Office of Refugee Resettlement,general_llm,1,0,,,1,1,product_queue_review_2026-06: 'Unaccompanied Children Program Policy & Procedure Research Tool' for ORR matches catalog ORR Unaccompanied Children Policy Research Tool.
+HeyGen,HeyGen,media_analysis,1,0,,,3,2,HeyGen | HeyGen | HeyGen
+Ideation ReadyAI,Ideation,general_llm,1,0,,,3,1,Ideation ReadyAI | product_queue_review_2026-06: 'Microsoft (Azure Commercial OpenAI Cloud Offerings) ReadyAI Executive Summary GPT' - FEMA GPT built on Azure OpenAI within the ReadyAI platform (catalog 'Ideation ReadyA | product_queue_review_2026-06: 'Microsoft (OpenAI part of Azure Commercial Cloud offerings) ReadyAI OCFO Code Assist GPT' - FEMA GPT on Azure OpenAI within the ReadyAI platform (catalog 'Ideation Ready
+Kiteworks,Kiteworks,security_tool,0,0,,,1,1,Kiteworks
+LIGER Generative AI Toolkit,"LMI Consulting, LLC",general_llm,1,0,,,1,1,"LMI Consulting, LLC  LIGER Generative AI Toolkit"
+Cell Hawk,LeadsOnline,investigative_data,0,0,,LeadsOnline Cell Hawk parses and visualizes call detail records and tower data for investigations.,1,1,Cell Hawk
+Lexical Intelligence,"Lexical Intelligence, LLC",nlp,0,0,,,4,1,Lexical Intelligence | Lexical Intelligence | Lexical Intelligence
+Lyssn,Lyssn,audio_analysis,0,0,,,1,1,lyssn
+Mark43,Mark43,investigative_data,1,0,,Cloud-based public-safety records management and CAD platform with AI-assisted report writing.,1,1,Mark43 Public Safety Records
+MediaViz AI,MediaViz,media_analysis,1,0,,,2,2,MediaViz AI | MediaViz AI
+Motorola License Plate Recognition,Motorola,computer_vision,0,0,,,2,2,Motorola | Motorola
+NEC NeoFace,NEC,biometrics,0,0,,,10,1,NEC | NEC | NEC (algorithm only)
+MirBot,NIH / Technatomy Axle,nlp,0,0,,,1,1,MirBot
+Nightwing PII Detection,Nightwing Intelligence Solutions,nlp,0,0,,,1,1,"product_queue_review_2026-06: 'Nightwing Intelligence Solutions, LLC ... this AI tool uses Natural Language Processing (NLP) to automatically flag potential PII' - catalog 'Nightwing PII Detection'."
+OnCue Trial Presentation,OnCue Technology,legal_research,0,0,,Trial presentation software used by litigators to organize and display exhibits and transcripts in court.,1,1,OnCue Technology
+Imaris,Oxford Instruments,scientific_ml,0,0,,Imaris microscopy image-analysis software with ML-based segmentation and tracking.,1,1,Imaris
+PassiveLogic,PassiveLogic,scientific_ml,0,0,,,1,1,PassiveLogic
+Pingoo.AI,Pingoo.AI,nlp,1,0,,,1,1,pingoo.ai
+Poolside,Poolside,coding_assistant,1,0,,AI coding assistant,2,2,Poolside | Poolside
+Pyramid Analytics,Pyramid Analytics,data_analytics,1,0,,,2,1,pyramid analytics | pyramid analytics
+Rank One Computing,Rank One Computing,biometrics,0,0,,Rank One Computing face recognition and biometric SDK used in identity and law-enforcement deployments.,1,1,Rank One Computing
+Recorded Future,Recorded Future,threat_intel,0,0,,,1,1,Recorded Future  Cyber Threat Analysis (Recorded Future)
+Relativity,Relativity,ediscovery,1,0,,,9,4,Relativity | relativity | relativity
+SAP Concur,SAP,productivity,0,0,,Travel and expense,7,7,SAP Concur | SAP Concur | Concur
+SentinelOne,SentinelOne,security_tool,0,0,,Endpoint security with ML-based threat detection,2,2,SentinelOne | SentinelOne
+Smiths Detection TruNarc,Smiths Detection,forensics,0,0,,Handheld Raman-spectroscopy narcotics analyzer with onboard classification of controlled substances.,1,1,"TruNarc, Smiths Detection"
+Spokeo,Spokeo,investigative_data,0,0,,Spokeo people-search service aggregating public records for investigative lookups.,1,1,Spokeo
+Supportbench,Supportbench,itsm,1,0,,,2,2,Supportbench | Supportbench
+SimplyFile,TechHit,productivity,0,0,,,1,1,SimplyFile
+TeraRecon iNtuition,TeraRecon (ConcertAI),clinical_decision_support,0,0,,,1,1,terarecon intuition
+FSA Aidan Chatbot,U.S. Department of Education / Accenture,general_llm,0,0,,,1,1,"product_queue_review_2026-06: ""Aidan Chat-bot ... Federal Student Aid's (FSA) virtual assistant"" built by Accenture — catalog FSA Aidan Chatbot."
+ATLAS (Forest Service),USDA Forest Service,data_analytics,0,0,,,3,1,"product_queue_review_2026-06: ""Kikaha Solutions, LLC ... Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS), USFS Geospatial Platform ... Survey and mapping of forest damag | product_queue_review_2026-06: ""Google Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS) TreeSearch ... streamline the usability of the US Forest Service (USFS) TreeSearch  | product_queue_review_2026-06: ""Wildfire.org Advanced platform for Technical Learning and Analytics in the Sciences (ATLAS) Turbo plan ... Accelerating environmental planning"" -- catalog Wildfire.org T"
+USDA Automated Road Mapping,USDA Forest Service / RedCastle Resources,other,0,0,,,1,1,"product_queue_review_2026-06: ""RedCastle Resources  Automated Road Mapping ... Forest Service employees currently rely on time-consuming and labor-intensive methods like GPS mapping"" -- contractor-bui"
+Ultralytics YOLO,Ultralytics,computer_vision,0,0,,,1,1,"product_queue_review_2026-06: Vendor ""Ultralytics"" doing boat detection ""by scanning video"" — Ultralytics' product is YOLO object detection; catalog Ultralytics YOLO."
+EnerGPT,Unknown / DOE-targeted vendor,general_llm,1,0,,DOE-targeted generative AI assistant tuned for energy-domain queries; vendor not yet confirmed in inventory text.,3,1,EnerGPT | EnerGPT | EnerGPT
+Verathon BladderScan Prime PLUS,Verathon,clinical_decision_support,0,0,,,1,1,verathon bladderscan prime plus
+WellSaid Labs,WellSaid Labs,nlp_specific,1,0,,Synthetic voice / text-to-speech platform,2,2,Wellsaid | Wellsaid
+Wiz,Wiz,security_tool,0,0,,Cloud security with AI-driven risk prioritization,2,2,Wiz | Wiz
+iCAD ProFound AI,iCAD,clinical_decision_support,0,0,,,1,1,icad profound ai
+Grok,xAI,general_llm,1,0,,,2,2,xAI Grok Pilot | Grok

@@ -1,0 +1,97 @@
+canonical_name,verdict,categories,gen_ai,confidence,reason
+FS Pro,confirm,none,0,low,Productivity tool with no evidenced capability; the gen-AI hint alone is insufficient per hints discipline.
+FTC Sentinel Analytic Sandbox,confirm,none,0,low,Analytics sandbox environment with no described AI capability class.
+FTC Sentinel Developer Productivity,confirm,assistant,1,medium,Code-quality/developer-productivity AI embedded in developer workflow fits assistant.
+FTC Sentinel Graph Analytics,confirm,none,0,low,Graph/link analytics over complaints maps to no vocabulary category.
+Federal Docket Management System,confirm,none,0,low,Docket management system with no evidence of OCR or other vocabulary capability despite the document_ai type.
+FirstTwo,confirm,none,0,low,Geospatial OSINT aggregation for lookups is not a vocabulary capability.
+Flashpoint,confirm,none,0,low,Threat-intelligence data platform; security intel analytics does not qualify per the CrowdStrike rule.
+GAIA AI,confirm,vision,0,low,Computer-vision product per type and name; thin detail justifies low.
+GE Healthcare EchoPAC,confirm,vision,0,medium,Automated echocardiogram measurement is medical imaging AI in the vision class.
+Gemini,confirm,genai_platform|assistant,1,high,Matches the rubric worked example for Gemini exactly.
+Genesys Cloud CX,confirm,chatbot|assistant,1,medium,Contact-center bots plus agent-assist copilot supports both labels.
+Ginnie Mae Automated Draft Narrative Reports,confirm,nlp,0,low,Template/analysis-driven NLG reading is plausible on thin evidence; nlp with gen_ai=0 at low stands.
+Ginnie Mae Subledger Data Quality ML,confirm,none,0,low,Financial data-quality ML has no vocabulary category.
+GitHub Copilot,confirm,assistant,1,high,Rubric-listed assistant example.
+Glassbeam Clinsights,confirm,none,0,low,Device machine-data analytics fits no category.
+Google,confirm,none,0,low,Bare vendor placeholder with no identifiable product.
+Google Agentspace,confirm,search|assistant,1,medium,Agentic enterprise search over org data grounded in Gemini fits search plus assistant.
+Google Chrome Generative AI,confirm,assistant,1,medium,Embedded in-browser generative writing/help features are a copilot not a platform.
+Google Cloud Platform,confirm,ml_platform|genai_platform,1,low,Umbrella entry credibly covering Vertex-hosted ML and generative models; low is right for the breadth.
+Google Distributed Cloud,correct,genai_platform,1,low,Snippets pair it with OpenAI models it hosts on-prem; hosting/serving generative models meets the genai_platform definition even for an infra product.
+Google News Brief,confirm,nlp,1,low,Generative news summarization sits in nlp with the gen_ai flag per the rubric.
+Google Pixel,confirm,vision,1,low,Face Unlock biometrics is vision; generative photo editing carries gen_ai=1.
+Google Vertex AI,confirm,ml_platform|genai_platform,1,high,Data-science platform that also serves generative models; textbook dual label.
+Google Workspace,confirm,none,0,low,Suite itself has no capability; Gemini assistant is catalogued separately.
+Grammarly,confirm,assistant,1,high,Writing assistant embedded in user workflows with generative compose.
+GrantSolutions,confirm,none,0,low,Grants-management platform with no evidenced capability; AI features are separate catalog entries.
+GrantSolutions AI Writing Assistant,confirm,assistant,1,high,Generative writing assistant embedded in the GrantSolutions workflow.
+GrantSolutions Helpdesk Agent,correct,chatbot,1,medium,A helpdesk support virtual agent is the task-specific dialog product class (chatbot) rather than a workflow copilot.
+GrantSolutions Recipient Risk Tool,confirm,none,0,low,Risk-scoring analytics maps to no vocabulary category.
+Grok,confirm,genai_platform,1,high,General-purpose LLM chat/API surface.
+H2O GPTe,confirm,genai_platform,1,high,h2oGPTe is a rubric-listed genai_platform example.
+HHS FITARA Tool,confirm,doc_processing,0,low,Capability inferred only from the document_ai type; low confidence is the honest treatment.
+HRSA AI Audit Resolution Assistant,confirm,assistant,1,medium,AI assistant on UiPath resolving audits within a workflow.
+Harvey,confirm,assistant,1,high,Domain-specific generative legal assistant.
+HealthData.gov AI Harvest Service,confirm,nlp,0,low,Metadata harvesting/classification of datasets is text analytics; generative use unproven.
+Hootsuite,confirm,nlp,1,low,Social analytics plus AI content generation supports nlp with gen_ai=1.
+IBM ARGOS,confirm,nlp,0,low,Watson-family text processing inferred from type; low is appropriate.
+IBM CoreDF,confirm,doc_processing,0,low,Watson-family document processing inferred from type.
+IBM watsonx Code Assistant,confirm,assistant,1,high,Generative code assistant including the Z variant.
+INL Classified Subject Area GenAI,correct,nlp,1,low,The described capability is subject-area categorization of documents (text classification) — a GenAI-powered application not an LLM platform.
+INL Intelligent Automation,correct,assistant,1,low,GenAI applied over INL procedures and controlled documents for workflow automation reads as an embedded assistant not a model platform.
+ISO ClaimSearch,confirm,none,0,low,Claims database with fraud analytics; predictive analytics is outside the vocabulary.
+Ideation ReadyAI,confirm,genai_platform,1,high,Platform hosting FEMA GPTs built on Azure OpenAI.
+Informatica,confirm,none,0,low,Data integration/catalog; CLAIRE metadata ML does not clearly map to a category.
+KESTREL,confirm,vision,0,low,Imagery-derived landing-location prediction is an imagery-analysis task.
+LANL AI Portal,confirm,genai_platform,1,medium,Internal portal giving staff a general LLM chat surface.
+LIGER Generative AI Toolkit,confirm,genai_platform,1,medium,Toolkit for building generative AI capabilities.
+LaserAI,confirm,nlp,0,medium,ML screening and extraction from literature is text classification/extraction.
+Lasso Security,confirm,none,0,medium,LLM security monitoring is security analytics which does not qualify.
+Lectora AI,confirm,assistant,1,low,Embedded generative course-authoring assistant in an e-learning tool.
+Lexis+ AI,confirm,assistant|search,1,high,Generative legal-research assistant over semantic retrieval.
+Lexis+ Protege,confirm,assistant,1,high,Personalized generative legal assistant in the Lexis workflow.
+LexisNexis,confirm,search,0,low,Research brand whose core is retrieval over legal/public-records content.
+LexisNexis Risk Solutions,confirm,search,0,low,Identity and public-records lookup service centered on record search.
+LibreChat,confirm,genai_platform,1,high,Open-source general LLM chat UI fronting model APIs — genai_platform per the chat-UI rule.
+Litera TOA Builder,confirm,nlp,0,medium,Legal citation extraction to build tables of authorities is entity extraction.
+Llama,confirm,genai_platform,1,high,Open-weight generative LLM family; labeler correctly overrode the stale hint.
+MAPPRITE,confirm,genai_platform,1,low,LLM-flagged DOE tool with insufficient detail; low stands.
+MCG Energy Solutions Integrated Asset Manager,confirm,none,0,high,Energy bid/scheduling/settlement software with no AI capability.
+MSHA AI Headset,confirm,vision,0,low,Camera-based mine-safety hazard detection inference is reasonable at low.
+Magnet Forensics,confirm,vision|assistant,1,medium,Snippets explicitly name Magnet Copilot and Axiom media categorization so the dual label is clearly right; upgraded from low.
+Mark43,confirm,assistant,1,medium,AI-assisted report writing embedded in a records platform.
+Matroid I4 Viewer,confirm,vision,0,high,Matroid object/video detection product.
+MediaViz AI,correct,vision,0,low,Media/image analysis is supported but nothing evidences generative output; the gen-AI hint appears spurious so gen_ai=0.
+Medtronic CareLink,confirm,none,0,low,Remote device-monitoring telemetry network fits no category.
+Medtronic LINQ II,confirm,none,0,low,Signal-based arrhythmia detection on a cardiac monitor fits no vocabulary class.
+Medtronic O-arm O2,confirm,none,0,low,Intraoperative imaging hardware rather than an AI analysis product.
+Merlin,confirm,genai_platform,1,medium,DOE KCNSC general-purpose LLM surface.
+Microsoft,confirm,none,0,low,Vendor-level umbrella with no identifiable product.
+Microsoft 365 Apps for Enterprise,confirm,none,0,low,Office licensing SKU; Copilot is catalogued separately.
+Microsoft 365 Copilot,confirm,assistant,1,high,The rubric worked example for assistant.
+Microsoft 365 Copilot Chat,confirm,assistant,1,high,Free Copilot tier embedded in the M365 workflow suite; assistant per the M365 Copilot precedent.
+Microsoft Copilot for Security,confirm,assistant,1,high,GenAI copilot embedded in the security-operations workflow.
+Microsoft Discovery,confirm,genai_platform,1,low,Agentic generative platform for scientific R&D; sparse evidence keeps it low.
+Microsoft PowerPoint,confirm,none,0,high,Presentation software with no standalone AI capability.
+Microsoft Sentinel,confirm,none,0,high,SIEM detection ML alone does not qualify per the rubric.
+MirBot,confirm,chatbot,0,low,Named bot inferred conversational; no generative evidence.
+ModelAngelo,confirm,vision,0,low,Deep-learning interpretation of CryoEM density maps is image-interpretation at the edge of vision.
+Monday.com,confirm,assistant,1,medium,Work-OS with embedded monday AI generative assistant.
+Mural,confirm,assistant,1,low,Whiteboard with embedded AI clustering/summarization assistant.
+NARA A1 Museum AI,confirm,vision,0,low,Exhibit personalization typed computer vision; record too thin for more.
+NEC NeoFace,confirm,vision,0,high,Facial-recognition biometric matching.
+NIAID DAIT AIDS Research Prioritization,confirm,nlp,0,low,Text analysis of grant applications to suggest prioritization.
+NIAID TB Portals (TB DEPOT),confirm,none,0,low,Data exploration portal; no vocabulary capability evidenced.
+NIAID TB Portals Outlier Detection,confirm,none,0,low,Anomaly-detection function fits no category.
+NLCOO Lessons Learned AI,confirm,search,0,low,AI retrieval over lessons-learned knowledge.
+NetDocuments,confirm,search|assistant,1,medium,Description explicitly names predictive AI search and ndMAX generative drafting so the label is clearly right; upgraded from low.
+NexisXplore,confirm,search,0,low,LexisNexis investigative research and retrieval product.
+Nlets LPR Pointer Index,confirm,none,0,low,Pointer index federating LPR hits performs no recognition itself — correct exclusion.
+NotebookLM,confirm,assistant,1,high,Product core is the document-Q&A assistant experience powered by Gemini.
+OATI webSmartTag,confirm,none,0,high,Transmission scheduling/e-tagging software with no AI capability.
+ORR Unaccompanied Children Policy Research Tool,correct,assistant,1,low,A task-specific generative policy/procedure research and Q&A tool is an assistant application rather than a general LLM platform surface.
+OpenAI API,confirm,genai_platform,1,high,Direct general-purpose generative model API surface.
+OpenAI Codex (legacy model),confirm,genai_platform,1,high,The generative code model itself is the platform class.
+OpenAI Codex CLI,confirm,assistant,1,high,Agentic terminal coding assistant embedded in developer workflow.
+OpenAI Deep Research,confirm,genai_platform,1,medium,OpenAI's own agentic LLM research surface generating cited reports; a first-party LLM product not an embedded third-party copilot.

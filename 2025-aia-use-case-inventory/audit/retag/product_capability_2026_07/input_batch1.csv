@@ -1,0 +1,123 @@
+canonical_name,vendor,product_type,is_generative_ai_hint,is_frontier_llm_hint,parent_product,description,edge_count,agency_count,sample_use_snippets
+Azure AI Document Intelligence,Microsoft,document_ai,0,0,Microsoft Azure Platform,,2,2,microsoft | Microsoft
+Azure AI Foundry,Microsoft,general_llm,1,1,Microsoft Azure Platform,,4,2,microsoft | Azure AI Foundry | Azure AI Foundry
+Azure AI Translator,Microsoft,translation,1,0,Microsoft Azure Platform,,1,1,"product_queue_review_2026-06: 'Deloitte, AzureAI AzureAI Translator TIP Report Research Translation' — maps to Azure AI Translator."
+Azure Computer Vision,Microsoft,other,0,0,,,1,1,"product_queue_review_2026-06: ""Automating blank page detection with Non-Generative AI (e.g., Azure Computer Vision and Docum[ent Intelligence]"" — Document Intelligence is in catalog; Azure Computer Vi"
+Azure Data Factory,Microsoft,data_analytics,0,0,Microsoft Azure Platform,Microsoft Azure data integration service with embedded AI features such as anomaly detection and data-quality scoring.,1,1,Azure Data Factory
+Azure OpenAI,Microsoft,general_llm,1,1,Microsoft Azure Platform,OpenAI models hosted on Azure,49,15,Microsoft | Microsoft | Microsoft
+Azure Speech,Microsoft,transcription,0,0,Microsoft Azure Platform,,4,4,Microsoft | Microsoft | azure speech
+Azure Synapse Analytics,Microsoft,data_analytics,0,0,Microsoft Azure Platform,,1,1,Azure Synapse Analytics
+GitHub Copilot,Microsoft,coding_assistant,1,0,Microsoft,AI pair programmer for code generation,27,19,github copilot | github copilot | github copilot
+Microsoft,Microsoft,productivity,0,0,,,20,6,Microsoft | microsoft | Microsoft
+Microsoft 365,Microsoft,productivity,0,0,Microsoft,,11,7,Microsoft 365 | microsoft 365 | microsoft
+Microsoft 365 Apps for Enterprise,Microsoft,coding_assistant,1,0,Microsoft 365,,1,1,Microsoft 365 Apps for Enterprise
+Microsoft 365 Copilot,Microsoft,general_llm,1,1,Microsoft 365,Microsoft's enterprise LLM assistant integrated with Office apps,205,41,Microsoft 365 Copilot | Copilot for Microsoft 365 | Microsoft M365 Copilot
+Microsoft 365 Copilot Chat,Microsoft,general_llm,1,1,Microsoft 365 Copilot,The free in-app Copilot chat tier within Microsoft 365 (distinct from the paid M365 Copilot SKU),16,9,Microsoft Copilot Chat | Microsoft Copilot Chat | Microsoft Copilot Chat
+Microsoft AI Builder,Microsoft,ml_platform,0,0,Microsoft Power Platform,,4,2,AI Builder Document Scraping | Microsoft AI Builder | The 889 Document Processor is an Optical Character Recognition (OCR) model built using Microsoft AI Builder
+Microsoft Azure Authoring Tools,Microsoft,developer_tool,0,0,Microsoft Azure Platform,,1,1,Microsoft Azure Authoring Tools
+Microsoft Azure Platform,Microsoft,cloud_platform,0,0,Microsoft,,10,6,Microsoft | Microsoft | microsoft
+Microsoft Azure PowerShell,Microsoft,developer_tool,0,0,Microsoft Azure Platform,,1,1,Microsoft Azure PowerShell
+Microsoft Azure Quantum Elements,Microsoft,scientific_ml,0,0,Microsoft Azure Platform,,1,1,Microsoft Azure Quantum Elements
+Microsoft Copilot Studio,Microsoft,agent_platform,1,0,Microsoft Power Platform,Low-code platform for building custom copilots and agents,6,4,Copilot Studio | Microsoft Copilot Studio | microsoft copilot studio
+Microsoft Copilot for Security,Microsoft,security_tool,1,0,Microsoft 365,Microsoft's GenAI-assisted security operations copilot,3,3,Microsoft Copilot for Security | Security Copilot | Microsoft Security Copilot
+Microsoft Defender,Microsoft,security_tool,0,0,Microsoft 365,Endpoint security with ML-based threat detection,16,16,Microsoft Defender | MS Defender | Microsoft Defender
+Microsoft Discovery,Microsoft,scientific_ml,0,0,Microsoft,,1,1,Microsoft Discovery
+Microsoft Dynamics 365,Microsoft,productivity,0,0,Microsoft,,1,1,Microsoft Dynamics Online
+Microsoft Edge,Microsoft,consumer_feature,0,0,Microsoft,,1,1,Microsoft Edge
+Microsoft Exchange Server,Microsoft,productivity,0,0,Microsoft 365,,1,1,Microsoft Exchange Server
+Microsoft HoloLens,Microsoft,computer_vision,0,0,Microsoft,,1,1,"product_queue_review_2026-06: ""BGC/CLIRIO Hololens ... train Inspectors to visually inspect unsafe areas"" — HoloLens maps to catalog Microsoft HoloLens; Clirio (BGC Engineering spin-out) is the AR ins"
+Microsoft OneDrive,Microsoft,productivity,0,0,Microsoft 365,,2,1,Microsoft OneDrive | Microsoft OneDrive MUI
+Microsoft OneNote,Microsoft,productivity,0,0,Microsoft 365,,2,1,Microsoft OneNote | Microsoft OneNote MUI
+Microsoft Outlook,Microsoft,productivity,0,0,Microsoft 365,,3,2,Microsoft Outlook MUI | Microsoft Outlook | Microsoft Outlook
+Microsoft Power BI,Microsoft,data_analytics,0,0,Microsoft Power Platform,,4,3,Microsoft Power BI Desktop | Microsoft Power BI | Microsoft Power BI
+Microsoft Power Platform,Microsoft,ml_platform,0,0,Microsoft,,8,5,Microsoft Power Platform | Microsoft Power Platform | Microsoft
+Microsoft PowerPoint,Microsoft,productivity,0,0,Microsoft 365,,1,1,Microsoft PowerPoint MUI
+Microsoft Project,Microsoft,productivity,0,0,Microsoft 365,,1,1,Microsoft Project
+Microsoft Purview,Microsoft,security_tool,0,0,Microsoft 365,Data governance and compliance with ML classification,4,4,purview | Microsoft Purview | Microsoft Purview
+Microsoft Purview eDiscovery,Microsoft,ediscovery,0,0,Microsoft Purview,,1,1,Microsoft eDiscovery Attorney-Client Privilege Detection
+Microsoft ScreenSketch,Microsoft,productivity,0,0,Microsoft,,1,1,Microsoft ScreenSketch
+Microsoft Search in Bing,Microsoft,search,0,0,Microsoft 365,,2,1,Microsoft | Microsoft Search in Bing
+Microsoft Sentinel,Microsoft,security_tool,0,0,Microsoft Azure Platform,,4,1,Microsoft Sentinel | Microsoft Sentinel | Microsoft Sentinel
+Microsoft Skype,Microsoft,productivity,0,0,Microsoft,,1,1,Microsoft Skype App
+Microsoft Teams,Microsoft,productivity,0,0,Microsoft 365,Collaboration platform with AI features,101,23,teams | teams | teams
+Microsoft Viva,Microsoft,productivity,1,0,Microsoft,,2,2,Microsoft Viva | Viva Insights
+SQL Server Management Studio,Microsoft,developer_tool,0,0,Microsoft,,2,2,SQL Server Management Studio | Microsoft
+Visual Studio,Microsoft,developer_tool,0,0,Microsoft,,3,3,Visual Studio Community | visual studio | Visual Studio
+Visual Studio Enterprise,Microsoft,developer_tool,0,0,Visual Studio,,1,1,Visual Studio Enterprise
+AWS Translate,Amazon Web Services,translation,1,0,Amazon Web Services,Amazon's neural machine translation service for translating text between languages.,1,1,AWS Translate
+Amazon Connect,Amazon Web Services,nlp,1,0,Amazon Web Services,"AWS cloud contact center with built-in AI for IVR, transcription, sentiment, and agent assist.",5,4,Amazon Connect | amazon | amazon connect
+Axon Evidence,Axon,forensics,1,0,,"Digital evidence management platform (evidence.com) with AI-driven redaction, transcription, and video retention used by law enforcement.",5,2,Axon Evidence.com | evidence.com | Axon Video Retention Solution (VRS)
+Axon FUSUS,Axon,physical_security,0,0,Axon Evidence,"Real-time crime center platform that integrates camera feeds, sensors, and analytics for law-enforcement situational awareness.",1,1,Axon FUSUS
+Ginnie Mae Automated Draft Narrative Reports,Ginnie Mae / Deloitte,nlp,0,0,,,1,1,product_queue_review_2026-06: 'Automated Draft Narrative Reports' (Deloitte/Ginnie Mae NLG) matches catalog Ginnie Mae Automated Draft Narrative Reports.
+Ginnie Mae Counterparty Risk Anomaly Detection,Ginnie Mae / Deloitte,data_analytics,0,0,,,1,1,product_queue_review_2026-06: 'Counterparty Risk Anomaly Detection' on Ginnie Mae RFS matches catalog Ginnie Mae Counterparty Risk Anomaly Detection.
+Nuance Dragon,Nuance (Microsoft),transcription,0,0,,Nuance Dragon professional speech recognition and dictation product family.,3,3,Dragon | dragon | Dragon Professional
+Nuance PowerScribe One,Nuance (Microsoft),transcription,1,0,Nuance Dragon,,1,1,via add_product
+USDA Bugnet,USDA Forest Service / Oregon State University,computer_vision,0,0,,,1,1,"product_queue_review_2026-06: ""Bugnet Detect and map locations of tree damage caused by insects and disease"" by Oregon State University -- catalog USDA Bugnet."
+USDA Oregon State Forest Mapping,USDA Forest Service / Oregon State University,scientific_ml,0,0,,,1,1,"product_queue_review_2026-06: ""Oregon State University ... use existing satellite images and forest survey data from the USDA Forest Service to create detailed maps of forest structures"" -- matches ca"
+Abbott OPTIS Imaging,Abbott,clinical_decision_support,0,0,,,1,1,via add_product
+ARC Travel Intelligence,Airlines Reporting Corporation,investigative_data,0,0,,ARC's Travel Intelligence Program provides commercial air travel data analytics used for law-enforcement and investigative work.,1,1,Airlines Reporting Corporation Travel Intelligence Program
+Alteryx,Alteryx,ml_platform,1,0,,Self-service analytics platform with embedded AI,3,2,Alteryx | Alteryx | Alteryx
+Articulate 360 AI Assistant,Articulate,training,0,0,,,2,2,"Ariculate 360 AI Assistant | product_queue_review_2026-06: 'Adobe Firefly, Articulate Storyline 360, Vyond' for training audio/video generation — Firefly and Vyond are cataloged; Storyline 360's AI maps to Articulate 360 AI Assis"
+Avicenna.AI CINA,Avicenna.AI,clinical_decision_support,0,0,,,1,1,via add_product
+Babel Street Babel,Babel Street,threat_intel,0,0,,,1,1,Babel Street Babel Street Babel
+BioRender,BioRender,productivity,1,0,,Scientific diagramming tool with AI assist,2,1,Biorender | Biorender
+Boston Scientific Preventice BodyGuardian,Boston Scientific (Preventice),clinical_decision_support,0,0,,,1,1,via add_product
+Butterfly iQ Ultrasound,Butterfly Network,clinical_decision_support,0,0,,,1,1,via add_product
+CMS AI Agent Orchestrator,CMS / Noblis,agent_platform,1,0,Skyward CEDAR/CLAW,,1,1,product_queue_review_2026-06: 'Noblis CEDAR AI Agent Orchestrator POC ... transform CMS's analytical capabilities' — catalog entry 'CMS AI Agent Orchestrator'.
+Calendly,Calendly,productivity,0,0,,AI-enabled scheduling,1,1,Calendly
+Zeiss CLARUS,Carl Zeiss Meditec,clinical_decision_support,0,0,,,1,1,via add_product
+Chainalysis,Chainalysis,blockchain_analytics,0,0,,,3,2,Chainalysis | Chainalysis | Chainalysis
+Clirio,Clirio,other,0,0,,,1,1,"product_queue_review_2026-06: ""BGC/CLIRIO Hololens ... train Inspectors to visually inspect unsafe areas"" — HoloLens maps to catalog Microsoft HoloLens; Clirio (BGC Engineering spin-out) is the AR ins"
+Cohesity,Cohesity,security_tool,0,0,,,1,1,Cohesity
+Credal,Credal,agent_platform,1,0,,,10,1,Credal | Credal | Credal
+ClassifAI,DHS / Starlo,document_ai,1,0,,,1,1,ClassifAI
+LANL AI Portal,DOE Los Alamos National Lab,general_llm,1,0,,,2,1,LANL AI Portal | LANL AI Portal
+FBOP Pathfinder,DOJ FBOP,training,0,0,,,1,1,"product_queue_review_2026-06: ""Pathfinder ... assist FBOP employees with career pathways"" — catalog FBOP Pathfinder; ""Azure"" is only the hosting platform."
+GrantSolutions,Department of Health and Human Services,custom,0,0,,,6,1,GrantSolutions | GrantSolutions | GrantSolutions
+Dynatrace,Dynatrace,security_tool,0,0,,,2,2,Dynatrace | dynatrace
+Scopus AI,Elsevier,scientific_ml,0,0,,,1,1,Scopus AI
+Esri ArcGIS AI,Esri,nlp_specific,0,0,,GIS with AI features,13,6,ArcGIS | arcgis | ESRI
+FDA IND Safety Reports OCR,FDA / ThinkTrends,document_ai,0,0,,,1,1,product_queue_review_2026-06: 'ThinkTrends FAERS Data Extraction from IND Safety Reports using OCR/AI Technologies' — catalog entry 'FDA IND Safety Reports OCR'.
+Flock Safety,Flock Safety,computer_vision,0,0,,Cloud-based license-plate-reader and camera network with AI vehicle and behavior analytics for law enforcement.,1,1,Flock Safety
+Genetec Security Center,Genetec,physical_security,0,0,,"Unified physical-security platform with video management, access control, and AI-driven video analytics.",1,1,Genetec
+Grammarly,Grammarly,productivity,1,0,,Writing assistant,16,10,grammarly | Grammarly | Grammarly
+HHS FITARA Tool,HHS / Deloitte,document_ai,0,0,,,1,1,product_queue_review_2026-06: 'Deloitte FITARA Federal IT Acquisition Reform Act (FITARA) Tool' — catalog entry 'HHS FITARA Tool'.
+HRSA AI Audit Resolution Assistant,HRSA / Mindpetal,agent_platform,1,0,,,1,1,product_queue_review_2026-06: 'The DFI PRF AIARA project' by Mindpetal on UiPath Automation Cloud — catalog entry 'HRSA AI Audit Resolution Assistant'.
+Hyperscience,Hyperscience,document_ai,0,0,,,4,3,Hyperscience - IDP software | Hyperscience | Hyperscience
+Custom In-House AI,In-House,custom,1,0,,Agency-built custom AI systems,50,12,custom | custom | custom
+Knowtex Ambient Scribe,Knowtex,transcription,1,0,,,1,1,knowtex ambient scribe
+Lantheus aPROMISE,Lantheus,clinical_decision_support,0,0,,,1,1,via add_product
+Leica Aivia,Leica,computer_vision,0,0,,,1,1,product_queue_review_2026-06: 'Leica Aivia Provides machine-learning-based object classification in microscopy applications' — catalog entry 'Leica Aivia'.
+LibreChat,LibreChat (Open Source),general_llm,1,0,,,2,2,librechat | librechat
+MIT Lincoln Lab Speech Translation,MIT Lincoln Laboratory,translation,0,0,,,1,1,"product_queue_review_2026-06: Vendor ""MIT Lincoln Laboratory"" automating ""transcription and translation of Spanish and Mandarin Chinese audio"" — catalog MIT Lincoln Lab Speech Translation."
+MaxQ AI CT CoPilot,MaxQ AI,clinical_decision_support,0,0,,,1,1,via add_product
+Llama,Meta,general_llm,0,0,,,6,5,Llama | llama | llama
+NARA A1 Museum AI,NARA / Cortina,computer_vision,1,0,,,1,1,product_queue_review_2026-06: 'Cortina Exhibit Personalization System (EPS) A1 Museum AI Project' matches catalog NARA A1 Museum AI (NARA / Cortina).
+NIH Grants Virtual Assistant,NIH / Google,general_llm,0,0,,,1,1,NIH Grants Virtual Assistant
+VoiceAtlas,Navteca,general_llm,0,0,,,1,1,VoiceAtlas no-code chatbot framework
+OATI webSmartTag,OATI,data_analytics,0,0,,Transmission scheduling/e-tagging product,1,1,OATI Transmission Scheduling
+ModelAngelo,Open source (MRC LMB),scientific_ml,0,0,,Deep-learning tool for automated atomic-model building from CryoEM density maps.,1,1,ModelAngelo
+PDRI Remote Proctor,PDRI (Pearson),computer_vision,0,0,,,1,1,product_queue_review_2026-06: 'PDRI ... The model supports remote proctoring of the exam' - catalog 'PDRI Remote Proctor'.
+Penlink,Penlink,threat_intel,0,0,,,3,2,Penlink | PenLink | PenLink
+Plexis Quantum Choice,Plexis,data_analytics,0,0,,Plexis Quantum Choice claims adjudication and benefits-administration platform with rules and ML.,1,1,Quantum Choice from Plexis
+ProcureSight,ProcureSight,data_analytics,0,0,,,1,1,ProcureSight
+Quantaero Marine Wildlife AI,Quantaero,computer_vision,0,0,,,1,1,AI for Offshore Energy: Innovative Technology Streamlines Marine Wildlife Surveys
+RaySearch RayStation,RaySearch Laboratories,clinical_decision_support,0,0,,,1,1,via add_product
+RedSeal,RedSeal,security_tool,0,0,,,1,1,redseal
+Riverain ClearRead CT,Riverain Technologies,clinical_decision_support,0,0,,,1,1,riverain clearread ct
+SITE Intelligence Group,SITE,threat_intel,0,0,,,1,1,SITE Group Subscription Services
+Skillsoft Percipio CAISY,Skillsoft,training,0,0,,,5,5,"SKILLSOFT PERCIPIO/CAISY | CAISY is designed to solve the challenge of helping employees practice and improve difficult workplace conversations ... vendor: Skillsoft Percipio | product_queue_review_2026-06: ""CAISY - Artificial Intelligence System Skillsoft Percipio Assessment"" — catalog Skillsoft Percipio CAISY."
+Sonic Incytes Velacur,Sonic Incytes,clinical_decision_support,0,0,,,1,1,via add_product
+Sprout Social,Sprout Social,social_listening,1,0,,Social media management with AI,7,7,Sprout Social | Sprout Social | Sprout Social
+Systran Translate,Systran,translation,0,0,,,2,2,Systran Translate | Systran Translate
+TekSynap SimplifAI,TekSynap,general_llm,1,0,,TekSynap's SimplifAI commercial generative AI platform sold to federal customers.,1,1,TekSynap SimplifAI
+ThruVision TAC 16,ThruVision,physical_security,0,0,,,1,1,ThruVision TAC 16 Passive Body Scanner
+RAIO AI Interview Simulator,"USCIS Refugee, Asylum, and International Operations",training,1,0,,,1,1,product_queue_review_2026-06: 'the AI Interview Simulator enables the RAIO trainees to refine their interview techniques' - this is the catalog's RAIO AI Interview Simulator (built by Steampunk/CVP/AO
+USDA Recreation One Stop AI,USDA Forest Service / Booz Allen,general_llm,1,0,,,1,1,"product_queue_review_2026-06: ""Booz Allen Hamilton Recreation.gov Recreation One Stop use of AI ... a tool to support bookings and provide alternatives"" -- catalog USDA Recreation One Stop AI (USDA FS"
+USDA NRCS NETS Automated Waterway Design,USDA NRCS / Spatial Front,scientific_ml,1,0,,,1,1,"product_queue_review_2026-06: ""Spatial Front Incorporated NRCS Engineering Tools Suite (NETS) NETS automated waterway design"" -- catalog USDA NRCS NETS Automated Waterway Design (USDA NRCS / Spatial F"
+DOE Soil Moisture Modeling,University of Montana,scientific_ml,0,0,,,1,1,"product_queue_review_2026-06: ""University of Montana LMGSS Soil Moisture Modeling"" matches catalog DOE Soil Moisture Modeling (vendor University of Montana)."
+VA GPT,VA,general_llm,1,0,,,3,2,va gpt | va gpt | VA GPT
+Volpara Imaging,Volpara Health,clinical_decision_support,0,0,,,1,1,volpara imaging
+Whiterabbit.ai WRDensity,Whiterabbit.ai,clinical_decision_support,0,0,,,1,1,via add_product
+Zoom,Zoom,productivity,1,0,,Video conferencing with Zoom AI Companion,4,4,zoom | Zoom | Zoom
+iProov,iProov,biometrics,0,0,,,1,1,IProov
