@@ -57,6 +57,11 @@ fix:
 	# -keyed; survives id rotation. See audit/retag/{general_llm_round3,
 	# agentic_review}/INSTRUCTIONS.md.
 	python3 scripts/apply_capability_reviews.py
+	# 2026-07 flag-drift adjudication: reconciles rows where
+	# is_general_llm_access=1 but is_generative_ai=0 (a contradiction — a
+	# general chat LLM is generative by definition). Signature-keyed via
+	# uc_signature.Resolver; skips with a warning until verdict batches land.
+	python3 scripts/apply_llm_flag_drift.py
 	# Persist the audits' sources + quotes onto the use cases themselves
 	# (use_case_external_evidence) so findings stay traceable in the UI.
 	python3 scripts/persist_capability_evidence.py
@@ -106,6 +111,11 @@ fix:
 	# vendor strings (audit/product_queue_review_2026-06/). Runs AFTER all
 	# catalog/alias passes so its seed-guard sees the full alias table.
 	python3 scripts/apply_product_queue_review.py
+	# 2026-07 band-row product links: connects the ~71 banded consolidated
+	# rows that had no canonical product link (seat model needs the tool
+	# family). Resolves products by canonical_name, rows by slug; skips with
+	# a warning until link batches land.
+	python3 scripts/apply_band_product_links.py
 	# Federal organizations hierarchy — schema, seed, backfill, sub-agency
 	# maturity. Each script is idempotent.
 	python3 scripts/run_migrations.py
@@ -138,6 +148,12 @@ fix:
 	# Wipe-and-reload: MUST run after seed_federal_hierarchy.py re-keys
 	# federal_organizations, or every row it wrote last run is an orphan.
 	python3 scripts/apply_agency_workforce.py
+	# 2026-07 band population labels: WHO each license band counts
+	# (employees/contractors/endpoints/public + population stratum), keyed
+	# by durable slug into consolidated_band_labels (m017). The stratified
+	# seat model on /experience reads these. Skips with a warning until
+	# label batches land.
+	python3 scripts/apply_band_labels.py
 	# Linkage recovery: build_lookups.py wipes products and re-issues IDs each
 	# run, which orphans (and SQLite drops) any prior fedramp_product_links and
 	# parent_product_id edges. These scripts re-apply that state from the
