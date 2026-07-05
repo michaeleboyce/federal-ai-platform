@@ -1,0 +1,656 @@
+canonical_name,vendor,product_type,parent
+ACCRETE ARGUS,ACCRETE AI Government,supply_chain,
+AFRL Voice Recorder Transcription,Air Force Research Laboratory,transcription,
+AIS Resume Screening Tool,AIS,document_ai,
+APT Analytics,DOE,scientific_ml,
+ARANZ Silhouette Wound Imaging,ARANZ Medical,clinical_decision_support,
+ARC Travel Intelligence,Airlines Reporting Corporation,investigative_data,
+ASCVD Risk Estimator,American College of Cardiology,clinical_decision_support,
+ATLAS (Forest Service),USDA Forest Service,data_analytics,
+ATS Passport Anomaly Model,U.S. Customs and Border Protection,nlp,
+ATS Trade Entity Risk Model,U.S. Customs and Border Protection,data_analytics,
+AWS Bedrock,Amazon,general_llm,Amazon Web Services
+AWS Kendra,Amazon,search,Amazon Web Services
+AWS Lex,Amazon,nlp,Amazon Web Services
+AWS Rekognition,Amazon,computer_vision,Amazon Web Services
+AWS Textract,Amazon,computer_vision,Amazon Web Services
+AWS Transcribe,Amazon,nlp_specific,Amazon Web Services
+AWS Translate,Amazon Web Services,translation,Amazon Web Services
+Abbott OPTIS Imaging,Abbott,clinical_decision_support,
+Abridge Ambient Scribe,Abridge,transcription,
+Adobe,Adobe,productivity,
+Adobe Creative Cloud Suite,Adobe,productivity,Adobe
+Adobe Firefly,Adobe,computer_vision,Adobe Creative Cloud Suite
+Adobe Photoshop,Adobe,computer_vision,Adobe Creative Cloud Suite
+Adobe Premiere Pro,Adobe,media_analysis,Adobe Creative Cloud Suite
+Adobe Sensei,Adobe,general_llm,Adobe Creative Cloud Suite
+Advanced Trade Analytics Platform,U.S. Customs and Border Protection,data_analytics,
+Agfa DR 800 MUSICA,Agfa HealthCare,clinical_decision_support,
+AgileMD eCART,AgileMD,clinical_decision_support,
+Aidoc BriefCase,Aidoc,clinical_decision_support,
+Airship AI Platform,Airship AI Holdings Inc.,computer_vision,
+Airtable AI,Airtable,productivity,
+Alation Data Catalog,Alation,data_catalog,
+AlphaFold,Google DeepMind,scientific_ml,
+Altana Atlas,Altana,supply_chain,
+Alteryx,Alteryx,ml_platform,
+Amazon,Amazon,consumer_feature,
+Amazon Alexa,Amazon,nlp,Amazon
+Amazon CodeWhisperer,Amazon,coding_assistant,Amazon Q
+Amazon Comprehend,Amazon,nlp,Amazon Web Services
+Amazon Connect,Amazon Web Services,nlp,Amazon Web Services
+Amazon Q,Amazon,general_llm,Amazon Web Services
+Amazon SageMaker,Amazon,ml_platform,Amazon Web Services
+Amazon Web Services,Amazon,cloud_platform,Amazon
+Amped Software,Amped Software,forensics,
+Appian AI,Appian,agent_platform,
+Apple Face ID,Apple,consumer_feature,
+Apple Intelligence,Apple,general_llm,
+Apple Maps,Apple,consumer_feature,
+Apple News,Apple,consumer_feature,
+Aretec EDP,Aretec,data_analytics,
+Aretec NEAT,Aretec Inc,data_analytics,
+Aretec SEARCH,Aretec,search,
+Articulate 360 AI Assistant,Articulate,training,
+Asana,Asana,productivity,
+Ask Sage,Ask Sage Inc.,general_llm,
+AttackIQ,AttackIQ,security_tool,
+Autonomous Surveillance Tower,Anduril,physical_security,
+AveriSource,AveriSource,code_modernization,
+Avicenna.AI CINA,Avicenna.AI,clinical_decision_support,
+Aware Biometrics,Aware,biometrics,
+Axon,Axon Enterprise,media_analysis,
+Axon Evidence,Axon,forensics,
+Axon FUSUS,Axon,physical_security,Axon Evidence
+Azure AI Document Intelligence,Microsoft,document_ai,Microsoft Azure Platform
+Azure AI Foundry,Microsoft,general_llm,Microsoft Azure Platform
+Azure AI Translator,Microsoft,translation,Microsoft Azure Platform
+Azure Computer Vision,Microsoft,other,
+Azure Data Factory,Microsoft,data_analytics,Microsoft Azure Platform
+Azure OpenAI,Microsoft,general_llm,Microsoft Azure Platform
+Azure Speech,Microsoft,transcription,Microsoft Azure Platform
+Azure Synapse Analytics,Microsoft,data_analytics,Microsoft Azure Platform
+BD Pyxis MedStation,Becton Dickinson,clinical_decision_support,
+BI SmartLINK,BI Incorporated,biometrics,
+BLS Expenditure Classification Autocoder,Bureau of Labor Statistics,data_analytics,
+BMC Helix ITSM,BMC,itsm,
+BSEE Corrosion Classifier,Bureau of Safety and Environmental Enforcement,computer_vision,
+Babel Street Babel,Babel Street,threat_intel,
+Bates White Economic Consulting AI,Bates White,data_analytics,
+Beckman Coulter DxH 800,Beckman Coulter,clinical_decision_support,
+Benefits Manager Virtual Assistant,Benefits Manager,general_llm,
+BillieGPT,U.S. Department of Veterans Affairs,nlp,
+Bio-Rad BioPlex 2200,Bio-Rad Laboratories,clinical_decision_support,
+BioRender,BioRender,productivity,
+Biometrics Enrollment Tool,U.S. Citizenship and Immigration Services,biometrics,
+Biosense Webster CARTO 3,Biosense Webster (Johnson & Johnson),clinical_decision_support,
+Biotronik Home Monitoring,Biotronik,clinical_decision_support,
+Bloomberg Government,Bloomberg,investigative_data,
+Bloomberg Law AI,Bloomberg,legal_research,
+Boston Dynamics Spot,Boston Dynamics,physical_security,
+Boston Scientific Preventice BodyGuardian,Boston Scientific (Preventice),clinical_decision_support,
+Brainlab Cirq Alignment,Brainlab,clinical_decision_support,
+Brainlab Cranial Navigation,Brainlab,clinical_decision_support,
+Brainlab Elements,Brainlab,clinical_decision_support,
+Brainlab Elements Spine,Brainlab,clinical_decision_support,
+BriefCatch,BriefCatch,legal_research,
+Broadcom Code for Z,Broadcom,code_modernization,
+Butterfly iQ Ultrasound,Butterfly Network,clinical_decision_support,
+Buzzsprout CoHost AI,Buzzsprout,media_analysis,
+C3 AI,C3.ai,ml_platform,
+CANDA UEBA,CANDA Solutions,security_tool,
+CBP Translate,U.S. Customs and Border Protection,translation,
+CISAChat,DHS CISA,general_llm,
+CMS AI Agent Orchestrator,CMS / Noblis,agent_platform,Skyward CEDAR/CLAW
+CMS ELMO Chatbot,CMS / Peraton,general_llm,
+CMS IDR Support Bot,CMS / GDIT,general_llm,CMS Integrated Data Repository Customer Analytic Environment
+CMS Integrated Data Repository Customer Analytic Environment,CMS / GDIT,ml_platform,
+CMS Medicare AI Customer Insights,CMS / commonFont,data_analytics,
+COREII,DOE Idaho National Lab,general_llm,
+CWTSatoTravel,CWTSatoTravel,productivity,
+Calendly,Calendly,productivity,
+Canon Alphenix Angio Workstation,Canon Medical Systems,clinical_decision_support,
+Canon Aplio Ultrasound,Canon Medical Systems,clinical_decision_support,
+Canon Aquilion ONE AiCE,Canon Medical Systems,clinical_decision_support,
+Canon Cartesion Prime PET/CT,Canon Medical Systems,clinical_decision_support,
+Canva,Canva,productivity,
+CareCentra,CareCentra,clinical_decision_support,
+CareView Patient Safety System,CareView Communications,computer_vision,
+Carestream CS 9600,Carestream Dental,clinical_decision_support,
+CargoNet,Verisk,investigative_data,
+CaseGuard,CaseGuard,forensics,
+CathWorks FFRangio,CathWorks,clinical_decision_support,
+Cell Hawk,LeadsOnline,investigative_data,
+CellaVision DM1200,CellaVision,clinical_decision_support,
+Cellebrite Media Classifier,Cellebrite,forensics,
+Chainalysis,Chainalysis,blockchain_analytics,
+ChatGPT,OpenAI,general_llm,
+Chiral Wildlife Deterrent System,Chiral Software,computer_vision,
+Circle CVI42,Circle Cardiovascular Imaging,clinical_decision_support,
+Cisco,Cisco,security_tool,
+Cisco Identity Services Engine,Cisco,security_tool,Cisco
+Cisco Secure Network Analytics,Cisco,security_tool,Cisco
+Citrix,Citrix,virtualization,
+ClassifAI,DHS / Starlo,document_ai,
+Claude,Anthropic,general_llm,
+Claude Code,Anthropic,coding_assistant,Claude
+Clearview AI,Clearview AI,biometrics,
+Clirio,Clirio,other,
+Cloudflare Turnstile,Cloudflare,security_tool,
+CoCounsel,Thomson Reuters,legal_research,Thomson Reuters
+Cofense PhishMe,Cofense,security_tool,
+Cogitativo,Cogitativo,clinical_decision_support,
+Cognitec FaceVACS,Cognitec Systems,biometrics,
+Cohesity,Cohesity,security_tool,
+Commonlook Online,Commonlook,document_ai,
+Conductor Conduit AI,Conductor,document_ai,
+Consular Consolidated Database Facial Recognition,U.S. Department of State,biometrics,
+Cortechs NeuroQuant,Cortechs.ai,clinical_decision_support,
+Credal,Credal,agent_platform,
+CrewAI,CrewAI,agent_platform,
+Critical Mention,Critical Mention,media_analysis,
+Crowdstrike Falcon,Crowdstrike,security_tool,
+CryoSPARC,Structura Biotechnology,scientific_ml,
+Cursor,Anysphere,coding_assistant,
+Custom In-House AI,In-House,custom,
+DALL-E,OpenAI,computer_vision,ChatGPT
+DEA GenAI R&D Sandbox,DEA / NVIDIA,general_llm,
+DOE EV Delivery Parking Identification,DOE / Cisco,scientific_ml,
+DOE ML for Disadvantaged Community Identification,DOE,nlp,
+DOE Soil Moisture Modeling,University of Montana,scientific_ml,
+DOE Traffic Predictive Control,DOE,scientific_ml,
+DOJ Receipt Extraction Tool,DOJ / Microsoft,document_ai,
+DOL Auntee Bot,Department of Labor,productivity,
+DRUID AI,DRUID AI,agent_platform,
+Databricks,Databricks,ml_platform,
+Dataminr First Alert,Dataminr,social_listening,
+DeepEMhancer,Open source (CSIC),scientific_ml,
+Democratizing Data,Coleridge Institute,data_analytics,
+Dentsply Sirona CEREC,Dentsply Sirona,clinical_decision_support,
+Descript,Descript,media_analysis,
+Digital Science Dimensions,Digital Science,data_analytics,
+Doble Test Assistant,Doble Engineering,document_ai,
+DocketScope,"The Regulatory Group, Inc.",document_ai,
+Dun & Bradstreet,Dun & Bradstreet,investigative_data,
+Dynatrace,Dynatrace,security_tool,
+EDAV (CDC),CDC,data_analytics,
+ELIS,U.S. Citizenship and Immigration Services,custom,
+ELIS Card Photo Validation Service,U.S. Citizenship and Immigration Services,computer_vision,
+ELIS Evidence Classifier Service,U.S. Citizenship and Immigration Services,document_ai,
+ELIS Name and DOB Harvesting Service,U.S. Citizenship and Immigration Services,nlp,ELIS
+ELSAG ALPR,Leonardo,computer_vision,
+EPA Agency Records Management System,EPA,document_ai,
+EPA RCRA PA,EPA,data_analytics,
+ERNIE Radiological Detection,DHS Countering Weapons of Mass Destruction,computer_vision,
+EarlySense WAVE Clinical Platform,EarlySense,clinical_decision_support,
+Edwards Acumen Hypotension Prediction Index,Edwards Lifesciences,clinical_decision_support,
+Elastic Stack,Elastic,search,
+Elsa (FDA),"FDA (internal, vendor-supported)",general_llm,
+Elsevier ClinicalKey AI,Elsevier,clinical_decision_support,
+Emerald Innovations,Emerald Innovations,scientific_ml,
+EnerGPT,Unknown / DOE-targeted vendor,general_llm,
+Ephesoft Transact,Ephesoft,document_ai,
+Equifax Background Screening,Equifax,data_analytics,
+Espyr Therapy Chatbot,Espyr,clinical_decision_support,
+Esri ArcGIS AI,Esri,nlp_specific,
+Everlaw AI Assistant,"Everlaw, Inc.",ediscovery,
+Ex Libris Alma/Primo,Ex Libris (Clarivate),search,
+Exiger DDIQ,Exiger,supply_chain,
+Expert.ai Cogito,expert.ai,nlp,
+FA.gov PII Picker,State Department / Guidehouse,nlp,
+FA.gov RedactAid,State Department / Guidehouse,document_ai,
+FAA NextGen LOA/SOP Analytics,FAA,nlp,
+FBOP Automated Staffing Tool,DOJ FBOP,data_analytics,
+FBOP Pathfinder,DOJ FBOP,training,
+FDA 356H ML Facility Supply Chain Role Classification,FDA / Deloitte,document_ai,FDA CDEROne Analytics
+FDA Annual Report CMC Extraction,FDA / Deloitte,document_ai,FDA CDEROne Analytics
+FDA Application-DMF Reference Extraction,FDA / Deloitte,document_ai,FDA CDEROne Analytics
+FDA CDER Pubs,FDA,nlp,
+FDA CDEROne Analytics,FDA Center for Drug Evaluation and Research,data_analytics,
+FDA DMF Facilities Extraction,FDA / Deloitte,document_ai,FDA CDEROne Analytics
+FDA HIVE AI Pilot,FDA / SAIC,general_llm,
+FDA IND Safety Reports OCR,FDA / ThinkTrends,document_ai,
+FDA Module 3 Facilities Extraction,FDA / Deloitte,document_ai,FDA CDEROne Analytics
+FDA Packaging Materials and Suppliers Extraction,FDA / Deloitte,document_ai,FDA CDEROne Analytics
+FDA Real World Data/Evidence Identification,FDA / Deloitte,document_ai,FDA CDEROne Analytics
+FDA Regulatory Starting Materials Extraction,FDA / Deloitte,document_ai,FDA CDEROne Analytics
+FDA Safety Reports Categorization Bot,FDA / Deloitte,document_ai,
+FDA Smart Solution for Docket Management,FDA / Deloitte,nlp,
+FERC Zvolvant Comment Analysis,Zvolvant,nlp,
+FERC Zvolvant Inspection AI,Zvolvant,computer_vision,
+FERC Zvolvant Interconnection Assistant,Zvolvant,nlp,
+FERC Zvolvant Market Surveillance,Zvolvant,data_analytics,
+FERC Zvolvant Permitting Assistant,Zvolvant,nlp,
+FINDER (ATF),DOJ ATF,data_analytics,
+FLIR 280 HD,Teledyne FLIR,physical_security,
+FOIAXpress AI,OPEXUS,document_ai,
+FRTIB AVA,FRTIB / Accenture Federal Services,general_llm,
+FRTIB Contact Center AI,FRTIB / Accenture Federal Services,general_llm,
+FRTIB Fraud Detection,FRTIB / Accenture Federal Services,data_analytics,
+FS Pro,FS Pro,productivity,
+FSA Aidan Chatbot,U.S. Department of Education / Accenture,general_llm,
+FTC GenAI Mail Scan,FTC / Amazon,document_ai,
+FTC Sentinel Analytic Sandbox,FTC / Leidos,data_analytics,FTC Sentinel Network Services
+FTC Sentinel Chatbot,FTC / Leidos,general_llm,FTC Sentinel Network Services
+FTC Sentinel Developer Productivity,FTC / Leidos,coding_assistant,FTC Sentinel Network Services
+FTC Sentinel Graph Analytics,FTC / Leidos,data_analytics,FTC Sentinel Network Services
+FTC Sentinel Network Services,Federal Trade Commission,investigative_data,
+FTC Sentinel PSC Classification,FTC / Leidos,data_analytics,FTC Sentinel Network Services
+Federal Docket Management System,GSA,document_ai,
+Fiji ImageJ,Open source (NIH ImageJ / Fiji community),scientific_ml,
+FirstTwo,FirstTwo,investigative_data,
+Fivecast,Fivecast,other,
+Flashpoint,Flashpoint,social_listening,
+Flock Safety,Flock Safety,computer_vision,
+Flowmon,Progress Flowmon,security_tool,
+Freed AI Medical Scribe,Freed,transcription,
+GAIA AI,GAIA AI,computer_vision,
+GE Healthcare AMX Portable X-ray,GE Healthcare,clinical_decision_support,
+GE Healthcare Critical Care Suite,GE Healthcare,clinical_decision_support,
+GE Healthcare Discovery MI,GE Healthcare,clinical_decision_support,
+GE Healthcare EchoPAC,GE Healthcare,clinical_decision_support,
+GE Healthcare FastStroke CT Perfusion 4D,GE Healthcare,clinical_decision_support,
+GE Healthcare LOGIQ Ultrasound,GE Healthcare,clinical_decision_support,
+GE Healthcare Omni Legend PET/CT,GE Healthcare,clinical_decision_support,
+GE Healthcare SIGNA Artist (AIR Recon DL),GE Healthcare,clinical_decision_support,
+GE Healthcare TrueFidelity CT,GE Healthcare,clinical_decision_support,
+GE Healthcare Venue Fit,GE Healthcare,clinical_decision_support,
+GE Healthcare Vivid E Ultrasound,GE Healthcare,clinical_decision_support,
+GE Healthcare Vivid iq,GE Healthcare,clinical_decision_support,
+GE Healthcare Voluson Expert,GE Healthcare,clinical_decision_support,
+GE Healthcare Xeleris V,GE Healthcare,clinical_decision_support,
+Gemini,Google,general_llm,Google
+Gemma (Google) ;; Mistral (Mistral AI) ;; Nemotron,NVIDIA,other,
+Genesys Cloud CX,Genesys,itsm,
+Genetec Security Center,Genetec,physical_security,
+Ginnie Mae Automated Draft Narrative Reports,Ginnie Mae / Deloitte,nlp,
+Ginnie Mae Counterparty Risk Anomaly Detection,Ginnie Mae / Deloitte,data_analytics,
+Ginnie Mae Subledger Data Quality ML,Ginnie Mae / Ernst & Young,data_analytics,
+GitHub Copilot,Microsoft,coding_assistant,Microsoft
+Glassbeam Clinsights,Glassbeam,data_analytics,
+GlobalComm Video Surveillance,GlobalComm,computer_vision,
+Google,Google,productivity,
+Google Agentspace,Google,general_llm,Google Vertex AI
+Google Calendar,Google,productivity,Google Workspace
+Google Chrome Generative AI,Google,consumer_feature,Google
+Google Cloud Platform,Google,general_llm,Google
+Google Cloud Vision,Google,computer_vision,Google Cloud Platform
+Google Colab,Google,developer_tool,Google
+Google Coral TPU,Google,developer_tool,Google
+Google Distributed Cloud,Google,other,
+Google Earth Engine,Google,data_analytics,Google
+Google Earth Engine Wetlands Classifier,Google,scientific_ml,Google Earth Engine
+Google Lens,Google,computer_vision,Google
+Google Maps,Google,consumer_feature,Google
+Google News Brief,Google,consumer_feature,Google
+Google Pixel,Google,consumer_feature,Google
+Google Translate,Google,translation,Google
+Google Vertex AI,Google,general_llm,Google Cloud Platform
+Google Workspace,Google,productivity,Google
+Grammarly,Grammarly,productivity,
+GrantSolutions,Department of Health and Human Services,custom,
+GrantSolutions AI Writing Assistant,GrantSolutions (HHS Shared Service),general_llm,GrantSolutions
+GrantSolutions Helpdesk Agent,GrantSolutions (HHS Shared Service),general_llm,GrantSolutions
+GrantSolutions Non-Competing Continuation Approval Tool,GrantSolutions (HHS Shared Service),data_analytics,GrantSolutions
+GrantSolutions Non-Competing Continuation Review Tool,GrantSolutions (HHS Shared Service),general_llm,GrantSolutions
+GrantSolutions Recipient Risk Tool,GrantSolutions (HHS Shared Service),data_analytics,GrantSolutions
+GrantSolutions Text Analyzer Tool,GrantSolutions (HHS Shared Service),nlp,GrantSolutions
+Grants.gov Applicant Help Chatbot,HHS / Business Performance Systems,general_llm,
+Grants.gov Similar Opportunities,HHS / MicroHealth,data_analytics,
+Griffeye Analyze,Griffeye,forensics,
+Grok,xAI,general_llm,
+Gurucul UEBA,Gurucul,security_tool,
+H2O GPTe,H2O.ai,general_llm,
+HHS FITARA Tool,HHS / Deloitte,document_ai,
+HRSA AI Audit Resolution Assistant,HRSA / Mindpetal,agent_platform,
+HRSA Knowledge Navigator,HRSA / Publicis Sapient,general_llm,
+HRSA PRF Program Chatbot,HRSA / GDIT,general_llm,
+HackerOne AI,HackerOne,security_tool,
+Harvey,Harvey,legal_research,
+HealthData.gov AI Harvest Service,HHS / Tyler Technologies,data_analytics,
+HeyGen,HeyGen,media_analysis,
+Hologic 3D Quorum,Hologic,clinical_decision_support,
+Hologic Genius AI Detection,Hologic,clinical_decision_support,
+Hootsuite,Hootsuite,social_listening,
+Hyperscience,Hyperscience,document_ai,
+IBM ARGOS,IBM,nlp,IBM Watson
+IBM CoreDF,IBM,document_ai,IBM Watson
+IBM Watson,IBM,ml_platform,
+IBM watsonx Code Assistant,IBM,coding_assistant,IBM Watson
+ID.me,ID.me,identity_verification,
+IDEMIA CAT-2/AutoCAT,IDEMIA,biometrics,
+INL Classified Subject Area GenAI,DOE Idaho National Lab,general_llm,
+INL Intelligent Automation,DOE Idaho National Lab,general_llm,
+ISO ClaimSearch,Verisk,investigative_data,
+Ideation ReadyAI,Ideation,general_llm,
+Illumio,Illumio,security_tool,
+Imaris,Oxford Instruments,scientific_ml,
+Informatica,Informatica,data_catalog,
+Invariant Acoustic Signature AI,Invariant Corporation,audio_analysis,
+JAWS Screen Reader,Freedom Scientific,productivity,
+KESTREL,Maxar,data_analytics,
+Kiteworks,Kiteworks,security_tool,
+KnowBe4 PhishER,KnowBe4,security_tool,
+Knowtex Ambient Scribe,Knowtex,transcription,
+Koios DS Breast,Koios Medical,clinical_decision_support,
+Konica Minolta Dispatcher Paragon,Konica Minolta,productivity,
+L&M Policy Research Comment Triaging,"L&M Policy Research, LLC",nlp,
+LANL AI Portal,DOE Los Alamos National Lab,general_llm,
+LIGER Generative AI Toolkit,"LMI Consulting, LLC",general_llm,
+LISA Chatbot,DOE / AWS,general_llm,
+Lambient AI Scribe,Lambient,transcription,
+Lantheus aPROMISE,Lantheus,clinical_decision_support,
+LaserAI,LaserAI,document_ai,
+Lasso Security,Lasso Security,security_tool,
+Lectora AI,ELB Learning,training,
+Leica Aivia,Leica,computer_vision,
+Lenel OnGuard,LenelS2 (Honeywell),physical_security,
+Lexical Intelligence,"Lexical Intelligence, LLC",nlp,
+Lexis+ AI,LexisNexis,legal_research,LexisNexis
+Lexis+ Protege,LexisNexis,legal_research,Lexis+ AI
+LexisNexis,LexisNexis,investigative_data,
+LexisNexis Risk Solutions,LexisNexis,investigative_data,LexisNexis
+LibreChat,LibreChat (Open Source),general_llm,
+Litera Compare,Litera,document_ai,
+Litera TOA Builder,Litera,legal_research,
+Llama,Meta,general_llm,
+Lookout,Lookout,security_tool,
+Lumivero NVivo,Lumivero,data_analytics,
+Lyssn,Lyssn,audio_analysis,
+MAPPRITE,DOE Special Technologies Laboratory,general_llm,
+MIT Lincoln Lab Speech Translation,MIT Lincoln Laboratory,translation,
+MSHA AI Headset,ResolveSoft,computer_vision,
+Magnet Forensics,Magnet Forensics,security_tool,
+ManageEngine ServiceDesk Plus,ManageEngine,itsm,
+Mark43,Mark43,investigative_data,
+Matroid I4 Viewer,Matroid,computer_vision,
+MaxQ AI CT CoPilot,MaxQ AI,clinical_decision_support,
+Medallia,Medallia,social_listening,
+MediaViz AI,MediaViz,media_analysis,
+Medtronic CareLink,Medtronic,clinical_decision_support,
+Medtronic GI Genius,Medtronic,clinical_decision_support,
+Medtronic LINQ II,Medtronic,clinical_decision_support,
+Medtronic O-arm O2,Medtronic,clinical_decision_support,
+Meltwater,Meltwater,productivity,
+Merlin,DOE Kansas City National Security Campus,general_llm,
+Microsoft,Microsoft,productivity,
+Microsoft 365,Microsoft,coding_assistant,Microsoft
+Microsoft 365 Apps for Enterprise,Microsoft,coding_assistant,Microsoft 365
+Microsoft 365 Copilot,Microsoft,general_llm,Microsoft 365
+Microsoft 365 Copilot Chat,Microsoft,general_llm,Microsoft 365 Copilot
+Microsoft AI Builder,Microsoft,ml_platform,Microsoft Power Platform
+Microsoft Azure Authoring Tools,Microsoft,developer_tool,Microsoft Azure Platform
+Microsoft Azure Platform,Microsoft,cloud_platform,Microsoft
+Microsoft Azure PowerShell,Microsoft,developer_tool,Microsoft Azure Platform
+Microsoft Azure Quantum Elements,Microsoft,scientific_ml,Microsoft Azure Platform
+Microsoft Copilot Studio,Microsoft,agent_platform,Microsoft Power Platform
+Microsoft Copilot for Security,Microsoft,security_tool,Microsoft 365
+Microsoft Defender,Microsoft,security_tool,Microsoft 365
+Microsoft Discovery,Microsoft,scientific_ml,Microsoft
+Microsoft Dynamics 365,Microsoft,productivity,Microsoft
+Microsoft Edge,Microsoft,consumer_feature,Microsoft
+Microsoft Exchange Server,Microsoft,productivity,Microsoft 365
+Microsoft HoloLens,Microsoft,computer_vision,Microsoft
+Microsoft OneDrive,Microsoft,productivity,Microsoft 365
+Microsoft OneNote,Microsoft,productivity,Microsoft 365
+Microsoft Outlook,Microsoft,productivity,Microsoft 365
+Microsoft Power BI,Microsoft,data_analytics,Microsoft Power Platform
+Microsoft Power Platform,Microsoft,ml_platform,Microsoft
+Microsoft PowerPoint,Microsoft,productivity,Microsoft 365
+Microsoft Project,Microsoft,productivity,Microsoft 365
+Microsoft Purview,Microsoft,security_tool,Microsoft 365
+Microsoft Purview eDiscovery,Microsoft,ediscovery,Microsoft Purview
+Microsoft SQL Server Intelligent Query Processing,Microsoft,data_analytics,Microsoft Azure Platform
+Microsoft ScreenSketch,Microsoft,productivity,Microsoft
+Microsoft Search in Bing,Microsoft,search,Microsoft 365
+Microsoft Sentinel,Microsoft,security_tool,Microsoft Azure Platform
+Microsoft Skype,Microsoft,productivity,Microsoft
+Microsoft Teams,Microsoft,productivity,Microsoft 365
+Microsoft Viva,Microsoft,productivity,Microsoft
+Milestone XProtect,Milestone Systems,physical_security,
+Mindray TE X Ultrasound,Mindray,clinical_decision_support,
+MirBot,NIH / Technatomy Axle,nlp,
+ModelAngelo,Open source (MRC LMB),scientific_ml,
+Monday.com,monday.com,productivity,
+Motorola License Plate Recognition,Motorola,computer_vision,
+Mural,Mural,productivity,
+NARA A1 Museum AI,NARA / Cortina,computer_vision,
+NASA CAAP Cost Analytics,NASA / Raytheon,data_analytics,
+NCI MOSSAIC SEER NLP,NCI / Oak Ridge National Lab,nlp,
+NEC NeoFace,NEC,biometrics,
+NIAID DAIT AIDS Research Prioritization,NIAID / Deloitte,data_analytics,
+NIAID OSPIDA Scientific Coding Assistance Tool,NIAID / Deloitte,nlp,
+NIAID TB Portals (TB DEPOT),NIAID,data_analytics,
+NIAID TB Portals Outlier Detection,NIAID,computer_vision,NIAID TB Portals (TB DEPOT)
+NIAMS GenAI Chatbot,NIH NIAMS,general_llm,
+NIH Grants Virtual Assistant,NIH / Google,general_llm,
+NIH Prevention Research NLP,NIH / Westat,nlp,
+NIH SRDMS NLP COI Module,NIH / Deloitte,nlp,
+NIH Travel Policy AI Chatbot,NIH / Infer Solutions,general_llm,
+NIH eRA Internal Referral Module,NIH / Leidos,nlp,
+NLCOO Lessons Learned AI,DOE NETL,search,
+NaturalReader,NaturalReader,nlp_specific,
+NetApp ARP/AI,NetApp,security_tool,
+NetDocuments,NetDocuments,document_ai,
+NexisXplore,LexisNexis,investigative_data,LexisNexis
+Nightwing PII Detection,Nightwing Intelligence Solutions,nlp,
+Nlets LPR Pointer Index,Nlets,investigative_data,
+NotebookLM,Google,general_llm,Google
+Nuance Dragon,Nuance (Microsoft),transcription,
+Nuance PowerScribe One,Nuance (Microsoft),transcription,Nuance Dragon
+ORR Unaccompanied Children Policy Research Tool,HHS Office of Refugee Resettlement,general_llm,
+Okta Adaptive MFA,Okta,identity_verification,
+OnCue Trial Presentation,OnCue Technology,legal_research,
+OneReach.ai,OneReach.ai,agent_platform,
+OpenAI API,OpenAI,general_llm,
+OpenAI Codex (legacy model),OpenAI,coding_assistant,
+OpenAI Codex CLI,OpenAI,coding_assistant,
+OpenAI Deep Research,OpenAI,other,
+OpenText Axcelerate,OpenText,ediscovery,
+OpenText Decisiv,OpenText,search,
+OpenText Records Management,OpenText,document_ai,
+Otter.ai,Otter,productivity,
+PDRI Automatically-Scored Writing Assessment,PDRI,nlp_specific,
+PDRI Remote Proctor,PDRI (Pearson),computer_vision,
+PEST (Parameter Estimation),Open Source,scientific_ml,
+PLATES/FoodTrak,Trigent Solutions,document_ai,
+Palantir AIP,Palantir,general_llm,Palantir Federal Cloud Service
+Palantir Case Management & Analytics (CMA),Palantir,data_analytics,Palantir Federal Cloud Service
+Palantir Decision and Analytics Platform (DNA-P),Palantir,data_analytics,Palantir Federal Cloud Service
+Palantir Federal Cloud Service,Palantir,cloud_platform,
+Palo Alto Networks,Palo Alto Networks,security_tool,
+Pangolin Lineage,COG-UK,scientific_ml,
+Parable 3D Wound Care,Parable Health,clinical_decision_support,
+PassiveLogic,PassiveLogic,scientific_ml,
+Pearson Q-interactive,Pearson,clinical_decision_support,
+Penlink,Penlink,threat_intel,
+Perplexity,Perplexity AI,general_llm,
+Person-Centric Identity Services Deduplication Model,U.S. Citizenship and Immigration Services,nlp,
+Persyst EEG,Persyst Development,clinical_decision_support,
+Philips EPIQ/Affiniti Ultrasound,Philips,clinical_decision_support,
+Philips QLAB,Philips,clinical_decision_support,
+Philips Smart Collimation Thorax,Philips,clinical_decision_support,
+Philips Vereos PET/CT,Philips,clinical_decision_support,
+Philips eCareManager,Philips,clinical_decision_support,
+Pingoo.AI,Pingoo.AI,nlp,
+Pingwind AI DevOps,Pingwind,devops,
+Planmeca Romexis,Planmeca,clinical_decision_support,
+Plexis Quantum Choice,Plexis,data_analytics,
+Podimetrics SmartMat,Podimetrics,clinical_decision_support,
+Polarity,Polarity.io,other,
+Poolside,Poolside,coding_assistant,
+Precise MLaaS,Precise Software,ml_platform,
+ProLaw,Thomson Reuters,legal_research,Thomson Reuters
+ProcureSight,ProcureSight,data_analytics,
+Provar Manager,Provar,other,
+Ptolemy,Open source,scientific_ml,
+Pyramid Analytics,Pyramid Analytics,data_analytics,
+Qualtrics,Qualtrics,data_analytics,
+Quantaero Marine Wildlife AI,Quantaero,computer_vision,
+RAIO AI Interview Simulator,"USCIS Refugee, Asylum, and International Operations",training,
+RAVEn Investigative Prioritization Aggregator,U.S. Homeland Security Investigations,data_analytics,
+RAVEn Normalization Services,U.S. Homeland Security Investigations,data_analytics,
+RAVEn Translation and Transcription Service,U.S. Homeland Security Investigations,translation,
+RWS Trados,RWS,translation,
+Radformation AutoContour,Radformation,clinical_decision_support,
+Rangeland Analysis Platform,University of Montana / NRCS,scientific_ml,
+Rank One Computing,Rank One Computing,biometrics,
+RapidAI,RapidAI,clinical_decision_support,
+RaySearch RayStation,RaySearch Laboratories,clinical_decision_support,
+Raytheon BBN M3S,Raytheon BBN,media_analysis,
+Reclaim.AI,Reclaim,productivity,
+Recorded Future,Recorded Future,threat_intel,
+RedCastle Forest Health,RedCastle Resources,computer_vision,
+RedSeal,RedSeal,security_tool,
+ReflexAI,ReflexAI,training,
+Rekor,Rekor,computer_vision,
+Relativity,Relativity,ediscovery,
+Riverain ClearRead CT,Riverain Technologies,clinical_decision_support,
+Roche Digital Pathology,Roche,clinical_decision_support,
+Rohde & Schwarz QPS Walk-Through Scanner,Rohde & Schwarz,computer_vision,
+SAP Concur,SAP,productivity,
+SAS Analytics,SAS,data_analytics,
+SBA GovCon Match,SBA,data_analytics,
+SEA-CROGS,DOE,scientific_ml,
+SEC FOIA Form Extraction,SEC / GDIT,document_ai,
+SITE Intelligence Group,SITE,threat_intel,
+SQL Server Management Studio,Microsoft,developer_tool,Microsoft
+SRNS AI Drafting Assistant,Savannah River Nuclear Solutions,general_llm,
+SRNS AI Form and Questionnaire Assistant,Savannah River Nuclear Solutions,general_llm,
+SRNS AI Tailored Learning,Savannah River Nuclear Solutions,training,
+SRNS Computer Vision Defect Detection,Savannah River Nuclear Solutions,computer_vision,
+SRNS Operational Efficiency ML,Savannah River Nuclear Solutions,data_analytics,
+SSA Quick Disability Determinations Model,SSA / IBM,clinical_decision_support,
+SWBTRAC,DOJ,data_analytics,
+Salesforce,Salesforce,productivity,
+Salesforce Einstein,Salesforce,ml_platform,Salesforce
+Scopus AI,Elsevier,scientific_ml,
+ScreenPoint Transpara,ScreenPoint Medical,clinical_decision_support,
+SentinelOne,SentinelOne,security_tool,
+ServiceNow,ServiceNow,itsm,
+ServiceNow AI Search,ServiceNow,other,
+ServiceNow IT Operations Management (ITOM) Predictive AIOps,ServiceNow,itsm,ServiceNow
+ServiceNow Now Assist,ServiceNow,productivity,ServiceNow
+Shabash Merops,Shabash,nlp,
+ShotSpotter,SoundThinking,audio_analysis,
+Siemens ACUSON Sequoia,Siemens Healthineers,clinical_decision_support,
+Siemens Biograph PET/CT,Siemens Healthineers,clinical_decision_support,
+Siemens MAGNETOM,Siemens Healthineers,clinical_decision_support,
+Siemens SOMATOM go.,Siemens Healthineers,clinical_decision_support,
+Siemens YSIO Max,Siemens Healthineers,clinical_decision_support,
+Siemens syngo,Siemens Healthineers,clinical_decision_support,
+SimplyFile,TechHit,productivity,
+Skillsoft Percipio CAISY,Skillsoft,training,
+Skydio X2D,Skydio,physical_security,
+Skyward CEDAR/CLAW,Skyward IT Solutions,agent_platform,
+Slack,Salesforce,productivity,Salesforce
+Smiths Detection TruNarc,Smiths Detection,forensics,
+Snowflake Cortex,Snowflake,ml_platform,
+Solventum 360 Encompass,Solventum (3M Health Information Systems),document_ai,
+Sonic Incytes Velacur,Sonic Incytes,clinical_decision_support,
+Splunk,Splunk,security_tool,
+Spokeo,Spokeo,investigative_data,
+Sprinklr,Sprinklr,social_listening,
+Sprout Social,Sprout Social,productivity,
+SpyglassGPT,Unknown,general_llm,
+State Department AI Research Engine (AIRE),State Department / Deloitte,general_llm,
+State Department Declassification Review AI,State Department / Deloitte,document_ai,
+State Department WHA/EX Information Management,State Department / Microsoft,general_llm,
+State Department Walter Support Bot,State Department / Microsoft,general_llm,
+State FACTS Info Foreign Assistance NLP,State Department / Guidehouse,nlp,
+State Integrated Country Strategy Turbo,State Department / Guidehouse,nlp,
+State LCALA Consular Language Augmentation,State Department / Microsoft,translation,
+State NIV Adjudication Review Recommendation Engine,State Department / Guidehouse,data_analytics,
+SumTotal,SumTotal,training,
+Supportbench,Supportbench,itsm,
+Synthesia,Synthesia,computer_vision,
+Systran Translate,Systran,translation,
+TLOxp,TransUnion,investigative_data,
+TRM Labs Blockchain Analysis Platform,TRM Labs,blockchain_analytics,
+TVEyes Media Monitoring,TVEyes,media_analysis,
+Tableau,Salesforce,ml_platform,Salesforce
+Tabnine,Tabnine,coding_assistant,
+Techsmith Audiate,TechSmith,media_analysis,
+TekSynap SimplifAI,TekSynap,general_llm,
+Tenable,Tenable,security_tool,
+TeraRecon iNtuition,TeraRecon (ConcertAI),clinical_decision_support,
+Tesseract OCR,Open Source,document_ai,
+Thomson Reuters,Thomson Reuters,legal_research,
+Thomson Reuters CLEAR,Thomson Reuters,data_analytics,Thomson Reuters
+ThruVision TAC 16,ThruVision,physical_security,
+ThruWave NII 3D Imaging Tool,ThruWave,physical_security,
+Topaz CryoEM,Open source,scientific_ml,
+Traffic Jam,Marinus Analytics,investigative_data,
+TransUnion TLOxp,TransUnion,data_analytics,
+Traveler Verification Service,U.S. Customs and Border Protection,biometrics,
+Trunet Biometrics,Advanced Technologies Group,biometrics,
+Truview,Advanced Technologies Group,data_analytics,
+USAi (GSA),GSA,general_llm,
+USCIS Customer Profile Management System Facial Recognition,U.S. Citizenship and Immigration Services,biometrics,
+USCIS Text Analytics,U.S. Citizenship and Immigration Services,nlp,
+USCIS Verification Match Model,U.S. Citizenship and Immigration Services,nlp,
+USDA ARS GovChat,USDA ARS / Microsoft,general_llm,
+USDA AgCloud Helpdesk Chatbot,USDA / Steampunk,general_llm,
+USDA Automated Road Mapping,USDA Forest Service / RedCastle Resources,other,
+USDA Bugnet,USDA Forest Service / Oregon State University,computer_vision,
+USDA Equine Operations Dataset,USDA / Colorado State University,scientific_ml,
+USDA FSA FLP Chatbot,USDA / AWS,general_llm,
+USDA Forest Health ML Survey,USDA Forest Service / Kikaha Solutions,scientific_ml,
+USDA Forest Plan Review AI,USDA Forest Service / Google,general_llm,
+USDA Forest Service Infosec Chatbot,USDA Forest Service / Google,general_llm,
+USDA Marbled Murrelet Habitat Mapping,USDA Forest Service / American Museum of Natural History,scientific_ml,
+USDA NASSportal Intranet Agent,USDA NASS / Microsoft,agent_platform,
+USDA NRCS NETS Automated Waterway Design,USDA NRCS / Spatial Front,scientific_ml,
+USDA Oregon State Forest Mapping,USDA Forest Service / Oregon State University,scientific_ml,
+USDA Recreation One Stop AI,USDA Forest Service / Booz Allen,general_llm,
+USDA Recreation Site Chatbot,USDA Forest Service / University of Washington,general_llm,
+USDA TreeSearch AI,USDA Forest Service / Google,search,
+USDA VegScape/CropCASMA,USDA NASS / George Mason University,scientific_ml,
+USGS Flow Photo Explorer,USGS / Walker Environmental Research,scientific_ml,
+UiPath Enterprise RPA,UiPath,rpa,
+Ultralytics YOLO,Ultralytics,computer_vision,
+Unison PRISM,Unison,supply_chain,
+UpToDate,Wolters Kluwer,clinical_decision_support,
+Upstream Tech HydroForecast,Upstream Tech,scientific_ml,
+VA AI Assist,U.S. Department of Veterans Affairs,nlp,
+VA Clinical AI Agent,U.S. Department of Veterans Affairs,transcription,
+VA E2 HelpBot,U.S. Department of Veterans Affairs,nlp,
+VA GPT,VA,general_llm,
+VA VoiceBot,U.S. Department of Veterans Affairs,nlp_specific,
+VAO Ally,GSA,agent_platform,
+VUNO Med-DeepBrain,VUNO,clinical_decision_support,
+Vectra AI,Vectra Networks,security_tool,
+Verathon BladderScan Prime PLUS,Verathon,clinical_decision_support,
+Veritone,Veritone,media_analysis,
+Veritone Digital Media Hub,Veritone,other,
+Veritone Illuminate,Veritone,media_analysis,Veritone
+Verkada,Verkada,physical_security,
+Visual Studio,Microsoft,developer_tool,Microsoft
+Visual Studio Enterprise,Microsoft,developer_tool,Visual Studio
+VoiceAtlas,Navteca,general_llm,
+Volpara Imaging,Volpara Health,clinical_decision_support,
+Volta Medical AF-Xplorer,Volta Medical,clinical_decision_support,
+Vyond,Vyond,media_analysis,
+Washington Forest Inventory Maps,USDA Forest Service / University of Washington,scientific_ml,
+WellSaid Labs,WellSaid Labs,nlp_specific,
+Welldoc BlueStar,Welldoc,clinical_decision_support,
+Westlaw AI,Thomson Reuters,legal_research,Thomson Reuters
+Whiterabbit.ai WRDensity,Whiterabbit.ai,clinical_decision_support,
+Whooster,Whooster,data_analytics,
+Wildfire.org Turbo Plan,Wildfire.org,general_llm,
+Windsurf,Codeium,coding_assistant,
+Wiz,Wiz,security_tool,
+Worker PLUS,Department of Labor,data_analytics,
+Yurts AI,Legion (formerly Yurts),general_llm,
+Zeiss CLARUS,Carl Zeiss Meditec,clinical_decision_support,
+Zendesk AI,Zendesk,itsm,
+Zoom,Zoom,productivity,
+Zscaler,Zscaler,security_tool,
+crYOLO,Open Source,scientific_ml,
+cryoDRGN,Open Source,scientific_ml,
+iCAD ProFound AI,iCAD,clinical_decision_support,
+iCatalyst RPA,iCatalyst Inc,rpa,
+iProov,iProov,biometrics,
+iRhythm Zio ECG,iRhythm Technologies,clinical_decision_support,
+idiCORE,LexisNexis Risk Solutions,investigative_data,LexisNexis Risk Solutions
+reCAPTCHA,Google,security_tool,Google
