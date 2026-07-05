@@ -1,0 +1,76 @@
+{
+ "captured_by": "rollout-anchors-2026-07",
+ "captured_at": "2026-07-05T00:00:00Z",
+ "updates": [
+  {
+   "agency_abbreviation": "HHS",
+   "tool_name": "CMS Chat",
+   "estimated_share_of_eligible": 0.15,
+   "share_rationale": "Fable review correction: CMS Chat is available to CMS staff (~6,700 of HHS's ~44k AI-eligible employees, ~15%), not 87% of HHS. Original share conflated \"100% of CMS\" with HHS-wide coverage.",
+   "matrix_product_key": "agency_built"
+  },
+  {
+   "agency_abbreviation": "Treasury",
+   "tool_name": "Agentforce (Salesforce AI agents \u2014 IRS Office of Chief Counsel, Taxpayer Advocate Service, Office of Appeals)",
+   "estimated_share_of_eligible": 0.05,
+   "share_rationale": "No published headcount for the three specific IRS offices covered (Chief Counsel, Taxpayer Advocate Service, Office of Appeals); using the project's unknown-tier fallback of 0.05 against IRS's ~75,000 department-wide workforce as a conservative default. Likely understates share within the specific offices where it is actually deployed.",
+   "matrix_product_key": "agency_built"
+  },
+  {
+   "agency_abbreviation": "SSA",
+   "tool_name": "HeaRT (Hearing Recording and Transcription)",
+   "estimated_share_of_eligible": 0.05,
+   "share_rationale": "HeaRT's public figures are a case-volume metric (500,000 cases/year processed), not a user headcount; using SSA's unknown-tier fallback of 0.05 as a conservative default for hearing-office staff, a subset of SSA's ~57,000-60,000 workforce.",
+   "matrix_product_key": "agency_built"
+  },
+  {
+   "agency_abbreviation": "DHS",
+   "tool_name": "DHSChat (initial HQ launch, Dec 2024)",
+   "estimated_share_of_eligible": 0.29,
+   "share_rationale": "19,000 HQ-launch users / 65,000 eligible (260,000 DHS workforce x 0.25 eligible-tier prior) = 0.29; consistent with the calculation used for the existing DHS/DHSChat wave-2 update.",
+   "matrix_product_key": "agency_built"
+  },
+  {
+   "agency_abbreviation": "DHS",
+   "tool_name": "ChatGPT and Claude (commercial GenAI) \u2014 DHS enterprise access",
+   "estimated_share_of_eligible": 0.0,
+   "share_rationale": "Coverage is explicitly 'none' as of the May 2025 DHS CIO memo revoking commercial GenAI access department-wide; share set to 0.",
+   "matrix_product_key": null
+  },
+  {
+   "agency_abbreviation": "GSA",
+   "tool_name": "Agency-wide generative AI usage (multiple tools)",
+   "estimated_share_of_eligible": 0.7,
+   "share_rationale": "Directly stated in source: 'roughly 70% of GSA employees are consistent users of the tools' (GSA Deputy Administrator Michael Lynch, June 2026).",
+   "matrix_product_key": null
+  },
+  {
+   "agency_abbreviation": "GSA",
+   "tool_name": "USAi.gov (June 2026 update)",
+   "estimated_share_of_eligible": null,
+   "share_rationale": "USAi.gov's coverage metric here is the count of OTHER federal agencies onboarded to GSA's hosting platform (25+, with 16 more coming), not a share of GSA's own workforce; share_of_eligible is not applicable to this cross-government hosting metric.",
+   "matrix_product_key": null
+  },
+  {
+   "agency_abbreviation": "GSA",
+   "tool_name": "Claude for Enterprise and Claude for Government (Anthropic OneGov agreement)",
+   "estimated_share_of_eligible": null,
+   "share_rationale": "This is a government-wide procurement/pricing offer administered by GSA, not a GSA-workforce usage metric, so share_of_eligible is not applicable here.",
+   "matrix_product_key": "claude"
+  },
+  {
+   "agency_abbreviation": "GSA",
+   "tool_name": "ChatGPT Enterprise (OpenAI OneGov agreement)",
+   "estimated_share_of_eligible": null,
+   "share_rationale": "This is a government-wide procurement/pricing offer administered by GSA, not a GSA-workforce usage metric, so share_of_eligible is not applicable here.",
+   "matrix_product_key": "chatgpt"
+  },
+  {
+   "agency_abbreviation": "GSA",
+   "tool_name": "Microsoft 365 Copilot (Microsoft OneGov agreement)",
+   "estimated_share_of_eligible": null,
+   "share_rationale": "This is a government-wide procurement/pricing offer administered by GSA, not a GSA-workforce usage metric, so share_of_eligible is not applicable here.",
+   "matrix_product_key": "ms_copilot"
+  }
+ ]
+}

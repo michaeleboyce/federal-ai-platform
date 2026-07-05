@@ -1,130 +1,764 @@
 {
-  "new_categories": [
-    {
-      "name": "forensics",
-      "definition": "Digital/multimedia forensic evidence analysis for investigations: image/video authentication, redaction, mobile-data extraction and classification.",
-      "products_count": 3,
-      "members": ["Amped Software", "Cellebrite Media Classifier", "CaseGuard"]
-    },
-    {
-      "name": "threat_intel",
-      "definition": "Open-source / dark-web / extremist-community monitoring and cyber threat intelligence platforms (distinct from generic security tools).",
-      "products_count": 4,
-      "members": ["Babel Street Babel", "Recorded Future", "SITE Intelligence Group", "Penlink"]
-    },
-    {
-      "name": "physical_security",
-      "definition": "Physical-world sensing and patrol hardware with onboard AI: surveillance towers, autonomous drones/robots, thermal/teraherz/concealed-object scanners, body-cam/EO-IR turrets.",
-      "products_count": 6,
-      "members": ["Autonomous Surveillance Tower (Anduril)", "FLIR 280 HD", "ThruVision TAC 16", "ThruWave NII 3D Imaging Tool", "Skydio X2D", "Boston Dynamics Spot"]
-    },
-    {
-      "name": "developer_tool",
-      "definition": "IDEs, query/admin tools, and scripting/SDK environments used by software engineers (distinct from coding_assistant LLM features).",
-      "products_count": 5,
-      "members": ["Visual Studio", "Visual Studio Enterprise", "SQL Server Management Studio", "Microsoft Azure PowerShell", "Microsoft Azure Authoring Tools"]
-    },
-    {
-      "name": "investigative_data",
-      "definition": "Public-records / people-search / risk-data platforms used for investigations, due diligence, and identity resolution (distinct from legal-research databases).",
-      "products_count": 5,
-      "members": ["LexisNexis", "LexisNexis Risk Solutions", "idiCORE", "NexisXplore", "Traffic Jam"]
-    }
-  ],
-  "assignments": [
-    {"id": 3161, "canonical_name": "Salesforce Einstein", "category": "ml_platform", "confidence": "high", "rationale": "Salesforce's embedded predictive/GenAI layer for CRM; closer to a vendor ML platform than a generic productivity app."},
-    {"id": 3133, "canonical_name": "NEC NeoFace", "category": "biometrics", "confidence": "high", "rationale": "NEC's face-recognition product line used by CBP/TSA for traveler verification."},
-    {"id": 3094, "canonical_name": "LexisNexis", "category": "investigative_data", "confidence": "high", "rationale": "Generic LexisNexis usage in inventories typically refers to public-records / news / investigative search rather than the legal-research-only product."},
-    {"id": 3100, "canonical_name": "Medallia", "category": "social_listening", "confidence": "high", "rationale": "Experience-management / Voice-of-Customer platform with text-and-speech sentiment analytics across feedback channels."},
-    {"id": 3074, "canonical_name": "Hyperscience", "category": "document_ai", "confidence": "high", "rationale": "Industry-leading intelligent document processing (IDP) with OCR + ML extraction; used at SSA, VA."},
-    {"id": 3105, "canonical_name": "Microsoft AI Builder", "category": "ml_platform", "confidence": "high", "rationale": "Low-code AI model builder inside Power Platform — closest fit is a vendor ML platform."},
-    {"id": 3121, "canonical_name": "Microsoft Power BI", "category": "data_analytics", "confidence": "high", "rationale": "Microsoft's BI / dashboarding analytics product."},
-    {"id": 3122, "canonical_name": "Microsoft Power Platform", "category": "ml_platform", "confidence": "high", "rationale": "Low-code automation+AI stack (Power Apps/Automate/AI Builder); ml_platform is the closest existing bucket."},
-    {"id": 3043, "canonical_name": "DocketScope", "category": "document_ai", "confidence": "high", "rationale": "Public-comment ingestion, deduplication, and clustering for regulatory rulemaking — document-centric NLP."},
-    {"id": 3073, "canonical_name": "HeyGen", "category": "media_analysis", "confidence": "high", "rationale": "AI avatar / video-generation platform; closest fit among existing media-related categories."},
-    {"id": 3120, "canonical_name": "Microsoft Outlook", "category": "productivity", "confidence": "high", "rationale": "Email/calendar productivity client (Copilot features inside it are still productivity)."},
-    {"id": 3148, "canonical_name": "Penlink", "category": "threat_intel", "confidence": "high", "rationale": "Surveillance/OSINT and lawful-intercept platform with location and social-data intelligence — fits the threat-intel cluster more than generic security."},
-    {"id": 3180, "canonical_name": "Tenable", "category": "security_tool", "confidence": "high", "rationale": "Vulnerability management / exposure-management platform — straightforward security-tool fit."},
-    {"id": 3197, "canonical_name": "Visual Studio", "category": "developer_tool", "confidence": "high", "rationale": "Microsoft's flagship IDE; a developer tool, not an AI coding assistant."},
-    {"id": 2989, "canonical_name": "Airship AI Platform", "category": "computer_vision", "confidence": "high", "rationale": "Video/sensor management with AI analytics for DHS/DOJ surveillance — primarily computer-vision-driven."},
-    {"id": 2993, "canonical_name": "Altana Atlas", "category": "supply_chain", "confidence": "high", "rationale": "AI supply-chain mapping / trade-compliance graph — exact fit for existing supply_chain bucket."},
-    {"id": 2996, "canonical_name": "Amped Software", "category": "forensics", "confidence": "high", "rationale": "Forensic image/video enhancement and authentication suite (Amped FIVE, Authenticate)."},
-    {"id": 3019, "canonical_name": "Boston Dynamics Spot", "category": "physical_security", "confidence": "high", "rationale": "Autonomous quadruped used for site inspection and security patrol; physical-security/robotics hardware."},
-    {"id": 3098, "canonical_name": "Lookout", "category": "security_tool", "confidence": "high", "rationale": "AI-driven mobile endpoint detection-and-response (mobile EDR); a security tool."},
-    {"id": 3118, "canonical_name": "Microsoft OneDrive", "category": "productivity", "confidence": "high", "rationale": "File storage/sync productivity service."},
-    {"id": 3119, "canonical_name": "Microsoft OneNote", "category": "productivity", "confidence": "high", "rationale": "Note-taking productivity app."},
-    {"id": 3131, "canonical_name": "Motorola License Plate Recognition", "category": "computer_vision", "confidence": "high", "rationale": "ALPR computer vision for law enforcement."},
-    {"id": 3142, "canonical_name": "Palantir Case Management & Analytics (CMA)", "category": "data_analytics", "confidence": "high", "rationale": "Palantir Foundry/Gotham case-management analytics workflow; data-analytics is the closest existing bucket."},
-    {"id": 3143, "canonical_name": "Palantir Decision and Analytics Platform (DNA-P)", "category": "data_analytics", "confidence": "high", "rationale": "Palantir analytics/decisioning workflow product; data-analytics fits."},
-    {"id": 3169, "canonical_name": "Skillsoft Percipio CAISY", "category": "training", "confidence": "high", "rationale": "AI conversation simulator for workforce learning — fits existing training bucket."},
-    {"id": 3174, "canonical_name": "Sprinklr", "category": "social_listening", "confidence": "high", "rationale": "Unified-CXM platform centered on social listening and omnichannel engagement."},
-    {"id": 3193, "canonical_name": "Vectra AI", "category": "security_tool", "confidence": "high", "rationale": "AI-driven network detection and response (NDR)."},
-    {"id": 3007, "canonical_name": "AWS Lex", "category": "nlp", "confidence": "high", "rationale": "AWS conversational chatbot / NLU service."},
-    {"id": 2986, "canonical_name": "Adobe Creative Cloud Suite", "category": "productivity", "confidence": "high", "rationale": "Creative authoring suite (Photoshop/Premiere/etc.) with embedded GenAI; closest existing bucket is productivity."},
-    {"id": 2991, "canonical_name": "Alation Data Catalog", "category": "data_catalog", "confidence": "high", "rationale": "Exact fit for the existing data_catalog bucket."},
-    {"id": 3000, "canonical_name": "Articulate 360 AI Assistant", "category": "training", "confidence": "high", "rationale": "Authoring tool for e-learning courses with embedded AI; fits training."},
-    {"id": 3003, "canonical_name": "Autonomous Surveillance Tower", "category": "physical_security", "confidence": "high", "rationale": "Anduril solar-powered AI surveillance tower with radar/EO/IR — physical-security/perimeter sensing."},
-    {"id": 3016, "canonical_name": "Babel Street Babel", "category": "threat_intel", "confidence": "high", "rationale": "OSINT/PAI threat-intelligence and identity-risk platform used by national-security agencies."},
-    {"id": 3020, "canonical_name": "C3 AI", "category": "ml_platform", "confidence": "high", "rationale": "C3 AI is an enterprise AI/ML application platform."},
-    {"id": 3022, "canonical_name": "CaseGuard", "category": "forensics", "confidence": "high", "rationale": "AI redaction of bodycam/CCTV/audio evidence — sits squarely in the forensic-evidence-handling cluster."},
-    {"id": 3023, "canonical_name": "Cellebrite Media Classifier", "category": "forensics", "confidence": "high", "rationale": "AI image/video classifier inside Cellebrite Physical Analyzer for mobile-device forensics."},
-    {"id": 3029, "canonical_name": "Clearview AI", "category": "biometrics", "confidence": "high", "rationale": "Face-recognition database/search — biometrics."},
-    {"id": 3033, "canonical_name": "CrewAI", "category": "agent_platform", "confidence": "high", "rationale": "Multi-agent orchestration framework — fits agent_platform exactly."},
-    {"id": 3048, "canonical_name": "Everlaw AI Assistant", "category": "ediscovery", "confidence": "high", "rationale": "Cloud-native ediscovery platform with GenAI document review; existing ediscovery bucket fits."},
-    {"id": 3052, "canonical_name": "FLIR 280 HD", "category": "physical_security", "confidence": "high", "rationale": "Teledyne FLIR TacFLIR/SeaFLIR 280-HD gyro-stabilized EO/IR surveillance turret with aided target recognition."},
-    {"id": 3061, "canonical_name": "Google Chrome Generative AI", "category": "consumer_feature", "confidence": "high", "rationale": "GenAI features baked into the consumer Chrome browser."},
-    {"id": 3063, "canonical_name": "Google Cloud Vision", "category": "computer_vision", "confidence": "high", "rationale": "Google's cloud computer-vision API."},
-    {"id": 3071, "canonical_name": "Gurucul UEBA", "category": "security_tool", "confidence": "high", "rationale": "User-and-entity behavior analytics / next-gen SIEM — security tool."},
-    {"id": 3077, "canonical_name": "IBM Watson", "category": "ml_platform", "confidence": "high", "rationale": "IBM's broad AI/ML platform brand; ml_platform is the closest existing bucket."},
-    {"id": 3083, "canonical_name": "Illumio", "category": "security_tool", "confidence": "high", "rationale": "Zero-trust microsegmentation / breach-containment security tool."},
-    {"id": 3087, "canonical_name": "KESTREL", "category": "data_analytics", "confidence": "medium", "rationale": "DHS/Vantor (Maxar) KESTREL is an AI analytics platform fusing air/maritime sensor data for AMOC — closest fit is data_analytics; it's not primarily computer vision."},
-    {"id": 3096, "canonical_name": "LIGER Generative AI Toolkit", "category": "general_llm", "confidence": "high", "rationale": "LMI's secure RAG/agentic GenAI platform for government — a general-purpose LLM platform offering."},
-    {"id": 3090, "canonical_name": "Lasso Security", "category": "security_tool", "confidence": "high", "rationale": "AI/LLM application security platform (prompt-injection defense, output validation)."},
-    {"id": 3095, "canonical_name": "LexisNexis Risk Solutions", "category": "investigative_data", "confidence": "high", "rationale": "Identity, risk, and law-enforcement public-records data platform (Accurint family)."},
-    {"id": 3099, "canonical_name": "Matroid I4 Viewer", "category": "computer_vision", "confidence": "high", "rationale": "No-code computer-vision detector platform; CBP I4 Viewer is the integration."},
-    {"id": 3106, "canonical_name": "Microsoft Azure Authoring Tools", "category": "developer_tool", "confidence": "high", "rationale": "Authoring/SDK tooling for Azure development workflows."},
-    {"id": 3108, "canonical_name": "Microsoft Azure PowerShell", "category": "developer_tool", "confidence": "high", "rationale": "Scripting/automation CLI for Azure — developer tool."},
-    {"id": 3109, "canonical_name": "Microsoft Azure Quantum Elements", "category": "scientific_ml", "confidence": "high", "rationale": "Azure Quantum Elements is an AI+HPC platform for chemistry/materials science research."},
-    {"id": 3113, "canonical_name": "Microsoft Discovery", "category": "scientific_ml", "confidence": "medium", "rationale": "Microsoft Discovery is an agentic R&D platform for scientific discovery; scientific_ml is the closest fit."},
-    {"id": 3114, "canonical_name": "Microsoft Dynamics 365", "category": "productivity", "confidence": "high", "rationale": "ERP/CRM business-applications suite; productivity is the closest existing bucket."},
-    {"id": 3115, "canonical_name": "Microsoft Edge", "category": "consumer_feature", "confidence": "high", "rationale": "Consumer browser with Copilot features."},
-    {"id": 3116, "canonical_name": "Microsoft Exchange Server", "category": "productivity", "confidence": "high", "rationale": "Enterprise email/calendar server."},
-    {"id": 3123, "canonical_name": "Microsoft PowerPoint", "category": "productivity", "confidence": "high", "rationale": "Office presentation app."},
-    {"id": 3124, "canonical_name": "Microsoft Project", "category": "productivity", "confidence": "high", "rationale": "Project-management productivity app."},
-    {"id": 3125, "canonical_name": "Microsoft Purview eDiscovery", "category": "ediscovery", "confidence": "high", "rationale": "Microsoft's ediscovery product; fits existing ediscovery bucket."},
-    {"id": 3126, "canonical_name": "Microsoft ScreenSketch", "category": "productivity", "confidence": "high", "rationale": "Snip & Sketch screenshot utility — productivity."},
-    {"id": 3127, "canonical_name": "Microsoft Search in Bing", "category": "search", "confidence": "high", "rationale": "Enterprise search; fits existing search bucket."},
-    {"id": 3129, "canonical_name": "Microsoft Skype", "category": "productivity", "confidence": "high", "rationale": "Communication/conferencing productivity app."},
-    {"id": 3134, "canonical_name": "NexisXplore", "category": "investigative_data", "confidence": "high", "rationale": "LexisNexis legal/business intelligence search — used for due-diligence/investigative workflows."},
-    {"id": 3135, "canonical_name": "Okta Adaptive MFA", "category": "identity_verification", "confidence": "high", "rationale": "Adaptive multi-factor authentication; fits existing identity_verification bucket."},
-    {"id": 3138, "canonical_name": "OpenText Axcelerate", "category": "ediscovery", "confidence": "high", "rationale": "Ediscovery review platform with TAR/CAL — fits existing ediscovery."},
-    {"id": 3139, "canonical_name": "OpenText Decisiv", "category": "search", "confidence": "high", "rationale": "Enterprise search/knowledge-management with supervised-ML retrieval; closer to search than ediscovery."},
-    {"id": 3144, "canonical_name": "Palantir Federal Cloud Service", "category": "cloud_platform", "confidence": "high", "rationale": "Palantir's GovCloud/IL hosting environment; fits existing cloud_platform bucket."},
-    {"id": 3147, "canonical_name": "PassiveLogic", "category": "scientific_ml", "confidence": "medium", "rationale": "Physics-based AI/digital-twin platform for autonomous building controls; closest existing bucket is scientific_ml (physics-AI/digital-twin)."},
-    {"id": 3155, "canonical_name": "Quantaero Marine Wildlife AI", "category": "computer_vision", "confidence": "medium", "rationale": "Aerial imagery analytics for wildlife population counts — applied computer vision on aerial data."},
-    {"id": 3157, "canonical_name": "Recorded Future", "category": "threat_intel", "confidence": "high", "rationale": "Cyber threat-intelligence platform with AI-driven Intelligence Graph."},
-    {"id": 3159, "canonical_name": "Rekor", "category": "computer_vision", "confidence": "high", "rationale": "ALPR/vehicle-recognition computer-vision platform for roadway intelligence."},
-    {"id": 3168, "canonical_name": "SITE Intelligence Group", "category": "threat_intel", "confidence": "high", "rationale": "Online monitoring of jihadist/extremist communities — threat-intelligence service."},
-    {"id": 3176, "canonical_name": "SQL Server Management Studio", "category": "developer_tool", "confidence": "high", "rationale": "Microsoft's SQL admin/query IDE — developer tool."},
-    {"id": 3163, "canonical_name": "Scopus AI", "category": "scientific_ml", "confidence": "high", "rationale": "GenAI literature-search assistant over Elsevier's research corpus; closest existing bucket is scientific_ml (research/science domain)."},
-    {"id": 3164, "canonical_name": "ServiceNow IT Operations Management (ITOM) Predictive AIOps", "category": "itsm", "confidence": "high", "rationale": "ServiceNow ITOM/AIOps; fits existing itsm bucket."},
-    {"id": 3170, "canonical_name": "Skydio X2D", "category": "physical_security", "confidence": "high", "rationale": "AI-autonomous small drone (RQ-28A) for ISR/inspection — physical-security/robotics hardware."},
-    {"id": 3183, "canonical_name": "ThruVision TAC 16", "category": "physical_security", "confidence": "high", "rationale": "Passive-terahertz concealed-object screening for transit/border security."},
-    {"id": 3184, "canonical_name": "ThruWave NII 3D Imaging Tool", "category": "physical_security", "confidence": "high", "rationale": "Millimeter-wave non-intrusive 3D imaging for cargo/parcel inspection."},
-    {"id": 3185, "canonical_name": "Traffic Jam", "category": "investigative_data", "confidence": "high", "rationale": "Marinus Analytics' AI investigative tool for human-trafficking cases; sits in the investigative-data cluster (search across PAI ads/data)."},
-    {"id": 3187, "canonical_name": "UiPath Enterprise RPA", "category": "rpa", "confidence": "high", "rationale": "Flagship robotic-process-automation platform; exact fit for existing rpa bucket."},
-    {"id": 3189, "canonical_name": "Upstream Tech HydroForecast", "category": "scientific_ml", "confidence": "high", "rationale": "AI streamflow / hydrology forecasting model — applied scientific ML."},
-    {"id": 3198, "canonical_name": "Visual Studio Enterprise", "category": "developer_tool", "confidence": "high", "rationale": "Microsoft's premium IDE SKU."},
-    {"id": 3199, "canonical_name": "VoiceAtlas", "category": "general_llm", "confidence": "high", "rationale": "Navteca's enterprise GenAI conversational search engine over knowledge bases (used at NASA)."},
-    {"id": 3204, "canonical_name": "Yurts AI", "category": "general_llm", "confidence": "high", "rationale": "Legion (formerly Yurts) is a model-agnostic enterprise LLM/agent deployment platform with FedRAMP High; sits with general-LLM platforms."},
-    {"id": 3086, "canonical_name": "iProov", "category": "biometrics", "confidence": "high", "rationale": "Face-biometrics liveness / identity verification — biometrics fits better than identity_verification given the face-recognition core."},
-    {"id": 3082, "canonical_name": "idiCORE", "category": "investigative_data", "confidence": "high", "rationale": "IDI's people/business/asset investigative data platform with link analysis."}
-  ],
-  "summary": {
-    "total": 87,
-    "high_confidence": 83,
-    "medium_confidence": 4,
-    "low_confidence": 0,
-    "new_category_assignments": 23
+ "new_categories": [
+  {
+   "name": "forensics",
+   "definition": "Digital/multimedia forensic evidence analysis for investigations: image/video authentication, redaction, mobile-data extraction and classification.",
+   "products_count": 3,
+   "members": [
+    "Amped Software",
+    "Cellebrite Media Classifier",
+    "CaseGuard"
+   ]
+  },
+  {
+   "name": "threat_intel",
+   "definition": "Open-source / dark-web / extremist-community monitoring and cyber threat intelligence platforms (distinct from generic security tools).",
+   "products_count": 4,
+   "members": [
+    "Babel Street Babel",
+    "Recorded Future",
+    "SITE Intelligence Group",
+    "Penlink"
+   ]
+  },
+  {
+   "name": "physical_security",
+   "definition": "Physical-world sensing and patrol hardware with onboard AI: surveillance towers, autonomous drones/robots, thermal/teraherz/concealed-object scanners, body-cam/EO-IR turrets.",
+   "products_count": 6,
+   "members": [
+    "Autonomous Surveillance Tower (Anduril)",
+    "FLIR 280 HD",
+    "ThruVision TAC 16",
+    "ThruWave NII 3D Imaging Tool",
+    "Skydio X2D",
+    "Boston Dynamics Spot"
+   ]
+  },
+  {
+   "name": "developer_tool",
+   "definition": "IDEs, query/admin tools, and scripting/SDK environments used by software engineers (distinct from coding_assistant LLM features).",
+   "products_count": 5,
+   "members": [
+    "Visual Studio",
+    "Visual Studio Enterprise",
+    "SQL Server Management Studio",
+    "Microsoft Azure PowerShell",
+    "Microsoft Azure Authoring Tools"
+   ]
+  },
+  {
+   "name": "investigative_data",
+   "definition": "Public-records / people-search / risk-data platforms used for investigations, due diligence, and identity resolution (distinct from legal-research databases).",
+   "products_count": 5,
+   "members": [
+    "LexisNexis",
+    "LexisNexis Risk Solutions",
+    "idiCORE",
+    "NexisXplore",
+    "Traffic Jam"
+   ]
   }
+ ],
+ "assignments": [
+  {
+   "id": 3161,
+   "canonical_name": "Salesforce Einstein",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "Salesforce's embedded predictive/GenAI layer for CRM; closer to a vendor ML platform than a generic productivity app. [Updated by product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv]"
+  },
+  {
+   "id": 3133,
+   "canonical_name": "NEC NeoFace",
+   "category": "biometrics",
+   "confidence": "high",
+   "rationale": "NEC's face-recognition product line used by CBP/TSA for traveler verification."
+  },
+  {
+   "id": 3094,
+   "canonical_name": "LexisNexis",
+   "category": "investigative_data",
+   "confidence": "high",
+   "rationale": "Generic LexisNexis usage in inventories typically refers to public-records / news / investigative search rather than the legal-research-only product."
+  },
+  {
+   "id": 3100,
+   "canonical_name": "Medallia",
+   "category": "social_listening",
+   "confidence": "high",
+   "rationale": "Experience-management / Voice-of-Customer platform with text-and-speech sentiment analytics across feedback channels."
+  },
+  {
+   "id": 3074,
+   "canonical_name": "Hyperscience",
+   "category": "document_ai",
+   "confidence": "high",
+   "rationale": "Industry-leading intelligent document processing (IDP) with OCR + ML extraction; used at SSA, VA."
+  },
+  {
+   "id": 3105,
+   "canonical_name": "Microsoft AI Builder",
+   "category": "ml_platform",
+   "confidence": "high",
+   "rationale": "Low-code AI model builder inside Power Platform \u2014 closest fit is a vendor ML platform."
+  },
+  {
+   "id": 3121,
+   "canonical_name": "Microsoft Power BI",
+   "category": "data_analytics",
+   "confidence": "high",
+   "rationale": "Microsoft's BI / dashboarding analytics product."
+  },
+  {
+   "id": 3122,
+   "canonical_name": "Microsoft Power Platform",
+   "category": "ml_platform",
+   "confidence": "high",
+   "rationale": "Low-code automation+AI stack (Power Apps/Automate/AI Builder); ml_platform is the closest existing bucket."
+  },
+  {
+   "id": 3043,
+   "canonical_name": "DocketScope",
+   "category": "document_ai",
+   "confidence": "high",
+   "rationale": "Public-comment ingestion, deduplication, and clustering for regulatory rulemaking \u2014 document-centric NLP."
+  },
+  {
+   "id": 3073,
+   "canonical_name": "HeyGen",
+   "category": "media_analysis",
+   "confidence": "high",
+   "rationale": "AI avatar / video-generation platform; closest fit among existing media-related categories."
+  },
+  {
+   "id": 3120,
+   "canonical_name": "Microsoft Outlook",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "Email/calendar productivity client (Copilot features inside it are still productivity)."
+  },
+  {
+   "id": 3148,
+   "canonical_name": "Penlink",
+   "category": "threat_intel",
+   "confidence": "high",
+   "rationale": "Surveillance/OSINT and lawful-intercept platform with location and social-data intelligence \u2014 fits the threat-intel cluster more than generic security."
+  },
+  {
+   "id": 3180,
+   "canonical_name": "Tenable",
+   "category": "security_tool",
+   "confidence": "high",
+   "rationale": "Vulnerability management / exposure-management platform \u2014 straightforward security-tool fit."
+  },
+  {
+   "id": 3197,
+   "canonical_name": "Visual Studio",
+   "category": "developer_tool",
+   "confidence": "high",
+   "rationale": "Microsoft's flagship IDE; a developer tool, not an AI coding assistant."
+  },
+  {
+   "id": 2989,
+   "canonical_name": "Airship AI Platform",
+   "category": "computer_vision",
+   "confidence": "high",
+   "rationale": "Video/sensor management with AI analytics for DHS/DOJ surveillance \u2014 primarily computer-vision-driven."
+  },
+  {
+   "id": 2993,
+   "canonical_name": "Altana Atlas",
+   "category": "supply_chain",
+   "confidence": "high",
+   "rationale": "AI supply-chain mapping / trade-compliance graph \u2014 exact fit for existing supply_chain bucket."
+  },
+  {
+   "id": 2996,
+   "canonical_name": "Amped Software",
+   "category": "forensics",
+   "confidence": "high",
+   "rationale": "Forensic image/video enhancement and authentication suite (Amped FIVE, Authenticate)."
+  },
+  {
+   "id": 3019,
+   "canonical_name": "Boston Dynamics Spot",
+   "category": "physical_security",
+   "confidence": "high",
+   "rationale": "Autonomous quadruped used for site inspection and security patrol; physical-security/robotics hardware."
+  },
+  {
+   "id": 3098,
+   "canonical_name": "Lookout",
+   "category": "security_tool",
+   "confidence": "high",
+   "rationale": "AI-driven mobile endpoint detection-and-response (mobile EDR); a security tool."
+  },
+  {
+   "id": 3118,
+   "canonical_name": "Microsoft OneDrive",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "File storage/sync productivity service."
+  },
+  {
+   "id": 3119,
+   "canonical_name": "Microsoft OneNote",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "Note-taking productivity app."
+  },
+  {
+   "id": 3131,
+   "canonical_name": "Motorola License Plate Recognition",
+   "category": "computer_vision",
+   "confidence": "high",
+   "rationale": "ALPR computer vision for law enforcement."
+  },
+  {
+   "id": 3142,
+   "canonical_name": "Palantir Case Management & Analytics (CMA)",
+   "category": "data_analytics",
+   "confidence": "high",
+   "rationale": "Palantir Foundry/Gotham case-management analytics workflow; data-analytics is the closest existing bucket."
+  },
+  {
+   "id": 3143,
+   "canonical_name": "Palantir Decision and Analytics Platform (DNA-P)",
+   "category": "data_analytics",
+   "confidence": "high",
+   "rationale": "Palantir analytics/decisioning workflow product; data-analytics fits."
+  },
+  {
+   "id": 3169,
+   "canonical_name": "Skillsoft Percipio CAISY",
+   "category": "training",
+   "confidence": "high",
+   "rationale": "AI conversation simulator for workforce learning \u2014 fits existing training bucket."
+  },
+  {
+   "id": 3174,
+   "canonical_name": "Sprinklr",
+   "category": "social_listening",
+   "confidence": "high",
+   "rationale": "Unified-CXM platform centered on social listening and omnichannel engagement."
+  },
+  {
+   "id": 3193,
+   "canonical_name": "Vectra AI",
+   "category": "security_tool",
+   "confidence": "high",
+   "rationale": "AI-driven network detection and response (NDR)."
+  },
+  {
+   "id": 3007,
+   "canonical_name": "AWS Lex",
+   "category": "nlp",
+   "confidence": "high",
+   "rationale": "AWS conversational chatbot / NLU service."
+  },
+  {
+   "id": 2986,
+   "canonical_name": "Adobe Creative Cloud Suite",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "Creative authoring suite (Photoshop/Premiere/etc.) with embedded GenAI; closest existing bucket is productivity."
+  },
+  {
+   "id": 2991,
+   "canonical_name": "Alation Data Catalog",
+   "category": "data_catalog",
+   "confidence": "high",
+   "rationale": "Exact fit for the existing data_catalog bucket."
+  },
+  {
+   "id": 3000,
+   "canonical_name": "Articulate 360 AI Assistant",
+   "category": "training",
+   "confidence": "high",
+   "rationale": "Authoring tool for e-learning courses with embedded AI; fits training."
+  },
+  {
+   "id": 3003,
+   "canonical_name": "Autonomous Surveillance Tower",
+   "category": "physical_security",
+   "confidence": "high",
+   "rationale": "Anduril solar-powered AI surveillance tower with radar/EO/IR \u2014 physical-security/perimeter sensing."
+  },
+  {
+   "id": 3016,
+   "canonical_name": "Babel Street Babel",
+   "category": "threat_intel",
+   "confidence": "high",
+   "rationale": "OSINT/PAI threat-intelligence and identity-risk platform used by national-security agencies."
+  },
+  {
+   "id": 3020,
+   "canonical_name": "C3 AI",
+   "category": "ml_platform",
+   "confidence": "high",
+   "rationale": "C3 AI is an enterprise AI/ML application platform."
+  },
+  {
+   "id": 3022,
+   "canonical_name": "CaseGuard",
+   "category": "forensics",
+   "confidence": "high",
+   "rationale": "AI redaction of bodycam/CCTV/audio evidence \u2014 sits squarely in the forensic-evidence-handling cluster."
+  },
+  {
+   "id": 3023,
+   "canonical_name": "Cellebrite Media Classifier",
+   "category": "forensics",
+   "confidence": "high",
+   "rationale": "AI image/video classifier inside Cellebrite Physical Analyzer for mobile-device forensics."
+  },
+  {
+   "id": 3029,
+   "canonical_name": "Clearview AI",
+   "category": "biometrics",
+   "confidence": "high",
+   "rationale": "Face-recognition database/search \u2014 biometrics."
+  },
+  {
+   "id": 3033,
+   "canonical_name": "CrewAI",
+   "category": "agent_platform",
+   "confidence": "high",
+   "rationale": "Multi-agent orchestration framework \u2014 fits agent_platform exactly."
+  },
+  {
+   "id": 3048,
+   "canonical_name": "Everlaw AI Assistant",
+   "category": "ediscovery",
+   "confidence": "high",
+   "rationale": "Cloud-native ediscovery platform with GenAI document review; existing ediscovery bucket fits."
+  },
+  {
+   "id": 3052,
+   "canonical_name": "FLIR 280 HD",
+   "category": "physical_security",
+   "confidence": "high",
+   "rationale": "Teledyne FLIR TacFLIR/SeaFLIR 280-HD gyro-stabilized EO/IR surveillance turret with aided target recognition."
+  },
+  {
+   "id": 3061,
+   "canonical_name": "Google Chrome Generative AI",
+   "category": "consumer_feature",
+   "confidence": "high",
+   "rationale": "GenAI features baked into the consumer Chrome browser."
+  },
+  {
+   "id": 3063,
+   "canonical_name": "Google Cloud Vision",
+   "category": "computer_vision",
+   "confidence": "high",
+   "rationale": "Google's cloud computer-vision API."
+  },
+  {
+   "id": 3071,
+   "canonical_name": "Gurucul UEBA",
+   "category": "security_tool",
+   "confidence": "high",
+   "rationale": "User-and-entity behavior analytics / next-gen SIEM \u2014 security tool."
+  },
+  {
+   "id": 3077,
+   "canonical_name": "IBM Watson",
+   "category": "ml_platform",
+   "confidence": "high",
+   "rationale": "IBM's broad AI/ML platform brand; ml_platform is the closest existing bucket."
+  },
+  {
+   "id": 3083,
+   "canonical_name": "Illumio",
+   "category": "security_tool",
+   "confidence": "high",
+   "rationale": "Zero-trust microsegmentation / breach-containment security tool."
+  },
+  {
+   "id": 3087,
+   "canonical_name": "KESTREL",
+   "category": "data_analytics",
+   "confidence": "medium",
+   "rationale": "DHS/Vantor (Maxar) KESTREL is an AI analytics platform fusing air/maritime sensor data for AMOC \u2014 closest fit is data_analytics; it's not primarily computer vision."
+  },
+  {
+   "id": 3096,
+   "canonical_name": "LIGER Generative AI Toolkit",
+   "category": "general_llm",
+   "confidence": "high",
+   "rationale": "LMI's secure RAG/agentic GenAI platform for government \u2014 a general-purpose LLM platform offering."
+  },
+  {
+   "id": 3090,
+   "canonical_name": "Lasso Security",
+   "category": "security_tool",
+   "confidence": "high",
+   "rationale": "AI/LLM application security platform (prompt-injection defense, output validation)."
+  },
+  {
+   "id": 3095,
+   "canonical_name": "LexisNexis Risk Solutions",
+   "category": "investigative_data",
+   "confidence": "high",
+   "rationale": "Identity, risk, and law-enforcement public-records data platform (Accurint family)."
+  },
+  {
+   "id": 3099,
+   "canonical_name": "Matroid I4 Viewer",
+   "category": "computer_vision",
+   "confidence": "high",
+   "rationale": "No-code computer-vision detector platform; CBP I4 Viewer is the integration."
+  },
+  {
+   "id": 3106,
+   "canonical_name": "Microsoft Azure Authoring Tools",
+   "category": "developer_tool",
+   "confidence": "high",
+   "rationale": "Authoring/SDK tooling for Azure development workflows."
+  },
+  {
+   "id": 3108,
+   "canonical_name": "Microsoft Azure PowerShell",
+   "category": "developer_tool",
+   "confidence": "high",
+   "rationale": "Scripting/automation CLI for Azure \u2014 developer tool."
+  },
+  {
+   "id": 3109,
+   "canonical_name": "Microsoft Azure Quantum Elements",
+   "category": "scientific_ml",
+   "confidence": "high",
+   "rationale": "Azure Quantum Elements is an AI+HPC platform for chemistry/materials science research."
+  },
+  {
+   "id": 3113,
+   "canonical_name": "Microsoft Discovery",
+   "category": "scientific_ml",
+   "confidence": "medium",
+   "rationale": "Microsoft Discovery is an agentic R&D platform for scientific discovery; scientific_ml is the closest fit."
+  },
+  {
+   "id": 3114,
+   "canonical_name": "Microsoft Dynamics 365",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "ERP/CRM business-applications suite; productivity is the closest existing bucket."
+  },
+  {
+   "id": 3115,
+   "canonical_name": "Microsoft Edge",
+   "category": "consumer_feature",
+   "confidence": "high",
+   "rationale": "Consumer browser with Copilot features."
+  },
+  {
+   "id": 3116,
+   "canonical_name": "Microsoft Exchange Server",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "Enterprise email/calendar server."
+  },
+  {
+   "id": 3123,
+   "canonical_name": "Microsoft PowerPoint",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "Office presentation app."
+  },
+  {
+   "id": 3124,
+   "canonical_name": "Microsoft Project",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "Project-management productivity app."
+  },
+  {
+   "id": 3125,
+   "canonical_name": "Microsoft Purview eDiscovery",
+   "category": "ediscovery",
+   "confidence": "high",
+   "rationale": "Microsoft's ediscovery product; fits existing ediscovery bucket."
+  },
+  {
+   "id": 3126,
+   "canonical_name": "Microsoft ScreenSketch",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "Snip & Sketch screenshot utility \u2014 productivity."
+  },
+  {
+   "id": 3127,
+   "canonical_name": "Microsoft Search in Bing",
+   "category": "search",
+   "confidence": "high",
+   "rationale": "Enterprise search; fits existing search bucket."
+  },
+  {
+   "id": 3129,
+   "canonical_name": "Microsoft Skype",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "Communication/conferencing productivity app."
+  },
+  {
+   "id": 3134,
+   "canonical_name": "NexisXplore",
+   "category": "investigative_data",
+   "confidence": "high",
+   "rationale": "LexisNexis legal/business intelligence search \u2014 used for due-diligence/investigative workflows."
+  },
+  {
+   "id": 3135,
+   "canonical_name": "Okta Adaptive MFA",
+   "category": "identity_verification",
+   "confidence": "high",
+   "rationale": "Adaptive multi-factor authentication; fits existing identity_verification bucket."
+  },
+  {
+   "id": 3138,
+   "canonical_name": "OpenText Axcelerate",
+   "category": "ediscovery",
+   "confidence": "high",
+   "rationale": "Ediscovery review platform with TAR/CAL \u2014 fits existing ediscovery."
+  },
+  {
+   "id": 3139,
+   "canonical_name": "OpenText Decisiv",
+   "category": "search",
+   "confidence": "high",
+   "rationale": "Enterprise search/knowledge-management with supervised-ML retrieval; closer to search than ediscovery."
+  },
+  {
+   "id": 3144,
+   "canonical_name": "Palantir Federal Cloud Service",
+   "category": "cloud_platform",
+   "confidence": "high",
+   "rationale": "Palantir's GovCloud/IL hosting environment; fits existing cloud_platform bucket."
+  },
+  {
+   "id": 3147,
+   "canonical_name": "PassiveLogic",
+   "category": "scientific_ml",
+   "confidence": "medium",
+   "rationale": "Physics-based AI/digital-twin platform for autonomous building controls; closest existing bucket is scientific_ml (physics-AI/digital-twin)."
+  },
+  {
+   "id": 3155,
+   "canonical_name": "Quantaero Marine Wildlife AI",
+   "category": "computer_vision",
+   "confidence": "medium",
+   "rationale": "Aerial imagery analytics for wildlife population counts \u2014 applied computer vision on aerial data."
+  },
+  {
+   "id": 3157,
+   "canonical_name": "Recorded Future",
+   "category": "threat_intel",
+   "confidence": "high",
+   "rationale": "Cyber threat-intelligence platform with AI-driven Intelligence Graph."
+  },
+  {
+   "id": 3159,
+   "canonical_name": "Rekor",
+   "category": "computer_vision",
+   "confidence": "high",
+   "rationale": "ALPR/vehicle-recognition computer-vision platform for roadway intelligence."
+  },
+  {
+   "id": 3168,
+   "canonical_name": "SITE Intelligence Group",
+   "category": "threat_intel",
+   "confidence": "high",
+   "rationale": "Online monitoring of jihadist/extremist communities \u2014 threat-intelligence service."
+  },
+  {
+   "id": 3176,
+   "canonical_name": "SQL Server Management Studio",
+   "category": "developer_tool",
+   "confidence": "high",
+   "rationale": "Microsoft's SQL admin/query IDE \u2014 developer tool."
+  },
+  {
+   "id": 3163,
+   "canonical_name": "Scopus AI",
+   "category": "scientific_ml",
+   "confidence": "high",
+   "rationale": "GenAI literature-search assistant over Elsevier's research corpus; closest existing bucket is scientific_ml (research/science domain)."
+  },
+  {
+   "id": 3164,
+   "canonical_name": "ServiceNow IT Operations Management (ITOM) Predictive AIOps",
+   "category": "itsm",
+   "confidence": "high",
+   "rationale": "ServiceNow ITOM/AIOps; fits existing itsm bucket."
+  },
+  {
+   "id": 3170,
+   "canonical_name": "Skydio X2D",
+   "category": "physical_security",
+   "confidence": "high",
+   "rationale": "AI-autonomous small drone (RQ-28A) for ISR/inspection \u2014 physical-security/robotics hardware."
+  },
+  {
+   "id": 3183,
+   "canonical_name": "ThruVision TAC 16",
+   "category": "physical_security",
+   "confidence": "high",
+   "rationale": "Passive-terahertz concealed-object screening for transit/border security."
+  },
+  {
+   "id": 3184,
+   "canonical_name": "ThruWave NII 3D Imaging Tool",
+   "category": "physical_security",
+   "confidence": "high",
+   "rationale": "Millimeter-wave non-intrusive 3D imaging for cargo/parcel inspection."
+  },
+  {
+   "id": 3185,
+   "canonical_name": "Traffic Jam",
+   "category": "investigative_data",
+   "confidence": "high",
+   "rationale": "Marinus Analytics' AI investigative tool for human-trafficking cases; sits in the investigative-data cluster (search across PAI ads/data)."
+  },
+  {
+   "id": 3187,
+   "canonical_name": "UiPath Enterprise RPA",
+   "category": "rpa",
+   "confidence": "high",
+   "rationale": "Flagship robotic-process-automation platform; exact fit for existing rpa bucket."
+  },
+  {
+   "id": 3189,
+   "canonical_name": "Upstream Tech HydroForecast",
+   "category": "scientific_ml",
+   "confidence": "high",
+   "rationale": "AI streamflow / hydrology forecasting model \u2014 applied scientific ML."
+  },
+  {
+   "id": 3198,
+   "canonical_name": "Visual Studio Enterprise",
+   "category": "developer_tool",
+   "confidence": "high",
+   "rationale": "Microsoft's premium IDE SKU."
+  },
+  {
+   "id": 3199,
+   "canonical_name": "VoiceAtlas",
+   "category": "general_llm",
+   "confidence": "high",
+   "rationale": "Navteca's enterprise GenAI conversational search engine over knowledge bases (used at NASA)."
+  },
+  {
+   "id": 3204,
+   "canonical_name": "Yurts AI",
+   "category": "general_llm",
+   "confidence": "high",
+   "rationale": "Legion (formerly Yurts) is a model-agnostic enterprise LLM/agent deployment platform with FedRAMP High; sits with general-LLM platforms."
+  },
+  {
+   "id": 3086,
+   "canonical_name": "iProov",
+   "category": "biometrics",
+   "confidence": "high",
+   "rationale": "Face-biometrics liveness / identity verification \u2014 biometrics fits better than identity_verification given the face-recognition core."
+  },
+  {
+   "id": 3082,
+   "canonical_name": "idiCORE",
+   "category": "investigative_data",
+   "confidence": "high",
+   "rationale": "IDI's people/business/asset investigative data platform with link analysis."
+  },
+  {
+   "id": null,
+   "canonical_name": "Palantir AIP",
+   "category": "agent_platform",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Unison PRISM",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Doble Test Assistant",
+   "category": "data_analytics",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Synthesia",
+   "category": "media_analysis",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Meltwater",
+   "category": "social_listening",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Sprout Social",
+   "category": "social_listening",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Flashpoint",
+   "category": "investigative_data",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Magnet Forensics",
+   "category": "forensics",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Tableau",
+   "category": "data_analytics",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Microsoft 365",
+   "category": "productivity",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "Genesys Cloud CX",
+   "category": "agent_platform",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  },
+  {
+   "id": null,
+   "canonical_name": "ServiceNow Now Assist",
+   "category": "itsm",
+   "confidence": "high",
+   "rationale": "product_band_audit_2026-07 (Fable-audited): see audit/product_band_audit_2026-07/recommendations.csv"
+  }
+ ],
+ "summary": {
+  "total": 87,
+  "high_confidence": 83,
+  "medium_confidence": 4,
+  "low_confidence": 0,
+  "new_category_assignments": 23
+ }
 }

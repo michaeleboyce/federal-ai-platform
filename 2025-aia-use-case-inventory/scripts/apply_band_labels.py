@@ -87,14 +87,36 @@ def load_labels() -> tuple[dict[str, dict], list[str]]:
     label_files = sorted(PASS_DIR.glob("labels_*.csv"))
     if not label_files:
         return {}, [f"no labels_*.csv under {PASS_DIR}"]
+
+    # Slugs with an `override` audit verdict are replaced wholesale — the
+    # base row must not be validated (overrides often exist precisely
+    # because the base row is malformed, e.g. out-of-vocabulary stratum).
+    overridden: set[str] = set()
+    overrides = PASS_DIR / "audit_overrides.csv"
+    if overrides.exists():
+        with overrides.open() as f:
+            for row in csv.DictReader(f):
+                if row.get("audit_verdict") == "override":
+                    overridden.add(row.get("slug", ""))
+
     for path in label_files:
         with path.open() as f:
             for row in csv.DictReader(f):
+                slug = row.get("slug", "")
+                if slug in overridden:
+                    # Placeholder; the override pass below fills the fields.
+                    labels[slug] = {
+                        **row,
+                        "labeler": f"sonnet:{path.stem.replace('labels_', '')}",
+                        "audited": 0,
+                        "audit_verdict": None,
+                        "audit_reasoning": None,
+                    }
+                    continue
                 errs = _validate(row, path.name)
                 if errs:
                     errors.extend(errs)
                     continue
-                slug = row["slug"]
                 if slug in labels:
                     errors.append(f"{path.name}: duplicate slug {slug}")
                     continue
@@ -106,7 +128,6 @@ def load_labels() -> tuple[dict[str, dict], list[str]]:
                     "audit_reasoning": None,
                 }
 
-    overrides = PASS_DIR / "audit_overrides.csv"
     if overrides.exists():
         with overrides.open() as f:
             for row in csv.DictReader(f):

@@ -43,39 +43,48 @@ def load_rows() -> tuple[list[dict], list[str]]:
     files = sorted(PASS_DIR.glob("links_*.csv"))
     if not files:
         return [], [f"no links_*.csv under {PASS_DIR}"]
-    for path in files:
-        with path.open() as f:
-            for row in csv.DictReader(f):
-                if row.get("verdict") not in VALID_VERDICTS:
-                    errors.append(
-                        f"{path.name}: slug={row.get('slug')} bad verdict "
-                        f"{row.get('verdict')!r}"
-                    )
-                    continue
-                if row["verdict"] != "no_product" and (
-                    row.get("confidence") not in VALID_CONFIDENCE
-                ):
-                    errors.append(
-                        f"{path.name}: slug={row.get('slug')} bad confidence "
-                        f"{row.get('confidence')!r} (must be strong|inferred)"
-                    )
-                    continue
-                rows.append(row)
 
+    # Read the audit layer FIRST: base rows for overridden slugs are
+    # replaced wholesale, so they must not be validated (an override often
+    # exists precisely because the base row is malformed).
+    override_rows: list[dict] = []
+    overridden_slugs: set[str] = set()
     overrides = PASS_DIR / "audit_overrides.csv"
     if overrides.exists():
-        override_rows: list[dict] = []
-        overridden_slugs: set[str] = set()
         with overrides.open() as f:
             for row in csv.DictReader(f):
                 if (row.get("audit_verdict") or "override") == "agree":
                     continue
                 overridden_slugs.add(row["slug"])
-                if row.get("verdict") in VALID_VERDICTS:
-                    override_rows.append(row)
-        rows = [r for r in rows if r["slug"] not in overridden_slugs]
-        rows.extend(override_rows)
-    return rows, errors
+                override_rows.append(row)
+
+    for path in files:
+        with path.open() as f:
+            for row in csv.DictReader(f):
+                if row.get("slug") in overridden_slugs:
+                    continue
+                rows.append(row)
+    rows.extend(override_rows)
+
+    validated: list[dict] = []
+    for row in rows:
+        src = "audit_overrides.csv" if row.get("audit_verdict") else "links batch"
+        if row.get("verdict") not in VALID_VERDICTS:
+            errors.append(
+                f"{src}: slug={row.get('slug')} bad verdict "
+                f"{row.get('verdict')!r}"
+            )
+            continue
+        if row["verdict"] != "no_product" and (
+            row.get("confidence") not in VALID_CONFIDENCE
+        ):
+            errors.append(
+                f"{src}: slug={row.get('slug')} bad confidence "
+                f"{row.get('confidence')!r} (must be strong|inferred)"
+            )
+            continue
+        validated.append(row)
+    return validated, errors
 
 
 def main() -> int:

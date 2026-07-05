@@ -1,549 +1,553 @@
-canonical_name,vendor,product_type,is_generative_ai,is_frontier_llm,parent_canonical_name,description,notes,aliases
-"ACCRETE ARGUS","ACCRETE AI Government",supply_chain,0,0,"","","seeded by round2_2026-04","ACCRETE ARGUS"
-"Adobe Creative Cloud Suite",Adobe,,1,0,"","","","Adobe Creative Cloud Suite|Adobe Suite Applications"
-"Adobe Firefly",Adobe,computer_vision,1,0,"","Image generation","","Adobe Firefly|Firefly"
-"Adobe Photoshop",Adobe,computer_vision,1,0,"","Image editing with generative fill and other AI features","","Adobe Photoshop|Photoshop"
-"Airship AI Platform","Airship AI Holdings Inc.",,0,0,"","","","Airship AI Platform|Unmanned Aerial Systems (UAS)"
-"Airtable AI",Airtable,productivity,1,0,"","Airtable's embedded AI (OpenAI-backed) for low-code databases","","Airtable AI|Airtable's AI|Airtable"
-"Alation Data Catalog",Alation,,0,0,"","","","Alation Data Catalog"
-AlphaFold,"Google DeepMind",scientific_ml,0,0,"","","seeded by round2_2026-04",AlphaFold
-"Altana Atlas",Altana,,0,0,"","","","Altana Atlas|Altana  Entity Resolution for Global Trade Data|Altana  Entity Resolution"
-"Amazon CodeWhisperer",Amazon,coding_assistant,1,0,"","Amazon's AI coding assistant","","CodeWhisperer|Amazon CodeWhisperer|AWS CodeWhisperer"
-"Amazon Q",Amazon,general_llm,1,1,"","Amazon's enterprise AI assistant","","AWS Q|Amazon Q|Q Developer|Q Business"
-"Amped Software","Amped Software",,0,0,"","","","Amped Software|Amped"
-"Appian AI",Appian,agent_platform,0,0,"","","seeded by round2_2026-04","Appian AI"
-"Apple Intelligence",Apple,general_llm,1,0,"","","","Apple Intelligence"
-"Aretec NEAT","Aretec Inc",data_analytics,0,0,"","","seeded by round2_2026-04","Aretec NEAT"
-"Articulate 360 AI Assistant",Articulate,,0,0,"","","","Articulate 360 AI Assistant|Ariculate 360 AI Assistant"
-"Ask Sage","Ask Sage Inc.",general_llm,0,0,"","","seeded by round2_2026-04","Ask Sage"
-"ATLAS (Forest Service)","USDA Forest Service",data_analytics,0,0,"","","seeded by round2_2026-04","ATLAS (Forest Service)"
-"Autonomous Surveillance Tower",Anduril,,0,0,"","","","Autonomous Surveillance Tower|Anduril Autonomous Surveillance Towers"
-AveriSource,AveriSource,code_modernization,0,0,"","","seeded by round2_2026-04",AveriSource
-"AWS Bedrock",Amazon,general_llm,1,1,"","Amazon's managed foundation model service","","Bedrock|AWS Bedrock|Amazon Bedrock"
-"AWS Kendra",Amazon,search,0,0,"","","seeded by round2_2026-04","AWS Kendra"
-"AWS Lex",Amazon,,0,0,"","","","AWS Lex|Lex Natural Language Interface"
-"AWS Rekognition",Amazon,computer_vision,0,0,"","","seeded by round2_2026-04","AWS Rekognition"
-"AWS Textract",Amazon,computer_vision,0,0,"","Amazon's document text-extraction / OCR service","","AWS Textract|Amazon Textract|Textract"
-"AWS Transcribe",Amazon,nlp_specific,0,0,"","Speech-to-text service","","AWS Transcribe|Amazon Transcribe"
-"Azure AI Document Intelligence",Microsoft,document_ai,0,0,"","","seeded by round2_2026-04","Azure AI Document Intelligence"
-"Azure AI Foundry",Microsoft,general_llm,0,0,"","","seeded by round2_2026-04","Azure AI Foundry"
-"Azure AI Vision / Document Intelligence",Microsoft,general_llm,1,0,"","","","Azure AI Vision / Document Intelligence|Azure Computer Vision and Document Intelligence Read"
-"Azure OpenAI",Microsoft,general_llm,1,1,"","OpenAI models hosted on Azure","","Azure OpenAI|Azure OpenAI Service|OpenAI on Azure"
-"Azure Speech",Microsoft,transcription,0,0,"","","seeded by round2_2026-04","Azure Speech"
-"Babel Street Babel","Babel Street",,0,0,"","","","Babel Street Babel|Babel Street Babel Street Babel"
-"BI SmartLINK","BI Incorporated",biometrics,0,0,"","","seeded by round2_2026-04","BI SmartLINK"
-"BMC Helix ITSM",BMC,itsm,0,0,"","","seeded by round2_2026-04","BMC Helix ITSM"
-"Boston Dynamics Spot","Boston Dynamics",,0,0,"","","","Boston Dynamics Spot|Boston Dynamics Spot Robotics|Boston Dynamics"
-"C3 AI",C3.ai,,0,0,"","","","C3 AI|C3.AI"
-Calendly,Calendly,productivity,0,0,"","AI-enabled scheduling","",Calendly
-CaseGuard,CaseGuard,,0,0,"","","","CaseGuard|Case Guard  AI-Assisted Audio/Video Redaction"
-"Cellebrite Media Classifier",Cellebrite,,0,0,"","","","Cellebrite Media Classifier|Cellebrite  Media Classifier for Computer and Digital Storage Evidence"
-Chainalysis,Chainalysis,blockchain_analytics,0,0,"","","seeded by round2_2026-04",Chainalysis
-ChatGPT,OpenAI,general_llm,1,1,"","OpenAI's conversational AI assistant","","ChatGPT|GPT-4|GPT-4o|OpenAI ChatGPT|ChatGPT Enterprise|ChatGPT Plus"
-Citrix,Citrix,virtualization,0,0,"","","seeded by round2_2026-04",Citrix
-Claude,Anthropic,general_llm,1,1,"","Anthropic's conversational AI","","Claude|Anthropic|Anthropic Claude|Claude.ai|Claude 3|Claude 3.5|Claude Sonnet|Claude Opus"
-"Claude Code",Anthropic,coding_assistant,1,0,Claude,"Anthropic's coding agent","","Claude Code"
-"Clearview AI","Clearview AI",,0,0,"","","","Clearview AI|Clearview AI Traveler Verification System"
-Cohesity,Cohesity,security_tool,0,0,"","","seeded by round2_2026-04",Cohesity
-"Commonlook Online",Commonlook,document_ai,0,0,"","","seeded by round2_2026-04","Commonlook Online"
-Credal,Credal,agent_platform,0,0,"","","seeded by round2_2026-04",Credal
-CrewAI,CrewAI,,0,0,"","","",CrewAI
-"Crowdstrike Falcon",Crowdstrike,security_tool,0,0,"","Endpoint security with ML","","Crowdstrike|Crowdstrike Falcon|Falcon"
-cryoDRGN,"Open Source",scientific_ml,0,0,"","","seeded by round2_2026-04",cryoDRGN
-crYOLO,"Open Source",scientific_ml,0,0,"","","seeded by round2_2026-04",crYOLO
-CryoSPARC,"Structura Biotechnology",scientific_ml,0,0,"","","seeded by round2_2026-04",CryoSPARC
-"Custom In-House AI",In-House,custom,1,0,"","Agency-built custom AI systems","","In-house|Custom|Developed in-house|In-House"
-Databricks,Databricks,ml_platform,1,0,"","ML platform","",Databricks
-"Dataminr First Alert",Dataminr,,0,0,"","","","Dataminr First Alert|First Alert/Dataminr"
-"Democratizing Data","Coleridge Institute",data_analytics,0,0,"","","seeded by round2_2026-04","Democratizing Data"
-"Digital Science Dimensions","Digital Science",data_analytics,0,0,"","","seeded by round2_2026-04","Digital Science Dimensions"
-DocketScope,"The Regulatory Group, Inc.",,0,0,"","","",DocketScope
-Dynatrace,Dynatrace,security_tool,0,0,"","","seeded by round2_2026-04",Dynatrace
-"EDAV (CDC)",CDC,data_analytics,0,0,"","","seeded by round2_2026-04","EDAV (CDC)|EDAV|Enterprise Data Analytics and Visualization Platform|Enterprise Data, Analytics, and Visualization Platform"
-"Emerald Innovations","Emerald Innovations",scientific_ml,0,0,"","","seeded by round2_2026-04","Emerald Innovations"
-"Esri ArcGIS AI",Esri,nlp_specific,0,0,"","GIS with AI features","","ArcGIS|ESRI GIS AI|Esri|Esri ArcGIS"
-"Everlaw AI Assistant","Everlaw, Inc.",,0,0,"","","","Everlaw AI Assistant|Everlaw AI Assistant for Responsive Review"
-"Exiger DDIQ",Exiger,supply_chain,0,0,"","","seeded by round2_2026-04","Exiger DDIQ"
-"Expert.ai Cogito",expert.ai,nlp,0,0,"","","seeded by round2_2026-04","Expert.ai Cogito"
-Flashpoint,Flashpoint,social_listening,0,0,"","","seeded by round2_2026-04",Flashpoint
-"FLIR 280 HD","Teledyne FLIR",,0,0,"","","","FLIR 280 HD"
-Flowmon,"Progress Flowmon",security_tool,0,0,"","","seeded by round2_2026-04",Flowmon
-"FOIA REDACTION (FRED)",Unknown,document_ai,0,0,"","","seeded by round2_2026-04","FOIA REDACTION (FRED)"
-"FOIAXpress AI",OPEXUS,document_ai,0,0,"","","seeded by round2_2026-04","FOIAXpress AI"
-"GAIA AI","GAIA AI",computer_vision,0,0,"","","seeded by round2_2026-04","GAIA AI"
-Gemini,Google,general_llm,1,1,"","Google's conversational AI","","Gemini|Google Gemini|Bard|Gemini Pro|Gemini 1.5|Gemini 2"
-"GitHub Copilot",Microsoft,coding_assistant,1,0,"Microsoft 365 Copilot","AI pair programmer for code generation","","GitHub CoPilot|GitHub Copilot|Github Copilot|GitHub copilot|GH Copilot"
-"GlobalComm Video Surveillance",GlobalComm,computer_vision,0,0,"","","seeded by round2_2026-04","GlobalComm Video Surveillance"
-"Google Agentspace",Google,general_llm,1,0,"","","","Google Agentspace|Google Agentspace / NotebookLM"
-"Google Chrome Generative AI",Google,,1,0,"","","","Google Chrome Generative AI"
-"Google Cloud Platform",Google,general_llm,1,0,"","","","Google Cloud Platform"
-"Google Cloud Vision",Google,,0,0,"","","","Google Cloud Vision"
-"Google NotebookLM",Google,general_llm,0,0,"","","seeded by round2_2026-04","Google NotebookLM"
-"Google Translate",Google,translation,0,0,"","","seeded by round2_2026-04","Google Translate"
-"Google Vertex AI",Google,general_llm,1,0,"","","","Google Vertex AI|Google Vertex AI Document workbench"
-"Google Workspace",Google,productivity,0,0,"","Google's productivity suite","","Google Workspace|GSuite"
-Grammarly,Grammarly,productivity,0,0,"","Writing assistant","","Grammarly|Grammarly Business"
-"Grants.gov AI Tools",HHS,data_analytics,0,0,"","","seeded by round2_2026-04","Grants.gov AI Tools"
-Grok,xAI,general_llm,1,0,"","","","Grok|xAI Grok Pilot"
-"Gurucul UEBA",Gurucul,,0,0,"","","","Gurucul UEBA|Gurucul ESS User Entity and Behavior Analytics (UEBA)"
-"H2O GPTe",H2O.ai,general_llm,0,0,"","","seeded by round2_2026-04","H2O GPTe"
-HeyGen,HeyGen,,1,0,"","","",HeyGen
-Hyperscience,Hyperscience,,0,0,"","","","Hyperscience|Hyperscience - IDP software"
-"IBM ARGOS",IBM,nlp,0,0,"","","seeded by round2_2026-04","IBM ARGOS"
-"IBM CoreDF",IBM,document_ai,0,0,"","","seeded by round2_2026-04","IBM CoreDF"
-"IBM Watson",IBM,,0,0,"","","","IBM Watson"
-"iCatalyst RPA","iCatalyst Inc",rpa,0,0,"","","seeded by round2_2026-04","iCatalyst RPA"
-ID.me,ID.me,identity_verification,0,0,"","","seeded by round2_2026-04",ID.me
-"Ideation ReadyAI",Ideation,general_llm,1,0,"","","","Ideation ReadyAI"
-"IDEMIA CAT-2/AutoCAT",IDEMIA,biometrics,0,0,"","","seeded by round2_2026-04","IDEMIA CAT-2/AutoCAT"
-idiCORE,"LexisNexis Risk Solutions",,0,0,"","","",idiCORE
-Illumio,Illumio,,0,0,"","","",Illumio
-Informatica,Informatica,data_catalog,0,0,"","","seeded by round2_2026-04",Informatica
-"Invariant Acoustic Signature AI","Invariant Corporation",audio_analysis,0,0,"","","seeded by round2_2026-04","Invariant Acoustic Signature AI"
-iProov,iProov,,0,0,"","","",iProov|IProov
-KESTREL,Maxar,,0,0,"","","","KESTREL|Maxar KESTREL Aircraft Landing Location Predictor (KESTREL)"
-Kiteworks,Kiteworks,security_tool,0,0,"","","seeded by round2_2026-04",Kiteworks
-"KnowBe4 PhishER",KnowBe4,security_tool,0,0,"","","seeded by round2_2026-04","KnowBe4 PhishER"
-"Lasso Security","Lasso Security",,0,0,"","","","Lasso Security|Lasso ESS AI Security and Monitoring"
-"Leica Aivia",Leica,computer_vision,0,0,"","","seeded by round2_2026-04","Leica Aivia"
-"Lexical Intelligence","Lexical Intelligence, LLC",nlp,0,0,"","","seeded by round2_2026-04","Lexical Intelligence"
-"Lexis+ AI",LexisNexis,legal_research,1,0,"","Legal research AI","","Lexis+ AI|LexisNexis AI|Lexis Advance"
-LexisNexis,LexisNexis,,0,0,"","","",LexisNexis
-"LexisNexis Risk Solutions",LexisNexis,,0,0,"","","","LexisNexis Risk Solutions|REX DBA Lexis Nexis"
-"LIGER Generative AI Toolkit","LMI Consulting, LLC",,1,0,"","","","LIGER Generative AI Toolkit|LMI Consulting, LLC  LIGER Generative AI Toolkit"
-Llama,Meta,general_llm,0,0,"","","seeded by round2_2026-04",Llama
-Lookout,Lookout,,0,0,"","","",Lookout
-"Matroid I4 Viewer",Matroid,,0,0,"","","","Matroid I4 Viewer"
-Medallia,Medallia,,1,0,"","","","Medallia|Medallia MASS"
-Meltwater,Meltwater,productivity,0,0,"","Media monitoring with AI","",Meltwater
-"Microsoft 365",Microsoft,coding_assistant,1,0,"","","","Microsoft 365"
-"Microsoft 365 Apps for Enterprise",Microsoft,coding_assistant,1,0,"","","","Microsoft 365 Apps for Enterprise"
-"Microsoft 365 Copilot",Microsoft,general_llm,1,1,"","Microsoft's enterprise LLM assistant integrated with Office apps","","M365 Copilot|Microsoft M365 Copilot|Microsoft M365 Copilot AI|Microsoft Copilot for M365|Microsoft 365 Copilot|Copilot for Microsoft 365|M365 CoPilot|Microsoft 365 CoPilot|M365 copilot|Copilot Enterprise|Microsoft Copilot Enterprise"
-"Microsoft AI Builder",Microsoft,,0,0,"","","","Microsoft AI Builder|AI Builder Document Scraping"
-"Microsoft Azure Authoring Tools",Microsoft,,0,0,"","","","Microsoft Azure Authoring Tools"
-"Microsoft Azure Platform",Microsoft,cloud_platform,0,0,"","","seeded by round2_2026-04","Microsoft Azure Platform"
-"Microsoft Azure PowerShell",Microsoft,,0,0,"","","","Microsoft Azure PowerShell"
-"Microsoft Azure Quantum Elements",Microsoft,,0,0,"","","","Microsoft Azure Quantum Elements"
-"Microsoft Copilot for Security",Microsoft,security_tool,1,0,"","Microsoft's GenAI-assisted security operations copilot","","Copilot for Security|Microsoft Copilot for Security|Security Copilot|Microsoft Security Copilot"
-"Microsoft Copilot Studio",Microsoft,agent_platform,1,0,"","Low-code platform for building custom copilots and agents","","Copilot Studio|Microsoft Copilot Studio|Power Virtual Agents"
-"Microsoft Defender",Microsoft,security_tool,0,0,"","Endpoint security with ML-based threat detection","","Microsoft Defender|MS Defender|Defender"
-"Microsoft Discovery",Microsoft,,0,0,"","","","Microsoft Discovery"
-"Microsoft Dynamics 365",Microsoft,,0,0,"","","","Microsoft Dynamics 365|Microsoft Dynamics Online"
-"Microsoft Edge",Microsoft,,0,0,"","","","Microsoft Edge"
-"Microsoft Exchange Server",Microsoft,,0,0,"","","","Microsoft Exchange Server"
-"Microsoft HoloLens",Microsoft,computer_vision,0,0,"","","seeded by round2_2026-04","Microsoft HoloLens"
-"Microsoft OneDrive",Microsoft,,0,0,"","","","Microsoft OneDrive|Microsoft OneDrive MUI"
-"Microsoft OneNote",Microsoft,,0,0,"","","","Microsoft OneNote|Microsoft OneNote MUI"
-"Microsoft Outlook",Microsoft,,0,0,"","","","Microsoft Outlook|Microsoft Outlook MUI"
-"Microsoft Power BI",Microsoft,,0,0,"","","","Microsoft Power BI|Microsoft Power BI Desktop"
-"Microsoft Power Platform",Microsoft,,0,0,"","","","Microsoft Power Platform"
-"Microsoft PowerPoint",Microsoft,,0,0,"","","","Microsoft PowerPoint|Microsoft PowerPoint MUI"
-"Microsoft Project",Microsoft,,0,0,"","","","Microsoft Project"
-"Microsoft Purview eDiscovery",Microsoft,,0,0,"","","","Microsoft Purview eDiscovery|Microsoft eDiscovery Attorney-Client Privilege Detection"
-"Microsoft ScreenSketch",Microsoft,,0,0,"","","","Microsoft ScreenSketch"
-"Microsoft Search in Bing",Microsoft,,0,0,"","","","Microsoft Search in Bing"
-"Microsoft Sentinel",Microsoft,security_tool,0,0,"","","seeded by round2_2026-04","Microsoft Sentinel"
-"Microsoft Skype",Microsoft,,0,0,"","","","Microsoft Skype|Microsoft Skype App"
-"Microsoft Teams",Microsoft,productivity,0,0,"","Collaboration platform with AI features","","Microsoft Teams|MS Teams|Microsoft Teams Premium"
-"Motorola License Plate Recognition",Motorola,,0,0,"","","","Motorola License Plate Recognition|Motorola"
-NanCI,NIH,agent_platform,0,0,"","","seeded by round2_2026-04",NanCI
-"NEC NeoFace",NEC,,0,0,"","","","NEC NeoFace|NEC (Nippon Electric Company)|NEC|NEC (algorithm only)"
-NexisXplore,LexisNexis,,0,0,"","","",NexisXplore
-"Okta Adaptive MFA",Okta,,0,0,"","","","Okta Adaptive MFA|Okta"
-OneReach.ai,OneReach.ai,agent_platform,0,0,"","","seeded by round2_2026-04",OneReach.ai
-"OpenAI API",OpenAI,general_llm,1,1,"","Direct OpenAI API access (non-Azure)","","OpenAI|OpenAI API"
-"OpenText Axcelerate",OpenText,,0,0,"","","","OpenText Axcelerate|OpenText Axcelerate AI and natural-language powered search"
-"OpenText Decisiv",OpenText,,0,0,"","","","OpenText Decisiv"
-Otter.ai,Otter,productivity,1,0,"","Meeting transcription","",Otter|Otter.ai
-"Palantir AIP",Palantir,general_llm,0,0,"","","seeded by round2_2026-04","Palantir AIP"
-"Palantir Case Management & Analytics (CMA)",Palantir,,0,0,"","","","Palantir Case Management & Analytics (CMA)"
-"Palantir Decision and Analytics Platform (DNA-P)",Palantir,,0,0,"","","","Palantir Decision and Analytics Platform (DNA-P)"
-"Palantir Federal Cloud Service",Palantir,,0,0,"","","","Palantir Federal Cloud Service|Palantir Palantir Federal Cloud Service"
-"Palo Alto Networks","Palo Alto Networks",security_tool,0,0,"","Network security","","Palo Alto|Palo Alto Networks"
-"Pangolin Lineage",COG-UK,scientific_ml,0,0,"","","seeded by round2_2026-04","Pangolin Lineage"
-PassiveLogic,PassiveLogic,,0,0,"","","",PassiveLogic
-Penlink,Penlink,,0,0,"","","",Penlink
-Perplexity,"Perplexity AI",general_llm,0,0,"","","seeded by round2_2026-04",Perplexity
-"PEST (Parameter Estimation)","Open Source",scientific_ml,0,0,"","","seeded by round2_2026-04","PEST (Parameter Estimation)"
-"Pingwind AI DevOps",Pingwind,devops,0,0,"","","seeded by round2_2026-04","Pingwind AI DevOps"
-PLATES/FoodTrak,"Trigent Solutions",document_ai,0,0,"","","seeded by round2_2026-04",PLATES/FoodTrak
-"Precise MLaaS","Precise Software",ml_platform,0,0,"","","seeded by round2_2026-04","Precise MLaaS"
-ProcureSight,ProcureSight,data_analytics,0,0,"","","seeded by round2_2026-04",ProcureSight
-"Quantaero Marine Wildlife AI",Quantaero,,0,0,"","","","Quantaero Marine Wildlife AI|AI for Offshore Energy: Innovative Technology Streamlines Marine Wildlife Surveys"
-Reclaim.AI,Reclaim,productivity,1,0,"","AI calendar management","",Reclaim.AI|Reclaim
-"Recorded Future","Recorded Future",,0,0,"","","","Recorded Future|Recorded Future  Cyber Threat Analysis (Recorded Future)"
-"RedCastle Forest Health","RedCastle Resources",computer_vision,0,0,"","","seeded by round2_2026-04","RedCastle Forest Health"
-Rekor,Rekor,,0,0,"","","",Rekor
-Relativity,Relativity,ediscovery,0,0,"","","seeded by round2_2026-04",Relativity
-"Salesforce Einstein",Salesforce,,0,0,"","","","Salesforce Einstein|Salesforce Einstein C2RMT|Salesforce"
-"SAP Concur",SAP,productivity,0,0,"","Travel and expense","","SAP Concur|Concur"
-"Scopus AI",Elsevier,,0,0,"","","","Scopus AI"
-"ServiceNow IT Operations Management (ITOM) Predictive AIOps",ServiceNow,,0,0,"","","","ServiceNow IT Operations Management (ITOM) Predictive AIOps"
-"ServiceNow Now Assist",ServiceNow,productivity,1,0,"","ServiceNow's GenAI features","","ServiceNow|ServiceNow (Now Assist)|Now Assist|ServiceNow Now Assist"
-"Shabash Merops",Shabash,nlp,0,0,"","","seeded by round2_2026-04","Shabash Merops"
-SimplyFile,TechHit,productivity,0,0,"","","seeded by round2_2026-04",SimplyFile
-"SITE Intelligence Group",SITE,,0,0,"","","","SITE Intelligence Group|SITE Group Subscription Services"
-"Skillsoft Percipio CAISY",Skillsoft,,0,0,"","","","Skillsoft Percipio CAISY|SKILLSOFT PERCIPIO/CAISY"
-"Skydio X2D",Skydio,,0,0,"","","","Skydio X2D|Skydio and Xtender Skydio X2D"
-"Skyward CEDAR/CLAW","Skyward IT Solutions",agent_platform,0,0,"","","seeded by round2_2026-04","Skyward CEDAR/CLAW"
-"Snowflake Cortex",Snowflake,ml_platform,1,0,"","Snowflake's AI features","","Snowflake Cortex|Snowflake AI"
-Splunk,Splunk,security_tool,0,0,"","SIEM with ML analytics","",Splunk
-Sprinklr,Sprinklr,,0,0,"","","",Sprinklr
-SpyglassGPT,Unknown,general_llm,0,0,"","","seeded by round2_2026-04",SpyglassGPT
-"SQL Server Management Studio",Microsoft,,0,0,"","","","SQL Server Management Studio"
-SumTotal,SumTotal,training,0,0,"","","seeded by round2_2026-04",SumTotal
-"Systran Translate",Systran,translation,0,0,"","","seeded by round2_2026-04","Systran Translate"
-Tabnine,Tabnine,coding_assistant,0,0,"","","","Tabnine|Tabnine AI Pair Programmer"
-Tenable,Tenable,,0,0,"","","",Tenable
-"Tesseract OCR","Open Source",document_ai,0,0,"","","seeded by round2_2026-04","Tesseract OCR"
-"Thomson Reuters CLEAR","Thomson Reuters",data_analytics,0,0,"","","seeded by round2_2026-04","Thomson Reuters CLEAR"
-"ThruVision TAC 16",ThruVision,,0,0,"","","","ThruVision TAC 16|ThruVision TAC 16 Passive Body Scanner"
-"ThruWave NII 3D Imaging Tool",ThruWave,,0,0,"","","","ThruWave NII 3D Imaging Tool|ThruWave  Non-Intrusive Inspection (NII) 3D Imaging Tool"
-"Traffic Jam","Marinus Analytics",,0,0,"","","","Traffic Jam|Marinus Analytics Traffic Jam"
-"TRM Labs Blockchain Analysis Platform","TRM Labs",,0,0,"","","","TRM Labs Blockchain Analysis Platform|TRM Labs  Blockchain Analysis"
-"UiPath Enterprise RPA",UiPath,,0,0,"","","","UiPath Enterprise RPA|UiPath; Microsoft; Apryse; Personable Inc. Enterprise Robotic Process Automation"
-"Ultralytics YOLO",Ultralytics,computer_vision,0,0,"","","seeded by round2_2026-04","Ultralytics YOLO"
-"Upstream Tech HydroForecast","Upstream Tech",,0,0,"","","","Upstream Tech HydroForecast|Piloting Machine Learning Inflow Forecasts Across Reclamation"
-UpToDate,"Wolters Kluwer",clinical_decision_support,0,0,"","","seeded by round2_2026-04",UpToDate
-"USAi (GSA)",GSA,general_llm,0,0,"","","seeded by round2_2026-04","USAi (GSA)|USAi|USAi.gov|GSA USAi"
-"VAO Ally",GSA,agent_platform,0,0,"","","seeded by round2_2026-04","VAO Ally"
-"Vectra AI","Vectra Networks",,0,0,"","","","Vectra AI|Vectra Networks"
-VegSpec,"USDA NRCS",scientific_ml,0,0,"","","seeded by round2_2026-04",VegSpec
-Veritone,Veritone,media_analysis,0,0,"","","seeded by round2_2026-04",Veritone
-"Veritone Illuminate",Veritone,media_analysis,0,0,"","","seeded by round2_2026-04","Veritone Illuminate"
-"Visual Studio",Microsoft,,0,0,"","","","Visual Studio|Visual Studio Community"
-"Visual Studio Enterprise",Microsoft,,0,0,"","","","Visual Studio Enterprise"
-VoiceAtlas,Navteca,,0,0,"","","","VoiceAtlas|VoiceAtlas no-code chatbot framework"
-"WellSaid Labs","WellSaid Labs",nlp_specific,1,0,"","Synthetic voice / text-to-speech platform","","WellSaid Labs|Wellsaid Labs|WellSaid|Wellsaid"
-"Westlaw AI","Thomson Reuters",legal_research,1,0,"","Legal research with AI","","Westlaw|Thomson Reuters/Westlaw Drafting Assistant|Westlaw AI|Westlaw Precision|Thomson Reuters Westlaw"
-Whooster,Whooster,data_analytics,0,0,"","","seeded by round2_2026-04",Whooster
-Windsurf,Codeium,coding_assistant,0,0,"","","seeded by round2_2026-04",Windsurf
-"Yurts AI","Legion (formerly Yurts)",,0,0,"","","","Yurts AI|Legion (Previously Yurts)"
-Zscaler,Zscaler,security_tool,0,0,"","Cloud security platform","",Zscaler
-CBP Translate,U.S. Customs and Border Protection,translation,0,0,,,seeded by linkage_pass_2026-05 (agent_a),CBP Translate
-Traveler Verification Service,U.S. Customs and Border Protection,biometrics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Traveler Verification Service
-ERNIE Radiological Detection,DHS Countering Weapons of Mass Destruction,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),ERNIE Radiological Detection
-Consular Consolidated Database Facial Recognition,U.S. Department of State,biometrics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Consular Consolidated Database Facial Recognition
-AIS Resume Screening Tool,AIS,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),AIS Resume Screening Tool
-Rohde & Schwarz QPS Walk-Through Scanner,Rohde & Schwarz,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Rohde & Schwarz QPS Walk-Through Scanner
-USCIS Text Analytics,U.S. Citizenship and Immigration Services,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USCIS Text Analytics
-USCIS Verification Match Model,U.S. Citizenship and Immigration Services,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USCIS Verification Match Model
-USCIS Customer Profile Management System Facial Recognition,U.S. Citizenship and Immigration Services,biometrics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USCIS Customer Profile Management System Facial Recognition
-Person-Centric Identity Services Deduplication Model,U.S. Citizenship and Immigration Services,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Person-Centric Identity Services Deduplication Model
-Advanced Trade Analytics Platform,U.S. Customs and Border Protection,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Advanced Trade Analytics Platform
-PDRI Remote Proctor,PDRI (Pearson),computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),PDRI Remote Proctor
-ATS Passport Anomaly Model,U.S. Customs and Border Protection,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),ATS Passport Anomaly Model
-ATS Trade Entity Risk Model,U.S. Customs and Border Protection,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),ATS Trade Entity Risk Model
-RAVEn Investigative Prioritization Aggregator,U.S. Homeland Security Investigations,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),RAVEn Investigative Prioritization Aggregator
-RAVEn Translation and Transcription Service,U.S. Homeland Security Investigations,translation,0,0,,,seeded by linkage_pass_2026-05 (agent_a),RAVEn Translation and Transcription Service
-CANDA UEBA,CANDA Solutions,security_tool,0,0,,,seeded by linkage_pass_2026-05 (agent_a),CANDA UEBA
-Biometrics Enrollment Tool,U.S. Citizenship and Immigration Services,biometrics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Biometrics Enrollment Tool
-ELIS Name and DOB Harvesting Service,U.S. Citizenship and Immigration Services,nlp,0,0,ELIS,,seeded by linkage_pass_2026-05 (agent_a),ELIS Name and DOB Harvesting Service
-ELIS Card Photo Validation Service,U.S. Citizenship and Immigration Services,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),ELIS Card Photo Validation Service
-ClassifAI,DHS / Starlo,document_ai,1,0,,,seeded by linkage_pass_2026-05 (agent_a),ClassifAI
-CISAChat,DHS CISA,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),CISAChat
-Nightwing PII Detection,Nightwing Intelligence Solutions,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Nightwing PII Detection
-RAVEn Normalization Services,U.S. Homeland Security Investigations,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),RAVEn Normalization Services
-ELIS Evidence Classifier Service,U.S. Citizenship and Immigration Services,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),ELIS Evidence Classifier Service
-RAIO AI Interview Simulator,"USCIS Refugee, Asylum, and International Operations",training,1,0,,,seeded by linkage_pass_2026-05 (agent_a),RAIO AI Interview Simulator
-APT Analytics,DOE,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),APT Analytics
-DOE Traffic Predictive Control,DOE,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),DOE Traffic Predictive Control
-SEA-CROGS,DOE,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),SEA-CROGS
-DOE ML for Disadvantaged Community Identification,DOE,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),DOE ML for Disadvantaged Community Identification
-DOE EV Delivery Parking Identification,DOE / Cisco,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),DOE EV Delivery Parking Identification
-NLCOO Lessons Learned AI,DOE NETL,search,0,0,,,seeded by linkage_pass_2026-05 (agent_a),NLCOO Lessons Learned AI
-MAPPRITE,DOE Special Technologies Laboratory,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),MAPPRITE
-INL Intelligent Automation,DOE Idaho National Lab,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),INL Intelligent Automation
-LANL AI Portal,DOE Los Alamos National Lab,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),LANL AI Portal
-Merlin,DOE Kansas City National Security Campus,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),Merlin
-DOE Soil Moisture Modeling,University of Montana,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),DOE Soil Moisture Modeling
-SRNS Computer Vision Defect Detection,Savannah River Nuclear Solutions,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),SRNS Computer Vision Defect Detection
-SRNS AI Tailored Learning,Savannah River Nuclear Solutions,training,1,0,,,seeded by linkage_pass_2026-05 (agent_a),SRNS AI Tailored Learning
-SRNS AI Drafting Assistant,Savannah River Nuclear Solutions,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),SRNS AI Drafting Assistant
-LISA Chatbot,DOE / AWS,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),LISA Chatbot
-COREII,DOE Idaho National Lab,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),COREII
-INL Classified Subject Area GenAI,DOE Idaho National Lab,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),INL Classified Subject Area GenAI
-SRNS AI Form and Questionnaire Assistant,Savannah River Nuclear Solutions,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),SRNS AI Form and Questionnaire Assistant
-SRNS Operational Efficiency ML,Savannah River Nuclear Solutions,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),SRNS Operational Efficiency ML
-BSEE Corrosion Classifier,Bureau of Safety and Environmental Enforcement,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),BSEE Corrosion Classifier
-Google Earth Engine Wetlands Classifier,Google,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Google Earth Engine Wetlands Classifier
-USGS Flow Photo Explorer,USGS / Walker Environmental Research,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USGS Flow Photo Explorer
-Federal Docket Management System,GSA,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Federal Docket Management System
-FINDER (ATF),DOJ ATF,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FINDER (ATF)
-SWBTRAC,DOJ,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),SWBTRAC
-DEA GenAI R&D Sandbox,DEA / NVIDIA,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),DEA GenAI R&D Sandbox
-ASCVD Risk Estimator,American College of Cardiology,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (agent_a),ASCVD Risk Estimator
-FBOP Automated Staffing Tool,DOJ FBOP,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FBOP Automated Staffing Tool
-FBOP Pathfinder,DOJ FBOP,training,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FBOP Pathfinder
-Truview,Advanced Technologies Group,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Truview
-Axon,Axon Enterprise,media_analysis,1,0,,,seeded by linkage_pass_2026-05 (agent_a),Axon
-JAWS Screen Reader,Freedom Scientific,productivity,1,0,,,seeded by linkage_pass_2026-05 (agent_a),JAWS Screen Reader
-DOJ Receipt Extraction Tool,DOJ / Microsoft,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),DOJ Receipt Extraction Tool
-TransUnion TLOxp,TransUnion,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),TransUnion TLOxp
-MIT Lincoln Lab Speech Translation,MIT Lincoln Laboratory,translation,0,0,,,seeded by linkage_pass_2026-05 (agent_a),MIT Lincoln Lab Speech Translation
-Bates White Economic Consulting AI,Bates White,data_analytics,1,0,,,seeded by linkage_pass_2026-05 (agent_a),Bates White Economic Consulting AI
-Adobe Premiere Pro,Adobe,media_analysis,1,0,Adobe Creative Cloud Suite,,seeded by linkage_pass_2026-05 (agent_a),Adobe Premiere Pro
-BLS Expenditure Classification Autocoder,Bureau of Labor Statistics,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),BLS Expenditure Classification Autocoder
-Worker PLUS,Department of Labor,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Worker PLUS
-DOL Auntee Bot,Department of Labor,productivity,1,0,,,seeded by linkage_pass_2026-05 (agent_a),DOL Auntee Bot
-MSHA AI Headset,ResolveSoft,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),MSHA AI Headset
-FSA Aidan Chatbot,U.S. Department of Education / Accenture,general_llm,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FSA Aidan Chatbot
-EPA Agency Records Management System,EPA,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),EPA Agency Records Management System
-EPA RCRA PA,EPA,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),EPA RCRA PA
-Equifax Background Screening,Equifax,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Equifax Background Screening
-FERC Zvolvant Comment Analysis,Zvolvant,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FERC Zvolvant Comment Analysis
-FERC Zvolvant Inspection AI,Zvolvant,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FERC Zvolvant Inspection AI
-FERC Zvolvant Market Surveillance,Zvolvant,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FERC Zvolvant Market Surveillance
-FERC Zvolvant Interconnection Assistant,Zvolvant,nlp,1,0,,,seeded by linkage_pass_2026-05 (agent_a),FERC Zvolvant Interconnection Assistant
-FERC Zvolvant Permitting Assistant,Zvolvant,nlp,1,0,,,seeded by linkage_pass_2026-05 (agent_a),FERC Zvolvant Permitting Assistant
-Microsoft SQL Server Intelligent Query Processing,Microsoft,data_analytics,0,0,Microsoft Azure Platform,,seeded by linkage_pass_2026-05 (agent_a),Microsoft SQL Server Intelligent Query Processing
-Benefits Manager Virtual Assistant,Benefits Manager,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),Benefits Manager Virtual Assistant
-FRTIB AVA,FRTIB / Accenture Federal Services,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),FRTIB AVA
-FRTIB Fraud Detection,FRTIB / Accenture Federal Services,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FRTIB Fraud Detection
-FRTIB Contact Center AI,FRTIB / Accenture Federal Services,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),FRTIB Contact Center AI
-FTC Sentinel PSC Classification,FTC / Leidos,data_analytics,0,0,FTC Sentinel Network Services,,seeded by linkage_pass_2026-05 (agent_a),FTC Sentinel PSC Classification
-FTC Sentinel Chatbot,FTC / Leidos,general_llm,0,0,FTC Sentinel Network Services,,seeded by linkage_pass_2026-05 (agent_a),FTC Sentinel Chatbot
-FTC Sentinel Graph Analytics,FTC / Leidos,data_analytics,0,0,FTC Sentinel Network Services,,seeded by linkage_pass_2026-05 (agent_a),FTC Sentinel Graph Analytics
-FTC Sentinel Analytic Sandbox,FTC / Leidos,data_analytics,0,0,FTC Sentinel Network Services,,seeded by linkage_pass_2026-05 (agent_a),FTC Sentinel Analytic Sandbox
-FTC Sentinel Developer Productivity,FTC / Leidos,coding_assistant,1,0,FTC Sentinel Network Services,,seeded by linkage_pass_2026-05 (agent_a),FTC Sentinel Developer Productivity
-FTC GenAI Mail Scan,FTC / Amazon,document_ai,1,0,,,seeded by linkage_pass_2026-05 (agent_a),FTC GenAI Mail Scan
-ORR Unaccompanied Children Policy Research Tool,HHS Office of Refugee Resettlement,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),ORR Unaccompanied Children Policy Research Tool
-L&M Policy Research Comment Triaging,"L&M Policy Research, LLC",nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),L&M Policy Research Comment Triaging
-CMS Medicare AI Customer Insights,CMS / commonFont,data_analytics,1,0,,,seeded by linkage_pass_2026-05 (agent_a),CMS Medicare AI Customer Insights
-CMS AI Agent Orchestrator,CMS / Noblis,agent_platform,1,0,Skyward CEDAR/CLAW,,seeded by linkage_pass_2026-05 (agent_a),CMS AI Agent Orchestrator
-CMS Integrated Data Repository Customer Analytic Environment,CMS / GDIT,ml_platform,0,0,,,seeded by linkage_pass_2026-05 (agent_a),CMS Integrated Data Repository Customer Analytic Environment
-CMS IDR Support Bot,CMS / GDIT,general_llm,1,0,CMS Integrated Data Repository Customer Analytic Environment,,seeded by linkage_pass_2026-05 (agent_a),CMS IDR Support Bot
-CMS ELMO Chatbot,CMS / Peraton,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),CMS ELMO Chatbot
-FDA 356H ML Facility Supply Chain Role Classification,FDA / Deloitte,document_ai,0,0,FDA CDEROne Analytics,,seeded by linkage_pass_2026-05 (agent_a),FDA 356H ML Facility Supply Chain Role Classification
-FDA Annual Report CMC Extraction,FDA / Deloitte,document_ai,1,0,FDA CDEROne Analytics,,seeded by linkage_pass_2026-05 (agent_a),FDA Annual Report CMC Extraction
-FDA Application-DMF Reference Extraction,FDA / Deloitte,document_ai,0,0,FDA CDEROne Analytics,,seeded by linkage_pass_2026-05 (agent_a),FDA Application-DMF Reference Extraction
-FDA DMF Facilities Extraction,FDA / Deloitte,document_ai,0,0,FDA CDEROne Analytics,,seeded by linkage_pass_2026-05 (agent_a),FDA DMF Facilities Extraction
-FDA Module 3 Facilities Extraction,FDA / Deloitte,document_ai,1,0,FDA CDEROne Analytics,,seeded by linkage_pass_2026-05 (agent_a),FDA Module 3 Facilities Extraction
-FDA Packaging Materials and Suppliers Extraction,FDA / Deloitte,document_ai,1,0,FDA CDEROne Analytics,,seeded by linkage_pass_2026-05 (agent_a),FDA Packaging Materials and Suppliers Extraction
-FDA Real World Data/Evidence Identification,FDA / Deloitte,document_ai,1,0,FDA CDEROne Analytics,,seeded by linkage_pass_2026-05 (agent_a),FDA Real World Data/Evidence Identification
-FDA Regulatory Starting Materials Extraction,FDA / Deloitte,document_ai,1,0,FDA CDEROne Analytics,,seeded by linkage_pass_2026-05 (agent_a),FDA Regulatory Starting Materials Extraction
-FDA HIVE AI Pilot,FDA / SAIC,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),FDA HIVE AI Pilot
-FDA CDER Pubs,FDA,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FDA CDER Pubs
-FDA Safety Reports Categorization Bot,FDA / Deloitte,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FDA Safety Reports Categorization Bot
-FDA IND Safety Reports OCR,FDA / ThinkTrends,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FDA IND Safety Reports OCR
-FDA Smart Solution for Docket Management,FDA / Deloitte,nlp,1,0,,,seeded by linkage_pass_2026-05 (agent_a),FDA Smart Solution for Docket Management
-HRSA AI Audit Resolution Assistant,HRSA / Mindpetal,agent_platform,1,0,,,seeded by linkage_pass_2026-05 (agent_a),HRSA AI Audit Resolution Assistant
-HRSA Knowledge Navigator,HRSA / Publicis Sapient,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),HRSA Knowledge Navigator
-HRSA PRF Program Chatbot,HRSA / GDIT,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),HRSA PRF Program Chatbot
-NIAID DAIT AIDS Research Prioritization,NIAID / Deloitte,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),NIAID DAIT AIDS Research Prioritization
-HHS FITARA Tool,HHS / Deloitte,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),HHS FITARA Tool
-NIH eRA Internal Referral Module,NIH / Leidos,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),NIH eRA Internal Referral Module
-NCI MOSSAIC SEER NLP,NCI / Oak Ridge National Lab,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),NCI MOSSAIC SEER NLP
-NIAMS GenAI Chatbot,NIH NIAMS,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),NIAMS GenAI Chatbot
-NIH SRDMS NLP COI Module,NIH / Deloitte,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),NIH SRDMS NLP COI Module
-NIH Grants Virtual Assistant,NIH / Google,general_llm,0,0,,,seeded by linkage_pass_2026-05 (agent_a),NIH Grants Virtual Assistant
-NIAID TB Portals (TB DEPOT),NIAID,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),NIAID TB Portals (TB DEPOT)
-NIAID TB Portals Outlier Detection,NIAID,computer_vision,0,0,NIAID TB Portals (TB DEPOT),,seeded by linkage_pass_2026-05 (agent_a),NIAID TB Portals Outlier Detection
-MirBot,NIH / Technatomy Axle,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),MirBot
-NIAID OSPIDA Scientific Coding Assistance Tool,NIAID / Deloitte,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),NIAID OSPIDA Scientific Coding Assistance Tool
-NIH Prevention Research NLP,NIH / Westat,nlp,1,0,,,seeded by linkage_pass_2026-05 (agent_a),NIH Prevention Research NLP
-NIH Travel Policy AI Chatbot,NIH / Infer Solutions,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),NIH Travel Policy AI Chatbot
-HealthData.gov AI Harvest Service,HHS / Tyler Technologies,data_analytics,1,0,,,seeded by linkage_pass_2026-05 (agent_a),HealthData.gov AI Harvest Service
-Grants.gov Similar Opportunities,HHS / MicroHealth,data_analytics,0,0,Grants.gov AI Tools,,seeded by linkage_pass_2026-05 (agent_a),Grants.gov Similar Opportunities
-Grants.gov Applicant Help Chatbot,HHS / Business Performance Systems,general_llm,0,0,Grants.gov AI Tools,,seeded by linkage_pass_2026-05 (agent_a),Grants.gov Applicant Help Chatbot
-GrantSolutions Text Analyzer Tool,GrantSolutions (HHS Shared Service),nlp,0,0,GrantSolutions,,seeded by linkage_pass_2026-05 (agent_a),GrantSolutions Text Analyzer Tool
-GrantSolutions AI Writing Assistant,GrantSolutions (HHS Shared Service),general_llm,1,0,GrantSolutions,,seeded by linkage_pass_2026-05 (agent_a),GrantSolutions AI Writing Assistant
-GrantSolutions Recipient Risk Tool,GrantSolutions (HHS Shared Service),data_analytics,0,0,GrantSolutions,,seeded by linkage_pass_2026-05 (agent_a),GrantSolutions Recipient Risk Tool
-GrantSolutions Non-Competing Continuation Approval Tool,GrantSolutions (HHS Shared Service),data_analytics,0,0,GrantSolutions,,seeded by linkage_pass_2026-05 (agent_a),GrantSolutions Non-Competing Continuation Approval Tool
-GrantSolutions Helpdesk Agent,GrantSolutions (HHS Shared Service),general_llm,1,0,GrantSolutions,,seeded by linkage_pass_2026-05 (agent_a),GrantSolutions Helpdesk Agent
-GrantSolutions Non-Competing Continuation Review Tool,GrantSolutions (HHS Shared Service),general_llm,1,0,GrantSolutions,,seeded by linkage_pass_2026-05 (agent_a),GrantSolutions Non-Competing Continuation Review Tool
-Ginnie Mae Counterparty Risk Anomaly Detection,Ginnie Mae / Deloitte,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Ginnie Mae Counterparty Risk Anomaly Detection
-Ginnie Mae Subledger Data Quality ML,Ginnie Mae / Ernst & Young,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Ginnie Mae Subledger Data Quality ML
-Ginnie Mae Automated Draft Narrative Reports,Ginnie Mae / Deloitte,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Ginnie Mae Automated Draft Narrative Reports
-NARA A1 Museum AI,NARA / Cortina,computer_vision,1,0,,,seeded by linkage_pass_2026-05 (agent_a),NARA A1 Museum AI
-FAA NextGen LOA/SOP Analytics,FAA,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FAA NextGen LOA/SOP Analytics
-NASA CAAP Cost Analytics,NASA / Raytheon,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),NASA CAAP Cost Analytics
-AFRL Voice Recorder Transcription,Air Force Research Laboratory,transcription,0,0,,,seeded by linkage_pass_2026-05 (agent_a),AFRL Voice Recorder Transcription
-SBA GovCon Match,SBA,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),SBA GovCon Match
-SEC FOIA Form Extraction,SEC / GDIT,document_ai,1,0,,,seeded by linkage_pass_2026-05 (agent_a),SEC FOIA Form Extraction
-SSA Quick Disability Determinations Model,SSA / IBM,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (agent_a),SSA Quick Disability Determinations Model
-Espyr Therapy Chatbot,Espyr,clinical_decision_support,1,0,,,seeded by linkage_pass_2026-05 (agent_a),Espyr Therapy Chatbot
-State Department Declassification Review AI,State Department / Deloitte,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),State Department Declassification Review AI
-State Department AI Research Engine (AIRE),State Department / Deloitte,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),State Department AI Research Engine (AIRE)
-State FACTS Info Foreign Assistance NLP,State Department / Guidehouse,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),State FACTS Info Foreign Assistance NLP
-FA.gov PII Picker,State Department / Guidehouse,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FA.gov PII Picker
-State Integrated Country Strategy Turbo,State Department / Guidehouse,nlp,0,0,,,seeded by linkage_pass_2026-05 (agent_a),State Integrated Country Strategy Turbo
-FA.gov RedactAid,State Department / Guidehouse,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_a),FA.gov RedactAid
-State Department Walter Support Bot,State Department / Microsoft,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),State Department Walter Support Bot
-State Department WHA/EX Information Management,State Department / Microsoft,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),State Department WHA/EX Information Management
-Azure AI Translator,Microsoft,translation,1,0,Microsoft Azure Platform,,seeded by linkage_pass_2026-05 (agent_a),Azure AI Translator
-State NIV Adjudication Review Recommendation Engine,State Department / Guidehouse,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_a),State NIV Adjudication Review Recommendation Engine
-State LCALA Consular Language Augmentation,State Department / Microsoft,translation,1,0,,,seeded by linkage_pass_2026-05 (agent_a),State LCALA Consular Language Augmentation
-USDA FSA FLP Chatbot,USDA / AWS,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA FSA FLP Chatbot
-USDA Equine Operations Dataset,USDA / Colorado State University,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA Equine Operations Dataset
-USDA NASSportal Intranet Agent,USDA NASS / Microsoft,agent_platform,1,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA NASSportal Intranet Agent
-Chiral Wildlife Deterrent System,Chiral Software,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Chiral Wildlife Deterrent System
-USDA Oregon State Forest Mapping,USDA Forest Service / Oregon State University,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA Oregon State Forest Mapping
-USDA ARS GovChat,USDA ARS / Microsoft,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA ARS GovChat
-USDA NRCS NETS Automated Waterway Design,USDA NRCS / Spatial Front,scientific_ml,1,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA NRCS NETS Automated Waterway Design
-Wildfire.org Turbo Plan,Wildfire.org,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),Wildfire.org Turbo Plan
-USDA Forest Plan Review AI,USDA Forest Service / Google,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA Forest Plan Review AI
-USDA TreeSearch AI,USDA Forest Service / Google,search,1,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA TreeSearch AI
-USDA Forest Service Infosec Chatbot,USDA Forest Service / Google,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA Forest Service Infosec Chatbot
-USDA Bugnet,USDA Forest Service / Oregon State University,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA Bugnet
-USDA Recreation Site Chatbot,USDA Forest Service / University of Washington,general_llm,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA Recreation Site Chatbot
-USDA Forest Health ML Survey,USDA Forest Service / Kikaha Solutions,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA Forest Health ML Survey
-USDA Marbled Murrelet Habitat Mapping,USDA Forest Service / American Museum of Natural History,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA Marbled Murrelet Habitat Mapping
-Washington Forest Inventory Maps,USDA Forest Service / University of Washington,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),Washington Forest Inventory Maps
-USDA Recreation One Stop AI,USDA Forest Service / Booz Allen,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA Recreation One Stop AI
-USDA VegScape/CropCASMA,USDA NASS / George Mason University,scientific_ml,0,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA VegScape/CropCASMA
-USDA AgCloud Helpdesk Chatbot,USDA / Steampunk,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_a),USDA AgCloud Helpdesk Chatbot
-Google Colab,Google,developer_tool,0,0,,,seeded by linkage_pass_2026-05 (agent_b),Google Colab
-Adobe Sensei,Adobe,general_llm,1,0,Adobe Creative Cloud Suite,,seeded by linkage_pass_2026-05 (agent_b),Adobe Sensei
-OpenText Records Management,OpenText,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_b),OpenText Records Management
-Bloomberg Law AI,Bloomberg,legal_research,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Bloomberg Law AI
-Amazon SageMaker,Amazon,ml_platform,0,0,,,seeded by linkage_pass_2026-05 (agent_b),Amazon SageMaker
-Google Coral TPU,Google,developer_tool,0,0,,,seeded by linkage_pass_2026-05 (agent_b),Google Coral TPU
-Google Earth Engine,Google,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (agent_b),Google Earth Engine
-Elsevier ClinicalKey AI,Elsevier,clinical_decision_support,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Elsevier ClinicalKey AI
-Litera Compare,Litera,document_ai,0,0,,,seeded by linkage_pass_2026-05 (agent_b),Litera Compare
-Konica Minolta Dispatcher Paragon,Konica Minolta,productivity,0,0,,,seeded by linkage_pass_2026-05 (agent_b),Konica Minolta Dispatcher Paragon
-TVEyes Media Monitoring,TVEyes,media_analysis,0,0,,,seeded by linkage_pass_2026-05 (agent_b),TVEyes Media Monitoring
-Doble Test Assistant,Doble Engineering,document_ai,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Doble Test Assistant
-DRUID AI,DRUID AI,agent_platform,1,0,,,seeded by linkage_pass_2026-05 (agent_b),DRUID AI
-Supportbench,Supportbench,itsm,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Supportbench
-ManageEngine ServiceDesk Plus,ManageEngine,itsm,1,0,,,seeded by linkage_pass_2026-05 (agent_b),ManageEngine ServiceDesk Plus
-Apple News,Apple,consumer_feature,0,0,,,seeded by linkage_pass_2026-05 (agent_b),Apple News
-MediaViz AI,MediaViz,media_analysis,1,0,,,seeded by linkage_pass_2026-05 (agent_b),MediaViz AI
-Google News Brief,Google,consumer_feature,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Google News Brief
-Azure Synapse Analytics,Microsoft,data_analytics,0,0,Microsoft Azure Platform,,seeded by linkage_pass_2026-05 (agent_b),Azure Synapse Analytics
-Google Calendar,Google,productivity,0,0,Google Workspace,,seeded by linkage_pass_2026-05 (agent_b),Google Calendar
-Genesys Cloud CX,Genesys,itsm,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Genesys Cloud CX
-VA GPT,VA,general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_b),VA GPT
-Microsoft Viva,Microsoft,productivity,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Microsoft Viva
-CWTSatoTravel,CWTSatoTravel,productivity,0,0,,,seeded by linkage_pass_2026-05 (agent_b),CWTSatoTravel
-Vyond,Vyond,media_analysis,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Vyond
-Mural,Mural,productivity,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Mural
-OpenAI Codex,OpenAI,coding_assistant,1,0,,,seeded by linkage_pass_2026-05 (agent_b),OpenAI Codex
-Zendesk AI,Zendesk,itsm,1,0,,,seeded by linkage_pass_2026-05 (agent_b),Zendesk AI
-HackerOne AI,HackerOne,security_tool,1,0,,,seeded by linkage_pass_2026-05 (agent_b),HackerOne AI
-NetApp ARP/AI,NetApp,security_tool,0,0,,,seeded by linkage_pass_2026-05 (agent_b),NetApp ARP/AI
-Ex Libris Alma/Primo,Ex Libris (Clarivate),search,1,0,,,seeded by linkage_pass_2026-05 (agent_c),Ex Libris Alma/Primo
-Lectora AI,ELB Learning,training,1,0,,,seeded by linkage_pass_2026-05 (agent_c),Lectora AI
-LibreChat,LibreChat (Open Source),general_llm,1,0,,,seeded by linkage_pass_2026-05 (agent_c),LibreChat
-Cognitec FaceVACS,Cognitec Systems,biometrics,0,0,,,seeded by linkage_pass_2026-05 (agent_c),Cognitec FaceVACS
-NaturalReader,NaturalReader,nlp_specific,1,0,,,seeded by linkage_pass_2026-05 (agent_c),NaturalReader
-Planmeca Romexis,Planmeca,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (agent_c),Planmeca Romexis
-RedSeal,RedSeal,security_tool,0,0,,,seeded by linkage_pass_2026-05 (agent_c),RedSeal
-Cortechs NeuroQuant,Cortechs.ai,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (agent_c),Cortechs NeuroQuant
-Siemens MAGNETOM,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (agent_c),Siemens MAGNETOM
-Hologic 3D Quorum,Hologic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (agent_c),Hologic 3D Quorum
-Verathon BladderScan Prime PLUS,Verathon,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (agent_c),Verathon BladderScan Prime PLUS
-Canon Aquilion ONE AiCE,Canon Medical Systems,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (agent_c),Canon Aquilion ONE AiCE
-FDA CDEROne Analytics,FDA Center for Drug Evaluation and Research,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (fixup_validity),FDA CDEROne Analytics
-GrantSolutions,Department of Health and Human Services,custom,0,0,,,seeded by linkage_pass_2026-05 (fixup_validity),GrantSolutions
-FTC Sentinel Network Services,Federal Trade Commission,investigative_data,0,0,,,seeded by linkage_pass_2026-05 (fixup_validity),FTC Sentinel Network Services
-ELIS,U.S. Citizenship and Immigration Services,custom,0,0,,,seeded by linkage_pass_2026-05 (fixup_validity),ELIS
-Amazon Comprehend,Amazon,nlp,0,0,,,seeded by linkage_pass_2026-05 (fixup_validity),Amazon Comprehend
-VA Clinical AI Agent,U.S. Department of Veterans Affairs,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),VA Clinical AI Agent
-VA VoiceBot,U.S. Department of Veterans Affairs,nlp_specific,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),VA VoiceBot
-VA AI Assist,U.S. Department of Veterans Affairs,nlp,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),VA AI Assist
-Roche Digital Pathology,Roche,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Roche Digital Pathology
-Cogitativo,Cogitativo,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Cogitativo
-Parable 3D Wound Care,Parable Health,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Parable 3D Wound Care
-Koios DS Breast,Koios Medical,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Koios DS Breast
-Lambient AI Scribe,Lambient,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Lambient AI Scribe
-Ephesoft Transact,Ephesoft,document_ai,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Ephesoft Transact
-Mindray TE X Ultrasound,Mindray,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Mindray TE X Ultrasound
-Freed AI Medical Scribe,Freed,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Freed AI Medical Scribe
-Nuance PowerScribe One,Nuance (Microsoft),transcription,1,0,Nuance Dragon,,seeded by linkage_pass_2026-05 (ws1_va),Nuance PowerScribe One
-VA E2 HelpBot,U.S. Department of Veterans Affairs,nlp,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),VA E2 HelpBot
-Pyramid Analytics,Pyramid Analytics,data_analytics,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Pyramid Analytics
-BillieGPT,U.S. Department of Veterans Affairs,nlp,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),BillieGPT
-Pingoo.AI,Pingoo.AI,nlp,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Pingoo.AI
-Glassbeam Clinsights,Glassbeam,data_analytics,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Glassbeam Clinsights
-Abridge Ambient Scribe,Abridge,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Abridge Ambient Scribe
-Knowtex Ambient Scribe,Knowtex,transcription,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),Knowtex Ambient Scribe
-Agfa DR 800 MUSICA,Agfa HealthCare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Agfa DR 800 MUSICA
-Beckman Coulter DxH 800,Beckman Coulter,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Beckman Coulter DxH 800
-GE Healthcare Xeleris V,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Xeleris V
-GE Healthcare SIGNA Artist (AIR Recon DL),GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare SIGNA Artist (AIR Recon DL)
-Medtronic GI Genius,Medtronic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Medtronic GI Genius
-GE Healthcare TrueFidelity CT,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare TrueFidelity CT
-Aidoc BriefCase,Aidoc,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Aidoc BriefCase
-iCAD ProFound AI,iCAD,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),iCAD ProFound AI
-Circle CVI42,Circle Cardiovascular Imaging,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Circle CVI42
-Siemens SOMATOM go.,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens SOMATOM go.
-Solventum 360 Encompass,Solventum (3M Health Information Systems),document_ai,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Solventum 360 Encompass
-GE Healthcare Vivid iq,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Vivid iq
-GE Healthcare EchoPAC,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare EchoPAC
-Riverain ClearRead CT,Riverain Technologies,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Riverain ClearRead CT
-ScreenPoint Transpara,ScreenPoint Medical,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),ScreenPoint Transpara
-Canon Alphenix Angio Workstation,Canon Medical Systems,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Canon Alphenix Angio Workstation
-Philips eCareManager,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips eCareManager
-GE Healthcare Voluson Expert,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Voluson Expert
-Medtronic CareLink,Medtronic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Medtronic CareLink
-GE Healthcare Critical Care Suite,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Critical Care Suite
-Philips Vereos PET/CT,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips Vereos PET/CT
-GE Healthcare Venue Fit,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Venue Fit
-Sonic Incytes Velacur,Sonic Incytes,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Sonic Incytes Velacur
-Siemens syngo,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens syngo
-RapidAI,RapidAI,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),RapidAI
-Brainlab Elements Spine,Brainlab,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Brainlab Elements Spine
-RaySearch RayStation,RaySearch Laboratories,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),RaySearch RayStation
-Philips QLAB,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips QLAB
-Boston Scientific Preventice BodyGuardian,Boston Scientific (Preventice),clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Boston Scientific Preventice BodyGuardian
-Philips EPIQ/Affiniti Ultrasound,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips EPIQ/Affiniti Ultrasound
-Persyst EEG,Persyst Development,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Persyst EEG
-Abbott OPTIS Imaging,Abbott,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Abbott OPTIS Imaging
-Medtronic O-arm O2,Medtronic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Medtronic O-arm O2
-TeraRecon iNtuition,TeraRecon (ConcertAI),clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),TeraRecon iNtuition
-CathWorks FFRangio,CathWorks,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),CathWorks FFRangio
-GE Healthcare FastStroke CT Perfusion 4D,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare FastStroke CT Perfusion 4D
-GE Healthcare Discovery MI,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Discovery MI
-Hologic Genius AI Detection,Hologic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Hologic Genius AI Detection
-MaxQ AI CT CoPilot,MaxQ AI,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),MaxQ AI CT CoPilot
-Brainlab Cranial Navigation,Brainlab,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Brainlab Cranial Navigation
-CellaVision DM1200,CellaVision,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),CellaVision DM1200
-Biosense Webster CARTO 3,Biosense Webster (Johnson & Johnson),clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Biosense Webster CARTO 3
-Canon Cartesion Prime PET/CT,Canon Medical Systems,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Canon Cartesion Prime PET/CT
-Brainlab Elements,Brainlab,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Brainlab Elements
-Bio-Rad BioPlex 2200,Bio-Rad Laboratories,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Bio-Rad BioPlex 2200
-Siemens Biograph PET/CT,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens Biograph PET/CT
-Radformation AutoContour,Radformation,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Radformation AutoContour
-Canon Aplio Ultrasound,Canon Medical Systems,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Canon Aplio Ultrasound
-Brainlab Cirq Alignment,Brainlab,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Brainlab Cirq Alignment
-Edwards Acumen Hypotension Prediction Index,Edwards Lifesciences,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Edwards Acumen Hypotension Prediction Index
-Carestream CS 9600,Carestream Dental,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Carestream CS 9600
-Siemens ACUSON Sequoia,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens ACUSON Sequoia
-Philips Smart Collimation Thorax,Philips,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Philips Smart Collimation Thorax
-ARANZ Silhouette Wound Imaging,ARANZ Medical,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),ARANZ Silhouette Wound Imaging
-Butterfly iQ Ultrasound,Butterfly Network,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Butterfly iQ Ultrasound
-CareView Patient Safety System,CareView Communications,computer_vision,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),CareView Patient Safety System
-GE Healthcare Omni Legend PET/CT,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Omni Legend PET/CT
-Volpara Imaging,Volpara Health,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Volpara Imaging
-GE Healthcare LOGIQ Ultrasound,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare LOGIQ Ultrasound
-ReflexAI,ReflexAI,training,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),ReflexAI
-Medtronic LINQ II,Medtronic,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Medtronic LINQ II
-GE Healthcare Vivid E Ultrasound,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare Vivid E Ultrasound
-Avicenna.AI CINA,Avicenna.AI,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Avicenna.AI CINA
-Zeiss CLARUS,Carl Zeiss Meditec,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Zeiss CLARUS
-AgileMD eCART,AgileMD,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),AgileMD eCART
-Podimetrics SmartMat,Podimetrics,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Podimetrics SmartMat
-Whiterabbit.ai WRDensity,Whiterabbit.ai,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Whiterabbit.ai WRDensity
-Welldoc BlueStar,Welldoc,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Welldoc BlueStar
-EarlySense WAVE Clinical Platform,EarlySense,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),EarlySense WAVE Clinical Platform
-VUNO Med-DeepBrain,VUNO,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),VUNO Med-DeepBrain
-Volta Medical AF-Xplorer,Volta Medical,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Volta Medical AF-Xplorer
-Biotronik Home Monitoring,Biotronik,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Biotronik Home Monitoring
-GE Healthcare AMX Portable X-ray,GE Healthcare,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),GE Healthcare AMX Portable X-ray
-Lantheus aPROMISE,Lantheus,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Lantheus aPROMISE
-Dentsply Sirona CEREC,Dentsply Sirona,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Dentsply Sirona CEREC
-Lyssn,Lyssn,audio_analysis,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Lyssn
-CareCentra,CareCentra,clinical_decision_support,1,0,,,seeded by linkage_pass_2026-05 (ws1_va),CareCentra
-iRhythm Zio ECG,iRhythm Technologies,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),iRhythm Zio ECG
-Siemens YSIO Max,Siemens Healthineers,clinical_decision_support,0,0,,,seeded by linkage_pass_2026-05 (ws1_va),Siemens YSIO Max
-Amazon Web Services,Amazon,cloud_platform,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Amazon Web Services
-Thomson Reuters,Thomson Reuters,legal_research,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Thomson Reuters
-Adobe,Adobe,productivity,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Adobe
-ServiceNow,ServiceNow,itsm,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),ServiceNow
-Cisco,Cisco,security_tool,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Cisco
-Salesforce,Salesforce,productivity,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Salesforce
-Microsoft,Microsoft,productivity,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Microsoft
-Google,Google,productivity,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Google
-Amazon,Amazon,consumer_feature,0,0,,,seeded by linkage_pass_2026-05 (ws2_hierarchy),Amazon
+"canonical_name","vendor","product_type","is_generative_ai","is_frontier_llm","parent_canonical_name","description","notes","aliases"
+"ACCRETE ARGUS","ACCRETE AI Government","supply_chain","0","0","","","seeded by round2_2026-04","ACCRETE ARGUS"
+"Adobe Creative Cloud Suite","Adobe","","1","0","","","","Adobe Creative Cloud Suite|Adobe Suite Applications"
+"Adobe Firefly","Adobe","computer_vision","1","0","","Image generation","","Adobe Firefly|Firefly"
+"Adobe Photoshop","Adobe","computer_vision","1","0","","Image editing with generative fill and other AI features","","Adobe Photoshop|Photoshop"
+"Airship AI Platform","Airship AI Holdings Inc.","","0","0","","","","Airship AI Platform|Unmanned Aerial Systems (UAS)"
+"Airtable AI","Airtable","productivity","1","0","","Airtable's embedded AI (OpenAI-backed) for low-code databases","","Airtable AI|Airtable's AI|Airtable"
+"Alation Data Catalog","Alation","","0","0","","","","Alation Data Catalog"
+"AlphaFold","Google DeepMind","scientific_ml","0","0","","","seeded by round2_2026-04","AlphaFold"
+"Altana Atlas","Altana","","0","0","","","","Altana Atlas|Altana  Entity Resolution for Global Trade Data|Altana  Entity Resolution"
+"Amazon CodeWhisperer","Amazon","coding_assistant","1","0","","Amazon's AI coding assistant","","CodeWhisperer|Amazon CodeWhisperer|AWS CodeWhisperer"
+"Amazon Q","Amazon","general_llm","1","1","","Amazon's enterprise AI assistant","","AWS Q|Amazon Q|Q Developer|Q Business"
+"Amped Software","Amped Software","","0","0","","","","Amped Software|Amped"
+"Appian AI","Appian","agent_platform","0","0","","","seeded by round2_2026-04","Appian AI"
+"Apple Intelligence","Apple","general_llm","1","0","","","","Apple Intelligence"
+"Aretec NEAT","Aretec Inc","data_analytics","0","0","","","seeded by round2_2026-04","Aretec NEAT"
+"Articulate 360 AI Assistant","Articulate","","0","0","","","","Articulate 360 AI Assistant|Ariculate 360 AI Assistant"
+"Ask Sage","Ask Sage Inc.","general_llm","1","1","","","seeded by round2_2026-04; flags per product_band_audit_2026-07","Ask Sage"
+"ATLAS (Forest Service)","USDA Forest Service","data_analytics","0","0","","","seeded by round2_2026-04","ATLAS (Forest Service)"
+"Autonomous Surveillance Tower","Anduril","","0","0","","","","Autonomous Surveillance Tower|Anduril Autonomous Surveillance Towers"
+"AveriSource","AveriSource","code_modernization","0","0","","","seeded by round2_2026-04","AveriSource"
+"AWS Bedrock","Amazon","general_llm","1","1","","Amazon's managed foundation model service","","Bedrock|AWS Bedrock|Amazon Bedrock"
+"AWS Kendra","Amazon","search","0","0","","","seeded by round2_2026-04","AWS Kendra"
+"AWS Lex","Amazon","","0","0","","","","AWS Lex|Lex Natural Language Interface"
+"AWS Rekognition","Amazon","computer_vision","0","0","","","seeded by round2_2026-04","AWS Rekognition"
+"AWS Textract","Amazon","computer_vision","0","0","","Amazon's document text-extraction / OCR service","","AWS Textract|Amazon Textract|Textract"
+"AWS Transcribe","Amazon","nlp_specific","0","0","","Speech-to-text service","","AWS Transcribe|Amazon Transcribe"
+"Azure AI Document Intelligence","Microsoft","document_ai","0","0","","","seeded by round2_2026-04","Azure AI Document Intelligence"
+"Azure AI Foundry","Microsoft","general_llm","1","1","","","seeded by round2_2026-04; flags per product_band_audit_2026-07","Azure AI Foundry"
+"Azure AI Vision / Document Intelligence","Microsoft","general_llm","1","0","","","","Azure AI Vision / Document Intelligence|Azure Computer Vision and Document Intelligence Read"
+"Azure OpenAI","Microsoft","general_llm","1","1","","OpenAI models hosted on Azure","","Azure OpenAI|Azure OpenAI Service|OpenAI on Azure"
+"Azure Speech","Microsoft","transcription","0","0","","","seeded by round2_2026-04","Azure Speech"
+"Babel Street Babel","Babel Street","","0","0","","","","Babel Street Babel|Babel Street Babel Street Babel"
+"BI SmartLINK","BI Incorporated","biometrics","0","0","","","seeded by round2_2026-04","BI SmartLINK"
+"BMC Helix ITSM","BMC","itsm","0","0","","","seeded by round2_2026-04","BMC Helix ITSM"
+"Boston Dynamics Spot","Boston Dynamics","","0","0","","","","Boston Dynamics Spot|Boston Dynamics Spot Robotics|Boston Dynamics"
+"C3 AI","C3.ai","","0","0","","","","C3 AI|C3.AI"
+"Calendly","Calendly","productivity","0","0","","AI-enabled scheduling","","Calendly"
+"CaseGuard","CaseGuard","","0","0","","","","CaseGuard|Case Guard  AI-Assisted Audio/Video Redaction"
+"Cellebrite Media Classifier","Cellebrite","","0","0","","","","Cellebrite Media Classifier|Cellebrite  Media Classifier for Computer and Digital Storage Evidence"
+"Chainalysis","Chainalysis","blockchain_analytics","0","0","","","seeded by round2_2026-04","Chainalysis"
+"ChatGPT","OpenAI","general_llm","1","1","","OpenAI's conversational AI assistant","","ChatGPT|GPT-4|GPT-4o|OpenAI ChatGPT|ChatGPT Enterprise|ChatGPT Plus"
+"Citrix","Citrix","virtualization","0","0","","","seeded by round2_2026-04","Citrix"
+"Claude","Anthropic","general_llm","1","1","","Anthropic's conversational AI","","Claude|Anthropic|Anthropic Claude|Claude.ai|Claude 3|Claude 3.5|Claude Sonnet|Claude Opus"
+"Claude Code","Anthropic","coding_assistant","1","0","Claude","Anthropic's coding agent","","Claude Code"
+"Clearview AI","Clearview AI","","0","0","","","","Clearview AI|Clearview AI Traveler Verification System"
+"Cohesity","Cohesity","security_tool","0","0","","","seeded by round2_2026-04","Cohesity"
+"Commonlook Online","Commonlook","document_ai","0","0","","","seeded by round2_2026-04","Commonlook Online"
+"Credal","Credal","agent_platform","1","0","","","seeded by round2_2026-04; flags per product_band_audit_2026-07","Credal"
+"CrewAI","CrewAI","","0","0","","","","CrewAI"
+"Crowdstrike Falcon","Crowdstrike","security_tool","0","0","","Endpoint security with ML","","Crowdstrike|Crowdstrike Falcon|Falcon"
+"cryoDRGN","Open Source","scientific_ml","0","0","","","seeded by round2_2026-04","cryoDRGN"
+"crYOLO","Open Source","scientific_ml","0","0","","","seeded by round2_2026-04","crYOLO"
+"CryoSPARC","Structura Biotechnology","scientific_ml","0","0","","","seeded by round2_2026-04","CryoSPARC"
+"Custom In-House AI","In-House","custom","1","0","","Agency-built custom AI systems","","In-house|Custom|Developed in-house|In-House"
+"Databricks","Databricks","ml_platform","1","0","","ML platform","","Databricks"
+"Dataminr First Alert","Dataminr","","0","0","","","","Dataminr First Alert|First Alert/Dataminr"
+"Democratizing Data","Coleridge Institute","data_analytics","0","0","","","seeded by round2_2026-04","Democratizing Data"
+"Digital Science Dimensions","Digital Science","data_analytics","0","0","","","seeded by round2_2026-04","Digital Science Dimensions"
+"DocketScope","The Regulatory Group, Inc.","","0","0","","","","DocketScope"
+"Dynatrace","Dynatrace","security_tool","0","0","","","seeded by round2_2026-04","Dynatrace"
+"EDAV (CDC)","CDC","data_analytics","0","0","","","seeded by round2_2026-04","EDAV (CDC)|EDAV|Enterprise Data Analytics and Visualization Platform|Enterprise Data, Analytics, and Visualization Platform"
+"Emerald Innovations","Emerald Innovations","scientific_ml","0","0","","","seeded by round2_2026-04","Emerald Innovations"
+"Esri ArcGIS AI","Esri","nlp_specific","0","0","","GIS with AI features","","ArcGIS|ESRI GIS AI|Esri|Esri ArcGIS"
+"Everlaw AI Assistant","Everlaw, Inc.","","0","0","","","","Everlaw AI Assistant|Everlaw AI Assistant for Responsive Review"
+"Exiger DDIQ","Exiger","supply_chain","0","0","","","seeded by round2_2026-04","Exiger DDIQ"
+"Expert.ai Cogito","expert.ai","nlp","0","0","","","seeded by round2_2026-04","Expert.ai Cogito"
+"Flashpoint","Flashpoint","social_listening","0","0","","","seeded by round2_2026-04","Flashpoint"
+"FLIR 280 HD","Teledyne FLIR","","0","0","","","","FLIR 280 HD"
+"Flowmon","Progress Flowmon","security_tool","0","0","","","seeded by round2_2026-04","Flowmon"
+"FOIA REDACTION (FRED)","Unknown","document_ai","0","0","","","seeded by round2_2026-04","FOIA REDACTION (FRED)"
+"FOIAXpress AI","OPEXUS","document_ai","0","0","","","seeded by round2_2026-04","FOIAXpress AI"
+"GAIA AI","GAIA AI","computer_vision","0","0","","","seeded by round2_2026-04","GAIA AI"
+"Gemini","Google","general_llm","1","1","","Google's conversational AI","","Gemini|Google Gemini|Bard|Gemini Pro|Gemini 1.5|Gemini 2"
+"GitHub Copilot","Microsoft","coding_assistant","1","0","Microsoft 365 Copilot","AI pair programmer for code generation","","GitHub CoPilot|GitHub Copilot|Github Copilot|GitHub copilot|GH Copilot"
+"GlobalComm Video Surveillance","GlobalComm","computer_vision","0","0","","","seeded by round2_2026-04","GlobalComm Video Surveillance"
+"Google Agentspace","Google","general_llm","1","0","","","","Google Agentspace|Google Agentspace / NotebookLM"
+"Google Chrome Generative AI","Google","","1","0","","","","Google Chrome Generative AI"
+"Google Cloud Platform","Google","general_llm","1","0","","","","Google Cloud Platform"
+"Google Cloud Vision","Google","","0","0","","","","Google Cloud Vision"
+"Google NotebookLM","Google","general_llm","0","0","","","seeded by round2_2026-04","Google NotebookLM"
+"Google Translate","Google","translation","0","0","","","seeded by round2_2026-04","Google Translate"
+"Google Vertex AI","Google","general_llm","1","0","","","","Google Vertex AI|Google Vertex AI Document workbench"
+"Google Workspace","Google","productivity","0","0","","Google's productivity suite","","Google Workspace|GSuite"
+"Grammarly","Grammarly","productivity","1","0","","Writing assistant","flags per product_band_audit_2026-07","Grammarly|Grammarly Business"
+"Grants.gov AI Tools","HHS","data_analytics","0","0","","","seeded by round2_2026-04","Grants.gov AI Tools"
+"Grok","xAI","general_llm","1","0","","","","Grok|xAI Grok Pilot"
+"Gurucul UEBA","Gurucul","","0","0","","","","Gurucul UEBA|Gurucul ESS User Entity and Behavior Analytics (UEBA)"
+"H2O GPTe","H2O.ai","general_llm","0","0","","","seeded by round2_2026-04","H2O GPTe"
+"HeyGen","HeyGen","","1","0","","","","HeyGen"
+"Hyperscience","Hyperscience","","0","0","","","","Hyperscience|Hyperscience - IDP software"
+"IBM ARGOS","IBM","nlp","0","0","","","seeded by round2_2026-04","IBM ARGOS"
+"IBM CoreDF","IBM","document_ai","0","0","","","seeded by round2_2026-04","IBM CoreDF"
+"IBM Watson","IBM","","0","0","","","","IBM Watson"
+"iCatalyst RPA","iCatalyst Inc","rpa","0","0","","","seeded by round2_2026-04","iCatalyst RPA"
+"ID.me","ID.me","identity_verification","0","0","","","seeded by round2_2026-04","ID.me"
+"Ideation ReadyAI","Ideation","general_llm","1","0","","","","Ideation ReadyAI"
+"IDEMIA CAT-2/AutoCAT","IDEMIA","biometrics","0","0","","","seeded by round2_2026-04","IDEMIA CAT-2/AutoCAT"
+"idiCORE","LexisNexis Risk Solutions","","0","0","","","","idiCORE"
+"Illumio","Illumio","","0","0","","","","Illumio"
+"Informatica","Informatica","data_catalog","0","0","","","seeded by round2_2026-04","Informatica"
+"Invariant Acoustic Signature AI","Invariant Corporation","audio_analysis","0","0","","","seeded by round2_2026-04","Invariant Acoustic Signature AI"
+"iProov","iProov","","0","0","","","","iProov|IProov"
+"KESTREL","Maxar","","0","0","","","","KESTREL|Maxar KESTREL Aircraft Landing Location Predictor (KESTREL)"
+"Kiteworks","Kiteworks","security_tool","0","0","","","seeded by round2_2026-04","Kiteworks"
+"KnowBe4 PhishER","KnowBe4","security_tool","0","0","","","seeded by round2_2026-04","KnowBe4 PhishER"
+"Lasso Security","Lasso Security","","0","0","","","","Lasso Security|Lasso ESS AI Security and Monitoring"
+"Leica Aivia","Leica","computer_vision","0","0","","","seeded by round2_2026-04","Leica Aivia"
+"Lexical Intelligence","Lexical Intelligence, LLC","nlp","0","0","","","seeded by round2_2026-04","Lexical Intelligence"
+"Lexis+ AI","LexisNexis","legal_research","1","0","","Legal research AI","","Lexis+ AI|LexisNexis AI|Lexis Advance"
+"LexisNexis","LexisNexis","","0","0","","","","LexisNexis"
+"LexisNexis Risk Solutions","LexisNexis","","0","0","","","","LexisNexis Risk Solutions|REX DBA Lexis Nexis"
+"LIGER Generative AI Toolkit","LMI Consulting, LLC","","1","0","","","","LIGER Generative AI Toolkit|LMI Consulting, LLC  LIGER Generative AI Toolkit"
+"Llama","Meta","general_llm","0","0","","","seeded by round2_2026-04","Llama"
+"Lookout","Lookout","","0","0","","","","Lookout"
+"Matroid I4 Viewer","Matroid","","0","0","","","","Matroid I4 Viewer"
+"Medallia","Medallia","","1","0","","","","Medallia|Medallia MASS"
+"Meltwater","Meltwater","productivity","0","0","","Media monitoring with AI","","Meltwater"
+"Microsoft 365","Microsoft","coding_assistant","0","0","","","flags per product_band_audit_2026-07","Microsoft 365"
+"Microsoft 365 Apps for Enterprise","Microsoft","coding_assistant","1","0","","","","Microsoft 365 Apps for Enterprise"
+"Microsoft 365 Copilot","Microsoft","general_llm","1","1","","Microsoft's enterprise LLM assistant integrated with Office apps","","M365 Copilot|Microsoft M365 Copilot|Microsoft M365 Copilot AI|Microsoft Copilot for M365|Microsoft 365 Copilot|Copilot for Microsoft 365|M365 CoPilot|Microsoft 365 CoPilot|M365 copilot|Copilot Enterprise|Microsoft Copilot Enterprise"
+"Microsoft AI Builder","Microsoft","","0","0","","","","Microsoft AI Builder|AI Builder Document Scraping"
+"Microsoft Azure Authoring Tools","Microsoft","","0","0","","","","Microsoft Azure Authoring Tools"
+"Microsoft Azure Platform","Microsoft","cloud_platform","0","0","","","seeded by round2_2026-04","Microsoft Azure Platform"
+"Microsoft Azure PowerShell","Microsoft","","0","0","","","","Microsoft Azure PowerShell"
+"Microsoft Azure Quantum Elements","Microsoft","","0","0","","","","Microsoft Azure Quantum Elements"
+"Microsoft Copilot for Security","Microsoft","security_tool","1","0","","Microsoft's GenAI-assisted security operations copilot","","Copilot for Security|Microsoft Copilot for Security|Security Copilot|Microsoft Security Copilot"
+"Microsoft Copilot Studio","Microsoft","agent_platform","1","0","","Low-code platform for building custom copilots and agents","","Copilot Studio|Microsoft Copilot Studio|Power Virtual Agents"
+"Microsoft Defender","Microsoft","security_tool","0","0","","Endpoint security with ML-based threat detection","","Microsoft Defender|MS Defender|Defender"
+"Microsoft Discovery","Microsoft","","0","0","","","","Microsoft Discovery"
+"Microsoft Dynamics 365","Microsoft","","0","0","","","","Microsoft Dynamics 365|Microsoft Dynamics Online"
+"Microsoft Edge","Microsoft","","0","0","","","","Microsoft Edge"
+"Microsoft Exchange Server","Microsoft","","0","0","","","","Microsoft Exchange Server"
+"Microsoft HoloLens","Microsoft","computer_vision","0","0","","","seeded by round2_2026-04","Microsoft HoloLens"
+"Microsoft OneDrive","Microsoft","","0","0","","","","Microsoft OneDrive|Microsoft OneDrive MUI"
+"Microsoft OneNote","Microsoft","","0","0","","","","Microsoft OneNote|Microsoft OneNote MUI"
+"Microsoft Outlook","Microsoft","","0","0","","","","Microsoft Outlook|Microsoft Outlook MUI"
+"Microsoft Power BI","Microsoft","","0","0","","","","Microsoft Power BI|Microsoft Power BI Desktop"
+"Microsoft Power Platform","Microsoft","","0","0","","","","Microsoft Power Platform"
+"Microsoft PowerPoint","Microsoft","","0","0","","","","Microsoft PowerPoint|Microsoft PowerPoint MUI"
+"Microsoft Project","Microsoft","","0","0","","","","Microsoft Project"
+"Microsoft Purview eDiscovery","Microsoft","","0","0","","","","Microsoft Purview eDiscovery|Microsoft eDiscovery Attorney-Client Privilege Detection"
+"Microsoft ScreenSketch","Microsoft","","0","0","","","","Microsoft ScreenSketch"
+"Microsoft Search in Bing","Microsoft","","0","0","","","","Microsoft Search in Bing"
+"Microsoft Sentinel","Microsoft","security_tool","0","0","","","seeded by round2_2026-04","Microsoft Sentinel"
+"Microsoft Skype","Microsoft","","0","0","","","","Microsoft Skype|Microsoft Skype App"
+"Microsoft Teams","Microsoft","productivity","0","0","","Collaboration platform with AI features","","Microsoft Teams|MS Teams|Microsoft Teams Premium"
+"Motorola License Plate Recognition","Motorola","","0","0","","","","Motorola License Plate Recognition|Motorola"
+"NanCI","NIH","agent_platform","0","0","","","seeded by round2_2026-04","NanCI"
+"NEC NeoFace","NEC","","0","0","","","","NEC NeoFace|NEC (Nippon Electric Company)|NEC|NEC (algorithm only)"
+"NexisXplore","LexisNexis","","0","0","","","","NexisXplore"
+"Okta Adaptive MFA","Okta","","0","0","","","","Okta Adaptive MFA|Okta"
+"OneReach.ai","OneReach.ai","agent_platform","0","0","","","seeded by round2_2026-04","OneReach.ai"
+"OpenAI API","OpenAI","general_llm","1","1","","Direct OpenAI API access (non-Azure)","","OpenAI|OpenAI API"
+"OpenText Axcelerate","OpenText","","0","0","","","","OpenText Axcelerate|OpenText Axcelerate AI and natural-language powered search"
+"OpenText Decisiv","OpenText","","0","0","","","","OpenText Decisiv"
+"Otter.ai","Otter","productivity","1","0","","Meeting transcription","","Otter|Otter.ai"
+"Palantir AIP","Palantir","general_llm","1","0","","","seeded by round2_2026-04; flags per product_band_audit_2026-07","Palantir AIP"
+"Palantir Case Management & Analytics (CMA)","Palantir","","0","0","","","","Palantir Case Management & Analytics (CMA)"
+"Palantir Decision and Analytics Platform (DNA-P)","Palantir","","0","0","","","","Palantir Decision and Analytics Platform (DNA-P)"
+"Palantir Federal Cloud Service","Palantir","","0","0","","","","Palantir Federal Cloud Service|Palantir Palantir Federal Cloud Service"
+"Palo Alto Networks","Palo Alto Networks","security_tool","0","0","","Network security","","Palo Alto|Palo Alto Networks"
+"Pangolin Lineage","COG-UK","scientific_ml","0","0","","","seeded by round2_2026-04","Pangolin Lineage"
+"PassiveLogic","PassiveLogic","","0","0","","","","PassiveLogic"
+"Penlink","Penlink","","0","0","","","","Penlink"
+"Perplexity","Perplexity AI","general_llm","1","0","","","seeded by round2_2026-04; flags per product_band_audit_2026-07","Perplexity"
+"PEST (Parameter Estimation)","Open Source","scientific_ml","0","0","","","seeded by round2_2026-04","PEST (Parameter Estimation)"
+"Pingwind AI DevOps","Pingwind","devops","0","0","","","seeded by round2_2026-04","Pingwind AI DevOps"
+"PLATES/FoodTrak","Trigent Solutions","document_ai","0","0","","","seeded by round2_2026-04","PLATES/FoodTrak"
+"Precise MLaaS","Precise Software","ml_platform","0","0","","","seeded by round2_2026-04","Precise MLaaS"
+"ProcureSight","ProcureSight","data_analytics","0","0","","","seeded by round2_2026-04","ProcureSight"
+"Quantaero Marine Wildlife AI","Quantaero","","0","0","","","","Quantaero Marine Wildlife AI|AI for Offshore Energy: Innovative Technology Streamlines Marine Wildlife Surveys"
+"Reclaim.AI","Reclaim","productivity","1","0","","AI calendar management","","Reclaim.AI|Reclaim"
+"Recorded Future","Recorded Future","","0","0","","","","Recorded Future|Recorded Future  Cyber Threat Analysis (Recorded Future)"
+"RedCastle Forest Health","RedCastle Resources","computer_vision","0","0","","","seeded by round2_2026-04","RedCastle Forest Health"
+"Rekor","Rekor","","0","0","","","","Rekor"
+"Relativity","Relativity","ediscovery","1","0","","","seeded by round2_2026-04; flags per product_band_audit_2026-07","Relativity"
+"Salesforce Einstein","Salesforce","","1","0","","","flags per product_band_audit_2026-07","Salesforce Einstein|Salesforce Einstein C2RMT|Salesforce"
+"SAP Concur","SAP","productivity","0","0","","Travel and expense","","SAP Concur|Concur"
+"Scopus AI","Elsevier","","0","0","","","","Scopus AI"
+"ServiceNow IT Operations Management (ITOM) Predictive AIOps","ServiceNow","","0","0","","","","ServiceNow IT Operations Management (ITOM) Predictive AIOps"
+"ServiceNow Now Assist","ServiceNow","productivity","1","0","","ServiceNow's GenAI features","","ServiceNow|ServiceNow (Now Assist)|Now Assist|ServiceNow Now Assist"
+"Shabash Merops","Shabash","nlp","0","0","","","seeded by round2_2026-04","Shabash Merops"
+"SimplyFile","TechHit","productivity","0","0","","","seeded by round2_2026-04","SimplyFile"
+"SITE Intelligence Group","SITE","","0","0","","","","SITE Intelligence Group|SITE Group Subscription Services"
+"Skillsoft Percipio CAISY","Skillsoft","","0","0","","","","Skillsoft Percipio CAISY|SKILLSOFT PERCIPIO/CAISY"
+"Skydio X2D","Skydio","","0","0","","","","Skydio X2D|Skydio and Xtender Skydio X2D"
+"Skyward CEDAR/CLAW","Skyward IT Solutions","agent_platform","0","0","","","seeded by round2_2026-04","Skyward CEDAR/CLAW"
+"Snowflake Cortex","Snowflake","ml_platform","1","0","","Snowflake's AI features","","Snowflake Cortex|Snowflake AI"
+"Splunk","Splunk","security_tool","0","0","","SIEM with ML analytics","","Splunk"
+"Sprinklr","Sprinklr","","0","0","","","","Sprinklr"
+"SpyglassGPT","Unknown","general_llm","0","0","","","seeded by round2_2026-04","SpyglassGPT"
+"SQL Server Management Studio","Microsoft","","0","0","","","","SQL Server Management Studio"
+"SumTotal","SumTotal","training","0","0","","","seeded by round2_2026-04","SumTotal"
+"Systran Translate","Systran","translation","0","0","","","seeded by round2_2026-04","Systran Translate"
+"Tabnine","Tabnine","coding_assistant","0","0","","","","Tabnine|Tabnine AI Pair Programmer"
+"Tenable","Tenable","","0","0","","","","Tenable"
+"Tesseract OCR","Open Source","document_ai","0","0","","","seeded by round2_2026-04","Tesseract OCR"
+"Thomson Reuters CLEAR","Thomson Reuters","data_analytics","0","0","","","seeded by round2_2026-04","Thomson Reuters CLEAR"
+"ThruVision TAC 16","ThruVision","","0","0","","","","ThruVision TAC 16|ThruVision TAC 16 Passive Body Scanner"
+"ThruWave NII 3D Imaging Tool","ThruWave","","0","0","","","","ThruWave NII 3D Imaging Tool|ThruWave  Non-Intrusive Inspection (NII) 3D Imaging Tool"
+"Traffic Jam","Marinus Analytics","","0","0","","","","Traffic Jam|Marinus Analytics Traffic Jam"
+"TRM Labs Blockchain Analysis Platform","TRM Labs","","0","0","","","","TRM Labs Blockchain Analysis Platform|TRM Labs  Blockchain Analysis"
+"UiPath Enterprise RPA","UiPath","","0","0","","","","UiPath Enterprise RPA|UiPath; Microsoft; Apryse; Personable Inc. Enterprise Robotic Process Automation"
+"Ultralytics YOLO","Ultralytics","computer_vision","0","0","","","seeded by round2_2026-04","Ultralytics YOLO"
+"Upstream Tech HydroForecast","Upstream Tech","","0","0","","","","Upstream Tech HydroForecast|Piloting Machine Learning Inflow Forecasts Across Reclamation"
+"UpToDate","Wolters Kluwer","clinical_decision_support","0","0","","","seeded by round2_2026-04","UpToDate"
+"USAi (GSA)","GSA","general_llm","1","1","","","seeded by round2_2026-04; flags per product_band_audit_2026-07","USAi (GSA)|USAi|USAi.gov|GSA USAi"
+"VAO Ally","GSA","agent_platform","0","0","","","seeded by round2_2026-04","VAO Ally"
+"Vectra AI","Vectra Networks","","0","0","","","","Vectra AI|Vectra Networks"
+"VegSpec","USDA NRCS","scientific_ml","0","0","","","seeded by round2_2026-04","VegSpec"
+"Veritone","Veritone","media_analysis","0","0","","","seeded by round2_2026-04","Veritone"
+"Veritone Illuminate","Veritone","media_analysis","0","0","","","seeded by round2_2026-04","Veritone Illuminate"
+"Visual Studio","Microsoft","","0","0","","","","Visual Studio|Visual Studio Community"
+"Visual Studio Enterprise","Microsoft","","0","0","","","","Visual Studio Enterprise"
+"VoiceAtlas","Navteca","","0","0","","","","VoiceAtlas|VoiceAtlas no-code chatbot framework"
+"WellSaid Labs","WellSaid Labs","nlp_specific","1","0","","Synthetic voice / text-to-speech platform","","WellSaid Labs|Wellsaid Labs|WellSaid|Wellsaid"
+"Westlaw AI","Thomson Reuters","legal_research","1","0","","Legal research with AI","","Westlaw|Thomson Reuters/Westlaw Drafting Assistant|Westlaw AI|Westlaw Precision|Thomson Reuters Westlaw"
+"Whooster","Whooster","data_analytics","0","0","","","seeded by round2_2026-04","Whooster"
+"Windsurf","Codeium","coding_assistant","1","0","","","seeded by round2_2026-04; flags per product_band_audit_2026-07","Windsurf"
+"Yurts AI","Legion (formerly Yurts)","","0","0","","","","Yurts AI|Legion (Previously Yurts)"
+"Zscaler","Zscaler","security_tool","0","0","","Cloud security platform","","Zscaler"
+"CBP Translate","U.S. Customs and Border Protection","translation","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","CBP Translate"
+"Traveler Verification Service","U.S. Customs and Border Protection","biometrics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Traveler Verification Service"
+"ERNIE Radiological Detection","DHS Countering Weapons of Mass Destruction","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","ERNIE Radiological Detection"
+"Consular Consolidated Database Facial Recognition","U.S. Department of State","biometrics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Consular Consolidated Database Facial Recognition"
+"AIS Resume Screening Tool","AIS","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","AIS Resume Screening Tool"
+"Rohde & Schwarz QPS Walk-Through Scanner","Rohde & Schwarz","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Rohde & Schwarz QPS Walk-Through Scanner"
+"USCIS Text Analytics","U.S. Citizenship and Immigration Services","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USCIS Text Analytics"
+"USCIS Verification Match Model","U.S. Citizenship and Immigration Services","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USCIS Verification Match Model"
+"USCIS Customer Profile Management System Facial Recognition","U.S. Citizenship and Immigration Services","biometrics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USCIS Customer Profile Management System Facial Recognition"
+"Person-Centric Identity Services Deduplication Model","U.S. Citizenship and Immigration Services","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Person-Centric Identity Services Deduplication Model"
+"Advanced Trade Analytics Platform","U.S. Customs and Border Protection","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Advanced Trade Analytics Platform"
+"PDRI Remote Proctor","PDRI (Pearson)","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","PDRI Remote Proctor"
+"ATS Passport Anomaly Model","U.S. Customs and Border Protection","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","ATS Passport Anomaly Model"
+"ATS Trade Entity Risk Model","U.S. Customs and Border Protection","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","ATS Trade Entity Risk Model"
+"RAVEn Investigative Prioritization Aggregator","U.S. Homeland Security Investigations","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","RAVEn Investigative Prioritization Aggregator"
+"RAVEn Translation and Transcription Service","U.S. Homeland Security Investigations","translation","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","RAVEn Translation and Transcription Service"
+"CANDA UEBA","CANDA Solutions","security_tool","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","CANDA UEBA"
+"Biometrics Enrollment Tool","U.S. Citizenship and Immigration Services","biometrics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Biometrics Enrollment Tool"
+"ELIS Name and DOB Harvesting Service","U.S. Citizenship and Immigration Services","nlp","0","0","ELIS","","seeded by linkage_pass_2026-05 (agent_a)","ELIS Name and DOB Harvesting Service"
+"ELIS Card Photo Validation Service","U.S. Citizenship and Immigration Services","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","ELIS Card Photo Validation Service"
+"ClassifAI","DHS / Starlo","document_ai","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","ClassifAI"
+"CISAChat","DHS CISA","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","CISAChat"
+"Nightwing PII Detection","Nightwing Intelligence Solutions","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Nightwing PII Detection"
+"RAVEn Normalization Services","U.S. Homeland Security Investigations","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","RAVEn Normalization Services"
+"ELIS Evidence Classifier Service","U.S. Citizenship and Immigration Services","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","ELIS Evidence Classifier Service"
+"RAIO AI Interview Simulator","USCIS Refugee, Asylum, and International Operations","training","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","RAIO AI Interview Simulator"
+"APT Analytics","DOE","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","APT Analytics"
+"DOE Traffic Predictive Control","DOE","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","DOE Traffic Predictive Control"
+"SEA-CROGS","DOE","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","SEA-CROGS"
+"DOE ML for Disadvantaged Community Identification","DOE","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","DOE ML for Disadvantaged Community Identification"
+"DOE EV Delivery Parking Identification","DOE / Cisco","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","DOE EV Delivery Parking Identification"
+"NLCOO Lessons Learned AI","DOE NETL","search","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","NLCOO Lessons Learned AI"
+"MAPPRITE","DOE Special Technologies Laboratory","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","MAPPRITE"
+"INL Intelligent Automation","DOE Idaho National Lab","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","INL Intelligent Automation"
+"LANL AI Portal","DOE Los Alamos National Lab","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","LANL AI Portal"
+"Merlin","DOE Kansas City National Security Campus","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","Merlin"
+"DOE Soil Moisture Modeling","University of Montana","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","DOE Soil Moisture Modeling"
+"SRNS Computer Vision Defect Detection","Savannah River Nuclear Solutions","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","SRNS Computer Vision Defect Detection"
+"SRNS AI Tailored Learning","Savannah River Nuclear Solutions","training","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","SRNS AI Tailored Learning"
+"SRNS AI Drafting Assistant","Savannah River Nuclear Solutions","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","SRNS AI Drafting Assistant"
+"LISA Chatbot","DOE / AWS","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","LISA Chatbot"
+"COREII","DOE Idaho National Lab","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","COREII"
+"INL Classified Subject Area GenAI","DOE Idaho National Lab","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","INL Classified Subject Area GenAI"
+"SRNS AI Form and Questionnaire Assistant","Savannah River Nuclear Solutions","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","SRNS AI Form and Questionnaire Assistant"
+"SRNS Operational Efficiency ML","Savannah River Nuclear Solutions","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","SRNS Operational Efficiency ML"
+"BSEE Corrosion Classifier","Bureau of Safety and Environmental Enforcement","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","BSEE Corrosion Classifier"
+"Google Earth Engine Wetlands Classifier","Google","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Google Earth Engine Wetlands Classifier"
+"USGS Flow Photo Explorer","USGS / Walker Environmental Research","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USGS Flow Photo Explorer"
+"Federal Docket Management System","GSA","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Federal Docket Management System"
+"FINDER (ATF)","DOJ ATF","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FINDER (ATF)"
+"SWBTRAC","DOJ","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","SWBTRAC"
+"DEA GenAI R&D Sandbox","DEA / NVIDIA","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","DEA GenAI R&D Sandbox"
+"ASCVD Risk Estimator","American College of Cardiology","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","ASCVD Risk Estimator"
+"FBOP Automated Staffing Tool","DOJ FBOP","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FBOP Automated Staffing Tool"
+"FBOP Pathfinder","DOJ FBOP","training","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FBOP Pathfinder"
+"Truview","Advanced Technologies Group","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Truview"
+"Axon","Axon Enterprise","media_analysis","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","Axon"
+"JAWS Screen Reader","Freedom Scientific","productivity","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","JAWS Screen Reader"
+"DOJ Receipt Extraction Tool","DOJ / Microsoft","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","DOJ Receipt Extraction Tool"
+"TransUnion TLOxp","TransUnion","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","TransUnion TLOxp"
+"MIT Lincoln Lab Speech Translation","MIT Lincoln Laboratory","translation","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","MIT Lincoln Lab Speech Translation"
+"Bates White Economic Consulting AI","Bates White","data_analytics","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","Bates White Economic Consulting AI"
+"Adobe Premiere Pro","Adobe","media_analysis","1","0","Adobe Creative Cloud Suite","","seeded by linkage_pass_2026-05 (agent_a)","Adobe Premiere Pro"
+"BLS Expenditure Classification Autocoder","Bureau of Labor Statistics","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","BLS Expenditure Classification Autocoder"
+"Worker PLUS","Department of Labor","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Worker PLUS"
+"DOL Auntee Bot","Department of Labor","productivity","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","DOL Auntee Bot"
+"MSHA AI Headset","ResolveSoft","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","MSHA AI Headset"
+"FSA Aidan Chatbot","U.S. Department of Education / Accenture","general_llm","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FSA Aidan Chatbot"
+"EPA Agency Records Management System","EPA","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","EPA Agency Records Management System"
+"EPA RCRA PA","EPA","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","EPA RCRA PA"
+"Equifax Background Screening","Equifax","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Equifax Background Screening"
+"FERC Zvolvant Comment Analysis","Zvolvant","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FERC Zvolvant Comment Analysis"
+"FERC Zvolvant Inspection AI","Zvolvant","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FERC Zvolvant Inspection AI"
+"FERC Zvolvant Market Surveillance","Zvolvant","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FERC Zvolvant Market Surveillance"
+"FERC Zvolvant Interconnection Assistant","Zvolvant","nlp","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","FERC Zvolvant Interconnection Assistant"
+"FERC Zvolvant Permitting Assistant","Zvolvant","nlp","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","FERC Zvolvant Permitting Assistant"
+"Microsoft SQL Server Intelligent Query Processing","Microsoft","data_analytics","0","0","Microsoft Azure Platform","","seeded by linkage_pass_2026-05 (agent_a)","Microsoft SQL Server Intelligent Query Processing"
+"Benefits Manager Virtual Assistant","Benefits Manager","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","Benefits Manager Virtual Assistant"
+"FRTIB AVA","FRTIB / Accenture Federal Services","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","FRTIB AVA"
+"FRTIB Fraud Detection","FRTIB / Accenture Federal Services","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FRTIB Fraud Detection"
+"FRTIB Contact Center AI","FRTIB / Accenture Federal Services","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","FRTIB Contact Center AI"
+"FTC Sentinel PSC Classification","FTC / Leidos","data_analytics","0","0","FTC Sentinel Network Services","","seeded by linkage_pass_2026-05 (agent_a)","FTC Sentinel PSC Classification"
+"FTC Sentinel Chatbot","FTC / Leidos","general_llm","0","0","FTC Sentinel Network Services","","seeded by linkage_pass_2026-05 (agent_a)","FTC Sentinel Chatbot"
+"FTC Sentinel Graph Analytics","FTC / Leidos","data_analytics","0","0","FTC Sentinel Network Services","","seeded by linkage_pass_2026-05 (agent_a)","FTC Sentinel Graph Analytics"
+"FTC Sentinel Analytic Sandbox","FTC / Leidos","data_analytics","0","0","FTC Sentinel Network Services","","seeded by linkage_pass_2026-05 (agent_a)","FTC Sentinel Analytic Sandbox"
+"FTC Sentinel Developer Productivity","FTC / Leidos","coding_assistant","1","0","FTC Sentinel Network Services","","seeded by linkage_pass_2026-05 (agent_a)","FTC Sentinel Developer Productivity"
+"FTC GenAI Mail Scan","FTC / Amazon","document_ai","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","FTC GenAI Mail Scan"
+"ORR Unaccompanied Children Policy Research Tool","HHS Office of Refugee Resettlement","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","ORR Unaccompanied Children Policy Research Tool"
+"L&M Policy Research Comment Triaging","L&M Policy Research, LLC","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","L&M Policy Research Comment Triaging"
+"CMS Medicare AI Customer Insights","CMS / commonFont","data_analytics","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","CMS Medicare AI Customer Insights"
+"CMS AI Agent Orchestrator","CMS / Noblis","agent_platform","1","0","Skyward CEDAR/CLAW","","seeded by linkage_pass_2026-05 (agent_a)","CMS AI Agent Orchestrator"
+"CMS Integrated Data Repository Customer Analytic Environment","CMS / GDIT","ml_platform","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","CMS Integrated Data Repository Customer Analytic Environment"
+"CMS IDR Support Bot","CMS / GDIT","general_llm","1","0","CMS Integrated Data Repository Customer Analytic Environment","","seeded by linkage_pass_2026-05 (agent_a)","CMS IDR Support Bot"
+"CMS ELMO Chatbot","CMS / Peraton","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","CMS ELMO Chatbot"
+"FDA 356H ML Facility Supply Chain Role Classification","FDA / Deloitte","document_ai","0","0","FDA CDEROne Analytics","","seeded by linkage_pass_2026-05 (agent_a)","FDA 356H ML Facility Supply Chain Role Classification"
+"FDA Annual Report CMC Extraction","FDA / Deloitte","document_ai","1","0","FDA CDEROne Analytics","","seeded by linkage_pass_2026-05 (agent_a)","FDA Annual Report CMC Extraction"
+"FDA Application-DMF Reference Extraction","FDA / Deloitte","document_ai","0","0","FDA CDEROne Analytics","","seeded by linkage_pass_2026-05 (agent_a)","FDA Application-DMF Reference Extraction"
+"FDA DMF Facilities Extraction","FDA / Deloitte","document_ai","0","0","FDA CDEROne Analytics","","seeded by linkage_pass_2026-05 (agent_a)","FDA DMF Facilities Extraction"
+"FDA Module 3 Facilities Extraction","FDA / Deloitte","document_ai","1","0","FDA CDEROne Analytics","","seeded by linkage_pass_2026-05 (agent_a)","FDA Module 3 Facilities Extraction"
+"FDA Packaging Materials and Suppliers Extraction","FDA / Deloitte","document_ai","1","0","FDA CDEROne Analytics","","seeded by linkage_pass_2026-05 (agent_a)","FDA Packaging Materials and Suppliers Extraction"
+"FDA Real World Data/Evidence Identification","FDA / Deloitte","document_ai","1","0","FDA CDEROne Analytics","","seeded by linkage_pass_2026-05 (agent_a)","FDA Real World Data/Evidence Identification"
+"FDA Regulatory Starting Materials Extraction","FDA / Deloitte","document_ai","1","0","FDA CDEROne Analytics","","seeded by linkage_pass_2026-05 (agent_a)","FDA Regulatory Starting Materials Extraction"
+"FDA HIVE AI Pilot","FDA / SAIC","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","FDA HIVE AI Pilot"
+"FDA CDER Pubs","FDA","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FDA CDER Pubs"
+"FDA Safety Reports Categorization Bot","FDA / Deloitte","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FDA Safety Reports Categorization Bot"
+"FDA IND Safety Reports OCR","FDA / ThinkTrends","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FDA IND Safety Reports OCR"
+"FDA Smart Solution for Docket Management","FDA / Deloitte","nlp","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","FDA Smart Solution for Docket Management"
+"HRSA AI Audit Resolution Assistant","HRSA / Mindpetal","agent_platform","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","HRSA AI Audit Resolution Assistant"
+"HRSA Knowledge Navigator","HRSA / Publicis Sapient","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","HRSA Knowledge Navigator"
+"HRSA PRF Program Chatbot","HRSA / GDIT","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","HRSA PRF Program Chatbot"
+"NIAID DAIT AIDS Research Prioritization","NIAID / Deloitte","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","NIAID DAIT AIDS Research Prioritization"
+"HHS FITARA Tool","HHS / Deloitte","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","HHS FITARA Tool"
+"NIH eRA Internal Referral Module","NIH / Leidos","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","NIH eRA Internal Referral Module"
+"NCI MOSSAIC SEER NLP","NCI / Oak Ridge National Lab","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","NCI MOSSAIC SEER NLP"
+"NIAMS GenAI Chatbot","NIH NIAMS","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","NIAMS GenAI Chatbot"
+"NIH SRDMS NLP COI Module","NIH / Deloitte","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","NIH SRDMS NLP COI Module"
+"NIH Grants Virtual Assistant","NIH / Google","general_llm","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","NIH Grants Virtual Assistant"
+"NIAID TB Portals (TB DEPOT)","NIAID","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","NIAID TB Portals (TB DEPOT)"
+"NIAID TB Portals Outlier Detection","NIAID","computer_vision","0","0","NIAID TB Portals (TB DEPOT)","","seeded by linkage_pass_2026-05 (agent_a)","NIAID TB Portals Outlier Detection"
+"MirBot","NIH / Technatomy Axle","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","MirBot"
+"NIAID OSPIDA Scientific Coding Assistance Tool","NIAID / Deloitte","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","NIAID OSPIDA Scientific Coding Assistance Tool"
+"NIH Prevention Research NLP","NIH / Westat","nlp","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","NIH Prevention Research NLP"
+"NIH Travel Policy AI Chatbot","NIH / Infer Solutions","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","NIH Travel Policy AI Chatbot"
+"HealthData.gov AI Harvest Service","HHS / Tyler Technologies","data_analytics","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","HealthData.gov AI Harvest Service"
+"Grants.gov Similar Opportunities","HHS / MicroHealth","data_analytics","0","0","Grants.gov AI Tools","","seeded by linkage_pass_2026-05 (agent_a)","Grants.gov Similar Opportunities"
+"Grants.gov Applicant Help Chatbot","HHS / Business Performance Systems","general_llm","0","0","Grants.gov AI Tools","","seeded by linkage_pass_2026-05 (agent_a)","Grants.gov Applicant Help Chatbot"
+"GrantSolutions Text Analyzer Tool","GrantSolutions (HHS Shared Service)","nlp","0","0","GrantSolutions","","seeded by linkage_pass_2026-05 (agent_a)","GrantSolutions Text Analyzer Tool"
+"GrantSolutions AI Writing Assistant","GrantSolutions (HHS Shared Service)","general_llm","1","0","GrantSolutions","","seeded by linkage_pass_2026-05 (agent_a)","GrantSolutions AI Writing Assistant"
+"GrantSolutions Recipient Risk Tool","GrantSolutions (HHS Shared Service)","data_analytics","0","0","GrantSolutions","","seeded by linkage_pass_2026-05 (agent_a)","GrantSolutions Recipient Risk Tool"
+"GrantSolutions Non-Competing Continuation Approval Tool","GrantSolutions (HHS Shared Service)","data_analytics","0","0","GrantSolutions","","seeded by linkage_pass_2026-05 (agent_a)","GrantSolutions Non-Competing Continuation Approval Tool"
+"GrantSolutions Helpdesk Agent","GrantSolutions (HHS Shared Service)","general_llm","1","0","GrantSolutions","","seeded by linkage_pass_2026-05 (agent_a)","GrantSolutions Helpdesk Agent"
+"GrantSolutions Non-Competing Continuation Review Tool","GrantSolutions (HHS Shared Service)","general_llm","1","0","GrantSolutions","","seeded by linkage_pass_2026-05 (agent_a)","GrantSolutions Non-Competing Continuation Review Tool"
+"Ginnie Mae Counterparty Risk Anomaly Detection","Ginnie Mae / Deloitte","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Ginnie Mae Counterparty Risk Anomaly Detection"
+"Ginnie Mae Subledger Data Quality ML","Ginnie Mae / Ernst & Young","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Ginnie Mae Subledger Data Quality ML"
+"Ginnie Mae Automated Draft Narrative Reports","Ginnie Mae / Deloitte","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Ginnie Mae Automated Draft Narrative Reports"
+"NARA A1 Museum AI","NARA / Cortina","computer_vision","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","NARA A1 Museum AI"
+"FAA NextGen LOA/SOP Analytics","FAA","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FAA NextGen LOA/SOP Analytics"
+"NASA CAAP Cost Analytics","NASA / Raytheon","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","NASA CAAP Cost Analytics"
+"AFRL Voice Recorder Transcription","Air Force Research Laboratory","transcription","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","AFRL Voice Recorder Transcription"
+"SBA GovCon Match","SBA","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","SBA GovCon Match"
+"SEC FOIA Form Extraction","SEC / GDIT","document_ai","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","SEC FOIA Form Extraction"
+"SSA Quick Disability Determinations Model","SSA / IBM","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","SSA Quick Disability Determinations Model"
+"Espyr Therapy Chatbot","Espyr","clinical_decision_support","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","Espyr Therapy Chatbot"
+"State Department Declassification Review AI","State Department / Deloitte","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","State Department Declassification Review AI"
+"State Department AI Research Engine (AIRE)","State Department / Deloitte","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","State Department AI Research Engine (AIRE)"
+"State FACTS Info Foreign Assistance NLP","State Department / Guidehouse","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","State FACTS Info Foreign Assistance NLP"
+"FA.gov PII Picker","State Department / Guidehouse","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FA.gov PII Picker"
+"State Integrated Country Strategy Turbo","State Department / Guidehouse","nlp","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","State Integrated Country Strategy Turbo"
+"FA.gov RedactAid","State Department / Guidehouse","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","FA.gov RedactAid"
+"State Department Walter Support Bot","State Department / Microsoft","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","State Department Walter Support Bot"
+"State Department WHA/EX Information Management","State Department / Microsoft","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","State Department WHA/EX Information Management"
+"Azure AI Translator","Microsoft","translation","1","0","Microsoft Azure Platform","","seeded by linkage_pass_2026-05 (agent_a)","Azure AI Translator"
+"State NIV Adjudication Review Recommendation Engine","State Department / Guidehouse","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","State NIV Adjudication Review Recommendation Engine"
+"State LCALA Consular Language Augmentation","State Department / Microsoft","translation","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","State LCALA Consular Language Augmentation"
+"USDA FSA FLP Chatbot","USDA / AWS","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA FSA FLP Chatbot"
+"USDA Equine Operations Dataset","USDA / Colorado State University","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA Equine Operations Dataset"
+"USDA NASSportal Intranet Agent","USDA NASS / Microsoft","agent_platform","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA NASSportal Intranet Agent"
+"Chiral Wildlife Deterrent System","Chiral Software","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Chiral Wildlife Deterrent System"
+"USDA Oregon State Forest Mapping","USDA Forest Service / Oregon State University","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA Oregon State Forest Mapping"
+"USDA ARS GovChat","USDA ARS / Microsoft","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA ARS GovChat"
+"USDA NRCS NETS Automated Waterway Design","USDA NRCS / Spatial Front","scientific_ml","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA NRCS NETS Automated Waterway Design"
+"Wildfire.org Turbo Plan","Wildfire.org","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","Wildfire.org Turbo Plan"
+"USDA Forest Plan Review AI","USDA Forest Service / Google","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA Forest Plan Review AI"
+"USDA TreeSearch AI","USDA Forest Service / Google","search","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA TreeSearch AI"
+"USDA Forest Service Infosec Chatbot","USDA Forest Service / Google","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA Forest Service Infosec Chatbot"
+"USDA Bugnet","USDA Forest Service / Oregon State University","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA Bugnet"
+"USDA Recreation Site Chatbot","USDA Forest Service / University of Washington","general_llm","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA Recreation Site Chatbot"
+"USDA Forest Health ML Survey","USDA Forest Service / Kikaha Solutions","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA Forest Health ML Survey"
+"USDA Marbled Murrelet Habitat Mapping","USDA Forest Service / American Museum of Natural History","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA Marbled Murrelet Habitat Mapping"
+"Washington Forest Inventory Maps","USDA Forest Service / University of Washington","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","Washington Forest Inventory Maps"
+"USDA Recreation One Stop AI","USDA Forest Service / Booz Allen","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA Recreation One Stop AI"
+"USDA VegScape/CropCASMA","USDA NASS / George Mason University","scientific_ml","0","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA VegScape/CropCASMA"
+"USDA AgCloud Helpdesk Chatbot","USDA / Steampunk","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_a)","USDA AgCloud Helpdesk Chatbot"
+"Google Colab","Google","developer_tool","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","Google Colab"
+"Adobe Sensei","Adobe","general_llm","1","0","Adobe Creative Cloud Suite","","seeded by linkage_pass_2026-05 (agent_b)","Adobe Sensei"
+"OpenText Records Management","OpenText","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","OpenText Records Management"
+"Bloomberg Law AI","Bloomberg","legal_research","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Bloomberg Law AI"
+"Amazon SageMaker","Amazon","ml_platform","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","Amazon SageMaker"
+"Google Coral TPU","Google","developer_tool","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","Google Coral TPU"
+"Google Earth Engine","Google","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","Google Earth Engine"
+"Elsevier ClinicalKey AI","Elsevier","clinical_decision_support","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Elsevier ClinicalKey AI"
+"Litera Compare","Litera","document_ai","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","Litera Compare"
+"Konica Minolta Dispatcher Paragon","Konica Minolta","productivity","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","Konica Minolta Dispatcher Paragon"
+"TVEyes Media Monitoring","TVEyes","media_analysis","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","TVEyes Media Monitoring"
+"Doble Test Assistant","Doble Engineering","document_ai","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Doble Test Assistant"
+"DRUID AI","DRUID AI","agent_platform","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","DRUID AI"
+"Supportbench","Supportbench","itsm","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Supportbench"
+"ManageEngine ServiceDesk Plus","ManageEngine","itsm","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","ManageEngine ServiceDesk Plus"
+"Apple News","Apple","consumer_feature","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","Apple News"
+"MediaViz AI","MediaViz","media_analysis","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","MediaViz AI"
+"Google News Brief","Google","consumer_feature","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Google News Brief"
+"Azure Synapse Analytics","Microsoft","data_analytics","0","0","Microsoft Azure Platform","","seeded by linkage_pass_2026-05 (agent_b)","Azure Synapse Analytics"
+"Google Calendar","Google","productivity","0","0","Google Workspace","","seeded by linkage_pass_2026-05 (agent_b)","Google Calendar"
+"Genesys Cloud CX","Genesys","itsm","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Genesys Cloud CX"
+"VA GPT","VA","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","VA GPT"
+"Microsoft Viva","Microsoft","productivity","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Microsoft Viva"
+"CWTSatoTravel","CWTSatoTravel","productivity","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","CWTSatoTravel"
+"Vyond","Vyond","media_analysis","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Vyond"
+"Mural","Mural","productivity","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Mural"
+"OpenAI Codex","OpenAI","coding_assistant","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","OpenAI Codex"
+"Zendesk AI","Zendesk","itsm","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","Zendesk AI"
+"HackerOne AI","HackerOne","security_tool","1","0","","","seeded by linkage_pass_2026-05 (agent_b)","HackerOne AI"
+"NetApp ARP/AI","NetApp","security_tool","0","0","","","seeded by linkage_pass_2026-05 (agent_b)","NetApp ARP/AI"
+"Ex Libris Alma/Primo","Ex Libris (Clarivate)","search","1","0","","","seeded by linkage_pass_2026-05 (agent_c)","Ex Libris Alma/Primo"
+"Lectora AI","ELB Learning","training","1","0","","","seeded by linkage_pass_2026-05 (agent_c)","Lectora AI"
+"LibreChat","LibreChat (Open Source)","general_llm","1","0","","","seeded by linkage_pass_2026-05 (agent_c)","LibreChat"
+"Cognitec FaceVACS","Cognitec Systems","biometrics","0","0","","","seeded by linkage_pass_2026-05 (agent_c)","Cognitec FaceVACS"
+"NaturalReader","NaturalReader","nlp_specific","1","0","","","seeded by linkage_pass_2026-05 (agent_c)","NaturalReader"
+"Planmeca Romexis","Planmeca","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (agent_c)","Planmeca Romexis"
+"RedSeal","RedSeal","security_tool","0","0","","","seeded by linkage_pass_2026-05 (agent_c)","RedSeal"
+"Cortechs NeuroQuant","Cortechs.ai","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (agent_c)","Cortechs NeuroQuant"
+"Siemens MAGNETOM","Siemens Healthineers","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (agent_c)","Siemens MAGNETOM"
+"Hologic 3D Quorum","Hologic","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (agent_c)","Hologic 3D Quorum"
+"Verathon BladderScan Prime PLUS","Verathon","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (agent_c)","Verathon BladderScan Prime PLUS"
+"Canon Aquilion ONE AiCE","Canon Medical Systems","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (agent_c)","Canon Aquilion ONE AiCE"
+"FDA CDEROne Analytics","FDA Center for Drug Evaluation and Research","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (fixup_validity)","FDA CDEROne Analytics"
+"GrantSolutions","Department of Health and Human Services","custom","0","0","","","seeded by linkage_pass_2026-05 (fixup_validity)","GrantSolutions"
+"FTC Sentinel Network Services","Federal Trade Commission","investigative_data","0","0","","","seeded by linkage_pass_2026-05 (fixup_validity)","FTC Sentinel Network Services"
+"ELIS","U.S. Citizenship and Immigration Services","custom","0","0","","","seeded by linkage_pass_2026-05 (fixup_validity)","ELIS"
+"Amazon Comprehend","Amazon","nlp","0","0","","","seeded by linkage_pass_2026-05 (fixup_validity)","Amazon Comprehend"
+"VA Clinical AI Agent","U.S. Department of Veterans Affairs","transcription","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","VA Clinical AI Agent"
+"VA VoiceBot","U.S. Department of Veterans Affairs","nlp_specific","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","VA VoiceBot"
+"VA AI Assist","U.S. Department of Veterans Affairs","nlp","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","VA AI Assist"
+"Roche Digital Pathology","Roche","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Roche Digital Pathology"
+"Cogitativo","Cogitativo","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Cogitativo"
+"Parable 3D Wound Care","Parable Health","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Parable 3D Wound Care"
+"Koios DS Breast","Koios Medical","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Koios DS Breast"
+"Lambient AI Scribe","Lambient","transcription","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Lambient AI Scribe"
+"Ephesoft Transact","Ephesoft","document_ai","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Ephesoft Transact"
+"Mindray TE X Ultrasound","Mindray","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Mindray TE X Ultrasound"
+"Freed AI Medical Scribe","Freed","transcription","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Freed AI Medical Scribe"
+"Nuance PowerScribe One","Nuance (Microsoft)","transcription","1","0","Nuance Dragon","","seeded by linkage_pass_2026-05 (ws1_va)","Nuance PowerScribe One"
+"VA E2 HelpBot","U.S. Department of Veterans Affairs","nlp","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","VA E2 HelpBot"
+"Pyramid Analytics","Pyramid Analytics","data_analytics","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Pyramid Analytics"
+"BillieGPT","U.S. Department of Veterans Affairs","nlp","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","BillieGPT"
+"Pingoo.AI","Pingoo.AI","nlp","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Pingoo.AI"
+"Glassbeam Clinsights","Glassbeam","data_analytics","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Glassbeam Clinsights"
+"Abridge Ambient Scribe","Abridge","transcription","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Abridge Ambient Scribe"
+"Knowtex Ambient Scribe","Knowtex","transcription","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Knowtex Ambient Scribe"
+"Agfa DR 800 MUSICA","Agfa HealthCare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Agfa DR 800 MUSICA"
+"Beckman Coulter DxH 800","Beckman Coulter","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Beckman Coulter DxH 800"
+"GE Healthcare Xeleris V","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare Xeleris V"
+"GE Healthcare SIGNA Artist (AIR Recon DL)","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare SIGNA Artist (AIR Recon DL)"
+"Medtronic GI Genius","Medtronic","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Medtronic GI Genius"
+"GE Healthcare TrueFidelity CT","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare TrueFidelity CT"
+"Aidoc BriefCase","Aidoc","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Aidoc BriefCase"
+"iCAD ProFound AI","iCAD","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","iCAD ProFound AI"
+"Circle CVI42","Circle Cardiovascular Imaging","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Circle CVI42"
+"Siemens SOMATOM go.","Siemens Healthineers","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Siemens SOMATOM go."
+"Solventum 360 Encompass","Solventum (3M Health Information Systems)","document_ai","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Solventum 360 Encompass"
+"GE Healthcare Vivid iq","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare Vivid iq"
+"GE Healthcare EchoPAC","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare EchoPAC"
+"Riverain ClearRead CT","Riverain Technologies","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Riverain ClearRead CT"
+"ScreenPoint Transpara","ScreenPoint Medical","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","ScreenPoint Transpara"
+"Canon Alphenix Angio Workstation","Canon Medical Systems","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Canon Alphenix Angio Workstation"
+"Philips eCareManager","Philips","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Philips eCareManager"
+"GE Healthcare Voluson Expert","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare Voluson Expert"
+"Medtronic CareLink","Medtronic","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Medtronic CareLink"
+"GE Healthcare Critical Care Suite","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare Critical Care Suite"
+"Philips Vereos PET/CT","Philips","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Philips Vereos PET/CT"
+"GE Healthcare Venue Fit","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare Venue Fit"
+"Sonic Incytes Velacur","Sonic Incytes","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Sonic Incytes Velacur"
+"Siemens syngo","Siemens Healthineers","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Siemens syngo"
+"RapidAI","RapidAI","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","RapidAI"
+"Brainlab Elements Spine","Brainlab","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Brainlab Elements Spine"
+"RaySearch RayStation","RaySearch Laboratories","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","RaySearch RayStation"
+"Philips QLAB","Philips","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Philips QLAB"
+"Boston Scientific Preventice BodyGuardian","Boston Scientific (Preventice)","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Boston Scientific Preventice BodyGuardian"
+"Philips EPIQ/Affiniti Ultrasound","Philips","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Philips EPIQ/Affiniti Ultrasound"
+"Persyst EEG","Persyst Development","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Persyst EEG"
+"Abbott OPTIS Imaging","Abbott","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Abbott OPTIS Imaging"
+"Medtronic O-arm O2","Medtronic","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Medtronic O-arm O2"
+"TeraRecon iNtuition","TeraRecon (ConcertAI)","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","TeraRecon iNtuition"
+"CathWorks FFRangio","CathWorks","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","CathWorks FFRangio"
+"GE Healthcare FastStroke CT Perfusion 4D","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare FastStroke CT Perfusion 4D"
+"GE Healthcare Discovery MI","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare Discovery MI"
+"Hologic Genius AI Detection","Hologic","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Hologic Genius AI Detection"
+"MaxQ AI CT CoPilot","MaxQ AI","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","MaxQ AI CT CoPilot"
+"Brainlab Cranial Navigation","Brainlab","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Brainlab Cranial Navigation"
+"CellaVision DM1200","CellaVision","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","CellaVision DM1200"
+"Biosense Webster CARTO 3","Biosense Webster (Johnson & Johnson)","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Biosense Webster CARTO 3"
+"Canon Cartesion Prime PET/CT","Canon Medical Systems","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Canon Cartesion Prime PET/CT"
+"Brainlab Elements","Brainlab","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Brainlab Elements"
+"Bio-Rad BioPlex 2200","Bio-Rad Laboratories","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Bio-Rad BioPlex 2200"
+"Siemens Biograph PET/CT","Siemens Healthineers","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Siemens Biograph PET/CT"
+"Radformation AutoContour","Radformation","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Radformation AutoContour"
+"Canon Aplio Ultrasound","Canon Medical Systems","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Canon Aplio Ultrasound"
+"Brainlab Cirq Alignment","Brainlab","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Brainlab Cirq Alignment"
+"Edwards Acumen Hypotension Prediction Index","Edwards Lifesciences","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Edwards Acumen Hypotension Prediction Index"
+"Carestream CS 9600","Carestream Dental","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Carestream CS 9600"
+"Siemens ACUSON Sequoia","Siemens Healthineers","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Siemens ACUSON Sequoia"
+"Philips Smart Collimation Thorax","Philips","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Philips Smart Collimation Thorax"
+"ARANZ Silhouette Wound Imaging","ARANZ Medical","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","ARANZ Silhouette Wound Imaging"
+"Butterfly iQ Ultrasound","Butterfly Network","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Butterfly iQ Ultrasound"
+"CareView Patient Safety System","CareView Communications","computer_vision","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","CareView Patient Safety System"
+"GE Healthcare Omni Legend PET/CT","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare Omni Legend PET/CT"
+"Volpara Imaging","Volpara Health","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Volpara Imaging"
+"GE Healthcare LOGIQ Ultrasound","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare LOGIQ Ultrasound"
+"ReflexAI","ReflexAI","training","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","ReflexAI"
+"Medtronic LINQ II","Medtronic","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Medtronic LINQ II"
+"GE Healthcare Vivid E Ultrasound","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare Vivid E Ultrasound"
+"Avicenna.AI CINA","Avicenna.AI","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Avicenna.AI CINA"
+"Zeiss CLARUS","Carl Zeiss Meditec","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Zeiss CLARUS"
+"AgileMD eCART","AgileMD","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","AgileMD eCART"
+"Podimetrics SmartMat","Podimetrics","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Podimetrics SmartMat"
+"Whiterabbit.ai WRDensity","Whiterabbit.ai","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Whiterabbit.ai WRDensity"
+"Welldoc BlueStar","Welldoc","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Welldoc BlueStar"
+"EarlySense WAVE Clinical Platform","EarlySense","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","EarlySense WAVE Clinical Platform"
+"VUNO Med-DeepBrain","VUNO","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","VUNO Med-DeepBrain"
+"Volta Medical AF-Xplorer","Volta Medical","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Volta Medical AF-Xplorer"
+"Biotronik Home Monitoring","Biotronik","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Biotronik Home Monitoring"
+"GE Healthcare AMX Portable X-ray","GE Healthcare","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","GE Healthcare AMX Portable X-ray"
+"Lantheus aPROMISE","Lantheus","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Lantheus aPROMISE"
+"Dentsply Sirona CEREC","Dentsply Sirona","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Dentsply Sirona CEREC"
+"Lyssn","Lyssn","audio_analysis","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Lyssn"
+"CareCentra","CareCentra","clinical_decision_support","1","0","","","seeded by linkage_pass_2026-05 (ws1_va)","CareCentra"
+"iRhythm Zio ECG","iRhythm Technologies","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","iRhythm Zio ECG"
+"Siemens YSIO Max","Siemens Healthineers","clinical_decision_support","0","0","","","seeded by linkage_pass_2026-05 (ws1_va)","Siemens YSIO Max"
+"Amazon Web Services","Amazon","cloud_platform","0","0","","","seeded by linkage_pass_2026-05 (ws2_hierarchy)","Amazon Web Services"
+"Thomson Reuters","Thomson Reuters","legal_research","0","0","","","seeded by linkage_pass_2026-05 (ws2_hierarchy)","Thomson Reuters"
+"Adobe","Adobe","productivity","0","0","","","seeded by linkage_pass_2026-05 (ws2_hierarchy)","Adobe"
+"ServiceNow","ServiceNow","itsm","0","0","","","seeded by linkage_pass_2026-05 (ws2_hierarchy)","ServiceNow"
+"Cisco","Cisco","security_tool","0","0","","","seeded by linkage_pass_2026-05 (ws2_hierarchy)","Cisco"
+"Salesforce","Salesforce","productivity","0","0","","","seeded by linkage_pass_2026-05 (ws2_hierarchy)","Salesforce"
+"Microsoft","Microsoft","productivity","0","0","","","seeded by linkage_pass_2026-05 (ws2_hierarchy)","Microsoft"
+"Google","Google","productivity","0","0","","","seeded by linkage_pass_2026-05 (ws2_hierarchy)","Google"
+"Amazon","Amazon","consumer_feature","0","0","","","seeded by linkage_pass_2026-05 (ws2_hierarchy)","Amazon"
+"Unison PRISM","Unison","productivity","1","0","","Federal contract-writing / acquisition lifecycle software; PRISM 7.6 (2025) added AI document generation","added by product_band_audit_2026-07 / band_product_links_2026-07","Unison PRISM|PRISM"
+"DOE OGC Docket Database","DOE","document_ai","0","0","","Internal DOE Office of General Counsel docket-tracking database","added by product_band_audit_2026-07 / band_product_links_2026-07","OGC Docket Database"
+"MCG Energy Solutions Integrated Asset Manager","MCG Energy Solutions","data_analytics","0","0","","Wholesale-energy bid-capture/scheduling/settlement product","added by product_band_audit_2026-07 / band_product_links_2026-07","MCG Energy Solutions|MCG Integrated Asset Manager"
+"OATI webSmartTag","OATI","data_analytics","0","0","","Transmission scheduling/e-tagging product","added by product_band_audit_2026-07 / band_product_links_2026-07","OATI Transmission Scheduling|webSmartTag"
