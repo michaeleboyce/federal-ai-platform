@@ -1,6 +1,6 @@
 # Plan: FedRAMP authorized-services ingest + AI labeling — "the shelf inside the shelf"
 
-**Status: Phases 1–4 complete (2026-07-04); Phases 5–6 (Waves A+B) complete 2026-07-05; Phase 7 (article artifacts) not started.** Check boxes as phases complete; each phase ends with a
+**Status: Phases 1–4 complete (2026-07-04); ALL PHASES COMPLETE (1–4: 2026-07-04; 5–7: 2026-07-05). Fact sheet §7 + drop-in draft at audit/article/; §7 numbers machine-pinned by audit/checks/check_fedramp_fact_sheet.py.** Check boxes as phases complete; each phase ends with a
 verification gate. Written 2026-07-03, revised 2026-07-04 (QC loop + surface
 map); numbers reflect the 2026-06-12 snapshot.
 
@@ -217,16 +217,16 @@ guardrail.
 
 ## Phase 7 — Article artifacts + ship
 
-- [ ] Update `audit/article/fact_sheet.md`: new citable numbers (core-AI
+- [x] Update `audit/article/fact_sheet.md`: new citable numbers (core-AI
   services in scope; N agencies holding Bedrock-bearing packages; the beat-4
   join for the laggard agencies) + correct the prior "FedRAMP can't see
   services" claim to "FedRAMP scopes to the service but tracks adoption only
   to the package."
-- [ ] ETL repo commit (build_db, load, classify/apply scripts, CSV, audit
+- [x] ETL repo commit (build_db, load, classify/apply scripts, CSV, audit
   artifacts, rubric versions); dashboard commit after shasum parity; push;
   poll production; live-verify spread section, hub band, one product page,
   one agency drill.
-- [ ] Post-ship: add the beat-4 table to the article draft's FedRAMP section
+- [x] Post-ship: add the beat-4 table to the article draft's FedRAMP section
   with footnotes to the live pages.
 
 ## Agent topology summary

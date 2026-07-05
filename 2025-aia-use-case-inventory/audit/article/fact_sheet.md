@@ -276,3 +276,121 @@ SELECT COUNT(DISTINCT l.uc_2024_id)
    (no public corroboration), VA OIG Jan-2026 PHI advisory (cite with
    any VA-positive framing), Anthropic federal ban Feb-2026 (date-stamp
    HHS Claude claims), DHS commercial-AI revocation (counter-trend).
+7. FedRAMP services "in scope" are NOT enabled/available to staff —
+   always "in scope of a package the agency holds an ATO for" (§7).
+8. Never cite "202 authorized AI products absent from inventories" —
+   the honest split is 155 fully authorized + 47 Ready/In-Process.
+9. Zero recorded marketplace reuse ≠ zero adoption — OneGov pricing,
+   USAi tenancy, and in-scope services bypass the ATO ledger. Write
+   "no recorded adoption through the official channel".
+10. `ai_featured` PACKAGE labels (AWS/Azure as listings) are not
+    evidence an agency withholds AI from staff; cite core_ai only.
+11. Date-stamp every 20x/ledger claim to the 2026-06-12 snapshot (trio
+    listings re-checked live 2026-07-03).
+
+## 7. FedRAMP — authorization vs adoption
+
+_Added 2026-07-05 (hand-verified; every figure re-run against the live DB
+that day). Marketplace snapshot: **2026-06-12**; the 20x trio's fedramp.gov
+listings were additionally re-checked live 2026-07-03. Numbers pinned by
+`audit/checks/check_fedramp_fact_sheet.py` — a snapshot refresh that moves
+them fails `make check` until this section is updated._
+
+### Beat 1 — the shelf is stocked, nothing moves
+
+**46 core-AI FedRAMP listings · 35 fully authorized · 26 of 35 never
+spread past one agency ATO · 10 of 48 ATO'd pairs corroborated**
+
+```sql
+SELECT COUNT(*) FROM fedramp_ai_classification WHERE category='core_ai';
+-- authorized + single-ATO: see check_fedramp_fact_sheet.py (distinct
+-- agency_id per product; ≤1 = never spread)
+```
+- ⚠ "Corroborated" = the ATO-holding agency's own 2025 inventory names the
+  product in ≥1 use case. Only ~35% of use cases name a linkable product,
+  so write "no reported use", never "unused".
+- Dashboard: /fedramp/coverage/spread §I–II.
+
+### Beat 1b — unlinked-AI split
+
+**202 marketplace AI products absent from every inventory = 155 fully
+authorized + 47 Ready / In-Process**
+
+- ⚠ Never cite "202 authorized" — 47 of them have not completed
+  authorization (guardrail 8).
+- Dashboard: /fedramp/coverage/unlinked-ai.
+
+### Beat 2 — the 20x zeros
+
+**ChatGPT Enterprise (Moderate, auth 2026-01-09) · Gemini for Government
+(Low, 2026-01-21) · Perplexity Enterprise (Low, 2026-02-01) — each: one
+program-level authorization, zero recorded agency reuses**
+
+```sql
+SELECT cso, status, auth_date, reuse_count FROM fedramp_products
+ WHERE cso IN ('ChatGPT Enterprise and API Platform',
+               'Gemini for Government',
+               'Perplexity Enterprise and API Platform');
+```
+- ⚠ The 2025 inventories closed before these authorizations landed — their
+  inventory absence is mechanical. The meaningful zero is the reuse ledger
+  months after authorization (guardrail 11: date-stamp).
+- Dashboard: /fedramp/coverage/spread §III.
+
+### Beat 3 — adoption routed around the ledger
+
+**OneGov: ChatGPT Enterprise $1/agency (announced 2025-08-07) · Google
+stack $0.47/agency (2025-08-21) · Perplexity $0.25/agency/18mo
+(2025-11-19) · USAi: 15 agencies + waitlist (2026-04), cost-recovery from
+FY2027 · Anthropic: presidential cease-use directive 2026-02-27; GSA
+removed it from USAi and terminated MAS listings**
+
+- Sources: GSA newsroom releases, ExecutiveGov, Nextgov/FCW, FedScoop —
+  full citations in `audit/article/fedramp_section_draft.md` footnotes
+  (all URLs fetch-verified 2026-07-03/05).
+
+### Beat 3b — the shelf inside the shelf (services in scope)
+
+**1,591 unique in-scope services labeled (129 core_ai · 122 ai_featured ·
+1,340 not_ai) · 129 core-AI services inside 34 authorized packages ·
+46 agencies hold an ATO on ≥1 core-AI-bearing package · Amazon Bedrock in
+scope at Moderate (AWS US East/West) AND High (AWS GovCloud)**
+
+```sql
+SELECT COUNT(*), SUM(category='core_ai') FROM fedramp_ai_service_classification;
+SELECT COUNT(DISTINCT al.inventory_agency_id)
+  FROM fedramp_authorized_services s
+  JOIN fedramp_ai_service_classification c
+    ON c.service = s.service AND c.category = 'core_ai'
+  JOIN fedramp_authorizations a ON a.fedramp_id = s.fedramp_id
+  JOIN fedramp_agency_links al ON al.fedramp_agency_id = a.agency_id;
+```
+- ⚠ Every core_ai and ai_featured label was adversarially reviewed by a
+  frontier-model QC pass (`source` column ≠ 'llm'); label provenance is
+  row-level auditable in `data/fedramp_service_classification.csv`.
+- ⚠ Formulation: FedRAMP publishes scope down to the service but tracks
+  adoption only at the package. Do NOT write "FedRAMP can't see services".
+- Dashboard: /fedramp/coverage/spread §IV (#services).
+
+### Beat 4 — capability in reach vs staff access (the payoff)
+
+**Core-AI services in scope of packages the agency holds an ATO for,
+against IFP's web-corroborated staff-access estimate:**
+
+| Agency | Services in reach | IFP access tier (share) |
+|---|---|---|
+| HHS | 110 | all (~50%) |
+| DOE | 99 | all (~81%) |
+| Treasury | 98 | pilot (~5%) |
+| State | 93 | all (~95–100%) |
+| DOJ | 63 | latent (IFP assessment ~1%, not press-corroborated) |
+| HUD | 41 | pilot (~0.15%) |
+| SBA | 41 | none (0%) |
+| VA | 31 | (see §1 enterprise list) |
+
+- ⚠ Guardrail 7 applies to every row: "in scope of a package the agency
+  holds an ATO for" — never "enabled" or "available to staff". The gap
+  between the columns is the claim; causality is not.
+- ⚠ DOJ's ~1% share is an IFP assessment with status `searched_no_source`
+  — cite the tier, attribute the share to IFP explicitly.
+- Dashboard: /fedramp/coverage/agencies §II + per-agency drills.
