@@ -9,8 +9,10 @@ Numbers and guardrails: `fact_sheet.md` §7 / §6.7–11._
 what's inside packages" (it publishes scope down to the service; it tracks
 adoption only at the package); any unqualified reading of the 20x zeros as
 "nobody adopted these tools" (adoption flows through channels the ledger
-doesn't record); any use of "202 authorized AI products" (155 are
-authorized; 47 are still in the pipeline).
+doesn't record); any use of "203 authorized AI products" (156 are
+authorized; 47 are still in the pipeline; the split was 202 = 155 + 47
+before 2026-07-05, when a false Aretec-SEARCH alias link to the Clarivate
+CIPAI-ISP listing was removed).
 
 ---
 

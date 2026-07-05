@@ -1,8 +1,15 @@
-"""Tests for compute_agency_readiness (Federal AI Readiness Scorecard).
+"""Tests for compute_agency_readiness (Federal AI Readiness Scorecard v1.2).
 
-Builds an in-memory DB with three known agencies, applies migrations
-m004–m006, populates a minimal fixture, runs the compute, and asserts
-the rubric does what the methodology page says it does.
+Builds an in-memory DB with known agencies, applies migrations, populates a
+minimal fixture, runs the compute, and asserts the rubric does what the
+methodology page says it does — including the v1.2 corrections:
+
+  - "deployed" uses the canonical stage bucket (pilots are NOT deployed)
+  - effective-unit dedup (atomized near-identical filings score once)
+  - in-house cross-check (pure in-house claim + commercial vendor = no credit)
+  - governance shrinkage toward the pooled federal rate (K=5)
+  - tightened oversight predicate (real PIA URLs; case-insensitive hi_*)
+  - readiness_headline persistence
 """
 from __future__ import annotations
 
@@ -11,9 +18,8 @@ import sqlite3
 import pytest
 
 from migrations import (
-    m004_omb_consolidated_provenance as m004,
-    m005_consolidation_pattern as m005,
     m006_agency_readiness as m006,
+    m018_readiness_headline as m018,
 )
 from scripts import compute_agency_readiness as ar
 
@@ -41,6 +47,7 @@ def _bootstrap_minimum_schema(conn: sqlite3.Connection) -> None:
             use_case_name TEXT,
             bureau_component TEXT,
             stage_of_development TEXT,
+            stage_normalized TEXT,
             is_high_impact TEXT,
             justification TEXT,
             topic_area TEXT,
@@ -98,10 +105,8 @@ def conn():
     c = sqlite3.connect(":memory:")
     c.row_factory = sqlite3.Row
     _bootstrap_minimum_schema(c)
-    # m006 only depends on `agencies`; m004/m005 alter pre-existing tables
-    # the production migrations expect. We re-apply m006 to keep this test
-    # representative of the runtime migration ledger.
     m006.apply(c)
+    m018.apply(c)
     yield c
     c.close()
 
@@ -109,15 +114,14 @@ def conn():
 # --- Test data -------------------------------------------------------------
 
 def _populate_fixture(conn: sqlite3.Connection) -> None:
-    """Three agencies:
+    """Four agencies:
       1) HIGH — leader: 4 use cases, 2 bureaus, 1 frontier+agentic+custom,
-         3 with ATO, 2 reporting fields fully filled, in maturity table
-         with strong risk-docs + deployment percentages.
-      2) MID — middle: 2 use cases, 1 bureau, 1 frontier, 1 ATO, partial
-         reporting, modest maturity.
-      3) LOW — laggard: 1 use case, no bureau, no frontier, no ATO, sparse
-         reporting, missing from agency_ai_maturity.
+         3 with ATO, in maturity table with strong percentages.
+      2) MID — middle: 2 use cases, 1 bureau, 1 frontier, 1 ATO.
+      3) LOW — laggard: 1 sparse use case.
       4) EMPTY — zero use cases at all.
+    Problem statements are all short (<25 chars) so every row is its own
+    effective unit — dedup behavior is exercised by dedicated tests below.
     """
     conn.executescript(
         """
@@ -203,15 +207,19 @@ def _populate_fixture(conn: sqlite3.Connection) -> None:
     )
 
 
-# --- Tests -----------------------------------------------------------------
+# --- Rubric constant tests --------------------------------------------------
 
 def test_weights_sum_to_one():
     assert abs(sum(ar.WEIGHTS.values()) - 1.0) < 1e-9
 
 
+def test_rubric_version_is_1_2():
+    assert ar.RUBRIC_VERSION == "1.2"
+
+
 def test_tier_band_assignment():
-    # Exact-boundary checks against the published v1.1 tier bands.
-    # A=70+, B=55+, C=35+, D=15+, F=<15.
+    # Exact-boundary checks against the published tier bands.
+    # A=70+, B=55+, C=35+, D=15+, F=<15. (Unchanged in v1.2.)
     assert ar.assign_tier(70.0)[0] == "A"
     assert ar.assign_tier(69.9)[0] == "B"
     assert ar.assign_tier(55.0)[0] == "B"
@@ -222,6 +230,204 @@ def test_tier_band_assignment():
     assert ar.assign_tier(14.9)[0] == "F"
     assert ar.assign_tier(0.0)[0] == "F"
 
+
+# --- Stage bucketing (the v1.1 pilot-as-deployed bug) ------------------------
+
+def test_stage_bucket_pilot_label_is_not_deployed():
+    """The OMB Pilot label contains the word 'deployed' — the v1.1 substring
+    match counted 423 pilots as deployed. The canonical bucket must not."""
+    pilot = ("b)  Pilot – The use case has been deployed in a limited test "
+             "or pilot capacity.")
+    assert ar._stage_bucket(None, pilot) == "pilot"
+    assert ar._stage_bucket(None, "c)  Deployed – The use case is being actively authorized") == "deployed"
+    assert ar._stage_bucket(None, "Operation and Maintenance") == "deployed"
+    assert ar._stage_bucket(None, "In Production") == "deployed"
+    assert ar._stage_bucket(None, "d) Retired – reported in prior year") == "retired"
+    # stage_normalized wins when present:
+    assert ar._stage_bucket("deployed", pilot) == "deployed"
+
+
+def test_pilot_rows_do_not_count_as_deployed_end_to_end(conn):
+    _populate_fixture(conn)
+    # Add a pilot row to LOW whose label text contains "deployed".
+    conn.execute(
+        """INSERT INTO use_cases (id, agency_id, stage_of_development,
+               has_ato, problem_statement)
+           VALUES (302, 3, 'b)  Pilot  The use case has been deployed in a limited test or pilot capacity.',
+                   'No', 'pp')"""
+    )
+    result = ar.compute_agency_readiness(conn)
+    low = next(r for r in result["rows"] if r["abbreviation"] == "LOW")
+    import json as _json
+    inputs = _json.loads(low["headline_inputs_json"])
+    assert inputs["internal_capacity"]["deployed"] == 0
+
+
+def test_retired_rows_excluded_from_production_denominator(conn):
+    _populate_fixture(conn)
+    baseline = ar.compute_agency_readiness(conn)["headline"]
+    # Adding a retired row must not depress the (active-denominator) rate.
+    conn.execute(
+        """INSERT INTO use_cases (id, agency_id, stage_of_development,
+               has_ato, problem_statement)
+           VALUES (303, 3, 'd) Retired  discontinued', 'No', 'rr')"""
+    )
+    after = ar.compute_agency_readiness(conn)["headline"]
+    assert after["production_rate_pct"] == baseline["production_rate_pct"]
+    assert after["production_rate_all_pct"] < baseline["production_rate_all_pct"]
+
+
+# --- Effective-unit dedup -----------------------------------------------------
+
+LONG_PS = "Ease the access to information and generate materials for staff"
+
+
+def test_atomized_filings_dedup_to_one_unit(conn):
+    """Three rows sharing a long identical problem statement + vendor +
+    dev type collapse to ONE effective unit; short statements stay
+    row-unique."""
+    _populate_fixture(conn)
+    for i in (401, 402, 403):
+        conn.execute(
+            """INSERT INTO use_cases (id, agency_id, stage_of_development,
+                   problem_statement, vendor_name, development_type, has_ato)
+               VALUES (?, 3, 'Deployed', ?, 'OpenAI', 'b) Developed in-house', 'No')""",
+            (i, LONG_PS),
+        )
+        conn.execute(
+            "INSERT INTO use_case_tags (use_case_id, is_frontier_model) VALUES (?, 1)",
+            (i,),
+        )
+    units = ar._load_units(conn)
+    low_units = units[3]
+    # 1 pre-existing sparse row + 1 deduped group = 2 units (not 4)
+    assert len(low_units) == 2
+    group = next(u for u in low_units if u.member_count == 3)
+    assert group.frontier is True
+    assert group.deployed is True
+
+
+def test_dedup_ignores_short_problem_statements(conn):
+    _populate_fixture(conn)
+    # HIGH's four rows all have short statements → 4 distinct units.
+    units = ar._load_units(conn)
+    assert len(units[1]) == 4
+
+
+# --- In-house cross-check ------------------------------------------------------
+
+def test_pure_inhouse_claim_with_commercial_vendor_gets_no_credit(conn):
+    """The ED pattern: dev_type 'b) Developed in-house' + vendor 'OpenAI &
+    Google Distributed Cloud' + no custom code is a mislabeled commercial
+    buy, not internal capacity."""
+    _populate_fixture(conn)
+    conn.execute(
+        """INSERT INTO use_cases (id, agency_id, problem_statement,
+               development_type, vendor_name, has_custom_code, has_ato)
+           VALUES (401, 3, 'x', 'b) Developed in-house',
+                   'OpenAI & Google Distributed Cloud', 'No', 'No')"""
+    )
+    units = ar._load_units(conn)
+    assert all(not u.inhouse for u in units[3])
+
+
+def test_pure_inhouse_claim_with_placeholder_vendor_keeps_credit(conn):
+    _populate_fixture(conn)
+    conn.execute(
+        """INSERT INTO use_cases (id, agency_id, problem_statement,
+               development_type, vendor_name, has_custom_code, has_ato)
+           VALUES (402, 3, 'x', 'Developed in-house', 'N/A', 'No', 'No')"""
+    )
+    units = ar._load_units(conn)
+    assert any(u.inhouse for u in units[3])
+
+
+def test_hybrid_inhouse_claim_keeps_credit_despite_vendor(conn):
+    _populate_fixture(conn)
+    conn.execute(
+        """INSERT INTO use_cases (id, agency_id, problem_statement,
+               development_type, vendor_name, has_custom_code, has_ato)
+           VALUES (403, 3, 'x',
+                   'c) Developed with both contracting and in-house resources',
+                   'Accenture', 'No', 'No')"""
+    )
+    units = ar._load_units(conn)
+    assert any(u.inhouse for u in units[3])
+
+
+# --- Governance: shrinkage + tightened predicate --------------------------------
+
+def test_governance_shrinkage_small_n_defers_to_prior(conn):
+    """Agency A: 1/1 overseen. Agency B: 0/3 overseen. Pooled p0 = 1/4.
+    A must NOT score 100 — with K=5: (1 + 5*0.25) / (1 + 5) = 37.5.
+    B: (0 + 1.25) / 8 = 15.625 (→ 15.62 under Python banker's rounding)."""
+    conn.executescript(
+        """
+        INSERT INTO agencies VALUES (1, 'A', 'A'), (2, 'B', 'B');
+        INSERT INTO use_cases (id, agency_id, is_high_impact, has_ato, problem_statement)
+        VALUES (1, 1, 'a) High-impact', 'Yes', 'x');
+        """
+    )
+    for i in (2, 3, 4):
+        conn.execute(
+            """INSERT INTO use_cases (id, agency_id, is_high_impact, has_ato,
+                   problem_statement) VALUES (?, 2, 'a) High-impact', 'No', ?)""",
+            (i, f"y{i}"),
+        )
+    scores, raw = ar.compute_risk_relevant_governance(conn)
+    assert scores[1] == pytest.approx(37.5, abs=0.01)
+    assert scores[2] == pytest.approx(15.62, abs=0.01)
+    assert raw[1]["raw_score"] == pytest.approx(100.0)
+    assert raw[1]["prior_rate"] == pytest.approx(0.25)
+    assert raw[1]["shrinkage_k"] == 5
+
+
+def test_governance_zero_risky_still_scores_zero(conn):
+    """LOW has 1 use case with no PII, no high-impact flag → no risky units
+    → risk_relevant_governance is 0 by design (we don't reward absence of
+    risk exposure). Unchanged in v1.2."""
+    _populate_fixture(conn)
+    result = ar.compute_agency_readiness(conn)
+    low = next(r for r in result["rows"] if r["abbreviation"] == "LOW")
+    assert low["risk_relevant_governance"] == 0
+
+
+def test_junk_pia_url_is_not_an_oversight_signal(conn):
+    """84% of non-blank pia_url values are placeholder text. Only a real
+    URL counts (v1.2)."""
+    conn.executescript(
+        """
+        INSERT INTO agencies VALUES (1, 'A', 'A'), (2, 'B', 'B');
+        -- A: risky, junk PIA, no ATO, no hi_* → NOT overseen
+        INSERT INTO use_cases (id, agency_id, is_high_impact, has_ato, pia_url,
+            problem_statement) VALUES (1, 1, 'a) High-impact', 'No', 'N/A', 'x');
+        -- B: risky, real PIA → overseen
+        INSERT INTO use_cases (id, agency_id, is_high_impact, has_ato, pia_url,
+            problem_statement)
+        VALUES (2, 2, 'a) High-impact', 'No', 'https://agency.gov/pia.pdf', 'y');
+        """
+    )
+    _, raw = ar.compute_risk_relevant_governance(conn)
+    assert raw[1]["risky_with_oversight"] == 0
+    assert raw[2]["risky_with_oversight"] == 1
+
+
+def test_uppercase_na_hi_fields_do_not_count_as_filled(conn):
+    """v1.1 compared hi_* values case-sensitively, so a literal 'N/A'
+    counted as a filled Section-5 field."""
+    conn.executescript(
+        """
+        INSERT INTO agencies VALUES (1, 'A', 'A');
+        INSERT INTO use_cases (id, agency_id, is_high_impact, has_ato, pia_url,
+            hi_testing_conducted, hi_assessment_completed, problem_statement)
+        VALUES (1, 1, 'a) High-impact', 'No', NULL, 'N/A', 'Not Applicable', 'x');
+        """
+    )
+    _, raw = ar.compute_risk_relevant_governance(conn)
+    assert raw[1]["risky_with_oversight"] == 0
+
+
+# --- Full pipeline ------------------------------------------------------------
 
 def test_full_pipeline_three_agencies(conn):
     _populate_fixture(conn)
@@ -246,38 +452,26 @@ def test_full_pipeline_three_agencies(conn):
     assert empty["tier"] == "F"
 
 
-def test_risk_relevant_governance_zero_for_no_risky_cases(conn):
-    """LOW has 1 use case with no PII, no high-impact flag → no risky cases
-    in the denominator → risk_relevant_governance is 0 by design (we don't
-    reward absence of risk exposure).
-    """
-    _populate_fixture(conn)
-    result = ar.compute_agency_readiness(conn)
-    low = next(r for r in result["rows"] if r["abbreviation"] == "LOW")
-    assert low["risk_relevant_governance"] == 0
-
-
 def test_high_agency_has_strong_subscores(conn):
     _populate_fixture(conn)
     result = ar.compute_agency_readiness(conn)
     high = next(r for r in result["rows"] if r["abbreviation"] == "HIGH")
 
-    # HIGH has 3/4 with ATO and 2/4 products FedRAMP-linked.
+    # HIGH has 3/4 with ATO and 2 products, 1 FedRAMP-linked.
     # share_ato = 0.75, share_fedramp = 0.5 → procurement = 62.5
     assert high["procurement_hygiene"] == pytest.approx(62.5, abs=0.01)
 
-    # Internal capacity sub-shares (out of 4 use cases):
+    # Internal capacity sub-shares (4 units, all active):
     #   custom_code='Yes' on 101 only → 1/4
     #   inhouse dev: none → 0/4
-    #   deployed stage ('Operation and Maintenance'): 101 + 103 → 2/4
+    #   deployed ('Operation and Maintenance'): 101 + 103 → 2/4 active
     #   internal_platform products: 0 → 0/4
     # composite = (0.25 + 0 + 0.5 + 0) / 4 * 100 = 18.75
     assert high["internal_capacity"] == pytest.approx(18.75, abs=0.01)
 
-    # Risk-relevant governance:
-    #   Risky cases: 101 (is_high_impact='Yes'). No PII anywhere in fixture.
-    #   101 has has_ato='Yes' → oversight signal present
-    #   → 1/1 = 100
+    # Risk-relevant governance: the fixture's only risky unit federal-wide
+    # is 101 (overseen via ATO), so p0 = 1.0 and shrinkage is a no-op:
+    # (1 + 5*1.0) / (1 + 5) = 100.
     assert high["risk_relevant_governance"] == pytest.approx(100.0, abs=0.01)
 
 
@@ -285,29 +479,53 @@ def test_idempotent(conn):
     _populate_fixture(conn)
     ar.compute_agency_readiness(conn)
     n1 = conn.execute("SELECT COUNT(*) FROM agency_readiness").fetchone()[0]
+    h1 = conn.execute("SELECT COUNT(*) FROM readiness_headline").fetchone()[0]
     ar.compute_agency_readiness(conn)
     n2 = conn.execute("SELECT COUNT(*) FROM agency_readiness").fetchone()[0]
+    h2 = conn.execute("SELECT COUNT(*) FROM readiness_headline").fetchone()[0]
     assert n1 == n2 == 4
+    assert h1 == h2 == 1
 
 
-def test_headline_stats_present(conn):
+# --- Headline stats -------------------------------------------------------------
+
+def test_headline_stats_present_and_persisted(conn):
     _populate_fixture(conn)
     result = ar.compute_agency_readiness(conn)
     h = result["headline"]
-    # Capacity-first headlines (the v1.1 hero candidates):
-    assert "internal_build_pct" in h
-    assert "production_rate_pct" in h
-    assert "fedramp_coverage_pct" in h
-    assert "frontier_ready_agency_count" in h
-    # Compliance baseline preserved as a caveat-only stat:
-    assert "hi_no_risk_docs_pct" in h
-    # HIGH has 2/4 with meaningful risk docs, MID 1/2, LOW 0/1.
-    # Total risk_docs = 3, total use cases = 7. So 1 - 3/7 = 0.5714 → 57.1%
-    assert h["hi_no_risk_docs_pct"] == pytest.approx(57.1, abs=0.5)
-    # Production rate: HIGH has 2/4 deployed, MID/LOW have 0 deployed,
-    # EMPTY has 0 use cases. Total deployed = 2/7 = 28.6%.
+
+    # Three-way build split over 7 units: only 101 is internal (custom).
+    assert h["internal_build_pct"] == pytest.approx(14.3, abs=0.1)
+    assert h["purchased_pct"] == pytest.approx(0.0, abs=0.1)
+    assert h["internal_build_pct"] + h["purchased_pct"] + h["unreported_pct"] == pytest.approx(100.0, abs=0.2)
+
+    # Production rate: 2 deployed of 7 active units = 28.6%.
     assert h["production_rate_pct"] == pytest.approx(28.6, abs=0.5)
 
+    # FedRAMP: units with a product link = 101,102,103,104,201 (5);
+    # FedRAMP-linked (product 10) = 101,102,201 (3) → 60% / floor 3/7=42.9%.
+    assert h["fedramp_linked_pct"] == pytest.approx(60.0, abs=0.1)
+    assert h["fedramp_floor_pct"] == pytest.approx(42.9, abs=0.1)
+    # Back-compat alias:
+    assert h["fedramp_coverage_pct"] == h["fedramp_linked_pct"]
+
+    # Compliance baseline: 3 of 7 rows have meaningful risk docs → 57.1%.
+    assert h["hi_no_risk_docs_pct"] == pytest.approx(57.1, abs=0.5)
+    # High-impact-only variant: 101 is the only high-impact row and it has
+    # risk docs → 0% missing.
+    assert h["hi_no_risk_docs_high_impact_pct"] == pytest.approx(0.0, abs=0.1)
+
+    assert "frontier_ready_agency_count" in h
+
+    # Persisted 1-row table matches the returned dict.
+    row = conn.execute("SELECT * FROM readiness_headline").fetchone()
+    assert row["rubric_version"] == ar.RUBRIC_VERSION
+    assert row["production_rate_pct"] == pytest.approx(h["production_rate_pct"])
+    assert row["internal_build_pct"] == pytest.approx(h["internal_build_pct"])
+    assert row["total_units"] == 7
+
+
+# --- Migrations ------------------------------------------------------------------
 
 def test_migration_m006_idempotent():
     c = sqlite3.connect(":memory:")
@@ -326,3 +544,34 @@ def test_migration_m006_idempotent():
         )
     }
     assert "idx_agency_readiness_rank" in indexes
+
+
+def test_migration_m018_dedupes_tags_and_guards():
+    # Fresh connection WITHOUT m018 applied, so we can seed a duplicate
+    # first and verify the migration cleans it up.
+    c = sqlite3.connect(":memory:")
+    c.row_factory = sqlite3.Row
+    _bootstrap_minimum_schema(c)
+    c.executescript(
+        """
+        INSERT INTO agencies VALUES (1, 'A', 'A');
+        INSERT INTO use_case_tags (id, use_case_id, is_frontier_model) VALUES
+            (1, 500, 0), (2, 500, 1), (3, 501, 0);
+        """
+    )
+    m018.apply(c)
+    n = c.execute(
+        "SELECT COUNT(*) FROM use_case_tags WHERE use_case_id = 500"
+    ).fetchone()[0]
+    assert n == 1
+    # Guard prevents re-introducing a duplicate.
+    with pytest.raises(sqlite3.IntegrityError):
+        c.execute("INSERT INTO use_case_tags (use_case_id) VALUES (501)")
+    # Idempotent.
+    m018.apply(c)
+    assert "readiness_headline" in {
+        r[0] for r in c.execute(
+            "SELECT name FROM sqlite_master WHERE type='table'"
+        )
+    }
+    c.close()

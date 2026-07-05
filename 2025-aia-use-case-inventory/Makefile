@@ -133,11 +133,9 @@ fix:
 	# Idempotent (wipe-and-reload). No dashboard surface until Phase 5.
 	python3 compute_year_comparison.py
 	python3 scripts/compute_org_maturity.py
-	# IFP-facing Federal AI Readiness Scorecard — 5-dimension weighted
-	# rubric, per agency. Reads agency_ai_maturity + use_cases + tags +
-	# fedramp_product_links; writes agency_readiness. Constants mirror
-	# dashboard/lib/readiness-rubric.ts. Idempotent.
-	python3 scripts/compute_agency_readiness.py
+	# NOTE (v1.2): compute_agency_readiness.py moved to the END of this
+	# chain — it reads fedramp_product_links, which are only fully
+	# recovered by the link_fedramp/promote/decisions block far below.
 	# Researched public evidence of how widely agencies have deployed
 	# general-purpose AI tools. Loads audit/research/ai_access/*.json into
 	# agency_ai_access_evidence (table created by migration m008). Idempotent.
@@ -186,6 +184,12 @@ fix:
 	# replace this with proper FK enforcement.)
 	python3 scripts/relink_stale_use_case_products.py fix-reverse
 	python3 scripts/relink_stale_use_case_products.py verify
+	# IFP-facing Federal AI Readiness Scorecard (rubric v1.2) — 5-dimension
+	# weighted rubric, per agency. Runs LAST among data passes so it sees
+	# the fully-recovered fedramp_product_links and final product edges.
+	# Writes agency_readiness + readiness_headline. Constants mirror
+	# dashboard/lib/readiness/rubric.ts. Idempotent.
+	python3 scripts/compute_agency_readiness.py
 	python3 scripts/generate_db_snapshot.py
 	# OMB-vs-IFP discrepancy report (audit/omb_consolidated_diff_2025.md).
 	# Read by humans; complements the live /discrepancies dashboard page.

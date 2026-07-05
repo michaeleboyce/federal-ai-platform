@@ -112,11 +112,7 @@ def main() -> int:
                       JOIN federal_organizations fo
                         ON fo.id = COALESCE(uc.bureau_organization_id, uc.organization_id)
                      WHERE fo.hierarchy_path LIKE ? || '%'
-                       AND (
-                            LOWER(uc.stage_of_development) LIKE '%deployed%'
-                         OR LOWER(uc.stage_of_development) LIKE '%operation and maintenance%'
-                         OR LOWER(uc.stage_of_development) LIKE '%production%'
-                       )
+                       AND uc.stage_normalized = 'deployed'
                     """,
                     (path,),
                 ).fetchone()[0]

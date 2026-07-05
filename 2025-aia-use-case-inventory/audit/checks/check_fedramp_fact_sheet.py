@@ -57,7 +57,13 @@ def test_beat1_core_ai_listing_counts(conn):
 
 
 def test_beat1b_unlinked_split(conn):
-    """202 unlinked AI listings = 155 authorized + 47 pipeline (guardrail 8)."""
+    """203 unlinked AI listings = 156 authorized + 47 pipeline (guardrail 8).
+
+    155→156 on 2026-07-05: readiness v1.2 removed the bare 'SEARCH' alias
+    from the Aretec SEARCH catalog entry, which had false-matched FedRAMP
+    listing FR2406760385 (Clarivate CIPAI-ISP, a USPTO patent-search
+    platform) to an SEC-internal tool. That listing is now correctly
+    unlinked."""
     row = conn.execute("""
         SELECT SUM(p.status='FedRAMP Authorized'),
                SUM(p.status!='FedRAMP Authorized')
@@ -66,7 +72,7 @@ def test_beat1b_unlinked_split(conn):
          WHERE c.category IN ('core_ai','ai_featured')
            AND c.fedramp_id NOT IN (SELECT fedramp_id FROM fedramp_product_links)
     """).fetchone()
-    assert tuple(row) == (155, 47)
+    assert tuple(row) == (156, 47)
 
 
 def test_beat2_frontier_trio_zero_reuse(conn):

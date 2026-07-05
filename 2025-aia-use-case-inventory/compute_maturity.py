@@ -107,13 +107,14 @@ def compute_maturity():
                 WHERE uc.agency_id = ? OR c.agency_id = ?
             """, (aid, aid)).fetchone()[0] or 1
 
+            # stage_normalized is the canonical bucket (m016, recomputed each
+            # rebuild by normalize_use_case_fields.py, which runs earlier in
+            # the fix chain). The previous substring match counted Pilot rows
+            # as deployed — the OMB Pilot label text contains "has been
+            # deployed in a limited test or pilot capacity".
             deployed_count = conn.execute("""
                 SELECT COUNT(*) FROM use_cases uc
-                WHERE uc.agency_id = ? AND (
-                    LOWER(uc.stage_of_development) LIKE '%deployed%' OR
-                    LOWER(uc.stage_of_development) LIKE '%operation and maintenance%' OR
-                    LOWER(uc.stage_of_development) LIKE '%production%'
-                )
+                WHERE uc.agency_id = ? AND uc.stage_normalized = 'deployed'
             """, (aid,)).fetchone()[0]
             pct_deployed = (deployed_count / total_uc * 100) if total_uc else 0
 

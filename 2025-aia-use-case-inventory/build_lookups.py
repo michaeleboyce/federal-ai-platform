@@ -279,7 +279,10 @@ PRODUCTS = [
      ['Aretec EDP', 'EDP', 'SEC EDP', 'Enterprise Data Platform (Aretec)']),
     ('Aretec SEARCH', 'Aretec', 'search', 0, 0, None,
      'Aretec-built SEARCH platform used at the SEC for full-text and analytical search across regulatory filings; sibling to NEAT and EDP.',
-     ['Aretec SEARCH', 'SEARCH', 'SEC SEARCH']),
+     # Bare 'SEARCH' alias intentionally omitted — the substring matcher
+     # linked it to 185 use cases across 28 agencies (any narrative
+     # containing the word "search"). This is an SEC-only internal tool.
+     ['Aretec SEARCH', 'SEC SEARCH']),
     ('AttackIQ', 'AttackIQ', 'security_tool', 0, 0, None,
      'Breach-and-attack-simulation platform that uses ML to validate security controls against MITRE ATT&CK techniques.',
      ['AttackIQ']),

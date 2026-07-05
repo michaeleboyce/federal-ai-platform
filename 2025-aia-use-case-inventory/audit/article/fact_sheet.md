@@ -278,8 +278,10 @@ SELECT COUNT(DISTINCT l.uc_2024_id)
    HHS Claude claims), DHS commercial-AI revocation (counter-trend).
 7. FedRAMP services "in scope" are NOT enabled/available to staff —
    always "in scope of a package the agency holds an ATO for" (§7).
-8. Never cite "202 authorized AI products absent from inventories" —
-   the honest split is 155 fully authorized + 47 Ready/In-Process.
+8. Never cite "203 authorized AI products absent from inventories" —
+   the honest split is 156 fully authorized + 47 Ready/In-Process.
+   (Was 202 = 155 + 47 before 2026-07-05: a false alias-match had linked
+   the Clarivate CIPAI-ISP patent-search listing to an SEC-internal tool.)
 9. Zero recorded marketplace reuse ≠ zero adoption — OneGov pricing,
    USAi tenancy, and in-scope services bypass the ATO ledger. Write
    "no recorded adoption through the official channel".
@@ -313,10 +315,10 @@ SELECT COUNT(*) FROM fedramp_ai_classification WHERE category='core_ai';
 
 ### Beat 1b — unlinked-AI split
 
-**202 marketplace AI products absent from every inventory = 155 fully
+**203 marketplace AI products absent from every inventory = 156 fully
 authorized + 47 Ready / In-Process**
 
-- ⚠ Never cite "202 authorized" — 47 of them have not completed
+- ⚠ Never cite "203 authorized" — 47 of them have not completed
   authorization (guardrail 8).
 - Dashboard: /fedramp/coverage/unlinked-ai.
 
