@@ -1,0 +1,43 @@
+service,product_canonical_name,confidence,capability_category,gen_ai,evidence_tier,notes
+Azure OpenAI,Azure OpenAI,strong,genai_platform,1,catalog,same offering; Azure scope catalog
+Amazon Bedrock,AWS Bedrock,strong,genai_platform,1,catalog,same offering; AWS scope catalog
+Claude for Government (C4G),Claude,strong,genai_platform,1,named_offering,C4G is the FedRAMP-hosted Claude offering
+Gemini App,Gemini,strong,genai_platform,1,named_offering,Gemini consumer/app surface on GCP
+Gemini Enterprise,Gemini,strong,genai_platform,1,named_offering,Gemini Enterprise platform on GCP
+Gemini for Workspace,Gemini,strong,genai_platform,1,named_offering,Workspace-embedded Gemini
+Ask Sage In a Box,Ask Sage,strong,genai_platform,1,named_offering,Ask Sage packaged deployment
+Enterprise h2oGPTe,H2O GPTe,strong,genai_platform,1,named_offering,same offering
+Azure AI Foundry Portal,Azure AI Foundry,strong,genai_platform,1,catalog,same offering; Azure scope catalog
+Microsoft Foundry Portal (formerly Azure AI Portal),Azure AI Foundry,strong,genai_platform,1,catalog,renamed Azure AI Foundry portal
+Microsoft 365 Copilot,Microsoft 365 Copilot,strong,assistant,1,named_offering,same offering
+Microsoft Copilot Studio,Microsoft Copilot Studio,strong,assistant,1,named_offering,same offering
+Amazon Q Business,Amazon Q,inferred,assistant,1,catalog,inventory product covers the Q family
+Amazon Q Developer in chat applications,Amazon Q,inferred,assistant,1,catalog,inventory product covers the Q family
+Databricks Assistant,Databricks,inferred,assistant,1,named_offering,assistant is a feature of the Databricks platform
+Agentforce,Salesforce Einstein,inferred,assistant,1,named_offering,Agentforce is the Einstein/Copilot successor line
+AI Builder,Microsoft AI Builder,strong,ml_lowcode,0,catalog,Power Platform AI Builder
+AI Builder MiddleTier,Microsoft AI Builder,strong,ml_lowcode,0,catalog,AI Builder component service
+AI Builder Structured ML,Microsoft AI Builder,strong,ml_lowcode,0,catalog,AI Builder component service
+AI Builder Unstructured ML,Microsoft AI Builder,strong,ml_lowcode,0,catalog,AI Builder component service
+Amazon SageMaker AI,Amazon SageMaker,strong,ml_platform,0,catalog,renamed SageMaker
+Agent Search on Gemini Enterprise Agent Platform (formerly Vertex AI Search),Google Vertex AI,inferred,ml_platform,1,catalog,Vertex AI Search component
+Metadata on Gemini Enterprise Agent Platform (Vertex ML Metadata),Google Vertex AI,inferred,ml_platform,0,catalog,Vertex ML Metadata component
+AIP,Palantir AIP,strong,ml_platform,1,named_offering,same offering
+C3 AI,C3 AI,strong,ml_platform,0,named_offering,same offering
+Amazon Textract,AWS Textract,strong,doc_processing,0,catalog,same offering
+Azure AI Document Intelligence,Azure AI Document Intelligence,strong,doc_processing,0,catalog,same offering
+Azure AI - Form Recognizer,Azure AI Document Intelligence,strong,doc_processing,0,catalog,Form Recognizer is the prior name of Document Intelligence
+Hyperscience Hypercell,Hyperscience,strong,doc_processing,0,named_offering,Hypercell is the Hyperscience platform
+Amazon Transcribe,AWS Transcribe,strong,speech,0,catalog,same offering
+Speech Services,Azure Speech,strong,speech,0,catalog,Azure-hosted service name
+Amazon Translate,AWS Translate,strong,translation,0,catalog,same offering
+Azure AI - Translator Text,Azure AI Translator,strong,translation,0,catalog,same offering
+Translator Text,Azure AI Translator,strong,translation,0,catalog,Azure-hosted service name
+Cloud Translation API,Google Translate,inferred,translation,0,catalog,API behind Google Translate
+Amazon Rekognition,AWS Rekognition,strong,vision,0,catalog,same offering
+Cloud Vision API,Google Cloud Vision,strong,vision,0,catalog,same offering
+Computer Vision,Azure Computer Vision,strong,vision,0,catalog,Azure-hosted service name
+Azure AI - Computer Vision,Azure Computer Vision,strong,vision,0,catalog,same offering
+Amazon Comprehend,Amazon Comprehend,strong,nlp,0,catalog,same offering
+Amazon Kendra,AWS Kendra,strong,search,0,catalog,same offering
+Amazon Lex,AWS Lex,strong,chatbot,0,catalog,same offering
