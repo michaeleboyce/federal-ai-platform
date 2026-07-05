@@ -132,6 +132,12 @@ fix:
 	# general-purpose AI tools. Loads audit/research/ai_access/*.json into
 	# agency_ai_access_evidence (table created by migration m008). Idempotent.
 	python3 scripts/apply_ai_access_evidence.py
+	# Researched workforce denominators + FedScope occupational caps for the
+	# seat model. Loads audit/research/agency_workforce/*.json into
+	# agency_workforce_profile + agency_occupation_counts (m013/m017).
+	# Wipe-and-reload: MUST run after seed_federal_hierarchy.py re-keys
+	# federal_organizations, or every row it wrote last run is an orphan.
+	python3 scripts/apply_agency_workforce.py
 	# Linkage recovery: build_lookups.py wipes products and re-issues IDs each
 	# run, which orphans (and SQLite drops) any prior fedramp_product_links and
 	# parent_product_id edges. These scripts re-apply that state from the
@@ -140,6 +146,13 @@ fix:
 	# promote queue → hand-link CSV. Each is idempotent.
 	python3 scripts/merge_duplicate_products.py --apply
 	python3 scripts/rekey_fedramp_link_queue.py --apply
+	# Re-seed the heuristic alias_match fedramp links. build_lookups.py's
+	# products wipe drops them (they key on products.id) and nothing else in
+	# this chain recreates them — without this step every full rebuild loses
+	# ~18 authorized-listing links and the fact-sheet unlinked-split pins
+	# drift (155/47 -> 170/48). Idempotent: clears only source='alias_match';
+	# manual_csv and link_queue rows are never touched. Mirrors `make fedramp`.
+	python3 link_fedramp.py --apply
 	python3 scripts/apply_product_hierarchy_edges.py --apply
 	python3 scripts/promote_resolved_link_queue.py --apply
 	python3 scripts/apply_fedramp_link_decisions.py --apply
