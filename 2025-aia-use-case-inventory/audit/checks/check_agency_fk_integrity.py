@@ -12,6 +12,9 @@ TARGETS = (
     ("agency_ai_access_evidence", "agency_abbreviation", set()),
     ("agency_ai_policy_documents", "agency_abbr", {"EOP", "OMB"}),
     ("agency_ai_policy_compliance", "agency_abbr", {"EOP", "OMB"}),
+    # Pre-dates m024 (agency_id added by m011-era loader) but carries the
+    # same abbreviation+id pair — hold it to the same integrity bar.
+    ("use_case_year_links", "agency_abbreviation", set()),
 )
 
 

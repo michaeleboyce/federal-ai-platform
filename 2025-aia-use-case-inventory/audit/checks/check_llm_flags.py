@@ -98,9 +98,11 @@ def test_computer_vision_llm_tagged_under_tight_ceiling(conn):
 # The ceilings above catch category-level false positives; these bands catch
 # the other failure mode — auto_tag.py re-broadening (or re-narrowing) a flag
 # wholesale while the Makefile correction chain (retag_llm.py + apply_*
-# scripts, Makefile ~L46-62) silently fails to re-apply. The queries are
-# copied verbatim from scripts/build_article_factsheet.py so the gated number
-# is the same number the article cites.
+# scripts, Makefile ~L46-62) silently fails to re-apply. The distinct-LLM and
+# agentic queries are copies of the ones in scripts/build_article_factsheet.py
+# (kept textually in sync by hand — if you change one, change both) so the
+# gated number is the same number the article cites; the total-tag-rows band
+# is an additional invariant with no fact-sheet counterpart.
 
 
 def test_general_llm_access_band(conn):
