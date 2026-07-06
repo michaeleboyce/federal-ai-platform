@@ -24,7 +24,8 @@ The DB was **not modified**; all corrections live in CSVs awaiting an apply pass
 - [ ] **State StateChat in promotion-panel selection** — documented decision-impact use, worth at least one sentence.
 - [ ] **DOI "Iris"** — referenced in earlier internal notes; not surfaced in DB or web. Either drop the reference or chase it with DOI directly.
 - [ ] **"DHS / DoW have adopted Claude Code" anecdote (added 2026-07-06)** — the current draft (`audit/article/drafts/2026-07-06-adoption-article-draft.md`) says "we have heard tell". No public source. The data cannot corroborate OR refute: DoD/DoW filed no 2025 individual inventory (§5 below), and DHS's filings show custom GenAI coding assistants, not Claude Code. Source it or hedge it explicitly before publishing. See `audit/article/claims_review_2026-07-06.md` §4.
-- [ ] **"Compressed a normally decade-long process into a couple of years" (added 2026-07-06)** — the DB gives the AI-side slope (GenAI 527→1,005 YoY; enterprise-wide GenAI 21→24 agencies) but the comparison needs an external historical baseline (federal cloud / PC / email adoption curves). Find one or soften to a directional claim.
+- [ ] **"Compressed a normally decade-long process into a couple of years" (added 2026-07-06)** — the DB gives the AI-side slope (GenAI 527→1,005 YoY; enterprise-wide GenAI 21→24 agencies) but the comparison needs an external historical baseline (federal cloud / PC / email adoption curves). PARTIALLY RESOLVED 2026-07-06: cloud-first baseline sourced (2010 OMB mandate → GAO still flagging incomplete adoption in 2019/2022/2026; see `audit/article/research_2026-07-06/README.md`) — frame as an order-of-magnitude contrast, not apples-to-apples (cloud migration is a heavier lift than SaaS toggles).
+- [ ] **Draft says the inventory mandate "sunsets in 2028" — WRONG, it is 2027-12-23 (added 2026-07-06)** — Advancing American AI Act §7225: "continuously thereafter for a period of 5 years" from enactment 2022-12-23. If a 2028 hook is wanted: "the final mandated inventory would publish in early 2028." See `audit/article/claims_review_2026-07-06b.md` §1.1.
 
 ## 3. Things the article must NOT say
 
@@ -69,7 +70,7 @@ Write a single migration script that, in order:
 ## 5. Known gaps the apply pass cannot fix
 
 - [ ] Source IDs lost on 2,007 of 3,616 rows during normalization (per `audit/consistency/01_id_traceability.md`). Backfill from `raw_json` is a separate, prerequisite cleanup if traceability matters for citation.
-- [ ] DoD, USAID, ODNI, CFPB, EEOC, GAO, EXIM, FLRA, MSPB, NEH, PRC, Presidio Trust, USAGM, USCCR, CPSC have no 2025 individual inventory in our dataset. Article framing must acknowledge this — "federal civilian agencies" without DoD is roughly a 60%-of-headcount asterisk.
+- [ ] DoD, USAID, ODNI, CFPB, EEOC, GAO, EXIM, FLRA, MSPB, NEH, PRC, Presidio Trust, USAGM, USCCR, CPSC have no 2025 individual inventory in our dataset. Article framing must acknowledge this — DoD's ~772,549 civilians are **about one-third** of the ~2.31M federal non-postal civilian workforce (OPM FedScope Sept 2024), rising to somewhat over a third with the other non-filers + the FedScope-excluded intelligence community. ~~"roughly a 60%-of-headcount asterisk"~~ **CORRECTED 2026-07-06** — the 60% figure was only reachable by folding in ~1.3M active-duty military against a military-inclusive denominator, the wrong frame for a civilian AI inventory. Sources: `audit/article/research_2026-07-06/angles_external_sources.md`.
 - [ ] HHS public download returned 403 during audit; the 447 HHS rows in the DB are loaded but not externally re-verified at the file level.
 - [ ] Financial regulators' analytic-platform stack is invisible to this inventory format.
 
