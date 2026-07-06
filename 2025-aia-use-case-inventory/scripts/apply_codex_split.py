@@ -98,13 +98,8 @@ def _merge_product(conn: sqlite3.Connection, src_id: int, dst_id: int) -> None:
         "UPDATE products SET parent_product_id = ? WHERE parent_product_id = ?",
         (dst_id, src_id),
     )
-    for table, col in (
-        ("use_cases", "product_id"),
-        ("consolidated_use_cases", "product_id"),
-    ):
-        conn.execute(
-            f"UPDATE {table} SET {col} = ? WHERE {col} = ?", (dst_id, src_id)
-        )
+    # (The scalar use_cases/consolidated product_id caches were dropped by
+    # m025 — the edge updates above are the complete re-point.)
     conn.execute("DELETE FROM products WHERE id = ?", (src_id,))
 
 
