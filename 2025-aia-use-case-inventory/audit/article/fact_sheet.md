@@ -59,7 +59,7 @@ SELECT COUNT(*) FROM use_case_tags_2024_canonical
 
 ### General-purpose LLM access entries (2025)
 
-**559**
+**561**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags

@@ -209,17 +209,13 @@ fix:
 	python3 scripts/apply_fedramp_link_decisions.py --apply
 	# FINAL consistency pass: every product step above can move edges, so the
 	# primary-product cache and the maturity snapshot are re-derived last
-	# (check_refactor_quality asserts cache==edges and maturity==rollups).
-	# (refresh_primary_product_cache.py retired with the m025 column drop —
-	# the entry_primary_products view is edge-derived by definition.)
+	# (check_refactor_quality asserts view-is-edge-derived + maturity==rollups;
+	# refresh_primary_product_cache.py retired with the m025 column drop.)
 	python3 scripts/compute_org_maturity.py
-	# auto_tag.py (line 41) sets use_cases.product_id pointing at whatever the
-	# tagger matched. Downstream merge_duplicate_products + cleanup_products
-	# may then delete those products, leaving stale refs. Clean any reverse-
-	# dangle and re-verify before snapshotting. SQLite doesn't enforce FKs
-	# without PRAGMA foreign_keys=ON, so this swept-up step prevents the bug
-	# class from re-introducing itself on every full rebuild. (Phase 3 will
-	# replace this with proper FK enforcement.)
+	# Edge-hygiene sweep: merge_duplicate_products + cleanup_products above
+	# can delete products; verify no dangling edge rows survive before
+	# snapshotting. (fix-reverse is a no-op since m025 dropped the scalar
+	# product_id cache it used to clean — kept for muscle memory.)
 	python3 scripts/relink_stale_use_case_products.py fix-reverse
 	python3 scripts/relink_stale_use_case_products.py verify
 	# IFP-facing Federal AI Readiness Scorecard (rubric v1.2) — 5-dimension
