@@ -28,8 +28,10 @@ Project-scoped Claude skills live at `.claude/skills/<name>/SKILL.md`. Currently
 - **`inventory-db-model`** — Reference for the DATABASE's own structure post the 2026-07 overhaul (m019–m025): two entry types, edge-only product linkage via `entry_primary_products`, normalized enum columns, the `agency_ai_maturity` compat view, agency FK layer, the omb_only==0 completeness gate, migration/rebuild conventions, and the re-baselining discipline. Auto-triggers on migration authoring, fix-chain edits, check re-baselining, or any script touching the core tables.
 
 - **`adjudication-rounds`** — The canonical LLM labeling/retag round: directory + CSV contract under `audit/retag/<round>/`, Sonnet-labels→Fable-audits→QC choreography, signature keying, the apply-script contract, Makefile wiring, evidence persistence, and band re-baselining. ETL-only (rounds run from this repo). Triggers on any `audit/retag/` or `scripts/apply_*.py` work.
+- **`make-fix-debugging`** — Operational runbook for rebuild failures: exit-code-masking trap, mid-chain-death symptom map, decoy DB files, backup conventions, idempotency test. ETL-only. Triggers on a non-zero `make fix` or suspicious counts.
+- **`publish-and-repin`** (mirrored) — The three published-number surfaces (live fact sheet §0–6 / hand-authored §7, guardrail gates, hardcoded dashboard copy with its exact locations), the population-attribution trap, the stat-tracing recipe, and the full post-rebuild publish sequence. Triggers before any data-changing push/deploy.
 
-Skills marked mirrored are **copied into `dashboard/.claude/skills/`** (the dashboard is its own repo, so its sessions load their own copies): currently `omb-ai-use-case-inventory` and `inventory-db-model`. When you edit a mirrored skill, `cp` it to the other location in the same change — the copies must stay identical.
+Skills marked mirrored are **copied into `dashboard/.claude/skills/`** (the dashboard is its own repo, so its sessions load their own copies): currently `omb-ai-use-case-inventory`, `inventory-db-model`, and `publish-and-repin`. When you edit a mirrored skill, `cp` it to the other location in the same change — the copies must stay identical.
 
 ## When you DO need to touch this directory
 
