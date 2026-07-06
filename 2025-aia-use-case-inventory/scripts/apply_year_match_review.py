@@ -158,6 +158,7 @@ def apply_decisions(conn: sqlite3.Connection, pass_dir: Path) -> dict[str, int]:
     idx_2024, idx_2025 = _slug_index(conn)
     cur = conn.cursor()
     skipped = 0
+    superseded = {"retired_2024": 0, "new_2025": 0}
 
     # Apply ordering: reject_rename must run before recover_match. A
     # reject_rename sends its slugs back to residual (retired_2024 /
@@ -201,6 +202,22 @@ def apply_decisions(conn: sqlite3.Connection, pass_dir: Path) -> dict[str, int]:
                 "DELETE FROM use_case_year_links WHERE uc_2024_id=? AND uc_2025_id=?",
                 (i24, i25),
             )
+            # Also clear stray residuals for either endpoint (same hygiene
+            # as recover_match). Post loader-fix, the matcher may no longer
+            # propose this exact pair — it then emits a new_2025/-retired
+            # residual for an endpoint, which must not survive the confirm.
+            cur.execute(
+                "DELETE FROM use_case_year_links "
+                "WHERE uc_2024_id=? AND uc_2025_id IS NULL "
+                "AND lineage_status='retired_2024'",
+                (i24,),
+            )
+            cur.execute(
+                "DELETE FROM use_case_year_links "
+                "WHERE uc_2025_id=? AND uc_2024_id IS NULL "
+                "AND lineage_status='new_2025'",
+                (i25,),
+            )
             link_id = _insert_link(
                 conn, run_at, uc_2024_id=i24, uc_2025_id=i25,
                 match_method="llm_review", match_score=None,
@@ -233,12 +250,35 @@ def apply_decisions(conn: sqlite3.Connection, pass_dir: Path) -> dict[str, int]:
                 "AND lineage_status='new_2025'",
                 (i25,),
             )
-            _insert_link(conn, run_at, uc_2024_id=i24, uc_2025_id=None,
-                         match_method="llm_review", match_score=None,
-                         lineage_status="retired_2024", llm_reasoning=reasoning)
-            _insert_link(conn, run_at, uc_2024_id=None, uc_2025_id=i25,
-                         match_method="llm_review", match_score=None,
-                         lineage_status="new_2025", llm_reasoning=reasoning)
+            # 2026-07 guard: insert a residual only if the fresh baseline
+            # hasn't already given the row a live PAIRED link. The loader
+            # name-collision fix recovered 2025 twins for rows that were
+            # invisible when these decisions were authored — a stale
+            # "retired_2024"/"new_2025" verdict yields to the matcher's
+            # exact-name link to the recovered twin. Counted and printed,
+            # never silently dropped.
+            if cur.execute(
+                "SELECT 1 FROM use_case_year_links "
+                "WHERE uc_2024_id=? AND uc_2025_id IS NOT NULL LIMIT 1",
+                (i24,),
+            ).fetchone() is None:
+                _insert_link(conn, run_at, uc_2024_id=i24, uc_2025_id=None,
+                             match_method="llm_review", match_score=None,
+                             lineage_status="retired_2024",
+                             llm_reasoning=reasoning)
+            else:
+                superseded["retired_2024"] += 1
+            if cur.execute(
+                "SELECT 1 FROM use_case_year_links "
+                "WHERE uc_2025_id=? AND uc_2024_id IS NOT NULL LIMIT 1",
+                (i25,),
+            ).fetchone() is None:
+                _insert_link(conn, run_at, uc_2024_id=None, uc_2025_id=i25,
+                             match_method="llm_review", match_score=None,
+                             lineage_status="new_2025",
+                             llm_reasoning=reasoning)
+            else:
+                superseded["new_2025"] += 1
             applied["reject_rename"] += 1
 
         elif action == "recover_match":
@@ -305,6 +345,11 @@ def apply_decisions(conn: sqlite3.Connection, pass_dir: Path) -> dict[str, int]:
                    "split", "merge"):
         if applied.get(action):
             print(f"    {action:<16}: {applied[action]}")
+    if any(superseded.values()):
+        print(
+            "  residuals superseded by fresh baseline links "
+            f"(recovered-twin precedence): {superseded}"
+        )
     return dict(applied)
 
 

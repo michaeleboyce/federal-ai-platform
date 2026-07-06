@@ -305,20 +305,53 @@ def load_file(filepath: Path, conn) -> dict:
             row_agency_abbr = file_agency_abbr
             row_agency_id = file_agency_id
 
-        # Slug is deterministic on (agency, primary_key). If two rows produce
-        # the same slug (e.g. duplicate use-case names within one file) the
-        # second one gets a numeric tail. Across files we rely on the UNIQUE
-        # constraint + INSERT OR IGNORE to avoid double-loading the same row.
+        # Slug is deterministic on (agency, primary_key); collisions get a
+        # numeric tail (-2, -3, ...) in file order. First occurrence always
+        # keeps the plain slug, so pre-existing slugs never change across
+        # rebuilds (signature-keyed correction scripts depend on that).
         slug = slugify(row_agency_abbr, primary_key)
-        existing = conn.execute(
-            f"SELECT id FROM {target_table} WHERE slug = ?", (slug,)
-        ).fetchone()
-        if existing:
-            # Same (agency, primary_key) is already loaded from another file.
-            # Skip — the COTS aggregate is canonical for these 45 agencies'
-            # consolidated rows; per-agency files (if any) are superseded.
-            skipped += 1
-            continue
+        if consolidated:
+            # COTS grid rows: same (agency, template label) from another
+            # file IS the same row — the aggregate is canonical, per-agency
+            # grids are duplicates (verified: skipfiles_coverage.md).
+            if conn.execute(
+                "SELECT 1 FROM consolidated_use_cases WHERE slug = ?", (slug,)
+            ).fetchone():
+                skipped += 1
+                continue
+        else:
+            # Individually-reported rows: a shared use-case NAME is NOT a
+            # duplicate — multiple bureaus of one agency legitimately file
+            # the same generically-named tool ("Microsoft Copilot",
+            # "Chatbot", ...). Before 2026-07 this branch skipped any row
+            # whose name collided with an earlier row, silently dropping
+            # 20+ distinct filings (found via the omb_only reconciliation).
+            # A row is a true duplicate only if use_case_id AND
+            # bureau_component both match the already-loaded row.
+            new_ucid = (db_values.get("use_case_id") or "").strip()
+            new_bureau = (db_values.get("bureau_component") or "").strip()
+            base_slug = slug
+            n = 1
+            is_dup = False
+            while True:
+                existing = conn.execute(
+                    "SELECT use_case_id, bureau_component FROM use_cases "
+                    "WHERE slug = ?",
+                    (slug,),
+                ).fetchone()
+                if existing is None:
+                    break
+                if (
+                    (existing["use_case_id"] or "").strip() == new_ucid
+                    and (existing["bureau_component"] or "").strip() == new_bureau
+                ):
+                    is_dup = True
+                    break
+                n += 1
+                slug = f"{base_slug}-{n}"
+            if is_dup:
+                skipped += 1
+                continue
 
         if consolidated:
             cur = conn.execute(
@@ -458,11 +491,20 @@ def main():
             "NASA-2025-ai-inventory.xlsx",  # CSV has same data
             "NSF-2025-ai-inventory.xlsx",  # CSV has same data
             "VA-2025-ai-inventory.xlsx",  # CSV has same data
-            # Per-agency consolidated/Appendix-B files — superseded by the
-            # 2025 OMB consolidated COTS aggregate (cots-2025-ai-inventory-
-            # consolidated.xlsx) which carries the canonical 20-template grid
-            # for all 45 small/CFO-Act agencies. Loading both would duplicate
-            # rows under different source_file values.
+            # Per-agency consolidated/Appendix-B files — duplicates of the
+            # 2025 OMB COTS aggregate (cots-2025-ai-inventory-
+            # consolidated.xlsx), which carries the canonical 20-template
+            # grid for all 45 small/CFO-Act agencies. Loading both would
+            # duplicate rows under different source_file values.
+            #
+            # VERIFIED 2026-07 (audit/omb_only_ingest/skipfiles_coverage.md):
+            # supersession holds row-for-row for all files below EXCEPT one
+            # DOL addendum row (backfilled by
+            # scripts/backfill_dol_prism_ally.py). NOTE these grids were
+            # these agencies' ONLY per-agency filing — their individually-
+            # reported narrative use cases (PBGC/FCC/EAC/OSC, 27 rows) exist
+            # solely in OMB's consolidated file and are ingested by
+            # scripts/ingest_omb_only_rows.py, NOT by un-skipping these.
             "CSOSA-2025-ai-inventory.csv",
             "DOL-2025-ai-inventory-consolidated.csv",
             "EAC-2025-ai-inventory.xlsx",

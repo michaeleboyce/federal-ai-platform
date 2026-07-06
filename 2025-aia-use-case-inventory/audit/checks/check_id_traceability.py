@@ -48,14 +48,17 @@ def test_no_unaccounted_nulls(conn):
 
 
 def test_provenance_values_are_in_enum(conn):
-    """id_provenance must only contain the three allowed values (or NULL for
+    """id_provenance must only contain the allowed values (or NULL for
     rows that have a populated use_case_id and somehow weren't restamped — we
-    assert that case is empty too)."""
+    assert that case is empty too). 'omb_consolidated_ingest' marks rows
+    ingested from OMB's consolidated file by scripts/ingest_omb_only_rows.py
+    (2026-07 completeness pass; see audit/omb_only_ingest/ADJUDICATION.md)."""
     bad = _scalar(
         conn,
         "SELECT COUNT(*) FROM use_cases "
         "WHERE id_provenance IS NOT NULL "
-        "AND id_provenance NOT IN ('source', 'backfilled_from_raw_json', 'source_missing')",
+        "AND id_provenance NOT IN ('source', 'backfilled_from_raw_json', "
+        "'source_missing', 'omb_consolidated_ingest')",
     )
     assert bad == 0, f"{bad} rows have an unrecognized id_provenance value"
 
@@ -74,16 +77,27 @@ def test_source_provenance_matches_populated_ids(conn):
     )
 
 
+# Source-data ID reuse we faithfully preserve rather than "fix":
+# DOJ filed 'PATTERN' twice under use_case_id DOJ-0160 — once for OJP,
+# once for FBOP (rows 127/128 of DOJ-2025-ai-inventory; OMB's consolidated
+# file also carries both). Distinct bureau_component on each row.
+KNOWN_SOURCE_ID_REUSE = {("DOJ", "DOJ-0160")}
+
+
 def test_use_case_id_unique_within_agency(conn):
     """Within a single agency, use_case_id should be unique. Cross-agency
-    collisions are fine (Treasury and GPO both use plain integers)."""
+    collisions are fine (Treasury and GPO both use plain integers).
+    Documented source-data reuse is allowlisted above."""
     dups = conn.execute(
-        "SELECT agency_id, use_case_id, COUNT(*) AS n "
-        "FROM use_cases "
-        "WHERE use_case_id IS NOT NULL AND use_case_id != '' "
-        "GROUP BY agency_id, use_case_id HAVING n > 1"
+        "SELECT a.abbreviation, u.use_case_id, COUNT(*) AS n "
+        "FROM use_cases u JOIN agencies a ON a.id = u.agency_id "
+        "WHERE u.use_case_id IS NOT NULL AND u.use_case_id != '' "
+        "GROUP BY u.agency_id, u.use_case_id HAVING n > 1"
     ).fetchall()
-    assert not dups, (
-        f"{len(dups)} (agency_id, use_case_id) collisions: "
-        f"{[(d[0], d[1], d[2]) for d in dups[:5]]}"
+    unexpected = [
+        d for d in dups if (d[0], d[1]) not in KNOWN_SOURCE_ID_REUSE
+    ]
+    assert not unexpected, (
+        f"{len(unexpected)} (agency, use_case_id) collisions: "
+        f"{[(d[0], d[1], d[2]) for d in unexpected[:5]]}"
     )

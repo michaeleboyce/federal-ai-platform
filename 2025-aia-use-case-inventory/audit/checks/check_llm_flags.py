@@ -106,16 +106,19 @@ def test_computer_vision_llm_tagged_under_tight_ceiling(conn):
 def test_general_llm_access_band(conn):
     """Headline general-LLM count (distinct individual entries).
 
-    PHASE0 baseline (2026-07-06): 476. Band ±50. If this trips after an
-    intentional retag pass, re-baseline in the same commit as that pass.
+    Baseline 559 (2026-07-06, post completeness pass: 476 at Phase 0
+    + 83 from the 66 loader-recovered + 45 OMB-ingested rows, which are
+    heavily generic-LLM tools — the name-collision bug specifically
+    dropped same-named Copilot/Chatbot filings). Band ±50. If this trips
+    after an intentional retag pass, re-baseline in the same commit.
     """
     n = conn.execute(
         """SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
             WHERE is_general_llm_access = 1 AND use_case_id IS NOT NULL"""
     ).fetchone()[0]
-    assert 426 <= n <= 526, (
-        f"general-LLM distinct individual count = {n} (Phase-0 baseline 476, "
-        "band 426-526) — auto_tag drift or a correction script dropped out "
+    assert 509 <= n <= 609, (
+        f"general-LLM distinct individual count = {n} (baseline 559, "
+        "band 509-609) — auto_tag drift or a correction script dropped out "
         "of the make fix chain"
     )
 
@@ -123,14 +126,15 @@ def test_general_llm_access_band(conn):
 def test_general_llm_access_total_band(conn):
     """All is_general_llm_access tag rows (individual + consolidated).
 
-    PHASE0 baseline (2026-07-06): 706. Band ±50.
+    Baseline 789 (2026-07-06, post completeness pass — see the distinct
+    band above for the delta accounting). Band ±50.
     """
     n = conn.execute(
         "SELECT SUM(is_general_llm_access) FROM use_case_tags"
     ).fetchone()[0]
-    assert 656 <= n <= 756, (
-        f"general-LLM total tag rows = {n} (Phase-0 baseline 706, band "
-        "656-756) — auto_tag drift or a correction script dropped out of "
+    assert 739 <= n <= 839, (
+        f"general-LLM total tag rows = {n} (baseline 789, band "
+        "739-839) — auto_tag drift or a correction script dropped out of "
         "the make fix chain"
     )
 
@@ -138,14 +142,18 @@ def test_general_llm_access_total_band(conn):
 def test_agentic_sophistication_band(conn):
     """Agentic-by-IFP-tag count (fact-sheet query).
 
-    PHASE0 baseline (2026-07-06): 59. Band ±10.
+    Baseline 66 (2026-07-06, post completeness pass: 59 at Phase 0 + 7
+    from recovered/ingested rows). Band ±10. NOTE: the +7 are auto_tag
+    heuristic labels that never went through the agentic capability
+    review (audit/retag/agentic_review/) — flagged as follow-up in
+    audit/omb_only_ingest/ADJUDICATION.md.
     """
     n = conn.execute(
         """SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
             WHERE ai_sophistication = 'agentic' AND use_case_id IS NOT NULL"""
     ).fetchone()[0]
-    assert 49 <= n <= 69, (
-        f"agentic sophistication count = {n} (Phase-0 baseline 59, band "
-        "49-69) — apply_agentic_review/apply_capability_reviews may have "
+    assert 56 <= n <= 76, (
+        f"agentic sophistication count = {n} (baseline 66, band "
+        "56-76) — apply_agentic_review/apply_capability_reviews may have "
         "dropped out of the make fix chain"
     )

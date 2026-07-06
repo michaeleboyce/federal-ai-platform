@@ -42,16 +42,35 @@ def test_no_nameless_idless_rows(conn):
     assert n == 0, f"{n} use_cases rows with blank name AND blank use_case_id"
 
 
-def test_omb_only_gap_bounded(conn):
+def test_omb_only_gap_closed(conn):
     """Rows in OMB's authoritative consolidated file that our per-agency
-    sweep lacks. PHASE0 baseline: 68. This bound may only be lowered:
-    the Phase-2 ingest sets it to the count of documented_skip verdicts in
-    audit/omb_only_ingest/decisions.csv."""
+    sweep lacks. PHASE0 baseline was 68; the 2026-07 completeness pass
+    closed the gap entirely (23 recovered by the loader name-collision
+    fix, 45 ingested per audit/omb_only_ingest/decisions.csv — zero
+    documented skips). Any nonzero value means OMB republished with new
+    rows (adjudicate them) or the sweep regressed."""
     n = conn.execute(
         "SELECT COUNT(*) FROM omb_match_audit WHERE match_status = 'omb_only'"
     ).fetchone()[0]
-    assert n <= 68, (
-        f"omb_only = {n} (bound 68) — OMB's inventory now has MORE rows we "
-        "lack than at baseline; the source sweep regressed or OMB published "
-        "an update that needs a new adjudication round"
+    assert n == 0, (
+        f"omb_only = {n} (expected 0) — new/unadjudicated rows in OMB's "
+        "consolidated file; run a new adjudication round "
+        "(audit/omb_only_ingest/ADJUDICATION.md documents the process)"
     )
+
+
+def test_ingested_rows_present_and_tagged(conn):
+    """The 45 adjudicated omb_only ingests are present (durable marker:
+    omb_consolidated_source) and every one carries a tag row."""
+    n = conn.execute(
+        "SELECT COUNT(*) FROM use_cases "
+        "WHERE omb_consolidated_source = 'omb_only_ingest'"
+    ).fetchone()[0]
+    assert n == 45, f"ingested rows = {n}, expected 45"
+    untagged = conn.execute(
+        "SELECT COUNT(*) FROM use_cases u "
+        "WHERE u.omb_consolidated_source = 'omb_only_ingest' "
+        "AND NOT EXISTS (SELECT 1 FROM use_case_tags t "
+        "WHERE t.use_case_id = u.id)"
+    ).fetchone()[0]
+    assert untagged == 0, f"{untagged} ingested rows lack a tag row"

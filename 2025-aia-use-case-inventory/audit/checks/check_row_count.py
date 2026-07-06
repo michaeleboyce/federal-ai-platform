@@ -16,20 +16,22 @@ def _count(conn, table):
 
 def test_use_cases_total_matches_baseline(conn):
     n = _count(conn, "use_cases")
-    # Re-baselined 2026-06-09 to 3549 (codex-split + dedupe churn since the
-    # 2026-04-12 snapshot); allow +/- 50 for ingest refreshes.
-    assert 3499 <= n <= 3599, (
-        f"use_cases count {n} diverged from baseline 3549 (+/- 50 tolerance)"
+    # Re-baselined 2026-07-06 to 3660 = 3549 (2026-06-09 baseline)
+    #   + 66 recovered by the loader name-collision fix
+    #   + 45 ingested omb_only rows (audit/omb_only_ingest/ADJUDICATION.md).
+    # Allow +/- 50 for ingest refreshes.
+    assert 3610 <= n <= 3710, (
+        f"use_cases count {n} diverged from baseline 3660 (+/- 50 tolerance)"
     )
 
 
 def test_consolidated_use_cases_total_matches_baseline(conn):
     n = _count(conn, "consolidated_use_cases")
-    # Re-baselined 2026-06-09 to 900: the 2025 OMB consolidated COTS file
-    # (45 agencies x 20 Appendix-B template lines) landed 2026-05-03 and
-    # replaced the early 192-row partial load. Allow +/- 20.
-    assert 880 <= n <= 920, (
-        f"consolidated_use_cases count {n} diverged from baseline 900 (+/- 20 tolerance)"
+    # Re-baselined 2026-07-06 to 901 = 900 (45 agencies x 20 Appendix-B
+    # template lines, landed 2026-05-03) + 1 DOL Prism Ally addendum
+    # (scripts/backfill_dol_prism_ally.py). Allow +/- 20.
+    assert 881 <= n <= 921, (
+        f"consolidated_use_cases count {n} diverged from baseline 901 (+/- 20 tolerance)"
     )
 
 
@@ -44,10 +46,10 @@ def test_agencies_total_matches_baseline(conn):
 
 def test_use_case_tags_total_matches_baseline(conn):
     n = _count(conn, "use_case_tags")
-    # Re-baselined 2026-06-09 to 4449 = 3549 individual + 900 consolidated
+    # Re-baselined 2026-07-06 to 4561 = 3660 individual + 901 consolidated
     # (every entry gets exactly one tag row). Allow +/- 100.
-    assert 4349 <= n <= 4549, (
-        f"use_case_tags count {n} diverged from baseline 4449 (+/- 100 tolerance)"
+    assert 4461 <= n <= 4661, (
+        f"use_case_tags count {n} diverged from baseline 4561 (+/- 100 tolerance)"
     )
 
 

@@ -280,9 +280,21 @@ def main() -> int:
     w("   HHS Claude claims), DHS commercial-AI revocation (counter-trend).")
     w("")
 
+    # Preserve hand-authored trailing sections (## 7. onward — the FedRAMP
+    # beats added in 6216de3 are not machine-generated; regenerating the
+    # sheet must never destroy them).
+    preserved = ""
+    if OUT.exists():
+        current = OUT.read_text()
+        marker = current.find("\n## 7.")
+        if marker != -1:
+            preserved = current[marker:]
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text("\n".join(lines))
-    print(f"wrote {OUT} ({len(lines)} lines)")
+    OUT.write_text("\n".join(lines) + preserved)
+    n_lines = len(lines) + preserved.count("\n")
+    suffix = " (+ preserved hand-authored §7+)" if preserved else ""
+    print(f"wrote {OUT} ({n_lines} lines{suffix})")
     conn.close()
     return 0
 

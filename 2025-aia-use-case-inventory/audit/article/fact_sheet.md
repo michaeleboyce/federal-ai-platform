@@ -11,7 +11,7 @@ cannot support.
 
 ### Individually reported 2025 use cases
 
-**3549**
+**3660**
 
 ```sql
 SELECT COUNT(*) FROM use_cases
@@ -30,7 +30,7 @@ SELECT COUNT(*) FROM use_cases_2024
 
 ### GenAI by OMB's own classification (2025)
 
-**852**
+**933**
 
 ```sql
 SELECT COUNT(*) FROM use_cases
@@ -40,7 +40,7 @@ SELECT COUNT(*) FROM use_cases
 
 ### GenAI by IFP tag (2025)
 
-**937**
+**1005**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -59,7 +59,7 @@ SELECT COUNT(*) FROM use_case_tags_2024_canonical
 
 ### General-purpose LLM access entries (2025)
 
-**476**
+**559**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -67,9 +67,9 @@ SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
 ```
 - ⚠ Definition: staff can submit arbitrary prompts, internal-work approved, broadly available — not single-workflow integrations. Low-confidence heuristic flips were re-adjudicated row-by-row in audit/retag/general_llm_round3/.
 
-### Agencies with enterprise-wide GenAI: 21 (2024) → 20 (2025)
+### Agencies with enterprise-wide GenAI: 21 (2024) → 24 (2025)
 
-**21 → 20**
+**21 → 24**
 
 ```sql
 SELECT COUNT(DISTINCT u.agency_id)
@@ -84,13 +84,13 @@ SELECT COUNT(DISTINCT u.agency_id)
 - ⚠ The 2025 figure includes the web-verified scope corrections (StateChat, VA GPT, DHSChat, Ask Dottie...) restored by apply_retag_audit.py. Earlier drafts said 15→12; that was an artifact of the corrections not being applied — do not reuse it.
 - ⚠ Tag-row counts (not agency counts) concentrate heavily in HHS; always pair a row count with the agency count.
 
-Enterprise-wide GenAI agencies (2025): DHS, DOC, DOE, DOJ, DOT, ED, FDIC, FERC, FRTIB, FTC, GSA, HHS, HUD, NARA, NASA, NRC, OPM, SSA, State, VA
+Enterprise-wide GenAI agencies (2025): DHS, DOC, DOE, DOJ, DOT, EAC, ED, FDIC, FERC, FRTIB, FTC, GSA, HHS, HUD, NARA, NASA, NEA, NRC, OPM, OSC, OSHRC, SSA, State, VA
 
 ## 2. Pillar — coding assistance: present but mostly pre-deployment
 
 ### Coding-assistant use cases, individual filings (2025)
 
-**57**
+**70**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -121,8 +121,8 @@ Stage mix of 2025 individual coding filings:
 
 | stage | n |
 |---|---|
-| pre_deployment | 21 |
-| deployed | 14 |
+| deployed | 26 |
+| pre_deployment | 22 |
 | unknown | 10 |
 | pilot | 9 |
 | retired | 3 |
@@ -131,16 +131,16 @@ Named coding deployments by agency (2025 individual filings):
 
 | agency | n | examples |
 |---|---|---|
+| ED | 13 | OpenAI API,Microsoft 365 Copilot |
 | HHS | 10 | Microsoft Teams,(unnamed),ServiceNow Now Assist,GitHub Copilot,Tableau,OpenAI API,Palantir |
 | DOC | 9 | GitHub Copilot,(unnamed),Gemini,Amazon Q,unspecified |
-| DOE | 7 | GitHub Copilot,Microsoft Teams,unspecified,Gemini,Tabnine |
+| DOE | 8 | GitHub Copilot,Microsoft Teams,unspecified,Gemini,Tabnine |
 | Treasury | 6 | unspecified,Microsoft Teams,(unnamed) |
 | DHS | 6 | Custom GenAI coding assistant,Custom code-generation tool,(unnamed),OpenAI API,Palantir AI |
 | SSA | 3 | AveriSource Platform,Windsurf,IBM watsonx Code Assistant |
+| SBA | 3 | Amazon Q,GitHub Copilot,AWS Bedrock |
 | VA | 2 | Microsoft Teams |
-| SBA | 2 | Amazon Q,AWS Bedrock |
 | NASA | 2 | Custom LLM (planned),Custom (VS plugin) |
-| ED | 2 | OpenAI API,Microsoft 365 Copilot |
 | DOJ | 2 | GitHub Copilot,unspecified |
 | DOI | 2 | ChatGPT,GitHub Copilot |
 | TVA | 1 | GitHub Copilot |
@@ -170,7 +170,7 @@ SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
 
 ### Rows with UNKNOWN architecture_type
 
-**2559**
+**2606**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -183,7 +183,7 @@ SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
 
 ### Agentic by IFP tag (2025, post-review)
 
-**59**
+**66**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -193,7 +193,7 @@ SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
 
 ### Agentic by OMB's own classification (2025)
 
-**115**
+**117**
 
 ```sql
 SELECT COUNT(*) FROM use_cases
@@ -203,9 +203,9 @@ SELECT COUNT(*) FROM use_cases
 
 ## 5. Cross-year capacity (2024 → 2025)
 
-### Deployed GenAI use cases: 200 (2024) → 263 (2025)
+### Deployed GenAI use cases: 200 (2024) → 311 (2025)
 
-**200 → 263**
+**200 → 311**
 
 ```sql
 SELECT COUNT(DISTINCT u.id)
@@ -232,7 +232,7 @@ SELECT COUNT(DISTINCT u.id)
 
 ### Net-new GenAI capabilities introduced in 2025
 
-**681**
+**699**
 
 ```sql
 SELECT COUNT(DISTINCT l.uc_2025_id)
@@ -243,7 +243,7 @@ SELECT COUNT(DISTINCT l.uc_2025_id)
 
 ### Live-in-2024 GenAI filings absent from the 2025 inventory
 
-**144**
+**93**
 
 ```sql
 SELECT COUNT(DISTINCT l.uc_2024_id)
@@ -276,19 +276,6 @@ SELECT COUNT(DISTINCT l.uc_2024_id)
    (no public corroboration), VA OIG Jan-2026 PHI advisory (cite with
    any VA-positive framing), Anthropic federal ban Feb-2026 (date-stamp
    HHS Claude claims), DHS commercial-AI revocation (counter-trend).
-7. FedRAMP services "in scope" are NOT enabled/available to staff —
-   always "in scope of a package the agency holds an ATO for" (§7).
-8. Never cite "203 authorized AI products absent from inventories" —
-   the honest split is 156 fully authorized + 47 Ready/In-Process.
-   (Was 202 = 155 + 47 before 2026-07-05: a false alias-match had linked
-   the Clarivate CIPAI-ISP patent-search listing to an SEC-internal tool.)
-9. Zero recorded marketplace reuse ≠ zero adoption — OneGov pricing,
-   USAi tenancy, and in-scope services bypass the ATO ledger. Write
-   "no recorded adoption through the official channel".
-10. `ai_featured` PACKAGE labels (AWS/Azure as listings) are not
-    evidence an agency withholds AI from staff; cite core_ai only.
-11. Date-stamp every 20x/ledger claim to the 2026-06-12 snapshot (trio
-    listings re-checked live 2026-07-03).
 
 ## 7. FedRAMP — authorization vs adoption
 

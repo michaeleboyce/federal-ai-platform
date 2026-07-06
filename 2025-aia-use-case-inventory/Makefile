@@ -11,15 +11,27 @@ fix:
 	# native 2024 shape into `use_cases_2024` (table created by migration
 	# m009). Phase 1 of the 2024↔2025 comparison project. Idempotent.
 	python3 load_2024.py
-	# Recompute the derived stage_normalized / ai_classification_normalized
-	# columns (m016) — the loader wipe-and-reload clears them every rebuild.
-	# Hard-fails if >5% of rows land in 'unknown' stage (new free-text
-	# variant in a source file).
-	python3 scripts/normalize_use_case_fields.py
+	# One-row SKIP_FILES exception (2026-07 supersession audit): DOL's
+	# non-template Prism Ally addendum, absent from every loaded source.
+	python3 scripts/backfill_dol_prism_ally.py
 	# OMB consolidated individually-reported AI use case file — mirror rows,
 	# match against DB, populate omb_match_audit. Schema-only DB additions
 	# come from migrations/m004; this is the data load. Idempotent.
 	python3 load_omb_consolidated.py
+	# Ingest adjudicated omb_only rows (OMB has them, per-agency sweep
+	# missed them) from the mirror into use_cases, keyed by row_hash.
+	# Clean no-op until audit/omb_only_ingest/decisions.csv exists. MUST
+	# run after load_omb_consolidated (reads the fresh mirror + audit) and
+	# before normalize/build_lookups/auto_tag (ingested rows get
+	# normalized, slugged, and tagged like loader rows).
+	python3 scripts/ingest_omb_only_rows.py
+	# Recompute the derived stage_normalized / ai_classification_normalized
+	# / high_impact_normalized columns (m016 + m019) — the loader
+	# wipe-and-reload clears them every rebuild. Runs AFTER the OMB-only
+	# ingest so ingested rows are normalized too. Hard-fails if non-blank
+	# values fail to bucket (>5% stage, >1% high-impact — a new free-text
+	# variant in a source file).
+	python3 scripts/normalize_use_case_fields.py
 	# 2024↔2025 deterministic use-case matcher — links use_cases_2024 to
 	# use_cases (exact name → fuzzy name → narrative similarity), strictly
 	# per-agency, into the `use_case_year_links` table (created by migration
@@ -53,9 +65,9 @@ fix:
 	# INVARIANT (2026-07): every correction script between here and the end
 	# of `fix` MUST stay ordered after auto_tag.py. The rebuilt DB is gated
 	# by absolute bands in audit/checks/check_llm_flags.py (general-LLM
-	# distinct 476±50, total 706±50, agentic 59±10; Phase-0 2026-07-06
-	# baseline); a tripped band means a correction script dropped out of
-	# this chain or auto_tag drifted.
+	# distinct 559±50, total 789±50, agentic 66±10; 2026-07-06 baseline,
+	# post completeness pass); a tripped band means a correction script
+	# dropped out of this chain or auto_tag drifted.
 	python3 scripts/retag_llm.py
 	python3 scripts/apply_retag_audit.py
 	python3 scripts/apply_round2_audit.py
