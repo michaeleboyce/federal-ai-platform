@@ -191,3 +191,30 @@ def test_claude_code_appears_exactly_once(conn):
         "'Generating code using AI.' Appendix-B row. Update the article "
         "claim before re-pinning."
     )
+
+
+def test_frontier_penetration_bands(conn):
+    """Fact-sheet §1b headline rows (2026-07-06 baseline: M365 Copilot 41
+    agencies / ChatGPT 19 — via entry_product_edges over the explicit
+    canonical-name list, NOT is_frontier_llm). Bands absorb legitimate
+    link-pass growth; a trip means either a product-links regression or
+    the article's penetration table needs re-citing. Re-baseline only in
+    the same commit as the linkage change that moves it."""
+    def agencies_for(name: str) -> int:
+        return conn.execute(
+            """SELECT COUNT(DISTINCT e.agency_id)
+                 FROM entry_product_edges e JOIN products p ON p.id = e.product_id
+                WHERE p.canonical_name = ?""",
+            (name,),
+        ).fetchone()[0]
+
+    m365 = agencies_for("Microsoft 365 Copilot")
+    chatgpt = agencies_for("ChatGPT")
+    assert 36 <= m365 <= 46, (
+        f"M365 Copilot penetration moved to {m365} agencies (pinned 41±5) — "
+        "update fact_sheet §1b and the article table together."
+    )
+    assert 15 <= chatgpt <= 24, (
+        f"ChatGPT penetration moved to {chatgpt} agencies (pinned 19±4/5) — "
+        "update fact_sheet §1b and the article table together."
+    )

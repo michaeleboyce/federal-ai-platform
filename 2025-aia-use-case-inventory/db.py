@@ -201,6 +201,11 @@ CREATE TABLE IF NOT EXISTS use_case_tags (
     architecture_type TEXT,  -- inference_only, rag_pipeline, fine_tuned, custom_trained, agentic_workflow, unknown
     has_model_training INTEGER,
 
+    -- Adjudicated 2026-07 labeling rounds (m026); NULL = outside the
+    -- labeled population, distinct from 'unclear'
+    integration_depth TEXT,  -- standalone_chat, workflow_embedded, system_integrated, agentic_workflow, unclear (pilot+deployed rows only)
+    coding_tool_type TEXT,   -- chat_assistant, ide_autocomplete, coding_agent, code_analysis_tool, not_coding, unclear (is_coding_tool rows only)
+
     -- Product detail
     cots_product_name TEXT,
     cots_vendor TEXT,
@@ -234,6 +239,8 @@ CREATE INDEX IF NOT EXISTS idx_tags_entry_type ON use_case_tags(entry_type);
 CREATE INDEX IF NOT EXISTS idx_tags_llm ON use_case_tags(is_general_llm_access);
 CREATE INDEX IF NOT EXISTS idx_tags_coding ON use_case_tags(is_coding_tool);
 CREATE INDEX IF NOT EXISTS idx_tags_scope ON use_case_tags(deployment_scope);
+CREATE INDEX IF NOT EXISTS idx_tags_integration_depth ON use_case_tags(integration_depth);
+CREATE INDEX IF NOT EXISTS idx_tags_coding_tool_type ON use_case_tags(coding_tool_type);
 
 -- Agency-level scoring: `agency_ai_maturity` is a VIEW over
 -- org_ai_maturity since m023 (single physical maturity table; the agency

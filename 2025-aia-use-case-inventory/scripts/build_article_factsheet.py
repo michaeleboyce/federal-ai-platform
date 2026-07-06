@@ -140,6 +140,55 @@ def main() -> int:
     w(f"Enterprise-wide GenAI agencies (2025): {', '.join(r[0] for r in rows)}")
     w("")
 
+    # ------------------------------------------------ pillar 1b: penetration
+    # Explicit canonical-name list, NOT products.is_frontier_llm (that flag
+    # excludes GitHub Copilot/Perplexity and includes Amazon Q/USAi/Ask
+    # Sage). Names resolve at query time — product ids rotate per rebuild.
+    w("## 1b. Frontier-product penetration (named-product filings)")
+    w("")
+    w("Agencies with ≥1 inventory entry linked to each frontier product, via")
+    w("the curated products graph (`entry_product_edges`, both entry types).")
+    w("Stage mix covers INDIVIDUAL entries only — Appendix-B consolidated")
+    w("entries carry no stage. ⚠ Only ~35% of use cases name a linkable")
+    w("product: these are floors (\"agencies that filed named usage\"), never")
+    w("totals. Do NOT read column sums as adoption shares.")
+    w("")
+    frontier = (
+        "Microsoft 365 Copilot", "Microsoft 365 Copilot Chat", "ChatGPT",
+        "OpenAI API", "Azure OpenAI", "Claude", "Gemini", "GitHub Copilot",
+        "AWS Bedrock", "Perplexity",
+    )
+    ph = ",".join("?" for _ in frontier)
+    w("| product | agencies | entries (edges) | deployed | pilot | pre-dep | other/unk |")
+    w("|---|---|---|---|---|---|---|")
+    for r in q(
+        f"""SELECT p.canonical_name,
+               COUNT(DISTINCT e.agency_id)                    AS agencies,
+               COUNT(*)                                       AS edges,
+               SUM(CASE WHEN u.stage_normalized='deployed' THEN 1 ELSE 0 END),
+               SUM(CASE WHEN u.stage_normalized='pilot' THEN 1 ELSE 0 END),
+               SUM(CASE WHEN u.stage_normalized='pre_deployment' THEN 1 ELSE 0 END),
+               SUM(CASE WHEN e.entry_kind='use_case'
+                         AND COALESCE(u.stage_normalized,'')
+                             NOT IN ('deployed','pilot','pre_deployment')
+                        THEN 1 ELSE 0 END)
+          FROM entry_product_edges e
+          JOIN products p ON p.id = e.product_id
+          LEFT JOIN use_cases u
+            ON e.entry_kind = 'use_case' AND u.id = e.entry_id
+         WHERE p.canonical_name IN ({ph})
+         GROUP BY p.canonical_name
+         ORDER BY agencies DESC, p.canonical_name""",
+        *frontier,
+    ):
+        w(f"| {r[0]} | {r[1]} | {r[2]} | {r[3]} | {r[4]} | {r[5]} | {r[6]} |")
+    w("")
+    w("- ⚠ Consolidated (Appendix-B) edges appear in `entries` but not in the")
+    w("  stage columns; the stage columns sum to the individual-entry share.")
+    w("- ⚠ Product names are canonical: `AWS Bedrock` (not \"Amazon Bedrock\"),")
+    w("  `Claude` excludes `Claude Code` (separate product; see §2).")
+    w("")
+
     # --------------------------------------------------------------- pillar 2
     w("## 2. Pillar — coding assistance: present but mostly pre-deployment")
     w("")
@@ -184,6 +233,47 @@ def main() -> int:
           "— see claims_review_2026-07-06.md §1 for the list; date-stamp all "
           "Claude framings against the 2026-02-27 Anthropic cease-use "
           "directive (guardrail 6)."])
+
+    # 2026-07 coding taxonomy round (Sonnet-labeled, Fable-audited, gate
+    # GREEN — audit/retag/coding_taxonomy_2026-07/AUDIT_GATE.md). Pinned by
+    # audit/checks/check_labeled_depth.py.
+    w("Coding-tool taxonomy of the individual filings (IFP-labeled, adjudicated 2026-07):")
+    w("")
+    w("| coding_tool_type | n |")
+    w("|---|---|")
+    for r in q("""SELECT coding_tool_type, COUNT(DISTINCT use_case_id)
+  FROM use_case_tags
+ WHERE coding_tool_type IS NOT NULL AND use_case_id IS NOT NULL
+ GROUP BY 1 ORDER BY 2 DESC"""):
+        w(f"| {r[0]} | {r[1]} |")
+    w("")
+    n_agent_live = q1("""SELECT COUNT(*)
+  FROM use_case_tags t JOIN use_cases u ON u.id = t.use_case_id
+ WHERE t.coding_tool_type = 'coding_agent'
+   AND u.stage_normalized IN ('deployed','pilot')""")
+    sql_agent = """SELECT a.abbreviation, u.use_case_name, u.stage_normalized
+  FROM use_case_tags t
+  JOIN use_cases u ON u.id = t.use_case_id
+  JOIN agencies a ON a.id = u.agency_id
+ WHERE t.coding_tool_type = 'coding_agent'"""
+    agent_rows = q(sql_agent)
+    fact(
+        "Deployed or piloted AGENTIC coding tools (2025)",
+        n_agent_live,
+        sql_agent,
+        [
+            "The "
+            + str(len(agent_rows))
+            + " agent-class filings ("
+            + "; ".join(f"{r[0]} {r[1]} [{r[2]}]" for r in agent_rows)
+            + ") are ALL pre-deployment — zero live agentic coding tools in "
+            "the 2025 inventory. Pair with the single Claude Code mention "
+            "(above) for the 'next wave is missing' claim.",
+            "IFP-labeled taxonomy (closed vocab, Sonnet label -> Fable audit "
+            "-> gate GREEN); 'unclear' rows (9) are thin narratives, not "
+            "hidden agents — see the round's AUDIT_GATE.md.",
+        ],
+    )
 
     sql_coding24 = """SELECT COUNT(*) FROM use_case_tags_2024_canonical
  WHERE is_coding_tool = 1"""
@@ -285,6 +375,47 @@ def main() -> int:
           "(ED above all) filed many task-level entries under one repeated "
           "name; cite the distinct-name count from /compare-years/silently-dropped, "
           "not raw filings."])
+
+    # ------------------------------------- pillar 5b: bureau-level divergence
+    w("## 5b. Bureau-level divergence — enterprise access is decided below the department")
+    w("")
+    w("Within-department spread of bureau-scored maturity (`org_ai_maturity`")
+    w("rows at sub_agency/office level, ≥5 use cases to be scored; one-hop")
+    w("parent rollup). The unit of adoption choice is the bureau: HHS is a")
+    w("federation where nearly every scored operating division independently")
+    w("meets enterprise-LLM; DOJ's bureaus uniformly do not; DOE is bimodal")
+    w("across its labs.")
+    w("")
+    w("| dept | bureaus scored | w/ enterprise LLM | w/ coding assistants | enterprise-LLM bureaus |")
+    w("|---|---|---|---|---|")
+    for r in q(
+        """SELECT parent.abbreviation,
+                  COUNT(*),
+                  SUM(m.has_enterprise_llm),
+                  SUM(m.has_coding_assistants),
+                  COALESCE(GROUP_CONCAT(CASE WHEN m.has_enterprise_llm=1
+                                             THEN fo.abbreviation END), '—')
+             FROM org_ai_maturity m
+             JOIN federal_organizations fo ON fo.id = m.organization_id
+             JOIN federal_organizations parent ON parent.id = fo.parent_id
+            WHERE fo.level IN ('sub_agency','office')
+            GROUP BY parent.abbreviation
+           HAVING COUNT(*) >= 3
+            ORDER BY COUNT(*) DESC"""
+    ):
+        w(f"| {r[0]} | {r[1]} | {r[2]} | {r[3]} | {r[4]} |")
+    w("")
+    w("- ⚠ Scored-bureau counts are floors — bureaus under 5 filed use cases")
+    w("  aren't scored; absence from the table is not evidence of absence.")
+    w("- ⚠ For SPECIFIC bureau capability claims (VA/OIT triple-strong; HHS")
+    w("  8-of-11 opdivs independently Enterprise; Treasury OCC.Chat; DOJ's")
+    w("  dept-wide Copilot being pre-deployment/uncorroborated), cite the")
+    w("  round-3 web-corroborated ratings: `audit/retag/round3/")
+    w("  SUB_AGENCY_FINDINGS.md` + `<topic>/sub_agency_rows.csv` (96")
+    w("  sub-agencies × 3 topics, evidence quotes + URLs) — not this table.")
+    w("- ⚠ Bureau workforce shares: `agency_workforce_profile` level='bureau'")
+    w("  (64 rows) — needed before converting bureau counts to people-terms.")
+    w("")
 
     # ------------------------------------------------------------ guardrails
     w("## 6. Guardrails — claims the data cannot support")

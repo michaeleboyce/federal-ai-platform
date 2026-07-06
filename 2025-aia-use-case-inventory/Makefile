@@ -89,6 +89,14 @@ fix:
 	# general chat LLM is generative by definition). Signature-keyed via
 	# uc_signature.Resolver; skips with a warning until verdict batches land.
 	python3 scripts/apply_llm_flag_drift.py
+	# 2026-07 labeled-depth rounds (m026 columns): coding_tool_type taxonomy
+	# over the is_coding_tool filings, and integration_depth over the
+	# pilot+deployed rows. Sonnet-labeled, Fable-audited (audit_overrides
+	# take precedence), signature-keyed; each skips with a warning until its
+	# verdict batches land. See audit/retag/{coding_taxonomy_2026-07,
+	# integration_depth_2026-07}/.
+	python3 scripts/apply_coding_taxonomy.py --apply
+	python3 scripts/apply_integration_depth.py --apply
 	# Persist the audits' sources + quotes onto the use cases themselves
 	# (use_case_external_evidence) so findings stay traceable in the UI.
 	python3 scripts/persist_capability_evidence.py

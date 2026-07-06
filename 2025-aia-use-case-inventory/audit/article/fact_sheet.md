@@ -86,6 +86,33 @@ SELECT COUNT(DISTINCT u.agency_id)
 
 Enterprise-wide GenAI agencies (2025): DHS, DOC, DOE, DOJ, DOT, EAC, ED, FDIC, FERC, FRTIB, FTC, GSA, HHS, HUD, NARA, NASA, NEA, NRC, OPM, OSC, OSHRC, SSA, State, VA
 
+## 1b. Frontier-product penetration (named-product filings)
+
+Agencies with ≥1 inventory entry linked to each frontier product, via
+the curated products graph (`entry_product_edges`, both entry types).
+Stage mix covers INDIVIDUAL entries only — Appendix-B consolidated
+entries carry no stage. ⚠ Only ~35% of use cases name a linkable
+product: these are floors ("agencies that filed named usage"), never
+totals. Do NOT read column sums as adoption shares.
+
+| product | agencies | entries (edges) | deployed | pilot | pre-dep | other/unk |
+|---|---|---|---|---|---|---|
+| Microsoft 365 Copilot | 41 | 211 | 23 | 10 | 3 | 0 |
+| ChatGPT | 19 | 76 | 4 | 12 | 11 | 2 |
+| GitHub Copilot | 19 | 29 | 3 | 3 | 1 | 4 |
+| Gemini | 16 | 60 | 10 | 2 | 8 | 8 |
+| Azure OpenAI | 15 | 49 | 17 | 12 | 7 | 4 |
+| OpenAI API | 15 | 96 | 75 | 11 | 5 | 2 |
+| Claude | 11 | 38 | 2 | 6 | 3 | 2 |
+| AWS Bedrock | 9 | 13 | 2 | 1 | 4 | 0 |
+| Microsoft 365 Copilot Chat | 9 | 17 | 5 | 1 | 0 | 0 |
+| Perplexity | 6 | 26 | 0 | 4 | 1 | 0 |
+
+- ⚠ Consolidated (Appendix-B) edges appear in `entries` but not in the
+  stage columns; the stage columns sum to the individual-entry share.
+- ⚠ Product names are canonical: `AWS Bedrock` (not "Amazon Bedrock"),
+  `Claude` excludes `Claude Code` (separate product; see §2).
+
 ## 2. Pillar — coding assistance: present but mostly pre-deployment
 
 ### Coding-assistant use cases, individual filings (2025)
@@ -125,6 +152,30 @@ SELECT
 ```
 - ⚠ The single hit is DOI's Appendix-B 'Generating code using AI.' template row (commercial_product field) — a checkbox listing, not a managed deployment (guardrail 5). Pinned by check_article_guardrails.py; a source reload that moves it fails `make check`.
 - ⚠ 11 individual use cases mention 'Claude' in any form — see claims_review_2026-07-06.md §1 for the list; date-stamp all Claude framings against the 2026-02-27 Anthropic cease-use directive (guardrail 6).
+
+Coding-tool taxonomy of the individual filings (IFP-labeled, adjudicated 2026-07):
+
+| coding_tool_type | n |
+|---|---|
+| chat_assistant | 25 |
+| ide_autocomplete | 18 |
+| code_analysis_tool | 14 |
+| unclear | 9 |
+| coding_agent | 4 |
+
+### Deployed or piloted AGENTIC coding tools (2025)
+
+**0**
+
+```sql
+SELECT a.abbreviation, u.use_case_name, u.stage_normalized
+  FROM use_case_tags t
+  JOIN use_cases u ON u.id = t.use_case_id
+  JOIN agencies a ON a.id = u.agency_id
+ WHERE t.coding_tool_type = 'coding_agent'
+```
+- ⚠ The 4 agent-class filings (SBA Developer Code Assistant AI [pre_deployment]; SBA Developer Code Assistant AI [pre_deployment]; SBA Multi-Agent Orchestration [pre_deployment]; SSA Coding Assistance [pre_deployment]) are ALL pre-deployment — zero live agentic coding tools in the 2025 inventory. Pair with the single Claude Code mention (above) for the 'next wave is missing' claim.
+- ⚠ IFP-labeled taxonomy (closed vocab, Sonnet label -> Fable audit -> gate GREEN); 'unclear' rows (9) are thin narratives, not hidden agents — see the round's AUDIT_GATE.md.
 
 ### Coding-assistant use cases (2024)
 
@@ -273,6 +324,48 @@ SELECT COUNT(DISTINCT l.uc_2024_id)
         OR LOWER(COALESCE(u.dev_stage,'')) LIKE '%implementation%')
 ```
 - ⚠ 'Silently dropped' = no Retired trace in 2025. Several agencies (ED above all) filed many task-level entries under one repeated name; cite the distinct-name count from /compare-years/silently-dropped, not raw filings.
+
+## 5b. Bureau-level divergence — enterprise access is decided below the department
+
+Within-department spread of bureau-scored maturity (`org_ai_maturity`
+rows at sub_agency/office level, ≥5 use cases to be scored; one-hop
+parent rollup). The unit of adoption choice is the bureau: HHS is a
+federation where nearly every scored operating division independently
+meets enterprise-LLM; DOJ's bureaus uniformly do not; DOE is bimodal
+across its labs.
+
+| dept | bureaus scored | w/ enterprise LLM | w/ coding assistants | enterprise-LLM bureaus |
+|---|---|---|---|---|
+| DOE | 18 | 2 | 6 | IM-50,SRS |
+| DOJ | 14 | 0 | 1 | — |
+| NASA | 8 | 2 | 1 | GSFC,ARC |
+| HHS | 8 | 8 | 6 | ASFR,CDC,CMS,FDA,NIH,ACF,HRSA,AHRQ |
+| VA | 7 | 1 | 2 | OIT |
+| DOI | 7 | 0 | 1 | — |
+| DOC | 7 | 1 | 3 | OS |
+| DHS | 7 | 1 | 3 | MGMT |
+| USDA | 6 | 0 | 0 | — |
+| FDIC | 6 | 0 | 0 | — |
+| Treasury | 5 | 0 | 3 | — |
+| State | 5 | 1 | 1 | DT |
+| ED | 5 | 5 | 5 | OCIO,OPE,OSERS,OFO,FSA |
+| CMS | 5 | 4 | 3 | CCIIO,OIT,OC,CCSQ |
+| SEC | 4 | 0 | 0 | — |
+| DOL | 4 | 0 | 0 | — |
+| TVA | 3 | 0 | 1 | — |
+| FDA | 3 | 1 | 0 | CDER |
+| EPA | 3 | 0 | 0 | — |
+
+- ⚠ Scored-bureau counts are floors — bureaus under 5 filed use cases
+  aren't scored; absence from the table is not evidence of absence.
+- ⚠ For SPECIFIC bureau capability claims (VA/OIT triple-strong; HHS
+  8-of-11 opdivs independently Enterprise; Treasury OCC.Chat; DOJ's
+  dept-wide Copilot being pre-deployment/uncorroborated), cite the
+  round-3 web-corroborated ratings: `audit/retag/round3/
+  SUB_AGENCY_FINDINGS.md` + `<topic>/sub_agency_rows.csv` (96
+  sub-agencies × 3 topics, evidence quotes + URLs) — not this table.
+- ⚠ Bureau workforce shares: `agency_workforce_profile` level='bureau'
+  (64 rows) — needed before converting bureau counts to people-terms.
 
 ## 6. Guardrails — claims the data cannot support
 
