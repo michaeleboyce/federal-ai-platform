@@ -27,7 +27,9 @@ Project-scoped Claude skills live at `.claude/skills/<name>/SKILL.md`. Currently
 - **`omb-ai-use-case-inventory`** — Reference for the OMB M-25-21 inventory schema (36 columns, valid values, recoding maps, conditional-required clauses, DB column crosswalk). Auto-triggers when an agent works with the schema, source CSVs, or any retag / load / backfill script.
 - **`inventory-db-model`** — Reference for the DATABASE's own structure post the 2026-07 overhaul (m019–m025): two entry types, edge-only product linkage via `entry_primary_products`, normalized enum columns, the `agency_ai_maturity` compat view, agency FK layer, the omb_only==0 completeness gate, migration/rebuild conventions, and the re-baselining discipline. Auto-triggers on migration authoring, fix-chain edits, check re-baselining, or any script touching the core tables.
 
-Both skills are **mirrored into `dashboard/.claude/skills/`** (the dashboard is its own repo, so its sessions load their own copies). When you edit a skill, `cp` it to the other location in the same change — the copies must stay identical.
+- **`adjudication-rounds`** — The canonical LLM labeling/retag round: directory + CSV contract under `audit/retag/<round>/`, Sonnet-labels→Fable-audits→QC choreography, signature keying, the apply-script contract, Makefile wiring, evidence persistence, and band re-baselining. ETL-only (rounds run from this repo). Triggers on any `audit/retag/` or `scripts/apply_*.py` work.
+
+Skills marked mirrored are **copied into `dashboard/.claude/skills/`** (the dashboard is its own repo, so its sessions load their own copies): currently `omb-ai-use-case-inventory` and `inventory-db-model`. When you edit a mirrored skill, `cp` it to the other location in the same change — the copies must stay identical.
 
 ## When you DO need to touch this directory
 

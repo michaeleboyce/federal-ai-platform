@@ -26,12 +26,13 @@ These tags support a piece on whether federal agencies provide meaningful AI acc
           uc.training_data_description, uc.has_custom_code,
           t.entry_type, t.is_general_llm_access, t.is_coding_tool,
           t.deployment_scope, t.scope_detail, t.architecture_type,
-          t.ai_sophistication, t.product_id, t.template_id,
-          p.canonical_name as product_name
+          t.ai_sophistication,
+          epp.product_name AS product_name
    FROM use_cases uc
    JOIN use_case_tags t ON t.use_case_id = uc.id
    JOIN agencies a ON a.id = uc.agency_id
-   LEFT JOIN products p ON p.id = uc.product_id
+   LEFT JOIN entry_primary_products epp
+          ON epp.entry_kind = 'use_case' AND epp.entry_id = uc.id
    WHERE a.abbreviation = '{AGENCY_ABBR}';
    ```
 3. Also check consolidated_use_cases the same way if applicable.
@@ -73,12 +74,22 @@ These tags support a piece on whether federal agencies provide meaningful AI acc
 - `nlp_specific`: Non-generative NLP (entity extraction, classification)
 - `predictive_analytics`: Forecasting/prediction models
 
-### `product_id`
-Link to the canonical product. Query: `SELECT * FROM products` to see all.
-Check `product_aliases` for mapping common names. If you find a new alias, insert it:
+### Product linkage (edge tables — there is NO scalar `product_id`)
+The former `use_cases.product_id` / `consolidated_use_cases.product_id`
+columns were dropped (m025). Product links live ONLY in the edge tables:
 ```sql
-INSERT INTO product_aliases (product_id, alias_text) VALUES (?, ?);
+INSERT OR IGNORE INTO use_case_products
+    (use_case_id, product_id, evidence_text, confidence)  -- confidence: 'strong' | 'inferred' ONLY
+VALUES (?, ?, ?, ?);
 ```
+"The" primary product for an entry comes from the `entry_primary_products`
+view. Query `SELECT * FROM products` to see the catalog; check
+`product_aliases` for common-name mapping and add new aliases with
+`INSERT INTO product_aliases (product_id, alias_text) VALUES (?, ?);`.
+Resolve product ids by `canonical_name` at write time — ids rotate every
+rebuild. See the `inventory-db-model` skill for the full model and the
+`adjudication-rounds` skill for the labeling-round process this guide's
+criteria plug into.
 
 ### `is_product_capability_entry`
 Set to 1 if this is "just one feature of a bigger product deployment" (e.g. one of 7 NLRB Copilot entries where each is a different use pattern but all using the same Copilot license).
