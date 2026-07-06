@@ -238,40 +238,11 @@ CREATE INDEX IF NOT EXISTS idx_tags_llm ON use_case_tags(is_general_llm_access);
 CREATE INDEX IF NOT EXISTS idx_tags_coding ON use_case_tags(is_coding_tool);
 CREATE INDEX IF NOT EXISTS idx_tags_scope ON use_case_tags(deployment_scope);
 
--- Agency-level scoring (computed after tagging)
-CREATE TABLE IF NOT EXISTS agency_ai_maturity (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    agency_id INTEGER NOT NULL UNIQUE REFERENCES agencies(id),
-
-    total_use_cases INTEGER,
-    total_consolidated_entries INTEGER,
-    distinct_products_deployed INTEGER,  -- after dedup
-
-    generative_ai_count INTEGER,
-    coding_tool_count INTEGER,
-    general_llm_count INTEGER,
-    classical_ml_count INTEGER,
-    agentic_ai_count INTEGER,
-    custom_system_count INTEGER,
-
-    has_enterprise_llm INTEGER,
-    has_coding_assistants INTEGER,
-    has_agentic_ai INTEGER,
-    has_custom_ai INTEGER,
-
-    pct_deployed REAL,
-    pct_high_impact REAL,
-    pct_with_risk_docs REAL,
-
-    year_over_year_growth REAL,
-
-    maturity_tier TEXT,  -- leading, progressing, early, minimal, none
-    notes TEXT,
-
-    updated_at TEXT DEFAULT (datetime('now'))
-);
-
-CREATE INDEX IF NOT EXISTS idx_maturity_tier ON agency_ai_maturity(maturity_tier);
+-- Agency-level scoring: `agency_ai_maturity` is a VIEW over
+-- org_ai_maturity since m023 (single physical maturity table; the agency
+-- pass in scripts/compute_org_maturity.py writes per-agency rows keyed by
+-- each agency's legacy-linked federal_organizations node). The view is
+-- created by the migration; no DDL here.
 
 -- Documents per-agency column mappings
 CREATE TABLE IF NOT EXISTS column_mappings (
@@ -453,6 +424,7 @@ def drop_all():
             "entry_product_edges",
             "inventory_entries",
             "entry_primary_products",
+            "agency_ai_maturity",
         ]:
             conn.execute(f"DROP VIEW IF EXISTS {v}")
         tables = [
@@ -472,7 +444,6 @@ def drop_all():
             "consolidated_use_case_products",
             "use_case_products",
             "use_case_tags",
-            "agency_ai_maturity",
             "use_cases",
             "consolidated_use_cases",
             "product_aliases",

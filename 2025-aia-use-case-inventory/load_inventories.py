@@ -460,7 +460,8 @@ def main():
         conn.execute("DELETE FROM use_case_products")
         conn.execute("DELETE FROM consolidated_use_case_products")
         conn.execute("DELETE FROM use_case_tags")
-        conn.execute("DELETE FROM agency_ai_maturity")
+        # agency_ai_maturity is a VIEW over org_ai_maturity since m023 —
+        # clearing the physical table clears both.
         conn.execute("DELETE FROM org_ai_maturity")
         conn.execute("DELETE FROM column_mappings")
         # m004 OMB consolidated provenance — clear before use_cases since

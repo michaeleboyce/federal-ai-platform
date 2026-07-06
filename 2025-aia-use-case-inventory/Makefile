@@ -153,13 +153,17 @@ fix:
 	python3 scripts/load_ai_policy_tracker.py
 	python3 scripts/seed_federal_hierarchy.py
 	python3 scripts/backfill_bureau_orgs.py
-	python3 compute_maturity.py
+	# Single maturity computation (m023 collapse): agency pass + sub-org
+	# pass, both into org_ai_maturity; the agency_ai_maturity VIEW serves
+	# legacy readers. (compute_maturity.py archived.)
+	python3 scripts/compute_org_maturity.py
 	# 2024↔2025 year-over-year aggregate rollup — populates the tidy
 	# `year_comparison` table (created by migration m010). Phase 2 of the
 	# 2024↔2025 comparison project. Reads use_cases_2024 + use_cases.
 	# Idempotent (wipe-and-reload). No dashboard surface until Phase 5.
 	python3 compute_year_comparison.py
-	python3 scripts/compute_org_maturity.py
+	# (compute_org_maturity.py already ran above; the final re-derive after
+	# all product-link passes happens near the end of the chain.)
 	# NOTE (v1.2): compute_agency_readiness.py moved to the END of this
 	# chain — it reads fedramp_product_links, which are only fully
 	# recovered by the link_fedramp/promote/decisions block far below.
@@ -167,6 +171,12 @@ fix:
 	# general-purpose AI tools. Loads audit/research/ai_access/*.json into
 	# agency_ai_access_evidence (table created by migration m008). Idempotent.
 	python3 scripts/apply_ai_access_evidence.py
+	# Resolve agency_id on every abbreviation-keyed table (m024). MUST run
+	# after all the loads that rewrite those tables (load_inventories,
+	# load_omb_consolidated, load_ai_policy_tracker, apply_ai_access_evidence
+	# above). Fails the build on unresolvable abbreviations outside the
+	# documented exception set.
+	python3 scripts/backfill_agency_fks.py
 	# Researched workforce denominators + FedScope occupational caps for the
 	# seat model. Loads audit/research/agency_workforce/*.json into
 	# agency_workforce_profile + agency_occupation_counts (m013/m017).
@@ -201,7 +211,7 @@ fix:
 	# primary-product cache and the maturity snapshot are re-derived last
 	# (check_refactor_quality asserts cache==edges and maturity==rollups).
 	python3 scripts/refresh_primary_product_cache.py
-	python3 compute_maturity.py
+	python3 scripts/compute_org_maturity.py
 	# auto_tag.py (line 41) sets use_cases.product_id pointing at whatever the
 	# tagger matched. Downstream merge_duplicate_products + cleanup_products
 	# may then delete those products, leaving stale refs. Clean any reverse-

@@ -104,8 +104,19 @@ def insert_node(
     return new_id
 
 
+# Stragglers the abbreviation UPDATE below can't reach: Peace Corps' org
+# node carries no matching abbreviation, and VA-OIG's agencies row (the OIG
+# files a separate inventory) maps to an OFFICE-level node under VA rather
+# than a top-level org. org slug -> agencies.abbreviation.
+SPECIAL_LEGACY_LINKS = {
+    "peacecorps": "Peace Corps",
+    "va-va-oig": "VA-OIG",
+}
+
+
 def link_legacy_agency_ids(conn: sqlite3.Connection) -> int:
-    """For each top-level org, set legacy_agency_id from agencies.abbreviation."""
+    """For each top-level org, set legacy_agency_id from agencies.abbreviation;
+    then apply the explicit slug-keyed special cases."""
     n = conn.execute(
         """
         UPDATE federal_organizations
@@ -120,6 +131,18 @@ def link_legacy_agency_ids(conn: sqlite3.Connection) -> int:
           )
         """
     ).rowcount
+    for slug, abbr in SPECIAL_LEGACY_LINKS.items():
+        n += conn.execute(
+            """
+            UPDATE federal_organizations
+            SET legacy_agency_id = (
+                SELECT a.id FROM agencies a WHERE a.abbreviation = ?
+            )
+            WHERE slug = ?
+              AND EXISTS (SELECT 1 FROM agencies a WHERE a.abbreviation = ?)
+            """,
+            (abbr, slug, abbr),
+        ).rowcount
     return n
 
 
