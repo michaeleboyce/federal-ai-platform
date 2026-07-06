@@ -14,11 +14,11 @@ This directory is the **python ETL + audit + data-pipeline workspace**. Its job 
 | `data/federal_ai_inventory_2025.db` | The canonical SQLite DB. Read by the dashboard. | Only via `make fix` (rebuilds from sources). |
 | `data/raw/` | Per-agency 2025 inventory CSVs/XLSXs from OMB. | Re-running ETL with refreshed source data. |
 | `data/federal_hierarchy_seed.py` | Hand-curated federal organizations tree (departments, sub-agencies, offices). | Adding a missing bureau / sub-agency. |
-| `auto_tag.py`, `compute_maturity.py`, `load_*.py`, `build_lookups.py` | The ETL chain orchestrated by `make fix`. | Changing tag rules, maturity rubric, ingestion. |
+| `auto_tag.py`, `scripts/compute_org_maturity.py`, `load_*.py`, `build_lookups.py` | The ETL chain orchestrated by `make fix`. | Changing tag rules, maturity rubric, ingestion. |
 | `scripts/` | One-off migrations, retag passes, hierarchy backfill, audit-apply scripts. | Specific named tasks (each script has a docstring). |
 | `audit/` | Audit findings, retag rollups (`audit/retag/`), unmapped-bureau research, the article-grade by_agency.md files. | Audit / retag work. |
 | `migrations/` | Additive schema migrations. | Schema changes. |
-| `tests/` | pytest suite (52 tests). | After ETL changes. |
+| `tests/` + `audit/checks/` | pytest suite (~413 checks: unit tests + build-gating DB invariants). | After ETL changes: `python3 -m pytest tests/ audit/checks/ -q`. |
 
 ## The `.claude/skills/` directory
 
@@ -26,6 +26,8 @@ Project-scoped Claude skills live at `.claude/skills/<name>/SKILL.md`. Currently
 
 - **`omb-ai-use-case-inventory`** — Reference for the OMB M-25-21 inventory schema (36 columns, valid values, recoding maps, conditional-required clauses, DB column crosswalk). Auto-triggers when an agent works with the schema, source CSVs, or any retag / load / backfill script.
 - **`inventory-db-model`** — Reference for the DATABASE's own structure post the 2026-07 overhaul (m019–m025): two entry types, edge-only product linkage via `entry_primary_products`, normalized enum columns, the `agency_ai_maturity` compat view, agency FK layer, the omb_only==0 completeness gate, migration/rebuild conventions, and the re-baselining discipline. Auto-triggers on migration authoring, fix-chain edits, check re-baselining, or any script touching the core tables.
+
+Both skills are **mirrored into `dashboard/.claude/skills/`** (the dashboard is its own repo, so its sessions load their own copies). When you edit a skill, `cp` it to the other location in the same change — the copies must stay identical.
 
 ## When you DO need to touch this directory
 
