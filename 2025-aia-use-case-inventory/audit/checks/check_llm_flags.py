@@ -90,3 +90,62 @@ def test_computer_vision_llm_tagged_under_tight_ceiling(conn):
         f"computer_vision rows tagged as LLM = {n} "
         f"(baseline 25, Phase 2 target <=5) - regression suspected"
     )
+
+
+# ---------------------------------------------------------------------------
+# Absolute rebuild-drift bands (2026-07 Phase-0 baseline).
+#
+# The ceilings above catch category-level false positives; these bands catch
+# the other failure mode — auto_tag.py re-broadening (or re-narrowing) a flag
+# wholesale while the Makefile correction chain (retag_llm.py + apply_*
+# scripts, Makefile ~L46-62) silently fails to re-apply. The queries are
+# copied verbatim from scripts/build_article_factsheet.py so the gated number
+# is the same number the article cites.
+
+
+def test_general_llm_access_band(conn):
+    """Headline general-LLM count (distinct individual entries).
+
+    PHASE0 baseline (2026-07-06): 476. Band ±50. If this trips after an
+    intentional retag pass, re-baseline in the same commit as that pass.
+    """
+    n = conn.execute(
+        """SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
+            WHERE is_general_llm_access = 1 AND use_case_id IS NOT NULL"""
+    ).fetchone()[0]
+    assert 426 <= n <= 526, (
+        f"general-LLM distinct individual count = {n} (Phase-0 baseline 476, "
+        "band 426-526) — auto_tag drift or a correction script dropped out "
+        "of the make fix chain"
+    )
+
+
+def test_general_llm_access_total_band(conn):
+    """All is_general_llm_access tag rows (individual + consolidated).
+
+    PHASE0 baseline (2026-07-06): 706. Band ±50.
+    """
+    n = conn.execute(
+        "SELECT SUM(is_general_llm_access) FROM use_case_tags"
+    ).fetchone()[0]
+    assert 656 <= n <= 756, (
+        f"general-LLM total tag rows = {n} (Phase-0 baseline 706, band "
+        "656-756) — auto_tag drift or a correction script dropped out of "
+        "the make fix chain"
+    )
+
+
+def test_agentic_sophistication_band(conn):
+    """Agentic-by-IFP-tag count (fact-sheet query).
+
+    PHASE0 baseline (2026-07-06): 59. Band ±10.
+    """
+    n = conn.execute(
+        """SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
+            WHERE ai_sophistication = 'agentic' AND use_case_id IS NOT NULL"""
+    ).fetchone()[0]
+    assert 49 <= n <= 69, (
+        f"agentic sophistication count = {n} (Phase-0 baseline 59, band "
+        "49-69) — apply_agentic_review/apply_capability_reviews may have "
+        "dropped out of the make fix chain"
+    )

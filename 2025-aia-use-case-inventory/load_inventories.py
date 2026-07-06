@@ -424,9 +424,6 @@ def main():
         # but is rebuilt from the OMB XLSX so we clear it for consistency).
         conn.execute("DELETE FROM use_case_external_evidence")
         conn.execute("DELETE FROM review_queue_products")
-        conn.execute("DELETE FROM review_queue_llm")
-        conn.execute("DELETE FROM review_queue_scope")
-        conn.execute("DELETE FROM review_queue_entry_type")
         conn.execute("DELETE FROM use_case_products")
         conn.execute("DELETE FROM consolidated_use_case_products")
         conn.execute("DELETE FROM use_case_tags")
@@ -506,9 +503,53 @@ def main():
         uc = conn.execute("SELECT COUNT(*) FROM use_cases").fetchone()[0]
         cu = conn.execute("SELECT COUNT(*) FROM consolidated_use_cases").fetchone()[0]
         print(f"use_cases: {uc}, consolidated_use_cases: {cu}")
+
+        # ---- hard gates (2026-07): a broken source file or an unresolved
+        # COTS agency name must fail the build, not vanish into a print.
+        # See audit/checks/check_loader_integrity.py for the DB-side gates.
+        errors = [r for r in results if "error" in r]
+        unknown_agencies: dict = {}
+        for r in results:
+            for name, cnt in (r.get("skipped_unknown_agencies") or {}).items():
+                unknown_agencies[name] = unknown_agencies.get(name, 0) + cnt
+        # Row-level skips (blank primary key / duplicate slug). The 2024
+        # consolidated file is excluded: it is intentionally near-fully
+        # skipped here (headers_mapped 1/62) and loaded by load_2024.py.
+        row_skips = sum(
+            r["skipped"]
+            for r in results
+            if isinstance(r.get("skipped"), int)
+            and r["file"] != "2024_consolidated_ai_inventory_raw_v2.csv"
+        )
+        # PHASE0 observed (2026-07-06): 69 — duplicate slugs within files and
+        # blank-primary-key rows that predate the gate. Margin for trailing
+        # blanks in refreshed source files; tighten if the number drops.
+        MAX_ROW_SKIPS = 80
+        failures = []
+        if errors:
+            failures.append(
+                f"{len(errors)} file(s) failed to load: "
+                + "; ".join(f"{e['file']}: {e['error']}" for e in errors)
+            )
+        if unknown_agencies:
+            failures.append(
+                f"unresolved COTS agency names: {unknown_agencies} "
+                "(add aliases to data/federal_hierarchy_seed.py)"
+            )
+        if row_skips > MAX_ROW_SKIPS:
+            failures.append(
+                f"row skips {row_skips} > bound {MAX_ROW_SKIPS} "
+                "(blank-primary-key or duplicate-slug rows)"
+            )
+        print(f"row skips (excl. 2024 file): {row_skips}")
+        if failures:
+            for msg in failures:
+                print(f"FATAL: {msg}")
+            return 1
     finally:
         conn.close()
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

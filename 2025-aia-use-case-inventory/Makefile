@@ -49,6 +49,13 @@ fix:
 	# re-broadens is_general_llm_access (see auto_tag.py §is_llm for the
 	# Agent B design notes), the final DB state stays within the plan's
 	# intent. See scripts/retag_llm.py.
+	#
+	# INVARIANT (2026-07): every correction script between here and the end
+	# of `fix` MUST stay ordered after auto_tag.py. The rebuilt DB is gated
+	# by absolute bands in audit/checks/check_llm_flags.py (general-LLM
+	# distinct 476±50, total 706±50, agentic 59±10; Phase-0 2026-07-06
+	# baseline); a tripped band means a correction script dropped out of
+	# this chain or auto_tag drifted.
 	python3 scripts/retag_llm.py
 	python3 scripts/apply_retag_audit.py
 	python3 scripts/apply_round2_audit.py
@@ -206,11 +213,9 @@ fix:
 retag-scope:
 	python3 scripts/retag_scope_architecture.py
 
-populate-review-queue-scope:
-	python3 scripts/populate_review_queue_scope.py
-
-adjudicate-review-queue-scope:
-	python3 scripts/review_queue_scope_adjudicate.py
+# (populate/adjudicate-review-queue-scope targets removed 2026-07: the
+# review_queue_scope table was dropped by m021; scripts live in
+# scripts/archive/.)
 
 # Mirror the FedRAMP marketplace into the inventory DB and seed cross-refs.
 # Idempotent — safe to re-run after either DB changes.

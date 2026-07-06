@@ -1,4 +1,7 @@
-"""Recompute `use_cases.stage_normalized` and `ai_classification_normalized`.
+"""Recompute the normalized enum columns on use_cases.
+
+Covers `stage_normalized`, `ai_classification_normalized` (m016) and
+`high_impact_normalized` (m019).
 
 Runs on every `make fix` immediately after `load_2024.py` (the loader
 wipes/re-inserts `use_cases`, so these derived columns must be recomputed
@@ -69,6 +72,32 @@ END
 """
 
 
+# M-25-21 offers three choices; agencies filed ~11 variants plus strays.
+# Order matters: '%presumed%' first (the presumed strings contain
+# "high-impact"), then '%not high-impact%' before the bare '%high-impact%'.
+# "Neither"/"No"/"Low-impact"/"Medium-impact" are non-canonical strays
+# folded into not_high_impact — the filer affirmatively said not
+# high-impact, just not in OMB's words (editorial call documented in m019;
+# the raw column stays rendered "as filed").
+HIGH_IMPACT_SQL = """
+UPDATE use_cases SET high_impact_normalized = CASE
+    WHEN is_high_impact IS NULL OR TRIM(is_high_impact) = ''
+      THEN 'unknown'
+    WHEN LOWER(is_high_impact) LIKE '%presumed%'
+      THEN 'presumed_not_high_impact'
+    WHEN LOWER(is_high_impact) LIKE '%not high-impact%'
+      OR LOWER(TRIM(is_high_impact)) IN ('neither', 'no')
+      OR LOWER(is_high_impact) LIKE '%low-impact%'
+      OR LOWER(is_high_impact) LIKE '%medium-impact%'
+      THEN 'not_high_impact'
+    WHEN LOWER(is_high_impact) LIKE '%high-impact%'
+      OR LOWER(is_high_impact) LIKE '%high impact%'
+      THEN 'high_impact'
+    ELSE 'unknown'
+END
+"""
+
+
 def main() -> int:
     conn = get_connection()
     try:
@@ -76,15 +105,20 @@ def main() -> int:
         with conn:
             conn.execute(STAGE_SQL)
             conn.execute(AI_CLASS_SQL)
+            conn.execute(HIGH_IMPACT_SQL)
         stage = conn.execute(
             "SELECT stage_normalized, COUNT(*) FROM use_cases GROUP BY 1 ORDER BY 2 DESC"
         ).fetchall()
         klass = conn.execute(
             "SELECT ai_classification_normalized, COUNT(*) FROM use_cases GROUP BY 1 ORDER BY 2 DESC"
         ).fetchall()
+        hi = conn.execute(
+            "SELECT high_impact_normalized, COUNT(*) FROM use_cases GROUP BY 1 ORDER BY 2 DESC"
+        ).fetchall()
         print("=== normalize_use_case_fields ===")
         print("stage_normalized:", {r[0]: r[1] for r in stage})
         print("ai_classification_normalized:", {r[0]: r[1] for r in klass})
+        print("high_impact_normalized:", {r[0]: r[1] for r in hi})
         # Blank filings legitimately land in 'unknown' (~290 rows); the guard
         # is for NON-blank variants the CASE failed to bucket.
         unmatched = conn.execute(
@@ -100,6 +134,19 @@ def main() -> int:
             )
             return 1
         print(f"non-blank unmatched stage values: {unmatched}")
+        hi_unmatched = conn.execute(
+            """SELECT COUNT(*) FROM use_cases
+                WHERE high_impact_normalized = 'unknown'
+                  AND TRIM(COALESCE(is_high_impact,'')) != ''"""
+        ).fetchone()[0]
+        if hi_unmatched / max(total, 1) > 0.01:
+            print(
+                f"FATAL: {hi_unmatched} non-blank is_high_impact values failed "
+                "to bucket — a new free-text variant slipped past the CASE; "
+                "extend HIGH_IMPACT_SQL."
+            )
+            return 1
+        print(f"non-blank unmatched high-impact values: {hi_unmatched}")
     finally:
         conn.close()
     return 0

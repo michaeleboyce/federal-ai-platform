@@ -36,8 +36,24 @@ Project-scoped Claude skills live at `.claude/skills/<name>/SKILL.md`. Currently
 After any of those, sync the rebuilt DB into the dashboard:
 ```
 cp data/federal_ai_inventory_2025.db dashboard/data/federal_ai_inventory_2025.db
-cd dashboard && pytest tests/ -q && npm run build
+cd dashboard && npm test && npm run build
 ```
+(The dashboard's test suite is vitest via `npm test` — it has no pytest.)
+
+## Two meanings of "consolidated" — don't conflate
+
+- **`consolidated_use_cases`** (900 rows) — a *parallel entry type*: the
+  COTS/Appendix-B product-capability grid from
+  `cots-2025-ai-inventory-consolidated.xlsx`. NOT a rollup of `use_cases`;
+  unified with it only through the `inventory_entries` /
+  `entry_product_edges` views.
+- **`omb_consolidated_rows`** (+ `omb_match_audit`) — a *mirror* of OMB's
+  government-wide consolidated file of individually-reported use cases
+  (`2025_individually_reported_AI_use_cases.xlsx`), loaded by
+  `load_omb_consolidated.py` purely to reconcile against `use_cases`
+  (match statuses: matched_exact / omb_only / db_only / …).
+
+If a task says "consolidated", determine which of the two it means first.
 
 ## Multi-agent safety: re-resolve IDs before EVERY write, commit, or push
 

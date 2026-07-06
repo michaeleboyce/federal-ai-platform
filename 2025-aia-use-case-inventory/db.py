@@ -141,7 +141,11 @@ CREATE INDEX IF NOT EXISTS idx_use_cases_stage ON use_cases(stage_of_development
 CREATE INDEX IF NOT EXISTS idx_use_cases_high_impact ON use_cases(is_high_impact);
 CREATE INDEX IF NOT EXISTS idx_use_cases_ai_class ON use_cases(ai_classification);
 
--- COTS/Appendix B consolidated use case format
+-- COTS/Appendix B consolidated use case format. NOTE: "consolidated" here
+-- means the Appendix-B product-capability grid (a parallel entry type) —
+-- NOT OMB's consolidated file of individually-reported use cases, which
+-- lives in omb_consolidated_rows. See CLAUDE.md "Two meanings of
+-- 'consolidated'".
 CREATE TABLE IF NOT EXISTS consolidated_use_cases (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     agency_id INTEGER NOT NULL REFERENCES agencies(id),
@@ -378,21 +382,8 @@ CREATE TABLE IF NOT EXISTS fedramp_product_links (
 CREATE INDEX IF NOT EXISTS idx_fpl_inv ON fedramp_product_links(inventory_product_id);
 CREATE INDEX IF NOT EXISTS idx_fpl_fr  ON fedramp_product_links(fedramp_id);
 
--- Structured research provenance for fedramp_product_links rows.
-CREATE TABLE IF NOT EXISTS fedramp_link_evidence (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    link_id INTEGER NOT NULL REFERENCES fedramp_product_links(id) ON DELETE CASCADE,
-    source_type TEXT NOT NULL,         -- 'vendor_announcement' | 'platform_doc' | 'press_release' | 'gov_announcement' | 'compliance_page' | 'analyst_note'
-    source_url TEXT NOT NULL,
-    source_title TEXT NOT NULL,
-    publisher TEXT,                    -- e.g., 'Anthropic', 'Microsoft Tech Community', 'AWS Public Sector Blog', 'GSA'
-    publication_date TEXT,             -- ISO date string when known
-    excerpt TEXT,                      -- short quote justifying the link (<=400 chars)
-    accessed_at TEXT NOT NULL DEFAULT (date('now')),
-    created_at TEXT NOT NULL DEFAULT (datetime('now'))
-);
-CREATE INDEX IF NOT EXISTS idx_fle_link ON fedramp_link_evidence(link_id);
-CREATE INDEX IF NOT EXISTS idx_fle_source_type ON fedramp_link_evidence(source_type);
+-- fedramp_link_evidence was dropped by m021 (never written to; link
+-- evidence lives on the link rows and in audit/ artifacts instead).
 
 CREATE TABLE IF NOT EXISTS fedramp_agency_links (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -457,13 +448,17 @@ def drop_all():
     """Drop all tables. Use with caution."""
     conn = get_connection()
     try:
-        for v in ["agency_rollups", "entry_product_edges", "inventory_entries"]:
+        for v in [
+            "agency_rollups",
+            "entry_product_edges",
+            "inventory_entries",
+            "entry_primary_products",
+        ]:
             conn.execute(f"DROP VIEW IF EXISTS {v}")
         tables = [
             "schema_migrations",
             "fedramp_link_queue",
             "fedramp_agency_links",
-            "fedramp_link_evidence",
             "fedramp_product_links",
             "fedramp_snapshot",
             "fedramp_assessors",
@@ -473,9 +468,6 @@ def drop_all():
             "org_ai_maturity",
             "federal_organizations",
             "use_case_external_evidence",
-            "review_queue_entry_type",
-            "review_queue_scope",
-            "review_queue_llm",
             "review_queue_products",
             "consolidated_use_case_products",
             "use_case_products",
