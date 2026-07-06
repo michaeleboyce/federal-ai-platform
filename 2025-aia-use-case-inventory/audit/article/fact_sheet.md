@@ -1,6 +1,6 @@
 # Article fact sheet — 2025 Federal AI Use Case Inventory (IFP tags)
 
-_Generated: 2026-06-10 by `scripts/build_article_factsheet.py`. Re-run after any `make fix`._
+_Generated: 2026-07-06 by `scripts/build_article_factsheet.py`. Re-run after any `make fix`._
 
 Every number below is produced by the SQL shown with it, against
 `data/federal_ai_inventory_2025.db`. Caveats marked ⚠ MUST travel with
@@ -40,7 +40,7 @@ SELECT COUNT(*) FROM use_cases
 
 ### GenAI by IFP tag (2025)
 
-**999**
+**937**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -59,7 +59,7 @@ SELECT COUNT(*) FROM use_case_tags_2024_canonical
 
 ### General-purpose LLM access entries (2025)
 
-**803**
+**476**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -67,9 +67,9 @@ SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
 ```
 - ⚠ Definition: staff can submit arbitrary prompts, internal-work approved, broadly available — not single-workflow integrations. Low-confidence heuristic flips were re-adjudicated row-by-row in audit/retag/general_llm_round3/.
 
-### Agencies with enterprise-wide GenAI: 21 (2024) → 21 (2025)
+### Agencies with enterprise-wide GenAI: 21 (2024) → 20 (2025)
 
-**21 → 21**
+**21 → 20**
 
 ```sql
 SELECT COUNT(DISTINCT u.agency_id)
@@ -84,7 +84,7 @@ SELECT COUNT(DISTINCT u.agency_id)
 - ⚠ The 2025 figure includes the web-verified scope corrections (StateChat, VA GPT, DHSChat, Ask Dottie...) restored by apply_retag_audit.py. Earlier drafts said 15→12; that was an artifact of the corrections not being applied — do not reuse it.
 - ⚠ Tag-row counts (not agency counts) concentrate heavily in HHS; always pair a row count with the agency count.
 
-Enterprise-wide GenAI agencies (2025): DHS, DOC, DOE, DOJ, DOT, ED, FERC, FRTIB, FTC, GSA, HHS, HUD, NARA, NASA, NRC, NTSB, OPM, SEC, SSA, State, VA
+Enterprise-wide GenAI agencies (2025): DHS, DOC, DOE, DOJ, DOT, ED, FDIC, FERC, FRTIB, FTC, GSA, HHS, HUD, NARA, NASA, NRC, OPM, SSA, State, VA
 
 ## 2. Pillar — coding assistance: present but mostly pre-deployment
 
@@ -170,7 +170,7 @@ SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
 
 ### Rows with UNKNOWN architecture_type
 
-**2440**
+**2559**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -203,9 +203,9 @@ SELECT COUNT(*) FROM use_cases
 
 ## 5. Cross-year capacity (2024 → 2025)
 
-### Deployed GenAI use cases: 200 (2024) → 327 (2025)
+### Deployed GenAI use cases: 200 (2024) → 263 (2025)
 
-**200 → 327**
+**200 → 263**
 
 ```sql
 SELECT COUNT(DISTINCT u.id)
@@ -232,7 +232,7 @@ SELECT COUNT(DISTINCT u.id)
 
 ### Net-new GenAI capabilities introduced in 2025
 
-**643**
+**681**
 
 ```sql
 SELECT COUNT(DISTINCT l.uc_2025_id)
