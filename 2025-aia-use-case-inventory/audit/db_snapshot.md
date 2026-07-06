@@ -6,16 +6,16 @@ Generated from `data/federal_ai_inventory_2025.db`.
 
 - tracked_agencies: 68
 - loaded_agencies: 55
-- individual_entries: 3549
-- consolidated_entries: 900
-- inventory_entries: 4449
+- individual_entries: 3660
+- consolidated_entries: 901
+- inventory_entries: 4561
 - canonical_products: 658
 - commercial_products: 653
 - agency_internal_products: 5
-- product_edges: 2049
-- linked_entries: 1547
+- product_edges: 2234
+- linked_entries: 1617
 - distinct_linked_products: 609
-- pending_product_reviews: 31
+- pending_product_reviews: 93
 - templates: 22
 - maturity_rows: 55
 
