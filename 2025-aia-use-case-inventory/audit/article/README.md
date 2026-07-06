@@ -1,0 +1,60 @@
+# audit/article/ — the article fact base
+
+Everything the IFP article cites lives here, under one discipline:
+**every number has SQL, every external fact has a date, and flagship
+claims are pinned by tests** so a data refresh fails `make check` instead
+of silently stranding the prose.
+
+## Files
+
+| File | Maintained by | Rules |
+|---|---|---|
+| `fact_sheet.md` | **§0–6 machine-generated** by `scripts/build_article_factsheet.py`; **§7+ hand-authored** | NEVER hand-edit §0–6 (regeneration overwrites them — edit the generator instead). §7+ survives regeneration via the `\n## 7.` marker; keep that heading format or the preservation logic breaks. |
+| `fedramp_section_draft.md` | hand-authored | Drop-in prose for the article's FedRAMP section. Numbers mirror `fact_sheet.md` §7 and are pinned by `audit/checks/check_fedramp_fact_sheet.py` — update all three together when a snapshot refreshes. |
+| `drafts/` | snapshots | Dated, verbatim snapshots of the article drafts (canonical copies live outside the repo). Never revise a snapshot in place — add a new dated one. Each carries a provenance header. |
+| `claims_review_*.md` | point-in-time reviews | One file per review, date in the filename. Never edited after the fact — a later review gets a NEW file, so the record of when each thing was known stays intact. |
+
+## Regeneration
+
+```
+python3 scripts/build_article_factsheet.py   # after every `make fix`
+```
+
+The sheet is deterministic given the same DB except the "Generated" line.
+
+## Pinning
+
+Flagship numbers are enforced under `audit/checks/` (collected by
+`make check` / `pytest tests/ audit/checks/ -q`):
+
+- `check_article_guardrails.py` — the "must NOT say" list (master copy:
+  `audit/retag/TODO.md` §3) plus pinned flagship corrections (e.g. the
+  Claude Code single-mention claim, signature-keyed — never by rowid;
+  ids rotate on rebuild).
+- `check_fedramp_fact_sheet.py` — every §7 number, with the marketplace
+  snapshot date in the docstring.
+
+When a pin fails after a legitimate data refresh: update the fact sheet,
+the drop-in draft, and the pin **in the same change**, and record the new
+as-of dates.
+
+## Dating convention — three kinds of dates, all required
+
+1. **Event dates** inside the claim itself: "authorized 2026-01-09",
+   "cease-use directive 2026-02-27".
+2. **As-of / verification dates** on every externally sourced fact:
+   "re-checked live on fedramp.gov 2026-07-03", "URL fetch-verified
+   2026-07-05".
+3. **Snapshot / generation dates** on every DB-derived fact: the
+   marketplace snapshot (2026-06-12 as of this writing), the fact
+   sheet's "Generated" line.
+
+Point-in-time documents carry the date in the filename
+(`claims_review_2026-07-06.md`); git history backs all of it.
+
+## Supersession rule
+
+A deprecated number is never silently deleted — it gets an explicit
+"do not reuse" note stating what replaced it and why (model: the fact
+sheet's warning against the 15→12 enterprise-GenAI artifact). This is
+what prevents a stale figure from being resurrected out of an old draft.

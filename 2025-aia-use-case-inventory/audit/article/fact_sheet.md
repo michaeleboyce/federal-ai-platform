@@ -108,6 +108,24 @@ SELECT COUNT(DISTINCT consolidated_use_case_id) FROM use_case_tags
 ```
 - ⚠ These are agencies checking the 'Generating code using AI' template line — mostly M365 Copilot's incidental code-chat. NOT managed coding-tool deployments.
 
+### 'Claude Code' mentions across the whole corpus (2025)
+
+**1**
+
+```sql
+SELECT
+  (SELECT COUNT(*) FROM use_cases WHERE lower(
+     COALESCE(use_case_name,'') || ' ' || COALESCE(problem_statement,'') || ' ' ||
+     COALESCE(expected_benefits,'') || ' ' || COALESCE(system_outputs,'') || ' ' ||
+     COALESCE(system_name,'') || ' ' || COALESCE(vendor_name,'') || ' ' ||
+     COALESCE(raw_json,'')) LIKE '%claude code%')
++ (SELECT COUNT(*) FROM consolidated_use_cases WHERE lower(
+     COALESCE(ai_use_case,'') || ' ' || COALESCE(commercial_product,'') || ' ' ||
+     COALESCE(commercial_examples,'') || ' ' || COALESCE(raw_json,'')) LIKE '%claude code%')
+```
+- ⚠ The single hit is DOI's Appendix-B 'Generating code using AI.' template row (commercial_product field) — a checkbox listing, not a managed deployment (guardrail 5). Pinned by check_article_guardrails.py; a source reload that moves it fails `make check`.
+- ⚠ 11 individual use cases mention 'Claude' in any form — see claims_review_2026-07-06.md §1 for the list; date-stamp all Claude framings against the 2026-02-27 Anthropic cease-use directive (guardrail 6).
+
 ### Coding-assistant use cases (2024)
 
 **31**
@@ -261,9 +279,12 @@ SELECT COUNT(DISTINCT l.uc_2024_id)
 (Enforced where machine-checkable by `audit/checks/`; full list in
 `audit/retag/TODO.md` §3.)
 
-1. Do NOT cite `agency_ai_maturity.has_enterprise_llm` — wrong in both
-   directions (false positives from Appendix-B checkboxes; false
-   negatives for State, VA, DOJ, DOI, DOT).
+1. `agency_ai_maturity.has_enterprise_llm` — RESOLVED 2026-07-06: cured
+   upstream (individual-rows-only rule, scope corrections, omb_only
+   ingest; audit/retag/TODO.md §3). Safe to cite as "enterprise-wide
+   general-LLM access, individually-filed evidence". One definitional
+   split remains: PBGC has enterprise general-LLM access but no
+   GenAI-flagged enterprise row; FERC the reverse.
 2. Do NOT credit GSA USAi.gov as a data-analysis environment — it is a
    chat/model-evaluation sandbox.
 3. Do NOT infer broad analyst access from a Palantir contract (DHS $1B
@@ -275,7 +296,12 @@ SELECT COUNT(DISTINCT l.uc_2024_id)
 6. Press-verification still owed before naming: DOJ-wide GitHub Copilot
    (no public corroboration), VA OIG Jan-2026 PHI advisory (cite with
    any VA-positive framing), Anthropic federal ban Feb-2026 (date-stamp
-   HHS Claude claims), DHS commercial-AI revocation (counter-trend).
+   HHS Claude claims), DHS commercial-AI revocation (counter-trend),
+   the 'DHS/DoW have adopted Claude Code' anecdote (no public source;
+   DoD/DoW filed no 2025 individual inventory, so the data cannot
+   corroborate or refute it), and the 'decade compressed into two
+   years' adoption-speed comparison (needs an external historical
+   baseline — cloud/PC/email federal adoption curves).
 
 ## 7. FedRAMP — authorization vs adoption
 

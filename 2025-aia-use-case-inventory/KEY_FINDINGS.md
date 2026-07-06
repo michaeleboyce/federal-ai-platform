@@ -1,5 +1,16 @@
 # Federal AI Inventory 2025 — Key Findings
 
+> ⚠ **DEPRECATED 2026-07-06 — do not cite anything below.** These numbers
+> predate the retag/maturity corrections and the 2026-07 data-quality
+> overhaul (current totals: 3,660 individual + 901 consolidated; the
+> 15-agency "enterprise LLM access" list below is the pre-correction
+> artifact the corrected data superseded — the current list is 24
+> agencies). The citable source is **`audit/article/fact_sheet.md`**
+> (regenerated after every `make fix`, numbers pinned by
+> `audit/checks/`); claim-by-claim status lives in
+> `audit/article/claims_review_2026-07-06.md`. This file is kept only as
+> a historical record of the first-pass findings.
+
 Generated from the SQLite database: `data/federal_ai_inventory_2025.db`
 
 Total: **3,617 individual + 192 consolidated = 3,809 use case entries** across 44 agencies.

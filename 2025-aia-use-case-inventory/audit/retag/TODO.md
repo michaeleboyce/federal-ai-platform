@@ -23,6 +23,8 @@ The DB was **not modified**; all corrections live in CSVs awaiting an apply pass
 - [ ] **DHS commercial-AI revocation** — DHS cut off ChatGPT and other commercial AI to consolidate on DHSChat. Note as a counter-trend to OneGov-driven federal expansion. Source: FedScoop.
 - [ ] **State StateChat in promotion-panel selection** — documented decision-impact use, worth at least one sentence.
 - [ ] **DOI "Iris"** — referenced in earlier internal notes; not surfaced in DB or web. Either drop the reference or chase it with DOI directly.
+- [ ] **"DHS / DoW have adopted Claude Code" anecdote (added 2026-07-06)** — the current draft (`audit/article/drafts/2026-07-06-adoption-article-draft.md`) says "we have heard tell". No public source. The data cannot corroborate OR refute: DoD/DoW filed no 2025 individual inventory (§5 below), and DHS's filings show custom GenAI coding assistants, not Claude Code. Source it or hedge it explicitly before publishing. See `audit/article/claims_review_2026-07-06.md` §4.
+- [ ] **"Compressed a normally decade-long process into a couple of years" (added 2026-07-06)** — the DB gives the AI-side slope (GenAI 527→1,005 YoY; enterprise-wide GenAI 21→24 agencies) but the comparison needs an external historical baseline (federal cloud / PC / email adoption curves). Find one or soften to a directional claim.
 
 ## 3. Things the article must NOT say
 

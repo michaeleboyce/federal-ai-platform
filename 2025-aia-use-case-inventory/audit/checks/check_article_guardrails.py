@@ -140,3 +140,54 @@ def test_agentic_tag_within_sanity_band(conn):
         f"ai_sophistication='agentic' on {ifp} rows — the agentic review "
         "verdicts (audit/retag/agentic_review/) are not being applied."
     )
+
+
+# Full-row scan fragments shared by the Claude Code pin below. raw_json
+# carries every source column verbatim, so text-columns + raw_json is a
+# complete scan of what the agency filed. Hand-synced with the §2 query in
+# scripts/build_article_factsheet.py — change both together.
+_UC_BLOB = """lower(
+     COALESCE(use_case_name,'') || ' ' || COALESCE(problem_statement,'') || ' ' ||
+     COALESCE(expected_benefits,'') || ' ' || COALESCE(system_outputs,'') || ' ' ||
+     COALESCE(system_name,'') || ' ' || COALESCE(vendor_name,'') || ' ' ||
+     COALESCE(raw_json,''))"""
+_CUC_BLOB = """lower(
+     COALESCE(ai_use_case,'') || ' ' || COALESCE(commercial_product,'') || ' ' ||
+     COALESCE(commercial_examples,'') || ' ' || COALESCE(raw_json,''))"""
+
+
+def test_claude_code_appears_exactly_once(conn):
+    """Flagship article claim (claims_review_2026-07-06.md §1): 'Claude Code'
+    appears EXACTLY once across both entry types — DOI's Appendix-B
+    'Generating code using AI.' template row, in the commercial_product
+    listing. The article leans on this number; a source reload or retag that
+    changes it must fail loudly so the prose gets re-verified, not silently
+    stranded. Resolved by signature (agency + template line + product text),
+    never by rowid — ids rotate on every rebuild."""
+    n_uc = conn.execute(
+        f"SELECT COUNT(*) FROM use_cases WHERE {_UC_BLOB} LIKE '%claude code%'"
+    ).fetchone()[0]
+    n_cuc = conn.execute(
+        f"SELECT COUNT(*) FROM consolidated_use_cases WHERE {_CUC_BLOB} LIKE '%claude code%'"
+    ).fetchone()[0]
+    assert (n_uc, n_cuc) == (0, 1), (
+        f"'Claude Code' corpus count moved: {n_uc} individual + {n_cuc} "
+        "consolidated (pinned 0 + 1). Re-verify the article's single-mention "
+        "claim and update claims_review + fact_sheet §2 together."
+    )
+    sig = conn.execute(
+        """SELECT a.abbreviation, c.ai_use_case
+             FROM consolidated_use_cases c JOIN agencies a ON a.id = c.agency_id
+            WHERE lower(
+                  COALESCE(c.ai_use_case,'') || ' ' ||
+                  COALESCE(c.commercial_product,'') || ' ' ||
+                  COALESCE(c.commercial_examples,'') || ' ' ||
+                  COALESCE(c.raw_json,'')) LIKE '%claude code%'"""
+    ).fetchone()
+    assert sig is not None and sig[0] == "DOI" and sig[1].startswith(
+        "Generating code"
+    ), (
+        f"The single 'Claude Code' hit moved to {sig!r} — expected DOI's "
+        "'Generating code using AI.' Appendix-B row. Update the article "
+        "claim before re-pinning."
+    )

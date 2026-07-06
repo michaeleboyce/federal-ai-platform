@@ -156,6 +156,35 @@ def main() -> int:
           "line — mostly M365 Copilot's incidental code-chat. NOT managed "
           "coding-tool deployments."])
 
+    # Flagship article claim, pinned by audit/checks/check_article_guardrails
+    # .py::test_claude_code_appears_exactly_once. raw_json carries every
+    # source column verbatim, so scanning it + the narrative columns is a
+    # full-row scan.
+    sql_claude_code = """SELECT
+  (SELECT COUNT(*) FROM use_cases WHERE lower(
+     COALESCE(use_case_name,'') || ' ' || COALESCE(problem_statement,'') || ' ' ||
+     COALESCE(expected_benefits,'') || ' ' || COALESCE(system_outputs,'') || ' ' ||
+     COALESCE(system_name,'') || ' ' || COALESCE(vendor_name,'') || ' ' ||
+     COALESCE(raw_json,'')) LIKE '%claude code%')
++ (SELECT COUNT(*) FROM consolidated_use_cases WHERE lower(
+     COALESCE(ai_use_case,'') || ' ' || COALESCE(commercial_product,'') || ' ' ||
+     COALESCE(commercial_examples,'') || ' ' || COALESCE(raw_json,'')) LIKE '%claude code%')"""
+    n_claude_any = q1("""SELECT COUNT(*) FROM use_cases WHERE lower(
+     COALESCE(use_case_name,'') || ' ' || COALESCE(problem_statement,'') || ' ' ||
+     COALESCE(expected_benefits,'') || ' ' || COALESCE(system_outputs,'') || ' ' ||
+     COALESCE(system_name,'') || ' ' || COALESCE(vendor_name,'')) LIKE '%claude%'""")
+    fact("'Claude Code' mentions across the whole corpus (2025)",
+         q1(sql_claude_code), sql_claude_code,
+         ["The single hit is DOI's Appendix-B 'Generating code using AI.' "
+          "template row (commercial_product field) — a checkbox listing, not "
+          "a managed deployment (guardrail 5). Pinned by "
+          "check_article_guardrails.py; a source reload that moves it fails "
+          "`make check`.",
+          f"{n_claude_any} individual use cases mention 'Claude' in any form "
+          "— see claims_review_2026-07-06.md §1 for the list; date-stamp all "
+          "Claude framings against the 2026-02-27 Anthropic cease-use "
+          "directive (guardrail 6)."])
+
     sql_coding24 = """SELECT COUNT(*) FROM use_case_tags_2024_canonical
  WHERE is_coding_tool = 1"""
     fact("Coding-assistant use cases (2024)", q1(sql_coding24), sql_coding24)
@@ -263,9 +292,12 @@ def main() -> int:
     w("(Enforced where machine-checkable by `audit/checks/`; full list in")
     w("`audit/retag/TODO.md` §3.)")
     w("")
-    w("1. Do NOT cite `agency_ai_maturity.has_enterprise_llm` — wrong in both")
-    w("   directions (false positives from Appendix-B checkboxes; false")
-    w("   negatives for State, VA, DOJ, DOI, DOT).")
+    w("1. `agency_ai_maturity.has_enterprise_llm` — RESOLVED 2026-07-06: cured")
+    w("   upstream (individual-rows-only rule, scope corrections, omb_only")
+    w("   ingest; audit/retag/TODO.md §3). Safe to cite as \"enterprise-wide")
+    w("   general-LLM access, individually-filed evidence\". One definitional")
+    w("   split remains: PBGC has enterprise general-LLM access but no")
+    w("   GenAI-flagged enterprise row; FERC the reverse.")
     w("2. Do NOT credit GSA USAi.gov as a data-analysis environment — it is a")
     w("   chat/model-evaluation sandbox.")
     w("3. Do NOT infer broad analyst access from a Palantir contract (DHS $1B")
@@ -277,7 +309,12 @@ def main() -> int:
     w("6. Press-verification still owed before naming: DOJ-wide GitHub Copilot")
     w("   (no public corroboration), VA OIG Jan-2026 PHI advisory (cite with")
     w("   any VA-positive framing), Anthropic federal ban Feb-2026 (date-stamp")
-    w("   HHS Claude claims), DHS commercial-AI revocation (counter-trend).")
+    w("   HHS Claude claims), DHS commercial-AI revocation (counter-trend),")
+    w("   the 'DHS/DoW have adopted Claude Code' anecdote (no public source;")
+    w("   DoD/DoW filed no 2025 individual inventory, so the data cannot")
+    w("   corroborate or refute it), and the 'decade compressed into two")
+    w("   years' adoption-speed comparison (needs an external historical")
+    w("   baseline — cloud/PC/email federal adoption curves).")
     w("")
 
     # Preserve hand-authored trailing sections (## 7. onward — the FedRAMP
