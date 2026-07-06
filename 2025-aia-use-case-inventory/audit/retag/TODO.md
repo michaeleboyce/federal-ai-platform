@@ -26,9 +26,18 @@ The DB was **not modified**; all corrections live in CSVs awaiting an apply pass
 
 ## 3. Things the article must NOT say
 
-- [ ] Do not cite `agency_ai_maturity.has_enterprise_llm` or its sibling counters. Both directions are wrong.
-  - False positives: FCC, PBGC, EAC, OSC, CSOSA, USTDA, NLRB (driven solely by checking "Y" on the OMB Appendix B Microsoft Copilot template line).
-  - False negatives: State, VA, DOJ, DOI, DOT (real enterprise LLMs that the maturity table missed).
+- [x] ~~Do not cite `agency_ai_maturity.has_enterprise_llm` or its sibling counters. Both directions are wrong.~~
+  **RESOLVED 2026-07-06** — the flag was cured upstream, not retired:
+  the individual-rows-only rule in the maturity computation removed the
+  Appendix-B checkbox false positives (FCC, CSOSA, USTDA, NLRB now 0),
+  the web-verified scope corrections restored the false negatives
+  (State, VA, DOJ, DOT now 1), and the omb_only ingest supplied the
+  narrative evidence for PBGC/EAC/OSC (now legitimately 1). Verified:
+  the flag's 24-agency list matches the corrected enterprise-GenAI list
+  except one definitional split (PBGC has enterprise general-LLM access
+  but no GenAI-flagged enterprise row; FERC the reverse). Safe to cite
+  as "enterprise-wide general-LLM access, individually-filed evidence".
+  Historical false-positive/negative lists preserved above in git history.
 - [ ] Do not credit GSA USAi.gov as a data-analysis environment. It is a chat / model-evaluation sandbox.
 - [ ] Do not infer broad analyst access from a Palantir contract. DHS $1B BPA and USDA $300M NFSAP are operational case-management platforms with narrow power-user populations.
 - [ ] Do not assert that a financial regulator (SEC, FRB, FDIC, NCUA, CFTC, CFPB) lacks an analytic platform. The 2025 inventory just doesn't surface their stack.
