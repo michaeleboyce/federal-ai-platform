@@ -43,8 +43,7 @@ def _bootstrap(conn: sqlite3.Connection) -> None:
             agency_id INTEGER NOT NULL REFERENCES agencies(id),
             slug TEXT UNIQUE,
             ai_use_case TEXT NOT NULL,
-            commercial_product TEXT,
-            product_id INTEGER REFERENCES products(id)
+            commercial_product TEXT
         );
         CREATE TABLE consolidated_use_case_products (
             consolidated_use_case_id INTEGER NOT NULL
@@ -55,8 +54,7 @@ def _bootstrap(conn: sqlite3.Connection) -> None:
             PRIMARY KEY (consolidated_use_case_id, product_id)
         );
         CREATE TABLE use_cases (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            product_id INTEGER REFERENCES products(id)
+            id INTEGER PRIMARY KEY AUTOINCREMENT
         );
         CREATE TABLE use_case_products (
             use_case_id INTEGER NOT NULL REFERENCES use_cases(id),
@@ -143,11 +141,8 @@ def test_opm_row_linked_to_cli_by_slug(conn):
         (opm_id,),
     ).fetchall()
     assert [r[0] for r in junction] == [cli_id]
-
-    fk = conn.execute(
-        "SELECT product_id FROM consolidated_use_cases WHERE id = ?", (opm_id,)
-    ).fetchone()[0]
-    assert fk == cli_id
+    # (The scalar consolidated_use_cases.product_id cache was dropped by
+    # m025 — the junction row above IS the linkage.)
 
 
 def test_cli_aliases_present(conn):

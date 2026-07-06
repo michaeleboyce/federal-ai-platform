@@ -80,14 +80,18 @@ def main():
         products_dict = load_products(conn)
 
         # Walk every tag row with a matching use_case; recompute flag.
+        # Primary product via the m020 view (the scalar u.product_id cache
+        # was dropped by m025); same strong-first ordering auto_tag used.
         rows = conn.execute(
             """
             SELECT t.id as tag_id, t.use_case_id, t.is_general_llm_access,
                    u.ai_classification, u.vendor_name, u.use_case_name,
                    u.problem_statement, u.development_type, u.system_name,
-                   u.product_id
+                   epp.product_id AS product_id
             FROM use_case_tags t
             JOIN use_cases u ON u.id = t.use_case_id
+            LEFT JOIN entry_primary_products epp
+              ON epp.entry_kind = 'use_case' AND epp.entry_id = u.id
             """
         ).fetchall()
 

@@ -152,15 +152,8 @@ def delete_redundant(conn) -> dict:
         stats["deleted_links"] += conn.execute(
             "DELETE FROM use_case_products WHERE product_id = ?", (pid,)
         ).rowcount
-        # Null-out legacy use_cases.product_id pointers.
-        stats["deleted_use_case_pointers"] += conn.execute(
-            "UPDATE use_cases SET product_id = NULL WHERE product_id = ?", (pid,)
-        ).rowcount
-        # And consolidated_use_cases.
-        conn.execute(
-            "UPDATE consolidated_use_cases SET product_id = NULL WHERE product_id = ?",
-            (pid,),
-        )
+        # (Scalar product_id cache columns dropped by m025 — deleting the
+        # edge rows above fully unlinks the product.)
         stats["deleted_products"] += conn.execute(
             "DELETE FROM products WHERE id = ?", (pid,)
         ).rowcount

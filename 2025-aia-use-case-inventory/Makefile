@@ -210,7 +210,8 @@ fix:
 	# FINAL consistency pass: every product step above can move edges, so the
 	# primary-product cache and the maturity snapshot are re-derived last
 	# (check_refactor_quality asserts cache==edges and maturity==rollups).
-	python3 scripts/refresh_primary_product_cache.py
+	# (refresh_primary_product_cache.py retired with the m025 column drop —
+	# the entry_primary_products view is edge-derived by definition.)
 	python3 scripts/compute_org_maturity.py
 	# auto_tag.py (line 41) sets use_cases.product_id pointing at whatever the
 	# tagger matched. Downstream merge_duplicate_products + cleanup_products

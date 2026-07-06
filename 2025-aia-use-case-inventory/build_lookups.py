@@ -555,9 +555,8 @@ TEMPLATES = [
 def seed_products():
     conn = get_connection()
     try:
-        # Clear — null references first so FKs don't block the re-seed.
-        conn.execute("UPDATE use_cases SET product_id = NULL")
-        conn.execute("UPDATE consolidated_use_cases SET product_id = NULL")
+        # Clear. (The scalar product_id cache columns were dropped by m025;
+        # the edge tables below are the only product references now.)
         conn.execute("DELETE FROM use_case_products")
         conn.execute("DELETE FROM consolidated_use_case_products")
         conn.execute("DELETE FROM fedramp_product_links")
@@ -605,12 +604,10 @@ def seed_products():
 def seed_templates():
     conn = get_connection()
     try:
-        # use_cases.template_id and consolidated_use_cases.template_id reference
-        # use_case_templates(id) — null them out so the destructive reseed below
-        # doesn't trip an FK constraint. The post-seed populate step
-        # (scripts/populate_use_case_products.py + auto_tag.py) re-resolves
-        # template_id by template_text match.
-        conn.execute("UPDATE use_cases SET template_id = NULL")
+        # consolidated_use_cases.template_id references use_case_templates(id)
+        # — null it so the destructive reseed below doesn't trip an FK
+        # constraint. auto_tag.py re-resolves it by template_text match.
+        # (use_cases.template_id was dropped by m025.)
         conn.execute("UPDATE consolidated_use_cases SET template_id = NULL")
         conn.execute("DELETE FROM use_case_templates")
         for row in TEMPLATES:

@@ -247,20 +247,25 @@ def source_tag_summary(conn, table_name: str, source_file: str) -> dict[str, Any
 
 def top_products_and_templates(conn, table_name: str, source_file: str) -> dict[str, dict[str, int]]:
     id_field = "use_case_id" if table_name == "use_cases" else "consolidated_use_case_id"
+    # Primary product via the m020 view (scalar caches dropped by m025);
+    # templates exist only on consolidated rows.
     if table_name == "use_cases":
         source_table = "use_cases"
         source_name = "use_case_name"
-        product_source_col = "u.product_id"
-        template_source_col = "u.template_id"
+        entry_kind = "use_case"
+        template_source_col = "NULL"
     else:
         source_table = "consolidated_use_cases"
         source_name = "u.ai_use_case"
-        product_source_col = "u.product_id"
+        entry_kind = "consolidated"
         template_source_col = "u.template_id"
+    product_source_col = "epp.product_id"
 
     product_query = f"""
     SELECT COALESCE(p.canonical_name, '<blank>') AS key, COUNT(*) AS n
     FROM {source_table} u
+    LEFT JOIN entry_primary_products epp
+      ON epp.entry_kind = '{entry_kind}' AND epp.entry_id = u.id
     LEFT JOIN products p ON p.id = {product_source_col}
     WHERE u.source_file = ?
     GROUP BY 1
@@ -321,7 +326,9 @@ def suspect_rows(conn, table_name: str, source_file: str, limit: int = 25) -> li
           END AS suspect_reason
         FROM use_cases u
         LEFT JOIN use_case_tags t ON {join_col}
-        LEFT JOIN products p ON p.id = u.product_id
+        LEFT JOIN entry_primary_products epp
+          ON epp.entry_kind = 'use_case' AND epp.entry_id = u.id
+        LEFT JOIN products p ON p.id = epp.product_id
         WHERE u.source_file = ?
           AND (
             t.id IS NULL
@@ -362,7 +369,9 @@ def suspect_rows(conn, table_name: str, source_file: str, limit: int = 25) -> li
           END AS suspect_reason
         FROM consolidated_use_cases u
         LEFT JOIN use_case_tags t ON {join_col}
-        LEFT JOIN products p ON p.id = u.product_id
+        LEFT JOIN entry_primary_products epp
+          ON epp.entry_kind = 'consolidated' AND epp.entry_id = u.id
+        LEFT JOIN products p ON p.id = epp.product_id
         WHERE u.source_file = ?
           AND (
             t.id IS NULL

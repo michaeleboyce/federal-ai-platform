@@ -803,11 +803,9 @@ def run():
                     """,
                     (r["id"], pid, evidence, confidence),
                 )
-            # Update source table with product_id and template_id
-            conn.execute(
-                "UPDATE use_cases SET product_id = ?, template_id = ? WHERE id = ?",
-                (tags["product_id"], tags["template_id"], r["id"]),
-            )
+            # (The scalar use_cases.product_id/template_id cache columns were
+            # dropped by m025 — the edge insert above is the only linkage;
+            # primary product resolves via the entry_primary_products view.)
             individual_count += 1
 
         # Tag consolidated use cases
@@ -828,9 +826,11 @@ def run():
                 f"INSERT INTO use_case_tags ({','.join(cols)}) VALUES ({placeholders})",
                 values,
             )
+            # template_id is a live consolidated-only column (m025 kept it);
+            # the scalar product_id cache was dropped.
             conn.execute(
-                "UPDATE consolidated_use_cases SET product_id = ?, template_id = ? WHERE id = ?",
-                (tags["product_id"], tags["template_id"], r["id"]),
+                "UPDATE consolidated_use_cases SET template_id = ? WHERE id = ?",
+                (tags["template_id"], r["id"]),
             )
             consolidated_count += 1
 

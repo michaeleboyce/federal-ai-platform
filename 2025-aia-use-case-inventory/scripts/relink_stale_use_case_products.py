@@ -232,10 +232,9 @@ def cmd_verify(_: argparse.Namespace) -> int:
             "SELECT COUNT(*) FROM consolidated_use_case_products cup "
             "WHERE NOT EXISTS (SELECT 1 FROM consolidated_use_cases c WHERE c.id = cup.consolidated_use_case_id)"
         ).fetchone()[0]
-        reverse = conn.execute(
-            "SELECT COUNT(*) FROM use_cases uc WHERE uc.product_id IS NOT NULL "
-            "AND NOT EXISTS (SELECT 1 FROM products p WHERE p.id = uc.product_id)"
-        ).fetchone()[0]
+        # (Scalar use_cases.product_id dropped by m025 — reverse-dangle class
+        # is structurally extinct.)
+        reverse = 0
         products_zero = conn.execute(
             "SELECT COUNT(*) FROM products p "
             "WHERE NOT EXISTS (SELECT 1 FROM entry_product_edges e WHERE e.product_id = p.id)"
@@ -705,24 +704,15 @@ def _write_quarantine_markdown(
 
 
 def cmd_fix_reverse(_: argparse.Namespace) -> int:
-    """Phase 1d helper: NULL out use_cases.product_id rows pointing at deleted products."""
-    conn = sqlite3.connect(str(DB_PATH))
-    conn.execute("PRAGMA foreign_keys=ON")
-    try:
-        conn.execute("BEGIN IMMEDIATE")
-        rows = conn.execute(
-            "SELECT id, product_id FROM use_cases "
-            "WHERE product_id IS NOT NULL "
-            "AND NOT EXISTS (SELECT 1 FROM products p WHERE p.id = use_cases.product_id)"
-        ).fetchall()
-        for uc_id, product_id in rows:
-            conn.execute("UPDATE use_cases SET product_id = NULL WHERE id = ?", (uc_id,))
-            print(f"  nulled use_cases.id={uc_id} (was pointing at product_id={product_id})")
-        conn.commit()
-        print(f"fix-reverse: cleared {len(rows)} dangling use_cases.product_id refs")
-        return 0
-    finally:
-        conn.close()
+    """Retired: the scalar use_cases.product_id cache this cleaned was
+    dropped by m025. Kept as a no-op so the Makefile invocation and muscle
+    memory don't break; dangling EDGE rows are still covered by
+    `verify`/`remap`."""
+    print(
+        "fix-reverse: no-op — use_cases.product_id was dropped by m025 "
+        "(edges are the only product linkage; see entry_primary_products)"
+    )
+    return 0
 
 
 def main() -> int:

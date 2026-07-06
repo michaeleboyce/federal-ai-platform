@@ -125,9 +125,8 @@ CREATE TABLE IF NOT EXISTS use_cases (
     hi_appeal_process TEXT,
     hi_public_consultation TEXT,
 
-    -- Product/template linking
-    product_id INTEGER REFERENCES products(id),
-    template_id INTEGER REFERENCES use_case_templates(id),
+    -- (Scalar product/template FKs dropped by m025 — product linkage lives
+    -- in use_case_products; templates are consolidated-entry-only.)
 
     -- Lossless preservation
     raw_json TEXT,
@@ -135,8 +134,6 @@ CREATE TABLE IF NOT EXISTS use_cases (
 );
 
 CREATE INDEX IF NOT EXISTS idx_use_cases_agency ON use_cases(agency_id);
-CREATE INDEX IF NOT EXISTS idx_use_cases_product ON use_cases(product_id);
-CREATE INDEX IF NOT EXISTS idx_use_cases_template ON use_cases(template_id);
 CREATE INDEX IF NOT EXISTS idx_use_cases_stage ON use_cases(stage_of_development);
 CREATE INDEX IF NOT EXISTS idx_use_cases_high_impact ON use_cases(is_high_impact);
 CREATE INDEX IF NOT EXISTS idx_use_cases_ai_class ON use_cases(ai_classification);
@@ -159,7 +156,8 @@ CREATE TABLE IF NOT EXISTS consolidated_use_cases (
     estimated_licenses_users TEXT,  -- "1-100", "101-1000", etc.
 
     -- Product/template linking
-    product_id INTEGER REFERENCES products(id),
+    -- (product_id dropped by m025 — linkage lives in
+    -- consolidated_use_case_products.)
     template_id INTEGER REFERENCES use_case_templates(id),
 
     -- Lossless preservation
@@ -168,7 +166,6 @@ CREATE TABLE IF NOT EXISTS consolidated_use_cases (
 );
 
 CREATE INDEX IF NOT EXISTS idx_consolidated_agency ON consolidated_use_cases(agency_id);
-CREATE INDEX IF NOT EXISTS idx_consolidated_product ON consolidated_use_cases(product_id);
 CREATE INDEX IF NOT EXISTS idx_consolidated_template ON consolidated_use_cases(template_id);
 
 -- Analytical metadata per use case (tagged by sub-agents)

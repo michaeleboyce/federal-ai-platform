@@ -47,39 +47,36 @@ def test_reporting_agency_count_comes_from_loaded_inventory(conn):
     assert found_2024_only_with_rows == 0
 
 
-def test_primary_product_cache_is_derived_from_edges(conn):
-    stale_use_cases = _scalar(
+def test_primary_product_view_is_derived_from_edges(conn):
+    """The m025 drop retired the scalar cache columns; the m020
+    entry_primary_products view is now the only primary-product surface.
+    Assert it exists, is edge-consistent (one row per entry with >=1 edge),
+    and the legacy columns are really gone."""
+    view_rows = _scalar(conn, "SELECT COUNT(*) FROM entry_primary_products")
+    entries_with_edges = _scalar(
         conn,
-        """
-        SELECT COUNT(*)
-          FROM use_cases uc
-         WHERE COALESCE(uc.product_id, -1) != COALESCE((
-           SELECT ucp.product_id
-             FROM use_case_products ucp
-            WHERE ucp.use_case_id = uc.id
-            ORDER BY CASE ucp.confidence WHEN 'strong' THEN 0 ELSE 1 END,
-                     ucp.product_id
-            LIMIT 1
-         ), -1)
-        """,
+        """SELECT
+             (SELECT COUNT(DISTINCT use_case_id) FROM use_case_products) +
+             (SELECT COUNT(DISTINCT consolidated_use_case_id)
+                FROM consolidated_use_case_products)""",
     )
-    stale_consolidated = _scalar(
-        conn,
-        """
-        SELECT COUNT(*)
-          FROM consolidated_use_cases c
-         WHERE COALESCE(c.product_id, -1) != COALESCE((
-           SELECT cucp.product_id
-             FROM consolidated_use_case_products cucp
-            WHERE cucp.consolidated_use_case_id = c.id
-            ORDER BY CASE cucp.confidence WHEN 'strong' THEN 0 ELSE 1 END,
-                     cucp.product_id
-            LIMIT 1
-         ), -1)
-        """,
+    assert view_rows == entries_with_edges, (
+        f"entry_primary_products has {view_rows} rows; expected one per "
+        f"entry with edges ({entries_with_edges})"
     )
-    assert stale_use_cases == 0
-    assert stale_consolidated == 0
+    uc_cols = {r[1] for r in conn.execute("PRAGMA table_info(use_cases)")}
+    c_cols = {
+        r[1] for r in conn.execute("PRAGMA table_info(consolidated_use_cases)")
+    }
+    assert "product_id" not in uc_cols and "template_id" not in uc_cols, (
+        "legacy scalar columns survive on use_cases — m025 did not apply"
+    )
+    assert "product_id" not in c_cols, (
+        "legacy scalar product_id survives on consolidated_use_cases"
+    )
+    assert "template_id" in c_cols, (
+        "consolidated_use_cases.template_id must be KEPT (live column)"
+    )
 
 
 def test_consolidated_examples_do_not_create_product_evidence(conn):
@@ -91,22 +88,10 @@ def test_consolidated_examples_do_not_create_product_evidence(conn):
          WHERE LOWER(COALESCE(evidence_text, '')) LIKE '%commercial_examples%'
         """,
     )
-    primary_without_edge = _scalar(
-        conn,
-        """
-        SELECT COUNT(*)
-          FROM consolidated_use_cases c
-         WHERE c.product_id IS NOT NULL
-           AND NOT EXISTS (
-             SELECT 1
-               FROM consolidated_use_case_products cucp
-              WHERE cucp.consolidated_use_case_id = c.id
-                AND cucp.product_id = c.product_id
-           )
-        """,
-    )
+    # (The primary-without-edge invariant is structural since m025: the
+    # entry_primary_products view derives FROM the edges, so a primary
+    # without an edge cannot exist.)
     assert rows_from_examples == 0
-    assert primary_without_edge == 0
 
 
 def test_agency_maturity_matches_shared_rollups(conn):

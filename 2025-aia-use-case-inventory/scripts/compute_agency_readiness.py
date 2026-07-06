@@ -502,17 +502,14 @@ def compute_adoption_breadth(
         ).fetchone()[0]
         raw_bureaus[aid] = b or 0
 
+        # Templates exist only on consolidated rows (use_cases.template_id
+        # was 0-populated forever and dropped by m025).
         t = conn.execute(
             """
-            SELECT COUNT(DISTINCT template_id) FROM (
-                SELECT template_id FROM use_cases
-                 WHERE agency_id = ? AND template_id IS NOT NULL
-                UNION
-                SELECT template_id FROM consolidated_use_cases
-                 WHERE agency_id = ? AND template_id IS NOT NULL
-            )
+            SELECT COUNT(DISTINCT template_id) FROM consolidated_use_cases
+             WHERE agency_id = ? AND template_id IS NOT NULL
             """,
-            (aid, aid),
+            (aid,),
         ).fetchone()[0]
         raw_templates[aid] = t or 0
 

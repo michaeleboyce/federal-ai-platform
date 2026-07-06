@@ -165,53 +165,16 @@ def confidence_for_evidence(evidence: str | None) -> str:
 
 
 def sync_primary_product_cache(conn) -> dict[str, int]:
-    """Derive legacy product_id columns from authoritative edge tables."""
-    stats = {
+    """Retired no-op: the scalar product_id cache columns were dropped by
+    m025 — the entry_primary_products view (m020) derives the primary
+    product from the edge tables at query time, so there is nothing left
+    to sync. Signature kept so callers (populate_use_case_products.py)
+    keep working."""
+    del conn
+    return {
         "use_cases_updated": 0,
         "consolidated_updated": 0,
         "use_cases_cleared": 0,
         "consolidated_cleared": 0,
     }
-    stats["use_cases_cleared"] = conn.execute(
-        "UPDATE use_cases SET product_id = NULL"
-    ).rowcount
-    stats["consolidated_cleared"] = conn.execute(
-        "UPDATE consolidated_use_cases SET product_id = NULL"
-    ).rowcount
-
-    stats["use_cases_updated"] = conn.execute(
-        """
-        UPDATE use_cases
-           SET product_id = (
-             SELECT ucp.product_id
-               FROM use_case_products ucp
-              WHERE ucp.use_case_id = use_cases.id
-              ORDER BY CASE ucp.confidence WHEN 'strong' THEN 0 ELSE 1 END,
-                       ucp.product_id
-              LIMIT 1
-           )
-         WHERE EXISTS (
-             SELECT 1 FROM use_case_products ucp
-              WHERE ucp.use_case_id = use_cases.id
-         )
-        """
-    ).rowcount
-    stats["consolidated_updated"] = conn.execute(
-        """
-        UPDATE consolidated_use_cases
-           SET product_id = (
-             SELECT cucp.product_id
-               FROM consolidated_use_case_products cucp
-              WHERE cucp.consolidated_use_case_id = consolidated_use_cases.id
-              ORDER BY CASE cucp.confidence WHEN 'strong' THEN 0 ELSE 1 END,
-                       cucp.product_id
-              LIMIT 1
-           )
-         WHERE EXISTS (
-             SELECT 1 FROM consolidated_use_case_products cucp
-              WHERE cucp.consolidated_use_case_id = consolidated_use_cases.id
-         )
-        """
-    ).rowcount
-    return stats
 

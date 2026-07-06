@@ -190,11 +190,8 @@ def run(conn: sqlite3.Connection) -> dict[str, int]:
             (opm[0], cli_id, OPM_EVIDENCE),
         )
         stats["opm_linked"] = cur.rowcount
-        conn.execute(
-            """UPDATE consolidated_use_cases SET product_id = ?
-               WHERE id = ? AND (product_id IS NULL OR product_id = ?)""",
-            (cli_id, opm[0], cli_id),
-        )
+        # (Scalar consolidated_use_cases.product_id cache dropped by m025 —
+        # the edge insert above is the linkage.)
 
     return stats
 
