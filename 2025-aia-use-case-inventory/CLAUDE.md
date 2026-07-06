@@ -25,6 +25,7 @@ This directory is the **python ETL + audit + data-pipeline workspace**. Its job 
 Project-scoped Claude skills live at `.claude/skills/<name>/SKILL.md`. Currently:
 
 - **`omb-ai-use-case-inventory`** — Reference for the OMB M-25-21 inventory schema (36 columns, valid values, recoding maps, conditional-required clauses, DB column crosswalk). Auto-triggers when an agent works with the schema, source CSVs, or any retag / load / backfill script.
+- **`inventory-db-model`** — Reference for the DATABASE's own structure post the 2026-07 overhaul (m019–m025): two entry types, edge-only product linkage via `entry_primary_products`, normalized enum columns, the `agency_ai_maturity` compat view, agency FK layer, the omb_only==0 completeness gate, migration/rebuild conventions, and the re-baselining discipline. Auto-triggers on migration authoring, fix-chain edits, check re-baselining, or any script touching the core tables.
 
 ## When you DO need to touch this directory
 
