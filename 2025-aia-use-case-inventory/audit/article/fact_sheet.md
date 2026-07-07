@@ -1,6 +1,6 @@
 # Article fact sheet — 2025 Federal AI Use Case Inventory (IFP tags)
 
-_Generated: 2026-07-06 by `scripts/build_article_factsheet.py`. Re-run after any `make fix`._
+_Generated: 2026-07-07 by `scripts/build_article_factsheet.py`. Re-run after any `make fix`._
 
 Every number below is produced by the SQL shown with it, against
 `data/federal_ai_inventory_2025.db`. Caveats marked ⚠ MUST travel with
@@ -425,6 +425,13 @@ across its labs.
    corroborate or refute it), and the 'decade compressed into two
    years' adoption-speed comparison (needs an external historical
    baseline — cloud/PC/email federal adoption curves).
+7. Do NOT cite self-reported time-savings/efficiency figures as
+   measured outcomes — anywhere. Applies to comparators (UK 26 min,
+   DWP 19 min, Australia 1 hr) AND to agencies the article praises
+   (VA 2-3 hrs/week, CDC 41K hours/527% ROI): all survey/self-
+   assessment data. METR's RCT perception gap (19% slower measured,
+   20% faster believed) is the reason. Label (SR) or drop. See
+   claims_review_2026-07-07.md §3 and fact_sheet §8 Beat 3.
 
 ## 7. FedRAMP — authorization vs adoption
 
@@ -532,3 +539,73 @@ against IFP's web-corroborated staff-access estimate:**
 - ⚠ DOJ's ~1% share is an IFP assessment with status `searched_no_source`
   — cite the tier, attribute the share to IFP explicitly.
 - Dashboard: /fedramp/coverage/agencies §II + per-agency drills.
+
+## 8. Comparators — what fast adopters actually did
+
+_Added 2026-07-07 (hand-authored; every claim survived 3-vote adversarial
+verification in the 2026-07-06/07 deep-research pass — votes, verbatim
+sources, and access dates in `research_2026-07-07/verified_findings.md`;
+required phrasings and the do-not-use list in
+`claims_review_2026-07-07.md`). Metric types are marked: (SR)
+self-reported survey · (T) telemetry · (RCT) randomized trial · (V)
+vendor/company-reported._
+
+### Beat 1 — fast access without depth (the thesis, replicated abroad)
+
+**Australia: licenses live ~6.5 weeks after the announcement — and only
+~⅓ of participants used Copilot daily.** The DTA's whole-of-government
+trial (Jan–Jun 2024, 5,765+ evaluated licenses, ~60 agencies) chose
+Copilot explicitly because it nested "within existing whole-of-government
+contracting arrangements" (their OneGov). Use concentrated in
+summarisation/rewriting; the evaluation attributes low engagement to
+capability, perceived benefit, and convenience — non-access factors. All
+outcomes (SR). UK GDS's 20K-employee cross-government trial: 26 min/day
+(SR, survey midpoints, top-capped); strong at drafting/summarising, weak
+on judgment-heavy work; a separate UK evaluation found "no robust
+evidence that time savings are leading to improved productivity."
+
+- ⚠ Phrase UK as "centrally coordinated trial with ≥1,000-licence
+  per-organisation commitments" — NOT central platform/procurement.
+
+### Beat 2 — what the depth cases added (mechanisms, not access)
+
+**Singapore: ~80% of 150,000 public officers have used the central Pair
+Chat (Nov 2025); 20,000+ self-service AIBots built by officers; a
+MANDATORY AI-literacy course for all officers (Oct 2025); a cross-agency
+usage leaderboard "driving playful competition."** Enterprise cases:
+Accenture rolling M365 Copilot to ~743K of ~780K staff with 89%
+monthly-active in a measured 200K tranche (V/T); Moderna's CEO-set
+target of 100% adoption-and-proficiency in six months with a champions
+cohort, office hours, and incentives (V).
+
+- ⚠ Singapore's 80% = ever-used among 150K officers; our 38% =
+  evidenced-access among 747K eligible. Directional contrast only —
+  never one chart axis.
+- ⚠ Do NOT use: Singapore default-on browser provisioning (refuted 0-3);
+  any Accenture rollout timeline (refuted 1-2); Accenture's "97%/15x"
+  marketing stat; Moderna's 120-conversations/user/week without
+  "vendor-reported, unaudited."
+- ⚠ The mandate's own text already requires "appropriate training for"
+  — Singapore's mandatory course is the enforced version of a clause
+  the US mandate already contains.
+
+### Beat 3 — the evidence-quality warning (applies to OUR numbers too)
+
+**METR RCT (early 2025): experienced developers 19% SLOWER with AI while
+believing they were 20% faster** — a ~39-point perception gap that
+discounts every self-reported time-savings figure in this space,
+including the VA 2-3 hrs/week and CDC 41K-hours numbers the prior draft
+cites favorably. The telemetry counterweight is modest-positive:
+GitHub/Accenture RCT +8.69% PRs, +15% merge rate (T/RCT, 2-1 vote,
+vendor-published, Management Science corroboration). No comparator
+government published coding-agent deployment data at all (absence
+confirmation in progress) — the §2 zero-live-agents measurement may be
+the first of its kind.
+
+- ⚠ Cite METR as a date-stamped early-2025 finding + methodological
+  warning, not as AI's current effect (their 2026-02 follow-up: tools
+  likely better now, weak evidence on magnitude).
+- ⚠ One standard for self-reported numbers: label them (SR) everywhere
+  — comparators AND the agencies we praise — or drop them.
+- Dashboard: /figures/adoption-comparators (mechanism matrix +
+  evidence-quality panel; in progress).

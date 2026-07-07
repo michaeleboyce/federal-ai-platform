@@ -45,6 +45,7 @@ The DB was **not modified**; all corrections live in CSVs awaiting an apply pass
 - [ ] Do not infer broad analyst access from a Palantir contract. DHS $1B BPA and USDA $300M NFSAP are operational case-management platforms with narrow power-user populations.
 - [ ] Do not assert that a financial regulator (SEC, FRB, FDIC, NCUA, CFTC, CFPB) lacks an analytic platform. The 2025 inventory just doesn't surface their stack.
 - [ ] Do not equate "checked Y on the OMB Appendix B 'Generating code using AI' template" with a managed coding-tool deployment. Eight of eleven Appendix-B-only filers checked Y; most are M365 Copilot's incidental code-chat feature.
+- [ ] (added 2026-07-07) Do not cite self-reported time-savings/efficiency figures as measured outcomes — comparators (UK/DWP/Australia) AND the agencies the article praises (VA 2-3 hrs/week, CDC 41K hours) are all survey data; METR's RCT perception gap is the reason. One standard: label "(self-reported)" or drop. Do not use the two refuted comparator claims (Singapore default-on provisioning; Accenture rollout timeline). See `audit/article/claims_review_2026-07-07.md`.
 
 ## 4. Consolidated apply pass to the DB (after editorial review)
 

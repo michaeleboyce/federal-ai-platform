@@ -500,6 +500,13 @@ def main() -> int:
     w("   corroborate or refute it), and the 'decade compressed into two")
     w("   years' adoption-speed comparison (needs an external historical")
     w("   baseline — cloud/PC/email federal adoption curves).")
+    w("7. Do NOT cite self-reported time-savings/efficiency figures as")
+    w("   measured outcomes — anywhere. Applies to comparators (UK 26 min,")
+    w("   DWP 19 min, Australia 1 hr) AND to agencies the article praises")
+    w("   (VA 2-3 hrs/week, CDC 41K hours/527% ROI): all survey/self-")
+    w("   assessment data. METR's RCT perception gap (19% slower measured,")
+    w("   20% faster believed) is the reason. Label (SR) or drop. See")
+    w("   claims_review_2026-07-07.md §3 and fact_sheet §8 Beat 3.")
     w("")
 
     # Preserve hand-authored trailing sections (## 7. onward — the FedRAMP
