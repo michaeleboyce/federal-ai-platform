@@ -89,7 +89,34 @@ GenAI 200 → 311; enterprise-wide GenAI 21 → 24 agencies. ChatGPT
 **2022-11-30** → AI Action Plan LLM-access mandate **2025-07-23** = **~2.6
 years** (the /adoption chart's vermilion reference line).
 
-## 3. Framing constraints (editor-proofing, mirrored on /adoption §IV)
+## 3. The lessons layer (published /adoption §III, same-day addendum)
+
+Six sourced "lessons" angles now documented on the dashboard at /adoption
+§III, each with inline citations. Facts added beyond §2 above:
+
+- **Pulse was a public scoreboard**: GSA/18F ran pulse.cio.gov as a public,
+  weekly-updated HTTPS compliance dashboard (code: github.com/18F/pulse);
+  BOD 18-01 (cyber.dhs.gov/bod/18-01, 2017) locked the gains in. The
+  "scoreboard is the mechanism" argument: the one compressed mandate had
+  public measurement; Cloud First and HSPD-12 did not.
+- **Duo "State of the Auth" 2FA series** (self-reported US survey): 28%
+  had ever used 2FA (2017) → 79% (2021). duo.com/blog 2019 + 2021 report
+  posts, fetch-verified 2026-07-06. Contrast: 81% federal strong-auth by
+  2015-11 → "government can outrun industry."
+- **Integration-depth + bureau-divergence** (IFP-adjudicated, live at
+  /figures/integration-depth and /figures/bureau-divergence): operating
+  GenAI is shallow/standalone; all coding-agent filings pre-deployment;
+  enterprise-LLM qualification diverges within departments (HHS all opdivs
+  qualify, DOJ none, DOE bimodal).
+- **Zero-reuse trio** (from fact_sheet.md §7, pinned): ChatGPT Enterprise
+  auth 2026-01-09, Gemini for Government 2026-01-21, Perplexity Enterprise
+  2026-02-01 — zero recorded reuses at the 2026-07-03 live check.
+- **AAAIA §7225 sunset 2027-12-23** (Pub. L. 117-263, Div. G, Title LXXII,
+  Subtitle B; enacted 2022-12-23, 5-year inventory requirement). The draft's
+  "codified into law through 2028" is WRONG — do not reuse; say the mandate
+  runs through December 23, 2027.
+
+## 4. Framing constraints (editor-proofing, mirrored on /adoption)
 
 1. Do NOT claim "fastest-adopted technology ever" (contested; sign-up stats).
    Claim: the federal enterprise — historically the slow adopter — moved at
