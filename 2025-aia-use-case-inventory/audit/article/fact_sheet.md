@@ -578,9 +578,21 @@ monthly-active in a measured 200K tranche (V/T); Moderna's CEO-set
 target of 100% adoption-and-proficiency in six months with a champions
 cohort, office hours, and incentives (V).
 
-- ⚠ Singapore's 80% = ever-used among 150K officers; our 38% =
-  evidenced-access among 747K eligible. Directional contrast only —
-  never one chart axis.
+- ⚠ Singapore's 80% = ever-used among 150K officers (weekly-active is
+  far smaller — "near-universal reach with a smaller committed-daily
+  core"); our 38% = evidenced-access among 747K eligible. Directional
+  contrast only — never one chart axis.
+- ⚠ Ownership (verified 2026-07-07): Pair Chat = Open Government
+  Products (core team ~8 people, inside the ~200-person OGP, inside
+  ~3,000-person GovTech); AIBots = GovTech DSAID/LaunchPad — two
+  different teams; never attribute both to OGP. The USAi contrast is
+  INSTITUTIONAL (standing build agency, central-funded free over
+  pan-gov SSO, no sunset) vs PRODUCT (opt-in, 15 agencies, FCSF
+  cost-recovery from FY2027). Never anchor it in dollars: no government
+  publishes LLM-platform running costs, USAi has no disclosed line item
+  (the ~$71M FCSF request is the whole portfolio), and Singapore's
+  S$70M LLM programme is SEA-LION R&D, not Pair opex. See
+  `research_2026-07-07/ogp_funding_verification.md`.
 - ⚠ Do NOT use: Singapore default-on browser provisioning (refuted 0-3);
   any Accenture rollout timeline (refuted 1-2); Accenture's "97%/15x"
   marketing stat; Moderna's 120-conversations/user/week without
