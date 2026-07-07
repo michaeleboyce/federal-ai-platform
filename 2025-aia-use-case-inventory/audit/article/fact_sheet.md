@@ -248,6 +248,36 @@ SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
 ```
 - ⚠ Do not cite architecture_type distributions as corpus-level facts.
 
+## 3b. Integration depth — measured (IFP-labeled, adjudicated 2026-07)
+
+How deeply each PILOT or DEPLOYED individual use case is wired into
+agency work, labeled over the narratives (the measurement the OMB
+format does not collect). Ladder: standalone_chat < workflow_embedded
+< system_integrated < agentic_workflow.
+
+| integration_depth | all P+D | GenAI | non-GenAI |
+|---|---|---|---|
+| standalone_chat | 227 | 202 | 25 |
+| workflow_embedded | 703 | 197 | 506 |
+| system_integrated | 564 | 66 | 498 |
+| agentic_workflow | 14 | 1 | 13 |
+| unclear | 64 | 12 | 52 |
+
+**1572** labeled pilot/deployed rows (478 GenAI). Headlines:
+- GenAI in operation is mostly UNcoupled: 202/478 (~42%) standalone chat vs 66/478 (~14%) integrated with agency systems.
+- The integrated AI estate is pre-GenAI: 498 of 564 system_integrated rows are classical/predictive systems.
+- Agentic workflows in live operation: 14 total (0.9%), of which GenAI-based: 1 (HHS 'Deep Research for Public Health', pilot).
+
+- ⚠ IFP-labeled adjudicated round (Sonnet label → Fable audit → gate
+  GREEN; 100% of low-confidence + 100% of agentic verdicts audited).
+  Labels reflect what narratives DESCRIBE as operating — floors, not
+  ground truth about undescribed couplings.
+- ⚠ One DOI row with a blank use_case_name is unlabeled (signature
+  unresolvable); population is otherwise 1,573/1,573 covered.
+- ⚠ integration_depth='agentic_workflow' (behavior-based) is NOT the
+  same axis as ai_sophistication='agentic' (66, capability-based) —
+  overlap is partial by design; do not conflate the two counts.
+
 ## 4. Agentic AI
 
 ### Agentic by IFP tag (2025, post-review)

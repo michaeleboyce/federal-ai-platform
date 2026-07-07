@@ -327,6 +327,60 @@ def main() -> int:
     fact("Rows with UNKNOWN architecture_type", q1(sql_arch), sql_arch,
          ["Do not cite architecture_type distributions as corpus-level facts."])
 
+    # -------------------------------------------- pillar 3b: integration depth
+    # 2026-07 integration-depth round (Sonnet-labeled, Fable-audited, gate
+    # GREEN — audit/retag/integration_depth_2026-07/AUDIT_GATE.md; 22.5%
+    # audited, 26 overrides). Pinned by audit/checks/check_labeled_depth.py.
+    w("## 3b. Integration depth — measured (IFP-labeled, adjudicated 2026-07)")
+    w("")
+    w("How deeply each PILOT or DEPLOYED individual use case is wired into")
+    w("agency work, labeled over the narratives (the measurement the OMB")
+    w("format does not collect). Ladder: standalone_chat < workflow_embedded")
+    w("< system_integrated < agentic_workflow.")
+    w("")
+    w("| integration_depth | all P+D | GenAI | non-GenAI |")
+    w("|---|---|---|---|")
+    depth_rows = q("""SELECT t.integration_depth,
+       COUNT(DISTINCT t.use_case_id),
+       COUNT(DISTINCT CASE WHEN t.is_generative_ai=1 THEN t.use_case_id END),
+       COUNT(DISTINCT CASE WHEN COALESCE(t.is_generative_ai,0)=0 THEN t.use_case_id END)
+  FROM use_case_tags t JOIN use_cases u ON u.id = t.use_case_id
+ WHERE t.integration_depth IS NOT NULL
+   AND u.stage_normalized IN ('pilot','deployed')
+ GROUP BY 1
+ ORDER BY CASE t.integration_depth
+   WHEN 'standalone_chat' THEN 1 WHEN 'workflow_embedded' THEN 2
+   WHEN 'system_integrated' THEN 3 WHEN 'agentic_workflow' THEN 4 ELSE 5 END""")
+    for r in depth_rows:
+        w(f"| {r[0]} | {r[1]} | {r[2]} | {r[3]} |")
+    tot = sum(r[1] for r in depth_rows)
+    genai_tot = sum(r[2] for r in depth_rows)
+    d = {r[0]: r for r in depth_rows}
+    w("")
+    w(f"**{tot}** labeled pilot/deployed rows ({genai_tot} GenAI). Headlines:")
+    ga_stand = d.get("standalone_chat", (0, 0, 0, 0))
+    ga_sys = d.get("system_integrated", (0, 0, 0, 0))
+    ga_agent = d.get("agentic_workflow", (0, 0, 0, 0))
+    w(f"- GenAI in operation is mostly UNcoupled: {ga_stand[2]}/{genai_tot} "
+      f"(~{ga_stand[2]/genai_tot:.0%}) standalone chat vs {ga_sys[2]}/{genai_tot} "
+      f"(~{ga_sys[2]/genai_tot:.0%}) integrated with agency systems.")
+    w(f"- The integrated AI estate is pre-GenAI: {ga_sys[3]} of {ga_sys[1]} "
+      "system_integrated rows are classical/predictive systems.")
+    w(f"- Agentic workflows in live operation: {ga_agent[1]} total "
+      f"({ga_agent[1]/tot:.1%}), of which GenAI-based: {ga_agent[2]} "
+      "(HHS 'Deep Research for Public Health', pilot).")
+    w("")
+    w("- ⚠ IFP-labeled adjudicated round (Sonnet label → Fable audit → gate")
+    w("  GREEN; 100% of low-confidence + 100% of agentic verdicts audited).")
+    w("  Labels reflect what narratives DESCRIBE as operating — floors, not")
+    w("  ground truth about undescribed couplings.")
+    w("- ⚠ One DOI row with a blank use_case_name is unlabeled (signature")
+    w("  unresolvable); population is otherwise 1,573/1,573 covered.")
+    w("- ⚠ integration_depth='agentic_workflow' (behavior-based) is NOT the")
+    w("  same axis as ai_sophistication='agentic' (66, capability-based) —")
+    w("  overlap is partial by design; do not conflate the two counts.")
+    w("")
+
     # --------------------------------------------------------------- agentic
     w("## 4. Agentic AI")
     w("")

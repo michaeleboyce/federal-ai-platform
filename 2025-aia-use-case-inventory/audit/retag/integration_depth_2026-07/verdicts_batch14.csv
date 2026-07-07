@@ -1,0 +1,68 @@
+agency,use_case_name,verdict,confidence,reasoning
+DOL,AI Headset,system_integrated,medium,"Headset outputs pull mine data, safety protocols, and violation histories from IAS and the Mine Data Retrieval System (MDRS) during inspections, per the outputs description."
+DOL,Audio Transcription,workflow_embedded,high,Single-step transcription of voicemails to text for claims records; no described system-of-record read/write beyond the Azure transcription service.
+DOL,Automatic Document Processing,system_integrated,medium,Narrative describes the prior process of entering a receipt code into the Automated Support Package system and states the AI now handles that task directly for forms with no change in circumstances.
+DOL,CE Interview Imputations,system_integrated,high,"Imputed CE Interview values are stated to be used directly to complete the Consumer Price Index, a named production statistical output."
+DOL,CE Interview Item Code Estimation,workflow_embedded,medium,Model only recommends expense classification categories for human review; no stated downstream system or publication consumes the codes directly.
+DOL,CFOI Record Matching,system_integrated,high,CFOI Record Matching explicitly reads from and reconciles multiple named systems (OSHA's OIS files and QCEW) to identify missing/inconsistent CFOI data.
+DOL,CPS OTC Prediction,system_integrated,medium,Random-forest imputations of off-the-clock hours feed directly into BLS's official hours-worked productivity measure using named CPS/CES survey data.
+DOL,"Comment Actionability
+Likelihood Score",workflow_embedded,medium,Single-step scoring of BLS.gov survey comments by actionability to help staff sort a comment queue; no system-of-record coupling described.
+DOL,"Computer-Assisted Coding: 
+SOII Autocoder",system_integrated,medium,"SOII Autocoder is described as fully replacing human staff in assigning SOC/OIICS codes to survey narratives, writing codes directly into the SOII production dataset."
+DOL,DAISI ( DOL AI Search Insights),workflow_embedded,high,DAISI is a RAG search assistant over DOL intranet content answering staff questions; no write-back to any system is described.
+DOL,ETA Grants Monitoring Tool through Doc Explorer,workflow_embedded,medium,Automates review of grant documents for anomalies/compliance within Doc Explorer; no named grants system-of-record write-back is described.
+DOL,"Expenditure Classification 
+Autocoder",system_integrated,medium,Autocoder assigns (not merely recommends) expenditure classification codes directly into the CE Diary Survey production data with no human-review qualifier stated.
+DOL,Generative AI AssistantI  ( AI Center),standalone_chat,medium,"General in-house GenAI/semantic-search platform for evaluating varied business problems (summarization, analysis, comparisons); no single process or system coupling is described."
+DOL,Hololens,workflow_embedded,medium,Hololens CV recommendation/assessment is embedded in the single process of remote/virtual inspector training; no named system integration is described.
+DOL,Note Taking Bot,workflow_embedded,high,"Bot summarizes each meeting transcript into notes and action items -- a single defined step, not a system-of-record coupling."
+DOL,OEWS Occupation Autocoder,system_integrated,high,Autocoder appends SOC codes above threshold directly to the submitted state response file and sends it back to states -- an explicit read/write data-pipeline coupling.
+DOL,PII Redaction,system_integrated,medium,"Redacts PII directly within ITA (Injury Tracking Application) text fields, an identified OSHA system of record."
+DOL,PPI Price Tolerance Prediction,workflow_embedded,medium,Recommends price tolerance boundaries to improve PPI outlier detection; no stated write into a production dataset.
+DOL,QCEW NAICS Autocoder,workflow_embedded,medium,"Pilot autocoder recommends NAICS codes for human reviewers of QCEW records; narrative frames it as a recommendation, not a direct system write."
+DOL,Sample Refinement: Frame API,system_integrated,high,Frame API performs live retrieval/comparison against the QCEW and Longitudinal Database systems for sample refinement -- explicit named-system data coupling.
+DOL,Scanner Data Product Classification,system_integrated,high,"Scanner data classifications meeting the probability threshold are stated to be 'selected for inclusion in the data,' i.e., written directly into the CPI production dataset."
+DOL,Worker PLUS Microsimulation Program,workflow_embedded,low,Open-source microsimulation tool using ACS PUMS data for external researchers/policymakers; a single analytical pipeline with no described agency operational system coupling.
+DOL,Workforce Recruitment Program (WRP) Website Chatbot Assistant,workflow_embedded,high,"Deployed chatbot handling one program's (WRP) live incoming applicant/stakeholder inquiries -- a single operational flow, not general-purpose access."
+FRB,Anomaly Detection,system_integrated,medium,Flags anomalies in live firm-submitted regulatory data for the iterative data-quality review process.
+FRB,Bank Examiner Search Engine,workflow_embedded,high,Search engine retrieves existing documents for examiners' questions during examinations -- RAG-style retrieval with no described write-back.
+FRB,Body Worn Cameras Data Management System,system_integrated,high,"Integrated into the named Body Worn Camera Data Management System, transcribing/redacting evidence that becomes part of the reviewed and approved case record."
+FRB,Comment Review System,system_integrated,high,"AI functions (summarization, entity ID, dedup, similarity matching) operate directly inside the named Comment Review System processing live public comments."
+FRB,Commercial Real Estate Index,workflow_embedded,medium,Synthesizes external commercial real estate data points into an index for internal monitoring; no named system coupling is stated.
+FRB,Consumer Complaints Explorer,workflow_embedded,medium,Topic-models consumer complaints to aid analyst review; no stated write-back to a system of record.
+FRB,Decision Tree for Deposits Data,system_integrated,medium,Flags outliers by comparing current (live) submitted deposits reporting data against historical patterns for the data-quality process.
+FRB,Document Summarization Statistics,workflow_embedded,medium,Computes term-frequency statistics on bank review letters; a single analytical step with no system-of-record coupling described.
+FRB,Economic Trend Modeling,workflow_embedded,high,"Economic forecasting model estimating probability of a future economic event -- an analysis model over unspecified data with no stated system coupling, per amendment."
+FRB,Financial News Processing,workflow_embedded,high,"Processes financial news into structured insights; news-derived economic/analysis output with no explicit named system coupling, per amendment."
+FRB,Manufacturer Sentiment Analysis,workflow_embedded,high,Converts survey sentiment into a time series on industrial production forecasts -- a survey sentiment series explicitly named in the amendment's exclusion.
+FRB,Market Fund Portfolio,workflow_embedded,medium,Classifies security issuers in money market fund portfolios from external market data; no stated system-of-record coupling.
+FRB,Novel Activities Call Report Classification,system_integrated,medium,Classifies banks by comparing submitted call report line items against internal supervisory lists -- a live regulatory-submission scoring task.
+FRB,PDF Optical Character Recognition (Text),workflow_embedded,medium,Extracts structured column data from PDF reports; a single extraction step with no named system integration described.
+FRB,Proposals and Public Comments,workflow_embedded,low,"Comment-processing AI features (PII redaction, spam/sentiment) are described only conditionally ('may use AI') for the still-developing PPC system, not confirmed as operating."
+FRB,Regulatory Data Analysis,system_integrated,medium,Compares current submitted regulatory values against expected historical ranges for analyst review -- scoring live regulatory submissions.
+FRB,Risk Rating Model,system_integrated,medium,Risk model tiers banks (High/Moderate/Low) from supervisory data specifically to guide examination review.
+FRB,Risk Rating Model – Community Banks,system_integrated,high,Risk tiering model for community banks explicitly used to tailor examination intensity -- a stated operational coupling to the supervisory process.
+FRB,Sentiment Analysis of Earnings Transcripts,workflow_embedded,high,Sentiment analysis of bank earnings-call transcripts -- explicitly named as an excluded external-data economic/analysis case in the amendment.
+FRB,Supply Chain Estimations,workflow_embedded,high,Estimates supply-chain bottleneck sentiment as an economic indicator time series; no named system coupling described.
+FRB,Trading Desk Grouping,workflow_embedded,medium,Categorizes trading desk operations by asset class; thin narrative with no stated live-submission or system coupling.
+FRB,Variable Optimization,workflow_embedded,medium,"Optimizes lag structures for forecasting call report metrics -- an economic forecasting/methodology task, not a described system integration."
+FRB,Virtual Benefits Assistant,workflow_embedded,medium,"Deployed virtual assistant answers one program's (benefits) navigation questions -- a single operational flow, not general-purpose access."
+FTC,Analytic Sandbox,standalone_chat,medium,General managed analytics/ML sandbox for staff to perform varied data-analytics tasks across business purposes; no single process or system coupling described.
+FTC,Automatic PSC Classification,system_integrated,high,Classifies complaints and writes categorized results directly into the Reportfraud.ftc.gov complaints dataset.
+FTC,Azure Databricks Assistance,standalone_chat,medium,General Databricks-based coding/analysis assistance to boost analyst productivity; no single process coupling described.
+FTC,CRC Call Summarization,workflow_embedded,medium,Summarizes each incoming consumer complaint call with PII redaction -- a single defined step in call handling.
+FTC,Developer Productivity,standalone_chat,medium,General code-quality/productivity assistant for developers; no single process or system coupling described.
+FTC,Graph Analytics,system_integrated,medium,Graph analytics reads the complaint case-management data to surface cross-record entity connections directly supporting law-enforcement investigations.
+FTC,Group Duplicate Complaints,system_integrated,medium,Groups duplicate complaint records within the case-management system to support law-enforcement lead identification.
+FTC,IVR Automated Voice Assistant,workflow_embedded,high,Deployed IVR answering live incoming consumer information requests -- matches the amendment's public-facing IVR/live-call exclusion from standalone_chat.
+FTC,Microsoft 365 Copilot,standalone_chat,high,"General Microsoft 365 Copilot productivity features (drafting, summarizing, coaching) with no single process coupling described."
+FTC,Relativity Active Learning,system_integrated,medium,Active-learning predictive coding ranks/prioritizes documents directly within the Relativity eDiscovery review platform for litigation review.
+FTC,Relativity Integrated Veritone,workflow_embedded,medium,"Translates documents and transcribes audio for eDiscovery review -- a single content-transformation step, not a database-level integration."
+FTC,Word Cloud,workflow_embedded,medium,Word-cloud visualization of search results helps law enforcement scan results faster; a read-only analytical aid with no write-back described.
+EAC,AI Answers in Clearinghouse Network,workflow_embedded,high,RAG chatbot answers election-official questions from the Clearinghouse Network platform's content; no write-back described.
+EAC,Grants Lifecycle Application System,system_integrated,medium,"Tool is stated to be built into the Grants Division's grants management system, analyzing live grant-application trend data."
+EAC,Internal Generative AI Tools for Staff Productivity,standalone_chat,high,General-purpose commercial GenAI drafting/summarization/brainstorming tools explicitly stated to not influence any decisions or process.
+EAC,Routing emails from shared inboxes,workflow_embedded,high,Routes incoming shared-inbox emails to the correct individual/inbox -- a single defined triage/routing step.
+NRC,Support routine administrative tasks and enhancing communications,standalone_chat,high,"General Microsoft 365 Copilot Chat assistance across scheduling, drafting, and retrieval tasks with no single process coupling described."
+NRC,Text Retrieval and Generation for NRC Staff Support,workflow_embedded,high,SimplifAI retrieves and generates answers from internal/external documents for staff queries -- RAG support with no write-back described.
