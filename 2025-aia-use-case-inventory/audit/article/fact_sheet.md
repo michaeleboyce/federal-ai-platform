@@ -597,10 +597,22 @@ discounts every self-reported time-savings figure in this space,
 including the VA 2-3 hrs/week and CDC 41K-hours numbers the prior draft
 cites favorably. The telemetry counterweight is modest-positive:
 GitHub/Accenture RCT +8.69% PRs, +15% merge rate (T/RCT, 2-1 vote,
-vendor-published, Management Science corroboration). No comparator
-government published coding-agent deployment data at all (absence
-confirmation in progress) — the §2 zero-live-agents measurement may be
-the first of its kind.
+vendor-published, Management Science corroboration).
+
+**Coding claim, verified 2026-07-07 (the blanket "no government has
+published coding data" is REFUTED — use this instead):** no government
+has published sustained, production-scale data for autonomous coding
+AGENTS; the published government evidence is time-boxed ASSISTANT
+trials — UK GDS/DSIT (Nov 2024–Feb 2025: ~1,900 licences, 50+ orgs,
+~418 daily actives and 15.8% code-line acceptance by telemetry; 56
+min/day saved self-reported) and Singapore GovTech (70-developer pilot,
+22% acceptance). The §2 zero-live-agents census remains the only
+agent-level whole-government measurement anywhere.
+
+- ⚠ Do NOT cite Australia's DTA trial as coding evidence (it was M365
+  Copilot office productivity — the #1 conflation risk). VA's published
+  "~100K users / 2–3 hrs" metric is VA GPT (chat), NOT its Copilot
+  deployment, which has no published telemetry.
 
 - ⚠ Cite METR as a date-stamped early-2025 finding + methodological
   warning, not as AI's current effect (their 2026-02 follow-up: tools
@@ -609,3 +621,29 @@ the first of its kind.
   — comparators AND the agencies we praise — or drop them.
 - Dashboard: /figures/adoption-comparators (mechanism matrix +
   evidence-quality panel; in progress).
+
+### Beat 4 — US states: four distinct mechanisms, verified 2026-07-07
+
+**PA (central-platform pilot → expansion): 175 pilot employees / 14
+agencies → 3,000+ users / 35 agencies + 6,500 in training (Apr 2026).
+NJ (training-first, state-BUILT LibreChat assistant): ~20,000 cumulative
+users / 1M+ prompts (Feb 2026), ~$1/user/month vs ~$20 commercial;
+training adopted by 25 states. Utah (enterprise Gemini rollout with a
+mandatory-training gate): 257 pilot → ~15–16K with access, ~10K active
+in ~7 months. CA (RFI2 procurement sandbox): strong mechanism, thin
+published outcomes.** Sources + full caveats:
+`research_2026-07-07/states_verification.md`.
+
+- ⚠ PA's famous "95 minutes/day" is verbatim "users ESTIMATED" — an
+  exit-survey self-estimate from 136 non-representative volunteers,
+  GROSS of the paired "35 min/day SPENT using ChatGPT" stat the
+  citations always drop. Citable only as (SR), ideally with the 35-min
+  pairing.
+- ⚠ CA's circulating "1.5% / 10,000 more calls" is initial-analysis +
+  projection, not a published measured outcome; CDTFA's primary sources
+  publish no number.
+- ⚠ NJ's DOL-35%/ANCHOR-50% and PA's Apr-2026 operational stats
+  (400K documents, +65% chatbot) are state-reported with methodology
+  unstated — do not cite without a further pass.
+- ⚠ The strongest measured state numbers everywhere are ADOPTION counts,
+  never impact: state ROI claims are all self-reported.
