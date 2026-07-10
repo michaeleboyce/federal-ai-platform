@@ -20,6 +20,12 @@ amendments; 26 overrides). Citable facts (fact_sheet §3b; pinned by
   estate is pre-GenAI (498/564 system_integrated rows are classical).
 - **Exactly one live GenAI agentic workflow** government-wide: HHS
   "Deep Research for Public Health" (pilot).
+  - **AMENDED 2026-07-10**: now TWO. User adjudication flipped HHS
+    "AI Agent Orchestrator POC" (pilot) to `is_generative_ai=1`
+    (LLM-driven orchestration of data-science workflows; override in
+    `audit/retag/llm_flag_drift_2026-07/audit_overrides.csv`). GenAI
+    P+D total 478 → 479; agentic_workflow split now 2 GenAI / 12
+    non-GenAI. Do not cite "exactly one" — say "two, both HHS pilots".
 - ⚠ IFP-labeled; narratives-as-described (floors); one DOI blank-name
   row unlabeled; don't conflate with `ai_sophistication='agentic'` (66).
 

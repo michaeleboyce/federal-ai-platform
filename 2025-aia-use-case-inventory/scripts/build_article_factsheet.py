@@ -366,9 +366,17 @@ def main() -> int:
       f"(~{ga_sys[2]/genai_tot:.0%}) integrated with agency systems.")
     w(f"- The integrated AI estate is pre-GenAI: {ga_sys[3]} of {ga_sys[1]} "
       "system_integrated rows are classical/predictive systems.")
+    ga_agent_rows = q("""SELECT a.abbreviation, u.use_case_name, u.stage_normalized
+  FROM use_case_tags t
+  JOIN use_cases u ON u.id = t.use_case_id
+  JOIN agencies a ON a.id = u.agency_id
+ WHERE t.integration_depth = 'agentic_workflow' AND t.is_generative_ai = 1
+   AND u.stage_normalized IN ('pilot','deployed')
+ ORDER BY a.abbreviation, u.use_case_name""")
+    ga_agent_names = "; ".join(f"{r[0]} '{r[1]}', {r[2]}" for r in ga_agent_rows)
     w(f"- Agentic workflows in live operation: {ga_agent[1]} total "
       f"({ga_agent[1]/tot:.1%}), of which GenAI-based: {ga_agent[2]} "
-      "(HHS 'Deep Research for Public Health', pilot).")
+      f"({ga_agent_names}).")
     w("")
     w("- ⚠ IFP-labeled adjudicated round (Sonnet label → Fable audit → gate")
     w("  GREEN; 100% of low-confidence + 100% of agentic verdicts audited).")

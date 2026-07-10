@@ -1,6 +1,6 @@
 # Article fact sheet — 2025 Federal AI Use Case Inventory (IFP tags)
 
-_Generated: 2026-07-07 by `scripts/build_article_factsheet.py`. Re-run after any `make fix`._
+_Generated: 2026-07-10 by `scripts/build_article_factsheet.py`. Re-run after any `make fix`._
 
 Every number below is produced by the SQL shown with it, against
 `data/federal_ai_inventory_2025.db`. Caveats marked ⚠ MUST travel with
@@ -40,7 +40,7 @@ SELECT COUNT(*) FROM use_cases
 
 ### GenAI by IFP tag (2025)
 
-**1005**
+**1006**
 
 ```sql
 SELECT COUNT(DISTINCT use_case_id) FROM use_case_tags
@@ -260,13 +260,13 @@ format does not collect). Ladder: standalone_chat < workflow_embedded
 | standalone_chat | 227 | 202 | 25 |
 | workflow_embedded | 703 | 197 | 506 |
 | system_integrated | 564 | 66 | 498 |
-| agentic_workflow | 14 | 1 | 13 |
+| agentic_workflow | 14 | 2 | 12 |
 | unclear | 64 | 12 | 52 |
 
-**1572** labeled pilot/deployed rows (478 GenAI). Headlines:
-- GenAI in operation is mostly UNcoupled: 202/478 (~42%) standalone chat vs 66/478 (~14%) integrated with agency systems.
+**1572** labeled pilot/deployed rows (479 GenAI). Headlines:
+- GenAI in operation is mostly UNcoupled: 202/479 (~42%) standalone chat vs 66/479 (~14%) integrated with agency systems.
 - The integrated AI estate is pre-GenAI: 498 of 564 system_integrated rows are classical/predictive systems.
-- Agentic workflows in live operation: 14 total (0.9%), of which GenAI-based: 1 (HHS 'Deep Research for Public Health', pilot).
+- Agentic workflows in live operation: 14 total (0.9%), of which GenAI-based: 2 (HHS 'AI Agent Orchestrator POC', pilot; HHS 'Deep Research for Public Health', pilot).
 
 - ⚠ IFP-labeled adjudicated round (Sonnet label → Fable audit → gate
   GREEN; 100% of low-confidence + 100% of agentic verdicts audited).
@@ -331,7 +331,7 @@ SELECT COUNT(DISTINCT u.id)
 
 ### Net-new GenAI capabilities introduced in 2025
 
-**699**
+**700**
 
 ```sql
 SELECT COUNT(DISTINCT l.uc_2025_id)
