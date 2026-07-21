@@ -659,3 +659,42 @@ published outcomes.** Sources + full caveats:
   unstated — do not cite without a further pass.
 - ⚠ The strongest measured state numbers everywhere are ADOPTION counts,
   never impact: state ROI claims are all self-reported.
+
+### Chronology addendum (added 2026-07-21, workflow-verified)
+
+Corrections and additions from the 38-agent research/verification pass
+(full citations in `fedramp_section_draft.md` footnotes):
+
+- **ChatGPT level sequence:** FedRAMP's 2025-12-10 post expected the AI
+  cohort to complete 20x at **Low** in January; ChatGPT Enterprise was
+  certified 2026-01-09; OpenAI announced **Moderate** 2026-04-27; the
+  marketplace now displays Class C (Moderate) against the January date.
+  ⚠ No contemporaneous January source states the level granted on Jan 9 —
+  phrase the sequence, not a bare "authorized at Moderate on Jan 9".
+- **ChatGPT Gov (2025-01-28)** deploys in agencies' OWN Azure commercial /
+  Azure Government tenants (NOT AWS) and held no FedRAMP authorization of
+  its own at launch.
+- **StateChat:** launched **Aug 2024** (not Dec) on Azure OpenAI models
+  with Palantir as integrator; ~45k active users Sep 2025, 58k by spring
+  2026; underpinning model was Claude Sonnet 4.5 by early 2026; swapped to
+  GPT-4.1 in March 2026 after the 2026-02-27 directive. ⚠ No public source
+  identifies the vehicle that brought Claude into StateChat.
+- **Claude piggyback routes:** Azure-analog is threefold — Bedrock in AWS
+  GovCloud (Bedrock FedRAMP High Aug 2024; Claude models approved for
+  High/IL4-5 May 2025), the Nov 2024 Palantir/AWS defense partnership
+  (IL6-framed, not FedRAMP), and Palantir **FedStart** (2025-04-17;
+  FedRAMP High piggyback). Anthropic has never held its own marketplace
+  listing.
+- **Anthropic legal arc:** suits filed 2026-03-09; preliminary injunction
+  2026-03-26 (N.D. Cal.); GSA statement 2026-04-03. Date-stamp everything.
+- **Ledger mechanics:** marketplace reuse = ATO letters agencies email to
+  the PMO (Playbook v4.1; M-24-15). GAO found agencies using cloud outside
+  FedRAMP in 2019 (15/24, ~247 services) and 2024 (9/24). No GAO/IG audit
+  of 20x or ledger accuracy existed as of 2026-07.
+- **OneGov scale:** GSA official (2026-05-15): nearly **34M users** across
+  government can leverage AI through OneGov — none of it visible as
+  marketplace reuse.
+- **Cost/time context for the lay explainer:** GAO-24-106591 provider
+  costs $300K–$3.7M (agency sponsorship mostly $69K–$400K); 2016 PMO
+  median ~$2.25M + ~$1M/yr; GSA (2025-03-24): "months or even years";
+  ~300 marketplace products by Apr 2023.
