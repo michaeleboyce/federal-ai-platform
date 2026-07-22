@@ -31,10 +31,11 @@ Project-scoped Claude skills live at `.claude/skills/<name>/SKILL.md`. Currently
 - **`make-fix-debugging`** — Operational runbook for rebuild failures: exit-code-masking trap, mid-chain-death symptom map, decoy DB files, backup conventions, idempotency test. ETL-only. Triggers on a non-zero `make fix` or suspicious counts.
 - **`publish-and-repin`** (mirrored) — The three published-number surfaces (live fact sheet §0–6 / hand-authored §7, guardrail gates, hardcoded dashboard copy with its exact locations), the population-attribution trap, the stat-tracing recipe, and the full post-rebuild publish sequence. Triggers before any data-changing push/deploy.
 - **`fedramp-data-model`** (mirrored) — The fedramp_* tables and semantics: authorization vs reuse, the two AI classifications and their differing rigor, the crosswalk CTE, link-queue curation, the two sleeping boards, spread/shelf/unlinked-AI definitions, the `make fedramp` chain, and the reuse_count / confidence-enum traps. Triggers on any fedramp-touching work.
+- **`fedramp-provenance-tracing`** (mirrored) — How to trace a specific AI tool through FedRAMP's layered records: the five visibility channels (own listing / containment / tenancy / leverage / off-ledger umbrellas), the scope catalog's dual meaning (components AND FedStart-style tenants — how "Claude for Government" is FedRAMP High with zero Anthropic listings), the ordered lookup recipe, and the parent-walk / tenancy traps. Triggers on any "how did tool X get into agency Y" or shadow-authorization question.
 
 (The dashboard repo additionally has a dashboard-only **`citations-and-sources`** skill covering the MLA citation/footnote system.)
 
-Skills marked mirrored are **copied into `dashboard/.claude/skills/`** (the dashboard is its own repo, so its sessions load their own copies): currently `omb-ai-use-case-inventory`, `inventory-db-model`, `publish-and-repin`, and `fedramp-data-model`. When you edit a mirrored skill, `cp` it to the other location in the same change — the copies must stay identical.
+Skills marked mirrored are **copied into `dashboard/.claude/skills/`** (the dashboard is its own repo, so its sessions load their own copies): currently `omb-ai-use-case-inventory`, `inventory-db-model`, `publish-and-repin`, `fedramp-data-model`, and `fedramp-provenance-tracing`. When you edit a mirrored skill, `cp` it to the other location in the same change — the copies must stay identical.
 
 ## When you DO need to touch this directory
 
