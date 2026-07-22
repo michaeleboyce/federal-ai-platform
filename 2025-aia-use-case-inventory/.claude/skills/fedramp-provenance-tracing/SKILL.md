@@ -113,6 +113,24 @@ as established fact.
    containment at High, FedStart tenancy at High, USAi umbrella).
    Inventory rows naming the tool cannot be attributed to a specific
    channel — say so.
+   **Mandatory before calling any use "shadow"/"unauthorized": the
+   containment-cover check.** A row is only ledger-shadow if the agency
+   ALSO lacks an ATO on every package whose scope catalog contains a
+   matching service. Map product families to service patterns
+   (OpenAI API/ChatGPT → '%OpenAI%' [Azure OpenAI], Gemini → '%Gemini%'
+   [Workspace/GCP], Sentinel → '%Sentinel%', Databricks →
+   '%Databricks%') and test:
+   `EXISTS (SELECT 1 FROM fedramp_authorized_services svc JOIN
+   fedramp_authorizations a2 ON a2.fedramp_id=svc.fedramp_id JOIN
+   fedramp_agency_links al2 ON al2.fedramp_agency_id=a2.agency_id WHERE
+   svc.service LIKE :pattern AND al2.inventory_agency_id=:agency)`.
+   Calibration from 2026-07: this check dissolved ~74% of a naive
+   "agency says no ATO + listing shows no ATO" slice (102→27 rows) —
+   agencies using "OpenAI API" mostly held Azure packages with Azure
+   OpenAI in scope, and agencies "wrongly" claiming an ATO were likely
+   answering about the containment channel. The surviving residue is
+   specialized SaaS with no containment path (Chainalysis @ FDIC/SEC,
+   TR CLEAR @ DOJ, Westlaw @ SEC, Cellebrite, Flock Safety @ DOJ).
 4. Scope catalogs come from the raw export's `service_last_90` +
    `all_others` fields (the `authorized_services` field is always empty —
    ingest guard exists). Only ~90 of 659 products publish a catalog;
